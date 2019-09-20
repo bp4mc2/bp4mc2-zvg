@@ -1,0 +1,24 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:HomeData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:query """
+      prefix elmo1: <http://bp4mc2.org/elmo/def#>
+      prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      CONSTRUCT {
+        [] rdfs:label "Zorgeloos vastgoed"@nl;
+          elmo1:html '''
+            <h1>Startpagina</h1>
+            <p>Welkom op de startpagina voor zorgeloos vastgoed</p>
+          '''
+        .
+      }
+      WHERE {}
+    """
+  .
+
+}

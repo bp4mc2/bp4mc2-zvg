@@ -1,0 +1,25 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:HomeEndpoint a elmo:Endpoint;
+    elmo:pathPattern "";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Home;
+  .
+
+  config:Home a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:HomeData;
+    elmo:appearance [a elmo:HtmlAppearance];
+    elmo:contains config:Menu;
+  .
+
+  config:Menu a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:MenuData;
+    elmo:appearance [a elmo:NavbarSearchAppearance];
+  .
+
+}

@@ -1,0 +1,97 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+
+GRAPH config:Theatre {
+
+  config:ResourceEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/resource";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Resource;
+  .
+
+  config:Resource a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:contains config:Menu;
+    elmo:contains config:Content;
+    elmo:contains config:Graph;
+    elmo:appearance [a elmo:HiddenAppearance];
+    elmo:informationProduct config:ResourceData;
+  .
+
+  config:Content a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:index 1;
+    elmo:appearance config:ContentAppearance;
+    elmo:informationProduct config:ContentData;
+  .
+
+  config:ContentAppearance a elmo:Appearance;
+    elmo:index 1;
+    elmo:fragment [
+      elmo:appliesTo rdfs:label;
+      elmo:appearance elmo:HiddenAppearance;
+    ];
+    elmo:fragment [
+      elmo:appliesTo rdf:type;
+      rdfs:label "Type"@nl;
+      elmo:index 11;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skos:prefLabel;
+      rdfs:label "Voorkeursterm"@nl;
+      elmo:index 12;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skos:altLabel;
+      rdfs:label "Alternatieve aanduiding"@nl;
+      elmo:index 13;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skosthes:broaderPartitive;
+      rdfs:label "Onderdeel van"@nl;
+      elmo:index 20;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skosthes:broaderGeneric;
+      rdfs:label "Omvat"@nl;
+      elmo:index 21;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skosthes:narrowerPartitive;
+      rdfs:label "Onderdeel van"@nl;
+      elmo:index 20;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skosthes:narrowerGeneric;
+      rdfs:label "Generalisatie van"@nl;
+      elmo:index 21;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skoslex:agent;
+      rdfs:label "Agent"@nl;
+      elmo:index 30;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skos:semanticRelation;
+      rdfs:label "Gerelateerd aan"@nl;
+      elmo:index 40;
+    ];
+  .
+
+  config:Graph a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:ResourceData;
+    elmo:appearance config:GraphAppearance;
+  .
+
+  config:GraphAppearance a elmo:GraphAppearance;
+    elmo:index 2;
+  .
+
+}

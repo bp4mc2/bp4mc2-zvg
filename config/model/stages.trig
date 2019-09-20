@@ -1,0 +1,14 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+
+GRAPH config:Theatre {
+
+  config:Stage a elmo:Stage;
+    elmo:site config:Site;
+    elmo:basePath "";
+    dc:title "Zorgeloos vastgoed";
+  .
+
+}

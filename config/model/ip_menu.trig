@@ -1,0 +1,23 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:MenuData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:query """
+      prefix elmo1: <http://bp4mc2.org/elmo/def#>
+      prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>
+      prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+      CONSTRUCT {
+        [ xhtml:link "http://dotwebstack.pldn.nl";
+          rdfs:label "ZorgeloosVastgoed";
+          elmo1:data [elmo1:index "1"; rdfs:label "Lijst"; xhtml:link "/lijst"];
+        ]
+      }
+      WHERE {}
+    """;
+  .
+
+}

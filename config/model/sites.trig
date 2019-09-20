@@ -1,0 +1,16 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
+
+GRAPH config:Theatre {
+
+  config:Site a elmo:Site;
+    elmo:domain "dotwebstack.pldn.nl";
+#    elmo:layout config:Layout;
+  .
+#  config:Layout a elmo:Layout;
+#    xhtml:stylesheet "site-stylesheet.css";
+#  .
+
+}

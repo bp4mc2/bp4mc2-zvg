@@ -1,0 +1,19 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:LijstEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/lijst";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Lijst;
+  .
+
+  config:Lijst a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:LijstData;
+    elmo:appearance [a elmo:TableAppearance];
+    elmo:contains config:Menu;
+  .
+
+}

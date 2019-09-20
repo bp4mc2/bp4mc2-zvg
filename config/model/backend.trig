@@ -1,0 +1,23 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:FusekiBackend a elmo:SparqlBackend;
+    elmo:endpoint "http://localhost:3030/zvg/query"^^xsd:anyURI
+  .
+
+  config:TripleBackend a elmo:SparqlBackend;
+    elmo:endpoint "https://api.data.pldn.nl/datasets/metadatacatalogi/TaxonomieZorgeloosVastgoed/services/TaxonomieZorgeloosVastgoed/sparql"^^xsd:anyURI
+  .
+
+  #
+  # The Default backend is the actual backend used by the InformtionProducts.
+  # Copy the configuration of one of the backends above to the configuration below.
+  #
+  config:DefaultBackend a elmo:SparqlBackend;
+    elmo:endpoint "https://api.data.pldn.nl/datasets/metadatacatalogi/TaxonomieZorgeloosVastgoed/services/TaxonomieZorgeloosVastgoed/sparql"^^xsd:anyURI
+  .
+
+}
