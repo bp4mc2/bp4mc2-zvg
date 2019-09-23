@@ -6,7 +6,10 @@
 GRAPH config:Theatre {
 
   config:Site a elmo:Site;
-    elmo:domain "dotwebstack.pldn.nl";
+#    elmo:domain "localhost";
+#    elmo:domain "dotwebstack.pldn.nl";
+#    elmo:domain "taxonomie.zorgeloosvastgoed.nl";
+    elmo:domain "zorgeloosvastgoed.nl";
 #    elmo:layout config:Layout;
   .
 #  config:Layout a elmo:Layout;
