@@ -24,6 +24,22 @@ GRAPH config:Theatre {
     elmo:informationProduct config:ResourceData;
   .
 
+  config:ResourceURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/{class}/{reference}";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:URIResource;
+  .
+
+  config:URIResource a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:parameterMapper config:SubjectFromUrl;
+    elmo:contains config:Menu;
+    elmo:contains config:Content;
+    elmo:contains config:Graph;
+    elmo:appearance [a elmo:HiddenAppearance];
+    elmo:informationProduct config:ResourceData;
+  .
+
   config:Content a elmo:Representation;
     elmo:stage config:Stage;
     elmo:index 1;
