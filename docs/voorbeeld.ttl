@@ -15,7 +15,7 @@
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
 
-xxx:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:Object; # NaamConcept is de naam van het concept in UpperCamelCase; dit is altijd een skos:Concept en in de ZV taxonomie altijd een skoslex:Act, xxx:Actor, skoslex:Agent of een skoslex:Object.
+zv:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:Object; # NaamConcept is de naam van het concept in UpperCamelCase; dit is altijd een skos:Concept en in de ZV taxonomie altijd een skoslex:Act, xxx:Actor, skoslex:Agent of een skoslex:Object.
   rdfs:label "Term"@nl; # De bedoeling is om altijd een rdfs:label in het Nederlands (@nl) te definiëren. Dit zal in de praktijk hetzelfde zijn als het skos:prefLabel. Eventueel kunnen ook labels in andere talen worden gedefinieerd.
 	rdfs:label "Term"@en;
 	skos:prefLabel "Voorkeursterm"; 
