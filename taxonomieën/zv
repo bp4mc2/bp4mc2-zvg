@@ -1,0 +1,51 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix loc: <http://www.w3.org/ns/locn#>.
+
+#---
+#Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
+#---
+
+zv:Mens a skos:Concept, skoslex:Actor;
+	rdfs:label "mens"@nl;
+	skos:prefLabel "mens";
+	skos:altLabel "natuurlijk persoon";
+#Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen.
+.
+zv:Organisatie a skos:Concept, skoslex:Actor;
+	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
+	rdfs:label "rechtspersoon"@nl;
+	skos:prefLabel "organisatie";
+	rdfs:altLabel "rechtspersoon"
+#Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
+.
+zv:Persoon a skos:Concept, skoslex:Actor;
+	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
+	rdfs:label "persoon"@nl;
+	skos:prefLabel "persoon";
+	skosthes:narrowerGeneric zv:Mens;
+	skosthes:narrowerGeneric zv:Organisatie
+.
+zv:Huis a skos:Concept, skoslex:Object;
+	rdfs:label "huis"@nl;
+	skos:prefLabel "huis";
+	skosthes:broaderGeneric kad:ZakelijkRecht
+.
+zv:Partij a skos:Concept, skoslex:Actor;
+	rdfs:label "partij"@nl;
+	skos:prefLabel "partij";
+	skosthes:narrowerGeneric zv:Koper;
+	skosthes:narrowerGeneric zv:Verkoper
+.
+
