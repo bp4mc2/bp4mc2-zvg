@@ -1,0 +1,72 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix loc: <http://www.w3.org/ns/locn#>.
+
+
+#---
+#HDN is de spin in het web van hypotheken. Daarom worden deze begrippen in het hdn domein gedefinieerd.
+#---
+zv:hypotheekgever a skos:Concept, skoslex:Actor;
+	rdfs:label "hypotheekgever"@nl;
+	skos:prefLabel "hypotheekgever"
+.
+zv:hypotheeknemer a skos:Concept, skoslex:Actor;
+	rdfs:label "hypotheeknemer"@nl;
+	skos:prefLabel "hypotheeknemer";
+	skos:altLabel "geldverstrekker";
+	skos:semanticRelation zv:Hypotheekgever
+.
+hdn:Hypotheekadviseur a skos:Concept, skoslex:Agent;
+	rdfs:label "hypotheekadviseur"@nl;
+	skos:prefLabel "hypotheekadviseur";
+	skos:altLabel "financieel adviseur";
+	skos:altLabel "tussenpersoon"
+.
+hdn:Hypotheekadvies a skos:Concept, skoslex:Object;
+	rdfs:label "hypotheekadvies"@nl;
+	skos:prefLabel "hypotheekadvies"
+.
+hdn:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
+	rdfs:label "opstellen hypotheekadvies"@nl;
+	skos:prefLabel "opstellen hypotheekadvies";
+	skoslex:agent hdn:Hypotheekadviseur;
+	skoslex:actor zv:Hypotheekgever;
+	skoslex:object hdn:Hypotheekadvies;
+	skoslex:object zv:Koopovereenkomst
+.
+hdn:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
+	rdfs:Label "identificatie hypotheekadvies"@nl;
+	skos:prefLabel "identificatie hypotheekadvies";
+	skosthes:broaderPartitive hdn:OpstellenHypotheekadvies;
+	skoslex:object zv:Persoon;
+.
+hdn:BindendeOfferte a skos:Concept, skoslex:Object;
+	rdfs:label "bindende offerte"@nl;
+	skos:prefLabel "bindende offerte";
+	skos:semanticRelation hdn:Hypotheekadvies;
+.
+hdn:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
+	rdfs:label "opstellen bindende offerte"@nl;
+	skos:prefLabel "opstellen bindende offerte";
+	skoslex:actor zv:Hypotheeknemer;
+	skoslex:actor zv:Hypotheekgever;
+	skoslex:object hdn:BindendeOfferte;
+	skoslex:object hdn:Hypotheekadvies;
+	skoslex:object zv:Koopovereenkomst
+.
+# Lening	hdn
+# Schuldenaar	hdn
+# Schuldeiser	hdn
+# Hoofdelijke aansprakelijkheid	hdn
+# Inschrijvingsbedrag	hdn
