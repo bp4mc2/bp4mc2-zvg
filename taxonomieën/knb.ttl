@@ -82,7 +82,7 @@ knb:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	skos:prefLabel "Recht van hypotheek";
 	skos:altLabel "Hypotheek";
 	skos:definition "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
-skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Het recht van pand en het recht van hypotheek zijn beperkte rechten, strekkende om op de daaraan onderworpen goederen een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Is het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand.";
+	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Het recht van pand en het recht van hypotheek zijn beperkte rechten, strekkende om op de daaraan onderworpen goederen een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Is het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand.";
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel227;
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260;
 	skosthes:broaderGeneric knb:ZakelijkRecht;
@@ -90,6 +90,9 @@ skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Het recht van pand en
 knb:Hypotheekakte a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekakte"@nl;
 	skos:prefLabel "Hypotheekakte";
+	skos:definition "Een notariële akte waarin een eigenaar van een onroerende zaak tot zekerheid van de geldverstrekker een hypotheekrecht op dat onroerende zaak vestigt.";
+	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers. De akte moet een aanduiding bevatten van de vordering waarvoor de hypotheek tot zekerheid strekt, of van de feiten aan de hand waarvan die vordering zal kunnen worden bepaald. Tevens moet het bedrag worden vermeld waarvoor de hypotheek wordt verleend of, wanneer dit bedrag nog niet vaststaat, het maximumbedrag dat uit hoofde van de hypotheek op het goed kan worden verhaald. De hypotheekhouder moet in de akte woonplaats kiezen in Nederland.";
+	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260;
 	skosthes:broaderTransitive knb:Akte;
 .
 #nog toevoegen door Dennis
@@ -104,18 +107,29 @@ knb:VestigingHypotheek a skos:Concept, skoslex:Act;
 .
 #IdentificatieKNB of IdentificatieComparant?
 knb:IdentificatieComparant a skos:Concept, skoslex:Act;
-	rdfs:Label "identificatie"@nl;
-	skos:prefLabel "identificatie";
+	rdfs:Label "Identificatie comparant"@nl;
+	skos:prefLabel "Identificatie comparant";
+	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden."; 
+	dcterms:source 	https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel39;
 	skosthes:broaderPartitive knb:Levering;
 	skosthes:broaderPartitive knb:VestigingHypotheek;
 	skoslex:object zv:Persoon;
 .
 knb:PlaatsVanVestiging a skos:Concept, skoslex:Object;
+	rdfs:Label "Plaats van vestiging"@nl;
+	skos:prefLabel "Plaats van vestiging";
+	skos:definition "Een plaats in Nederland waar de notaris is gevestigd en zijn kantoor houdt.";
+	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren.";
+	skos:editorialNote "In het Koninklijk Besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
+	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelII_Artikel12;
 .
 #RechercheNotaris of RechercheKNB?
 knb:RechercheNotaris a skos:Concept, skoslex:Act;
-	rdfs:label "recherche"@nl;
-	skos:prefLabel "recherche";
+	rdfs:label "Recherche"@nl;
+	skos:prefLabel "Recherche";
+	skos:altLabel "Rechercheplicht";
+	skos:altLabel "Onderzoeksplicht";
+	skos:definiton "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
 	skosthes:broaderPartitive knb:Levering;
 	skosthes:broaderPartitive knb:VestigingHypotheek;
 	skoslex:object zv:Persoon;
@@ -123,11 +137,32 @@ knb:RechercheNotaris a skos:Concept, skoslex:Act;
 	skoslex:object bel:Overdrachtsbelasting
 .
 knb:NotarieleAkte a skos:Concept, skoslex:Object;
+	rdfs:label "Notariële akte"@nl;
+	skos:prefLabel "Notariële akte";
+	skos:definition "Een notariële akte is een authentieke akte die is gepasseerd door een notaris. De wet stelt voor sommige rechtshandelingen het gebruik van een notariële akte verplicht."; 
+	rdfs:comment "Notariële akten zijn authentieke akten die verleden zijn door een notaris. Notariële akten zijn geschriften waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
+	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel37;
+	skosthes:broaderGeneric knb:AuthentiekeAkte; 
 .
 knb:TitelVanAankomst a skos:Concept, skoslex:Object;
+	rdfs:label "Titel van aankomst"@nl;
+	skos:prefLabel "Titel van aankomst";
+	skos:altLabel "Wijze van verkrijging";
+	skos:altLabel "Titel";
+	skos:definition "Hetgeen op grond waarvan een (niet) natuurlijk persoon zakelijk gerechtigde wordt tot een goed";
+	rdfs:comment "Verklaring waaruit blijkt dat de verkoper ook de echte eigenaar is."; 
+	skosthes:broaderPartitive knb:LeveringsAkte;
 .
 #AfschriftAkte of AfschriftKNB?
 knb:AfschriftAkte a skos:Concept, skoslex:Object;
+	rdfs:label "Afschrift (akte)"@nl;
+	skos:prefLabel "Afschrift (akte)";
+	skos:altLabel "Gewaarmerkte kopie";
+	skos:definition "een door de notaris ondertekende afgegeven weergave van de inhoud van een originele notariële akte (de minuut).";
+	rdfs:comment "Het afschrift is een kopie van de notariële akte. Alleen de notaris die de originele akte heeft getekend, mag een afschrift daarvan uitgeven. Een afschrift kun je herkennen doordat er ‘uitgegeven voor afschrift’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
+	skosthes:broaderPartitive knb:NotarieleAkte;
+	skos:semanticRelation knb:Minuut;
+	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelV_Artikel49;
 .
 knb:Minuut a skos:Concept, skoslex:Object;
 .
