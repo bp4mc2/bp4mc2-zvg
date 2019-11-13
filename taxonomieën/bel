@@ -1,0 +1,26 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix hdn: <http://hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix loc: <http://www.w3.org/ns/locn#>.
+
+#Belastingdienst
+bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
+	rdfs:label "overdrachtsbelasting";
+	skos:prefLabel "overdrachtsbelasting"
+.
+bel:InningOverdrachtsbelasting a skos:Concept, skoslex:Act;
+	rdfs:label "inning overdrachtsbelasting";
+	skos:prefLabel "inning overdrachtsbelasting";
+	skosthes:broaderPartitive knb:Levering;
+	skoslex:object bel:Overdrachtsbelasting
+.
