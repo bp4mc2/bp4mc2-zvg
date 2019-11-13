@@ -16,9 +16,8 @@
 
 
 zv:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:Object; # NaamConcept is de naam van het concept in UpperCamelCase; dit is altijd een skos:Concept en in de ZV taxonomie altijd een skoslex:Act, xxx:Actor, skoslex:Agent of een skoslex:Object.
-  rdfs:label "Term"@nl; # De bedoeling is om altijd een rdfs:label in het Nederlands (@nl) te definiëren. Dit zal in de praktijk hetzelfde zijn als het skos:prefLabel. Eventueel kunnen ook labels in andere talen worden gedefinieerd.
-	rdfs:label "Term"@en;
-	skos:prefLabel "Voorkeursterm"; 
+  rdfs:label "Term"@nl; # De bedoeling is om altijd een rdfs:label in het Nederlands (@nl) te definiëren. Dit zal in de praktijk hetzelfde zijn als het skos:prefLabel. Eventueel kunnen ook labels in andere talen worden gedefinieerd.rdfs:label "Term"@en;
+  skos:prefLabel "Voorkeursterm"; 
   skos:altLabel "Synoniem"; # Indien van toepassing kunnen een of meer synoniemen worden gedefinieerd met skos:altLabel.
   skos:definition "De formele, juridische definitie"; # De bedoeling is om altijd een formele definitie, vaak letterlijk overgenomen uit de wet, op te nemen. 
   skos:comment "De uitleg in klare taal"@nl; # De bedoeling is om altijd een uitleg in 'klare taal', dat wil zeggen op B2 niveau te geven. Dit kan eventueel ook in andere talen.
