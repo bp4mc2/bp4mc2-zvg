@@ -1,0 +1,168 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix loc: <http://www.w3.org/ns/locn#>.
+
+
+#De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
+#De notaris bewaakt vervolgens de termijnen voor de waarborgsom en voor de passeerdatum.
+#---
+
+knb:Notaris a skos:Concept, skoslex:Agent;
+	rdfs:label "Notaris"@nl;
+	rdfs:label "Notary"@en;
+	skos:prefLabel "Notaris"; 
+	skos:altLabel "Ambtenaar";
+	skos:altLabel "Bevoegd protocolhouder";
+	skos:definition "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
+	rdfs:editorialNote "Oorspronkelijke tekst uit het wetboek: Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
+	skos:editorialNote "Wet op het notarisambt, artikel 2 WNA, artikel 6 WNA, artikel 16 WNA";
+	dcterms:source: https://wetten.overheid.nl/BWBR0010388/2019-01-01;
+	skosthes:broaderGeneric zv:Rechtspersoon;
+	skos:semanticRelation knb:PlaatsVanVestiging;
+.
+knb:Akte a skos:Concept, skoslex:Object;
+	rdfs:label "Akte"@nl;
+	rdfs:label "Deed"@en;
+	skos:prefLabel "Akte";
+	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen.";
+	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Akten zijn ondertekende geschriften, bestemd om tot bewijs te dienen.";
+	dcterms:source https://wetten.overheid.nl/BWBR0001827/2019-01-01;
+.
+knb:AuthentiekeAkte a skos:Concept, skoslex:Object;
+	rdfs:label "Authentieke akte"&nl;
+	skos:prefLabel "Authentieke akte"; 
+	skos:definition "Authentieke akten zijn akten opgesteld door een ambtenaar (zoals de notaris).";
+	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken";
+	dcterms:source https://wetten.overheid.nl/BWBR0001827/2019-01-01;
+	skosthes:broaderGeneric knb:Akte;
+.
+knb:OnderhandseAkte a skos:Concept, skoslex:Object;
+	rdfs:label "Onderhandse akte"@nl;
+	skos:prefLabel "Onderhandse akte";
+	skos:definition "Elk ondertekend geschrift dat geen authentieke akte is."
+	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Onderhandse akten zijn alle akten die niet authentieke akten zijn."
+	dcterms:source https://wetten.overheid.nl/BWBR0001827/2019-01-01; 
+	skosthes:broaderGeneric knb:Akte;
+.
+knb:Levering a skos:Concept, skoslex:Act;
+	rdfs:label "Levering"@nl;
+	skos:prefLabel "Levering";
+	skos:altLabel "Eigendomsoverdracht"
+	skos:definition "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan."
+	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89;
+	skos:actor zv:Koper;
+	skos:actor zv:Verkoper;
+	skos:agent knb:Notaris;
+	skos:object knb:Leveringsakte;
+	skos:object nvm:Koopovereenkomst;
+.
+knb:Leveringsakte a skos:Concept, skoslex:Object;
+	rdfs:label "Leveringsakte"@nl;
+	skos:prefLabel "Leveringsakte";
+	skos:altLabel "Transportakte";
+	skos:definition "Een notariële akte waarin de overdracht van een (of meerdere) goederen wordt overeengekomen. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
+	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
+	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89;
+	skosthes:broaderTransitive knb:NotarieleAkte;
+.
+knb:RechtVanHypotheek a skos:Concept, skoslex:Object;
+	rdfs:label "Recht van hypotheek"@nl;
+	skos:prefLabel "Recht van hypotheek";
+	skos:altLabel "Hypotheek";
+	skos:definition "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
+skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Het recht van pand en het recht van hypotheek zijn beperkte rechten, strekkende om op de daaraan onderworpen goederen een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Is het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand.";
+	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel227;
+	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260;
+	skosthes:broaderGeneric knb:ZakelijkRecht;
+.
+knb:Hypotheekakte a skos:Concept, skoslex:Object;
+	rdfs:label "Hypotheekakte"@nl;
+	skos:prefLabel "Hypotheekakte";
+	skosthes:broaderTransitive knb:Akte;
+.
+#nog toevoegen door Dennis
+knb:VestigingHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "vestiging hypotheek"@nl;
+	skos:prefLabel "vestiging hypotheek";
+	skos:actor zv:Koper;
+	skos:actor zv:Verkoper;
+	skos:agent knb:Notaris;
+	skos:object knb:Leveringsakte;
+	skos:object nvm:Koopovereenkomst;
+.
+#IdentificatieKNB of IdentificatieComparant?
+knb:IdentificatieComparant a skos:Concept, skoslex:Act;
+	rdfs:Label "identificatie"@nl;
+	skos:prefLabel "identificatie";
+	skosthes:broaderPartitive knb:Levering;
+	skosthes:broaderPartitive knb:VestigingHypotheek;
+	skoslex:object zv:Persoon;
+.
+knb:PlaatsVanVestiging a skos:Concept, skoslex:Object;
+.
+#RechercheNotaris of RechercheKNB?
+knb:RechercheNotaris a skos:Concept, skoslex:Act;
+	rdfs:label "recherche"@nl;
+	skos:prefLabel "recherche";
+	skosthes:broaderPartitive knb:Levering;
+	skosthes:broaderPartitive knb:VestigingHypotheek;
+	skoslex:object zv:Persoon;
+	skoslex:object zv:Huis;
+	skoslex:object bel:Overdrachtsbelasting
+.
+knb:NotarieleAkte a skos:Concept, skoslex:Object;
+.
+knb:TitelVanAankomst a skos:Concept, skoslex:Object;
+.
+#AfschriftAkte of AfschriftKNB?
+knb:AfschriftAkte a skos:Concept, skoslex:Object;
+.
+knb:Minuut a skos:Concept, skoslex:Object;
+.
+knb:Hypotheekgever a skos:Concept, skoslex:Actor;
+	rdfs:label "hypotheekgever"@nl;
+	skos:prefLabel "hypotheekgever"
+.
+knb:Hypotheeknemer a skos:Concept, skoslex:Actor;
+	rdfs:label "hypotheeknemer"@nl;
+	skos:prefLabel "hypotheeknemer";
+	skos:altLabel "geldverstrekker";
+	skos:semanticRelation zv:Hypotheekgever
+.
+knb:Onderpand a skos:Concept, skoslex:Object;
+.
+knb:Rang a skos:Concept, skoslex:Object;
+.
+knb:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
+.
+knb:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
+.
+knb:Opslagbedrag a skos:Concept, skoslex:Object;
+.
+knb:Passeren a skos:Concept, skoslex:Act;
+.
+#ArchiverenAkte of ArchiverenKNB?
+knb:ArchiverenAkte a skos:Concept, skoslex:Act;
+.
+#RegistrerenAkte of RegistrenKNB?
+knb:RegistrerenAkte a skos:Concept, skoslext:Act;
+.
+#nog toevoegen door Dennis
+knb:Bankgarantie a skos:Concept, skoslex:Object;
+.
+knb:Borg a skos:Concept, skoslex:Object;
+.
+
+
