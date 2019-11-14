@@ -159,7 +159,7 @@ knb:AfschriftAkte a skos:Concept, skoslex:Object;
 	skos:prefLabel "Afschrift (akte)";
 	skos:altLabel "Gewaarmerkte kopie";
 	skos:definition "een door de notaris ondertekende afgegeven weergave van de inhoud van een originele notariële akte (de minuut).";
-	rdfs:scopenote "Het afschrift is een kopie van de notariële akte. Alleen de notaris die de originele akte heeft getekend, mag een afschrift daarvan uitgeven. Een afschrift kun je herkennen doordat er ‘uitgegeven voor afschrift’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
+	skos:scopeNote "Het afschrift is een kopie van de notariële akte. Alleen de notaris die de originele akte heeft getekend, mag een afschrift daarvan uitgeven. Een afschrift kun je herkennen doordat er ‘uitgegeven voor afschrift’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
 	skosthes:broaderPartitive knb:NotarieleAkte;
 	skos:semanticRelation knb:Minuut;
 	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelV_Artikel49;
@@ -169,7 +169,7 @@ knb:Minuut a skos:Concept, skoslex:Object;
 	skos:prefLabel "Minuut";
 	skos:altLabel "Minuutakte";
 	skos:definition	"Het originele exemplaar van een notariële akte";
-	rdfs:scopenote "De originele versie van de notariële akte, waarop de 'blauwe' handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
+	skos:scopeNote "De originele versie van de notariële akte, waarop de 'blauwe' handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
 	skosthes:broaderPartitive knb:NotarieleAkte; 
 	skos:semanticRelation knb:AfschriftAkte;	
 	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelI_Artikel1;
@@ -178,7 +178,7 @@ knb:Hypotheekgever a skos:Concept, skoslex:Actor;
 	rdfs:label "Hypotheekgever"@nl;
 	skos:prefLabel "Hypotheekgever";
 	skos:definition	"De persoon die het recht van hypotheek verleent aan de hypotheeknemer";
-	rdfs:scopenote "De schuldeiser krijgt het het recht van hypotheek van de hypotheekgever, die daarmee het recht geeft om de verkoopopbrengst van het onderpand rechtstreeks te ontvangen ter voldoening van de schuld.";
+	skos:scopeNote "De schuldeiser krijgt het het recht van hypotheek van de hypotheekgever, die daarmee het recht geeft om de verkoopopbrengst van het onderpand rechtstreeks te ontvangen ter voldoening van de schuld.";
 	dcterms:source "https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260";
 	skos:semanticRelation knb:Hypotheeknemer; 
 .
@@ -196,7 +196,7 @@ knb:Onderpand a skos:Concept, skoslex:Object;
 	skos:prefLabel "Onderpand";
 	skos:altlabel "Pandrecht"; 
 	skos:definition	"Het registergoed waar het recht van hypotheek wordt gevestigd.";
-	rdfs:scopenote "Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
+	skos:scopeNote "Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229;
 	skos:semanticRelation knb:RechtVanHypotheek;
 .
@@ -205,7 +205,7 @@ knb:Rang a skos:Concept, skoslex:Object;
 	skos:prefLabel "Rang";
 	skos:altLabel "Rangorde van inschrijvingen"; 
 	skos:definition "De rangorde van het onderhavige hypotheekrecht ten opzichte van andere hypotheekrechten."
-	rdfs:scopenote "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand.";
+	skos:scopeNote "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand.";
 	skosthes:broaderPartitive knb:RechtVanHypotheek;
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21;
 .
@@ -213,7 +213,7 @@ knb:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
 	skos:prefLabel "Totaalbedrag van de inschrijving";
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
-	rdfs:scopenote "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
+	skos:scopeNote "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
 	skosthes:broaderPartitive knb:RechtVanHypotheek;
 	skosthes:broaderPartitive knb:HypotheekAkte;
 .
@@ -222,29 +222,40 @@ knb:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
 	skos:prefLabel "Totaalbedrag van de inschrijving";
 	rdfs:definiton "Het bedrag ter hoogte waarvan het recht van hypotheek wordt gevestigd op het onderpand.";
-	rdfs:scopenote "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
-	skosthes:broaderPartitivek nb:totaalbedragInschrijving;
-	skosthes:broaderPartitive knb:rechtVanHypotheek;
-	skosthes:broaderPartitive knb:hypotheekAkte;
+	skos:scopeNote "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
+	skosthes:broaderPartitive knb:TotaalbedragInschrijving;
+	skosthes:broaderPartitive knb:RechtVanHypotheek;
+	skosthes:broaderPartitive knb:HypotheekAkte;
 .
 knb:Opslagbedrag a skos:Concept, skoslex:Object;
 	rdfs:label "Opslagbedrag"@nl;
 	skos:prefLabel "Opslagbedrag";
-	skso:definition "Het bedrag van de begrote maximaal ontstane extra schuld ten gevolge van niet betaalde rentes, boetes en kosten.";
+	skos:definition "Het bedrag van de begrote maximaal ontstane extra schuld ten gevolge van niet betaalde rentes, boetes en kosten.";
+	skos:scopeNote "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld.";
+	skosthes:broaderPartitive knb:TotaalbedragInschrijving;
+	skosthes:broaderPartitive knb:RechtVanHypotheek;
+	skosthes:broaderPartitive knb:HypotheekAkte;
 .
 knb:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
 	skos:prefLabel "Passeren";
+	skos:altLabel "Verlijden";
+	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
+	skosthes:broaderPartitive knb:Levering;
 .
 #ArchiverenAkte of ArchiverenKNB?
 knb:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)";
+	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats";
+	skosthes:broaderPartitive knb:Levering;
 .
 #RegistrerenAkte of RegistrenKNB?
 knb:RegistrerenAkte a skos:Concept, skoslext:Act;
 	rdfs:label "Registreren (akte)"@nl;
 	skos:prefLabel "Registreren (akte)";
+	skos:definition "Vastleggen in een register";
+	skosthes:broaderPartitive knb:Levering;
 .
 #nog aanvullen door Dennis
 knb:Bankgarantie a skos:Concept, skoslex:Object;
