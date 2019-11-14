@@ -13,43 +13,47 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
+#begrippen uit andere ZV domeinen
+nvm:Notaris a skos:Concept;
+	skos:exactMatch knb:Notaris;
+.
 
 nvm:Verkoper a skos:Concept, skoslex:Actor;
 	rdfs:label "verkoper"@nl;
 	skos:prefLabel "verkoper";
-	skosthes:broaderGeneric zv:Persoon
+	skos:broadMatch nvm:Persoon;
 .
 nvm:Koper a skos:Concept, skoslex:Actor;
-	rdfs:label "koper"@nl;
-	skos:prefLabel "koper";
-	skosthes:broaderGeneric zv:Persoon
+	rdfs:label "Koper"@nl;
+	skos:prefLabel "Koper";
+	skos:broadMatch zv:Persoon;
 .
 nvm:Koop a skos:Concept, skoslex:Act;
-	rdfs:label "koop"@nl;
-	skos:prefLabel "koop";
-	skoslex:actor zv:Verkoper;
-	skoslex:actor zv:Koper;
+	rdfs:label "Koop"@nl;
+	skos:prefLabel "Koop";
+	skoslex:actor nvm:Verkoper;
+	skoslex:actor nvm:Koper;
 	skoslex:object zv:Huis
 .
 
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgestelds en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genomend.
 
 nvm:Koopovereenkomst a skos:Concept, skoslex:Object;
-	rdfs:label "koopovereenkomst"@nl;
-	skos:prefLabel "koopovereenkomst";
-	skos:altLabel "koopocontract";
-	skos:semanticRelation zv:Verkoper;
-	skos:semanticRelation zv:Koper;
-	skos:semanticRelation zv:Huis
+	rdfs:label "Koopovereenkomst"@nl;
+	skos:prefLabel "Koopovereenkomst";
+	skos:altLabel "Koopocontract";
+	skos:semanticRelation nvm:Verkoper;
+	skos:semanticRelation nvm:Koper;
+	skos:relatedMatch zv:Huis
 .
 nvm:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
-	rdfs:label "opstellen koopovereenkomst"@nl;
-	skos:prefLabel "opstellen koopovereenkomst";
-	skos:altLabel "opstellen koopocontract";
+	rdfs:label "Opstellen koopovereenkomst"@nl;
+	skos:prefLabel "Opstellen koopovereenkomst";
+	skos:altLabel "Opstellen koopocontract";
 	skosthes:broaderPartitive zv:Koop;
 	skoslex:agent nvm:Makelaar;
 	skoslex:agent knb:Notaris;
-	skoslex:object zv:Koopovereenkomst
+	skoslex:object nvm:Koopovereenkomst
 .
 
 
@@ -59,34 +63,37 @@ nvm:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 #---
 
 nvm:Makelaar a skos:Concept, skoslex:Agent;
-	rdfs:label "makelaar"@nl;
-	skos:prefLabel "makelaar";
+	rdfs:label "Makelaar"@nl;
+	skos:prefLabel "Makelaar";
 .
 nvm:Verkoopmakelaar a skos:Concept, skoslex:Agent;
-	rdfs:label "verkoopmakelaar"@nl;
-	skos:prefLabel "verkoopmakelaar";
+	rdfs:label "Verkoopmakelaar"@nl;
+	skos:prefLabel "Verkoopmakelaar";
 	skosthes:broaderGeneric nvm:Makelaar;
 	skos:semanticRelation zv:Verkoper;
+	skos:semanticRelation nvm:Aankoopmakelaar;
 .
 nvm:Aankoopmakelaar a skos:Concept, skoslex:Agent;
-	rdfs:label "aankoopmakelaar"@nl;
-	skos:prefLabel "aankoopmakelaar";
-	skosthes:broaderGeneric nvm:makelaar;
+	rdfs:label "Aankoopmakelaar"@nl;
+	skos:prefLabel "Aankoopmakelaar";
+	skosthes:broaderGeneric nvm:Makelaar;
 	skos:semanticRelation zv:Koper;
 	skos:semanticRelation nvm:Verkoopmakelaar;
 .
 nvm:Verkoop a skos:Concept, skoslex:Act;
-	rdfs:label "verkoop"@nl;
-	skos:prefLabel "verkoop"@nl;
+	rdfs:label "Verkoop"@nl;
+	skos:prefLabel "Verkoop"@nl;
 	skosthes:broaderPartitive zv:Koop;
-	skoslex:agent nvm:Verkoopmakelaar
+	skoslex:agent nvm:Verkoopmakelaar;
+	skoslex:actor nvm:Verkoper;
 .
 nvm:Aankoop a skos:Concept, skoslex:Act;
 	rdfs:label "aankoop"@nl;
 	skos:prefLabel "aankoop";
 	skosthes:broaderPartitive zv:Koop;
 	skos:semanticRelation nvm:Verkoop;
-	skoslex:agent nvm:Aankoopmakelaar
+	skoslex:agent nvm:Aankoopmakelaar;
+	skoslex:actor nvm:Koper;
 .
 nvm:RechercheKoop a skos:Concept, skoslex:Act;
 	rdfs:label "recherche koop"@nl;
@@ -97,32 +104,32 @@ nvm:RechercheKoop a skos:Concept, skoslex:Act;
 	skoslex:object bel:Overdrachtsbelasting
 .
 nvm:IdentificatieKoop a skos:Concept, skoslex:Act;
-	rdfs:Label "identificatie koop"@nl;
-	skos:prefLabel "identificatie koop";
-	skosthes:broaderPartitive zv:Koop;
+	rdfs:Label "Identificatie koop"@nl;
+	skos:prefLabel "Identificatie koop";
+	skosthes:broaderPartitive nvm:Koop;
 	skoslex:object zv:Persoon;
 .
 nvm:Taxateur a skos:Concept, skoslex:Agent;
-	rdfs:label "taxateur"@nl;
-	skos:prefLabel "taxateur";
+	rdfs:label "Taxateur"@nl;
+	skos:prefLabel "Taxateur";
 .
 nvm:Taxatie a skos:Concept, skoslex:Act;
-	rdfs:label "taxatie"@nl;
-	skos:prefLabel "taxatie";
+	rdfs:label "Taxatie"@nl;
+	skos:prefLabel "Taxatie";
 	skoslex:agent nvm:Taxateur;
 	skoslex:actor zv:Partij;
 	skoslex:object zv:Huis
 .
 nvm:RechercheTaxatie a skos:Concept, skoslex:Act;
-	rdfs:label "recherche taxatie"@nl;
-	skos:prefLabel "recherche taxatie";
+	rdfs:label "Techerche taxatie"@nl;
+	skos:prefLabel "Techerche taxatie";
 	skosthes:broaderPartitive nvm:Taxatie;
 	skoslex:object zv:Persoon;
 	skoslex:object zv:Huis
 .
 nvm:IdentificatieTaxatie a skos:Concept, skoslex:Act;
-	rdfs:Label "identificatie taxatie"@nl;
-	skos:prefLabel "identificatie taxatie";
+	rdfs:Label "Identificatie taxatie"@nl;
+	skos:prefLabel "Identificatie taxatie";
 	skosthes:broaderPartitive nvm:Taxatie;
 	skoslex:object zv:Persoon;
 .
