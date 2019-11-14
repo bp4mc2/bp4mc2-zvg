@@ -228,19 +228,32 @@ knb:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive knb:hypotheekAkte;
 .
 knb:Opslagbedrag a skos:Concept, skoslex:Object;
+	rdfs:label "Opslagbedrag"@nl;
+	skos:prefLabel "Opslagbedrag";
+	skso:definition "Het bedrag van de begrote maximaal ontstane extra schuld ten gevolge van niet betaalde rentes, boetes en kosten.";
 .
 knb:Passeren a skos:Concept, skoslex:Act;
+	rdfs:label "Passeren"@nl;
+	skos:prefLabel "Passeren";
 .
 #ArchiverenAkte of ArchiverenKNB?
 knb:ArchiverenAkte a skos:Concept, skoslex:Act;
+	rdfs:label "Archiveren (akte)"@nl;
+	skos:prefLabel "Archiveren (akte)";
 .
 #RegistrerenAkte of RegistrenKNB?
 knb:RegistrerenAkte a skos:Concept, skoslext:Act;
+	rdfs:label "Registreren (akte)"@nl;
+	skos:prefLabel "Registreren (akte)";
 .
-#nog toevoegen door Dennis
+#nog aanvullen door Dennis
 knb:Bankgarantie a skos:Concept, skoslex:Object;
+	rdfs:label "Bankgarantie"@nl;
+	skos:prefLabel "Bankgarantie";
 .
 knb:Borg a skos:Concept, skoslex:Object;
+	rdfs:label "Borg"@nl;
+	skos:prefLabel "Borg";
 .
 
 
