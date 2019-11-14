@@ -25,8 +25,8 @@ knb:Notaris a skos:Concept, skoslex:Agent;
 	skos:prefLabel "Notaris"; 
 	skos:altLabel "Ambtenaar";
 	skos:altLabel "Bevoegd protocolhouder";
-	skos:definition "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
-	rdfs:editorialNote "Oorspronkelijke tekst uit het wetboek: Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
+	rdfs:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
+	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
 	skos:editorialNote "Wet op het notarisambt, artikel 2 WNA, artikel 6 WNA, artikel 16 WNA";
 	dcterms:source: https://wetten.overheid.nl/BWBR0010388/2019-01-01;
 	skosthes:broaderGeneric zv:Rechtspersoon;
@@ -36,34 +36,34 @@ knb:Akte a skos:Concept, skoslex:Object;
 	rdfs:label "Akte"@nl;
 	rdfs:label "Deed"@en;
 	skos:prefLabel "Akte";
-	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen.";
-	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Akten zijn ondertekende geschriften, bestemd om tot bewijs te dienen.";
+	skos:definition "Akten zijn ondertekende geschriften, bestemd om tot bewijs te dienen.";
+	rdfs:comment "Ondertekend geschrift, bedoeld om als bewijs te dienen.";
 	dcterms:source https://wetten.overheid.nl/BWBR0001827/2019-01-01;
 .
 knb:AuthentiekeAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Authentieke akte"&nl;
 	skos:prefLabel "Authentieke akte"; 
-	skos:definition "Authentieke akten zijn akten opgesteld door een ambtenaar (zoals de notaris).";
-	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken";
+	skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken";
+	rdfs:comment "Authentieke akten zijn akten opgesteld door een ambtenaar (zoals de notaris).";
 	dcterms:source https://wetten.overheid.nl/BWBR0001827/2019-01-01;
 	skosthes:broaderGeneric knb:Akte;
 .
 knb:OnderhandseAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Onderhandse akte"@nl;
 	skos:prefLabel "Onderhandse akte";
-	skos:definition "Elk ondertekend geschrift dat geen authentieke akte is."
-	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Onderhandse akten zijn alle akten die niet authentieke akten zijn."
+	skos:definition "Onderhandse akten zijn alle akten die niet authentieke akten zijn.";
+	rdfs:comment "Elk ondertekend geschrift dat geen authentieke akte is.";
 	dcterms:source https://wetten.overheid.nl/BWBR0001827/2019-01-01; 
 	skosthes:broaderGeneric knb:Akte;
 .
 knb:Levering a skos:Concept, skoslex:Act;
 	rdfs:label "Levering"@nl;
 	skos:prefLabel "Levering";
-	skos:altLabel "Eigendomsoverdracht"
-	skos:definition "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan."
+	skos:altLabel "Eigendomsoverdracht";
+	skos:definition "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan.";
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89;
-	skos:actor zv:Koper;
-	skos:actor zv:Verkoper;
+	skos:actor nvm:Koper;
+	skos:actor nvm:Verkoper;
 	skos:agent knb:Notaris;
 	skos:object knb:Leveringsakte;
 	skos:object nvm:Koopovereenkomst;
@@ -72,8 +72,8 @@ knb:Leveringsakte a skos:Concept, skoslex:Object;
 	rdfs:label "Leveringsakte"@nl;
 	skos:prefLabel "Leveringsakte";
 	skos:altLabel "Transportakte";
-	skos:definition "Een notariële akte waarin de overdracht van een (of meerdere) goederen wordt overeengekomen. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
-	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
+	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
+	rdfs:comment "Een notariële akte waarin de overdracht van een (of meerdere) goederen wordt overeengekomen. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89;
 	skosthes:broaderTransitive knb:NotarieleAkte;
 .
@@ -81,8 +81,8 @@ knb:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Recht van hypotheek"@nl;
 	skos:prefLabel "Recht van hypotheek";
 	skos:altLabel "Hypotheek";
-	skos:definition "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
-	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Het recht van pand en het recht van hypotheek zijn beperkte rechten, strekkende om op de daaraan onderworpen goederen een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Is het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand.";
+	skos:definitinion "Het recht van pand en het recht van hypotheek zijn beperkte rechten, strekkende om op de daaraan onderworpen goederen een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Is het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand.";
+	rdfs:comment "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel227;
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260;
 	skosthes:broaderGeneric knb:ZakelijkRecht;
@@ -90,8 +90,8 @@ knb:RechtVanHypotheek a skos:Concept, skoslex:Object;
 knb:Hypotheekakte a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekakte"@nl;
 	skos:prefLabel "Hypotheekakte";
-	skos:definition "Een notariële akte waarin een eigenaar van een onroerende zaak tot zekerheid van de geldverstrekker een hypotheekrecht op dat onroerende zaak vestigt.";
-	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers. De akte moet een aanduiding bevatten van de vordering waarvoor de hypotheek tot zekerheid strekt, of van de feiten aan de hand waarvan die vordering zal kunnen worden bepaald. Tevens moet het bedrag worden vermeld waarvoor de hypotheek wordt verleend of, wanneer dit bedrag nog niet vaststaat, het maximumbedrag dat uit hoofde van de hypotheek op het goed kan worden verhaald. De hypotheekhouder moet in de akte woonplaats kiezen in Nederland.";
+	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers. De akte moet een aanduiding bevatten van de vordering waarvoor de hypotheek tot zekerheid strekt, of van de feiten aan de hand waarvan die vordering zal kunnen worden bepaald. Tevens moet het bedrag worden vermeld waarvoor de hypotheek wordt verleend of, wanneer dit bedrag nog niet vaststaat, het maximumbedrag dat uit hoofde van de hypotheek op het goed kan worden verhaald. De hypotheekhouder moet in de akte woonplaats kiezen in Nederland.";
+	rdfs:comment "Een notariële akte waarin een eigenaar van een onroerende zaak tot zekerheid van de geldverstrekker een hypotheekrecht op dat onroerende zaak vestigt.";
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260;
 	skosthes:broaderTransitive knb:Akte;
 .
@@ -118,8 +118,8 @@ knb:IdentificatieComparant a skos:Concept, skoslex:Act;
 knb:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	rdfs:Label "Plaats van vestiging"@nl;
 	skos:prefLabel "Plaats van vestiging";
-	skos:definition "Een plaats in Nederland waar de notaris is gevestigd en zijn kantoor houdt.";
-	skos:editorialNote "Oorspronkelijke tekst uit het wetboek: De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren.";
+	skos:definition "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren.";
+	rdfs:comment "Een plaats in Nederland waar de notaris is gevestigd en zijn kantoor houdt.";
 	skos:editorialNote "In het Koninklijk Besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
 	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelII_Artikel12;
 .
@@ -159,30 +159,73 @@ knb:AfschriftAkte a skos:Concept, skoslex:Object;
 	skos:prefLabel "Afschrift (akte)";
 	skos:altLabel "Gewaarmerkte kopie";
 	skos:definition "een door de notaris ondertekende afgegeven weergave van de inhoud van een originele notariële akte (de minuut).";
-	rdfs:comment "Het afschrift is een kopie van de notariële akte. Alleen de notaris die de originele akte heeft getekend, mag een afschrift daarvan uitgeven. Een afschrift kun je herkennen doordat er ‘uitgegeven voor afschrift’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
+	rdfs:scopenote "Het afschrift is een kopie van de notariële akte. Alleen de notaris die de originele akte heeft getekend, mag een afschrift daarvan uitgeven. Een afschrift kun je herkennen doordat er ‘uitgegeven voor afschrift’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
 	skosthes:broaderPartitive knb:NotarieleAkte;
 	skos:semanticRelation knb:Minuut;
 	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelV_Artikel49;
 .
 knb:Minuut a skos:Concept, skoslex:Object;
+	rdfs:label "Minuut"@nl;
+	skos:prefLabel "Minuut";
+	skos:altLabel "Minuutakte";
+	skos:definition	"Het originele exemplaar van een notariële akte";
+	rdfs:scopenote "De originele versie van de notariële akte, waarop de 'blauwe' handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
+	skosthes:broaderPartitive knb:NotarieleAkte; 
+	skos:semanticRelation knb:AfschriftAkte;	
+	dcterms:source https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelI_Artikel1;
 .
 knb:Hypotheekgever a skos:Concept, skoslex:Actor;
-	rdfs:label "hypotheekgever"@nl;
-	skos:prefLabel "hypotheekgever"
+	rdfs:label "Hypotheekgever"@nl;
+	skos:prefLabel "Hypotheekgever";
+	skos:definition	"De persoon die het recht van hypotheek verleent aan de hypotheeknemer";
+	rdfs:scopenote "De schuldeiser krijgt het het recht van hypotheek van de hypotheekgever, die daarmee het recht geeft om de verkoopopbrengst van het onderpand rechtstreeks te ontvangen ter voldoening van de schuld.";
+	dcterms:source "https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260";
+	skos:semanticRelation knb:Hypotheeknemer; 
 .
 knb:Hypotheeknemer a skos:Concept, skoslex:Actor;
-	rdfs:label "hypotheeknemer"@nl;
-	skos:prefLabel "hypotheeknemer";
-	skos:altLabel "geldverstrekker";
-	skos:semanticRelation zv:Hypotheekgever
+	rdfs:label "Hypotheeknemer"@nl;
+	skos:prefLabel "Hypotheeknemer";
+	skos:altLabel "Geldverstrekker";
+	skos:definition	"De eigenaar van het onderpand geeft het recht van hypotheek aan de hypotheeknemer/schuldeiser, die daarmee het recht krijgt om de verkoopopbrengst van het onderpand rechtstreeks te ontvangen ter voldoening van de schuld."; 
+	rdfs:comment "De persoon die het recht van hypotheek verkrijgt."; 
+	skos:semanticRelation knb:Hypotheekgever;
+	skos:closeMatch nvm:Koper;
 .
 knb:Onderpand a skos:Concept, skoslex:Object;
+	rdfs:label "Onderpand"@nl;
+	skos:prefLabel "Onderpand";
+	skos:altlabel "Pandrecht"; 
+	skos:definition	"Het registergoed waar het recht van hypotheek wordt gevestigd.";
+	rdfs:scopenote "Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
+	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229;
+	skos:semanticRelation knb:RechtVanHypotheek;
 .
 knb:Rang a skos:Concept, skoslex:Object;
+	rdfs:label "Rang"@nl;
+	skos:prefLabel "Rang";
+	skos:altLabel "Rangorde van inschrijvingen"; 
+	skos:definition "De rangorde van het onderhavige hypotheekrecht ten opzichte van andere hypotheekrechten."
+	rdfs:scopenote "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand.";
+	skosthes:broaderPartitive knb:RechtVanHypotheek;
+	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21;
 .
 knb:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
+	rdfs:label "Totaalbedrag van de inschrijving"@nl;
+	skos:prefLabel "Totaalbedrag van de inschrijving";
+	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
+	rdfs:scopenote "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
+	skosthes:broaderPartitive knb:RechtVanHypotheek;
+	skosthes:broaderPartitive knb:HypotheekAkte;
 .
+#Is Inschrijvingsbedrag niet hetzelfde als Toptaalbedrag van de inschrijving?
 knb:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
+	rdfs:label "Totaalbedrag van de inschrijving"@nl;
+	skos:prefLabel "Totaalbedrag van de inschrijving";
+	rdfs:definiton "Het bedrag ter hoogte waarvan het recht van hypotheek wordt gevestigd op het onderpand.";
+	rdfs:scopenote "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
+	skosthes:broaderPartitivek nb:totaalbedragInschrijving;
+	skosthes:broaderPartitive knb:rechtVanHypotheek;
+	skosthes:broaderPartitive knb:hypotheekAkte;
 .
 knb:Opslagbedrag a skos:Concept, skoslex:Object;
 .
