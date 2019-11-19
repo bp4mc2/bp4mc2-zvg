@@ -2,6 +2,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix hdn: <http://hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.

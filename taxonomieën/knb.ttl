@@ -3,6 +3,7 @@
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
