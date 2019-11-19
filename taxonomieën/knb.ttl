@@ -62,7 +62,7 @@ knb:Akte a skos:Concept, skoslex:Object;
 	dcterms:source <https://wetten.overheid.nl/BWBR0001827/2019-01-01>;
 .
 knb:AuthentiekeAkte a skos:Concept, skoslex:Object;
-	rdfs:label "Authentieke akte"&nl;
+	rdfs:label "Authentieke akte"@nl;
 	skos:prefLabel "Authentieke akte";
 	skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken";
 	rdfs:comment "Authentieke akten zijn akten opgesteld door een ambtenaar (zoals de notaris).";

@@ -21,7 +21,8 @@ kad:Bewaarder a skos:Concept, skoslex:Agent;
 	skos:exactMatch brk:Bewaarder;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:object;
-	skos:exactMatch Openbare_registers;
+# Deze regel klopt niet: wat is de prefix voor Openbare_registers?
+#	skos:exactMatch Openbare_registers;
 .
 #---
 #Begrippen uit andere ZV domeinen
