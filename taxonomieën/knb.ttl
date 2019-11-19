@@ -26,7 +26,7 @@
 <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89>	rdfs:label	"Artikel 89, Burgerlijk Wetboek, Boek 3" .
 <https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelI_Artikel1>	rdfs:label	"Artikel 1, Wet op het Notarisambt" .
 <https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel37>	rdfs:label	"Artikel 37, Wet op het Notarisambt" .
-<https://wetten.overheid.nl/BWBR0010388/2019-01-01>	rdfs:label>	"Wet op het Notarisambt" .
+<https://wetten.overheid.nl/BWBR0010388/2019-01-01>	rdfs:label	"Wet op het Notarisambt" .
 <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21>	rdfs:label	"Artikel 21, Burgerlijk Wetboek, Boek 3" .
 <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel227>	rdfs:label	"Artikel 227, Burgerlijk Wetboek, Boek 3" .
 <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229>	rdfs:label	"Artikel 229, Burgerlijk Wetboek, Boek 3" .
