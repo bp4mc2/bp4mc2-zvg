@@ -19,12 +19,12 @@
 
 #Belastingdienst
 bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
-	rdfs:label "overdrachtsbelasting";
-	skos:prefLabel "overdrachtsbelasting"
+	rdfs:label "Overdrachtsbelasting";
+	skos:prefLabel "Overdrachtsbelasting"
 .
 bel:InningOverdrachtsbelasting a skos:Concept, skoslex:Act;
-	rdfs:label "inning overdrachtsbelasting";
-	skos:prefLabel "inning overdrachtsbelasting";
+	rdfs:label "Inning overdrachtsbelasting";
+	skos:prefLabel "Inning overdrachtsbelasting";
 	skosthes:broaderPartitive knb:Levering;
 	skoslex:object bel:Overdrachtsbelasting
 .
