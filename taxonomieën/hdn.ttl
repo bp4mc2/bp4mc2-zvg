@@ -15,7 +15,7 @@
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
 <http://zorgeloosvastgoed.nl/data/hdn> a owl:Ontology;
-	rdfs:label "Domein hdn";
+	rdfs:label "Domein Hypotheken";
 .
 
 #---

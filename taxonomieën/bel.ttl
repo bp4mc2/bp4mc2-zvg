@@ -15,7 +15,7 @@
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
 <http://zorgeloosvastgoed.nl/data/bel> a owl:Ontology;
-	rdfs:label "Domein Belastingdienst";
+	rdfs:label "Domein Belastingen";
 .
 
 #Belastingdienst
