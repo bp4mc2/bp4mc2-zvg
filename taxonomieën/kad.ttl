@@ -8,20 +8,36 @@
 @prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix brk: <https://tax.kadaster.nl/doc/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
-#Bewaarder
+#---
+#begrippen uit de Kadaster taxonomie
+#---
 kad:Bewaarder a skos:Concept, skoslex:Agent;
-	rdfs:label "bewaarder"@nl;
-	skos:prefLabel "bewaarder"
+	skos:exactMatch brk:Bewaarder;
 .
-kad:InschrijvenOpenbaarRegister a skos:Concept, skoslex:Act;
-	rdfs:label "inschrijven openbaar register"@nl;
-	skos:prefLabel "inschrijven openbaar register";
-	skoslex:object knb:Akte;
-	skoslex:actor knb:Notaris;
-	skoslex:actor kad:Bewaarder
+kad:OpenbareRegisters a skos:Concept, skoslex:object;
+	skos:exactMatch Openbare_registers;
+.
+#---
+#Begrippen uit andere ZV domeinen
+#---
+kad:Notaris a skos:Concept, skolex:Actor;
+	skos:exactMatch knb:Notaris;
+.
+kad:NotarieleAkte a skos:Concept, skolex:Object;
+	skos:exactMatch knb:NotarieleAkte;
+.
+
+kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
+	rdfs:label "Inschrijven openbare registers"@nl;
+	skos:prefLabel "Inschrijven openbaar register";
+	skoslex:object kad:NotarieleAkte;
+	skoslex:object kad:OpenbareRegisters;
+	skoslex:actor kad:Notaris;
+	skoslex:actor kad:Bewaarder;
 .
