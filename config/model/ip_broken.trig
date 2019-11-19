@@ -4,24 +4,25 @@
 
 GRAPH config:Theatre {
 
-  config:LijstData a elmo:InformationProduct;
+  config:BrokenLinksData a elmo:InformationProduct;
     elmo:backend config:DefaultBackend;
     elmo:resultType elmo-rt:Tuple;
     elmo:query """
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
-      SELECT ?g ?g_label ?begrip ?begrip_label ?type ?type_label
+      SELECT ?g ?g_label ?begrip ?begrip_label ?link ?broken
       WHERE {
         GRAPH ?g {
           ?begrip a skos:Concept.
-          ?begrip rdfs:label ?begrip_label
-          FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
-          OPTIONAL {?g rdfs:label ?g_label}
-          OPTIONAL {
-            ?begrip a ?type.
-            FILTER (?type!=skos:Concept)
-            BIND(if(?type=skoslex:Act,"Handeling",strafter("#",str(?type))) as ?type_label)
+          ?begrip rdfs:label ?begrip_label.
+          ?begrip ?link ?broken
+          FILTER (isIRI(?broken) && ?link!=rdf:type)
+        }
+        FILTER NOT EXISTS {
+          graph ?gb {
+            ?broken ?p ?o
           }
         }
       }

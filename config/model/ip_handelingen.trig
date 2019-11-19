@@ -4,24 +4,34 @@
 
 GRAPH config:Theatre {
 
-  config:LijstData a elmo:InformationProduct;
+  config:HandelingenData a elmo:InformationProduct;
     elmo:backend config:DefaultBackend;
     elmo:resultType elmo-rt:Tuple;
     elmo:query """
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
-      SELECT ?g ?g_label ?begrip ?begrip_label ?type ?type_label
+      SELECT ?g ?g_label ?begrip ?begrip_label ?actor ?actor_label ?agent ?agent_label ?object ?object_label
       WHERE {
         GRAPH ?g {
-          ?begrip a skos:Concept.
+          ?begrip a skoslex:Act.
           ?begrip rdfs:label ?begrip_label
           FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
           OPTIONAL {?g rdfs:label ?g_label}
           OPTIONAL {
-            ?begrip a ?type.
-            FILTER (?type!=skos:Concept)
-            BIND(if(?type=skoslex:Act,"Handeling",strafter("#",str(?type))) as ?type_label)
+            ?begrip skoslex:actor ?actor.
+            ?actor rdfs:label ?actor_label
+            FILTER (lang(?actor_label)="nl" || lang(?actor_label)="")
+          }
+          OPTIONAL {
+            ?begrip skoslex:agent ?agent.
+            ?agent rdfs:label ?agent_label
+            FILTER (lang(?agent_label)="nl" || lang(?agent_label)="")
+          }
+          OPTIONAL {
+            ?begrip skoslex:object ?object.
+            ?object rdfs:label ?object_label
+            FILTER (lang(?object_label)="nl" || lang(?object_label)="")
           }
         }
       }

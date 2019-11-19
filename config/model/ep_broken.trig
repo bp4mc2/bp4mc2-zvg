@@ -3,20 +3,20 @@
 
 GRAPH config:Theatre {
 
-  config:LijstEndpoint a elmo:Endpoint;
-    elmo:pathPattern "/lijst";
+  config:BrokenLinksEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/broken";
     elmo:stage config:Stage;
-    elmo:getRepresentation config:Lijst;
+    elmo:getRepresentation config:BrokenLinks;
   .
 
-  config:Lijst a elmo:Representation;
+  config:BrokenLinks a elmo:Representation;
     elmo:stage config:Stage;
-    elmo:informationProduct config:LijstData;
-    elmo:appearance config:LijstAppearance;
+    elmo:informationProduct config:BrokenLinksData;
+    elmo:appearance config:BrokenLinksAppearance;
     elmo:contains config:Menu;
   .
 
-  config:LijstAppearance a elmo:TableAppearance;
+  config:BrokenLinksAppearance a elmo:TableAppearance;
     elmo:fragment [
       elmo:appliesTo "g";
       rdfs:label "Begrippenkader"@nl;

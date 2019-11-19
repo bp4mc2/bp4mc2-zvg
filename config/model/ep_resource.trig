@@ -6,6 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
 
 GRAPH config:Theatre {
 
@@ -67,6 +68,22 @@ GRAPH config:Theatre {
       elmo:appliesTo skos:altLabel;
       rdfs:label "Alternatieve aanduiding"@nl;
       elmo:index 13;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skos:definition;
+      rdfs:label "Definitie"@nl;
+      elmo:index 14;
+    ];
+    elmo:fragment [
+      elmo:appliesTo rdfs:comment;
+      rdfs:label "Uitleg"@nl;
+      elmo:index 15;
+    ];
+    elmo:fragment [
+      elmo:appliesTo dcterms:source;
+      rdfs:label "Bron"@nl;
+      elmo:appearance elmo:GlobalLink;
+      elmo:index 16;
     ];
     elmo:fragment [
       elmo:appliesTo skosthes:broaderPartitive;

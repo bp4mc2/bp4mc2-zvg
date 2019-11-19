@@ -14,6 +14,13 @@ GRAPH config:Theatre {
     elmo:informationProduct config:HomeData;
     elmo:appearance [a elmo:HtmlAppearance];
     elmo:contains config:Menu;
+    elmo:contains config:Taxonomie;
+  .
+
+  config:Taxonomie a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:TaxonomieData;
+    elmo:appearance [a elmo:TreeAppearance];
   .
 
   config:Menu a elmo:Representation;

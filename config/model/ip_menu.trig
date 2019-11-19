@@ -14,6 +14,12 @@ GRAPH config:Theatre {
         [ xhtml:link "http://taxonomie.zorgeloosvastgoed.nl";
           rdfs:label "ZorgeloosVastgoed";
           elmo1:data [elmo1:index "1"; rdfs:label "Lijst"; xhtml:link "/lijst"];
+          elmo1:data [elmo1:index "2"; rdfs:label "Handelingen"; xhtml:link "/handelingen"];
+          elmo1:data [
+            elmo1:index "3";
+            rdfs:label "Controle";
+            elmo1:data [elmo1:index "1"; rdfs:label "Broken links"; xhtml:link "/broken"];
+          ];
         ]
       }
       WHERE {}

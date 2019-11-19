@@ -23,19 +23,27 @@ GRAPH config:Theatre {
         skoslex:Agent rdfs:label "Agent"@nl.
       }
       WHERE {
-        GRAPH ?g {
-          {
-            ?subject a ?stype.
-            OPTIONAL {?subject rdfs:label ?subjectlabel}
+        {
+          GRAPH ?g {
+            {
+              ?subject a ?stype.
+              OPTIONAL {?subject rdfs:label ?subjectlabel}
+            }
           }
-          UNION
-          {
+        }
+        UNION
+        {
+          GRAPH ?g {
             ?subject ?p ?o.
+          }
+          GRAPH ?go {
             ?o a ?otype.
             OPTIONAL {?o rdfs:label ?olabel}
           }
-          UNION
-          {
+        }
+        UNION
+        {
+          GRAPH ?gs {
             ?s ?ps ?subject.
             ?s a ?stype.
             OPTIONAL {?s rdfs:label ?slabel}
