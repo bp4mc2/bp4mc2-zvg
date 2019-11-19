@@ -14,6 +14,27 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
+#---
+#Begrippen uit ander ZV domeinen
+#---
+knb:Persoon a skos:Concept, skoslex:Actor;
+	skos:exactMatch zv:Persoon;
+.
+knb:Huis a skos:Concept, skoslex:Object;
+	skos:exactMatch zv:Huis;
+.
+knb:Overdrachtsbelasting a skos:Concept, skoslex:Object;
+	skos:exactMatch bel:Overdrachtsbelasting;
+.
+knb:Koper a skos:Concept, skoslex:Actor;
+	skos:exactMatch nvm:Koper;
+.
+knb:Koper a skos:Concept, skoslex:Actor;
+	skos:exactMatch nvm:Verkoper;
+.
+knb:Koopovereenkomst a skos:Concept, skoslex:Object;
+	skos:exactMatch nvm:Koopovereenkomst;
+.
 
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
 #De notaris bewaakt vervolgens de termijnen voor de waarborgsom en voor de passeerdatum.
@@ -62,11 +83,11 @@ knb:Levering a skos:Concept, skoslex:Act;
 	skos:altLabel "Eigendomsoverdracht";
 	skos:definition "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan.";
 	dcterms:source https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89;
-	skos:actor nvm:Koper;
-	skos:actor nvm:Verkoper;
-	skos:agent knb:Notaris;
-	skos:object knb:Leveringsakte;
-	skos:object nvm:Koopovereenkomst;
+	skoslex:actor knb:Koper;
+	skoslex:actor knb:Verkoper;
+	skoslex:agent knb:Notaris;
+	skoslex:object knb:Leveringsakte;
+	skoslex:object knb:Koopovereenkomst;
 .
 knb:Leveringsakte a skos:Concept, skoslex:Object;
 	rdfs:label "Leveringsakte"@nl;
@@ -103,7 +124,7 @@ knb:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skos:actor zv:Verkoper;
 	skos:agent knb:Notaris;
 	skos:object knb:Leveringsakte;
-	skos:object nvm:Koopovereenkomst;
+	skos:object knb:Koopovereenkomst;
 .
 #IdentificatieKNB of IdentificatieComparant?
 knb:IdentificatieComparant a skos:Concept, skoslex:Act;
