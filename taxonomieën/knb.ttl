@@ -19,6 +19,22 @@
 	rdfs:label "Domein Notaris";
 .
 
+#--
+#Wetgeving links
+#--
+<https://wetten.overheid.nl/BWBR0001827/2019-01-01>	rdfs:label	"Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)" .
+<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89>	rdfs:label	"Artikel 89, Burgerlijk Wetboek, Boek 3" .
+<https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelI_Artikel1>	rdfs:label	"Artikel 1, Wet op het Notarisambt" .
+<https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel37>	rdfs:label	"Artikel 37, Wet op het Notarisambt" .
+<https://wetten.overheid.nl/BWBR0010388/2019-01-01>	rdfs:label>	"Wet op het Notarisambt" .
+<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21>	rdfs:label	"Artikel 21, Burgerlijk Wetboek, Boek 3" .
+<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel227>	rdfs:label	"Artikel 227, Burgerlijk Wetboek, Boek 3" .
+<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229>	rdfs:label	"Artikel 229, Burgerlijk Wetboek, Boek 3" .
+<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260>	rdfs:label	"Artikel 260, Burgerlijk Wetboek, Boek 3" .
+<https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelV_Artikel49>	rdfs:label	"Artikel 49, Wet op het Notarisambt" .
+<https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelII_Artikel12>	rdfs:label	"Artikel 12, Wet op het Notarisambt" .
+<https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel39>	rdfs:label	"Artikel 39, Wet op het Notarisambt" .
+
 #---
 #Begrippen uit ander ZV domeinen
 #---
@@ -107,7 +123,7 @@ knb:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Recht van hypotheek"@nl;
 	skos:prefLabel "Recht van hypotheek";
 	skos:altLabel "Hypotheek";
-	skos:definitinion "Het recht van pand en het recht van hypotheek zijn beperkte rechten, strekkende om op de daaraan onderworpen goederen een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Is het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand.";
+	skos:definition "Het recht van pand en het recht van hypotheek zijn beperkte rechten, strekkende om op de daaraan onderworpen goederen een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Is het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand.";
 	rdfs:comment "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
 	dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel227>;
 	dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260>;
@@ -155,7 +171,7 @@ knb:RechercheNotaris a skos:Concept, skoslex:Act;
 	skos:prefLabel "Recherche";
 	skos:altLabel "Rechercheplicht";
 	skos:altLabel "Onderzoeksplicht";
-	skos:definiton "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
 	skosthes:broaderPartitive knb:Levering;
 	skosthes:broaderPartitive knb:VestigingHypotheek;
 	skoslex:object zv:Persoon;
