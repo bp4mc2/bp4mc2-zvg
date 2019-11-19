@@ -97,8 +97,8 @@ knb:Hypotheekakte a skos:Concept, skoslex:Object;
 .
 #nog toevoegen door Dennis
 knb:VestigingHypotheek a skos:Concept, skoslex:Act;
-	rdfs:label "vestiging hypotheek"@nl;
-	skos:prefLabel "vestiging hypotheek";
+	rdfs:label "Vestiging hypotheek"@nl;
+	skos:prefLabel "Vestiging hypotheek";
 	skos:actor zv:Koper;
 	skos:actor zv:Verkoper;
 	skos:agent knb:Notaris;
@@ -158,7 +158,7 @@ knb:AfschriftAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Afschrift (akte)"@nl;
 	skos:prefLabel "Afschrift (akte)";
 	skos:altLabel "Gewaarmerkte kopie";
-	skos:definition "een door de notaris ondertekende afgegeven weergave van de inhoud van een originele notariële akte (de minuut).";
+	skos:definition "Een door de notaris ondertekende afgegeven weergave van de inhoud van een originele notariële akte (de minuut).";
 	skos:scopeNote "Het afschrift is een kopie van de notariële akte. Alleen de notaris die de originele akte heeft getekend, mag een afschrift daarvan uitgeven. Een afschrift kun je herkennen doordat er ‘uitgegeven voor afschrift’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
 	skosthes:broaderPartitive knb:NotarieleAkte;
 	skos:semanticRelation knb:Minuut;
