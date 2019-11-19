@@ -13,6 +13,10 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
+<http://zorgeloosvastgoed.nl/data/nvm> a owl:Ontology;
+	rdfs:label "Domein Makelaar";
+.
+
 #begrippen uit andere ZV domeinen
 nvm:Notaris a skos:Concept;
 	skos:exactMatch knb:Notaris;

@@ -13,6 +13,10 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
+<http://zorgeloosvastgoed.nl/data/zv> a owl:Ontology;
+	rdfs:label "Domein Zorgeloos vastgoed (algemeen)";
+.
+
 #---
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
 #---
@@ -48,4 +52,3 @@ zv:Partij a skos:Concept, skoslex:Actor;
 	skosthes:narrowerGeneric zv:Koper;
 	skosthes:narrowerGeneric zv:Verkoper
 .
-

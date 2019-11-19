@@ -13,6 +13,10 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
+<http://zorgeloosvastgoed.nl/data/bel> a owl:Ontology;
+	rdfs:label "Domein Belastingdienst";
+.
+
 #Belastingdienst
 bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "overdrachtsbelasting";
