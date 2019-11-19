@@ -225,7 +225,7 @@ knb:Rang a skos:Concept, skoslex:Object;
 	rdfs:label "Rang"@nl;
 	skos:prefLabel "Rang";
 	skos:altLabel "Rangorde van inschrijvingen";
-	skos:definition "De rangorde van het onderhavige hypotheekrecht ten opzichte van andere hypotheekrechten."
+	skos:definition "De rangorde van het onderhavige hypotheekrecht ten opzichte van andere hypotheekrechten.";
 	skos:scopeNote "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand.";
 	skosthes:broaderPartitive knb:RechtVanHypotheek;
 	dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21>;
