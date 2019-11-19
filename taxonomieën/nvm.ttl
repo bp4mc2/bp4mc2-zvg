@@ -93,8 +93,8 @@ nvm:Verkoop a skos:Concept, skoslex:Act;
 	skoslex:actor nvm:Verkoper;
 .
 nvm:Aankoop a skos:Concept, skoslex:Act;
-	rdfs:label "aankoop"@nl;
-	skos:prefLabel "aankoop";
+	rdfs:label "Aankoop"@nl;
+	skos:prefLabel "Aankoop";
 	skosthes:broaderPartitive zv:Koop;
 	skos:semanticRelation nvm:Verkoop;
 	skoslex:agent nvm:Aankoopmakelaar;

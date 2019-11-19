@@ -23,33 +23,33 @@
 #---
 
 zv:Mens a skos:Concept, skoslex:Actor;
-	rdfs:label "mens"@nl;
-	skos:prefLabel "mens";
-	skos:altLabel "natuurlijk persoon";
+	rdfs:label "Mens"@nl;
+	skos:prefLabel "Mens";
+	skos:altLabel "Natuurlijk persoon";
 #Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen.
 .
 zv:Organisatie a skos:Concept, skoslex:Actor;
 	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
-	rdfs:label "rechtspersoon"@nl;
-	skos:prefLabel "organisatie";
+	rdfs:label "Rechtspersoon"@nl;
+	skos:prefLabel "Organisatie";
 	rdfs:altLabel "rechtspersoon"
 #Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
 .
 zv:Persoon a skos:Concept, skoslex:Actor;
 	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
-	rdfs:label "persoon"@nl;
-	skos:prefLabel "persoon";
+	rdfs:label "Persoon"@nl;
+	skos:prefLabel "Persoon";
 	skosthes:narrowerGeneric zv:Mens;
 	skosthes:narrowerGeneric zv:Organisatie
 .
 zv:Huis a skos:Concept, skoslex:Object;
-	rdfs:label "huis"@nl;
-	skos:prefLabel "huis";
+	rdfs:label "Huis"@nl;
+	skos:prefLabel "Huis";
 	skosthes:broaderGeneric kad:ZakelijkRecht
 .
 zv:Partij a skos:Concept, skoslex:Actor;
-	rdfs:label "partij"@nl;
-	skos:prefLabel "partij";
+	rdfs:label "Partij"@nl;
+	skos:prefLabel "Partij";
 	skosthes:narrowerGeneric zv:Koper;
 	skosthes:narrowerGeneric zv:Verkoper
 .
