@@ -272,7 +272,7 @@ knb:ArchiverenAkte a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive knb:Levering;
 .
 #RegistrerenAkte of RegistrenKNB?
-knb:RegistrerenAkte a skos:Concept, skoslext:Act;
+knb:RegistrerenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren (akte)"@nl;
 	skos:prefLabel "Registreren (akte)";
 	skos:definition "Vastleggen in een register";

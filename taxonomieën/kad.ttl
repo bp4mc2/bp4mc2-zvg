@@ -30,7 +30,7 @@ kad:OpenbareRegisters a skos:Concept, skoslex:object;
 kad:Notaris a skos:Concept, skoslex:Actor;
 	skos:exactMatch knb:Notaris;
 .
-kad:NotarieleAkte a skos:Concept, skolex:Object;
+kad:NotarieleAkte a skos:Concept, skoslex:Object;
 	skos:exactMatch knb:NotarieleAkte;
 .
 
