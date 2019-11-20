@@ -78,8 +78,8 @@ knb:Notaris a skos:Concept, skoslex:Agent;
 	skos:altLabel "Bevoegd protocolhouder";
 	rdfs:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
 	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
-	skos:editorialNote "Wet op het notarisambt, artikel 2 WNA, artikel 6 WNA, artikel 16 WNA";
-	dcterms:source <https://wetten.overheid.nl/BWBR0010388/2019-01-01>;
+	skos:editorialNote "Het notariaat kent begrippen als waarnemeing, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 	skos:semanticRelation knb:PlaatsVanVestiging;
 .
