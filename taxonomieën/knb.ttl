@@ -87,9 +87,9 @@ knb:Akte a skos:Concept, skoslex:Object;
 	rdfs:label "Akte"@nl;
 	rdfs:label "Deed"@en;
 	skos:prefLabel "Akte";
-	skos:definition "Akten zijn ondertekende geschriften, bestemd om tot bewijs te dienen.";
+	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen. Een document waarin de enige echte werkelijkheid is beschreven en dat kan dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen te dwingen.";
 	rdfs:comment "Ondertekend geschrift, bedoeld om als bewijs te dienen.";
-	dcterms:source <https://wetten.overheid.nl/BWBR0001827/2019-01-01>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1>;
 .
 knb:AuthentiekeAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Authentieke akte"@nl;
