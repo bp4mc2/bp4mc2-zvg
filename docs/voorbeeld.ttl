@@ -2,38 +2,83 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
-@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix not: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
-
-zv:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:Object; # NaamConcept is de naam van het concept in UpperCamelCase; dit is altijd een skos:Concept en in de ZV taxonomie altijd een skoslex:Act, xxx:Actor, skoslex:Agent of een skoslex:Object.
-  rdfs:label "Term"@nl; # De bedoeling is om altijd een rdfs:label in het Nederlands (@nl) te definiëren. Dit zal in de praktijk hetzelfde zijn als het skos:prefLabel. Eventueel kunnen ook labels in andere talen worden gedefinieerd.rdfs:label "Term"@en;
-  skos:prefLabel "Voorkeursterm"; 
-  skos:altLabel "Synoniem"; # Indien van toepassing kunnen een of meer synoniemen worden gedefinieerd met skos:altLabel.
-  skos:definition "De formele, juridische definitie"; # De bedoeling is om altijd een formele definitie, vaak letterlijk overgenomen uit de wet, op te nemen. 
-  skos:comment "De uitleg in klare taal"@nl; # De bedoeling is om altijd een uitleg in 'klare taal', dat wil zeggen op B2 niveau te geven. Dit kan eventueel ook in andere talen.
-  skos:scopeNote "Nadere toelichting"; # Eventueel kan een begrip nader worden toegelicht.
-  skos:editorialNote "Redactionele aantekening"; # Eventuele redactionele aantekeningen kunnen worden opgenomen als editorialNote.
-  skos:example "Voorbeeld";  # Eventueel kan een voorbeeld worden opgenomen.
-  dcterms:source: https://wetten.overheid.nl/conformLinkTool; # De bedoeling is om altijd een verwijzing naar de bron op te nemen.
-  skos:inScheme "Domein"; #De bedoeling is om een concept altijd te definiëren binnen de context van een bepaald domein.
-  skos:semanticRelation xxx:Concept; # diverse semantische relaties binnen het eigen domein kunnen worden gedefinieerd
-  skosthes:broaderGeneric xxx:Concept; 
-  skosthes:narrowerGeneric xxx:Concept;
-  skosthes:broaderPartitive xxx:Concept;
-  skosthes:narrowerPartitive xxx:Concept;
-  skos:exactMatch yyy:Concept; #diverse semantische relaties met een begrip in een ander domein kunnen worden gedefinieerd.
-  skos:closeMatch yyy:Concept;
-  skos:broadMatch yyy:Concept;
-  skos:narrowMatch yyy:Concept;
-  skos:broadMatch yyy:Concept;
+<http://zorgeloosvastgoed.nl/data/hdn> a owl:Ontology;
+	rdfs:label "Domein Hypotheken";
 .
+
+#---
+#Begrippen die essentieel zijn voor de activiteiten het hypotheekdomein, maar die in andere domeinen worden gedefinieerd.
+#---
+
+hdn:Persoon a skos:Concept, skoslex:Actor;
+	skos:exactMatch zv:Persoon;
+.
+hdn:Hypotheekgever a skos:Concept, skoslex:Actor;
+	skos:exactMatch not:Hypotheekgever;
+.
+hdn:Hypotheeknemer a skos:Concept, skoslex:Actor;
+	skos:exactMatch not:Hypotheeknemer;
+.
+hdn:Koopovereenkomst a skos:Concept, skoslex:Object;
+	skos:exactMatch nvm:Koopovereenkomst;
+.
+
+#---
+#HDN is de spin in het web van hypotheken. Daarom worden deze begrippen in het hdn domein gedefinieerd.
+#---
+
+hdn:Hypotheekadviseur a skos:Concept, skoslex:Agent;
+	rdfs:label "Hypotheekadviseur"@nl;
+	skos:prefLabel "Hypotheekadviseur";
+	skos:altLabel "Financieel adviseur";
+	skos:altLabel "Tussenpersoon"
+.
+hdn:Hypotheekadvies a skos:Concept, skoslex:Object;
+	rdfs:label "Hypotheekadvies"@nl;
+	skos:prefLabel "Hypotheekadvies"
+.
+hdn:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
+	rdfs:label "Opstellen hypotheekadvies"@nl;
+	skos:prefLabel "Opstellen hypotheekadvies";
+	skoslex:agent hdn:Hypotheekadviseur;
+	skoslex:actor hdn:Hypotheekgever;
+	skoslex:object hdn:Hypotheekadvies;
+	skoslex:object hdn:Koopovereenkomst
+.
+hdn:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
+	rdfs:Label "Identificatie hypotheekadvies"@nl;
+	skos:prefLabel "Identificatie hypotheekadvies";
+	skosthes:broaderPartitive hdn:OpstellenHypotheekadvies;
+	skoslex:object hdn:Persoon;
+.
+hdn:BindendeOfferte a skos:Concept, skoslex:Object;
+	rdfs:label "Bindende offerte"@nl;
+	skos:prefLabel "Bindende offerte";
+	skos:semanticRelation hdn:Hypotheekadvies;
+.
+hdn:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
+	rdfs:label "Opstellen bindende offerte"@nl;
+	skos:prefLabel "Opstellen bindende offerte";
+	skoslex:actor hdn:Hypotheeknemer;
+	skoslex:actor hdn:Hypotheekgever;
+	skoslex:object hdn:BindendeOfferte;
+	skoslex:object hdn:Hypotheekadvies;
+	skoslex:object hdn:Koopovereenkomst;
+.
+# Lening	hdn
+# Schuldenaar	hdn
+# Schuldeiser	hdn
+# Hoofdelijke aansprakelijkheid	hdn
+# Inschrijvingsbedrag	hdn
