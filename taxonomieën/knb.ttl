@@ -127,8 +127,8 @@ knb:Leveringsakte a skos:Concept, skoslex:Object;
 	skos:prefLabel "Leveringsakte";
 	skos:altLabel "Transportakte";
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
-	rdfs:comment "Een notariële akte waarin de overdracht van een (of meerdere) goederen wordt overeengekomen. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
-	dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89>;
+	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skosthes:broaderTransitive knb:NotarieleAkte;
 .
 knb:RechtVanHypotheek a skos:Concept, skoslex:Object;
