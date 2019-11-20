@@ -18,22 +18,31 @@
 <http://zorgeloosvastgoed.nl/data/knb> a owl:Ontology;
 	rdfs:label "Domein Notaris";
 .
-
 #--
 #Wetgeving links
+#Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
+#Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
-<https://wetten.overheid.nl/BWBR0001827/2019-01-01>	rdfs:label	"Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)" .
-<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel4_Afdeling2_Artikel89>	rdfs:label	"Artikel 89, Burgerlijk Wetboek, Boek 3" .
-<https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelI_Artikel1>	rdfs:label	"Artikel 1, Wet op het Notarisambt" .
-<https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel37>	rdfs:label	"Artikel 37, Wet op het Notarisambt" .
-<https://wetten.overheid.nl/BWBR0010388/2019-01-01>	rdfs:label	"Wet op het Notarisambt" .
-<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21>	rdfs:label	"Artikel 21, Burgerlijk Wetboek, Boek 3" .
-<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel227>	rdfs:label	"Artikel 227, Burgerlijk Wetboek, Boek 3" .
-<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229>	rdfs:label	"Artikel 229, Burgerlijk Wetboek, Boek 3" .
-<https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260>	rdfs:label	"Artikel 260, Burgerlijk Wetboek, Boek 3" .
-<https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelV_Artikel49>	rdfs:label	"Artikel 49, Wet op het Notarisambt" .
-<https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelII_Artikel12>	rdfs:label	"Artikel 12, Wet op het Notarisambt" .
-<https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel39>	rdfs:label	"Artikel 39, Wet op het Notarisambt" .
+
+#Wetboek van Burgerlijke Rechtsvorming (BWBR)
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1> rdfs:label "artikel 156, eerste lid, van het Wetboek van Burgerlijke Rechtsvordering".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2> rdfs:label "artikel 156, tweede lid, van het Wetboek van Burgerlijke Rechtsvordering".
+
+#Wet op het notarisambt (WNA)
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II> rdfs:label "artikel 2 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12> rdfs:label "artikel 12 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37> rdfs:label "artikel 37 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39> rdfs:label "artikel 39 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49> rdfs:label "artikel 49 van de Wet op het notarisambt".
+
+#Burgerlijk Wetboek (BW)
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84> rdfs:label "artikel 84 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89> rdfs:label "artikel 89 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4> rdfs:label "artikel 89, vierde lid, van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "artikel 227 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
 
 #---
 #Begrippen uit ander ZV domeinen
