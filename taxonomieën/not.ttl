@@ -195,9 +195,9 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
 not:NotarieleAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte";
-	skos:definition "Een notariële akte is een authentieke akte die is gepasseerd door een notaris. De wet stelt voor sommige rechtshandelingen het gebruik van een notariële akte verplicht.";
-	rdfs:comment "Notariële akten zijn authentieke akten die verleden zijn door een notaris. Notariële akten zijn geschriften waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
-	dcterms:source <https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel37>;
+	skos:definition "Notariële akten zijn authentieke akten die verleden zijn door een notaris. Notariële akten zijn geschriften waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
+	rdfs:comment "Een notariële akte is een authentieke akte die is ondertekend door een notaris.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
 	skosthes:broaderGeneric not:AuthentiekeAkte;
 .
 not:TitelVanAankomst a skos:Concept, skoslex:Object;
