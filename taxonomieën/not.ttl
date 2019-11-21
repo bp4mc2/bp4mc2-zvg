@@ -174,10 +174,10 @@ not:IdentificatieComparant a skos:Concept, skoslex:Act;
 not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	rdfs:Label "Plaats van vestiging"@nl;
 	skos:prefLabel "Plaats van vestiging";
-	skos:definition "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren.";
-	rdfs:comment "Een plaats in Nederland waar de notaris is gevestigd en zijn kantoor houdt.";
-	skos:editorialNote "In het Koninklijk Besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
-	dcterms:source <https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelII_Artikel12>;
+	skos:definition "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren. In het Koninklijk besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
+	rdfs:comment "Een gemeente in Nederland waar het kantoor van de notaris staat.";
+	skos:editorialNote "Bij de notaris staat aangegeven dat er een semantische relatie is met de plaats van vestiging. Dat zou misschien anders moeten.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
 .
 #RechercheNotaris of RechercheKNB?
 not:RechercheNotaris a skos:Concept, skoslex:Act;
