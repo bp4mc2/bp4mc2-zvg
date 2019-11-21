@@ -37,4 +37,3 @@ zv:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:O
   skos:narrowMatch yyy:Concept;
   skos:broadMatch yyy:Concept;
 .
-© 2019 GitHub, Inc.
