@@ -24,12 +24,13 @@
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
 
-#Wetboek van Burgerlijke Rechtsvorming (BWBR)
+#Wetboek van Burgerlijke Rechtsvorming (Rv)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1> rdfs:label "artikel 156, eerste lid, van het Wetboek van Burgerlijke Rechtsvordering".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2> rdfs:label "artikel 156, tweede lid, van het Wetboek van Burgerlijke Rechtsvordering".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=3> rdfs:label "artikel 156, derde lid, van het Wetboek van Burgerlijke Rechtsvordering".
 
 #Wet op het notarisambt (WNA)
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1> rdfs:label "artikel 1, eerste lid, van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II> rdfs:label "artikel 2 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12> rdfs:label "artikel 12 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37> rdfs:label "artikel 37 van de Wet op het notarisambt".
@@ -44,7 +45,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "artikel 227 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
-
+http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1
 #---
 #Begrippen uit ander ZV domeinen
 #---
@@ -104,7 +105,7 @@ not:OnderhandseAkte a skos:Concept, skoslex:Object;
 	skos:prefLabel "Onderhandse akte";
 	skos:definition "Onderhandse akten zijn alle akten die niet authentieke akten zijn.";
 	rdfs:comment "Elk ondertekende akte waarbij geen (bevoegde) ambtenaar betrokken is.";
-	skos:editorialNote "Onderhandse akte maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Gekozen om het toch te laten staan.";
+	skos:editorialNote "Onderhandse akte maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=3>;
 	skosthes:broaderGeneric not:Akte;
 .
@@ -225,11 +226,13 @@ not:Minuut a skos:Concept, skoslex:Object;
 	rdfs:label "Minuut"@nl;
 	skos:prefLabel "Minuut";
 	skos:altLabel "Minuutakte";
-	skos:definition	"Het originele exemplaar van een notariële akte";
+	skos:definition "Het originele exemplaar van een notariële akte";
+	rdfs:comment "De originele versie van de notariële akte, waarop de handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
 	skos:scopeNote "De originele versie van de notariële akte, waarop de 'blauwe' handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
-	skosthes:broaderPartitive not:NotarieleAkte;
+	skos:editorialNote "De minuut maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";        
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1>;
+        skosthes:broaderPartitive not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
-	dcterms:source <https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelI_Artikel1>;
 .
 not:Hypotheekgever a skos:Concept, skoslex:Actor;
 	rdfs:label "Hypotheekgever"@nl;
