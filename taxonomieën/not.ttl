@@ -66,6 +66,10 @@ not:Koper a skos:Concept, skoslex:Actor;
 .
 not:Koopovereenkomst a skos:Concept, skoslex:Object;
 	skos:exactMatch nvm:Koopovereenkomst;
+not:Hypotheekgever a skos:Concept, skoslex:Actor;
+	skos:exactMatch hdn:Hypotheekgever
+not:Hypotheeknemer a skos:Concept, skoslex:Actor;
+	skos:exactMatch hdn:Hypotheeknemer
 .
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -233,23 +237,6 @@ not:Minuut a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1>;
         skosthes:broaderPartitive not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
-.
-not:Hypotheekgever a skos:Concept, skoslex:Actor;
-	rdfs:label "Hypotheekgever"@nl;
-	skos:prefLabel "Hypotheekgever";
-	skos:definition	"De persoon die het recht van hypotheek verleent aan de hypotheeknemer";
-	skos:scopeNote "De schuldeiser krijgt het het recht van hypotheek van de hypotheekgever, die daarmee het recht geeft om de verkoopopbrengst van het onderpand rechtstreeks te ontvangen ter voldoening van de schuld.";
-	dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling4_Artikel260>;
-	skos:semanticRelation not:Hypotheeknemer;
-.
-not:Hypotheeknemer a skos:Concept, skoslex:Actor;
-	rdfs:label "Hypotheeknemer"@nl;
-	skos:prefLabel "Hypotheeknemer";
-	skos:altLabel "Geldverstrekker";
-	skos:definition	"De eigenaar van het onderpand geeft het recht van hypotheek aan de hypotheeknemer/schuldeiser, die daarmee het recht krijgt om de verkoopopbrengst van het onderpand rechtstreeks te ontvangen ter voldoening van de schuld.";
-	rdfs:comment "De persoon die het recht van hypotheek verkrijgt.";
-	skos:semanticRelation not:Hypotheekgever;
-	skos:closeMatch nvm:Koper;
 .
 not:Onderpand a skos:Concept, skoslex:Object;
 	rdfs:label "Onderpand"@nl;
