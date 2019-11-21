@@ -78,7 +78,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:altLabel "Bevoegd protocolhouder";
 	rdfs:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
 	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
-	skos:editorialNote "Het notariaat kent begrippen als waarnemeing, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
+	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 	skos:semanticRelation not:PlaatsVanVestiging;
@@ -210,16 +210,16 @@ not:TitelVanAankomst a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
 	skosthes:broaderPartitive not:LeveringsAkte;
 .
-#AfschriftAkte of AfschriftKNB?
+#AfschriftAkte of AfschriftNot?
 not:AfschriftAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Afschrift (akte)"@nl;
 	skos:prefLabel "Afschrift (akte)";
 	skos:altLabel "Gewaarmerkte kopie";
 	skos:definition "Een door de notaris ondertekende afgegeven weergave van de inhoud van een originele notariële akte (de minuut).";
-	skos:scopeNote "Het afschrift is een kopie van de notariële akte. Alleen de notaris die de originele akte heeft getekend, mag een afschrift daarvan uitgeven. Een afschrift kun je herkennen doordat er ‘uitgegeven voor afschrift’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
-	skosthes:broaderPartitive not:NotarieleAkte;
+	rdfs:comment "Het afschrift is een door de notaris gemaakte en ondertekende kopie van een notariële akte. Een afschrift kun je herkennen doordat er ‘’uitgegeven voor afschrift’’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de orginele akte."
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49>;
+        skosthes:broaderPartitive not:NotarieleAkte;
 	skos:semanticRelation not:Minuut;
-	dcterms:source <https://wetten.overheid.nl/BWBR0010388/2019-01-01#TiteldeelV_Artikel49>;
 .
 not:Minuut a skos:Concept, skoslex:Object;
 	rdfs:label "Minuut"@nl;
