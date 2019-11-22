@@ -242,9 +242,9 @@ not:Onderpand a skos:Concept, skoslex:Object;
 	rdfs:label "Onderpand"@nl;
 	skos:prefLabel "Onderpand";
 	skos:altlabel "Pandrecht";
-	skos:definition	"Het registergoed waar het recht van hypotheek wordt gevestigd.";
-	skos:scopeNote "Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
-	dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229>;
+	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
+	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";	
+        dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229>;
 	skos:semanticRelation not:RechtVanHypotheek;
 .
 not:Rang a skos:Concept, skoslex:Object;
@@ -253,8 +253,8 @@ not:Rang a skos:Concept, skoslex:Object;
 	skos:altLabel "Rangorde van inschrijvingen";
 	skos:definition "De rangorde van het onderhavige hypotheekrecht ten opzichte van andere hypotheekrechten.";
 	skos:scopeNote "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
-	dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21>;
 .
 not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
