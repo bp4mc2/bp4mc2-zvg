@@ -313,7 +313,3 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie";
 .
-not:Borg a skos:Concept, skoslex:Object;
-	rdfs:label "Borg"@nl;
-	skos:prefLabel "Borg";
-.
