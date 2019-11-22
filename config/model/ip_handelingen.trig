@@ -18,18 +18,30 @@ GRAPH config:Theatre {
           ?begrip rdfs:label ?begrip_label
           FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
           OPTIONAL {?g rdfs:label ?g_label}
-          OPTIONAL {
+        }
+        OPTIONAL {
+          GRAPH ?g {
             ?begrip skoslex:actor ?actor.
+          }
+          GRAPH ?gactor {
             ?actor rdfs:label ?actor_label
             FILTER (lang(?actor_label)="nl" || lang(?actor_label)="")
           }
-          OPTIONAL {
+        }
+        OPTIONAL {
+          GRAPH ?g {
             ?begrip skoslex:agent ?agent.
+          }
+          GRAPH ?gagent {
             ?agent rdfs:label ?agent_label
             FILTER (lang(?agent_label)="nl" || lang(?agent_label)="")
           }
-          OPTIONAL {
+        }
+        OPTIONAL {
+          GRAPH ?g {
             ?begrip skoslex:object ?object.
+          }
+          GRAPH ?gobject {
             ?object rdfs:label ?object_label
             FILTER (lang(?object_label)="nl" || lang(?object_label)="")
           }

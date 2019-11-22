@@ -26,8 +26,12 @@ GRAPH config:Theatre {
       rdfs:label "Begrip"@nl;
     ];
     elmo:fragment [
-      elmo:appliesTo "type";
-      rdfs:label "Type"@nl;
+      elmo:appliesTo "link";
+      rdfs:label "Link"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "broken";
+      rdfs:label "Broken link references"@nl;
     ]
   .
 

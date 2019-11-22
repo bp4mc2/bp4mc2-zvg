@@ -19,6 +19,7 @@ GRAPH config:Theatre {
             elmo1:index "3";
             rdfs:label "Controle";
             elmo1:data [elmo1:index "1"; rdfs:label "Broken links"; xhtml:link "/broken"];
+            elmo1:data [elmo1:index "2"; rdfs:label "Missing labels"; xhtml:link "/labels"];
           ];
         ]
       }

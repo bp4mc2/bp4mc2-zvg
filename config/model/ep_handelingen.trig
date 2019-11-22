@@ -24,6 +24,7 @@ GRAPH config:Theatre {
     elmo:fragment [
       elmo:appliesTo "begrip";
       rdfs:label "Handeling"@nl;
+      elmo:name "SUBJECT";
     ];
     elmo:fragment [
       elmo:appliesTo "actor";
