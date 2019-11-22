@@ -313,8 +313,11 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:broaderPartitive not:Levering;
 .
-#nog aanvullen door Dennis
 not:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie";
+	skos:definition "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
+	rdfs:comment "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+        skosthes:broaderPartitive not:Levering;
 .
