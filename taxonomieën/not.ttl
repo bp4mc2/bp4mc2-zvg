@@ -66,8 +66,10 @@ not:Koper a skos:Concept, skoslex:Actor;
 .
 not:Koopovereenkomst a skos:Concept, skoslex:Object;
 	skos:exactMatch nvm:Koopovereenkomst;
+.
 not:Hypotheekgever a skos:Concept, skoslex:Actor;
 	skos:exactMatch hdn:Hypotheekgever
+.
 not:Hypotheeknemer a skos:Concept, skoslex:Actor;
 	skos:exactMatch hdn:Hypotheeknemer
 .
@@ -320,4 +322,20 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:comment "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
+.
+not:Vervreemder a skos:Concept, skoslex:Actor; 
+	rdfs:label "Vervreemder"@nl;
+	skos:prefLabel "Vervreemder";
+	skos:definition "e";
+        rdfs:comment "e";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	skos:semanticRelation not:Verkoper;
+.
+not:Verkrijger a skos:Concept, skoslex:Actor; 
+	rdfs:label "Verkrijger"@nl;
+	skos:prefLabel "Verkrijger";
+	skos:definition "e";
+        rdfs:comment "e";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	skos:semanticRelation not:Koper;
 .
