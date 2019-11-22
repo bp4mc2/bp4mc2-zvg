@@ -24,15 +24,19 @@
 
 hdn:Persoon a skos:Concept, skoslex:Actor;
 	skos:exactMatch zv:Persoon;
+	rdfs:label "Persoon"@nl;
 .
 hdn:Hypotheekgever a skos:Concept, skoslex:Actor;
 	skos:exactMatch knb:Hypotheekgever;
+	rdfs:label "Hypotheekgever"@nl;
 .
 hdn:Hypotheeknemer a skos:Concept, skoslex:Actor;
 	skos:exactMatch knb:Hypotheeknemer;
+	rdfs:label "Hypotheeknemer"@nl;
 .
 hdn:Koopovereenkomst a skos:Concept, skoslex:Object;
 	skos:exactMatch nvm:Koopovereenkomst;
+	rdfs:label "Koopovereenkomst"@nl;
 .
 
 #---
@@ -58,7 +62,7 @@ hdn:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:object hdn:Koopovereenkomst
 .
 hdn:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
-	rdfs:Label "Identificatie hypotheekadvies"@nl;
+	rdfs:label "Identificatie hypotheekadvies"@nl;
 	skos:prefLabel "Identificatie hypotheekadvies";
 	skosthes:broaderPartitive hdn:OpstellenHypotheekadvies;
 	skoslex:object hdn:Persoon;

@@ -21,6 +21,7 @@
 #begrippen uit andere ZV domeinen
 nvm:Notaris a skos:Concept;
 	skos:exactMatch knb:Notaris;
+	rdfs:label "Notaris"@nl;
 .
 
 nvm:Verkoper a skos:Concept, skoslex:Actor;
@@ -109,7 +110,7 @@ nvm:RechercheKoop a skos:Concept, skoslex:Act;
 	skoslex:object bel:Overdrachtsbelasting
 .
 nvm:IdentificatieKoop a skos:Concept, skoslex:Act;
-	rdfs:Label "Identificatie koop"@nl;
+	rdfs:label "Identificatie koop"@nl;
 	skos:prefLabel "Identificatie koop";
 	skosthes:broaderPartitive nvm:Koop;
 	skoslex:object zv:Persoon;
@@ -133,7 +134,7 @@ nvm:RechercheTaxatie a skos:Concept, skoslex:Act;
 	skoslex:object zv:Huis
 .
 nvm:IdentificatieTaxatie a skos:Concept, skoslex:Act;
-	rdfs:Label "Identificatie taxatie"@nl;
+	rdfs:label "Identificatie taxatie"@nl;
 	skos:prefLabel "Identificatie taxatie";
 	skosthes:broaderPartitive nvm:Taxatie;
 	skoslex:object zv:Persoon;

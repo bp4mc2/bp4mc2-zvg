@@ -54,24 +54,31 @@ not:Persoon a skos:Concept, skoslex:Actor;
 .
 not:Huis a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
+	rdfs:label "Huis"@nl;
 .
 not:Overdrachtsbelasting a skos:Concept, skoslex:Object;
 	skos:exactMatch bel:Overdrachtsbelasting;
+	rdfs:label "Overdrachtsbelasting"@nl;
 .
 not:Koper a skos:Concept, skoslex:Actor;
 	skos:exactMatch nvm:Koper;
+	rdfs:label "Koper"@nl;
 .
 not:Koper a skos:Concept, skoslex:Actor;
 	skos:exactMatch nvm:Verkoper;
+	rdfs:label "Verkoper"@nl;
 .
 not:Koopovereenkomst a skos:Concept, skoslex:Object;
 	skos:exactMatch nvm:Koopovereenkomst;
+	rdfs:label "Koopovereenkomst"@nl;
 .
 not:Hypotheekgever a skos:Concept, skoslex:Actor;
-	skos:exactMatch hdn:Hypotheekgever
+	skos:exactMatch hdn:Hypotheekgever;
+	rdfs:label "Hypotheekgever"@nl;
 .
 not:Hypotheeknemer a skos:Concept, skoslex:Actor;
-	skos:exactMatch hdn:Hypotheeknemer
+	skos:exactMatch hdn:Hypotheeknemer;
+	rdfs:label "Hypotheeknemer"@nl;
 .
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.

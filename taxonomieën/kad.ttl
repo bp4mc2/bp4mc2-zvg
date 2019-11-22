@@ -24,19 +24,23 @@
 #---
 kad:Bewaarder a skos:Concept, skoslex:Agent;
 	skos:exactMatch brk:Bewaarder;
+	rdfs:label "Bewaarder"@nl;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:object;
 # Deze regel klopt niet: wat is de prefix voor Openbare_registers?
 #	skos:exactMatch Openbare_registers;
+	rdfs:label "Openbare registers"@nl;
 .
 #---
 #Begrippen uit andere ZV domeinen
 #---
 kad:Notaris a skos:Concept, skoslex:Actor;
 	skos:exactMatch knb:Notaris;
+	rdfs:label "Notaris"@nl;
 .
 kad:NotarieleAkte a skos:Concept, skoslex:Object;
 	skos:exactMatch knb:NotarieleAkte;
+	rdfs:label "Notariële akte"@nl;
 .
 
 kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
