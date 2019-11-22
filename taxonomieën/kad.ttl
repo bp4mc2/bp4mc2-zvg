@@ -9,7 +9,7 @@
 @prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix brk: <https://tax.kadaster.nl/doc/begrip/>.
+@prefix brk: <https://tax.kadaster.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
 @prefix org: <http://www.w3.org/ns/org#>.

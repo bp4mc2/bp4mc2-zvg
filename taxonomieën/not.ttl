@@ -95,7 +95,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
 	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
-	skosthes:broaderGeneric zv:Rechtspersoon;
+	skosthes:broaderGeneric zv:Organisatie;
 	skos:semanticRelation not:PlaatsVanVestiging;
 .
 not:Akte a skos:Concept, skoslex:Object;
@@ -275,7 +275,7 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
 	skosthes:broaderPartitive not:RechtVanHypotheek;
-	skosthes:broaderPartitive not:HypotheekAkte;
+	skosthes:broaderPartitive not:Hypotheekakte;
 .
 not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	rdfs:label "Inschrijvingsbedrag"@nl;
@@ -293,7 +293,7 @@ not:Opslagbedrag a skos:Concept, skoslex:Object;
 	rdfs:comment "Het bedrag dat een hypotheeknemer - naast het inschrijvingsbedrag - op basis van de hypotheekakte maximaal mag opeisen als gevolg van niet betaalde rentes, boetes en kosten.";
         skosthes:broaderPartitive not:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
-	skosthes:broaderPartitive not:HypotheekAkte;
+	skosthes:broaderPartitive not:Hypotheekakte;
 .
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
