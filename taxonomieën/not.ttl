@@ -326,16 +326,16 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 not:Vervreemder a skos:Concept, skoslex:Actor; 
 	rdfs:label "Vervreemder"@nl;
 	skos:prefLabel "Vervreemder";
-	skos:definition "e";
-        rdfs:comment "e";
+	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
+        rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skos:semanticRelation not:Verkoper;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; 
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger";
-	skos:definition "e";
-        rdfs:comment "e";
+	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
+        rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skos:semanticRelation not:Koper;
 .
