@@ -15,7 +15,7 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
-<http://zorgeloosvastgoed.nl/data/knb> a owl:Ontology;
+<http://zorgeloosvastgoed.nl/data/not> a owl:Ontology;
 	rdfs:label "Domein Notariaat";
 .
 #--
@@ -173,7 +173,7 @@ not:IdentificatieComparant a skos:Concept, skoslex:Act;
 	rdfs:Label "Identificatie comparant"@nl;
 	skos:prefLabel "Identificatie comparant";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
-	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";	
+	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
 	skosthes:broaderPartitive not:Levering;
 	skosthes:broaderPartitive not:VestigingHypotheek;
@@ -237,7 +237,7 @@ not:Minuut a skos:Concept, skoslex:Object;
 	skos:definition "Het originele exemplaar van een notariële akte";
 	rdfs:comment "De originele versie van de notariële akte, waarop de handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
 	skos:scopeNote "De originele versie van de notariële akte, waarop de 'blauwe' handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
-	skos:editorialNote "De minuut maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";        
+	skos:editorialNote "De minuut maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1>;
         skosthes:broaderPartitive not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
@@ -247,7 +247,7 @@ not:Onderpand a skos:Concept, skoslex:Object;
 	skos:prefLabel "Onderpand";
 	skos:altlabel "Pandrecht";
 	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
-	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";	
+	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";
         dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel9_Afdeling1_Artikel229>;
 	skos:semanticRelation not:RechtVanHypotheek;
 .
@@ -256,7 +256,7 @@ not:Rang a skos:Concept, skoslex:Object;
 	skos:prefLabel "Rang";
 	skos:altLabel "Rangorde van inschrijvingen";
 	skos:definition "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand. ";
-	rdfs:comment "De plek die een hypotheeknemer heeft ten opzichte van andere hypotheeknemers als de hypotheekgever zijn financiële verplichtingen niet nakomt.";		
+	rdfs:comment "De plek die een hypotheeknemer heeft ten opzichte van andere hypotheeknemers als de hypotheekgever zijn financiële verplichtingen niet nakomt.";
         dcterms:source <https://wetten.overheid.nl/BWBR0005291/2019-01-01/#Boek3_Titeldeel1_Afdeling2_Artikel21>;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 .
@@ -323,7 +323,7 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
 .
-not:Vervreemder a skos:Concept, skoslex:Actor; 
+not:Vervreemder a skos:Concept, skoslex:Actor;
 	rdfs:label "Vervreemder"@nl;
 	skos:prefLabel "Vervreemder";
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
@@ -331,7 +331,7 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skos:semanticRelation not:Verkoper;
 .
-not:Verkrijger a skos:Concept, skoslex:Actor; 
+not:Verkrijger a skos:Concept, skoslex:Actor;
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
