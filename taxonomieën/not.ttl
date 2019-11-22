@@ -166,12 +166,13 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skos:object not:Leveringsakte;
 	skos:object not:Koopovereenkomst;
 .
-#IdentificatieKNB of IdentificatieComparant?
+#IdentificatieNOT of IdentificatieComparant?
 not:IdentificatieComparant a skos:Concept, skoslex:Act;
 	rdfs:Label "Identificatie comparant"@nl;
 	skos:prefLabel "Identificatie comparant";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
-	dcterms:source <https://wetten.overheid.nl/BWBR0010388/2019-01-01/#TiteldeelV_Artikel39>;
+	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";	
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
 	skosthes:broaderPartitive not:Levering;
 	skosthes:broaderPartitive not:VestigingHypotheek;
 	skoslex:object zv:Persoon;
@@ -288,7 +289,8 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren";
 	skos:altLabel "Verlijden";
 	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
-	skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB. Geen passage gevonden in de wetboeken m.b.t. het geven van een definitie van passeren.";
+	rdfs:comment "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB. Geen passage gevonden in de wetboeken m.b.t. het geven van een definitie van passeren.";
         skosthes:broaderPartitive not:Levering;
 .
 #ArchiverenAkte of ArchiverenNOT?
@@ -296,6 +298,7 @@ not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)";
 	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats";
+        rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skos:editorialNote "Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
 	skosthes:broaderPartitive not:Levering;
@@ -305,6 +308,7 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren (akte)"@nl;
 	skos:prefLabel "Registreren (akte)";
 	skos:definition "Vastleggen in een register";
+	rdfs:comment "Vastleggen in een register";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:broaderPartitive not:Levering;
 .
