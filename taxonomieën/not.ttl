@@ -259,8 +259,9 @@ not:Rang a skos:Concept, skoslex:Object;
 not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
 	skos:prefLabel "Totaalbedrag van de inschrijving";
+	skos:definition "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
+	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
-	skos:scopeNote "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:HypotheekAkte;
 .
