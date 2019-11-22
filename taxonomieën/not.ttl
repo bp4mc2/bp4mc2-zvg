@@ -265,13 +265,12 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:HypotheekAkte;
 .
-#Is Inschrijvingsbedrag niet hetzelfde als Toptaalbedrag van de inschrijving?
 not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
-	rdfs:label "Totaalbedrag van de inschrijving"@nl;
-	skos:prefLabel "Totaalbedrag van de inschrijving";
-	rdfs:definiton "Het bedrag ter hoogte waarvan het recht van hypotheek wordt gevestigd op het onderpand.";
-	skos:scopeNote "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
-	skosthes:broaderPartitive not:TotaalbedragInschrijving;
+	rdfs:label "Inschrijvingsbedrag"@nl;
+	skos:prefLabel "Inschrijvingsbedrag";
+	rdfs:definiton "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
+	rdfs:comment "Het bedrag dat in de hypotheekakte staat. .";
+        skosthes:broaderPartitive not:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:HypotheekAkte;
 .
