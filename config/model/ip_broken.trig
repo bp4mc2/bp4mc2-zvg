@@ -17,6 +17,7 @@ GRAPH config:Theatre {
         GRAPH ?g {
           ?begrip a skos:Concept.
           ?begrip rdfs:label ?begrip_label.
+          FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
           ?begrip ?link ?broken
           FILTER (isIRI(?broken) && ?link!=rdf:type)
         }
