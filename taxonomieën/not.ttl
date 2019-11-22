@@ -185,14 +185,15 @@ not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	skos:editorialNote "Bij de notaris staat aangegeven dat er een semantische relatie is met de plaats van vestiging. Dat zou misschien anders moeten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
 .
-#RechercheNotaris of RechercheKNB?
+#RechercheNotaris of RechercheNOT?
 not:RechercheNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche"@nl;
 	skos:prefLabel "Recherche";
 	skos:altLabel "Rechercheplicht";
 	skos:altLabel "Onderzoeksplicht";
 	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
-	skosthes:broaderPartitive not:Levering;
+	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+        skosthes:broaderPartitive not:Levering;
 	skosthes:broaderPartitive not:VestigingHypotheek;
 	skoslex:object zv:Persoon;
 	skoslex:object zv:Huis;
