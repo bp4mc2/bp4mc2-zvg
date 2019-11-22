@@ -26,6 +26,6 @@ bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
 bel:InningOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Inning overdrachtsbelasting";
 	skos:prefLabel "Inning overdrachtsbelasting";
-	skosthes:broaderPartitive knb:Levering;
+	skosthes:broaderPartitive not:Levering;
 	skoslex:object bel:Overdrachtsbelasting
 .
