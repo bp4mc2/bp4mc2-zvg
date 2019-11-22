@@ -288,21 +288,24 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren";
 	skos:altLabel "Verlijden";
 	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
-	skos:editorialNote "Definitie en uitleg moet nog worden afgestemd met de KNB. Geen passage gevonden in de wetboeken m.b.t. het geven van een definitie van passeren.";
+	skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB. Geen passage gevonden in de wetboeken m.b.t. het geven van een definitie van passeren.";
         skosthes:broaderPartitive not:Levering;
 .
-#ArchiverenAkte of ArchiverenKNB?
+#ArchiverenAkte of ArchiverenNOT?
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)";
 	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+        skos:editorialNote "Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
 	skosthes:broaderPartitive not:Levering;
 .
-#RegistrerenAkte of RegistrenKNB?
+#RegistrerenAkte of RegistrenNOT?
 not:RegistrerenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren (akte)"@nl;
 	skos:prefLabel "Registreren (akte)";
 	skos:definition "Vastleggen in een register";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:broaderPartitive not:Levering;
 .
 #nog aanvullen door Dennis
