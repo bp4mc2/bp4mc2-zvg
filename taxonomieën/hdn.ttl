@@ -7,7 +7,7 @@
 @prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
@@ -27,11 +27,11 @@ hdn:Persoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Persoon"@nl;
 .
 hdn:Hypotheekgever a skos:Concept, skoslex:Actor;
-	skos:exactMatch knb:Hypotheekgever;
+	skos:exactMatch not:Hypotheekgever;
 	rdfs:label "Hypotheekgever"@nl;
 .
 hdn:Hypotheeknemer a skos:Concept, skoslex:Actor;
-	skos:exactMatch knb:Hypotheeknemer;
+	skos:exactMatch not:Hypotheeknemer;
 	rdfs:label "Hypotheeknemer"@nl;
 .
 hdn:Koopovereenkomst a skos:Concept, skoslex:Object;

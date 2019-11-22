@@ -50,6 +50,6 @@ zv:Huis a skos:Concept, skoslex:Object;
 zv:Partij a skos:Concept, skoslex:Actor;
 	rdfs:label "Partij"@nl;
 	skos:prefLabel "Partij";
-	skosthes:narrowerGeneric zv:Koper;
-	skosthes:narrowerGeneric zv:Verkoper
+	skosthes:narrowerGeneric nvm:Koper;
+	skosthes:narrowerGeneric nvm:Verkoper
 .

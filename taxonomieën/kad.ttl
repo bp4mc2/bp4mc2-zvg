@@ -7,7 +7,7 @@
 @prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix knb: <http://knb.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix brk: <https://tax.kadaster.nl/doc/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
@@ -35,11 +35,11 @@ kad:OpenbareRegisters a skos:Concept, skoslex:object;
 #Begrippen uit andere ZV domeinen
 #---
 kad:Notaris a skos:Concept, skoslex:Actor;
-	skos:exactMatch knb:Notaris;
+	skos:exactMatch not:Notaris;
 	rdfs:label "Notaris"@nl;
 .
 kad:NotarieleAkte a skos:Concept, skoslex:Object;
-	skos:exactMatch knb:NotarieleAkte;
+	skos:exactMatch not:NotarieleAkte;
 	rdfs:label "Notariële akte"@nl;
 .
 
