@@ -288,7 +288,8 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren";
 	skos:altLabel "Verlijden";
 	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
-	skosthes:broaderPartitive not:Levering;
+	skos:editorialNote "Definitie en uitleg moet nog worden afgestemd met de KNB. Geen passage gevonden in de wetboeken m.b.t. het geven van een definitie van passeren.";
+        skosthes:broaderPartitive not:Levering;
 .
 #ArchiverenAkte of ArchiverenKNB?
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
