@@ -166,12 +166,16 @@ not:Hypotheekakte a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderTransitive not:Akte;
 .
-#nog toevoegen door Dennis
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Vestiging hypotheek"@nl;
 	skos:prefLabel "Vestiging hypotheek";
-	skos:actor nvm:Koper;
-	skos:actor nvm:Verkoper;
+	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";
+	rdfs:comment "Een vestiging hypotheek is het opmaken van een notariële akte tussen partijen waarbij de hypotheekgever aan de hypotheeknemer hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	skosthes:broaderPartitive not:Levering;
+	skoslex:actor not:Vervreemder;
+	skoslex:actor not:Verkrijger;
 	skos:agent not:Notaris;
 	skos:object not:Leveringsakte;
 	skos:object not:Koopovereenkomst;
