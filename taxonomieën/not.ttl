@@ -373,3 +373,11 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
+not:Waarborgsom a skos:Concept, skoslex:Object;
+	rdfs:label "Waarborgsom"@nl;
+	skos:prefLabel "Waarborgsom";
+	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper tot aan transportdatum waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
+	rdfs:comment "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper tot aan transportdatum waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+        skosthes:broaderPartitive not:Levering;
+.
