@@ -136,7 +136,9 @@ not:IdentificatieComparant a skos:Concept, skoslex:Act;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
 	skosthes:broaderPartitive not:Levering;
 	skosthes:broaderPartitive not:VestigingHypotheek;
-	skoslex:object zv:Persoon;
+	skoslex:object not:Vervreemder;
+	skoslex:object not:Verkrijger;
+	skoslex:actor not:Notaris;
 .
 not:Levering a skos:Concept, skoslex:Act;
 	rdfs:label "Levering"@nl;
@@ -159,6 +161,14 @@ not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:comment "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB. Geen passage gevonden in de wetboeken m.b.t. het geven van een definitie van passeren.";
         skosthes:broaderPartitive not:Levering;
+	skoslex:actor not:Vervreemder;
+	skoslex:actor not:Verkrijger;
+	skoslex:agent not:Notaris;
+	skoslex:object not:Leveringsakte;
+	skoslex:object not:Hypotheekakte;
+	skoslex:object not:Koopovereenkomst;
+	skoslex:object not:RechtVanHypotheek;
+#Toevoegen zv:onroerendGoed als object?
 .
 #RegistrerenAkte of RegistrenNOT?
 not:RegistrerenAkte a skos:Concept, skoslex:Act;
@@ -168,6 +178,9 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;
 	rdfs:comment "Vastleggen in een register";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:broaderPartitive not:Levering;
+	skos:actor not:Notaris;
+        skoslex:object kad:OpenbareRegisters;
+        skoslex:object not:AfschriftAkte;
 .
 #RechercheNotaris of RechercheNOT?
 not:RechercheNotaris a skos:Concept, skoslex:Act;
@@ -179,8 +192,11 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
 	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
         skosthes:broaderPartitive not:Levering;
 	skosthes:broaderPartitive not:VestigingHypotheek;
-	skoslex:object zv:Persoon;
+	skoslex:object not:Vervreemder;
+	skoslex:object not:Verkrijger;
+	skoslex:actor not:Notaris;
 	skoslex:object zv:Huis;
+        skoslex:object kad:OpenbareRegisters;
 	skoslex:object bel:Overdrachtsbelasting
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
@@ -191,8 +207,8 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:broaderPartitive not:Levering;
-	skoslex:actor not:Vervreemder;
-	skoslex:actor not:Verkrijger;
+	skoslex:actor hdn:Hypotheekgever;
+	skoslex:actor hdn:Hypotheeknemer;
 	skos:agent not:Notaris;
 	skos:object not:Leveringsakte;
 	skos:object not:Koopovereenkomst;
@@ -233,6 +249,7 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:comment "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
+#Hoort dit gekoppeld te zijn aan een HDN act van het garant staan?
 .
 not:Hypotheekakte a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekakte"@nl;
