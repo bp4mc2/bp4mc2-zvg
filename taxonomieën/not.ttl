@@ -87,14 +87,6 @@ not:Hypotheeknemer a skos:Concept, skoslex:Actor;
 #De notaris bewaakt vervolgens de termijnen voor de waarborgsom en voor de passeerdatum.
 #--
 #Actors and Agents
-not:Comparant a skos:Concept, skoslex:Actor;
-	rdfs:label "Comparant"@nl;
-	skos:prefLabel "Comparant";
-	rdfs:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
-	rdfs:comment "Een persoon die als partij in de notariële akte is opgenomen. Kan ook een gemachtigde namens de partij zijn, bijvoorbeeld een medewerker van de notaris.";
-	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
-.
 not:Notaris a skos:Concept, skoslex:Agent;
         a skos:Concept, skoslex:Actor;
 	rdfs:label "Notaris"@nl;
@@ -262,6 +254,22 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
 #Hoort dit gekoppeld te zijn aan een HDN act van het garant staan?
+.
+not:Comparant a skos:Concept, skoslex:Object;
+	rdfs:label "Comparant"@nl;
+	skos:prefLabel "Comparant";
+	rdfs:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
+	rdfs:comment "Een persoon die als partij in de notariële akte is opgenomen. Kan ook een gemachtigde namens de partij zijn, bijvoorbeeld een medewerker van de notaris.";
+	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
+.
+not:Comparatitie a skos:Concept, skoslex:Object;
+	rdfs:label "Comparatitie"@nl;
+	skos:prefLabel "Comparatitie";
+	rdfs:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
+	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
+	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekakte"@nl;
