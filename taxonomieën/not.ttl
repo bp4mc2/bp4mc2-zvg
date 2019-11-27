@@ -355,7 +355,7 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:ZakelijkRecht;
-    skosthes:narrowerGeneric not:Hypotheekakte;
+        skosthes:narrowerGeneric not:Hypotheekakte;
 .
 not:TitelVanAankomst a skos:Concept, skoslex:Object;
 	rdfs:label "Titel van aankomst"@nl;
@@ -383,4 +383,11 @@ not:Waarborgsom a skos:Concept, skoslex:Object;
 	rdfs:comment "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper tot aan transportdatum waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
+.
+not:ZakelijkRecht a skos:Concept, skoslex:Object;
+	rdfs:label "Zakelijk recht"@nl;
+	skos:prefLabel "Zakelijk recht"
+	skos:definition "Een zakelijk recht is het recht dat iemand op een zaak heeft en met uitsluiting van ieder ander kan uitoefenen. Een zakelijk recht blijft rusten op een zaak, ongeacht of deze zaak verandert van eigenaar (zaaksgevolg).";
+	rdfs:comment "Een zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 .
