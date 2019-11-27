@@ -87,6 +87,7 @@ not:Hypotheeknemer a skos:Concept, skoslex:Actor;
 #--
 #Actors and Agents
 not:Notaris a skos:Concept, skoslex:Agent;
+        a skos:Concept, skoslex:Actor;
 	rdfs:label "Notaris"@nl;
 	rdfs:label "Notary"@en;
 	skos:prefLabel "Notaris";
@@ -100,6 +101,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:semanticRelation not:PlaatsVanVestiging;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor;
+        a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
@@ -108,6 +110,7 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
 	skos:semanticRelation not:Koper;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
+        a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
 	rdfs:label "Vervreemder"@nl;
 	skos:prefLabel "Vervreemder";
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
