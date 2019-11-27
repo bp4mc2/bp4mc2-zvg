@@ -262,10 +262,11 @@ not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:comment "Een persoon die als partij in de notariële akte is opgenomen. Kan ook een gemachtigde namens de partij zijn, bijvoorbeeld een medewerker van de notaris.";
 	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
+        skosthes:broaderPartitive not:Comparitie;
 .
-not:Comparatitie a skos:Concept, skoslex:Object;
-	rdfs:label "Comparatitie"@nl;
-	skos:prefLabel "Comparatitie";
+not:Comparitie a skos:Concept, skoslex:Object;
+	rdfs:label "Comparitie"@nl;
+	skos:prefLabel "Comparitie";
 	rdfs:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
 	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
 	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
