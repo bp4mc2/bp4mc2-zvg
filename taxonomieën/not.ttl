@@ -142,6 +142,7 @@ not:IdentificatieComparant a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigingHypotheek;
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
+	skoslex:object not:Comparant;
 	skoslex:actor not:Notaris;
 .
 not:Levering a skos:Concept, skoslex:Act;
@@ -263,6 +264,8 @@ not:Comparant a skos:Concept, skoslex:Object;
 	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
         skosthes:broaderPartitive not:Comparitie;
+        skosthes:narrowerPartitive not:Vervreemder;
+        skosthes:narrowerPartitive not:Verkrijger;
 .
 not:Comparitie a skos:Concept, skoslex:Object;
 	rdfs:label "Comparitie"@nl;
@@ -271,6 +274,7 @@ not:Comparitie a skos:Concept, skoslex:Object;
 	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
 	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
+        skosthes:broaderPartitive not:NotarieleAkte;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekakte"@nl;
