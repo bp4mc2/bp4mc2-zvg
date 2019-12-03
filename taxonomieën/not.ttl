@@ -411,7 +411,7 @@ not:Waarborgsom a skos:Concept, skoslex:Object;
 .
 not:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Zakelijk recht"@nl;
-	skos:prefLabel "Zakelijk recht"
+	skos:prefLabel "Zakelijk recht";
 	skos:definition "Een zakelijk recht is het recht dat iemand op een zaak heeft en met uitsluiting van ieder ander kan uitoefenen. Een zakelijk recht blijft rusten op een zaak, ongeacht of deze zaak verandert van eigenaar (zaaksgevolg).";
 	rdfs:comment "Een zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";

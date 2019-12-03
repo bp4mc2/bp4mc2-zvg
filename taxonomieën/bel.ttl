@@ -26,7 +26,7 @@ bel:Koper a skos:Concept, skoslex:Actor;
 	rdfs:label "Koper"@nl;
 .
 #Belastingdienst
-bel:Belastinginspecteur a skos:Concept, skoslex:Actor
+bel:Belastinginspecteur a skos:Concept, skoslex:Actor;
 	rdfs:label "Belastinginspecteur"@nl;
 	rdfs:prefLabel "Belastinginspecteur";
 .
