@@ -5,9 +5,8 @@
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://www.fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
@@ -63,23 +62,23 @@ not:Overdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "Overdrachtsbelasting"@nl;
 .
 not:Koper a skos:Concept, skoslex:Actor;
-	skos:exactMatch nvm:Koper;
+	skos:exactMatch mak:Koper;
 	rdfs:label "Koper"@nl;
 .
 not:Verkoper a skos:Concept, skoslex:Actor;
-	skos:exactMatch nvm:Verkoper;
+	skos:exactMatch mak:Verkoper;
 	rdfs:label "Verkoper"@nl;
 .
 not:Koopovereenkomst a skos:Concept, skoslex:Object;
-	skos:exactMatch nvm:Koopovereenkomst;
+	skos:exactMatch mak:Koopovereenkomst;
 	rdfs:label "Koopovereenkomst"@nl;
 .
 not:Hypotheekgever a skos:Concept, skoslex:Actor;
-	skos:exactMatch hdn:Hypotheekgever;
+	skos:exactMatch fin:Hypotheekgever;
 	rdfs:label "Hypotheekgever"@nl;
 .
 not:Hypotheeknemer a skos:Concept, skoslex:Actor;
-	skos:exactMatch hdn:Hypotheeknemer;
+	skos:exactMatch fin:Hypotheeknemer;
 	rdfs:label "Hypotheeknemer"@nl;
 .
 #--
@@ -108,7 +107,8 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
         rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skos:semanticRelation not:Koper;
+	skos:narrowerGeneric not:Koper;
+	skos:narrowerGeneric not:Hypotheeknemer;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
@@ -117,7 +117,8 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
         rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skos:semanticRelation not:Verkoper;
+	skos:narrowerGeneric not:Verkoper;
+	skos:narrowerGeneric not:Hypotheeknemer;
 .
 #--
 #Acts
@@ -130,6 +131,8 @@ not:ArchiverenAkte a skos:Concept, skoslex:Act;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skos:editorialNote "Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
 	skosthes:broaderPartitive not:Levering;
+	skoslex:Actor not:Notaris;
+	skoslex:Object not:NotarieleAkte;
 .
 #IdentificatieNOT of IdentificatieComparant?
 not:IdentificatieComparant a skos:Concept, skoslex:Act;
@@ -142,7 +145,7 @@ not:IdentificatieComparant a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigingHypotheek;
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
-	skoslex:object not:Comparant;
+	skoslex:object not:ComDparant;
 	skoslex:actor not:Notaris;
 .
 not:Levering a skos:Concept, skoslex:Act;
