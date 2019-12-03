@@ -1,3 +1,5 @@
+# Good practices
+
 * Persoon als concept opnemen, met Natuurlijk Persoon en Rechtspersoon als specialisaties.
 * Gebruikelijke conventies:
   * Conventie voor identificatie van concepten: UpperCamelCase
@@ -12,7 +14,7 @@ waarborgsom en bankgarantie weglaten of toch opnemen omdat ze in de koopovereenk
 * Rechtstreekse toegang tot de triple store?
 * Archiveren Minuut nog niet meegenomen
 * Artikel 260 lid 1 lijkt mij correct als bron voor de begrippen hypotheekgever en hypotheekhouder (met hypotheeknemer als synoniem). Zo staat het ook in de Kadaster taxonomie.
-* De rdfs:comment is bedoeld voor de uitleg in klare taal. Een opmerking als ‘ Oorspronkelijke tekst uit het wetboek: Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt.’  zou ik als skos:editorialNote opnemen. 
+* De rdfs:comment is bedoeld voor de uitleg in klare taal. Een opmerking als ‘ Oorspronkelijke tekst uit het wetboek: Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt.’  zou ik als skos:editorialNote opnemen.
 * Linktool op wetten.nl. Begrippen worden zoveel mogelijk gerelateerd aan de onderliggende wetgeving. Dit kan via de optie ‘Maak een permanente link’ bij ieder artikel op http://wetten.overheid.nl.
 * skosthes:broaderGeneric gebruiken ipv skos:broader (skosthes is aanvulling op basis van iso standaard voor thesauri)
 * Wie maakt wel deel van de taxonomie: zoveel mogelijk de (wettelijke) bronhouders. Dit impliceert dat bijvoorbeeld de meeste begrippen van ECH door de KNB als representant van Het Notariaat worden beheerd.
