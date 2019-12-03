@@ -4,17 +4,43 @@
 
 GRAPH config:Theatre {
 
+config:SubjectFromUrl a elmo:UriParameterMapper;
+  elmo:source http:requestURI;
+  elmo:pattern "http://{domain}/doc/{class}/{reference}";
+  elmo:template "http://{domain}/id/{class}/{reference}";
+  elmo:target elmo:SubjectParameter;
+.
+
   config:IdNaarDocURIRedirection a elmo:Redirection;
     elmo:pathPattern "/id/{class}/{reference}";
     elmo:redirectTemplate "/doc/{class}/{reference}";
     elmo:stage config:Stage;
   .
 
-  config:SubjectFromUrl a elmo:UriParameterMapper;
-    elmo:source http:requestURI;
-    elmo:pattern "http://{domain}/doc/{class}/{reference}";
-    elmo:template "http://{domain}/id/{class}/{reference}";
-    elmo:target elmo:SubjectParameter;
+  config:BelIdNaarDocURIRedirection a elmo:Redirection;
+    elmo:pathPattern "/id/{class}/{reference}";
+    elmo:redirectTemplate "/doc/{class}/{reference}";
+    elmo:stage config:BelStage;
+  .
+  config:FinIdNaarDocURIRedirection a elmo:Redirection;
+    elmo:pathPattern "/id/{class}/{reference}";
+    elmo:redirectTemplate "/doc/{class}/{reference}";
+    elmo:stage config:FinStage;
+  .
+  config:MakIdNaarDocURIRedirection a elmo:Redirection;
+    elmo:pathPattern "/id/{class}/{reference}";
+    elmo:redirectTemplate "/doc/{class}/{reference}";
+    elmo:stage config:MakStage;
+  .
+  config:NotIdNaarDocURIRedirection a elmo:Redirection;
+    elmo:pathPattern "/id/{class}/{reference}";
+    elmo:redirectTemplate "/doc/{class}/{reference}";
+    elmo:stage config:NotStage;
+  .
+  config:KadIdNaarDocURIRedirection a elmo:Redirection;
+    elmo:pathPattern "/id/{class}/{reference}";
+    elmo:redirectTemplate "/doc/{class}/{reference}";
+    elmo:stage config:KadStage;
   .
 
 }

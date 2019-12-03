@@ -11,4 +11,30 @@ GRAPH config:Theatre {
     dc:title "Zorgeloos vastgoed";
   .
 
+  config:BelStage a elmo:Stage;
+    elmo:site config:BelSite;
+    elmo:basePath "";
+    dc:title "Zorgeloos vastgoed - Domein belastingen";
+  .
+  config:FinStage a elmo:Stage;
+    elmo:site config:FinSite;
+    elmo:basePath "";
+    dc:title "Zorgeloos vastgoed - Domein hypotheken";
+  .
+  config:MakStage a elmo:Stage;
+    elmo:site config:MakSite;
+    elmo:basePath "";
+    dc:title "Zorgeloos vastgoed - Domein makelaar";
+  .
+  config:NotStage a elmo:Stage;
+    elmo:site config:NotSite;
+    elmo:basePath "";
+    dc:title "Zorgeloos vastgoed - Domein notaris";
+  .
+  config:KadStage a elmo:Stage;
+    elmo:site config:KadSite;
+    elmo:basePath "";
+    dc:title "Zorgeloos vastgoed - Domein Kadaster";
+  .
+
 }

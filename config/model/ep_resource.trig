@@ -30,6 +30,31 @@ GRAPH config:Theatre {
     elmo:stage config:Stage;
     elmo:getRepresentation config:URIResource;
   .
+  config:BelResourceURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/{class}/{reference}";
+    elmo:stage config:BelStage;
+    elmo:getRepresentation config:CleanURIResource;
+  .
+  config:FinResourceURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/{class}/{reference}";
+    elmo:stage config:FinStage;
+    elmo:getRepresentation config:CleanURIResource;
+  .
+  config:MakResourceURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/{class}/{reference}";
+    elmo:stage config:MakStage;
+    elmo:getRepresentation config:CleanURIResource;
+  .
+  config:NotResourceURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/{class}/{reference}";
+    elmo:stage config:NotStage;
+    elmo:getRepresentation config:CleanURIResource;
+  .
+  config:KadResourceURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/{class}/{reference}";
+    elmo:stage config:KadStage;
+    elmo:getRepresentation config:CleanURIResource;
+  .
 
   config:URIResource a elmo:Representation;
     elmo:stage config:Stage;
@@ -37,6 +62,13 @@ GRAPH config:Theatre {
     elmo:contains config:Menu;
     elmo:contains config:Content;
     elmo:contains config:Graph;
+    elmo:appearance [a elmo:HiddenAppearance];
+    elmo:informationProduct config:ResourceData;
+  .
+  config:CleanURIResource a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:parameterMapper config:SubjectFromUrl;
+    elmo:contains config:Content;
     elmo:appearance [a elmo:HiddenAppearance];
     elmo:informationProduct config:ResourceData;
   .

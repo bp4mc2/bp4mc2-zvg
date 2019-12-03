@@ -6,7 +6,24 @@
 GRAPH config:Theatre {
 
   config:Site a elmo:Site;
-    elmo:domain "localhost";
-#    elmo:domain "taxonomie.zorgeloosvastgoed.nl";
+#    elmo:domain "localhost";
+    elmo:domain "taxonomie.zorgeloosvastgoed.nl";
   .
+
+  config:BelSite a elmo:Site;
+    elmo:domain "bel.zorgeloosvastgoed.nl";
+  .
+  config:FinSite a elmo:Site;
+    elmo:domain "fin.zorgeloosvastgoed.nl";
+  .
+  config:MakSite a elmo:Site;
+    elmo:domain "mak.zorgeloosvastgoed.nl";
+  .
+  config:NotSite a elmo:Site;
+    elmo:domain "not.zorgeloosvastgoed.nl";
+  .
+  config:KadSite a elmo:Site;
+    elmo:domain "kad.zorgeloosvastgoed.nl";
+  .
+
 }
