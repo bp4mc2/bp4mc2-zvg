@@ -131,8 +131,8 @@ not:ArchiverenAkte a skos:Concept, skoslex:Act;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skos:editorialNote "Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
 	skosthes:broaderPartitive not:Levering;
-	skoslex:Actor not:Notaris;
-	skoslex:Object not:NotarieleAkte;
+	skoslex:actor not:Notaris;
+	skoslex:object not:NotarieleAkte;
 .
 #IdentificatieNOT of IdentificatieComparant?
 not:IdentificatieComparant a skos:Concept, skoslex:Act;
@@ -291,7 +291,7 @@ not:Hypotheekakte a skos:Concept, skoslex:Object;
 not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	rdfs:label "Inschrijvingsbedrag"@nl;
 	skos:prefLabel "Inschrijvingsbedrag";
-	rdfs:definiton "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
+	rdfs:definition "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
 	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
         skosthes:broaderPartitive not:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
@@ -338,7 +338,7 @@ not:OnderhandseAkte a skos:Concept, skoslex:Object;
 not:Onderpand a skos:Concept, skoslex:Object;
 	rdfs:label "Onderpand"@nl;
 	skos:prefLabel "Onderpand";
-	skos:altlabel "Pandrecht";
+	skos:altLabel "Pandrecht";
 	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
 	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;

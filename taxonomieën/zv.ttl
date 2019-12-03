@@ -31,7 +31,7 @@ zv:Organisatie a skos:Concept, skoslex:Actor;
 	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
 	rdfs:label "Rechtspersoon"@nl;
 	skos:prefLabel "Organisatie";
-	rdfs:altLabel "rechtspersoon"
+	skos:altLabel "rechtspersoon"
 #Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
 .
 zv:Persoon a skos:Concept, skoslex:Actor;
