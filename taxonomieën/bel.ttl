@@ -5,7 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix fin: <http://fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://fin.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
@@ -17,7 +17,7 @@
 	rdfs:label "Domein Belastingen";
 .
 #Begrippen uit andere domeinen
-bel:Notaris a skos:Concept, skoslex:Agent; 
+bel:Notaris a skos:Concept, skoslex:Agent;
 	skos:exactMatch not:Notaris;
 	rdfs:label "Notaris"@nl;
 .
@@ -27,7 +27,7 @@ bel:Koper a skos:Concept, skoslex:Actor;
 .
 #Belastingdienst
 bel:Belastinginspecteur a skos:Concept, skoslex:Actor
-	rdfs:label "Belastinginspecteur"@nl
+	rdfs:label "Belastinginspecteur"@nl;
 	rdfs:prefLabel "Belastinginspecteur";
 .
 bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;

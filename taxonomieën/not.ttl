@@ -6,7 +6,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix fin: <http://www.fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://fin.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
@@ -215,8 +215,8 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:broaderPartitive not:Levering;
-	skoslex:actor hdn:Hypotheekgever;
-	skoslex:actor hdn:Hypotheeknemer;
+	skoslex:actor fin:Hypotheekgever;
+	skoslex:actor fin:Hypotheeknemer;
 	skos:agent not:Notaris;
 	skos:object not:Leveringsakte;
 	skos:object not:Koopovereenkomst;
@@ -257,7 +257,7 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:comment "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
-#Hoort dit gekoppeld te zijn aan een HDN act van het garant staan?
+#Hoort dit gekoppeld te zijn aan een FIN act van het garant staan?
 .
 not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:label "Comparant"@nl;

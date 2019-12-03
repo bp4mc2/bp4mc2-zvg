@@ -5,7 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix fin: <http://www.fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://fin.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.

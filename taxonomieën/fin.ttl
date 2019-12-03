@@ -5,7 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix fin: <http://www.fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://fin.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
@@ -64,7 +64,7 @@ fin:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
 	skos:prefLabel "Identificatie hypotheekadvies";
 	skos:definition "Het identificeren van de [consument] ter verstrekking van een hypotheekadvies.";
 	skosthes:broaderPartitive fin:OpstellenHypotheekadvies;
-	skoslex:actor fin:Hypotheekadviseur; 
+	skoslex:actor fin:Hypotheekadviseur;
 	skoslex:object fin:Hypotheekgever;
 .
 fin:BindendeOfferte a skos:Concept, skoslex:Object;
@@ -83,8 +83,8 @@ fin:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
 	skoslex:object fin:Hypotheekadvies;
 	skoslex:object fin:Koopovereenkomst;
 .
-fin:Lening a skos:Concept, skoslex:Object; 
-	rdfs:label "Lening"@nl
+fin:Lening a skos:Concept, skoslex:Object;
+	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening";
 	skos:definiton "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
@@ -123,4 +123,3 @@ fin:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	skos:definiton "";
 	rdfs:comment "";
 .
-
