@@ -20,9 +20,11 @@
 #begrippen uit andere ZV domeinen
 mak:Persoon a skos:Concept, skoslex:Object, skoslex:Actor;
 	skos:exactMatch zv:Persoon;
+	rdfs:label "Persoon"@nl;
 .
 mak:Partij a skos:Concept, skoslex:Object, skoslex:Actor;
 	skos:exactMatch zv:Partij;
+	rdfs:label "Partij"@nl;
 .
 mak:Notaris a skos:Concept, skoslex:Agent;
 	skos:exactMatch not:Notaris;
@@ -30,8 +32,10 @@ mak:Notaris a skos:Concept, skoslex:Agent;
 .
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
+	rdfs:label "Woning"@nl;
 .
 mak:Overdrachtsbelasting a skos:Concept, skoslex:Object;
+	rdfs:label "Overdrachtsbelasting"@nl;
 	skos:exactMatch bel:Overdrachtsbelasting;
 .
 

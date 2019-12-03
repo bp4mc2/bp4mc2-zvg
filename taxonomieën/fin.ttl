@@ -90,35 +90,35 @@ fin:Lening a skos:Concept, skoslex:Object;
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
 .
 fin:Schuldenaar a skos:Concept, skoslex:Actor;
-	rdfs:Label "Schuldenaar"@nl;
+	rdfs:label "Schuldenaar"@nl;
 	skos:prefLabel "Schuldenaar";
 	skos:definiton "De persoon die een verplichting heeft om een geldbedrag terug te betalen.";
 	rdfs:comment "Door het ontvangen van een lening bedrag ontstaat een schuld aan de persoon die dat bedrag heeft verstrekt. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser.";
 	skosthes:narrowerGeneric fin:Hypohteekgever;
 .
 fin:Schuldeiser a skos:Concept, skoslex:Actor;
-	rdfs:Label "Schuldeiser"@nl;
+	rdfs:label "Schuldeiser"@nl;
 	skos:prefLabel "Schuldeiser";
 	skos:definiton "De persoon die een recht heeft om een geldbedrag terug te ontvangen.";
 	rdfs:comment "Door het verstrekken van een lening bedrag ontstaat een schuld bij de persoon die dat bedrag heeft ontvangen. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser.";
 	skosthes:narrowerGeneric fin:Hypohteeknemer;
 .
 fin:Borg a skos:Concept, skoslex:Actor;
-	rdfs:Label "Borg"@nl;
+	rdfs:label "Borg"@nl;
 	skos:prefLabel "Borg";
 	skos:definiton "De persoon die garant staat voor de nakoming van de verplichting van een andere persoon.";
 	rdfs:comment "Als een schuldenaar zijn verplichting niet nakomt, is de borg verplicht om de borgsom te betalen aan de schuldeiser. De borg krijgt daarna een vordering op de schuldenaar.";
 	skos:semanticRelation fin:Schuldenaar;
 .
 fin:HoofdelijkeAansprakelijkheid a skos:Concept, skoslex:Object;
-	rdfs:Label "Hoofdelijke aansprakelijkheid"@nl;
+	rdfs:label "Hoofdelijke aansprakelijkheid"@nl;
 	skos:prefLabel "Hoofdelijke aansprakelijkheid";
 	skos:definiton "Meerdere schuldenaren zijn ieder afzonderlijk voor het geheel aansprakelijk voor de terugbetaling van de lening.";
 	rdfs:comment "Als de schuldenaren hoofdelijk aansprakelijk zijn, dan is ieder van hen verplicht om op verzoek van de schuldeiser de gehele schuld te voldoen. Een schuldenaar mag zich dus niet beperken tot diens aandeel in de schuld. Eventuele verrekening onderling tussen de schuldenaren vindt dan later plaats. ";
 	skosthes:narrowerPartitive fin:Hypohteekgever;
 .
 fin:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
-	rdfs:Label "Inschrijvingsbedrag"@nl;
+	rdfs:label "Inschrijvingsbedrag"@nl;
 	skos:prefLabel "Inschrijvingsbedrag";
 	skos:definiton "";
 	rdfs:comment "";
