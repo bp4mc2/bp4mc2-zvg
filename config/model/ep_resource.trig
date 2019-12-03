@@ -138,9 +138,19 @@ GRAPH config:Theatre {
       elmo:index 21;
     ];
     elmo:fragment [
+      elmo:appliesTo skoslex:actor;
+      rdfs:label "Actor"@nl;
+      elmo:index 30;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skoslex:object;
+      rdfs:label "Object"@nl;
+      elmo:index 31;
+    ];
+    elmo:fragment [
       elmo:appliesTo skoslex:agent;
       rdfs:label "Agent"@nl;
-      elmo:index 30;
+      elmo:index 32;
     ];
     elmo:fragment [
       elmo:appliesTo skos:semanticRelation;

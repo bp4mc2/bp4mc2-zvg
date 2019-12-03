@@ -1,0 +1,34 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:UsedPropertiesEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/properties";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:UsedProperties;
+  .
+
+  config:UsedProperties a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:UsedPropertiesData;
+    elmo:appearance config:UsedPropertiesAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:UsedPropertiesAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "g";
+      rdfs:label "Begrippenkader"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "p";
+      rdfs:label "Property URI"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "plabel";
+      rdfs:label "Property label"@nl;
+    ];
+  .
+
+}
