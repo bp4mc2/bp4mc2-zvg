@@ -93,7 +93,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:prefLabel "Notaris";
 	skos:altLabel "Ambtenaar";
 	skos:altLabel "Bevoegd protocolhouder";
-	rdfs:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
+	skos:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
 	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
 	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
@@ -107,8 +107,8 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
         rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skos:narrowerGeneric not:Koper;
-	skos:narrowerGeneric not:Hypotheeknemer;
+	skosthes:narrowerGeneric not:Koper;
+	skosthes:narrowerGeneric not:Hypotheeknemer;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
@@ -117,8 +117,8 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
         rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skos:narrowerGeneric not:Verkoper;
-	skos:narrowerGeneric not:Hypotheeknemer;
+	skosthes:narrowerGeneric not:Verkoper;
+	skosthes:narrowerGeneric not:Hypotheeknemer;
 .
 #--
 #Acts
@@ -186,7 +186,7 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;
 	rdfs:comment "Vastleggen in een register";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:broaderPartitive not:Levering;
-	skos:actor not:Notaris;
+	skoslex:actor not:Notaris;
         skoslex:object kad:OpenbareRegisters;
         skoslex:object not:AfschriftAkte;
 .
@@ -217,9 +217,9 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:Levering;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
-	skos:agent not:Notaris;
-	skos:object not:Leveringsakte;
-	skos:object not:Koopovereenkomst;
+	skoslex:agent not:Notaris;
+	skoslex:object not:Leveringsakte;
+	skoslex:object not:Koopovereenkomst;
 .
 #--
 #Objects
@@ -262,7 +262,7 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant";
-	rdfs:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
+	skos:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
 	rdfs:comment "Een persoon die als partij in de notariële akte is opgenomen. Kan ook een gemachtigde namens de partij zijn, bijvoorbeeld een medewerker van de notaris.";
 	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
@@ -273,7 +273,7 @@ not:Comparant a skos:Concept, skoslex:Object;
 not:Comparitie a skos:Concept, skoslex:Object;
 	rdfs:label "Comparitie"@nl;
 	skos:prefLabel "Comparitie";
-	rdfs:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
+	skos:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
 	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
 	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
@@ -291,7 +291,7 @@ not:Hypotheekakte a skos:Concept, skoslex:Object;
 not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	rdfs:label "Inschrijvingsbedrag"@nl;
 	skos:prefLabel "Inschrijvingsbedrag";
-	rdfs:definition "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
+	skos:definition "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
 	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
         skosthes:broaderPartitive not:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;

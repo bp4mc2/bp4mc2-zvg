@@ -28,7 +28,7 @@ bel:Koper a skos:Concept, skoslex:Actor;
 #Belastingdienst
 bel:Belastinginspecteur a skos:Concept, skoslex:Actor;
 	rdfs:label "Belastinginspecteur"@nl;
-	rdfs:prefLabel "Belastinginspecteur";
+	skos:prefLabel "Belastinginspecteur";
 .
 bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "Overdrachtsbelasting";
