@@ -4,9 +4,8 @@
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://www.fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
@@ -14,7 +13,7 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
-<http://zorgeloosvastgoed.nl/data/hdn> a owl:Ontology;
+<http://zorgeloosvastgoed.nl/data/fin> a owl:Ontology;
 	rdfs:label "Domein Hypotheken";
 .
 
@@ -22,107 +21,103 @@
 #Begrippen die essentieel zijn voor de activiteiten het hypotheekdomein, maar die in andere domeinen worden gedefinieerd.
 #---
 
-hdn:Persoon a skos:Concept, skoslex:Actor;
+fin:Persoon a skos:Concept, skoslex:Actor;
 	skos:exactMatch zv:Persoon;
 	rdfs:label "Persoon"@nl;
 .
-hdn:Hypotheekgever a skos:Concept, skoslex:Actor;
+fin:Hypotheekgever a skos:Concept, skoslex:Actor, skoslex:Object;
 	skos:exactMatch not:Hypotheekgever;
 	rdfs:label "Hypotheekgever"@nl;
 .
-hdn:Hypotheeknemer a skos:Concept, skoslex:Actor;
+fin:Hypotheeknemer a skos:Concept, skoslex:Actor;
 	skos:exactMatch not:Hypotheeknemer;
 	rdfs:label "Hypotheeknemer"@nl;
 .
-hdn:Koopovereenkomst a skos:Concept, skoslex:Object;
-	skos:exactMatch nvm:Koopovereenkomst;
+fin:Koopovereenkomst a skos:Concept, skoslex:Object;
+	skos:exactMatch mak:Koopovereenkomst;
 	rdfs:label "Koopovereenkomst"@nl;
 .
 
-#---
-#HDN is de spin in het web van hypotheken. Daarom worden deze begrippen in het hdn domein gedefinieerd.
-#---
-
-hdn:Hypotheekadviseur a skos:Concept, skoslex:Agent;
+fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	rdfs:label "Hypotheekadviseur"@nl;
 	skos:prefLabel "Hypotheekadviseur";
 	skos:altLabel "Financieel adviseur";
 	skos:altLabel "Tussenpersoon";
 	skos:definition "Een hypotheekadviseur geeft onafhankelijk hypotheekadvies over welke hypotheekconstructie aansluit op de situatie en de wensen van de consument.";
 .
-hdn:Hypotheekadvies a skos:Concept, skoslex:Object;
+fin:Hypotheekadvies a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekadvies"@nl;
 	skos:prefLabel "Hypotheekadvies";
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
 .
-hdn:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
+fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen hypotheekadvies"@nl;
 	skos:prefLabel "Opstellen hypotheekadvies";
 	skos:definition "Het opstellen van een advies ter aanbeveling van een hypotheekconstructie.";
-	skoslex:agent hdn:Hypotheekadviseur;
-	skoslex:actor hdn:Hypotheekgever;
-	skoslex:object hdn:Hypotheekadvies;
-	skoslex:object hdn:Koopovereenkomst;
+	skoslex:agent fin:Hypotheekadviseur;
+	skoslex:actor fin:Hypotheekgever;
+	skoslex:object fin:Hypotheekadvies;
+	skoslex:object fin:Koopovereenkomst;
 .
-hdn:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
+fin:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Identificatie hypotheekadvies"@nl;
 	skos:prefLabel "Identificatie hypotheekadvies";
 	skos:definition "Het identificeren van de [consument] ter verstrekking van een hypotheekadvies.";
-	skosthes:broaderPartitive hdn:OpstellenHypotheekadvies;
-	skoslex:actor hdn:Hypotheekadviseur; 
-	skoslex:object hdn:Hypotheekgever;
+	skosthes:broaderPartitive fin:OpstellenHypotheekadvies;
+	skoslex:actor fin:Hypotheekadviseur; 
+	skoslex:object fin:Hypotheekgever;
 .
-hdn:BindendeOfferte a skos:Concept, skoslex:Object;
+fin:BindendeOfferte a skos:Concept, skoslex:Object;
 	rdfs:label "Bindende offerte"@nl;
 	skos:prefLabel "Bindende offerte";
 	skos:definiton "Een bindend aanbod van een geldverstrekker ter verstrekking van een hypotheek.";
-	skos:semanticRelation hdn:Hypotheekadvies;
+	skos:semanticRelation fin:Hypotheekadvies;
 .
-hdn:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
+fin:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen bindende offerte"@nl;
 	skos:prefLabel "Opstellen bindende offerte";
 	skos:definition "Het opstellen van de bindende offerte ter verstrekking van een hypotheek.";
-	skoslex:actor hdn:Hypotheeknemer;
-	skoslex:actor hdn:Hypotheekgever;
-	skoslex:object hdn:BindendeOfferte;
-	skoslex:object hdn:Hypotheekadvies;
-	skoslex:object hdn:Koopovereenkomst;
+	skoslex:actor fin:Hypotheeknemer;
+	skoslex:actor fin:Hypotheekgever;
+	skoslex:object fin:BindendeOfferte;
+	skoslex:object fin:Hypotheekadvies;
+	skoslex:object fin:Koopovereenkomst;
 .
-hdn:Lening a skos:Concept, skoslex:Object; 
+fin:Lening a skos:Concept, skoslex:Object; 
 	rdfs:label "Lening"@nl
 	skos:prefLabel "Lening";
 	skos:definiton "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
 .
-hdn:Schuldenaar a skos:Concept, skoslex:Actor;
+fin:Schuldenaar a skos:Concept, skoslex:Actor;
 	rdfs:Label "Schuldenaar"@nl;
 	skos:prefLabel "Schuldenaar";
 	skos:definiton "De persoon die een verplichting heeft om een geldbedrag terug te betalen.";
 	rdfs:comment "Door het ontvangen van een lening bedrag ontstaat een schuld aan de persoon die dat bedrag heeft verstrekt. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser.";
-	skosthes:narrowerGeneric hdn:Hypohteekgever;
+	skosthes:narrowerGeneric fin:Hypohteekgever;
 .
-hdn:Schuldeiser a skos:Concept, skoslex:Actor;
+fin:Schuldeiser a skos:Concept, skoslex:Actor;
 	rdfs:Label "Schuldeiser"@nl;
 	skos:prefLabel "Schuldeiser";
 	skos:definiton "De persoon die een recht heeft om een geldbedrag terug te ontvangen.";
 	rdfs:comment "Door het verstrekken van een lening bedrag ontstaat een schuld bij de persoon die dat bedrag heeft ontvangen. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser.";
-	skosthes:narrowerGeneric hdn:Hypohteeknemer;
+	skosthes:narrowerGeneric fin:Hypohteeknemer;
 .
-hdn:Borg a skos:Concept, skoslex:Actor;
+fin:Borg a skos:Concept, skoslex:Actor;
 	rdfs:Label "Borg"@nl;
 	skos:prefLabel "Borg";
 	skos:definiton "De persoon die garant staat voor de nakoming van de verplichting van een andere persoon.";
 	rdfs:comment "Als een schuldenaar zijn verplichting niet nakomt, is de borg verplicht om de borgsom te betalen aan de schuldeiser. De borg krijgt daarna een vordering op de schuldenaar.";
-	skos:semanticRelation hdn:Schuldenaar;
+	skos:semanticRelation fin:Schuldenaar;
 .
-hdn:HoofdelijkeAansprakelijkheid a skos:Concept, skoslex:Object;
+fin:HoofdelijkeAansprakelijkheid a skos:Concept, skoslex:Object;
 	rdfs:Label "Hoofdelijke aansprakelijkheid"@nl;
 	skos:prefLabel "Hoofdelijke aansprakelijkheid";
 	skos:definiton "Meerdere schuldenaren zijn ieder afzonderlijk voor het geheel aansprakelijk voor de terugbetaling van de lening.";
 	rdfs:comment "Als de schuldenaren hoofdelijk aansprakelijk zijn, dan is ieder van hen verplicht om op verzoek van de schuldeiser de gehele schuld te voldoen. Een schuldenaar mag zich dus niet beperken tot diens aandeel in de schuld. Eventuele verrekening onderling tussen de schuldenaren vindt dan later plaats. ";
-	skosthes:narrowerPartitive hdn:Hypohteekgever;
+	skosthes:narrowerPartitive fin:Hypohteekgever;
 .
-hdn:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
+fin:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	rdfs:Label "Inschrijvingsbedrag"@nl;
 	skos:prefLabel "Inschrijvingsbedrag";
 	skos:definiton "";
