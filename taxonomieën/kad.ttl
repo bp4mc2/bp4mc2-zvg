@@ -25,9 +25,13 @@ kad:Bewaarder a skos:Concept, skoslex:Actor;
 	skos:exactMatch brk:Bewaarder;
 	rdfs:label "Bewaarder"@nl;
 .
-kad:OpenbareRegisters a skos:Concept, skoslex:object;
+kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Openbare_registers;
 	rdfs:label "Openbare registers"@nl;
+.
+kad:ZakelijkRecht a skos:Concept;
+	skos:exactMatch brk:ZakelijkRecht;
+	rdfs:label "Zakelijk recht"@nl;
 .
 #---
 #Begrippen uit andere ZV domeinen

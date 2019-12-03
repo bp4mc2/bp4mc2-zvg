@@ -145,7 +145,7 @@ not:IdentificatieComparant a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigingHypotheek;
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
-	skoslex:object not:ComDparant;
+	skoslex:object not:Comparant;
 	skoslex:actor not:Notaris;
 .
 not:Levering a skos:Concept, skoslex:Act;
