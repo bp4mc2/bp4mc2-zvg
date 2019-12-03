@@ -4,9 +4,8 @@
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix hdn: <http://hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
@@ -17,8 +16,20 @@
 <http://zorgeloosvastgoed.nl/data/bel> a owl:Ontology;
 	rdfs:label "Domein Belastingen";
 .
-
+#Begrippen uit andere domeinen
+bel:Notaris a skos:Concept, skoslex:Agent; 
+	skos:exactMatch not:Notaris;
+	rdfs:label "Notaris"@nl;
+.
+bel:Koper a skos:Concept, skoslex:Actor;
+	skos:exactMatch mak:Koper;
+	rdfs:label "Koper"@nl;
+.
 #Belastingdienst
+bel:Belastinginspecteur a skos:Concept, skoslex:Actor
+	rdfs:label "Belastinginspecteur"@nl
+	rdfs:prefLabel "Belastinginspecteur";
+.
 bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "Overdrachtsbelasting";
 	skos:prefLabel "Overdrachtsbelasting"
@@ -27,5 +38,8 @@ bel:InningOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Inning overdrachtsbelasting";
 	skos:prefLabel "Inning overdrachtsbelasting";
 	skosthes:broaderPartitive not:Levering;
-	skoslex:object bel:Overdrachtsbelasting
+	skoslex:agent bel:Notaris;
+	skoslex:actor bel:Koper;
+	skoslex:actor bel:Belastinginspecteur;
+	skoslex:object bel:Overdrachtsbelasting;
 .
