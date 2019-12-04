@@ -46,41 +46,6 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
 
-#---
-#Begrippen uit ander ZV domeinen
-#---
-not:Persoon a skos:Concept, skoslex:Actor;
-	skos:exactMatch zv:Persoon;
-	rdfs:label "Persoon"@nl;
-.
-not:Huis a skos:Concept, skoslex:Object;
-	skos:exactMatch zv:Huis;
-	rdfs:label "Huis"@nl;
-.
-not:Overdrachtsbelasting a skos:Concept, skoslex:Object;
-	skos:exactMatch bel:Overdrachtsbelasting;
-	rdfs:label "Overdrachtsbelasting"@nl;
-.
-not:Koper a skos:Concept, skoslex:Actor;
-	skos:exactMatch mak:Koper;
-	rdfs:label "Koper"@nl;
-.
-not:Verkoper a skos:Concept, skoslex:Actor;
-	skos:exactMatch mak:Verkoper;
-	rdfs:label "Verkoper"@nl;
-.
-not:Koopovereenkomst a skos:Concept, skoslex:Object;
-	skos:exactMatch mak:Koopovereenkomst;
-	rdfs:label "Koopovereenkomst"@nl;
-.
-not:Hypotheekgever a skos:Concept, skoslex:Actor;
-	skos:exactMatch fin:Hypotheekgever;
-	rdfs:label "Hypotheekgever"@nl;
-.
-not:Hypotheeknemer a skos:Concept, skoslex:Actor;
-	skos:exactMatch fin:Hypotheeknemer;
-	rdfs:label "Hypotheeknemer"@nl;
-.
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
 #De notaris bewaakt vervolgens de termijnen voor de waarborgsom en voor de passeerdatum.
@@ -89,7 +54,6 @@ not:Hypotheeknemer a skos:Concept, skoslex:Actor;
 not:Notaris a skos:Concept, skoslex:Agent;
         a skos:Concept, skoslex:Actor;
 	rdfs:label "Notaris"@nl;
-	rdfs:label "Notary"@en;
 	skos:prefLabel "Notaris";
 	skos:altLabel "Ambtenaar";
 	skos:altLabel "Bevoegd protocolhouder";
@@ -107,8 +71,8 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
         rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skosthes:narrowerGeneric not:Koper;
-	skosthes:narrowerGeneric not:Hypotheeknemer;
+	skosthes:narrowerGeneric mak:Koper;
+	skosthes:narrowerGeneric fin:Hypotheeknemer;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
@@ -117,8 +81,8 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
         rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skosthes:narrowerGeneric not:Verkoper;
-	skosthes:narrowerGeneric not:Hypotheeknemer;
+	skosthes:narrowerGeneric mak:Verkoper;
+	skosthes:narrowerGeneric fin:Hypotheeknemer;
 .
 #--
 #Acts
@@ -159,7 +123,7 @@ not:Levering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Verkrijger;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
-	skoslex:object not:Koopovereenkomst;
+	skoslex:object mak:Koopovereenkomst;
 .
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
@@ -174,7 +138,7 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
 	skoslex:object not:Hypotheekakte;
-	skoslex:object not:Koopovereenkomst;
+	skoslex:object mak:Koopovereenkomst;
 	skoslex:object not:RechtVanHypotheek;
 #Toevoegen zv:onroerendGoed als object?
 .
@@ -219,7 +183,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
-	skoslex:object not:Koopovereenkomst;
+	skoslex:object mak:Koopovereenkomst;
 .
 #--
 #Objects
