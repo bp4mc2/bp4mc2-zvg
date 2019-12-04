@@ -63,6 +63,7 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
 mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Koopovereenkomst"@nl;
@@ -73,6 +74,8 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 	skos:semanticRelation mak:Verkoper;
 	skos:semanticRelation mak:Koper;
 	skos:semanticRelation mak:Woning;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+
 .
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
@@ -127,6 +130,8 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	skoslex:agent mak:Verkoopmakelaar;
 	skoslex:actor mak:Verkoper;
 	skoslex:object mak:Woning;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+
 .
 mak:Aankoop a skos:Concept, skoslex:Act;
 	rdfs:label "Aankoop"@nl;
@@ -138,6 +143,7 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 	skoslex:agent mak:Aankoopmakelaar;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
 mak:RechercheKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche koop"@nl;
