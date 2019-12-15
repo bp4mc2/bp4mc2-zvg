@@ -68,6 +68,7 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger";
+	skos:altLabel "Koper";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
         rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
@@ -78,6 +79,7 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
 	rdfs:label "Vervreemder"@nl;
 	skos:prefLabel "Vervreemder";
+	skos:altLabel "Verkoper";
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
         rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
@@ -168,7 +170,7 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:TitelVanAankomst;
 	skoslex:actor not:Notaris;
-	skoslex:object zv:Huis;
+	skoslex:object not:Registergoed;
         skoslex:object kad:OpenbareRegisters;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
@@ -265,6 +267,7 @@ not:Leveringsakte a skos:Concept, skoslex:Object;
 	rdfs:label "Leveringsakte"@nl;
 	skos:prefLabel "Leveringsakte";
 	skos:altLabel "Transportakte";
+	skos:altLabel "Akte van levering";
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
 	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
@@ -345,6 +348,15 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:ZakelijkRecht;
         skosthes:narrowerGeneric not:Hypotheekakte;
+.
+not:Registergoed a skos:Concept, skoslex:Object;
+	rdfs:label "Registergoed"@nl;
+	skos:prefLabel "Registergoed";
+	skos:definition "Onroerende zaak, grond, geregistreerd schip of vliegtuig, of een aandeel in een van die zaken. De eigendom van een registergoed kan alleen worden overgedragen via een inschrijving in openbare registers.";
+	rdfs:comment "Een registergoed is een goed voor welker overdracht of vestiging inschrijving in daartoe bestemde openbare registers noodzakelijk is. Een voorbeeld van een onroerend registergoed is een woning. Een voorbeeld van een roerend registergoed is een schip, dat is ingeschreven in het scheepsregister. Een appartementsrecht is een voorbeeld van een vermogensrecht dat een registergoed is. Een voorbeeld van een niet-registergoed is een fiets. Ook een auto is geen registergoed, want hoewel men een auto moet inschrijven in het kentekenregister schrijft de wet dit niet als vereiste voor eigendomsoverdracht voor.";
+	skosthes:narrowerGeneric zv:Huis;
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	skosthes:broaderPartitive not:Leveringsakte
 .
 not:TitelVanAankomst a skos:Concept, skoslex:Object;
 	rdfs:label "Titel van aankomst"@nl;
