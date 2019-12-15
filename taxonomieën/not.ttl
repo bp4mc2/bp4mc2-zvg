@@ -123,7 +123,7 @@ not:Levering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Verkrijger;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
-	skoslex:object mak:Koopovereenkomst;
+	skoslex:object mak:Koopovereenkomst;#Dit moet eigenlijk een koppeling zijn aan de bovenste act van "De koop"
 .
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
@@ -153,6 +153,7 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
         skoslex:object kad:OpenbareRegisters;
         skoslex:object not:AfschriftAkte;
+	skoslex:object not:TitelVanAankomst;
 .
 #RechercheNotaris of RechercheNOT?
 not:RechercheNotaris a skos:Concept, skoslex:Act;
@@ -165,6 +166,7 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
         skosthes:broaderPartitive not:Levering;
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
+	skoslex:object not:TitelVanAankomst;
 	skoslex:actor not:Notaris;
 	skoslex:object zv:Huis;
         skoslex:object kad:OpenbareRegisters;
@@ -352,7 +354,6 @@ not:TitelVanAankomst a skos:Concept, skoslex:Object;
 	skos:definition "Hetgeen op grond waarvan een (niet) natuurlijk persoon zakelijk gerechtigde wordt tot een goed.";
 	rdfs:comment "Verklaring waaruit blijkt dat de verkoper ook echt de eigenaar is.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
-	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
