@@ -27,10 +27,6 @@ mak:Partij a skos:Concept, skoslex:Object, skoslex:Actor;
 	skos:exactMatch zv:Partij;
 	rdfs:label "Partij"@nl;
 .
-mak:Notaris a skos:Concept, skoslex:Agent;
-	skos:exactMatch not:Notaris;
-	rdfs:label "Notaris"@nl;
-.
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
 	rdfs:label "Woning"@nl;
@@ -86,7 +82,7 @@ mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:comment "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In Amsterdam is het gebruikelijk dat de notaris de koopovereenkomst opstelt. ";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:agent mak:Makelaar;
-	skoslex:agent mak:Notaris;
+	skoslex:agent not:Notaris;
 	skoslex:actor mak:Koper;
 	skoslex:actor mak:Verkoper;
 	skoslex:object mak:Koopovereenkomst;
