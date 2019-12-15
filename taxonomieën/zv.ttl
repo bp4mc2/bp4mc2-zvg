@@ -41,6 +41,28 @@ zv:Persoon a skos:Concept, skoslex:Actor;
 	skosthes:narrowerGeneric zv:Mens;
 	skosthes:narrowerGeneric zv:Organisatie
 .
+zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
+	rdfs:label "Natuurlijk persoon"@nl;
+	skos:prefLabel "Natuurlijk persoon";
+	skos:definition "Een mens in juridische zin, als iemand die drager van rechten en verplichtingen kan zijn. Het zijn van een natuurlijk persoon eindigt met het overlijden (hersendood)."
+  s	skos:comment "Een mens met eigen rechten en plichten."
+.
+zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
+	rdfs:label "Niet natuurlijk persoon"@nl;
+	skos:prefLabel "Niet natuurlijk persoon";
+	skos:definition "Een organisatie of abstracte entiteit die zelfstandig in het rechtsverkeer kan optreden. Het zijn van een niet natuurlijk persoon eindigt bij ontbinding van de organisatie of entiteit."
+  s	skos:comment "Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. Een niet natuurlijk persoon heeft eigen rechten en plichten."
+.
+zv:RechtsPersoon a skos:Concept, skoslex:Actor;
+	rdfs:label "Rechtspersoon"@nl;
+	skos:prefLabel "Rechtspersoon";
+	skos:prefLabel "Rechtspersoon";
+	skos:altLabel "NV";
+	skos:altLabel "BV";
+	skos:definition "Een rechtspersoon is een rechtssubject die zelfstandig drager is van rechten en met een natuurlijk gelijk staat, tenzij uit de wet het tegendeel voortvloeit."
+  s	skos:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen."
+        skos:closeMatch zv:NietNatuurlijkPersoon;
+.
 zv:Huis a skos:Concept, skoslex:Object;
 	rdfs:label "Huis"@nl;
 	skos:prefLabel "Huis";
