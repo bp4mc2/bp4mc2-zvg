@@ -170,7 +170,7 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:TitelVanAankomst;
 	skoslex:actor not:Notaris;
-	skoslex:object not:Registergoed;
+	skoslex:object not:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
@@ -311,6 +311,20 @@ not:Onderpand a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
 	skos:semanticRelation not:RechtVanHypotheek;
 .
+not:OnroerendeZaak a skos:Concept, skoslex:Object;
+	rdfs:label "Onroerende zaak"@nl;
+	skos:prefLabel "Onroerende zaak";
+	skos:altLabel "Registergoed";
+	skos:altLabel "Onroerend goed";
+	skos:altLabel "Object";
+	skos:altLabel "Pand";
+	skos:altLabel "Zaak";
+	skos:definition "Onroerend zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken. Onroerende zaken kunnen bezwaard worden met een beperkt of zakelijk recht.";
+	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc..";
+	skosthes:narrowerGeneric zv:Huis;
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	skosthes:broaderPartitive not:Leveringsakte;
+.
 not:Opslagbedrag a skos:Concept, skoslex:Object;
 	rdfs:label "Opslagbedrag"@nl;
 	skos:prefLabel "Opslagbedrag";
@@ -348,15 +362,6 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:ZakelijkRecht;
         skosthes:narrowerGeneric not:Hypotheekakte;
-.
-not:Registergoed a skos:Concept, skoslex:Object;
-	rdfs:label "Registergoed"@nl;
-	skos:prefLabel "Registergoed";
-	skos:definition "Onroerende zaak, grond, geregistreerd schip of vliegtuig, of een aandeel in een van die zaken. De eigendom van een registergoed kan alleen worden overgedragen via een inschrijving in openbare registers.";
-	rdfs:comment "Een registergoed is een goed voor welker overdracht of vestiging inschrijving in daartoe bestemde openbare registers noodzakelijk is. Een voorbeeld van een onroerend registergoed is een woning. Een voorbeeld van een roerend registergoed is een schip, dat is ingeschreven in het scheepsregister. Een appartementsrecht is een voorbeeld van een vermogensrecht dat een registergoed is. Een voorbeeld van een niet-registergoed is een fiets. Ook een auto is geen registergoed, want hoewel men een auto moet inschrijven in het kentekenregister schrijft de wet dit niet als vereiste voor eigendomsoverdracht voor.";
-	skosthes:narrowerGeneric zv:Huis;
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skosthes:broaderPartitive not:Leveringsakte
 .
 not:TitelVanAankomst a skos:Concept, skoslex:Object;
 	rdfs:label "Titel van aankomst"@nl;
