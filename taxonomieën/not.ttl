@@ -173,6 +173,14 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
 	skoslex:object not:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
 .
+not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
+	rdfs:label "Toezicht waarborgsom"@nl;
+	skos:prefLabel "Toezicht waarborgsom";
+	skos:definition "Controle van notaControle van notaris op de waarborgsom.ris op de waarborgsom.";
+	rdfs:comment "Controle van notaris op de waarborgsom.";
+	skoslex:actor not:Notaris;
+	skoslex:object not:Waarborgsom;
+.
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Vestiging hypotheek"@nl;
 	skos:prefLabel "Vestiging hypotheek";
@@ -384,10 +392,11 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 not:Waarborgsom a skos:Concept, skoslex:Object;
 	rdfs:label "Waarborgsom"@nl;
 	skos:prefLabel "Waarborgsom";
+	skos:altLabel "Bankgarantie";
+	skos:altLabel "Zekerheid";
 	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper tot aan transportdatum waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
 	rdfs:comment "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper tot aan transportdatum waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-        skosthes:broaderPartitive not:Levering;
 .
 not:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Zakelijk recht"@nl;
