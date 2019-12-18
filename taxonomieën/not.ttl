@@ -125,7 +125,8 @@ not:Levering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Verkrijger;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
-	skoslex:object mak:Koopovereenkomst;#Dit moet eigenlijk een koppeling zijn aan de bovenste act van "De koop"
+	skoslex:object mak:Koopovereenkomst;#Dit moet eigenlijk een koppeling zijn aan de bovenste act van "De koop";
+	skosthes:narrowerGeneric zv:Koop;
 .
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
