@@ -69,7 +69,7 @@ zv:RechtsPersoon a skos:Concept, skoslex:Actor;
 	skos:altLabel "NV";
 	skos:altLabel "BV";
 	skos:definition "Een rechtspersoon is een rechtssubject die zelfstandig drager is van rechten en met een natuurlijk gelijk staat, tenzij uit de wet het tegendeel voortvloeit.";
-  s	skos:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
+  skos:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
         skos:closeMatch zv:NietNatuurlijkPersoon;
 .
 zv:Huis a skos:Concept, skoslex:Object;
