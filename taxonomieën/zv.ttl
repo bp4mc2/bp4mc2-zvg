@@ -41,9 +41,14 @@ zv:Persoon a skos:Concept, skoslex:Actor;
 	skosthes:narrowerGeneric zv:Mens;
 	skosthes:narrowerGeneric zv:Organisatie;
 .
-zv:Koop a skos:Concept, skoslex:Act;
-	rdfs:label "Koop"@nl;
-	skos:prefLabel "Koop";
+zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
+	rdfs:label "Aan- of verkoop van een huis"@nl;
+	skos:prefLabel "Aan- of verkoop van een huis"@nl;
+	skosthes:narrowerPartitive mak:Koop;
+	skosthes:narrowerPartitive not:Levering;
+	skosthes:related zv:Huis;
+	skos:definition "Aan- of verkoop van een huis is het aankopen of verkopen van een huis en omvat de koop en levering"@nl;
+	skos:editorialNote "Nog niet helemaal tevreden met de term. Wel is dit wat het betreffende begrip omvat. We willen het niet plat 'Koop' noemen ivm de verwarring met mak:Koop (wat uit de wet volgt). 'Koop van een Huis' is korter, maar suggereert meer dat het gaat om aankoop en niet verkoop"@nl;
 .
 zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
