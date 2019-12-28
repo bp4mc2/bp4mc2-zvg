@@ -32,6 +32,7 @@ zv:Organisatie a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechtspersoon"@nl;
 	skos:prefLabel "Organisatie";
 	skos:altLabel "rechtspersoon";
+	skosthes:narrowerPartitive not:Notaris;
 #Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
 .
 zv:Persoon a skos:Concept, skoslex:Actor;
