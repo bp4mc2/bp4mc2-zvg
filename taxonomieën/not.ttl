@@ -39,6 +39,7 @@
 
 #Burgerlijk Wetboek (BW)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83> rdfs:label "artikel 83 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84> rdfs:label "artikel 84 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89> rdfs:label "artikel 89 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4> rdfs:label "artikel 89, vierde lid, van Boek 3 van het Burgerlijk Wetboek".
@@ -117,12 +118,14 @@ not:Levering a skos:Concept, skoslex:Act;
 	skos:altLabel "Eigendomsoverdracht";
 	skos:definition "Levering is in het Nederlands recht een vast onderdeel van de eigendomsoverdracht. Het omvat het geheel aan handelingen dat tot doel heeft een goed van het vermogen van een vervreemder in het vermogen van een verkrijger te doen overgaan.";
 	rdfs:comment "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
 	skoslex:object mak:Koopovereenkomst;#Dit moet eigenlijk een koppeling zijn aan de bovenste act van "De koop";
+        skos:semanticRelation not: Overdracht;
 	skosthes:narrowerPartitive not:ArchiverenAkte;
 	skosthes:narrowerPartitive not:IdentificatieNotaris;
 	skosthes:narrowerPartitive not:OpstellenAkte;
@@ -138,6 +141,16 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van het schriftelijk document.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skoslex:actor not:Notaris;
+.
+not:Overdracht a skos:Concept, skoslex:Act;
+	rdfs:label "Overdracht"@nl;
+	skos:prefLabel "Overdracht";
+	skos:altLabel "Transport";
+	skos:definition "Voor overdracht van een goed wordt vereist een levering krachtens geldige titel, verricht door hem die bevoegd is over het goed te beschikken.";
+	rdfs:comment "Bij overdracht geeft iemand de eigendom van zijn goed aan een ander, die de eigendom van dat goed wil ontvangen. Een overdracht is pas geldig als de eigenaar bevoegd is de eigendom over te dragen en de ontvanger het goed vervolgens kan gebruiken.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
+        skos:semanticRelation not: Levering;
 .
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
