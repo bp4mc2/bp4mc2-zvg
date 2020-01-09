@@ -19,3 +19,4 @@ waarborgsom en bankgarantie weglaten of toch opnemen omdat ze in de koopovereenk
 * skosthes:broaderGeneric gebruiken ipv skos:broader (skosthes is aanvulling op basis van iso standaard voor thesauri)
 * Wie maakt wel deel van de taxonomie: zoveel mogelijk de (wettelijke) bronhouders. Dit impliceert dat bijvoorbeeld de meeste begrippen van ECH door de KNB als representant van Het Notariaat worden beheerd.
 * De uitleg op B2 niveau moet wel onder regie van de juridisch verantwoordelijken gebeuren. Deze uitleg zal nooit waterdicht zijn. Juristen zeggen dat als het zo gemakkelijk was ze de zaak ook wel zo eenvoudig hadden geformuleerd. Daarom zal er ook altijd een disclaimer nodig zijn die de status van de B2 uitleg duidelijk maakt.
+* Probeer zoveel mogelijk werkwoorden te gebruiken voor handelingen.
