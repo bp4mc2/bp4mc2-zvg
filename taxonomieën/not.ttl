@@ -146,8 +146,9 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 .
 not:Overdracht a skos:Concept, skoslex:Act;
-	rdfs:label "Overdracht"@nl;
+	rdfs:label "Overdracht"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'overdracht' beter herkenbaar is bij de koopovereenkomst dan 'overdragen'.
 	skos:prefLabel "Overdracht";
+	skos:altLabel "Overdragen";
 	skos:altLabel "Transport";
 	skos:definition "Voor overdracht van een goed wordt vereist een levering krachtens geldige titel, verricht door hem die bevoegd is over het goed te beschikken.";
 	rdfs:comment "Bij overdracht geeft iemand de eigendom van zijn goed aan een ander, die de eigendom van dat goed wil ontvangen. Een overdracht is pas geldig als de eigenaar bevoegd is de eigendom over te dragen en de ontvanger het goed vervolgens kan gebruiken.";
