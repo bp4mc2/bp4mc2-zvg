@@ -115,8 +115,9 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
 .
 not:Levering a skos:Concept, skoslex:Act;
-	rdfs:label "Levering"@nl;
+	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
 	skos:prefLabel "Levering";
+	skos:altLabel "Leveren";
 	skos:altLabel "Eigendomsoverdracht";
 	skos:definition "Levering is in het Nederlands recht een vast onderdeel van de eigendomsoverdracht. Het omvat het geheel aan handelingen dat tot doel heeft een goed van het vermogen van een vervreemder in het vermogen van een verkrijger te doen overgaan.";
 	rdfs:comment "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan.";
