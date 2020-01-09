@@ -32,6 +32,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1> rdfs:label "artikel 1, eerste lid, van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II> rdfs:label "artikel 2 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12> rdfs:label "artikel 12 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25> rdfs:label "artikel 25 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37> rdfs:label "artikel 37 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39> rdfs:label "artikel 39 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40> rdfs:label "artikel 40 van de Wet op het notarisambt".
@@ -313,6 +314,15 @@ not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
         skosthes:broaderPartitive not:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
+.
+not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
+	rdfs:label "Kwaliteitsrekening"@nl;
+	skos:prefLabel "Kwaliteitsrekening";
+	skos:altLabel "Derdegeldenrekening";
+	skos:definition "Met kwaliteitsrekening houdt de notaris de gelden van cliënten gescheiden van het eigen kantoorvermogen. Daarmee zijn de gelden van cliënten beschermd tegen oneigenlijk gebruik of faillissement.";
+	rdfs:comment "De kwaliteitsrekening is een andere naam voor de zogenaamde derdengeldenrekening. Het is een aparte  bankrekening van de notaris voor het geld van zijn cliënten. Deze rekening is beschermd in die zin dat er geen beslag op kan worden gelegd door schuldeisers van de notaris.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>; 
+#Nog relaties leggen
 .
 not:Leveringsakte a skos:Concept, skoslex:Object;
 	rdfs:label "Leveringsakte"@nl;
