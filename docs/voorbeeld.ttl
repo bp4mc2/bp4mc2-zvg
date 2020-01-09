@@ -4,9 +4,8 @@
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix nvm: <http://nvm.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix hdn: <http://www.hdn.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
-@prefix ech: <http://ech.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
+@prefix fin: <http://www.fin.taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/begrip/>.
