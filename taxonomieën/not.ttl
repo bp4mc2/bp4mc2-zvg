@@ -413,6 +413,14 @@ not:Rang a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 .
+not:Rechthebbende a skos:Concept, skoslex:Object;
+	rdfs:label "Rechthebbende"@nl;
+	skos:prefLabel "Rechthebbende";
+	skos:definition "De persoon aan wie een zaak, goed of recht toebehoort.";
+	rdfs:comment "Een rechthebbende is een (niet) natuurlijk  persoon die met uitsluiting van anderen een zaak mag gebruiken. De rechthebbende van de eigendom van een zaak wordt eigenaar genoemd.";
+        skosthes:broaderTransitive not:ZakelijkRecht;
+        skosthes:broaderTransitive not:Levering;
+.
 not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Recht van hypotheek"@nl;
 	skos:prefLabel "Recht van hypotheek";
@@ -423,7 +431,7 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:ZakelijkRecht;
-        skosthes:narrowerGeneric not:Hypotheekakte;
+        skosthes:narrowerGeneric not:BeperktRecht;
 .
 not:Titel a skos:Concept, skoslex:Object;
 	rdfs:label "Titel"@nl;
@@ -476,5 +484,4 @@ not:ZakelijkRecht a skos:Concept, skoslex:Object;
 	skos:prefLabel "Zakelijk recht";
 	skos:definition "Een zakelijk recht is het recht dat iemand op een zaak heeft en met uitsluiting van ieder ander kan uitoefenen. Een zakelijk recht blijft rusten op een zaak, ongeacht of deze zaak verandert van eigenaar (zaaksgevolg).";
 	rdfs:comment "Een zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 .
