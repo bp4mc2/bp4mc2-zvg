@@ -420,6 +420,7 @@ not:Rechthebbende a skos:Concept, skoslex:Object;
 	rdfs:comment "Een rechthebbende is een (niet) natuurlijk  persoon die met uitsluiting van anderen een zaak mag gebruiken. De rechthebbende van de eigendom van een zaak wordt eigenaar genoemd.";
         skosthes:broaderTransitive not:ZakelijkRecht;
         skosthes:broaderTransitive not:Levering;
+#Relateren aan vervreemder en verkrijger?
 .
 not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Recht van hypotheek"@nl;
