@@ -108,10 +108,12 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
 	skos:prefLabel "Identificatie comparant";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
+        skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:Comparant;
+	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
 .
