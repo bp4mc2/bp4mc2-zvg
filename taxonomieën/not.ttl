@@ -138,6 +138,8 @@ not:Levering a skos:Concept, skoslex:Act;
 	skosthes:narrowerPartitive not:Passeren;
 	skosthes:narrowerPartitive not:RechercheNotaris;
 	skosthes:narrowerPartitive not:RegistrerenAkte;
+	skosthes:narrowerPartitive not:RegistrerenAkteOverdrachtsbelasting;
+	skosthes:narrowerPartitive not:RegistrerenAkteRegistratiewet1970;
 	skosthes:narrowerPartitive not:VestigingHypotheek;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
@@ -175,10 +177,9 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skoslex:object not:RechtVanHypotheek;
 #Toevoegen zv:onroerendGoed als object?
 .
-#RegistrerenAkte of RegistrenNOT?
-not:RegistrerenAkte a skos:Concept, skoslex:Act;
-	rdfs:label "Registreren (akte)"@nl;
-	skos:prefLabel "Registreren (akte)";
+not:RegistrerenAkte a skos:Concept, skoslex:Act;#RegistrerenAkte of RegistrenNOT?
+	rdfs:label "Registreren akte"@nl;
+	skos:prefLabel "Registreren akte";
 	skos:definition "Vastleggen in een register";
 	rdfs:comment "Vastleggen in een register";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
@@ -187,8 +188,25 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;
         skoslex:object not:AfschriftAkte;
 	skoslex:object not:TitelVanAankomst;
 .
-#RechercheNotaris of RechercheNOT?
-not:RechercheNotaris a skos:Concept, skoslex:Act;
+not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren overdrachtsbelasting"@nl;
+	skos:prefLabel "Registreren overdrachtsbelasting";
+	skos:definition "Vastleggen in een register";
+	#rdfs:comment "";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+        skoslex:object bel:Overdrachtsbelasting;
+        skoslex:object bel:RegisterBelastingdienst;
+.
+not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren akte registratiewet 1970"@nl;
+	skos:prefLabel "Registreren akte registratiewet 1970";
+	skos:definition "Vastleggen in een register";
+	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
+        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+        skoslex:object not:AfschriftAkte;
+        skoslex:object bel:RegisterBelastingdienst;
+.
+not:RechercheNotaris a skos:Concept, skoslex:Act;#RechercheNotaris of RechercheNOT?
 	rdfs:label "Recherche"@nl;
 	skos:prefLabel "Recherche";
 	skos:altLabel "Rechercheplicht";
