@@ -38,6 +38,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49> rdfs:label "artikel 49 van de Wet op het notarisambt".
 
 #Burgerlijk Wetboek (BW)
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83> rdfs:label "artikel 83 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84> rdfs:label "artikel 84 van Boek 3 van het Burgerlijk Wetboek".
@@ -253,6 +254,14 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
 #Hoort dit gekoppeld te zijn aan een FIN act van het garant staan?
+.
+not:BeperktRecht a skos:Concept, skoslex:Object;
+	rdfs:label "Beperkt recht"@nl;
+	skos:prefLabel "Beperkt recht";
+	skos:definition "Een beperkt recht is een recht dat is afgeleid uit een meer omvattend recht, dat met het beperkte recht is bezwaard.";
+	rdfs:comment "Een eigenaar dient te dulden dat het gebruik van zijn recht is beperkt: de beperktgerechtigde kan de betreffende zaak volgens het beperkte recht gebruiken. Beperkte rechten zijn te onderscheiden in gebruiksrechten (vruchtgebruik, erfdienstbaarheid, erfpacht, opstal) en zekerheidsrechten (hypotheekrecht, pandrecht).";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
+	skosthes:narrowerbroaderPartitive not:ZakelijkRecht;
 .
 not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:label "Comparant"@nl;
