@@ -40,6 +40,7 @@
 #Burgerlijk Wetboek (BW)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60> rdfs:label "artikel 60 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83> rdfs:label "artikel 83 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84> rdfs:label "artikel 84 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89> rdfs:label "artikel 89 van Boek 3 van het Burgerlijk Wetboek".
@@ -319,7 +320,6 @@ not:Leveringsakte a skos:Concept, skoslex:Object;
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
 	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
-	skosthes:broaderTransitive not:NotarieleAkte;
 .
 not:Minuut a skos:Concept, skoslex:Object;
 	rdfs:label "Minuut"@nl;
@@ -340,6 +340,16 @@ not:NotarieleAkte a skos:Concept, skoslex:Object;
 	rdfs:comment "Een notariële akte is een authentieke akte die is ondertekend door een notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
         skosthes:narrowerGeneric not:AfschriftAkte;
+	skosthes:narrowerGeneric not:LeveringsAkte;
+.
+not:NotarieleVolmacht a skos:Concept, skoslex:Object;
+	rdfs:label "Notariële volmacht"@nl;
+	skos:prefLabel "Notariële volmacht";
+        skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk.";
+	rdfs:comment "Een volmacht die bij een (authentieke) notariële akte is verleend.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
+	skosthes:broaderTransitive not:NotarieleAkte;
+#Relaties toe te voegen. Mogelijk aan notaris.
 .
 not:OnderhandseAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Onderhandse akte"@nl;
@@ -440,6 +450,15 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
+.
+not:Volmacht a skos:Concept, skoslex:Object;
+	rdfs:label "Volmacht"@nl;
+	skos:prefLabel "Volmacht";
+	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden.";
+	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem bepaalde verklaringen af te geven. De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
+	skosthes:broaderPartitive not:NotarieleVolmacht;
+#Relaties toe te voegen. Mogelijk aan comparant, aan actoren.
 .
 not:Waarborgsom a skos:Concept, skoslex:Object;
 	rdfs:label "Waarborgsom"@nl;
