@@ -46,6 +46,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84> rdfs:label "artikel 84 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89> rdfs:label "artikel 89 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4> rdfs:label "artikel 89, vierde lid, van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "artikel 213 van Boek 6 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "artikel 227 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
@@ -67,11 +68,21 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
 	skos:semanticRelation not:PlaatsVanVestiging;
 .
+not:Partij a skos:Concept, skoslex:Actor;
+	rdfs:label "Partij"@nl;
+	skos:prefLabel "Partij";
+	skos:definition "Een Partij is een (niet) natuurlijk persoon die betrokken is bij een meerzijdige rechtshandeling.";
+  	skos:comment "Een partij is een (niet) natuurlijk persoon die samen met een andere (niet) natuurlijke persoon een handeling verrichten, waardoor zij samen een juridisch doel bereiken. Dit doel noemen juristen een rechtsgevolg.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>.
+        skosthes:broaderTransitive not:Verkrijger;
+        skosthes:broaderTransitive not:Vervreemder;
+.
 not:Verkrijger a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger";
 	skos:altLabel "Koper";
+	skos:altLabel "Begiftigde";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
         rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
@@ -83,6 +94,9 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 	rdfs:label "Vervreemder"@nl;
 	skos:prefLabel "Vervreemder";
 	skos:altLabel "Verkoper";
+	skos:altLabel "Toebedeler";
+	skos:altLabel "Overdrager";
+	skos:altLabel "Toebedelende partij";
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
         rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
