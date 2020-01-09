@@ -73,6 +73,10 @@ zv:RechtsPersoon a skos:Concept, skoslex:Actor;
   skos:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
         skos:closeMatch zv:NietNatuurlijkPersoon;
 .
+zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
+	rdfs:label "Basisregistratie personen"@nl;
+	skos:prefLabel "Basisregistratie personen";
+.
 zv:Huis a skos:Concept, skoslex:Object;
 	rdfs:label "Huis"@nl;
 	skos:prefLabel "Huis";
