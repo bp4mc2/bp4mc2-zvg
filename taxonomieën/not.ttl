@@ -72,10 +72,8 @@ not:Partij a skos:Concept, skoslex:Actor;
 	rdfs:label "Partij"@nl;
 	skos:prefLabel "Partij";
 	skos:definition "Een Partij is een (niet) natuurlijk persoon die betrokken is bij een meerzijdige rechtshandeling.";
-  	skos:comment "Een partij is een (niet) natuurlijk persoon die samen met een andere (niet) natuurlijke persoon een handeling verrichten, waardoor zij samen een juridisch doel bereiken. Dit doel noemen juristen een rechtsgevolg.";
+  	rdfs:comment "Een partij is een (niet) natuurlijk persoon die samen met een andere (niet) natuurlijke persoon een handeling verrichten, waardoor zij samen een juridisch doel bereiken. Dit doel noemen juristen een rechtsgevolg.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>;
-        skosthes:broaderTransitive not:Verkrijger;
-        skosthes:broaderTransitive not:Vervreemder;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
@@ -88,6 +86,7 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:narrowerGeneric mak:Koper;
 	skosthes:narrowerGeneric fin:Hypotheekgever;
+	skosthes:broaderGeneric not:Partij;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
@@ -102,6 +101,7 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:narrowerGeneric mak:Verkoper;
 	skosthes:narrowerGeneric fin:Hypotheekgever;
+	skosthes:broaderGeneric not:Partij;
 .
 #--
 #Acts

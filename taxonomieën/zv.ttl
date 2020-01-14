@@ -47,7 +47,7 @@ zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 	skos:prefLabel "Aan- of verkoop van een huis"@nl;
 	skosthes:narrowerPartitive mak:Koop;
 	skosthes:narrowerPartitive not:Levering;
-	skosthes:related zv:Huis;
+	skos:semanticRelation zv:Huis;
 	skos:definition "Aan- of verkoop van een huis is het aankopen of verkopen van een huis en omvat de koop en levering"@nl;
 	skos:editorialNote "Nog niet helemaal tevreden met de term. Wel is dit wat het betreffende begrip omvat. We willen het niet plat 'Koop' noemen ivm de verwarring met mak:Koop (wat uit de wet volgt). 'Koop van een Huis' is korter, maar suggereert meer dat het gaat om aankoop en niet verkoop"@nl;
 .
@@ -55,13 +55,13 @@ zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
 	skos:prefLabel "Natuurlijk persoon";
 	skos:definition "Een mens in juridische zin, als iemand die drager van rechten en verplichtingen kan zijn. Het zijn van een natuurlijk persoon eindigt met het overlijden (hersendood).";
-  	skos:comment "Een mens met eigen rechten en plichten.";
+  	rdfs:comment "Een mens met eigen rechten en plichten.";
 .
 zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Niet natuurlijk persoon"@nl;
 	skos:prefLabel "Niet natuurlijk persoon";
 	skos:definition "Een organisatie of abstracte entiteit die zelfstandig in het rechtsverkeer kan optreden. Het zijn van een niet natuurlijk persoon eindigt bij ontbinding van de organisatie of entiteit.";
-  	skos:comment "Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. Een niet natuurlijk persoon heeft eigen rechten en plichten.";
+  	rdfs:comment "Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. Een niet natuurlijk persoon heeft eigen rechten en plichten.";
 .
 zv:RechtsPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechtspersoon"@nl;
@@ -70,7 +70,7 @@ zv:RechtsPersoon a skos:Concept, skoslex:Actor;
 	skos:altLabel "NV";
 	skos:altLabel "BV";
 	skos:definition "Een rechtspersoon is een rechtssubject die zelfstandig drager is van rechten en met een natuurlijk gelijk staat, tenzij uit de wet het tegendeel voortvloeit.";
-  skos:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
+  rdfs:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
         skos:closeMatch zv:NietNatuurlijkPersoon;
 .
 zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;

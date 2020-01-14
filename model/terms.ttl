@@ -86,3 +86,17 @@ zvgmodel:scopeNote a sh:PropertyShape;
   sh:path skos:scopeNote;
   sh:name "skos:scopeNote";
 .
+zvgmodel:semanticRelation a sh:PropertyShape;
+  sh:path skos:semanticRelation;
+  sh:name "skos:semanticRelation";
+.
+
+# SHACL
+zvgmodel:name a sh:PropertyShape;
+  sh:path sh:name;
+  sh:name "sh:name";
+.
+zvgmodel:path a sh:PropertyShape;
+  sh:path sh:path;
+  sh:name "sh:path";
+.
