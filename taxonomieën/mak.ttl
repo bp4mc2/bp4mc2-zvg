@@ -18,6 +18,9 @@
 	rdfs:label "Domein Makelaar";
 .
 
+# Wet- en regelgeving
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "Artikel 1, Burgerlijk wetboek, boek 7".
+
 #begrippen uit andere ZV domeinen
 mak:Persoon a skos:Concept, skoslex:Object, skoslex:Actor;
 	skos:exactMatch zv:Persoon;

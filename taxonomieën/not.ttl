@@ -387,7 +387,7 @@ not:NotarieleAkte a skos:Concept, skoslex:Object;
 	rdfs:comment "Een notariële akte is een authentieke akte die is ondertekend door een notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
         skosthes:narrowerGeneric not:AfschriftAkte;
-	skosthes:narrowerGeneric not:LeveringsAkte;
+	skosthes:narrowerGeneric not:Leveringsakte;
 .
 not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële volmacht"@nl;
