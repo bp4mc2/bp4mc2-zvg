@@ -60,6 +60,7 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
 mak:Koopovereenkomst a skos:Concept, skoslex:Object;
@@ -159,6 +160,7 @@ mak:IdentificatieKoop a skos:Concept, skoslex:Act;
 	skos:definition "het identificeren van de cliënt (verkoper en koper) en het verifiëren van diens identiteit op grond van een wettelijke verplichting ";
 	rdfs:comment "De verkoopmakelaar is wettelijk verplicht om de verkoper, zijn opdrachtgever, en de koper, de wederpartij van de verkoper, te identificeren en diens identiteit te verifiëren.";
 	skosthes:broaderPartitive mak:Koop;
+	skoslex:actor mak:Makelaar;
 	skoslex:object mak:Persoon;
 .
 mak:Taxateur a skos:Concept, skoslex:Agent;
@@ -175,6 +177,7 @@ mak:Taxatie a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Taxateur;
 	skoslex:actor mak:Partij;
 	skoslex:object mak:Woning;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 mak:RechercheTaxatie a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche taxatie"@nl;
