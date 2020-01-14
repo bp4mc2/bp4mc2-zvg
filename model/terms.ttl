@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+
+@prefix zvgmodel: <http://bp4mc2.org/def/zvgmodel#>.
+
+# Geïmporteerde termen
+
+# SKOS-LEX
+zvgmodel:actor a sh:PropertyShape;
+  sh:path skoslex:actor;
+  sh:name "skoslex:actor";
+.
+zvgmodel:agent a sh:PropertyShape;
+  sh:path skoslex:agent;
+  sh:name "skoslex:agent";
+.
+zvgmodel:object a sh:PropertyShape;
+  sh:path skoslex:object;
+  sh:name "skoslex:object";
+.
+
+# DCTERMS
+zvgmodel:source a sh:PropertyShape;
+  sh:path dcterms:source;
+  sh:name "dcterms:source";
+.
+
+# SKOS-THES
+zvgmodel:broaderGeneric a sh:PropertyShape;
+  sh:path skosthes:broaderGeneric;
+  sh:name "skosthes:broaderGeneric";
+.
+zvgmodel:broaderPartitive a sh:PropertyShape;
+  sh:path skosthes:broaderPartitive;
+  sh:name "skosthes:broaderPartitive";
+.
+zvgmodel:narrowerGeneric a sh:PropertyShape;
+  sh:path skosthes:narrowerGeneric;
+  sh:name "skosthes:narrowerGeneric";
+.
+zvgmodel:narrowerPartitive a sh:PropertyShape;
+  sh:path skosthes:narrowerPartitive;
+  sh:name "skosthes:narrowerPartitive";
+.
+
+# RDF
+zvgmodel:type a sh:PropertyShape;
+  sh:path rdf:type;
+  sh:name "rdf:type";
+.
+
+# RDFS
+zvgmodel:comment a sh:PropertyShape;
+  sh:path rdfs:comment;
+  sh:name "rdfs:comment";
+.
+zvgmodel:label a sh:PropertyShape;
+  sh:path rdfs:label;
+  sh:name "rdfs:label";
+.
+
+# SKOS
+zvgmodel:altLabel a sh:PropertyShape;
+  sh:path skos:altLabel;
+  sh:name "skos:altLabel";
+.
+zvgmodel:prefLabel a sh:PropertyShape;
+  sh:path skos:prefLabel;
+  sh:name "skos:prefLabel";
+.
+zvgmodel:definition a sh:PropertyShape;
+  sh:path skos:definition;
+  sh:name "skos:definition";
+.
+zvgmodel:editorialNote a sh:PropertyShape;
+  sh:path skos:editorialNote;
+  sh:name "skos:editorialNote";
+.
+zvgmodel:scopeNote a sh:PropertyShape;
+  sh:path skos:scopeNote;
+  sh:name "skos:scopeNote";
+.
