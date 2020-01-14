@@ -158,6 +158,12 @@ GRAPH config:Theatre {
       rdfs:label "Gerelateerd aan"@nl;
       elmo:index 40;
     ];
+    elmo:fragment [
+      elmo:appliesTo dcat:landingPage;
+      rdfs:label "Webpagina"@nl;
+      elmo:appearance elmo:GlobalLink;
+      elmo:index 50;
+    ]
   .
 
   config:Graph a elmo:Representation;

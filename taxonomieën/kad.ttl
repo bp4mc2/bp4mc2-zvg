@@ -32,8 +32,11 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;
 .
 kad:ZakelijkRecht a skos:Concept;
-	skos:exactMatch brk:ZakelijkRecht;
+	skos:exactMatch brk:Zakelijk_recht;
 	rdfs:label "Zakelijk recht"@nl;
+	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
+	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
+	skos:scopeNote "Met een zakelijk recht wordt bedoeld een recht dat samenhangt met een zaak of een goed. Dit in tegenstelling met een persoonlijk recht, een recht dat samenhangt met de persoon. Om het verschil tussen beide rechten duidelijk te maken een voorbeeld. Eigendom is een zakelijk recht. Dat betekent onder meer dat het recht niet eindigt door het overlijden van de eigenaar. Als een eigenaar overlijdt vallen al zijn eigendommen in zijn nalatenschap. Huur is een persoonlijk recht. Door het overlijden van de huurder eindigt in principe wel de huur. Zakelijke rechten zijn, behalve het recht van eigendom, de rechten van erfpacht, opstal, vruchtgebruik, gebruik en bewoning en erfdienstbaarheid. Een Zakelijk recht kan zijn een zakelijk genotsrecht of een zakelijk zekerheidsrecht";
 .
 #---
 #Begrippen uit andere ZV domeinen
@@ -75,7 +78,7 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	dcat:servesDataset <http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie>;
 .
 
-<http://kad.zorgeloosvastgoed.nl/id/service/KIK-inzage> a dcat:DataService;
+<http://kad.zorgeloosvastgoed.nl/id/service/KadasterOnline> a dcat:DataService;
 	rdfs:label "Kadaster online";
 	dcterms:type "PDF download";
 	dcat:servesDataset <http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie>;
