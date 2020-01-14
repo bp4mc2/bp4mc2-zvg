@@ -148,6 +148,7 @@ mak:RechercheKoop a skos:Concept, skoslex:Act;
 	skos:definition "het onderzoek dat de makelaar uitvoert in de openbare registers van het kadaster met betrekking tot het registergoed voordat de koopovereenkomst wordt opgesteld";
 	rdfs:comment "Als een verkoopmakelaar een registergoed verkoopt dan verricht de verkoopmakelaar onderzoek in de openbare registers van het kadaster. Door dit onderzoek krijgt de verkoopmakelaar inzicht in zaken die van belang zijn bij de verkoop van het registergoed.";
 	skosthes:broaderPartitive mak:Koop;
+	skoslex:actor mak:Makelaar;
 	skoslex:object mak:Persoon;
 	skoslex:object mak:Woning;
 	skoslex:object mak:Overdrachtsbelasting;
