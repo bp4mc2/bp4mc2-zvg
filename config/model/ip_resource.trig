@@ -10,6 +10,7 @@ GRAPH config:Theatre {
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      PREFIX dcat: <http://www.w3.org/ns/dcat#>
       CONSTRUCT {
         ?subject ?p ?o.
         ?s ?ps ?subject.
@@ -21,6 +22,7 @@ GRAPH config:Theatre {
         skoslex:Actor rdfs:label "Actor"@nl.
         skoslex:Object rdfs:label "Object"@nl.
         skoslex:Agent rdfs:label "Agent"@nl.
+        dcat:Dataset rdfs:label "Dataset"@nl.
       }
       WHERE {
         {
