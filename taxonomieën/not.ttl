@@ -73,7 +73,7 @@ not:Partij a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Partij";
 	skos:definition "Een Partij is een (niet) natuurlijk persoon die betrokken is bij een meerzijdige rechtshandeling.";
   	skos:comment "Een partij is een (niet) natuurlijk persoon die samen met een andere (niet) natuurlijke persoon een handeling verrichten, waardoor zij samen een juridisch doel bereiken. Dit doel noemen juristen een rechtsgevolg.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>.
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>;
         skosthes:broaderTransitive not:Verkrijger;
         skosthes:broaderTransitive not:Vervreemder;
 .
@@ -337,7 +337,7 @@ not:Hypotheekrecht a skos:Concept, skoslex:Object;
 	skos:definition "Het recht van hypotheek is een beperkt recht, strekkende tot zekerheid om op de daaraan onderworpen onroerende zaak(en) een vordering totvoldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Indien de hypotheekgever de verplichtingen niet nakomt heeft de hypotheeknemer het recht om het bezwaarde goed te executeren en uit de opbrengst de eigen vordering te voldoen.";
 	rdfs:comment "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;        
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
         skosthes:broaderTransitive not:Hypotheekakte;
 	skosthes:broaderPartitive not:BeperktRecht;
 .
@@ -356,7 +356,7 @@ not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	skos:altLabel "Derdegeldenrekening";
 	skos:definition "Met kwaliteitsrekening houdt de notaris de gelden van cliënten gescheiden van het eigen kantoorvermogen. Daarmee zijn de gelden van cliënten beschermd tegen oneigenlijk gebruik of faillissement.";
 	rdfs:comment "De kwaliteitsrekening is een andere naam voor de zogenaamde derdengeldenrekening. Het is een aparte  bankrekening van de notaris voor het geld van zijn cliënten. Deze rekening is beschermd in die zin dat er geen beslag op kan worden gelegd door schuldeisers van de notaris.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>; 
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>;
 #Nog relaties leggen
 .
 not:Leveringsakte a skos:Concept, skoslex:Object;
