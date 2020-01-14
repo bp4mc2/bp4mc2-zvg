@@ -12,6 +12,7 @@ GRAPH config:Theatre {
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
       SELECT DISTINCT ?g ?p ?p_label
       WHERE {
         GRAPH ?g {
