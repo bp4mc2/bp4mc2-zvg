@@ -54,3 +54,27 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	skoslex:actor kad:Bewaarder;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
+
+#---
+# Voorbeeldsituatie uitwerking metadata-link
+#---
+<http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie> a dcat:Dataset;
+	rdfs:label "Eigendomsinformatie";
+	dcterms:title "BRK Eigendomsinformatie";
+	dcterms:language "NL";
+	dcat:landingPage <https://zakelijk.kadaster.nl/-/eigendomsinformatie>;
+	dcterms:description "Eigendomsinformatie bevat actuele informatie uit de openbare registers, zoals: wie de eigenaar of (mede-)gerechtigde is van een perceel waarop een woning staat, welke beperkingen er gelden voor het gebruik van het perceel, wie gebruik mag maken van het geheel of een deel ervan";
+	dcterms:subject kad:ZakelijkRecht;
+.
+
+<http://kad.zorgeloosvastgoed.nl/id/service/KIK-inzage> a dcat:DataService;
+	rdfs:label "KIK-inzage";
+	dcterms:type "XML webservice";
+	dcat:servesDataset <http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie>;
+.
+
+<http://kad.zorgeloosvastgoed.nl/id/service/KIK-inzage> a dcat:DataService;
+	rdfs:label "Kadaster online";
+	dcterms:type "PDF download";
+	dcat:servesDataset <http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie>;
+.

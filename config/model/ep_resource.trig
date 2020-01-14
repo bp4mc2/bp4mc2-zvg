@@ -21,6 +21,7 @@ GRAPH config:Theatre {
     elmo:contains config:Menu;
     elmo:contains config:Content;
     elmo:contains config:Graph;
+    elmo:contains config:Datasets;
     elmo:appearance [a elmo:HiddenAppearance];
     elmo:informationProduct config:ResourceData;
   .
@@ -167,6 +168,16 @@ GRAPH config:Theatre {
 
   config:GraphAppearance a elmo:GraphAppearance;
     elmo:index 2;
+  .
+
+  config:Datasets a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:DatasetsData;
+    elmo:appearance config:DatasetsAppearance;
+  .
+
+  config:DatasetsAppearance a elmo:ShortTableAppearance;
+    elmo:index 3;
   .
 
 }
