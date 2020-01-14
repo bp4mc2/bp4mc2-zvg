@@ -58,6 +58,7 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:object fin:Hypotheekadvies;
 	skoslex:object fin:Koopovereenkomst;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 fin:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Identificatie hypotheekadvies"@nl;
@@ -82,6 +83,7 @@ fin:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
 	skoslex:object fin:BindendeOfferte;
 	skoslex:object fin:Hypotheekadvies;
 	skoslex:object fin:Koopovereenkomst;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 fin:Lening a skos:Concept, skoslex:Object;
 	rdfs:label "Lening"@nl;
