@@ -144,7 +144,7 @@ not:Levering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Verkrijger;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
-        skos:semanticRelation not: Overdracht;
+        skos:semanticRelation not:Overdracht;
 	skosthes:narrowerPartitive not:ArchiverenAkte;
 	skosthes:narrowerPartitive not:IdentificatieNotaris;
 	skosthes:narrowerPartitive not:OpstellenAkte;
