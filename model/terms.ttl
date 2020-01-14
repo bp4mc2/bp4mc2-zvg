@@ -4,6 +4,7 @@
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 
@@ -29,6 +30,26 @@ zvgmodel:object a sh:PropertyShape;
 zvgmodel:source a sh:PropertyShape;
   sh:path dcterms:source;
   sh:name "dcterms:source";
+.
+zvgmodel:subject a sh:PropertyShape;
+  sh:path dcterms:subject;
+  sh:name "dcterms:subject";
+.
+zvgmodel:description a sh:PropertyShape;
+  sh:path dcterms:description;
+  sh:name "dcterms:description";
+.
+zvgmodel:title a sh:PropertyShape;
+  sh:path dcterms:title;
+  sh:name "dcterms:title";
+.
+zvgmodel:language a sh:PropertyShape;
+  sh:path dcterms:language;
+  sh:name "dcterms:language";
+.
+zvgmodel:dcterms-type a sh:PropertyShape;
+  sh:path dcterms:type;
+  sh:name "dcterms:type";
 .
 
 # SKOS-THES
@@ -99,4 +120,14 @@ zvgmodel:name a sh:PropertyShape;
 zvgmodel:path a sh:PropertyShape;
   sh:path sh:path;
   sh:name "sh:path";
+.
+
+# DCAT
+zvgmodel:landingPage a sh:PropertyShape;
+  sh:path dcat:landingPage;
+  sh:name "dcat:landingPage";
+.
+zvgmodel:servesDataset a sh:PropertyShape;
+  sh:path dcat:servesDataset;
+  sh:name "dcat:servesDataset";
 .
