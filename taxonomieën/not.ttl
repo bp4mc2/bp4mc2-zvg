@@ -154,6 +154,7 @@ not:Levering a skos:Concept, skoslex:Act;
 	skosthes:narrowerPartitive not:RegistrerenAkteOverdrachtsbelasting;
 	skosthes:narrowerPartitive not:RegistrerenAkteRegistratiewet1970;
 	skosthes:narrowerPartitive not:VestigingHypotheek;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen (akte)"@nl;
