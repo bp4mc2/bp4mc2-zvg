@@ -52,4 +52,5 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:actor kad:Notaris;
 	skoslex:actor kad:Bewaarder;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
