@@ -76,7 +76,7 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
         rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skosthes:narrowerGeneric mak:Koper;
-	skosthes:narrowerGeneric fin:Hypotheekgever;
+	skosthes:narrowerGeneric fin:Hypotheekgever;#Ik weet niet of het beter is om vanuit hypotheekgever te linken naar verkrijger of vice versa.
 	skosthes:broaderGeneric zv:Partij;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
