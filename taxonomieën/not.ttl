@@ -281,7 +281,7 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 	skos:definition "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
 	rdfs:comment "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-        skosthes:broaderTransitive not:Levering;
+        skosthes:broaderPartitive not:Levering;
 #Hoort dit gekoppeld te zijn aan een FIN act van het garant staan?
 .
 not:Comparant a skos:Concept, skoslex:Object;
