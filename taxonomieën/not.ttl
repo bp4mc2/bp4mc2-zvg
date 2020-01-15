@@ -73,10 +73,9 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
 	skos:altLabel "Begiftigde";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
         rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skosthes:narrowerGeneric mak:Koper;
+        skosthes:narrowerGeneric mak:Koper;  #Een koper is altijd een verkrijger, maar een verkrijger is niet altijd een koper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:narrowerGeneric fin:Hypotheekgever;#Ik weet niet of het beter is om vanuit hypotheekgever te linken naar verkrijger of vice versa.
-	skosthes:broaderGeneric zv:Partij;
+	skosthes:broaderGPartitive zv:Partij;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
@@ -88,23 +87,23 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 	skos:altLabel "Toebedelende partij";
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
         rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-	skosthes:narrowerGeneric mak:Verkoper;
+        skosthes:narrowerGeneric mak:Verkoper; #Een verkoper is altijd een vervreemder, maar een vervreemder is niet altijd een verkoper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:narrowerGeneric fin:Hypotheekgever;
-	skosthes:broaderGeneric zv:Partij;
+	skosthes:broaderPartitive zv:Partij;
 .
 #--
 #Acts
 #ArchiverenAkte of ArchiverenNOT?
+#Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)";
 	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats";
         rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-        skos:editorialNote "Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
+        skos:editorialNote "Definitie en uitleg nog nog afstemmen binnen de KNB.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:NotarieleAkte;
+	skosthes:broaderPartitive not:Levering;
 .
 #IdentificatieNOT of IdentificatieComparant? Besproken met KNB, voorkeur gaat uit naar Identificatie Notaris, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
 not:IdentificatieNotaris a skos:Concept, skoslex:Act;
@@ -120,6 +119,7 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
+	skosthes:broaderPartitive not:Levering;
 .
 not:Levering a skos:Concept, skoslex:Act;
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
@@ -135,15 +135,6 @@ not:Levering a skos:Concept, skoslex:Act;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
         skos:semanticRelation not:Overdracht;
-	skosthes:narrowerPartitive not:ArchiverenAkte;
-	skosthes:narrowerPartitive not:IdentificatieNotaris;
-	skosthes:narrowerPartitive not:OpstellenAkte;
-	skosthes:narrowerPartitive not:Passeren;
-	skosthes:narrowerPartitive not:RechercheNotaris;
-	skosthes:narrowerPartitive not:RegistrerenAkte;
-	skosthes:narrowerPartitive not:RegistrerenAkteOverdrachtsbelasting;
-	skosthes:narrowerPartitive not:RegistrerenAkteRegistratiewet1970;
-	skosthes:narrowerPartitive not:VestigingHypotheek;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
@@ -153,6 +144,7 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van het schriftelijk document.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skoslex:actor not:Notaris;
+	skosthes:broaderPartitive not:Levering;
 .
 not:Overdracht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdracht"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'overdracht' beter herkenbaar is bij de koopovereenkomst dan 'overdragen'.
@@ -179,6 +171,7 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skoslex:object not:Leveringsakte;
 	skoslex:object not:Hypotheekakte;
 	skoslex:object not:RechtVanHypotheek;
+	skosthes:broaderPartitive not:Levering;
 #Toevoegen zv:onroerendGoed als object?
 .
 not:RegistrerenAkte a skos:Concept, skoslex:Act;#RegistrerenAkte of RegistrenNOT?
@@ -191,6 +184,7 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;#RegistrerenAkte of RegistrenNOT
         skoslex:object kad:OpenbareRegisters;
         skoslex:object not:AfschriftAkte;
 	skoslex:object not:TitelVanAankomst;
+	skosthes:broaderPartitive not:Levering;
 .
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren overdrachtsbelasting"@nl;
@@ -200,6 +194,7 @@ not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:Levering;
 .
 not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren akte registratiewet 1970"@nl;
@@ -209,6 +204,7 @@ not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skoslex:object not:AfschriftAkte;
         skoslex:object bel:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:Levering;
 .
 not:RechercheNotaris a skos:Concept, skoslex:Act;#RechercheNotaris of RechercheNOT?
 	rdfs:label "Recherche"@nl;
@@ -223,6 +219,7 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;#RechercheNotaris of RechercheN
 	skoslex:actor not:Notaris;
 	skoslex:object not:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
+	skosthes:broaderPartitive not:Levering;
 .
 not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Toezicht waarborgsom"@nl;
@@ -231,6 +228,7 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	rdfs:comment "Controle van notaris op de waarborgsom.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Waarborgsom;
+	skosthes:broaderPartitive not:Levering;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Vestiging hypotheek"@nl;
@@ -243,6 +241,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
+	skosthes:broaderPartitive not:Levering;
 .
 #--
 #Objects
