@@ -19,6 +19,7 @@
 <http://zorgeloosvastgoed.nl/data/kad> a owl:Ontology;
 	rdfs:label "Domein Kadaster";
 .
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
 
 #---
 #begrippen uit de Kadaster taxonomie
@@ -30,6 +31,14 @@ kad:Bewaarder a skos:Concept, skoslex:Actor;
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Openbare_registers;
 	rdfs:label "Openbare registers"@nl;
+.
+kad:BeperktRecht a skos:Concept, skoslex:Object;
+	rdfs:label "Beperkt recht"@nl;
+	skos:prefLabel "Beperkt recht";
+	skos:definition "Een beperkt recht is een recht dat is afgeleid uit een meer omvattend recht, dat met het beperkte recht is bezwaard.";
+	rdfs:comment "Een eigenaar dient te dulden dat het gebruik van zijn recht is beperkt: de beperktgerechtigde kan de betreffende zaak volgens het beperkte recht gebruiken. Beperkte rechten zijn te onderscheiden in gebruiksrechten (vruchtgebruik, erfdienstbaarheid, erfpacht, opstal) en zekerheidsrechten (hypotheekrecht, pandrecht).";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
+	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
 kad:ZakelijkRecht a skos:Concept;
 	skos:exactMatch brk:Zakelijk_recht;
