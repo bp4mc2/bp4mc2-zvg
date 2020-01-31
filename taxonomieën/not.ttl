@@ -72,10 +72,10 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
 	skos:altLabel "Koper";
 	skos:altLabel "Begiftigde";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
-        rdfs:comment "Een verkrijger is iemand die een goed verkrijgt en vervolgens het eigendomsrecht op dat goed mag uitoefenen.";
+        rdfs:comment "Een partij die eigenaar wordt van een goed of recht.";
         skosthes:narrowerGeneric mak:Koper;  #Een koper is altijd een verkrijger, maar een verkrijger is niet altijd een koper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:narrowerGeneric fin:Hypotheekgever;#Ik weet niet of het beter is om vanuit hypotheekgever te linken naar verkrijger of vice versa.
-	skosthes:broaderGPartitive zv:Partij;
+	skosthes:broaderPartitive zv:Partij;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
         a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
@@ -86,7 +86,7 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 	skos:altLabel "Overdrager";
 	skos:altLabel "Toebedelende partij";
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
-        rdfs:comment "Een vervreemder is degene die recht heeft op een goed en deze aan een ander geeft 'van zich vervreemdt'.";
+        rdfs:comment "Een eigenaar van een goed of recht dat hij aan een ander overdraagt.";
         skosthes:narrowerGeneric mak:Verkoper; #Een verkoper is altijd een vervreemder, maar een vervreemder is niet altijd een verkoper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:narrowerGeneric fin:Hypotheekgever;
 	skosthes:broaderPartitive zv:Partij;
@@ -98,9 +98,8 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)";
-	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats";
+	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats.";
         rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats";
-        skos:editorialNote "Definitie en uitleg nog nog afstemmen binnen de KNB.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:NotarieleAkte;
 	skosthes:broaderPartitive not:Levering;
@@ -142,7 +141,6 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	skos:prefLabel "Opstellen (akte)";
 	skos:definition "Het opstellen van het schriftelijk document.";
 	rdfs:comment "Het opstellen van het schriftelijk document.";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skoslex:actor not:Notaris;
 	skosthes:broaderPartitive not:Levering;
 .
@@ -162,12 +160,10 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren";
 	skos:altLabel "Verlijden";
 	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
-	rdfs:comment "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB. Geen passage gevonden in de wetboeken m.b.t. het geven van een definitie van passeren.";
-        skos:editorialNote "Input KNB: notaris is bij deze handeling geen agent maar een actor.";
+	rdfs:comment "De ondertekening van een akte door alle betrokken partijen, de notaris en eventuele getuigen.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
-	skoslex:actor not:Notaris;
+	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:object not:Leveringsakte;
 	skoslex:object not:Hypotheekakte;
 	skoslex:object not:RechtVanHypotheek;
@@ -177,9 +173,8 @@ not:Passeren a skos:Concept, skoslex:Act;
 not:RegistrerenAkte a skos:Concept, skoslex:Act;#RegistrerenAkte of RegistrenNOT?
 	rdfs:label "Registreren akte"@nl;
 	skos:prefLabel "Registreren akte";
-	skos:definition "Vastleggen in een register";
-	rdfs:comment "Vastleggen in een register";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	skos:definition "Vastleggen in een register.";
+	rdfs:comment "Vastleggen in een register.";
 	skoslex:actor not:Notaris;
         skoslex:object kad:OpenbareRegisters;
         skoslex:object not:AfschriftAkte;
@@ -189,9 +184,8 @@ not:RegistrerenAkte a skos:Concept, skoslex:Act;#RegistrerenAkte of RegistrenNOT
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren overdrachtsbelasting"@nl;
 	skos:prefLabel "Registreren overdrachtsbelasting";
-	skos:definition "Vastleggen in een register";
-	#rdfs:comment "";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	skos:definition "Vastleggen in een register.";
+	rdfs:comment "Vastleggen in een register.";
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:Levering;
@@ -234,9 +228,8 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Vestiging hypotheek"@nl;
 	skos:prefLabel "Vestiging hypotheek";
 	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";
-	rdfs:comment "Een vestiging hypotheek is het opmaken van een notariële akte tussen partijen waarbij de hypotheekgever aan de hypotheeknemer hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";
+	rdfs:comment "Het formeel vastleggen van afspraken over een onderpand voor een geldlening.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
@@ -286,8 +279,7 @@ not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant";
 	skos:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
-	rdfs:comment "Een persoon die als partij in de notariële akte is opgenomen. Kan ook een gemachtigde namens de partij zijn, bijvoorbeeld een medewerker van de notaris.";
-	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
+	rdfs:comment "Een persoon die als (gemachtigde van een) partij in de notariële akte is opgenomen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
         skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen in de taxonomie.";
         skosthes:broaderPartitive not:Comparitie;
@@ -504,6 +496,5 @@ not:Waarborgsom a skos:Concept, skoslex:Object;
 	skos:altLabel "Bankgarantie";
 	skos:altLabel "Zekerheid";
 	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper tot aan transportdatum waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
-	rdfs:comment "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper tot aan transportdatum waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
+	rdfs:comment "Bedrag dat de koper van een goed stort op de rekening van een notaris als zekerheid voor de verkoper.";
 .
