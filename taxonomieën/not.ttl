@@ -228,13 +228,15 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Vestiging hypotheek"@nl;
 	skos:prefLabel "Vestiging hypotheek";
-	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";
+	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";#formele definitie is registergoed, maar in de taxonomie is dit een synoniem voor onroerende zaak. Het zou netter zijn om in de formele definitie deze term te gebruiken.
 	rdfs:comment "Het formeel vastleggen van afspraken over een onderpand voor een geldlening.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
+	skoslex:object not:OnroerendeZaak;
+	skoslex:object not:Onderpand;
 	skosthes:broaderPartitive not:Levering;#Dit is onjuist; levering en vestiging hypotheek zijn elk een zelfstandige act; dus niet dat het een onderdeel is van het ander. NB. Overigens wel vaak gelijktijdig uitgevoerd, maar dat is iets anders dan onderdeel van.
 .
 #--
@@ -382,15 +384,17 @@ not:OnderhandseAkte a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric not:Akte;
         skosthes:narrowerGeneric mak:Koopovereenkomst;
 .
+#Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
+#Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
 not:Onderpand a skos:Concept, skoslex:Object;
 	rdfs:label "Onderpand"@nl;
 	skos:prefLabel "Onderpand";
-	skos:altLabel "Pandrecht";
 	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
 	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
 	skos:semanticRelation not:RechtVanHypotheek;
 .
+#Goederen bestaan uit zaken en vermogensrechten.” Zaken kunnen vervolgens weer onderverdeeld worden in roerende zaken en onroerende zaken. Deze objecten kunnen in een later stadium worden toegevoegd.
 not:OnroerendeZaak a skos:Concept, skoslex:Object;
 	rdfs:label "Onroerende zaak"@nl;
 	skos:prefLabel "Onroerende zaak";
@@ -461,6 +465,7 @@ not:Titel a skos:Concept, skoslex:Object;
 	skos:altLabel "Verkrijging";
 	skos:definition "Hetgeen op grond waarvan een (niet) natuurlijk persoon zakelijk gerechtigde wordt tot een goed.";
 	rdfs:comment "De rechtsgrond waarbij iemand de eigendom van een goed heeft gekregen (bijvoorbeeld bij de levering van een woning: de leveringsakte). Zonder geldige titel kan iemand zijn eigendomsrecht niet overdragen aan een ander.";
+        skos:editorialNote "Titel is een juridische term voor een geldige (juridische) reden voor de overdracht. Die geldige reden kan bestaan uit bijvoorbeeld een koopovereenkomst of schenking.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
         skos:semanticRelation not:Leveringsakte;
 .
