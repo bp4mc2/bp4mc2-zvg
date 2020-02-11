@@ -34,6 +34,7 @@ mak:Partij a skos:Concept, skoslex:Object, skoslex:Actor;
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
 	rdfs:label "Woning"@nl;
+	html:img "/assets/images/object.png";
 .
 mak:Overdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "Overdrachtsbelasting"@nl;
@@ -67,6 +68,7 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Woning;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+	html:img "/assets/images/act.png";
 .
 mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Koopovereenkomst"@nl;
@@ -123,6 +125,7 @@ mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 	skosthes:broaderGeneric mak:Makelaar;
 	skos:semanticRelation mak:Koper;
 	skos:semanticRelation mak:Verkoopmakelaar;
+	html:img "/assets/images/actor.png";
 .
 mak:Verkoop a skos:Concept, skoslex:Act;
 	rdfs:label "Verkoop"@nl;
@@ -134,7 +137,7 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Verkoper;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-
+	html:img "/assets/images/act.png";
 .
 mak:Aankoop a skos:Concept, skoslex:Act;
 	rdfs:label "Aankoop"@nl;
@@ -159,7 +162,6 @@ mak:RechercheKoop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Persoon;
 	skoslex:object mak:Woning;
 	skoslex:object mak:Overdrachtsbelasting;
-	html:img "/assets/images/object.png";
 .
 mak:IdentificatieKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Identificatie koop"@nl;
