@@ -71,10 +71,10 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Verkrijger";
 	skos:altLabel "Koper";
 	skos:altLabel "Begiftigde";
+	skos:altLabel "Verkopende partij";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
         rdfs:comment "Een partij die eigenaar wordt van een goed of recht.";
         skosthes:narrowerGeneric mak:Koper;  #Een koper is altijd een verkrijger, maar een verkrijger is niet altijd een koper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
-	skosthes:narrowerGeneric fin:Hypotheekgever;#Ik weet niet of het beter is om vanuit hypotheekgever te linken naar verkrijger of vice versa.
 	skosthes:broaderPartitive zv:Partij;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;
@@ -88,7 +88,6 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
         rdfs:comment "Een eigenaar van een goed of recht dat hij aan een ander overdraagt.";
         skosthes:narrowerGeneric mak:Verkoper; #Een verkoper is altijd een vervreemder, maar een vervreemder is niet altijd een verkoper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
-	skosthes:narrowerGeneric fin:Hypotheekgever;
 	skosthes:broaderPartitive zv:Partij;
 .
 #--
@@ -160,7 +159,8 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren";
 	skos:altLabel "Verlijden";
 	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
-	rdfs:comment "De ondertekening van een akte door alle betrokken partijen, de notaris en eventuele getuigen.";
+	#Wellicht hier nog de zgn. 'belehrung' in verwerken. Dit wel in overleg met KNB, omdat de belehrung zich niet beperkt tot de gelegenheid van ondertekenen akte, maar ook in de voorbereidende fase. Zou ook een aparte act kunnen zijn.
+        rdfs:comment "De ondertekening van een akte door alle betrokken partijen, de notaris en eventuele getuigen.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
@@ -218,8 +218,9 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;#RechercheNotaris of RechercheN
 not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Toezicht waarborgsom"@nl;
 	skos:prefLabel "Toezicht waarborgsom";
-	skos:definition "Controle van notaControle van notaris op de waarborgsom.ris op de waarborgsom.";
-	rdfs:comment "Controle van notaris op de waarborgsom.";
+	skos:definition "Controle van de notaris op de waarborgsom.";
+	rdfs:comment "Controle van de notaris op de waarborgsom.";
+        skos:editorialNote "Wellicht iets breder formuleren, de notaris is ook beheerder van de waarborgsom. Dit doet de notaris in zijn hoedanigheid van ‘trusted third party’, net zoals het bewaren van de koopsom.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Waarborgsom;
 	skosthes:broaderPartitive not:Levering;
@@ -234,7 +235,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
-	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive not:Levering;#Dit is onjuist; levering en vestiging hypotheek zijn elk een zelfstandige act; dus niet dat het een onderdeel is van het ander. NB. Overigens wel vaak gelijktijdig uitgevoerd, maar dat is iets anders dan onderdeel van.
 .
 #--
 #Objects
@@ -270,7 +271,7 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie";
 	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
-	rdfs:comment "Met een bankgarantie staat een bank garant staat voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
+	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
         skosthes:broaderPartitive not:Levering;
 #Hoort dit gekoppeld te zijn aan een FIN act van het garant staan?
@@ -317,8 +318,9 @@ not:Hypotheekrecht a skos:Concept, skoslex:Object;
 not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	rdfs:label "Inschrijvingsbedrag"@nl;
 	skos:prefLabel "Inschrijvingsbedrag";
-	skos:definition "De hypotheeknemer mag niet meer dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
-	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
+	skos:definition "De hypotheeknemer mag niet meer, met voorrang op andere schuldeisers van de hypotheekgever, dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
+	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
+        rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
         skosthes:broaderPartitive not:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
