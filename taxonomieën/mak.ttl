@@ -4,6 +4,7 @@
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix fin: <http://fin.zorgeloosvastgoed.nl/id/begrip/>.
@@ -53,6 +54,7 @@ mak:Koper a skos:Concept, skoslex:Actor;
 	skos:definition "degene die het registergoed heeft aangekocht";
 	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
 	skos:broadMatch mak:Persoon;
+	html:img "actor.png";
 .
 mak:Koop a skos:Concept, skoslex:Act;
 	rdfs:label "Koop"@nl;

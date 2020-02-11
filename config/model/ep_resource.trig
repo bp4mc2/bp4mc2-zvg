@@ -199,6 +199,56 @@ GRAPH config:Theatre {
 
   config:GraphAppearance a elmo:GraphAppearance;
     elmo:index 2;
+    elmo:fragment [
+      elmo:appliesTo "HDN";
+      xhtml:stylesheet """
+        fill: #1F70F4;
+        fill-opacity: .3;
+        stroke: #1F70F4;
+        stroke-with: 2;
+      """;
+      elmo:index 1;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "NVM";
+      xhtml:stylesheet """
+        fill: #3FB0F6;
+        fill-opacity: .3;
+        stroke: #3FB0F6;
+        stroke-with: 2;
+      """;
+      elmo:index 2;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "KNB";
+      xhtml:stylesheet """
+        fill: #44B3C4;
+        fill-opacity: .3;
+        stroke: #44B3C4;
+        stroke-with: 2;
+      """;
+      elmo:index 3;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "Kadaster";
+      xhtml:stylesheet """
+        fill: #4FCDC4;
+        fill-opacity: .3;
+        stroke: #4FCDC4;
+        stroke-with: 2;
+      """;
+      elmo:index 4;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "Zorgeloosvastgoed";
+      xhtml:stylesheet """
+        fill: #ffffff;
+        fill-opacity: .3;
+        stroke: black;
+        stroke-with: 2;
+      """;
+      elmo:index 5;
+    ];
   .
 
   config:Datasets a elmo:Representation;

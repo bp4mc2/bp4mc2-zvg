@@ -2,6 +2,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix config: <http://dotwebstack.org/configuration/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
 
 GRAPH config:Theatre {
 
@@ -9,6 +10,10 @@ GRAPH config:Theatre {
     elmo:site config:Site;
     elmo:basePath "";
     dc:title "Zorgeloos vastgoed";
+    elmo:layout config:StageLayout;
+  .
+  config:StageLayout a elmo:Layout;
+    xhtml:stylesheet "zvg.css";
   .
 
   config:BelStage a elmo:Stage;

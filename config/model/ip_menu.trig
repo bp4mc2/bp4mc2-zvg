@@ -12,7 +12,7 @@ GRAPH config:Theatre {
       prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
       CONSTRUCT {
         [ xhtml:link "http://taxonomie.zorgeloosvastgoed.nl";
-          rdfs:label "ZorgeloosVastgoed";
+          rdfs:label "";
           elmo1:data [elmo1:index "1"; rdfs:label "Lijst"; xhtml:link "/lijst"];
           elmo1:data [elmo1:index "2"; rdfs:label "Handelingen"; xhtml:link "/handelingen"];
           elmo1:data [

@@ -10,19 +10,37 @@ GRAPH config:Theatre {
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
       PREFIX dcat: <http://www.w3.org/ns/dcat#>
+      prefix elmo1: <http://bp4mc2.org/elmo/def#>
+      prefix html: <http://www.w3.org/1999/xhtml/vocab#>
       CONSTRUCT {
         ?subject ?p ?o.
         ?s ?ps ?subject.
         ?subject rdfs:label ?subjectlabel.
         ?o rdfs:label ?olabel.
         ?s rdfs:label ?slabel.
+        ?subject elmo1:style ?g.
+        ?subject html:img ?subjectimg.
+        ?s elmo1:style ?gs.
+        ?o elmo1:style ?go.
         skos:Concept rdfs:label "Begrip"@nl.
         skoslex:Act rdfs:label "Handeling"@nl.
         skoslex:Actor rdfs:label "Actor"@nl.
         skoslex:Object rdfs:label "Object"@nl.
         skoslex:Agent rdfs:label "Agent"@nl.
         dcat:Dataset rdfs:label "Dataset"@nl.
+        skosthes:broaderGeneric rdfs:label "specialisatie van"@nl.
+        skosthes:narrowerGeneric rdfs:label "generalisatie van"@nl.
+        skosthes:broaderPartitive rdfs:label "onderdeel van"@nl.
+        skosthes:broaderGeneric rdfs:label "bestaat uit"@nl.
+        skos:semanticRelation rdfs:label "gerelateerd aan"@nl.
+        <http://zorgeloosvastgoed.nl/data/kad> elmo1:name "Kadaster".
+        <http://zorgeloosvastgoed.nl/data/fin> elmo1:name "HDN".
+        <http://zorgeloosvastgoed.nl/data/bel> elmo1:name "HDN".
+        <http://zorgeloosvastgoed.nl/data/not> elmo1:name "KNB".
+        <http://zorgeloosvastgoed.nl/data/mak> elmo1:name "NVM".
+        <http://zorgeloosvastgoed.nl/data/zv> elmo1:name "Zorgeloosvastgoed".
       }
       WHERE {
         {
