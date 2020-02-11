@@ -92,6 +92,17 @@ not:Vervreemder a skos:Concept, skoslex:Actor;
 .
 #--
 #Acts
+not:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
+	rdfs:label "Aangifte overdrachtsbelasting"@nl;
+	skos:prefLabel "Aangifte overdrachtsbelasting";
+	skos:definition "Aangifte voor de verschuldigde overdrachtsbelasting bij de belastingdienst.";
+	rdfs:comment "Aangifte voor de verschuldigde overdrachtsbelasting bij de belastingdienst.";
+        skos:editorialNote "Gebeurt gelijktijdig met het registreren van de overdrachtsbelasting.";
+        skoslex:actor not:Notaris;
+        skoslex:object bel:Overdrachtsbelasting;
+        skoslex:object bel:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:Levering;
+.
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
@@ -117,6 +128,18 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
+	skosthes:broaderPartitive not:Levering;
+.
+#Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
+not:InschrijvenAkte a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
+	rdfs:label "Inschrijven akte"@nl;
+	skos:prefLabel "Inschrijven akte";
+	skos:definition "Vastleggen in een register.";
+	rdfs:comment "Vastleggen in een register.";
+	skoslex:actor not:Notaris;
+        skoslex:object kad:OpenbareRegisters;
+        skoslex:object not:AfschriftAkte;
+	skoslex:object not:TitelVanAankomst;
 	skosthes:broaderPartitive not:Levering;
 .
 not:Levering a skos:Concept, skoslex:Act;
@@ -170,22 +193,13 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:Levering;
 #Toevoegen zv:onroerendGoed als object?
 .
-not:RegistrerenAkte a skos:Concept, skoslex:Act;#RegistrerenAkte of RegistrenNOT?
-	rdfs:label "Registreren akte"@nl;
-	skos:prefLabel "Registreren akte";
-	skos:definition "Vastleggen in een register.";
-	rdfs:comment "Vastleggen in een register.";
-	skoslex:actor not:Notaris;
-        skoslex:object kad:OpenbareRegisters;
-        skoslex:object not:AfschriftAkte;
-	skoslex:object not:TitelVanAankomst;
-	skosthes:broaderPartitive not:Levering;
-.
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren overdrachtsbelasting"@nl;
 	skos:prefLabel "Registreren overdrachtsbelasting";
-	skos:definition "Vastleggen in een register.";
-	rdfs:comment "Vastleggen in een register.";
+	skos:definition "Vastleggen van de overdrachtsbelasting bij de Belastingdienst.";
+	rdfs:comment "Vastleggen van de overdrachtsbelasting bij de Belastingdienst.";
+        skos:editorialNote "Gebeurt gelijktijdig met het registreren van de aangifte van de overdrachtsbelasting.";
+        skoslex:actor not:Notaris;
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:Levering;
@@ -195,8 +209,9 @@ not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	skos:prefLabel "Registreren akte registratiewet 1970";
 	skos:definition "Vastleggen in een register";
 	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
-        skos:editorialNote "Definitie en uitleg nog niet afgestemd de KNB.";
-        skoslex:object not:AfschriftAkte;
+        skos:editorialNote "Álle originele (minuut)akten worden geregistreerd bij de belastingdienst op grond van de registratiewet.";
+        skoslex:actor not:Notaris;
+        skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
         skoslex:object bel:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:Levering;
 .
