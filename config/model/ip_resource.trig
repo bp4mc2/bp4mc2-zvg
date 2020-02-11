@@ -22,6 +22,8 @@ GRAPH config:Theatre {
         ?s rdfs:label ?slabel.
         ?subject elmo1:style ?g.
         ?subject html:img ?subjectimg.
+        ?o html:img ?oimg.
+        ?s html:img ?simg.
         ?s elmo1:style ?gs.
         ?o elmo1:style ?go.
         skos:Concept rdfs:label "Begrip"@nl.
@@ -48,6 +50,7 @@ GRAPH config:Theatre {
             {
               ?subject a ?stype.
               OPTIONAL {?subject rdfs:label ?subjectlabel}
+              OPTIONAL {?subject html:img ?subjectimg}
             }
           }
         }
@@ -59,6 +62,7 @@ GRAPH config:Theatre {
           GRAPH ?go {
             ?o a ?otype.
             OPTIONAL {?o rdfs:label ?olabel}
+            OPTIONAL {?o html:img ?oimg}
           }
         }
         UNION
@@ -67,6 +71,7 @@ GRAPH config:Theatre {
             ?s ?ps ?subject.
             ?s a ?stype.
             OPTIONAL {?s rdfs:label ?slabel}
+            OPTIONAL {?s html:img ?simg}
           }
         }
       }
