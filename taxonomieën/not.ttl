@@ -145,6 +145,7 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:Comparant;
+	skoslex:object zv:Identiteitsdocument;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
