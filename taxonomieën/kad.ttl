@@ -44,6 +44,7 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	rdfs:comment "Vastleggen in een register.";
 	skoslex:object not:AfschriftAkte;
 	skoslex:object kad:OpenbareRegisters;
+	skoslex:object kad:KadastraalObject;
 	skoslex:actor not:Notaris;
 	skoslex:actor kad:Bewaarder;
 	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
@@ -59,17 +60,33 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
+kad:KadastraalObject a skos:Concept, skoslex:Object;
+	rdfs:label "Kadastraal object"@nl;
+	skos:prefLabel "Kadastraal object";
+	skos:definition "Een Kadastraal object is een goed waarvoor bij overdracht of vestiging van rechten inschrijving in de openbare registers van het Kadaster is vereist. Een kadastraal object is een Onroerende zaak of een Teboekgestelde zaak.";
+	rdfs:comment "Kadastraal object is een goed dat geregistreerd moet worden bij het Kadaster.";
+        skos:closeMatch kad:Perceel;
+.
+kad:Perceel a skos:Concept, skoslex:Object;
+	rdfs:label "Perceel"@nl;
+	skos:prefLabel "Perceel";
+	skos:definition "Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.";
+	rdfs:comment "Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft. Het nummer is uniek binnen de sectie van de kadastrale gemeente waarin het perceel zich bevindt.";
+.
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Openbare_registers;
 	rdfs:label "Openbare registers"@nl;
+	skos:prefLabel "Openbare registers";
+	#skos:exactMatch brk:Openbare_registers;
+             #Weggehaald, want dit is een broken link
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
-	#skos:exactMatch brk:Zakelijk_recht;
-             #Weggehaald, want dit is een broken link
-	rdfs:label "Zakelijk recht"@nl;
+	rdfs:label "Openbare registers"@nl;
+	skos:prefLabel "Openbare registers";
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
 	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
 	skos:scopeNote "Met een zakelijk recht wordt bedoeld een recht dat samenhangt met een zaak of een goed. Dit in tegenstelling met een persoonlijk recht, een recht dat samenhangt met de persoon. Om het verschil tussen beide rechten duidelijk te maken een voorbeeld. Eigendom is een zakelijk recht. Dat betekent onder meer dat het recht niet eindigt door het overlijden van de eigenaar. Als een eigenaar overlijdt vallen al zijn eigendommen in zijn nalatenschap. Huur is een persoonlijk recht. Door het overlijden van de huurder eindigt in principe wel de huur. Zakelijke rechten zijn, behalve het recht van eigendom, de rechten van erfpacht, opstal, vruchtgebruik, gebruik en bewoning en erfdienstbaarheid. Een Zakelijk recht kan zijn een zakelijk genotsrecht of een zakelijk zekerheidsrecht";
+	#skos:exactMatch brk:Zakelijk_recht;
+             #Weggehaald, want dit is een broken link
 .
 #---
 # Voorbeeldsituatie uitwerking metadata-link
