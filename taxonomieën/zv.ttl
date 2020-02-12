@@ -17,40 +17,24 @@
 <http://zorgeloosvastgoed.nl/data/zv> a owl:Ontology;
 	rdfs:label "Domein Zorgeloos vastgoed (algemeen)";
 .
+#--
+#Wetgeving links
+#Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
+#Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
+#--
 
-#---
+
+
+
+#--
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
-#---
-
+#--
+#Actors and Agents
 zv:Mens a skos:Concept, skoslex:Actor;
 	rdfs:label "Mens"@nl;
 	skos:prefLabel "Mens";
 	skos:altLabel "Natuurlijk persoon";
 #Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen.
-.
-zv:Organisatie a skos:Concept, skoslex:Actor;
-	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
-	rdfs:label "Rechtspersoon"@nl;
-	skos:prefLabel "Organisatie";
-	skos:altLabel "rechtspersoon";
-	skosthes:narrowerPartitive not:Notaris;
-#Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
-.
-zv:Persoon a skos:Concept, skoslex:Actor;
-	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
-	rdfs:label "Persoon"@nl;
-	skos:prefLabel "Persoon";
-	skosthes:narrowerGeneric zv:Mens;
-	skosthes:narrowerGeneric zv:Organisatie;
-.
-zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
-	rdfs:label "Aan- of verkoop van een huis"@nl;
-	skos:prefLabel "Aan- of verkoop van een huis"@nl;
-	skosthes:narrowerPartitive mak:Koop;
-	skosthes:narrowerPartitive not:Levering;
-	skos:semanticRelation zv:Huis;
-	skos:definition "Aan- of verkoop van een huis is het aankopen of verkopen van een huis en omvat de koop en levering"@nl;
-	skos:editorialNote "Nog niet helemaal tevreden met de term. Wel is dit wat het betreffende begrip omvat. We willen het niet plat 'Koop' noemen ivm de verwarring met mak:Koop (wat uit de wet volgt). 'Koop van een Huis' is korter, maar suggereert meer dat het gaat om aankoop en niet verkoop"@nl;
 .
 zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
@@ -64,24 +48,13 @@ zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	skos:definition "Een organisatie of abstracte entiteit die zelfstandig in het rechtsverkeer kan optreden. Het zijn van een niet natuurlijk persoon eindigt bij ontbinding van de organisatie of entiteit.";
   	rdfs:comment "Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. Een niet natuurlijk persoon heeft eigen rechten en plichten.";
 .
-zv:RechtsPersoon a skos:Concept, skoslex:Actor;
+zv:Organisatie a skos:Concept, skoslex:Actor;
+	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
 	rdfs:label "Rechtspersoon"@nl;
-	skos:prefLabel "Rechtspersoon";
-	skos:prefLabel "Rechtspersoon";
-	skos:altLabel "NV";
-	skos:altLabel "BV";
-	skos:definition "Een rechtspersoon is een rechtssubject die zelfstandig drager is van rechten en met een natuurlijk gelijk staat, tenzij uit de wet het tegendeel voortvloeit.";
-  rdfs:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
-        skos:closeMatch zv:NietNatuurlijkPersoon;
-.
-zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
-	rdfs:label "Basisregistratie personen"@nl;
-	skos:prefLabel "Basisregistratie personen";
-.
-zv:Huis a skos:Concept, skoslex:Object;
-	rdfs:label "Huis"@nl;
-	skos:prefLabel "Huis";
-	skosthes:broaderGeneric kad:ZakelijkRecht;
+	skos:prefLabel "Organisatie";
+	skos:altLabel "rechtspersoon";
+	skosthes:narrowerPartitive not:Notaris;
+        #Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
 .
 zv:Partij a skos:Concept, skoslex:Actor;
 	rdfs:label "Partij"@nl;
@@ -91,4 +64,43 @@ zv:Partij a skos:Concept, skoslex:Actor;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>;
 	skosthes:narrowerGeneric mak:Koper;
 	skosthes:narrowerGeneric mak:Verkoper;
+.
+zv:Persoon a skos:Concept, skoslex:Actor;
+	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
+	rdfs:label "Persoon"@nl;
+	skos:prefLabel "Persoon";
+	skosthes:narrowerGeneric zv:Mens;
+	skosthes:narrowerGeneric zv:Organisatie;
+.
+zv:RechtsPersoon a skos:Concept, skoslex:Actor;
+	rdfs:label "Rechtspersoon"@nl;
+	skos:prefLabel "Rechtspersoon";
+	skos:prefLabel "Rechtspersoon";
+	skos:altLabel "NV";
+	skos:altLabel "BV";
+	skos:definition "Een rechtspersoon is een rechtssubject die zelfstandig drager is van rechten en met een natuurlijk gelijk staat, tenzij uit de wet het tegendeel voortvloeit.";
+        rdfs:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
+        skos:closeMatch zv:NietNatuurlijkPersoon;
+.
+#--
+#Acts
+zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
+	rdfs:label "Aan- of verkoop van een huis"@nl;
+	skos:prefLabel "Aan- of verkoop van een huis"@nl;
+	skosthes:narrowerPartitive mak:Koop;
+	skosthes:narrowerPartitive not:Levering;
+	skos:semanticRelation zv:Huis;
+	skos:definition "Aan- of verkoop van een huis is het aankopen of verkopen van een huis en omvat de koop en levering"@nl;
+	skos:editorialNote "Nog niet helemaal tevreden met de term. Wel is dit wat het betreffende begrip omvat. We willen het niet plat 'Koop' noemen ivm de verwarring met mak:Koop (wat uit de wet volgt). 'Koop van een Huis' is korter, maar suggereert meer dat het gaat om aankoop en niet verkoop"@nl;
+.
+#--
+#Objects
+zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
+	rdfs:label "Basisregistratie personen"@nl;
+	skos:prefLabel "Basisregistratie personen";
+.
+zv:Huis a skos:Concept, skoslex:Object;
+	rdfs:label "Huis"@nl;
+	skos:prefLabel "Huis";
+	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
