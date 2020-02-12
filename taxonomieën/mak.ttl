@@ -18,90 +18,30 @@
 <http://zorgeloosvastgoed.nl/data/mak> a owl:Ontology;
 	rdfs:label "Domein Makelaar";
 .
-
-# Wet- en regelgeving
+#--
+#Wetgeving links
+#Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
+#Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
+#--
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "Artikel 1, Burgerlijk wetboek, boek 7".
 
-#begrippen uit andere ZV domeinen
-mak:Persoon a skos:Concept, skoslex:Object, skoslex:Actor;
-	skos:exactMatch zv:Persoon;
-	rdfs:label "Persoon"@nl;
-.
-mak:Partij a skos:Concept, skoslex:Object, skoslex:Actor;
-	skos:exactMatch zv:Partij;
-	rdfs:label "Partij"@nl;
-.
-mak:Woning a skos:Concept, skoslex:Object;
-	skos:exactMatch zv:Huis;
-	rdfs:label "Woning"@nl;
-	html:img "/assets/images/object.png";
-.
-mak:Overdrachtsbelasting a skos:Concept, skoslex:Object;
-	rdfs:label "Overdrachtsbelasting"@nl;
-	skos:exactMatch bel:Overdrachtsbelasting;
-.
-
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
-mak:Verkoper a skos:Concept, skoslex:Actor;
-	rdfs:label "Verkoper"@nl;
-	skos:prefLabel "Verkoper";
-	skos:definition "degene die het registergoed heeft verkocht  ";
-	rdfs:comment "Een verkoper is degene die het registergoed heeft verkocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
-	skos:broadMatch mak:Persoon;
-.
-mak:Koper a skos:Concept, skoslex:Actor;
-	rdfs:label "Koper"@nl;
-	skos:prefLabel "Koper";
-	skos:definition "degene die het registergoed heeft aangekocht";
-	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
-	skos:broadMatch mak:Persoon;
+#--
+#Actors and Agents
+#--
+mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
+	rdfs:label "Aankoopmakelaar"@nl;
+	skos:prefLabel "Aankoopmakelaar";
+	skos:definition "een makelaar die is ingeschakeld door de koper en die namens de koper bemiddelt bij de aankoop van een registergoed";
+	rdfs:comment "Een aankoopmakelaar wordt door koper ingeschakeld. Hij bemiddelt namens de koper bij aan de aankoop van het registergoed. Hij voert doorgaans namens de koper de onderhandelingen met de verkoopmakelaar.";
+	skosthes:broaderGeneric mak:Makelaar;
+	skos:semanticRelation mak:Koper;
+	skos:semanticRelation mak:Verkoopmakelaar;
 	html:img "/assets/images/actor.png";
 .
-mak:Koop a skos:Concept, skoslex:Act;
-	rdfs:label "Koop"@nl;
-	skos:prefLabel "Koop";
-	skos:definition "een overeenkomst waarbij de verkoper zich verbindt een registergoed te geven tegen een door de koper te betalen prijs ";
-	rdfs:comment "Als verkoper en koper het eens zijn over de voorwaarden ontstaat er een overeenkomst. Bij de verkoop van een registergoed verbindt de verkoper zich om het registergoed te geven tegen een door koper te betalen prijs. De overeenkomst wordt doorgaans vastgelegd in een schriftelijke koopovereenkomst. ";
-	skoslex:agent mak:Makelaar;
-	skoslex:actor mak:Verkoper;
-	skoslex:actor mak:Koper;
-	skoslex:object mak:Woning;
-	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-	html:img "/assets/images/act.png";
-.
-mak:Koopovereenkomst a skos:Concept, skoslex:Object;
-	rdfs:label "Koopovereenkomst"@nl;
-	skos:prefLabel "Koopovereenkomst";
-	skos:altLabel "Koopocontract";
-	skos:definition "een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd";
-	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed. ";
-	skos:semanticRelation mak:Verkoper;
-	skos:semanticRelation mak:Koper;
-	skos:semanticRelation mak:Woning;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-
-.
-mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen koopovereenkomst"@nl;
-	skos:prefLabel "Opstellen koopovereenkomst";
-	skos:altLabel "Opstellen koopocontract";
-	skos:definition "het proces dat ziet op het opstellen van het schriftelijke document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van het registergoed worden vastgelegd ";
-	rdfs:comment "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In Amsterdam is het gebruikelijk dat de notaris de koopovereenkomst opstelt. ";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:agent mak:Makelaar;
-	skoslex:agent not:Notaris;
-	skoslex:actor mak:Koper;
-	skoslex:actor mak:Verkoper;
-	skoslex:object mak:Koopovereenkomst;
-.
-
-
-#---
 #Een makelaar mag volgens de beroepscode slechts 1 rol vervullen, of verkoopmakelaar of aankoopmakelaar.
 #De makelaar en taxateur zijn rollen van meestal makelaars.
-#---
-
+#--
 mak:Makelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Makelaar"@nl;
 	skos:prefLabel "Makelaar";
@@ -117,15 +57,114 @@ mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	skos:semanticRelation mak:Verkoper;
 	skos:semanticRelation mak:Aankoopmakelaar;
 .
-mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
-	rdfs:label "Aankoopmakelaar"@nl;
-	skos:prefLabel "Aankoopmakelaar";
-	skos:definition "een makelaar die is ingeschakeld door de koper en die namens de koper bemiddelt bij de aankoop van een registergoed";
-	rdfs:comment "Een aankoopmakelaar wordt door koper ingeschakeld. Hij bemiddelt namens de koper bij aan de aankoop van het registergoed. Hij voert doorgaans namens de koper de onderhandelingen met de verkoopmakelaar.";
-	skosthes:broaderGeneric mak:Makelaar;
-	skos:semanticRelation mak:Koper;
-	skos:semanticRelation mak:Verkoopmakelaar;
+mak:Koper a skos:Concept, skoslex:Actor;
+	rdfs:label "Koper"@nl;
+	skos:prefLabel "Koper";
+	skos:definition "Degene die het registergoed heeft aangekocht.";
+	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
+	skos:broadMatch zv:Persoon;
 	html:img "/assets/images/actor.png";
+.
+mak:Taxateur a skos:Concept, skoslex:Agent;
+	rdfs:label "Taxateur"@nl;
+	skos:definition "een daartoe bevoegd persoon die een waarde toekent in het taxatierapport aan het registergoed op basis van zijn vakbekwaamheid";
+	rdfs:comment "Een taxateur is een persoon die op basis van zijn vakbekwaamheid een waarde toekent in het taxatierapport aan het registergoed. Het taxatierapport heeft de koper doorgaans nodig voor de financiering van het registergoed.  ";
+	skos:prefLabel "Taxateur";
+.
+mak:Verkoper a skos:Concept, skoslex:Actor;
+	rdfs:label "Verkoper"@nl;
+	skos:prefLabel "Verkoper";
+	skos:definition "Degene die het registergoed heeft verkocht.";
+	rdfs:comment "Een verkoper is degene die het registergoed heeft verkocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
+	skos:broadMatch zv:Persoon;
+#--
+#Acts
+mak:Aankoop a skos:Concept, skoslex:Act;
+	rdfs:label "Aankoop"@nl;
+	skos:prefLabel "Aankoop";
+	skos:definition "Aankoop van een registergoed door middel van een koopovereenkomst.";
+	rdfs:comment "Er is sprake van een 'aankoop' indien het registergoed door de koper wordt aangekocht.";
+	skosthes:broaderPartitive mak:Koop;
+	skos:semanticRelation mak:Verkoop;
+	skoslex:agent mak:Aankoopmakelaar;
+	skoslex:actor mak:Koper;
+	skoslex:object mak:Woning;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+	html:img "/assets/images/act.png";
+.
+mak:IdentificatieKoop a skos:Concept, skoslex:Act;
+	rdfs:label "Identificatie koop"@nl;
+	skos:prefLabel "Identificatie koop";
+	skos:definition "Het identificeren van de cliënt (verkoper en koper) en het verifiëren van diens identiteit op grond van een wettelijke verplichting ";
+	rdfs:comment "De verkoopmakelaar is wettelijk verplicht om de verkoper, zijn opdrachtgever, en de koper, de wederpartij van de verkoper, te identificeren en diens identiteit te verifiëren.";
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:actor mak:Makelaar;
+	skoslex:object zv:Persoon;
+.
+mak:IdentificatieTaxatie a skos:Concept, skoslex:Act;
+	rdfs:label "Identificatie taxatie"@nl;
+	skos:prefLabel "Identificatie taxatie";
+	skos:definition "Het identificeren van de opdrachtgever door de taxateur in het kader van de opdracht tot taxatie";
+	rdfs:comment "In het kader van de opdracht tot taxatie moet de taxateur weten wie zijn opdrachtgever is. Daarom stelt de taxateur de identiteit van de opdrachtgever vast.";
+	skosthes:broaderPartitive mak:Taxatie;
+	skoslex:actor mak:Taxateur;
+	skoslex:object zv:Persoon;
+.
+mak:Koop a skos:Concept, skoslex:Act;
+	rdfs:label "Koop"@nl;
+	skos:prefLabel "Koop";
+	skos:definition "een overeenkomst waarbij de verkoper zich verbindt een registergoed te geven tegen een door de koper te betalen prijs ";
+	rdfs:comment "Als verkoper en koper het eens zijn over de voorwaarden ontstaat er een overeenkomst. Bij de verkoop van een registergoed verbindt de verkoper zich om het registergoed te geven tegen een door koper te betalen prijs. De overeenkomst wordt doorgaans vastgelegd in een schriftelijke koopovereenkomst. ";
+	skoslex:agent mak:Makelaar;
+	skoslex:actor mak:Verkoper;
+	skoslex:actor mak:Koper;
+	skoslex:object mak:Woning;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+	html:img "/assets/images/act.png";
+.
+mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
+	rdfs:label "Opstellen koopovereenkomst"@nl;
+	skos:prefLabel "Opstellen koopovereenkomst";
+	skos:altLabel "Opstellen koopocontract";
+	skos:definition "het proces dat ziet op het opstellen van het schriftelijke document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van het registergoed worden vastgelegd ";
+	rdfs:comment "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In Amsterdam is het gebruikelijk dat de notaris de koopovereenkomst opstelt. ";
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:agent mak:Makelaar;
+	skoslex:agent not:Notaris;
+	skoslex:actor mak:Koper;
+	skoslex:actor mak:Verkoper;
+	skoslex:object mak:Koopovereenkomst;
+.
+mak:RechercheKoop a skos:Concept, skoslex:Act;
+	rdfs:label "Recherche koop"@nl;
+	skos:prefLabel "Recherche koop";
+	skos:definition "het onderzoek dat de makelaar uitvoert in de openbare registers van het kadaster met betrekking tot het registergoed voordat de koopovereenkomst wordt opgesteld";
+	rdfs:comment "Als een verkoopmakelaar een registergoed verkoopt dan verricht de verkoopmakelaar onderzoek in de openbare registers van het kadaster. Door dit onderzoek krijgt de verkoopmakelaar inzicht in zaken die van belang zijn bij de verkoop van het registergoed.";
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:actor mak:Makelaar;
+	skoslex:object zv:Persoon;
+	skoslex:object mak:Woning;
+	skoslex:object bel:Overdrachtsbelasting;
+.
+mak:RechercheTaxatie a skos:Concept, skoslex:Act;
+	rdfs:label "Recherche taxatie"@nl;
+	skos:prefLabel "Recherche taxatie";
+	skos:definition "het onderzoek dat de taxateur verricht in de openbare registers van het kadaster met betrekking tot het registergoed voordat het taxatierapport wordt opgesteld";
+	rdfs:comment "Als een taxateur een taxatierapport opstelt dan verricht hij onderzoek in de openbare reigsters van het kadaster. Door dit onderzoek krijgt hij inzicht in zaken die de waarde van het registergoed positief of negatief beïnvloeden. ";
+	skosthes:broaderPartitive mak:Taxatie;
+	skoslex:actor mak:Taxateur;
+	skoslex:object mak:Woning;
+.
+mak:Taxatie a skos:Concept, skoslex:Act;
+	rdfs:label "Taxatie"@nl;
+	skos:prefLabel "Taxatie";
+	skos:definition "Een door een taxateur afgegeven waarde in een taxatierapport van een registergoed waaraan in het maatschappelijk en economische verkeer vertrouwen kan worden ontleend.     ";
+	rdfs:comment "Een taxatie wordt  doorgaans uitgevoerd als de koper met een hypothecaire geldlening de aankoop van het registergoed wil financieren. De financier (doorgaans een erkende geldverstrekkende bankinstelling) wil ter onderbouwing van de hypothecaire geldlening de waarde van het registergoed laten vaststellen door een taxateur.";
+	skoslex:actor mak:Taxateur;
+	skoslex:actor zv:Partij;
+	skoslex:object mak:Woning;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 mak:Verkoop a skos:Concept, skoslex:Act;
 	rdfs:label "Verkoop"@nl;
@@ -139,70 +178,22 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	html:img "/assets/images/act.png";
 .
-mak:Aankoop a skos:Concept, skoslex:Act;
-	rdfs:label "Aankoop"@nl;
-	skos:prefLabel "Aankoop";
-	skos:definition "aankoop van een registergoed door middel van een koopovereenkomst ";
-	rdfs:comment "Er is sprake van een 'aankoop' indien het registergoed door de koper wordt aangekocht. ";
-	skosthes:broaderPartitive mak:Koop;
-	skos:semanticRelation mak:Verkoop;
-	skoslex:agent mak:Aankoopmakelaar;
-	skoslex:actor mak:Koper;
-	skoslex:object mak:Woning;
+#--
+#Objects
+#De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
+mak:Koopovereenkomst a skos:Concept, skoslex:Object;
+	rdfs:label "Koopovereenkomst"@nl;
+	skos:prefLabel "Koopovereenkomst";
+	skos:altLabel "Koopocontract";
+	skos:definition "een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd";
+	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed. ";
+	skos:semanticRelation mak:Verkoper;
+	skos:semanticRelation mak:Koper;
+	skos:semanticRelation mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-	html:img "/assets/images/act.png";
 .
-mak:RechercheKoop a skos:Concept, skoslex:Act;
-	rdfs:label "Recherche koop"@nl;
-	skos:prefLabel "Recherche koop";
-	skos:definition "het onderzoek dat de makelaar uitvoert in de openbare registers van het kadaster met betrekking tot het registergoed voordat de koopovereenkomst wordt opgesteld";
-	rdfs:comment "Als een verkoopmakelaar een registergoed verkoopt dan verricht de verkoopmakelaar onderzoek in de openbare registers van het kadaster. Door dit onderzoek krijgt de verkoopmakelaar inzicht in zaken die van belang zijn bij de verkoop van het registergoed.";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:actor mak:Makelaar;
-	skoslex:object mak:Persoon;
-	skoslex:object mak:Woning;
-	skoslex:object mak:Overdrachtsbelasting;
-.
-mak:IdentificatieKoop a skos:Concept, skoslex:Act;
-	rdfs:label "Identificatie koop"@nl;
-	skos:prefLabel "Identificatie koop";
-	skos:definition "het identificeren van de cliënt (verkoper en koper) en het verifiëren van diens identiteit op grond van een wettelijke verplichting ";
-	rdfs:comment "De verkoopmakelaar is wettelijk verplicht om de verkoper, zijn opdrachtgever, en de koper, de wederpartij van de verkoper, te identificeren en diens identiteit te verifiëren.";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:actor mak:Makelaar;
-	skoslex:object mak:Persoon;
-.
-mak:Taxateur a skos:Concept, skoslex:Agent;
-	rdfs:label "Taxateur"@nl;
-	skos:definition "een daartoe bevoegd persoon die een waarde toekent in het taxatierapport aan het registergoed op basis van zijn vakbekwaamheid";
-	rdfs:comment "Een taxateur is een persoon die op basis van zijn vakbekwaamheid een waarde toekent in het taxatierapport aan het registergoed. Het taxatierapport heeft de koper doorgaans nodig voor de financiering van het registergoed.  ";
-	skos:prefLabel "Taxateur";
-.
-mak:Taxatie a skos:Concept, skoslex:Act;
-	rdfs:label "Taxatie"@nl;
-	skos:prefLabel "Taxatie";
-	skos:definition "een door een taxateur afgegeven waarde in een taxatierapport van een registergoed waaraan in het maatschappelijk en economische verkeer vertrouwen kan worden ontleend.     ";
-	rdfs:comment "Een taxatie wordt  doorgaans uitgevoerd als de koper met een hypothecaire geldlening de aankoop van het registergoed wil financieren. De financier (doorgaans een erkende geldverstrekkende bankinstelling) wil ter onderbouwing van de hypothecaire geldlening de waarde van het registergoed laten vaststellen door een taxateur.";
-	skoslex:actor mak:Taxateur;
-	skoslex:actor mak:Partij;
-	skoslex:object mak:Woning;
-	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
-.
-mak:RechercheTaxatie a skos:Concept, skoslex:Act;
-	rdfs:label "Recherche taxatie"@nl;
-	skos:prefLabel "Recherche taxatie";
-	skos:definition "het onderzoek dat de taxateur verricht in de openbare registers van het kadaster met betrekking tot het registergoed voordat het taxatierapport wordt opgesteld";
-	rdfs:comment "Als een taxateur een taxatierapport opstelt dan verricht hij onderzoek in de openbare reigsters van het kadaster. Door dit onderzoek krijgt hij inzicht in zaken die de waarde van het registergoed positief of negatief beïnvloeden. ";
-	skosthes:broaderPartitive mak:Taxatie;
-	skoslex:actor mak:Taxateur;
-	skoslex:object mak:Woning;
-.
-mak:IdentificatieTaxatie a skos:Concept, skoslex:Act;
-	rdfs:label "Identificatie taxatie"@nl;
-	skos:prefLabel "Identificatie taxatie";
-	skos:definition "het identificeren van de opdrachtgever door de taxateur in het kader van de opdracht tot taxatie";
-	rdfs:comment "In het kader van de opdracht tot taxatie moet de taxateur weten wie zijn opdrachtgever is.  Daarom stelt de taxateur de identiteit van de opdrachtgever vast.";
-	skosthes:broaderPartitive mak:Taxatie;
-	skoslex:actor mak:Taxateur;
-	skoslex:object mak:Persoon;
+mak:Woning a skos:Concept, skoslex:Object;
+	skos:exactMatch zv:Huis;
+	rdfs:label "Woning"@nl;
+	html:img "/assets/images/object.png";
 .
