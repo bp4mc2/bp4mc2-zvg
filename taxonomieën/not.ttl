@@ -49,6 +49,10 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
 
+#Registratieweg
+<https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
+
+
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
 #De notaris bewaakt vervolgens de termijnen voor de waarborgsom en voor de passeerdatum.
@@ -144,7 +148,7 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
-	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive not:Levering;#Is er aparte identificatie voor vestigsakte en leveringsakte?
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:InschrijvenAkte a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
@@ -271,10 +275,13 @@ not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	skos:definition "Vastleggen in een register";
 	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
         skos:editorialNote "Álle originele (minuut)akten worden geregistreerd bij de belastingdienst op grond van de registratiewet.";
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01>; 
         skoslex:actor not:Notaris;
         skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
         skoslex:object bel:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:RegistrerenAkteRegistratiewet1970;
 .
 not:RechercheNotaris a skos:Concept, skoslex:Act;#RechercheNotaris of RechercheNOT?
 	rdfs:label "Recherche"@nl;
@@ -305,7 +312,7 @@ not:VestigenZakelijkBeperktRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Vestigen zakelijk/beperkt recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
 	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
-    skos:editorialNote "Vindt tegelijkertijd plaats met het overdragen van zakelijk/beperkt recht.";
+        skos:editorialNote "Vindt tegelijkertijd plaats met het overdragen van zakelijk/beperkt recht.";
 	skosthes:broaderPartitive not:Levering;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
@@ -320,7 +327,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object not:Leveringsakte;
 	skoslex:object not:OnroerendeZaak;
 	skoslex:object not:Onderpand;
-	skosthes:broaderPartitive not:Levering;#Dit is onjuist; levering en vestiging hypotheek zijn elk een zelfstandige act; dus niet dat het een onderdeel is van het ander. NB. Overigens wel vaak gelijktijdig uitgevoerd, maar dat is iets anders dan onderdeel van.
+	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;#Is dit eigenlijk gelijk aan elkaar? Dus VestigenZakelijkBeperktRecht=VestigenHypotheek?
 .
 #--
 #Objects
@@ -341,8 +348,7 @@ not:Akte a skos:Concept, skoslex:Object;
 	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen. Een document waarin de enige echte werkelijkheid is beschreven en dat kan dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen te dwingen.";
 	rdfs:comment "Ondertekend geschrift, bedoeld om als bewijs te dienen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1>;
-	skosthes:narrowerGeneric not:AuthentiekeAkte
-;
+	skosthes:narrowerGeneric not:AuthentiekeAkte;
 .
 not:AuthentiekeAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Authentieke akte"@nl;
