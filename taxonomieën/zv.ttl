@@ -22,6 +22,7 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
+<http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "artikel 213 van Boek 6 van het Burgerlijk Wetboek".
 
 #--
@@ -101,4 +102,13 @@ zv:Huis a skos:Concept, skoslex:Object;
 	rdfs:label "Huis"@nl;
 	skos:prefLabel "Huis";
 	skosthes:broaderGeneric kad:ZakelijkRecht;
+.
+zv:Identiteitsdocument a skos:Concept, skoslex:Object;
+	rdfs:label "Identiteitsdocument"@nl;
+	skos:prefLabel "Identiteitsdocument";
+        skos:altLabel "Legitimatiebewijs";
+	skos:definition "Een officieel document waarmee een natuurlijk persoon zich in Nederland kan identificeren vanaf 14 jaar en ouder.";
+	skos:comment "Een middel om je als (natuurlijk) persoon te kunnen identificeren.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
+	skos:editorialNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
 .
