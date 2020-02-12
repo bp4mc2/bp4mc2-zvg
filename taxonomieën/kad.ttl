@@ -31,7 +31,8 @@
 #---
 #Actors and Agents
 kad:Bewaarder a skos:Concept, skoslex:Actor;
-	skos:exactMatch brk:Bewaarder;
+	#skos:exactMatch brk:Bewaarder;
+             #Weggehaald, want dit is een broken link
 	rdfs:label "Bewaarder"@nl;
 .
 #--
@@ -63,7 +64,8 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Zakelijk_recht;
+	#skos:exactMatch brk:Zakelijk_recht;
+             #Weggehaald, want dit is een broken link
 	rdfs:label "Zakelijk recht"@nl;
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
 	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
