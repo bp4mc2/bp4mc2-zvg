@@ -45,7 +45,7 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:actor not:Notaris;
 	skoslex:actor kad:Bewaarder;
-	skosthes:broaderPartitive not:OverdragenBeperktZakelijkRecht;
+	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
 .
 #--
 #Objects
