@@ -46,6 +46,7 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:actor kad:Bewaarder;
 	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
+#Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 .
 #--
 #Objects
