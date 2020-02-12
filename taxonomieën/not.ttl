@@ -177,6 +177,12 @@ not:Overdracht a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
         skos:semanticRelation not:Levering;
 .
+not:OverdragenBeperktZakelijkRecht a skos:Concept, skoslex:Act;
+	rdfs:label "Overdragen beperkt/zakelijk recht"@nl;
+	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
+	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
+	skosthes:broaderPartitive not:Levering;
+.
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
 	skos:prefLabel "Passeren";
