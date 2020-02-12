@@ -329,6 +329,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object not:Onderpand;
 	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;#Is dit eigenlijk gelijk aan elkaar? Dus VestigenZakelijkBeperktRecht=VestigenHypotheek?
 .
+#Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 #--
 #Objects
 #AfschriftAkte of AfschriftNot?
