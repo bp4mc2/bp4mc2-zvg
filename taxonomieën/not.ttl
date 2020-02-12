@@ -191,13 +191,32 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
 	#Wellicht hier nog de zgn. 'belehrung' in verwerken. Dit wel in overleg met KNB, omdat de belehrung zich niet beperkt tot de gelegenheid van ondertekenen akte, maar ook in de voorbereidende fase. Zou ook een aparte act kunnen zijn.
         rdfs:comment "De ondertekening van een akte door alle betrokken partijen, de notaris en eventuele getuigen.";
+	#Algemene handeling. Zou o.a. object akte en actor notaris kunnen linken.
+.
+not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Passeren van de leveringsakte"@nl;
+	skos:prefLabel "Passeren van de leveringsakte";
+	skos:definition ".";
+        rdfs:comment ".";
+	skoslex:actor not:Vervreemder;#hypogever en nemer ipv vervreemder/verkrijger
+	skoslex:actor not:Verkrijger;
+	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
+	skoslex:object not:Hypotheekakte;
+	skoslex:object not:RechtVanHypotheek;
+	skosthes:broaderPartitive not:Levering;
+        skosthes:broaderPartitive not:Passeren;
+.
+not:PasserenAkteLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Passeren van de leveringsakte"@nl;
+	skos:prefLabel "Passeren van de leveringsakte";
+	skos:definition ".";
+        rdfs:comment ".";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:object not:Leveringsakte;
-	skoslex:object not:Hypotheekakte;
-	skoslex:object not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Levering;
+        skosthes:broaderPartitive not:Passeren;
 #Toevoegen zv:onroerendGoed als object?
 .
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
@@ -318,12 +337,11 @@ not:Comparant a skos:Concept, skoslex:Object;
         skosthes:narrowerPartitive not:Vervreemder;
         skosthes:narrowerPartitive not:Verkrijger;
 .
-not:Comparitie a skos:Concept, skoslex:Object;
+not:Comparitie a skos:Concept, skoslex:Object;#Hens Meengs van KNB geeft aan dat dit een verboden woord is. Vraag om verdere toelichting staat nog open.
 	rdfs:label "Comparitie"@nl;
 	skos:prefLabel "Comparitie";
 	skos:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
 	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
-	skos:editorialNote "Definitie en uitleg nog niet afgestemd met KNB.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
         skosthes:broaderPartitive not:NotarieleAkte;
 .
