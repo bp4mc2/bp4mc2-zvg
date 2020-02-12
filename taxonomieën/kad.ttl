@@ -19,19 +19,36 @@
 <http://zorgeloosvastgoed.nl/data/kad> a owl:Ontology;
 	rdfs:label "Domein Kadaster";
 .
+#--
+#Wetgeving links
+#Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
+#Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
+#--
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
 
 #---
 #begrippen uit de Kadaster taxonomie
 #---
+#Actors and Agents
 kad:Bewaarder a skos:Concept, skoslex:Actor;
 	skos:exactMatch brk:Bewaarder;
 	rdfs:label "Bewaarder"@nl;
 .
-kad:OpenbareRegisters a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Openbare_registers;
-	rdfs:label "Openbare registers"@nl;
+#--
+#Acts
+kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
+	rdfs:label "Inschrijven openbare registers"@nl;
+	skos:prefLabel "Inschrijven openbare registers";
+	skos:definition "Vastleggen in een register.";
+	rdfs:comment "Vastleggen in een register.";
+	skoslex:object not:AfschriftAkte;
+	skoslex:object kad:OpenbareRegisters;
+	skoslex:actor not:Notaris;
+	skoslex:actor kad:Bewaarder;
+	skosthes:broaderPartitive not:OverdragenBeperktZakelijkRecht;
 .
+#--
+#Objects
 kad:BeperktRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
@@ -40,35 +57,17 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
-kad:ZakelijkRecht a skos:Concept;
+kad:OpenbareRegisters a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Openbare_registers;
+	rdfs:label "Openbare registers"@nl;
+.
+kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Zakelijk_recht;
 	rdfs:label "Zakelijk recht"@nl;
-	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
+	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
 	skos:scopeNote "Met een zakelijk recht wordt bedoeld een recht dat samenhangt met een zaak of een goed. Dit in tegenstelling met een persoonlijk recht, een recht dat samenhangt met de persoon. Om het verschil tussen beide rechten duidelijk te maken een voorbeeld. Eigendom is een zakelijk recht. Dat betekent onder meer dat het recht niet eindigt door het overlijden van de eigenaar. Als een eigenaar overlijdt vallen al zijn eigendommen in zijn nalatenschap. Huur is een persoonlijk recht. Door het overlijden van de huurder eindigt in principe wel de huur. Zakelijke rechten zijn, behalve het recht van eigendom, de rechten van erfpacht, opstal, vruchtgebruik, gebruik en bewoning en erfdienstbaarheid. Een Zakelijk recht kan zijn een zakelijk genotsrecht of een zakelijk zekerheidsrecht";
 .
-#---
-#Begrippen uit andere ZV domeinen
-#---
-kad:Notaris a skos:Concept, skoslex:Actor;
-	skos:exactMatch not:Notaris;
-	rdfs:label "Notaris"@nl;
-.
-kad:NotarieleAkte a skos:Concept, skoslex:Object;
-	skos:exactMatch not:NotarieleAkte;
-	rdfs:label "Notariële akte"@nl;
-.
-
-kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
-	rdfs:label "Inschrijven openbare registers"@nl;
-	skos:prefLabel "Inschrijven openbare registers";
-	skoslex:object kad:NotarieleAkte;
-	skoslex:object kad:OpenbareRegisters;
-	skoslex:actor kad:Notaris;
-	skoslex:actor kad:Bewaarder;
-	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
-.
-
 #---
 # Voorbeeldsituatie uitwerking metadata-link
 #---
