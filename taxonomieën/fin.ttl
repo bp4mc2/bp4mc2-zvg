@@ -41,12 +41,14 @@ fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	skos:definition "Een hypotheekadviseur geeft onafhankelijk hypotheekadvies over welke hypotheekconstructie aansluit op de situatie en de wensen van de consument.";
 .
 fin:Hypotheekgever a skos:Concept, skoslex:Actor;
-	skos:exactMatch not:Hypotheekgever;
 	rdfs:label "Hypotheekgever"@nl;
+	skos:definition "Persoon die aan de bank een beperkt zekerheidsrecht op zijn registergoed (hypotheek) geeft, zodat de bank het geleende geld met voorrang op andere schuldeisers kan terugkrijgen.";
+	rdfs:comment "De hypotheekgever is de geldnemer. Bij het afsluiten van een hypotheek bent u de hypotheekgever. U geeft dan een huis in onderpand om de financiering te krijgen die nodig is om dat huis te kopen. De financiering wordt de hypotheeksom genoemd.";
 .
 fin:Hypotheeknemer a skos:Concept, skoslex:Actor;
-	skos:exactMatch not:Hypotheeknemer;
 	rdfs:label "Hypotheeknemer"@nl;
+	skos:definition "Meestal de bank die aan een persoon geld leent en ter verzekering van terugbetaling het recht verkrijgt om bij voorrang op het onderzette goed (bijv. het huis) verhaal te nemen.";
+	rdfs:comment "Een hypotheeknemer is een geldverstrekker, bijvoorbeeld een bank, die geld uitleent aan een hypotheekgever, bijvoorbeeld een koper van een huis. Tegenover deze geldverstrekking staat dat de hypotheeknemer een hypotheek neemt op het onderpand.";
 .
 fin:Schuldeiser a skos:Concept, skoslex:Actor;
 	rdfs:label "Schuldeiser"@nl;
