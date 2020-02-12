@@ -101,7 +101,7 @@ not:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
         skoslex:actor not:Notaris;
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive not:Overdragen-+ZakelijkRecht
 .
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
@@ -109,10 +109,26 @@ not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)";
 	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats.";
-        rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats";
+        rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats.";
+	#Algemene handeling. Zou o.a. object akte en actor notaris kunnen linken.
+.
+not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Archiveren (hypotheekakte)"@nl;
+	skos:prefLabel "Archiveren (hypotheekakte)";
+	skos:definition "Archiveren van de hypotheekakte.";
+        rdfs:comment "Archiveren van de hypotheekakte.";
 	skoslex:actor not:Notaris;
-	skoslex:object not:NotarieleAkte;
-	skosthes:broaderPartitive not:Levering;
+	skoslex:object not:Hypotheekakte;
+	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+.
+not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Archiveren (leveringsakte)"@nl;
+	skos:prefLabel "Archiveren (leveringsakte)";
+	skos:definition "Archiveren van de leveringsakte.";
+        rdfs:comment "Archiveren van de leveringsakte.";
+	skoslex:actor not:Notaris;
+	skoslex:object not:Leveringsakte;
+	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
 .
 #IdentificatieNOT of IdentificatieComparant? Besproken met KNB, voorkeur gaat uit naar Identificatie Notaris, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
 not:IdentificatieNotaris a skos:Concept, skoslex:Act;
@@ -163,8 +179,24 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	skos:prefLabel "Opstellen (akte)";
 	skos:definition "Het opstellen van het schriftelijk document.";
 	rdfs:comment "Het opstellen van het schriftelijk document.";
+.
+not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Opstellen (akte)"@nl;
+	skos:prefLabel "Opstellen (akte)";
+	skos:definition "Het opstellen van de hypotheekakte.";
+	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
-	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive not:OpstellenAkte;
+	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+.
+not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Opstellen (akte)"@nl;
+	skos:prefLabel "Opstellen (akte)";
+	skos:definition "Het opstellen van de leveringsakte.";
+	rdfs:comment "Het opstellen van de leveringsakte.";
+	skoslex:actor not:Notaris;
+	skosthes:broaderPartitive not:OpstellenAkte;
+	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
 .
 not:Overdracht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdracht"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'overdracht' beter herkenbaar is bij de koopovereenkomst dan 'overdragen'.
@@ -175,13 +207,13 @@ not:Overdracht a skos:Concept, skoslex:Act;
 	rdfs:comment "Bij overdracht geeft iemand de eigendom van zijn goed aan een ander, die de eigendom van dat goed wil ontvangen. Een overdracht is pas geldig als de eigenaar bevoegd is de eigendom over te dragen en de ontvanger het goed vervolgens kan gebruiken.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
-        skos:semanticRelation not:Levering;
+        skos:semanticRelation not:OverdragenZakelijkBeperktRecht;#Is deze act eigenlijk gelijk aan het overdragen beperkt/zakelijk recht?
 .
-not:OverdragenBeperktZakelijkRecht a skos:Concept, skoslex:Act;
-	rdfs:label "Overdragen beperkt/zakelijk recht"@nl;
+not:OverdragenZakelijkBeperktRecht a skos:Concept, skoslex:Act;
+	rdfs:label "Overdragen zakelijk/beperkt recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
 	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
-        skos:editorialNote "Vindt tegelijkertijd plaats met het vestigen van beperkt/zakelijk recht.";
+    skos:editorialNote "Vindt tegelijkertijd plaats met het vestigen van zakelijk/beperkt recht.";
 	skosthes:broaderPartitive not:Levering;
 .
 not:Passeren a skos:Concept, skoslex:Act;
@@ -196,29 +228,32 @@ not:Passeren a skos:Concept, skoslex:Act;
 not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren van de leveringsakte"@nl;
 	skos:prefLabel "Passeren van de leveringsakte";
-	skos:definition ".";
-        rdfs:comment ".";
-	skoslex:actor not:Vervreemder;#hypogever en nemer ipv vervreemder/verkrijger
-	skoslex:actor not:Verkrijger;
+	skos:definition "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
+        rdfs:comment "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
+	skoslex:actor fin:Hypotheeknemer;
+	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:object not:Hypotheekakte;
 	skoslex:object not:RechtVanHypotheek;
+        skoslex:object not:OnroerendeZaak;
+        skoslex:object not:Onderpand;
 	skosthes:broaderPartitive not:Levering;
         skosthes:broaderPartitive not:Passeren;
 .
 not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren van de leveringsakte"@nl;
 	skos:prefLabel "Passeren van de leveringsakte";
-	skos:definition ".";
-        rdfs:comment ".";
+	skos:definition "Handeling bij de notaris, waarbij de leveringsakte door beide partijen wordt ondertekend.";
+        rdfs:comment "Handeling bij de notaris, waarbij de leveringsakte door beide partijen wordt ondertekend.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:object not:Leveringsakte;
+        skoslex:object not:OnroerendeZaak;
 	skosthes:broaderPartitive not:Levering;
         skosthes:broaderPartitive not:Passeren;
-#Toevoegen zv:onroerendGoed als object?
 .
+#Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren overdrachtsbelasting"@nl;
 	skos:prefLabel "Registreren overdrachtsbelasting";
@@ -228,7 +263,7 @@ not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
         skoslex:actor not:Notaris;
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
 .
 not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren akte registratiewet 1970"@nl;
@@ -266,11 +301,11 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	skoslex:object not:Waarborgsom;
 	skosthes:broaderPartitive not:Levering;
 .
-not:VestigenBeperktZakelijkRecht a skos:Concept, skoslex:Act;
-	rdfs:label "Vestigen beperkt/zakelijk recht"@nl;
+not:VestigenZakelijkBeperktRecht a skos:Concept, skoslex:Act;
+	rdfs:label "Vestigen zakelijk/beperkt recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
 	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
-        skos:editorialNote "Vindt tegelijkertijd plaats met het overdragen van beperkt/zakelijk recht.";
+    skos:editorialNote "Vindt tegelijkertijd plaats met het overdragen van zakelijk/beperkt recht.";
 	skosthes:broaderPartitive not:Levering;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
