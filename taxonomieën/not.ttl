@@ -36,6 +36,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37> rdfs:label "artikel 37 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39> rdfs:label "artikel 39 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40> rdfs:label "artikel 40 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46> rdfs:label "artikel 46 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49> rdfs:label "artikel 49 van de Wet op het notarisambt".
 
 #Burgerlijk Wetboek (BW)
@@ -49,6 +50,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "artikel 227 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 van Boek 7 van het Burgerlijk Wetboek".
 
 #Registratieweg
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
@@ -407,6 +409,17 @@ not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
+not:Koopsom a skos:Concept, skoslex:Object;
+	rdfs:label "Kwaliteitsrekening"@nl;
+	skos:prefLabel "Kwaliteitsrekening";
+	skos:altLabel "Koopprijs";
+	skos:altLabel "Tegenprestatie";
+	skos:definition "Een koopsom is het bedrag dat vermeld staat in de akte en dat als tegenprestatie geldt met betrekking tot een transactie of overdracht van een zakelijk recht van een object (of samen met meerdere objecten) en dat de verkrijger aan de vervreemder verschuldigd is. Dit bedrag hebben verkrijger en vervreemder onderling met elkaar afgesproken en wordt door een notaris opgenomen in de akte.";
+        rdfs:comment "Een koopsom is het geldbedrag, dat de verkoper en koper hebben afgesproken voor de door de koper te kopen (onroerende) zaak. De koopsom wordt in de koopovereenkomst vermeld.Ingeval de koopsom betrekking heeft op een onroerende zaak, dan moet de notaris dit bedrag opnemen in de leveringsakte. Een koopsom is niet altijd gelijk aan de economische of WOZ waarde. Er kunnen redenen zijn, waarom een koopsom hoger of lager is dan die waarde. De notaris moet controleren of de koopsom redelijk is.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
+	skosthes:broaderPartitive not:Leveringsakte;
+. 
 not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	rdfs:label "Kwaliteitsrekening"@nl;
 	skos:prefLabel "Kwaliteitsrekening";
@@ -509,6 +522,7 @@ not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	skos:definition "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren. In het Koninklijk besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
 	rdfs:comment "Een gemeente in Nederland waar het kantoor van de notaris staat.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
+        skos:editorialNote "Het kan ook het Adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
 	skos:closeMatch not:Notaris;#Ik twijfel of de meest passende relatie is gelegd met notaris. Wel wordt er in dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.
 .
 not:Rang a skos:Concept, skoslex:Object;
