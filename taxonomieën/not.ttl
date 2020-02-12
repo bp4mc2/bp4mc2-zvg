@@ -558,6 +558,7 @@ not:TitelVanAankomst a skos:Concept, skoslex:Object;
 	rdfs:comment "Verklaring waaruit blijkt dat de verkoper ook echt de eigenaar is.";
         skos:editorialNote "Verklaring waaruit blijkt op welke wijze de verkoper zijn recht heeft verkregen. Bij rechten op registergoederen is dat altijd de inschrijving in de openbare registers van een daartoe opgestelde akte.";
         skosthes:narrowerPartitive not:Titel;
+        #Onderdeel van titel van aankomst is datumdeel/nr dat Kadaster levert na inschrijving in register. Dit moet hier nog bij.
 .
 not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
