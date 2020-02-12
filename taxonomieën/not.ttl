@@ -181,6 +181,7 @@ not:OverdragenBeperktZakelijkRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdragen beperkt/zakelijk recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
 	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
+        skos:editorialNote "Vindt tegelijkertijd plaats met het vestigen van beperkt/zakelijk recht.";
 	skosthes:broaderPartitive not:Levering;
 .
 not:Passeren a skos:Concept, skoslex:Act;
@@ -244,6 +245,13 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
         skos:editorialNote "Wellicht iets breder formuleren, de notaris is ook beheerder van de waarborgsom. Dit doet de notaris in zijn hoedanigheid van ‘trusted third party’, net zoals het bewaren van de koopsom.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Waarborgsom;
+	skosthes:broaderPartitive not:Levering;
+.
+not:VestigenBeperktZakelijkRecht a skos:Concept, skoslex:Act;
+	rdfs:label "Vestigen beperkt/zakelijk recht"@nl;
+	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
+	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
+        skos:editorialNote "Vindt tegelijkertijd plaats met het overdragen van beperkt/zakelijk recht.";
 	skosthes:broaderPartitive not:Levering;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
