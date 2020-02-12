@@ -40,7 +40,7 @@ fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	skos:altLabel "Tussenpersoon";
 	skos:definition "Een hypotheekadviseur geeft onafhankelijk hypotheekadvies over welke hypotheekconstructie aansluit op de situatie en de wensen van de consument.";
 .
-fin:Hypotheekgever a skos:Concept, skoslex:Actor, skoslex:Object;
+fin:Hypotheekgever a skos:Concept, skoslex:Actor;
 	skos:exactMatch not:Hypotheekgever;
 	rdfs:label "Hypotheekgever"@nl;
 .
