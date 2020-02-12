@@ -16,15 +16,21 @@
 <http://zorgeloosvastgoed.nl/data/bel> a owl:Ontology;
 	rdfs:label "Domein Belastingen";
 .
+#--
+#Wetgeving links
+#Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
+#Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
+#--
 
+
+#--
+#Actors and Agents
 bel:Belastinginspecteur a skos:Concept, skoslex:Actor;
 	rdfs:label "Belastinginspecteur"@nl;
 	skos:prefLabel "Belastinginspecteur";
 .
-bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
-	rdfs:label "Overdrachtsbelasting";
-	skos:prefLabel "Overdrachtsbelasting";
-.
+#--
+#Acts
 bel:InningOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Inning overdrachtsbelasting";
 	skos:prefLabel "Inning overdrachtsbelasting";
@@ -34,6 +40,12 @@ bel:InningOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	skoslex:actor bel:Belastinginspecteur;
 	skoslex:object bel:Overdrachtsbelasting;
 .
+bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
+	rdfs:label "Overdrachtsbelasting";
+	skos:prefLabel "Overdrachtsbelasting";
+.
+#--
+#Objects
 bel:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Weet niet of dit de juiste term is. Slechts placeholder voor relatie naar domein not bij handeling van registreren
 	rdfs:label "Register Belastingdienst";
 	skos:prefLabel "Register Belastingdienst";
