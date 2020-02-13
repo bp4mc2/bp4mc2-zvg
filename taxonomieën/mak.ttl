@@ -63,6 +63,7 @@ mak:Koper a skos:Concept, skoslex:Actor;
 	skos:definition "Degene die het registergoed heeft aangekocht.";
 	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
 	skos:broadMatch zv:Persoon;
+	skosthes:broaderGeneric zv:Partij;
 	html:img "/assets/images/actor.png";
 .
 mak:Taxateur a skos:Concept, skoslex:Agent;
@@ -77,6 +78,7 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 	skos:definition "Degene die het registergoed heeft verkocht.";
 	rdfs:comment "Een verkoper is degene die het registergoed heeft verkocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
 	skos:broadMatch zv:Persoon;
+	skosthes:broaderGeneric zv:Partij;
 #--
 #Acts
 mak:Aankoop a skos:Concept, skoslex:Act;
