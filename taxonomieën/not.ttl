@@ -108,7 +108,7 @@ not:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
         skoslex:actor not:Notaris;
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:Overdragen-+ZakelijkRecht
+	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht
 .
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
@@ -144,15 +144,15 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
         skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
+        skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:Comparant;
 	skoslex:object zv:Identiteitsdocument;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
-        skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
-	skosthes:broaderPartitive not:Levering;#Is er aparte identificatie voor vestigsakte en leveringsakte?
+        skosthes:broaderPartitive not:Levering;#Is er aparte identificatie voor vestigsakte en leveringsakte?
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:InschrijvenAkte a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
