@@ -115,10 +115,13 @@ fin:Hypotheekadvies a skos:Concept, skoslex:Object;
 	skos:prefLabel "Hypotheekadvies";
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
 .
-fin:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
-	rdfs:label "Inschrijvingsbedrag"@nl;
-	skos:prefLabel "Inschrijvingsbedrag";
-.
+#Begrip staat ook in NOT domein. Valt wat voor te zeggen om het begrip in dit domein onder te brengen. 
+#Aangezien het begrip in het NOT domein uitgebreider is, wordt deze nu weggelaten.
+#fin:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
+#	rdfs:label "Inschrijvingsbedrag"@nl;
+#	skos:prefLabel "Inschrijvingsbedrag";
+#.
+#Lening nergens aan gerelateerd. Is nu een 'los' begrip
 fin:Lening a skos:Concept, skoslex:Object;
 	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening";
