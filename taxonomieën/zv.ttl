@@ -40,19 +40,22 @@ zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Natuurlijk persoon";
 	skos:definition "Een mens in juridische zin, als iemand die drager van rechten en verplichtingen kan zijn. Het zijn van een natuurlijk persoon eindigt met het overlijden (hersendood).";
   	rdfs:comment "Een mens met eigen rechten en plichten.";
+	skos:semanticRelation zv:Mens;
+        skosthes:broaderGeneric zv:Persoon;
 .
 zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Niet natuurlijk persoon"@nl;
 	skos:prefLabel "Niet natuurlijk persoon";
 	skos:definition "Een organisatie of abstracte entiteit die zelfstandig in het rechtsverkeer kan optreden. Het zijn van een niet natuurlijk persoon eindigt bij ontbinding van de organisatie of entiteit.";
   	rdfs:comment "Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. Een niet natuurlijk persoon heeft eigen rechten en plichten.";
+	skos:semanticRelation zv:Organisatie;
+        skosthes:broaderGeneric zv:Persoon;
 .
 zv:Organisatie a skos:Concept, skoslex:Actor;
 	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
 	rdfs:label "Rechtspersoon"@nl;
 	skos:prefLabel "Organisatie";
 	skos:altLabel "rechtspersoon";
-	skosthes:narrowerPartitive not:Notaris;
         #Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
 .
 zv:Partij a skos:Concept, skoslex:Actor;
@@ -61,15 +64,11 @@ zv:Partij a skos:Concept, skoslex:Actor;
 	skos:definition "Een Partij is een (niet) natuurlijk persoon die betrokken is bij een meerzijdige rechtshandeling.";
   	rdfs:comment "Een partij is een (niet) natuurlijk persoon die samen met een andere (niet) natuurlijke persoon een handeling verrichten, waardoor zij samen een juridisch doel bereiken. Dit doel noemen juristen een rechtsgevolg.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>;
-	skosthes:narrowerGeneric mak:Koper;
-	skosthes:narrowerGeneric mak:Verkoper;
 .
 zv:Persoon a skos:Concept, skoslex:Actor;
 	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
 	rdfs:label "Persoon"@nl;
 	skos:prefLabel "Persoon";
-	skosthes:narrowerGeneric zv:Mens;
-	skosthes:narrowerGeneric zv:Organisatie;
 .
 zv:RechtsPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechtspersoon"@nl;
