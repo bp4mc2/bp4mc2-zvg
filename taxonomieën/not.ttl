@@ -110,7 +110,7 @@ not:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
         skoslex:actor not:Notaris;
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
@@ -128,7 +128,7 @@ not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
         rdfs:comment "Archiveren van de hypotheekakte.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Hypotheekakte;
-	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (leveringsakte)"@nl;
@@ -137,7 +137,7 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
         rdfs:comment "Archiveren van de leveringsakte.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Leveringsakte;
-	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 #IdentificatieNOT of IdentificatieComparant? Besproken met KNB, voorkeur gaat uit naar Identificatie Notaris, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
 not:IdentificatieNotaris a skos:Concept, skoslex:Act;
@@ -148,13 +148,40 @@ not:IdentificatieNotaris a skos:Concept, skoslex:Act;
         skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
-	skoslex:object not:Vervreemder;
+.
+not:IdentificatieAkteHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Identificatie (hypotheekakte)"@nl;
+	skos:prefLabel "Identificatie (hypotheekakte)";
+	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
+	rdfs:comment "Vaststellen van de identiteit van de mensen die op de hypotheekakte komen.";
+        skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
+        skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
+        skos:editorialNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon.";#Aparte handeling, ook in kader van AVG.
+        skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:Comparant;
 	skoslex:object zv:Identiteitsdocument;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
-        skosthes:broaderPartitive not:Levering;#Is er aparte identificatie voor vestigsakte en leveringsakte?
+        skosthes:broaderPartitive not:VestigenBeperktRecht;
+        skosthes:broaderPartitive not:IdentificatieNotaris;
+.
+not:IdentificatieAkteLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Identificatie (leveringsakte)"@nl;
+	skos:prefLabel "Identificatie (leveringsakte)";
+	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
+	rdfs:comment "Vaststellen van de identiteit van de mensen die op de leveringsakte komen.";
+        skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
+        skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden.";
+        skos:editorialNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon.";#Aparte handeling, ook in kader van AVG.	
+        skoslex:object not:Vervreemder;
+	skoslex:object not:Verkrijger;
+	skoslex:object not:Comparant;
+	skoslex:object zv:Identiteitsdocument;
+	skoslex:object zv:BasisregistratiePersonen;
+	skoslex:actor not:Notaris;
+        skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+        skosthes:broaderPartitive not:IdentificatieNotaris;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
@@ -166,7 +193,7 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
         skoslex:object kad:OpenbareRegisters;
         skoslex:object not:AfschriftAkte;
 	skoslex:object not:TitelVanAankomst;
-	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:Levering a skos:Concept, skoslex:Act;
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
@@ -183,7 +210,7 @@ not:Levering a skos:Concept, skoslex:Act;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Leveringsakte;
         skos:semanticRelation not:Overdracht;
-	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen (akte)"@nl;
@@ -198,7 +225,7 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
 	skosthes:broaderPartitive not:OpstellenAkte;
-	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen (akte)"@nl;
@@ -207,7 +234,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van de leveringsakte.";
 	skoslex:actor not:Notaris;
 	skosthes:broaderPartitive not:OpstellenAkte;
-	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:Overdracht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdracht"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'overdracht' beter herkenbaar is bij de koopovereenkomst dan 'overdragen'.
@@ -218,14 +245,18 @@ not:Overdracht a skos:Concept, skoslex:Act;
 	rdfs:comment "Bij overdracht geeft iemand de eigendom van zijn goed aan een ander, die de eigendom van dat goed wil ontvangen. Een overdracht is pas geldig als de eigenaar bevoegd is de eigendom over te dragen en de ontvanger het goed vervolgens kan gebruiken.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
-        skos:semanticRelation not:OverdragenZakelijkBeperktRecht;#Is deze act eigenlijk gelijk aan het overdragen beperkt/zakelijk recht?
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
-not:OverdragenZakelijkBeperktRecht a skos:Concept, skoslex:Act;
-	rdfs:label "Overdragen zakelijk/beperkt recht"@nl;
+not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
+	rdfs:label "Overdragen zakelijk recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
 	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
-        skos:editorialNote "Vindt tegelijkertijd plaats met het vestigen van zakelijk/beperkt recht.";
-	skosthes:broaderPartitive not:Levering;
+        skos:editorialNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval."; #Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zit.
+	skoslex:actor not:Vervreemder;
+	skoslex:actor not:Verkrijger;
+	skoslex:agent not:Notaris;
+	skoslex:object not:Leveringsakte;
+        skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
@@ -248,7 +279,7 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object not:RechtVanHypotheek;
         skoslex:object not:OnroerendeZaak;
         skoslex:object not:Onderpand;
-	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:VestigenBeperktRecht;
         skosthes:broaderPartitive not:Passeren;
 .
 not:PasserenAkteLevering a skos:Concept, skoslex:Act;
@@ -261,7 +292,7 @@ not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:object not:Leveringsakte;
         skoslex:object not:OnroerendeZaak;
-	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
         skosthes:broaderPartitive not:Passeren;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
@@ -274,7 +305,7 @@ not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
         skoslex:actor not:Notaris;
         skoslex:object bel:Overdrachtsbelasting;
         skoslex:object bel:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren akte registratiewet 1970"@nl;
@@ -283,17 +314,40 @@ not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
         skos:editorialNote "Álle originele (minuut)akten worden geregistreerd bij de belastingdienst op grond van de registratiewet.";
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01>; 
+.
+not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren hypotheekakte registratiewet 1970"@nl;
+	skos:prefLabel "Registreren hypotheekakte registratiewet 1970";
+	skos:definition "Vastleggen in een register";
+	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
         skoslex:actor not:Notaris;
         skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
         skoslex:object bel:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkBeperktRecht;
-	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;
+	skosthes:broaderPartitive not:VestigenBeperktRecht;
+	skosthes:broaderPartitive not:RegistrerenAkteRegistratiewet1970;
 .
-not:RechercheNotaris a skos:Concept, skoslex:Act;#RechercheNotaris of RechercheNOT?
+not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren leveringsakte registratiewet 1970"@nl;
+	skos:prefLabel "Registreren leveringsakte registratiewet 1970";
+	skos:definition "Vastleggen in een register";
+	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
+        skoslex:actor not:Notaris;
+        skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
+        skoslex:object bel:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:RegistrerenAkteRegistratiewet1970;
+.
+not:RechercheNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche"@nl;
 	skos:prefLabel "Recherche";
 	skos:altLabel "Rechercheplicht";
 	skos:altLabel "Onderzoeksplicht";
+	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+.
+not:RechercheAkteHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Recherche (hypotheekakte)"@nl;
+	skos:prefLabel "Recherche (hypotheekakte)";
 	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
 	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
 	skoslex:object not:Vervreemder;
@@ -302,7 +356,22 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;#RechercheNotaris of RechercheN
 	skoslex:actor not:Notaris;
 	skoslex:object not:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
-	skosthes:broaderPartitive not:Levering;#Doet een notaris dit voor leveren en hypotheek tegelijkertijd?
+	skosthes:broaderPartitive not:VestigenBeperktRecht;
+	skosthes:broaderPartitive not:RechercheNotaris;
+.
+not:RechercheAkteLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Recherche (leveringsakte)"@nl;
+	skos:prefLabel "Recherche (leveringsakte)";
+	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+	skoslex:object not:Vervreemder;
+	skoslex:object not:Verkrijger;
+	skoslex:object not:TitelVanAankomst;
+	skoslex:actor not:Notaris;
+	skoslex:object not:OnroerendeZaak;
+        skoslex:object kad:OpenbareRegisters;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:RechercheNotaris;
 .
 not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Toezicht waarborgsom"@nl;
@@ -313,14 +382,18 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object not:Waarborgsom;
 	skoslex:object not:Kwaliteitsrekening;
-	skosthes:broaderPartitive not:Levering;#Is dit specifiek onder vestigen of overdragen te hangen? Lijkt mij niet.
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
-not:VestigenZakelijkBeperktRecht a skos:Concept, skoslex:Act;
-	rdfs:label "Vestigen zakelijk/beperkt recht"@nl;
-	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
-	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen vestigen.";
-        skos:editorialNote "Vindt tegelijkertijd plaats met het overdragen van zakelijk/beperkt recht.";
-	skosthes:broaderPartitive not:Levering;
+not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
+	rdfs:label "Vestigen beperkt recht"@nl;
+	skos:definition "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen.";
+	rdfs:comment "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen.";
+        skos:editorialNote "Vindt doorgaans tegelijkertijd plaats met het overdragen van het zakelijk recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval."; #Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zit.
+	skoslex:actor fin:Hypotheekgever;
+	skoslex:actor fin:Hypotheeknemer;
+	skoslex:agent not:Notaris;
+	skoslex:object not:Hypotheekakte;
+        skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Vestiging hypotheek"@nl;
@@ -331,10 +404,10 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
-	skoslex:object not:Leveringsakte;
+	skoslex:object not:Hypotheekakte;
 	skoslex:object not:OnroerendeZaak;
 	skoslex:object not:Onderpand;
-	skosthes:broaderPartitive not:VestigenZakelijkBeperktRecht;#Is dit eigenlijk gelijk aan elkaar? Dus VestigenZakelijkBeperktRecht=VestigenHypotheek?
+	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 #--
