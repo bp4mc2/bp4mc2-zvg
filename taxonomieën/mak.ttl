@@ -79,6 +79,7 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 	rdfs:comment "Een verkoper is degene die het registergoed heeft verkocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
 	skos:broadMatch zv:Persoon;
 	skosthes:broaderGeneric zv:Partij;
+.
 #--
 #Acts
 mak:Aankoop a skos:Concept, skoslex:Act;
@@ -190,7 +191,7 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 	skos:altLabel "Koopocontract";
 	skos:definition "een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd";
 	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed. ";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;	
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
         skosthes:broaderGeneric not:OnderhandseAkte;
 .
 mak:Woning a skos:Concept, skoslex:Object;
