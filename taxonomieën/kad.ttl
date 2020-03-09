@@ -25,7 +25,7 @@
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
-
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
 #---
 #begrippen uit de Kadaster taxonomie
 #---
@@ -86,6 +86,15 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	skos:prefLabel "Openbare registers";
 	#skos:exactMatch brk:Openbare_registers;
              #Weggehaald, want dit is een broken link
+.
+kad:Wegneemrecht a skos:Concept, skoslex:Object;
+	rdfs:label "Wegneemrecht"@nl;
+	skos:prefLabel "Wegneemrecht";
+	skos:altLabel "Wettelijk wegneemrecht";
+	skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
+	skos:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
+	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;
