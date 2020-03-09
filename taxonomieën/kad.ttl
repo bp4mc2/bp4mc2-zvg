@@ -60,6 +60,10 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
+kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
+	rdfs:label "Gemeentelijk monument"@nl;
+	skos:prefLabel "Gemeentelijk monument";
+.
 kad:KadastraalObject a skos:Concept, skoslex:Object;
 	rdfs:label "Kadastraal object"@nl;
 	skos:prefLabel "Kadastraal object";
@@ -72,6 +76,10 @@ kad:Perceel a skos:Concept, skoslex:Object;
 	skos:prefLabel "Perceel";
 	skos:definition "Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.";
 	rdfs:comment "Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft. Het nummer is uniek binnen de sectie van de kadastrale gemeente waarin het perceel zich bevindt.";
+.
+kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
+	rdfs:label "Provinciaal monument"@nl;
+	skos:prefLabel "Provinciaal monument";
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;
