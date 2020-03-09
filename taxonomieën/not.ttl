@@ -268,8 +268,8 @@ not:Passeren a skos:Concept, skoslex:Act;
 	#Algemene handeling. Zou o.a. object akte en actor notaris kunnen linken.
 .
 not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
-	rdfs:label "Passeren van de leveringsakte"@nl;
-	skos:prefLabel "Passeren van de leveringsakte";
+	rdfs:label "Passeren van de hypotheekakte"@nl;
+	skos:prefLabel "Passeren van de hypotheekakte";
 	skos:definition "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
         rdfs:comment "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
 	skoslex:actor fin:Hypotheeknemer;
