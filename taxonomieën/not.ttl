@@ -219,8 +219,8 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van het schriftelijk document.";
 .
 not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen (akte)"@nl;
-	skos:prefLabel "Opstellen (akte)";
+	rdfs:label "Opstellen hypotheekakte"@nl;
+	skos:prefLabel "Opstellen hypotheekakte";
 	skos:definition "Het opstellen van de hypotheekakte.";
 	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
@@ -228,8 +228,8 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen (akte)"@nl;
-	skos:prefLabel "Opstellen (akte)";
+	rdfs:label "Opstellen leveringsakte"@nl;
+	skos:prefLabel "Opstellen leveringsakte";
 	skos:definition "Het opstellen van de leveringsakte.";
 	rdfs:comment "Het opstellen van de leveringsakte.";
 	skoslex:actor not:Notaris;
