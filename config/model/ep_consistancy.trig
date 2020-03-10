@@ -1,0 +1,42 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:ConsistancyEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/consistancy";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:RoleConsistancy;
+  .
+
+  config:RoleConsistancy a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:RoleConsistancyData;
+    elmo:appearance config:RoleConsistancyAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:RoleConsistancyAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "begrip";
+      rdfs:label "Begrip"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "lextype";
+      rdfs:label "Type"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "role";
+      rdfs:label "Rol"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "div";
+      rdfs:label "Verschil"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "relbegrip";
+      rdfs:label "Gerelateerd begrip"@nl;
+    ]
+  .
+
+}

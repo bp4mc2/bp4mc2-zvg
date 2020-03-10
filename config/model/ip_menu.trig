@@ -21,6 +21,7 @@ GRAPH config:Theatre {
             elmo1:data [elmo1:index "1"; rdfs:label "Broken links"; xhtml:link "/broken"];
             elmo1:data [elmo1:index "2"; rdfs:label "Missing labels"; xhtml:link "/labels"];
             elmo1:data [elmo1:index "3"; rdfs:label "Used properties"; xhtml:link "/properties"];
+            elmo1:data [elmo1:index "4"; rdfs:label "Role consistancy"; xhtml:link "/consistancy"];
           ];
         ]
       }
