@@ -48,11 +48,11 @@ GRAPH config:Theatre {
         {
           GRAPH ?g {
             {
-              ?subject a ?stype.
-              OPTIONAL {?subject rdfs:label ?subjectlabel}
-              OPTIONAL {
-                select (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?subjectimg)
-                where {
+              select ?subject ?subjectlabel ?stype (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?subjectimg)
+              where {
+                ?subject a ?stype.
+                OPTIONAL {?subject rdfs:label ?subjectlabel}
+                OPTIONAL {
                   ?subject a ?lextype
                   FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act)
                 }
@@ -69,10 +69,10 @@ GRAPH config:Theatre {
             ?o a ?otype.
             OPTIONAL {?o rdfs:label ?olabel}
             OPTIONAL {
-              select (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?oimg)
+              select ?o (concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png") as ?oimg)
               where {
-                ?o a ?lextype
-                FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act)
+                ?o a ?olextype
+                FILTER (?olextype = skoslex:Actor || ?olextype = skoslex:Agent || ?olextype = skoslex:Object || ?olextype = skoslex:Act)
               }
             }
           }
@@ -84,10 +84,10 @@ GRAPH config:Theatre {
             ?s a ?stype.
             OPTIONAL {?s rdfs:label ?slabel}
             OPTIONAL {
-              select (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?simg)
+              select ?s (concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png") as ?simg)
               where {
-                ?s a ?lextype
-                FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act)
+                ?s a ?slextype
+                FILTER (?slextype = skoslex:Actor || ?slextype = skoslex:Agent || ?slextype = skoslex:Object || ?slextype = skoslex:Act)
               }
             }
           }
