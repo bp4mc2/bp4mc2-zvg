@@ -75,8 +75,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
         skosthes:broaderGeneric zv:RechtsPersoon;
 .
-not:Verkrijger a skos:Concept, skoslex:Actor;
-        a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
+not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger";
 	skos:altLabel "Koper";
@@ -87,8 +86,7 @@ not:Verkrijger a skos:Concept, skoslex:Actor;
         skosthes:narrowerGeneric mak:Koper;  #Een koper is altijd een verkrijger, maar een verkrijger is niet altijd een koper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:broaderGeneric zv:Partij;
 .
-not:Vervreemder a skos:Concept, skoslex:Actor;
-        a skos:Concept, skoslex:Object; #Bijvoorbeeld bij recherche door de notaris
+not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Vervreemder"@nl;
 	skos:prefLabel "Vervreemder";
 	skos:altLabel "Verkoper";
@@ -653,7 +651,7 @@ not:Rang a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
         skosthes:closeMatch not:Onderpand;
 .
-not:Rechthebbende a skos:Concept, skoslex:Object;
+not:Rechthebbende a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechthebbende"@nl;
 	skos:prefLabel "Rechthebbende";
 	skos:definition "De persoon aan wie een zaak, goed of recht toebehoort.";
