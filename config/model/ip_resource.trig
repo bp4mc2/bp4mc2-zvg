@@ -35,7 +35,7 @@ GRAPH config:Theatre {
         skosthes:broaderGeneric rdfs:label "specialisatie van"@nl.
         skosthes:narrowerGeneric rdfs:label "generalisatie van"@nl.
         skosthes:broaderPartitive rdfs:label "onderdeel van"@nl.
-        skosthes:broaderGeneric rdfs:label "bestaat uit"@nl.
+        skosthes:narrowerPartitive rdfs:label "bestaat uit"@nl.
         skos:semanticRelation rdfs:label "gerelateerd aan"@nl.
         <http://zorgeloosvastgoed.nl/data/kad> elmo1:name "Kadaster".
         <http://zorgeloosvastgoed.nl/data/fin> elmo1:name "HDN".
