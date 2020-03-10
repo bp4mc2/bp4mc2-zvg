@@ -50,7 +50,13 @@ GRAPH config:Theatre {
             {
               ?subject a ?stype.
               OPTIONAL {?subject rdfs:label ?subjectlabel}
-              OPTIONAL {?subject html:img ?subjectimg}
+              OPTIONAL {
+                select (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?subjectimg)
+                where {
+                  ?subject a ?lextype
+                  FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act)
+                }
+              }
             }
           }
         }
@@ -62,7 +68,13 @@ GRAPH config:Theatre {
           GRAPH ?go {
             ?o a ?otype.
             OPTIONAL {?o rdfs:label ?olabel}
-            OPTIONAL {?o html:img ?oimg}
+            OPTIONAL {
+              select (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?oimg)
+              where {
+                ?o a ?lextype
+                FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act)
+              }
+            }
           }
         }
         UNION
@@ -71,7 +83,13 @@ GRAPH config:Theatre {
             ?s ?ps ?subject.
             ?s a ?stype.
             OPTIONAL {?s rdfs:label ?slabel}
-            OPTIONAL {?s html:img ?simg}
+            OPTIONAL {
+              select (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?simg)
+              where {
+                ?s a ?lextype
+                FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act)
+              }
+            }
           }
         }
       }
