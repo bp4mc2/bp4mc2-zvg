@@ -56,7 +56,7 @@
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
 
 #Wet op belasting van rechtsverkeer (WBR)
-<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer"
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer".
 
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -64,7 +64,6 @@
 #--
 #Actors and Agents
 not:Notaris a skos:Concept, skoslex:Agent;
-        a skos:Concept, skoslex:Actor;
 	rdfs:label "Notaris"@nl;
 	#rdfs:label "Notary"@en;
 	skos:prefLabel "Notaris";
@@ -175,7 +174,7 @@ not:IdentificatieAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:comment "Vaststellen van de identiteit van de mensen die op de leveringsakte komen.";
         skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
         skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden.";
-        skos:editorialNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon.";#Aparte handeling, ook in kader van AVG.	
+        skos:editorialNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon.";#Aparte handeling, ook in kader van AVG.
         skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:Comparant;
@@ -317,7 +316,7 @@ not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	skos:definition "Vastleggen in een register";
 	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
         skos:editorialNote "Álle originele (minuut)akten worden geregistreerd bij de belastingdienst op grond van de registratiewet.";
-	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01>; 
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01>;
 .
 not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren hypotheekakte registratiewet 1970"@nl;
@@ -528,7 +527,7 @@ not:Koopsom a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
 	skosthes:broaderPartitive not:Leveringsakte;
-. 
+.
 not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	rdfs:label "Kwaliteitsrekening"@nl;
 	skos:prefLabel "Kwaliteitsrekening";
