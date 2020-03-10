@@ -55,6 +55,8 @@
 #Registratieweg
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
 
+#Wet op belasting van rechtsverkeer (WBR)
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer"
 
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -64,7 +66,7 @@
 not:Notaris a skos:Concept, skoslex:Agent;
         a skos:Concept, skoslex:Actor;
 	rdfs:label "Notaris"@nl;
-	rdfs:label "Notary"@en;
+	#rdfs:label "Notary"@en;
 	skos:prefLabel "Notaris";
 	skos:altLabel "Ambtenaar";
 	skos:altLabel "Bevoegd protocolhouder";
@@ -219,8 +221,8 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van het schriftelijk document.";
 .
 not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen (akte)"@nl;
-	skos:prefLabel "Opstellen (akte)";
+	rdfs:label "Opstellen hypotheekakte"@nl;
+	skos:prefLabel "Opstellen hypotheekakte";
 	skos:definition "Het opstellen van de hypotheekakte.";
 	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
@@ -228,8 +230,8 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen (akte)"@nl;
-	skos:prefLabel "Opstellen (akte)";
+	rdfs:label "Opstellen leveringsakte"@nl;
+	skos:prefLabel "Opstellen leveringsakte";
 	skos:definition "Het opstellen van de leveringsakte.";
 	rdfs:comment "Het opstellen van de leveringsakte.";
 	skoslex:actor not:Notaris;
@@ -268,8 +270,9 @@ not:Passeren a skos:Concept, skoslex:Act;
 	#Algemene handeling. Zou o.a. object akte en actor notaris kunnen linken.
 .
 not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
-	rdfs:label "Passeren van de leveringsakte"@nl;
-	skos:prefLabel "Passeren van de leveringsakte";
+	rdfs:label "Passeren van de hypotheekakte"@nl;
+	skos:prefLabel "Passeren van de hypotheekakte";
+	skos:altLabel "Passeren";
 	skos:definition "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
         rdfs:comment "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
 	skoslex:actor fin:Hypotheeknemer;
@@ -285,6 +288,7 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren van de leveringsakte"@nl;
 	skos:prefLabel "Passeren van de leveringsakte";
+	skos:altLabel "Passeren";
 	skos:definition "Handeling bij de notaris, waarbij de leveringsakte door beide partijen wordt ondertekend.";
         rdfs:comment "Handeling bij de notaris, waarbij de leveringsakte door beide partijen wordt ondertekend.";
 	skoslex:actor not:Vervreemder;
@@ -445,6 +449,12 @@ not:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:semanticRelation not:Waarborgsom;
 .
+not:Bestemmingsplan a skos:Concept, skoslex:Object;
+	rdfs:label "Bestemmingsplan"@nl;
+	skos:prefLabel "Bestemmingsplan";
+	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
+	skos:comment "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
+.
 not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant";
@@ -464,6 +474,24 @@ not:Comparitie a skos:Concept, skoslex:Object;#Hens Meengs van KNB geeft aan dat
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
         skosthes:broaderPartitive not:NotarieleAkte;
 .
+not:GemeentelijkeVerordening a skos:Concept, skoslex:Object;
+	rdfs:label "Gemeentelijke verordening"@nl;
+	skos:prefLabel "Gemeentelijke verordening";
+	skos:definition "Een gemeentelijke verordening is een op gemeentelijk niveau vastgesteld algemeen verbindend voorschrift.";
+	rdfs:comment "Wetgevende regeling op gemeentelijk niveau.";
+	skos:editorialNote "De belangrijkste en meest omvattende gemeentelijke verordening in een bepaalde gemeente wordt in Nederland vaak aangeduid als Algemene Plaatselijke Verordening (afkorting APV, vroeger Algemene Politie Verordening).";
+        skosthes:narrowerPartitive kad:GemeentelijkMonument;
+.
+not:Grondslagwaarde a skos:Concept, skoslex:Object;
+	rdfs:label "Grondslagwaarde"@nl;
+	skos:prefLabel "Grondslagwaarde";
+	skos:altLabel "Heffingsgrondslag";
+	skos:definition "De belasting wordt berekend over de waarde van de onroerende zaak of het recht waaraan deze is onderworpen, waarop de verkrijging betrekking heeft. De waarde is ten minste gelijk aan die van de tegenprestatie.";
+	rdfs:comment "De waarde waarover het tarief van de overdrachtsbelasting wordt berekend.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
+        skosthes:broaderPartitive not:NotarieleAkte;
+        skosthes:broaderPartitive bel:Overdrachtsbelasting;
+.
 not:Hypotheekakte a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekakte"@nl;
 	skos:prefLabel "Hypotheekakte";
@@ -482,6 +510,13 @@ not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
         skosthes:broaderPartitive not:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
+.
+not:Kadasterkosten a skos:Concept, skoslex:Object;#Mogelijk splitsen in een variant voor levering en hypotheek
+	rdfs:label "Kadasterkosten"@nl;
+	skos:prefLabel "Kadasterkosten";
+	skos:definition "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
+	skos:comment "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
+	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:Koopsom a skos:Concept, skoslex:Object;
 	rdfs:label "Kwaliteitsrekening"@nl;
@@ -506,6 +541,7 @@ not:Leveringsakte a skos:Concept, skoslex:Object;
 	rdfs:label "Leveringsakte"@nl;
 	skos:prefLabel "Leveringsakte";
 	skos:altLabel "Transportakte";
+	skos:altLabel "Overdrachtsakte";
 	skos:altLabel "Akte van levering";
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
 	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
@@ -531,6 +567,13 @@ not:NotarieleAkte a skos:Concept, skoslex:Object;
 	rdfs:comment "Een notariële akte is een authentieke akte die is ondertekend door een notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
 	skosthes:broaderGeneric not:AuthentiekeAkte;
+.
+not:Notariskosten a skos:Concept, skoslex:Object;#Mogelijk splitsen in een variant voor levering en hypotheek
+	rdfs:label "Notariskosten"@nl;
+	skos:prefLabel "Notariskosten";
+	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
+	rdfs:comment "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
+	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële volmacht"@nl;
@@ -593,6 +636,13 @@ not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
         skos:editorialNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
 	skos:closeMatch not:Notaris;#Ik twijfel of de meest passende relatie is gelegd met notaris. Wel wordt er in dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.
+.
+not:ProvincialeVerordening a skos:Concept, skoslex:Object;
+	rdfs:label "Provinciale verordening"@nl;
+	skos:prefLabel "Provinciale verordening";
+	skos:definition " Algemeen verbindende voorschriften, vastgesteld door provinciale staten van een provincie of vastgesteld via delegatie of attributie aan gedeputeerde staten of een commissie of de commissaris van de Koningin.";
+	rdfs:comment "Wetgevende regeling op provinciaal niveau.";
+        skosthes:narrowerPartitive kad:ProvinciaalMonument;
 .
 not:Rang a skos:Concept, skoslex:Object;
 	rdfs:label "Rang"@nl;
