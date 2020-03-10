@@ -4,7 +4,6 @@
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix html: <http://www.w3.org/1999/xhtml/vocab#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix fin: <http://fin.zorgeloosvastgoed.nl/id/begrip/>.
@@ -37,7 +36,6 @@ mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 	skosthes:broaderGeneric mak:Makelaar;
 	skos:semanticRelation mak:Koper;
 	skos:semanticRelation mak:Verkoopmakelaar;
-	html:img "/assets/images/actor.png";
 .
 #Een makelaar mag volgens de beroepscode slechts 1 rol vervullen, of verkoopmakelaar of aankoopmakelaar.
 #De makelaar en taxateur zijn rollen van meestal makelaars.
@@ -64,7 +62,6 @@ mak:Koper a skos:Concept, skoslex:Actor;
 	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
 	skos:broadMatch zv:Persoon;
 	skosthes:broaderGeneric zv:Partij;
-	html:img "/assets/images/actor.png";
 .
 mak:Taxateur a skos:Concept, skoslex:Agent;
 	rdfs:label "Taxateur"@nl;
@@ -93,7 +90,6 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-	html:img "/assets/images/act.png";
 .
 mak:IdentificatieKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Identificatie koop"@nl;
@@ -124,7 +120,6 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Woning;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-	html:img "/assets/images/act.png";
 .
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
@@ -180,7 +175,6 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Verkoper;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-	html:img "/assets/images/act.png";
 .
 #--
 #Objects
@@ -197,5 +191,4 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
 	rdfs:label "Woning"@nl;
-	html:img "/assets/images/object.png";
 .
