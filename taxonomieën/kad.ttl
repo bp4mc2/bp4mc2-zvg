@@ -55,10 +55,17 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 kad:BeperktRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
+	skos:altLabel "Bezwaard";#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring.
 	skos:definition "Een beperkt recht is een recht dat is afgeleid uit een meer omvattend recht, dat met het beperkte recht is bezwaard.";
 	rdfs:comment "Een eigenaar dient te dulden dat het gebruik van zijn recht is beperkt: de beperktgerechtigde kan de betreffende zaak volgens het beperkte recht gebruiken. Beperkte rechten zijn te onderscheiden in gebruiksrechten (vruchtgebruik, erfdienstbaarheid, erfpacht, opstal) en zekerheidsrechten (hypotheekrecht, pandrecht).";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
+.
+kad:Bezwaard a skos:Concept, skoslex:Object;#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.
+	rdfs:label "Bezwaard"@nl;
+	skos:prefLabel "Bezwaard";
+	skos:altLabel "Beperkt recht";
+	skosthes:exactMatch kad:BeperktRecht;
 .
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Gemeentelijk monument"@nl;
