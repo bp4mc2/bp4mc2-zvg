@@ -65,8 +65,7 @@ zv:Partij a skos:Concept, skoslex:Actor;
   	rdfs:comment "Een partij is een (niet) natuurlijk persoon die samen met een andere (niet) natuurlijke persoon een handeling verrichten, waardoor zij samen een juridisch doel bereiken. Dit doel noemen juristen een rechtsgevolg.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>;
 .
-zv:Persoon a skos:Concept, skoslex:Actor;
-	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
+zv:Persoon a skos:Concept, skoslex:Actor; #Indien persoon als object wordt gebruikt in een act, blijft de Persoon zelf een actor, die in de rol van object in de betreffende handeling aanwezig is.
 	rdfs:label "Persoon"@nl;
 	skos:prefLabel "Persoon";
 .
