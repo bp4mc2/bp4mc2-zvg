@@ -681,7 +681,7 @@ not:Titel a skos:Concept, skoslex:Object;
 	rdfs:comment "De rechtsgrond waarbij iemand de eigendom van een goed heeft gekregen (bijvoorbeeld bij de levering van een woning: de leveringsakte). Zonder geldige titel kan iemand zijn eigendomsrecht niet overdragen aan een ander.";
         skos:editorialNote "Titel is een juridische term voor een geldige (juridische) reden voor de overdracht. Die geldige reden kan bestaan uit bijvoorbeeld een koopovereenkomst of schenking.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
-        skos:broaderPartitive not:Leveringsakte;
+        skosthes:broaderPartitive not:Leveringsakte;
 .
 not:TitelVanAankomst a skos:Concept, skoslex:Object;
 	rdfs:label "Titel van aankomst"@nl;
