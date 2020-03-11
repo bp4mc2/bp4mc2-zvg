@@ -179,14 +179,132 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 #--
 #Objects
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
+#--
+#OVER BEPALINGEN EN BIJZONDERE BEPALINGEN
+#Deze vinden we terug in alle aktes. 
+#Eigenlijk zou iedere bepaling een 'akte-specifiek' concept moeten krijgen. 
+#Voor nu is gekozen te focussen op de koopovereenkomst en te doen alsof andere aktes (hypotheekakte, leveringsakte) niet bestaan.
+#Ook zouden abstracte concepten moeten komen die uitleggen wat bepalingen, bijzondere bepalingen, voorwaarden, enz zijn. Concepten die iets uitleggen over de opbouw van een akte.
+#Nog af te stemmen: hoe deze zaken (bijzondere bepalingen, voorwaarden enz te noemen. Heb nu gekozen voor 'Artikel'
+#--
+mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Bankgarantie/waarborgsom"@nl;
+	skos:prefLabel "Artikel: Bankgarantie/waarborgsom";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelBetaling a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Betaling"@nl;
+	skos:prefLabel "Artikel: Betaling";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelErfpacht a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Erfpacht"@nl;
+	skos:prefLabel "Artikel: Erfpacht";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Kadastraal inmeten"@nl;
+	skos:prefLabel "Artikel: Kadastraal inmeten";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelKostenBelasting a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Kosten/belasting"@nl;
+	skos:prefLabel "Artikel: Kosten/belasting";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelLevering a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Levering"@nl;
+	skos:prefLabel "Artikel: Levering";
+	skos:altLabel "Artikel: Eigendomsoverdracht";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Nederlands recht"@nl;
+	skos:prefLabel "Artikel: Nederlands recht";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelNietZelfBewonersClausule a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Niet zelf bewoners clausule"@nl;
+	skos:prefLabel "Artikel: Nederlands recht";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: NSW landgoed"@nl;
+	skos:prefLabel "Artikel: NSW landgoed";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
+	skos:prefLabel "Artikel: Ontbindende voorwaarden";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Ouderdomsclausule"@nl;
+	skos:prefLabel "Artikel: Ouderdomsclausule";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Overmacht, risico, verzekeringen"@nl;
+	skos:prefLabel "Artikel: Overmacht, risico, verzekeringen";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelRegistratie a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Registratie"@nl;
+	skos:prefLabel "Artikel: Registratie";
+	skos:altLabel "Artikel: Inschrijving in de de openbare registers";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Staat van onroerend goed/gebruik"@nl;
+	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
 mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Koopovereenkomst"@nl;
 	skos:prefLabel "Koopovereenkomst";
 	skos:altLabel "Koopocontract";
-	skos:definition "een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd";
-	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed. ";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+	skos:definition "Een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd.";
+	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed.";
+        skos:editorialNote "Soms (bijvoorbeeld in Amsterdam) stelt de notaris de koopovereenkomst op.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
         skosthes:broaderGeneric not:OnderhandseAkte;
+.
+mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Object;
+	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
+	skos:prefLabel "Ondergetekenden";
+	#skos:definition "";
+	#rdfs:comment "";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+        skosthes:broaderPartitive mak:Koper;
+        skosthes:broaderPartitive mak:Verkoper;
 .
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
