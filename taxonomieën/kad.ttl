@@ -30,7 +30,7 @@
 #begrippen uit de Kadaster taxonomie
 #---
 #Actors and Agents
-kad:Bewaarder a skos:Concept, skoslex:Actor;
+kad:Bewaarder a skos:Concept, skoslex:Agent;
 	#skos:exactMatch brk:Bewaarder;
              #Weggehaald, want dit is een broken link
 	rdfs:label "Bewaarder"@nl;
