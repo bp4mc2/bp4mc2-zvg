@@ -130,12 +130,12 @@ GRAPH config:Theatre {
     ];
     elmo:fragment [
       elmo:appliesTo skosthes:broaderGeneric;
-      rdfs:label "Omvat"@nl;
+      rdfs:label "Specialisatie van"@nl;
       elmo:index 21;
     ];
     elmo:fragment [
       elmo:appliesTo skosthes:narrowerPartitive;
-      rdfs:label "Onderdeel van"@nl;
+      rdfs:label "Omvat"@nl;
       elmo:index 20;
     ];
     elmo:fragment [
