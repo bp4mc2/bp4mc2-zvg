@@ -223,6 +223,7 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van de hypotheekakte.";
 	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
+	skoslex:object not:Hypotheekakte;
 	skosthes:broaderPartitive not:OpstellenAkte;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
@@ -232,6 +233,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van de leveringsakte.";
 	rdfs:comment "Het opstellen van de leveringsakte.";
 	skoslex:actor not:Notaris;
+	skoslex:object not:Leveringsakte;
 	skosthes:broaderPartitive not:OpstellenAkte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
