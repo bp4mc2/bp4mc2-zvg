@@ -237,32 +237,12 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Object;#
 	#rdfs:comment ".";
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelNietZelfBewonersClausule a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Niet zelf bewoners clausule"@nl;
-	skos:prefLabel "Artikel: Nederlands recht";
-	#skos:definition ".";
-	#rdfs:comment ".";
-        skosthes:broaderPartitive mak:Koopovereenkomst;
-.
 mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Object;#
 	rdfs:label "Artikel: NSW landgoed"@nl;
 	skos:prefLabel "Artikel: NSW landgoed";
 	#skos:definition ".";
 	#rdfs:comment ".";
-        skosthes:broaderPartitive mak:Koopovereenkomst;
-.
-mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
-	skos:prefLabel "Artikel: Ontbindende voorwaarden";
-	#skos:definition ".";
-	#rdfs:comment ".";
-        skosthes:broaderPartitive mak:Koopovereenkomst;
-.
-mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Ouderdomsclausule"@nl;
-	skos:prefLabel "Artikel: Ouderdomsclausule";
-	#skos:definition ".";
-	#rdfs:comment ".";
+        skosthes:narrowerPartitive kad:NSWLandgoed;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Object;#
@@ -278,6 +258,7 @@ mak:ArtikelRegistratie a skos:Concept, skoslex:Object;#
 	skos:altLabel "Artikel: Inschrijving in de de openbare registers";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive kad:OpenbareRegisters;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
@@ -285,7 +266,55 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive mak:Asbest;
+        skosthes:narrowerPartitive kad:OpgegevenGrootte;
+        skosthes:narrowerPartitive kad:Optierecht;
+        skosthes:narrowerPartitive kad:Wederinkoop;
+        skosthes:narrowerPartitive kad:WerkelijkeGrootte;
+        skosthes:narrowerPartitive kad:Voorkeursrecht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:Asbest a skos:Concept, skoslex:Object;
+	rdfs:label "Asbest"@nl;
+	skos:prefLabel "Asbest";
+	skos:definition "Een bouwmateriaal dat in het verleden is toegepast bij de bouw van registergoederen.";
+	rdfs:comment "In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ClausuleAsiswhereis a skos:Concept, skoslex:Object;
+	rdfs:label "As is where is clausule"@nl;
+	skos:prefLabel "As is where is clausule";
+	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn.";
+	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ClausuleNietzelfbewoner a skos:Concept, skoslex:Object;
+	rdfs:label "As is where clausule"@nl;
+	skos:prefLabel "As is where clausule";
+	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken die verband houden met het niet zelf bewonen voor rekening en risico van koper zijn.";
+	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ClausuleOuderdom a skos:Concept, skoslex:Object;
+	rdfs:label "Ouderdomsclausule"@nl;
+	skos:prefLabel "Ouderdomsclausule";
+	rdfs:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken als gevolg van de ouderdom voor rekening en risico van koper zijn.";
+	skos:comment "In de praktijk wordt bij de verkoop van een (oudere) woning geregeld gebruik gemaakt van een zogenoemde ‘ouderdomsclausule’. Zo’n clausule wordt dan, op initiatief van de verkoper of diens makelaar, handmatig aan de koopovereenkomst toegevoegd. In de clausule komen verkoper en koper overeen dat (verborgen) gebreken voor rekening en risico van koper zijn. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
+	skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:Faillissement a skos:Concept, skoslex:Object; #Hoort wellicht thuis in een ander domein.
+	rdfs:label "Faillissement"@nl;
+	skos:prefLabel "Faillissement";
+	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
+	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
+.
+mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
+	rdfs:label "Financieringsvoorbehoud"@nl;
+	skos:prefLabel "Financieringsvoorbehoud";
+	skos:altLabel "Voorbehoud van financiering";
+	rdfs:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
+	skos:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
+	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Koopovereenkomst"@nl;
@@ -305,6 +334,19 @@ mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Object;
         skosthes:broaderPartitive mak:Koopovereenkomst;
         skosthes:broaderPartitive mak:Koper;
         skosthes:broaderPartitive mak:Verkoper;
+.
+mak:OntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
+	skos:prefLabel "Artikel: Ontbindende voorwaarden";
+	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
+	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:Schuldsaneringsregeling a skos:Concept, skoslex:Object; #Hoort wellicht thuis in een ander domein.
+	rdfs:label "Schuldsaneringsregeling"@nl;
+	skos:prefLabel "Schuldsaneringsregeling";
+	skos:definition "Een natuurlijke persoon kan, indien redelijkerwijs is te voorzien dat hij niet zal kunnen voortgaan met het betalen van zijn schulden of indien hij in de toestand verkeert dat hij heeft opgehouden te betalen, verzoeken de toepassing van de schuldsaneringsregeling uit te spreken.";
+	rdfs:comment "De schuldsanering is een wettelijk regeling voor mensen met schulden.  In 3 tot 5 jaar tijd kan men de schuld volledig aflossen. Na deze tijd ontvang de schuldenaar een 'schone lei'. Dat betekent dat men schuldenvrij is.";
 .
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
