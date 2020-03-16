@@ -199,6 +199,11 @@ mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Bankgarantie/waarborgsom";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive not:Bankgarantie;
+        skosthes:narrowerPartitive mak:Faillissement
+        skosthes:narrowerPartitive mak:Financieringsvoorbehoud;
+        skosthes:narrowerPartitive mak:Schuldsaneringsregeling;
+        skosthes:narrowerPartitive not:Waarborgsom;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelBetaling a skos:Concept, skoslex:Object;#
@@ -206,6 +211,15 @@ mak:ArtikelBetaling a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Betaling";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Eigendomsoverdracht"@nl;
+	skos:prefLabel "Artikel: Eigendomsoverdracht";
+	#skos:definition ".";
+	#rdfs:comment ".";
+        skosthes:narrowerPartitive not:Notaris;
+        skosthes:narrowerPartitive not:PlaatsVanVestiging;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelErfpacht a skos:Concept, skoslex:Object;#
