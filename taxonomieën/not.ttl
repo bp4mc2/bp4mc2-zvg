@@ -420,6 +420,10 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 #--
 #Objects
 #AfschriftAkte of AfschriftNot?
+not:AanspraakTotGebruik a skos:CAanspraak tot gebruikoncept, skoslex:Object;
+	rdfs:label "Aanspraak tot gebruik"@nl;
+	skos:prefLabel "Aanspraak tot gebruik";
+.
 not:AfschriftAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Afschrift (akte)"@nl;
 	skos:prefLabel "Afschrift (akte)";
@@ -563,6 +567,10 @@ not:Minuut a skos:Concept, skoslex:Object;
         skosthes:broaderGeneric not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
 .
+not:NederlandsRecht a skos:Concept, skoslex:Object;
+	rdfs:label "Nederlands recht"@nl;
+	skos:prefLabel "Nederlands recht";
+.
 not:NotarieleAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte";
@@ -594,6 +602,10 @@ not:OnderhandseAkte a skos:Concept, skoslex:Object;
 	rdfs:comment "Elk ondertekende akte waarbij geen (bevoegde) ambtenaar betrokken is.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=3>;
 	skosthes:broaderGeneric not:Akte;
+.
+not:Ongevorderd a skos:Concept, skoslex:Object;
+	rdfs:label "Ongevorderd"@nl;
+	skos:prefLabel "Ongevorderd";
 .
 #Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
 #Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
@@ -708,6 +720,10 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
+.
+not:VanRechtswegeOntbonden a skos:Concept, skoslex:Object;
+	rdfs:label "Van rechtswege ontbonden"@nl;
+	skos:prefLabel "Van rechtswege ontbonden";
 .
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
