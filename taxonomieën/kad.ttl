@@ -214,6 +214,10 @@ kad:RechtVanErfpacht a skos:Concept, skoslex:Object;
 	skos:altLabel "Erfpacht";
 	skosthes:broaderPartitive kad:BeperktRecht;
 .
+kad:RijksmonumentInDeZinVanDeErfgoedwet a skos:Concept, skoslex:Object;
+	rdfs:label "Rijksmonument in de zin van de Erfgoedwet"@nl;
+	skos:prefLabel "Rijksmonument in de zin van de Erfgoedwet";
+.
 kad:Voorkeursrecht a skos:Concept, skoslex:Object;
 	rdfs:label "Voorkeursrecht"@nl;
 	skos:prefLabel "Voorkeursrecht";
