@@ -55,8 +55,12 @@
 #Registratieweg
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
 
+#Wet bodembescherming
+<http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55> rdfs:label "artikel 55 van de Wet bodembescherming".
+
 #Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13> rdfs:label "artikel 13 van de Wet op belastingen van rechtsverkeer".
 
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -721,4 +725,14 @@ not:Waarborgsom a skos:Concept, skoslex:Object;
 	skos:altLabel "Zekerheid";
 	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper totdat de koper zijn of haar verplichtingen is nagekomen, waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
 	rdfs:comment "Bedrag dat de koper van een goed stort op de rekening van een notaris als zekerheid voor de verkoper.";
+.
+not:WetBodembeschermingArtikel55 a skos:Concept, skoslex:Object;
+	rdfs:label "Wet bodembescherming, artikel 55"@nl;
+	skos:prefLabel "Wet bodembescherming, artikel 55";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
+.
+not:WetOpBelastingVanRechtsverkeerArtikel13 a skos:Concept, skoslex:Object;
+	rdfs:label "Wet op belasting van rechtsverkeer, artikel 13"@nl;
+	skos:prefLabel "Wet op belasting van rechtsverkeer, artikel 13";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 .
