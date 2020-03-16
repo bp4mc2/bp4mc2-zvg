@@ -66,6 +66,10 @@ fin:Schuldenaar a skos:Concept, skoslex:Actor;
 .
 #--
 #Acts
+fin:Aflossen a skos:Concept, skoslex:Act;
+	rdfs:label "Aflossen"@nl;
+	skos:prefLabel "Aflossen";
+.
 fin:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Identificatie hypotheekadvies"@nl;
 	skos:prefLabel "Identificatie hypotheekadvies";
@@ -127,4 +131,8 @@ fin:Lening a skos:Concept, skoslex:Object;
 	skos:prefLabel "Lening";
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
+.
+fin:Overbruggingslening a skos:Concept, skoslex:Object;
+	rdfs:label "Overbruggingslening"@nl;
+	skos:prefLabel "Overbruggingslening";
 .
