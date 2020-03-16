@@ -128,9 +128,3 @@ fin:Lening a skos:Concept, skoslex:Object;
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
 .
-fin:VoorbehoudVanFinanciering a skos:Concept, skoslex:Object;
-	rdfs:label "Voorbehoud van financiering"@nl;
-	skos:prefLabel "Voorbehoud van financiering";
-	#skos:definition ".";
-	#skos:comment ".";
-.
