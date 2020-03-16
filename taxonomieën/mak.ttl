@@ -187,7 +187,6 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 #Ook zouden abstracte concepten moeten komen die uitleggen wat bepalingen, bijzondere bepalingen, voorwaarden, enz zijn. Concepten die iets uitleggen over de opbouw van een akte.
 #Nog af te stemmen: hoe deze zaken (bijzondere bepalingen, voorwaarden enz te noemen. Heb nu gekozen voor 'Artikel'
 #--
-.
 mak:Aanspraak a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak"@nl;
 	skos:prefLabel "Aanspraak";
@@ -211,6 +210,8 @@ mak:ArtikelBetaling a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Betaling";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive kad:Beslag;
+        skosthes:narrowerPartitive not:Passeren;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Object;#
@@ -227,6 +228,10 @@ mak:ArtikelErfpacht a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Erfpacht";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive kad:Canon;
+        skosthes:narrowerPartitive kad:Erfpachtvoorwaarden;
+        skosthes:narrowerPartitive kad:HerzieningErfpacht;
+        skosthes:narrowerPartitive kad:VoortdurendeErfpacht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Object;#
@@ -288,11 +293,24 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
 	#skos:definition ".";
 	#rdfs:comment ".";
         skosthes:narrowerPartitive mak:Asbest;
+        skosthes:narrowerPartitive mak:BijzondereLasten;
+        skosthes:narrowerPartitive kad:GemeentelijkMonument;
+        skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
+	skosthes:narrowerPartitive kad:Kettingbeding;
+	skosthes:narrowerPartitive kad:KwalitatieveVerplichting;
+	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
+	skosthes:narrowerPartitive mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
         skosthes:narrowerPartitive kad:OpgegevenGrootte;
         skosthes:narrowerPartitive kad:Optierecht;
+        skosthes:narrowerPartitive kad:ProvinciaalMonument
+        skosthes:narrowerPartitive not:ProvincialeVerordening;
+        skosthes:narrowerPartitive kad:PubliekrechtelijkeBeperking;
+        skosthes:narrowerPartitive mak:Schoning;
+        skosthes:narrowerPartitive mak:Verontreiniging;
+        skosthes:narrowerPartitive kad:Voorkeursrecht;
         skosthes:narrowerPartitive kad:Wederinkoop;
         skosthes:narrowerPartitive kad:WerkelijkeGrootte;
-        skosthes:narrowerPartitive kad:Voorkeursrecht;
+        skosthes:narrowerPartitive kad:Wegneemrecht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:Asbest a skos:Concept, skoslex:Object;
