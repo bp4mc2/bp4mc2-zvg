@@ -187,6 +187,13 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 #Ook zouden abstracte concepten moeten komen die uitleggen wat bepalingen, bijzondere bepalingen, voorwaarden, enz zijn. Concepten die iets uitleggen over de opbouw van een akte.
 #Nog af te stemmen: hoe deze zaken (bijzondere bepalingen, voorwaarden enz te noemen. Heb nu gekozen voor 'Artikel'
 #--
+.
+mak:Aanspraak a skos:Concept, skoslex:Object;
+	rdfs:label "Aanspraak"@nl;
+	skos:prefLabel "Aanspraak";
+	skos:definition "Een recht ten aanzien van een derde.";
+        rdfs:comment "Verkoper kan een aanspraak op een derde hebben.  Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
+.
 mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Object;#
 	rdfs:label "Artikel: Bankgarantie/waarborgsom"@nl;
 	skos:prefLabel "Artikel: Bankgarantie/waarborgsom";
@@ -281,7 +288,17 @@ mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:comment "In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ClausuleAsiswhereis a skos:Concept, skoslex:Object;
+mak:BijzondereLasten a skos:Concept, skoslex:Object;
+	rdfs:label "Bijzondere lasten"@nl;
+	skos:prefLabel "Bijzondere lasten";
+	skos:definition "De verkoper is verplicht de onroerende zaak in eigendom over te dragen vrij van alle bijzondere lasten en beperkingen, met uitzondering van die welke de koper uitdrukkelijk heeft aanvaard.";
+	skos:comment "Bijzondere lasten zijn juridische lasten/ beperkingen die op de onroerende zaak rusten. Dit kunnen privaatrechtelijke lasten/ beperkingen zijn zoals (lijdende) erfdienstbaarheden, kwalitatieve verplichtingen en zogenoemde ‘kettingbedingen’. Op grond van zulke lasten/ beperkingen heeft een ander (dan de eigenaar) een aanspraak op de onroerende zaak (bijvoorbeeld een recht van overpad over de grond). Het kan ook gaan om publiekrechtelijke lasten/ beperkingen zoals een besluit van het college van B & W tot het vestigen van een wettelijk voorkeursrecht. Een bijzondere publiekrechtelijke last/ beperking vindt haar grondslag in een specifiek tegen de onroerende zaak gericht besluit.";
+	skosthes:narrowerPartitive kad:KwalitatieveVerplichting;
+	skosthes:narrowerPartitive kad:Kettingbeding;
+	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
+	skosthes:narrowerPartitive kad:Voorkeursrecht;
+.
+mak:ClausuleAsIswhereIs a skos:Concept, skoslex:Object;
 	rdfs:label "As is where is clausule"@nl;
 	skos:prefLabel "As is where is clausule";
 	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn.";
@@ -326,6 +343,12 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
         skosthes:broaderGeneric not:OnderhandseAkte;
 .
+mak:KwalitatieveRechten a skos:Concept, skoslex:Object;
+	rdfs:label "Kwalitatieve rechten"@nl;
+	skos:prefLabel "Kwalitatieve rechten";
+	skos:definition "Staat een uit een overeenkomst voortvloeiende, voor overgang vatbaar recht in een zodanig verband met een aan de schuldeiser toebehorend goed, dat hij bij dat recht slechts belang heeft, zolang hij het goed behoudt, dan gaat dat recht over op degene die dat goed onder bijzondere titel verkrijgt.";
+	skos:comment "Een voor overgang vatbaar recht van verkoper gaat automatisch bij de overdracht van de onroerende zaak over op de koper. Het is een recht dat samenhangt met de onroerende zaak.";
+.
 mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
 	skos:prefLabel "Ondergetekenden";
@@ -335,6 +358,12 @@ mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Object;
         skosthes:broaderPartitive mak:Koper;
         skosthes:broaderPartitive mak:Verkoper;
 .
+mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Object;
+	rdfs:label "Ondergrondse tank voor het opslaan van {vloei)stoffen"@nl;
+	skos:prefLabel "Ondergrondse tank voor het opslaan van {vloei)stoffen";
+	skos:definition "Ondergrondse tanks voor het opslaan van (vloei)stoffen.";
+	rdfs:comment "In de grond van de onroerende zaak kunnen zich ondergrondse tanks bevinden voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks.";
+.
 mak:OntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
 	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
 	skos:prefLabel "Artikel: Ontbindende voorwaarden";
@@ -342,13 +371,31 @@ mak:OntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
 	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
+mak:Schoning a skos:Concept, skoslex:Object;
+	rdfs:label "Schoning"@nl;
+	skos:prefLabel "Schoning";
+	skos:definition "Het schoonmaken van de onroerende zaak";
+	rdfs:comment "Indien daartoe de noodzaak bestaat kan de eigenaar van de onroerende zaak door de daartoe bevoegde instantie verplicht worden om de onroerende zaak schoon te maken.";
+.
 mak:Schuldsaneringsregeling a skos:Concept, skoslex:Object; #Hoort wellicht thuis in een ander domein.
 	rdfs:label "Schuldsaneringsregeling"@nl;
 	skos:prefLabel "Schuldsaneringsregeling";
 	skos:definition "Een natuurlijke persoon kan, indien redelijkerwijs is te voorzien dat hij niet zal kunnen voortgaan met het betalen van zijn schulden of indien hij in de toestand verkeert dat hij heeft opgehouden te betalen, verzoeken de toepassing van de schuldsaneringsregeling uit te spreken.";
 	rdfs:comment "De schuldsanering is een wettelijk regeling voor mensen met schulden.  In 3 tot 5 jaar tijd kan men de schuld volledig aflossen. Na deze tijd ontvang de schuldenaar een 'schone lei'. Dat betekent dat men schuldenvrij is.";
 .
+mak:Verontreiniging a skos:Concept, skoslex:Object;
+	rdfs:label "Verontreiniging"@nl;
+	skos:prefLabel "Verontreiniging";
+	skos:definition "Een vervuiling (in de grond) van de onroerende zaak.";
+	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt.";
+.
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
 	rdfs:label "Woning"@nl;
+.
+mak:ZichtbareEnOnzichtbareGebreken a skos:Concept, skoslex:Object;
+	rdfs:label "Zichtbare en onzichtbare gebreken"@nl;
+	skos:prefLabel "Zichtbare en onzichtbare gebreken";
+	skos:definition "Zichtbare en onzichtbare bouwkundige onvolkomenheden aan de onroerende zaak.";
+	rdfs:comment "Bij de verkoop van een onroerende zijn er gebreken die bij koper bekend zijn. Dit zijn de 'zichtbare gebreken'. Er kunnen ook gebreken in de onroerende zaak aanwezig zijn die niet bekend zijn bij zowel verkoper als koper. Dit zijn de 'onzichtbare gebrekenen', doorgaans 'verborgen gebreken' genoemd.";
 .
