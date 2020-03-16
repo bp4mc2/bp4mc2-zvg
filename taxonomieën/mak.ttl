@@ -246,7 +246,14 @@ mak:ArtikelKostenBelasting a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Kosten/belasting";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive fin:Aflossen;
         skosthes:narrowerPartitive kad:DoorhalenHypotheek;
+        skosthes:narrowerPartitive not:Grondslagwaarde;
+        skosthes:narrowerPartitive not:Kadasterkosten;
+        skosthes:narrowerPartitive not:Notariskosten;
+        skosthes:narrowerPartitive fin:Overbruggingslening;
+        skosthes:narrowerPartitive not:Overdracht;
+        skosthes:narrowerPartitive bel:Overdrachtsbelasting;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelLevering a skos:Concept, skoslex:Object;#
@@ -299,10 +306,10 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skosthes:narrowerPartitive mak:Aanspraak;
-        skosthes:narrowerPartitive mak:Asbest;;
+        skosthes:narrowerPartitive mak:Asbest;
 	skosthes:narrowerPartitive kad:BeschermdStadsDorpsgezicht;
 	skosthes:narrowerPartitive not:Bestemmingsplan;
-        skosthes:narrowerPartitive mak:BijzondereLasten;;
+        skosthes:narrowerPartitive mak:BijzondereLasten;
 	skosthes:narrowerPartitive kad:Eigendomsrecht;
 	skosthes:narrowerPartitive kad:ErfgoedwetArtikel9punt1Lid1;
         skosthes:narrowerPartitive kad:GemeentelijkMonument;
