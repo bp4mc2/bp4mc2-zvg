@@ -24,9 +24,13 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
+#Burgerlijk wetboek
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
+
+#Erfgoedwet
+<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1> rdfs:label "artikel 9.1, eerste lid, van de Erfgoedwet".
 #---
 #begrippen uit de Kadaster taxonomie
 #---
@@ -76,6 +80,12 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
+kad:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
+	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
+	skos:prefLabel "Beschermd stads-/dorpsgezicht";
+	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
+        skosthes:narrowerPartitive kad:ErfgoedwetArtikel9punt1Lid1;
+.
 kad:Beslag a skos:Concept, skoslex:Object;
 	rdfs:label "Beslag"@nl;
 	skos:prefLabel "Beslag";
@@ -113,6 +123,11 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
         skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
         skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
 .
+kad:ErfgoedwetArtikel9punt1Lid1 a skos:Concept, skoslex:Object;
+	rdfs:label "Artikel 9.1, eerste lid, van de Erfgoedwet"@nl;
+	skos:prefLabel "Artikel 9.1, eerste lid, van de Erfgoedwet";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
+.
 kad:Grootte a skos:Concept, skoslex:Object;
 	rdfs:label "Grootte"@nl;
 	skos:prefLabel "Grootte";
@@ -130,6 +145,10 @@ kad:HerzieningErfpacht a skos:Concept, skoslex:Object;
 	skos:altLabel "Herziening erfpacht";
 	skos:altLabel "Herziening recht van erfpacht";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
+.
+kad:Huurkoop a skos:Concept, skoslex:Object;
+	rdfs:label "Huurkoop"@nl;
+	skos:prefLabel "Huurkoop";
 .
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Gemeentelijk monument"@nl;
