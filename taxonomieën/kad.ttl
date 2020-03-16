@@ -76,6 +76,10 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
+kad:Beslag a skos:Concept, skoslex:Object;
+	rdfs:label "Beslag"@nl;
+	skos:prefLabel "Beslag";
+.
 kad:Bezwaard a skos:Concept, skoslex:Object;#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
