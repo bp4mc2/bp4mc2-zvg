@@ -246,6 +246,7 @@ mak:ArtikelKostenBelasting a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Kosten/belasting";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive kad:DoorhalenHypotheek;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelLevering a skos:Concept, skoslex:Object;#
@@ -254,6 +255,9 @@ mak:ArtikelLevering a skos:Concept, skoslex:Object;#
 	skos:altLabel "Artikel: Eigendomsoverdracht";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive not:AanspraakTotGebruik;
+        skosthes:narrowerPartitive kad:Huurkoop;
+        skosthes:narrowerPartitive not:Ongevorderd;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Object;#
@@ -261,6 +265,7 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Nederlands recht";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive not:NederlandsRecht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Object;#
@@ -276,6 +281,7 @@ mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Overmacht, risico, verzekeringen";
 	#skos:definition ".";
 	#rdfs:comment ".";
+        skosthes:narrowerPartitive not:VanRechtswegeOntbonden;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelRegistratie a skos:Concept, skoslex:Object;#
@@ -292,11 +298,18 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
 	#skos:definition ".";
 	#rdfs:comment ".";
-        skosthes:narrowerPartitive mak:Asbest;
-        skosthes:narrowerPartitive mak:BijzondereLasten;
+	skosthes:narrowerPartitive mak:Aanspraak;
+        skosthes:narrowerPartitive mak:Asbest;;
+	skosthes:narrowerPartitive kad:BeschermdStadsDorpsgezicht;
+	skosthes:narrowerPartitive not:Bestemmingsplan;
+        skosthes:narrowerPartitive mak:BijzondereLasten;;
+	skosthes:narrowerPartitive kad:Eigendomsrecht;
+	skosthes:narrowerPartitive kad:ErfgoedwetArtikel9punt1Lid1;
         skosthes:narrowerPartitive kad:GemeentelijkMonument;
+	skosthes:narrowerPartitive not:GemeentelijkeVerordening;
         skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
 	skosthes:narrowerPartitive kad:Kettingbeding;
+	skosthes:narrowerPartitive mak:KwalitatieveRechten;
 	skosthes:narrowerPartitive kad:KwalitatieveVerplichting;
 	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
 	skosthes:narrowerPartitive mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
@@ -305,6 +318,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
         skosthes:narrowerPartitive kad:ProvinciaalMonument
         skosthes:narrowerPartitive not:ProvincialeVerordening;
         skosthes:narrowerPartitive kad:PubliekrechtelijkeBeperking;
+        skosthes:narrowerPartitive kad:RijksmonumentInDeZinVanDeErfgoedwet;
         skosthes:narrowerPartitive mak:Schoning;
         skosthes:narrowerPartitive mak:Verontreiniging;
         skosthes:narrowerPartitive kad:Voorkeursrecht;
