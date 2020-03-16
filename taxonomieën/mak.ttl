@@ -254,6 +254,7 @@ mak:ArtikelKostenBelasting a skos:Concept, skoslex:Object;#
         skosthes:narrowerPartitive fin:Overbruggingslening;
         skosthes:narrowerPartitive not:Overdracht;
         skosthes:narrowerPartitive bel:Overdrachtsbelasting;
+        skosthes:narrowerPartitive not:WetOpBelastingVanRechtsverkeerArtikel13;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelLevering a skos:Concept, skoslex:Object;#
@@ -332,6 +333,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
         skosthes:narrowerPartitive kad:Wederinkoop;
         skosthes:narrowerPartitive kad:WerkelijkeGrootte;
         skosthes:narrowerPartitive kad:Wegneemrecht;
+        skosthes:narrowerPartitive not:WetBodembeschermingArtikel55;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:Asbest a skos:Concept, skoslex:Object;
