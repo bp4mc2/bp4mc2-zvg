@@ -18,11 +18,11 @@ Door deze 5 functies en 3 typen informatie tegen elkaar uit te zetten, ontstaan 
 
 |                                     |![](media/Taxonomie.png)                  |![](media/Datasets.png)                  |![](media/Informatiemodellen.png)                  |
 |-------------------------------------|------------------------------------------|-----------------------------------------|---------------------------------------------------|
-|![](media/InvoerenWijzigen.png)      |[1.1](Taxonomie-InvoerenWijzigen.md)      |[2.1](Datasets-InvoerenWijzigen.md)      |[3.1](Informatiemodellen-InvoerenWijzigen.md)      |
-|![](media/CollaboratieOpslag.png)    |[1.2](Taxonomie-CollaboratieOpslag.md)    |[2.2](Datasets-CollaboratieOpslag.md)    |[3.2](Informatiemodellen-CollaboratieOpslag.md)    |
-|![](media/PublicatieVisualisatie.png)|[1.3](Taxonomie-PublicatieVisualisatie.md)|[2.3](Datasets-PublicatieVisualisatie.md)|[3.3](Informatiemodellen-PublicatieVisualisatie.md)|
-|![](media/ControleValidatie.png)     |[1.4](Taxonomie-ControleValidatie.md)     |[2.4](Datasets-ControleValidatie.md)     |[3.4](Informatiemodellen-ControleValidatie.md)     |
-|![](media/DelenVoorschriften.png)    |[1.5](Taxonomie-DelenVoorschriften.md)    |[2.5](Datasets-DelenVoorschriften.md)    |[3.5](Informatiemodellen-DelenVoorschriften.md)    |
+|![](media/InvoerenWijzigen.png)      |[1.1](taxonomie/InvoerenWijzigen.md)      |[2.1](datasets/InvoerenWijzigen.md)      |[3.1](informatiemodellen/InvoerenWijzigen.md)      |
+|![](media/CollaboratieOpslag.png)    |[1.2](taxonomie/CollaboratieOpslag.md)    |[2.2](datasets/CollaboratieOpslag.md)    |[3.2](informatiemodellen/CollaboratieOpslag.md)    |
+|![](media/PublicatieVisualisatie.png)|[1.3](taxonomie/PublicatieVisualisatie.md)|[2.3](datasets/PublicatieVisualisatie.md)|[3.3](informatiemodellen/PublicatieVisualisatie.md)|
+|![](media/ControleValidatie.png)     |[1.4](taxonomie/ControleValidatie.md)     |[2.4](datasets/ControleValidatie.md)     |[3.4](informatiemodellen/ControleValidatie.md)     |
+|![](media/DelenVoorschriften.png)    |[1.5](taxonomie/DelenVoorschriften.md)    |[2.5](datasets/DelenVoorschriften.md)    |[3.5](informatiemodellen/DelenVoorschriften.md)    |
 
 Op dit moment ligt de focus op de taxonomie. In onderstaand figuur is afgebeeld hoe de huidige toolondersteuning is geregeld. Een lege cel geeft aan dat dit onderdeel nog niet is opgepakt en hier dan ook nog geen ondersteuning voor is ingericht.
 
