@@ -24,19 +24,38 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
+#Burgerlijk wetboek
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
+
+#Erfgoedwet
+<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1> rdfs:label "artikel 9.1, eerste lid, van de Erfgoedwet".
 #---
 #begrippen uit de Kadaster taxonomie
 #---
 #Actors and Agents
-kad:Bewaarder a skos:Concept, skoslex:Actor;
+kad:Bewaarder a skos:Concept, skoslex:Agent;
 	#skos:exactMatch brk:Bewaarder;
              #Weggehaald, want dit is een broken link
 	rdfs:label "Bewaarder"@nl;
 .
 #--
 #Acts
+kad:DoorhalenHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Doorhalen hypotheek"@nl;
+	skos:prefLabel "Doorhalen hypotheek";
+	skos:altLabel "Doorhalen";
+	skos:altLabel "Royeren";
+	skos:altLabel "Uitschrijven";
+	skoslex:object not:AfschriftAkte;
+	skoslex:object kad:OpenbareRegisters;
+	skoslex:actor kad:Bewaarder;
+.
+kad:Inmeten a skos:Concept, skoslex:Act;
+	rdfs:label "Inmeten"@nl;
+	skos:prefLabel "Inmeten";
+.
 kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven openbare registers"@nl;
 	skos:prefLabel "Inschrijven openbare registers";
@@ -55,10 +74,81 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 kad:BeperktRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
+	skos:altLabel "Bezwaard";#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring.
 	skos:definition "Een beperkt recht is een recht dat is afgeleid uit een meer omvattend recht, dat met het beperkte recht is bezwaard.";
 	rdfs:comment "Een eigenaar dient te dulden dat het gebruik van zijn recht is beperkt: de beperktgerechtigde kan de betreffende zaak volgens het beperkte recht gebruiken. Beperkte rechten zijn te onderscheiden in gebruiksrechten (vruchtgebruik, erfdienstbaarheid, erfpacht, opstal) en zekerheidsrechten (hypotheekrecht, pandrecht).";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
+.
+kad:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
+	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
+	skos:prefLabel "Beschermd stads-/dorpsgezicht";
+	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
+        skosthes:narrowerPartitive kad:ErfgoedwetArtikel9punt1Lid1;
+.
+kad:Beslag a skos:Concept, skoslex:Object;
+	rdfs:label "Beslag"@nl;
+	skos:prefLabel "Beslag";
+.
+kad:Bezwaard a skos:Concept, skoslex:Object;#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.
+	rdfs:label "Bezwaard"@nl;
+	skos:prefLabel "Bezwaard";
+	skos:altLabel "Beperkt recht";
+	skosthes:exactMatch kad:BeperktRecht;
+.
+kad:Canon a skos:Concept, skoslex:Object;
+	rdfs:label "Canon"@nl;
+	skos:prefLabel "Canon";
+	skos:altLabel "Erfpachtscanon";
+	skos:comment "Het canon is een verplichting aan de erfpachter om de eigenaar op al dan niet regelmatig terugkerende tijdstippen een geldsom te betalen. Deze verplichting wordt opgelegd in de akte van levering.";
+	skosthes:broaderPartitive kad:RechtVanErfpacht;
+.
+kad:Eigendomsrecht a skos:Concept, skoslex:Object;
+	rdfs:label "Eigendomsrecht"@nl;
+	skos:prefLabel "Eigendomsrecht";
+.
+kad:Erfpachtvoorwaarden a skos:Concept, skoslex:Object;
+	rdfs:label "Erfpachtvoorwaarden"@nl;
+	skos:prefLabel "Erfpachtvoorwaarden";
+	skosthes:broaderPartitive kad:RechtVanErfpacht;
+.
+kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
+	rdfs:label "Erfdienstbaarheid"@nl;
+	skos:prefLabel "Erfdienstbaarheid";
+	skos:altLabel "Servituut";
+	skos:definition "Een erfdienstbaarheid is een last, waarmede een onroerende zaak - het dienende erf - ten behoeve van een andere onroerende zaak - het heersende erf - is bezwaard.";
+	skos:comment "Een erfdienstbaarheid is een recht dat de ene eigenaar van een perceel heeft op de andere eigenaar van een perceel. Het perceel waarvan de eigenaar iets mag, heet het heersende erf; het perceel grond waarvan de eigenaar iets moet toestaan heet het dienende erf.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70>;
+        skosthes:broaderPartitive kad:BeperktRecht;
+        skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
+        skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
+.
+kad:ErfgoedwetArtikel9punt1Lid1 a skos:Concept, skoslex:Object;
+	rdfs:label "Artikel 9.1, eerste lid, van de Erfgoedwet"@nl;
+	skos:prefLabel "Artikel 9.1, eerste lid, van de Erfgoedwet";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
+.
+kad:Grootte a skos:Concept, skoslex:Object;
+	rdfs:label "Grootte"@nl;
+	skos:prefLabel "Grootte";
+	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
+	skos:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
+	skosthes:broaderPartitive kad:Perceel;
+.
+kad:HeersendeErfdienstbaarheid a skos:Concept, skoslex:Object;
+	rdfs:label "Heersende erfdienstbaarheid"@nl;
+	skos:prefLabel "Heersende erfdienstbaarheid";
+.
+kad:HerzieningErfpacht a skos:Concept, skoslex:Object;
+	rdfs:label "Herziening erfpacht"@nl;
+	skos:prefLabel "Herziening";
+	skos:altLabel "Herziening erfpacht";
+	skos:altLabel "Herziening recht van erfpacht";
+	skosthes:broaderPartitive kad:RechtVanErfpacht;
+.
+kad:Huurkoop a skos:Concept, skoslex:Object;
+	rdfs:label "Huurkoop"@nl;
+	skos:prefLabel "Huurkoop";
 .
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Gemeentelijk monument"@nl;
@@ -71,6 +161,39 @@ kad:KadastraalObject a skos:Concept, skoslex:Object;
 	rdfs:comment "Kadastraal object is een goed dat geregistreerd moet worden bij het Kadaster.";
         skos:closeMatch kad:Perceel;
 .
+kad:Kettingbeding a skos:Concept, skoslex:Object;
+	rdfs:label "Kettingbeding"@nl;
+	skos:prefLabel "Kettingbeding";
+.
+kad:KwalitatieveVerplichting a skos:Concept, skoslex:Object;
+	rdfs:label "Kwalitatieve verplichting"@nl;
+	skos:prefLabel "Kwalitatieve verplichting";
+.
+kad:LijdendeErfdienstbaarheid a skos:Concept, skoslex:Object;
+	rdfs:label "Lijdende erfdienstbaarheid"@nl;
+	skos:prefLabel "Lijdende erfdienstbaarheid";
+.
+kad:NSWLandgoed a skos:Concept, skoslex:Object;
+	rdfs:label "NSW landgoed"@nl;
+	skos:prefLabel "NSW landgoed";
+.
+kad:OpenbareRegisters a skos:Concept, skoslex:Object;
+	rdfs:label "Openbare registers"@nl;
+	skos:prefLabel "Openbare registers";
+	#skos:exactMatch brk:Openbare_registers;
+             #Weggehaald, want dit is een broken link
+.
+kad:OpgegevenGrootte a skos:Concept, skoslex:Object;
+	rdfs:label "Opgegeven grootte"@nl;
+	skos:prefLabel "Opgegeven grootte";
+	skos:closeMatch kad:Grootte;
+	skos:closeMatch kad:WerkelijkeGrootte;
+	skosthes:broaderPartitive kad:Perceel;
+.
+kad:Optierecht a skos:Concept, skoslex:Object;
+	rdfs:label "Optierecht"@nl;
+	skos:prefLabel "Optierecht";
+.
 kad:Perceel a skos:Concept, skoslex:Object;
 	rdfs:label "Perceel"@nl;
 	skos:prefLabel "Perceel";
@@ -81,11 +204,32 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Provinciaal monument"@nl;
 	skos:prefLabel "Provinciaal monument";
 .
-kad:OpenbareRegisters a skos:Concept, skoslex:Object;
-	rdfs:label "Openbare registers"@nl;
-	skos:prefLabel "Openbare registers";
-	#skos:exactMatch brk:Openbare_registers;
-             #Weggehaald, want dit is een broken link
+kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
+	rdfs:label "Publiekrechtelijke beperking"@nl;
+	skos:prefLabel "Publiekrechtelijke beperking";
+.
+kad:RechtVanErfpacht a skos:Concept, skoslex:Object;
+	rdfs:label "RechtVanErfpacht"@nl;
+	skos:prefLabel "RechtVanErfpacht";
+	skos:altLabel "Erfpacht";
+	skosthes:broaderPartitive kad:BeperktRecht;
+.
+kad:RijksmonumentInDeZinVanDeErfgoedwet a skos:Concept, skoslex:Object;
+	rdfs:label "Rijksmonument in de zin van de Erfgoedwet"@nl;
+	skos:prefLabel "Rijksmonument in de zin van de Erfgoedwet";
+.
+kad:Voorkeursrecht a skos:Concept, skoslex:Object;
+	rdfs:label "Voorkeursrecht"@nl;
+	skos:prefLabel "Voorkeursrecht";
+.
+kad:VoortdurendeErfpacht a skos:Concept, skoslex:Object;
+	rdfs:label "Voortdurende erfpacht"@nl;
+	skos:prefLabel "Voortdurende erfpacht";
+	skosthes:broaderPartitive kad:RechtVanErfpacht;
+.
+kad:Wederinkoop a skos:Concept, skoslex:Object;
+	rdfs:label "Wederinkoop"@nl;
+	skos:prefLabel "Wederinkoop";
 .
 kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	rdfs:label "Wegneemrecht"@nl;
@@ -95,6 +239,12 @@ kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	skos:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
+.
+kad:WerkelijkeGrootte a skos:Concept, skoslex:Object;
+	rdfs:label "Werkelijke grootte"@nl;
+	skos:prefLabel "Werkelijke grootte";
+	skos:closeMatch kad:Grootte;
+	skosthes:broaderPartitive kad:Perceel;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;

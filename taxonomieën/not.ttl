@@ -55,8 +55,12 @@
 #Registratieweg
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
 
+#Wet bodembescherming
+<http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55> rdfs:label "artikel 55 van de Wet bodembescherming".
+
 #Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13> rdfs:label "artikel 13 van de Wet op belastingen van rechtsverkeer".
 
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -223,6 +227,7 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van de hypotheekakte.";
 	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
+	skoslex:object not:Hypotheekakte;
 	skosthes:broaderPartitive not:OpstellenAkte;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
@@ -232,6 +237,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van de leveringsakte.";
 	rdfs:comment "Het opstellen van de leveringsakte.";
 	skoslex:actor not:Notaris;
+	skoslex:object not:Leveringsakte;
 	skosthes:broaderPartitive not:OpstellenAkte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
@@ -414,6 +420,10 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 #--
 #Objects
 #AfschriftAkte of AfschriftNot?
+not:AanspraakTotGebruik a skos:CAanspraak tot gebruikoncept, skoslex:Object;
+	rdfs:label "Aanspraak tot gebruik"@nl;
+	skos:prefLabel "Aanspraak tot gebruik";
+.
 not:AfschriftAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Afschrift (akte)"@nl;
 	skos:prefLabel "Afschrift (akte)";
@@ -557,6 +567,10 @@ not:Minuut a skos:Concept, skoslex:Object;
         skosthes:broaderGeneric not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
 .
+not:NederlandsRecht a skos:Concept, skoslex:Object;
+	rdfs:label "Nederlands recht"@nl;
+	skos:prefLabel "Nederlands recht";
+.
 not:NotarieleAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte";
@@ -588,6 +602,10 @@ not:OnderhandseAkte a skos:Concept, skoslex:Object;
 	rdfs:comment "Elk ondertekende akte waarbij geen (bevoegde) ambtenaar betrokken is.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=3>;
 	skosthes:broaderGeneric not:Akte;
+.
+not:Ongevorderd a skos:Concept, skoslex:Object;
+	rdfs:label "Ongevorderd"@nl;
+	skos:prefLabel "Ongevorderd";
 .
 #Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
 #Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
@@ -703,6 +721,10 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
+not:VanRechtswegeOntbonden a skos:Concept, skoslex:Object;
+	rdfs:label "Van rechtswege ontbonden"@nl;
+	skos:prefLabel "Van rechtswege ontbonden";
+.
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
 	skos:prefLabel "Volmacht";
@@ -719,4 +741,14 @@ not:Waarborgsom a skos:Concept, skoslex:Object;
 	skos:altLabel "Zekerheid";
 	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper totdat de koper zijn of haar verplichtingen is nagekomen, waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
 	rdfs:comment "Bedrag dat de koper van een goed stort op de rekening van een notaris als zekerheid voor de verkoper.";
+.
+not:WetBodembeschermingArtikel55 a skos:Concept, skoslex:Object;
+	rdfs:label "Wet bodembescherming, artikel 55"@nl;
+	skos:prefLabel "Wet bodembescherming, artikel 55";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
+.
+not:WetOpBelastingVanRechtsverkeerArtikel13 a skos:Concept, skoslex:Object;
+	rdfs:label "Wet op belasting van rechtsverkeer, artikel 13"@nl;
+	skos:prefLabel "Wet op belasting van rechtsverkeer, artikel 13";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 .
