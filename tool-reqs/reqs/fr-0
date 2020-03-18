@@ -1,0 +1,23 @@
+skos-ap-zv.ttlDe volgende profielen worden gehanteerd voor de Zorgeloos Vastgoed taxonomie:
+* skos-ap-zv.ttl voor de beschrijving van begrippen (concepten) in SKOS
+* skoslex-ap-zv.ttl voor de beschrijving van (rechts)handelingen en bijbehorende actoren, agents en objecten
+* frbr-ap-zv.ttl voor de verwijzing naar bibliografische bronnen
+
+Nog niet gedaan, maar wel nodig:
+* adms-ap-zv.ttl voor het beschrijven van de taxonomie van een van de ZV domeinen als 'semantic asset'
+* prov-ap-zv.ttl voor het beschrijven van de provenance informatie rond de beschrijving van begrippen
+
+Een invoer-tool voor het invoeren van begrippen door juristen/paralegals zal het invoeren van begrippen conform skos-ap-zv.ttl,skoslex-ap-zv.ttl en frbr-ap-zv.ttl moeten ondersteunen. Dit betreft voor iedere eigenschap van een begrip:
+* het tonen van het label conform skos-ap-zv.ttl, skoslex-ap-zv.ttl of frbr-ap-zv.ttl
+* het bij een mouse-over over het label of een (i) bij het label tonen van:
+** de uitleg conform skos-ap-zv.ttl, skoslex-ap-zv.ttl of frbr-ap-zv.ttl
+** het voorbeeld conform skos-ap-zv.ttl, skoslex-ap-zv.ttl of frbr-ap-zv.ttl
+* op basis van de cardinaliteit tonen van:
+** een foutmelding conform skos-ap-zv.ttl, skoslex-ap-zv.ttl of frbr-ap-zv.ttl
+** een waarschuwing conform skos-ap-zv.ttl, skoslex-ap-zv.ttl of frbr-ap-zv.ttl
+
+Bij het uploaden van begrippen zal de provenance informatie bij deze begrippen worden opgesloagen conform het provenance profiel op prov-ap-zv.ttl.
+
+De beschrijving van de afzonderlijke datasets (zv, mak, not, fin en kad) conform adms-ap-zv.ttl kan eenmalig door de technisch beheerder worden gedaan.
+
+Een nice-to-have is het kunnen genereren van releases, waarbij iedere release een nieuwe versie van de semantic asset is, die daarbij ook weer nieuwe proveance informatie krijgt. Dit releasen kan wellicht ook via een webhook vanuit Github.
