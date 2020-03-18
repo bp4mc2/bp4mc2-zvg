@@ -30,7 +30,7 @@ Op dit moment ligt de focus op de taxonomie. In onderstaand figuur is afgebeeld 
 
 |                                     |![](media/Taxonomie.png)|![](media/Datasets.png)|![](media/Informatiemodellen.png)|
 |-------------------------------------|------------------------|-----------------------|---------------------------------|
-|![](media/InvoerenWijzigen.png)      |Beperkt (github editor) |                       |                                 |
+|![](media/InvoerenWijzigen.png)      |Zeer beperkt (github editor) |                       |                                 |
 |![](media/CollaboratieOpslag.png)    |Uitgebreid (github)     |                       |                                 |
 |![](media/PublicatieVisualisatie.png)|Behoorlijk (dotwebstack)|                       |                                 |
 |![](media/ControleValidatie.png)     |Beperkt (reports)       |                       |                                 |
