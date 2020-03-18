@@ -1,5 +1,7 @@
 # Tool requirements
 
+## Capabilities: typen informatie versus beheerfuncties
+
 Het beheer van de informatie in een gegevenscatalogus voor Zorgeloosvastgoed omvat de volgende drie typen informatie:
 
 1. De **taxonomie** / thesaurus voor Zorgeloosvastgoed, met alle relevante begrippen, de uitleg hierover en de relaties tussen begrippen, inclusief de verwijzingen naar de relevante wet- en regelgeving.
@@ -35,3 +37,43 @@ Op dit moment ligt de focus op de taxonomie. In onderstaand figuur is afgebeeld 
 |![](media/DelenVoorschriften.png)    |Beperkt (github wiki)   |                       |                                 |
 
 Hieruit is duidelijk dat op dit moment veel belang wordt gehecht aan de collaboratie en visualisatie van de taxonomie.
+
+## Users
+
+The [maintainer](users/maintainer.md) is a person who… *[yet to be defined???]*
+
+Possible profiles in no particular order:
+- otologists,
+- taxonomists,
+- linked data specialists,
+- schema designers,
+- developers,
+- data engineers,
+- information engineers,
+- data analysts,
+- domain knowledge, i.e. businesspeople from HDN, NVM, KNB en Kadaster (not technicians).
+
+## Use cases
+
+- [UC-1](use-cases/UC-1.md). Create a new concept and its properties.
+- [UC-2](use-cases/UC-2.md). Edit existing concepts and its properties.
+- [UC-3](use-cases/UC-3.md). Remove existing concepts and its properties.
+- [UC-4](use-cases/UC-4.md). Export taxonomy.
+- [UC-5](use-cases/UC-5.md). Define universal identifiers.
+- [UC-6](use-cases/UC-6.md). Online human-readable description.
+- [UC-7](use-cases/UC-7.md). Link concepts.
+- [UC-8](use-cases/UC-8.md). Visualize taxonomy.
+- [UC-9](use-cases/UC-9.md). Publish taxonomy.
+- [UC-10](use-cases/UC-10.md). Share with others.
+- [UC-11](use-cases/UC-11.md). Request for approval.
+- [UC-12](use-cases/UC-12.md). Add an ontology.
+- [UC-13](use-cases/UC-13.md). User management and user rights.
+- [UC-14](use-cases/UC-14.md). Import taxonomy.
+- [UC-15](use-cases/UC-15.md). To validate taxonomy.
+- [UC-16](use-cases/UC-16.md). Search and browse.
+- [UC-17](use-cases/UC-17.md). Add user-defined comments.
+- [UC-18](use-cases/UC-18.md). Provide examples.
+
+## Functional requirements
+
+## Non functional requirements
