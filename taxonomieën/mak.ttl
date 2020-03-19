@@ -361,8 +361,8 @@ mak:ClausuleAsIswhereIs a skos:Concept, skoslex:Object;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ClausuleNietzelfbewoner a skos:Concept, skoslex:Object;
-	rdfs:label "As is where clausule"@nl;
-	skos:prefLabel "As is where clausule";
+	rdfs:label "Niet zelf bewoner clausule"@nl;
+	skos:prefLabel "Niet zelf bewoner clausule";
 	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken die verband houden met het niet zelf bewonen voor rekening en risico van koper zijn.";
 	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
