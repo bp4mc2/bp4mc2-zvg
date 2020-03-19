@@ -199,7 +199,7 @@ mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Object;#
 	#skos:definition ".";
 	#rdfs:comment ".";
         skosthes:narrowerPartitive not:Bankgarantie;
-        skosthes:narrowerPartitive mak:Faillissement
+        skosthes:narrowerPartitive mak:Faillissement;
         skosthes:narrowerPartitive mak:Financieringsvoorbehoud;
         skosthes:narrowerPartitive mak:Schuldsaneringsregeling;
         skosthes:narrowerPartitive not:Waarborgsom;
