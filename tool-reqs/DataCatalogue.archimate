@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="(new model)" id="4a1be2b5-bd15-43c8-90aa-cfb4bd8485ca" version="4.0.1">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Data Catalogue ZVG" id="4a1be2b5-bd15-43c8-90aa-cfb4bd8485ca" version="4.0.1">
   <folder name="Strategy" id="ac3c0000-244b-4605-85a2-029e8606caa1" type="strategy"/>
   <folder name="Business" id="436e121e-c1d9-4e30-8c67-50d38a64a580" type="business">
     <element xsi:type="archimate:Product" name="Taxonomie" id="0ffa79a1-8f4d-4eca-84fb-50e7b8604fb0"/>
