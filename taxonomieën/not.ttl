@@ -420,7 +420,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 #--
 #Objects
 #AfschriftAkte of AfschriftNot?
-not:AanspraakTotGebruik a skos:CAanspraak tot gebruikoncept, skoslex:Object;
+not:AanspraakTotGebruik a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik";
 .

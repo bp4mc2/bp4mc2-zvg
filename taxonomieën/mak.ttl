@@ -181,8 +181,8 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
 #--
 #OVER ARTIKELEN VAN KOOPOVEREENKOMST
-#Deze vinden we terug in alle aktes. 
-#Eigenlijk zou ieder artikel een 'akte-specifiek' concept moeten krijgen. 
+#Deze vinden we terug in alle aktes.
+#Eigenlijk zou ieder artikel een 'akte-specifiek' concept moeten krijgen.
 #Voor nu is gekozen te focussen op de koopovereenkomst en te doen alsof andere aktes (hypotheekakte, leveringsakte) niet bestaan.
 #--
 mak:Aanspraak a skos:Concept, skoslex:Object;
@@ -196,7 +196,7 @@ mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Object;
 	skos:prefLabel "Artikel: As is where is clausule";
 	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn.";
 	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
-	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";        
+	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Object;#
@@ -384,7 +384,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
 	skosthes:narrowerPartitive mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
         skosthes:narrowerPartitive kad:OpgegevenGrootte;
         skosthes:narrowerPartitive kad:Optierecht;
-        skosthes:narrowerPartitive kad:ProvinciaalMonument
+        skosthes:narrowerPartitive kad:ProvinciaalMonument;
         skosthes:narrowerPartitive not:ProvincialeVerordening;
         skosthes:narrowerPartitive kad:PubliekrechtelijkeBeperking;
         skosthes:narrowerPartitive kad:RijksmonumentInDeZinVanDeErfgoedwet;
