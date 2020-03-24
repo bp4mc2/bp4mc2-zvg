@@ -180,12 +180,10 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 #Objects
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
 #--
-#OVER BEPALINGEN EN BIJZONDERE BEPALINGEN
+#OVER ARTIKELEN VAN KOOPOVEREENKOMST
 #Deze vinden we terug in alle aktes. 
-#Eigenlijk zou iedere bepaling een 'akte-specifiek' concept moeten krijgen. 
+#Eigenlijk zou ieder artikel een 'akte-specifiek' concept moeten krijgen. 
 #Voor nu is gekozen te focussen op de koopovereenkomst en te doen alsof andere aktes (hypotheekakte, leveringsakte) niet bestaan.
-#Ook zouden abstracte concepten moeten komen die uitleggen wat bepalingen, bijzondere bepalingen, voorwaarden, enz zijn. Concepten die iets uitleggen over de opbouw van een akte.
-#Nog af te stemmen: hoe deze zaken (bijzondere bepalingen, voorwaarden enz te noemen. Heb nu gekozen voor 'Artikel'
 #--
 mak:Aanspraak a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak"@nl;
@@ -193,13 +191,22 @@ mak:Aanspraak a skos:Concept, skoslex:Object;
 	skos:definition "Een recht ten aanzien van een derde.";
         rdfs:comment "Verkoper kan een aanspraak op een derde hebben.  Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
 .
+mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Object;
+	rdfs:label "Artikel: As is where is clausule"@nl;
+	skos:prefLabel "Artikel: As is where is clausule";
+	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn.";
+	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
+	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";        
+	skosthes:broaderPartitive mak:Koopovereenkomst;
+.
 mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Bankgarantie/waarborgsom"@nl;
-	skos:prefLabel "Artikel: Bankgarantie/waarborgsom";
+	rdfs:label "Artikel: Bankgarantie/Waarborgsom"@nl;
+	skos:prefLabel "Artikel: Bankgarantie/Waarborgsom";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 5 van de model koopovereenkomst.";
         skosthes:narrowerPartitive not:Bankgarantie;
-        skosthes:narrowerPartitive mak:Faillissement
+        skosthes:narrowerPartitive mak:Faillissement;
         skosthes:narrowerPartitive mak:Financieringsvoorbehoud;
         skosthes:narrowerPartitive mak:Schuldsaneringsregeling;
         skosthes:narrowerPartitive not:Waarborgsom;
@@ -210,6 +217,7 @@ mak:ArtikelBetaling a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Betaling";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 3 van de model koopovereenkomst.";
         skosthes:narrowerPartitive kad:Beslag;
         skosthes:narrowerPartitive not:Passeren;
         skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -219,19 +227,45 @@ mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Eigendomsoverdracht";
 	#skos:definition ".";
 	#rdfs:comment ".";
-        skosthes:narrowerPartitive not:Notaris;
-        skosthes:narrowerPartitive not:PlaatsVanVestiging;
+	skos:scopeNote "Is artikel 4 van de model koopovereenkomst.";
+        skosthes:narrowerPartitive mak:ArtikelEigendomsoverdrachtLid1;
+        skosthes:narrowerPartitive not:ArtikelEigendomsoverdrachtLid2;
+        skosthes:narrowerPartitive not:ArtikelEigendomsoverdrachtLid3;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelErfpacht a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Erfpacht"@nl;
-	skos:prefLabel "Artikel: Erfpacht";
+mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Eigendomsoverdracht, lid 1"@nl;
+	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 1";
 	#skos:definition ".";
 	#rdfs:comment ".";
-        skosthes:narrowerPartitive kad:Canon;
-        skosthes:narrowerPartitive kad:Erfpachtvoorwaarden;
-        skosthes:narrowerPartitive kad:HerzieningErfpacht;
-        skosthes:narrowerPartitive kad:VoortdurendeErfpacht;
+	skos:scopeNote "Is artikel 4 lid 1 van de model koopovereenkomst.";
+        skosthes:narrowerPartitive not:Notaris;
+        skosthes:narrowerPartitive not:PlaatsVanVestiging;
+.
+mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Eigendomsoverdracht, lid 2"@nl;
+	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 2";
+	#skos:definition ".";
+	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 4 lid 2 van de model koopovereenkomst.";
+.
+mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Eigendomsoverdracht, lid 3"@nl;
+	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 3";
+	#skos:definition ".";
+	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 4 lid 3 van de model koopovereenkomst.";
+.
+mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Feitelijke levering/Overdracht aanspraken"@nl;
+	skos:prefLabel "Artikel: Feitelijke levering/Overdracht aanspraken";
+	skos:altLabel "Artikel: Eigendomsoverdracht";
+	#skos:definition ".";
+	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 7 van de model koopovereenkomst.";
+        skosthes:narrowerPartitive not:AanspraakTotGebruik;
+        skosthes:narrowerPartitive kad:Huurkoop;
+        skosthes:narrowerPartitive not:Ongevorderd;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Object;#
@@ -239,13 +273,15 @@ mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Kadastraal inmeten";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelKostenBelasting a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Kosten/belasting"@nl;
-	skos:prefLabel "Artikel: Kosten/belasting";
+mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Kosten/Overdrachtsbelasting"@nl;
+	skos:prefLabel "Artikel: Kosten/Overdrachtsbelasting";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 2 van de model koopovereenkomst.";
         skosthes:narrowerPartitive fin:Aflossen;
         skosthes:narrowerPartitive kad:DoorhalenHypotheek;
         skosthes:narrowerPartitive not:Grondslagwaarde;
@@ -257,47 +293,71 @@ mak:ArtikelKostenBelasting a skos:Concept, skoslex:Object;#
         skosthes:narrowerPartitive not:WetOpBelastingVanRechtsverkeerArtikel13;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelLevering a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Levering"@nl;
-	skos:prefLabel "Artikel: Levering";
-	skos:altLabel "Artikel: Eigendomsoverdracht";
-	#skos:definition ".";
-	#rdfs:comment ".";
-        skosthes:narrowerPartitive not:AanspraakTotGebruik;
-        skosthes:narrowerPartitive kad:Huurkoop;
-        skosthes:narrowerPartitive not:Ongevorderd;
-        skosthes:broaderPartitive mak:Koopovereenkomst;
-.
 mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Object;#
 	rdfs:label "Artikel: Nederlands recht"@nl;
 	skos:prefLabel "Artikel: Nederlands recht";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 18 van de model koopovereenkomst.";
         skosthes:narrowerPartitive not:NederlandsRecht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Object;
+	rdfs:label "Artikel: Niet zelf bewoner clausule"@nl;
+	skos:prefLabel "Artikel: Niet zelf bewoner clausule";
+	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken die verband houden met het niet zelf bewonen voor rekening en risico van koper zijn.";
+	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
+	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
+	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Object;#
 	rdfs:label "Artikel: NSW landgoed"@nl;
 	skos:prefLabel "Artikel: NSW landgoed";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
         skosthes:narrowerPartitive kad:NSWLandgoed;
         skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
+	skos:prefLabel "Artikel: Ontbindende voorwaarden";
+	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
+	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
+	skos:scopeNote "Is artikel 15 van de model koopovereenkomst.";
+        skosthes:narrowerPartitive mak:ArtikelOntbindendeVoorwaardenLid1;
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelOntbindendeVoorwaardenLid1 a skos:Concept, skoslex:Object;
+	rdfs:label "Artikel: Ontbindende voorwaarden, lid 1"@nl;
+	skos:prefLabel "Artikel: Ontbindende voorwaarden, lid 1";
+	skos:scopeNote "Is artikel 15 lid 1 van de model koopovereenkomst.";
+        skosthes:narrowerPartitive mak:Financieringsvoorbehoud;
 .
 mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Object;#
 	rdfs:label "Artikel: Overmacht, risico, verzekeringen"@nl;
 	skos:prefLabel "Artikel: Overmacht, risico, verzekeringen";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 10 van de model koopovereenkomst.";
         skosthes:narrowerPartitive not:VanRechtswegeOntbonden;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelRegistratie a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Registratie"@nl;
-	skos:prefLabel "Artikel: Registratie";
+mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Object;
+	rdfs:label "Artikel: Ouderdomsclausule"@nl;
+	skos:prefLabel "Artikel: Ouderdomsclausule";
+	rdfs:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken als gevolg van de ouderdom voor rekening en risico van koper zijn.";
+	skos:comment "In de praktijk wordt bij de verkoop van een (oudere) woning geregeld gebruik gemaakt van een zogenoemde ‘ouderdomsclausule’. Zo’n clausule wordt dan, op initiatief van de verkoper of diens makelaar, handmatig aan de koopovereenkomst toegevoegd. In de clausule komen verkoper en koper overeen dat (verborgen) gebreken voor rekening en risico van koper zijn. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
+	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
+	skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Registratie koopovereenkomst"@nl;
+	skos:prefLabel "Artikel: Registratie koopovereenkomst";
 	skos:altLabel "Artikel: Inschrijving in de de openbare registers";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 13 van de model koopovereenkomst.";
         skosthes:narrowerPartitive kad:OpenbareRegisters;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
@@ -306,6 +366,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 6 van de model koopovereenkomst.";
 	skosthes:narrowerPartitive mak:Aanspraak;
         skosthes:narrowerPartitive mak:Asbest;
 	skosthes:narrowerPartitive kad:BeschermdStadsDorpsgezicht;
@@ -336,6 +397,35 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
         skosthes:narrowerPartitive not:WetBodembeschermingArtikel55;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
+mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Verkoop en koop"@nl;
+	skos:prefLabel "Artikel: erkoop en koop";
+	#skos:definition ".";
+	#rdfs:comment ".";
+	skos:scopeNote "Is artikel 1 van de model koopovereenkomst.";
+	skos:scopeNote "Keuze tussen eigendom en erfpacht.";
+        skosthes:narrowerPartitive kad:ArtikelVerkoopEnKoopSubEigendom;
+        skosthes:narrowerPartitive kad:ArtikelVerkoopEnKoopSubErfpacht;
+        skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Verkoop en koop - eigendom"@nl;
+	skos:prefLabel "Artikel: erkoop en koop - eigendom";
+	#skos:definition ".";
+	#rdfs:comment ".";
+	skos:scopeNote "Is optie A van artikel 1 van de model koopovereenkomst.";
+.
+mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Object;#
+	rdfs:label "Artikel: Verkoop en koop - erfpacht"@nl;
+	skos:prefLabel "Artikel: erkoop en koop - erfpacht";
+	#skos:definition ".";
+	#rdfs:comment ".";
+	skos:scopeNote "Is optie B van artikel 1 van de model koopovereenkomst.";
+        skosthes:narrowerPartitive kad:Canon;
+        skosthes:narrowerPartitive kad:Erfpachtvoorwaarden;
+        skosthes:narrowerPartitive kad:HerzieningErfpacht;
+        skosthes:narrowerPartitive kad:VoortdurendeErfpacht;
+.
 mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:label "Asbest"@nl;
 	skos:prefLabel "Asbest";
@@ -353,27 +443,6 @@ mak:BijzondereLasten a skos:Concept, skoslex:Object;
 	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
 	skosthes:narrowerPartitive kad:Voorkeursrecht;
 .
-mak:ClausuleAsIswhereIs a skos:Concept, skoslex:Object;
-	rdfs:label "As is where is clausule"@nl;
-	skos:prefLabel "As is where is clausule";
-	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn.";
-	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
-        skosthes:broaderPartitive mak:Koopovereenkomst;
-.
-mak:ClausuleNietzelfbewoner a skos:Concept, skoslex:Object;
-	rdfs:label "As is where clausule"@nl;
-	skos:prefLabel "As is where clausule";
-	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken die verband houden met het niet zelf bewonen voor rekening en risico van koper zijn.";
-	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
-        skosthes:broaderPartitive mak:Koopovereenkomst;
-.
-mak:ClausuleOuderdom a skos:Concept, skoslex:Object;
-	rdfs:label "Ouderdomsclausule"@nl;
-	skos:prefLabel "Ouderdomsclausule";
-	rdfs:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken als gevolg van de ouderdom voor rekening en risico van koper zijn.";
-	skos:comment "In de praktijk wordt bij de verkoop van een (oudere) woning geregeld gebruik gemaakt van een zogenoemde ‘ouderdomsclausule’. Zo’n clausule wordt dan, op initiatief van de verkoper of diens makelaar, handmatig aan de koopovereenkomst toegevoegd. In de clausule komen verkoper en koper overeen dat (verborgen) gebreken voor rekening en risico van koper zijn. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
-	skosthes:broaderPartitive mak:Koopovereenkomst;
-.
 mak:Faillissement a skos:Concept, skoslex:Object; #Hoort wellicht thuis in een ander domein.
 	rdfs:label "Faillissement"@nl;
 	skos:prefLabel "Faillissement";
@@ -386,7 +455,6 @@ mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 	skos:altLabel "Voorbehoud van financiering";
 	rdfs:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
 	skos:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
-	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Koopovereenkomst"@nl;
@@ -418,13 +486,6 @@ mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Object
 	skos:prefLabel "Ondergrondse tank voor het opslaan van {vloei)stoffen";
 	skos:definition "Ondergrondse tanks voor het opslaan van (vloei)stoffen.";
 	rdfs:comment "In de grond van de onroerende zaak kunnen zich ondergrondse tanks bevinden voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks.";
-.
-mak:OntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
-	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
-	skos:prefLabel "Artikel: Ontbindende voorwaarden";
-	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
-	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
-        skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:Schoning a skos:Concept, skoslex:Object;
 	rdfs:label "Schoning"@nl;
