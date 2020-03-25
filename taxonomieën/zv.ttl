@@ -46,16 +46,10 @@ zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Niet natuurlijk persoon"@nl;
 	skos:prefLabel "Niet natuurlijk persoon";
+	skos:altLabel "Organisatie";
 	skos:definition "Een organisatie of abstracte entiteit die zelfstandig in het rechtsverkeer kan optreden. Het zijn van een niet natuurlijk persoon eindigt bij ontbinding van de organisatie of entiteit.";
   	rdfs:comment "Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. Een niet natuurlijk persoon heeft eigen rechten en plichten.";
-	skos:semanticRelation zv:Organisatie;
         skosthes:broaderGeneric zv:Persoon;
-.
-zv:Organisatie a skos:Concept, skoslex:Actor;
-	rdfs:label "Organisatie"@nl;
-	skos:prefLabel "Organisatie";
-	skos:altLabel "Rechtspersoon";
-        #Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
 .
 zv:Partij a skos:Concept, skoslex:Actor;
 	rdfs:label "Partij"@nl;
