@@ -460,7 +460,7 @@ not:Bestemmingsplan a skos:Concept, skoslex:Object;
 	rdfs:label "Bestemmingsplan"@nl;
 	skos:prefLabel "Bestemmingsplan";
 	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
-	skos:comment "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
+	rdfs:comment "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
 .
 not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:label "Comparant"@nl;
@@ -522,7 +522,7 @@ not:Kadasterkosten a skos:Concept, skoslex:Object;#Mogelijk splitsen in een vari
 	rdfs:label "Kadasterkosten"@nl;
 	skos:prefLabel "Kadasterkosten";
 	skos:definition "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
-	skos:comment "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
+	rdfs:comment "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
 	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:Koopsom a skos:Concept, skoslex:Object;

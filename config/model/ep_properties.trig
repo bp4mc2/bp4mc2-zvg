@@ -29,6 +29,10 @@ GRAPH config:Theatre {
       elmo:appliesTo "plabel";
       rdfs:label "Property label"@nl;
     ];
+    elmo:fragment [
+      elmo:appliesTo "check";
+      rdfs:label "Controle"@nl;
+    ];
   .
 
 }

@@ -103,7 +103,7 @@ zv:Identiteitsdocument a skos:Concept, skoslex:Object;
 	skos:prefLabel "Identiteitsdocument";
         skos:altLabel "Legitimatiebewijs";
 	skos:definition "Een officieel document waarmee een natuurlijk persoon zich in Nederland kan identificeren vanaf 14 jaar en ouder.";
-	skos:comment "Een middel om je als (natuurlijk) persoon te kunnen identificeren.";
+	rdfs:comment "Een middel om je als (natuurlijk) persoon te kunnen identificeren.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
 	skos:editorialNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
 .

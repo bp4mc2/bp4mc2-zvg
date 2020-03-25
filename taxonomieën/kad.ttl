@@ -100,7 +100,7 @@ kad:Canon a skos:Concept, skoslex:Object;
 	rdfs:label "Canon"@nl;
 	skos:prefLabel "Canon";
 	skos:altLabel "Erfpachtscanon";
-	skos:comment "Het canon is een verplichting aan de erfpachter om de eigenaar op al dan niet regelmatig terugkerende tijdstippen een geldsom te betalen. Deze verplichting wordt opgelegd in de akte van levering.";
+	rdfs:comment "Het canon is een verplichting aan de erfpachter om de eigenaar op al dan niet regelmatig terugkerende tijdstippen een geldsom te betalen. Deze verplichting wordt opgelegd in de akte van levering.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
 .
 kad:Eigendomsrecht a skos:Concept, skoslex:Object;
@@ -117,7 +117,7 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	skos:prefLabel "Erfdienstbaarheid";
 	skos:altLabel "Servituut";
 	skos:definition "Een erfdienstbaarheid is een last, waarmede een onroerende zaak - het dienende erf - ten behoeve van een andere onroerende zaak - het heersende erf - is bezwaard.";
-	skos:comment "Een erfdienstbaarheid is een recht dat de ene eigenaar van een perceel heeft op de andere eigenaar van een perceel. Het perceel waarvan de eigenaar iets mag, heet het heersende erf; het perceel grond waarvan de eigenaar iets moet toestaan heet het dienende erf.";
+	rdfs:comment "Een erfdienstbaarheid is een recht dat de ene eigenaar van een perceel heeft op de andere eigenaar van een perceel. Het perceel waarvan de eigenaar iets mag, heet het heersende erf; het perceel grond waarvan de eigenaar iets moet toestaan heet het dienende erf.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70>;
         skosthes:broaderPartitive kad:BeperktRecht;
         skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
@@ -132,7 +132,7 @@ kad:Grootte a skos:Concept, skoslex:Object;
 	rdfs:label "Grootte"@nl;
 	skos:prefLabel "Grootte";
 	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
-	skos:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
+	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
 	skosthes:broaderPartitive kad:Perceel;
 .
 kad:HeersendeErfdienstbaarheid a skos:Concept, skoslex:Object;
@@ -236,7 +236,7 @@ kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	skos:prefLabel "Wegneemrecht";
 	skos:altLabel "Wettelijk wegneemrecht";
 	skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
-	skos:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
+	rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
 	skosthes:broaderPartitive kad:ZakelijkRecht;
 .
