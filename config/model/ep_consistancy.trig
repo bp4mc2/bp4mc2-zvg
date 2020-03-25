@@ -14,9 +14,11 @@ GRAPH config:Theatre {
     elmo:informationProduct config:RoleConsistancyData;
     elmo:appearance config:RoleConsistancyAppearance;
     elmo:contains config:Menu;
+    elmo:contains config:ClassConsistancy;
   .
 
   config:RoleConsistancyAppearance a elmo:TableAppearance;
+    elmo:index 1;
     elmo:fragment [
       elmo:appliesTo "begrip";
       rdfs:label "Begrip"@nl;
@@ -37,6 +39,28 @@ GRAPH config:Theatre {
       elmo:appliesTo "relbegrip";
       rdfs:label "Gerelateerd begrip"@nl;
     ]
+  .
+
+  config:ClassConsistancy a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:ClassConsistancyData;
+    elmo:appearance config:ClassConsistancyAppearance;
+  .
+
+  config:ClassConsistancyAppearance a elmo:TableAppearance;
+    elmo:index 2;
+    elmo:fragment [
+      elmo:appliesTo "inst";
+      rdfs:label "Begrip"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "typecount";
+      rdfs:label "Aantal"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "types";
+      rdfs:label "Types"@nl;
+    ];
   .
 
 }

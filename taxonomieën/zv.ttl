@@ -52,10 +52,9 @@ zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
         skosthes:broaderGeneric zv:Persoon;
 .
 zv:Organisatie a skos:Concept, skoslex:Actor;
-	a skos:Concept, skoslex:Object; #in de zin van object van identificatie
-	rdfs:label "Rechtspersoon"@nl;
+	rdfs:label "Organisatie"@nl;
 	skos:prefLabel "Organisatie";
-	skos:altLabel "rechtspersoon";
+	skos:altLabel "Rechtspersoon";
         #Dit concept kan worden verbonden met de W3C registered organisationsontologie voor bij bijvoorbeeld de KvK ingeschreven organisaties.
 .
 zv:Partij a skos:Concept, skoslex:Actor;
@@ -69,7 +68,7 @@ zv:Persoon a skos:Concept, skoslex:Actor; #Indien persoon als object wordt gebru
 	rdfs:label "Persoon"@nl;
 	skos:prefLabel "Persoon";
 .
-zv:RechtsPersoon a skos:Concept, skoslex:Actor;
+zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechtspersoon"@nl;
 	skos:prefLabel "Rechtspersoon";
 	skos:prefLabel "Rechtspersoon";

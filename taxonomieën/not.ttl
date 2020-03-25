@@ -77,7 +77,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
 	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
-        skosthes:broaderGeneric zv:RechtsPersoon;
+  skosthes:broaderGeneric zv:Rechtspersoon;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Verkrijger"@nl;

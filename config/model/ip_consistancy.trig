@@ -42,4 +42,27 @@ GRAPH config:Theatre {
     """
   .
 
+  config:ClassConsistancyData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      SELECT ?inst ?inst_label (count(?lextype) as ?typecount) (group_concat(strafter(str(?lextype),"#") ; separator=", ") as ?types)
+      WHERE {
+        ?inst a skos:Concept.
+        ?inst rdfs:label ?inst_label.
+        FILTER (lang(?inst_label)="nl" || lang(?inst_label)="")
+        OPTIONAL {
+          ?inst a ?lextype.
+          FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act).
+        }
+      }
+      GROUP BY ?inst ?inst_label
+      ORDER BY ?inst_label
+    """
+  .
+
 }
