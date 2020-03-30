@@ -724,6 +724,7 @@ not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 not:VanRechtswegeOntbonden a skos:Concept, skoslex:Object;
 	rdfs:label "Van rechtswege ontbonden"@nl;
 	skos:prefLabel "Van rechtswege ontbonden";
+	rdfs:comment "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is.";
 .
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
