@@ -93,7 +93,7 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	skos:definition "Een beperkt recht is een recht dat is afgeleid uit een meer omvattend recht, dat met het beperkte recht is bezwaard.";
 	rdfs:comment "Een eigenaar dient te dulden dat het gebruik van zijn recht is beperkt: de beperktgerechtigde kan de betreffende zaak volgens het beperkte recht gebruiken. Beperkte rechten zijn te onderscheiden in gebruiksrechten (vruchtgebruik, erfdienstbaarheid, erfpacht, opstal) en zekerheidsrechten (hypotheekrecht, pandrecht).";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
-	skosthes:broaderPartitive kad:ZakelijkRecht;
+	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 kad:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
 	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
@@ -139,7 +139,7 @@ kad:Eigendomsrecht a skos:Concept, skoslex:Object;
         skos:scopeNote "Het staat de eigenaar met uitsluiting van een ieder vrij van de zaak gebruik te maken, mits dit gebruik niet strijdt met rechten van anderen en de op wettelijke voorschriften en regels van ongeschreven recht gegronde beperkingen daarbij in acht worden genomen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1>;
 	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FEigendom>;
-	skosthes:narrowerPartitive kad:ZakelijkRecht;
+	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 kad:Erfpachtvoorwaarden a skos:Concept, skoslex:Object;
 	rdfs:label "Erfpachtvoorwaarden"@nl;
@@ -154,7 +154,7 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	rdfs:comment "Een erfdienstbaarheid is een recht dat de ene eigenaar van een perceel heeft op de andere eigenaar van een perceel. Het perceel waarvan de eigenaar iets mag, heet het heersende erf; het perceel grond waarvan de eigenaar iets moet toestaan heet het dienende erf.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70>;
         dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfdienstbaarheid>;
-        skosthes:broaderPartitive kad:BeperktRecht;
+        skosthes:broaderGeneric kad:BeperktRecht;
         skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
         skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
 .
@@ -201,7 +201,7 @@ kad:Huurkoop a skos:Concept, skoslex:Object;
         #http://wetten.overheid.nl/1.0:c:BWBR0006000&titel=A&afdeling=2&artikel=1576h
         #artikel is vervallen
         dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FHuurkoop>;
-        skosthes:narrowerGeneric mak:Koopovereenkomst;
+        skosthes:broaderGeneric mak:Koopovereenkomst;
 .
 kad:KadastraalObject a skos:Concept, skoslex:Object;
 	rdfs:label "Kadastraal object"@nl;
@@ -281,7 +281,7 @@ kad:RechtVanErfpacht a skos:Concept, skoslex:Object;
 	rdfs:label "RechtVanErfpacht"@nl;
 	skos:prefLabel "RechtVanErfpacht";
 	skos:altLabel "Erfpacht";
-	skosthes:broaderPartitive kad:BeperktRecht;
+	skosthes:broaderGeneric kad:BeperktRecht;
 .
 kad:RijksmonumentInDeZinVanDeErfgoedwet a skos:Concept, skoslex:Object;
 	rdfs:label "Rijksmonument in de zin van de Erfgoedwet"@nl;
@@ -307,7 +307,7 @@ kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
 	rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
-	skosthes:broaderPartitive kad:ZakelijkRecht;
+	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 kad:WerkelijkeGrootte a skos:Concept, skoslex:Object;
 	rdfs:label "Werkelijke grootte"@nl;
