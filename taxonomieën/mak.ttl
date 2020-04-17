@@ -237,14 +237,14 @@ mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
         skoslex:isAbout not:Notaris;
         skoslex:isAbout not:PlaatsVanVestiging;
 .
-mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
+mak:ArtikelEigendomsoverdrachtLid2 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 2"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 2";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 4 lid 2 van de model koopovereenkomst.";
 .
-mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
+mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 3"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 3";
 	#skos:definition ".";
