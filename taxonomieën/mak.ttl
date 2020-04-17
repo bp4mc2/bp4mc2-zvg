@@ -177,21 +177,16 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
 #--
-#Objects
+#Objects and records
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
-#--
-#OVER ARTIKELEN VAN KOOPOVEREENKOMST
-#Deze vinden we terug in alle aktes.
-#Eigenlijk zou ieder artikel een 'akte-specifiek' concept moeten krijgen.
-#Voor nu is gekozen te focussen op de koopovereenkomst en te doen alsof andere aktes (hypotheekakte, leveringsakte) niet bestaan.
 #--
 mak:Aanspraak a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak"@nl;
 	skos:prefLabel "Aanspraak";
 	skos:definition "Een recht ten aanzien van een derde.";
-        rdfs:comment "Verkoper kan een aanspraak op een derde hebben.  Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
+        rdfs:comment "Verkoper kan een aanspraak op een derde hebben. Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
 .
-mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Object;
+mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: As is where is clausule"@nl;
 	skos:prefLabel "Artikel: As is where is clausule";
 	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn.";
@@ -199,30 +194,30 @@ mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Object;
 	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Object;#
+mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Bankgarantie/Waarborgsom"@nl;
 	skos:prefLabel "Artikel: Bankgarantie/Waarborgsom";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 5 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive not:Bankgarantie;
-        skosthes:narrowerPartitive mak:Faillissement;
-        skosthes:narrowerPartitive mak:Financieringsvoorbehoud;
-        skosthes:narrowerPartitive mak:Schuldsaneringsregeling;
-        skosthes:narrowerPartitive not:Waarborgsom;
+        skoslex:isAbout not:Bankgarantie;
+        skoslex:isAbout mak:Faillissement;
+        skoslex:isAbout mak:Financieringsvoorbehoud;
+        skoslex:isAbout mak:Schuldsaneringsregeling;
+        skoslex:isAbout not:Waarborgsom;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelBetaling a skos:Concept, skoslex:Object;#
+mak:ArtikelBetaling a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Betaling"@nl;
 	skos:prefLabel "Artikel: Betaling";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 3 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive kad:Beslag;
-        skosthes:narrowerPartitive not:Passeren;
+        skoslex:isAbout kad:Beslag;
+        skoslex:isAbout not:Passeren;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Object;#
+mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht";
 	#skos:definition ".";
@@ -233,42 +228,42 @@ mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Object;#
         skosthes:narrowerPartitive not:ArtikelEigendomsoverdrachtLid3;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Object;#
+mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 1"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 1";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 4 lid 1 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive not:Notaris;
-        skosthes:narrowerPartitive not:PlaatsVanVestiging;
+        skoslex:isAbout not:Notaris;
+        skoslex:isAbout not:PlaatsVanVestiging;
 .
-mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Object;#
+mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 2"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 2";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 4 lid 2 van de model koopovereenkomst.";
 .
-mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Object;#
+mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 3"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 3";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 4 lid 3 van de model koopovereenkomst.";
 .
-mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Object;#
+mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Feitelijke levering/Overdracht aanspraken"@nl;
 	skos:prefLabel "Artikel: Feitelijke levering/Overdracht aanspraken";
 	skos:altLabel "Artikel: Eigendomsoverdracht";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 7 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive not:AanspraakTotGebruik;
-        skosthes:narrowerPartitive kad:Huurkoop;
-        skosthes:narrowerPartitive not:Ongevorderd;
+        skoslex:isAbout not:AanspraakTotGebruik;
+        skoslex:isAbout kad:Huurkoop;
+        skoslex:isAbout not:Ongevorderd;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Object;#
+mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Kadastraal inmeten"@nl;
 	skos:prefLabel "Artikel: Kadastraal inmeten";
 	#skos:definition ".";
@@ -276,33 +271,33 @@ mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Object;#
 	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Object;#
+mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Artikel: Kosten/Overdrachtsbelasting";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 2 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive fin:Aflossen;
-        skosthes:narrowerPartitive kad:DoorhalenHypotheek;
-        skosthes:narrowerPartitive not:Grondslagwaarde;
-        skosthes:narrowerPartitive not:Kadasterkosten;
-        skosthes:narrowerPartitive not:Notariskosten;
-        skosthes:narrowerPartitive fin:Overbruggingslening;
-        skosthes:narrowerPartitive not:Overdracht;
-        skosthes:narrowerPartitive bel:Overdrachtsbelasting;
-        skosthes:narrowerPartitive not:WetOpBelastingVanRechtsverkeerArtikel13;
+        skoslex:isAbout fin:Aflossen;
+        skoslex:isAbout kad:DoorhalenHypotheek;
+        skoslex:isAbout not:Grondslagwaarde;
+        skoslex:isAbout not:Kadasterkosten;
+        skoslex:isAbout not:Notariskosten;
+        skoslex:isAbout fin:Overbruggingslening;
+        skoslex:isAbout not:Overdracht;
+        skoslex:isAbout bel:Overdrachtsbelasting;
+        skoslex:isAbout not:WetOpBelastingVanRechtsverkeerArtikel13;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Object;#
+mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Nederlands recht"@nl;
 	skos:prefLabel "Artikel: Nederlands recht";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 18 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive not:NederlandsRecht;
+        skoslex:isAbout not:NederlandsRecht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Object;
+mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Niet zelf bewoner clausule"@nl;
 	skos:prefLabel "Artikel: Niet zelf bewoner clausule";
 	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken die verband houden met het niet zelf bewonen voor rekening en risico van koper zijn.";
@@ -310,16 +305,16 @@ mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Object;
 	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Object;#
+mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: NSW landgoed"@nl;
 	skos:prefLabel "Artikel: NSW landgoed";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
-        skosthes:narrowerPartitive kad:NSWLandgoed;
+        skoslex:isAbout kad:NSWLandgoed;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
+mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
 	skos:prefLabel "Artikel: Ontbindende voorwaarden";
 	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
@@ -328,22 +323,22 @@ mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Object;#
         skosthes:narrowerPartitive mak:ArtikelOntbindendeVoorwaardenLid1;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelOntbindendeVoorwaardenLid1 a skos:Concept, skoslex:Object;
+mak:ArtikelOntbindendeVoorwaardenLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Ontbindende voorwaarden, lid 1"@nl;
 	skos:prefLabel "Artikel: Ontbindende voorwaarden, lid 1";
 	skos:scopeNote "Is artikel 15 lid 1 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive mak:Financieringsvoorbehoud;
+        skoslex:isAbout mak:Financieringsvoorbehoud;
 .
-mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Object;#
+mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Overmacht, risico, verzekeringen"@nl;
 	skos:prefLabel "Artikel: Overmacht, risico, verzekeringen";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 10 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive not:VanRechtswegeOntbonden;
+        skoslex:isAbout not:VanRechtswegeOntbonden;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Object;
+mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Ouderdomsclausule"@nl;
 	skos:prefLabel "Artikel: Ouderdomsclausule";
 	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken als gevolg van de ouderdom voor rekening en risico van koper zijn.";
@@ -351,80 +346,80 @@ mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Object;
 	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Object;#
+mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Registratie koopovereenkomst"@nl;
 	skos:prefLabel "Artikel: Registratie koopovereenkomst";
 	skos:altLabel "Artikel: Inschrijving in de de openbare registers";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 13 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive kad:OpenbareRegisters;
+        skoslex:isAbout kad:OpenbareRegisters;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Object;#
+mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Staat van onroerend goed/gebruik"@nl;
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 6 van de model koopovereenkomst.";
-	skosthes:narrowerPartitive mak:Aanspraak;
-        skosthes:narrowerPartitive mak:Asbest;
-	skosthes:narrowerPartitive kad:BeschermdStadsDorpsgezicht;
-	skosthes:narrowerPartitive not:Bestemmingsplan;
-        skosthes:narrowerPartitive mak:BijzondereLasten;
-	skosthes:narrowerPartitive kad:Eigendomsrecht;
-	skosthes:narrowerPartitive kad:ErfgoedwetArtikel9punt1Lid1;
-        skosthes:narrowerPartitive kad:GemeentelijkMonument;
-	skosthes:narrowerPartitive not:GemeentelijkeVerordening;
-        skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
-	skosthes:narrowerPartitive kad:Kettingbeding;
-	skosthes:narrowerPartitive mak:KwalitatieveRechten;
-	skosthes:narrowerPartitive kad:KwalitatieveVerplichting;
-	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
-	skosthes:narrowerPartitive mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
-        skosthes:narrowerPartitive kad:OpgegevenGrootte;
-        skosthes:narrowerPartitive kad:Optierecht;
-        skosthes:narrowerPartitive kad:ProvinciaalMonument;
-        skosthes:narrowerPartitive not:ProvincialeVerordening;
-        skosthes:narrowerPartitive kad:PubliekrechtelijkeBeperking;
-        skosthes:narrowerPartitive kad:RijksmonumentInDeZinVanDeErfgoedwet;
-        skosthes:narrowerPartitive mak:Schoning;
-        skosthes:narrowerPartitive mak:Verontreiniging;
-        skosthes:narrowerPartitive kad:Voorkeursrecht;
-        skosthes:narrowerPartitive kad:Wederinkoop;
-        skosthes:narrowerPartitive kad:WerkelijkeGrootte;
-        skosthes:narrowerPartitive kad:Wegneemrecht;
-        skosthes:narrowerPartitive not:WetBodembeschermingArtikel55;
+	skoslex:isAbout mak:Aanspraak;
+        skoslex:isAbout mak:Asbest;
+	skoslex:isAbout kad:BeschermdStadsDorpsgezicht;
+	skoslex:isAbout not:Bestemmingsplan;
+        skoslex:isAbout mak:BijzondereLasten;
+	skoslex:isAbout kad:Eigendomsrecht;
+	skoslex:isAbout kad:ErfgoedwetArtikel9punt1Lid1;
+        skoslex:isAbout kad:GemeentelijkMonument;
+	skoslex:isAbout not:GemeentelijkeVerordening;
+        skoslex:isAbout kad:HeersendeErfdienstbaarheid;
+	skoslex:isAbout kad:Kettingbeding;
+	skoslex:isAbout mak:KwalitatieveRechten;
+	skoslex:isAbout kad:KwalitatieveVerplichting;
+	skoslex:isAbout kad:LijdendeErfdienstbaarheid;
+	skoslex:isAbout mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
+        skoslex:isAbout kad:OpgegevenGrootte;
+        skoslex:isAbout kad:Optierecht;
+        skoslex:isAbout kad:ProvinciaalMonument;
+        skoslex:isAbout not:ProvincialeVerordening;
+        skoslex:isAbout kad:PubliekrechtelijkeBeperking;
+        skoslex:isAbout kad:RijksmonumentInDeZinVanDeErfgoedwet;
+        skoslex:isAbout mak:Schoning;
+        skoslex:isAbout mak:Verontreiniging;
+        skoslex:isAbout kad:Voorkeursrecht;
+        skoslex:isAbout kad:Wederinkoop;
+        skoslex:isAbout kad:WerkelijkeGrootte;
+        skoslex:isAbout kad:Wegneemrecht;
+        skoslex:isAbout not:WetBodembeschermingArtikel55;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Object;#
+mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop"@nl;
 	skos:prefLabel "Artikel: erkoop en koop";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 1 van de model koopovereenkomst.";
 	skos:scopeNote "Keuze tussen eigendom en erfpacht.";
-        skosthes:narrowerPartitive kad:ArtikelVerkoopEnKoopSubEigendom;
-        skosthes:narrowerPartitive kad:ArtikelVerkoopEnKoopSubErfpacht;
+        skoslex:isAbout mak:ArtikelVerkoopEnKoopOptieAEigendom;
+        skoslex:isAbout mak:ArtikelVerkoopEnKoopOptieBErfpacht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Object;#
+mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - eigendom"@nl;
 	skos:prefLabel "Artikel: erkoop en koop - eigendom";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is optie A van artikel 1 van de model koopovereenkomst.";
 .
-mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Object;#
+mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - erfpacht"@nl;
 	skos:prefLabel "Artikel: erkoop en koop - erfpacht";
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is optie B van artikel 1 van de model koopovereenkomst.";
-        skosthes:narrowerPartitive kad:Canon;
-        skosthes:narrowerPartitive kad:Erfpachtvoorwaarden;
-        skosthes:narrowerPartitive kad:HerzieningErfpacht;
-        skosthes:narrowerPartitive kad:VoortdurendeErfpacht;
+        skoslex:isAbout kad:Canon;
+        skoslex:isAbout kad:Erfpachtvoorwaarden;
+        skoslex:isAbout kad:HerzieningErfpacht;
+        skoslex:isAbout kad:VoortdurendeErfpacht;
 .
 mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:label "Asbest"@nl;
@@ -472,14 +467,14 @@ mak:KwalitatieveRechten a skos:Concept, skoslex:Object;
 	skos:definition "Staat een uit een overeenkomst voortvloeiende, voor overgang vatbaar recht in een zodanig verband met een aan de schuldeiser toebehorend goed, dat hij bij dat recht slechts belang heeft, zolang hij het goed behoudt, dan gaat dat recht over op degene die dat goed onder bijzondere titel verkrijgt.";
 	rdfs:comment "Een voor overgang vatbaar recht van verkoper gaat automatisch bij de overdracht van de onroerende zaak over op de koper. Het is een recht dat samenhangt met de onroerende zaak.";
 .
-mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Object;
+mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
 	skos:prefLabel "Ondergetekenden";
 	#skos:definition "";
 	#rdfs:comment "";
         skosthes:broaderPartitive mak:Koopovereenkomst;
-        skosthes:broaderPartitive mak:Koper;
-        skosthes:broaderPartitive mak:Verkoper;
+        skoslex:isAbout mak:Koper;
+        skoslex:isAbout mak:Verkoper;
 .
 mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Object;
 	rdfs:label "Ondergrondse tank voor het opslaan van {vloei)stoffen"@nl;
