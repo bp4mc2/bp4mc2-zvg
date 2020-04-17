@@ -473,7 +473,7 @@ not:Comparant a skos:Concept, skoslex:Object;
         skosthes:narrowerPartitive not:Vervreemder;
         skosthes:narrowerPartitive not:Verkrijger;
 .
-not:Comparitie a skos:Concept, skoslex:Object;#Hens Meengs van KNB geeft aan dat dit een verboden woord is. Vraag om verdere toelichting staat nog open.
+not:Comparitie a skos:Concept, skoslex:Record;#Hens Meengs van KNB geeft aan dat dit een verboden woord is. Vraag om verdere toelichting staat nog open.
 	rdfs:label "Comparitie"@nl;
 	skos:prefLabel "Comparitie";
 	skos:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
@@ -743,12 +743,12 @@ not:Waarborgsom a skos:Concept, skoslex:Object;
 	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper totdat de koper zijn of haar verplichtingen is nagekomen, waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
 	rdfs:comment "Bedrag dat de koper van een goed stort op de rekening van een notaris als zekerheid voor de verkoper.";
 .
-not:WetBodembeschermingArtikel55 a skos:Concept, skoslex:Object;
+not:WetBodembeschermingArtikel55 a skos:Concept, skoslex:Record;
 	rdfs:label "Wet bodembescherming, artikel 55"@nl;
 	skos:prefLabel "Wet bodembescherming, artikel 55";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
 .
-not:WetOpBelastingVanRechtsverkeerArtikel13 a skos:Concept, skoslex:Object;
+not:WetOpBelastingVanRechtsverkeerArtikel13 a skos:Concept, skoslex:Record;
 	rdfs:label "Wet op belasting van rechtsverkeer, artikel 13"@nl;
 	skos:prefLabel "Wet op belasting van rechtsverkeer, artikel 13";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
