@@ -366,7 +366,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
         skoslex:isAbout mak:Asbest;
 	skoslex:isAbout kad:BeschermdStadsDorpsgezicht;
 	skoslex:isAbout not:Bestemmingsplan;
-        skoslex:isAbout mak:BijzondereLasten;
+        skoslex:isAbout kad:BijzondereLasten;
 	skoslex:isAbout kad:Eigendomsrecht;
 	skoslex:isAbout kad:ErfgoedwetArtikel9punt1Lid1;
         skoslex:isAbout kad:GemeentelijkMonument;
@@ -427,16 +427,6 @@ mak:Asbest a skos:Concept, skoslex:Object;
 	skos:definition "Een bouwmateriaal dat in het verleden is toegepast bij de bouw van registergoederen.";
 	rdfs:comment "In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
-.
-mak:BijzondereLasten a skos:Concept, skoslex:Object;
-	rdfs:label "Bijzondere lasten"@nl;
-	skos:prefLabel "Bijzondere lasten";
-	skos:definition "De verkoper is verplicht de onroerende zaak in eigendom over te dragen vrij van alle bijzondere lasten en beperkingen, met uitzondering van die welke de koper uitdrukkelijk heeft aanvaard.";
-	rdfs:comment "Bijzondere lasten zijn juridische lasten/ beperkingen die op de onroerende zaak rusten. Dit kunnen privaatrechtelijke lasten/ beperkingen zijn zoals (lijdende) erfdienstbaarheden, kwalitatieve verplichtingen en zogenoemde ‘kettingbedingen’. Op grond van zulke lasten/ beperkingen heeft een ander (dan de eigenaar) een aanspraak op de onroerende zaak (bijvoorbeeld een recht van overpad over de grond). Het kan ook gaan om publiekrechtelijke lasten/ beperkingen zoals een besluit van het college van B & W tot het vestigen van een wettelijk voorkeursrecht. Een bijzondere publiekrechtelijke last/ beperking vindt haar grondslag in een specifiek tegen de onroerende zaak gericht besluit.";
-	skosthes:narrowerPartitive kad:KwalitatieveVerplichting;
-	skosthes:narrowerPartitive kad:Kettingbeding;
-	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
-	skosthes:narrowerPartitive kad:Voorkeursrecht;
 .
 mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 	rdfs:label "Financieringsvoorbehoud"@nl;
