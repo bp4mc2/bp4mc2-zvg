@@ -438,12 +438,6 @@ mak:BijzondereLasten a skos:Concept, skoslex:Object;
 	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
 	skosthes:narrowerPartitive kad:Voorkeursrecht;
 .
-mak:Faillissement a skos:Concept, skoslex:Object; #Hoort wellicht thuis in een ander domein.
-	rdfs:label "Faillissement"@nl;
-	skos:prefLabel "Faillissement";
-	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
-	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
-.
 mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 	rdfs:label "Financieringsvoorbehoud"@nl;
 	skos:prefLabel "Financieringsvoorbehoud";
