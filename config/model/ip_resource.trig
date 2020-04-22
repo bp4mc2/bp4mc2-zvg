@@ -31,7 +31,7 @@ GRAPH config:Theatre {
         skoslex:Actor rdfs:label "Actor"@nl.
         skoslex:Object rdfs:label "Object"@nl.
         skoslex:Agent rdfs:label "Agent"@nl.
-        skoslex:Record rdfs:label "Record"@ nl.
+        skoslex:Record rdfs:label "Record"@nl.
         dcat:Dataset rdfs:label "Dataset"@nl.
         skosthes:broaderGeneric rdfs:label "specialisatie van"@nl.
         skosthes:narrowerGeneric rdfs:label "generalisatie van"@nl.
