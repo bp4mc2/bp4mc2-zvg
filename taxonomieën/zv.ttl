@@ -22,8 +22,13 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
+<http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2> rdfs:label "artikel 1.2 van de Wet basisregistratie personen".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "artikel 213 van Boek 6 van het Burgerlijk Wetboek".
+
+#Onderstaande link hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+#Wet op belasting van rechtsverkeer (WBR) 
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1> rdfs:label "artikel 2, eerste lid, van de Wet op belastingen van rechtsverkeer".
 
 #--
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
@@ -33,13 +38,13 @@ zv:Belastinginspecteur a skos:Concept, skoslex:Actor; #Begrip hoort thuis in een
 	rdfs:label "Belastinginspecteur"@nl;
 	skos:prefLabel "Belastinginspecteur";
 	skos:definition "Een ambtenaar die controleert of de belastingwetgeving wordt nageleefd en/of gestelde normen worden gehaald.";
-  	rdfs:comment "Een ambtenaar die controleert of de belastingwetgeving wordt nageleefd en/of gestelde normen worden gehaald.";
 .
 zv:Mens a skos:Concept, skoslex:Actor;
 	rdfs:label "Mens"@nl;
 	skos:prefLabel "Mens";
 	skos:altLabel "Natuurlijk persoon";
-#Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen.
+	skos:definition "Wezens op Moeder Aarde die wel weten wat ze willen.";
+        #Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen.
 .
 zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
@@ -67,10 +72,10 @@ zv:Partij a skos:Concept, skoslex:Actor;
 zv:Persoon a skos:Concept, skoslex:Actor; #Indien persoon als object wordt gebruikt in een act, blijft de Persoon zelf een actor, die in de rol van object in de betreffende handeling aanwezig is.
 	rdfs:label "Persoon"@nl;
 	skos:prefLabel "Persoon";
+	skos:definition "Drager van subjectieve rechten en plichten (in juridische zin).";
 .
 zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechtspersoon"@nl;
-	skos:prefLabel "Rechtspersoon";
 	skos:prefLabel "Rechtspersoon";
 	skos:altLabel "NV";
 	skos:altLabel "BV";
@@ -83,15 +88,17 @@ zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 	rdfs:label "Aan- of verkoop van een huis"@nl;
 	skos:prefLabel "Aan- of verkoop van een huis"@nl;
-	skos:semanticRelation zv:Huis;
 	skos:definition "Aan- of verkoop van een huis is het aankopen of verkopen van een huis en omvat de koop en levering"@nl;
 	skos:editorialNote "Nog niet helemaal tevreden met de term. Wel is dit wat het betreffende begrip omvat. We willen het niet plat 'Koop' noemen ivm de verwarring met mak:Koop (wat uit de wet volgt). 'Koop van een Huis' is korter, maar suggereert meer dat het gaat om aankoop en niet verkoop"@nl;
+	skos:semanticRelation zv:Huis;
+        skoslex:actor mak:Koper;
+	skoslex:actor mak:Verkoper;
+	skoslex:object zv:Huis;
 .
 zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Inning overdrachtsbelasting";
 	skos:prefLabel "Inning overdrachtsbelasting";
 	skos:definition "Ontvangen van de overdrachtsbelasting.";
-        rdfs:comment "Ontvangen van de overdrachtsbelasting.";
 	skosthes:broaderPartitive not:Levering;
 	skoslex:agent not:Notaris;
 	skoslex:actor mak:Koper;
@@ -103,10 +110,16 @@ zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis i
 zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
 	rdfs:label "Basisregistratie personen"@nl;
 	skos:prefLabel "Basisregistratie personen";
+        skos:altLabel "BRP";
+	skos:definition "De basisregistratie bevat persoonsgegevens over ingezetenen van Nederland en over niet-ingezetenen voor zover de wet daarin voorziet.";
+	rdfs:comment "Voortdurend bijgehouden bestand met persoonsgegevens van inwoners van Nederland.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2>;
 .
 zv:Huis a skos:Concept, skoslex:Object;
 	rdfs:label "Huis"@nl;
 	skos:prefLabel "Huis";
+	skos:definition "Een (deel van een) gebouw dat bestemd is voor bewoning.";
+	rdfs:comment "Een gebouw dat bedoeld is om in te wonen.";
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 zv:Identiteitsdocument a skos:Concept, skoslex:Object;
@@ -117,4 +130,17 @@ zv:Identiteitsdocument a skos:Concept, skoslex:Object;
 	rdfs:comment "Een middel om je als (natuurlijk) persoon te kunnen identificeren.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
 	skos:editorialNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
+.
+zv:Overdrachtsbelasting a skos:Concept, skoslex:Object;#Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+	rdfs:label "Overdrachtsbelasting";
+	skos:prefLabel "Overdrachtsbelasting";
+	skos:definition "Onder de naam 'overdrachtsbelasting' wordt een belasting geheven ter zake van de verkrijging van in Nederland gelegen onroerende zaken of van rechten waaraan deze zijn onderworpen.";
+	rdfs:comment "De overdrachtsbelasting is de belasting die de koper van een onroerende zaak moet betalen aan de belastingdienst.";
+	dcterms:source <http://.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
+	skosthes:broaderPartitive not:Leveringsakte;
+.
+zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+	rdfs:label "Register Belastingdienst";
+	skos:prefLabel "Register Belastingdienst";
+	skos:definition "Voortdurend bijgehouden bestand van de Belastingdienst met gegevens over personen of zaken in relatie tot de belastingwet.";
 .
