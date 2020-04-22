@@ -29,6 +29,12 @@
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
 #--
 #Actors and Agents
+zv:Belastinginspecteur a skos:Concept, skoslex:Actor; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+	rdfs:label "Belastinginspecteur"@nl;
+	skos:prefLabel "Belastinginspecteur";
+	skos:definition "Een ambtenaar die controleert of de belastingwetgeving wordt nageleefd en/of gestelde normen worden gehaald.";
+  	rdfs:comment "Een ambtenaar die controleert of de belastingwetgeving wordt nageleefd en/of gestelde normen worden gehaald.";
+.
 zv:Mens a skos:Concept, skoslex:Actor;
 	rdfs:label "Mens"@nl;
 	skos:prefLabel "Mens";
@@ -69,8 +75,8 @@ zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	skos:altLabel "NV";
 	skos:altLabel "BV";
 	skos:definition "Een rechtspersoon is een rechtssubject die zelfstandig drager is van rechten en met een natuurlijk gelijk staat, tenzij uit de wet het tegendeel voortvloeit.";
-  rdfs:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
-  skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
+        rdfs:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
+        skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
 .
 #--
 #Acts
@@ -80,6 +86,17 @@ zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 	skos:semanticRelation zv:Huis;
 	skos:definition "Aan- of verkoop van een huis is het aankopen of verkopen van een huis en omvat de koop en levering"@nl;
 	skos:editorialNote "Nog niet helemaal tevreden met de term. Wel is dit wat het betreffende begrip omvat. We willen het niet plat 'Koop' noemen ivm de verwarring met mak:Koop (wat uit de wet volgt). 'Koop van een Huis' is korter, maar suggereert meer dat het gaat om aankoop en niet verkoop"@nl;
+.
+zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+	rdfs:label "Inning overdrachtsbelasting";
+	skos:prefLabel "Inning overdrachtsbelasting";
+	skos:definition "Ontvangen van de overdrachtsbelasting.";
+        rdfs:comment "Ontvangen van de overdrachtsbelasting.";
+	skosthes:broaderPartitive not:Levering;
+	skoslex:agent not:Notaris;
+	skoslex:actor mak:Koper;
+	skoslex:actor zv:Belastinginspecteur;
+	skoslex:object zv:Overdrachtsbelasting;
 .
 #--
 #Objects
