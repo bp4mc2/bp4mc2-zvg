@@ -101,6 +101,13 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 .
 #--
 #Objects
+fin:Bankgarantie a skos:Concept, skoslex:Object;
+	rdfs:label "Bankgarantie"@nl;
+	skos:prefLabel "Bankgarantie";
+	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
+	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
+        skos:semanticRelation fin:Waarborgsom;
+.
 fin:BindendeOfferte a skos:Concept, skoslex:Object;
 	rdfs:label "Bindende offerte"@nl;
 	skos:prefLabel "Bindende offerte";
@@ -119,12 +126,6 @@ fin:Hypotheekadvies a skos:Concept, skoslex:Object;
 	skos:prefLabel "Hypotheekadvies";
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
 .
-#Begrip staat ook in NOT domein. Valt wat voor te zeggen om het begrip in dit domein onder te brengen. 
-#Aangezien het begrip in het NOT domein uitgebreider is, wordt deze nu weggelaten.
-#fin:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
-#	rdfs:label "Inschrijvingsbedrag"@nl;
-#	skos:prefLabel "Inschrijvingsbedrag";
-#.
 #Lening nergens aan gerelateerd. Is nu een 'los' begrip
 fin:Lening a skos:Concept, skoslex:Object;
 	rdfs:label "Lening"@nl;
@@ -132,7 +133,24 @@ fin:Lening a skos:Concept, skoslex:Object;
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
 .
+fin:Opslagbedrag a skos:Concept, skoslex:Object;
+	rdfs:label "Opslagbedrag"@nl;
+	skos:prefLabel "Opslagbedrag";
+	skos:definition "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld.";
+	rdfs:comment "Het bedrag dat een hypotheeknemer - naast het inschrijvingsbedrag - op basis van de hypotheekakte maximaal mag opeisen als gevolg van niet betaalde rentes, boetes en kosten.";
+        skosthes:broaderPartitive not:TotaalbedragInschrijving;
+	skosthes:broaderPartitive not:RechtVanHypotheek;
+	skosthes:broaderPartitive not:Hypotheekakte;
+.
 fin:Overbruggingslening a skos:Concept, skoslex:Object;
 	rdfs:label "Overbruggingslening"@nl;
 	skos:prefLabel "Overbruggingslening";
+.
+fin:Waarborgsom a skos:Concept, skoslex:Object;
+	rdfs:label "Waarborgsom"@nl;
+	skos:prefLabel "Waarborgsom";
+	skos:altLabel "Bankgarantie";
+	skos:altLabel "Zekerheid";
+	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper totdat de koper zijn of haar verplichtingen is nagekomen, waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
+	rdfs:comment "Bedrag dat de koper van een goed stort op de rekening van een notaris als zekerheid voor de verkoper.";
 .
