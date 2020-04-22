@@ -15,45 +15,25 @@
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
 <http://zorgeloosvastgoed.nl/data/bel> a owl:Ontology;
-	rdfs:label "Domein Belastingen";
+	rdfs:label "Domein Belastingen"; 
+#Belastingdienst doet (nog) niet mee met het Zorgeloos Vastgoed initiatief. 
+#Daarom is gekozen nog geen begrippen in dit domein onder te brengen.
 .
 #--
 #Wetgeving links
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
-
-#Wet op belasting van rechtsverkeer (WBR)
-<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1> rdfs:label "artikel 2, eerste lid, van de Wet op belastingen van rechtsverkeer".
+#...
 
 #--
 #Actors and Agents
-bel:Belastinginspecteur a skos:Concept, skoslex:Actor;
-	rdfs:label "Belastinginspecteur"@nl;
-	skos:prefLabel "Belastinginspecteur";
-.
+#...
+
 #--
 #Acts
-bel:InningOverdrachtsbelasting a skos:Concept, skoslex:Act;
-	rdfs:label "Inning overdrachtsbelasting";
-	skos:prefLabel "Inning overdrachtsbelasting";
-	skosthes:broaderPartitive not:Levering;
-	skoslex:agent not:Notaris;
-	skoslex:actor mak:Koper;
-	skoslex:actor bel:Belastinginspecteur;
-	skoslex:object bel:Overdrachtsbelasting;
-.
+#...
+
 #--
 #Objects
-bel:Overdrachtsbelasting a skos:Concept, skoslex:Object;
-	rdfs:label "Overdrachtsbelasting";
-	skos:prefLabel "Overdrachtsbelasting";
-	skos:definition "Onder de naam 'overdrachtsbelasting' wordt een belasting geheven ter zake van de verkrijging van in Nederland gelegen onroerende zaken of van rechten waaraan deze zijn onderworpen.";
-	rdfs:comment "De overdrachtsbelasting is de belasting die de koper van een onroerende zaak moet betalen aan de belastingdienst.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
-	skosthes:broaderPartitive not:Leveringsakte;
-.
-bel:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Weet niet of dit de juiste term is. Slechts placeholder voor relatie naar domein not bij handeling van registreren
-	rdfs:label "Register Belastingdienst";
-	skos:prefLabel "Register Belastingdienst";
-.
+#...
