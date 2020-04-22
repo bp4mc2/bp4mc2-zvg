@@ -1,5 +1,5 @@
 # bp4mc2-zvg
-Try out
+Try out damir 
 # UC-1 Create, edit and remove a new concept and its properties
  
 # Functional requirements:
