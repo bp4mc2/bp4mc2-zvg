@@ -31,6 +31,7 @@ GRAPH config:Theatre {
         skoslex:Actor rdfs:label "Actor"@nl.
         skoslex:Object rdfs:label "Object"@nl.
         skoslex:Agent rdfs:label "Agent"@nl.
+        skoslex:Record rdfs:label "Record"@ nl.
         dcat:Dataset rdfs:label "Dataset"@nl.
         skosthes:broaderGeneric rdfs:label "specialisatie van"@nl.
         skosthes:narrowerGeneric rdfs:label "generalisatie van"@nl.
@@ -72,7 +73,7 @@ GRAPH config:Theatre {
               select ?o (concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png") as ?oimg)
               where {
                 ?o a ?olextype
-                FILTER (?olextype = skoslex:Actor || ?olextype = skoslex:Agent || ?olextype = skoslex:Object || ?olextype = skoslex:Act || ?lextype = skoslex:Record)
+                FILTER (?olextype = skoslex:Actor || ?olextype = skoslex:Agent || ?olextype = skoslex:Object || ?olextype = skoslex:Act || ?olextype = skoslex:Record)
               }
             }
           }
@@ -87,7 +88,7 @@ GRAPH config:Theatre {
               select ?s (concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png") as ?simg)
               where {
                 ?s a ?slextype
-                FILTER (?slextype = skoslex:Actor || ?slextype = skoslex:Agent || ?slextype = skoslex:Object || ?slextype = skoslex:Act || ?lextype = skoslex:Record)
+                FILTER (?slextype = skoslex:Actor || ?slextype = skoslex:Agent || ?slextype = skoslex:Object || ?slextype = skoslex:Act || ?slextype = skoslex:Record)
               }
             }
           }
