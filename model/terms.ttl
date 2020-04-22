@@ -25,6 +25,14 @@ zvgmodel:object a sh:PropertyShape;
   sh:path skoslex:object;
   sh:name "skoslex:object";
 .
+zvgmodel:record a sh:PropertyShape;
+  sh:path skoslex:record;
+  sh:name "skoslex:record";
+.
+zvgmodel:isAbout a sh:PropertyShape;
+  sh:path skoslex:isAbout;
+  sh:name "skoslex:isAbout";
+.
 
 # DCTERMS
 zvgmodel:source a sh:PropertyShape;
