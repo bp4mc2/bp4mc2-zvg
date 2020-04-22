@@ -144,7 +144,7 @@ mak:RechercheKoop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Makelaar;
 	skoslex:object zv:Persoon;
 	skoslex:object mak:Woning;
-	skoslex:object bel:Overdrachtsbelasting;
+	skoslex:object zv:Overdrachtsbelasting;
 .
 mak:RechercheTaxatie a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche taxatie"@nl;
@@ -284,7 +284,7 @@ mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
         skoslex:isAbout not:Notariskosten;
         skoslex:isAbout fin:Overbruggingslening;
         skoslex:isAbout not:Overdracht;
-        skoslex:isAbout bel:Overdrachtsbelasting;
+        skoslex:isAbout zv:Overdrachtsbelasting;
         skoslex:isAbout not:WetOpBelastingVanRechtsverkeerArtikel13;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
