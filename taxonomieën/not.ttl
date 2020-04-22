@@ -111,8 +111,8 @@ not:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:comment "Aangifte voor de verschuldigde overdrachtsbelasting bij de belastingdienst.";
         skos:editorialNote "Gebeurt gelijktijdig met het registreren van de overdrachtsbelasting.";
         skoslex:actor not:Notaris;
-        skoslex:object bel:Overdrachtsbelasting;
-        skoslex:object bel:RegisterBelastingdienst;
+        skoslex:object zv:Overdrachtsbelasting;
+        skoslex:object zv:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 #ArchiverenAkte of ArchiverenNOT?
@@ -310,8 +310,8 @@ not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:comment "Vastleggen van de overdrachtsbelasting bij de Belastingdienst.";
         skos:editorialNote "Gebeurt gelijktijdig met het registreren van de aangifte van de overdrachtsbelasting.";
         skoslex:actor not:Notaris;
-        skoslex:object bel:Overdrachtsbelasting;
-        skoslex:object bel:RegisterBelastingdienst;
+        skoslex:object zv:Overdrachtsbelasting;
+        skoslex:object zv:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
@@ -329,7 +329,7 @@ not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
         skoslex:actor not:Notaris;
         skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
-        skoslex:object bel:RegisterBelastingdienst;
+        skoslex:object zv:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 	skosthes:broaderPartitive not:RegistrerenAkteRegistratiewet1970;
 .
@@ -340,7 +340,7 @@ not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
         skoslex:actor not:Notaris;
         skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
-        skoslex:object bel:RegisterBelastingdienst;
+        skoslex:object zv:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 	skosthes:broaderPartitive not:RegistrerenAkteRegistratiewet1970;
 .
@@ -497,7 +497,7 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	rdfs:comment "De waarde waarover het tarief van de overdrachtsbelasting wordt berekend.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
         skosthes:broaderPartitive not:NotarieleAkte;
-        skosthes:broaderPartitive bel:Overdrachtsbelasting;
+        skosthes:broaderPartitive zv:Overdrachtsbelasting;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Object;
 	rdfs:label "Hypotheekakte"@nl;
