@@ -200,11 +200,11 @@ mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 5 van de model koopovereenkomst.";
-        skoslex:isAbout not:Bankgarantie;
+        skoslex:isAbout fin:Bankgarantie;
         skoslex:isAbout zv:Faillissement;
         skoslex:isAbout mak:Financieringsvoorbehoud;
         skoslex:isAbout mak:Schuldsaneringsregeling;
-        skoslex:isAbout not:Waarborgsom;
+        skoslex:isAbout fin:Waarborgsom;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelBetaling a skos:Concept, skoslex:Record;
