@@ -113,11 +113,12 @@ kad:Beslag a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FBeslag>;
 .
-kad:Bezwaard a skos:Concept, skoslex:Object;#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.
+kad:Bezwaard a skos:Concept, skoslex:Object;
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
 	skos:altLabel "Beperkt recht";
-	skosthes:exactMatch kad:BeperktRecht;
+	skos:semanticRelation kad:BeperktRecht;
+	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
 .
 kad:Canon a skos:Concept, skoslex:Object;
 	rdfs:label "Canon"@nl;
@@ -208,7 +209,7 @@ kad:KadastraalObject a skos:Concept, skoslex:Object;
 	skos:prefLabel "Kadastraal object";
 	skos:definition "Een Kadastraal object is een goed waarvoor bij overdracht of vestiging van rechten inschrijving in de openbare registers van het Kadaster is vereist. Een kadastraal object is een Onroerende zaak of een Teboekgestelde zaak.";
 	rdfs:comment "Kadastraal object is een goed dat geregistreerd moet worden bij het Kadaster.";
-        skos:closeMatch kad:Perceel;
+  skosthes:narrowerGeneric kad:Perceel;
 .
 kad:Kettingbeding a skos:Concept, skoslex:Object;
 	rdfs:label "Kettingbeding"@nl;
@@ -235,8 +236,9 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 kad:OpgegevenGrootte a skos:Concept, skoslex:Object;
 	rdfs:label "Opgegeven grootte"@nl;
 	skos:prefLabel "Opgegeven grootte";
-	skos:closeMatch kad:Grootte;
-	skos:closeMatch kad:WerkelijkeGrootte;
+	skos:broaderGeneric kad:Grootte;
+#	skos:closeMatch kad:WerkelijkeGrootte;
+			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skosthes:broaderPartitive kad:Perceel;
 .
 kad:Optierecht a skos:Concept, skoslex:Object;
@@ -312,7 +314,7 @@ kad:Wegneemrecht a skos:Concept, skoslex:Object;
 kad:WerkelijkeGrootte a skos:Concept, skoslex:Object;
 	rdfs:label "Werkelijke grootte"@nl;
 	skos:prefLabel "Werkelijke grootte";
-	skos:closeMatch kad:Grootte;
+	skosthes:broaderGeneric kad:Grootte;
 	skosthes:broaderPartitive kad:Perceel;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
