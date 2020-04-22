@@ -85,6 +85,16 @@ zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 .
 #--
 #Acts
+zv:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
+	rdfs:label "Aangifte overdrachtsbelasting"@nl;
+	skos:prefLabel "Aangifte overdrachtsbelasting";
+	skos:definition "Aangifte voor de verschuldigde overdrachtsbelasting bij de belastingdienst.";
+        skos:editorialNote "Gebeurt gelijktijdig met het registreren van de overdrachtsbelasting.";
+        skoslex:actor not:Notaris;
+        skoslex:object zv:Overdrachtsbelasting;
+        skoslex:object zv:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+.
 zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 	rdfs:label "Aan- of verkoop van een huis"@nl;
 	skos:prefLabel "Aan- of verkoop van een huis"@nl;
@@ -131,6 +141,12 @@ zv:Identiteitsdocument a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
 	skos:editorialNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
 .
+zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+	rdfs:label "Faillissement"@nl;
+	skos:prefLabel "Faillissement";
+	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
+	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
+.
 zv:Overdrachtsbelasting a skos:Concept, skoslex:Object;#Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Overdrachtsbelasting";
 	skos:prefLabel "Overdrachtsbelasting";
@@ -138,6 +154,11 @@ zv:Overdrachtsbelasting a skos:Concept, skoslex:Object;#Begrip hoort thuis in ee
 	rdfs:comment "De overdrachtsbelasting is de belasting die de koper van een onroerende zaak moet betalen aan de belastingdienst.";
 	dcterms:source <http://.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
 	skosthes:broaderPartitive not:Leveringsakte;
+.
+zv:NederlandsRecht a skos:Concept, skoslex:Object;
+	rdfs:label "Nederlands recht"@nl;
+	skos:prefLabel "Nederlands recht";
+	skos:definition "Het geheel van wettelijke regels die gelden in Nederland. Deze regels zijn met name te vinden in wetten, verdragen en rechtspraak. Het Nederlands recht is van toepassing op ingezetenen en iedereen die zich in het Koninkrijk bevindt.";
 .
 zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Register Belastingdienst";
