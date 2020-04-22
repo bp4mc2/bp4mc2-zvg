@@ -201,7 +201,7 @@ mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 5 van de model koopovereenkomst.";
         skoslex:isAbout not:Bankgarantie;
-        skoslex:isAbout mak:Faillissement;
+        skoslex:isAbout zv:Faillissement;
         skoslex:isAbout mak:Financieringsvoorbehoud;
         skoslex:isAbout mak:Schuldsaneringsregeling;
         skoslex:isAbout not:Waarborgsom;
@@ -294,7 +294,7 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 18 van de model koopovereenkomst.";
-        skoslex:isAbout not:NederlandsRecht;
+        skoslex:isAbout zv:NederlandsRecht;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Record;
