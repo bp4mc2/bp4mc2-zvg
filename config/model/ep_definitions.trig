@@ -1,0 +1,30 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:MissingDefinitionsEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/definitions";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:MissingDefinitions;
+  .
+
+  config:MissingDefinitions a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:MissingDefinitionsData;
+    elmo:appearance config:MissingDefinitionsAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:MissingDefinitionsAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "g";
+      rdfs:label "Begrippenkader"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "begrip";
+      rdfs:label "Begrip"@nl;
+    ];
+  .
+
+}
