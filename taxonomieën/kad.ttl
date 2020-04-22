@@ -236,7 +236,7 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 kad:OpgegevenGrootte a skos:Concept, skoslex:Object;
 	rdfs:label "Opgegeven grootte"@nl;
 	skos:prefLabel "Opgegeven grootte";
-	skos:broaderGeneric kad:Grootte;
+	skosthes:broaderGeneric kad:Grootte;
 #	skos:closeMatch kad:WerkelijkeGrootte;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skosthes:broaderPartitive kad:Perceel;
