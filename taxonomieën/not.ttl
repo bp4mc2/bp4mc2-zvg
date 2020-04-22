@@ -376,7 +376,7 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	rdfs:comment "Controle van de notaris op de waarborgsom.";
         skos:editorialNote "Wellicht iets breder formuleren, de notaris is ook beheerder van de waarborgsom. Dit doet de notaris in zijn hoedanigheid van ‘trusted third party’, net zoals het bewaren van de koopsom.";
 	skoslex:actor not:Notaris;
-	skoslex:object not:Waarborgsom;
+	skoslex:object fin:Waarborgsom;
 	skoslex:object not:Kwaliteitsrekening;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
@@ -437,13 +437,6 @@ not:AuthentiekeAkte a skos:Concept, skoslex:Object;
 	rdfs:comment "Authentieke akten zijn akten opgesteld door een ambtenaar (zoals de notaris).";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
 	skosthes:broaderGeneric not:Akte;
-.
-not:Bankgarantie a skos:Concept, skoslex:Object;
-	rdfs:label "Bankgarantie"@nl;
-	skos:prefLabel "Bankgarantie";
-	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
-	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
-        skos:semanticRelation not:Waarborgsom;
 .
 not:Bestemmingsplan a skos:Concept, skoslex:Object;
 	rdfs:label "Bestemmingsplan"@nl;
@@ -619,15 +612,6 @@ not:OnroerendeZaak a skos:Concept, skoslex:Object;
         skosthes:exactMatch kad:KadastraalObject;
 	skosthes:broaderPartitive not:Leveringsakte;
 .
-not:Opslagbedrag a skos:Concept, skoslex:Object;
-	rdfs:label "Opslagbedrag"@nl;
-	skos:prefLabel "Opslagbedrag";
-	skos:definition "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld.";
-	rdfs:comment "Het bedrag dat een hypotheeknemer - naast het inschrijvingsbedrag - op basis van de hypotheekakte maximaal mag opeisen als gevolg van niet betaalde rentes, boetes en kosten.";
-        skosthes:broaderPartitive not:TotaalbedragInschrijving;
-	skosthes:broaderPartitive not:RechtVanHypotheek;
-	skosthes:broaderPartitive not:Hypotheekakte;
-.
 not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	rdfs:label "Plaats van vestiging"@nl;
 	skos:prefLabel "Plaats van vestiging";
@@ -719,14 +703,6 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	skosthes:broaderPartitive not:NotarieleVolmacht;
 #Relaties toe te voegen. Mogelijk aan comparant, aan actoren.
-.
-not:Waarborgsom a skos:Concept, skoslex:Object;
-	rdfs:label "Waarborgsom"@nl;
-	skos:prefLabel "Waarborgsom";
-	skos:altLabel "Bankgarantie";
-	skos:altLabel "Zekerheid";
-	skos:definition "Een waarborgsom is de mogelijke zekerheidsstelling bij een koop van een (bestaande) woning voor de verkoper totdat de koper zijn of haar verplichtingen is nagekomen, waarbij de koper een bedrag (tot 10 procent van de afgesproken koopsom) overmaakt aan de notaris.";
-	rdfs:comment "Bedrag dat de koper van een goed stort op de rekening van een notaris als zekerheid voor de verkoper.";
 .
 not:WetBodembeschermingArtikel55 a skos:Concept, skoslex:Record;
 	rdfs:label "Wet bodembescherming, artikel 55"@nl;
