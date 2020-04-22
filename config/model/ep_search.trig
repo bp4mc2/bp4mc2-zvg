@@ -1,0 +1,34 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:SearchEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/query/search";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Search;
+  .
+
+  config:Search a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:SearchData;
+    elmo:appearance config:SearchAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:SearchAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "g";
+      rdfs:label "Begrippenkader"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "begrip";
+      rdfs:label "Begrip"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "type";
+      rdfs:label "Type"@nl;
+    ]
+  .
+
+}
