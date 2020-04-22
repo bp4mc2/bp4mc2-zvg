@@ -104,17 +104,6 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
 .
 #--
 #Acts
-not:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
-	rdfs:label "Aangifte overdrachtsbelasting"@nl;
-	skos:prefLabel "Aangifte overdrachtsbelasting";
-	skos:definition "Aangifte voor de verschuldigde overdrachtsbelasting bij de belastingdienst.";
-	rdfs:comment "Aangifte voor de verschuldigde overdrachtsbelasting bij de belastingdienst.";
-        skos:editorialNote "Gebeurt gelijktijdig met het registreren van de overdrachtsbelasting.";
-        skoslex:actor not:Notaris;
-        skoslex:object zv:Overdrachtsbelasting;
-        skoslex:object zv:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-.
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
@@ -566,10 +555,6 @@ not:Minuut a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1>;
         skosthes:broaderGeneric not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
-.
-not:NederlandsRecht a skos:Concept, skoslex:Object;
-	rdfs:label "Nederlands recht"@nl;
-	skos:prefLabel "Nederlands recht";
 .
 not:NotarieleAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële akte"@nl;
