@@ -447,7 +447,7 @@ mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 	skos:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
 	rdfs:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
 .
-mak:Koopovereenkomst a skos:Concept, skoslex:Object;
+mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Koopovereenkomst"@nl;
 	skos:prefLabel "Koopovereenkomst";
 	skos:altLabel "Koopocontract";
@@ -460,7 +460,7 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Object;
 mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
 	skos:prefLabel "Ondergetekenden";
-	#skos:definition "";
+	skos:definition "De personen die de koopvoereenkomst hebben ondertekend";
 	#rdfs:comment "";
         skosthes:broaderPartitive mak:Koopovereenkomst;
         skoslex:isAbout mak:Koper;
@@ -493,6 +493,7 @@ mak:Verontreiniging a skos:Concept, skoslex:Object;
 mak:Woning a skos:Concept, skoslex:Object;
 	skos:exactMatch zv:Huis;
 	rdfs:label "Woning"@nl;
+	skos:definition "Een (deel van) een gebouw, bestemd voor bewoning.";
 .
 mak:ZichtbareEnOnzichtbareGebreken a skos:Concept, skoslex:Object;
 	rdfs:label "Zichtbare en onzichtbare gebreken"@nl;
