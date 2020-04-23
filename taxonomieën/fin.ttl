@@ -69,6 +69,7 @@ fin:Schuldenaar a skos:Concept, skoslex:Actor;
 fin:Aflossen a skos:Concept, skoslex:Act;
 	rdfs:label "Aflossen"@nl;
 	skos:prefLabel "Aflossen";
+	skos:definition "Periodiek te betalen bedrag voor een lening. Het terugbetalen van een schuld.";
 .
 fin:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Identificatie hypotheekadvies"@nl;
@@ -86,7 +87,7 @@ fin:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:object fin:BindendeOfferte;
 	skoslex:object fin:Hypotheekadvies;
-	skoslex:object mak:Koopovereenkomst;
+	skoslex:record mak:Koopovereenkomst;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
@@ -96,7 +97,7 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:agent fin:Hypotheekadviseur;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:object fin:Hypotheekadvies;
-	skoslex:object mak:Koopovereenkomst;
+	skoslex:record mak:Koopovereenkomst;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 #--
@@ -138,7 +139,7 @@ fin:Opslagbedrag a skos:Concept, skoslex:Object;
 	skos:prefLabel "Opslagbedrag";
 	skos:definition "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld.";
 	rdfs:comment "Het bedrag dat een hypotheeknemer - naast het inschrijvingsbedrag - op basis van de hypotheekakte maximaal mag opeisen als gevolg van niet betaalde rentes, boetes en kosten.";
-        skosthes:broaderPartitive not:TotaalbedragInschrijving;
+        skosthes:broaderPartitive kad:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
