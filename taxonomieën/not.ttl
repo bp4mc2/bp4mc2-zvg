@@ -41,26 +41,18 @@
 
 #Burgerlijk Wetboek (BW)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1> rdfs:label "artikel 3, eerste lid, van Boek 3 van het Burgerlijk Wetboek".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60> rdfs:label "artikel 60 van Boek 3 van het Burgerlijk Wetboek".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83> rdfs:label "artikel 83 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84> rdfs:label "artikel 84 van Boek 3 van het Burgerlijk Wetboek".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89> rdfs:label "artikel 89 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4> rdfs:label "artikel 89, vierde lid, van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "artikel 227 van Boek 3 van het Burgerlijk Wetboek".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 van Boek 7 van het Burgerlijk Wetboek".
 
 #Registratieweg
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
 
-#Wet bodembescherming
-<http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55> rdfs:label "artikel 55 van de Wet bodembescherming".
-
 #Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13> rdfs:label "artikel 13 van de Wet op belastingen van rechtsverkeer".
 
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -187,7 +179,7 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
 	skoslex:object not:TitelVanAankomst;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
-not:Levering a skos:Concept, skoslex:Act;
+not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als die van Notaris. Voor beiden is wat te zeggen. De mening van de KNB is dat deze meer thuishoort in het domein van de notaris, vanwege de rol die de notaris bij de levering inneemt.
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
 	skos:prefLabel "Levering";
 	skos:altLabel "Leveren";
@@ -198,10 +190,10 @@ not:Levering a skos:Concept, skoslex:Act;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
-	skoslex:actor not:Rechthebbende;
+	skoslex:actor kad:Rechthebbende;
 	skoslex:agent not:Notaris;
-	skoslex:object not:Leveringsakte;
-        skos:semanticRelation not:Overdracht;
+	skoslex:object kad:Leveringsakte;
+        skos:semanticRelation kad:Overdracht;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
@@ -228,17 +220,6 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object not:Leveringsakte;
 	skosthes:broaderPartitive not:OpstellenAkte;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-.
-not:Overdracht a skos:Concept, skoslex:Act;
-	rdfs:label "Overdracht"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'overdracht' beter herkenbaar is bij de koopovereenkomst dan 'overdragen'.
-	skos:prefLabel "Overdracht";
-	skos:altLabel "Overdragen";
-	skos:altLabel "Transport";
-	skos:definition "Voor overdracht van een goed wordt vereist een levering krachtens geldige titel, verricht door hem die bevoegd is over het goed te beschikken.";
-	rdfs:comment "Bij overdracht geeft iemand de eigendom van zijn goed aan een ander, die de eigendom van dat goed wil ontvangen. Een overdracht is pas geldig als de eigenaar bevoegd is de eigendom over te dragen en de ontvanger het goed vervolgens kan gebruiken.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
@@ -272,8 +253,8 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:object not:Hypotheekakte;
 	skoslex:object not:RechtVanHypotheek;
-        skoslex:object not:OnroerendeZaak;
-        skoslex:object not:Onderpand;
+        skoslex:object kad:OnroerendeZaak;
+        skoslex:object kad:Onderpand;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
         skosthes:broaderPartitive not:Passeren;
 .
@@ -287,7 +268,7 @@ not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:object not:Leveringsakte;
-        skoslex:object not:OnroerendeZaak;
+        skoslex:object kad:OnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
         skosthes:broaderPartitive not:Passeren;
 .
@@ -364,7 +345,7 @@ not:RechercheAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:TitelVanAankomst;
 	skoslex:actor not:Notaris;
-	skoslex:object not:OnroerendeZaak;
+	skoslex:object kad:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 	skosthes:broaderPartitive not:RechercheNotaris;
@@ -401,8 +382,8 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
 	skoslex:object not:Hypotheekakte;
-	skoslex:object not:OnroerendeZaak;
-	skoslex:object not:Onderpand;
+	skoslex:object kad:OnroerendeZaak;
+	skoslex:object kad:Onderpand;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
@@ -438,12 +419,6 @@ not:AuthentiekeAkte a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
 	skosthes:broaderGeneric not:Akte;
 .
-not:Bestemmingsplan a skos:Concept, skoslex:Object;
-	rdfs:label "Bestemmingsplan"@nl;
-	skos:prefLabel "Bestemmingsplan";
-	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
-	rdfs:comment "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
-.
 not:Comparant a skos:Concept, skoslex:Object;
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant";
@@ -463,14 +438,6 @@ not:Comparitie a skos:Concept, skoslex:Record;#Hens Meengs van KNB geeft aan dat
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
         skosthes:broaderPartitive not:NotarieleAkte;
 .
-not:GemeentelijkeVerordening a skos:Concept, skoslex:Object;
-	rdfs:label "Gemeentelijke verordening"@nl;
-	skos:prefLabel "Gemeentelijke verordening";
-	skos:definition "Een gemeentelijke verordening is een op gemeentelijk niveau vastgesteld algemeen verbindend voorschrift.";
-	rdfs:comment "Wetgevende regeling op gemeentelijk niveau.";
-	skos:editorialNote "De belangrijkste en meest omvattende gemeentelijke verordening in een bepaalde gemeente wordt in Nederland vaak aangeduid als Algemene Plaatselijke Verordening (afkorting APV, vroeger Algemene Politie Verordening).";
-        skosthes:narrowerPartitive kad:GemeentelijkMonument;
-.
 not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Grondslagwaarde"@nl;
 	skos:prefLabel "Grondslagwaarde";
@@ -489,16 +456,6 @@ not:Hypotheekakte a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:NotarieleAkte;
-.
-not:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
-	rdfs:label "Inschrijvingsbedrag"@nl;
-	skos:prefLabel "Inschrijvingsbedrag";
-	skos:definition "De hypotheeknemer mag niet meer, met voorrang op andere schuldeisers van de hypotheekgever, dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
-	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
-        rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
-        skosthes:broaderPartitive not:TotaalbedragInschrijving;
-	skosthes:broaderPartitive not:RechtVanHypotheek;
-	skosthes:broaderPartitive not:Hypotheekakte;
 .
 not:Kadasterkosten a skos:Concept, skoslex:Object;#Mogelijk splitsen in een variant voor levering en hypotheek
 	rdfs:label "Kadasterkosten"@nl;
@@ -571,7 +528,7 @@ not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	rdfs:comment "Een volmacht die bij een (authentieke) notariële akte is verleend.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	skosthes:broaderPartitive not:NotarieleAkte;
-#Relaties toe te voegen. Mogelijk aan notaris.
+        #Mogelijk relaties toevoegen. Wellicht aan notaris.
 .
 not:OnderhandseAkte a skos:Concept, skoslex:Object;
 	rdfs:label "Onderhandse akte"@nl;
@@ -584,17 +541,6 @@ not:OnderhandseAkte a skos:Concept, skoslex:Object;
 not:Ongevorderd a skos:Concept, skoslex:Object;
 	rdfs:label "Ongevorderd"@nl;
 	skos:prefLabel "Ongevorderd";
-.
-#Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
-#Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
-not:Onderpand a skos:Concept, skoslex:Object;
-	rdfs:label "Onderpand"@nl;
-	skos:prefLabel "Onderpand";
-	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
-	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
-	skos:semanticRelation not:RechtVanHypotheek;
-	skos:semanticRelation not:OnroerendeZaak;
 .
 #Goederen bestaan uit zaken en vermogensrechten.” Zaken kunnen vervolgens weer onderverdeeld worden in roerende zaken en onroerende zaken. Deze objecten kunnen in een later stadium worden toegevoegd.
 not:OnroerendeZaak a skos:Concept, skoslex:Object;
@@ -620,31 +566,6 @@ not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
         skos:editorialNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
 	skos:closeMatch not:Notaris;#Ik twijfel of de meest passende relatie is gelegd met notaris. Wel wordt er in dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.
-.
-not:ProvincialeVerordening a skos:Concept, skoslex:Object;
-	rdfs:label "Provinciale verordening"@nl;
-	skos:prefLabel "Provinciale verordening";
-	skos:definition " Algemeen verbindende voorschriften, vastgesteld door provinciale staten van een provincie of vastgesteld via delegatie of attributie aan gedeputeerde staten of een commissie of de commissaris van de Koningin.";
-	rdfs:comment "Wetgevende regeling op provinciaal niveau.";
-        skosthes:narrowerPartitive kad:ProvinciaalMonument;
-.
-not:Rang a skos:Concept, skoslex:Object;
-	rdfs:label "Rang"@nl;
-	skos:prefLabel "Rang";
-	skos:altLabel "Rangorde van inschrijvingen";
-	skos:definition "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand. ";
-	rdfs:comment "De plek die een hypotheeknemer heeft ten opzichte van andere hypotheeknemers als de hypotheekgever zijn financiële verplichtingen niet nakomt.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
-	skosthes:broaderPartitive not:RechtVanHypotheek;
-        skosthes:closeMatch not:Onderpand;
-.
-not:Rechthebbende a skos:Concept, skoslex:Actor;
-	rdfs:label "Rechthebbende"@nl;
-	skos:prefLabel "Rechthebbende";
-	skos:definition "De persoon aan wie een zaak, goed of recht toebehoort.";
-	rdfs:comment "Een rechthebbende is een (niet) natuurlijk  persoon die met uitsluiting van anderen een zaak mag gebruiken. De rechthebbende van de eigendom van een zaak wordt eigenaar genoemd.";
-        skosthes:broaderPartitive kad:ZakelijkRecht;
-        #Relateren aan vervreemder en verkrijger?
 .
 not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Recht van hypotheek"@nl;
@@ -681,15 +602,6 @@ not:TitelVanAankomst a skos:Concept, skoslex:Object;
         skosthes:narrowerPartitive not:Titel;
         #Onderdeel van titel van aankomst is datumdeel/nr dat Kadaster levert na inschrijving in register. Dit moet hier nog bij.
 .
-not:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
-	rdfs:label "Totaalbedrag van de inschrijving"@nl;
-	skos:prefLabel "Totaalbedrag van de inschrijving";
-	skos:definition "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
-	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
-	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
-	skosthes:broaderPartitive not:RechtVanHypotheek;
-	skosthes:broaderPartitive not:Hypotheekakte;
-.
 not:VanRechtswegeOntbonden a skos:Concept, skoslex:Object;
 	rdfs:label "Van rechtswege ontbonden"@nl;
 	skos:prefLabel "Van rechtswege ontbonden";
@@ -702,15 +614,5 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem bepaalde verklaringen af te geven. De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	skosthes:broaderPartitive not:NotarieleVolmacht;
-#Relaties toe te voegen. Mogelijk aan comparant, aan actoren.
-.
-not:WetBodembeschermingArtikel55 a skos:Concept, skoslex:Record;
-	rdfs:label "Wet bodembescherming, artikel 55"@nl;
-	skos:prefLabel "Wet bodembescherming, artikel 55";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
-.
-not:WetOpBelastingVanRechtsverkeerArtikel13 a skos:Concept, skoslex:Record;
-	rdfs:label "Wet op belasting van rechtsverkeer, artikel 13"@nl;
-	skos:prefLabel "Wet op belasting van rechtsverkeer, artikel 13";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
+        #Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .
