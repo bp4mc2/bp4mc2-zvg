@@ -445,12 +445,6 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
         skosthes:broaderGeneric not:OnderhandseAkte;
 .
-mak:KwalitatieveRechten a skos:Concept, skoslex:Object;
-	rdfs:label "Kwalitatieve rechten"@nl;
-	skos:prefLabel "Kwalitatieve rechten";
-	skos:definition "Staat een uit een overeenkomst voortvloeiende, voor overgang vatbaar recht in een zodanig verband met een aan de schuldeiser toebehorend goed, dat hij bij dat recht slechts belang heeft, zolang hij het goed behoudt, dan gaat dat recht over op degene die dat goed onder bijzondere titel verkrijgt.";
-	rdfs:comment "Een voor overgang vatbaar recht van verkoper gaat automatisch bij de overdracht van de onroerende zaak over op de koper. Het is een recht dat samenhangt met de onroerende zaak.";
-.
 mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
 	skos:prefLabel "Ondergetekenden";
