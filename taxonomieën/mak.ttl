@@ -22,8 +22,17 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
+#Burgerlijk wetboek
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "Artikel 1, Burgerlijk wetboek, boek 7".
 
+#Erfgoedwet
+<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1> rdfs:label "artikel 9.1, eerste lid, van de Erfgoedwet".
+
+#Wet op belasting van rechtsverkeer (WBR)
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13> rdfs:label "artikel 13 van de Wet op belastingen van rechtsverkeer".
+
+#Wet bodembescherming
+<http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55> rdfs:label "artikel 55 van de Wet bodembescherming".
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
 #--
 #Actors and Agents
@@ -224,8 +233,8 @@ mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 4 van de model koopovereenkomst.";
         skosthes:narrowerPartitive mak:ArtikelEigendomsoverdrachtLid1;
-        skosthes:narrowerPartitive not:ArtikelEigendomsoverdrachtLid2;
-        skosthes:narrowerPartitive not:ArtikelEigendomsoverdrachtLid3;
+        skosthes:narrowerPartitive mak:ArtikelEigendomsoverdrachtLid2;
+        skosthes:narrowerPartitive mak:ArtikelEigendomsoverdrachtLid3;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
@@ -352,6 +361,8 @@ mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	skos:altLabel "Artikel: Inschrijving in de de openbare registers";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:editorialNote "Dit artikel kan verwijzingen bevatten naar de hier genoemde wetsartikelen.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 	skos:scopeNote "Is artikel 13 van de model koopovereenkomst.";
         skoslex:isAbout kad:OpenbareRegisters;
         skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -361,16 +372,18 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
 	#skos:definition ".";
 	#rdfs:comment ".";
+	skos:editorialNote "Dit artikel kan verwijzingen bevatten naar de hier genoemde wetsartikelen.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
 	skos:scopeNote "Is artikel 6 van de model koopovereenkomst.";
 	skoslex:isAbout mak:Aanspraak;
         skoslex:isAbout mak:Asbest;
 	skoslex:isAbout kad:BeschermdStadsDorpsgezicht;
-	skoslex:isAbout not:Bestemmingsplan;
+	skoslex:isAbout kad:Bestemmingsplan;
         skoslex:isAbout kad:BijzondereLasten;
 	skoslex:isAbout kad:Eigendomsrecht;
-	skoslex:isAbout kad:ErfgoedwetArtikel9punt1Lid1;
         skoslex:isAbout kad:GemeentelijkMonument;
-	skoslex:isAbout not:GemeentelijkeVerordening;
+	skoslex:isAbout kad:GemeentelijkeVerordening;
         skoslex:isAbout kad:HeersendeErfdienstbaarheid;
 	skoslex:isAbout kad:Kettingbeding;
 	skoslex:isAbout mak:KwalitatieveRechten;
@@ -380,7 +393,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
         skoslex:isAbout kad:OpgegevenGrootte;
         skoslex:isAbout kad:Optierecht;
         skoslex:isAbout kad:ProvinciaalMonument;
-        skoslex:isAbout not:ProvincialeVerordening;
+        skoslex:isAbout kad:ProvincialeVerordening;
         skoslex:isAbout kad:PubliekrechtelijkeBeperking;
         skoslex:isAbout kad:RijksmonumentInDeZinVanDeErfgoedwet;
         skoslex:isAbout mak:Schoning;
@@ -389,7 +402,6 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
         skoslex:isAbout kad:Wederinkoop;
         skoslex:isAbout kad:WerkelijkeGrootte;
         skoslex:isAbout kad:Wegneemrecht;
-        skoslex:isAbout not:WetBodembeschermingArtikel55;
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
