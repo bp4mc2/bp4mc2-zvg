@@ -47,6 +47,13 @@
 
 #Kadasterwet
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Kadasterwet".
+
+#--
+#Basisregistratie links
+#Test of dit werkt.
+#--
+<https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FBeslag> rdfs:label "Beslag".
+
 #---
 #begrippen uit de Kadaster taxonomie
 #---
@@ -163,7 +170,7 @@ kad:Canon a skos:Concept, skoslex:Object;
 	rdfs:comment "Erfpachtcanon is het bedrag dat een erfpachter moet betalen aan de eigenaar van een stuk grond omdat hij zijn grond gebruikt.";
 	rdfs:comment "Het canon is een verplichting aan de erfpachter om de eigenaar op al dan niet regelmatig terugkerende tijdstippen een geldsom te betalen. Deze verplichting wordt opgelegd in de akte van levering.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
-	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfpachtcanon>;
+	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfpachtcanon>;
         skosthes:broaderPartitive kad:RechtVanErfpacht;
 .
 kad:Eigendomsrecht a skos:Concept, skoslex:Object;
@@ -174,7 +181,7 @@ kad:Eigendomsrecht a skos:Concept, skoslex:Object;
 	rdfs:comment "Eigendom is het meest omvattende recht dat iemand of een organisatie op een zaak kan hebben.";
         skos:scopeNote "Het staat de eigenaar met uitsluiting van een ieder vrij van de zaak gebruik te maken, mits dit gebruik niet strijdt met rechten van anderen en de op wettelijke voorschriften en regels van ongeschreven recht gegronde beperkingen daarbij in acht worden genomen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1>;
-	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FEigendom>;
+	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FEigendom>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 kad:Erfpachtvoorwaarden a skos:Concept, skoslex:Object;
@@ -189,7 +196,7 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	skos:definition "Een erfdienstbaarheid is een last, waarmede een onroerende zaak - het dienende erf - ten behoeve van een andere onroerende zaak - het heersende erf - is bezwaard.";
 	rdfs:comment "Een erfdienstbaarheid is een recht dat de ene eigenaar van een perceel heeft op de andere eigenaar van een perceel. Het perceel waarvan de eigenaar iets mag, heet het heersende erf; het perceel grond waarvan de eigenaar iets moet toestaan heet het dienende erf.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70>;
-        dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfdienstbaarheid>;
+        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfdienstbaarheid>;
         skosthes:broaderGeneric kad:BeperktRecht;
         skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
         skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
@@ -214,7 +221,7 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	rdfs:comment "Een gemeentelijk monument is een gebouw dat volgens een gemeente zo waardevol is dat het beschermd moet worden.";
         skos:scopeNote "Een monument is een gebouw met cultuurhistorische of wetenschappelijke waarde. In Nederland zijn er verschillende typen monumenten: rijksmonumenten, provinciale monumenten, gemeentelijke monumenten en beschermde stadsgezichten of dorpsgezichten. Als een gebouw van plaatselijk of regionaal belang is, kan de gemeente het op de gemeentelijke monumentenlijst zetten. De gemeente kan monumenten zelf, of op verzoek van een belanghebbende, aanwijzen. De gemeentelijke monumentencommissie geeft hierover een advies.Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een gemeente besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-        dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FGemeentelijk_monument>;
+        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FGemeentelijk_monument>;
 .
 kad:Grootte a skos:Concept, skoslex:Object;
 	rdfs:label "Grootte"@nl;
@@ -222,7 +229,7 @@ kad:Grootte a skos:Concept, skoslex:Object;
 	skos:altLabel "Kadastergrootte";
 	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
-        dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
+        #dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
         skosthes:broaderPartitive kad:Perceel;
 .
 kad:HeersendeErfdienstbaarheid a skos:Concept, skoslex:Object;
@@ -243,8 +250,8 @@ kad:Huurkoop a skos:Concept, skoslex:Object;
 	rdfs:comment "Huurkoop is dat koper en verkoper afspreken dat de koper een goed koopt op afbetaling. Dit betekent dat de koper een deel aanbetaalt en de rest van het bedrag in delen betaalt. Pas als de koper het hele bedrag heeft betaald, wordt hij eigenaar van het goed.";
         skos:scopeNote "Van een dergelijk feit kan aantekening worden gemaakt.";
         #http://wetten.overheid.nl/1.0:c:BWBR0006000&titel=A&afdeling=2&artikel=1576h
-        #artikel is vervallen
-        dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FHuurkoop>;
+        #Wetsartikel is vervallen
+        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FHuurkoop>;
         skosthes:broaderGeneric mak:Koopovereenkomst;
 .
 kad:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
@@ -252,8 +259,8 @@ kad:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
 	skos:prefLabel "Inschrijvingsbedrag";
 	skos:definition "De hypotheeknemer mag niet meer, met voorrang op andere schuldeisers van de hypotheekgever, dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
 	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
-    rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
-    skosthes:broaderPartitive kad:TotaalbedragInschrijving;
+	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
+	skosthes:broaderPartitive kad:TotaalbedragInschrijving;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
@@ -262,7 +269,7 @@ kad:KadastraalObject a skos:Concept, skoslex:Object;
 	skos:prefLabel "Kadastraal object";
 	skos:definition "Een Kadastraal object is een goed waarvoor bij overdracht of vestiging van rechten inschrijving in de openbare registers van het Kadaster is vereist. Een kadastraal object is een Onroerende zaak of een Teboekgestelde zaak.";
 	rdfs:comment "Kadastraal object is een goed dat geregistreerd moet worden bij het Kadaster.";
-  skosthes:narrowerGeneric kad:Perceel;
+	skosthes:narrowerGeneric kad:Perceel;
 .
 kad:Kettingbeding a skos:Concept, skoslex:Object;
 	rdfs:label "Kettingbeding"@nl;
@@ -313,7 +320,7 @@ kad:Optierecht a skos:Concept, skoslex:Object;
 	rdfs:comment "Een optierecht is het recht van de houder van een luchtvaartuig om dit vaartuig later te kopen en eigenaar te worden. Voordat hij eigenaar wordt, moet hij een afgesproken bedrag betalen of aan bepaalde voorwaarden voldoen. Hij moet altijd een koopovereenkomst ondertekenen. Het optierecht wordt geregeld via een akte bij de notaris. Daarin staat duidelijk om welk luchtvaartuig het gaat.";
         skos:scopeNote "Een optierecht is alleen mogelijk op een luchtvaartuig.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308>;
-        dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FOptierecht>;
+        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FOptierecht>;
         skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 kad:Perceel a skos:Concept, skoslex:Object;
@@ -322,7 +329,7 @@ kad:Perceel a skos:Concept, skoslex:Object;
 	skos:definition "Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.";
 	rdfs:comment "Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft. Het nummer is uniek binnen de sectie van de kadastrale gemeente waarin het perceel zich bevindt.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
-        dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPerceel>;
+        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPerceel>;
 .
 kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Provinciaal monument"@nl;
@@ -331,7 +338,7 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	rdfs:comment "Een provinciaal monument is een gebouw of ander bouwwerk dat volgens de provincie een monument is omdat het heel bijzonder is.";
         skos:scopeNote "Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een provincie besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-        dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FProvinciaal_monument>;
+        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FProvinciaal_monument>;
 .
 kad:ProvincialeVerordening a skos:Concept, skoslex:Object;
 	rdfs:label "Provinciale verordening"@nl;
@@ -346,7 +353,7 @@ kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
 	skos:definition "Een publiekrechtelijke beperking is een beperking van de bevoegdheid tot gebruik van of beschikking over een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen, niet zijnde een privaatrechtelijke beperking en/of een schuldplichtigheid die rust op een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen.";
 	rdfs:comment "Een publiekrechtelijke beperking is dat de overheid besluit dat iemand niet alles met een huis of stuk grond mag doen. Of niet alles mag doen met de rechten die hij heeft op een huis of stuk grond. Bij een publiekrechtelijke beperking gaat het niet om een beperking volgens het privaatrecht. Ook een schuld voor een huis kan geen publiekrechtelijke beperking zijn.";
 	skos:scopeNote "Onder een publiekrechtelijke beperking wordt verstaan iedere inbreuk op het recht van gebruik en beschikking van onroerende zaken, welke krachtens wet- of regelgeving door de overheid wordt gemaakt. Het zijn door de overheid opgelegde beperkingen. Deze beperkingen bepalen wat wel of niet met een stuk grond of gebouw mag gebeuren. Het aanwijzingsbesluit bevat een overzicht waaruit de verschillende publiekrechtelijke beperkingen gehaald kunnen worden. Hierbij gaat het om bijvoorbeeld: •beschermde monumenten; •beschermde leefomgeving (natuurmonumenten); •bodembescherming (verplichting tot registratie van verontreinigde grond); •maatregelen nodig voor de landsverdediging; •eisen die in het kader van de Woningwet worden gesteld, zoals middelen om bepaalde voorzieningen voor een pand af te kunnen dwingen.";
-	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPubliekrechtelijke_beperking>;
+	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPubliekrechtelijke_beperking>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
         skosthes:narrowerGeneric kad:BeperktRecht;
 .
