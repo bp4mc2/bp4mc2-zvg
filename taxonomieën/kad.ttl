@@ -26,6 +26,10 @@
 #--
 #Burgerlijk wetboek
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83> rdfs:label "artikel 83 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89> rdfs:label "artikel 89 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1> rdfs:label "artikel 1 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 van Boek 5 van het Burgerlijk Wetboek".
@@ -43,9 +47,6 @@
 
 #Kadasterwet
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Kadasterwet".
-
-#Erfgoedwet
-<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1> rdfs:label "artikel 9.1, eerste lid, van de Erfgoedwet".
 #---
 #begrippen uit de Kadaster taxonomie
 #---
@@ -54,6 +55,14 @@ kad:Bewaarder a skos:Concept, skoslex:Agent;
 	#skos:exactMatch brk:Bewaarder;
              #Weggehaald, want dit is een broken link
 	rdfs:label "Bewaarder"@nl;
+.
+kad:Rechthebbende a skos:Concept, skoslex:Actor;
+	rdfs:label "Rechthebbende"@nl;
+	skos:prefLabel "Rechthebbende";
+	skos:definition "De persoon aan wie een zaak, goed of recht toebehoort.";
+	rdfs:comment "Een rechthebbende is een (niet) natuurlijk  persoon die met uitsluiting van anderen een zaak mag gebruiken. De rechthebbende van de eigendom van een zaak wordt eigenaar genoemd.";
+	skosthes:broaderPartitive kad:ZakelijkRecht;
+	#Relateren aan vervreemder en verkrijger?
 .
 #--
 #Acts
@@ -82,7 +91,18 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:actor kad:Bewaarder;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-#Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
+        #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
+.
+kad:Overdracht a skos:Concept, skoslex:Act;
+	rdfs:label "Overdracht"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'overdracht' beter herkenbaar is bij de koopovereenkomst dan 'overdragen'.
+	skos:prefLabel "Overdracht";
+	skos:altLabel "Overdragen";
+	skos:altLabel "Transport";
+	skos:definition "Voor overdracht van een goed wordt vereist een levering krachtens geldige titel, verricht door hem die bevoegd is over het goed te beschikken.";
+	rdfs:comment "Bij overdracht geeft iemand de eigendom van zijn goed aan een ander, die de eigendom van dat goed wil ontvangen. Een overdracht is pas geldig als de eigenaar bevoegd is de eigendom over te dragen en de ontvanger het goed vervolgens kan gebruiken.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 #--
 #Objects
@@ -113,12 +133,27 @@ kad:Beslag a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FBeslag>;
 .
+kad:Bestemmingsplan a skos:Concept, skoslex:Object;
+	rdfs:label "Bestemmingsplan"@nl;
+	skos:prefLabel "Bestemmingsplan";
+	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
+.
 kad:Bezwaard a skos:Concept, skoslex:Object;
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
 	skos:altLabel "Beperkt recht";
 	skos:semanticRelation kad:BeperktRecht;
 	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
+.
+kad:BijzondereLasten a skos:Concept, skoslex:Object;
+	rdfs:label "Bijzondere lasten"@nl;
+	skos:prefLabel "Bijzondere lasten";
+	skos:definition "De verkoper is verplicht de onroerende zaak in eigendom over te dragen vrij van alle bijzondere lasten en beperkingen, met uitzondering van die welke de koper uitdrukkelijk heeft aanvaard.";
+	rdfs:comment "Bijzondere lasten zijn juridische lasten/ beperkingen die op de onroerende zaak rusten. Dit kunnen privaatrechtelijke lasten/ beperkingen zijn zoals (lijdende) erfdienstbaarheden, kwalitatieve verplichtingen en zogenoemde ‘kettingbedingen’. Op grond van zulke lasten/ beperkingen heeft een ander (dan de eigenaar) een aanspraak op de onroerende zaak (bijvoorbeeld een recht van overpad over de grond). Het kan ook gaan om publiekrechtelijke lasten/ beperkingen zoals een besluit van het college van B & W tot het vestigen van een wettelijk voorkeursrecht. Een bijzondere publiekrechtelijke last/ beperking vindt haar grondslag in een specifiek tegen de onroerende zaak gericht besluit.";
+	skosthes:narrowerPartitive kad:KwalitatieveVerplichting;
+	skosthes:narrowerPartitive kad:Kettingbeding;
+	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
+	skosthes:narrowerPartitive kad:Voorkeursrecht;
 .
 kad:Canon a skos:Concept, skoslex:Object;
 	rdfs:label "Canon"@nl;
@@ -164,6 +199,14 @@ kad:ErfgoedwetArtikel9punt1Lid1 a skos:Concept, skoslex:Object;
 	skos:prefLabel "Artikel 9.1, eerste lid, van de Erfgoedwet";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
 .
+kad:GemeentelijkeVerordening a skos:Concept, skoslex:Object;
+	rdfs:label "Gemeentelijke verordening"@nl;
+	skos:prefLabel "Gemeentelijke verordening";
+	skos:definition "Een gemeentelijke verordening is een op gemeentelijk niveau vastgesteld algemeen verbindend voorschrift.";
+	rdfs:comment "Wetgevende regeling op gemeentelijk niveau.";
+	skos:editorialNote "De belangrijkste en meest omvattende gemeentelijke verordening in een bepaalde gemeente wordt in Nederland vaak aangeduid als Algemene Plaatselijke Verordening (afkorting APV, vroeger Algemene Politie Verordening).";
+        skosthes:narrowerPartitive kad:GemeentelijkMonument;
+.
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Gemeentelijk monument"@nl;
 	skos:prefLabel "Gemeentelijk monument";
@@ -204,6 +247,16 @@ kad:Huurkoop a skos:Concept, skoslex:Object;
         dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FHuurkoop>;
         skosthes:broaderGeneric mak:Koopovereenkomst;
 .
+kad:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
+	rdfs:label "Inschrijvingsbedrag"@nl;
+	skos:prefLabel "Inschrijvingsbedrag";
+	skos:definition "De hypotheeknemer mag niet meer, met voorrang op andere schuldeisers van de hypotheekgever, dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
+	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
+    rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
+    skosthes:broaderPartitive kad:TotaalbedragInschrijving;
+	skosthes:broaderPartitive not:RechtVanHypotheek;
+	skosthes:broaderPartitive not:Hypotheekakte;
+.
 kad:KadastraalObject a skos:Concept, skoslex:Object;
 	rdfs:label "Kadastraal object"@nl;
 	skos:prefLabel "Kadastraal object";
@@ -226,6 +279,17 @@ kad:LijdendeErfdienstbaarheid a skos:Concept, skoslex:Object;
 kad:NSWLandgoed a skos:Concept, skoslex:Object;
 	rdfs:label "NSW landgoed"@nl;
 	skos:prefLabel "NSW landgoed";
+.
+#Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
+#Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
+kad:Onderpand a skos:Concept, skoslex:Object;
+	rdfs:label "Onderpand"@nl;
+	skos:prefLabel "Onderpand";
+	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
+	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
+	skos:semanticRelation not:RechtVanHypotheek;
+	skos:semanticRelation kad:OnroerendeZaak;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;
@@ -269,6 +333,13 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
         dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FProvinciaal_monument>;
 .
+kad:ProvincialeVerordening a skos:Concept, skoslex:Object;
+	rdfs:label "Provinciale verordening"@nl;
+	skos:prefLabel "Provinciale verordening";
+	skos:definition " Algemeen verbindende voorschriften, vastgesteld door provinciale staten van een provincie of vastgesteld via delegatie of attributie aan gedeputeerde staten of een commissie of de commissaris van de Koningin.";
+	rdfs:comment "Wetgevende regeling op provinciaal niveau.";
+        skosthes:narrowerPartitive kad:ProvinciaalMonument;
+.
 kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
 	rdfs:label "Publiekrechtelijke beperking"@nl;
 	skos:prefLabel "Publiekrechtelijke beperking";
@@ -279,6 +350,16 @@ kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
         skosthes:narrowerGeneric kad:BeperktRecht;
 .
+kad:Rang a skos:Concept, skoslex:Object;
+	rdfs:label "Rang"@nl;
+	skos:prefLabel "Rang";
+	skos:altLabel "Rangorde van inschrijvingen";
+	skos:definition "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand. ";
+	rdfs:comment "De plek die een hypotheeknemer heeft ten opzichte van andere hypotheeknemers als de hypotheekgever zijn financiële verplichtingen niet nakomt.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
+	skosthes:broaderPartitive not:RechtVanHypotheek;
+        skosthes:closeMatch kad:Onderpand;
+.
 kad:RechtVanErfpacht a skos:Concept, skoslex:Object;
 	rdfs:label "RechtVanErfpacht"@nl;
 	skos:prefLabel "RechtVanErfpacht";
@@ -288,6 +369,15 @@ kad:RechtVanErfpacht a skos:Concept, skoslex:Object;
 kad:RijksmonumentInDeZinVanDeErfgoedwet a skos:Concept, skoslex:Object;
 	rdfs:label "Rijksmonument in de zin van de Erfgoedwet"@nl;
 	skos:prefLabel "Rijksmonument in de zin van de Erfgoedwet";
+.
+kad:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
+	rdfs:label "Totaalbedrag van de inschrijving"@nl;
+	skos:prefLabel "Totaalbedrag van de inschrijving";
+	skos:definition "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
+	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
+	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
+	skosthes:broaderPartitive not:RechtVanHypotheek;
+	skosthes:broaderPartitive not:Hypotheekakte;
 .
 kad:Voorkeursrecht a skos:Concept, skoslex:Object;
 	rdfs:label "Voorkeursrecht"@nl;
