@@ -394,7 +394,7 @@ not:AanspraakTotGebruik a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik";
 .
-not:AfschriftAkte a skos:Concept, skoslex:Object;
+not:AfschriftAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Afschrift (akte)"@nl;
 	skos:prefLabel "Afschrift (akte)";
 	skos:altLabel "Gewaarmerkte kopie";
@@ -403,15 +403,15 @@ not:AfschriftAkte a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49>;
         skosthes:broaderGeneric not:NotarieleAkte;
 .
-not:Akte a skos:Concept, skoslex:Object;
+not:Akte a skos:Concept, skoslex:Record;
 	rdfs:label "Akte"@nl;
-	rdfs:label "Deed"@en;
+	#rdfs:label "Deed"@en;
 	skos:prefLabel "Akte";
 	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen. Een document waarin de enige echte werkelijkheid is beschreven en dat kan dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen te dwingen.";
 	rdfs:comment "Ondertekend geschrift, bedoeld om als bewijs te dienen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1>;
 .
-not:AuthentiekeAkte a skos:Concept, skoslex:Object;
+not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Authentieke akte"@nl;
 	skos:prefLabel "Authentieke akte";
 	skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt.";
@@ -425,10 +425,9 @@ not:Comparant a skos:Concept, skoslex:Object;
 	skos:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
 	rdfs:comment "Een persoon die als (gemachtigde van een) partij in de notariële akte is opgenomen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
-        skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen in de taxonomie.";
-        skosthes:broaderPartitive not:Comparitie;
-        skosthes:narrowerPartitive not:Vervreemder;
-        skosthes:narrowerPartitive not:Verkrijger;
+	skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen in de taxonomie.";
+	skosthes:narrowerPartitive not:Vervreemder;
+	skosthes:narrowerPartitive not:Verkrijger;
 .
 not:Comparitie a skos:Concept, skoslex:Record;#Hens Meengs van KNB geeft aan dat dit een verboden woord is. Vraag om verdere toelichting staat nog open.
 	rdfs:label "Comparitie"@nl;
@@ -436,7 +435,8 @@ not:Comparitie a skos:Concept, skoslex:Record;#Hens Meengs van KNB geeft aan dat
 	skos:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
 	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
-        skosthes:broaderPartitive not:NotarieleAkte;
+    skosthes:broaderPartitive not:NotarieleAkte;
+    skoslex:isAbout not:Comparant
 .
 not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Grondslagwaarde"@nl;
@@ -445,10 +445,10 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	skos:definition "De belasting wordt berekend over de waarde van de onroerende zaak of het recht waaraan deze is onderworpen, waarop de verkrijging betrekking heeft. De waarde is ten minste gelijk aan die van de tegenprestatie.";
 	rdfs:comment "De waarde waarover het tarief van de overdrachtsbelasting wordt berekend.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
-        skosthes:broaderPartitive not:NotarieleAkte;
-        skosthes:broaderPartitive zv:Overdrachtsbelasting;
+	skosthes:broaderPartitive not:NotarieleAkte;
+	skosthes:broaderPartitive zv:Overdrachtsbelasting;
 .
-not:Hypotheekakte a skos:Concept, skoslex:Object;
+not:Hypotheekakte a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekakte"@nl;
 	skos:prefLabel "Hypotheekakte";
 	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers. De akte moet een aanduiding bevatten van de vordering waarvoor de hypotheek tot zekerheid strekt, of van de feiten aan de hand waarvan die vordering zal kunnen worden bepaald. Tevens moet het bedrag worden vermeld waarvoor de hypotheek wordt verleend of, wanneer dit bedrag nog niet vaststaat, het maximumbedrag dat uit hoofde van de hypotheek op het goed kan worden verhaald. De hypotheekhouder moet in de akte woonplaats kiezen in Nederland.";
@@ -489,7 +489,7 @@ not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	rdfs:comment "De kwaliteitsrekening is een andere naam voor de zogenaamde derdengeldenrekening. Het is een aparte  bankrekening van de notaris voor het geld van zijn cliënten. Deze rekening is beschermd in die zin dat er geen beslag op kan worden gelegd door schuldeisers van de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>;
 .
-not:Leveringsakte a skos:Concept, skoslex:Object;
+not:Leveringsakte a skos:Concept, skoslex:Record;
 	rdfs:label "Leveringsakte"@nl;
 	skos:prefLabel "Leveringsakte";
 	skos:altLabel "Transportakte";
@@ -500,7 +500,7 @@ not:Leveringsakte a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skosthes:broaderGeneric not:NotarieleAkte;
 .
-not:Minuut a skos:Concept, skoslex:Object;
+not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;
 	skos:prefLabel "Minuut";
 	skos:altLabel "Minuutakte";
@@ -512,7 +512,7 @@ not:Minuut a skos:Concept, skoslex:Object;
         skosthes:broaderGeneric not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
 .
-not:NotarieleAkte a skos:Concept, skoslex:Object;
+not:NotarieleAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte";
 	skos:definition "Notariële akten zijn authentieke akten die verleden zijn door een notaris. Notariële akten zijn geschriften waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
