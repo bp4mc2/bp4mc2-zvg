@@ -148,7 +148,6 @@ kad:Bestemmingsplan a skos:Concept, skoslex:Object;
 kad:Bezwaard a skos:Concept, skoslex:Object;
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
-	skos:altLabel "Beperkt recht";
 	skos:semanticRelation kad:BeperktRecht;
 	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
 .
