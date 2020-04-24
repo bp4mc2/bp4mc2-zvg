@@ -229,7 +229,7 @@ kad:Grootte a skos:Concept, skoslex:Object;
 	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
         #dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
-        skosthes:broaderPartitive kad:Perceel;
+        skos:related kad:Perceel;
 .
 kad:HeersendeErfdienstbaarheid a skos:Concept, skoslex:Object;
 	rdfs:label "Heersende erfdienstbaarheid"@nl;
@@ -325,7 +325,7 @@ kad:OpgegevenGrootte a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Grootte;
 #	skos:closeMatch kad:WerkelijkeGrootte;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
-	skosthes:broaderPartitive kad:Perceel;
+	skos:related kad:Perceel;
 .
 kad:Optierecht a skos:Concept, skoslex:Object;
 	rdfs:label "Optierecht"@nl;
@@ -404,15 +404,21 @@ kad:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 kad:Voorkeursrecht a skos:Concept, skoslex:Object;
 	rdfs:label "Voorkeursrecht"@nl;
 	skos:prefLabel "Voorkeursrecht";
+	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
+        #ToDo: check op definitie door Kadaster
 .
 kad:VoortdurendeErfpacht a skos:Concept, skoslex:Object;
 	rdfs:label "Voortdurende erfpacht"@nl;
 	skos:prefLabel "Voortdurende erfpacht";
+	skos:definition "Erfpachtcontract voor een onbepaalde tijd met tijdvakken van -meestal- 50 jaar.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
+        #ToDo: check op definitie door Kadaster
 .
 kad:Wederinkoop a skos:Concept, skoslex:Object;
 	rdfs:label "Wederinkoop"@nl;
 	skos:prefLabel "Wederinkoop";
+	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding.";
+        #ToDo: check op definitie door Kadaster
 .
 kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	rdfs:label "Wegneemrecht"@nl;
@@ -423,11 +429,11 @@ kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
-kad:WerkelijkeGrootte a skos:Concept, skoslex:Object;
+kad:WerkelijkeGrootte a skos:Concept;
 	rdfs:label "Werkelijke grootte"@nl;
 	skos:prefLabel "Werkelijke grootte";
 	skosthes:broaderGeneric kad:Grootte;
-	skosthes:broaderPartitive kad:Perceel;
+	skos:related kad:Perceel;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Zakelijk recht"@nl;
