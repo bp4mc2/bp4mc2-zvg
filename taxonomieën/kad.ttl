@@ -430,8 +430,8 @@ kad:WerkelijkeGrootte a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive kad:Perceel;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
-	rdfs:label "Openbare registers"@nl;
-	skos:prefLabel "Openbare registers";
+	rdfs:label "Zakelijk recht"@nl;
+	skos:prefLabel "Zakelijk recht";
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
 	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
 	skos:scopeNote "Met een zakelijk recht wordt bedoeld een recht dat samenhangt met een zaak of een goed. Dit in tegenstelling met een persoonlijk recht, een recht dat samenhangt met de persoon. Om het verschil tussen beide rechten duidelijk te maken een voorbeeld. Eigendom is een zakelijk recht. Dat betekent onder meer dat het recht niet eindigt door het overlijden van de eigenaar. Als een eigenaar overlijdt vallen al zijn eigendommen in zijn nalatenschap. Huur is een persoonlijk recht. Door het overlijden van de huurder eindigt in principe wel de huur. Zakelijke rechten zijn, behalve het recht van eigendom, de rechten van erfpacht, opstal, vruchtgebruik, gebruik en bewoning en erfdienstbaarheid. Een Zakelijk recht kan zijn een zakelijk genotsrecht of een zakelijk zekerheidsrecht";
