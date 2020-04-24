@@ -14,7 +14,7 @@
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
 
-zv:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:Object; # NaamConcept is de naam van het concept in UpperCamelCase; dit is altijd een skos:Concept en in de ZV taxonomie altijd een skoslex:Act, xxx:Actor, skoslex:Agent of een skoslex:Object.
+zv:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:Object/skoslex:Record; # NaamConcept is de naam van het concept in UpperCamelCase; dit is altijd een skos:Concept en in de ZV taxonomie altijd een skoslex:Act, xxx:Actor, skoslex:Agent of een skoslex:Object.
   rdfs:label "Term"@nl; # De bedoeling is om altijd een rdfs:label in het Nederlands (@nl) te definiëren. Dit zal in de praktijk hetzelfde zijn als het skos:prefLabel. Eventueel kunnen ook labels in andere talen worden gedefinieerd.rdfs:label "Term"@en;
   skos:prefLabel "Voorkeursterm";
   skos:altLabel "Synoniem"; # Indien van toepassing kunnen een of meer synoniemen worden gedefinieerd met skos:altLabel.
@@ -35,4 +35,6 @@ zv:NaamConcept a skos:Concept, skoslex:Act/skoslex:Actor/skoslex:Agent/skoslex:O
   skos:broadMatch yyy:Concept;
   skos:narrowMatch yyy:Concept;
   skos:broadMatch yyy:Concept;
+  skos:related yyy:Concept;
+  skoslex:isAbout yyy:Concept;#Te gebruiken bij een record. Artikel X gaat over het kopen van een huis. 
 .
