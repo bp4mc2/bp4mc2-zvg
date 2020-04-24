@@ -178,6 +178,9 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
         skoslex:object not:AfschriftAkte;
 	skoslex:object not:TitelVanAankomst;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+        #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. 
+        #Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
+        #Dit moet er nog in de taxonomie worden opgenomen.
 .
 not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als die van Notaris. Voor beiden is wat te zeggen. De mening van de KNB is dat deze meer thuishoort in het domein van de notaris, vanwege de rol die de notaris bij de levering inneemt.
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
@@ -386,10 +389,8 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object kad:Onderpand;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
-#Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 #--
 #Objects
-#AfschriftAkte of AfschriftNot?
 not:AanspraakTotGebruik a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik";
@@ -465,8 +466,8 @@ not:Kadasterkosten a skos:Concept, skoslex:Object;#Mogelijk splitsen in een vari
 	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:Koopsom a skos:Concept, skoslex:Object;
-	rdfs:label "Kwaliteitsrekening"@nl;
-	skos:prefLabel "Kwaliteitsrekening";
+	rdfs:label "Koopsom"@nl;
+	skos:prefLabel "Koopsom";
 	skos:altLabel "Koopprijs";
 	skos:altLabel "Tegenprestatie";
 	skos:definition "Een koopsom is het bedrag dat vermeld staat in de akte en dat als tegenprestatie geldt met betrekking tot een transactie of overdracht van een zakelijk recht van een object (of samen met meerdere objecten) en dat de verkrijger aan de vervreemder verschuldigd is. Dit bedrag hebben verkrijger en vervreemder onderling met elkaar afgesproken en wordt door een notaris opgenomen in de akte.";
@@ -504,7 +505,7 @@ not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;
 	skos:prefLabel "Minuut";
 	skos:altLabel "Minuutakte";
-	skos:definition "Het originele exemplaar van een notariële akte";
+	skos:definition "Het originele exemplaar van een notariële akte.";
 	rdfs:comment "De originele versie van de notariële akte, waarop de handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
 	skos:scopeNote "De originele versie van de notariële akte, waarop de 'blauwe' handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
 	skos:editorialNote "De minuut maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
@@ -547,22 +548,6 @@ not:OnderhandseAkte a skos:Concept, skoslex:Object;
 not:Ongevorderd a skos:Concept, skoslex:Object;
 	rdfs:label "Ongevorderd"@nl;
 	skos:prefLabel "Ongevorderd";
-.
-#Goederen bestaan uit zaken en vermogensrechten.” Zaken kunnen vervolgens weer onderverdeeld worden in roerende zaken en onroerende zaken. Deze objecten kunnen in een later stadium worden toegevoegd.
-not:OnroerendeZaak a skos:Concept, skoslex:Object;
-	rdfs:label "Onroerende zaak"@nl;
-	skos:prefLabel "Onroerende zaak";
-	skos:altLabel "Registergoed";
-	skos:altLabel "Onroerend goed";
-	skos:altLabel "Object";
-	skos:altLabel "Pand";
-	skos:altLabel "Zaak";
-	skos:definition "Onroerend zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken. Onroerende zaken kunnen bezwaard worden met een beperkt of zakelijk recht.";
-	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc..";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
-        skosthes:narrowerGeneric zv:Huis;
-        skosthes:exactMatch kad:KadastraalObject;
-	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	rdfs:label "Plaats van vestiging"@nl;
@@ -611,7 +596,7 @@ not:TitelVanAankomst a skos:Concept, skoslex:Object;
 not:VanRechtswegeOntbonden a skos:Concept, skoslex:Object;
 	rdfs:label "Van rechtswege ontbonden"@nl;
 	skos:prefLabel "Van rechtswege ontbonden";
-	rdfs:comment "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is.";
+	skos:definition "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is.";
 .
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
