@@ -71,7 +71,7 @@ GRAPH config:Theatre {
             ?o a ?otype.
             OPTIONAL {?o rdfs:label ?olabel}
             OPTIONAL {
-              select ?o (if(bound(?lextype),concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png"),?lextype) as ?oimg)
+              select ?o (if(bound(?olextype),concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png"),?olextype) as ?oimg)
               where {
                 ?o a ?olextype
                 FILTER (?olextype = skoslex:Actor || ?olextype = skoslex:Agent || ?olextype = skoslex:Object || ?olextype = skoslex:Act || ?olextype = skoslex:Record)
@@ -86,7 +86,7 @@ GRAPH config:Theatre {
             ?s a ?stype.
             OPTIONAL {?s rdfs:label ?slabel}
             OPTIONAL {
-              select ?s (if(bound(?lextype),concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png"),?lextype) as ?simg)
+              select ?s (if(bound(?slextype),concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png"),?slextype) as ?simg)
               where {
                 ?s a ?slextype
                 FILTER (?slextype = skoslex:Actor || ?slextype = skoslex:Agent || ?slextype = skoslex:Object || ?slextype = skoslex:Act || ?slextype = skoslex:Record)
