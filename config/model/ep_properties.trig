@@ -1,5 +1,6 @@
 @prefix elmo: <http://dotwebstack.org/def/elmo#> .
 @prefix config: <http://dotwebstack.org/configuration/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
 
 GRAPH config:Theatre {
 
@@ -24,10 +25,39 @@ GRAPH config:Theatre {
     elmo:fragment [
       elmo:appliesTo "p";
       rdfs:label "Property URI"@nl;
+      xhtml:link "property";
     ];
     elmo:fragment [
-      elmo:appliesTo "plabel";
-      rdfs:label "Property label"@nl;
+      elmo:appliesTo "check";
+      rdfs:label "Controle"@nl;
+    ];
+  .
+
+  config:UsedPropertyEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/property";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:UsedProperty;
+  .
+
+  config:UsedProperty a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:UsedPropertyData;
+    elmo:appearance config:UsedPropertyAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:UsedPropertyAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "g";
+      rdfs:label "Begrippenkader"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "b";
+      rdfs:label "Begrip"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "subject";
+      rdfs:label "Property URI"@nl;
     ];
     elmo:fragment [
       elmo:appliesTo "check";

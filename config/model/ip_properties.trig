@@ -29,4 +29,31 @@ GRAPH config:Theatre {
     """
   .
 
+  config:UsedPropertyData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:requiredParameter elmo:SubjectParameter;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      SELECT DISTINCT ?g ?b ?b_label ?subject ?subject_label (if(bound(?ps),"","Unknown") as ?check)
+      WHERE {
+        GRAPH ?g {
+          ?b ?subject ?o.
+          ?b rdfs:label ?b_label
+        }
+        OPTIONAL {
+          GRAPH ?pg {
+            ?ps sh:path ?subject.
+            ?ps sh:name ?subject_label
+          }
+        }
+      }
+      ORDER BY ?g ?b
+    """
+  .
+
 }
