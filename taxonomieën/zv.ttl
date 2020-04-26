@@ -27,7 +27,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "artikel 213 van Boek 6 van het Burgerlijk Wetboek".
 
 #Onderstaande link hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
-#Wet op belasting van rechtsverkeer (WBR) 
+#Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1> rdfs:label "artikel 2, eerste lid, van de Wet op belastingen van rechtsverkeer".
 
 #--
@@ -153,7 +153,7 @@ zv:Overdrachtsbelasting a skos:Concept, skoslex:Object;#Begrip hoort thuis in ee
 	skos:prefLabel "Overdrachtsbelasting";
 	skos:definition "Onder de naam 'overdrachtsbelasting' wordt een belasting geheven ter zake van de verkrijging van in Nederland gelegen onroerende zaken of van rechten waaraan deze zijn onderworpen.";
 	rdfs:comment "De overdrachtsbelasting is de belasting die de koper van een onroerende zaak moet betalen aan de belastingdienst.";
-	dcterms:source <http://.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
 	skosthes:broaderPartitive not:Leveringsakte;
 .
 zv:NederlandsRecht a skos:Concept, skoslex:Object;

@@ -195,7 +195,7 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	skoslex:actor not:Verkrijger;
 	skoslex:actor kad:Rechthebbende;
 	skoslex:agent not:Notaris;
-	skoslex:object kad:Leveringsakte;
+	skoslex:object not:Leveringsakte;
         skos:semanticRelation kad:Overdracht;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
@@ -334,7 +334,7 @@ not:RechercheAkteHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:TitelVanAankomst;
 	skoslex:actor not:Notaris;
-	skoslex:object not:OnroerendeZaak;
+	skoslex:object kad:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 	skosthes:broaderPartitive not:RechercheNotaris;
