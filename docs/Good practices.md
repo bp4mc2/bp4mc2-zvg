@@ -42,7 +42,7 @@ De gebruikelijke conventies zijn:
 
 ## HANDELINGEN
 
-* Handeling stellen we centraal in de ZV-taxonomie. Meer over handelingen, zie; https://github.com/bp4mc2/bp4mc2-zvg/blob/master/docs/Handelingen.md
+* Handeling stellen we centraal in de ZV-taxonomie. Meer over handelingen, zie; [Handelingen](Handelingen.md) en (Roles and classes)[roles-and-classes.md].
 * Probeer zoveel mogelijk werkwoorden te gebruiken voor handelingen.
 
 ## CONCEPTEN
