@@ -97,7 +97,7 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:agent fin:Hypotheekadviseur;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:object fin:Hypotheekadvies;
-	skoslex:record mak:Koopovereenkomst;
+	skoslex:object mak:Koopovereenkomst;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 #--

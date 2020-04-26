@@ -409,9 +409,7 @@ mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	#rdfs:comment ".";
 	skos:scopeNote "Is artikel 1 van de model koopovereenkomst.";
 	skos:scopeNote "Keuze tussen eigendom en erfpacht.";
-        skoslex:isAbout mak:ArtikelVerkoopEnKoopOptieAEigendom;
-        skoslex:isAbout mak:ArtikelVerkoopEnKoopOptieBErfpacht;
-        skosthes:broaderPartitive mak:Koopovereenkomst;
+  skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - eigendom"@nl;
@@ -419,6 +417,8 @@ mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is optie A van artikel 1 van de model koopovereenkomst.";
+	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
+	skosthes:isAbout kad:Eigendomsrechts;
 .
 mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - erfpacht"@nl;
@@ -426,10 +426,11 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	#skos:definition ".";
 	#rdfs:comment ".";
 	skos:scopeNote "Is optie B van artikel 1 van de model koopovereenkomst.";
-        skoslex:isAbout kad:Canon;
-        skoslex:isAbout kad:Erfpachtvoorwaarden;
-        skoslex:isAbout kad:HerzieningErfpacht;
-        skoslex:isAbout kad:VoortdurendeErfpacht;
+	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
+  skoslex:isAbout kad:Canon;
+  skoslex:isAbout kad:Erfpachtvoorwaarden;
+  skoslex:isAbout kad:HerzieningErfpacht;
+  skoslex:isAbout kad:VoortdurendeErfpacht;
 .
 mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:label "Asbest"@nl;

@@ -170,7 +170,7 @@ kad:Canon a skos:Concept, skoslex:Object;
 	rdfs:comment "Het canon is een verplichting aan de erfpachter om de eigenaar op al dan niet regelmatig terugkerende tijdstippen een geldsom te betalen. Deze verplichting wordt opgelegd in de akte van levering.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfpachtcanon>;
-        skosthes:broaderPartitive kad:RechtVanErfpacht;
+  skosthes:semanticRelation kad:RechtVanErfpacht;
 .
 kad:Eigendomsrecht a skos:Concept, skoslex:Object;
 	rdfs:label "Eigendomsrecht"@nl;
@@ -228,8 +228,8 @@ kad:Grootte a skos:Concept;
 	skos:altLabel "Kadastergrootte";
 	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
-        #dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
-        skos:related kad:Perceel;
+  #dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
+  skos:semanticRelation kad:Perceel;
 .
 kad:HeersendeErfdienstbaarheid a skos:Concept, skoslex:Object;
 	rdfs:label "Heersende erfdienstbaarheid"@nl;
@@ -325,7 +325,7 @@ kad:OpgegevenGrootte a skos:Concept;
 	skosthes:broaderGeneric kad:Grootte;
 #	skos:closeMatch kad:WerkelijkeGrootte;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
-	skos:related kad:Perceel;
+	skos:semanticrelation kad:Perceel;
 .
 kad:Optierecht a skos:Concept, skoslex:Object;
 	rdfs:label "Optierecht"@nl;
@@ -433,7 +433,7 @@ kad:WerkelijkeGrootte a skos:Concept;
 	rdfs:label "Werkelijke grootte"@nl;
 	skos:prefLabel "Werkelijke grootte";
 	skosthes:broaderGeneric kad:Grootte;
-	skos:related kad:Perceel;
+	skos:semanticRelation kad:Perceel;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Zakelijk recht"@nl;
