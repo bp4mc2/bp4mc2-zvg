@@ -174,7 +174,7 @@ kad:Canon a skos:Concept, skoslex:Object;
 	rdfs:comment "Het canon is een verplichting aan de erfpachter om de eigenaar op al dan niet regelmatig terugkerende tijdstippen een geldsom te betalen. Deze verplichting wordt opgelegd in de akte van levering.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfpachtcanon>;
-  skosthes:semanticRelation kad:RechtVanErfpacht;
+  skos:semanticRelation kad:RechtVanErfpacht;
 .
 kad:Eigendomsrecht a skos:Concept, skoslex:Object;
 	rdfs:label "Eigendomsrecht"@nl;
@@ -273,6 +273,7 @@ kad:KadastraalObject a skos:Concept, skoslex:Object;
 	skos:definition "Een Kadastraal object is een goed waarvoor bij overdracht of vestiging van rechten inschrijving in de openbare registers van het Kadaster is vereist. Een kadastraal object is een Onroerende zaak of een Teboekgestelde zaak.";
 	rdfs:comment "Kadastraal object is een goed dat geregistreerd moet worden bij het Kadaster.";
 	skosthes:narrowerGeneric kad:Perceel;
+	skosthes:narrowerGeneric kad:OnroerendeZaak;
 .
 kad:Kettingbeding a skos:Concept, skoslex:Object;
 	rdfs:label "Kettingbeding"@nl;
@@ -314,7 +315,6 @@ kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc..";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
         skosthes:narrowerGeneric zv:Huis;
-        skosthes:exactMatch kad:KadastraalObject;
 	skosthes:broaderPartitive not:Leveringsakte;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
@@ -329,7 +329,7 @@ kad:OpgegevenGrootte a skos:Concept;
 	skosthes:broaderGeneric kad:Grootte;
 #	skos:closeMatch kad:WerkelijkeGrootte;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
-	skos:semanticrelation kad:Perceel;
+	skos:semanticRelation kad:Perceel;
 .
 kad:Optierecht a skos:Concept, skoslex:Object;
 	rdfs:label "Optierecht"@nl;
@@ -384,7 +384,7 @@ kad:Rang a skos:Concept, skoslex:Object;
 	rdfs:comment "De plek die een hypotheeknemer heeft ten opzichte van andere hypotheeknemers als de hypotheekgever zijn financiële verplichtingen niet nakomt.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
-        skosthes:closeMatch kad:Onderpand;
+  skos:semanticRelation kad:Onderpand;
 .
 kad:RechtVanErfpacht a skos:Concept, skoslex:Object;
 	rdfs:label "RechtVanErfpacht"@nl;

@@ -556,7 +556,8 @@ not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	rdfs:comment "Een gemeente in Nederland waar het kantoor van de notaris staat.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
         skos:editorialNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
-	skos:closeMatch not:Notaris;#Ik twijfel of de meest passende relatie is gelegd met notaris. Wel wordt er in dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.
+	skos:semanticRelation not:Notaris;
+	skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.";
 .
 not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Recht van hypotheek"@nl;
