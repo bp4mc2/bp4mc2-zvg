@@ -12,6 +12,7 @@ GRAPH config:Theatre {
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
       PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
       PREFIX dcat: <http://www.w3.org/ns/dcat#>
+      PREFIX dcterms: <http://purl.org/dc/terms/>
       prefix elmo1: <http://bp4mc2.org/elmo/def#>
       prefix html: <http://www.w3.org/1999/xhtml/vocab#>
       CONSTRUCT {
@@ -66,13 +67,13 @@ GRAPH config:Theatre {
         {
           GRAPH ?g {
             ?subject ?p ?o.
+            FILTER (?p != dcterms:source)
           }
           GRAPH ?go {
-            ?o a ?otype.
-            OPTIONAL {?o rdfs:label ?olabel}
-            OPTIONAL {
-              select ?o (if(bound(?olextype),concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png"),?olextype) as ?oimg)
-              where {
+            SELECT ?o ?otype ?olabel (if(bound(?olextype),concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png"),?olextype) as ?oimg)
+            WHERE {
+              OPTIONAL {?o rdfs:label ?olabel}
+              OPTIONAL {
                 ?o a ?olextype
                 FILTER (?olextype = skoslex:Actor || ?olextype = skoslex:Agent || ?olextype = skoslex:Object || ?olextype = skoslex:Act || ?olextype = skoslex:Record)
               }
@@ -82,12 +83,12 @@ GRAPH config:Theatre {
         UNION
         {
           GRAPH ?gs {
-            ?s ?ps ?subject.
-            ?s a ?stype.
-            OPTIONAL {?s rdfs:label ?slabel}
-            OPTIONAL {
-              select ?s (if(bound(?slextype),concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png"),?slextype) as ?simg)
-              where {
+            SELECT ?s ?ps ?subject ?stype ?slabel (if(bound(?slextype),concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png"),?slextype) as ?simg)
+            WHERE {
+              ?s ?ps ?subject.
+              ?s a ?stype.
+              OPTIONAL {?s rdfs:label ?slabel}
+              OPTIONAL {
                 ?s a ?slextype
                 FILTER (?slextype = skoslex:Actor || ?slextype = skoslex:Agent || ?slextype = skoslex:Object || ?slextype = skoslex:Act || ?slextype = skoslex:Record)
               }
