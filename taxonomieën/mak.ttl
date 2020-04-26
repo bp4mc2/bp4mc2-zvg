@@ -418,7 +418,7 @@ mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	#rdfs:comment ".";
 	skos:scopeNote "Is optie A van artikel 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
-	skosthes:isAbout kad:Eigendomsrechts;
+	skosthes:isAbout kad:Eigendomsrecht;
 .
 mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - erfpacht"@nl;
