@@ -537,7 +537,7 @@ not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:NotarieleAkte;
         #Mogelijk relaties toevoegen. Wellicht aan notaris.
 .
-not:OnderhandseAkte a skos:Concept, skoslex:Object;
+not:OnderhandseAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Onderhandse akte"@nl;
 	skos:prefLabel "Onderhandse akte";
 	skos:definition "Onderhandse akten zijn alle akten die niet authentieke akten zijn.";
