@@ -178,7 +178,7 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
         skoslex:object not:AfschriftAkte;
 	skoslex:object not:TitelVanAankomst;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-        #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. 
+        #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer.
         #Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
         #Dit moet er nog in de taxonomie worden opgenomen.
 .
@@ -568,8 +568,7 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
         skosthes:broaderPartitive not:Hypotheekakte;
-	skosthes:broaderGeneric kad:ZakelijkRecht;
-        skosthes:narrowerGeneric kad:BeperktRecht;
+	skosthes:broaderGeneric kad:BeperktRecht;
 .
 not:Titel a skos:Concept, skoslex:Object;
 	rdfs:label "Titel"@nl;

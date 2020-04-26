@@ -113,7 +113,7 @@ kad:Overdracht a skos:Concept, skoslex:Act;
 .
 #--
 #Objects
-kad:BeperktRecht a skos:Concept, skoslex:Object;
+kad:BeperktRecht a skos:Concept;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
 	skos:altLabel "Bezwaard";#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring.
@@ -222,7 +222,7 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FGemeentelijk_monument>;
 .
-kad:Grootte a skos:Concept, skoslex:Object;
+kad:Grootte a skos:Concept;
 	rdfs:label "Grootte"@nl;
 	skos:prefLabel "Grootte";
 	skos:altLabel "Kadastergrootte";
@@ -319,7 +319,7 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	#skos:exactMatch brk:Openbare_registers;
              #Weggehaald, want dit is een broken link
 .
-kad:OpgegevenGrootte a skos:Concept, skoslex:Object;
+kad:OpgegevenGrootte a skos:Concept;
 	rdfs:label "Opgegeven grootte"@nl;
 	skos:prefLabel "Opgegeven grootte";
 	skosthes:broaderGeneric kad:Grootte;
