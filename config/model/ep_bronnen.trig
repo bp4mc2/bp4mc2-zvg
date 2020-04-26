@@ -1,0 +1,39 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:BronnenEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/bronnen";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Bronnen;
+  .
+
+  config:Bronnen a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:BronnenData;
+    elmo:appearance config:BronnenAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:BronnenAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "g";
+      rdfs:label "Begrippenkader"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "bron";
+      elmo:appearance elmo:GlobalLink;
+      rdfs:label "Bron"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "bg";
+      rdfs:label "Bronbestand"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "check";
+      rdfs:label "Check"@nl;
+    ];
+  .
+
+}
