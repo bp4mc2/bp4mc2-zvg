@@ -19,19 +19,19 @@ GRAPH config:Theatre {
         FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
         OPTIONAL {
           ?begrip a ?lextype.
-          FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act).
+          FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act || ?lextype = skoslex:Record).
         }
         {
           {
             ?relbegrip ?role ?begrip.
-            FILTER (?role = skoslex:object || ?role = skoslex:actor || ?role = skoslex:agent)
+            FILTER (?role = skoslex:object || ?role = skoslex:actor || ?role = skoslex:agent || ?role = skoslex:record)
             ?relbegrip rdfs:label ?relbegrip_label.
             FILTER (lang(?relbegrip_label)="nl" || lang(?relbegrip_label)="")
           }
           UNION
           {
             ?begrip ?refrole ?relbegrip.
-            FILTER (?refrole = skoslex:object || ?refrole = skoslex:actor || ?refrole = skoslex:agent)
+            FILTER (?refrole = skoslex:object || ?refrole = skoslex:actor || ?refrole = skoslex:agent || ?role = skoslex:record)
             BIND (skoslex:act as ?role)
             ?relbegrip rdfs:label ?relbegrip_label.
             FILTER (lang(?relbegrip_label)="nl" || lang(?relbegrip_label)="")
@@ -50,18 +50,50 @@ GRAPH config:Theatre {
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
-      SELECT ?inst ?inst_label (count(?lextype) as ?typecount) (group_concat(strafter(str(?lextype),"#") ; separator=", ") as ?types)
+      PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+      SELECT ?inst ?inst_label ?typecount ?types ?rolecount ?roles
       WHERE {
         ?inst a skos:Concept.
         ?inst rdfs:label ?inst_label.
         FILTER (lang(?inst_label)="nl" || lang(?inst_label)="")
-        OPTIONAL {
-          ?inst a ?lextype.
-          FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act).
+        OPTIONAL
+        {
+          SELECT ?inst ?inst_label (count(?lextype) as ?typecount) (group_concat(strafter(str(?lextype),"#") ; separator=", ") as ?types)
+          WHERE {
+            ?inst a skos:Concept.
+            ?inst rdfs:label ?inst_label.
+            FILTER (lang(?inst_label)="nl" || lang(?inst_label)="")
+            OPTIONAL {
+              ?inst a ?lextype.
+              FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act || ?lextype = skoslex:Record).
+            }
+          }
+          GROUP BY ?inst ?inst_label
+        }
+        OPTIONAL
+        {
+          SELECT ?inst ?inst_label (count(distinct ?roletype) as ?rolecount) (group_concat(distinct strafter(str(?roletype),"#") ; separator=", ") as ?roles)
+          WHERE {
+            ?inst a skos:Concept.
+            ?inst rdfs:label ?inst_label.
+            FILTER (lang(?inst_label)="nl" || lang(?inst_label)="")
+            OPTIONAL {
+              {
+                ?act ?roletype ?temp.
+                ?temp skosthes:broaderGeneric* ?inst.
+                FILTER (?roletype = skoslex:actor || ?roletype = skoslex:agent || ?roletype = skoslex:object || ?roletype = skoslex:record).
+              }
+              UNION
+              {
+                ?act ?roletype ?temp.
+                ?inst (skosthes:broaderGeneric|skosthes:broaderPartitive)* ?temp.
+                FILTER (?roletype = skoslex:object || ?roletype = skoslex:record).
+              }
+            }
+          }
+          GROUP BY ?inst ?inst_label
         }
       }
-      GROUP BY ?inst ?inst_label
-      ORDER BY ?inst_label
     """
   .
 

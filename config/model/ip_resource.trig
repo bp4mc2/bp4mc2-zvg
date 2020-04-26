@@ -50,7 +50,7 @@ GRAPH config:Theatre {
         {
           GRAPH ?g {
             {
-              select ?subject ?subjectlabel ?stype (concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png") as ?subjectimg)
+              select ?subject ?subjectlabel ?stype (if(bound(?lextype),concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png"),?lextype) as ?subjectimg)
               where {
                 ?subject a ?stype.
                 OPTIONAL {?subject rdfs:label ?subjectlabel}
