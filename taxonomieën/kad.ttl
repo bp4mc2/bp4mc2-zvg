@@ -27,6 +27,7 @@
 #Burgerlijk wetboek
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1> rdfs:label "artikel 3, eerste lid, van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16> rdfs:label "artikel 16 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83> rdfs:label "artikel 83 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89> rdfs:label "artikel 89 van Boek 3 van het Burgerlijk Wetboek".
@@ -35,6 +36,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 van Boek 6 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308> rdfs:label "artikel 1308 van Boek 8 van het Burgerlijk Wetboek".
 
 #Wetboek van Burgerlijke Rechtsvordering
@@ -63,6 +65,7 @@ kad:Bewaarder a skos:Concept, skoslex:Agent;
 	#skos:exactMatch brk:Bewaarder;
              #Weggehaald, want dit is een broken link
 	rdfs:label "Bewaarder"@nl;
+	skos:definition "Een functionaris die onverminderd het bepaalde bij of krachtens de Kadasterwet of een andere wet, belast is met het verrichten van inschrijvingen in de openbare registers en het stellen van aantekeningen in die registers, en het bijwerken van de basisregistratie kadaster, de registratie voor schepen en de registratie voor luchtvaartuigen.";
 .
 kad:Rechthebbende a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechthebbende"@nl;
@@ -81,6 +84,7 @@ kad:DoorhalenHypotheek a skos:Concept, skoslex:Act;
 	skos:altLabel "Royeren";
 	skos:altLabel "Uitschrijven";
 	skoslex:object not:AfschriftAkte;
+	skos:definition "Uitschrijven van hypotheek.";#Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:actor kad:Bewaarder;
 .
@@ -127,6 +131,7 @@ kad:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
 	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
 	skos:prefLabel "Beschermd stads-/dorpsgezicht";
 	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
+	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";#Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
 .
 kad:Beslag a skos:Concept, skoslex:Object;
 	rdfs:label "Beslag"@nl;
@@ -148,6 +153,7 @@ kad:Bestemmingsplan a skos:Concept, skoslex:Object;
 kad:Bezwaard a skos:Concept, skoslex:Object;
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
+	skos:definition "Belast, bijvoorbeeld met een hypotheek."#Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
 	skos:semanticRelation kad:BeperktRecht;
 	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
 .
@@ -186,6 +192,7 @@ kad:Eigendomsrecht a skos:Concept, skoslex:Object;
 kad:Erfpachtvoorwaarden a skos:Concept, skoslex:Object;
 	rdfs:label "Erfpachtvoorwaarden"@nl;
 	skos:prefLabel "Erfpachtvoorwaarden";
+	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
 .
 kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
@@ -229,12 +236,16 @@ kad:Grootte a skos:Concept;
 kad:HeersendeErfdienstbaarheid a skos:Concept, skoslex:Object;
 	rdfs:label "Heersende erfdienstbaarheid"@nl;
 	skos:prefLabel "Heersende erfdienstbaarheid";
+	skos:definition "Een heersende erf is een onroerende zaak waarop een erfdienstbaarheid is gevestigd ten gunste van een ieder die het heersende erf verkrijgt of gebruikt.";
+	rdfs:comment "Een heersende erf is een onroerende zaak waarop een erfdienstbaarheid is gevestigd ten gunste van een ieder die het heersende erf verkrijgt of gebruikt.";
+        skos:scopeNote "Onder erf wordt verstaan een grondstuk, een waterperceel daaronder begrepen.";
 .
 kad:HerzieningErfpacht a skos:Concept, skoslex:Object;
 	rdfs:label "Herziening erfpacht"@nl;
 	skos:prefLabel "Herziening";
 	skos:altLabel "Herziening erfpacht";
 	skos:altLabel "Herziening recht van erfpacht";
+	skos:definition "Moment waarop de geldende voorwaarden en condities aflopen.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
 .
 kad:Huurkoop a skos:Concept, skoslex:Object;
@@ -269,10 +280,15 @@ kad:KadastraalObject a skos:Concept, skoslex:Object;
 kad:Kettingbeding a skos:Concept, skoslex:Object;
 	rdfs:label "Kettingbeding"@nl;
 	skos:prefLabel "Kettingbeding";
+	skos:definition "Een kettingbeding is een verbintenis dat de schuldenaar bij overdracht van een registergoed, op straffe van een boete, ten behoeve van de schuldeiser bepaalde verplichtingen, onder gelijke verbintenis, aan zijn verkrijgers moet opleggen.";
 .
 kad:KwalitatieveVerplichting a skos:Concept, skoslex:Object;
 	rdfs:label "Kwalitatieve verplichting"@nl;
 	skos:prefLabel "Kwalitatieve verplichting";
+	skos:definition "Een Kwalitatieve Verplichting is een overeenkomst waarbij bedongen wordt dat de verplichting van een van de partijen om iets te dulden of niet te doen ten aanzien van een haar toebehorend registergoed , zal overgaan op degenen die het goed onder bijzondere titel zullen verkrijgen, en dat mede gebonden zullen zijn degenen die van de rechthebbende een recht tot gebruik van het goed zullen verkrijgen.";
+	rdfs:comment "Een Kwalitatieve Verplichting is een afspraak om iets toe te staan, of om iets niet te doen, met een gebouw of stuk grond. Deze afspraak geldt ook voor iemand die het gebouw of stuk grond gebruikt of krijgt door overdracht, verjaring of onteigening.";
+        skos:scopeNote "Tevens gaat de kwalitatieve verplichting over op rechtsopvolgers. De kwalitatieve verplichting moet worden aangegaan bij notariële akte.Van een dergelijke overeenkomst kan een aantekening worden gemaakt. Een dergelijke verplichting is niet nodig bij verkrijging onder algemene titel, aangezien bij een dergelijke verkrijging de kwalitatieve verplichting van rechtswege voortgezet wordt.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252>;
 .
 kad:LijdendeErfdienstbaarheid a skos:Concept, skoslex:Object;
 	rdfs:label "Lijdende erfdienstbaarheid"@nl;
@@ -311,6 +327,9 @@ kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;
 	skos:prefLabel "Openbare registers";
+	skos:definition "Een openbaar register is een register waarin feiten die voor de rechtstoestand van registergoederen van belang zijn, worden ingeschreven.";
+	rdfs:comment "Openbare registers zijn registers waarin je alle notariële akten vindt die betrekking hebben op registergoederen in Nederland. De inschrijving in het openbaar register is nodig om het eigendomsrecht van een registergoed te krijgen.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16>
 	#skos:exactMatch brk:Openbare_registers;
              #Weggehaald, want dit is een broken link
 .
