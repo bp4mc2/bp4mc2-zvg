@@ -130,7 +130,6 @@ kad:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
 	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
 	skos:prefLabel "Beschermd stads-/dorpsgezicht";
 	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
-        skosthes:narrowerPartitive kad:ErfgoedwetArtikel9punt1Lid1;
 .
 kad:Beslag a skos:Concept, skoslex:Object;
 	rdfs:label "Beslag"@nl;
@@ -203,11 +202,6 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
         skosthes:broaderGeneric kad:BeperktRecht;
         skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
         skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
-.
-kad:ErfgoedwetArtikel9punt1Lid1 a skos:Concept, skoslex:Object;
-	rdfs:label "Artikel 9.1, eerste lid, van de Erfgoedwet"@nl;
-	skos:prefLabel "Artikel 9.1, eerste lid, van de Erfgoedwet";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
 .
 kad:GemeentelijkeVerordening a skos:Concept, skoslex:Object;
 	rdfs:label "Gemeentelijke verordening"@nl;
