@@ -146,6 +146,8 @@ fin:Opslagbedrag a skos:Concept, skoslex:Object;
 fin:Overbruggingslening a skos:Concept, skoslex:Object;
 	rdfs:label "Overbruggingslening"@nl;
 	skos:prefLabel "Overbruggingslening";
+	skos:altLabel "Overbruggingskrediet";
+	skos:definition "Koopt u eerst een nieuw huis en gaat u daarna pas het oude verkopen, dan kunt u de opbrengst van uw oude huis (nog) niet gebruiken voor de aanschaf van uw nieuwe huis. Een overbruggingslening, ook wel overbruggingskrediet genoemd, biedt dan uitkomst, ook wanneer uw huis langer te koop staat dan u op voorhand verwacht had. Op het moment dat uw oude woning verkocht is wordt de overbruggingslening afgelost.";
 .
 fin:Waarborgsom a skos:Concept, skoslex:Object;
 	rdfs:label "Waarborgsom"@nl;
