@@ -449,7 +449,7 @@ mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Koopovereenkomst"@nl;
 	skos:prefLabel "Koopovereenkomst";
-	skos:altLabel "Koopocontract";
+	skos:altLabel "Koopcontract";
 	skos:definition "Een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd.";
 	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed.";
 	skos:editorialNote "Soms (bijvoorbeeld in Amsterdam) stelt de notaris de koopovereenkomst op.";
