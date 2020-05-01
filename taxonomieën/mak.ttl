@@ -139,7 +139,7 @@ mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	skoslex:agent not:Notaris;
 	skoslex:actor mak:Koper;
 	skoslex:actor mak:Verkoper;
-	skoslex:object mak:Koopovereenkomst;
+	skoslex:record mak:Koopovereenkomst;
 	skoslex:object mak:Woning;
 .
 mak:RechercheKoop a skos:Concept, skoslex:Act;
