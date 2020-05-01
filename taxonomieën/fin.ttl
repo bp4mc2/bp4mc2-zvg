@@ -101,40 +101,40 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 #--
-#Objects
-fin:Bankgarantie a skos:Concept, skoslex:Object;
+#Other concepts (objects, records)
+fin:Bankgarantie a skos:Concept, skoslex:Record;
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie";
 	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
 	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:semanticRelation fin:Waarborgsom;
 .
-fin:BindendeOfferte a skos:Concept, skoslex:Object;
+fin:BindendeOfferte a skos:Concept, skoslex:Record;
 	rdfs:label "Bindende offerte"@nl;
 	skos:prefLabel "Bindende offerte";
 	skos:definition "Een bindend aanbod van een geldverstrekker ter verstrekking van een hypotheek.";
 	skos:semanticRelation fin:Hypotheekadvies;
 .
-fin:HoofdelijkeAansprakelijkheid a skos:Concept, skoslex:Object;
+fin:HoofdelijkeAansprakelijkheid a skos:Concept;
 	rdfs:label "Hoofdelijke aansprakelijkheid"@nl;
 	skos:prefLabel "Hoofdelijke aansprakelijkheid";
 	skos:definition "Meerdere schuldenaren zijn ieder afzonderlijk voor het geheel aansprakelijk voor de terugbetaling van de lening.";
 	rdfs:comment "Als de schuldenaren hoofdelijk aansprakelijk zijn, dan is ieder van hen verplicht om op verzoek van de schuldeiser de gehele schuld te voldoen. Een schuldenaar mag zich dus niet beperken tot diens aandeel in de schuld. Eventuele verrekening onderling tussen de schuldenaren vindt dan later plaats. ";
 	skosthes:narrowerPartitive fin:Hypotheekgever;
 .
-fin:Hypotheekadvies a skos:Concept, skoslex:Object;
+fin:Hypotheekadvies a skos:Concept;
 	rdfs:label "Hypotheekadvies"@nl;
 	skos:prefLabel "Hypotheekadvies";
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
 .
 #Lening nergens aan gerelateerd. Is nu een 'los' begrip
-fin:Lening a skos:Concept, skoslex:Object;
+fin:Lening a skos:Concept, skoslex:Record;
 	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening";
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
 .
-fin:Opslagbedrag a skos:Concept, skoslex:Object;
+fin:Opslagbedrag a skos:Concept;
 	rdfs:label "Opslagbedrag"@nl;
 	skos:prefLabel "Opslagbedrag";
 	skos:definition "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld.";
@@ -143,11 +143,12 @@ fin:Opslagbedrag a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
-fin:Overbruggingslening a skos:Concept, skoslex:Object;
+fin:Overbruggingslening a skos:Concept, skoslex:Record;
 	rdfs:label "Overbruggingslening"@nl;
 	skos:prefLabel "Overbruggingslening";
 	skos:altLabel "Overbruggingskrediet";
 	skos:definition "Koopt u eerst een nieuw huis en gaat u daarna pas het oude verkopen, dan kunt u de opbrengst van uw oude huis (nog) niet gebruiken voor de aanschaf van uw nieuwe huis. Een overbruggingslening, ook wel overbruggingskrediet genoemd, biedt dan uitkomst, ook wanneer uw huis langer te koop staat dan u op voorhand verwacht had. Op het moment dat uw oude woning verkocht is wordt de overbruggingslening afgelost.";
+	skosthes:broaderGeneric fin:Lening;
 .
 fin:Waarborgsom a skos:Concept, skoslex:Object;
 	rdfs:label "Waarborgsom"@nl;
