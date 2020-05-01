@@ -1,7 +1,7 @@
-# Invoeren en wijzigen van een taxonomie
+# Insert and edit taxonomie  
 
 ## UC 1. To create 
-- a new concept and its properties (description and relationship)
+- a new concept and its properties (description and relationship using Semantic Web Standards (W3C) in machine-readable format)
 - namespaces and URI’s
 
 Using SKOS and SKOS-XL to extend the expressiveness (see: https://www.w3.org/TR/skos-reference/ chapter SKOS Namespace and Vocabulary) 
