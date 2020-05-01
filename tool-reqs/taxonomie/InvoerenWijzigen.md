@@ -29,6 +29,9 @@ Using SKOS and SKOS-XL to extend the expressiveness (see: https://www.w3.org/TR/
 ## UC 16. To search and browse 
 - search for concepts by labels
 
-## UC 17. Possibility to add other comments 
+## UC 17. To add other comments 
 - such as derivation of the term, special or preferred uses of it, etc.
+
+## UC 22. To add examples of usage
+- e.g. how to link concepts in a meaningful way distinguishing between Agent, Actor, Object, Record etc.
 
