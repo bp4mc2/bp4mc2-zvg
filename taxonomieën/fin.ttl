@@ -85,9 +85,8 @@ fin:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van de bindende offerte ter verstrekking van een hypotheek.";
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:actor fin:Hypotheekgever;
-	skoslex:object fin:BindendeOfferte;
-	skoslex:object fin:Hypotheekadvies;
-	skoslex:record mak:Koopovereenkomst;
+	skoslex:record fin:BindendeOfferte;
+	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
@@ -96,8 +95,7 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van een advies ter aanbeveling van een hypotheekconstructie.";
 	skoslex:agent fin:Hypotheekadviseur;
 	skoslex:actor fin:Hypotheekgever;
-	skoslex:object fin:Hypotheekadvies;
-	skoslex:object mak:Koopovereenkomst;
+	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 #--
