@@ -68,8 +68,8 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
 	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
 	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
-  skosthes:broaderGeneric zv:Rechtspersoon;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;	
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Verkrijger"@nl;
@@ -190,12 +190,12 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	skos:definition "Levering is in het Nederlands recht een vast onderdeel van de eigendomsoverdracht. Het omvat het geheel aan handelingen dat tot doel heeft een goed van het vermogen van een vervreemder in het vermogen van een verkrijger te doen overgaan.";
 	rdfs:comment "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
-  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor kad:Rechthebbende;
 	skoslex:agent not:Notaris;
-	skoslex:object not:Leveringsakte;
+	skoslex:record not:Leveringsakte;
         skos:semanticRelation kad:Overdracht;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
@@ -211,7 +211,7 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van de hypotheekakte.";
 	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
-	skoslex:object not:Hypotheekakte;
+	skoslex:record not:Hypotheekakte;
 	skosthes:broaderPartitive not:OpstellenAkte;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
@@ -221,7 +221,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	skos:definition "Het opstellen van de leveringsakte.";
 	rdfs:comment "Het opstellen van de leveringsakte.";
 	skoslex:actor not:Notaris;
-	skoslex:object not:Leveringsakte;
+	skoslex:record not:Leveringsakte;
 	skosthes:broaderPartitive not:OpstellenAkte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
@@ -254,7 +254,7 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
-	skoslex:object not:Hypotheekakte;
+	skoslex:record not:Hypotheekakte;
 	skoslex:object not:RechtVanHypotheek;
         skoslex:object kad:OnroerendeZaak;
         skoslex:object kad:Onderpand;
@@ -270,7 +270,7 @@ not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
-	skoslex:object not:Leveringsakte;
+	skoslex:record not:Leveringsakte;
         skoslex:object kad:OnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
         skosthes:broaderPartitive not:Passeren;
@@ -372,7 +372,7 @@ not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
-	skoslex:object not:Hypotheekakte;
+	skoslex:record not:Hypotheekakte;
         skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
@@ -384,14 +384,14 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
-	skoslex:object not:Hypotheekakte;
+	skoslex:record not:Hypotheekakte;
 	skoslex:object kad:OnroerendeZaak;
 	skoslex:object kad:Onderpand;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 #--
 #Objects
-not:AanspraakTotGebruik a skos:Concept, skoslex:Object;
+not:AanspraakTotGebruik a skos:Concept;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik";
 .
@@ -420,7 +420,7 @@ not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
 	skosthes:broaderGeneric not:Akte;
 .
-not:Comparant a skos:Concept, skoslex:Object;
+not:Comparant a skos:Concept, skoslex:Record;
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant";
 	skos:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
@@ -436,10 +436,10 @@ not:Comparitie a skos:Concept, skoslex:Record;#Hens Meengs van KNB geeft aan dat
 	skos:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
 	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
-    skosthes:broaderPartitive not:NotarieleAkte;
-    skoslex:isAbout not:Comparant
+	skosthes:broaderPartitive not:NotarieleAkte;
+	skoslex:isAbout not:Comparant
 .
-not:Grondslagwaarde a skos:Concept, skoslex:Object;
+not:Grondslagwaarde a skos:Concept;
 	rdfs:label "Grondslagwaarde"@nl;
 	skos:prefLabel "Grondslagwaarde";
 	skos:altLabel "Heffingsgrondslag";
@@ -458,14 +458,14 @@ not:Hypotheekakte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:NotarieleAkte;
 .
-not:Kadasterkosten a skos:Concept, skoslex:Object;#Mogelijk splitsen in een variant voor levering en hypotheek
+not:Kadasterkosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
 	rdfs:label "Kadasterkosten"@nl;
 	skos:prefLabel "Kadasterkosten";
 	skos:definition "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
 	rdfs:comment "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
 	skosthes:broaderPartitive not:Leveringsakte;
 .
-not:Koopsom a skos:Concept, skoslex:Object;
+not:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;
 	skos:prefLabel "Koopsom";
 	skos:altLabel "Koopprijs";
@@ -476,7 +476,7 @@ not:Koopsom a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
 	skosthes:broaderPartitive not:Leveringsakte;
 .
-not:KwalitatieveRechten a skos:Concept, skoslex:Object;
+not:KwalitatieveRechten a skos:Concept;
 	rdfs:label "Kwalitatieve rechten"@nl;
 	skos:prefLabel "Kwalitatieve rechten";
 	skos:definition "Staat een uit een overeenkomst voortvloeiende, voor overgang vatbaar recht in een zodanig verband met een aan de schuldeiser toebehorend goed, dat hij bij dat recht slechts belang heeft, zolang hij het goed behoudt, dan gaat dat recht over op degene die dat goed onder bijzondere titel verkrijgt.";
@@ -521,14 +521,14 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
 	skosthes:broaderGeneric not:AuthentiekeAkte;
 .
-not:Notariskosten a skos:Concept, skoslex:Object;#Mogelijk splitsen in een variant voor levering en hypotheek
+not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
 	rdfs:label "Notariskosten"@nl;
 	skos:prefLabel "Notariskosten";
 	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
 	rdfs:comment "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
 	skosthes:broaderPartitive not:Leveringsakte;
 .
-not:NotarieleVolmacht a skos:Concept, skoslex:Object;
+not:NotarieleVolmacht a skos:Concept;
 	rdfs:label "Notariële volmacht"@nl;
 	skos:prefLabel "Notariële volmacht";
         skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk.";
@@ -545,11 +545,11 @@ not:OnderhandseAkte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=3>;
 	skosthes:broaderGeneric not:Akte;
 .
-not:Ongevorderd a skos:Concept, skoslex:Object;
+not:Ongevorderd a skos:Concept;
 	rdfs:label "Ongevorderd"@nl;
 	skos:prefLabel "Ongevorderd";
 .
-not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
+not:PlaatsVanVestiging a skos:Concept;
 	rdfs:label "Plaats van vestiging"@nl;
 	skos:prefLabel "Plaats van vestiging";
 	skos:definition "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren. In het Koninklijk besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
@@ -559,7 +559,7 @@ not:PlaatsVanVestiging a skos:Concept, skoslex:Object;
 	skos:semanticRelation not:Notaris;
 	skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.";
 .
-not:RechtVanHypotheek a skos:Concept, skoslex:Object;
+not:RechtVanHypotheek a skos:Concept;
 	rdfs:label "Recht van hypotheek"@nl;
 	skos:prefLabel "Recht van hypotheek";
 	skos:altLabel "Hypotheek";
@@ -571,7 +571,7 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
         skosthes:broaderPartitive not:Hypotheekakte;
 	skosthes:broaderGeneric kad:BeperktRecht;
 .
-not:Titel a skos:Concept, skoslex:Object;
+not:Titel a skos:Concept;
 	rdfs:label "Titel"@nl;
 	skos:prefLabel "Titel";
 	skos:altLabel "Titel van aankomst";
@@ -582,7 +582,7 @@ not:Titel a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
         skosthes:broaderPartitive not:Leveringsakte;
 .
-not:TitelVanAankomst a skos:Concept, skoslex:Object;
+not:TitelVanAankomst a skos:Concept;
 	rdfs:label "Titel van aankomst"@nl;
 	skos:prefLabel "Titel van aankomst";
 	skos:altLabel "Wijze van verkrijging";
@@ -593,12 +593,12 @@ not:TitelVanAankomst a skos:Concept, skoslex:Object;
         skosthes:narrowerPartitive not:Titel;
         #Onderdeel van titel van aankomst is datumdeel/nr dat Kadaster levert na inschrijving in register. Dit moet hier nog bij.
 .
-not:VanRechtswegeOntbonden a skos:Concept, skoslex:Object;
+not:VanRechtswegeOntbonden a skos:Concept;
 	rdfs:label "Van rechtswege ontbonden"@nl;
 	skos:prefLabel "Van rechtswege ontbonden";
 	skos:definition "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is.";
 .
-not:Volmacht a skos:Concept, skoslex:Object;
+not:Volmacht a skos:Concept;
 	rdfs:label "Volmacht"@nl;
 	skos:prefLabel "Volmacht";
 	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden.";
