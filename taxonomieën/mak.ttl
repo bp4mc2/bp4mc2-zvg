@@ -266,7 +266,7 @@ mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 7 van de model koopovereenkomst.";
 	skoslex:isAbout not:AanspraakTotGebruik;
-	skoslex:isAbout kad:Huurkoop;
+	skoslex:isAbout kad:Huurkoopovereenkomst;
 	skoslex:isAbout not:Ongevorderd;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
