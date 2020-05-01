@@ -117,7 +117,7 @@ kad:Overdracht a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 #--
-#Objects
+#Objects, records
 kad:BeperktRecht a skos:Concept;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
@@ -127,13 +127,13 @@ kad:BeperktRecht a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
-kad:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
+kad:BeschermdStadsDorpsgezicht a skos:Concept;
 	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
 	skos:prefLabel "Beschermd stads-/dorpsgezicht";
 	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
 	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";#Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
 .
-kad:Beslag a skos:Concept, skoslex:Object;
+kad:Beslag a skos:Concept;
 	rdfs:label "Beslag"@nl;
 	skos:prefLabel "Beslag";
 	skos:definition "Een Beslag is een voorlopige maatregel waarbij de overheid, al dan niet op vordering van een belanghebbende, bepaalde zaken aan iemands vrije beschikking onttrekt, of wel deze onder zich neemt.";
@@ -145,19 +145,19 @@ kad:Beslag a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FBeslag>;
 .
-kad:Bestemmingsplan a skos:Concept, skoslex:Object;
+kad:Bestemmingsplan a skos:Concept;
 	rdfs:label "Bestemmingsplan"@nl;
 	skos:prefLabel "Bestemmingsplan";
 	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
 .
-kad:Bezwaard a skos:Concept, skoslex:Object;
+kad:Bezwaard a skos:Concept;
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
 	skos:definition "Belast, bijvoorbeeld met een hypotheek."#Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
 	skos:semanticRelation kad:BeperktRecht;
 	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
 .
-kad:BijzondereLasten a skos:Concept, skoslex:Object;
+kad:BijzondereLasten a skos:Concept;
 	rdfs:label "Bijzondere lasten"@nl;
 	skos:prefLabel "Bijzondere lasten";
 	skos:definition "De verkoper is verplicht de onroerende zaak in eigendom over te dragen vrij van alle bijzondere lasten en beperkingen, met uitzondering van die welke de koper uitdrukkelijk heeft aanvaard.";
@@ -167,7 +167,7 @@ kad:BijzondereLasten a skos:Concept, skoslex:Object;
 	skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
 	skosthes:narrowerPartitive kad:Voorkeursrecht;
 .
-kad:Canon a skos:Concept, skoslex:Object;
+kad:Canon a skos:Concept;
 	rdfs:label "Canon"@nl;
 	skos:prefLabel "Canon";
 	skos:altLabel "Erfpachtcanon";
@@ -178,7 +178,7 @@ kad:Canon a skos:Concept, skoslex:Object;
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfpachtcanon>;
   skos:semanticRelation kad:RechtVanErfpacht;
 .
-kad:Eigendomsrecht a skos:Concept, skoslex:Object;
+kad:Eigendomsrecht a skos:Concept;
 	rdfs:label "Eigendomsrecht"@nl;
 	skos:prefLabel "Eigendomsrecht";
 	skos:altLabel "Eigendom";
@@ -189,13 +189,13 @@ kad:Eigendomsrecht a skos:Concept, skoslex:Object;
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FEigendom>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
-kad:Erfpachtvoorwaarden a skos:Concept, skoslex:Object;
+kad:Erfpachtvoorwaarden a skos:Concept;
 	rdfs:label "Erfpachtvoorwaarden"@nl;
 	skos:prefLabel "Erfpachtvoorwaarden";
 	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
 .
-kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
+kad:Erfdienstbaarheid a skos:Concept;
 	rdfs:label "Erfdienstbaarheid"@nl;
 	skos:prefLabel "Erfdienstbaarheid";
 	skos:altLabel "Servituut";
@@ -207,7 +207,7 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
         skosthes:narrowerPartitive kad:HeersendeErfdienstbaarheid;
         skosthes:narrowerPartitive kad:LijdendeErfdienstbaarheid;
 .
-kad:GemeentelijkeVerordening a skos:Concept, skoslex:Object;
+kad:GemeentelijkeVerordening a skos:Concept;
 	rdfs:label "Gemeentelijke verordening"@nl;
 	skos:prefLabel "Gemeentelijke verordening";
 	skos:definition "Een gemeentelijke verordening is een op gemeentelijk niveau vastgesteld algemeen verbindend voorschrift.";
@@ -230,17 +230,17 @@ kad:Grootte a skos:Concept;
 	skos:altLabel "Kadastergrootte";
 	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
-  #dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
-  skos:semanticRelation kad:Perceel;
+	#dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
+	skos:semanticRelation kad:Perceel;
 .
-kad:HeersendeErfdienstbaarheid a skos:Concept, skoslex:Object;
+kad:HeersendeErfdienstbaarheid a skos:Concept;
 	rdfs:label "Heersende erfdienstbaarheid"@nl;
 	skos:prefLabel "Heersende erfdienstbaarheid";
 	skos:definition "Een heersende erf is een onroerende zaak waarop een erfdienstbaarheid is gevestigd ten gunste van een ieder die het heersende erf verkrijgt of gebruikt.";
 	rdfs:comment "Een heersende erf is een onroerende zaak waarop een erfdienstbaarheid is gevestigd ten gunste van een ieder die het heersende erf verkrijgt of gebruikt.";
         skos:scopeNote "Onder erf wordt verstaan een grondstuk, een waterperceel daaronder begrepen.";
 .
-kad:HerzieningErfpacht a skos:Concept, skoslex:Object;
+kad:HerzieningErfpacht a skos:Concept;
 	rdfs:label "Herziening erfpacht"@nl;
 	skos:prefLabel "Herziening";
 	skos:altLabel "Herziening erfpacht";
@@ -248,9 +248,10 @@ kad:HerzieningErfpacht a skos:Concept, skoslex:Object;
 	skos:definition "Moment waarop de geldende voorwaarden en condities aflopen.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
 .
-kad:Huurkoop a skos:Concept, skoslex:Object;
-	rdfs:label "Huurkoop"@nl;
-	skos:prefLabel "Huurkoop";
+kad:Huurkoopovereenkomst a skos:Concept, skoslex:Record;
+	rdfs:label "Huurkoopovereenkomst"@nl;
+	skos:prefLabel "Huurkoopovereenkomst";
+	skos:altLabel "Huurkoop";
 	skos:definition "Huurkoop is de koop en verkoop op afbetaling, waarbij partijen overeenkomen, dat de verkochte zaak niet door enkele aflevering in eigendom overgaat, maar pas door vervulling van de opschortende voorwaarde van algehele betaling van wat door de koper uit hoofde van de koopovereenkomst verschuldigd is.";
 	rdfs:comment "Huurkoop is dat koper en verkoper afspreken dat de koper een goed koopt op afbetaling. Dit betekent dat de koper een deel aanbetaalt en de rest van het bedrag in delen betaalt. Pas als de koper het hele bedrag heeft betaald, wordt hij eigenaar van het goed.";
         skos:scopeNote "Van een dergelijk feit kan aantekening worden gemaakt.";
@@ -259,7 +260,7 @@ kad:Huurkoop a skos:Concept, skoslex:Object;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FHuurkoop>;
         skosthes:broaderGeneric mak:Koopovereenkomst;
 .
-kad:Inschrijvingsbedrag a skos:Concept, skoslex:Object;
+kad:Inschrijvingsbedrag a skos:Concept;
 	rdfs:label "Inschrijvingsbedrag"@nl;
 	skos:prefLabel "Inschrijvingsbedrag";
 	skos:definition "De hypotheeknemer mag niet meer, met voorrang op andere schuldeisers van de hypotheekgever, dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
@@ -277,12 +278,12 @@ kad:KadastraalObject a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Perceel;
 	skosthes:narrowerGeneric kad:OnroerendeZaak;
 .
-kad:Kettingbeding a skos:Concept, skoslex:Object;
+kad:Kettingbeding a skos:Concept, skoslex:Record;
 	rdfs:label "Kettingbeding"@nl;
 	skos:prefLabel "Kettingbeding";
 	skos:definition "Een kettingbeding is een verbintenis dat de schuldenaar bij overdracht van een registergoed, op straffe van een boete, ten behoeve van de schuldeiser bepaalde verplichtingen, onder gelijke verbintenis, aan zijn verkrijgers moet opleggen.";
 .
-kad:KwalitatieveVerplichting a skos:Concept, skoslex:Object;
+kad:KwalitatieveVerplichting a skos:Concept;
 	rdfs:label "Kwalitatieve verplichting"@nl;
 	skos:prefLabel "Kwalitatieve verplichting";
 	skos:definition "Een Kwalitatieve Verplichting is een overeenkomst waarbij bedongen wordt dat de verplichting van een van de partijen om iets te dulden of niet te doen ten aanzien van een haar toebehorend registergoed , zal overgaan op degenen die het goed onder bijzondere titel zullen verkrijgen, en dat mede gebonden zullen zijn degenen die van de rechthebbende een recht tot gebruik van het goed zullen verkrijgen.";
@@ -290,7 +291,7 @@ kad:KwalitatieveVerplichting a skos:Concept, skoslex:Object;
         skos:scopeNote "Tevens gaat de kwalitatieve verplichting over op rechtsopvolgers. De kwalitatieve verplichting moet worden aangegaan bij notariële akte.Van een dergelijke overeenkomst kan een aantekening worden gemaakt. Een dergelijke verplichting is niet nodig bij verkrijging onder algemene titel, aangezien bij een dergelijke verkrijging de kwalitatieve verplichting van rechtswege voortgezet wordt.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252>;
 .
-kad:LijdendeErfdienstbaarheid a skos:Concept, skoslex:Object;
+kad:LijdendeErfdienstbaarheid a skos:Concept;
 	rdfs:label "Lijdende erfdienstbaarheid"@nl;
 	skos:prefLabel "Lijdende erfdienstbaarheid";
 .
@@ -341,7 +342,7 @@ kad:OpgegevenGrootte a skos:Concept;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skos:semanticRelation kad:Perceel;
 .
-kad:Optierecht a skos:Concept, skoslex:Object;
+kad:Optierecht a skos:Concept;
 	rdfs:label "Optierecht"@nl;
 	skos:prefLabel "Optierecht";
 	skos:altLabel "Zakelijk optierecht";
@@ -369,14 +370,14 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FProvinciaal_monument>;
 .
-kad:ProvincialeVerordening a skos:Concept, skoslex:Object;
+kad:ProvincialeVerordening a skos:Concept;
 	rdfs:label "Provinciale verordening"@nl;
 	skos:prefLabel "Provinciale verordening";
 	skos:definition " Algemeen verbindende voorschriften, vastgesteld door provinciale staten van een provincie of vastgesteld via delegatie of attributie aan gedeputeerde staten of een commissie of de commissaris van de Koningin.";
 	rdfs:comment "Wetgevende regeling op provinciaal niveau.";
         skosthes:narrowerPartitive kad:ProvinciaalMonument;
 .
-kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
+kad:PubliekrechtelijkeBeperking a skos:Concept;
 	rdfs:label "Publiekrechtelijke beperking"@nl;
 	skos:prefLabel "Publiekrechtelijke beperking";
 	skos:definition "Een publiekrechtelijke beperking is een beperking van de bevoegdheid tot gebruik van of beschikking over een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen, niet zijnde een privaatrechtelijke beperking en/of een schuldplichtigheid die rust op een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen.";
@@ -386,7 +387,7 @@ kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
         skosthes:narrowerGeneric kad:BeperktRecht;
 .
-kad:Rang a skos:Concept, skoslex:Object;
+kad:Rang a skos:Concept;
 	rdfs:label "Rang"@nl;
 	skos:prefLabel "Rang";
 	skos:altLabel "Rangorde van inschrijvingen";
@@ -396,7 +397,7 @@ kad:Rang a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
   skos:semanticRelation kad:Onderpand;
 .
-kad:RechtVanErfpacht a skos:Concept, skoslex:Object;
+kad:RechtVanErfpacht a skos:Concept;
 	rdfs:label "RechtVanErfpacht"@nl;
 	skos:prefLabel "RechtVanErfpacht";
 	skos:altLabel "Erfpacht";
@@ -406,7 +407,7 @@ kad:RijksmonumentInDeZinVanDeErfgoedwet a skos:Concept, skoslex:Object;
 	rdfs:label "Rijksmonument in de zin van de Erfgoedwet"@nl;
 	skos:prefLabel "Rijksmonument in de zin van de Erfgoedwet";
 .
-kad:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
+kad:TotaalbedragInschrijving a skos:Concept;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
 	skos:prefLabel "Totaalbedrag van de inschrijving";
 	skos:definition "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
@@ -415,26 +416,26 @@ kad:TotaalbedragInschrijving a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
-kad:Voorkeursrecht a skos:Concept, skoslex:Object;
+kad:Voorkeursrecht a skos:Concept;
 	rdfs:label "Voorkeursrecht"@nl;
 	skos:prefLabel "Voorkeursrecht";
 	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
         #ToDo: check op definitie door Kadaster
 .
-kad:VoortdurendeErfpacht a skos:Concept, skoslex:Object;
+kad:VoortdurendeErfpacht a skos:Concept;
 	rdfs:label "Voortdurende erfpacht"@nl;
 	skos:prefLabel "Voortdurende erfpacht";
 	skos:definition "Erfpachtcontract voor een onbepaalde tijd met tijdvakken van -meestal- 50 jaar.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
         #ToDo: check op definitie door Kadaster
 .
-kad:Wederinkoop a skos:Concept, skoslex:Object;
+kad:Wederinkoop a skos:Concept;
 	rdfs:label "Wederinkoop"@nl;
 	skos:prefLabel "Wederinkoop";
 	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding.";
         #ToDo: check op definitie door Kadaster
 .
-kad:Wegneemrecht a skos:Concept, skoslex:Object;
+kad:Wegneemrecht a skos:Concept;
 	rdfs:label "Wegneemrecht"@nl;
 	skos:prefLabel "Wegneemrecht";
 	skos:altLabel "Wettelijk wegneemrecht";
@@ -449,7 +450,7 @@ kad:WerkelijkeGrootte a skos:Concept;
 	skosthes:broaderGeneric kad:Grootte;
 	skos:semanticRelation kad:Perceel;
 .
-kad:ZakelijkRecht a skos:Concept, skoslex:Object;
+kad:ZakelijkRecht a skos:Concept;
 	rdfs:label "Zakelijk recht"@nl;
 	skos:prefLabel "Zakelijk recht";
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
