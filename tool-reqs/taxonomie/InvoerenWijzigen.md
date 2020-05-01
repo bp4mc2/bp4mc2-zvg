@@ -1,4 +1,4 @@
-# Insert and edit taxonomie  
+# Insert and edit
 
 ## UC 1. To create 
 - a new concept and its properties (description and relationship using Semantic Web Standards (W3C) in machine-readable format)
