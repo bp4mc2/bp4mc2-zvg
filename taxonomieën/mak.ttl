@@ -230,9 +230,6 @@ mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	skos:definition "Artikel 4 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4 van de model koopovereenkomst.";
-	skosthes:narrowerPartitive mak:ArtikelEigendomsoverdrachtLid1;
-	skosthes:narrowerPartitive mak:ArtikelEigendomsoverdrachtLid2;
-	skosthes:narrowerPartitive mak:ArtikelEigendomsoverdrachtLid3;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
@@ -241,6 +238,7 @@ mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 	skos:definition "Artikel 4, lid 1 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4, lid 1 van de model koopovereenkomst.";
+	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 	skoslex:isAbout not:Notaris;
 	skoslex:isAbout not:PlaatsVanVestiging;
 .
@@ -250,6 +248,7 @@ mak:ArtikelEigendomsoverdrachtLid2 a skos:Concept, skoslex:Record;
 	skos:definition "Artikel 4, lid 2 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4, lid 2 van de model koopovereenkomst.";
+	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 .
 mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 3"@nl;
@@ -257,6 +256,7 @@ mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
 	skos:definition "Artikel 4, lid 3 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4 lid 3 van de model koopovereenkomst.";
+	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 .
 mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record;
 	rdfs:label "ArtikelArtikel 7 van de model koopovereenkomst: Feitelijke levering/Overdracht aanspraken"@nl;
@@ -318,7 +318,7 @@ mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Record;
 	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
 	#rdfs:comment ".";
 	#skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
-		skosthes:broaderPartitive mak:Koopovereenkomst;
+	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
@@ -326,7 +326,6 @@ mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
 	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
 	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
 	skos:scopeNote "Artikel 15 van de model koopovereenkomst.";
-	skosthes:narrowerPartitive mak:ArtikelOntbindendeVoorwaardenLid1;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOntbindendeVoorwaardenLid1 a skos:Concept, skoslex:Record;
@@ -334,6 +333,7 @@ mak:ArtikelOntbindendeVoorwaardenLid1 a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel: Ontbindende voorwaarden, lid 1";
 	skos:definition "Artikel 15, lid 1 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
 	#skos:scopeNote "Artikel 15, lid 1 van de model koopovereenkomst.";
+	skosthes:broaderPartitive mak:ArtikelOntbindendeVoorwaarden;
 	skoslex:isAbout mak:Financieringsvoorbehoud;
 .
 mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Record;
