@@ -184,10 +184,10 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
 #--
-#Objects and records
+#Other concepts (objects, records)
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
 #--
-mak:Aanspraak a skos:Concept, skoslex:Object;
+mak:Aanspraak a skos:Concept;
 	rdfs:label "Aanspraak"@nl;
 	skos:prefLabel "Aanspraak";
 	skos:definition "Een recht ten aanzien van een derde.";
@@ -439,7 +439,7 @@ mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:comment "In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
+mak:Financieringsvoorbehoud a skos:Concept, skoslex:Record;
 	rdfs:label "Financieringsvoorbehoud"@nl;
 	skos:prefLabel "Financieringsvoorbehoud";
 	skos:altLabel "Voorbehoud van financiering";
@@ -471,19 +471,19 @@ mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Object
 	skos:definition "Ondergrondse tanks voor het opslaan van (vloei)stoffen.";
 	rdfs:comment "In de grond van de onroerende zaak kunnen zich ondergrondse tanks bevinden voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks.";
 .
-mak:Schoning a skos:Concept, skoslex:Object;
+mak:Schoning a skos:Concept;
 	rdfs:label "Schoning"@nl;
 	skos:prefLabel "Schoning";
 	skos:definition "Het schoonmaken van de onroerende zaak";
 	rdfs:comment "Indien daartoe de noodzaak bestaat kan de eigenaar van de onroerende zaak door de daartoe bevoegde instantie verplicht worden om de onroerende zaak schoon te maken.";
 .
-mak:Schuldsaneringsregeling a skos:Concept, skoslex:Object; #Hoort wellicht thuis in een ander domein.
+mak:Schuldsaneringsregeling a skos:Concept; #Hoort wellicht thuis in een ander domein.
 	rdfs:label "Schuldsaneringsregeling"@nl;
 	skos:prefLabel "Schuldsaneringsregeling";
 	skos:definition "Een natuurlijke persoon kan, indien redelijkerwijs is te voorzien dat hij niet zal kunnen voortgaan met het betalen van zijn schulden of indien hij in de toestand verkeert dat hij heeft opgehouden te betalen, verzoeken de toepassing van de schuldsaneringsregeling uit te spreken.";
 	rdfs:comment "De schuldsanering is een wettelijk regeling voor mensen met schulden.  In 3 tot 5 jaar tijd kan men de schuld volledig aflossen. Na deze tijd ontvang de schuldenaar een 'schone lei'. Dat betekent dat men schuldenvrij is.";
 .
-mak:Verontreiniging a skos:Concept, skoslex:Object;
+mak:Verontreiniging a skos:Concept;
 	rdfs:label "Verontreiniging"@nl;
 	skos:prefLabel "Verontreiniging";
 	skos:definition "Een vervuiling (in de grond) van de onroerende zaak.";
@@ -495,7 +495,7 @@ mak:Woning a skos:Concept, skoslex:Object;
 	skos:definition "Een (deel van) een gebouw, bestemd voor bewoning.";
 	skos:editorialNote "'Woning' is de gebruikelijk term binnen de makkelaarswereld. Binnen zorgeloosvastgoed spreken we meer generieker van 'Huis'";
 .
-mak:ZichtbareEnOnzichtbareGebreken a skos:Concept, skoslex:Object;
+mak:ZichtbareEnOnzichtbareGebreken a skos:Concept;
 	rdfs:label "Zichtbare en onzichtbare gebreken"@nl;
 	skos:prefLabel "Zichtbare en onzichtbare gebreken";
 	skos:definition "Zichtbare en onzichtbare bouwkundige onvolkomenheden aan de onroerende zaak.";
