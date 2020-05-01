@@ -1,4 +1,4 @@
-# Collaboratie en opslag van een taxonomie
+# Collaboration and Storage
 ## UC 13. User management and user rights
 - to add (register), edit, remove user (groups) and manage permissions (managing User Accounts)
 - Authorization and Authentication
