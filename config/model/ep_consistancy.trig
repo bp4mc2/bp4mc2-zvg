@@ -55,11 +55,23 @@ GRAPH config:Theatre {
     ];
     elmo:fragment [
       elmo:appliesTo "typecount";
-      rdfs:label "Aantal"@nl;
+      rdfs:label "Aantal typen"@nl;
     ];
     elmo:fragment [
       elmo:appliesTo "types";
-      rdfs:label "Types"@nl;
+      rdfs:label "Typen"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "rolecount";
+      rdfs:label "Aantal rollen"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "roles";
+      rdfs:label "Rollen"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "rolesdirect";
+      rdfs:label "Directe rollen"@nl;
     ];
   .
 

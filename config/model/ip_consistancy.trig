@@ -51,7 +51,7 @@ GRAPH config:Theatre {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
       PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
-      SELECT ?inst ?inst_label ?typecount ?types ?rolecount ?roles
+      SELECT ?inst ?inst_label ?typecount ?types ?rolecount ?roles ?rolesdirect
       WHERE {
         ?inst a skos:Concept.
         ?inst rdfs:label ?inst_label.
@@ -66,6 +66,22 @@ GRAPH config:Theatre {
             OPTIONAL {
               ?inst a ?lextype.
               FILTER (?lextype = skoslex:Actor || ?lextype = skoslex:Agent || ?lextype = skoslex:Object || ?lextype = skoslex:Act || ?lextype = skoslex:Record).
+            }
+          }
+          GROUP BY ?inst ?inst_label
+        }
+        OPTIONAL
+        {
+          SELECT ?inst ?inst_label (group_concat(distinct strafter(str(?roletype),"#") ; separator = ", ") as ?rolesdirect)
+          WHERE {
+            ?inst a skos:Concept.
+            ?inst rdfs:label ?inst_label.
+            FILTER (lang(?inst_label)="nl" || lang(?inst_label)="")
+            OPTIONAL {
+              {
+                ?act ?roletype ?inst.
+                FILTER (?roletype = skoslex:actor || ?roletype = skoslex:agent || ?roletype = skoslex:object || ?roletype = skoslex:record).
+              }
             }
           }
           GROUP BY ?inst ?inst_label
