@@ -153,7 +153,7 @@ kad:Bestemmingsplan a skos:Concept;
 kad:Bezwaard a skos:Concept;
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
-	skos:definition "Belast, bijvoorbeeld met een hypotheek."#Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
+	skos:definition "Belast, bijvoorbeeld met een hypotheek."; #Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
 	skos:semanticRelation kad:BeperktRecht;
 	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
 .
