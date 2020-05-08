@@ -204,7 +204,7 @@ mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Record;
 mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Bankgarantie/Waarborgsom"@nl;
 	skos:prefLabel "Artikel: Bankgarantie/Waarborgsom";
-	skos:definition "Artikel 5 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 5 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 5 van de model koopovereenkomst.";
 	skoslex:isAbout fin:Bankgarantie;
@@ -217,7 +217,7 @@ mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 mak:ArtikelBetaling a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Betaling"@nl;
 	skos:prefLabel "Artikel: Betaling";
-	skos:definition "Artikel 3 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 3 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 3 van de model koopovereenkomst.";
 	skoslex:isAbout kad:Beslag;
@@ -227,7 +227,7 @@ mak:ArtikelBetaling a skos:Concept, skoslex:Record;
 mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht";
-	skos:definition "Artikel 4 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 4 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -235,7 +235,7 @@ mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 1"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 1";
-	skos:definition "Artikel 4, lid 1 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 4, lid 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4, lid 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
@@ -245,7 +245,7 @@ mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 mak:ArtikelEigendomsoverdrachtLid2 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 2"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 2";
-	skos:definition "Artikel 4, lid 2 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 4, lid 2 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4, lid 2 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
@@ -253,7 +253,7 @@ mak:ArtikelEigendomsoverdrachtLid2 a skos:Concept, skoslex:Record;
 mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 3"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 3";
-	skos:definition "Artikel 4, lid 3 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 4, lid 3 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4 lid 3 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
@@ -262,7 +262,7 @@ mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record
 	rdfs:label "ArtikelArtikel 7 van de model koopovereenkomst: Feitelijke levering/Overdracht aanspraken"@nl;
 	skos:prefLabel "Artikel: Feitelijke levering/Overdracht aanspraken";
 	skos:altLabel "Artikel: Eigendomsoverdracht";
-	skos:definition "Artikel 7 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 7 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 7 van de model koopovereenkomst.";
 	skoslex:isAbout not:AanspraakTotGebruik;
@@ -273,7 +273,7 @@ mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record
 mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Kadastraal inmeten"@nl;
 	skos:prefLabel "Artikel: Kadastraal inmeten";
-	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -281,7 +281,7 @@ mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Record;
 mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Artikel: Kosten/Overdrachtsbelasting";
-	skos:definition "Artikel 2 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 2 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 	#skos:scopeNote "Artikel 2 van de model koopovereenkomst.";
@@ -298,7 +298,7 @@ mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Nederlands recht"@nl;
 	skos:prefLabel "Artikel: Nederlands recht";
-	skos:definition "Artikel 18 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 18 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 18 van de model koopovereenkomst.";
 	skoslex:isAbout zv:NederlandsRecht;
@@ -315,7 +315,7 @@ mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Record;
 mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: NSW landgoed"@nl;
 	skos:prefLabel "Artikel: NSW landgoed";
-	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -331,7 +331,7 @@ mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
 mak:ArtikelOntbindendeVoorwaardenLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Ontbindende voorwaarden, lid 1"@nl;
 	skos:prefLabel "Artikel: Ontbindende voorwaarden, lid 1";
-	skos:definition "Artikel 15, lid 1 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 15, lid 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#skos:scopeNote "Artikel 15, lid 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelOntbindendeVoorwaarden;
 	skoslex:isAbout mak:Financieringsvoorbehoud;
@@ -339,7 +339,7 @@ mak:ArtikelOntbindendeVoorwaardenLid1 a skos:Concept, skoslex:Record;
 mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Overmacht, risico, verzekeringen"@nl;
 	skos:prefLabel "Artikel: Overmacht, risico, verzekeringen";
-	skos:definition "Artikel 10 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 10 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 10 van de model koopovereenkomst.";
 	skoslex:isAbout not:VanRechtswegeOntbonden;
@@ -357,7 +357,7 @@ mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Registratie koopovereenkomst"@nl;
 	skos:prefLabel "Artikel: Registratie koopovereenkomst";
 	skos:altLabel "Artikel: Inschrijving in de de openbare registers";
-	skos:definition "Artikel 13 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 13 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	skos:editorialNote "Dit artikel kan verwijzingen bevatten naar de hier genoemde wetsartikelen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
@@ -368,7 +368,7 @@ mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Staat van onroerend goed/gebruik"@nl;
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
-	skos:definition "Artikel 6 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 6 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	skos:editorialNote "Dit artikel kan verwijzingen bevatten naar de hier genoemde wetsartikelen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
@@ -405,7 +405,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop"@nl;
 	skos:prefLabel "Artikel: erkoop en koop";
-	skos:definition "Artikel 1 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 1 van de model koopovereenkomst.";
 	skos:scopeNote "Keuze tussen eigendom en erfpacht.";
@@ -414,7 +414,7 @@ mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - eigendom"@nl;
 	skos:prefLabel "Artikel: erkoop en koop - eigendom";
-	skos:definition "Optie A van artikel 1 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Optie A van artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Optie A van artikel 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
@@ -423,7 +423,7 @@ mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - erfpacht"@nl;
 	skos:prefLabel "Artikel: erkoop en koop - erfpacht";
-	skos:definition "Optie B van artikel 1 van de model koopovereenkomst.";#NVM (Rieco Boersma) gevraagd voor aanleveren definitie. Voor zolang gevuld met scopeNote om dit concept uit de controles weg te laten.
+	skos:definition "Optie B van artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Optie B van artikel 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
