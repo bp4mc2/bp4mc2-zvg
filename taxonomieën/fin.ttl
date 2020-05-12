@@ -83,14 +83,16 @@ fin:IdentificatieHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekadviseur;
 	skoslex:object fin:Hypotheekgever;
 .
-fin:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen bindende offerte"@nl;
-	skos:prefLabel "Opstellen bindende offerte";
-	skos:definition "Het opstellen van de bindende offerte ter verstrekking van een hypotheek.";
+fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
+	rdfs:label "Verstrekken bindend aanbod"@nl;
+	skos:prefLabel "Verstrekken bindend aanbod";
+	skos:definition "Verstrekken van een bindend aanbod door een geldverstrekker, vastgelegd in een bindende offerte"@nl;
+	skos:scopeNote "De geldverstrekker verplicht zich hiermee het geldbedrag te leveren onder de vermelde voorwaarden in de offerte, indien sprake zal zijn van de levering"@nl;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:record fin:BindendeOfferte;
-	skoslex:record fin:Hypotheekadvies;
+	rdfs:seeAlso fin:Hypotheekadvies;
+	skoslex:object kad:OnroerendeZaak;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
@@ -116,11 +118,12 @@ fin:Bankgarantie a skos:Concept;
 	skos:prefLabel "Bankgarantie";
 	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
 	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
-        skos:semanticRelation fin:Waarborgsom;
+	skos:semanticRelation fin:Waarborgsom;
 .
 fin:BindendeOfferte a skos:Concept, skoslex:Record;
 	rdfs:label "Bindende offerte"@nl;
-	skos:prefLabel "Bindende offerte";
+	skos:prefLabel "Bindende offerte"@nl;
+	skos:altLabel "Hypotheekofferte"@nl;
 	skos:definition "Een bindend aanbod van een geldverstrekker ter verstrekking van een hypotheek.";
 	skos:semanticRelation fin:Hypotheekadvies;
 .

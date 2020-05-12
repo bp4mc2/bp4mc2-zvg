@@ -218,7 +218,7 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	rdfs:comment "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
-	skoslex:object kad:Registergoed;
+	skoslex:object kad:OnroerendeZaak;
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor kad:Rechthebbende;
@@ -454,7 +454,7 @@ not:Comparant a skos:Concept, skoslex:Actor;
 	rdfs:comment "Een persoon die als (gemachtigde van een) partij in de notariële akte is opgenomen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 	skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen in de taxonomie.";
-	skosthes:broaderGeneric not:Partij;
+	skosthes:broaderGeneric zv:Partij;
 	skosthes:narrowerGeneric not:Vervreemder;
 	skosthes:narrowerGeneric not:Verkrijger;
 .
