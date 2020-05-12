@@ -129,8 +129,10 @@ fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 fin:Lening a skos:Concept;
 	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening";
-	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
+	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over een te lenen geldbedrag";
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
+	skos:semanticRelation fin:Schuldenaar;
+	skos:semanticRelation fin:Schuldeiser;
 .
 fin:Opslagbedrag a skos:Concept;
 	rdfs:label "Opslagbedrag"@nl;

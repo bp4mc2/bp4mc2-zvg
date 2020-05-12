@@ -466,7 +466,7 @@ not:Comparitie a skos:Concept, skoslex:Record;#Hens Meengs van KNB geeft aan dat
 	skosthes:broaderPartitive not:NotarieleAkte;
 	skoslex:isAbout not:Comparant
 .
-not:Grondslagwaarde a skos:Concept;
+not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Grondslagwaarde"@nl;
 	skos:prefLabel "Grondslagwaarde";
 	skos:altLabel "Heffingsgrondslag";
