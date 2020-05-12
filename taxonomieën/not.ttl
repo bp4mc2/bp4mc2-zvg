@@ -397,6 +397,7 @@ not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
 	rdfs:comment "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen.";
         skos:editorialNote "Vindt doorgaans tegelijkertijd plaats met het overdragen van het zakelijk recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval."; #Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zit.
 	skoslex:agent not:Notaris;
+	skoslex:object kad:BeperktRecht;
 	skoslex:record not:NotarieleAkte;
   skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .

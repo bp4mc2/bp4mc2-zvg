@@ -21,6 +21,7 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
+<http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1> rdfs:label "Artikel 1.1 Wet op het financieel toezicht".
 
 #--
 #Begrippen die essentieel zijn voor de activiteiten het hypotheekdomein, maar die in andere domeinen worden gedefinieerd.
@@ -92,13 +93,20 @@ fin:OpstellenBindendeOfferte a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen hypotheekadvies"@nl;
-	skos:prefLabel "Opstellen hypotheekadvies";
-	skos:definition "Het opstellen van een advies ter aanbeveling van een hypotheekconstructie.";
+	rdfs:label "Geven hypotheekadvies"@nl;
+	skos:prefLabel "Geven hypotheekadvies";
+	skos:definition "Het adviseren ter aanbeveling van een hypotheekconstructie.";
 	skoslex:agent fin:Hypotheekadviseur;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
+	skosthes:broaderGeneric fin:FinancieelAdvies;
+.
+fin:FinancieelAdvies a skos:Concept, skoslex:Act;
+	rdfs:label "Geven van een financieel advies"@nl;
+	skos:prefLabel "Geven van een financieel advies"@nl;
+	skos:definition "het in de uitoefening van een beroep of bedrijf aanbevelen van een of meer specifieke financiële producten"@nl;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1>;
 .
 #--
 #Other concepts (objects, records)
