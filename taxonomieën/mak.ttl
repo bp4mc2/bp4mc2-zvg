@@ -469,9 +469,9 @@ mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
         skoslex:isAbout mak:Koper;
         skoslex:isAbout mak:Verkoper;
 .
-mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Object;
-	rdfs:label "Ondergrondse tank voor het opslaan van {vloei)stoffen"@nl;
-	skos:prefLabel "Ondergrondse tank voor het opslaan van {vloei)stoffen";
+mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept;
+	rdfs:label "Ondergrondse tank voor het opslaan van (vloei)stoffen"@nl;
+	skos:prefLabel "Ondergrondse tank voor het opslaan van (vloei)stoffen";
 	skos:definition "Ondergrondse tanks voor het opslaan van (vloei)stoffen.";
 	rdfs:comment "In de grond van de onroerende zaak kunnen zich ondergrondse tanks bevinden voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks.";
 .

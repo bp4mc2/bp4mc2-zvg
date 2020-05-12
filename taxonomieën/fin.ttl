@@ -100,7 +100,7 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 .
 #--
 #Other concepts (objects, records)
-fin:Bankgarantie a skos:Concept, skoslex:Object;
+fin:Bankgarantie a skos:Concept;
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie";
 	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";

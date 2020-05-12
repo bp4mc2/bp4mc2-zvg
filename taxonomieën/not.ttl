@@ -71,6 +71,20 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
+not:Volmachtgever a skos:Concept, skoslex:Actor;
+	rdfs:label "Volmachtgever"@nl;
+	skos:prefLabel "Volmachtgever"@nl;
+	skos:definition" Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
+	skos:broaderGeneric zv:Persoon;
+	skos:semanticRelation not:Volmacht;
+.
+not:Gevolgmachtigde a skos:Concept, skoslex:Actor;
+	rdfs:label "Gevolgmachtigde"@nl;
+	skos:prefLabel "Gevolgmachtigde"@nl;
+	skos:definition" Een gevolgmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
+	skos:broaderGeneric zv:Persoon;
+	skos:semanticRelation not:Volmacht;
+.
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger";
@@ -96,7 +110,7 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
 .
 #--
 #Acts
-not:VerlenenVolmacht a skoslex:Act;
+not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 	rdfs:label "Verlenen volmacht"@nl;
 	skos:prefLabel "Verlenen volmacht"@nl;
 	skos:definition "Verlenen volmacht is het verlenen van een volmacht om in zijn naam rechtshandelingen te verrichten"@nl;
@@ -459,7 +473,6 @@ not:Grondslagwaarde a skos:Concept;
 	skos:definition "De belasting wordt berekend over de waarde van de onroerende zaak of het recht waaraan deze is onderworpen, waarop de verkrijging betrekking heeft. De waarde is ten minste gelijk aan die van de tegenprestatie.";
 	rdfs:comment "De waarde waarover het tarief van de overdrachtsbelasting wordt berekend.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
-	skosthes:broaderPartitive zv:Overdrachtsbelasting;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekakte"@nl;
@@ -516,6 +529,7 @@ not:Leveringsakte a skos:Concept, skoslex:Record;
 	skosthes:isAbout not:Koopsom;
 	skosthes:isAbout not:Kadasterkosten;
 	skosthes:isAbout zv:Overdrachtsbelasting;
+	skosthes:isAbout not:Notariskosten;
 .
 not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;
@@ -543,9 +557,8 @@ not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering
 	skos:prefLabel "Notariskosten";
 	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
 	rdfs:comment "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
-	skosthes:broaderPartitive not:Leveringsakte;
 .
-not:NotarieleVolmacht a skos:Concept;
+not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële volmacht"@nl;
 	skos:prefLabel "Notariële volmacht";
         skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk.";
@@ -613,12 +626,11 @@ not:VanRechtswegeOntbonden a skos:Concept;
 	skos:prefLabel "Van rechtswege ontbonden";
 	skos:definition "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is.";
 .
-not:Volmacht a skos:Concept;
+not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
 	skos:prefLabel "Volmacht";
 	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden.";
 	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem bepaalde verklaringen af te geven. De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
-	skosthes:broaderPartitive not:NotarieleVolmacht;
-        #Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
+  #Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .

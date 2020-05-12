@@ -49,7 +49,10 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1> rdfs:label "artikel 1 van de Wet kenbaarheid publiekrechtelijke beperkingen onroerende zaken".
 
 #Kadasterwet
-<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Kadasterwet".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1> rdfs:label "Artikel 1 Kadasterwet".
+
+#Erfgoedwet
+<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=3&paragraaf=3.1&artikel=3.3> rdfs:label "Artikel 3.3 Erfgoedwet".
 
 #--
 #Basisregistratie links
@@ -214,16 +217,16 @@ kad:GemeentelijkeVerordening a skos:Concept;
 	skos:definition "Een gemeentelijke verordening is een op gemeentelijk niveau vastgesteld algemeen verbindend voorschrift.";
 	rdfs:comment "Wetgevende regeling op gemeentelijk niveau.";
 	skos:editorialNote "De belangrijkste en meest omvattende gemeentelijke verordening in een bepaalde gemeente wordt in Nederland vaak aangeduid als Algemene Plaatselijke Verordening (afkorting APV, vroeger Algemene Politie Verordening).";
-        skosthes:narrowerPartitive kad:GemeentelijkMonument;
+  skosthes:narrowerPartitive kad:GemeentelijkMonument;
 .
-kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
+kad:GemeentelijkMonument a skos:Concept;
 	rdfs:label "Gemeentelijk monument"@nl;
 	skos:prefLabel "Gemeentelijk monument";
 	skos:definition "Een Gemeentelijk monument is een onroerend monument aangewezen door een bestuursorgaan van de gemeente.";
 	rdfs:comment "Een gemeentelijk monument is een gebouw dat volgens een gemeente zo waardevol is dat het beschermd moet worden.";
-        skos:scopeNote "Een monument is een gebouw met cultuurhistorische of wetenschappelijke waarde. In Nederland zijn er verschillende typen monumenten: rijksmonumenten, provinciale monumenten, gemeentelijke monumenten en beschermde stadsgezichten of dorpsgezichten. Als een gebouw van plaatselijk of regionaal belang is, kan de gemeente het op de gemeentelijke monumentenlijst zetten. De gemeente kan monumenten zelf, of op verzoek van een belanghebbende, aanwijzen. De gemeentelijke monumentencommissie geeft hierover een advies.Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een gemeente besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FGemeentelijk_monument>;
+  skos:scopeNote "Een monument is een gebouw met cultuurhistorische of wetenschappelijke waarde. In Nederland zijn er verschillende typen monumenten: rijksmonumenten, provinciale monumenten, gemeentelijke monumenten en beschermde stadsgezichten of dorpsgezichten. Als een gebouw van plaatselijk of regionaal belang is, kan de gemeente het op de gemeentelijke monumentenlijst zetten. De gemeente kan monumenten zelf, of op verzoek van een belanghebbende, aanwijzen. De gemeentelijke monumentencommissie geeft hierover een advies.Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een gemeente besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
+  #skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Gemeentelijk_monument>;
 .
 kad:Grootte a skos:Concept;
 	rdfs:label "Grootte"@nl;
@@ -360,14 +363,14 @@ kad:Perceel a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPerceel>;
 .
-kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
+kad:ProvinciaalMonument a skos:Concept;
 	rdfs:label "Provinciaal monument"@nl;
 	skos:prefLabel "Provinciaal monument";
 	skos:definition "Een Provinciaal monument is een onroerend monument aangewezen door een bestuursorgaan van de provincie.";
 	rdfs:comment "Een provinciaal monument is een gebouw of ander bouwwerk dat volgens de provincie een monument is omdat het heel bijzonder is.";
-        skos:scopeNote "Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een provincie besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FProvinciaal_monument>;
+  skos:scopeNote "Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een provincie besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
+  #skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Provinciaal_monument>;
 .
 kad:ProvincialeVerordening a skos:Concept;
 	rdfs:label "Provinciale verordening"@nl;
@@ -402,9 +405,11 @@ kad:RechtVanErfpacht a skos:Concept;
 	skos:altLabel "Erfpacht";
 	skosthes:broaderGeneric kad:BeperktRecht;
 .
-kad:RijksmonumentInDeZinVanDeErfgoedwet a skos:Concept, skoslex:Object;
+kad:RijksmonumentInDeZinVanDeErfgoedwet a skos:Concept;
 	rdfs:label "Rijksmonument in de zin van de Erfgoedwet"@nl;
 	skos:prefLabel "Rijksmonument in de zin van de Erfgoedwet";
+	skos:definition "Een rijksmonument in de zin van de Erfgoedwet is een monument of archeologisch monument dat is ingeschreven in het rijksmonumentenregister."@nl;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=3&paragraaf=3.1&artikel=3.3>;
 .
 kad:TotaalbedragInschrijving a skos:Concept;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
