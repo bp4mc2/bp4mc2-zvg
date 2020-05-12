@@ -14,6 +14,7 @@ GRAPH config:Theatre {
     elmo:informationProduct config:BrokenLinksData;
     elmo:appearance config:BrokenLinksAppearance;
     elmo:contains config:Menu;
+    elmo:contains config:MissingLinks;
   .
 
   config:BrokenLinksAppearance a elmo:TableAppearance;
@@ -33,6 +34,19 @@ GRAPH config:Theatre {
       elmo:appliesTo "broken";
       rdfs:label "Broken link references"@nl;
     ]
+  .
+
+  config:MissingLinks a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:MissingLinksData;
+    elmo:appearance config:MissingLinksAppearance;
+  .
+
+  config:MissingLinksAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "weesbegrip";
+      rdfs:label "Begrip zonder links"@nl;
+    ];
   .
 
 }

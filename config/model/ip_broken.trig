@@ -20,6 +20,7 @@ GRAPH config:Theatre {
           FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
           ?begrip ?link ?broken
           FILTER (isIRI(?broken) && ?link!=rdf:type)
+          OPTIONAL {?g rdfs:label ?g_label}
         }
         FILTER NOT EXISTS {
           graph ?gb {
@@ -28,6 +29,44 @@ GRAPH config:Theatre {
         }
       }
       ORDER BY ?begrip_label
+    """
+  .
+
+  config:MissingLinksData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      SELECT ?g ?g_label ?weesbegrip ?weesbegrip_label
+      WHERE {
+        GRAPH ?g {
+          ?weesbegrip a skos:Concept.
+          ?weesbegrip rdfs:label ?weesbegrip_label.
+          FILTER (lang(?weesbegrip_label)="nl" || lang(?weesbegrip_label)="")
+          OPTIONAL {?g rdfs:label ?g_label}
+        }
+        FILTER NOT EXISTS {
+          {
+            GRAPH ?g {
+              ?weesbegrip ?po ?o
+            }
+            GRAPH ?go {
+              ?o a skos:Concept
+            }
+          }
+          UNION
+          {
+            GRAPH ?gs {
+              ?s ?ps ?weesbegrip.
+              ?s a skos:Concept
+            }
+          }
+        }
+      }
+      ORDER BY ?weesbegrip_label
     """
   .
 

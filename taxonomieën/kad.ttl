@@ -91,6 +91,7 @@ kad:DoorhalenHypotheek a skos:Concept, skoslex:Act;
 kad:Inmeten a skos:Concept, skoslex:Act;
 	rdfs:label "Inmeten"@nl;
 	skos:prefLabel "Inmeten";
+	skos:object kad:Perceel;
 .
 kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven openbare registers"@nl;
@@ -248,7 +249,7 @@ kad:HerzieningErfpacht a skos:Concept;
 	skos:definition "Moment waarop de geldende voorwaarden en condities aflopen.";
 	skosthes:broaderPartitive kad:RechtVanErfpacht;
 .
-kad:Huurkoopovereenkomst a skos:Concept, skoslex:Record;
+kad:Huurkoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Huurkoopovereenkomst"@nl;
 	skos:prefLabel "Huurkoopovereenkomst";
 	skos:altLabel "Huurkoop";
@@ -278,7 +279,7 @@ kad:KadastraalObject a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Perceel;
 	skosthes:narrowerGeneric kad:OnroerendeZaak;
 .
-kad:Kettingbeding a skos:Concept, skoslex:Record;
+kad:Kettingbeding a skos:Concept;
 	rdfs:label "Kettingbeding"@nl;
 	skos:prefLabel "Kettingbeding";
 	skos:definition "Een kettingbeding is een verbintenis dat de schuldenaar bij overdracht van een registergoed, op straffe van een boete, ten behoeve van de schuldeiser bepaalde verplichtingen, onder gelijke verbintenis, aan zijn verkrijgers moet opleggen.";
@@ -295,7 +296,7 @@ kad:LijdendeErfdienstbaarheid a skos:Concept;
 	rdfs:label "Lijdende erfdienstbaarheid"@nl;
 	skos:prefLabel "Lijdende erfdienstbaarheid";
 .
-kad:NSWLandgoed a skos:Concept, skoslex:Object;
+kad:NSWLandgoed a skos:Concept;
 	rdfs:label "NSW landgoed"@nl;
 	skos:prefLabel "NSW landgoed";
 .

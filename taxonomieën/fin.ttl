@@ -100,14 +100,14 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 .
 #--
 #Other concepts (objects, records)
-fin:Bankgarantie a skos:Concept, skoslex:Record;
+fin:Bankgarantie a skos:Concept, skoslex:Object;
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie";
 	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
 	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak.";
         skos:semanticRelation fin:Waarborgsom;
 .
-fin:BindendeOfferte a skos:Concept, skoslex:Record;
+fin:BindendeOfferte a skos:Concept, skoslex:Object;
 	rdfs:label "Bindende offerte"@nl;
 	skos:prefLabel "Bindende offerte";
 	skos:definition "Een bindend aanbod van een geldverstrekker ter verstrekking van een hypotheek.";
@@ -120,13 +120,13 @@ fin:HoofdelijkeAansprakelijkheid a skos:Concept;
 	rdfs:comment "Als de schuldenaren hoofdelijk aansprakelijk zijn, dan is ieder van hen verplicht om op verzoek van de schuldeiser de gehele schuld te voldoen. Een schuldenaar mag zich dus niet beperken tot diens aandeel in de schuld. Eventuele verrekening onderling tussen de schuldenaren vindt dan later plaats. ";
 	skosthes:narrowerPartitive fin:Hypotheekgever;
 .
-fin:Hypotheekadvies a skos:Concept;
+fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekadvies"@nl;
 	skos:prefLabel "Hypotheekadvies";
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
 .
 #Lening nergens aan gerelateerd. Is nu een 'los' begrip
-fin:Lening a skos:Concept, skoslex:Record;
+fin:Lening a skos:Concept;
 	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening";
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over het te lenen geldbedrag";
@@ -141,7 +141,7 @@ fin:Opslagbedrag a skos:Concept;
 	skosthes:broaderPartitive not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:Hypotheekakte;
 .
-fin:Overbruggingslening a skos:Concept, skoslex:Record;
+fin:Overbruggingslening a skos:Concept;
 	rdfs:label "Overbruggingslening"@nl;
 	skos:prefLabel "Overbruggingslening";
 	skos:altLabel "Overbruggingskrediet";

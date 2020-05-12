@@ -200,6 +200,7 @@ mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Record;
 	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
 	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
+	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
 .
 mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Bankgarantie/Waarborgsom"@nl;
@@ -311,6 +312,7 @@ mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Record;
 	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
 	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
+	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken
 .
 mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: NSW landgoed"@nl;
@@ -319,6 +321,7 @@ mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Record;
 	#rdfs:comment ".";
 	#skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
+	skoslex:isAbout kad:NSWLandgoed;
 .
 mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Ontbindende voorwaarden"@nl;
@@ -352,6 +355,7 @@ mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Record;
 	rdfs:comment "In de praktijk wordt bij de verkoop van een (oudere) woning geregeld gebruik gemaakt van een zogenoemde ‘ouderdomsclausule’. Zo’n clausule wordt dan, op initiatief van de verkoper of diens makelaar, handmatig aan de koopovereenkomst toegevoegd. In de clausule komen verkoper en koper overeen dat (verborgen) gebreken voor rekening en risico van koper zijn. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
 	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
+	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
 .
 mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Registratie koopovereenkomst"@nl;
@@ -439,7 +443,7 @@ mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:comment "In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.";
         skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:Financieringsvoorbehoud a skos:Concept, skoslex:Record;
+mak:Financieringsvoorbehoud a skos:Concept;
 	rdfs:label "Financieringsvoorbehoud"@nl;
 	skos:prefLabel "Financieringsvoorbehoud";
 	skos:altLabel "Voorbehoud van financiering";
@@ -459,7 +463,7 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
 	skos:prefLabel "Ondergetekenden";
-	skos:definition "De personen die de koopvoereenkomst hebben ondertekend";
+	skos:definition "Onderdeel met de namen van de personen die de koopvoereenkomst hebben ondertekend";
 	#rdfs:comment "";
         skosthes:broaderPartitive mak:Koopovereenkomst;
         skoslex:isAbout mak:Koper;
