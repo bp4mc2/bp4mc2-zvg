@@ -91,7 +91,7 @@ kad:DoorhalenHypotheek a skos:Concept, skoslex:Act;
 kad:Inmeten a skos:Concept, skoslex:Act;
 	rdfs:label "Inmeten"@nl;
 	skos:prefLabel "Inmeten";
-	skos:object kad:Perceel;
+	skoslex:object kad:Perceel;
 .
 kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven openbare registers"@nl;
@@ -119,7 +119,7 @@ kad:Overdracht a skos:Concept, skoslex:Act;
 .
 #--
 #Objects, records
-kad:BeperktRecht a skos:Concept;
+kad:BeperktRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
 	skos:altLabel "Bezwaard";#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring.
@@ -139,12 +139,12 @@ kad:Beslag a skos:Concept;
 	skos:prefLabel "Beslag";
 	skos:definition "Een Beslag is een voorlopige maatregel waarbij de overheid, al dan niet op vordering van een belanghebbende, bepaalde zaken aan iemands vrije beschikking onttrekt, of wel deze onder zich neemt.";
 	rdfs:comment "Een beslag is een tijdelijke maatregel waarbij de overheid bepaalde zaken van iemand afneemt, zodat hij er niets meer mee kan doen.";
-        skos:scopeNote "De belanghebbende kan vorderen tot leggen van beslag op goederen.";
+  skos:scopeNote "De belanghebbende kan vorderen tot leggen van beslag op goederen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=509>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
-	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FBeslag>;
+#	skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Beslag>;
 .
 kad:Bestemmingsplan a skos:Concept;
 	rdfs:label "Bestemmingsplan"@nl;
@@ -268,8 +268,6 @@ kad:Inschrijvingsbedrag a skos:Concept;
 	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
 	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
 	skosthes:broaderPartitive kad:TotaalbedragInschrijving;
-	skosthes:broaderPartitive not:RechtVanHypotheek;
-	skosthes:broaderPartitive not:Hypotheekakte;
 .
 kad:KadastraalObject a skos:Concept, skoslex:Object;
 	rdfs:label "Kadastraal object"@nl;
@@ -395,7 +393,7 @@ kad:Rang a skos:Concept;
 	skos:definition "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand. ";
 	rdfs:comment "De plek die een hypotheeknemer heeft ten opzichte van andere hypotheeknemers als de hypotheekgever zijn financiële verplichtingen niet nakomt.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
-	skosthes:broaderPartitive not:RechtVanHypotheek;
+	skosthes:semanticRelation not:RechtVanHypotheek;
   skos:semanticRelation kad:Onderpand;
 .
 kad:RechtVanErfpacht a skos:Concept;
@@ -414,8 +412,7 @@ kad:TotaalbedragInschrijving a skos:Concept;
 	skos:definition "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
 	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
-	skosthes:broaderPartitive not:RechtVanHypotheek;
-	skosthes:broaderPartitive not:Hypotheekakte;
+	skos:semanticRelation not:RechtVanHypotheek;
 .
 kad:Voorkeursrecht a skos:Concept;
 	rdfs:label "Voorkeursrecht"@nl;
@@ -451,7 +448,7 @@ kad:WerkelijkeGrootte a skos:Concept;
 	skosthes:broaderGeneric kad:Grootte;
 	skos:semanticRelation kad:Perceel;
 .
-kad:ZakelijkRecht a skos:Concept;
+kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Zakelijk recht"@nl;
 	skos:prefLabel "Zakelijk recht";
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";

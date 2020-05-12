@@ -96,11 +96,22 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
 .
 #--
 #Acts
+not:VerlenenVolmacht a skoslex:Act;
+	rdfs:label "Verlenen volmacht"@nl;
+	skos:prefLabel "Verlenen volmacht"@nl;
+	skos:definition "Verlenen volmacht is het verlenen van een volmacht om in zijn naam rechtshandelingen te verrichten"@nl;
+	skoslex:actor not:Volmachtgever;
+	skoslex:actor not:Gevolmachtigde;
+	skoslex:agent not:Notaris;
+	skoslex:record not:NotarieleAkte;
+	skoslex:object not:NotarieleVolmacht;
+.
+
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
-	skos:prefLabel "Archiveren (akte)";
+	skos:prefLabel "Archiveren (akte)"@nl;
 	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats.";
         rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats.";
 	#Algemene handeling. Zou o.a. object akte en actor notaris kunnen linken.
@@ -448,7 +459,6 @@ not:Grondslagwaarde a skos:Concept;
 	skos:definition "De belasting wordt berekend over de waarde van de onroerende zaak of het recht waaraan deze is onderworpen, waarop de verkrijging betrekking heeft. De waarde is ten minste gelijk aan die van de tegenprestatie.";
 	rdfs:comment "De waarde waarover het tarief van de overdrachtsbelasting wordt berekend.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
-	skosthes:broaderPartitive not:NotarieleAkte;
 	skosthes:broaderPartitive zv:Overdrachtsbelasting;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Record;
@@ -459,13 +469,15 @@ not:Hypotheekakte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:NotarieleAkte;
+	skoslex:isAbout kad:TotaalbedragInschrijving;
+	skoslex:isAbout not:RechtVanHypotheek;
+	skoslex:isAbout not:Grondslagwaarde;
 .
 not:Kadasterkosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
 	rdfs:label "Kadasterkosten"@nl;
 	skos:prefLabel "Kadasterkosten";
 	skos:definition "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
 	rdfs:comment "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
-	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;
@@ -476,7 +488,6 @@ not:Koopsom a skos:Concept;
         rdfs:comment "Een koopsom is het geldbedrag, dat de verkoper en koper hebben afgesproken voor de door de koper te kopen (onroerende) zaak. De koopsom wordt in de koopovereenkomst vermeld.Ingeval de koopsom betrekking heeft op een onroerende zaak, dan moet de notaris dit bedrag opnemen in de leveringsakte. Een koopsom is niet altijd gelijk aan de economische of WOZ waarde. Er kunnen redenen zijn, waarom een koopsom hoger of lager is dan die waarde. De notaris moet controleren of de koopsom redelijk is.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
-	skosthes:broaderPartitive not:Leveringsakte;
 .
 not:KwalitatieveRechten a skos:Concept;
 	rdfs:label "Kwalitatieve rechten"@nl;
@@ -502,6 +513,9 @@ not:Leveringsakte a skos:Concept, skoslex:Record;
 	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skosthes:broaderGeneric not:NotarieleAkte;
+	skosthes:isAbout not:Koopsom;
+	skosthes:isAbout not:Kadasterkosten;
+	skosthes:isAbout zv:Overdrachtsbelasting;
 .
 not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;
@@ -522,6 +536,7 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	rdfs:comment "Een notariële akte is een authentieke akte die is ondertekend door een notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
 	skosthes:broaderGeneric not:AuthentiekeAkte;
+	skoslex:isAbout not:NotarieleVolmacht;
 .
 not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
 	rdfs:label "Notariskosten"@nl;
@@ -536,8 +551,7 @@ not:NotarieleVolmacht a skos:Concept;
         skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk.";
 	rdfs:comment "Een volmacht die bij een (authentieke) notariële akte is verleend.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
-	skosthes:broaderPartitive not:NotarieleAkte;
-        #Mogelijk relaties toevoegen. Wellicht aan notaris.
+	skosthes:broaderGeneric not:Volmacht;
 .
 not:OnderhandseAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Onderhandse akte"@nl;
@@ -570,7 +584,6 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	rdfs:comment "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
-        skosthes:broaderPartitive not:Hypotheekakte;
 	skosthes:broaderGeneric kad:BeperktRecht;
 .
 not:Titel a skos:Concept, skoslex:Object;

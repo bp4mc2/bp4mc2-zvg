@@ -154,7 +154,6 @@ zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in e
 	skos:definition "Onder de naam 'overdrachtsbelasting' wordt een belasting geheven ter zake van de verkrijging van in Nederland gelegen onroerende zaken of van rechten waaraan deze zijn onderworpen.";
 	rdfs:comment "De overdrachtsbelasting is de belasting die de koper van een onroerende zaak moet betalen aan de belastingdienst.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
-	skosthes:broaderPartitive not:Leveringsakte;
 .
 zv:NederlandsRecht a skos:Concept;
 	rdfs:label "Nederlands recht"@nl;

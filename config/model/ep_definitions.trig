@@ -14,6 +14,7 @@ GRAPH config:Theatre {
     elmo:informationProduct config:MissingDefinitionsData;
     elmo:appearance config:MissingDefinitionsAppearance;
     elmo:contains config:Menu;
+    elmo:contains config:MissingSource;
   .
 
   config:MissingDefinitionsAppearance a elmo:TableAppearance;
@@ -23,7 +24,20 @@ GRAPH config:Theatre {
     ];
     elmo:fragment [
       elmo:appliesTo "begrip";
-      rdfs:label "Begrip"@nl;
+      rdfs:label "Begrip zonder definitie"@nl;
+    ];
+  .
+
+  config:MissingSource a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:MissingSourceData;
+    elmo:appearance config:MissingSourceAppearance;
+  .
+
+  config:MissingSourceAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "begripnosrc";
+      rdfs:label "Begrip zonder bronvermelding"@nl;
     ];
   .
 

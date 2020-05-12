@@ -39,11 +39,12 @@ GRAPH config:Theatre {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
       PREFIX sh: <http://www.w3.org/ns/shacl#>
-      SELECT DISTINCT ?g ?b ?b_label ?subject ?subject_label (if(bound(?ps),"","Unknown") as ?check)
+      SELECT DISTINCT ?g ?g_label ?b ?b_label ?subject ?subject_label (if(bound(?ps),"","Unknown") as ?check)
       WHERE {
         GRAPH ?g {
           ?b ?subject ?o.
           ?b rdfs:label ?b_label
+          OPTIONAL {?g rdfs:label ?g_label}
         }
         OPTIONAL {
           GRAPH ?pg {
