@@ -75,14 +75,14 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 	rdfs:label "Volmachtgever"@nl;
 	skos:prefLabel "Volmachtgever"@nl;
 	skos:definition" Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
-	skos:broaderGeneric zv:Persoon;
+	skosthes:broaderGeneric zv:Persoon;
 	skos:semanticRelation not:Volmacht;
 .
-not:Gevolgmachtigde a skos:Concept, skoslex:Actor;
+not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolgmachtigde"@nl;
 	skos:prefLabel "Gevolgmachtigde"@nl;
-	skos:definition" Een gevolgmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
-	skos:broaderGeneric zv:Persoon;
+	skos:definition" Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
+	skosthes:broaderGeneric zv:Persoon;
 	skos:semanticRelation not:Volmacht;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
@@ -526,10 +526,10 @@ not:Leveringsakte a skos:Concept, skoslex:Record;
 	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skosthes:broaderGeneric not:NotarieleAkte;
-	skosthes:isAbout not:Koopsom;
-	skosthes:isAbout not:Kadasterkosten;
-	skosthes:isAbout zv:Overdrachtsbelasting;
-	skosthes:isAbout not:Notariskosten;
+	skoslex:isAbout not:Koopsom;
+	skoslex:isAbout not:Kadasterkosten;
+	skoslex:isAbout zv:Overdrachtsbelasting;
+	skoslex:isAbout not:Notariskosten;
 .
 not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;

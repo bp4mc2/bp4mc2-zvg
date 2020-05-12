@@ -43,9 +43,8 @@ zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
 	skos:prefLabel "Natuurlijk persoon";
 	skos:definition "Een mens in juridische zin, als iemand die drager van rechten en verplichtingen kan zijn. Het zijn van een natuurlijk persoon eindigt met het overlijden (hersendood).";
-  	rdfs:comment "Een mens met eigen rechten en plichten.";
-	skos:semanticRelation zv:Mens;
-        skosthes:broaderGeneric zv:Persoon;
+	rdfs:comment "Een mens met eigen rechten en plichten.";
+  skosthes:broaderGeneric zv:Persoon;
 	#Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen. Van belang daarbij is wel het onderscheid tussen de mens in juridische zin, en "echte" mensen.
 .
 zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
