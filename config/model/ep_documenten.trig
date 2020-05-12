@@ -1,0 +1,39 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:DocumentenEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/documenten";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Documenten;
+  .
+
+  config:Documenten a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:DocumentenData;
+    elmo:appearance config:DocumentenAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:DocumentenAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "g";
+      rdfs:label "Begrippenkader"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "doc";
+      rdfs:label "Document"@nl;
+      elmo:name "SUBJECT";
+    ];
+    elmo:fragment [
+      elmo:appliesTo "act";
+      rdfs:label "Vastlegging van"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "about";
+      rdfs:label "Gaat over"@nl;
+    ]
+  .
+
+}

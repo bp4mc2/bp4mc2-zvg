@@ -164,6 +164,16 @@ GRAPH config:Theatre {
       elmo:index 32;
     ];
     elmo:fragment [
+      elmo:appliesTo skoslex:isAbout;
+      rdfs:label "Gaat over"@nl;
+      elmo:index 33;
+    ];
+    elmo:fragment [
+      elmo:appliesTo skoslex:record;
+      rdfs:label "Vastgelegd in"@nl;
+      elmo:index 34;
+    ];
+    elmo:fragment [
       elmo:appliesTo skos:semanticRelation;
       rdfs:label "Gerelateerd aan"@nl;
       elmo:index 40;

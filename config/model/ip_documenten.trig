@@ -1,0 +1,41 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:DocumentenData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      SELECT ?g ?g_label ?doc ?doc_label ?act ?act_label ?about ?about_label
+      WHERE {
+        GRAPH ?g {
+          ?doc a skoslex:Record.
+          ?doc rdfs:label ?doc_label
+          FILTER (lang(?doc_label)="nl" || lang(?doc_label)="")
+          OPTIONAL {?g rdfs:label ?g_label}
+        }
+        OPTIONAL {
+          GRAPH ?ga {
+            ?act skoslex:record ?doc.
+            ?act rdfs:label ?act_label
+          }
+        }
+        OPTIONAL {
+          GRAPH ?g {
+            ?doc skoslex:isAbout ?about
+          }
+          GRAPH ?gs {
+            ?about rdfs:label ?about_label
+          }
+        }
+      }
+      ORDER BY ?doc_label
+    """
+  .
+
+}

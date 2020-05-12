@@ -38,6 +38,10 @@ GRAPH config:Theatre {
       elmo:appliesTo "object";
       rdfs:label "Object"@nl;
     ];
+    elmo:fragment [
+      elmo:appliesTo "record";
+      rdfs:label "Record"@nl;
+    ]
   .
 
 }

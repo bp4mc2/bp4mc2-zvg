@@ -34,6 +34,7 @@ GRAPH config:Theatre {
         skoslex:Agent rdfs:label "Agent"@nl.
         skoslex:Record rdfs:label "Record"@nl.
         skoslex:isAbout rdfs:label "gaat over"@nl.
+        skoslex:record rdfs:label "vastgelegd in"@nl.
         dcat:Dataset rdfs:label "Dataset"@nl.
         skosthes:broaderGeneric rdfs:label "specialisatie van"@nl.
         skosthes:narrowerGeneric rdfs:label "generalisatie van"@nl.

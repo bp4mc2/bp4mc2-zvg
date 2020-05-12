@@ -55,6 +55,7 @@ fin:Schuldeiser a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Schuldeiser";
 	skos:definition "De persoon die een recht heeft om een geldbedrag terug te ontvangen.";
 	rdfs:comment "Door het verstrekken van een lening bedrag ontstaat een schuld bij de persoon die dat bedrag heeft ontvangen. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser.";
+	skosthes:broaderGeneric zv:Partij;
 	skosthes:narrowerGeneric fin:Hypotheeknemer;
 .
 fin:Schuldenaar a skos:Concept, skoslex:Actor;
@@ -62,6 +63,7 @@ fin:Schuldenaar a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Schuldenaar";
 	skos:definition "De persoon die een verplichting heeft om een geldbedrag terug te betalen.";
 	rdfs:comment "Door het ontvangen van een lening bedrag ontstaat een schuld aan de persoon die dat bedrag heeft verstrekt. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser.";
+	skosthes:broaderGeneric zv:Partij;
 	skosthes:narrowerGeneric fin:Hypotheekgever;
 .
 #--
@@ -118,7 +120,8 @@ fin:HoofdelijkeAansprakelijkheid a skos:Concept;
 	skos:prefLabel "Hoofdelijke aansprakelijkheid";
 	skos:definition "Meerdere schuldenaren zijn ieder afzonderlijk voor het geheel aansprakelijk voor de terugbetaling van de lening.";
 	rdfs:comment "Als de schuldenaren hoofdelijk aansprakelijk zijn, dan is ieder van hen verplicht om op verzoek van de schuldeiser de gehele schuld te voldoen. Een schuldenaar mag zich dus niet beperken tot diens aandeel in de schuld. Eventuele verrekening onderling tussen de schuldenaren vindt dan later plaats. ";
-	skosthes:narrowerPartitive fin:Hypotheekgever;
+	skos:semanticRelation fin:Schuldenaar;
+	skos:semanticRelation fin:Lening;
 .
 fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekadvies"@nl;

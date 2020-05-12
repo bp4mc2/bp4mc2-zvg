@@ -52,8 +52,9 @@ mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 mak:Makelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Makelaar"@nl;
 	skos:prefLabel "Makelaar";
-	skos:definition "iemand die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed.  ";
-	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed. ";
+	skos:definition "Een makelaar is een persoon die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed.";
+	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed.";
+	skos:broaderGeneric zv:Persoon;
 .
 mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Verkoopmakelaar"@nl;
@@ -125,6 +126,7 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
+	skoslex:record mak:Koopovereenkomst;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
@@ -133,13 +135,11 @@ mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	skos:prefLabel "Opstellen koopovereenkomst";
 	skos:altLabel "Opstellen koopocontract";
 	skos:definition "het proces dat ziet op het opstellen van het schriftelijke document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van het registergoed worden vastgelegd ";
-	rdfs:comment "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In Amsterdam is het gebruikelijk dat de notaris de koopovereenkomst opstelt. ";
+	rdfs:comment "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In Amsterdam is het gebruikelijk dat de notaris de koopovereenkomst opstelt.";
 	skosthes:broaderPartitive mak:Koop;
-	skoslex:agent mak:Makelaar;
-	skoslex:agent not:Notaris;
-	skoslex:actor mak:Koper;
-	skoslex:actor mak:Verkoper;
-	skoslex:record mak:Koopovereenkomst;
+	skoslex:actor mak:Makelaar;
+	skoslex:actor not:Notaris;
+	skoslex:object mak:Koopovereenkomst;
 	skoslex:object mak:Woning;
 .
 mak:RechercheKoop a skos:Concept, skoslex:Act;

@@ -11,7 +11,7 @@ GRAPH config:Theatre {
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
-      SELECT ?g ?g_label ?begrip ?begrip_label ?actor ?actor_label ?agent ?agent_label ?object ?object_label
+      SELECT ?g ?g_label ?begrip ?begrip_label ?actor ?actor_label ?agent ?agent_label ?object ?object_label ?record ?record_label
       WHERE {
         GRAPH ?g {
           ?begrip a skoslex:Act.
@@ -44,6 +44,15 @@ GRAPH config:Theatre {
           GRAPH ?gobject {
             ?object rdfs:label ?object_label
             FILTER (lang(?object_label)="nl" || lang(?object_label)="")
+          }
+        }
+        OPTIONAL {
+          GRAPH ?g {
+            ?begrip skoslex:record ?record.
+          }
+          GRAPH ?grecord {
+            ?record rdfs:label ?record_label
+            FILTER (lang(?record_label)="nl" || lang(?record_label)="")
           }
         }
       }

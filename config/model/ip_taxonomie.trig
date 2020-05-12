@@ -6,7 +6,6 @@ GRAPH config:Theatre {
 
   config:TaxonomieData a elmo:InformationProduct;
     elmo:backend config:DefaultBackend;
-    elmo:resultType elmo-rt:Tuple;
     elmo:query """
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -51,4 +50,75 @@ GRAPH config:Theatre {
     """
   .
 
+  config:SpecialisatieTaxonomieData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+      CONSTRUCT {
+        ?begrip skos:broader ?parent.
+        ?begrip rdfs:label ?begriplabel.
+        ?parent rdfs:label ?parentlabel.
+        ?ibegrip skos:broader ?iparent.
+        ?ibegrip rdfs:label ?ibegriplabel.
+        ?iparent rdfs:label ?iparentlabel.
+      }
+      WHERE {
+        {
+          {
+            ?begrip skosthes:broaderGeneric ?parent.
+            ?begrip rdfs:label ?begriplabel.
+            ?parent rdfs:label ?parentlabel.
+            FILTER(lang(?begriplabel)="nl" || lang(?begriplabel)="")
+            FILTER(lang(?parentlabel)="nl" || lang(?parentlabel)="")
+          }
+          UNION
+          {
+            ?iparent skosthes:narrowerGeneric ?ibegrip.
+            ?ibegrip rdfs:label ?ibegriplabel.
+            ?iparent rdfs:label ?iparentlabel.
+            FILTER(lang(?ibegriplabel)="nl" || lang(?ibegriplabel)="")
+            FILTER(lang(?iparentlabel)="nl" || lang(?iparentlabel)="")
+          }
+        }
+      }
+    """
+  .
+
+  config:OnderdelenTaxonomieData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+      CONSTRUCT {
+        ?begrip skos:broader ?parent.
+        ?begrip rdfs:label ?begriplabel.
+        ?parent rdfs:label ?parentlabel.
+        ?ibegrip skos:broader ?iparent.
+        ?ibegrip rdfs:label ?ibegriplabel.
+        ?iparent rdfs:label ?iparentlabel.
+      }
+      WHERE {
+        {
+          {
+            ?begrip skosthes:broaderPartitive ?parent.
+            ?begrip rdfs:label ?begriplabel.
+            ?parent rdfs:label ?parentlabel.
+            FILTER(lang(?begriplabel)="nl" || lang(?begriplabel)="")
+            FILTER(lang(?parentlabel)="nl" || lang(?parentlabel)="")
+          }
+          UNION
+          {
+            ?iparent skosthes:narrowerPartitive ?ibegrip.
+            ?ibegrip rdfs:label ?ibegriplabel.
+            ?iparent rdfs:label ?iparentlabel.
+            FILTER(lang(?ibegriplabel)="nl" || lang(?ibegriplabel)="")
+            FILTER(lang(?iparentlabel)="nl" || lang(?iparentlabel)="")
+          }
+        }
+      }
+    """
+  .
 }

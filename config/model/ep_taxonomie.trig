@@ -1,0 +1,32 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:SpecialisatieTaxonomieEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/taxonomie";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:SpecialisatieTaxonomie;
+  .
+
+  config:SpecialisatieTaxonomie a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:SpecialisatieTaxonomieData;
+    elmo:appearance [ a elmo:TreeAppearance];
+    elmo:contains config:Menu;
+  .
+
+  config:OnderdelenTaxonomieEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/onderdelen";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:OnderdelenTaxonomie;
+  .
+
+  config:OnderdelenTaxonomie a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:OnderdelenTaxonomieData;
+    elmo:appearance [ a elmo:TreeAppearance];
+    elmo:contains config:Menu;
+  .
+
+}

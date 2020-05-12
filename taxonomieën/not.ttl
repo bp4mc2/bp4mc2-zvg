@@ -117,7 +117,7 @@ not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 	skoslex:actor not:Volmachtgever;
 	skoslex:actor not:Gevolmachtigde;
 	skoslex:agent not:Notaris;
-	skoslex:record not:NotarieleAkte;
+	skoslex:record not:AkteVanVolmacht;
 	skoslex:object not:NotarieleVolmacht;
 .
 
@@ -239,7 +239,7 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van de hypotheekakte.";
 	skoslex:actor not:Notaris;
 	skoslex:record not:Hypotheekakte;
-	skosthes:broaderPartitive not:OpstellenAkte;
+	skosthes:broaderGeneric not:OpstellenAkte;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
@@ -249,7 +249,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:comment "Het opstellen van de leveringsakte.";
 	skoslex:actor not:Notaris;
 	skoslex:record not:Leveringsakte;
-	skosthes:broaderPartitive not:OpstellenAkte;
+	skosthes:broaderGeneric not:OpstellenAkte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
@@ -277,30 +277,30 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren van de hypotheekakte";
 	skos:altLabel "Passeren";
 	skos:definition "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
-        rdfs:comment "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
+	rdfs:comment "Handeling bij de notaris, waarbij de hypotheekakte door beide partijen wordt ondertekend.";
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:record not:Hypotheekakte;
 	skoslex:object not:RechtVanHypotheek;
-        skoslex:object kad:OnroerendeZaak;
-        skoslex:object kad:Onderpand;
+	skoslex:object kad:OnroerendeZaak;
+	skoslex:object kad:Onderpand;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
-        skosthes:broaderPartitive not:Passeren;
+	skosthes:broaderGeneric not:Passeren;
 .
 not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren van de leveringsakte"@nl;
 	skos:prefLabel "Passeren van de leveringsakte";
 	skos:altLabel "Passeren";
 	skos:definition "Handeling bij de notaris, waarbij de leveringsakte door beide partijen wordt ondertekend.";
-        rdfs:comment "Handeling bij de notaris, waarbij de leveringsakte door beide partijen wordt ondertekend.";
+	rdfs:comment "Handeling bij de notaris, waarbij de leveringsakte door beide partijen wordt ondertekend.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Notaris;#Input KNB: notaris is bij deze handeling geen agent maar een actor
 	skoslex:record not:Leveringsakte;
-        skoslex:object kad:OnroerendeZaak;
+	skoslex:object kad:OnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-        skosthes:broaderPartitive not:Passeren;
+	skosthes:broaderGeneric not:Passeren;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
@@ -331,7 +331,7 @@ not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
         skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
         skoslex:object zv:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
-	skosthes:broaderPartitive not:RegistrerenAkteRegistratiewet1970;
+	skosthes:broaderGeneric not:RegistrerenAkteRegistratiewet1970;
 .
 not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren leveringsakte registratiewet 1970"@nl;
@@ -342,7 +342,7 @@ not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
         skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
         skoslex:object zv:RegisterBelastingdienst;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-	skosthes:broaderPartitive not:RegistrerenAkteRegistratiewet1970;
+	skosthes:broaderGeneric not:RegistrerenAkteRegistratiewet1970;
 .
 not:RechercheNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche"@nl;
@@ -364,7 +364,7 @@ not:RechercheAkteHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object kad:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
-	skosthes:broaderPartitive not:RechercheNotaris;
+	skosthes:broaderGeneric not:RechercheNotaris;
 .
 not:RechercheAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche (leveringsakte)"@nl;
@@ -378,7 +378,7 @@ not:RechercheAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:object kad:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-	skosthes:broaderPartitive not:RechercheNotaris;
+	skosthes:broaderGeneric not:RechercheNotaris;
 .
 not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Toezicht waarborgsom"@nl;
@@ -526,6 +526,7 @@ not:Leveringsakte a skos:Concept, skoslex:Record;
 	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skosthes:broaderGeneric not:NotarieleAkte;
+	skoslex:isAbout kad:OnroerendeZaak;
 	skoslex:isAbout not:Koopsom;
 	skoslex:isAbout not:Kadasterkosten;
 	skoslex:isAbout zv:Overdrachtsbelasting;
@@ -550,6 +551,13 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	rdfs:comment "Een notariële akte is een authentieke akte die is ondertekend door een notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
 	skosthes:broaderGeneric not:AuthentiekeAkte;
+.
+not:AkteVanVolmacht a skos:Concept, skoslex:Record;
+	rdfs:label "Akte van volmacht"@nl;
+	skos:prefLabel "Akte van volmacht"@nl;
+	skos:altLabel "Notariële volmacht"@nl;
+	skos:definition "Een akte van volmacht is een notariële akte waarmee een volmacht wordt gevestigd.";
+	skosthes:broaderGeneric not:NotarieleAkte;
 	skoslex:isAbout not:NotarieleVolmacht;
 .
 not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
