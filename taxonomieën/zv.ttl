@@ -95,8 +95,7 @@ zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 	skos:prefLabel "Aan- of verkoop van een huis"@nl;
 	skos:definition "Aan- of verkoop van een huis is het aankopen of verkopen van een huis en omvat de koop en levering"@nl;
 	skos:editorialNote "Nog niet helemaal tevreden met de term. Wel is dit wat het betreffende begrip omvat. We willen het niet plat 'Koop' noemen ivm de verwarring met mak:Koop (wat uit de wet volgt). 'Koop van een Huis' is korter, maar suggereert meer dat het gaat om aankoop en niet verkoop"@nl;
-	skos:semanticRelation zv:Huis;
-        skoslex:actor mak:Koper;
+	skoslex:actor mak:Koper;
 	skoslex:actor mak:Verkoper;
 	skoslex:object zv:Huis;
 .

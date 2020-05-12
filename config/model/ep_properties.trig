@@ -60,6 +60,10 @@ GRAPH config:Theatre {
       rdfs:label "Property URI"@nl;
     ];
     elmo:fragment [
+      elmo:appliesTo "o";
+      rdfs:label "Gerelateerd"@nl;
+    ];
+    elmo:fragment [
       elmo:appliesTo "check";
       rdfs:label "Controle"@nl;
     ];

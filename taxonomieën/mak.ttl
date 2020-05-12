@@ -54,7 +54,7 @@ mak:Makelaar a skos:Concept, skoslex:Agent;
 	skos:prefLabel "Makelaar";
 	skos:definition "Een makelaar is een persoon die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed.";
 	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed.";
-	skos:broaderGeneric zv:Persoon;
+	skosthes:broaderGeneric zv:Persoon;
 .
 mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Verkoopmakelaar"@nl;
@@ -120,7 +120,7 @@ mak:IdentificatieTaxatie a skos:Concept, skoslex:Act;
 mak:Koop a skos:Concept, skoslex:Act;
 	rdfs:label "Koop"@nl;
 	skos:prefLabel "Koop";
-	skos:definition "een overeenkomst waarbij de verkoper zich verbindt een registergoed te geven tegen een door de koper te betalen prijs ";
+	skos:definition "Een koop is een overeenkomst tussen verkoper en koper, waarbij de verkoper zich verbindt een registergoed te geven tegen een door de koper te betalen prijs ";
 	rdfs:comment "Als verkoper en koper het eens zijn over de voorwaarden ontstaat er een overeenkomst. Bij de verkoop van een registergoed verbindt de verkoper zich om het registergoed te geven tegen een door koper te betalen prijs. De overeenkomst wordt doorgaans vastgelegd in een schriftelijke koopovereenkomst. ";
 	skoslex:agent mak:Makelaar;
 	skoslex:actor mak:Verkoper;
@@ -140,7 +140,6 @@ mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
 	skoslex:object mak:Koopovereenkomst;
-	skoslex:object mak:Woning;
 .
 mak:RechercheKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche koop"@nl;

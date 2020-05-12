@@ -385,7 +385,7 @@ kad:PubliekrechtelijkeBeperking a skos:Concept;
 	skos:scopeNote "Onder een publiekrechtelijke beperking wordt verstaan iedere inbreuk op het recht van gebruik en beschikking van onroerende zaken, welke krachtens wet- of regelgeving door de overheid wordt gemaakt. Het zijn door de overheid opgelegde beperkingen. Deze beperkingen bepalen wat wel of niet met een stuk grond of gebouw mag gebeuren. Het aanwijzingsbesluit bevat een overzicht waaruit de verschillende publiekrechtelijke beperkingen gehaald kunnen worden. Hierbij gaat het om bijvoorbeeld: •beschermde monumenten; •beschermde leefomgeving (natuurmonumenten); •bodembescherming (verplichting tot registratie van verontreinigde grond); •maatregelen nodig voor de landsverdediging; •eisen die in het kader van de Woningwet worden gesteld, zoals middelen om bepaalde voorzieningen voor een pand af te kunnen dwingen.";
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPubliekrechtelijke_beperking>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-        skosthes:narrowerGeneric kad:BeperktRecht;
+  rdfs:seeAlso kad:BeperktRecht;
 .
 kad:Rang a skos:Concept;
 	rdfs:label "Rang"@nl;
