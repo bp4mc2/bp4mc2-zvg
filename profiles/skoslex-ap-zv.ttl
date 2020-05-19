@@ -164,30 +164,30 @@ skoslexap:Record a sh:NodeShape;
 #---------------------
 # Norm
 #---------------------
-skoslexap:Norm a sh:NodeShape;
-  rdfs:label "Norm"@en;
-  rdfs:label "Norm"@nl;
-  rdfs:comment "The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act."@en;
-  rdfs:comment "The klasse van normen. Een norm heeft effect op een handeling. De norm stelt wat 'zou moeten' of juist 'niet zo moeten' met betrekking tot de handeling. Een norm representeert de regels die gelden voor de handeling."@nl;
-  sh:targetClass skoslex:Norm;
-  sh:name "skoslex:Norm";
-  skos:example "De verkoper van een onroerend goed moet bij de verkoop ervan kunnen aantonen dat hij eigenaar is."@nl;
-  sh:property skoslexap:Norm_label;
-  sh:property skoslexap:Norm_affects;
-.
-skoslexap:Norm_label a sh:PropertyShape;
-  sh:name "rdfs:label";
-  rdfs:label "Label"@nl;
-  rdfs:label "Label"@en;
-  sh:path rdfs:label;
-  sh:datatype xsd:string;
-.
-skoslexap:Norm_affects a sh:PropertyShape;
-  rdfs:label "affects"@en;
-  rdfs:label "normeert"@nl;
-  rdfs:comment "Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm"@en;
-  rdfs:comment "Normeert relateert een norm aan de handeling die de norm normeert. Zo'n handeling wordt beperkt door de regels van de norm"@nl;
-  sh:name "skoslex:affects";
-  sh:path skoslex:affects;
-  sh:class skoslex:Act;
-.
+#skoslexap:Norm a sh:NodeShape;
+#  rdfs:label "Norm"@en;
+#  rdfs:label "Norm"@nl;
+#  rdfs:comment "The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act."@en;
+#  rdfs:comment "The klasse van normen. Een norm heeft effect op een handeling. De norm stelt wat 'zou moeten' of juist 'niet zo moeten' met betrekking tot de handeling. Een norm representeert de regels die gelden voor de handeling."@nl;
+#  sh:targetClass skoslex:Norm;
+#  sh:name "skoslex:Norm";
+#  skos:example "De verkoper van een onroerend goed moet bij de verkoop ervan kunnen aantonen dat hij eigenaar is."@nl;
+#  sh:property skoslexap:Norm_label;
+#  sh:property skoslexap:Norm_affects;
+#.
+#skoslexap:Norm_label a sh:PropertyShape;
+#  sh:name "rdfs:label";
+#  rdfs:label "Label"@nl;
+#  rdfs:label "Label"@en;
+#  sh:path rdfs:label;
+#  sh:datatype xsd:string;
+#.
+#skoslexap:Norm_affects a sh:PropertyShape;
+#  rdfs:label "affects"@en;
+#  rdfs:label "normeert"@nl;
+#  rdfs:comment "Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm"@en;
+#  rdfs:comment "Normeert relateert een norm aan de handeling die de norm normeert. Zo'n handeling wordt beperkt door de regels van de norm"@nl;
+#  sh:name "skoslex:affects";
+#  sh:path skoslex:affects;
+#  sh:class skoslex:Act;
+#.
