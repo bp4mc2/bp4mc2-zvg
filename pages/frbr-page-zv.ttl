@@ -1,0 +1,156 @@
+@prefix cnt: <http://www.w3.org/2011/content#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
+
+@prefix page: <http://bp4mc2.org/id/page#>.
+@prefix frbrap: <http://bp4mc2.org/profiles/frbr-ap-sc#>.
+@prefix style: <http://bp4mc2.org/id/style#>.
+
+# ========================================
+# Main page
+# ========================================
+page:frbr a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "FRBR Toepassingsprofiel voor bronbeschrijvingen"@nl, "FRBR Appication profile for Bibliographic references"@en]
+    page:frbr-body
+    [xhtml:img "frbr-ap-sc.png"]
+    page:frbr-concept
+    page:document
+    page:endeavour
+    page:work
+    page:expression
+    page:resource
+    page:frbrUriStrategy
+  )
+.
+
+page:frbr-body a cnt:ContentAsText;
+  cnt:chars
+'''
+FRBR is de standaard om te kunnen verwijzen naar een bibliografische bron (bijvoorbeeld een wetsartikel) in het algemeen of een versie van een bron zoals dat op een bepaald moment geldig was. Formele begrippen worden meestal gedefinieerd in een besluit of een wet. Bij verwijzing naar zo’n begrip is het belangrijk om te weten of naar dat begrip in het algemeen of naar een beschrijving van dat begrip op een specifiek moment wordt verwezen.
+Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
+* een document dat direct vindbaar is op het web, bijvoorbeeld een wikipedia pagina. Voor een stabiele verwijzing kan het handig zijn om te verwijzen naar een specifieke versie, zoals deze beschikbaar was op het moment dat de verwijzing is aangebracht.
+* een bibliografische beschrijving, zonder dat het document zelf vindbaar is op het web. Indien het document wel vindbaar is, dan kan deze verwijzing ook opgenomen worden. Bibliografische beschrijvingen kennen we in twee vormen:
+  * een beschrijving van het werk, zonder dat daarbij wordt verwezen naar een specifieke versie van dit werk, bijvoorbeeld "De grondwet";
+  * een beschrijving van een versie van het werk, de "expressie". Bijvoorbeeld "De grondwet, zoals geldig op 17 november 2017".
+'''@nl,
+'''
+FRBR is the standard to refer to a bibliographic source (for example a legal article) in general or a version of a bibliographic source as it was valid at a certain time. Formal concepts are usually defined in a decree or a law. Referring to such a concept, it is important to know whether to reference to that concept in general or to a description of that concept at a specific moment in time.
+The FRBR application profile makes it possible to refer to:
+* a document that can be found on the web, for example a wikipedia page.
+* a bibliographic reference, without the need for the availability of an online document. If the document is available online, an extra link to this document can be made. Bibliographic references are available in two styles:
+  * a reference of a work, without reference to a particular version of this work, for example: "The constitution";
+  * a reference of a version of a work, the "expresssion". For example: "The constitution, as valid on november 17th, 2017".
+'''@en;
+.
+
+# ========================================
+# Concept
+# ========================================
+page:frbr-concept a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Begrip"@nl, "Concept"@en]
+    page:frbr-ConceptRelations
+  )
+.
+page:frbr-ConceptRelations a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Relaties"@nl, "Relations"@en]
+    [dct:subject frbrap:Concept; xhtml:stylesheet style:object-properties]
+  )
+.
+
+# ========================================
+# Source document
+# ========================================
+page:document a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Document"@nl, "Document"@en]
+    [dct:subject frbrap:Document; xhtml:stylesheet style:nodeshape]
+    page:documentProperties
+  )
+.
+
+page:documentProperties a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Eigenschappen"@nl, "Properties"@en]
+    [dct:subject frbrap:Document; xhtml:stylesheet style:datatype-properties]
+  )
+.
+
+# ========================================
+# Endeavour
+# ========================================
+page:endeavour a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Bibliografische beschrijving"@nl, "Bibliographic reference"@en]
+    [dct:subject frbrap:Endeavour; xhtml:stylesheet style:nodeshape]
+    page:endeavourProperties
+    page:endeavourRelations
+  )
+.
+
+page:endeavourProperties a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Eigenschappen"@nl, "Properties"@en]
+    [dct:subject frbrap:Endeavour; xhtml:stylesheet style:datatype-properties]
+  )
+.
+
+page:endeavourRelations a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Relaties"@nl, "Relations"@en]
+    [dct:subject frbrap:Endeavour; xhtml:stylesheet style:object-properties]
+  )
+.
+
+# ========================================
+# Work
+# ========================================
+page:work a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Werk"@nl, "Work"@en]
+    [dct:subject frbrap:Work; xhtml:stylesheet style:nodeshape]
+  )
+.
+
+# ========================================
+# Expression
+# ========================================
+page:expression a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Expressie (versie van een werk)"@nl, "Expression (version of a work)"@en]
+    [dct:subject frbrap:Expression; xhtml:stylesheet style:nodeshape]
+  )
+.
+
+# ========================================
+# Resource
+# ========================================
+page:resource a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Resource (iets met een URI)"@nl, "Resource (something with a URI)"@en]
+    [dct:subject frbrap:Resource; xhtml:stylesheet style:nodeshape]
+  )
+.
+
+# ========================================
+# UriStrategy
+# ========================================
+page:frbrUriStrategy a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Uri strategie"@nl, "Uri strategy"@en]
+    page:frbr-uri-body
+  )
+.
+
+page:frbr-uri-body a cnt:ContentAsText;
+  cnt:chars
+'''
+Een document, algemeen bibliografische resourcewerk op het web (work) of specifieke versie van een bibliografische resource op het web (expression) heeft een uri die gemunt is door degene die het document of de resource publiceert. In een stelselcatalogus worden hiervoor geen uri's gemunt.
+'''@nl,
+'''
+A document, general bibliographic resource on the web (work) or specific version of a bibliographic resource on the web (expression) has a uri that is minted by the publisher of the resource. In a system catalog no uri's are minted for this resources.
+'''@en;
+.
