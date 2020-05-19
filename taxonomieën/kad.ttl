@@ -54,6 +54,9 @@
 #Erfgoedwet
 <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=3&paragraaf=3.1&artikel=3.3> rdfs:label "Artikel 3.3 Erfgoedwet".
 
+#Natuurschoonwet
+<https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1> rdfs:label "Artikel 1 Natuurschoonwet 1928".
+
 #--
 #Basisregistratie links
 #Test of dit werkt.
@@ -297,8 +300,10 @@ kad:LijdendeErfdienstbaarheid a skos:Concept;
 	skos:prefLabel "Lijdende erfdienstbaarheid";
 .
 kad:NSWLandgoed a skos:Concept;
-	rdfs:label "NSW landgoed"@nl;
-	skos:prefLabel "NSW landgoed";
+	rdfs:label "NSW-landgoed"@nl;
+	skos:prefLabel "NSW-landgoed";
+	skos:definition "Een NSW-landgoed is een in Nederland gelegen, geheel of gedeeltelijk met natuurterreinen, bossen of andere houtopstanden bezette onroerende zaak - daaronder begrepen die waarop een buitenplaats of andere, bij het karakter van het landgoed passende, opstallen voorkomen - voor zover het blijven voortbestaan van die onroerende zaak in zijn karakteristieke verschijningsvorm voor het behoud van het natuurschoon wenselijk is.";
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1>;
 .
 #Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
 #Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
