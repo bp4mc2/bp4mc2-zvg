@@ -1,0 +1,190 @@
+@prefix cnt: <http://www.w3.org/2011/content#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
+
+@prefix page: <http://bp4mc2.org/id/page#>.
+@prefix skosap: <http://bp4mc2.org/profiles/skos-ap-sc#>.
+@prefix style: <http://bp4mc2.org/id/style#>.
+
+# ========================================
+# Main page
+# ========================================
+page:skos a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "SKOS Toepassingsprofiel voor begrippenkaders"@nl, "SKOS Profile for concept schemes"@en]
+    page:skos-body
+    [xhtml:img "skos-ap-sc.png"]
+    page:conceptscheme
+    page:concept
+    page:collection
+    page:externalConcept
+    page:assetConceptScheme
+    page:skosUriStrategy
+  )
+.
+
+page:skos-body a cnt:ContentAsText;
+  cnt:chars
+'''
+Begrippen maken duidelijk welke ‘onderwerpen van gesprek’ er bestaan. In een stelselcatalogus worden begrippen formeel gedefinieerd, waarbij iedere definitie wordt opgebouwd volgens strikte regels. De essentie is dat elk begrip in een bepaald domein wordt uitgelegd in termen van andere begrippen. Ook die begrippen worden uitgelegd totdat uiteindelijk elk begrip wat uitleg nodig heeft is gedefinieerd. Uiteindelijk blijven de begrippen over waarvan de betekenis als vanzelfsprekend wordt aangenomen. In een logisch model worden dit axioma's genoemd. Zo ontstaat per domein een axiomatisch begrippenkader. Dit begrippenkader kan worden beschouwd als een min of meer geformaliseerde beschrijving van de institutionele werkelijkheid van het domein.
+Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland op de pas-toe-leg-uit lijst voor overheden.
+* Ieder begrip wordt gerepresenteerd door een skos:concept.
+* Ieder domein heeft zijn eigen begrippenkader. Het begrippenkader voor een bepaald domein wordt gerepresenteerd door een skos:ConceptScheme.
+* Begrippen kunnen worden geordend in collecties. Een collectie wordt gerepresenteerd door een skos:collection.
+* Begrippen in verschillende domeinen kunnen worden verbonden via matching mechanismes. Door deze verbinding van begrippen tussen domeinen ontstaat een stelsel van samenhangende begrippenkaders. Dit stelsel van samenhangende begrippenkaders kan worden gezien als de kennisbasis voor een stelselcatalogus.
+'''@nl,
+'''
+Concepts make clear which 'topics of conversation' exist. In a system catalog concepts are formally defined. Each definition is built according to strict rules. The essence is that every concept in a certain domain is explained in terms of other concepts. These concepts are also explained until finally every concept that needs some explanation is defined. At the end the concepts  whose meaning is taken for granted remain. In a logical model these are called axioms. This way an axiomatic conceptual framework is created for each domain. This conceptual framework can be regarded as a more or less formalized description of the institutional reality of the domain.
+SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain list for governments in the Netherlands.
+* Every concept is represented by a skos:concept.
+* Each domain has its own concept scheme. The concept scheme for a particular domain is represented by a skos:ConceptScheme.
+* Concepts can be arranged in collections. A collection is represented by a skos:collection.
+* Concepts in different domains can be linked via matching mechanisms. This connection of concepts between domains creates a system of coherent concept schemes. This system of coherent concepts schemes can be seen as the knowledge base for a system catalog.
+'''@en;
+.
+
+# ========================================
+# AssetConceptScheme
+# ========================================
+#page:assetConceptScheme a cnt:ContentAsText;
+#  dct:hasPart (
+#    [xhtml:heading "Begrippenkader als asset"@nl, "Concept scheme asset"@en]
+#    page:assetConceptScheme-body
+#    [dct:subject skosap:AssetConceptScheme; xhtml:stylesheet style:nodeshape]
+#    page:assetConceptScheme-relations
+#  )
+#.
+#
+#page:assetConceptScheme-body a cnt:ContentAsText;
+#  cnt:chars
+#'''
+#Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Dataset met als inhoud alle eigenschappen van de begrippen en collecties binnen dit begrippenkader.
+#'''@nl;
+#.
+#
+#page:assetConceptScheme-relations a cnt:ContentAsText;
+#  dct:hasPart (
+#    [xhtml:heading "Relaties"@nl, "Relations"@en]
+#    [dct:subject skosap:AssetConceptScheme; xhtml:stylesheet style:object-properties]
+#  )
+#.
+
+# ========================================
+# ConceptScheme
+# ========================================
+page:conceptscheme a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Begrippenkader"@nl, "Concept scheme"@en]
+    [dct:subject skosap:ConceptScheme; xhtml:stylesheet style:nodeshape]
+    page:conceptscheme-properties
+    page:conceptscheme-relations
+  )
+.
+
+page:conceptscheme-properties a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Eigenschappen"@nl, "Properties"@en]
+    [dct:subject skosap:ConceptScheme; xhtml:stylesheet style:datatype-properties]
+  )
+.
+
+page:conceptscheme-relations a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Relaties"@nl, "Relations"@en]
+    [dct:subject skosap:ConceptScheme; xhtml:stylesheet style:object-properties]
+  )
+.
+
+# ========================================
+# Concept
+# ========================================
+page:concept a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Begrip"@nl, "Concept"@en]
+    [dct:subject skosap:Concept; xhtml:stylesheet style:nodeshape]
+    page:concept-properties
+    page:concept-relations
+  )
+.
+
+page:concept-properties a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Eigenschappen"@nl, "Properties"@en]
+    [dct:subject skosap:Concept; xhtml:stylesheet style:datatype-properties]
+  )
+.
+
+page:concept-relations a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Relaties"@nl, "Relations"@en]
+    [dct:subject skosap:Concept; xhtml:stylesheet style:object-properties]
+  )
+.
+
+# ========================================
+# Collection
+# ========================================
+page:collection a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Collectie"@nl, "Collection"@en]
+    [dct:subject skosap:Collection; xhtml:stylesheet style:nodeshape]
+    page:collection-properties
+    page:collection-relations
+  )
+.
+
+page:collection-properties a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Eigenschappen"@nl, "Properties"@en]
+    [dct:subject skosap:Collection; xhtml:stylesheet style:datatype-properties]
+  )
+.
+
+page:collection-relations a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Relaties"@nl, "Relations"@en]
+    [dct:subject skosap:Collection; xhtml:stylesheet style:object-properties]
+  )
+.
+
+# ========================================
+# ExternalConcept
+# ========================================
+page:externalConcept a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Begrip (external)"@nl, "Concept"@en]
+    [dct:subject skosap:ExternalConcept; xhtml:stylesheet style:nodeshape]
+)
+.
+
+# ========================================
+# UriStrategy
+# ========================================
+page:skosUriStrategy a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Uri strategie"@nl, "Uri strategy"@en]
+    page:skos-uri-body
+  )
+.
+
+page:skos-uri-body a cnt:ContentAsText;
+  cnt:chars
+'''
+Concept schema’s, collecties en concepten krijgen een uri volgens het patroon:
+* `http://{domain}/id/scheme/{UpperCamelCase(rdfs:label)}` voor begrippenkaders
+* `http://{domain}/id/collection/{UpperCamelCase(rdfs:label)}` voor collecties
+* `http://{domain}/id/concept/{UpperCamelCase(skos:prefLabel)}` voor concepten
+Bovenstaande gaat er vanuit dat `{domain}` het begrippenkader al uniek identificeert, waardoor de toevoegen van het `rdfs:label` puur voor opslaggemak zorgt. Mocht echter het `{domain}` het begrippenkader *niet* uniek identificeren, dan geldt voor concepten en collecties de volgende uitbreiding:
+* `http://{domain}/id/concept/{conceptscheme}/{term}` voor concepten
+* `http://{domain}/id/collection/{conceptscheme}/{term}` voor collecties
+Het `skos:prefLabel` is in beginsel gelijk aan het `rdfs:label` en deze horen uniek te zijn voor alle concepten in een begrippenkader. Als dit niet het geval is, dan wordt de URI uitgebreid met een `_{context}` postfix. In een dergelijk geval wordt ook het `rdfs:label` uitgebreid met ` ({context})`.
+'''@nl,
+'''
+Concept schemes, collections and concepts get a uri according to the pattern:
+* `http://{domain}/id/scheme/{UpperCamelCase(rdfs:label)}` for concept schemes
+* `http://{domain}/id/collection/{UpperCamelCase(rdfs:label)}` for collections
+* `http://{domain}/id/concept/{UpperCamelCase(skos:prefLabel)}` for concepts
+The `skos:prefLabel` is in most cases equal to the `rdfs:label` and these should be unique for all concepts in a particular concept scheme. If this is not the case, the URI should be extended with a `_{context}` postfix. In such a case, the `rdfs:label` is also extended with ` ({context})`.
+'''@en;
+.
