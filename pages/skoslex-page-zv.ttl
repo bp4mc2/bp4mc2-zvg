@@ -1,0 +1,135 @@
+@prefix cnt: <http://www.w3.org/2011/content#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
+
+@prefix page: <http://bp4mc2.org/id/page#>.
+@prefix skoslexap: <http://bp4mc2.org/profiles/skoslex-ap-sc#>.
+@prefix style: <http://bp4mc2.org/id/style#>.
+
+# ========================================
+# Main page
+# ========================================
+page:skoslex a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "SKOS-Lex toepassingsprofiel voor (rechts)handelingen"@nl, "SKOS-Lex application profile for (legal) acts"@en]
+    page:skoslex-body
+    [xhtml:img "skoslex-ap-sc.png"]
+    page:act
+    page:object
+    page:actor
+    page:legalAgent
+    page:norm
+    page:skoslexUriStrategy
+  )
+.
+
+page:skoslex-body a cnt:ContentAsText;
+  cnt:chars
+'''
+Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde kenmerken als begrippen, die ‘objecten’ aanduiden, maar hebben ook nog enkele andere kenmerken.
+* Gebeurtenissen worden in wet- en regelgeving beschreven als mogelijke (rechts)handelingen die kunnen plaatsvinden in een bepaald domein. Een voorbeeld is het leveren (overdragen) van het eigendom van een huis (onroerend goed) aan een nieuwe eigenaar in het domein van het notariaal (not).
+* Gebeurtenissen maken de dynamiek van de institutionele werkelijkheid zichtbaar. Bij een wijziging in de registratie kan worden gerefereerd aan de gebeurtenis.  Dit helpt om bij een wijziging te begrijpen ‘wat er is gebeurd’. Een voorbeeld is een nieuwe eigenaar van een onroerend goed in de BRK, waarbij wordt vastgelegd dat deze situatie is ontstaan door een overdracht, vererving, boedelverdeling, etc.
+* Een gebeurtenis heeft betrekking op een object. Dit object is een ‘gewoon’ begrip. Bij het voorbeeld van de vastlegging van de overdracht in de BRK is het object het eigendom op onroerend goed.
+* Institutionele gebeurtenissen of rechtshandelingen kennen een of meerdere actoren, bijvoorbeeld de verkoper en de koper bij de overdracht van een huis. Actoren zijn ook ‘gewone’ begrippen.
+* Het vastleggen van een institutionele gebeurtenis gebeurt door een makelaar of door een notaris. Dit wordt een ‘agent’ (in de Engelse betekenis van het woord) genoemd. Dit een een speciaal soort actor. Soms is een 'agent' in de vorm van een bevoegd ambtenaar (notaris) wettelijk nodig om de rechtshandeling te verrichten. Dit is het geval bij een overdracht of bij de vestiging van een hypotheek. Soms is een 'agent' optionaal. Dit is he het geval bij een koopovereenkomst. In de regel wordt die opgesteld door een makelaar, maar dat hoeft niet.
+'''@nl,
+'''
+Events can be described as concepts. They then have the same characteristics as concepts, which denote 'objects', but they also have some other characteristics.
+* Events are described in legislation and regulations as possible (legal) acts that can take place in a certain domain. An example is the transport of the onwnership on some property to a new owner in the domain of the notary (not).
+* Events make the dynamics of institutional reality visible. A change in the registration can be referenced to the event. This helps to understand 'what has happened' around the change. An example is a new owner of a property in the BRK. In this case it can be recorded that this situation arose through a transfer, inheritance, estate distribution, etc.
+* An event relates to an object. This object is an 'ordinary' concept. In the example of the transfer in the BRK, the object is the ownership on the property.
+* Institutional events or legal acts have one or more actors, for example the seller and the buyer in the transfer of property. Actors are also 'ordinary' concepts.
+* The recording of an institutional event is done by a broker or by a notary. This is called an "agent". This a special kind of actor. Sometimes an 'agent' in the form of an authorized civil servant (notary) is legally required to perform the legal act. This is the case with a transfer or establishing a mortgage. Sometimes an 'agent' is optional. This is the case with a purchase agreement. As a rule, it is drawn up by a broker, but that is not necessary.
+'''@en;
+.
+
+# ========================================
+# Record
+# ========================================
+page:act a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Vastlegging"@nl, "Record"@en]
+    [dct:subject skoslexap:Record; xhtml:stylesheet style:nodeshape]
+    page:record-relations
+  )
+.
+
+page:record-relations a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Relaties"@nl, "Relations"@en]
+    [dct:subject skoslexap:Record; xhtml:stylesheet style:object-properties]
+  )
+.
+
+# ========================================
+# Act
+# ========================================
+page:act a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Handeling"@nl, "Act"@en]
+    [dct:subject skoslexap:Act; xhtml:stylesheet style:nodeshape]
+    page:act-relations
+  )
+.
+
+page:act-relations a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Relaties"@nl, "Relations"@en]
+    [dct:subject skoslexap:Act; xhtml:stylesheet style:object-properties]
+  )
+.
+
+# ========================================
+# Object
+# ========================================
+page:object a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Object"@nl, "Object"@en]
+    [dct:subject skoslexap:Object; xhtml:stylesheet style:nodeshape]
+  )
+.
+
+# ========================================
+# Actor
+# ========================================
+page:actor a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Actor"@nl, "Actor"@en]
+    [dct:subject skoslexap:Actor; xhtml:stylesheet style:nodeshape]
+  )
+.
+
+# ========================================
+# Agent
+# ========================================
+page:legalAgent a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Agent"@nl, "Agent"@en]
+    [dct:subject skoslexap:LegalAgent; xhtml:stylesheet style:nodeshape]
+  )
+.
+
+# ========================================
+# Uri strategy
+# ========================================
+
+page:skoslexUriStrategy a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Uri strategie"@nl, "Uri strategy"@en]
+    page:skoslex-uri-body
+  )
+.
+
+page:skoslex-uri-body a cnt:ContentAsText;
+  cnt:chars
+'''
+Agents, objects en actors zijn concepten en volgende de URI opbouw van een concept. Voor Norm geldt het volgende template:
+* `http://{domain}/id/norm/{UpperCamelCase(rdfs:label)}`
+'''@nl,
+'''
+Agents, objects en actors are concepten and follow the URI template of a concept. The following template is used for a norm:
+* `http://{domain}/id/norm/{UpperCamelCase(rdfs:label)}`
+'''@en;
+.
+© 2020 Gi
