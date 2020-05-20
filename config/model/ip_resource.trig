@@ -52,7 +52,7 @@ GRAPH config:Theatre {
         {
           GRAPH ?g {
             {
-              select ?subject ?subjectlabel ?stype (if(bound(?lextype),concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png"),?lextype) as ?subjectimg)
+              select ?g ?subject ?subjectlabel ?stype (if(bound(?lextype),concat("/assets/images/",lcase(strafter(str(?lextype),"#")),".png"),?lextype) as ?subjectimg)
               where {
                 ?subject a ?stype.
                 OPTIONAL {?subject rdfs:label ?subjectlabel}
@@ -71,7 +71,7 @@ GRAPH config:Theatre {
             FILTER (?p != dcterms:source)
           }
           GRAPH ?go {
-            SELECT ?o ?otype ?olabel (if(bound(?olextype),concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png"),?olextype) as ?oimg)
+            SELECT ?go ?o ?otype ?olabel (if(bound(?olextype),concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png"),?olextype) as ?oimg)
             WHERE {
               OPTIONAL {?o rdfs:label ?olabel}
               OPTIONAL {
@@ -84,7 +84,7 @@ GRAPH config:Theatre {
         UNION
         {
           GRAPH ?gs {
-            SELECT ?s ?ps ?subject ?stype ?slabel (if(bound(?slextype),concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png"),?slextype) as ?simg)
+            SELECT ?gs ?s ?ps ?subject ?stype ?slabel (if(bound(?slextype),concat("/assets/images/",lcase(strafter(str(?slextype),"#")),".png"),?slextype) as ?simg)
             WHERE {
               ?s ?ps ?subject.
               ?s a ?stype.
