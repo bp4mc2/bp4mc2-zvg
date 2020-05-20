@@ -1,0 +1,44 @@
+@prefix cnt: <http://www.w3.org/2011/content#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
+
+@prefix page: <http://zorgeloosvastgoed.nl/id/page#>.
+@prefix skosap: <http://zorgeloosvastgoed.nl/profiles/skos-ap-sc#>.
+@prefix style: <http://zorgeloosvastgoed.nl/id/style#>.
+
+page:topmodel a cnt:ContentAsText;
+  dct:hasPart (
+    [xhtml:heading "Stelselcatalogus"@nl, "System catalog"@en]
+    page:topmodel-body
+    [xhtml:img "topmodel.png"]
+  )
+.
+
+page:topmodel-body a cnt:ContentAsText;
+  cnt:chars
+'''
+In een digitaal stelsel worden data, metadata zoals kwaliteit en herkomst van de data en betekenis van die data uit verschillende domeinen in samenhang beheerd. Voorbeelden in Nederland zijn het stelsel voor de basisregistraties met de domeinen personen, rechtspersonen, inkomen, Kadaster, et cetera en het digitaal stelsel voor de Omgevingswet (DSO) met de domeinen wet-en regelgeving en informatiedomeinen rond lucht, water, aarde (openbare ruimte) en vuur (openbare veiligheid). Een Europees voorbeeld is Inspire, een digitaal netwerk voor het uitwisselen van gegevens over de leefomgeving voor Europese lidstaten. Het afsprakenstelsel voor Zorgeloos vastgoed is ook zo'n digitaal stelsel.
+
+Voor het in samenhang representeren van betekenis en metadata uit verschillende samenhangende domeinen is een soort ‘catalogus’ nodig, een stelselcatalogus. In deze tijd van digitale transformatie is dat een digitale catalogus waarbij betekenis en metadata digitaal, via het web, met standaard webtechnologieën, beschikbaar is.
+
+De W3C heeft standaard vocabulaires waarmee betekenis en metadata kunnen worden beschreven. Gebruik van deze standaarden leidt tot interoperabiliteit en transparantie.
+* SKOS is de standaard voor het publiceren van taxonomieën. Een taxonomie bevat de begrippen en waardenlijsten (controlled vocabularies) binnen een bepaald domein.
+* SKOS-LEX wordt voorgesteld als ‘legal extension’ op SKOS voor het kunnen beschrijven van gebeurtenissen en/of (rechtshandelingen).
+* FRBR is de standaard om te kunnen verwijzen naar een bron (bijvoorbeeld een wetsartikel) in het algemeen of een versie van een bron zoals dat op een bepaald moment geldig was. Dit is van belang voor formele begrippen, die meestal worden gedefinieerd in een besluit.
+
+Deze standaarden zijn los van elkaar ontwikkeld. De applicatieprofielen voor een stelselcatalogus zijn enerzijds bedoeld om te specificeren hoe deze standaarden worden toegepast in de context van een stelselcatalogus en anderzijds hoe ze onderling samenhangen. De applicatieprofielen kunnen stuk voor stuk worden gezien als een ‘best practice’ voor de toepassing van een standaard in een catalogus. Ze zijn daarmee bouwstenen waarmee een complete catalogus kan worden ingericht, maar die ook los kunnen worden ingezet. Zo kan een taxonomie worden gepubliceerd op basis van het SKOS applicatieprofiel voor de stelselcatalogus (skos-ap-sc). De onderlinge samenhang wordt weergegeven in onderstaande figuur. Elk applicatieprofiel wordt apart beschreven.
+'''@nl,
+'''
+In a digital system, data, metadata such as quality and origin of the data and meaning of that data from different domains are managed in a coherent way. Examples in the Netherlands are the system for the key registers with the domains ‘persons’, ‘legal entities’, ‘income’, ‘Land Registry’, etc. and the digital system for the Environmental Act with the domains of laws and regulations at the one hand and information domains concerning air, water, earth (public space). ) and fire (public safety) on the other hand. A European example is Inspire, a digital network for the exchange of environmental data for European member states. 'Zorgeloos vastgoed' is also a digital system.
+
+To represent the related meaning and metadata of data in various contexts, a kind of 'catalog' is required, a system catalog. In this age of digital transformation, this is a digital catalog in which meaning and metadata is available digitally via the web using standardized web technologies.
+
+The W3C has standardized vocabularies to describe meaning and metadata. Use of these standards leads to interoperability and transparency.
+* SKOS is the standard for publishing taxonomies. A taxonomy contains the concepts and controlled vocabularies within a certain domain.
+* SKOS-LEX is presented as a 'legal extension' on SKOS for describing events and/or (legal acts).
+* FRBR is the standard that enables to refer to a source (for example a legal article) in general or a version of a source as it was valid at a certain moment in time. This is important for formal concepts, which are usually defined in a decree.
+
+These standards have been developed separately from each other. The application profiles for a system catalog are on the one hand intended to specify how these standards are applied in the context of a system catalog and on the other hand how they are interrelated. The application profiles can all be seen as a 'best practice' for the application of a standard in a catalog. They are therefore building blocks with which a complete catalog can be set up, but which can also be used separately. For example, a taxonomy can be published using the SKOS application profile for the system catalog (skos-ap-sc). The relationships between the different application profiles is shown in the figure below. Each application profile is described separately.
+'''@en;
+.

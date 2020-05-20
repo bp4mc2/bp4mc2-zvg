@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix frbrap: <http://bp4mc2.org/profiles/frbr-ap-sc#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+
+#---------------------
+# IMPORT
+#---------------------
+
+#imported from frbr
+frbr:Work a rdfs:Class;
+  rdfs:subClassOf frbr:Endeavour
+.
+frbr:Expression a rdfs:Class;
+  rdfs:subClassOf frbr:Endeavour
+.
+
+#implictly defined
+frbr:Endeavour a rdfs:Class;
+  rdfs:subClassOf rdfs:Resource
+.
+foaf:Document a rdfs:Class;
+  rdfs:subClassOf rdfs:Resource
+.
+
+# ========================================
+# Shape outside this model, but used as reference
+# ========================================
+
+frbrap:Concept a sh:NodeShape;
+  sh:name "skos:Concept";
+  sh:property frbrap:Concept_dctsource;
+.
+frbrap:Concept_dctsource a sh:PropertyShape;
+  rdfs:label "bron op het web"@nl;
+  rdfs:label "source on the web"@en;
+  sh:name "dcterms:source";
+  sh:path dcterms:source;
+  sh:node [ sh:xone (frbrap:Endeavour frbrap:Document)];
+  rdfs:comment "Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een beschrijving van een specifiek begrip of een document waarin een beschrijving van het begrip is te vinden."@nl;
+  rdfs:comment "A concept can be derived from a source that can be found on the web. This can be a (version of) a description of a specific concept or a document in which a description of the concept can be found."@en;
+  skos:example "<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>"@nl
+.
+
+# ========================================
+# Source document
+# ========================================
+
+frbrap:Document a sh:NodeShape;
+  sh:targetClass foaf:Document;
+  rdfs:label "Document"@nl;
+  rdfs:label "Document"@en;
+  sh:name "foaf:Document";
+  rdfs:comment "Een document dat vindbaar is op het web."@nl;
+  rdfs:comment "A document that can be found on the web."@en;
+  skos:example <https://wetten.overheid.nl/BWBR0001840/2017-11-17>;
+  sh:property frbrap:Document_label
+.
+frbrap:Document_label a sh:PropertyShape;
+  rdfs:label "label"@nl;
+  rdfs:label "label"@en;
+  sh:name "rdfs:label";
+  sh:path rdfs:label;
+  sh:datatype xsd:string;
+  rdfs:comment "Een document heeft een voor mensen leesbaar label."@nl;
+  rdfs:comment "A document has a human-readable label."@en;
+  skos:example "Grondwet"@nl;
+  sh:minCount 1;
+  sh:severity sh:Violation;
+  sh:message "Een document heeft een voor mensen leesbaar label."@nl;
+  sh:message "A document has a human-readable label."@en
+.
+
+# ========================================
+# Endeavour
+# ========================================
+
+frbrap:Endeavour a sh:NodeShape;
+  rdfs:label "bibliografische beschrijving"@nl;
+  rdfs:label "bibliographic reference"@en;
+  sh:name "frbr:Endeavour";
+  sh:targetClass frbr:Endeavour;
+  rdfs:comment "Een bibliografische beschrijving van een werk of expressie."@nl;
+  rdfs:comment "A bibliographic reference of a work or expression."@en;
+  skos:example "Artikel 1 van het burgerlijk wetboek of artikel 1 van het burgerlijk wetboek van 1838"@nl;
+  sh:property frbrap:Endeavour_label;
+  sh:property frbrap:Endeavour_isTopicOf
+.
+
+frbrap:Endeavour_label a sh:PropertyShape;
+  rdfs:label "label"@nl;
+  rdfs:label "label"@en;
+  sh:name "rdfs:label";
+  sh:path rdfs:label;
+  sh:datatype xsd:string;
+  rdfs:comment "Een bibliografische beschrijving heeft een voor mensen leesbare naam."@nl;
+  rdfs:comment "A bibliographic reference has a human readable label."@en;
+  skos:example "Artikel 1 van het Burgerlijk Wetboek van 1838"@nl;
+  sh:minCount 1;
+  sh:severity sh:Violation;
+  sh:message "Een bibliografische beschrijving heeft een voor mensen leesbare naam."@nl;
+  sh:message "A bibliographic reference has a human readable label."@en
+.
+
+frbrap:Endeavour_isTopicOf a sh:PropertyShape;
+  rdfs:label "onderwerp van"@nl;
+  rdfs:label "topic of"@en;
+  sh:name "foaf:isPrimaryTopicOf";
+  sh:path foaf:isPrimaryTopicOf;
+  sh:node frbrap:Document;
+  rdfs:comment "Een bibliografische beschrijving kan een onderwerp zijn van een document."@nl;
+  rdfs:comment "A bibliographic reference can be a subject of a document."@en;
+  skos:example "Artikel 1 BW is een onderwerp in het Burgerlijk Wetboek"@nl;
+  sh:maxCount 1;
+  sh:severity sh:Violation;
+  sh:message "Een bibliografische beschrijving kan een onderwerp zijn van maximaal 1 document."@nl;
+  sh:message "A bibliographic reference can be a subject of up to 1 document."@en
+.
+# ========================================
+# Work
+# ========================================
+
+frbrap:Work a sh:NodeShape;
+  rdfs:label "Werk"@nl;
+  rdfs:label "Work"@en;
+  sh:name "frbr:Work";
+  sh:targetClass frbr:Work;
+  rdfs:comment "Een bibliografische beschrijving, zonder dat expliciet wordt verwezen naar een specifieke versie."@nl;
+  rdfs:comment "A bibliographic reference, without an explicit reference to a specific version."@en;
+  skos:example "Artikel 1 van het Burgerlijk Wetboek"@nl
+.
+
+# ========================================
+# Expression
+# ========================================
+
+frbrap:Expression a sh:NodeShape;
+  rdfs:label "Expressie, versie van een werk"@nl;
+  rdfs:label "Expression, version of a work"@en;
+  sh:name "frbr:Expression";
+  sh:targetClass frbr:Expression;
+  rdfs:comment "Een specifieke versie van een werk."@nl;
+  rdfs:comment "A specific version of a work."@en;
+  skos:example "Artikel 1 van het Burgerlijk Wetboek van 1838"@nl
+.
+
+# ========================================
+# Resource
+# ========================================
+
+frbrap:Resource a sh:NodeShape;
+  rdfs:label "Resource"@nl;
+  rdfs:label "Resource"@en;
+  sh:name "rdfs:Resource";
+  sh:targetClass rdfs:Resource;
+  rdfs:comment "Een ding, geidentificeerd met een URI"@nl;
+  rdfs:comment "A thing, identified by a URI"@en;
+.
