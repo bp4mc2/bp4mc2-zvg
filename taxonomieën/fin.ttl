@@ -34,6 +34,7 @@ fin:Borg a skos:Concept, skoslex:Actor;
 	skos:definition "De persoon die garant staat voor de nakoming van de verplichting van een andere persoon.";
 	rdfs:comment "Als een schuldenaar zijn verplichting niet nakomt, is de borg verplicht om de borgsom te betalen aan de schuldeiser. De borg krijgt daarna een vordering op de schuldenaar.";
 	skos:semanticRelation fin:Schuldenaar;
+	skosthes:broaderGeneric zv:Persoon;
 .
 fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	rdfs:label "Hypotheekadviseur"@nl;

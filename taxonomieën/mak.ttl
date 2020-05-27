@@ -435,7 +435,7 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	skoslex:isAbout kad:HerzieningErfpacht;
 	skoslex:isAbout kad:VoortdurendeErfpacht;
 .
-mak:Asbest a skos:Concept, skoslex:Object;
+mak:Asbest a skos:Concept;
 	rdfs:label "Asbest"@nl;
 	skos:prefLabel "Asbest";
 	skos:definition "Een bouwmateriaal dat in het verleden is toegepast bij de bouw van registergoederen.";
