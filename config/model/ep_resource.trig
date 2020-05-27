@@ -200,6 +200,11 @@ GRAPH config:Theatre {
       elmo:index 53;
     ];
     elmo:fragment [
+      elmo:appliesTo rdfs:isDefinedBy;
+      rdfs:label "Gedefinieerd in"@nl;
+      elmo:index 60;
+    ];
+    elmo:fragment [
       elmo:appliesTo dcterms:title;
       rdfs:label "Titel"@nl;
       elmo:index 1;

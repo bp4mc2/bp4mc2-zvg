@@ -12,18 +12,24 @@ GRAPH config:Theatre {
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
       CONSTRUCT {
         ?subject ?p ?o.
+        ?subject rdfs:isDefinedBy ?g.
         ?o rdfs:label ?olabel.
+        ?g rdfs:label ?glabel.
         skos:Concept rdfs:label "Begrip"@nl.
         skoslex:Act rdfs:label "Handeling"@nl.
         skoslex:Actor rdfs:label "Actor"@nl.
         skoslex:Object rdfs:label "Object"@nl.
         skoslex:Agent rdfs:label "Agent"@nl.
+        skoslex:Record rdfs:label "Record"@nl.
       }
       WHERE {
         GRAPH ?g {
           ?subject ?p ?o
           OPTIONAL {
             ?o rdfs:label ?olabel
+          }
+          OPTIONAL {
+            ?g rdfs:label ?glabel
           }
         }
       }
