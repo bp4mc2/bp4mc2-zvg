@@ -93,6 +93,10 @@ zvgmodel:label a sh:PropertyShape;
   sh:path rdfs:label;
   sh:name "rdfs:label";
 .
+zvgmodel:seeAlso a sh:PropertyShape;
+  sh:path rdfs:seeAlso;
+  sh:name "rdfs:seeAlso";
+.
 
 # SKOS
 zvgmodel:altLabel a sh:PropertyShape;
