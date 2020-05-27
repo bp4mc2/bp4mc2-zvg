@@ -413,7 +413,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:record not:Hypotheekakte;
 	skoslex:object kad:OnroerendeZaak;
 	skoslex:object kad:Onderpand;
-	skoslex:object kad:RechtVanHypotheek;
+	skoslex:object not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 #--
