@@ -11,7 +11,7 @@ page:topmodel a cnt:ContentAsText;
   dct:hasPart (
     [xhtml:heading "Stelselcatalogus"@nl, "System catalog"@en]
     page:topmodel-body
-    [xhtml:img "topmodel.png"]
+    [xhtml:img "zvModel.png"]
   )
 .
 
