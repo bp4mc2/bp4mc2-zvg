@@ -14,7 +14,7 @@ page:skoslex a cnt:ContentAsText;
   dct:hasPart (
     [xhtml:heading "SKOS-Lex toepassingsprofiel voor (rechts)handelingen"@nl, "SKOS-Lex application profile for (legal) acts"@en]
     page:skoslex-body
-    [xhtml:img "skoslex-ap-sc.png"]
+    [xhtml:img "skoslex-ap-zv.png"]
     page:act
     page:object
     page:actor
@@ -132,4 +132,3 @@ Agents, objects en actors are concepten and follow the URI template of a concept
 * `http://{domain}/id/norm/{UpperCamelCase(rdfs:label)}`
 '''@en;
 .
-© 2020 Gi

@@ -3,15 +3,15 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
 
-@prefix page: <http://zorgeloosvastgoed.nl/id/page#>.
-@prefix skosap: <http://zorgeloosvastgoed.nl/profiles/skos-ap-sc#>.
-@prefix style: <http://zorgeloosvastgoed.nl/id/style#>.
+@prefix page: <http://bp4mc2.org/id/page#>.
+@prefix skosap: <http://bp4mc2.org/id/skos-ap-sc#>.
+@prefix style: <http://bp4mc2.org/id/style#>.
 
 page:topmodel a cnt:ContentAsText;
   dct:hasPart (
     [xhtml:heading "Stelselcatalogus"@nl, "System catalog"@en]
     page:topmodel-body
-    [xhtml:img "zvModel.png"]
+    [xhtml:img "topmodel-zv.png"]
   )
 .
 

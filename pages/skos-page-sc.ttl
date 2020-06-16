@@ -14,7 +14,7 @@ page:skos a cnt:ContentAsText;
   dct:hasPart (
     [xhtml:heading "SKOS Toepassingsprofiel voor begrippenkaders"@nl, "SKOS Profile for concept schemes"@en]
     page:skos-body
-    [xhtml:img "skos-ap-sc.png"]
+    [xhtml:img "skos-ap-zv.png"]
     page:conceptscheme
     page:concept
     page:collection

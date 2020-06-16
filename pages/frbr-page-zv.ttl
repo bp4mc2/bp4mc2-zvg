@@ -14,7 +14,7 @@ page:frbr a cnt:ContentAsText;
   dct:hasPart (
     [xhtml:heading "FRBR Toepassingsprofiel voor bronbeschrijvingen"@nl, "FRBR Appication profile for Bibliographic references"@en]
     page:frbr-body
-    [xhtml:img "frbr-ap-sc.png"]
+    [xhtml:img "frbr-ap-zv.png"]
     page:frbr-concept
     page:document
     page:endeavour
