@@ -421,6 +421,8 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 not:AanspraakTotGebruik a skos:Concept;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik";
+	skos:definition "Vermeend recht of claim op gebruik.";
+	rdfs:comment "Vermeend recht of claim op gebruik.";#Verzoek om input ligt bij jurist en communicatiemedewerker KNB.
 .
 not:AfschriftAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Afschrift (akte)"@nl;
@@ -586,6 +588,8 @@ not:OnderhandseAkte a skos:Concept, skoslex:Record;
 not:Ongevorderd a skos:Concept;
 	rdfs:label "Ongevorderd"@nl;
 	skos:prefLabel "Ongevorderd";
+	skos:definition "Zonder uitstaande claims op het bezit.";
+	rdfs:comment "Zonder uitstaande claims op het bezit.";#Verzoek om input ligt bij jurist en communicatiemedewerker KNB.
 .
 not:PlaatsVanVestiging a skos:Concept;
 	rdfs:label "Plaats van vestiging"@nl;
