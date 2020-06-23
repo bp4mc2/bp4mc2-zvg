@@ -120,12 +120,14 @@ zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
 	rdfs:comment "Voortdurend bijgehouden bestand met persoonsgegevens van inwoners van Nederland.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2>;
 .
-zv:Huis a skos:Concept, skoslex:Object;
+zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je zegt 'Ik koop een huis', terwijl je formeel het recht heb gekocht op erfpacht op een onroerende zaak zoals in Amsterdam.
 	rdfs:label "Huis"@nl;
 	skos:prefLabel "Huis";
 	skos:definition "Een (deel van een) gebouw dat bestemd is voor bewoning.";
 	rdfs:comment "Een gebouw dat bedoeld is om in te wonen.";
 	skosthes:broaderGeneric kad:ZakelijkRecht;
+	skosthes:narrowerGeneric mak:Woning;#Huis is een generalisatie van woning.
+	skosthes:narrowerGeneric kad:OnroerendeZaak;#Elk huis is een onroerende zaak, maar niet iedere onroerende zaak is een huis.
 .
 zv:Identiteitsdocument a skos:Concept, skoslex:Object;
 	rdfs:label "Identiteitsdocument"@nl;
