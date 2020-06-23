@@ -329,7 +329,6 @@ kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	skos:definition "Onroerend zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken. Onroerende zaken kunnen bezwaard worden met een beperkt of zakelijk recht.";
 	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc..";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
-	skosthes:narrowerGeneric zv:Huis;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	rdfs:label "Openbare registers"@nl;
