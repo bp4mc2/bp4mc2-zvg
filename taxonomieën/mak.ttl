@@ -492,7 +492,6 @@ mak:Verontreiniging a skos:Concept;
 	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt.";
 .
 mak:Woning a skos:Concept, skoslex:Object;
-	skosthes:broaderGeneric zv:Huis;
 	rdfs:label "Woning"@nl;
 	skos:definition "Een (deel van) een gebouw, bestemd voor bewoning.";
 	skos:editorialNote "'Woning' is de gebruikelijk term binnen de makkelaarswereld. Binnen zorgeloosvastgoed spreken we meer generieker van 'Huis'";
