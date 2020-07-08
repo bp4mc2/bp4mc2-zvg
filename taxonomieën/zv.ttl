@@ -29,6 +29,10 @@
 #Onderstaande link hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 #Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1> rdfs:label "artikel 2, eerste lid, van de Wet op belastingen van rechtsverkeer".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=2> rdfs:label "artikel 2, tweede lid, van de Wet op belastingen van rechtsverkeer".
+
+#Invorderingswet 1990
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42> rdfs:label "artikel 42 van de Invorderingswet 1990".
 
 #--
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
@@ -102,11 +106,14 @@ zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Inning overdrachtsbelasting";
 	skos:prefLabel "Inning overdrachtsbelasting";
-	skos:definition "Ontvangen van de overdrachtsbelasting.";
+	skos:definition "Het betalen van de overdrachtsbelasting door de koper aan de belastingdienst.";
+	rdfs:comment "Hoewel het woord 'inning' suggereert dat de belastinginspecteur actief deelneemt aan de handeling, is het de koper die handelt door de overdrachtsbelasting te betalen. Het woord 'inning' is echter een gebruikelijke term en daarom wordt hier aan vastgehouden.";
+	rdfs:comment "Artikel 42 van de invorderingswet regelt wie er aansprakelijk kan worden gesteld voor deze overdrachtsbelasting (als de koper deze niet zou betalen of te weinig heeft betaald). De ontvanger kan een notaris - die de akte heeft opgesteld - aansprakelijk stellen.".
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42>;
 	skosthes:broaderPartitive not:Levering;
 	skoslex:agent not:Notaris;
 	skoslex:actor mak:Koper;
-	skoslex:actor zv:Belastinginspecteur;
+	skoslex:agent zv:Belastinginspecteur;
 	skoslex:object zv:Overdrachtsbelasting;
 	skoslex:object not:Grondslagwaarde;
 .
@@ -150,6 +157,7 @@ zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in e
 	skos:definition "Onder de naam 'overdrachtsbelasting' wordt een belasting geheven ter zake van de verkrijging van in Nederland gelegen onroerende zaken of van rechten waaraan deze zijn onderworpen.";
 	rdfs:comment "De overdrachtsbelasting is de belasting die de koper van een onroerende zaak moet betalen aan de belastingdienst.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=2>;
 .
 zv:NederlandsRecht a skos:Concept;
 	rdfs:label "Nederlands recht"@nl;
