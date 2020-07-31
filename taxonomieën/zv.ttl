@@ -45,10 +45,10 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42> rdfs:label "artikel 42 van de Invorderingswet 1990".
 
 #Catalogi
-<https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon> rdfs:label "Stelselcatalogus: Natuurlijk persoon".
-<https://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon> rdfs:label "Stelselcatalogus: Niet natuurlijk persoon".
+<https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Natuurlijk persoon".
+<https://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Niet natuurlijk persoon".
 <https://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon> rdfs:label "Basisregistratie Kadaster: Rechtspersoon".
-<https://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon> rdfs:label "BRK: Persoon".
+<https://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon> rdfs:label "Basisregistratie Kadaster: Persoon".
 
 #--
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
