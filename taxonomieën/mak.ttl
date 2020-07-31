@@ -396,7 +396,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 	skoslex:isAbout kad:ProvinciaalMonument;
 	skoslex:isAbout kad:ProvincialeVerordening;
 	skoslex:isAbout kad:PubliekrechtelijkeBeperking;
-	skoslex:isAbout kad:RijksmonumentInDeZinVanDeErfgoedwet;
+	skoslex:isAbout kad:Rijksmonument;
 	skoslex:isAbout mak:Schoning;
 	skoslex:isAbout mak:Verontreiniging;
 	skoslex:isAbout kad:Voorkeursrecht;
