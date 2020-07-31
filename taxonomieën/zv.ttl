@@ -22,17 +22,33 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
-<http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2> rdfs:label "artikel 1.2 van de Wet basisregistratie personen".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
+#Burgerlijk wetboek
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "artikel 213 van Boek 6 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=5> rdfs:label "artikel 5 van Boek 2 van het Burgerlijk Wetboek".
+
+#Wet identificatieplicht BES
+<http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
 
 #Onderstaande link hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 #Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1> rdfs:label "artikel 2, eerste lid, van de Wet op belastingen van rechtsverkeer".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=2> rdfs:label "artikel 2, tweede lid, van de Wet op belastingen van rechtsverkeer".
 
+#Wet basisregistratie personen
+<http://wetten.overheid.nl/jci1.3:c:BWBR0033715> rdfs:label "Wet basisregistratie personen".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2> rdfs:label "artikel 1.2 van de Wet basisregistratie personen".
+
+#Faillissementswet
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1> rdfs:label "artikel 1 van de Faillissementswet".
+
 #Invorderingswet 1990
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42> rdfs:label "artikel 42 van de Invorderingswet 1990".
+
+#Catalogi
+<https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon> rdfs:label "Stelselcatalogus: Natuurlijk persoon".
+<https://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon> rdfs:label "Stelselcatalogus: Niet natuurlijk persoon".
+<https://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon> rdfs:label "Basisregistratie Kadaster: Rechtspersoon".
+<https://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon> rdfs:label "BRK: Persoon".
 
 #--
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
@@ -46,18 +62,19 @@ zv:Belastinginspecteur a skos:Concept, skoslex:Agent; #Begrip hoort thuis in een
 zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
 	skos:prefLabel "Natuurlijk persoon";
-	skos:definition "Een mens in juridische zin, als iemand die drager van rechten en verplichtingen kan zijn. Het zijn van een natuurlijk persoon eindigt met het overlijden (hersendood).";
-	rdfs:comment "Een mens met eigen rechten en plichten.";
-  skosthes:broaderGeneric zv:Persoon;
+	skos:definition "Een natuurlijk persoon is een mens als subject en drager van rechten en plichten.";
+	skosthes:broaderGeneric zv:Persoon;
 	#Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen. Van belang daarbij is wel het onderscheid tussen de mens in juridische zin, en "echte" mensen.
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715>;
+	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon>;
 .
 zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Niet natuurlijk persoon"@nl;
 	skos:prefLabel "Niet natuurlijk persoon";
 	skos:altLabel "Organisatie";
-	skos:definition "Een organisatie of abstracte entiteit die zelfstandig in het rechtsverkeer kan optreden. Het zijn van een niet natuurlijk persoon eindigt bij ontbinding van de organisatie of entiteit.";
-  	rdfs:comment "Een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid. Een niet natuurlijk persoon heeft eigen rechten en plichten.";
-        skosthes:broaderGeneric zv:Persoon;
+	skos:definition "Een niet-natuurlijk persoon is een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid.";
+	skosthes:broaderGeneric zv:Persoon;
+	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon>;
 .
 zv:Partij a skos:Concept, skoslex:Actor;
 	rdfs:label "Partij"@nl;
@@ -65,12 +82,14 @@ zv:Partij a skos:Concept, skoslex:Actor;
 	skos:definition "Een Partij is een (niet) natuurlijk persoon die betrokken is bij een meerzijdige rechtshandeling.";
   	rdfs:comment "Een partij is een (niet) natuurlijk persoon die samen met een andere (niet) natuurlijke persoon een handeling verrichten, waardoor zij samen een juridisch doel bereiken. Dit doel noemen juristen een rechtsgevolg.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>;
-        skosthes:broaderGeneric zv:Persoon;
+	skosthes:broaderGeneric zv:Persoon;
 .
 zv:Persoon a skos:Concept, skoslex:Actor; #Indien persoon als object wordt gebruikt in een act, blijft de Persoon zelf een actor, die in de rol van object in de betreffende handeling aanwezig is.
 	rdfs:label "Persoon"@nl;
 	skos:prefLabel "Persoon";
-	skos:definition "Drager van subjectieve rechten en plichten (in juridische zin).";
+	skos:definition "Een persoon is een natuurlijk persoon of een niet-natuurlijk persoon.";
+  	rdfs:comment "Een persoon is een natuurlijk persoon, een mens, of een niet-natuurlijk persoon.";
+	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon>;
 .
 zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechtspersoon"@nl;
@@ -78,8 +97,11 @@ zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	skos:altLabel "NV";
 	skos:altLabel "BV";
 	skos:definition "Een rechtspersoon is een rechtssubject die zelfstandig drager is van rechten en met een natuurlijk gelijk staat, tenzij uit de wet het tegendeel voortvloeit.";
-        rdfs:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft. Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
-        skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
+	rdfs:comment "Een rechtspersoon is een niet natuurlijk persoon, meestal een organisatie, die net als een natuurlijk persoon rechten en plichten heeft.";
+	skos:scopeNote "Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen.";
+	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=5>;
+	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon>;
 .
 #--
 #Acts
@@ -107,7 +129,7 @@ zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis i
 	rdfs:label "Inning overdrachtsbelasting";
 	skos:prefLabel "Inning overdrachtsbelasting";
 	skos:definition "Het betalen van de overdrachtsbelasting door de koper aan de belastingdienst.";
-	rdfs:comment "Hoewel het woord 'inning' suggereert dat de belastinginspecteur actief deelneemt aan de handeling, is het de koper die handelt door de overdrachtsbelasting te betalen. Het woord 'inning' is echter een gebruikelijke term en daarom wordt hier aan vastgehouden.";
+	skos:editorialNote "Hoewel het woord 'inning' suggereert dat de belastinginspecteur actief deelneemt aan de handeling, is het de koper die handelt door de overdrachtsbelasting te betalen. Het woord 'inning' is echter een gebruikelijke term en daarom wordt hier aan vastgehouden.";
 	rdfs:comment "Artikel 42 van de invorderingswet regelt wie er aansprakelijk kan worden gesteld voor deze overdrachtsbelasting (als de koper deze niet zou betalen of te weinig heeft betaald). De ontvanger kan een notaris - die de akte heeft opgesteld - aansprakelijk stellen.".
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42>;
 	skosthes:broaderPartitive not:Levering;
@@ -135,6 +157,7 @@ zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 	skosthes:narrowerGeneric mak:Woning;#Huis is een generalisatie van woning.
 	skosthes:narrowerGeneric kad:OnroerendeZaak;#Elk huis is een onroerende zaak, maar niet iedere onroerende zaak is een huis.
+	skosthes:broaderGeneric kad:Registergoed;
 .
 zv:Identiteitsdocument a skos:Concept, skoslex:Object;
 	rdfs:label "Identiteitsdocument"@nl;
@@ -150,6 +173,7 @@ zv:Faillissement a skos:Concept; #Begrip hoort thuis in een domein Belastingdien
 	skos:prefLabel "Faillissement";
 	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
 	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
 .
 zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Overdrachtsbelasting";
