@@ -251,7 +251,7 @@ kad:Erfpacht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	skosthes:broaderGeneric kad:BeperktRecht;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
-	skos:related kad:OnroerendeZaak;
+	skos:semanticRelation kad:OnroerendeZaak;
 .
 kad:GemeentelijkeVerordening a skos:Concept;
 	rdfs:label "Gemeentelijke verordening"@nl;
