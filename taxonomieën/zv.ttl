@@ -130,7 +130,7 @@ zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis i
 	skos:prefLabel "Inning overdrachtsbelasting";
 	skos:definition "Het betalen van de overdrachtsbelasting door de koper aan de belastingdienst.";
 	skos:editorialNote "Hoewel het woord 'inning' suggereert dat de belastinginspecteur actief deelneemt aan de handeling, is het de koper die handelt door de overdrachtsbelasting te betalen. Het woord 'inning' is echter een gebruikelijke term en daarom wordt hier aan vastgehouden.";
-	rdfs:comment "Artikel 42 van de invorderingswet regelt wie er aansprakelijk kan worden gesteld voor deze overdrachtsbelasting (als de koper deze niet zou betalen of te weinig heeft betaald). De ontvanger kan een notaris - die de akte heeft opgesteld - aansprakelijk stellen.".
+	rdfs:comment "Artikel 42 van de invorderingswet regelt wie er aansprakelijk kan worden gesteld voor deze overdrachtsbelasting (als de koper deze niet zou betalen of te weinig heeft betaald). De ontvanger kan een notaris - die de akte heeft opgesteld - aansprakelijk stellen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42>;
 	skosthes:broaderPartitive not:Levering;
 	skoslex:agent not:Notaris;
