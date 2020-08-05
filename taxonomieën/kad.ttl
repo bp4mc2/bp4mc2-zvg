@@ -251,7 +251,7 @@ kad:Erfpacht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	skosthes:broaderGeneric kad:BeperktRecht;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
-	skos:related kad:OnroerendeZaak;
+	skos:semanticRelation kad:OnroerendeZaak;
 .
 kad:GemeentelijkeVerordening a skos:Concept;
 	rdfs:label "Gemeentelijke verordening"@nl;
@@ -298,7 +298,7 @@ kad:HerzieningErfpacht a skos:Concept;
 	skos:altLabel "Herziening canon";
 	skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
 	skosthes:broaderPartitive kad:Erfpachtvoorwaarden;
-	skos:related kad:Canon;
+	skos:semanticRelation kad:Canon;
 .
 kad:Huurkoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Huurkoopovereenkomst"@nl;
@@ -335,7 +335,7 @@ kad:KwalitatieveVerplichting a skos:Concept;
 .
 kad:NSWLandgoed a skos:Concept, skoslex:Object;
 	rdfs:label "NSW-landgoed"@nl;
-	skos:p a skos:Concept, skoslex:Object;Label "NSW-landgoed";
+	skos:prefLabel "NSW-landgoed";
 	skos:definition "Een NSW-landgoed is een in Nederland gelegen, geheel of gedeeltelijk met natuurterreinen, bossen of andere houtopstanden bezette onroerende zaak - daaronder begrepen die waarop een buitenplaats of andere, bij het karakter van het landgoed passende, opstallen voorkomen - voor zover het blijven voortbestaan van die onroerende zaak in zijn karakteristieke verschijningsvorm voor het behoud van het natuurschoon wenselijk is.";
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1>;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
