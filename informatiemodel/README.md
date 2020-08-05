@@ -8,5 +8,5 @@ Op dit moment is allen het domein Koop uitgewerkt als informatiemodel voor zorge
 
 Als voorproefje hier alvast het model van Koop 
 
-![Model Koop] (cat/Images/EAID_516C7992_B16B_49ec_8DC5_CF31CB944D6F.png)
+![Model Koop] (https://github.com/bp4mc2/bp4mc2-zvg/informatiemodel/cat/Images/EAID_516C7992_B16B_49ec_8DC5_CF31CB944D6F.png)
 
