@@ -298,7 +298,7 @@ kad:HerzieningErfpacht a skos:Concept;
 	skos:altLabel "Herziening canon";
 	skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
 	skosthes:broaderPartitive kad:Erfpachtvoorwaarden;
-	skos:related kad:Canon;
+	skos:semanticRelation kad:Canon;
 .
 kad:Huurkoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Huurkoopovereenkomst"@nl;
