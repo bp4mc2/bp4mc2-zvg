@@ -248,6 +248,7 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
 	#skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Gemeentelijk_monument>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
+	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:KadastraleGrootte a skos:Concept;
 	rdfs:label "Kadastrale grootte"@nl;
@@ -396,6 +397,7 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
 	#skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Provinciaal_monument>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
+	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:PubliekrechtelijkeBeperking a skos:Concept;
 	rdfs:label "Publiekrechtelijke beperking"@nl;
@@ -433,6 +435,7 @@ kad:Rijksmonument a skos:Concept, skoslex:Object;
 	skos:definition "Een rijksmonument in de zin van de Erfgoedwet is een monument of archeologisch monument dat is ingeschreven in het rijksmonumentenregister."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=3&paragraaf=3.1&artikel=3.3>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
+	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:TotaalbedragInschrijving a skos:Concept;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
