@@ -99,12 +99,11 @@ kad:DoorhalenHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:actor kad:Bewaarder;
 .
-#Begrip lijkt niet nodig te zijn in dit model.
-#kad:Inmeten a skos:Concept, skoslex:Act;
-#	rdfs:label "Inmeten"@nl;
-#	skos:prefLabel "Inmeten";
-#	skoslex:object kad:Perceel;
-#.
+kad:Inmeten a skos:Concept, skoslex:Act;
+	rdfs:label "Inmeten"@nl;
+	skos:prefLabel "Inmeten";
+	skoslex:object kad:Perceel;
+.
 kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven openbare registers"@nl;
 	skos:prefLabel "Inschrijven openbare registers";
