@@ -120,17 +120,6 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
         #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 .
-kad:Overdracht a skos:Concept, skoslex:Act;
-	rdfs:label "Overdracht"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'overdracht' beter herkenbaar is bij de koopovereenkomst dan 'overdragen'.
-	skos:prefLabel "Overdracht";
-	skos:altLabel "Overdragen";
-	skos:altLabel "Transport";
-	skos:definition "Voor overdracht van een goed wordt vereist een levering krachtens geldige titel, verricht door hem die bevoegd is over het goed te beschikken.";
-	rdfs:comment "Bij overdracht geeft iemand de eigendom van zijn goed aan een ander, die de eigendom van dat goed wil ontvangen. Een overdracht is pas geldig als de eigenaar bevoegd is de eigendom over te dragen en de ontvanger het goed vervolgens kan gebruiken.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89>;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-.
 #--
 #Objects, records
 kad:BeperktRecht a skos:Concept, skoslex:Object;
