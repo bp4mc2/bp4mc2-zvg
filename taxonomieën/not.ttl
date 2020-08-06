@@ -151,19 +151,21 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 #IdentificatieNOT of IdentificatieComparant? Besproken met KNB, voorkeur gaat uit naar Identificatie Notaris, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
-not:IdentificatieNotaris a skos:Concept, skoslex:Act;
-	rdfs:label "Identificatie door notaris"@nl;
-	skos:prefLabel "Identificatie comparant";
+not:IdentificerenNotaris a skos:Concept, skoslex:Act;
+	rdfs:label "Identificeren door notaris"@nl;
+	skos:prefLabel "Identificeren comparant";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
 	skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
 	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
+	skos:editorialNote "De identificatieplicht van de notaris valt onder een andere wet dan het gekoppelde begrip van identificeren. Toch is er gekozen om alle identicerende handelingen, ook die van de notaris, onder 1 bovenliggende algemeen begrip van identificeren.";	
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
+	skosthes:broaderGeneric zv:Identificeren;
 .
-not:IdentificatieAkteHypotheek a skos:Concept, skoslex:Act;
-	rdfs:label "Identificatie (hypotheekakte)"@nl;
-	skos:prefLabel "Identificatie (hypotheekakte)";
+not:IdentificerenNotarisAkteHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Identificeren door notaris (hypotheekakte)"@nl;
+	skos:prefLabel "Identificatie door notaris (hypotheekakte)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "Vaststellen van de identiteit van de mensen die op de hypotheekakte komen.";
 	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
@@ -176,11 +178,11 @@ not:IdentificatieAkteHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
-	skosthes:broaderGeneric not:IdentificatieNotaris;
+	skosthes:broaderGeneric not:IdentificerenNotaris;
 .
-not:IdentificatieAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Identificatie (leveringsakte)"@nl;
-	skos:prefLabel "Identificatie (leveringsakte)";
+not:IdentificerenNotarisAkteLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Identificeren door notaris (leveringsakte)"@nl;
+	skos:prefLabel "Identificeren door notaris (leveringsakte)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "Vaststellen van de identiteit van de mensen die op de leveringsakte komen.";
 	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
@@ -193,7 +195,7 @@ not:IdentificatieAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-	skosthes:broaderGeneric not:IdentificatieNotaris;
+	skosthes:broaderGeneric not:IdentificerenNotaris;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
