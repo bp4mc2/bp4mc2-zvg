@@ -26,9 +26,6 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "artikel 213 van Boek 6 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=5> rdfs:label "artikel 5 van Boek 2 van het Burgerlijk Wetboek".
 
-#Wet identificatieplicht BES
-<http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
-
 #Onderstaande link hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 #Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1> rdfs:label "artikel 2, eerste lid, van de Wet op belastingen van rechtsverkeer".
@@ -38,11 +35,11 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0033715> rdfs:label "Wet basisregistratie personen".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2> rdfs:label "artikel 1.2 van de Wet basisregistratie personen".
 
-#Faillissementswet
+#Diverse wetten
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1> rdfs:label "artikel 1 van de Faillissementswet".
-
-#Invorderingswet 1990
+<http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42> rdfs:label "artikel 42 van de Invorderingswet 1990".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0024282&hoofdstuk=2&paragraaf=2.1&artikel=3&lid=5> rdfs:label "artikel 3, vijfde lid, van de Wet ter voorkoming van witwassen en financieren van terrorisme".
 
 #Catalogi
 <https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Natuurlijk persoon".
@@ -124,6 +121,15 @@ zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Koper;
 	skoslex:actor mak:Verkoper;
 	skoslex:object zv:Huis;
+.
+zv:Identificeren a skos:Concept, skoslex:Act;
+	rdfs:label "Identificeren"@nl;
+	skos:prefLabel "Identificeren";
+	skos:altLabel "Poortwachtersfunctie";
+	skos:definition "Bij bemiddeling bij de aan- of verkoop van onroerende zaken, dient er bij iedere opdracht een cliëntenonderzoek te worden uitgevoerd.";
+	rdfs:comment "Er is een wettelijke plicht voor makelaars en notarissen bij de aan- of verkoop van een huis om de identiteit van de kopende en verkopende partij te controleren.";
+	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld makelaar en notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0024282&hoofdstuk=2&paragraaf=2.1&artikel=3&lid=5>;
 .
 zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Inning overdrachtsbelasting";
