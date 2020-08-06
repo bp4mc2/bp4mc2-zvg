@@ -76,7 +76,7 @@ fin:Aflossen a skos:Concept, skoslex:Act;
 	skos:prefLabel "Aflossen";
 	skos:definition "Periodiek te betalen bedrag voor een lening. Het terugbetalen van een schuld.";
 .
-fin:IdentificerenHypotheekadvies a skos:Concept, skoslex:Act;
+fin:IdentificerenHypotheekadviseur a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren door hypotheekadviseur voor hypotheekadvies"@nl;
 	skos:prefLabel "Identificeren door hypotheekadviseur voor hypotheekadvies";
 	skos:definition "Het identificeren van de [consument] ter verstrekking van een hypotheekadvies.";
