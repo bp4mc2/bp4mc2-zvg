@@ -150,10 +150,9 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:object not:Leveringsakte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
-#IdentificatieNOT of IdentificatieComparant? Besproken met KNB, voorkeur gaat uit naar Identificatie Notaris, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
-not:IdentificerenNotaris a skos:Concept, skoslex:Act;
-	rdfs:label "Identificeren door notaris"@nl;
-	skos:prefLabel "Identificeren comparant";
+not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
+	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
+	skos:prefLabel "Identificeren voor akte (notaris)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
@@ -163,9 +162,9 @@ not:IdentificerenNotaris a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
 	skosthes:broaderGeneric zv:Identificeren;
 .
-not:IdentificerenNotarisAkteHypotheek a skos:Concept, skoslex:Act;
-	rdfs:label "Identificeren door notaris (hypotheekakte)"@nl;
-	skos:prefLabel "Identificatie door notaris (hypotheekakte)";
+not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
+	rdfs:label "Identificeren van vervreemder/verkrijger (hypotheekakte)"@nl;
+	skos:prefLabel "Identificeren van vervreemder/verkrijger (hypotheekakte)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "Vaststellen van de identiteit van de mensen die op de hypotheekakte komen.";
 	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
@@ -180,9 +179,9 @@ not:IdentificerenNotarisAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 	skosthes:broaderGeneric not:IdentificerenNotaris;
 .
-not:IdentificerenNotarisAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Identificeren door notaris (leveringsakte)"@nl;
-	skos:prefLabel "Identificeren door notaris (leveringsakte)";
+not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Identificeren van vervreemder/verkrijger (leveringsakte)"@nl;
+	skos:prefLabel "Identificeren van vervreemder/verkrijger (leveringsakte)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
 	rdfs:comment "Vaststellen van de identiteit van de mensen die op de leveringsakte komen.";
 	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
