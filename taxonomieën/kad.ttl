@@ -239,15 +239,7 @@ kad:Erfpacht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
-kad:GemeentelijkeVerordening a skos:Concept;
-	rdfs:label "Gemeentelijke verordening"@nl;
-	skos:prefLabel "Gemeentelijke verordening";
-	skos:definition "Een gemeentelijke verordening is een op gemeentelijk niveau vastgesteld algemeen verbindend voorschrift.";
-	rdfs:comment "Wetgevende regeling op gemeentelijk niveau.";
-	skos:editorialNote "De belangrijkste en meest omvattende gemeentelijke verordening in een bepaalde gemeente wordt in Nederland vaak aangeduid als Algemene Plaatselijke Verordening (afkorting APV, vroeger Algemene Politie Verordening).";
-  skosthes:narrowerPartitive kad:GemeentelijkMonument;
-.
-kad:GemeentelijkMonument a skos:Concept;
+kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Gemeentelijk monument"@nl;
 	skos:prefLabel "Gemeentelijk monument";
 	skos:definition "Een Gemeentelijk monument is een onroerend monument aangewezen door een bestuursorgaan van de gemeente.";
@@ -395,7 +387,7 @@ kad:Perceel a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPerceel>;
 .
-kad:ProvinciaalMonument a skos:Concept;
+kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Provinciaal monument"@nl;
 	skos:prefLabel "Provinciaal monument";
 	skos:definition "Een Provinciaal monument is een onroerend monument aangewezen door een bestuursorgaan van de provincie.";
@@ -404,13 +396,6 @@ kad:ProvinciaalMonument a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
 	#skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Provinciaal_monument>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
-.
-kad:ProvincialeVerordening a skos:Concept;
-	rdfs:label "Provinciale verordening"@nl;
-	skos:prefLabel "Provinciale verordening";
-	skos:definition " Algemeen verbindende voorschriften, vastgesteld door provinciale staten van een provincie of vastgesteld via delegatie of attributie aan gedeputeerde staten of een commissie of de commissaris van de Koningin.";
-	rdfs:comment "Wetgevende regeling op provinciaal niveau.";
-        skosthes:narrowerPartitive kad:ProvinciaalMonument;
 .
 kad:PubliekrechtelijkeBeperking a skos:Concept;
 	rdfs:label "Publiekrechtelijke beperking"@nl;
@@ -441,7 +426,7 @@ kad:Registergoed a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Perceel;
 	skosthes:narrowerGeneric kad:OnroerendeZaak;
 .
-kad:Rijksmonument a skos:Concept;
+kad:Rijksmonument a skos:Concept, skoslex:Object;
 	rdfs:label "Rijksmonument"@nl;
 	skos:prefLabel "Rijksmonument";
 	skos:altLabel "Rijksmonument in de zin van de Erfgoedwet";
