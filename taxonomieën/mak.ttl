@@ -293,7 +293,7 @@ mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:Kadasterkosten;
 	skoslex:isAbout not:Notariskosten;
 	skoslex:isAbout fin:Overbruggingslening;
-	skoslex:isAbout kad:Overdracht;
+	skoslex:isAbout not:Levering;
 	skoslex:isAbout zv:Overdrachtsbelasting;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
