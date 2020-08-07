@@ -60,12 +60,14 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0027565> rdfs:label "Mandaatbesluit beschermde stads- en dorpsgezichten".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1> rdfs:label "artikel 3.1 van de Wet ruimtelijke ordening".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2> rdfs:label "bijlage 2 van de Regeling toegelaten instellingen volkshuisvesting 2015".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Wet basisregistratie adressen en gebouwen".
 
 #--
 #Basisregistratie links
 #Test of dit werkt.
 #--
 <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FBeslag> rdfs:label "Beslag".
+<https://bag.basisregistraties.overheid.nl/begripdetail?subject=http://bag.basisregistraties.overheid.nl/id/begrip/Adres> rdfs:label "BAG basisregistratie - Adres".
 
 #---
 #begrippen uit de Kadaster taxonomie
@@ -119,6 +121,14 @@ kad:InschrijvenOpenbareRegisters a skos:Concept, skoslex:Act;
 .
 #--
 #Objects, records
+kad:Adres a skos:Concept, skoslex:Object;
+	rdfs:label "Adres"@nl;
+	skos:prefLabel "Adres";
+	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats.";
+	skos:scopeNote "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan."
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
+	dcterms:source <https://bag.basisregistraties.overheid.nl/begripdetail?subject=http://bag.basisregistraties.overheid.nl/id/begrip/Adres>; #BAG concept. Can be made into an skos:exactMatch
+.
 kad:BeperktRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
@@ -368,6 +378,13 @@ kad:Optierecht a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308>;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FOptierecht>;
         skosthes:broaderGeneric kad:ZakelijkRecht;
+.
+kad:PlaatselijkBekendAls a skos:Concept, skoslex:Record;
+	rdfs:label "Plaatselijk bekend als"@nl;
+	skos:prefLabel "Plaatselijk bekend als";
+	skos:definition "De plaatselijke benaming, zo deze bekend is.";
+	skosthes:broaderGeneric kad:Adres;
+	skos:semanticRelation kad:OnroerendeZaak;
 .
 kad:Perceel a skos:Concept, skoslex:Object;
 	rdfs:label "Perceel"@nl;
