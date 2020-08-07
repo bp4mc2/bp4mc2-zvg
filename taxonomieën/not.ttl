@@ -422,7 +422,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:agent not:Notaris;
 	skoslex:record not:Hypotheekakte;
 	skoslex:object kad:OnroerendeZaak;
-	skoslex:object kad:Onderpand;
+	skoslex:object fin:Onderpand;
 	skoslex:object not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
