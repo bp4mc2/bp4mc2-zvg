@@ -98,8 +98,8 @@ fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
-	rdfs:label "Geven hypotheekadvies"@nl;
-	skos:prefLabel "Geven hypotheekadvies";
+	rdfs:label "Opstellen hypotheekadvies"@nl;
+	skos:prefLabel "Opstellen hypotheekadvies";
 	skos:definition "Het adviseren ter aanbeveling van een hypotheekconstructie.";
 	skoslex:agent fin:Hypotheekadviseur;
 	skoslex:actor fin:Hypotheekgever;
@@ -141,6 +141,7 @@ fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekadvies"@nl;
 	skos:prefLabel "Hypotheekadvies";
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
+	skos:related fin:Onderpand;
 .
 #Lening nergens aan gerelateerd. Is nu een 'los' begrip
 fin:Lening a skos:Concept;
@@ -150,6 +151,20 @@ fin:Lening a skos:Concept;
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
 	skos:semanticRelation fin:Schuldenaar;
 	skos:semanticRelation fin:Schuldeiser;
+	skos:related not:RechtVanHypotheek;
+.
+#Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
+#Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
+fin:Onderpand a skos:Concept, skoslex:Object;
+	rdfs:label "Onderpand"@nl;
+	skos:prefLabel "Onderpand";
+	skos:altLabel "Hypothecair onderpand";#Is eigenlijk juiste term, maar hoeft pas te worden toegevoegd als er ook andere vormen van onderpand in deze taxonomie worden opgenomen.
+	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
+	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
+	skos:semanticRelation not:RechtVanHypotheek;
+	skos:semanticRelation kad:Registergoed;
+	skosthes:broaderPartitive fin:Lening;
 .
 fin:Opslagbedrag a skos:Concept;
 	rdfs:label "Opslagbedrag"@nl;
