@@ -261,7 +261,7 @@ mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 .
 mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record;
-	rdfs:label "ArtikelArtikel 7 van de model koopovereenkomst: Feitelijke levering/Overdracht aanspraken"@nl;
+	rdfs:label "Artikel 7 van de model koopovereenkomst: Feitelijke levering/Overdracht aanspraken"@nl;
 	skos:prefLabel "Artikel: Feitelijke levering/Overdracht aanspraken";
 	skos:altLabel "Artikel: Eigendomsoverdracht";
 	skos:definition "Artikel 7 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
