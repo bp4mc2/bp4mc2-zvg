@@ -22,7 +22,8 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
-<http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1> rdfs:label "Artikel 1.1 Wet op het financieel toezicht".
+#<http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1> rdfs:label "Artikel 1.1 Wet op het financieel toezicht".#Act 'Geven fin. advies'
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 
 #--
 #Begrippen die essentieel zijn voor de activiteiten het hypotheekdomein, maar die in andere domeinen worden gedefinieerd.
@@ -75,6 +76,9 @@ fin:Aflossen a skos:Concept, skoslex:Act;
 	rdfs:label "Aflossen"@nl;
 	skos:prefLabel "Aflossen";
 	skos:definition "Periodiek te betalen bedrag voor een lening. Het terugbetalen van een schuld.";
+	skoslex:object fin:Lening;
+	skoslex:agent fin:Hypotheeknemer;
+	skoslex:actor fin:Hypotheekgever;
 .
 fin:IdentificerenHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van consument (hypotheekadvies)"@nl;
@@ -101,18 +105,18 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen hypotheekadvies"@nl;
 	skos:prefLabel "Opstellen hypotheekadvies";
 	skos:definition "Het adviseren ter aanbeveling van een hypotheekconstructie.";
-	skoslex:agent fin:Hypotheekadviseur;
+	skoslex:actor fin:Hypotheekadviseur;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
-	skosthes:broaderGeneric fin:FinancieelAdvies;
+	#skosthes:broaderGeneric fin:FinancieelAdvies;
 .
-fin:FinancieelAdvies a skos:Concept, skoslex:Act;
-	rdfs:label "Geven van een financieel advies"@nl;
-	skos:prefLabel "Geven van een financieel advies"@nl;
-	skos:definition "het in de uitoefening van een beroep of bedrijf aanbevelen van een of meer specifieke financiële producten"@nl;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1>;
-.
+#fin:FinancieelAdvies a skos:Concept, skoslex:Act;#Has no value in the current scope of the taxonomy
+#	rdfs:label "Geven van een financieel advies"@nl;
+#	skos:prefLabel "Geven van een financieel advies"@nl;
+#	skos:definition "het in de uitoefening van een beroep of bedrijf aanbevelen van een of meer specifieke financiële producten"@nl;
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1>;
+#.
 #--
 #Other concepts (objects, records)
 fin:Bankgarantie a skos:Concept;
@@ -143,7 +147,6 @@ fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
 	skos:related fin:Onderpand;
 .
-#Lening nergens aan gerelateerd. Is nu een 'los' begrip
 fin:Lening a skos:Concept;
 	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening";
@@ -159,8 +162,8 @@ fin:Onderpand a skos:Concept, skoslex:Object;
 	rdfs:label "Onderpand"@nl;
 	skos:prefLabel "Onderpand";
 	skos:altLabel "Hypothecair onderpand";#Is eigenlijk juiste term, maar hoeft pas te worden toegevoegd als er ook andere vormen van onderpand in deze taxonomie worden opgenomen.
-	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit onroerend goed of ter boek gestelde schepen of luchtvaartuigen. De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de schuldenaar.";
-	rdfs:comment "Het registergoed waarop het recht van hypotheek betrekking heeft.";
+	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit één of meerdere registergoederen.";
+	rdfs:comment "De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de hypotheekgever.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
 	skos:semanticRelation not:RechtVanHypotheek;
 	skos:semanticRelation kad:Registergoed;
