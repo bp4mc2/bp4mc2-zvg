@@ -66,8 +66,8 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:altLabel "Ambtenaar";
 	skos:altLabel "Bevoegd protocolhouder";
 	skos:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
-	rdfs:comment "Een ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een cliënt op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. De notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
-	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). De werkgroep heeft besloten deze niet op te nemen in een eerste versie van de taxonomie.";
+	rdfs:comment "Ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een klant op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet) natuurlijke personen om tot rechtsgeldige en bindende afspraken te maken. Een notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
+	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). Dit is niet hierin opgenomen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
@@ -81,6 +81,7 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolgmachtigde"@nl;
 	skos:prefLabel "Gevolgmachtigde"@nl;
+	skos:altLabel "Volmachtnemer";
 	skos:definition" Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
 	skosthes:broaderGeneric zv:Persoon;
 	skos:semanticRelation not:Volmacht;
@@ -92,7 +93,7 @@ not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van obje
 	skos:altLabel "Begiftigde";
 	skos:altLabel "Verkopende partij";
 	skos:definition "Een verkrijger is een persoon die een goed onder algemene of onder bijzondere titel verkrijgt.";
-        rdfs:comment "Een partij die eigenaar wordt van een goed of recht.";
+        rdfs:comment "Partij die eigenaar wordt van een (onroerende) zaak of recht.";
         skosthes:narrowerGeneric mak:Koper;  #Een koper is altijd een verkrijger, maar een verkrijger is niet altijd een koper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:broaderGeneric zv:Partij;
 .
@@ -104,7 +105,7 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
 	skos:altLabel "Overdrager";
 	skos:altLabel "Toebedelende partij";
 	skos:definition "Een vervreemder is een eigenaar van een onroerende zaak of rechthebbende op een beperkt recht, die tot vervreemding (overdracht) wenst over te gaan, alsmede degene die bij ontbinding van een gemeenschap met de vereffening is belast en tot vervreemding wenst over te gaan.";
-        rdfs:comment "Een eigenaar van een goed of recht dat hij aan een ander overdraagt.";
+        rdfs:comment "Eigenaar van een (onroerende) zaak of recht die dat eigendom overdraagt aan een andere partij.";
         skosthes:narrowerGeneric mak:Verkoper; #Een verkoper is altijd een vervreemder, maar een vervreemder is niet altijd een verkoper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:broaderGeneric zv:Partij;
 .
@@ -153,10 +154,11 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
 	skos:prefLabel "Identificeren voor akte (notaris)";
+	skos:altLabel "Identificatie comparant";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
-	rdfs:comment "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
+	rdfs:comment "Controleren of partijen echt zijn wie ze zeggen dat ze zijn.";
 	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
-	skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
+	skos:scopeNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
 	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
 	skos:editorialNote "De identificatieplicht van de notaris valt onder een andere wet dan het gekoppelde begrip van identificeren. Toch is er gekozen om alle identicerende handelingen, ook die van de notaris, onder 1 bovenliggende algemeen begrip van identificeren.";	
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
@@ -166,10 +168,10 @@ not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van vervreemder/verkrijger (hypotheekakte)"@nl;
 	skos:prefLabel "Identificeren van vervreemder/verkrijger (hypotheekakte)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
-	rdfs:comment "Vaststellen van de identiteit van de mensen die op de hypotheekakte komen.";
-	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
-	skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
-	skos:editorialNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon.";#Aparte handeling, ook in kader van AVG.
+	rdfs:comment "Vaststellen van de identiteit van de partijen die op de hypotheekakte komen.";
+	skos:scopeNote "De notaris stelt de identiteit van de comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
+	skos:scopeNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
+	skos:scopeNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon één keer worden uitvoerd.";#Aparte handeling, ook in kader van AVG.
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:Comparant;
@@ -183,10 +185,10 @@ not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van vervreemder/verkrijger (leveringsakte)"@nl;
 	skos:prefLabel "Identificeren van vervreemder/verkrijger (leveringsakte)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
-	rdfs:comment "Vaststellen van de identiteit van de mensen die op de leveringsakte komen.";
-	skos:scopeNote "De notaris stelt de identiteit van de  comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
-	skos:editorialNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden.";
-	skos:editorialNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon.";#Aparte handeling, ook in kader van AVG.
+	rdfs:comment "Vaststellen van de identiteit van de partijen die op de leveringsakte komen.";
+	skos:scopeNote "De notaris stelt de identiteit van de comparanten vast op basis van identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
+	skos:scopeNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden.";
+	skos:scopeNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstellen, zal identificatie van eenzelfde persoon één keer worden uitvoerd.";#Aparte handeling, ook in kader van AVG.
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:Comparant;
@@ -200,8 +202,8 @@ not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
 not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
 	rdfs:label "Inschrijven leveringsakte"@nl;
 	skos:prefLabel "Inschrijven leveringsakte";
-	skos:definition "Vastleggen in het openbare register.";
-	rdfs:comment "Vastleggen in het openbare register.";
+	skos:definition "Vastleggen in het register van het Kadaster.";
+	rdfs:comment "Inschrijven van het eigendom van een onroerende zaak in het register van het Kadaster.";
 	skoslex:actor not:Notaris;
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:object not:AfschriftAkte;
@@ -235,15 +237,15 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen (akte)"@nl;
 	skos:prefLabel "Opstellen (akte)";
-	skos:definition "Het opstellen van het schriftelijk document.";
-	rdfs:comment "Het opstellen van het schriftelijk document.";
+	skos:definition "Het opstellen van de akte in welke vorm dan ook.";
+	rdfs:comment "Het maken van een officieel schriftelijk document.";
 	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
 .
 not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen hypotheekakte"@nl;
 	skos:prefLabel "Opstellen hypotheekakte";
 	skos:definition "Het opstellen van de hypotheekakte.";
-	rdfs:comment "Het opstellen van de hypotheekakte.";
+	rdfs:comment "Het maken van de hypotheekakte.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Hypotheekakte;
 	skosthes:broaderGeneric not:OpstellenAkte;
@@ -253,7 +255,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen leveringsakte"@nl;
 	skos:prefLabel "Opstellen leveringsakte";
 	skos:definition "Het opstellen van de leveringsakte.";
-	rdfs:comment "Het opstellen van de leveringsakte.";
+	rdfs:comment "Het maken van de leveringsakte.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Leveringsakte;
 	skosthes:broaderGeneric not:OpstellenAkte;
@@ -262,8 +264,8 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdragen zakelijk recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
-	rdfs:comment "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
-	skos:editorialNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval."; #Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zit.
+	rdfs:comment "Veranderen van een eigenaar van de rechten die horen bij een (onroerende) zaak (bijvoorbeeld eigendomsrecht).";
+	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zit.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:object kad:ZakelijkRecht;
@@ -276,8 +278,8 @@ not:Passeren a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren";
 	skos:altLabel "Verlijden";
 	skos:definition "De formele handeling bij de notaris, waarbij een akte door beide partijen, de notaris en eventuele getuigen wordt ondertekend.";
-	#Wellicht hier nog de zgn. 'belehrung' in verwerken. Dit wel in overleg met KNB, omdat de belehrung zich niet beperkt tot de gelegenheid van ondertekenen akte, maar ook in de voorbereidende fase. Zou ook een aparte act kunnen zijn.
-    rdfs:comment "De ondertekening van een akte door alle betrokken partijen, de notaris en eventuele getuigen.";
+	rdfs:comment "Ondertekening van een notariële akte, nadat een notaris heeft gecontroleerd of betrokken partijen begrijpen wat er in die akte staat.";
+	skos:editorialNote "Mogelijk de de handeling van de zgn. 'belehrung' nog toevoegen. Belehrung zich niet beperkt tot de gelegenheid van het ondertekenen van akte, maar gebeurt ook in de voorbereidende fase.";
 	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
 .
 not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
@@ -285,71 +287,30 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	skos:prefLabel "Passeren van de hypotheekakte";
 	skos:altLabel "Passeren";
 	skos:definition "Handeling bij de notaris, waarbij de hypotheekakte door alle betrokkenen wordt ondertekend.";
-	rdfs:comment "Handeling bij de notaris, waarbij de hypotheekakte door alle betrokkenen wordt ondertekend.";
+	rdfs:comment "Ondertekening van een hypotheekakte, nadat een notaris heeft gecontroleerd of betrokken partijen begrijpen wat er in die akte staat.";
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:actor fin:Hypotheekgever;
+	skoslex:actor not:Gevolmachtigde;
 	skoslex:actor not:Notaris;
 	skoslex:object not:Hypotheekakte;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 	skosthes:broaderGeneric not:Passeren;
-	skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor";
+	skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor.";
 .
 not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren van de leveringsakte"@nl;
 	skos:prefLabel "Passeren van de leveringsakte";
 	skos:altLabel "Passeren";
 	skos:definition "Handeling bij de notaris, waarbij de leveringsakte door alle betrokkenen wordt ondertekend.";
-	rdfs:comment "Handeling bij de notaris, waarbij de leveringsakte door alle betrokkenen wordt ondertekend.";
+	rdfs:comment "Ondertekening van een leveringsakte, nadat een notaris heeft gecontroleerd of betrokken partijen begrijpen wat er in die akte staat.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
+	skoslex:actor not:Gevolmachtigde;
 	skoslex:actor not:Notaris;
 	skoslex:object not:Leveringsakte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 	skosthes:broaderGeneric not:Passeren;
-	skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor";
-.
-#Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
-not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
-	rdfs:label "Registreren overdrachtsbelasting"@nl;
-	skos:prefLabel "Registreren overdrachtsbelasting";
-	skos:definition "Vastleggen van de overdrachtsbelasting bij de Belastingdienst.";
-	rdfs:comment "Vastleggen van de overdrachtsbelasting bij de Belastingdienst.";
-	skos:editorialNote "Gebeurt gelijktijdig met het registreren van de aangifte van de overdrachtsbelasting.";
-	skoslex:actor not:Notaris;
-	skoslex:object zv:Overdrachtsbelasting;
-	skoslex:object zv:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-.
-not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
-	rdfs:label "Registreren akte registratiewet 1970"@nl;
-	skos:prefLabel "Registreren akte registratiewet 1970";
-	skos:definition "Vastleggen in een register";
-	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
-	skos:editorialNote "Álle originele (minuut)akten worden geregistreerd bij de belastingdienst op grond van de registratiewet.";
-	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
-	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01>;
-.
-not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
-	rdfs:label "Registreren hypotheekakte registratiewet 1970"@nl;
-	skos:prefLabel "Registreren hypotheekakte registratiewet 1970";
-	skos:definition "Vastleggen in een register";
-	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
-	skoslex:actor not:Notaris;
-	skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
-	skoslex:object zv:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:VestigenBeperktRecht;
-	skosthes:broaderGeneric not:RegistrerenAkteRegistratiewet1970;
-.
-not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
-	rdfs:label "Registreren leveringsakte registratiewet 1970"@nl;
-	skos:prefLabel "Registreren leveringsakte registratiewet 1970";
-	skos:definition "Vastleggen in een register";
-	rdfs:comment "De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
-	skoslex:actor not:Notaris;
-	skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
-	skoslex:object zv:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-	skosthes:broaderGeneric not:RegistrerenAkteRegistratiewet1970;
+	skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor.";
 .
 not:RechercheNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche door notaris"@nl;
@@ -357,14 +318,14 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
 	skos:altLabel "Rechercheplicht";
 	skos:altLabel "Onderzoeksplicht";
 	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
-	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+	rdfs:comment "Wettelijk verplicht onderzoek dat een notaris moet doen in diverse (basis)registraties van de overheid, voordat hij/zij een notariële akte mag ondertekenen.";
 	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
 .
 not:RechercheAkteHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche (hypotheekakte)"@nl;
 	skos:prefLabel "Recherche (hypotheekakte)";
 	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
-	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+	rdfs:comment "Wettelijk verplicht onderzoek dat een notaris moet doen in diverse (basis)registraties van de overheid, voordat hij/zij een notariële akte mag ondertekenen.";
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:TitelVanAankomst;
@@ -378,7 +339,7 @@ not:RechercheAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche (leveringsakte)"@nl;
 	skos:prefLabel "Recherche (leveringsakte)";
 	skos:definition "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
-	rdfs:comment "Het onderzoek dat de notaris doet in de registers van het Kadaster. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
+	rdfs:comment "Wettelijk verplicht onderzoek dat een notaris moet doen in diverse (basis)registraties van de overheid, voordat hij/zij een notariële akte mag ondertekenen.";
 	skoslex:object not:Vervreemder;
 	skoslex:object not:Verkrijger;
 	skoslex:object not:TitelVanAankomst;
@@ -387,6 +348,50 @@ not:RechercheAkteLevering a skos:Concept, skoslex:Act;
         skoslex:object kad:OpenbareRegisters;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 	skosthes:broaderGeneric not:RechercheNotaris;
+.
+not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren overdrachtsbelasting"@nl;
+	skos:prefLabel "Registreren overdrachtsbelasting";
+	skos:definition "Vastleggen van de overdrachtsbelasting bij de Belastingdienst.";
+	#rdfs:comment "";
+	skos:scopeNote "Gebeurt gelijktijdig met het registreren van de aangifte van de overdrachtsbelasting.";
+	skoslex:actor not:Notaris;
+	skoslex:object zv:Overdrachtsbelasting;
+	skoslex:object zv:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+.
+not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren akte registratiewet 1970"@nl;
+	skos:prefLabel "Registreren akte registratiewet 1970";
+	skos:definition "Het toesturen van de akte aan de Belastingdienst zodat de Belastingdienst kan controleren welke en hoeveel belasting verschuldigd is.";
+	rdfs:comment "Registratie van een notariële akte in het Centraal Digitaal Repertorium, zodat de Belastingdienst eventueel te betalen belastingen kan vaststellen. De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
+	skos:scopeNote "Álle originele (minuut)akten worden geregistreerd bij de belastingdienst op grond van de registratiewet.";
+	skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01>;
+.
+not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren hypotheekakte registratiewet 1970"@nl;
+	skos:prefLabel "Registreren hypotheekakte registratiewet 1970";
+	skos:definition "Het toesturen van de akte aan de Belastingdienst zodat de Belastingdienst kan controleren welke en hoeveel belasting verschuldigd is.";
+	rdfs:comment "Registreren van een hypotheekakte in het Centraal Digitaal Repertorium, zodat de Belastingdienst eventueel te betalen belastingen kan vaststellen. De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
+	skoslex:actor not:Notaris;
+	skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
+	skoslex:object zv:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:VestigenBeperktRecht;
+	skosthes:broaderGeneric not:RegistrerenAkteRegistratiewet1970;
+	skos:editorialNote "In het notariaat wordt met registeren van de akte bedoeld dat deze bij de Belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.";
+.
+not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
+	rdfs:label "Registreren leveringsakte registratiewet 1970"@nl;
+	skos:prefLabel "Registreren leveringsakte registratiewet 1970";
+	skos:definition "Het toesturen van de akte aan de Belastingdienst zodat de Belastingdienst kan controleren welke en hoeveel belasting verschuldigd is.";
+	rdfs:comment "Registreren van een leveringsakte in het Centraal Digitaal Repertorium, zodat de Belastingdienst eventueel te betalen belastingen kan vaststellen. De notaris moet binnen moment van passeren en 10 dagen bij de Belastingdienst een afschrift registeren.";
+	skoslex:actor not:Notaris;
+	skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
+	skoslex:object zv:RegisterBelastingdienst;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderGeneric not:RegistrerenAkteRegistratiewet1970;
+	skos:editorialNote "In het notariaat wordt met registeren van de akte bedoeld dat deze bij de Belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.";
 .
 not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Toezicht waarborgsom"@nl;
@@ -403,7 +408,7 @@ not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Vestigen beperkt recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen.";
 	rdfs:comment "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen.";
-	skos:editorialNote "Vindt doorgaans tegelijkertijd plaats met het overdragen van het zakelijk recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zit.";
+	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het overdragen van het zakelijk recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zit.";
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
@@ -414,14 +419,14 @@ not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Vestiging hypotheek"@nl;
 	skos:prefLabel "Vestiging hypotheek";
-	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";#formele definitie is registergoed, maar in de taxonomie is dit een synoniem voor onroerende zaak. Het zou netter zijn om in de formele definitie deze term te gebruiken.
-	rdfs:comment "Het formeel vastleggen van afspraken over een onderpand voor een geldlening.";
+	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers.";
+	rdfs:comment "Vastleggen in een notariële akte van afspraken over een onderpand voor een geldlening.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:actor fin:Hypotheeknemer;
 	skoslex:agent not:Notaris;
 	skoslex:record not:Hypotheekakte;
-	skoslex:object kad:OnroerendeZaak;
+	skoslex:object kad:Registergoed;
 	skoslex:object fin:Onderpand;
 	skoslex:object not:RechtVanHypotheek;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
@@ -431,15 +436,16 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 not:AanspraakTotGebruik a skos:Concept;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik";
-	skos:definition "Vermeend recht of claim op gebruik.";
-	rdfs:comment "Vermeend recht of claim op gebruik.";#Verzoek om input ligt bij jurist en communicatiemedewerker KNB.
+	skos:definition "Vermeend recht of claim op gebruik of bezit.";
+	#rdfs:comment ".";
 .
 not:AfschriftAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Afschrift (akte)"@nl;
 	skos:prefLabel "Afschrift (akte)";
 	skos:altLabel "Gewaarmerkte kopie";
 	skos:definition "Een door de notaris ondertekende afgegeven weergave van de inhoud van een originele notariële akte (de minuut).";
-	rdfs:comment "Het afschrift is een door de notaris gemaakte en ondertekende kopie van een notariële akte. Een afschrift kun je herkennen doordat er ‘’uitgegeven voor afschrift’’ op staat. Doordat het is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
+	rdfs:comment "Een afschrift is een door de notaris gemaakte en ondertekende kopie van een notariële akte. Een afschrift kun je herkennen doordat er ‘’uitgegeven voor afschrift’’ op staat.";
+	skos:scopeNote "Doordat een afschrift is gewaarmerkt door de notaris, levert het net zoveel bewijs op als de originele akte.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49>;
         skosthes:broaderGeneric not:NotarieleAkte;
 .
@@ -447,15 +453,23 @@ not:Akte a skos:Concept, skoslex:Record;
 	rdfs:label "Akte"@nl;
 	#rdfs:label "Deed"@en;
 	skos:prefLabel "Akte";
-	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen. Een document waarin de enige echte werkelijkheid is beschreven en dat kan dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen te dwingen.";
-	rdfs:comment "Ondertekend geschrift, bedoeld om als bewijs te dienen.";
+	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen. Een document waarin de juridische werkelijkheid is beschreven en dat kan dienen als bewijs.";
+	rdfs:comment "Ondertekend schriftelijk document, bedoeld om als bewijs te dienen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1>;
+.
+not:AkteVanVolmacht a skos:Concept, skoslex:Record;
+	rdfs:label "Akte van volmacht"@nl;
+	skos:prefLabel "Akte van volmacht"@nl;
+	skos:altLabel "Notariële volmacht"@nl;
+	skos:definition "Een akte van volmacht is een notariële akte waarmee een volmacht wordt gevestigd.";
+	skosthes:broaderGeneric not:NotarieleAkte;
+	skoslex:isAbout not:NotarieleVolmacht;
 .
 not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Authentieke akte"@nl;
 	skos:prefLabel "Authentieke akte";
-	skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt.";
-	rdfs:comment "Authentieke akten zijn akten opgesteld door een ambtenaar (zoals de notaris).";
+	skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt. Authentieke akten dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen. Zij dienen, met andere woorden, als dwingend bewijs.";
+	rdfs:comment "Authentieke akten zijn officiële schriftelijke documenten opgesteld door een ambtenaar (zoals de notaris).";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
 	skosthes:broaderGeneric not:Akte;
 .
@@ -463,18 +477,19 @@ not:Comparant a skos:Concept, skoslex:Actor;
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant";
 	skos:definition "Personen die bij de notaris (of een rechter) verschijnen om een akte te laten opmaken en als partij in de akte zijn opgenomen en de akte ondertekenen.";
-	rdfs:comment "Een persoon die als (gemachtigde van een) partij in de notariële akte is opgenomen.";
+	rdfs:comment "Een persoon die als (gemachtigde van een) partij in de notariële akte is vermeld.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
-	skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen in de taxonomie.";
+	skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen.";
 	skosthes:broaderGeneric zv:Partij;
 	skosthes:narrowerGeneric not:Vervreemder;
 	skosthes:narrowerGeneric not:Verkrijger;
 .
-not:Comparitie a skos:Concept, skoslex:Record;#Hens Meengs van KNB geeft aan dat dit een verboden woord is. Vraag om verdere toelichting staat nog open.
-	rdfs:label "Comparitie"@nl;
-	skos:prefLabel "Comparitie";
+not:Comparitie a skos:Concept, skoslex:Record;
+	rdfs:label "Verschijning voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
+	skos:prefLabel "Verschijning voor notaris";
+	skos:altLabel "Comparitie";
 	skos:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
-	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het verlijden van een akte.";
+	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het ondertekenen van een akte.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 	skosthes:broaderPartitive not:NotarieleAkte;
 	skoslex:isAbout not:Comparant;
@@ -484,7 +499,7 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	skos:prefLabel "Grondslagwaarde";
 	skos:altLabel "Heffingsgrondslag";
 	skos:definition "De belasting wordt berekend over de waarde van de onroerende zaak of het recht waaraan deze is onderworpen, waarop de verkrijging betrekking heeft. De waarde is ten minste gelijk aan die van de tegenprestatie.";
-	rdfs:comment "De waarde waarover het tarief van de overdrachtsbelasting wordt berekend.";
+	rdfs:comment "De waarde van onroerende zaken waarover het tarief van de overdrachtsbelasting wordt berekend.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
 	skos:semanticRelation kad:OnroerendeZaak;
 	skos:semanticRelation zv:Overdrachtsbelasting;
@@ -493,7 +508,7 @@ not:Hypotheekakte a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekakte"@nl;
 	skos:prefLabel "Hypotheekakte";
 	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers. De akte moet een aanduiding bevatten van de vordering waarvoor de hypotheek tot zekerheid strekt, of van de feiten aan de hand waarvan die vordering zal kunnen worden bepaald. Tevens moet het bedrag worden vermeld waarvoor de hypotheek wordt verleend of, wanneer dit bedrag nog niet vaststaat, het maximumbedrag dat uit hoofde van de hypotheek op het goed kan worden verhaald. De hypotheekhouder moet in de akte woonplaats kiezen in Nederland.";
-	rdfs:comment "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) geeft met een hypotheekrecht een geldgever (hypotheeknemer) het recht om de onroerende zaak te verkopen als de lening niet (tijdig) wordt terugbetaald. Dit kan alleen met een notariële hypotheekakte. De lening wordt dan verstrekt met de onroerende zaak als onderpand.";
+	rdfs:comment "Officieel schriftelijk document van een notaris, waarin staat beschreven welke partij hoeveel geld heeft geleend aan de eigenaar van een onroerende zaak. Als de eigenaar de lening niet terugbetaalt, kan de partij die het geld heeft uitgeleend de onroerende zaak verkopen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:NotarieleAkte;
@@ -505,7 +520,7 @@ not:Kadasterkosten a skos:Concept;#Mogelijk splitsen in een variant voor leverin
 	rdfs:label "Kadasterkosten"@nl;
 	skos:prefLabel "Kadasterkosten";
 	skos:definition "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
-	rdfs:comment "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
+	rdfs:comment "Kosten voor de inschrijving van een eigenaar van een onroerende zaak in het register van het Kadaster.";
 .
 not:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;
@@ -513,7 +528,8 @@ not:Koopsom a skos:Concept;
 	skos:altLabel "Koopprijs";
 	skos:altLabel "Tegenprestatie";
 	skos:definition "Een koopsom is het bedrag dat vermeld staat in de akte en dat als tegenprestatie geldt met betrekking tot een transactie of overdracht van een zakelijk recht van een object (of samen met meerdere objecten) en dat de verkrijger aan de vervreemder verschuldigd is. Dit bedrag hebben verkrijger en vervreemder onderling met elkaar afgesproken en wordt door een notaris opgenomen in de akte.";
-	rdfs:comment "Een koopsom is het geldbedrag, dat de verkoper en koper hebben afgesproken voor de door de koper te kopen (onroerende) zaak. De koopsom wordt in de koopovereenkomst vermeld.Ingeval de koopsom betrekking heeft op een onroerende zaak, dan moet de notaris dit bedrag opnemen in de leveringsakte. Een koopsom is niet altijd gelijk aan de economische of WOZ waarde. Er kunnen redenen zijn, waarom een koopsom hoger of lager is dan die waarde. De notaris moet controleren of de koopsom redelijk is.";
+	rdfs:comment "Een koopsom is het bedrag, dat verkoper en koper hebben afgesproken voor de aankoop van een (onroerende) zaak. De koopsom wordt in de koopovereenkomst vermeld en ook in een leveringsakte als het om een een onroerende zaak gaat.";
+	skos:scopeNote "Een koopsom is niet altijd gelijk aan de economische of WOZ waarde. Er kunnen redenen zijn, waarom een koopsom hoger of lager is dan die waarde. De notaris moet controleren of de koopsom redelijk is.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
 .
@@ -521,14 +537,14 @@ not:KwalitatieveRechten a skos:Concept;
 	rdfs:label "Kwalitatieve rechten"@nl;
 	skos:prefLabel "Kwalitatieve rechten";
 	skos:definition "Staat een uit een overeenkomst voortvloeiende, voor overgang vatbaar recht in een zodanig verband met een aan de schuldeiser toebehorend goed, dat hij bij dat recht slechts belang heeft, zolang hij het goed behoudt, dan gaat dat recht over op degene die dat goed onder bijzondere titel verkrijgt.";
-	rdfs:comment "Een voor overgang vatbaar recht van verkoper gaat automatisch bij de overdracht van de onroerende zaak over op de koper. Het is een recht dat samenhangt met de onroerende zaak.";
+	rdfs:comment "Rechten die samenhangen met een onroerende zaak en die bij verkoop overgaan naar een nieuwe eigenaar van die onroerende zaak.";
 .
 not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	rdfs:label "Kwaliteitsrekening"@nl;
 	skos:prefLabel "Kwaliteitsrekening";
 	skos:altLabel "Derdegeldenrekening";
 	skos:definition "Met kwaliteitsrekening houdt de notaris de gelden van cliënten gescheiden van het eigen kantoorvermogen. Daarmee zijn de gelden van cliënten beschermd tegen oneigenlijk gebruik of faillissement.";
-	rdfs:comment "De kwaliteitsrekening is een andere naam voor de zogenaamde derdengeldenrekening. Het is een aparte  bankrekening van de notaris voor het geld van zijn cliënten. Deze rekening is beschermd in die zin dat er geen beslag op kan worden gelegd door schuldeisers van de notaris.";
+	rdfs:comment "De kwaliteitsrekening (ook wel derdengeldenrekening genoemd) is een aparte bankrekening van de notaris voor geld van klanten die betrokken zijn bij een overdracht van eigendom. Deze rekening is beschermd tegen beslaglegging door schuldeisers van de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>;
 .
 not:Leveringsakte a skos:Concept, skoslex:Record;
@@ -538,7 +554,7 @@ not:Leveringsakte a skos:Concept, skoslex:Record;
 	skos:altLabel "Overdrachtsakte";
 	skos:altLabel "Akte van levering";
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
-	rdfs:comment "Een notariële akte waarin afspraken staan over de overdracht van een (of meer) zaken. Dit kunnen leveringen van onroerende zaken (zoals huizen) zijn, maar ook van bijvoorbeeld aandelen in vennootschappen.";
+	rdfs:comment "Officieel schriftelijk document van een notaris waarin afspraken staan over de overdracht van eigendom van de een partij aan een andere partij. Dit kan een overdracht zijn van onroerende zaken, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skosthes:broaderGeneric not:NotarieleAkte;
 	skoslex:isAbout kad:OnroerendeZaak;
@@ -546,15 +562,16 @@ not:Leveringsakte a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:Kadasterkosten;
 	skoslex:isAbout zv:Overdrachtsbelasting;
 	skoslex:isAbout not:Notariskosten;
+	skoslex:isAbout not:Titel;
 .
 not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;
 	skos:prefLabel "Minuut";
 	skos:altLabel "Minuutakte";
 	skos:definition "Het originele exemplaar van een notariële akte.";
-	rdfs:comment "De originele versie van de notariële akte, waarop de handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
+	rdfs:comment "De originele versie van een notariële akte, waarop de handtekeningen van partijen en de notaris staan en die in het archief van de notaris blijft.";
 	skos:scopeNote "De originele versie van de notariële akte, waarop de 'blauwe' handtekeningen van partijen en de notaris staat en die in het archief van de notaris blijft.";
-	skos:editorialNote "De minuut maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.";
+	skos:editorialNote "De minuut maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel).";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1>;
 	skosthes:broaderGeneric not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
@@ -563,29 +580,21 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte";
 	skos:definition "Notariële akten zijn authentieke akten die verleden zijn door een notaris. Notariële akten zijn geschriften waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
-	rdfs:comment "Een notariële akte is een authentieke akte die is ondertekend door een notaris.";
+	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
 	skosthes:broaderGeneric not:AuthentiekeAkte;
-.
-not:AkteVanVolmacht a skos:Concept, skoslex:Record;
-	rdfs:label "Akte van volmacht"@nl;
-	skos:prefLabel "Akte van volmacht"@nl;
-	skos:altLabel "Notariële volmacht"@nl;
-	skos:definition "Een akte van volmacht is een notariële akte waarmee een volmacht wordt gevestigd.";
-	skosthes:broaderGeneric not:NotarieleAkte;
-	skoslex:isAbout not:NotarieleVolmacht;
 .
 not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
 	rdfs:label "Notariskosten"@nl;
 	skos:prefLabel "Notariskosten";
 	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
-	rdfs:comment "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
+	rdfs:comment "Kosten die een notaris berekent voor zijn werkzaamheden.";
 .
 not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële volmacht"@nl;
 	skos:prefLabel "Notariële volmacht";
 	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk.";
-	rdfs:comment "Een volmacht die bij een (authentieke) notariële akte is verleend.";
+	rdfs:comment "Volmacht die is opgeschreven in een officieel schriftelijk document van een notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	skosthes:broaderGeneric not:Volmacht;
 .
@@ -593,7 +602,7 @@ not:OnderhandseAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Onderhandse akte"@nl;
 	skos:prefLabel "Onderhandse akte";
 	skos:definition "Onderhandse akten zijn alle akten die niet authentieke akten zijn.";
-	rdfs:comment "Elk ondertekende akte waarbij geen (bevoegde) ambtenaar betrokken is.";
+	rdfs:comment "Ondertekend schriftelijk document waarbij geen (bevoegde) ambtenaar betrokken is.";#Deze definitie is niet helemaal correct. Notarissen kunnen ook onderhandse akten opstellen (bijv. koopovereenkomsten in Amsterdam). De definitie van een authentieke akte rust niet enkel en alleen op de betrokkenheid van de notaris.
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=3>;
 	skosthes:broaderGeneric not:Akte;
 .
@@ -601,7 +610,7 @@ not:Ongevorderd a skos:Concept;
 	rdfs:label "Ongevorderd"@nl;
 	skos:prefLabel "Ongevorderd";
 	skos:definition "Zonder uitstaande claims op het bezit.";
-	rdfs:comment "Zonder uitstaande claims op het bezit.";#Verzoek om input ligt bij jurist en communicatiemedewerker KNB.
+	#rdfs:comment "";
 .
 not:PlaatsVanVestiging a skos:Concept;
 	rdfs:label "Plaats van vestiging"@nl;
@@ -609,7 +618,7 @@ not:PlaatsVanVestiging a skos:Concept;
 	skos:definition "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld en aldaar zijn protocol te bewaren. In het Koninklijk besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
 	rdfs:comment "Een gemeente in Nederland waar het kantoor van de notaris staat.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
-	skos:editorialNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
+	skos:scopeNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
 	skos:semanticRelation not:Notaris;
 	skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.";
 .
@@ -619,30 +628,33 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	skos:altLabel "Hypotheek";
 	skos:altLabel "Vestiging hypotheek";
 	skos:definition "Het recht van hypotheek is een beperkt recht, strekkende tot zekerheid om op de daaraan onderworpen onroerende zaak(en) een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen. Indien de hypotheekgever de verplichtingen niet nakomt heeft de hypotheeknemer het recht om het bezwaarde goed te executeren en uit de opbrengst de eigen vordering te voldoen.";
-	rdfs:comment "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. De eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen ten behoeve van de geldgever (hypotheeknemer). Dit kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
+	rdfs:comment "Het hypotheekrecht is een zekerheidsrecht op een onroerende zaak, dat gekoppeld is aan een lening of maximaal te lenen bedrag. Een eigenaar van de onroerende zaak (hypotheekgever) kan het  hypotheekrecht vestigen op die zaak als borg voor een partijd die de eigenaar geld heeft uitgeleend (hypotheeknemer)."; 
+	skos:scopeNote "Vestigen van een hypotheek kan alleen door middel van een notariële hypotheekakte. De hypothecaire lening wordt dan verstrekt en als borgstelling wordt de onroerende zaak in onderpand gegeven.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric kad:BeperktRecht;
+	skos:related kad:OnroerendeZaak;
+	skos:related fin:Lening;
 .
-not:Titel a skos:Concept, skoslex:Object;
+not:Titel a skos:Concept, skoslex:Record;
 	rdfs:label "Titel"@nl;
 	skos:prefLabel "Titel";
 	skos:altLabel "Titel van aankomst";
 	skos:altLabel "Verkrijging";
-	skos:definition "Hetgeen op grond waarvan een (niet) natuurlijk persoon zakelijk gerechtigde wordt tot een goed.";
-	rdfs:comment "De rechtsgrond waarbij iemand de eigendom van een goed heeft gekregen (bijvoorbeeld bij de levering van een woning: de leveringsakte). Zonder geldige titel kan iemand zijn eigendomsrecht niet overdragen aan een ander.";
-	skos:editorialNote "Titel is een juridische term voor een geldige (juridische) reden voor de overdracht. Die geldige reden kan bestaan uit bijvoorbeeld een koopovereenkomst of schenking.";
+	skos:definition "Het document (koopovereenkomst) op grond waarvan een (niet) natuurlijk persoon een onroerende zaak heeft gekocht.";
+	rdfs:comment "Juridische basis waarop een partij eigenaar is geworden van een (onroerende) zaak, bijvoorbeeld een leveringsakte."; 
+	skos:scopeNote "Titel is een juridische term voor een geldige (juridische) reden voor de overdracht. Die geldige reden kan bestaan uit bijvoorbeeld een koopovereenkomst of schenking.";
+	skos:scopeNote "Zonder geldige titel kan iemand zijn eigendomsrecht niet overdragen aan een ander.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
-	skosthes:narrowerGeneric not:Leveringsakte;
 .
-not:TitelVanAankomst a skos:Concept, skoslex:Object;
+not:TitelVanAankomst a skos:Concept, skoslex:Record;
 	rdfs:label "Titel van aankomst"@nl;
 	skos:prefLabel "Titel van aankomst";
 	skos:altLabel "Wijze van verkrijging";
 	skos:altLabel "Titel";
-	skos:definition "Hetgeen op grond waarvan een (niet) natuurlijk persoon zakelijk gerechtigde wordt tot een goed.";
-	rdfs:comment "Verklaring waaruit blijkt dat de verkoper ook echt de eigenaar is.";
-	skos:editorialNote "Verklaring waaruit blijkt op welke wijze de verkoper zijn recht heeft verkregen. Bij rechten op registergoederen is dat altijd de inschrijving in de openbare registers van een daartoe opgestelde akte.";
+	skos:definition "De akte op grond waarvan een (niet) natuurlijk persoon, gerechtigd is over een onroerende zaak te beschikken.";
+	rdfs:comment "Verklaring waaruit blijkt dat een verkoper ook echt de eigenaar is.";
+	skos:scopeNote "Verklaring waaruit blijkt op welke wijze de verkoper zijn recht heeft verkregen. Bij rechten op registergoederen is dat altijd de inschrijving in de openbare registers van een daartoe opgestelde akte.";
 	skosthes:broaderGeneric not:Titel;
 	#Onderdeel van titel van aankomst is datumdeel/nr dat Kadaster levert na inschrijving in register. Dit moet hier nog bij.
 .
@@ -650,12 +662,14 @@ not:VanRechtswegeOntbonden a skos:Concept;
 	rdfs:label "Van rechtswege ontbonden"@nl;
 	skos:prefLabel "Van rechtswege ontbonden";
 	skos:definition "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is.";
+	rdfs:comment "Automatische einde van een juridsche afspraak.";
 .
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
 	skos:prefLabel "Volmacht";
 	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden.";
-	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem bepaalde verklaringen af te geven. De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
+	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem rechtshandelingen te verrichten zoals het ondertekenen van een notariële akte."; 
+	skos:scopeNote "De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	#Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .
