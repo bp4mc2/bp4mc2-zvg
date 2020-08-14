@@ -341,7 +341,6 @@ kad:OnroerendMonument a skos:Concept, skoslex:Object;
 kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	rdfs:label "Onroerende zaak"@nl;
 	skos:prefLabel "Onroerende zaak";
-	skos:altLabel "Registergoed";
 	skos:altLabel "Onroerend goed";
 	skos:altLabel "Object";
 	skos:altLabel "Pand";
