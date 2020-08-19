@@ -34,13 +34,14 @@ De gebruikelijke conventies zijn:
 ## SCOPE
 
 * In de eerste versie beperken we ons tot het scenario van de koopovereenkomst (tot en met het ondertekenen). Deze scope zorgt ervoor dat er voor Zorgeloos Vastgoed relevante begrippen op dit moment niet meegenomen worden.  
-* Begrippen die relevant zijn binnen een domein, maar geen toegevoegde waarde hebben in de Zorgeloos Vastgoed taxonomie, worden niet opgekone. Een goed voorbeeld is het onderscheid tussen notaris, waarnemend notaris, toegevoegd notaris en kandidaat notaris. Zeer relevant in het Notariaat. Voor Zorgeloos Vastgoed niet en daarom weggelaten.
+* Begrippen die relevant zijn binnen een domein, maar geen toegevoegde waarde hebben in de Zorgeloos Vastgoed taxonomie, worden niet opgenomen. Een goed voorbeeld is het onderscheid tussen notaris, waarnemend notaris, toegevoegd notaris en kandidaat notaris. Zeer relevant in het Notariaat. Voor Zorgeloos Vastgoed niet en daarom weggelaten.
 
 ## DOMEINEN  
 
 * Bij de naamgeving dan de domeinen is gekozen voor een zo breed mogelijke en toekomstbestendige naamgeving. Geen NVM, maar MAK. De NVM kan van naam veranderen en makelaars die niet zijn aangesloten bij de NVM zouden ook kunnen aansluiten.
 * Welke domeinen maken wel en niet deel uit van de taxonomie: zoveel mogelijk de (wettelijke) bronhouders. Dit impliceert dat bijvoorbeeld de meeste begrippen van ECH door de KNB als representant van Het Notariaat worden beheerd.
-* Begrippen die relevant zijn binnen een domein, maar geen toegevoegde waarde hebben in de Zorgeloos Vastgoed taxonomie, worden niet opgenomen. Een goed voorbeeld is het onderscheid tussen notaris, waarnemend notaris, toegevoegd notaris en kandidaat notaris. Zeer relevant in het Notariaat. Voor Zorgeloos Vastgoed niet en daarom weggelaten.We verwijzen direct naar de begrippen van andere domeinen en proberen begrippen zoveel mogelijk in een domein thuis te brengen. Zakelijk recht zou kunnen worden ondergebracht in zowel het domein van het Kadaster als die van het Notariaat. Per geval wordt bekeken door de werkgroep in welk domein een begrip het beste is onder te brengen.
+* Begrippen die relevant zijn binnen een domein, maar geen toegevoegde waarde hebben in de Zorgeloos Vastgoed taxonomie, worden niet opgenomen. Een goed voorbeeld is het onderscheid tussen notaris, waarnemend notaris, toegevoegd notaris en kandidaat notaris. Zeer relevant in het Notariaat. Voor Zorgeloos Vastgoed niet en daarom weggelaten.
+* We verwijzen direct naar de begrippen van andere domeinen en proberen begrippen zoveel mogelijk in een domein thuis te brengen. Zakelijk recht zou kunnen worden ondergebracht in zowel het domein van het Kadaster als die van het Notariaat. Per geval wordt bekeken door de werkgroep in welk domein een begrip het beste is onder te brengen.
 
 ## HANDELINGEN
 
