@@ -78,6 +78,7 @@ kad:Bewaarder a skos:Concept, skoslex:Agent;
 	rdfs:label "Bewaarder"@nl;
 	skos:definition "Een functionaris die onverminderd het bepaalde bij of krachtens de Kadasterwet of een andere wet, belast is met het verrichten van inschrijvingen in de openbare registers en het stellen van aantekeningen in die registers, en het bijwerken van de basisregistratie kadaster, de registratie voor schepen en de registratie voor luchtvaartuigen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6>;
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 kad:Rechthebbende a skos:Concept, skoslex:Actor;
 	rdfs:label "Rechthebbende"@nl;
@@ -85,7 +86,8 @@ kad:Rechthebbende a skos:Concept, skoslex:Actor;
 	skos:definition "De persoon aan wie een zaak, goed of recht toebehoort.";
 	rdfs:comment "Een rechthebbende is een (niet) natuurlijk  persoon die met uitsluiting van anderen een zaak mag gebruiken. De rechthebbende van de eigendom van een zaak wordt eigenaar genoemd.";
 	#Relateren aan vervreemder en verkrijger?
-	skosthes:broaderGeneric zv:Persoon;
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
+	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
 .
 #--
 #Acts
