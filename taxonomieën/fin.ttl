@@ -35,7 +35,8 @@ fin:Borg a skos:Concept, skoslex:Actor;
 	skos:definition "De persoon die garant staat voor de nakoming van de verplichting van een andere persoon.";
 	rdfs:comment "Als een schuldenaar zijn verplichting niet nakomt, is de borg verplicht om de borgsom te betalen aan de schuldeiser. De borg krijgt daarna een vordering op de schuldenaar.";
 	skos:semanticRelation fin:Schuldenaar;
-	skosthes:broaderGeneric zv:Persoon;
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
+	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
 .
 fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	rdfs:label "Hypotheekadviseur"@nl;
@@ -43,16 +44,19 @@ fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	skos:altLabel "Financieel adviseur";
 	skos:altLabel "Tussenpersoon";
 	skos:definition "Een hypotheekadviseur geeft onafhankelijk hypotheekadvies over welke hypotheekconstructie aansluit op de situatie en de wensen van de consument.";
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 fin:Hypotheekgever a skos:Concept, skoslex:Actor;
 	rdfs:label "Hypotheekgever"@nl;
 	skos:definition "Persoon die aan de bank een beperkt zekerheidsrecht op zijn registergoed (hypotheek) geeft, zodat de bank het geleende geld met voorrang op andere schuldeisers kan terugkrijgen.";
 	rdfs:comment "De hypotheekgever is de geldnemer. Bij het afsluiten van een hypotheek bent u de hypotheekgever. U geeft dan een huis in onderpand om de financiering te krijgen die nodig is om dat huis te kopen. De financiering wordt de hypotheeksom genoemd.";
+	skosthes:broaderGeneric mak:Koper;
 .
 fin:Hypotheeknemer a skos:Concept, skoslex:Actor;
 	rdfs:label "Hypotheeknemer"@nl;
 	skos:definition "Meestal de bank die aan een persoon geld leent en ter verzekering van terugbetaling het recht verkrijgt om bij voorrang op het onderzette goed (bijv. het huis) verhaal te nemen.";
 	rdfs:comment "Een hypotheeknemer is een geldverstrekker, bijvoorbeeld een bank, die geld uitleent aan een hypotheekgever, bijvoorbeeld een koper van een huis. Tegenover deze geldverstrekking staat dat de hypotheeknemer een hypotheek neemt op het onderpand.";
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 fin:Schuldeiser a skos:Concept, skoslex:Actor;
 	rdfs:label "Schuldeiser"@nl;
