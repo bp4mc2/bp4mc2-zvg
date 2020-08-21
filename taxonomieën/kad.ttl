@@ -221,6 +221,8 @@ kad:Eigendomsrecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1>;
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FEigendom>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
+	skos:related zv:Persoon;
+	#skos:related kad:Zaak;#Begrip moet nog worden opgenomen
 .
 kad:Erfpachtvoorwaarden a skos:Concept;
 	rdfs:label "Erfpachtvoorwaarden"@nl;
@@ -237,7 +239,9 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70>;
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FErfdienstbaarheid>;
 	skosthes:broaderGeneric kad:BeperktRecht;
-	skosthes:broaderGeneric kad:OnroerendeZaak;
+	skosthes:broaderGeneric kad:ZakelijkRecht;
+	skos:related kad:OnroerendeZaak;
+	skos:related kad:KwalitatieveVerplichting;
 .
 kad:Erfpacht a skos:Concept, skoslex:Object;
 	rdfs:label "Erfpacht"@nl;
@@ -248,7 +252,7 @@ kad:Erfpacht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	skosthes:broaderGeneric kad:BeperktRecht;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	rdfs:label "Gemeentelijk monument"@nl;
@@ -454,8 +458,11 @@ kad:TotaalbedragInschrijving a skos:Concept;
 kad:Voorkeursrecht a skos:Concept;
 	rdfs:label "Voorkeursrecht"@nl;
 	skos:prefLabel "Voorkeursrecht";
+	skos:altLabel "Recht van voorverkoop";
 	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
         #ToDo: check op definitie door Kadaster
+	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
+	skos:rleated kad:Registergoed;
 .
 kad:VoortdurendeErfpacht a skos:Concept;
 	rdfs:label "Voortdurende erfpacht"@nl;
@@ -478,7 +485,7 @@ kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
 	rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
-	skosthes:broaderGeneric kad:ZakelijkRecht;
+	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
 .
 kad:WerkelijkeGrootte a skos:Concept;
 	rdfs:label "Werkelijke grootte"@nl;
