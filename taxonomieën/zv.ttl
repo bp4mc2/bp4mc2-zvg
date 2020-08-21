@@ -55,6 +55,7 @@ zv:Belastinginspecteur a skos:Concept, skoslex:Agent; #Begrip hoort thuis in een
 	rdfs:label "Belastinginspecteur"@nl;
 	skos:prefLabel "Belastinginspecteur";
 	skos:definition "Een ambtenaar die controleert of de belastingwetgeving wordt nageleefd en/of gestelde normen worden gehaald.";
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
