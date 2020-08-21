@@ -83,7 +83,8 @@ not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Gevolgmachtigde"@nl;
 	skos:altLabel "Volmachtnemer";
 	skos:definition" Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
-	skosthes:broaderGeneric zv:Persoon;
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
+	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
 	skos:semanticRelation not:Volmacht;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
