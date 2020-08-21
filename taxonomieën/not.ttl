@@ -75,8 +75,9 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 	rdfs:label "Volmachtgever"@nl;
 	skos:prefLabel "Volmachtgever"@nl;
 	skos:definition" Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
-	skosthes:broaderGeneric zv:Persoon;
-	skos:semanticRelation not:Volmacht;
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
+	skosthes:broaderGeneric zv:NietNatuurlijkPersoon
+	skos:related not:Volmacht;
 .
 not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolgmachtigde"@nl;
@@ -85,7 +86,7 @@ not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	skos:definition" Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
-	skos:semanticRelation not:Volmacht;
+	skos:related not:Volmacht;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Verkrijger"@nl;
