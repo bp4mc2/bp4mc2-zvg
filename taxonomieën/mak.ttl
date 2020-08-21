@@ -43,7 +43,7 @@ mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 	skos:definition "een makelaar die is ingeschakeld door de koper en die namens de koper bemiddelt bij de aankoop van een registergoed";
 	rdfs:comment "Een aankoopmakelaar wordt door koper ingeschakeld. Hij bemiddelt namens de koper bij aan de aankoop van het registergoed. Hij voert doorgaans namens de koper de onderhandelingen met de verkoopmakelaar.";
 	skosthes:broaderGeneric mak:Makelaar;
-	skos:semanticRelation mak:Koper;
+	skos:related mak:Koper;
 	skos:semanticRelation mak:Verkoopmakelaar;
 .
 #Een makelaar mag volgens de beroepscode slechts 1 rol vervullen, of verkoopmakelaar of aankoopmakelaar.
@@ -54,7 +54,7 @@ mak:Makelaar a skos:Concept, skoslex:Agent;
 	skos:prefLabel "Makelaar";
 	skos:definition "Een makelaar is een persoon die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed.";
 	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed.";
-	skosthes:broaderGeneric zv:Persoon;
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Verkoopmakelaar"@nl;
@@ -62,7 +62,7 @@ mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	skos:definition "een makelaar die is ingeschakeld door de verkoper en die namens de verkoper bemiddelt bij de verkoop van een registergoed ";
 	rdfs:comment "Een verkoopmakelaar bemiddelt tussen de verkoper en de koper. De verkoopmakelaar is ingeschakeld door verkoper. De verkoopmakelaar voert namens de verkoper de onderhandelingen, regelt de bezichtigingen van de woning en stelt doorgaans de koopovereenkomst op. ";
 	skosthes:broaderGeneric mak:Makelaar;
-	skos:semanticRelation mak:Verkoper;
+	skos:related mak:Verkoper;
 	skos:semanticRelation mak:Aankoopmakelaar;
 .
 mak:Koper a skos:Concept, skoslex:Actor;
@@ -71,12 +71,14 @@ mak:Koper a skos:Concept, skoslex:Actor;
 	skos:definition "Degene die het registergoed heeft aangekocht.";
 	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
 	skosthes:broaderGeneric zv:Partij;
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 mak:Taxateur a skos:Concept, skoslex:Agent;
 	rdfs:label "Taxateur"@nl;
 	skos:definition "een daartoe bevoegd persoon die een waarde toekent in het taxatierapport aan het registergoed op basis van zijn vakbekwaamheid";
 	rdfs:comment "Een taxateur is een persoon die op basis van zijn vakbekwaamheid een waarde toekent in het taxatierapport aan het registergoed. Het taxatierapport heeft de koper doorgaans nodig voor de financiering van het registergoed.  ";
 	skos:prefLabel "Taxateur";
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 mak:Verkoper a skos:Concept, skoslex:Actor;
 	rdfs:label "Verkoper"@nl;
@@ -84,6 +86,7 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 	skos:definition "Degene die het registergoed heeft verkocht.";
 	rdfs:comment "Een verkoper is degene die het registergoed heeft verkocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
 	skosthes:broaderGeneric zv:Partij;
+	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 #--
 #Acts
@@ -97,6 +100,7 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 	skoslex:agent mak:Aankoopmakelaar;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
+	skosthes:broaderGeneric zv:Rechtspersoon;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
 mak:IdentificerenKoop a skos:Concept, skoslex:Act;
@@ -108,7 +112,8 @@ mak:IdentificerenKoop a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
-	skoslex:object zv:Persoon;
+	skoslex:object mak:Koper;
+	skoslex:object mak:Verkoper;
 	skosthes:broaderGeneric zv:Identificeren;
 .
 mak:IdentificerenTaxatie a skos:Concept, skoslex:Act;
@@ -118,7 +123,7 @@ mak:IdentificerenTaxatie a skos:Concept, skoslex:Act;
 	rdfs:comment "In het kader van de opdracht tot taxatie moet de taxateur weten wie zijn opdrachtgever is. Daarom stelt de taxateur de identiteit van de opdrachtgever vast.";
 	skosthes:broaderPartitive mak:Taxatie;
 	skoslex:actor mak:Taxateur;
-	skoslex:object zv:Persoon;
+	skoslex:object mak:Koper;
 	skosthes:broaderGeneric zv:Identificeren;
 .
 mak:Koop a skos:Concept, skoslex:Act;
@@ -158,14 +163,15 @@ mak:RechercheKoop a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
-	skoslex:object zv:Persoon;
+	skoslex:object mak:Koper;
+	skoslex:object mak:Verkoper;
 	skoslex:object mak:Woning;
 	skoslex:object zv:Overdrachtsbelasting;
 .
 mak:RechercheTaxatie a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche taxatie"@nl;
 	skos:prefLabel "Recherche taxatie";
-	skos:definition "het onderzoek dat de taxateur verricht in de openbare registers van het kadaster met betrekking tot het registergoed voordat het taxatierapport wordt opgesteld";
+	skos:definition "Het onderzoek dat de taxateur verricht in de openbare registers van het kadaster met betrekking tot het registergoed voordat het taxatierapport wordt opgesteld";
 	rdfs:comment "Als een taxateur een taxatierapport opstelt dan verricht hij onderzoek in de openbare reigsters van het kadaster. Door dit onderzoek krijgt hij inzicht in zaken die de waarde van het registergoed positief of negatief beïnvloeden. ";
 	skosthes:broaderPartitive mak:Taxatie;
 	skoslex:actor mak:Taxateur;
@@ -177,7 +183,7 @@ mak:Taxatie a skos:Concept, skoslex:Act;
 	skos:definition "Een door een taxateur afgegeven waarde in een taxatierapport van een registergoed waaraan in het maatschappelijk en economische verkeer vertrouwen kan worden ontleend.     ";
 	rdfs:comment "Een taxatie wordt  doorgaans uitgevoerd als de koper met een hypothecaire geldlening de aankoop van het registergoed wil financieren. De financier (doorgaans een erkende geldverstrekkende bankinstelling) wil ter onderbouwing van de hypothecaire geldlening de waarde van het registergoed laten vaststellen door een taxateur.";
 	skoslex:actor mak:Taxateur;
-	skoslex:actor zv:Partij;
+	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
