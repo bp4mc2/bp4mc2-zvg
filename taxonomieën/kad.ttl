@@ -126,7 +126,7 @@ kad:Adres a skos:Concept, skoslex:Object;
 	rdfs:label "Adres"@nl;
 	skos:prefLabel "Adres";
 	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats.";
-	skos:scopeNote "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan."
+	skos:scopeNote "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
 	dcterms:source <https://bag.basisregistraties.overheid.nl/begripdetail?subject=http://bag.basisregistraties.overheid.nl/id/begrip/Adres>; #BAG concept. Can be made into an skos:exactMatch
 .
