@@ -156,6 +156,14 @@ zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
 	rdfs:comment "Voortdurend bijgehouden bestand met persoonsgegevens van inwoners van Nederland.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2>;
 .
+zv:HuidigAdres a skos:Concept, skoslex:Record;
+	rdfs:label "Huidig adres"@nl;
+	skos:prefLabel "Huidig adres";
+	skos:definition ".";
+	rdfs:comment ".";
+	skos:semanticRelation kad:Adres;
+	skos:related kad:ToekomstigAdres;
+.
 zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je zegt 'Ik koop een huis', terwijl je formeel het recht heb gekocht op erfpacht op een onroerende zaak zoals in Amsterdam.
 	rdfs:label "Huis"@nl;
 	skos:prefLabel "Huis";
@@ -198,4 +206,11 @@ zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in
 	rdfs:label "Register Belastingdienst";
 	skos:prefLabel "Register Belastingdienst";
 	skos:definition "Voortdurend bijgehouden bestand van de Belastingdienst met gegevens over personen of zaken in relatie tot de belastingwet.";
+.
+zv:ToekomstigAdres a skos:Concept, skoslex:Record;
+	rdfs:label "Toekomstig adres"@nl;
+	skos:prefLabel "Toekomstig adres";
+	skos:definition ".";
+	rdfs:comment ".";
+	skos:semanticRelation kad:Adres;
 .
