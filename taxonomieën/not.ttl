@@ -309,6 +309,7 @@ not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Gevolmachtigde;
 	skoslex:actor not:Notaris;
+	skoslex:object not:DatumPasserenAkteLevering;
 	skoslex:object not:Leveringsakte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 	skosthes:broaderGeneric not:Passeren;
@@ -495,6 +496,12 @@ not:Comparitie a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 	skosthes:broaderPartitive not:NotarieleAkte;
 	skoslex:isAbout not:Comparant;
+.
+not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;
+	rdfs:label "Datum van passeren (akte van levering)"@nl;
+	skos:prefLabel "Datum van passeren (akte van levering)";
+	skos:definition "Datum waarop de akte van levering wordt gepasseerd.";
+	rdfs:comment "Datum waarop de akte van levering wordt ondertekend.";
 .
 not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Grondslagwaarde"@nl;
