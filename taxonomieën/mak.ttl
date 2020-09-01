@@ -247,33 +247,37 @@ mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
-.
-mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
-	rdfs:label "Artikel: Eigendomsoverdracht, lid 1"@nl;
-	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 1";
-	skos:definition "Artikel 4, lid 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
-	#rdfs:comment ".";
-	#skos:scopeNote "Artikel 4, lid 1 van de model koopovereenkomst.";
-	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
+	skoslex:isAbout not:DatumPasserenAkteLevering;
 	skoslex:isAbout not:Notaris;
 	skoslex:isAbout not:PlaatsVanVestiging;
 .
-mak:ArtikelEigendomsoverdrachtLid2 a skos:Concept, skoslex:Record;
-	rdfs:label "Artikel: Eigendomsoverdracht, lid 2"@nl;
-	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 2";
-	skos:definition "Artikel 4, lid 2 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
+#mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
+#	rdfs:label "Artikel: Eigendomsoverdracht, lid 1"@nl;
+#	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 1";
+#	skos:definition "Artikel 4, lid 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
+	#rdfs:comment ".";
+	#skos:scopeNote "Artikel 4, lid 1 van de model koopovereenkomst.";
+#	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
+#	skoslex:isAbout not:DatumPasserenAkteLevering;
+#	skoslex:isAbout not:Notaris;
+#	skoslex:isAbout not:PlaatsVanVestiging;
+#.
+#mak:ArtikelEigendomsoverdrachtLid2 a skos:Concept, skoslex:Record;
+#	rdfs:label "Artikel: Eigendomsoverdracht, lid 2"@nl;
+#	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 2";
+#	skos:definition "Artikel 4, lid 2 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4, lid 2 van de model koopovereenkomst.";
-	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
-.
-mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
-	rdfs:label "Artikel: Eigendomsoverdracht, lid 3"@nl;
-	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 3";
-	skos:definition "Artikel 4, lid 3 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
+#	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
+#.
+#mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
+#	rdfs:label "Artikel: Eigendomsoverdracht, lid 3"@nl;
+#	skos:prefLabel "Artikel: Eigendomsoverdracht, lid 3";
+#	skos:definition "Artikel 4, lid 3 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Artikel 4 lid 3 van de model koopovereenkomst.";
-	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
-.
+#	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
+#.
 mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7 van de model koopovereenkomst: Feitelijke levering/Overdracht aanspraken"@nl;
 	skos:prefLabel "Artikel: Feitelijke levering/Overdracht aanspraken";
@@ -483,6 +487,8 @@ mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
         skosthes:broaderPartitive mak:Koopovereenkomst;
         skoslex:isAbout mak:Koper;
         skoslex:isAbout mak:Verkoper;
+        skoslex:isAbout zv:HuidigAdres;
+        skoslex:isAbout zv:ToekomstigAdres;
 .
 mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept;
 	rdfs:label "Ondergrondse tank voor het opslaan van (vloei)stoffen"@nl;
