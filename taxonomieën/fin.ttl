@@ -22,7 +22,7 @@
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
-#<http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1> rdfs:label "Artikel 1.1 Wet op het financieel toezicht".#Act 'Geven fin. advies'
+<http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1> rdfs:label "Artikel 1.1 Wet op het financieel toezicht".#Act 'Geven fin. advies'
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229> rdfs:label "artikel 229 van Boek 3 van het Burgerlijk Wetboek".
 
 #--
@@ -84,14 +84,32 @@ fin:Aflossen a skos:Concept, skoslex:Act;
 	skoslex:agent fin:Hypotheeknemer;
 	skoslex:actor fin:Hypotheekgever;
 .
+fin:BesprekenHypotheekadvies a skos:Concept, skoslex:Act;
+	rdfs:label "Bespreken hypotheekadvies"@nl;
+	skos:prefLabel "Bespreken hypotheekadvies";
+	skos:altLabel "Hypotheekadvies gesprek";
+	skos:definition "Het bespreken van een hypotheekadvies.";
+	skoslex:actor fin:Hypotheekadviseur;
+	skoslex:actor fin:Hypotheekgever;
+	skoslex:object fin:Hypotheekadvies;
+	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
+.
 fin:IdentificerenHypotheekadvies a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van consument (hypotheekadvies)"@nl;
 	skos:prefLabel "Identificeren van consument (hypotheekadvies)";
 	skos:definition "Het identificeren van de [consument] ter verstrekking van een hypotheekadvies.";
-	skosthes:broaderPartitive fin:OpstellenHypotheekadvies;
+	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 	skoslex:actor fin:Hypotheekadviseur;
 	skoslex:object fin:Hypotheekgever;
 	skosthes:broaderGeneric zv:Identificeren;
+.
+fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
+	rdfs:label "Opstellen hypotheekadvies"@nl;
+	skos:prefLabel "Opstellen hypotheekadvies";
+	skos:definition "Het maken van een hypotheekadvies.";
+	skoslex:actor fin:Hypotheekadviseur;
+	skoslex:record fin:Hypotheekadvies;
+	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 .
 fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
 	rdfs:label "Verstrekken bindend aanbod"@nl;
@@ -105,11 +123,13 @@ fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
 	skoslex:object kad:OnroerendeZaak;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
-fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen hypotheekadvies"@nl;
-	skos:prefLabel "Opstellen hypotheekadvies";
+fin:VerstrekkenHypotheekadvies a skos:Concept, skoslex:Act;
+	rdfs:label "Verstrekken hypotheekadvies"@nl;
+	skos:prefLabel "Verstrekken hypotheekadvies";
 	skos:definition "Het adviseren ter aanbeveling van een hypotheekconstructie.";
-	skoslex:actor fin:Hypotheekadviseur;
+	skos:editorialNote "Je zou in deze niet zozeer spreken van een hypotheekgever, maar van een consument. Het is immers, op het moment dat er hypotheekadvies wordt ingewonnen, nog niet bekend of er daadwerkelijk een hypotheek wordt verstrekt. Het concept van consument is echter erg generiek en lastig in te passen in de taxonomie. Daarom is voor nu gekozen om de koppeling met de hypotheekgever te laten staan.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1>;
+	skoslex:agent fin:Hypotheekadviseur;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
@@ -158,7 +178,6 @@ fin:Lening a skos:Concept;
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald.";
 	skos:semanticRelation fin:Schuldenaar;
 	skos:semanticRelation fin:Schuldeiser;
-	skos:related not:RechtVanHypotheek;
 .
 #Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
 #Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
@@ -169,7 +188,8 @@ fin:Onderpand a skos:Concept, skoslex:Object;
 	skos:definition	"Het recht van hypotheek wordt gevestigd op het onderpand. Een onderpand kan bestaan uit één of meerdere registergoederen.";
 	rdfs:comment "De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de hypotheekgever.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
-	skos:semanticRelation not:RechtVanHypotheek;
+	skos:editorialNote "De relatie met registergoed is een lastige. Een onderpand is geen verbijzondering van registergoed zoals een woning dat is. Maar in de context van het kopen van een huis, zou je kunnen stellen dat een onderpand juist wel een verbijzondering is van een registergoed (in de vorm van een woning), omdat er meestal sprake is van een onderpand in de vorm van een woning die is gekocht.";
+	skos:related not:RechtVanHypotheek;
 	skos:semanticRelation kad:Registergoed;
 	skosthes:broaderPartitive fin:Lening;
 .
@@ -178,14 +198,14 @@ fin:Opslagbedrag a skos:Concept;
 	skos:prefLabel "Opslagbedrag";
 	skos:definition "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld.";
 	rdfs:comment "Het bedrag dat een hypotheeknemer - naast het inschrijvingsbedrag - op basis van de hypotheekakte maximaal mag opeisen als gevolg van niet betaalde rentes, boetes en kosten.";
-  skosthes:broaderPartitive kad:TotaalbedragInschrijving;
+	skosthes:broaderPartitive kad:TotaalbedragInschrijving;
 .
 fin:Overbruggingslening a skos:Concept;
 	rdfs:label "Overbruggingslening"@nl;
 	skos:prefLabel "Overbruggingslening";
 	skos:altLabel "Overbruggingskrediet";
 	skos:definition "Koopt u eerst een nieuw huis en gaat u daarna pas het oude verkopen, dan kunt u de opbrengst van uw oude huis (nog) niet gebruiken voor de aanschaf van uw nieuwe huis. Een overbruggingslening, ook wel overbruggingskrediet genoemd, biedt dan uitkomst, ook wanneer uw huis langer te koop staat dan u op voorhand verwacht had. Op het moment dat uw oude woning verkocht is wordt de overbruggingslening afgelost.";
-	skosthes:broaderGeneric fin:Lening;
+	skosthes:narrowerGeneric fin:Lening;
 .
 fin:Waarborgsom a skos:Concept, skoslex:Object;
 	rdfs:label "Waarborgsom"@nl;
