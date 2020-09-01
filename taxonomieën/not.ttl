@@ -643,7 +643,7 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric kad:BeperktRecht;
 	skos:related kad:OnroerendeZaak;
-	skos:related fin:Lening;
+	skos:semanticRelation fin:Lening;
 .
 not:Titel a skos:Concept, skoslex:Record;
 	rdfs:label "Titel"@nl;
