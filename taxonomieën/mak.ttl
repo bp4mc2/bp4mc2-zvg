@@ -427,7 +427,9 @@ mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	#skos:scopeNote "Artikel 1 van de model koopovereenkomst.";
 	skos:scopeNote "Keuze tussen eigendom en erfpacht.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
-	skoslex:isAbout kad:PlaatselijkBekendAls;
+	skoslex:isAbout kad:KadastraleAanduiding;
+	skoslex:isAbout kad:KadastraleGrootte;
+	skoslex:isAbout kad:PlaatselijkBekend;
 .
 mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - eigendom"@nl;
