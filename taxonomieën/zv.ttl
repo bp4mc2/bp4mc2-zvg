@@ -159,8 +159,9 @@ zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
 zv:HuidigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Huidig adres"@nl;
 	skos:prefLabel "Huidig adres";
-	skos:definition ".";
-	rdfs:comment ".";
+	skos:altLabel "Wonende";
+	skos:definition "Plaats waar iemand gevestigd is.";
+	#rdfs:comment ".";
 	skos:semanticRelation kad:Adres;
 	skos:related kad:ToekomstigAdres;
 .
@@ -210,7 +211,7 @@ zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in
 zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Toekomstig adres"@nl;
 	skos:prefLabel "Toekomstig adres";
-	skos:definition ".";
-	rdfs:comment ".";
+	skos:definition "Plaats waar iemand zich gaat gevestigen.";
+	#rdfs:comment "";
 	skos:semanticRelation kad:Adres;
 .
