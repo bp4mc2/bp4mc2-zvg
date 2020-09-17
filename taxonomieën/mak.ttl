@@ -437,11 +437,12 @@ mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 .
 mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - eigendom"@nl;
-	skos:prefLabel "Artikel: erkoop en koop - eigendom";
+	skos:prefLabel "Artikel: Verkoop en koop - eigendom";
 	skos:definition "Optie A van artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
 	#rdfs:comment ".";
 	#skos:scopeNote "Optie A van artikel 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
+	skoslex:isAbout mak:Woning;
 	skoslex:isAbout kad:Eigendomsrecht;
 .
 mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
