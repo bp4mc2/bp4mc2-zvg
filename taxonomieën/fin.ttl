@@ -171,7 +171,7 @@ fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
 	skos:related fin:Onderpand;
 .
-fin:Lening a skos:Concept;
+fin:Lening a skos:Concept, skoslex:Record;
 	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening";
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over een te lenen geldbedrag";
@@ -200,7 +200,7 @@ fin:Opslagbedrag a skos:Concept;
 	rdfs:comment "Het bedrag dat een hypotheeknemer - naast het inschrijvingsbedrag - op basis van de hypotheekakte maximaal mag opeisen als gevolg van niet betaalde rentes, boetes en kosten.";
 	skosthes:broaderPartitive kad:TotaalbedragInschrijving;
 .
-fin:Overbruggingslening a skos:Concept;
+fin:Overbruggingslening a skos:Concept, skoslex:Record;
 	rdfs:label "Overbruggingslening"@nl;
 	skos:prefLabel "Overbruggingslening";
 	skos:altLabel "Overbruggingskrediet";
