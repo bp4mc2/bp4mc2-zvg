@@ -174,13 +174,14 @@ zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je
 	skosthes:narrowerGeneric kad:OnroerendeZaak;#Elk huis is een onroerende zaak, maar niet iedere onroerende zaak is een huis.
 	skosthes:broaderGeneric kad:Registergoed;
 .
-zv:Identiteitsdocument a skos:Concept, skoslex:Object;
+zv:Identiteitsdocument a skos:Concept, skoslex:Record;
 	rdfs:label "Identiteitsdocument"@nl;
 	skos:prefLabel "Identiteitsdocument";
         skos:altLabel "Legitimatiebewijs";
 	skos:definition "Een officieel document waarmee een natuurlijk persoon zich in Nederland kan identificeren vanaf 14 jaar en ouder.";
 	rdfs:comment "Een middel om je als (natuurlijk) persoon te kunnen identificeren.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
+	skoslex:isAbout zv:NatuurlijkPersoon;
 	skos:editorialNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
 .
 zv:Faillissement a skos:Concept; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
