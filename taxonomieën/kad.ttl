@@ -544,7 +544,7 @@ kad:Wegneemrecht a skos:Concept, skoslex:Object;
 	rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
-F	skos:related kad:Erfpacht;
+	skos:related kad:Erfpacht;
 .
 kad:WerkelijkeGrootte a skos:Concept;
 	rdfs:label "Werkelijke grootte"@nl;
