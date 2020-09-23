@@ -358,7 +358,7 @@ kad:NaamVanEenWoonplaats a skos:Concept, skoslex:Object;
 	rdfs:label "Naam van een woonplaats"@nl;
 	skos:prefLabel "Naam van een woonplaats";
 	skos:definition "De naam van een woonplaats is de door het bevoegde gemeentelijke orgaan aan een woonplaats toegekende benaming en een authentiek gegeven.";
-	srdfs:comment "De naam van een woonplaats is de naam die de gemeente aan een woonplaats heeft gegeven.";
+	rdfs:comment "De naam van een woonplaats is de naam die de gemeente aan een woonplaats heeft gegeven.";
 	skosthes:broaderPartitive kad:Adres;
 .
 kad:NSWLandgoed a skos:Concept, skoslex:Object;
