@@ -351,7 +351,7 @@ kad:NaamVanEenOpenbareRuimte a skos:Concept, skoslex:Object;
 	rdfs:label "Naam van een openbare ruimte"@nl;
 	skos:prefLabel "Naam van een openbare ruimte";
 	skos:definition "De naam van een openbare ruimte is de door het bevoegde gemeentelijke orgaan aan een openbare ruimte toegekende benaming en een authentiek gegeven.";
-	srdfs:comment "De naam openbare ruimte is de naam die de gemeente heeft gegeven aan een openbare ruimte.";
+	rdfs:comment "De naam openbare ruimte is de naam die de gemeente heeft gegeven aan een openbare ruimte.";
 	skosthes:broaderPartitive kad:Adres;
 .
 kad:NaamVanEenWoonplaats a skos:Concept, skoslex:Object;
@@ -372,7 +372,7 @@ kad:Nummeraanduiding a skos:Concept, skoslex:Object;
 	rdfs:label "Nummeraanduiding"@nl;
 	skos:prefLabel "Nummeraanduding";
 	skos:definition "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.";
-	srdfs:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
+	rdfs:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
 	skosthes:broaderPartitive kad:Adres;
 	#Bestaat uit huisnummer, huisnummertoevoeging en huisletter
 .
