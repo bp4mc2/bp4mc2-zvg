@@ -17,6 +17,17 @@
 <http://zorgeloosvastgoed.nl/data/zv> a owl:Ontology;
 	rdfs:label "Domein Zorgeloos vastgoed (algemeen)";
 .
+
+<http://taxonomie.zorgeloosvastgoed.nl/id/stelsel/algemeen> a skos:ConceptScheme;
+	rdfs:label "Algemeen begrippenstelsel zorgeloosvastgoed";
+	skos:hasTopConcept zv:AanOfVerkoopVanEenHuis;
+	skos:hasTopConcept zv:Persoon;
+	skos:hasTopConcept not:Akte;
+	skos:hasTopConcept kad:ZakelijkRecht;
+	skos:hasTopConcept kad:Registergoed;
+	skos:hasTopConcept kad:Adres;
+.
+
 #--
 #Wetgeving links
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
