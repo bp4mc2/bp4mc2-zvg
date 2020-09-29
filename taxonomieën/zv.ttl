@@ -30,9 +30,10 @@
 
 <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/Hoofdbegrippen> a skos:Collection;
 	rdfs:label "Hoofdbegrippen";
-	skos:member zv:Hypotheekgever;
-	skos:member zv:Hypotheeknemer;
+	skos:member fin:Hypotheekgever;
+	skos:member fin:Hypotheeknemer;
 	skos:member zv:AanOfVerkoopVanEenHuis;
+	skos:member zv:Huis;
 .
 
 #--
