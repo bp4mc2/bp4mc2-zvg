@@ -28,6 +28,13 @@
 	skos:hasTopConcept kad:Adres;
 .
 
+<http://taxonomie.zorgeloosvastgoed.nl/id/collectie/Hoofdbegrippen> a skos:Collection;
+	rdfs:label "Hoofdbegrippen";
+	skos:member zv:Hypotheekgever;
+	skos:member zv:Hypotheeknemer;
+	skos:member zv:AanOfVerkoopVanEenHuis;
+.
+
 #--
 #Wetgeving links
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
