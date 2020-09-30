@@ -1,0 +1,27 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  # Domein is nu hardcoded, de betreffende versie van de dotwebstack werkt nog niet met een menu-variant
+  config:IndexData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:query """
+      prefix elmo1: <http://bp4mc2.org/elmo/def#>
+      prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>
+      prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+      CONSTRUCT {
+        [
+          elmo1:data [
+            elmo1:name "domein";
+            rdfs:label "Algemeen|Hypotheken|Kadaster|Makelaar|Notariaat";
+            rdf:value "http://zorgeloosvastgoed.nl/data/zv|http://zorgeloosvastgoed.nl/data/fin|http://zorgeloosvastgoed.nl/data/kad|http://zorgeloosvastgoed.nl/data/mak|http://zorgeloosvastgoed.nl/data/not";
+          ]
+        ]
+      }
+      WHERE {}
+    """;
+  .
+
+}

@@ -1,0 +1,30 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:WieEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/wie";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Wie;
+  .
+
+  config:Wie a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:WieData;
+    elmo:appearance config:WieAppearance;
+    elmo:contains config:Menu;
+  .
+
+  config:WieAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "begrip";
+      rdfs:label "Begrip"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "def";
+      rdfs:label "Definitie"@nl;
+    ];
+  .
+
+}

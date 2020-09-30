@@ -1,7 +1,16 @@
 @prefix elmo: <http://dotwebstack.org/def/elmo#> .
 @prefix config: <http://dotwebstack.org/configuration/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix http: <http://www.w3.org/2011/http#>.
 
 GRAPH config:Theatre {
+
+  config:StaticValueMapper a elmo:UriParameterMapper;
+    elmo:source http:requestURI;
+    elmo:pattern "http://{domain}/";
+    elmo:template "http://taxonomie.zorgeloosvastgoed.nl/id/begrip/AanOfVerkoopVanEenHuis";
+    elmo:target elmo:SubjectParameter;
+  .
 
   config:HomeEndpoint a elmo:Endpoint;
     elmo:pathPattern "";
@@ -11,22 +20,47 @@ GRAPH config:Theatre {
 
   config:Home a elmo:Representation;
     elmo:stage config:Stage;
+    elmo:parameterMapper config:StaticValueMapper;
     elmo:informationProduct config:HomeData;
-    elmo:appearance [a elmo:HtmlAppearance];
+    elmo:appearance config:HomeAppearance;
     elmo:contains config:Menu;
     elmo:contains config:Taxonomie;
+    elmo:contains config:Hoofdbegrippen;
+    elmo:contains config:HoofdbegrippenGraph;
   .
 
-  config:Taxonomie a elmo:Representation;
-    elmo:stage config:Stage;
-    elmo:informationProduct config:TaxonomieData;
-    elmo:appearance [a elmo:TreeAppearance];
+  config:HomeAppearance a elmo:HtmlAppearance;
+    elmo:index 0;
   .
 
   config:Menu a elmo:Representation;
     elmo:stage config:Stage;
     elmo:informationProduct config:MenuData;
     elmo:appearance [a elmo:NavbarSearchAppearance];
+  .
+
+  config:Hoofdbegrippen a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:HoofdbegrippenData;
+    elmo:appearance config:HoofdbegrippenAppearance;
+  .
+
+  config:HoofdbegrippenAppearance a elmo:ShortTableAppearance;
+    elmo:index 1;
+    elmo:fragment [
+      elmo:appliesTo "begrip";
+      rdfs:label "Belangrijkste begrippen"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "type";
+      rdfs:label "Type"@nl;
+    ];
+  .
+
+  config:HoofdbegrippenGraph a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:HoofdbegrippenGraphData;
+    elmo:appearance config:GraphAppearance;
   .
 
 }

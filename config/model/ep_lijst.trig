@@ -14,11 +14,12 @@ GRAPH config:Theatre {
     elmo:informationProduct config:LijstData;
     elmo:appearance config:LijstAppearance;
     elmo:contains config:Menu;
+    elmo:contains config:Index;
   .
 
   config:LijstAppearance a elmo:TableAppearance;
     elmo:fragment [
-      elmo:appliesTo "g";
+      elmo:appliesTo "domein";
       rdfs:label "Begrippenkader"@nl;
     ];
     elmo:fragment [
@@ -29,6 +30,16 @@ GRAPH config:Theatre {
       elmo:appliesTo "type";
       rdfs:label "Type"@nl;
     ]
+  .
+
+  config:Index a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:IndexData;
+    elmo:appearance config:IndexAppearance;
+  .
+
+  config:IndexAppearance a elmo:IndexAppearance;
+    elmo:index 1;
   .
 
 }

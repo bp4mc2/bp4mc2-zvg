@@ -12,8 +12,30 @@ GRAPH config:Theatre {
       CONSTRUCT {
         [] rdfs:label "Zorgeloos vastgoed"@nl;
           elmo1:html '''
-            <h1>Startpagina</h1>
-            <p>Welkom op de startpagina voor zorgeloos vastgoed</p>
+            <a href="/wie">
+              <button class="btn btn-primary">
+                <img src="/assets/images/actor.png" width="100"/>
+                <p>Wie?</p>
+              </button>
+            </a>
+            <a href="/wat">
+              <button class="btn btn-primary">
+                <img src="/assets/images/object.png" width="100"/>
+                <p>Wat?</p>
+              </button>
+            </a>
+            <a href="/hoe">
+              <button class="btn btn-primary">
+                <img src="/assets/images/act.png" width="100"/>
+                <p>Hoe?</p>
+              </button>
+            </a>
+            <a href="/met">
+              <button class="btn btn-primary">
+                <img src="/assets/images/agent.png" width="100"/>
+                <p>Met wie?</p>
+              </button>
+            </a>
           '''
         .
       }

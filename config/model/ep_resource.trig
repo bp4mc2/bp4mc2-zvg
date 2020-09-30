@@ -19,6 +19,7 @@ GRAPH config:Theatre {
   config:Resource a elmo:Representation;
     elmo:stage config:Stage;
     elmo:contains config:Menu;
+    elmo:contains config:DomeinTaxonomie;
     elmo:contains config:Content;
     elmo:contains config:Graph;
     elmo:contains config:Datasets;

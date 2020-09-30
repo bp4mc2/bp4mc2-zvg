@@ -1,0 +1,33 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+
+GRAPH config:Theatre {
+
+  config:WieData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+      SELECT ?begrip ?begrip_label ?def
+      WHERE {
+        ?begrip a skoslex:Actor.
+        ?begrip rdfs:label ?begrip_label
+        FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
+        OPTIONAL {?begrip skos:definition ?def}
+        FILTER NOT EXISTS {
+          ?begrip (skos:narrower|skosthes:narrowerGeneric|skosthes:narrowerPartitive) ?child
+        }
+        FILTER NOT EXISTS {
+          ?child2 (skos:broader|skosthes:broaderGeneric|skosthes:broaderPartitive) ?begrip
+        }
+      }
+      ORDER BY ?begrip_label
+    """
+  .
+
+}

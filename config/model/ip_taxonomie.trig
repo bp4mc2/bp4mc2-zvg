@@ -21,29 +21,59 @@ GRAPH config:Theatre {
       WHERE {
         {
           {
-            ?begrip ?p ?parent.
-            ?begrip rdfs:label ?begriplabel.
-            ?parent rdfs:label ?parentlabel.
-            FILTER(lang(?begriplabel)="nl" || lang(?begriplabel)="")
-            FILTER(lang(?parentlabel)="nl" || lang(?parentlabel)="")
-            FILTER (?p = skos:broader
-              ||    ?p = skosthes:broaderPartitive
-              ||    ?p = skosthes:broaderGeneric
-              ||    ?p = skos:broadMatch
-            )
+            {
+              ?begrip ?p ?parent.
+              ?begrip rdfs:label ?begriplabel.
+              ?parent rdfs:label ?parentlabel.
+              FILTER(lang(?begriplabel)="nl" || lang(?begriplabel)="")
+              FILTER(lang(?parentlabel)="nl" || lang(?parentlabel)="")
+              FILTER (?p = skos:broader
+                ||    ?p = skosthes:broaderPartitive
+                ||    ?p = skosthes:broaderGeneric
+                ||    ?p = skos:broadMatch
+              )
+            }
+            {
+              {
+                ?parent (skosthes:broaderGeneric|skosthes:broaderPartitive|skos:broader) ?top
+              }
+              UNION
+              {
+                ?itop (skosthes:narrowerGeneric|skosthes:narrowerPartitive|skos:narrower) ?parent
+              }
+              UNION
+              {
+                ?scheme skos:hasTopConcept ?parent
+              }
+            }
           }
           UNION
           {
-            ?iparent ?ip ?ibegrip.
-            ?ibegrip rdfs:label ?ibegriplabel.
-            ?iparent rdfs:label ?iparentlabel.
-            FILTER(lang(?ibegriplabel)="nl" || lang(?ibegriplabel)="")
-            FILTER(lang(?iparentlabel)="nl" || lang(?iparentlabel)="")
-            FILTER (?ip = skos:narrower
-              ||    ?ip = skosthes:narrowerPartitive
-              ||    ?ip = skosthes:narrowerGeneric
-              ||    ?p = skos:narrowMatch
-            )
+            {
+              ?iparent ?ip ?ibegrip.
+              ?ibegrip rdfs:label ?ibegriplabel.
+              ?iparent rdfs:label ?iparentlabel.
+              FILTER(lang(?ibegriplabel)="nl" || lang(?ibegriplabel)="")
+              FILTER(lang(?iparentlabel)="nl" || lang(?iparentlabel)="")
+              FILTER (?ip = skos:narrower
+                ||    ?ip = skosthes:narrowerPartitive
+                ||    ?ip = skosthes:narrowerGeneric
+                ||    ?p = skos:narrowMatch
+              )
+            }
+            {
+              {
+                ?iparent (skosthes:broaderGeneric|skosthes:broaderPartitive|skos:broader) ?top
+              }
+              UNION
+              {
+                ?itop (skosthes:narrowerGeneric|skosthes:narrowerPartitive|skos:narrower) ?iparent
+              }
+              UNION
+              {
+                ?scheme skos:hasTopConcept ?iparent
+              }
+            }
           }
         }
       }
@@ -121,4 +151,27 @@ GRAPH config:Theatre {
       }
     """
   .
+
+  config:DomeinTaxonomieData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+      CONSTRUCT {
+        ?begrip rdfs:isDefinedBy ?domein.
+        ?begrip rdfs:label ?begriplabel.
+        ?domein rdfs:label ?domeinlabel.
+      }
+      WHERE {
+        GRAPH ?domein {
+          ?begrip a skos:Concept.
+          ?begrip rdfs:label ?begriplabel
+          FILTER (lang(?begriplabel)="nl" || lang(?begriplabel)="")
+          OPTIONAL {?domein rdfs:label ?domeinlabel}
+        }
+      }
+    """
+  .
+
 }

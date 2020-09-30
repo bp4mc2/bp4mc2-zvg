@@ -4,12 +4,12 @@
 
 GRAPH config:Theatre {
 
-config:SubjectFromUrl a elmo:UriParameterMapper;
-  elmo:source http:requestURI;
-  elmo:pattern "http://{domain}/doc/{class}/{reference}";
-  elmo:template "http://{domain}/id/{class}/{reference}";
-  elmo:target elmo:SubjectParameter;
-.
+  config:SubjectFromUrl a elmo:UriParameterMapper;
+    elmo:source http:requestURI;
+    elmo:pattern "http://{domain}/doc/{class}/{reference}";
+    elmo:template "http://{domain}/id/{class}/{reference}";
+    elmo:target elmo:SubjectParameter;
+  .
 
   config:IdNaarDocURIRedirection a elmo:Redirection;
     elmo:pathPattern "/id/{class}/{reference}";

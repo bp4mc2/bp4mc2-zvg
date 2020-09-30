@@ -3,6 +3,12 @@
 
 GRAPH config:Theatre {
 
+  config:Taxonomie a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:TaxonomieData;
+    elmo:appearance [a elmo:TreeAppearance];
+  .
+
   config:SpecialisatieTaxonomieEndpoint a elmo:Endpoint;
     elmo:pathPattern "/taxonomie";
     elmo:stage config:Stage;
@@ -25,6 +31,13 @@ GRAPH config:Theatre {
   config:OnderdelenTaxonomie a elmo:Representation;
     elmo:stage config:Stage;
     elmo:informationProduct config:OnderdelenTaxonomieData;
+    elmo:appearance [ a elmo:TreeAppearance];
+    elmo:contains config:Menu;
+  .
+
+  config:DomeinTaxonomie a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:DomeinTaxonomieData;
     elmo:appearance [ a elmo:TreeAppearance];
     elmo:contains config:Menu;
   .

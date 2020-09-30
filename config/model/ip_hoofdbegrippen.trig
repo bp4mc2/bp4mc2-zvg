@@ -1,0 +1,55 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+
+GRAPH config:Theatre {
+
+  config:HoofdbegrippenData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      SELECT ?begrip ?begrip_label ?type ?type_label
+      WHERE {
+        <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/Hoofdbegrippen> skos:member ?begrip.
+        ?begrip rdfs:label ?begrip_label
+        FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
+        OPTIONAL {
+          ?begrip a ?type.
+          FILTER (?type!=skos:Concept)
+          BIND(if(?type=skoslex:Act,"Handeling",strafter("#",str(?type))) as ?type_label)
+        }
+      }
+      ORDER BY ?begrip_label
+    """
+  .
+
+  config:HoofdbegrippenGraphData a elmo:InformationProduct;
+  elmo:backend config:DefaultBackend;
+  elmo:requiredParameter elmo:SubjectParameter;
+  elmo:query """
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+    CONSTRUCT {
+      ?begrip rdfs:label ?begrip_label.
+      ?begrip ?p ?relbegrip.
+      ?relbegrip rdfs:label ?relbegrip_label.
+    }
+    WHERE {
+      <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/Hoofdbegrippen> skos:member ?begrip.
+      ?begrip rdfs:label ?begrip_label
+      FILTER (lang(?begrip_label)="nl" || lang(?begrip_label)="")
+      OPTIONAL {
+        ?begrip ?p ?relbegrip.
+        ?relbegrip a skos:Concept.
+        ?relbegrip rdfs:label ?relbegrip_label.
+      }
+    }
+  """
+.
+
+}
