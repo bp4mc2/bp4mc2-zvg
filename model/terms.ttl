@@ -123,6 +123,14 @@ zvgmodel:semanticRelation a sh:PropertyShape;
   sh:path skos:semanticRelation;
   sh:name "skos:semanticRelation";
 .
+zvgmodel:member a sh:PropertyShape;
+  sh:path skos:member;
+  sh:name "skos:member";
+.
+zvgmodel:hasTopConcept a sh:PropertyShape;
+  sh:path skos:hasTopConcept;
+  sh:name "skos:hasTopConcept";
+.
 
 # SHACL
 zvgmodel:name a sh:PropertyShape;
