@@ -30,10 +30,23 @@
 
 <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/Hoofdbegrippen> a skos:Collection;
 	rdfs:label "Hoofdbegrippen";
-	skos:member fin:Hypotheekgever;
-	skos:member fin:Hypotheeknemer;
 	skos:member zv:AanOfVerkoopVanEenHuis;
 	skos:member zv:Huis;
+	skos:member mak:Verkoper;
+	skos:member mak:Koper;
+	skos:member mak:Koop;
+	skos:member mak:Makelaar;
+	skos:member mak:Koopovereenkomst;
+	skos:member not:OverdragenZakelijkRecht;
+	skos:member not:VestigenBeperktRecht;
+	skos:member not:Leveringsakte;
+	skos:member not:Hypotheekakte;
+	skos:member not:Notaris;
+	skos:member fin:Hypotheeknemer;
+	skos:member fin:Hypotheekgever;
+	skos:member fin:Hypotheekadviseur;
+	skos:member mak:Taxatie;
+	skos:member mak:Taxateur;
 .
 
 #--
