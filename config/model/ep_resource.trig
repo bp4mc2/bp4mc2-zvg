@@ -62,6 +62,7 @@ GRAPH config:Theatre {
     elmo:stage config:Stage;
     elmo:parameterMapper config:SubjectFromUrl;
     elmo:contains config:Menu;
+    elmo:contains config:DomeinTaxonomie;
     elmo:contains config:Content;
     elmo:contains config:Graph;
     elmo:appearance [a elmo:HiddenAppearance];
