@@ -77,7 +77,7 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 	skos:definition" Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
-	skos:related not:Volmacht;
+	skos:semanticRelation not:Volmacht;
 .
 not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolgmachtigde"@nl;
@@ -86,7 +86,7 @@ not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	skos:definition" Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
-	skos:related not:Volmacht;
+	skos:semanticRelation not:Volmacht;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Verkrijger"@nl;
@@ -642,7 +642,7 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric kad:BeperktRecht;
-	skos:related kad:OnroerendeZaak;
+	skos:semanticRelation kad:OnroerendeZaak;
 	skos:semanticRelation fin:Lening;
 .
 not:Titel a skos:Concept, skoslex:Record;

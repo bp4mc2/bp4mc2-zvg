@@ -169,7 +169,7 @@ fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekadvies"@nl;
 	skos:prefLabel "Hypotheekadvies";
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument.";
-	skos:related fin:Onderpand;
+	skos:semanticRelation fin:Onderpand;
 .
 fin:Lening a skos:Concept, skoslex:Record;
 	rdfs:label "Lening"@nl;
@@ -189,7 +189,7 @@ fin:Onderpand a skos:Concept, skoslex:Object;
 	rdfs:comment "De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de hypotheekgever.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
 	skos:editorialNote "De relatie met registergoed is een lastige. Een onderpand is geen verbijzondering van registergoed zoals een woning dat is. Maar in de context van het kopen van een huis, zou je kunnen stellen dat een onderpand juist wel een verbijzondering is van een registergoed (in de vorm van een woning), omdat er meestal sprake is van een onderpand in de vorm van een woning die is gekocht.";
-	skos:related not:RechtVanHypotheek;
+	skos:semanticRelation not:RechtVanHypotheek;
 	skos:semanticRelation kad:Registergoed;
 	skosthes:broaderPartitive fin:Lening;
 .

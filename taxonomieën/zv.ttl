@@ -195,7 +195,7 @@ zv:HuidigAdres a skos:Concept, skoslex:Record;
 	#skos:definition "Plaats waar iemand gevestigd is."; #No formal definition present
 	rdfs:comment "Het adres waar een natuurlijk persoon woont.";
 	skos:semanticRelation kad:Adres;
-	skos:related kad:ToekomstigAdres;
+	skos:semanticRelation kad:ToekomstigAdres;
 .
 zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je zegt 'Ik koop een huis', terwijl je formeel het recht heb gekocht op erfpacht op een onroerende zaak zoals in Amsterdam.
 	rdfs:label "Huis"@nl;

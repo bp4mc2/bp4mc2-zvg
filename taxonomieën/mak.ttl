@@ -43,7 +43,7 @@ mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 	skos:definition "een makelaar die is ingeschakeld door de koper en die namens de koper bemiddelt bij de aankoop van een registergoed";
 	rdfs:comment "Een aankoopmakelaar wordt door koper ingeschakeld. Hij bemiddelt namens de koper bij aan de aankoop van het registergoed. Hij voert doorgaans namens de koper de onderhandelingen met de verkoopmakelaar.";
 	skosthes:broaderGeneric mak:Makelaar;
-	skos:related mak:Koper;
+	skos:semanticRelation mak:Koper;
 	skos:semanticRelation mak:Verkoopmakelaar;
 .
 #Een makelaar mag volgens de beroepscode slechts 1 rol vervullen, of verkoopmakelaar of aankoopmakelaar.
@@ -62,7 +62,7 @@ mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	skos:definition "een makelaar die is ingeschakeld door de verkoper en die namens de verkoper bemiddelt bij de verkoop van een registergoed ";
 	rdfs:comment "Een verkoopmakelaar bemiddelt tussen de verkoper en de koper. De verkoopmakelaar is ingeschakeld door verkoper. De verkoopmakelaar voert namens de verkoper de onderhandelingen, regelt de bezichtigingen van de woning en stelt doorgaans de koopovereenkomst op. ";
 	skosthes:broaderGeneric mak:Makelaar;
-	skos:related mak:Verkoper;
+	skos:semanticRelation mak:Verkoper;
 	skos:semanticRelation mak:Aankoopmakelaar;
 .
 mak:Koper a skos:Concept, skoslex:Actor;
@@ -108,7 +108,7 @@ mak:IdentificerenKoop a skos:Concept, skoslex:Act;
 	skos:prefLabel "Identificeren van cliënt (koop/verkoop)";
 	skos:definition "Het identificeren van de cliënt (verkoper en koper) en het verifiëren van diens identiteit op grond van een wettelijke verplichting ";
 	rdfs:comment "De verkoopmakelaar is wettelijk verplicht om de verkoper, zijn opdrachtgever, en de koper, de wederpartij van de verkoper, te identificeren en diens identiteit te verifiëren.";
-	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt en wordt de identificatie ook door de notaris uitgevoerd.";	
+	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt en wordt de identificatie ook door de notaris uitgevoerd.";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
@@ -130,7 +130,7 @@ mak:Koop a skos:Concept, skoslex:Act;
 	rdfs:label "Koop"@nl;
 	skos:prefLabel "Koop";
 	skos:definition "Een koop is een overeenkomst tussen verkoper en koper, waarbij de verkoper zich verbindt een registergoed te geven tegen een door de koper te betalen prijs ";
-	rdfs:comment "Als verkoper en koper het eens zijn over de voorwaarden ontstaat er een overeenkomst. Bij de verkoop van een registergoed verbindt de verkoper zich om het registergoed te geven tegen een door koper te betalen prijs. De overeenkomst wordt doorgaans vastgelegd in een schriftelijke koopovereenkomst. ";	
+	rdfs:comment "Als verkoper en koper het eens zijn over de voorwaarden ontstaat er een overeenkomst. Bij de verkoop van een registergoed verbindt de verkoper zich om het registergoed te geven tegen een door koper te betalen prijs. De overeenkomst wordt doorgaans vastgelegd in een schriftelijke koopovereenkomst. ";
 	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt.";
 	skoslex:agent mak:Makelaar;
 	skoslex:agent not:Notaris;
