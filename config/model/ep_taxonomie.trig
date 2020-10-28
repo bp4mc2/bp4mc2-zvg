@@ -20,6 +20,7 @@ GRAPH config:Theatre {
     elmo:informationProduct config:SpecialisatieTaxonomieData;
     elmo:appearance [ a elmo:TreeAppearance];
     elmo:contains config:Menu;
+    elmo:contains config:Footer;
   .
 
   config:OnderdelenTaxonomieEndpoint a elmo:Endpoint;
@@ -33,6 +34,7 @@ GRAPH config:Theatre {
     elmo:informationProduct config:OnderdelenTaxonomieData;
     elmo:appearance [ a elmo:TreeAppearance];
     elmo:contains config:Menu;
+    elmo:contains config:Footer;
   .
 
   config:DomeinTaxonomie a elmo:Representation;
@@ -40,6 +42,7 @@ GRAPH config:Theatre {
     elmo:informationProduct config:DomeinTaxonomieData;
     elmo:appearance [ a elmo:TreeAppearance];
     elmo:contains config:Menu;
+    elmo:contains config:Footer;
   .
 
 }

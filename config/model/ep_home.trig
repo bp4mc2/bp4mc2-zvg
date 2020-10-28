@@ -27,6 +27,7 @@ GRAPH config:Theatre {
     elmo:contains config:Taxonomie;
     elmo:contains config:Hoofdbegrippen;
     elmo:contains config:HoofdbegrippenGraph;
+    elmo:contains config:Footer;
   .
 
   config:HomeAppearance a elmo:HtmlAppearance;
@@ -37,6 +38,12 @@ GRAPH config:Theatre {
     elmo:stage config:Stage;
     elmo:informationProduct config:MenuData;
     elmo:appearance [a elmo:NavbarSearchAppearance];
+  .
+
+  config:Footer a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:FooterData;
+    elmo:appearance [a elmo:FooterAppearance];
   .
 
   config:Hoofdbegrippen a elmo:Representation;

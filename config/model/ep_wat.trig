@@ -14,6 +14,7 @@ GRAPH config:Theatre {
     elmo:informationProduct config:WatData;
     elmo:appearance config:WatAppearance;
     elmo:contains config:Menu;
+    elmo:contains config:Footer;
   .
 
   config:WatAppearance a elmo:TableAppearance;

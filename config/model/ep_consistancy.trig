@@ -15,6 +15,7 @@ GRAPH config:Theatre {
     elmo:appearance config:RoleConsistancyAppearance;
     elmo:contains config:Menu;
     elmo:contains config:ClassConsistancy;
+    elmo:contains config:Footer;
   .
 
   config:RoleConsistancyAppearance a elmo:TableAppearance;

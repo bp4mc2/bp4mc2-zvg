@@ -14,7 +14,8 @@ GRAPH config:Theatre {
     elmo:informationProduct config:HandelingenData;
     elmo:appearance config:HandelingenAppearance;
     elmo:contains config:Menu;
-  .
+    elmo:contains config:Footer;
+.
 
   config:HandelingenAppearance a elmo:TableAppearance;
     elmo:fragment [

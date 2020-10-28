@@ -1,0 +1,45 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:FooterData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:query """
+      prefix elmo1: <http://bp4mc2.org/elmo/def#>
+      prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      CONSTRUCT {
+        []
+          elmo1:html '''
+            <div class="row">
+              <div class="col-sm-3">
+                <h4>Links</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://github.com/bp4mc2/bp4mc2-zvg">Github bronbestanden</a>
+                  </li>
+                  <li>
+                    <a href="https://zorgeloosvastgoed.nl">Zorgeloosvastgoed</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <p>Deze taxonomie bevat definities, toelichtingen en uitleg van alle begrippen die in het Zorgeloos Vastgoed stelsel worden gebruikt. Ze zijn bedoeld om te helpen dit stelsel en communicatie-uitingen daarover te begrijpen. Waar dit van toepassing is wordt altijd de verwijzing naar de bron in bijvoorbeeld de wet benoemd. Voor de juridische betekenis prevaleert altijd de tekst in de formele juridische bron. De taxonomie is nog in ontwikkeling en heeft de status concept.</p>
+              </div>
+              <div class="col-sm-3">
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                  <li>Tel: 070 330 7111</li>
+                  <li>Email: info@zorgeloosvastgoed.nl</li>
+                </ul>
+            	</div>
+            </div>
+          '''
+        .
+      }
+      WHERE {}
+    """
+  .
+
+}

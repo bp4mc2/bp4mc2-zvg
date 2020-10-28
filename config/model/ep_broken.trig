@@ -15,6 +15,7 @@ GRAPH config:Theatre {
     elmo:appearance config:BrokenLinksAppearance;
     elmo:contains config:Menu;
     elmo:contains config:MissingLinks;
+    elmo:contains config:Footer;
   .
 
   config:BrokenLinksAppearance a elmo:TableAppearance;

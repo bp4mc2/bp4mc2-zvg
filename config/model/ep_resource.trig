@@ -23,6 +23,7 @@ GRAPH config:Theatre {
     elmo:contains config:Content;
     elmo:contains config:Graph;
     elmo:contains config:Datasets;
+    elmo:contains config:Footer;
     elmo:appearance [a elmo:HiddenAppearance];
     elmo:informationProduct config:ResourceData;
   .
@@ -65,6 +66,7 @@ GRAPH config:Theatre {
     elmo:contains config:DomeinTaxonomie;
     elmo:contains config:Content;
     elmo:contains config:Graph;
+    elmo:contains config:Footer;
     elmo:appearance [a elmo:HiddenAppearance];
     elmo:informationProduct config:ResourceData;
   .

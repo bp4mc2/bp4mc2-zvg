@@ -15,6 +15,7 @@ GRAPH config:Theatre {
     elmo:appearance config:MissingDefinitionsAppearance;
     elmo:contains config:Menu;
     elmo:contains config:MissingSource;
+    elmo:contains config:Footer;
   .
 
   config:MissingDefinitionsAppearance a elmo:TableAppearance;

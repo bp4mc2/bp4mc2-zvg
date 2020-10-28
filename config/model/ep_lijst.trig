@@ -15,7 +15,8 @@ GRAPH config:Theatre {
     elmo:appearance config:LijstAppearance;
     elmo:contains config:Menu;
     elmo:contains config:Index;
-  .
+    elmo:contains config:Footer;
+.
 
   config:LijstAppearance a elmo:TableAppearance;
     elmo:fragment [
