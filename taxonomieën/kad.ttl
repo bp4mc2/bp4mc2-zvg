@@ -80,14 +80,14 @@
 #---
 #Actors and Agents
 kad:DeDienst a skos:Concept, skoslex:Actor;
-	skos:exactMatch brk:De_dienst;
+#	skos:exactMatch brk:De_dienst;
 	rdfs:label "De dienst";
 	skos:definition "De dienst is De dienst voor het kadaster en de openbare registers. Hij bezit rechtspersoonlijkheid.";
 	skos:comment "De dienst is de Dienst voor het Kadaster en de openbare registers. Het Kadaster houdt in de openbare registers bij welke rechten gelden op registergoederen. Dat is een wettelijke taak. Iedereen die een recht wil laten gelden op een registergoed, is verplicht de bijbehorende notariële akten in de openbare registers te laten bijschrijven.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0006463&hoofdstuk=1&artikel=2>;
 .
 kad:Bewaarder a skos:Concept, skoslex:Actor;
-	skos:exactMatch brk:Bewaarder;
+#	skos:exactMatch brk:Bewaarder;
 	rdfs:label "Bewaarder"@nl;
 	skos:definition "De bewaarder is een functionaris die onverminderd het bepaalde bij of krachtens de Kadasterwet of een andere wet, belast is met het verrichten van inschrijvingen in de openbare registers en het stellen van aantekeningen in die registers, en het bijwerken van de basisregistratie kadaster, de registratie voor schepen en de registratie voor luchtvaartuigen.";
 	rdfs:comment "De bewaarder is iemand die bij het Kadaster werkt. Hij schrijft stukken in, in de openbare registers en de basisregistratie Kadaster. Hij zorgt ervoor dat dit volgens de Kadasterwet gebeurt.";
@@ -95,7 +95,7 @@ kad:Bewaarder a skos:Concept, skoslex:Actor;
 #	skosthes:broaderGeneric zv:Rechtspersoon; beter: BevoegdAmbtenaar
 .
 kad:Rechthebbende a skos:Concept, skoslex:Actor;
-	skos:exactMatch brk:Rechthebbende;
+#	skos:exactMatch brk:Rechthebbende;
 	rdfs:label "Rechthebbende"@nl;
 	skos:prefLabel "Rechthebbende";
 	skos:definition "Een rechthebbende is een eigenaar en degene aan wie een niet onder de omschrijving van eigenaar benoemd beperkt recht toebehoort waaraan een tot het blok behorende onroerende zaak is onderworpen, de huurder van zulk een zaak, of degene aan wie met betrekking tot zulk een zaak een recht als bedoeld in artikel 252 van Boek 6 van het Burgerlijk Wetboek toebehoort.";
@@ -108,7 +108,7 @@ kad:Rechthebbende a skos:Concept, skoslex:Actor;
 #--
 #Acts
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
-	skos:exactMatch brk:Doorhaling_Hypotheek;
+#	skos:exactMatch brk:Doorhaling_Hypotheek;
 	rdfs:label "Doorhaling hypotheek"@nl;
 	skos:prefLabel "Doorhaling hypotheek";
 	#skos:altLabel "Doorhalen"; staat niet in Kadaster taxonomie
@@ -122,7 +122,7 @@ kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor kad:Bewaarder;
 .
 kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
-	skos:exactMatch "Meting_kadastrale_grens";
+#	skos:exactMatch "Meting_kadastrale_grens";
 	rdfs:label "Meting kadastrale grens"@nl;
 	skos:prefLabel "Meting kadastrale grens";
 	skos:definition "Meting Kadastrale Grens is het vaststellen van een kadastrale grens tussen percelen op basis van inlichtingen van belanghebbenden.";
@@ -132,7 +132,7 @@ kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
 	skoslex:actor kad:DeDienst;
 .
 kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
-	skos:exactMatch kad:Inschrijving;
+#	skos:exactMatch kad:Inschrijving;
 	rdfs:label "Inschrijving openbare registers"@nl;
 	skos:prefLabel "Inschrijving openbare registers";
 	skos:definition "Inschrijving openbare registers is het proces waarbij de ter inschrijving aangeboden stukken worden opgenomen in de openbare registers.";
@@ -158,9 +158,10 @@ kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
 #--
 #Objects, records
 kad:BasisregistratieAdressenEnGebouwen a skos:Concept, skoslex:Object;
+	rdfs:label "Basisregistratie Adressen en Gebouwen";
 .
 kad:Adres a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Adres;
+#	skos:exactMatch brk:Adres;
 	rdfs:label "Adres"@nl;
 	skos:prefLabel "Adres";
 	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats";
@@ -168,7 +169,7 @@ kad:Adres a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
 .
 kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Basisregistratie_Kadaster;
+#	skos:exactMatch brk:Basisregistratie_Kadaster;
 	rdfs:label "Basisregistratie Kadaster";
 	skos:pref:Label "Basisregistratie Kaaster";
 	skos:definition "Een Basisregistratie Kadaster is een basisregistratie, bestaande uit administratieve gegevens met betrekking tot onroerende zaken en de landelijke kadastrale kaart.";
@@ -177,7 +178,7 @@ kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a>
 .
 kad:BeperktRecht a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Beperkt_recht;
+#	skos:exactMatch brk:Beperkt_recht;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
 	#skos:altLabel "Bezwaard";#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Komt niet voor in Kadaster taxonomie
@@ -445,7 +446,7 @@ kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Openbare_registers;
+#	skos:exactMatch brk:Openbare_registers;
 	rdfs:label "Openbare registers"@nl;
 	skos:prefLabel "Openbare registers";
 	skos:definition "Een openbaar register is een register waarin feiten die voor de rechtstoestand van registergoederen van belang zijn, worden ingeschreven.";

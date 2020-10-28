@@ -306,7 +306,7 @@ mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 	#skos:scopeNote "Artikel 2 van de model koopovereenkomst.";
 	skoslex:isAbout fin:Aflossen;
-	skoslex:isAbout kad:DoorhalenHypotheek;
+	skoslex:isAbout kad:DoorhalingHypotheek;
 	skoslex:isAbout not:Grondslagwaarde;
 	skoslex:isAbout not:Kadasterkosten;
 	skoslex:isAbout not:Notariskosten;
