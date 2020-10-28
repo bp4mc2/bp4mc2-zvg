@@ -154,7 +154,7 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
-	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden
+	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden, bijvoorbeeld een gemachtigde. Dit begrip moet nog geintroduceerd worden.
 	skos:prefLabel "Identificeren voor akte (notaris)";
 	skos:altLabel "Identificatie comparant";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
@@ -181,7 +181,7 @@ not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
-	skosthes:broaderGeneric not:IdentificerenNotaris;
+	skosthes:broaderGeneric not:IdentificerenAkteNotaris;
 .
 not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van vervreemder/verkrijger (leveringsakte)"@nl;
@@ -198,7 +198,7 @@ not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-	skosthes:broaderGeneric not:IdentificerenNotaris;
+	skosthes:broaderGeneric not:IdentificerenAkteNotaris;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
@@ -233,7 +233,6 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	skoslex:actor kad:Rechthebbende;
 	skoslex:agent not:Notaris;
 	skoslex:record not:Leveringsakte;
-	skos:semanticRelation kad:Overdracht;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
