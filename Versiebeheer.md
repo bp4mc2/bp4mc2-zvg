@@ -41,4 +41,4 @@ Begrippen en collecties worden beheerd in een bepaalde ‘eenheid van beheer’.
 Het Zorgeloos Vastgoed begrippenstelsel is versieloos: <http://taxonomie.zorgeloosvastgoed.nl/id/stelsel>. Dat is er gewoon en groeit naarmate het ouder wordt. De beschrijving van dit begrippenstelsel als adms:asset heeft wel een adms:status. Zo is de status nu nog ‘in ontwikkeling’. Als het voldoende is uitgekristalliseerd en de externe review is afgerond, wordt de status ‘volledig’. 
  
 ##	API specificaties
-#	Eisen, normen, policies
+##	Eisen, normen, policies
