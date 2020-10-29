@@ -1,5 +1,5 @@
 # Basisconcepten
-##1	Work versus expression
+##	Work versus expression
 De standaard voor het verwijzen naar bibliografische bronnen is frbr (Functional Requirements for Bibliographic Records). Frbr is een breed gedragen standaard die is ontwikkeld door de IFLA (International Federation of Library Associations and Institutions). Hij wordt onder andere gebruikt in wetten.nl. Frbr maakt het mogelijk te verwijzen naar ‘iets’ (in het algemeen) en naar dat ‘iets’ zoals dat op een bepaald moment bekend was. Frbr kent daartoe 2 belangrijke concepten:
 *	Frbr:work 	Een beschrijving, zonder dat expliciet wordt verwezen naar een specifieke versie.
 *	Frbr:expression	Een specifieke versie van een werk.
