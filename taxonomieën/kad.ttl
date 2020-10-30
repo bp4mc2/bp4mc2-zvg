@@ -233,16 +233,6 @@ kad:Beslag a skos:Concept;
 #	skos:semanticRelation kad:BeperktRecht;
 #	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
 #.
-#kad:BijzondereLasten a skos:Concept;
-#	rdfs:label "Bijzondere lasten"@nl;
-#	skos:prefLabel "Bijzondere lasten";
-#	skos:definition "De verkoper is verplicht de onroerende zaak in eigendom over te dragen vrij van alle bijzondere lasten en beperkingen, met uitzondering van die welke de koper uitdrukkelijk heeft aanvaard.";
-#	rdfs:comment "Bijzondere lasten zijn juridische lasten/ beperkingen die op de onroerende zaak rusten. Dit kunnen privaatrechtelijke lasten/ beperkingen zijn zoals (lijdende) erfdienstbaarheden, kwalitatieve verplichtingen en zogenoemde ‘kettingbedingen’. Op grond van zulke lasten/ beperkingen heeft een ander (dan de eigenaar) een aanspraak op de onroerende zaak (bijvoorbeeld een recht van overpad over de grond). Het kan ook gaan om publiekrechtelijke lasten/ beperkingen zoals een besluit van het college van B & W tot het vestigen van een wettelijk voorkeursrecht. Een bijzondere publiekrechtelijke last/ beperking vindt haar grondslag in een specifiek tegen de onroerende zaak gericht besluit.";
-#	skosthes:narrowerGeneric kad:KwalitatieveVerplichting;
-#	skosthes:narrowerGeneric kad:Kettingbeding;
-#	skosthes:narrowerGeneric kad:DienendeErf;
-#	skosthes:narrowerGeneric kad:Voorkeursrecht;
-#.
 kad:Canon a skos:Concept;
 	skos:exactMatch kad:Canon;
 	rdfs:label "Canon"@nl;
