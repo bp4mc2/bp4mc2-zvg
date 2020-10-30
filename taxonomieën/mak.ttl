@@ -401,7 +401,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 	skoslex:isAbout mak:Asbest;
 	skoslex:isAbout kad:BeschermdStadsDorpsgezicht;
 	skoslex:isAbout kad:Bestemmingsplan;
-	skoslex:isAbout kad:BijzondereLasten;
+	skoslex:isAbout not:BijzondereLasten;
 	skoslex:isAbout kad:DienendeErf;
 	skoslex:isAbout kad:Eigendomsrecht;
 	skoslex:isAbout kad:GemeentelijkMonument;
