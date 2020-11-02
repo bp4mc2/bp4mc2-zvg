@@ -25,6 +25,9 @@
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
 #Burgerlijk wetboek
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3>  rdfs:label "Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=2> rdfs:label "artikel 2 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1> rdfs:label "artikel 3, eerste lid, van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=10> rdfs:label "artikel 10 van Boek 3 van het Burgerlijk Wetboek".
@@ -199,7 +202,7 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 kad:Beslag a skos:Concept;
-	skos:exactMatch brk:Beslag
+	skos:exactMatch brk:Beslag;
 	rdfs:label "Beslag"@nl;
 	skos:prefLabel "Beslag";
 	skos:definition "Een Beslag is een voorlopige maatregel waarbij de overheid, al dan niet op vordering van een belanghebbende, bepaalde zaken aan iemands vrije beschikking onttrekt, of wel deze onder zich neemt.";
@@ -211,7 +214,7 @@ kad:Beslag a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 .
 kad:Bezwaard a skos:Concept;
-#	skos:exactMatch brk:Bezwaard -> nog te definiëren
+#	skos:exactMatch brk:Bezwaard; -> nog te definiëren
 	rdfs:label "Bezwaard"@nl;
 	skos:prefLabel "Bezwaard";
 	skos:definition "Een recht kan worden bezwaard met een beperkt recht dat is afgeleid uit dit meer omvattende recht.";
@@ -317,6 +320,16 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	#skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Gemeentelijk_monument>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
+.
+kad:Goed a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Goed;
+	rdfs:label "Goed"@nl;
+	skos:prefLabel "Goed";
+	skos:definition "Een goed is een zaak of een vermogensrecht.";
+	rdfs:comment "Een goed is een zaak of een vermogensrecht. Een zaak is een concreet voorwerp dat is ontstaan door de natuur of door de mens. Een vermogensrecht is dat iemand een recht heeft dat een geldwaarde heeft en dat hij aan een ander kan geven.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=1>;
+	skosthes:narrowerGeneric kad:Vermogensrecht;
+	skosthes:narrowerGeneric kad:Zaak;
 .
 kad:HeersendeErf a skos:Concept, skoslex:Object;
 	rdfs:label "Heersende erf"@nl;
@@ -559,7 +572,17 @@ kad:TotaalbedragInschrijving a skos:Concept;
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
 	skos:semanticRelation not:RechtVanHypotheek;
 .
+kad:Vermogensrecht a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Vermogensrecht;
+	rdfs:label "Vermogensrecht"@nl;
+	skos:prefLabel "Vermogensrecht";
+	skos:definition "Een Vermogensrecht is een recht dat, hetzij afzonderlijk hetzij tezamen met een ander recht, overdraagbaar is, of er toe strekt de rechthebbende stoffelijk voordeel te verschaffen, ofwel verkregen is in ruil voor, verstrekt of in het vooruitzicht gesteld, stoffelijk voordeel.";
+	rdfs:comment "Een vermogensrecht is dat iemand een recht heeft dat een geldwaarde heeft en dat hij aan een ander kan geven. Hij kan het recht gebruiken om een ander geld te geven. Of hij kan het recht krijgen in ruil voor geld dat hij zelf heeft betaald of gaat betalen. Voorbeelden van vermogensrechten zijn aandelen en lijfrenten.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3>;
+
+.
 kad:Vernummering a skos:Concept, skoslex:Record;
+	skos:exactMatch brk:Vernummering;
 	rdfs:label "Vernummering"@nl;
 	skos:prefLabel "Vernummering";
 	skos:definition "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
@@ -605,6 +628,14 @@ kad:WerkelijkeGrootte a skos:Concept;
 	skos:prefLabel "Werkelijke grootte";
 	skosthes:broaderGeneric kad:KadastraleGrootte;
 	skos:semanticRelation kad:Perceel;
+.
+kad:Zaak a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Zaak;
+	rdfs:label "Zaak"@nl;
+	skos:prefLabel "Zaak";
+	skos:definition "Een zaak is een voor menselijke beheersing vatbaar stoffelijk object.";
+	rdfs:comment "Een zaak is een tastbaar iets dat is ontstaan door de natuur of door een mens.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=2>;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Zakelijk recht"@nl;
