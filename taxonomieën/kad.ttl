@@ -80,14 +80,14 @@
 #---
 #Actors and Agents
 kad:DeDienst a skos:Concept, skoslex:Actor;
-#	skos:exactMatch brk:De_dienst;
+	skos:exactMatch brk:De_dienst;
 	rdfs:label "De dienst";
 	skos:definition "De dienst is De dienst voor het kadaster en de openbare registers. Hij bezit rechtspersoonlijkheid.";
 	rdfs:comment "De dienst is de Dienst voor het Kadaster en de openbare registers. Het Kadaster houdt in de openbare registers bij welke rechten gelden op registergoederen. Dat is een wettelijke taak. Iedereen die een recht wil laten gelden op een registergoed, is verplicht de bijbehorende notariële akten in de openbare registers te laten bijschrijven.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0006463&hoofdstuk=1&artikel=2>;
 .
 kad:Bewaarder a skos:Concept, skoslex:Actor;
-#	skos:exactMatch brk:Bewaarder;
+	skos:exactMatch brk:Bewaarder;
 	rdfs:label "Bewaarder"@nl;
 	skos:definition "De bewaarder is een functionaris die onverminderd het bepaalde bij of krachtens de Kadasterwet of een andere wet, belast is met het verrichten van inschrijvingen in de openbare registers en het stellen van aantekeningen in die registers, en het bijwerken van de basisregistratie kadaster, de registratie voor schepen en de registratie voor luchtvaartuigen.";
 	rdfs:comment "De bewaarder is iemand die bij het Kadaster werkt. Hij schrijft stukken in, in de openbare registers en de basisregistratie Kadaster. Hij zorgt ervoor dat dit volgens de Kadasterwet gebeurt.";
@@ -95,7 +95,7 @@ kad:Bewaarder a skos:Concept, skoslex:Actor;
 #	skosthes:broaderGeneric zv:Rechtspersoon; beter: BevoegdAmbtenaar
 .
 kad:Rechthebbende a skos:Concept, skoslex:Actor;
-#	skos:exactMatch brk:Rechthebbende;
+	skos:exactMatch brk:Rechthebbende;
 	rdfs:label "Rechthebbende"@nl;
 	skos:prefLabel "Rechthebbende";
 	skos:definition "Een rechthebbende is een eigenaar en degene aan wie een niet onder de omschrijving van eigenaar benoemd beperkt recht toebehoort waaraan een tot het blok behorende onroerende zaak is onderworpen, de huurder van zulk een zaak, of degene aan wie met betrekking tot zulk een zaak een recht als bedoeld in artikel 252 van Boek 6 van het Burgerlijk Wetboek toebehoort.";
@@ -108,7 +108,7 @@ kad:Rechthebbende a skos:Concept, skoslex:Actor;
 #--
 #Acts
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
-#	skos:exactMatch brk:Doorhaling_Hypotheek;
+	skos:exactMatch brk:Doorhaling_hypotheek;
 	rdfs:label "Doorhaling hypotheek"@nl;
 	skos:prefLabel "Doorhaling hypotheek";
 	#skos:altLabel "Doorhalen"; staat niet in Kadaster taxonomie
@@ -122,7 +122,7 @@ kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:actor kad:Bewaarder;
 .
 kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
-#	skos:exactMatch "Meting_kadastrale_grens";
+	skos:exactMatch brk:Meting_kadastrale_grens;
 	rdfs:label "Meting kadastrale grens"@nl;
 	skos:prefLabel "Meting kadastrale grens";
 	skos:definition "Meting Kadastrale Grens is het vaststellen van een kadastrale grens tussen percelen op basis van inlichtingen van belanghebbenden.";
@@ -132,7 +132,7 @@ kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
 	skoslex:actor kad:DeDienst;
 .
 kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
-#	skos:exactMatch kad:Inschrijving;
+	skos:exactMatch brk:Inschrijving;
 	rdfs:label "Inschrijving openbare registers"@nl;
 	skos:prefLabel "Inschrijving openbare registers";
 	skos:definition "Inschrijving openbare registers is het proces waarbij de ter inschrijving aangeboden stukken worden opgenomen in de openbare registers.";
@@ -147,7 +147,7 @@ kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
         #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 .
 kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
-	#skos:exactMatch nog te definieren
+#	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster; -> nog te definiëren
 	rdfs:label "Bijwerking basisregistratie Kadaster";
 	skos:prefLabel "Bijwerking basisregistratie Kadaster";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53>;
@@ -166,13 +166,13 @@ kad:Basisregistratie a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 .
 kad:BasisregistratieAdressenEnGebouwen a skos:Concept, skoslex:Object;
-#	skos:exactMatch brk:Basisregistratie_adressen_en_gebouwen;
+#	skos:exactMatch brk:Basisregistratie_adressen_en_gebouwen; -> nog te definiëren
 	rdfs:label "Basisregistratie Adressen en Gebouwen"@nl;
 	skos:prefLabel "Basisregistratie Adressen en Gebouwen";
 	skosthes:broaderPartitive kad:Basisregistratie;
 .
 kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
-#	skos:exactMatch brk:Basisregistratie_Kadaster;
+	skos:exactMatch brk:Basisregistratie_Kadaster;
 	rdfs:label "Basisregistratie Kadaster"@nl;
 	skos:prefLabel "Basisregistratie Kadaster";
 	skos:definition "Een Basisregistratie Kadaster is een basisregistratie, bestaande uit administratieve gegevens met betrekking tot onroerende zaken en de landelijke kadastrale kaart.";
@@ -181,7 +181,7 @@ kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a>
 .
 kad:Adres a skos:Concept, skoslex:Object;
-#	skos:exactMatch brk:Adres;
+	skos:exactMatch brk:Adres;
 	rdfs:label "Adres"@nl;
 	skos:prefLabel "Adres";
 	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats";
@@ -193,22 +193,13 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Beperkt_recht;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht";
-	#skos:altLabel "Bezwaard";#Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Komt niet voor in Kadaster taxonomie
 	skos:definition "Een beperkt recht is een recht dat is afgeleid uit een meer omvattend Recht, hetwelk met het Beperkte recht is bezwaard.";
 	rdfs:comment "Een beperkt recht is dat iemand geen volledig recht heeft op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
-#kad:BeschermdStadsDorpsgezicht a skos:Concept;
-#	komt niet voor in de Kadaster taxonomie
-#	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
-#	skos:prefLabel "Beschermd stads-/dorpsgezicht";
-#	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
-#	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
-#.
 kad:Beslag a skos:Concept;
-	skos:exactMatch kad:Beslag
+	skos:exactMatch brk:Beslag
 	rdfs:label "Beslag"@nl;
 	skos:prefLabel "Beslag";
 	skos:definition "Een Beslag is een voorlopige maatregel waarbij de overheid, al dan niet op vordering van een belanghebbende, bepaalde zaken aan iemands vrije beschikking onttrekt, of wel deze onder zich neemt.";
@@ -219,22 +210,17 @@ kad:Beslag a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 .
-#kad:Bestemmingsplan a skos:Concept;
-#	rdfs:label "Bestemmingsplan"@nl;
-#	skos:prefLabel "Bestemmingsplan";
-#	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
-#.
-#kad:Bezwaard a skos:Concept;
-# komt niet voor in de Kadaster taxonomie - stond ook als altLabel bij BeperktRecht
-#	rdfs:label "Bezwaard"@nl;
-#	skos:prefLabel "Bezwaard";
-#	skos:definition "Belast, bijvoorbeeld met een hypotheek."; #Bij Arjen Santema (Kadaster) gevraagd deze definitie te (laten) controleren.
-#	skos:semanticRelation kad:BeperktRecht;
-#	skos:editorialNote "Deze term wordt vaak gebruikt in een akte dat iets is bezwaard of dat er volmacht is gegeven tot bezwaring. Daarom als apart object.";
-#.
-kad:Canon a skos:Concept;
-	skos:exactMatch kad:Canon;
+kad:Bezwaard a skos:Concept;
+#	skos:exactMatch brk:Bezwaard -> nog te definiëren
+	rdfs:label "Bezwaard"@nl;
+	skos:prefLabel "Bezwaard";
+	skos:definition "Een recht kan worden bezwaard met een beperkt recht dat is afgeleid uit dit meer omvattende recht.";
+	rdfs:comment "Wanneer een recht wordt bezwaard met een beperkt recht heeft iemand geen volledig recht op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
+		dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
+skos:semanticRelation kad:BeperktRecht;
+.
+kad:Canon a skos:Concept
+	skos:exactMatch brk:Canon;
 	rdfs:label "Canon"@nl;
 	skos:prefLabel "Canon";
 	skos:altLabel "Erfpachtcanon";
@@ -245,6 +231,7 @@ kad:Canon a skos:Concept;
 	skosthes:broaderPartitive kad:Erfpachtvoorwaarden;
 .
 kad:DienendeErf a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Dienende_erf;
 	rdfs:label "Dienende erf"@nl;
 	skos:prefLabel "Dienende erf";
 	skos:altLabel "Lijdend erf";
@@ -255,18 +242,33 @@ kad:DienendeErf a skos:Concept, skoslex:Object;
   	skos:semanticRelation kad:Erfdienstbaarheid;
   	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
-kad:EeuwigdurendeErfpacht a skos:Concept;
-	rdfs:label "Eeuwigdurende erfpacht"@nl;
-	skos:prefLabel "Eeuwigdurende erfpacht";
-	skos:definition "Erfpachtcontract voor een onbepaalde tijd waarbij, in tegenstelling tot voortdurende erfpacht, de erfpachtkosten nog maar een keer bepaald.";
-	skosthes:broaderGeneric kad:Erfpacht;
-        #ToDo: check op definitie door Kadaster
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
-.
-kad:Eigendomsrecht a skos:Concept, skoslex:Object;
-	rdfs:label "Eigendomsrecht"@nl;
-	skos:prefLabel "Eigendomsrecht";
-	skos:altLabel "Eigendom";
+#not:EeuwigdurendeErfpacht a skos:Concept;
+#	rdfs:label "Eeuwigdurende erfpacht"@nl;
+#	skos:prefLabel "Eeuwigdurende erfpacht";
+#	skos:definition "Bij eeuwigdurende erfpacht is het economisch recht van de grond voor eens en voor altijd gevestigd.";
+#	skosthes:broaderGeneric kad:Erfpacht;
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+#.
+#not:VoortdurendeErfpacht a skos:Concept;
+#	rdfs:label "Voordturende erfpacht"@nl;
+#	skos:prefLabel "Voortdurende erfpacht";
+#	skos:definition "Bij voortdurende erfpacht is in principe sprake van eeuwigdurende erfpacht, met dien verstande dat deze eventueel tussentijds bij het einde van een tijdvak kan eindigen als de grondeigenaar en de erfpachter geen overeenstemming kunnen bereiken over de erfpachtvoorwaarden van het nieuwe tijdvak. Dit laatste is overigens hypothetisch zodat in de praktijk naar tijdsindeling de eeuwigdurende erfpacht en de voortdurende erfpacht hetzelfde uitpakken.";
+#	skosthes:broaderGeneric kad:Erfpacht;
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+#.
+#not:TijdelijkeErfpacht a skos:Concept;
+#	rdfs:label "Tijdelijke erfpacht"@nl;
+#	skos:prefLabel "Tijdelijke erfpacht";
+#	skos:definition "Bij tijdelijke erfpacht eindigt het recht aan het einde van de termijn waarvoor het is aangegaan. Hierbij geldt wel dat het in de praktijk voorkomt dat erfpachtrechten in voorkomende gevallen ‘tijdelijk’ genoemd worden doch in de praktijk ‘voortdurend’ zijn omdat ze strikt genomen uitgaan van continuering bij het einde van het tijdvak.";
+#	skosthes:broaderGeneric kad:Erfpacht;
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+#.
+
+kad:Eigendom a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Eigendom;
+	rdfs:label "Eigendom"@nl;
+	skos:prefLabel "Eigendom";
+	skos:altLabel "Eigendomsrecht";
 	skos:definition "Eigendom is een Zakelijk recht dat het meest omvattende recht is wat een persoon op een zaak kan hebben.";
 	rdfs:comment "Eigendom is het meest omvattende recht dat iemand of een organisatie op een zaak kan hebben.";
         skos:scopeNote "Het staat de eigenaar met uitsluiting van een ieder vrij van de zaak gebruik te maken, mits dit gebruik niet strijdt met rechten van anderen en de op wettelijke voorschriften en regels van ongeschreven recht gegronde beperkingen daarbij in acht worden genomen.";
@@ -276,12 +278,13 @@ kad:Eigendomsrecht a skos:Concept, skoslex:Object;
 	skos:semanticRelation zv:Persoon;
 	#skos:semanticRelation kad:Zaak;#Begrip moet nog worden opgenomen
 .
-kad:Erfpachtvoorwaarden a skos:Concept;
-	rdfs:label "Erfpachtvoorwaarden"@nl;
-	skos:prefLabel "Erfpachtvoorwaarden";
-	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
-	skosthes:broaderPartitive kad:Erfpacht;
-.
+#not:Erfpachtvoorwaarden a skos:Concept;
+#	rdfs:label "Erfpachtvoorwaarden"@nl;
+#	skos:prefLabel "Erfpachtvoorwaarden";
+#	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+#	skos:semanticRelation kad:Erfpacht;
+#.
 kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	rdfs:label "Erfdienstbaarheid"@nl;
 	skos:prefLabel "Erfdienstbaarheid";
@@ -635,3 +638,18 @@ kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	dcterms:type "PDF download";
 	dcat:servesDataset <http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie>;
 .
+#Begrippen in bestemmingsplan, straks omgevingsplan -> beheer door gemeenten
+#kad:BeschermdStadsDorpsgezicht a skos:Concept;
+#	komt niet voor in de Kadaster taxonomie
+#	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
+#	skos:prefLabel "Beschermd stads-/dorpsgezicht";
+#	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
+#	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
+#.
+#kad:Bestemmingsplan a skos:Concept;
+#	rdfs:label "Bestemmingsplan"@nl;
+#	skos:prefLabel "Bestemmingsplan";
+#	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
+#.
