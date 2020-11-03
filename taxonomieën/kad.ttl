@@ -71,6 +71,30 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Wet basisregistratie adressen en gebouwen".
 
 #--
+#Links naar originele Kadaster taxonomie (brk:)
+#--
+#Dit is vast niet goed, maar er moet hier toch  iets komen te staan om te kunnen toetsen op skosap:ExternalConcept a sh:NodeShape.
+#brk:De_dienst a skos:Concept (extern).
+#brk:Bewaarder a skos:Concept (extern).
+#brk:Rechthebbende a skos:Concept (extern).
+#brk:Doorhaling_hypotheek a skos:Concept (extern).
+#brk:Meting_kadastrale_grens a skos:Concept (extern).
+#brk:Inschrijving a skos:Concept (extern).
+#kad:Basisregistratie a skos:Concept (extern).
+#brk:Basisregistratie_Kadaster a skos:Concept (extern).
+#brk:Adres a skos:Concept (extern).
+#brk:Beperkt_recht a skos:Concept (extern).
+#brk:Beslag a skos:Concept (extern).
+#brk:Canon a skos:Concept (extern).
+#brk:Dienende_erf a skos:Concept (extern).
+#brk:Eigendom a skos:Concept (extern).
+#brk:Gerechtigde a skos:Concept (extern).
+#brk:Goed a skos:Concept (extern).
+#brk:Recht a skos:Concept (extern).
+#brk:Vermogensrecht a skos:Concept (extern).
+#brk:Zaak a skos:Concept (extern).
+
+#--
 #Basisregistratie links
 #Test of dit werkt.
 #--
@@ -212,14 +236,13 @@ kad:Beslag a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 .
-kad:Bezwaard a skos:Concept;
-#	skos:exactMatch brk:Bezwaard; -> nog te definiëren
-	rdfs:label "Bezwaard"@nl;
-	skos:prefLabel "Bezwaard";
-	skos:definition "Een recht kan worden bezwaard met een beperkt recht dat is afgeleid uit dit meer omvattende recht.";
-	rdfs:comment "Wanneer een recht wordt bezwaard met een beperkt recht heeft iemand geen volledig recht op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
-		dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
-skos:semanticRelation kad:BeperktRecht;
+#kad:Bezwaard a skos:Concept; De vraag is of we ook relaties willen definiëren. Onderstaande definitie is een andere formulering van de definitie van BeperktRecht.
+#	rdfs:label "Bezwaard"@nl;
+#	skos:prefLabel "Bezwaard";
+#	skos:definition "Een recht kan worden bezwaard met een beperkt recht dat is afgeleid uit dit meer omvattende recht.";
+#	rdfs:comment "Wanneer een recht wordt bezwaard met een beperkt recht heeft iemand geen volledig recht op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
+#		dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
+#skos:semanticRelation kad:BeperktRecht;
 .
 kad:Canon a skos:Concept
 	skos:exactMatch brk:Canon;
@@ -256,9 +279,10 @@ kad:Eigendom a skos:Concept, skoslex:Object;
 	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FEigendom>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 	skos:semanticRelation zv:Persoon;
-	#skos:semanticRelation kad:Zaak;#Begrip moet nog worden opgenomen
+	skos:semanticRelation kad:Zaak;
 .
 kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Erfdienstbaarheid;
 	rdfs:label "Erfdienstbaarheid"@nl;
 	skos:prefLabel "Erfdienstbaarheid";
 	skos:altLabel "Servituut";
@@ -291,6 +315,17 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
+kad:Gerechtigde a skos:Concept
+	skos:exactMatch brk:Gerechtigde;
+	rdfs:label "Gerechtigde"@nl;
+	skos:prefLabel "Gerechtigde";
+	skos:definition "Een gerechtigde is een natuurlijk persoon of rechtspersoon met enig recht op een goed.";
+	rdfs:comment "Een gerechtigde is een mens of een rechtspersoon die recht heeft op een zaak of die een vermogensrecht heeft.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
+	skosthes:broaderGeneric zv:Persoon;
+	skos:semanticRelation kad:Goed;
+.
+
 kad:Goed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Goed;
 	rdfs:label "Goed"@nl;
@@ -423,7 +458,6 @@ kad:OnroerendMonument a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004471&hoofdstuk=I&artikel=1>;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
-#Goederen bestaan uit zaken en vermogensrechten.” Zaken kunnen vervolgens weer onderverdeeld worden in roerende zaken en onroerende zaken. Deze objecten kunnen in een later stadium worden toegevoegd.
 kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	rdfs:label "Onroerende zaak"@nl;
 	skos:prefLabel "Onroerende zaak";
@@ -434,6 +468,7 @@ kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	skos:definition "Onroerend zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken. Onroerende zaken kunnen bezwaard worden met een beperkt of zakelijk recht.";
 	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
+	skosthes:broaderGeneric kad:Zaak
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 #	skos:exactMatch brk:Openbare_registers;
@@ -508,6 +543,13 @@ kad:Rang a skos:Concept;
 	skos:semanticRelation not:RechtVanHypotheek;
   skos:semanticRelation fin:Onderpand;
 .
+kad:Recht a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Recht;
+	rdfs:label "Recht"@nl;
+	skos:prefLabel "Recht";
+	skos:definition "Een recht is een door het objectieve recht verleende en beschermde bevoegdheid van een persoon.";
+	rdfs:comment "Een recht is iets wat iemand of een organisatie volgens de geschreven en ongeschreven regels mag.";
+.
 kad:Registergoed a skos:Concept, skoslex:Object;
 	rdfs:label "Registergoed"@nl;
 	skos:prefLabel "Registergoed";
@@ -549,7 +591,7 @@ kad:Vermogensrecht a skos:Concept, skoslex:Object;
 	skos:definition "Een Vermogensrecht is een recht dat, hetzij afzonderlijk hetzij tezamen met een ander recht, overdraagbaar is, of er toe strekt de rechthebbende stoffelijk voordeel te verschaffen, ofwel verkregen is in ruil voor, verstrekt of in het vooruitzicht gesteld, stoffelijk voordeel.";
 	rdfs:comment "Een vermogensrecht is dat iemand een recht heeft dat een geldwaarde heeft en dat hij aan een ander kan geven. Hij kan het recht gebruiken om een ander geld te geven. Of hij kan het recht krijgen in ruil voor geld dat hij zelf heeft betaald of gaat betalen. Voorbeelden van vermogensrechten zijn aandelen en lijfrenten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3>;
-
+	skosthes:broaderGeneric kad:Recht;
 .
 kad:Vernummering a skos:Concept, skoslex:Record;
 	skos:exactMatch brk:Vernummering;
@@ -608,13 +650,15 @@ kad:Zaak a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=2>;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Zakelijk_recht;
 	rdfs:label "Zakelijk recht"@nl;
 	skos:prefLabel "Zakelijk recht";
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
 	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
 	skos:scopeNote "Met een zakelijk recht wordt bedoeld een recht dat samenhangt met een zaak of een goed. Dit in tegenstelling met een persoonlijk recht, een recht dat samenhangt met de persoon. Om het verschil tussen beide rechten duidelijk te maken een voorbeeld. Eigendom is een zakelijk recht. Dat betekent onder meer dat het recht niet eindigt door het overlijden van de eigenaar. Als een eigenaar overlijdt vallen al zijn eigendommen in zijn nalatenschap. Huur is een persoonlijk recht. Door het overlijden van de huurder eindigt in principe wel de huur. Zakelijke rechten zijn, behalve het recht van eigendom, de rechten van erfpacht, opstal, vruchtgebruik, gebruik en bewoning en erfdienstbaarheid. Een Zakelijk recht kan zijn een zakelijk genotsrecht of een zakelijk zekerheidsrecht";
-	#skos:exactMatch brk:Zakelijk_recht;
+	skosthes:boraderGeneric kad:Vermogensrecht;
 	skos:semanticRelation kad:Rechthebbende;
+	skos:semanticRelation kad:Zaak;
 .
 #---
 # Voorbeeldsituatie uitwerking metadata-link
