@@ -453,9 +453,9 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	#skos:scopeNote "Optie B van artikel 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
 	skoslex:isAbout kad:Canon;
-	skoslex:isAbout kad:Erfpachtvoorwaarden;
+	skoslex:isAbout not:Erfpachtvoorwaarden;
 	skoslex:isAbout kad:HerzieningErfpacht;
-	skoslex:isAbout kad:VoortdurendeErfpacht;
+	skoslex:isAbout not:VoortdurendeErfpacht;
 .
 mak:Asbest a skos:Concept;
 	rdfs:label "Asbest"@nl;
