@@ -68,7 +68,6 @@
 <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1> rdfs:label "Artikel 1 Natuurschoonwet 1928".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0027565> rdfs:label "Mandaatbesluit beschermde stads- en dorpsgezichten".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1> rdfs:label "artikel 3.1 van de Wet ruimtelijke ordening".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2> rdfs:label "bijlage 2 van de Regeling toegelaten instellingen volkshuisvesting 2015".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Wet basisregistratie adressen en gebouwen".
 
 #--
