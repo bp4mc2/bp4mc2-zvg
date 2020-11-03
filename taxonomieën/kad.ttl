@@ -245,28 +245,6 @@ kad:DienendeErf a skos:Concept, skoslex:Object;
   	skos:semanticRelation kad:Erfdienstbaarheid;
   	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
-#not:EeuwigdurendeErfpacht a skos:Concept;
-#	rdfs:label "Eeuwigdurende erfpacht"@nl;
-#	skos:prefLabel "Eeuwigdurende erfpacht";
-#	skos:definition "Bij eeuwigdurende erfpacht is het economisch recht van de grond voor eens en voor altijd gevestigd.";
-#	skosthes:broaderGeneric kad:Erfpacht;
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
-#.
-#not:VoortdurendeErfpacht a skos:Concept;
-#	rdfs:label "Voordturende erfpacht"@nl;
-#	skos:prefLabel "Voortdurende erfpacht";
-#	skos:definition "Bij voortdurende erfpacht is in principe sprake van eeuwigdurende erfpacht, met dien verstande dat deze eventueel tussentijds bij het einde van een tijdvak kan eindigen als de grondeigenaar en de erfpachter geen overeenstemming kunnen bereiken over de erfpachtvoorwaarden van het nieuwe tijdvak. Dit laatste is overigens hypothetisch zodat in de praktijk naar tijdsindeling de eeuwigdurende erfpacht en de voortdurende erfpacht hetzelfde uitpakken.";
-#	skosthes:broaderGeneric kad:Erfpacht;
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
-#.
-#not:TijdelijkeErfpacht a skos:Concept;
-#	rdfs:label "Tijdelijke erfpacht"@nl;
-#	skos:prefLabel "Tijdelijke erfpacht";
-#	skos:definition "Bij tijdelijke erfpacht eindigt het recht aan het einde van de termijn waarvoor het is aangegaan. Hierbij geldt wel dat het in de praktijk voorkomt dat erfpachtrechten in voorkomende gevallen ‘tijdelijk’ genoemd worden doch in de praktijk ‘voortdurend’ zijn omdat ze strikt genomen uitgaan van continuering bij het einde van het tijdvak.";
-#	skosthes:broaderGeneric kad:Erfpacht;
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
-#.
-
 kad:Eigendom a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Eigendom;
 	rdfs:label "Eigendom"@nl;
@@ -281,13 +259,6 @@ kad:Eigendom a skos:Concept, skoslex:Object;
 	skos:semanticRelation zv:Persoon;
 	#skos:semanticRelation kad:Zaak;#Begrip moet nog worden opgenomen
 .
-#not:Erfpachtvoorwaarden a skos:Concept;
-#	rdfs:label "Erfpachtvoorwaarden"@nl;
-#	skos:prefLabel "Erfpachtvoorwaarden";
-#	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
-#	skos:semanticRelation kad:Erfpacht;
-#.
 kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	rdfs:label "Erfdienstbaarheid"@nl;
 	skos:prefLabel "Erfdienstbaarheid";
