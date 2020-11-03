@@ -230,7 +230,7 @@ kad:Canon a skos:Concept
 	skos:definition "Het canon is een verplichting aan de erfpachter om de eigenaar op al dan niet regelmatig terugkerende tijdstippen een geldsom te betalen. Deze verplichting wordt opgelegd in de akte van vestiging.";
 	rdfs:comment "Een canon is een geldbedrag dat iemand regelmatig moet betalen voor het recht om gebruik te maken van een stuk grond.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
-	skosthes:broaderPartitive kad:Erfpachtvoorwaarden;
+	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
 .
 kad:DienendeErf a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Dienende_erf;
@@ -317,7 +317,7 @@ kad:HerzieningErfpacht a skos:Concept;
 	skos:altLabel "Herziening erfpacht";
 	skos:altLabel "Herziening canon";
 	skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
-	skosthes:broaderPartitive kad:Erfpachtvoorwaarden;
+	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
 	skos:semanticRelation kad:Canon;
 .
 kad:Huurkoopovereenkomst a skos:Concept, skoslex:Object;
