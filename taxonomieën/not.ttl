@@ -48,11 +48,10 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 van Boek 7 van het Burgerlijk Wetboek".
 
-#Registratieweg
+#Diverse
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
-
-#Wet op belasting van rechtsverkeer (WBR)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2> rdfs:label "bijlage 2 van de Regeling toegelaten instellingen volkshuisvesting 2015".
 
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -512,6 +511,20 @@ not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;
 	skos:definition "Datum waarop de akte van levering wordt gepasseerd.";
 	rdfs:comment "Datum waarop de akte van levering wordt ondertekend.";
 .
+not:EeuwigdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
+	rdfs:label "Eeuwigdurende erfpacht"@nl;
+	skos:prefLabel "Eeuwigdurende erfpacht";
+	skos:definition "Bij eeuwigdurende erfpacht is het economisch recht van de grond voor eens en voor altijd gevestigd.";
+	skosthes:broaderGeneric kad:Erfpacht;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+.
+not:Erfpachtvoorwaarden a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
+	rdfs:label "Erfpachtvoorwaarden"@nl;
+	skos:prefLabel "Erfpachtvoorwaarden";
+	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+	skos:semanticRelation kad:Erfpacht;
+.
 not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Grondslagwaarde"@nl;
 	skos:prefLabel "Grondslagwaarde";
@@ -654,6 +667,13 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	skos:semanticRelation kad:OnroerendeZaak;
 	skos:semanticRelation fin:Lening;
 .
+not:TijdelijkeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
+	rdfs:label "Tijdelijke erfpacht"@nl;
+	skos:prefLabel "Tijdelijke erfpacht";
+	skos:definition "Bij tijdelijke erfpacht eindigt het recht aan het einde van de termijn waarvoor het is aangegaan. Hierbij geldt wel dat het in de praktijk voorkomt dat erfpachtrechten in voorkomende gevallen ‘tijdelijk’ genoemd worden doch in de praktijk ‘voortdurend’ zijn omdat ze strikt genomen uitgaan van continuering bij het einde van het tijdvak.";
+	skosthes:broaderGeneric kad:Erfpacht;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+.
 not:Titel a skos:Concept, skoslex:Record;
 	rdfs:label "Titel"@nl;
 	skos:prefLabel "Titel";
@@ -690,4 +710,11 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	skos:scopeNote "De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	#Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
+.
+not:VoortdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
+	rdfs:label "Voordturende erfpacht"@nl;
+	skos:prefLabel "Voortdurende erfpacht";
+	skos:definition "Bij voortdurende erfpacht is in principe sprake van eeuwigdurende erfpacht, met dien verstande dat deze eventueel tussentijds bij het einde van een tijdvak kan eindigen als de grondeigenaar en de erfpachter geen overeenstemming kunnen bereiken over de erfpachtvoorwaarden van het nieuwe tijdvak. Dit laatste is overigens hypothetisch zodat in de praktijk naar tijdsindeling de eeuwigdurende erfpacht en de voortdurende erfpacht hetzelfde uitpakken.";
+	skosthes:broaderGeneric kad:Erfpacht;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
 .
