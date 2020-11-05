@@ -39,6 +39,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 van Boek 6 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=2b&afdeling=2&paragraaf=1&artikel=101> rdfs:label "artikel 101 van Boek 7 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308> rdfs:label "artikel 1308 van Boek 8 van het Burgerlijk Wetboek".
 
 #Wetboek van Burgerlijke Rechtsvordering
@@ -76,6 +77,7 @@
 #Dit is vast niet goed, maar er moet hier toch  iets komen te staan om te kunnen toetsen op skosap:ExternalConcept a sh:NodeShape.
 #brk:De_dienst a skos:Concept (extern).
 #brk:Bewaarder a skos:Concept (extern).
+#brk:Beding a skos:Concept (extern).
 #brk:Rechthebbende a skos:Concept (extern).
 #brk:Doorhaling_hypotheek a skos:Concept (extern).
 #brk:Meting_kadastrale_grens a skos:Concept (extern).
@@ -90,7 +92,21 @@
 #brk:Eigendom a skos:Concept (extern).
 #brk:Gerechtigde a skos:Concept (extern).
 #brk:Goed a skos:Concept (extern).
+#brk:Heersende_erf a skos:Concept (extern).
+#brk:Hoofdsom a skos:concept (extern).
+#brk:Huurkoop a skos:concept (extern).
+#brk:Kadastrale_aanduiding a skos:concept (extern).
+#brk:Kettingbeding a skos:concept (extern).
+#brk:Kwalitatieve_verplichting a skos:concept (extern).
+#brk:Grootte a skos:concept (extern).
+#brk:Kadastrale_grootte a skos:concept (extern).
+#brk:Landgoed a skos:concept (extern).
+#brk:Nummeraanduiding a skos:concept (extern).
+#brk:Onroerende_zaak a skos:concept (extern).
+#brk:Onroerend_monument a skos:concept (extern).
+#brk:Overeenkomst a skos:concept (extern).
 #brk:Recht a skos:Concept (extern).
+#brk:Rechtshandeling a skos:Concept (extern).
 #brk:Vermogensrecht a skos:Concept (extern).
 #brk:Zaak a skos:Concept (extern).
 
@@ -214,6 +230,15 @@ kad:Adres a skos:Concept, skoslex:Object;
 	rdfs:comment "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
 	skosthes:broaderPartitive kad:BasisregistratieAdressenEnGebouwen;
+#Je verwacht hier semantische relaties met Nummeraanduiding, OpenbareRuimte en Woonplaats -> kortsluiten met Kadaster.
+.
+kad:Beding a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Beding;
+	rdfs:label "Beding"@nl;
+	skos:prefLabel "Beding";
+	skos:definition "Een beding is een voorwaarde in een overeenkomst.";
+	rdfs:comment "Een beding is een afspraak in een overeenkomst.";
+	skos:semanticRelation kad:Overeenkomst;
 .
 kad:BeperktRecht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Beperkt_recht;
@@ -324,8 +349,8 @@ kad:Gerechtigde a skos:Concept
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	skosthes:broaderGeneric zv:Persoon;
 	skos:semanticRelation kad:Goed;
+	skos:semanticRelation kad:Recht;
 .
-
 kad:Goed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Goed;
 	rdfs:label "Goed"@nl;
@@ -336,7 +361,16 @@ kad:Goed a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Vermogensrecht;
 	skosthes:narrowerGeneric kad:Zaak;
 .
+kad:Grootte a skos:Concept; #afstemmen met Kadaster: lijkt synoniem met KadastraleGrootte
+	skos:exactMatch brk:Grootte;
+	rdfs:label "Grootte"@nl;
+	skos:prefLabel "Grootte";
+	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
+	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters..";
+	skos:semanticRelation kad:Perceel;
+.
 kad:HeersendeErf a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Heersende_erf;
 	rdfs:label "Heersende erf"@nl;
 	skos:prefLabel "Heersende erf";
 	skos:definition "Een heersende erf is een onroerende zaak waarop een erfdienstbaarheid is gevestigd ten gunste van een ieder die het heersende erf verkrijgt of gebruikt.";
@@ -346,110 +380,116 @@ kad:HeersendeErf a skos:Concept, skoslex:Object;
   	skos:semanticRelation kad:Erfdienstbaarheid;
   	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
-kad:HerzieningErfpacht a skos:Concept;
-	rdfs:label "Herziening erfpacht"@nl;
-	skos:prefLabel "Herziening";
-	skos:altLabel "Herziening erfpacht";
-	skos:altLabel "Herziening canon";
-	skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
-	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
-	skos:semanticRelation kad:Canon;
+kad:Hoofdsom a skos:Concept; #Afstemmen met Kadaster of Inschrijvingsbedrag of BedragZekerheidstellingHypotheek niet beter is als term
+	skos:exactMatch brk:Hoofdsom;
+	rdfs:label "Hoofdsom"@nl;
+	skos:prefLabel "Hoofdsom";
+	skos:altLabel "Inschrijvingsbedrag";
+	skos:definition "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
+	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
+	rdfs:comment "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
+	skos:semanticRelation kad:RechtVanHypotheek;
 .
-kad:Huurkoopovereenkomst a skos:Concept, skoslex:Object;
-	rdfs:label "Huurkoopovereenkomst"@nl;
-	skos:prefLabel "Huurkoopovereenkomst";
-	skos:altLabel "Huurkoop";
+kad:Huurkoop a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Huurkoop; #definitie in BRK is ontleend aan vervallen wetsartikel. Moet worden aangepast aan onderstaande artikel.
+	rdfs:label "Huurkoopt"@nl;
+	skos:prefLabel "Huurkoop";
 	skos:definition "Huurkoop is de koop en verkoop op afbetaling, waarbij partijen overeenkomen, dat de verkochte zaak niet door enkele aflevering in eigendom overgaat, maar pas door vervulling van de opschortende voorwaarde van algehele betaling van wat door de koper uit hoofde van de koopovereenkomst verschuldigd is.";
 	rdfs:comment "Huurkoop is dat koper en verkoper afspreken dat de koper een goed koopt op afbetaling. Dit betekent dat de koper een deel aanbetaalt en de rest van het bedrag in delen betaalt. Pas als de koper het hele bedrag heeft betaald, wordt hij eigenaar van het goed.";
         skos:scopeNote "Van een dergelijk feit kan aantekening worden gemaakt.";
-        #http://wetten.overheid.nl/1.0:c:BWBR0006000&titel=A&afdeling=2&artikel=1576h
-        #Wetsartikel is vervallen
-        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FHuurkoop>;
-        skosthes:broaderGeneric mak:Koopovereenkomst;
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=2b&afdeling=2&paragraaf=1&artikel=101>;
+        skosthes:broaderGeneric mak:Koop;
 .
-kad:Inschrijvingsbedrag a skos:Concept;
-	rdfs:label "Inschrijvingsbedrag"@nl;
-	skos:prefLabel "Inschrijvingsbedrag";
-	skos:definition "De hypotheeknemer mag niet meer, met voorrang op andere schuldeisers van de hypotheekgever, dan het inschrijvingsbedrag ontvangen ter aflossing van de oorspronkelijke schuld. Voor zover de schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag nog wel rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan.";
-	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
-	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
-	skosthes:broaderPartitive kad:TotaalbedragInschrijving;
-.
-kad:KadastraleAanduiding a skos:Concept, skoslex:Record;
+kad:KadastraleAanduiding a skos:Concept;
+	skos:exactMatch brk:Kadastrale_aanduiding;
 	rdfs:label "Kadastrale aanduiding"@nl;
 	skos:prefLabel "Kadastrale aanduiding";
 	skos:altLabel "Kadastraal bekend";
 	skos:definition "Een Kadastrale aanduiding is een aanduiding van onroerende zaken in het Kadaster door vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de percelen en gedeelten van percelen zijn gelegen waarvan het grondgebied tot die zaak behoort, alsmede de nummers van die percelen. Appartementsrechten worden kadastraal aangeduid door de vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de splitsing betrokken percelen zijn gelegen, de complexaanduiding en de appartementsindex.";
 	rdfs:comment "Een kadastrale aanduiding is een uniek kenmerk die het Kadaster aan een onroerende zaak heeft gegeven.";
-        skos:scopeNote "Een kadastrale aanduiding is een kenmerk dat bestaat uit de kadastrale gemeente, sectie en perceelnummer. Het is een unieke door het Kadaster toegekende identificatie van een onroerende zaak. Een voorbeeld van een kadastrale aanduiding is: '''gemeente Apeldoorn, sectie K nummer 4550'''. Wanneer het een appartementsrecht betreft , bestaat de kadastrale aanduiding uit kadastrale gemeente, sectie, nummer gevolgd door de hoofdletter A en de appartementsindex (het volgnummer van het appartementsrecht). Bijvoorbeeld '''gemeente Apeldoorn sectie K nummer 4550A, appartementsindex 4.'''.";
-	skosthes:broaderGeneric kad:Adres;
+        skos:scopeNote "Een kadastrale aanduiding is een kenmerk dat bestaat uit de kadastrale gemeente, sectie en perceelnummer. Het is een unieke door het Kadaster toegekende identificatie van een onroerende zaak. Een voorbeeld van een kadastrale aanduiding is: '''gemeente Apeldoorn, sectie K nummer 4550'''. Wanneer het een appartementsrecht betreft , bestaat de kadastrale aanduiding uit kadastrale gemeente, sectie, nummer gevolgd door de hoofdletter A en de appartementsindex (het volgnummer van het appartementsrecht). Bijvoorbeeld '''gemeente Apeldoorn sectie K nummer 4550A, appartementsindex 4.";
 	skos:semanticRelation kad:OnroerendeZaak;
-	skos:semanticRelation kad:Perceel;
-	#https://tax.kadaster.nl/doc/begrip/Kadastrale_aanduiding
-	#Ook gerelateerd aan appartementsindex, appartementsrecht en complexaanduiding. Is nog niet opgenomen in taxonomie.
 .
-kad:KadastraleGemeente a skos:Concept, skoslex:Record;
+kad:KadastraleGemeente a skos:Concept, skoslex:Object;
+	skos_exactMatch brk:Kadastrale_gemeente;
 	rdfs:label "Kadastrale gemeente"@nl;
 	skos:prefLabel "Kadastrale gemeente";
 	skos:definition "Een kadastrale gemeente is een gebied dat in het algemeen samenvalt met het gebied van een burgerlijke gemeente. Als regel is dan ook de naam van de kadastrale gemeente dezelfde als die van de burgerlijke gemeente. Het gebied van een kadastrale gemeente kan ook bestaan uit slechts een deel van het gebied van een burgerlijke gemeente, doordat een opgeheven burgerlijke gemeente als kadastrale gemeente is gehandhaafd, of een deel van een burgerlijke gemeente, dat bij een andere is gevoegd, bij de toepassing der grensverandering zowel op de kadastrale kaart als in de kadastrale registratie afzonderlijk is geadministreerd en hierdoor tot kadastrale gemeente is gemaakt.";
 	rdfs:comment "Een kadastrale gemeente is een gebied dat meestal hetzelfde is als een burgerlijke gemeente. Beide namen zijn dan vaak hetzelfde. Soms bestaat de kadastrale gemeente uit een gedeelte van een burgerlijke gemeente. Dit is het geval als een burgerlijke gemeente niet meer bestaat, maar het Kadaster de naam toch heeft gehouden.";
-	skosthes:broaderPartitive kad:KadastraleAanduiding;
-	#Gerelateerd aan gemeente. Is nog niet opgenomen in taxonomie.
-	#https://tax.kadaster.nl/doc/begrip/Kadastrale_gemeente
 .
 kad:KadastraleGrootte a skos:Concept;
+	skos:exactMatch brk:Kadastrale_grootte;
 	rdfs:label "Kadastrale grootte"@nl;
 	skos:prefLabel "Kadastrale grootte";
 	skos:altLabel "Kadastergrootte";
 	skos:altLabel "Grootte";
-	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
-	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.";
-	#dcterms:source <https://www.stelselcatalogus.nl/begrippen/Perceel/BRK/Perceel/kadastraleGrootte>;
-	skos:semanticRelation kad:Perceel;
+	skos:definition "De grootte van een perceel zoals vermeld in de kadastrale registratie.";
+	rdfs:comment "De Kadastrale grootte is de oppervlakte van een stuk grond zoals deze bij het Kadaster is vastgesteld en vastgelegd.";
+	skosthes:broaderGeneric kad:Grootte;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 .
 kad:Kettingbeding a skos:Concept;
+	skos:exactMatch brk:Kettingbeding;
 	rdfs:label "Kettingbeding"@nl;
 	skos:prefLabel "Kettingbeding";
 	skos:definition "Een kettingbeding is een verbintenis dat de schuldenaar bij overdracht van een registergoed, op straffe van een boete, ten behoeve van de schuldeiser bepaalde verplichtingen, onder gelijke verbintenis, aan zijn verkrijgers moet opleggen.";
+	rdfs:comment "Een kettingbeding is een afspraak die de verkoper met de koper bij de koop van een gebouw, een stuk grond, vliegtuig of schip maakt. Deze afspraak houdt in dat de koper een verplichting heeft en dat hij deze verplichting ook aan een volgdende koper moet opleggen. Als hij dit niet doe, moet hij een boete aan de verkoper betalen.";
+	skosthes:broaderGeneric kad:KwalitatieveVerplichting
 .
 kad:KwalitatieveVerplichting a skos:Concept;
+	skos:exactMatch brk:Kwalitatieve_verplichting;
 	rdfs:label "Kwalitatieve verplichting"@nl;
 	skos:prefLabel "Kwalitatieve verplichting";
-	skos:definition "Een Kwalitatieve Verplichting is een overeenkomst waarbij bedongen wordt dat de verplichting van een van de partijen om iets te dulden of niet te doen ten aanzien van een haar toebehorend registergoed , zal overgaan op degenen die het goed onder bijzondere titel zullen verkrijgen, en dat mede gebonden zullen zijn degenen die van de rechthebbende een recht tot gebruik van het goed zullen verkrijgen.";
+	skos:definition "Een Kwalitatieve Verplichting is een overeenkomst waarbij bedongen wordt dat de verplichting van een van de partijen om iets te dulden of niet te doen ten aanzien van een haar toebehorend registergoed, zal overgaan op degenen die het goed onder bijzondere titel zullen verkrijgen, en dat mede gebonden zullen zijn degenen die van de rechthebbende een recht tot gebruik van het goed zullen verkrijgen.";
 	rdfs:comment "Een Kwalitatieve Verplichting is een afspraak om iets toe te staan, of om iets niet te doen, met een gebouw of stuk grond. Deze afspraak geldt ook voor iemand die het gebouw of stuk grond gebruikt of krijgt door overdracht, verjaring of onteigening.";
         skos:scopeNote "Tevens gaat de kwalitatieve verplichting over op rechtsopvolgers. De kwalitatieve verplichting moet worden aangegaan bij notariële akte.Van een dergelijke overeenkomst kan een aantekening worden gemaakt. Een dergelijke verplichting is niet nodig bij verkrijging onder algemene titel, aangezien bij een dergelijke verkrijging de kwalitatieve verplichting van rechtswege voortgezet wordt.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252>;
+	skos:broaderGeneric kad:Overeenkomst;
+	skos:broaderGeneric kad:Recht;
 .
-kad:NaamVanEenOpenbareRuimte a skos:Concept, skoslex:Object;
-	rdfs:label "Naam van een openbare ruimte"@nl;
-	skos:prefLabel "Naam van een openbare ruimte";
-	skos:definition "De naam van een openbare ruimte is de door het bevoegde gemeentelijke orgaan aan een openbare ruimte toegekende benaming en een authentiek gegeven.";
-	rdfs:comment "De naam openbare ruimte is de naam die de gemeente heeft gegeven aan een openbare ruimte.";
-	skosthes:broaderPartitive kad:Adres;
-.
-kad:NaamVanEenWoonplaats a skos:Concept, skoslex:Object;
-	rdfs:label "Naam van een woonplaats"@nl;
-	skos:prefLabel "Naam van een woonplaats";
-	skos:definition "De naam van een woonplaats is de door het bevoegde gemeentelijke orgaan aan een woonplaats toegekende benaming en een authentiek gegeven.";
-	rdfs:comment "De naam van een woonplaats is de naam die de gemeente aan een woonplaats heeft gegeven.";
-	skosthes:broaderPartitive kad:Adres;
-.
-kad:NSWLandgoed a skos:Concept, skoslex:Object;
-	rdfs:label "NSW-landgoed"@nl;
-	skos:prefLabel "NSW-landgoed";
-	skos:definition "Een NSW-landgoed is een in Nederland gelegen, geheel of gedeeltelijk met natuurterreinen, bossen of andere houtopstanden bezette onroerende zaak - daaronder begrepen die waarop een buitenplaats of andere, bij het karakter van het landgoed passende, opstallen voorkomen - voor zover het blijven voortbestaan van die onroerende zaak in zijn karakteristieke verschijningsvorm voor het behoud van het natuurschoon wenselijk is.";
+#kad:NaamVanEenOpenbareRuimte a skos:Concept, skoslex:Object;
+#	rdfs:label "Naam van een openbare ruimte"@nl;
+#	skos:prefLabel "Naam van een openbare ruimte";
+#	skos:definition "De naam van een openbare ruimte is de door het bevoegde gemeentelijke orgaan aan een openbare ruimte toegekende benaming en een authentiek gegeven.";
+#	rdfs:comment "De naam openbare ruimte is de naam die de gemeente heeft gegeven aan een openbare ruimte.";
+#	skosthes:broaderPartitive kad:Adres;
+#.
+#kad:NaamVanEenWoonplaats a skos:Concept, skoslex:Object;
+#	rdfs:label "Naam van een woonplaats"@nl;
+#	skos:prefLabel "Naam van een woonplaats";
+#	skos:definition "De naam van een woonplaats is de door het bevoegde gemeentelijke orgaan aan een woonplaats toegekende benaming en een authentiek gegeven.";
+#	rdfs:comment "De naam van een woonplaats is de naam die de gemeente aan een woonplaats heeft gegeven.";
+#	skosthes:broaderPartitive kad:Adres;
+#.
+kad:Landgoed a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Landgoed;
+	rdfs:label "Landgoed"@nl;
+	skos:prefLabel "Landgoed";
+	skos:altLabel "NSW-landgoed";
+	skos:definition "Een landgoed is een in Nederland gelegen, geheel of gedeeltelijk met natuurterreinen, bossen of andere houtopstanden bezette onroerende zaak - daaronder begrepen die waarop een buitenplaats of andere, bij het karakter van het landgoed passende, opstallen voorkomen - voor zover het blijven voortbestaan van die onroerende zaak in zijn karakteristieke verschijningsvorm voor het behoud van het natuurschoon wenselijk is.";
+	rdfs:comment "Een landgoed is een groot stuk grond met natuur, bos of andere bomen en struiken. Soms staat er ook een landhuis of een ander soort gebouw op dat past bij het karakter van het terrein. Het is belangrijk dat het terrein blijft bestaan omdat het een bijzondere betekenis heeft voor de natuur.";
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1>;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
 kad:Nummeraanduiding a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Nummeraanduiding;
 	rdfs:label "Nummeraanduiding"@nl;
 	skos:prefLabel "Nummeraanduding";
 	skos:definition "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.";
 	rdfs:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
-	skosthes:broaderPartitive kad:Adres;
-	#Bestaat uit huisnummer, huisnummertoevoeging en huisletter
+.
+kad:OnroerendeZaak a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Onroerende_zaak;
+	rdfs:label "Onroerende zaak"@nl;
+	skos:prefLabel "Onroerende zaak";
+	skos:altLabel "Onroerend goed";
+	skos:definition "Onroerend zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken. Onroerende zaken kunnen bezwaard worden met een beperkt of zakelijk recht.";
+	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
+	skosthes:broaderGeneric kad:Zaak
 .
 kad:OnroerendMonument a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Onroerend_monument;
 	rdfs:label "Onroerend monument"@nl;
 	skos:prefLabel "Onroerend monument";
 	skos:altLabel "Monument";
@@ -457,18 +497,6 @@ kad:OnroerendMonument a skos:Concept, skoslex:Object;
 	rdfs:comment "Een onroerend monument is een stuk grond, gebouw of ander bouwwerk dat belangrijk is voor de samenleving omdat het bijzonder mooi is of omdat het een bijzondere wetenschappelijke of cultuurhistorische betekenis heeft.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004471&hoofdstuk=I&artikel=1>;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
-.
-kad:OnroerendeZaak a skos:Concept, skoslex:Object;
-	rdfs:label "Onroerende zaak"@nl;
-	skos:prefLabel "Onroerende zaak";
-	skos:altLabel "Onroerend goed";
-	skos:altLabel "Object";
-	skos:altLabel "Pand";
-	skos:altLabel "Zaak";
-	skos:definition "Onroerend zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken. Onroerende zaken kunnen bezwaard worden met een beperkt of zakelijk recht.";
-	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
-	skosthes:broaderGeneric kad:Zaak
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 #	skos:exactMatch brk:Openbare_registers;
@@ -486,16 +514,14 @@ kad:OpgegevenGrootte a skos:Concept;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skos:semanticRelation kad:Perceel;
 .
-kad:Optierecht a skos:Concept, skoslex:Object;
-	rdfs:label "Optierecht"@nl;
-	skos:prefLabel "Optierecht";
-	skos:altLabel "Zakelijk optierecht";
-	skos:definition "Een optierecht is een zakelijk recht, bestaande in het recht van de houder van het luchtvaartuig om na betaling van een zeker bedrag of na vervulling van enige andere voorwaarde de eigendom daarvan krachtens een door hem reeds gesloten of nog te sluiten koopovereenkomst te verkrijgen. In de notariële akte voor de vestiging van dit recht, wordt duidelijk het aan dit recht onderworpen luchtvaartuig vermeld.";
-	rdfs:comment "Een optierecht is het recht van de houder van een luchtvaartuig om dit vaartuig later te kopen en eigenaar te worden. Voordat hij eigenaar wordt, moet hij een afgesproken bedrag betalen of aan bepaalde voorwaarden voldoen. Hij moet altijd een koopovereenkomst ondertekenen. Het optierecht wordt geregeld via een akte bij de notaris. Daarin staat duidelijk om welk luchtvaartuig het gaat.";
-        skos:scopeNote "Een optierecht is alleen mogelijk op een luchtvaartuig.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308>;
-        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FOptierecht>;
-        skosthes:broaderGeneric kad:ZakelijkRecht;
+kad:Overeenkomst a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Overeenkomst;
+	rdfs:label "Overeenkomst"@nl;
+	skos:prefLabel "Overeenkomst";
+	skos:definition "Een overeenkomst is een meerzijdige rechtshandeling, waarbij een of meer partijen jegens een of meer andere partijen een verbintenis aan gaan.";
+	rdfs:comment "Een overeenkomst is een afspraak tussen twee of meer partijen";
+	skos:semanticRelation zv:Partij; 
+	skosthes:broaderGeneric kad:Rechtshandeling;
 .
 kad:PlaatselijkBekend a skos:Concept, skoslex:Record;
 	rdfs:label "Plaatselijk bekend"@nl;
@@ -550,6 +576,15 @@ kad:Recht a skos:Concept, skoslex:Object;
 	skos:definition "Een recht is een door het objectieve recht verleende en beschermde bevoegdheid van een persoon.";
 	rdfs:comment "Een recht is iets wat iemand of een organisatie volgens de geschreven en ongeschreven regels mag.";
 .
+kad:Rechtshandeling a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Rechtshandeling;
+	rdfs:label "Rechtshandeling"@nl;
+	skos:prefLabel "Rechtshandeling";
+	skos:definition "Een rechtshandeling is een handeling van een persoon met de bedoeling om een bepaald rechtsgevolg tot stand te brengen.";
+	rdfs:comment "Een rechtshandeling is dat een persoon of rechtspersoon iets doet om een juridisch doel te bereiken. Dit doel noemen juristen een 'rechtsgevolg'.";
+	skos:scopeNote "Een rechtshandeling vereist een op een rechtsgevolg gerichte wil die zich door een verklaring heeft geopenbaard.";
+	skos:semanticRelation zv:Persoon; 
+.
 kad:Registergoed a skos:Concept, skoslex:Object;
 	rdfs:label "Registergoed"@nl;
 	skos:prefLabel "Registergoed";
@@ -575,14 +610,6 @@ kad:Sectie a skos:Concept, skoslex:Record;
 	rdfs:comment "Een sectie is een gedeelte van een kadastrale gemeente.";
 	skosthes:broaderPartitive kad:KadastraleAanduiding;
 	#https://tax.kadaster.nl/doc/begrip/Sectie
-.
-kad:TotaalbedragInschrijving a skos:Concept;
-	rdfs:label "Totaalbedrag van de inschrijving"@nl;
-	skos:prefLabel "Totaalbedrag van de inschrijving";
-	skos:definition "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
-	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
-	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
-	skos:semanticRelation not:RechtVanHypotheek;
 .
 kad:Vermogensrecht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Vermogensrecht;
