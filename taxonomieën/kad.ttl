@@ -62,7 +62,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53> rdfs:label "artikel 53 van de Kadasterwet".
 
 #Erfgoedwet
-<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=3&paragraaf=3.1&artikel=3.3> rdfs:label "Artikel 3.3 Erfgoedwet".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=1&artikel=1.1> rdfs:label "Artikel 1.1 Erfgoedwet".
 
 #Diverse
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004471&hoofdstuk=I&artikel=1> rdfs:label "artikel 1 van de Monumentenwet 1988".
@@ -90,7 +90,10 @@
 #brk:Canon a skos:Concept (extern).
 #brk:Dienende_erf a skos:Concept (extern).
 #brk:Eigendom a skos:Concept (extern).
+#brk:Erfpacht a skos:Concept (extern).
+#brk:Gemeentelijk_monument a skos:Concept (extern).
 #brk:Gerechtigde a skos:Concept (extern).
+#brk:Geschatte_grootte a skos:Concept (extern).
 #brk:Goed a skos:Concept (extern).
 #brk:Heersende_erf a skos:Concept (extern).
 #brk:Hoofdsom a skos:concept (extern).
@@ -105,6 +108,12 @@
 #brk:Onroerende_zaak a skos:concept (extern).
 #brk:Onroerend_monument a skos:concept (extern).
 #brk:Overeenkomst a skos:concept (extern).
+#brk:Perceel a skos:concept (extern).
+#brk:Provinciaal_monument a skos:concept (extern).
+#brk:Publiekrechtelijke_beperking a skos:concept (extern).
+#brk:Rangwisseling a skos:concept (extern).
+#brk:Registergoed a skos:concept (extern).
+#brk:sectie a skos:concept (extern).
 #brk:Recht a skos:Concept (extern).
 #brk:Rechtshandeling a skos:Concept (extern).
 #brk:Vermogensrecht a skos:Concept (extern).
@@ -320,6 +329,7 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	skos:semanticRelation kad:KwalitatieveVerplichting;
 .
 kad:Erfpacht a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Erfpacht;
 	rdfs:label "Erfpacht"@nl;
 	skos:prefLabel "Erfpacht";
 	skos:altLabel "Recht van erfpacht";
@@ -330,13 +340,13 @@ kad:Erfpacht a skos:Concept, skoslex:Object;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Gemeentelijk_monument;
 	rdfs:label "Gemeentelijk monument"@nl;
 	skos:prefLabel "Gemeentelijk monument";
 	skos:definition "Een Gemeentelijk monument is een onroerend monument aangewezen door een bestuursorgaan van de gemeente.";
 	rdfs:comment "Een gemeentelijk monument is een gebouw dat volgens een gemeente zo waardevol is dat het beschermd moet worden.";
 	skos:scopeNote "Een monument is een gebouw met cultuurhistorische of wetenschappelijke waarde. In Nederland zijn er verschillende typen monumenten: rijksmonumenten, provinciale monumenten, gemeentelijke monumenten en beschermde stadsgezichten of dorpsgezichten. Als een gebouw van plaatselijk of regionaal belang is, kan de gemeente het op de gemeentelijke monumentenlijst zetten. De gemeente kan monumenten zelf, of op verzoek van een belanghebbende, aanwijzen. De gemeentelijke monumentencommissie geeft hierover een advies.Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een gemeente besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-	#skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Gemeentelijk_monument>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
@@ -350,6 +360,15 @@ kad:Gerechtigde a skos:Concept
 	skosthes:broaderGeneric zv:Persoon;
 	skos:semanticRelation kad:Goed;
 	skos:semanticRelation kad:Recht;
+.
+kad:GeschatteGrootte a skos:Concept;
+	skos:exactMatch brk:Geschatte_grootte;
+	rdfs:label "Geschatte grootte"@nl;
+	skos:prefLabel "Geschatte grootte";
+	skos:definition "De geschatte grootte is de oppervlakte van een gedeeltelijk perceel die door of namens partijen bij de overdracht is aangegeven in de notariële akte voordat er een meting heeft plaatsgevonden.";
+	rdfs:comment "De geschatte grootte van een perceel is de geschatte oppervlakte van een stuk grond voordat er een meting namens het Kadaster is gedaan.";
+	skos:scopeNote "Bij levering van kadastrale percelen wordt in de notariele akte meestal een geschatte grootte van het verkochte opgenomen. Tot uitmeting van het perceel heeft plaatsgevonden (zie ook aanwijs) wordt bij de onroerende zaak in de Basisregistratie Kadaster de geschatte grootte vermeld. Pas na de uitmeting wordt op basis van de bestaande en de nieuwe grenzen de nieuwe kadastrale grootte berekend.";
+	skosthes:broaderGeneric Grootte;
 .
 kad:Goed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Goed;
@@ -499,20 +518,12 @@ kad:OnroerendMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
-#	skos:exactMatch brk:Openbare_registers;
+	skos:exactMatch brk:Openbare_registers;
 	rdfs:label "Openbare registers"@nl;
 	skos:prefLabel "Openbare registers";
 	skos:definition "Een openbaar register is een register waarin feiten die voor de rechtstoestand van registergoederen van belang zijn, worden ingeschreven.";
 	rdfs:comment "Openbare registers zijn registers waarin je alle notariële akten vindt die betrekking hebben op registergoederen in Nederland. De inschrijving in het openbaar register is nodig om het eigendomsrecht van een registergoed te krijgen.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16>
-.
-kad:OpgegevenGrootte a skos:Concept;
-	rdfs:label "Opgegeven grootte"@nl;
-	skos:prefLabel "Opgegeven grootte";
-	skosthes:broaderGeneric kad:KadastraleGrootte;
-#	skos:closeMatch kad:WerkelijkeGrootte;
-			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
-	skos:semanticRelation kad:Perceel;
 .
 kad:Overeenkomst a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Overeenkomst;
@@ -523,51 +534,44 @@ kad:Overeenkomst a skos:Concept, skoslex:Act;
 	skos:semanticRelation zv:Partij; 
 	skosthes:broaderGeneric kad:Rechtshandeling;
 .
-kad:PlaatselijkBekend a skos:Concept, skoslex:Record;
-	rdfs:label "Plaatselijk bekend"@nl;
-	skos:prefLabel "Plaatselijk bekend";
-	skos:definition "De plaatselijke benaming, zo deze bekend is.";
-	skosthes:broaderGeneric kad:Adres;
-	skos:semanticRelation kad:OnroerendeZaak;
-.
 kad:Perceel a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Perceel;
 	rdfs:label "Perceel"@nl;
 	skos:prefLabel "Perceel";
 	skos:definition "Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.";
-	rdfs:comment "Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft. Het nummer is uniek binnen de sectie van de kadastrale gemeente waarin het perceel zich bevindt.";
+	rdfs:comment "Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
-        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPerceel>;
 .
 kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Provinciaal_monument;
 	rdfs:label "Provinciaal monument"@nl;
 	skos:prefLabel "Provinciaal monument";
 	skos:definition "Een Provinciaal monument is een onroerend monument aangewezen door een bestuursorgaan van de provincie.";
 	rdfs:comment "Een provinciaal monument is een gebouw of ander bouwwerk dat volgens de provincie een monument is omdat het heel bijzonder is.";
 	skos:scopeNote "Een dergelijke aanwijzing vindt plaats met een beperkingenbesluit. Hiervan kan aantekening worden gemaakt. Uit een dergelijk beperkingenbesluit vloeit een publiekrechtelijke beperking voort. Voordat een onroerend monument een beschermd monument wordt, kan een provincie besluiten om al wel de richtlijnen van een beschermd monument van toepassing te laten verklaren. Het is dus nog geen beschermd monument, maar alle richtlijnen zijn er al wel op van toepassing.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-	#skos:exactMatch <http://brk.basisregistraties.overheid.nl/id/begrip/Provinciaal_monument>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:PubliekrechtelijkeBeperking a skos:Concept;
+	skos:exactMatch brk:Publiekrechtelijke_beperking;
 	rdfs:label "Publiekrechtelijke beperking"@nl;
 	skos:prefLabel "Publiekrechtelijke beperking";
 	skos:definition "Een publiekrechtelijke beperking is een beperking van de bevoegdheid tot gebruik van of beschikking over een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen, niet zijnde een privaatrechtelijke beperking en/of een schuldplichtigheid die rust op een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen.";
 	rdfs:comment "Een publiekrechtelijke beperking is dat de overheid besluit dat iemand niet alles met een huis of stuk grond mag doen. Of niet alles mag doen met de rechten die hij heeft op een huis of stuk grond. Bij een publiekrechtelijke beperking gaat het niet om een beperking volgens het privaatrecht. Ook een schuld voor een huis kan geen publiekrechtelijke beperking zijn.";
 	skos:scopeNote "Onder een publiekrechtelijke beperking wordt verstaan iedere inbreuk op het recht van gebruik en beschikking van onroerende zaken, welke krachtens wet- of regelgeving door de overheid wordt gemaakt. Het zijn door de overheid opgelegde beperkingen. Deze beperkingen bepalen wat wel of niet met een stuk grond of gebouw mag gebeuren. Het aanwijzingsbesluit bevat een overzicht waaruit de verschillende publiekrechtelijke beperkingen gehaald kunnen worden. Hierbij gaat het om bijvoorbeeld: •beschermde monumenten; •beschermde leefomgeving (natuurmonumenten); •bodembescherming (verplichting tot registratie van verontreinigde grond); •maatregelen nodig voor de landsverdediging; •eisen die in het kader van de Woningwet worden gesteld, zoals middelen om bepaalde voorzieningen voor een pand af te kunnen dwingen.";
-	#dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FPubliekrechtelijke_beperking>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-  rdfs:seeAlso kad:BeperktRecht;
+	skosthes:broaderGeneric kad:BeperktRecht;
 .
-kad:Rang a skos:Concept;
-	rdfs:label "Rang"@nl;
-	skos:prefLabel "Rang";
-	skos:altLabel "Rangorde van inschrijvingen";
-	skos:definition "Als een hypotheeknemer het eerste hypotheekrecht heeft, dan wordt diens vordering als eerste, met voorrang op andere hypotheeknemers, voldaan uit de verkoopopbrengst van het onderpand. Pas nadat de schuld aan de eerste hypotheeknemer volledig is voldaan ontvangt een eventuele tweede hypotheekhouder de verkoopopbrengst. Pas nadat alle hypotheekhouders zijn voldaan ontvangt de eigenaar van het onderpand de verkoopopbrengst van het onderpand. ";
-	rdfs:comment "De plek die een hypotheeknemer heeft ten opzichte van andere hypotheeknemers als de hypotheekgever zijn financiële verplichtingen niet nakomt.";
+kad:Rangwisseling a skos:Concept;
+	skos:exactMatch brk:Rangwisseling;
+	rdfs:label "Rangwisseling"@nl;
+	skos:prefLabel "Rangwisseling";
+	skos:definition "Een Rangwisseling is een bepaling in een notariële akte die in de openbare registers van het Kadaster wordt ingeschreven waarin wordt bepaald dat een hypotheek ten aanzien van een of meer hypotheken of andere beperkte rechten op hetzelfde goed een hogere rang heeft dan haar volgens het tijdstip van haar inschrijving toekomt, mits uit de akte blijkt dat de gerechtigden tot die andere hypotheken of beperkte rechten daarin toestemmen. ";
+	rdfs:comment "Een rangwisseling is dat een hypotheek voorrang heeft boven eerder ingeschreven hypotheken of rechten op datzelfde goed. Hiervoor is een akte van een notaris nodig die wordt ingeschreven in het openbare register van het Kadaster. In de akte staan dat degenen die recht hebben op de andere hypotheken of rechten akkoord gaan met de rangwisseling.";
+	skos:scopeNote "Bij een notariële akte die in de registers wordt ingeschreven, kan worden bepaald dat een hypotheek ten aanzien van een of meer hypotheken op het zelfde goed een hogere rang heeft dan haar volgens het tijdstip van inschrijving toekomt, mits uit de akte blijkt dat de gerechtigden tot die andere hypotheek of hypotheken daarin toestemmen. Met overeenkomstige toepassing van het eerste lid kan ook worden bepaald dat een hypotheek en een ander beperkt recht ten aanzien van elkaar worden geacht in andere volgorde te zijn ontstaan dan is geschied. Let wel: rangwisseling tussen een hypotheek en een beslag is NIET mogelijk omdat een beslag geen beperkt recht is ! Van een dergelijk feit wordt aantekening gemaakt.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
 	skos:semanticRelation not:RechtVanHypotheek;
-  skos:semanticRelation fin:Onderpand;
 .
 kad:Recht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Recht;
@@ -575,6 +579,7 @@ kad:Recht a skos:Concept, skoslex:Object;
 	skos:prefLabel "Recht";
 	skos:definition "Een recht is een door het objectieve recht verleende en beschermde bevoegdheid van een persoon.";
 	rdfs:comment "Een recht is iets wat iemand of een organisatie volgens de geschreven en ongeschreven regels mag.";
+	skos:semanticRelation zv:Persoon.
 .
 kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Rechtshandeling;
@@ -586,30 +591,32 @@ kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:semanticRelation zv:Persoon; 
 .
 kad:Registergoed a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Registergoed;
 	rdfs:label "Registergoed"@nl;
 	skos:prefLabel "Registergoed";
 	skos:definition "Registergoed is een goed waarbij voor overdracht of vestiging inschrijving in daartoe bestemde openbare registers noodzakelijk is.";
 	rdfs:comment "Een registergoed is een goed waarbij inschrijving in de openbare registers van het Kadaster nodig is voordat het wordt overgedragen of er beperkte rechten op worden gevestigd.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=10>;
-	skosthes:narrowerGeneric kad:Perceel;
+	skosthes:broaderGeneric kad:Goed;
 	skosthes:narrowerGeneric kad:OnroerendeZaak;
+#Bij het Kadaster worden ook vaar- en vliegtuigen genoemd als goederen die moeten worden ingeschreven, maar deze vallen buiten de context van Zorgeloos Vastgoed.
 .
 kad:Rijksmonument a skos:Concept, skoslex:Object;
+#	skos:exactMatch brk:Rijksmonument #mist nu nog in tax.kadaster.nl
 	rdfs:label "Rijksmonument"@nl;
 	skos:prefLabel "Rijksmonument";
 	skos:altLabel "Rijksmonument in de zin van de Erfgoedwet";
-	skos:definition "Een rijksmonument in de zin van de Erfgoedwet is een monument of archeologisch monument dat is ingeschreven in het rijksmonumentenregister."@nl;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=3&paragraaf=3.1&artikel=3.3>;
+	skos:definition "Een rijksmonument is een monument of archeologisch monument dat is ingeschreven in het rijksmonumentenregister";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=1&artikel=1.1>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
-kad:Sectie a skos:Concept, skoslex:Record;
+kad:Sectie a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:sectie;
 	rdfs:label "Sectie"@nl;
 	skos:prefLabel "Sectie";
 	skos:definition "Een sectie is een administratieve opsplitsing van een kadastrale gemeente.";
 	rdfs:comment "Een sectie is een gedeelte van een kadastrale gemeente.";
-	skosthes:broaderPartitive kad:KadastraleAanduiding;
-	#https://tax.kadaster.nl/doc/begrip/Sectie
 .
 kad:Vermogensrecht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Vermogensrecht;
@@ -620,53 +627,27 @@ kad:Vermogensrecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3>;
 	skosthes:broaderGeneric kad:Recht;
 .
-kad:Vernummering a skos:Concept, skoslex:Record;
-	skos:exactMatch brk:Vernummering;
-	rdfs:label "Vernummering"@nl;
-	skos:prefLabel "Vernummering";
-	skos:definition "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
-	rdfs:comment "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
-	skosthes:broaderPartitive kad:KadastraleAanduiding;
-	#https://tax.kadaster.nl/doc/begrip/Vernummering
-.
-kad:Voorkeursrecht a skos:Concept;
-	rdfs:label "Voorkeursrecht"@nl;
-	skos:prefLabel "Voorkeursrecht";
-	skos:altLabel "Recht van voorverkoop";
-	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
-        #ToDo: check op definitie door Kadaster
-	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
-	skos:semanticRelation kad:Registergoed;
-.
-kad:VoortdurendeErfpacht a skos:Concept;
-	rdfs:label "Voortdurende erfpacht"@nl;
-	skos:prefLabel "Voortdurende erfpacht";
-	skos:definition "Erfpachtcontract voor een onbepaalde tijd met tijdvakken van -meestal- 50 jaar waarbij wordt gekeken naar de actuele grondwaarde om daar de erfpachtkosten op aan te passen.";
-	skosthes:broaderGeneric kad:Erfpacht;
-        #ToDo: check op definitie door Kadaster
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
-.
-kad:Wederinkoop a skos:Concept;
-	rdfs:label "Wederinkoop"@nl;
-	skos:prefLabel "Wederinkoop";
-	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding.";
-        #ToDo: check op definitie door Kadaster
-.
-kad:Wegneemrecht a skos:Concept, skoslex:Object;
-	rdfs:label "Wegneemrecht"@nl;
-	skos:prefLabel "Wegneemrecht";
-	skos:altLabel "Wettelijk wegneemrecht";
-	skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
-	rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
-	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
-	skos:semanticRelation kad:Erfpacht;
-.
-kad:WerkelijkeGrootte a skos:Concept;
-	rdfs:label "Werkelijke grootte"@nl;
-	skos:prefLabel "Werkelijke grootte";
-	skosthes:broaderGeneric kad:KadastraleGrootte;
-	skos:semanticRelation kad:Perceel;
+#kad:Vernummering a skos:Concept, skoslex:Record; Even geparkeerd. Wellicht beter om brk:Splitsing_onroerende_zaak te gebruiken.
+#	skos:exactMatch brk:Vernummering;
+#	rdfs:label "Vernummering"@nl;
+#	skos:prefLabel "Vernummering";
+#	skos:definition "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
+#	rdfs:comment "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
+#	skosthes:broaderPartitive kad:KadastraleAanduiding;
+#	#https://tax.kadaster.nl/doc/begrip/Vernummering
+#.
+#kad:Voorkeursrecht a skos:Concept; komt nu niet voor bij Kadaster. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
+#	rdfs:label "Voorkeursrecht"@nl;
+#	skos:prefLabel "Voorkeursrecht";
+#	skos:altLabel "Recht van voorverkoop";
+#	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
+#	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
+#	skos:semanticRelation kad:Registergoed;
+#.
+#kad:Wederinkoop a skos:Concept; komt nu niet voor bij Kadaster. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
+#	rdfs:label "Wederinkoop"@nl;
+#	skos:prefLabel "Wederinkoop";
+#	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding.";
 .
 kad:Zaak a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Zaak;
