@@ -420,7 +420,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 	skoslex:isAbout kad:Voorkeursrecht;
 	skoslex:isAbout kad:Wederinkoop;
 	skoslex:isAbout kad:WerkelijkeGrootte;
- 	skoslex:isAbout kad:Wegneemrecht;
+ 	skoslex:isAbout not:Wegneemrecht;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
@@ -433,7 +433,7 @@ mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout kad:KadastraleAanduiding;
 	skoslex:isAbout kad:KadastraleGrootte;
-	skoslex:isAbout kad:PlaatselijkBekend;
+	skoslex:isAbout not:PlaatselijkBekend;
 .
 mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - eigendom"@nl;
@@ -454,7 +454,7 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
 	skoslex:isAbout kad:Canon;
 	skoslex:isAbout not:Erfpachtvoorwaarden;
-	skoslex:isAbout kad:HerzieningErfpacht;
+	skoslex:isAbout not:HerzieningErfpacht;
 	skoslex:isAbout not:VoortdurendeErfpacht;
 .
 mak:Asbest a skos:Concept;
