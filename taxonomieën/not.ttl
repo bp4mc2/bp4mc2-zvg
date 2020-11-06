@@ -46,6 +46,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4> rdfs:label "artikel 89, vierde lid, van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "artikel 227 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 van Boek 7 van het Burgerlijk Wetboek".
 
 #Diverse
@@ -535,6 +536,15 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	skos:semanticRelation kad:OnroerendeZaak;
 	skos:semanticRelation zv:Overdrachtsbelasting;
 .
+not:HerzieningErfpacht a skos:Concept;
+               rdfs:label "Herziening erfpacht"@nl;
+               skos:prefLabel "Herziening";
+               skos:altLabel "Herziening erfpacht";
+               skos:altLabel "Herziening canon";
+               skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
+               skosthes:broaderPartitive not:Erfpachtvoorwaarden;
+               skos:semanticRelation kad:Canon;
+.
 not:Hypotheekakte a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekakte"@nl;
 	skos:prefLabel "Hypotheekakte";
@@ -643,6 +653,13 @@ not:Ongevorderd a skos:Concept;
 	skos:definition "Zonder uitstaande claims op het bezit.";
 	#rdfs:comment "";
 .
+not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of akte. Het is geen specialisatie van Adres, maar kan ook de aanduiding van een weiland zijn (tegenover ….) of de naam van een landhuis. Dit is niet iets dat het Kadaster registreert.
+               rdfs:label "Plaatselijk bekend"@nl;
+               skos:prefLabel "Plaatselijk bekend";
+               skos:definition "De plaatselijke benaming, zo deze bekend is.";
+               skosthes:broaderGeneric kad:Adres;
+               skos:semanticRelation kad:OnroerendeZaak;
+.
 not:PlaatsVanVestiging a skos:Concept;
 	rdfs:label "Plaats van vestiging"@nl;
 	skos:prefLabel "Plaats van vestiging";
@@ -717,4 +734,14 @@ not:VoortdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadas
 	skos:definition "Bij voortdurende erfpacht is in principe sprake van eeuwigdurende erfpacht, met dien verstande dat deze eventueel tussentijds bij het einde van een tijdvak kan eindigen als de grondeigenaar en de erfpachter geen overeenstemming kunnen bereiken over de erfpachtvoorwaarden van het nieuwe tijdvak. Dit laatste is overigens hypothetisch zodat in de praktijk naar tijdsindeling de eeuwigdurende erfpacht en de voortdurende erfpacht hetzelfde uitpakken.";
 	skosthes:broaderGeneric kad:Erfpacht;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+.
+not:Wegneemrecht a skos:Concept, skoslex:Object;
+               rdfs:label "Wegneemrecht"@nl;
+               skos:prefLabel "Wegneemrecht";
+               skos:altLabel "Wettelijk wegneemrecht";
+               skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
+               rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
+               dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
+               skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
+               skos:semanticRelation kad:Erfpacht;
 .
