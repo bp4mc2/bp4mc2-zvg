@@ -212,7 +212,7 @@ kad:Basisregistratie a skos:Concept, skoslex:Object;
 	rdfs:label "Basisregistratie"@nl;
 	skos:prefLabel "Basisregistratie";
 	skos:definition "Een basisregistratie is een verzameling gegevens, waarvan bij wet is bepaald dat deze een basisregistratie vormt.";
-	rdfs:comment "Een basisregistratie is een verzameling gegevens. In de wet staat wanneer de verzamelinggegevens een basisregistratie genoemd mag worden."
+	rdfs:comment "Een basisregistratie is een verzameling gegevens. In de wet staat wanneer de verzamelinggegevens een basisregistratie genoemd mag worden.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 .
 kad:BasisregistratieAdressenEnGebouwen a skos:Concept, skoslex:Object;
@@ -276,8 +276,8 @@ kad:Beslag a skos:Concept;
 #	rdfs:comment "Wanneer een recht wordt bezwaard met een beperkt recht heeft iemand geen volledig recht op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
 #		dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 #skos:semanticRelation kad:BeperktRecht;
-.
-kad:Canon a skos:Concept
+#.
+kad:Canon a skos:Concept;
 	skos:exactMatch brk:Canon;
 	rdfs:label "Canon"@nl;
 	skos:prefLabel "Canon";
@@ -349,7 +349,7 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
-kad:Gerechtigde a skos:Concept
+kad:Gerechtigde a skos:Concept;
 	skos:exactMatch brk:Gerechtigde;
 	rdfs:label "Gerechtigde"@nl;
 	skos:prefLabel "Gerechtigde";
@@ -367,7 +367,7 @@ kad:GeschatteGrootte a skos:Concept;
 	skos:definition "De geschatte grootte is de oppervlakte van een gedeeltelijk perceel die door of namens partijen bij de overdracht is aangegeven in de notariële akte voordat er een meting heeft plaatsgevonden.";
 	rdfs:comment "De geschatte grootte van een perceel is de geschatte oppervlakte van een stuk grond voordat er een meting namens het Kadaster is gedaan.";
 	skos:scopeNote "Bij levering van kadastrale percelen wordt in de notariele akte meestal een geschatte grootte van het verkochte opgenomen. Tot uitmeting van het perceel heeft plaatsgevonden (zie ook aanwijs) wordt bij de onroerende zaak in de Basisregistratie Kadaster de geschatte grootte vermeld. Pas na de uitmeting wordt op basis van de bestaande en de nieuwe grenzen de nieuwe kadastrale grootte berekend.";
-	skosthes:broaderGeneric Grootte;
+	skosthes:broaderGeneric kad:Grootte;
 .
 kad:Goed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Goed;
@@ -429,7 +429,7 @@ kad:KadastraleAanduiding a skos:Concept;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 kad:KadastraleGemeente a skos:Concept, skoslex:Object;
-	skos_exactMatch brk:Kadastrale_gemeente;
+	skos:exactMatch brk:Kadastrale_gemeente;
 	rdfs:label "Kadastrale gemeente"@nl;
 	skos:prefLabel "Kadastrale gemeente";
 	skos:definition "Een kadastrale gemeente is een gebied dat in het algemeen samenvalt met het gebied van een burgerlijke gemeente. Als regel is dan ook de naam van de kadastrale gemeente dezelfde als die van de burgerlijke gemeente. Het gebied van een kadastrale gemeente kan ook bestaan uit slechts een deel van het gebied van een burgerlijke gemeente, doordat een opgeheven burgerlijke gemeente als kadastrale gemeente is gehandhaafd, of een deel van een burgerlijke gemeente, dat bij een andere is gevoegd, bij de toepassing der grensverandering zowel op de kadastrale kaart als in de kadastrale registratie afzonderlijk is geadministreerd en hierdoor tot kadastrale gemeente is gemaakt.";
@@ -530,7 +530,7 @@ kad:Overeenkomst a skos:Concept, skoslex:Act;
 	skos:prefLabel "Overeenkomst";
 	skos:definition "Een overeenkomst is een meerzijdige rechtshandeling, waarbij een of meer partijen jegens een of meer andere partijen een verbintenis aan gaan.";
 	rdfs:comment "Een overeenkomst is een afspraak tussen twee of meer partijen";
-	skos:semanticRelation zv:Partij; 
+	skos:semanticRelation zv:Partij;
 	skosthes:broaderGeneric kad:Rechtshandeling;
 .
 kad:Perceel a skos:Concept, skoslex:Object;
@@ -578,7 +578,7 @@ kad:Recht a skos:Concept, skoslex:Object;
 	skos:prefLabel "Recht";
 	skos:definition "Een recht is een door het objectieve recht verleende en beschermde bevoegdheid van een persoon.";
 	rdfs:comment "Een recht is iets wat iemand of een organisatie volgens de geschreven en ongeschreven regels mag.";
-	skos:semanticRelation zv:Persoon.
+	skos:semanticRelation zv:Persoon;
 .
 kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Rechtshandeling;
@@ -587,7 +587,7 @@ kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:definition "Een rechtshandeling is een handeling van een persoon met de bedoeling om een bepaald rechtsgevolg tot stand te brengen.";
 	rdfs:comment "Een rechtshandeling is dat een persoon of rechtspersoon iets doet om een juridisch doel te bereiken. Dit doel noemen juristen een 'rechtsgevolg'.";
 	skos:scopeNote "Een rechtshandeling vereist een op een rechtsgevolg gerichte wil die zich door een verklaring heeft geopenbaard.";
-	skos:semanticRelation zv:Persoon; 
+	skos:semanticRelation zv:Persoon;
 .
 kad:Registergoed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Registergoed;
@@ -647,7 +647,7 @@ kad:Vermogensrecht a skos:Concept, skoslex:Object;
 #	rdfs:label "Wederinkoop"@nl;
 #	skos:prefLabel "Wederinkoop";
 #	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding.";
-.
+#.
 kad:Zaak a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Zaak;
 	rdfs:label "Zaak"@nl;
