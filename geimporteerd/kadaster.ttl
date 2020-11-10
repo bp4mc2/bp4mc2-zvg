@@ -26,6 +26,8 @@ kadaster:Erfpacht rdfs:label 'Kadaster: "Erfpacht"'.
 kadaster:Gemeentelijk_monument rdfs:label 'Kadaster: "Gemeentelijk monument"'.
 kadaster:Gerechtigde rdfs:label 'Kadaster: "Gerechtigde"'.
 kadaster:Geschatte_grootte rdfs:label 'Kadaster: "Geschatte grootte"'.
+kadaster:Goed rdfs:label 'Kadaster: "Goed"'.
+kadaster:Grootte rdfs:label 'Kadaster: "Grootte"'.
 kadaster:Heersende_erf rdfs:label 'Kadaster: "Heersende erf"'.
 kadaster:Hoofdsom rdfs:label 'Kadaster: "Hoofdsom"'.
 kadaster:Huurkoop rdfs:label 'Kadaster: "Huurkoop"'.
