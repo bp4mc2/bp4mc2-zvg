@@ -406,7 +406,7 @@ kad:Hoofdsom a skos:Concept; #Afstemmen met Kadaster of Inschrijvingsbedrag of B
 	skos:definition "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
 	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
 	rdfs:comment "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
-	skos:semanticRelation kad:RechtVanHypotheek;
+	skos:semanticRelation not:RechtVanHypotheek;
 .
 kad:Huurkoop a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Huurkoop; #definitie in BRK is ontleend aan vervallen wetsartikel. Moet worden aangepast aan onderstaande artikel.

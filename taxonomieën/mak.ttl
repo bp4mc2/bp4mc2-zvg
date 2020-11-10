@@ -403,7 +403,7 @@ mak:ArtikelStaatOnroerendGoedGebruik a skos:Concept, skoslex:Record;
 	skoslex:isAbout kad:Bestemmingsplan;
 	skoslex:isAbout not:BijzondereLasten;
 	skoslex:isAbout kad:DienendeErf;
-	skoslex:isAbout kad:Eigendomsrecht;
+	skoslex:isAbout kad:Eigendom;
 	skoslex:isAbout kad:GemeentelijkMonument;
 	skoslex:isAbout kad:HeersendeErf;
 	skoslex:isAbout kad:Kettingbeding;
@@ -443,7 +443,7 @@ mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	#skos:scopeNote "Optie A van artikel 1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
 	skoslex:isAbout mak:Woning;
-	skoslex:isAbout kad:Eigendomsrecht;
+	skoslex:isAbout kad:Eigendom;
 .
 mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop - erfpacht"@nl;
