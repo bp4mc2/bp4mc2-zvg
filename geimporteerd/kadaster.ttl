@@ -11,3 +11,12 @@
 .
 
 kadaster:De_dienst rdfs:label 'Kadaster: "De dienst"'.
+kadaster:Adres rdfs:label 'Kadaster: "Adres"'.
+kadaster:Basisregistratie_Kadaster rdfs:label 'Kadaster: "Basisregistratie Kadaster"'.
+kadaster:Beding rdfs:label 'Kadaster: "Beding"'.
+kadaster:Beperkt_recht rdfs:label 'Kadaster: "Beperkt recht"'.
+kadaster:Beslag rdfs:label 'Kadaster: "Beslag"'.
+kadaster:Bewaarder rdfs:label 'Kadaster: "Bewaarder"'.
+kadaster:Canon rdfs:label 'Kadaster: "Canon"'.
+kadaster:Dienende_erf rdfs:label 'Kadaster: "Dienende erf"'.
+kadaster:Doorhaling_hypotheek rdfs:label 'Kadaster: "Doorhaling hypotheek"'.
