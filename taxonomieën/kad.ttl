@@ -71,54 +71,6 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Wet basisregistratie adressen en gebouwen".
 
 #--
-#Links naar originele Kadaster taxonomie (brk:)
-#--
-#Dit is vast niet goed, maar er moet hier toch  iets komen te staan om te kunnen toetsen op skosap:ExternalConcept a sh:NodeShape.
-#brk:De_dienst a skos:Concept (extern).
-#brk:Bewaarder a skos:Concept (extern).
-#brk:Beding a skos:Concept (extern).
-#brk:Rechthebbende a skos:Concept (extern).
-#brk:Doorhaling_hypotheek a skos:Concept (extern).
-#brk:Meting_kadastrale_grens a skos:Concept (extern).
-#brk:Inschrijving a skos:Concept (extern).
-#kad:Basisregistratie a skos:Concept (extern).
-#brk:Basisregistratie_Kadaster a skos:Concept (extern).
-#brk:Adres a skos:Concept (extern).
-#brk:Beperkt_recht a skos:Concept (extern).
-#brk:Beslag a skos:Concept (extern).
-#brk:Canon a skos:Concept (extern).
-#brk:Dienende_erf a skos:Concept (extern).
-#brk:Eigendom a skos:Concept (extern).
-#brk:Erfpacht a skos:Concept (extern).
-#brk:Gemeentelijk_monument a skos:Concept (extern).
-#brk:Gerechtigde a skos:Concept (extern).
-#brk:Geschatte_grootte a skos:Concept (extern).
-#brk:Goed a skos:Concept (extern).
-#brk:Heersende_erf a skos:Concept (extern).
-#brk:Hoofdsom a skos:concept (extern).
-#brk:Huurkoop a skos:concept (extern).
-#brk:Kadastrale_aanduiding a skos:concept (extern).
-#brk:Kettingbeding a skos:concept (extern).
-#brk:Kwalitatieve_verplichting a skos:concept (extern).
-#brk:Grootte a skos:concept (extern).
-#brk:Kadastrale_grootte a skos:concept (extern).
-#brk:Landgoed a skos:concept (extern).
-#brk:Nummeraanduiding a skos:concept (extern).
-#brk:Onroerende_zaak a skos:concept (extern).
-#brk:Onroerend_monument a skos:concept (extern).
-#brk:Overeenkomst a skos:concept (extern).
-#brk:Perceel a skos:concept (extern).
-#brk:Provinciaal_monument a skos:concept (extern).
-#brk:Publiekrechtelijke_beperking a skos:concept (extern).
-#brk:Rangwisseling a skos:concept (extern).
-#brk:Registergoed a skos:concept (extern).
-#brk:sectie a skos:concept (extern).
-#brk:Recht a skos:Concept (extern).
-#brk:Rechtshandeling a skos:Concept (extern).
-#brk:Vermogensrecht a skos:Concept (extern).
-#brk:Zaak a skos:Concept (extern).
-
-#--
 #Basisregistratie links
 #Test of dit werkt.
 #--
@@ -611,7 +563,7 @@ kad:Rijksmonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:Sectie a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:sectie;
+	skos:exactMatch brk:Sectie;
 	rdfs:label "Sectie"@nl;
 	skos:prefLabel "Sectie";
 	skos:definition "Een sectie is een administratieve opsplitsing van een kadastrale gemeente.";

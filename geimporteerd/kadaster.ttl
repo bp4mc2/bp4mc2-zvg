@@ -52,7 +52,7 @@ kadaster:Recht rdfs:label 'Kadaster: "Recht"'.
 kadaster:Rechthebbende rdfs:label 'Kadaster: "Rechthebbende"'.
 kadaster:Rechtshandeling rdfs:label 'Kadaster: "Rechtshandeling"'.
 kadaster:Registergoed rdfs:label 'Kadaster: "Registergoed"'.
-kadaster:sectie rdfs:label 'Kadaster: "Sectie"'.
+kadaster:Sectie rdfs:label 'Kadaster: "Sectie"'.
 kadaster:Vermogensrecht rdfs:label 'Kadaster: "Vermogensrecht"'.
 kadaster:Zaak rdfs:label 'Kadaster: "Zaak"'.
 kadaster:Zakelijk_recht rdfs:label 'Kadaster: "Zakelijk recht"'.
