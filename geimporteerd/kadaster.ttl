@@ -1,0 +1,11 @@
+#
+# Een opsomming (link + label) van de begrippen waarmee een harmonisatie-relatie bestaat
+#
+@prefix kadaster: <http://tax.kadaster.nl/id/begrip/>.
+
+<http://zorgeloosvastgoed.nl/data/kadaster> a owl:Ontology;
+	rdfs:label "Begrippen van het Kadaster zelf";
+  owl:imports <http://tax.kadaster.nl>
+.
+
+kadaster:De_dienst rdfs:label ''"Kadaster: "De dienst"'.
