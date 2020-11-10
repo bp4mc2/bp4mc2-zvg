@@ -414,8 +414,8 @@ kad:KwalitatieveVerplichting a skos:Concept;
 	rdfs:comment "Een Kwalitatieve Verplichting is een afspraak om iets toe te staan, of om iets niet te doen, met een gebouw of stuk grond. Deze afspraak geldt ook voor iemand die het gebouw of stuk grond gebruikt of krijgt door overdracht, verjaring of onteigening.";
         skos:scopeNote "Tevens gaat de kwalitatieve verplichting over op rechtsopvolgers. De kwalitatieve verplichting moet worden aangegaan bij notariële akte.Van een dergelijke overeenkomst kan een aantekening worden gemaakt. Een dergelijke verplichting is niet nodig bij verkrijging onder algemene titel, aangezien bij een dergelijke verkrijging de kwalitatieve verplichting van rechtswege voortgezet wordt.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252>;
-	skos:broaderGeneric kad:Overeenkomst;
-	skos:broaderGeneric kad:Recht;
+	skosthes:broaderGeneric kad:Overeenkomst;
+	skosthes:broaderGeneric kad:Recht;
 .
 #kad:NaamVanEenOpenbareRuimte a skos:Concept, skoslex:Object;
 #	rdfs:label "Naam van een openbare ruimte"@nl;
@@ -615,7 +615,7 @@ kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	skos:definition "Een Zakelijk recht is een absoluut recht op een zaak dat tegenover iedereen te handhaven is.";
 	rdfs:comment "Een zakelijk recht is het recht dat iemand op een zaak heeft en dat iemand anders niet aan kan tasten.";
 	skos:scopeNote "Met een zakelijk recht wordt bedoeld een recht dat samenhangt met een zaak of een goed. Dit in tegenstelling met een persoonlijk recht, een recht dat samenhangt met de persoon. Om het verschil tussen beide rechten duidelijk te maken een voorbeeld. Eigendom is een zakelijk recht. Dat betekent onder meer dat het recht niet eindigt door het overlijden van de eigenaar. Als een eigenaar overlijdt vallen al zijn eigendommen in zijn nalatenschap. Huur is een persoonlijk recht. Door het overlijden van de huurder eindigt in principe wel de huur. Zakelijke rechten zijn, behalve het recht van eigendom, de rechten van erfpacht, opstal, vruchtgebruik, gebruik en bewoning en erfdienstbaarheid. Een Zakelijk recht kan zijn een zakelijk genotsrecht of een zakelijk zekerheidsrecht";
-	skosthes:boraderGeneric kad:Vermogensrecht;
+	skosthes:broaderGeneric kad:Vermogensrecht;
 	skos:semanticRelation kad:Rechthebbende;
 	skos:semanticRelation kad:Zaak;
 .
