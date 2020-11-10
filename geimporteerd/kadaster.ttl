@@ -1,6 +1,8 @@
 #
 # Een opsomming (link + label) van de begrippen waarmee een harmonisatie-relatie bestaat
 #
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix kadaster: <http://tax.kadaster.nl/id/begrip/>.
 
 <http://zorgeloosvastgoed.nl/data/kadaster> a owl:Ontology;
