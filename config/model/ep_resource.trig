@@ -183,30 +183,36 @@ GRAPH config:Theatre {
       elmo:index 40;
     ];
     elmo:fragment [
+      elmo:appliesTo skos:exactMatch;
+      elmo:appearance elmo:GlobalLink;
+      rdfs:label "Betekent hetzelfde als"@nl;
+      elmo:index 50;
+    ];
+    elmo:fragment [
       elmo:appliesTo dcat:landingPage;
       rdfs:label "Webpagina"@nl;
       elmo:appearance elmo:GlobalLink;
-      elmo:index 50;
+      elmo:index 60;
     ];
     elmo:fragment [
       elmo:appliesTo dcterms:description;
       rdfs:label "Beschrijving"@nl;
-      elmo:index 51;
+      elmo:index 61;
     ];
     elmo:fragment [
       elmo:appliesTo dcterms:language;
       rdfs:label "Taal"@nl;
-      elmo:index 52;
+      elmo:index 62;
     ];
     elmo:fragment [
       elmo:appliesTo dcterms:subject;
       rdfs:label "Betreft"@nl;
-      elmo:index 53;
+      elmo:index 63;
     ];
     elmo:fragment [
       elmo:appliesTo rdfs:isDefinedBy;
       rdfs:label "Gedefinieerd in"@nl;
-      elmo:index 60;
+      elmo:index 70;
     ];
     elmo:fragment [
       elmo:appliesTo dcterms:title;

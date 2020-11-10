@@ -1,0 +1,30 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+
+GRAPH config:Theatre {
+
+  config:ReferencesData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      SELECT ?begrip ?begrip_label ?refbegrip ?refbegrip_label
+      WHERE {
+        GRAPH ?g {
+          ?begrip a skos:Concept.
+          ?begrip rdfs:label ?begrip_label.
+          ?begrip ?ref ?refbegrip
+        }
+        GRAPH ?gref {
+          ?refbegrip rdfs:label ?refbegrip_label.
+          ?gref owl:imports ?gimport
+        }
+      }
+    """
+  .
+
+}

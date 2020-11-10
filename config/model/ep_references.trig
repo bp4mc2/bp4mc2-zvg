@@ -1,0 +1,32 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:ReferencesEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/references";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:References;
+  .
+
+  config:References a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:ReferencesData;
+    elmo:appearance config:ReferencesAppearance;
+    elmo:contains config:Menu;
+    elmo:contains config:Footer;
+.
+
+  config:ReferencesAppearance a elmo:TableAppearance;
+    elmo:fragment [
+      elmo:appliesTo "begrip";
+      rdfs:label "Begrip"@nl;
+    ];
+    elmo:fragment [
+      elmo:appliesTo "refbegrip";
+      rdfs:label "Externe referentie"@nl;
+      elmo:appearance elmo:GlobalLink;
+    ];
+  .
+
+}

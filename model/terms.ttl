@@ -131,6 +131,10 @@ zvgmodel:hasTopConcept a sh:PropertyShape;
   sh:path skos:hasTopConcept;
   sh:name "skos:hasTopConcept";
 .
+zvgmodel:exactMatch a sh:PropertyShape;
+  sh:path skos:exactMatch;
+  sh:name "skos:exactMatch";
+.
 
 # SHACL
 zvgmodel:name a sh:PropertyShape;
