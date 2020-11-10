@@ -10,4 +10,4 @@
   owl:imports <http://tax.kadaster.nl>
 .
 
-kadaster:De_dienst rdfs:label ''"Kadaster: "De dienst"'.
+kadaster:De_dienst rdfs:label 'Kadaster: "De dienst"'.
