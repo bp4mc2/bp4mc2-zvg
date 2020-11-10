@@ -20,3 +20,37 @@ kadaster:Bewaarder rdfs:label 'Kadaster: "Bewaarder"'.
 kadaster:Canon rdfs:label 'Kadaster: "Canon"'.
 kadaster:Dienende_erf rdfs:label 'Kadaster: "Dienende erf"'.
 kadaster:Doorhaling_hypotheek rdfs:label 'Kadaster: "Doorhaling hypotheek"'.
+kadaster:Eigendom rdfs:label 'Kadaster: "Eigendom"'.
+kadaster:Erfdienstbaarheid rdfs:label 'Kadaster: "Erfdienstbaarheid"'.
+kadaster:Erfpacht rdfs:label 'Kadaster: "Erfpacht"'.
+kadaster:Gemeentelijk_monument rdfs:label 'Kadaster: "Gemeentelijk monument"'.
+kadaster:Gerechtigde rdfs:label 'Kadaster: "Gerechtigde"'.
+kadaster:Geschatte_grootte rdfs:label 'Kadaster: "Geschatte grootte"'.
+kadaster:Heersende_erf rdfs:label 'Kadaster: "Heersende erf"'.
+kadaster:Hoofdsom rdfs:label 'Kadaster: "Hoofdsom"'.
+kadaster:Huurkoop rdfs:label 'Kadaster: "Huurkoop"'.
+kadaster:Inschrijving rdfs:label 'Kadaster: "Inschrijving"'.
+kadaster:Kadastrale_aanduiding rdfs:label 'Kadaster: "Kadastrale aanduiding"'.
+kadaster:Kadastrale_gemeente rdfs:label 'Kadaster: "Kadastrale gemeente"'.
+kadaster:Kadastrale_grootte rdfs:label 'Kadaster: "Kadastrale grootte"'.
+kadaster:Kettingbeding rdfs:label 'Kadaster: "Kettingbeding"'.
+kadaster:Kwalitatieve_verplichting rdfs:label 'Kadaster: "Kwalitatieve verplichting"'.
+kadaster:Landgoed rdfs:label 'Kadaster: "Landgoed"'.
+kadaster:Meting_kadastrale_grens rdfs:label 'Kadaster: "Meting kadastrale grens"'.
+kadaster:Nummeraanduiding rdfs:label 'Kadaster: "Nummeraanduiding"'.
+kadaster:Onroerend_monument rdfs:label 'Kadaster: "Onroerend monument"'.
+kadaster:Onroerende_zaak rdfs:label 'Kadaster: "Onroerende zaak"'.
+kadaster:Openbare_registers rdfs:label 'Kadaster: "Openbare registers"'.
+kadaster:Overeenkomst rdfs:label 'Kadaster: "Overeenkomst"'.
+kadaster:Perceel rdfs:label 'Kadaster: "Perceel"'.
+kadaster:Provinciaal_monument rdfs:label 'Kadaster: "Provinciaal monument"'.
+kadaster:Publiekrechtelijke_beperking rdfs:label 'Kadaster: "Publiekrechtelijke beperking"'.
+kadaster:Rangwisseling rdfs:label 'Kadaster: "Rangwisseling"'.
+kadaster:Recht rdfs:label 'Kadaster: "Recht"'.
+kadaster:Rechthebbende rdfs:label 'Kadaster: "Rechthebbende"'.
+kadaster:Rechtshandeling rdfs:label 'Kadaster: "Rechtshandeling"'.
+kadaster:Registergoed rdfs:label 'Kadaster: "Registergoed"'.
+kadaster:sectie rdfs:label 'Kadaster: "Sectie"'.
+kadaster:Vermogensrecht rdfs:label 'Kadaster: "Vermogensrecht"'.
+kadaster:Zaak rdfs:label 'Kadaster: "Zaak"'.
+kadaster:Zakelijk_recht rdfs:label 'Kadaster: "Zakelijk recht"'.
