@@ -410,7 +410,7 @@ kad:Hoofdsom a skos:Concept; #Afstemmen met Kadaster of Inschrijvingsbedrag of B
 .
 kad:Huurkoop a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Huurkoop; #definitie in BRK is ontleend aan vervallen wetsartikel. Moet worden aangepast aan onderstaande artikel.
-	rdfs:label "Huurkoopt"@nl;
+	rdfs:label "Huurkoop"@nl;
 	skos:prefLabel "Huurkoop";
 	skos:definition "Huurkoop is de koop en verkoop op afbetaling, waarbij partijen overeenkomen, dat de verkochte zaak niet door enkele aflevering in eigendom overgaat, maar pas door vervulling van de opschortende voorwaarde van algehele betaling van wat door de koper uit hoofde van de koopovereenkomst verschuldigd is.";
 	rdfs:comment "Huurkoop is dat koper en verkoper afspreken dat de koper een goed koopt op afbetaling. Dit betekent dat de koper een deel aanbetaalt en de rest van het bedrag in delen betaalt. Pas als de koper het hele bedrag heeft betaald, wordt hij eigenaar van het goed.";
@@ -424,8 +424,8 @@ kad:KadastraleAanduiding a skos:Concept;
 	skos:prefLabel "Kadastrale aanduiding";
 	skos:altLabel "Kadastraal bekend";
 	skos:definition "Een Kadastrale aanduiding is een aanduiding van onroerende zaken in het Kadaster door vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de percelen en gedeelten van percelen zijn gelegen waarvan het grondgebied tot die zaak behoort, alsmede de nummers van die percelen. Appartementsrechten worden kadastraal aangeduid door de vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de splitsing betrokken percelen zijn gelegen, de complexaanduiding en de appartementsindex.";
-	rdfs:comment "Een kadastrale aanduiding is een uniek kenmerk die het Kadaster aan een onroerende zaak heeft gegeven.";
-        skos:scopeNote "Een kadastrale aanduiding is een kenmerk dat bestaat uit de kadastrale gemeente, sectie en perceelnummer. Het is een unieke door het Kadaster toegekende identificatie van een onroerende zaak. Een voorbeeld van een kadastrale aanduiding is: '''gemeente Apeldoorn, sectie K nummer 4550'''. Wanneer het een appartementsrecht betreft , bestaat de kadastrale aanduiding uit kadastrale gemeente, sectie, nummer gevolgd door de hoofdletter A en de appartementsindex (het volgnummer van het appartementsrecht). Bijvoorbeeld '''gemeente Apeldoorn sectie K nummer 4550A, appartementsindex 4.";
+	rdfs:comment "Een kadastrale aanduiding is een uniek kenmerk dat het Kadaster aan een onroerende zaak heeft gegeven.";
+        skos:scopeNote "Een kadastrale aanduiding is een kenmerk dat bestaat uit de kadastrale gemeente, sectie en perceelnummer. Het is een unieke door het Kadaster toegekende identificatie van een onroerende zaak. Een voorbeeld van een kadastrale aanduiding is: '''gemeente Apeldoorn, sectie K nummer 4550'''. Wanneer het een appartementsrecht betreft, bestaat de kadastrale aanduiding uit kadastrale gemeente, sectie, nummer gevolgd door de hoofdletter A en de appartementsindex (het volgnummer van het appartementsrecht). Bijvoorbeeld '''gemeente Apeldoorn sectie K nummer 4550A, appartementsindex 4.";
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 kad:KadastraleGemeente a skos:Concept, skoslex:Object;
@@ -451,7 +451,7 @@ kad:Kettingbeding a skos:Concept;
 	rdfs:label "Kettingbeding"@nl;
 	skos:prefLabel "Kettingbeding";
 	skos:definition "Een kettingbeding is een verbintenis dat de schuldenaar bij overdracht van een registergoed, op straffe van een boete, ten behoeve van de schuldeiser bepaalde verplichtingen, onder gelijke verbintenis, aan zijn verkrijgers moet opleggen.";
-	rdfs:comment "Een kettingbeding is een afspraak die de verkoper met de koper bij de koop van een gebouw, een stuk grond, vliegtuig of schip maakt. Deze afspraak houdt in dat de koper een verplichting heeft en dat hij deze verplichting ook aan een volgdende koper moet opleggen. Als hij dit niet doe, moet hij een boete aan de verkoper betalen.";
+	rdfs:comment "Een kettingbeding is een afspraak die de verkoper met de koper bij de koop van een gebouw, een stuk grond, vliegtuig of schip maakt. Deze afspraak houdt in dat de koper een verplichting heeft en dat hij deze verplichting ook aan een volgdende koper moet opleggen. Als hij dit niet doet, moet hij een boete aan de verkoper betalen.";
 	skosthes:broaderGeneric kad:KwalitatieveVerplichting
 .
 kad:KwalitatieveVerplichting a skos:Concept;
