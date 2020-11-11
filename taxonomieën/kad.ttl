@@ -5,6 +5,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/begrip/>.
 @prefix fin: <http://fin.zorgeloosvastgoed.nl/id/begrip/>.
@@ -94,7 +96,12 @@ kad:Bewaarder a skos:Concept, skoslex:Actor;
 	skos:definition "De bewaarder is een functionaris die onverminderd het bepaalde bij of krachtens de Kadasterwet of een andere wet, belast is met het verrichten van inschrijvingen in de openbare registers en het stellen van aantekeningen in die registers, en het bijwerken van de basisregistratie kadaster, de registratie voor schepen en de registratie voor luchtvaartuigen.";
 	rdfs:comment "De bewaarder is iemand die bij het Kadaster werkt. Hij schrijft stukken in, in de openbare registers en de basisregistratie Kadaster. Hij zorgt ervoor dat dit volgens de Kadasterwet gebeurt.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6>;
-#	skosthes:broaderGeneric zv:Rechtspersoon; beter: BevoegdAmbtenaar
+#	skosthes:broaderGeneric zv:Rechtspersoon; beter: BevoegdAmbtenaar;
+	foaf:isPrimaryTopicOf <http://kad.zorgeloosvastgoed.nl/doc/begrip/Bewaarder>;
+.
+<http://kad.zorgeloosvastgoed.nl/doc/begrip/Bewaarder> a prov:Entity;
+	prov:wasQuotedFrom <https://tax.kadaster.nl/doc/begrip/Bewaarder>;
+	prov:generatedAtTime "2020-11-11T14:28"^^xsd:dateTime;
 .
 kad:Rechthebbende a skos:Concept, skoslex:Actor;
 	skos:exactMatch brk:Rechthebbende;
