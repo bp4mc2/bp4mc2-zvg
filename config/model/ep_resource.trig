@@ -219,6 +219,22 @@ GRAPH config:Theatre {
       rdfs:label "Titel"@nl;
       elmo:index 1;
     ];
+    elmo:fragment [
+      elmo:appliesTo foaf:isPrimaryTopicOf;
+      rdfs:label "Herkomst informatie"@nl;
+      elmo:appearance elmo:NestedAppearance;
+      elmo:index 99;
+    ];
+    elmo:fragment [
+      elmo:appliesTo prov:wasQuotedFrom;
+      rdfs:label "Afkomstig uit"@nl;
+      elmo:index 991;
+    ];
+    elmo:fragment [
+      elmo:appliesTo prov:generatedAtTime;
+      rdfs:label "Opgehaald op"@nl;
+      elmo:index 992;
+    ];
   .
 
   config:Graph a elmo:Representation;

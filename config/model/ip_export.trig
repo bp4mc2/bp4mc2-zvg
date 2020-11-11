@@ -1,0 +1,31 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo-rt: <http://dotwebstack.org/def/elmo/result-type/>.
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+
+GRAPH config:Theatre {
+
+  config:ExportData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:resultType elmo-rt:Tuple;
+    elmo:query """
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+      SELECT ?begrip ?voorkeursterm ?alternatieve_aanduiding ?definitie ?uitleg ?rationale ?toelichting
+      WHERE {
+        ?concept a skos:Concept.
+        ?concept rdfs:label ?begrip.
+        OPTIONAL { ?concept skos:prefLabel ?voorkeursterm}
+        OPTIONAL { ?concept skos:altLabel ?alternatieve_aanduiding}
+        OPTIONAL { ?concept skos:definition ?definitie}
+        OPTIONAL { ?concept rdfs:comment ?uitleg}
+        OPTIONAL { ?concept skos:editorialNote ?rationale}
+        OPTIONAL { ?concept skos:scopeNote ?toelichting}
+      }
+      ORDER BY ?begrip
+    """
+  .
+
+}

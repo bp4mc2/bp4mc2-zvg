@@ -69,7 +69,7 @@ GRAPH config:Theatre {
         {
           GRAPH ?g {
             ?subject ?p ?o.
-            FILTER (?p != dcterms:source)
+            FILTER (?p != dcterms:source && ?p != foaf:isPrimaryTopicOf)
           }
           GRAPH ?go {
             SELECT ?go ?o ?otype ?olabel (if(bound(?olextype),concat("/assets/images/",lcase(strafter(str(?olextype),"#")),".png"),?olextype) as ?oimg)

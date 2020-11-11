@@ -1,0 +1,18 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:ExportEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/export";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Export;
+  .
+
+  config:Export a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:ExportData;
+    elmo:appearance [ a elmo:TableAppearance ];
+  .
+
+}

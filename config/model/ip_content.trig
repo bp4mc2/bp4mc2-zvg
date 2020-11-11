@@ -10,11 +10,16 @@ GRAPH config:Theatre {
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
+      PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+      PREFIX prov: <http://www.w3.org/ns/prov#>
       CONSTRUCT {
         ?subject ?p ?o.
         ?subject rdfs:isDefinedBy ?g.
         ?o rdfs:label ?olabel.
         ?g rdfs:label ?glabel.
+        ?subject foaf:isPrimaryTopicOf ?docsubject.
+        ?docsubject prov:wasQuotedFrom ?docquote.
+        ?docsubject prov:generatedAtTime ?doctime.
         skos:Concept rdfs:label "Begrip"@nl.
         skoslex:Act rdfs:label "Handeling"@nl.
         skoslex:Actor rdfs:label "Actor"@nl.
@@ -25,11 +30,17 @@ GRAPH config:Theatre {
       WHERE {
         GRAPH ?g {
           ?subject ?p ?o
+          FILTER (?p != foaf:isPrimaryTopicOf)
           OPTIONAL {
             ?o rdfs:label ?olabel
           }
           OPTIONAL {
             ?g rdfs:label ?glabel
+          }
+          OPTIONAL {
+            ?subject foaf:isPrimaryTopicOf ?docsubject.
+            ?docsubject prov:wasQuotedFrom ?docquote.
+            ?docsubject prov:generatedAtTime ?doctime.
           }
         }
       }
