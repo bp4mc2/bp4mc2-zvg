@@ -228,6 +228,7 @@ GRAPH config:Theatre {
     elmo:fragment [
       elmo:appliesTo prov:wasQuotedFrom;
       rdfs:label "Afkomstig uit"@nl;
+      elmo:appearance elmo:GlobalLink;
       elmo:index 991;
     ];
     elmo:fragment [
