@@ -48,6 +48,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 van Boek 7 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308> rdfs:label "artikel 1308 van Boek 8 van het Burgerlijk Wetboek".
 
 #Diverse
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
@@ -653,6 +654,17 @@ not:Ongevorderd a skos:Concept;
 	skos:definition "Zonder uitstaande claims op het bezit.";
 	#rdfs:comment "";
 .
+not:Optierecht a skos:Concept, skoslex:Object;
+	rdfs:label "Optierecht"@nl;
+	skos:prefLabel "Optierecht";
+	skos:altLabel "Zakelijk optierecht";
+	skos:definition "Een optierecht is een zakelijk recht, bestaande in het recht van de houder van het luchtvaartuig om na betaling van een zeker bedrag of na vervulling van enige andere voorwaarde de eigendom daarvan krachtens een door hem reeds gesloten of nog te sluiten koopovereenkomst te verkrijgen. In de notariële akte voor de vestiging van dit recht, wordt duidelijk het aan dit recht onderworpen luchtvaartuig vermeld.";
+	rdfs:comment "Een optierecht is het recht van de houder van een luchtvaartuig om dit vaartuig later te kopen en eigenaar te worden. Voordat hij eigenaar wordt, moet hij een afgesproken bedrag betalen of aan bepaalde voorwaarden voldoen. Hij moet altijd een koopovereenkomst ondertekenen. Het optierecht wordt geregeld via een akte bij de notaris. Daarin staat duidelijk om welk luchtvaartuig het gaat.";
+        skos:scopeNote "Een optierecht is alleen mogelijk op een luchtvaartuig.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308>;
+        #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FOptierecht>;
+        skosthes:broaderGeneric kad:ZakelijkRecht;
+.
 not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of akte. Het is geen specialisatie van Adres, maar kan ook de aanduiding van een weiland zijn (tegenover ….) of de naam van een landhuis. Dit is niet iets dat het Kadaster registreert.
                rdfs:label "Plaatselijk bekend"@nl;
                skos:prefLabel "Plaatselijk bekend";
@@ -713,6 +725,14 @@ not:TitelVanAankomst a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:Titel;
 	#Onderdeel van titel van aankomst is datumdeel/nr dat Kadaster levert na inschrijving in register. Dit moet hier nog bij.
 .
+not:TotaalbedragInschrijving a skos:Concept;
+	rdfs:label "Totaalbedrag van de inschrijving"@nl;
+	skos:prefLabel "Totaalbedrag van de inschrijving";
+	skos:definition "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
+	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
+	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
+	skos:semanticRelation not:RechtVanHypotheek;
+.
 not:VanRechtswegeOntbonden a skos:Concept;
 	rdfs:label "Van rechtswege ontbonden"@nl;
 	skos:prefLabel "Van rechtswege ontbonden";
@@ -728,12 +748,27 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	#Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .
+not:Voorkeursrecht a skos:Concept; #Zou ook in het Kadaster-domein kunnen, maar dat begrip is daar nu niet bekend. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
+	rdfs:label "Voorkeursrecht"@nl;
+	skos:prefLabel "Voorkeursrecht";
+	skos:altLabel "Recht van voorverkoop";
+	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
+	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
+	skos:semanticRelation kad:Registergoed;
+.
 not:VoortdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
 	rdfs:label "Voordturende erfpacht"@nl;
 	skos:prefLabel "Voortdurende erfpacht";
 	skos:definition "Bij voortdurende erfpacht is in principe sprake van eeuwigdurende erfpacht, met dien verstande dat deze eventueel tussentijds bij het einde van een tijdvak kan eindigen als de grondeigenaar en de erfpachter geen overeenstemming kunnen bereiken over de erfpachtvoorwaarden van het nieuwe tijdvak. Dit laatste is overigens hypothetisch zodat in de praktijk naar tijdsindeling de eeuwigdurende erfpacht en de voortdurende erfpacht hetzelfde uitpakken.";
+	#rdfs:comment "";
 	skosthes:broaderGeneric kad:Erfpacht;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
+.
+not:Wederinkoop a skos:Concept; #Zou het beste in in het Kadaster-domein passen, maar dat begrip is daar nu niet bekend. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
+	rdfs:label "Wederinkoop"@nl;
+	skos:prefLabel "Wederinkoop";
+	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding.";
+	#rdfs:comment "";
 .
 not:Wegneemrecht a skos:Concept, skoslex:Object;
                rdfs:label "Wegneemrecht"@nl;
