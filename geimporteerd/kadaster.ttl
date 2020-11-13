@@ -34,6 +34,7 @@ kadaster:Huurkoop rdfs:label 'Kadaster: "Huurkoop"'.
 kadaster:Inschrijving rdfs:label 'Kadaster: "Inschrijving"'.
 kadaster:Kadastrale_aanduiding rdfs:label 'Kadaster: "Kadastrale aanduiding"'.
 kadaster:Kadastrale_gemeente rdfs:label 'Kadaster: "Kadastrale gemeente"'.
+kadaster:Kadastrale_grens rdfs:label 'Kadaster: "Kadastrale_grens"'.
 kadaster:Kadastrale_grootte rdfs:label 'Kadaster: "Kadastrale grootte"'.
 kadaster:Kettingbeding rdfs:label 'Kadaster: "Kettingbeding"'.
 kadaster:Kwalitatieve_verplichting rdfs:label 'Kadaster: "Kwalitatieve verplichting"'.
