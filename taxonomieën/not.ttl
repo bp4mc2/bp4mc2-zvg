@@ -495,7 +495,7 @@ not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt 
 	skosthes:narrowerGeneric kad:KwalitatieveVerplichting;
 	skosthes:narrowerGeneric kad:Kettingbeding;
 	skosthes:narrowerGeneric kad:DienendeErf;
-	skosthes:narrowerGeneric kad:Voorkeursrecht;
+	skosthes:narrowerGeneric not:Voorkeursrecht;
 .
 not:Comparitie a skos:Concept, skoslex:Record;
 	rdfs:label "Verschijning voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
@@ -554,7 +554,7 @@ not:Hypotheekakte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric not:NotarieleAkte;
-	skoslex:isAbout kad:TotaalbedragInschrijving;
+	skoslex:isAbout not:TotaalbedragInschrijving;
 	skoslex:isAbout not:RechtVanHypotheek;
 	skoslex:isAbout not:Grondslagwaarde;
 .
