@@ -42,7 +42,6 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 van Boek 6 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=2b&afdeling=2&paragraaf=1&artikel=101> rdfs:label "artikel 101 van Boek 7 van het Burgerlijk Wetboek".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308> rdfs:label "artikel 1308 van Boek 8 van het Burgerlijk Wetboek".
 
 #Wetboek van Burgerlijke Rechtsvordering
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439> rdfs:label "artikel 439 van het Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)".
@@ -61,6 +60,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a> rdfs:label "artikel 1a van de Kadasterwet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6> rdfs:label "artikel 6 van de Kadasterwet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=2&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van de Kadasterwet".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50> rdfs:label "artikel 50 van de Kadasterwet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53> rdfs:label "artikel 53 van de Kadasterwet".
 
 #Erfgoedwet
@@ -69,8 +69,6 @@
 #Diverse
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004471&hoofdstuk=I&artikel=1> rdfs:label "artikel 1 van de Monumentenwet 1988".
 <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1> rdfs:label "Artikel 1 Natuurschoonwet 1928".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0027565> rdfs:label "Mandaatbesluit beschermde stads- en dorpsgezichten".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1> rdfs:label "artikel 3.1 van de Wet ruimtelijke ordening".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Wet basisregistratie adressen en gebouwen".
 
 #--
@@ -117,6 +115,15 @@ kad:Rechthebbende a skos:Concept, skoslex:Actor;
 .
 #--
 #Acts
+kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
+#	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster; -> nog te definiëren
+	rdfs:label "Bijwerking basisregistratie Kadaster";
+	skos:prefLabel "Bijwerking basisregistratie Kadaster";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53>;
+	skoslex:object kad:BasisregistratieKadaster;
+	skoslex:actor kad:Bewaarder;
+	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+.
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Doorhaling_hypotheek;
 	rdfs:label "Doorhaling hypotheek"@nl;
@@ -130,16 +137,6 @@ kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=28>;
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:actor kad:Bewaarder;
-.
-kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
-	skos:exactMatch brk:Meting_kadastrale_grens;
-	rdfs:label "Meting kadastrale grens"@nl;
-	skos:prefLabel "Meting kadastrale grens";
-	skos:definition "Meting Kadastrale Grens is het vaststellen van een kadastrale grens tussen percelen op basis van inlichtingen van belanghebbenden.";
-	rdfs:comment "Een meting kadastrale grens is dat het Kadaster meet wat de grens van een stuk grond is. Het kadaster meet de grens volgens informatie van belanghebbenden.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
-	skoslex:object kad:KadastraleGrens;
-	skoslex:actor kad:DeDienst;
 .
 kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Inschrijving;
@@ -156,17 +153,28 @@ kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
         #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 .
-kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
-#	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster; -> nog te definiëren
-	rdfs:label "Bijwerking basisregistratie Kadaster";
-	skos:prefLabel "Bijwerking basisregistratie Kadaster";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53>;
-	skoslex:object kad:BasisregistratieKadaster;
-	skoslex:actor kad:Bewaarder;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Meting_kadastrale_grens;
+	rdfs:label "Meting kadastrale grens"@nl;
+	skos:prefLabel "Meting kadastrale grens";
+	skos:definition "Meting Kadastrale Grens is het vaststellen van een kadastrale grens tussen percelen op basis van inlichtingen van belanghebbenden.";
+	rdfs:comment "Een meting kadastrale grens is dat het Kadaster meet wat de grens van een stuk grond is. Het kadaster meet de grens volgens informatie van belanghebbenden.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
+	skoslex:object kad:KadastraleGrens;
+	skoslex:actor kad:DeDienst;
 .
 #--
 #Objects, records
+kad:Adres a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Adres;
+	rdfs:label "Adres"@nl;
+	skos:prefLabel "Adres";
+	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats";
+	rdfs:comment "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
+	skosthes:broaderPartitive kad:BasisregistratieAdressenEnGebouwen;
+#Je verwacht hier semantische relaties met Nummeraanduiding, OpenbareRuimte en Woonplaats -> kortsluiten met Kadaster.
+.
 kad:Basisregistratie a skos:Concept, skoslex:Object;
 	skos:exactMatch kad:Basisregistratie;
 	rdfs:label "Basisregistratie"@nl;
@@ -189,16 +197,6 @@ kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
 	rdfs:comment "De Basisregistratie Kadaster is een verzameling gegevens over percelen, eigendom, hypotheken, beperkte rechten (zoals recht van erfpacht, opstal en vruchtgebruik) en leidingnetwerken. Daarnaast staan er kadastrale kaarten in met perceel, perceelnummer, oppervlakte, kadastrale grens en de grenzen van het rijk, de provincies en gemeenten.";
 	skos:scopeNote "Nieuwe naam (vanaf januari 2009) voor de kadastrale registratie. De BRK is een administratie waaruit we de rechtstoestand en de feitelijke gesteldheid van onroerende zaken (en schepen en luchtvaartuigen) kunnen lezen. Bijhouding van de Basisregistratie Kadaster vindt plaats onder andere naar aanleiding van ter inschrijving aangeboden stukken (art. 54 Kadasterwet). De Basisregistratie Kadaster en de kadastrale kaarten behoren NIET tot de Openbare Registers. De Basisregistratie Kadaster heeft verschillende functies: (1) Het verschaffen van toegang tot de openbare registers. De Basisregistratie Kadaster bevat namelijk een verwijzing naar het kenmerk, waaronder stukken in het openbaar register zijn opgenomen. Voor ingeschreven stukken is dit het deel en nummer van inschrijving. Voor 4d stukken is dat een doorlopend volgnummer; (2) Het verschaffen van een overzichtelijke en systematische weergave van gegevens betreffende de rechtstoestand van onroerende zaken en de feitelijke gesteldheid van die zaken. Dit overzicht heeft formeel geen juridische betekenis (de kadastrale eigenaar is niet altijd de juridische eigenaar), doch in de praktijk wordt daar grote betekenis aan toegekend. De kadastrale tenaamstelling is bijvoorbeeld uitgangspunt voor belastingheffing. Bij landinrichtingsprojecten en onteigening vindt vastelling van de rechthebbenden plaats via de Basisregistratie Kadaster.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a>
-.
-kad:Adres a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Adres;
-	rdfs:label "Adres"@nl;
-	skos:prefLabel "Adres";
-	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats";
-	rdfs:comment "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
-	skosthes:broaderPartitive kad:BasisregistratieAdressenEnGebouwen;
-#Je verwacht hier semantische relaties met Nummeraanduiding, OpenbareRuimte en Woonplaats -> kortsluiten met Kadaster.
 .
 kad:Beding a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Beding;
@@ -394,6 +392,17 @@ kad:KadastraleGemeente a skos:Concept, skoslex:Object;
 	skos:prefLabel "Kadastrale gemeente";
 	skos:definition "Een kadastrale gemeente is een gebied dat in het algemeen samenvalt met het gebied van een burgerlijke gemeente. Als regel is dan ook de naam van de kadastrale gemeente dezelfde als die van de burgerlijke gemeente. Het gebied van een kadastrale gemeente kan ook bestaan uit slechts een deel van het gebied van een burgerlijke gemeente, doordat een opgeheven burgerlijke gemeente als kadastrale gemeente is gehandhaafd, of een deel van een burgerlijke gemeente, dat bij een andere is gevoegd, bij de toepassing der grensverandering zowel op de kadastrale kaart als in de kadastrale registratie afzonderlijk is geadministreerd en hierdoor tot kadastrale gemeente is gemaakt.";
 	rdfs:comment "Een kadastrale gemeente is een gebied dat meestal hetzelfde is als een burgerlijke gemeente. Beide namen zijn dan vaak hetzelfde. Soms bestaat de kadastrale gemeente uit een gedeelte van een burgerlijke gemeente. Dit is het geval als een burgerlijke gemeente niet meer bestaat, maar het Kadaster de naam toch heeft gehouden.";
+.
+kad:KadastraleGrens a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Kadastrale_grens;
+	skos:closeMatch kad:MetingKadastraleGrens;
+	rdfs:label "Kadastrale grens"@nl;
+	skos:prefLabel "Kadastrale grens";
+	skos:definition "Een Kadastrale Grens is de weergave van een grens op de kadastrale kaart die door de dienst van het Kadaster tussen percelen vastgesteld wordt, op basis van inlichtingen van belanghebbenden en met gebruikmaking van de aan de kadastrale kaart ten grondslag liggende bescheiden die in elk geval de landmeetkundige gegevens bevatten van hetgeen op die kaart wordt weergegeven.";
+	skos:comment "De kadastrale grens is de grens tussen twee stukken grond op een kadastrale kaart. Het Kadaster bepaalt die grens met informatie van betrokken partijen en met andere documenten met landmeetkundige gegevens over de stukken grond.";
+	rdfs:editorialNote "Ontleend aan de Kadasterwet.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50>;
 .
 kad:KadastraleGrootte a skos:Concept;
 	skos:exactMatch brk:Kadastrale_grootte;
@@ -595,19 +604,6 @@ kad:Vermogensrecht a skos:Concept, skoslex:Object;
 #	skosthes:broaderPartitive kad:KadastraleAanduiding;
 #	#https://tax.kadaster.nl/doc/begrip/Vernummering
 #.
-#kad:Voorkeursrecht a skos:Concept; komt nu niet voor bij Kadaster. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
-#	rdfs:label "Voorkeursrecht"@nl;
-#	skos:prefLabel "Voorkeursrecht";
-#	skos:altLabel "Recht van voorverkoop";
-#	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
-#	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
-#	skos:semanticRelation kad:Registergoed;
-#.
-#kad:Wederinkoop a skos:Concept; komt nu niet voor bij Kadaster. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
-#	rdfs:label "Wederinkoop"@nl;
-#	skos:prefLabel "Wederinkoop";
-#	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding.";
-#.
 kad:Zaak a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Zaak;
 	rdfs:label "Zaak"@nl;
@@ -650,18 +646,3 @@ kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	dcterms:type "PDF download";
 	dcat:servesDataset <http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie>;
 .
-#Begrippen in bestemmingsplan, straks omgevingsplan -> beheer door gemeenten
-#kad:BeschermdStadsDorpsgezicht a skos:Concept;
-#	komt niet voor in de Kadaster taxonomie
-#	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
-#	skos:prefLabel "Beschermd stads-/dorpsgezicht";
-#	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
-#	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
-#.
-#kad:Bestemmingsplan a skos:Concept;
-#	rdfs:label "Bestemmingsplan"@nl;
-#	skos:prefLabel "Bestemmingsplan";
-#	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
-#.
