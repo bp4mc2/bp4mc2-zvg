@@ -68,7 +68,9 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2> rdfs:label "artikel 1.2 van de Wet basisregistratie personen".
 
 #Diverse wetten
+<http://wetten.overheid.nl/jci1.3:c:BWBR0027565> rdfs:label "Mandaatbesluit beschermde stads- en dorpsgezichten".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1> rdfs:label "artikel 1 van de Faillissementswet".
+#<http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1> rdfs:label "artikel 3.1 van de Wet ruimtelijke ordening".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42> rdfs:label "artikel 42 van de Invorderingswet 1990".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0024282&hoofdstuk=2&paragraaf=2.1&artikel=3&lid=5> rdfs:label "artikel 3, vijfde lid, van de Wet ter voorkoming van witwassen en financieren van terrorisme".
@@ -139,10 +141,10 @@ zv:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	rdfs:label "Aangifte overdrachtsbelasting"@nl;
 	skos:prefLabel "Aangifte overdrachtsbelasting";
 	skos:definition "Aangifte voor de verschuldigde overdrachtsbelasting bij de belastingdienst.";
-  skos:editorialNote "Gebeurt gelijktijdig met het registreren van de overdrachtsbelasting.";
-  skoslex:actor not:Notaris;
-  skoslex:object zv:Overdrachtsbelasting;
-  skoslex:object zv:RegisterBelastingdienst;
+	skos:editorialNote "Gebeurt gelijktijdig met het registreren van de overdrachtsbelasting.";
+	skoslex:actor not:Notaris;
+	skoslex:object zv:Overdrachtsbelasting;
+	skoslex:object zv:RegisterBelastingdienst;
 	skoslex:object not:Grondslagwaarde;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
@@ -188,6 +190,21 @@ zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
 	rdfs:comment "Voortdurend bijgehouden bestand met persoonsgegevens van inwoners van Nederland.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2>;
 .
+#Begrippen 'BeschermdStadsDorpsgezicht' en 'Bestemmingsplan' in bestemmingsplan, straks omgevingsplan -> beheer door gemeenten
+zv:BeschermdStadsDorpsgezicht a skos:Concept;
+	#komt niet voor in de Kadaster taxonomie
+	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
+	skos:prefLabel "Beschermd stads-/dorpsgezicht";
+	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
+	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
+.
+#zv:Bestemmingsplan a skos:Concept;
+#	rdfs:label "Bestemmingsplan"@nl;
+#	skos:prefLabel "Bestemmingsplan";
+#	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
+#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
+#.
 zv:HuidigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Huidig adres"@nl;
 	skos:prefLabel "Huidig adres";
@@ -223,6 +240,14 @@ zv:Faillissement a skos:Concept; #Begrip hoort thuis in een domein Belastingdien
 	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
 .
+zv:OpgegevenGrootte a skos:Concept;
+	rdfs:label "Opgegeven grootte"@nl;
+	skos:prefLabel "Opgegeven grootte";
+	skosthes:broaderGeneric kad:KadastraleGrootte;
+#	skos:closeMatch kad:WerkelijkeGrootte;
+			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
+	skos:semanticRelation kad:Perceel;
+.
 zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Overdrachtsbelasting";
 	skos:prefLabel "Overdrachtsbelasting";
@@ -247,4 +272,10 @@ zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	#skos:definition ".";
 	rdfs:comment "Het adres waar een natuurlijk persoon zal wonen met ingang van een bepaalde datum in de toekomst.";
 	skos:semanticRelation kad:Adres;
+.
+zv:WerkelijkeGrootte a skos:Concept;
+	rdfs:label "Werkelijke grootte"@nl;
+	skos:prefLabel "Werkelijke grootte";
+	skosthes:broaderGeneric kad:KadastraleGrootte;
+	skos:semanticRelation kad:Perceel;
 .
