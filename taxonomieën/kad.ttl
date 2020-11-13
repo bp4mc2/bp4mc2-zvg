@@ -395,11 +395,10 @@ kad:KadastraleGemeente a skos:Concept, skoslex:Object;
 .
 kad:KadastraleGrens a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Kadastrale_grens;
-	skos:closeMatch kad:MetingKadastraleGrens;
 	rdfs:label "Kadastrale grens"@nl;
 	skos:prefLabel "Kadastrale grens";
 	skos:definition "Een Kadastrale Grens is de weergave van een grens op de kadastrale kaart die door de dienst van het Kadaster tussen percelen vastgesteld wordt, op basis van inlichtingen van belanghebbenden en met gebruikmaking van de aan de kadastrale kaart ten grondslag liggende bescheiden die in elk geval de landmeetkundige gegevens bevatten van hetgeen op die kaart wordt weergegeven.";
-	skos:comment "De kadastrale grens is de grens tussen twee stukken grond op een kadastrale kaart. Het Kadaster bepaalt die grens met informatie van betrokken partijen en met andere documenten met landmeetkundige gegevens over de stukken grond.";
+	rdfs:comment "De kadastrale grens is de grens tussen twee stukken grond op een kadastrale kaart. Het Kadaster bepaalt die grens met informatie van betrokken partijen en met andere documenten met landmeetkundige gegevens over de stukken grond.";
 	rdfs:editorialNote "Ontleend aan de Kadasterwet.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50>;
