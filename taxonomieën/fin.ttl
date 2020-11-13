@@ -198,7 +198,7 @@ fin:Opslagbedrag a skos:Concept;
 	skos:prefLabel "Opslagbedrag";
 	skos:definition "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld.";
 	rdfs:comment "Het bedrag dat een hypotheeknemer - naast het inschrijvingsbedrag - op basis van de hypotheekakte maximaal mag opeisen als gevolg van niet betaalde rentes, boetes en kosten.";
-	skosthes:broaderPartitive kad:TotaalbedragInschrijving;
+	skosthes:broaderPartitive not:TotaalbedragInschrijving;
 .
 fin:Overbruggingslening a skos:Concept, skoslex:Record;
 	rdfs:label "Overbruggingslening"@nl;
