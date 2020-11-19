@@ -28,6 +28,7 @@ GRAPH config:Theatre {
             elmo1:data [elmo1:index "6"; rdfs:label "Role consistancy"; xhtml:link "/consistancy"];
             elmo1:data [elmo1:index "7"; rdfs:label "Taxonomie"; xhtml:link "/taxonomie"];
             elmo1:data [elmo1:index "8"; rdfs:label "Onderdelen"; xhtml:link "/onderdelen"];
+            elmo1:data [elmo1:index "9"; rdfs:label "CSV Export"; xhtml:link "/export.csv?format=csv"];
           ];
         ]
       }

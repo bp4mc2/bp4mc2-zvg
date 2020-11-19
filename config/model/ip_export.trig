@@ -13,18 +13,28 @@ GRAPH config:Theatre {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
       PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
-      SELECT ?begrip ?voorkeursterm ?alternatieve_aanduiding ?definitie ?uitleg ?rationale ?toelichting
+      SELECT DISTINCT ?domein ?begrip
+             GROUP_CONCAT(DISTINCT ?voorkeursterm1;separator="; ") as ?voorkeursterm
+             GROUP_CONCAT(DISTINCT ?alternatieve_aanduiding1;separator="; ") as ?alternatieve_aanduiding
+             GROUP_CONCAT(DISTINCT ?definitie1;separator="; ") as ?definitie
+             GROUP_CONCAT(DISTINCT ?uitleg1;separator="; ") as ?uitleg
+             GROUP_CONCAT(DISTINCT ?rationale1;separator="; ") as ?rationale
+             GROUP_CONCAT(DISTINCT ?toelichting1;separator="; ") as ?toelichting
       WHERE {
-        ?concept a skos:Concept.
-        ?concept rdfs:label ?begrip.
-        OPTIONAL { ?concept skos:prefLabel ?voorkeursterm}
-        OPTIONAL { ?concept skos:altLabel ?alternatieve_aanduiding}
-        OPTIONAL { ?concept skos:definition ?definitie}
-        OPTIONAL { ?concept rdfs:comment ?uitleg}
-        OPTIONAL { ?concept skos:editorialNote ?rationale}
-        OPTIONAL { ?concept skos:scopeNote ?toelichting}
+        GRAPH ?g {
+          ?g rdfs:label ?domein.
+          ?concept a skos:Concept.
+          ?concept rdfs:label ?begrip.
+          OPTIONAL { ?concept skos:prefLabel ?voorkeursterm1}
+          OPTIONAL { ?concept skos:altLabel ?alternatieve_aanduiding1}
+          OPTIONAL { ?concept skos:definition ?definitie1}
+          OPTIONAL { ?concept rdfs:comment ?uitleg1}
+          OPTIONAL { ?concept skos:editorialNote ?rationale1}
+          OPTIONAL { ?concept skos:scopeNote ?toelichting1}
+        }
       }
-      ORDER BY ?begrip
+      GROUP BY ?concept ?domein ?begrip
+      ORDER BY ?domein ?begrip
     """
   .
 

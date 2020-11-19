@@ -4,7 +4,7 @@
 GRAPH config:Theatre {
 
   config:ExportEndpoint a elmo:Endpoint;
-    elmo:pathPattern "/export";
+    elmo:pathPattern "/export.csv";
     elmo:stage config:Stage;
     elmo:getRepresentation config:Export;
   .
