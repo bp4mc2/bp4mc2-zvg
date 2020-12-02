@@ -1,3 +1,4 @@
 data
 hooktest
 **/*.archimate.bak
+**/*.ldb
