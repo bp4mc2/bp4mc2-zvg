@@ -1,0 +1,20 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:ModelEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/def/zvg";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:Model;
+  .
+
+  config:Model a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:ModelData;
+    elmo:appearance [ a elmo:VocabularyAppearance ];
+    elmo:contains config:Menu;
+    elmo:contains config:Footer;
+.
+
+}
