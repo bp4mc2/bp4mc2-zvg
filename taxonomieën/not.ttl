@@ -501,8 +501,8 @@ not:Comparitie a skos:Concept, skoslex:Record;
 	rdfs:label "Verschijning voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
 	skos:prefLabel "Verschijning voor notaris";
 	skos:altLabel "Comparitie";
-	skos:definition "Het eerste onderdeel van de notariële akte waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
-	rdfs:comment "Comparitie is het verschijnen van de partijen bij de notaris voor het ondertekenen van een akte.";
+	skos:definition "Het eerste onderdeel van de notariële akte, waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
+	rdfs:comment "Partijen verschijnen bij de notaris voor het ondertekenen van de akte. Ook bekend als comparitie.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 	skosthes:broaderPartitive not:NotarieleAkte;
 	skoslex:isAbout not:Comparant;
