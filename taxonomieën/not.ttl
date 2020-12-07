@@ -574,6 +574,7 @@ not:Koopsom a skos:Concept;
 	skos:scopeNote "Een koopsom is niet altijd gelijk aan de economische of WOZ waarde. Er kunnen redenen zijn, waarom een koopsom hoger of lager is dan die waarde. De notaris moet controleren of de koopsom redelijk is.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
+	skos:related kad:Object;
 .
 not:KwalitatieveRechten a skos:Concept;
 	rdfs:label "Kwalitatieve rechten"@nl;
