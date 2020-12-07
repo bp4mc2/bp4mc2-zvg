@@ -465,6 +465,13 @@ kad:Nummeraanduiding a skos:Concept, skoslex:Object;
 	skos:definition "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.";
 	rdfs:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
 .
+kad:Object a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Object;
+	rdfs:label "Object"@nl;
+	skos:prefLabel "Object";
+	skos:definition "Een object is een geografische eenheid bestaande uit een of meer elementen met specifieke kenmerken. Een object is elk ding dat zich aan de menselijke zintuigen voordoet, of het is een zaak, proces of persoon waarover men aan het spreken of denken is. Objecten kunnen zowel werkelijk bestaand als denkbeeldig zijn.";
+	rdfs:comment "Een object is iets wat mensen waarnemen. Het kan een bestaand of denkbeeldig object zijn.";
+.
 kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Onroerende_zaak;
 	rdfs:label "Onroerende zaak"@nl;
