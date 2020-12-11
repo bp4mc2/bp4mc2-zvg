@@ -277,8 +277,8 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdragen zakelijk recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
-	rdfs:comment "Veranderen van een eigenaar van de rechten die horen bij een (onroerende) zaak (bijvoorbeeld eigendomsrecht).";
-	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zitten.";
+	rdfs:comment "Wijzigen van een eigenaar van de rechten die horen bij een (onroerende) zaak (bijvoorbeeld eigendomsrecht).";
+	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht, zijnde hypotheekrecht. Dit gebeurt meestal bij dezelfde notaris, maar dat is niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheekrecht en er geen andere beperkte rechten (bijv. erfdienstbaarheid) op zitten.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:object kad:ZakelijkRecht;
@@ -498,8 +498,8 @@ not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt 
 	skosthes:narrowerGeneric not:Voorkeursrecht;
 .
 not:Comparitie a skos:Concept, skoslex:Record;
-	rdfs:label "Verschijning voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
-	skos:prefLabel "Verschijning voor notaris";
+	rdfs:label "Verschijnen voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
+	skos:prefLabel "Verschijnen voor notaris";
 	skos:altLabel "Comparitie";
 	skos:definition "Het eerste onderdeel van de notariële akte, waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
 	rdfs:comment "Partijen verschijnen bij de notaris voor het ondertekenen van de akte. Ook bekend als comparitie.";
