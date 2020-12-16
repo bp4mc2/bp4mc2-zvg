@@ -34,6 +34,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12> rdfs:label "artikel 12 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25> rdfs:label "artikel 25 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37> rdfs:label "artikel 37 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=38&lid=1> rdfs:label "artikel 38, eerste lid, van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39> rdfs:label "artikel 39 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40> rdfs:label "artikel 40 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46> rdfs:label "artikel 46 van de Wet op het notarisambt".
@@ -141,17 +142,19 @@ not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)"@nl;
-	skos:definition "Opslaan of verzamelen in een archief of andere bewaarplaats.";
-        #rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats.";
+	skos:definition "De notaris is verplicht de voor hem verleden akten in zijn protocol op te nemen.";
+        rdfs:comment "Opslaan of verzamelen in een archief of andere bewaarplaats.";
 	#Algemene handeling. Zou o.a. object akte en actor notaris kunnen linken.
+	skos:scopeNote "De akte blijft eeuwig bewaard. Als de notaris stopt, dan wordt zijn protocol (dossier met akten) overgenomen door een andere notaris (zijn opvolger).";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=38&lid=1>;
 	skoslex:actor not:Notaris;
 	skoslex:object not:Akte;
 .
 not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (hypotheekakte)"@nl;
 	skos:prefLabel "Archiveren (hypotheekakte)";
-	skos:definition "Archiveren van de hypotheekakte.";
-	rdfs:comment "Archiveren van de hypotheekakte.";
+	skos:definition "Opslaan of verzamelen van de hypotheekakte in een archief of andere bewaarplaats.";
+	#rdfs:comment "Archiveren van de hypotheekakte.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Hypotheekakte;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
@@ -159,8 +162,8 @@ not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
 not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (leveringsakte)"@nl;
 	skos:prefLabel "Archiveren (leveringsakte)";
-	skos:definition "Archiveren van de leveringsakte.";
-	rdfs:comment "Archiveren van de leveringsakte.";
+	skos:definition "Opslaan of verzamelen van de leveringsakte in een archief of andere bewaarplaats.";
+	#rdfs:comment "Archiveren van de leveringsakte.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:Leveringsakte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
@@ -277,8 +280,8 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdragen zakelijk recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
-	rdfs:comment "Veranderen van een eigenaar van de rechten die horen bij een (onroerende) zaak (bijvoorbeeld eigendomsrecht).";
-	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht. Dit gebeurt meestal bij dezelfde notaris, maar dat is dus niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheek en er geen beperkingen (bijv. erfdienstbaarheid) op zitten.";
+	rdfs:comment "Wijzigen van een eigenaar van de rechten die horen bij een (onroerende) zaak (bijvoorbeeld eigendomsrecht).";
+	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht, zijnde hypotheekrecht. Dit gebeurt meestal bij dezelfde notaris, maar dat is niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheekrecht en er geen andere beperkte rechten (bijv. erfdienstbaarheid) op zitten.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:object kad:ZakelijkRecht;
@@ -498,8 +501,8 @@ not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt 
 	skosthes:narrowerGeneric not:Voorkeursrecht;
 .
 not:Comparitie a skos:Concept, skoslex:Record;
-	rdfs:label "Verschijning voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
-	skos:prefLabel "Verschijning voor notaris";
+	rdfs:label "Verschijnen voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
+	skos:prefLabel "Verschijnen voor notaris";
 	skos:altLabel "Comparitie";
 	skos:definition "Het eerste onderdeel van de notariële akte, waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
 	rdfs:comment "Partijen verschijnen bij de notaris voor het ondertekenen van de akte. Ook bekend als comparitie.";
@@ -538,13 +541,13 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	skos:semanticRelation zv:Overdrachtsbelasting;
 .
 not:HerzieningErfpacht a skos:Concept;
-               rdfs:label "Herziening erfpacht"@nl;
-               skos:prefLabel "Herziening";
-               skos:altLabel "Herziening erfpacht";
-               skos:altLabel "Herziening canon";
-               skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
-               skosthes:broaderPartitive not:Erfpachtvoorwaarden;
-               skos:semanticRelation kad:Canon;
+	rdfs:label "Herziening erfpacht"@nl;
+	skos:prefLabel "Herziening";
+	skos:altLabel "Herziening erfpacht";
+	skos:altLabel "Herziening canon";
+	skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
+	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
+	skos:semanticRelation kad:Canon;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekakte"@nl;
@@ -563,6 +566,20 @@ not:Kadasterkosten a skos:Concept;#Mogelijk splitsen in een variant voor leverin
 	skos:prefLabel "Kadasterkosten";
 	skos:definition "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten.";
 	rdfs:comment "Kosten voor de inschrijving van een eigenaar van een onroerende zaak in het register van het Kadaster.";
+.
+not:KadasterkostenKik a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
+	rdfs:label "Kadasterkosten KIK"@nl;
+	skos:prefLabel "Kadasterkosten KIK";
+	skos:definition "Voor het digitaal inschrijven van de akten van de notaris via het KIK-systeem, rekent het Kadaster kosten. Deze kosten zijn lager dan de kosten voor inschrijven buiten KIK om.";
+	skosthes:broaderPartitive not:Kadasterkosten;
+	skos:scopeNote "KIK staat voor Ketenintegratie Inschrijving Kadaster.";
+.
+not:KadasterkostenGeenKik a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
+	rdfs:label "Kadasterkosten geen KIK"@nl;
+	skos:prefLabel "Kadasterkosten geen KIK";
+	skos:definition "Voor het inschrijven van de akten van de notaris, rekent het Kadaster kosten. Deze kosten zijn hoger als hierbij geen gebruik wordt gemaakt van het KIK-systeem.";
+	skosthes:broaderPartitive not:Kadasterkosten;
+	skos:scopeNote "KIK staat voor Ketenintegratie Inschrijving Kadaster.";
 .
 not:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;

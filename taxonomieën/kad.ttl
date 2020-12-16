@@ -247,6 +247,20 @@ kad:Canon a skos:Concept;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
 .
+kad:CanonJaarlijksBedrag a skos:Concept;
+#	skos:exactMatch brk:xxx; nog niet gedefinieerd in Kadaster taxonomie (wel in IMKAD)
+	rdfs:label "jaarlijks bedrag canon"@nl;
+	skos:prefLabel "jaarlijks bedrag canon";
+	skos:definition "Het Jaarlijks bedrag is het bedrag dat jaarlijks als erpachtcanon moet worden betaald.";
+	skosthes:semanticRelation kad:Canon;
+.
+kad:CanonIndexatiedatum a skos:Concept;
+#	skos:exactMatch brk:xxx; nog niet gedefinieerd in Kadaster taxonomie (ook niet onderdeel van IMKAD). Dit is onderdeel van de erfpachtvoorwaarden net als een periodieke herziening van de canon op basis van taxatie.
+	rdfs:label "indexatiedatum canon"@nl;
+	skos:prefLabel "indexatiedatum canon";
+	skos:definition "De datum waarop de canon jaarlijks wordt geïndexeerd op basis van de ontwikkeling van de prijsindex.";
+	skosthes:semanticRelation kad:Canon;
+.
 kad:DienendeErf a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Dienende_erf;
 	rdfs:label "Dienende erf"@nl;
