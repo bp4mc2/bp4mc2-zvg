@@ -197,21 +197,21 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Verkoper;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
-
+.
 #concepten toegevoegd als onderdelen van de koop (eerder clausules als onderdeel van de koopovereenkomst), exacte terminologie nog checken
-mak:Kostenverdeling a skos:concept, skolex:Act;
+mak:Kostenverdeling a skos:concept, skoslex:Act;
 	rdfs:label "Kostenverdeling"@nl;
 	skos:prefLabel "Kostenverdeling";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:KostenEnOverdrachtsbelasting;
 .
-mak:Garantie a skos:concept, skolex:Act;
+mak:Garantie a skos:concept, skoslex:Act;
 	rdfs:label "Garantie"@nl;
 	skos:prefLabel "Garantie";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:BankgarantieWaarborgsom;
 .
-mak:Voorbehoud a skos:concept, skolex:Act;
+mak:Voorbehoud a skos:concept, skoslex:Act;
 	rdfs:label "Voorbehoud"@nl;
 	skos:prefLabel "Voorbehoud";
 	skosthes:broaderPartitive mak:Koop;
@@ -409,7 +409,7 @@ mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	skoslex:isAbout kad:OpenbareRegisters;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object; 
+mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object;
 	rdfs:label "Staat onroerende zaak"@nl;
 	skos:prefLabel "Staat onroerende zaak";
 	skosthes:narrowerGeneric mak:RechtenAanspraken;
@@ -424,13 +424,13 @@ mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:OnroerendMonument;
 	skosthes:narrowerGeneric zv:BeschermdStadsDorpsgezicht;
 	skosthes:narrowerGeneric mak:RechtenDerden;
-	skosthes:narrowerGeneric mak:AanwijzingWVG; 
+	skosthes:narrowerGeneric mak:AanwijzingWVG;
 	skosthes:narrowerGeneric not:Wegneemrecht;
 	skosthes:narrowerGeneric kad:Grootte;
 	skosthes:narrowerGeneric kad:Canon;
-	skosthes:narrowerGeneric mak:Onbekendheidsverklaring; 
+	skosthes:narrowerGeneric mak:Onbekendheidsverklaring;
 .
-mak:VrijwaringStaatOnroerendeZaak a skos:concept, skolex:Act;
+mak:VrijwaringStaatOnroerendeZaak a skos:concept, skoslex:Act;
 	rdfs:label "Vrijwaring staat onroerende zaak"@nl;
 	skos:prefLabel "Vrijwaring staat onroerende zaak";
 	skosthes:broaderPartitive mak:Koop;
@@ -441,10 +441,10 @@ mak:ArtikelStaatOnroerendeZaakGebruik a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Staat van onroerend goed/gebruik"@nl;
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
 #	skos:definition "Artikel 6 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
-	rdfs:comment "In artikel 6.1 staat dat koper de onroerende zaak koopt in de staat waarin het zich bevindt ten tijde van het aangaan van de koopovereenkomst. De hoofdregel is dat verkoper in beginsel niet instaat voor de afwezigheid van (verborgen) gebreken. Met andere woorden: de onroerende zaak zal aan koper in eigendom worden overgedragen met inbegrip van alle zichtbare en onzichtbare gebreken. Alle risico wordt dus in eerste instantie bij koper neergelegd. Dit geldt zowel voor feitelijke gebreken als voor overige gebreken voor zover deze niet als ‘bijzondere lasten’ in de zin van art. 7:15 van het Burgerlijk Wetboek zijn aan te merken. Artikel 6.2 gaat over die ‘bijzondere lasten’. 
-Gelet op de hoofdregel dat alle risico in eerste instantie op hem rust, wordt van koper verlangd dat hij tot op zekere hoogte onderzoek doet. Zo dient hij in beginsel zelf bij de gemeente te informeren welke bestemming krachtens het ter plaatse geldende bestemmingsplan op de onroerende zaak rust. Wel moet verkoper de hem bekende informatie aan koper verstrekken: hij moet dus in beginsel aan koper vertellen wat hij weet over de eigenschappen en (feitelijke) gebreken van de onroerende zaak. 
+	rdfs:comment '''In artikel 6.1 staat dat koper de onroerende zaak koopt in de staat waarin het zich bevindt ten tijde van het aangaan van de koopovereenkomst. De hoofdregel is dat verkoper in beginsel niet instaat voor de afwezigheid van (verborgen) gebreken. Met andere woorden: de onroerende zaak zal aan koper in eigendom worden overgedragen met inbegrip van alle zichtbare en onzichtbare gebreken. Alle risico wordt dus in eerste instantie bij koper neergelegd. Dit geldt zowel voor feitelijke gebreken als voor overige gebreken voor zover deze niet als ‘bijzondere lasten’ in de zin van art. 7:15 van het Burgerlijk Wetboek zijn aan te merken. Artikel 6.2 gaat over die ‘bijzondere lasten’.
+Gelet op de hoofdregel dat alle risico in eerste instantie op hem rust, wordt van koper verlangd dat hij tot op zekere hoogte onderzoek doet. Zo dient hij in beginsel zelf bij de gemeente te informeren welke bestemming krachtens het ter plaatse geldende bestemmingsplan op de onroerende zaak rust. Wel moet verkoper de hem bekende informatie aan koper verstrekken: hij moet dus in beginsel aan koper vertellen wat hij weet over de eigenschappen en (feitelijke) gebreken van de onroerende zaak.
 Op voormelde hoofdregel dat alle risico in eerste instantie op koper rust, wordt in artikel 6.3. een belangrijke uitzondering gemaakt voor zover het de feitelijke eigenschappen van de onroerende zaak betreft. Hieronder wordt in de toelichting op artikel 6.3. uitgebreid aandacht aan deze uitzondering besteed.
-In artikel 10 wordt nader ingegaan op de situatie dat de onroerende zaak niet geleverd kan worden in de staat waarin deze zich bij het tot stand komen van deze koopovereenkomst bevindt, omdat de zaak na de koop – maar voor de levering – geheel of gedeeltelijk verloren is gegaan.";
+In artikel 10 wordt nader ingegaan op de situatie dat de onroerende zaak niet geleverd kan worden in de staat waarin deze zich bij het tot stand komen van deze koopovereenkomst bevindt, omdat de zaak na de koop – maar voor de levering – geheel of gedeeltelijk verloren is gegaan.''';
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
 	skos:scopeNote "Artikel 6 van de model koopovereenkomst.";
@@ -476,7 +476,7 @@ In artikel 10 wordt nader ingegaan op de situatie dat de onroerende zaak niet ge
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 #Artikel 6.1 bevat de hoofdregel, de overige subartikelen de aanvullingen en uitzonderingen
-mak:RechtenAanspraken a skos:Concept, skoslex:Object; 
+mak:RechtenAanspraken a skos:Concept, skoslex:Object;
 	rdfs:label "Rechten en aanspraken"@nl;
 	skos:prefLabel "Rechten en aanspraken";
 	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
@@ -489,7 +489,7 @@ mak:RechtenAanspraken a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:PubliekrechtelijkeBeperking;
 	skosthes:narrowerGeneric not:BijzondereLasten;
 .
-mak:VrijwaringRechtenAanspraken a skos:concept, skolex:Act;
+mak:VrijwaringRechtenAanspraken a skos:concept, skoslex:Act;
 	rdfs:label "Vrijwaring rechten en aanspraken"@nl;
 	skos:prefLabel "Vrijwaring rechten en aanspraken";
 	skoslex:object mak:RechtenAanspraken;
@@ -503,7 +503,7 @@ mak:ArtikelRechtenAanspraken a skos:Concept, skoslex:Record;
 	skoslex:isAbout mak:VrijwaringRechtenAanspraken;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
-mak:Lasten a skos:Concept, skoslex:Object; 
+mak:Lasten a skos:Concept, skoslex:Object;
 	rdfs:label "Lasten"@nl;
 	skos:prefLabel "Lasten";
 	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
@@ -513,7 +513,7 @@ mak:Lasten a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Kettingbeding;
 	skosthes:narrowerGeneric kad:KwalitatieveVerplichting;
 .
-mak:VrijwaringLasten a skos:concept, skolex:Act;
+mak:VrijwaringLasten a skos:concept, skoslex:Act;
 	rdfs:label "Vrijwaring lasten"@nl;
 	skos:prefLabel "Vrijwaring lasten";
 	skoslex:object mak:Lasten;
@@ -523,17 +523,17 @@ mak:ArtikelLasten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: (bijzondere) lasten"@nl;
 	skos:prefLabel "Artikel: (bijzondere) lasten";
 	rdfs:comment "Artikel 6.2 gaat over ‘bijzondere lasten en beperkingen’ die op de onroerende zaak rusten (een term afkomstig uit art. 7:15 van het Burgerlijk Wetboek). ’Bijzondere lasten en beperkingen’ (hierna: ‘bijzondere lasten’) zijn juridische beperkingen die op de onroerende zaak rusten. Dit kunnen privaatrechtelijke beperkingen zijn zoals (lijdende) erfdienstbaarheden, kwalitatieve verplichtingen en zogenoemde ‘kettingbedingen’. Op grond van zulke beperkingen heeft een ander (dan de eigenaar) een aanspraak op de onroerende zaak (bijvoorbeeld een recht van overpad over de grond). Het kan ook gaan om publiekrechtelijke beperkingen zoals een besluit van het college van B & W tot het vestigen van een wettelijk voorkeursrecht. Verkoper dient koper voorafgaand aan de koop te informeren over de juridische beperkingen die als ‘bijzondere lasten’ op de onroerende zaak rusten. Daartoe zal hij aan koper (in kopie) verstrekken de (voorgaande) notariële akten waarover hij beschikt. Koper kan dan in deze akten lezen welke bijzondere lasten op de onroerende zaak rusten. Uit artikel 6.2 volgt dat koper de bijzondere lasten die uit deze akten voortvloeien, (uitdrukkelijk) aanvaardt.
-Is verkoper ermee bekend dat er (ook) bijzondere lasten op de onroerende zaak rusten die niet blijken uit de aan koper ter hand gestelde akten, dan zal hij die bijzondere lasten aan koper moeten mededelen, zodat koper daarvan op de hoogte is wanneer de koopovereenkomst wordt gesloten. Voor publiekrechtelijke beperkingen (die als een bijzondere last op de onroerende zaak rusten) geldt dat deze lang niet altijd zijn vermeld in voorgaande notariële akten. De publiekrechtelijke beperkingen waarmee verkoper bekend is, kunnen expliciet in artikel 6.2 worden vermeld. Koper aanvaardt (uitdrukkelijk) de in artikel 6.2 vermelde beperkingen. 
+Is verkoper ermee bekend dat er (ook) bijzondere lasten op de onroerende zaak rusten die niet blijken uit de aan koper ter hand gestelde akten, dan zal hij die bijzondere lasten aan koper moeten mededelen, zodat koper daarvan op de hoogte is wanneer de koopovereenkomst wordt gesloten. Voor publiekrechtelijke beperkingen (die als een bijzondere last op de onroerende zaak rusten) geldt dat deze lang niet altijd zijn vermeld in voorgaande notariële akten. De publiekrechtelijke beperkingen waarmee verkoper bekend is, kunnen expliciet in artikel 6.2 worden vermeld. Koper aanvaardt (uitdrukkelijk) de in artikel 6.2 vermelde beperkingen.
 Het is van belang dat verkoper aan koper vertelt wat hij weet, en dat koper op grond van hetgeen in artikel 6.2 is vermeld en de (in kopie) aan hem verstrekte voorgaande notariële akten weet welke (privaatrechtelijke en publiekrechtelijke) bijzondere lasten op de onroerende zaak rusten. Laat verkoper het verstrekken van informatie achterwege, dan kan hij later worden geconfronteerd met een eis tot schadevergoeding. Omdat de bijzondere lasten aanspraken van anderen op de onroerende zaak betreffen, zal verkoper die lasten vaak niet (of slechts met veel moeite) kunnen opheffen. Blijkt opheffing niet mogelijk, dan zal koper in beginsel schadevergoeding van verkoper kunnen vorderen. Het is daarom van belang dat verkoper aan koper vertelt welke bijzondere lasten op de onroerende zaak rusten (zodat deze door koper kunnen worden aanvaard).";
 	skos:scopeNote "Artikel 6.2 van de model koopovereenkomst.";
 	skoslex:isAbout mak:VrijwaringLasten;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
-mak:EigenschappenNormaalGebruik a skos:Concept, skoslex:Object; 
+mak:EigenschappenNormaalGebruik a skos:Concept, skoslex:Object;
 	rdfs:label "Eigenschappen normaal gebruik"@nl;
 	skos:prefLabel "Eigenschappen normaal gebruik";
 .
-mak:VrijwaringEigenschappenNormaalGebruik a skos:concept, skolex:Act;
+mak:VrijwaringEigenschappenNormaalGebruik a skos:concept, skoslex:Act;
 	rdfs:label "Vrijwaring eigenschappen normaal gebruik"@nl;
 	skos:prefLabel "Vrijwaring eigenschappen normaal gebruik";
 	skoslex:object mak:EigenschappenNormaalGebruik;
@@ -547,7 +547,7 @@ Deze mededelingsplicht is niet beperkt tot voorgenoemde gebreken. Als koper heef
 Ook voor verkoper gaat het spreekwoord ‘wat niet weet, wat niet deert’ niet op. Als ondanks voldoende onderzoek door koper, achteraf blijkt dat ten tijde van de eigendomsoverdracht toch sprake is van een gebrek dat een normaal gebruik in de weg staat, kan verkoper daar in principe op worden aangesproken. Dat geldt ook voor bodemverontreiniging. Als zowel aan verkoper als aan koper volledig onbekend is of er bodemverontreiniging aanwezig is, dan zal, wanneer het normale gebruik van de onroerende zaak in het geding is, het risico in beginsel op verkoper rusten. Staat een verontreiniging een normaal gebruik niet in de weg, dan berust het risico in beginsel op koper.
 De verplichting voor verkoper om een zaak te leveren die de eigenschappen bezit die voor een normaal gebruik ervan nodig zijn, geldt in beginsel ook voor de meeverkochte (roerende) zaken. Ook in dat geval geldt dat verkoper koper moet informeren over gebreken die het normale gebruik belemmeren en die voor koper niet direct waarneembaar zijn. Als koper zelf reden heeft om te twijfelen, moet hij verkoper vragen stellen of de meegekochte zaak (laten) onderzoeken.
 
-De een-na-laatste zin van artikel 6.3. ziet op de herstelkosten. Voor gebreken die het normale gebruik belemmeren welke niet aan koper bekend of kenbaar waren op het moment van het tot stand komen van deze koopovereenkomst, is verkoper uitsluitend aansprakelijk voor de herstelkosten. Verkoper draagt daarmee het risico van het alsnog geschikt maken van de onroerende zaak voor normaal gebruik. Bij het vaststellen van de herstelkosten moet rekening worden gehouden met de aftrek ‘nieuw voor oud’. Bij het vaststellen van de aftrek ‘nieuw voor oud’ wordt rekening gehouden met enerzijds de kosten van vernieuwing en anderzijds de levensduur van het te vervangen onderdeel. Een voorbeeld: koper heeft verkoper op grond van artikel 6.3. van de koopovereenkomst aansprakelijk gesteld voor een niet functionerende cv-ketel. De cv-ketel dient in zijn geheel vervangen te worden. Een cv-installateur heeft de kosten van vervanging van de cv-ketel begroot op € 2.500,00. De verwachte levensduur wordt geschat op 20 jaar. Ten tijde van de koop was de cv-ketel 10 jaar oud. De aftrek ‘nieuw voor oud’ bedraagt dan 50%, te weten € 1.250,00. Verkoper dient dus de helft van de herstelkosten aan koper te voldoen. 
+De een-na-laatste zin van artikel 6.3. ziet op de herstelkosten. Voor gebreken die het normale gebruik belemmeren welke niet aan koper bekend of kenbaar waren op het moment van het tot stand komen van deze koopovereenkomst, is verkoper uitsluitend aansprakelijk voor de herstelkosten. Verkoper draagt daarmee het risico van het alsnog geschikt maken van de onroerende zaak voor normaal gebruik. Bij het vaststellen van de herstelkosten moet rekening worden gehouden met de aftrek ‘nieuw voor oud’. Bij het vaststellen van de aftrek ‘nieuw voor oud’ wordt rekening gehouden met enerzijds de kosten van vernieuwing en anderzijds de levensduur van het te vervangen onderdeel. Een voorbeeld: koper heeft verkoper op grond van artikel 6.3. van de koopovereenkomst aansprakelijk gesteld voor een niet functionerende cv-ketel. De cv-ketel dient in zijn geheel vervangen te worden. Een cv-installateur heeft de kosten van vervanging van de cv-ketel begroot op € 2.500,00. De verwachte levensduur wordt geschat op 20 jaar. Ten tijde van de koop was de cv-ketel 10 jaar oud. De aftrek ‘nieuw voor oud’ bedraagt dan 50%, te weten € 1.250,00. Verkoper dient dus de helft van de herstelkosten aan koper te voldoen.
 Koper draagt het risico van de overige (gevolg) schade, tenzij verkoper een verwijt treft. Verkoper treft een verwijt als hij bijvoorbeeld willens en wetens gebreken verzwijgt die het normale gebruik belemmeren.";
 	skos:scopeNote "Artikel 6.3 van de model koopovereenkomst.";
 	skoslex:isAbout mak:VrijwaringEigenschappenNormaalGebruik;
@@ -559,7 +559,7 @@ mak:Verontreiniging a skos:Concept;
 	skos:definition "Een vervuiling (in de grond) van de onroerende zaak.";
 	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt.";
 .
-mak:OnbekendheidsverklaringVerontreiniging a skos:concept, skolex:Act;
+mak:OnbekendheidsverklaringVerontreiniging a skos:concept, skoslex:Act;
 	rdfs:label "Onbekendheidsverklaring verontreiniging"@nl;
 	skos:prefLabel "Onbekendheidsverklaring verontreiniging";
 	skoslex:object mak:Verontreiniging;
@@ -573,30 +573,30 @@ mak:ArtikelVerontreiniging a skos:Concept, skoslex:Record;
 	skoslex:isAbout mak:OnbekendheidsverklaringVerontreiniging;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
-mak:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object; 
+mak:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object;
 	rdfs:label "Beschikking wet bodemsanering"@nl;
 	skos:prefLabel "Beschikking wet bodemsanering";
 .
-mak:Inspectie a skos:Concept, skoslex:Object; 
+mak:Inspectie a skos:Concept, skoslex:Object;
 	rdfs:label "Inspectie"@nl;
 	skos:prefLabel "Inspectie";
 .
-mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object; 
+mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
 	rdfs:label "Aanschrijving overheid of nutsbedrijf"@nl;
 	skos:prefLabel "Aanschrijving overheid of nutsbedrijf";
 .
-mak:RechtenDerden a skos:Concept, skoslex:Object; 
+mak:RechtenDerden a skos:Concept, skoslex:Object;
 	rdfs:label "Rechten van derden"@nl;
 	skos:prefLabel "Rechten van derden";
 	skosthes:narrowerGeneric not:Voorkeursrecht;
 	skosthes:narrowerGeneric not:Optierecht;
 	skosthes:narrowerGeneric not:Wederinkoop;
 .
-mak:AanwijzingWVG  a skos:Concept, skoslex:Object; 
+mak:AanwijzingWVG  a skos:Concept, skoslex:Object;
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
 .
-mak:Onbekendheidsverklaring a skos:Concept, skoslex:Object; 
+mak:Onbekendheidsverklaring a skos:Concept, skoslex:Object;
 	rdfs:label "Onbekendheidsverklaring"@nl;
 	skos:prefLabel "Onbekendheidsverklaring";
 .
@@ -610,11 +610,11 @@ mak:Onbekendheidsverklaring a skos:Concept, skoslex:Object;
 #kad:VrijwaringOnroerendMonument;
 #zv:VrijwaringBeschermdStadsDorpsgezicht;
 #mak:VrijwaringRechtenDerden;
-#mak:VrijwaringAanwijzingWVG; 
+#mak:VrijwaringAanwijzingWVG;
 #not:VrijwaringWegneemrecht;
 #kad:VrijwaringGrootte;
 #kad:VrijwaringCanon;
-#mak:VrijwaringOnbekendheidsverklaring; 
+#mak:VrijwaringOnbekendheidsverklaring;
 
 
 mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
@@ -715,21 +715,21 @@ mak:ZichtbareEnOnzichtbareGebreken a skos:Concept;
 	rdfs:comment "Bij de verkoop van een onroerende zijn er gebreken die bij koper bekend zijn. Dit zijn de 'zichtbare gebreken'. Er kunnen ook gebreken in de onroerende zaak aanwezig zijn die niet bekend zijn bij zowel verkoper als koper. Dit zijn de 'onzichtbare gebrekenen', doorgaans 'verborgen gebreken' genoemd.";
 .
 #toegevoegd na opschonen artikelen
-mak:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object; 
+mak:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Kosten/Overdrachtsbelasting";
 	skosthes:narrowerGeneric not:Notariskosten;
 	skosthes:narrowerGeneric not:Kadasterkosten;
 	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
 .
-mak:BankgarantieWaarborgsom a skos:Concept, skoslex:Object; 
+mak:BankgarantieWaarborgsom a skos:Concept, skoslex:Object;
 	rdfs:label "Bankgarantie of waarborgsom"@nl;
 	skos:prefLabel "Bankgarantie of waarborgsom";
 	skosthes:narrowerGeneric fin:Bankgarantie;
 	skosthes:narrowerGeneric fin:Waarborgsom;
 #	skosthes:narrowerGeneric fin:SchuldsaneringFaillisement; <daar nog wel definiëren>
 .
-mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object; 
+mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Ontbindende voorwaarde"@nl;
 	skos:prefLabel "Ontbindende voorwaarde";
 	skos:definition "Een ontbindende voorwaarde is een voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
@@ -738,9 +738,7 @@ mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object;
 # 	skosthes:narrowerGeneric fin:NationaleHypotheekgarantie; <daar nog wel definiëren>
 	skosthes:narrowerGeneric mak:BouwkundigeKeuring;
 .
-mak:BouwkundigeKeuring a skos:Concept, skoslex:Object; 
+mak:BouwkundigeKeuring a skos:Concept, skoslex:Object;
 	rdfs:label "Bouwkundige keuring"@nl;
 	skos:prefLabel "Bouwkundige keuring";
 .
-
-
