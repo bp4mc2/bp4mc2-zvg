@@ -79,7 +79,7 @@ fin:Schuldenaar a skos:Concept, skoslex:Actor;
 fin:Aflossen a skos:Concept, skoslex:Act;
 	rdfs:label "Aflossen"@nl;
 	skos:prefLabel "Aflossen";
-	skos:definition "Periodiek te betalen bedrag voor een lening. Het terugbetalen van een schuld.";
+	skos:definition "Het terugbetalen van een schuld.";
 	skoslex:object fin:Lening;
 	skoslex:agent fin:Hypotheeknemer;
 	skoslex:actor fin:Hypotheekgever;
