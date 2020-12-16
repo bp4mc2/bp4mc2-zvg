@@ -31,6 +31,7 @@ GRAPH config:Theatre {
           OPTIONAL { ?concept rdfs:comment ?uitleg1}
           OPTIONAL { ?concept skos:editorialNote ?rationale1}
           OPTIONAL { ?concept skos:scopeNote ?toelichting1}
+          FILTER (strlen(?uitleg1)<2000)
         }
       }
       GROUP BY ?concept ?domein ?begrip
