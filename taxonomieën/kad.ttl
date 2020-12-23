@@ -216,7 +216,7 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
-kad:Beslag a skos:Concept;
+kad:Beslag a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Beslag;
 	rdfs:label "Beslag"@nl;
 	skos:prefLabel "Beslag";
@@ -236,7 +236,7 @@ kad:Beslag a skos:Concept;
 #		dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 #skos:semanticRelation kad:BeperktRecht;
 #.
-kad:Canon a skos:Concept;
+kad:Canon a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Canon;
 	rdfs:label "Canon"@nl;
 	skos:prefLabel "Canon";
@@ -341,11 +341,11 @@ kad:Goed a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Vermogensrecht;
 	skosthes:narrowerGeneric kad:Zaak;
 .
-kad:Grootte a skos:Concept; #afstemmen met Kadaster: lijkt synoniem met KadastraleGrootte
+kad:Grootte a skos:Concept, skoslex:Object; 
 	skos:exactMatch brk:Grootte;
 	rdfs:label "Grootte"@nl;
 	skos:prefLabel "Grootte";
-	skos:definition "De grootte is de omvang van een perceel zoals vastgesteld en vastgelegd door het Kadaster, uitgedrukt in een oppervlakte-eenheid.";
+	skos:definition "De grootte is de omvang van een perceel, uitgedrukt in een oppervlakte-eenheid.";
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters..";
 	skos:semanticRelation kad:Perceel;
 .
