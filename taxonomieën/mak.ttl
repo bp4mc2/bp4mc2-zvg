@@ -49,13 +49,7 @@ mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 #Een makelaar mag volgens de beroepscode slechts 1 rol vervullen, of verkoopmakelaar of aankoopmakelaar.
 #De makelaar en taxateur zijn rollen van meestal makelaars.
 #--
-mak:Makelaar a skos:Concept, skoslex:Agent;
-	rdfs:label "Makelaar"@nl;
-	skos:prefLabel "Makelaar";
-	skos:definition "Een makelaar is een persoon die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed.";
-	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed.";
-	skosthes:broaderGeneric zv:Rechtspersoon;
-.
+
 mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Verkoopmakelaar"@nl;
 	skos:prefLabel "Verkoopmakelaar";
@@ -87,7 +81,111 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 	skosthes:broaderGeneric zv:Partij;
 .
 #--
+#Objects en niet nader geannoteeerde Concepts
+#==
+mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
+	rdfs:label "Aanschrijving overheid of nutsbedrijf"@nl;
+	skos:prefLabel "Aanschrijving overheid of nutsbedrijf";
+.
+mak:Aanspraak a skos:Concept;
+	rdfs:label "Aanspraak"@nl;
+	skos:prefLabel "Aanspraak";
+	skos:definition "Een recht ten aanzien van een derde.";
+        rdfs:comment "Verkoper kan een aanspraak op een derde hebben. Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
+.
+mak:AanwijzingWVG  a skos:Concept, skoslex:Object;
+	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
+	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
+.
+mak:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object;
+	rdfs:label "Beschikking wet bodemsanering"@nl;
+	skos:prefLabel "Beschikking wet bodemsanering";
+.
+mak:EigenschappenNormaalGebruik a skos:Concept, skoslex:Object;
+	rdfs:label "Eigenschappen normaal gebruik"@nl;
+	skos:prefLabel "Eigenschappen normaal gebruik";
+.
+mak:Lasten a skos:Concept, skoslex:Object;
+	rdfs:label "Lasten"@nl;
+	skos:prefLabel "Lasten";
+	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
+	skosthes:narrowerGeneric kad:DienendeErf;
+	skosthes:narrowerGeneric not:BijzondereLasten;
+	skosthes:narrowerGeneric kad:ZakelijkRecht;
+	skosthes:narrowerGeneric kad:Kettingbeding;
+	skosthes:narrowerGeneric kad:KwalitatieveVerplichting;
+.
+mak:Inspectie a skos:Concept, skoslex:Object;
+	rdfs:label "Inspectie"@nl;
+	skos:prefLabel "Inspectie";
+.
+mak:Makelaar a skos:Concept, skoslex:Agent;
+	rdfs:label "Makelaar"@nl;
+	skos:prefLabel "Makelaar";
+	skos:definition "Een makelaar is een persoon die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed.";
+	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed.";
+	skosthes:broaderGeneric zv:Rechtspersoon;
+.
+mak:ModelKoopovereenkomst a skos:Concept, skoslex:Object;
+	rdfs:label "Model koopovereenkomst"@nl;
+	skos:prefLabel "Model koopovereenkomst";
+	rdfs:comment "De model koopovereenkomst voor een bestaande eengezinswoning is in overleg vastgesteld door Vereniging Eigen Huis, de Consumentenbond, VastgoedPRO, VBO Makelaar en de Nederlandse Vereniging van Makelaars en Taxateurs in onroerende goederen NVM. Deze organisaties gebruiken alle vijf hetzelfde modelcontract.
+De model koopovereenkomst gaat uit van een soort standaardsituatie. Omdat geen enkele situatie precies gelijk is, kan de koopovereenkomst worden aangepast aan specifieke omstandigheden. De bij de transactie betrokken partijen en hun makelaars kunnen daartoe aanvullende afspraken tussen partijen in de koopovereenkomst opnemen. Uiteraard mogen partijen ook afwijken van hetgeen standaard in de koopovereenkomst staat.";
+.
+mak:Onbekendheidsverklaring a skos:Concept, skoslex:Object;
+	rdfs:label "Onbekendheidsverklaring"@nl;
+	skos:prefLabel "Onbekendheidsverklaring";
+.
+mak:RechtenAanspraken a skos:Concept, skoslex:Object;
+	rdfs:label "Rechten en aanspraken"@nl;
+	skos:prefLabel "Rechten en aanspraken";
+	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
+	skosthes:narrowerGeneric kad:HeersendeErf;
+	skosthes:narrowerGeneric not:KwalitatieveRechten;
+	skosthes:narrowerGeneric mak:ZichtbareEnOnzichtbareGebreken;
+	skosthes:narrowerGeneric not:RechtVanHypotheek;
+	skosthes:narrowerGeneric kad:Beslag;
+	skosthes:narrowerGeneric kad:InschrijvingOpenbareRegisters;
+	skosthes:narrowerGeneric kad:PubliekrechtelijkeBeperking;
+	skosthes:narrowerGeneric not:BijzondereLasten;
+.
+mak:RechtenDerden a skos:Concept, skoslex:Object;
+	rdfs:label "Rechten van derden"@nl;
+	skos:prefLabel "Rechten van derden";
+	skosthes:narrowerGeneric not:Voorkeursrecht;
+	skosthes:narrowerGeneric not:Optierecht;
+	skosthes:narrowerGeneric not:Wederinkoop;
+.
+mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object;
+	rdfs:label "Staat onroerende zaak"@nl;
+	skos:prefLabel "Staat onroerende zaak";
+	skosthes:narrowerGeneric mak:RechtenAanspraken;
+	skosthes:narrowerGeneric mak:Lasten;
+	skosthes:narrowerGeneric mak:EigenschappenNormaalGebruik;
+	skosthes:narrowerGeneric mak:Verontreiniging;
+	skosthes:narrowerGeneric mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
+	skosthes:narrowerGeneric mak:Asbest;
+	skosthes:narrowerGeneric mak:BeschikkingWetBodemsanering;
+	skosthes:narrowerGeneric mak:Inspectie;
+	skosthes:narrowerGeneric mak:AanschrijvingOverheidNutsbedrijf;
+	skosthes:narrowerGeneric kad:OnroerendMonument;
+	skosthes:narrowerGeneric zv:BeschermdStadsDorpsgezicht;
+	skosthes:narrowerGeneric mak:RechtenDerden;
+	skosthes:narrowerGeneric mak:AanwijzingWVG;
+	skosthes:narrowerGeneric not:Wegneemrecht;
+	skosthes:narrowerGeneric kad:Grootte;
+	skosthes:narrowerGeneric kad:Canon;
+	skosthes:narrowerGeneric mak:Onbekendheidsverklaring;
+.
+mak:Verontreiniging a skos:Concept, skoslex:Object;
+	rdfs:label "Verontreiniging"@nl;
+	skos:prefLabel "Verontreiniging";
+	skos:definition "Een vervuiling (in de grond) van de onroerende zaak.";
+	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt.";
+.
+#--
 #Acts
+==
 mak:Aankoop a skos:Concept, skoslex:Act;
 	rdfs:label "Aankoop"@nl;
 	skos:prefLabel "Aankoop";
@@ -99,6 +197,12 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
+.
+mak:Garantie a skos:concept, skoslex:Act;
+	rdfs:label "Garantie"@nl;
+	skos:prefLabel "Garantie";
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:object mak:BankgarantieWaarborgsom;
 .
 mak:IdentificerenKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van cliënt (koop/verkoop)"@nl;
@@ -138,6 +242,18 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
+mak:Kostenverdeling a skos:concept, skoslex:Act;
+	rdfs:label "Kostenverdeling"@nl;
+	skos:prefLabel "Kostenverdeling";
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:object mak:KostenEnOverdrachtsbelasting;
+.
+mak:OnbekendheidsverklaringVerontreiniging a skos:concept, skoslex:Act;
+	rdfs:label "Onbekendheidsverklaring verontreiniging"@nl;
+	skos:prefLabel "Onbekendheidsverklaring verontreiniging";
+	skoslex:object mak:Verontreiniging;
+	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
+.
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
 	skos:prefLabel "Opstellen koopovereenkomst";
@@ -149,6 +265,7 @@ mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
+	skoslex:object mak:ModelKoopovereenkomst;
 	skoslex:object mak:Koopovereenkomst;
 .
 mak:RechercheKoop a skos:Concept, skoslex:Act;
@@ -195,37 +312,57 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
-#concepten toegevoegd als onderdelen van de koop (eerder clausules als onderdeel van de koopovereenkomst), exacte terminologie nog checken
-mak:Kostenverdeling a skos:concept, skoslex:Act;
-	rdfs:label "Kostenverdeling"@nl;
-	skos:prefLabel "Kostenverdeling";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object mak:KostenEnOverdrachtsbelasting;
-.
-mak:Garantie a skos:concept, skoslex:Act;
-	rdfs:label "Garantie"@nl;
-	skos:prefLabel "Garantie";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object mak:BankgarantieWaarborgsom;
-.
 mak:Voorbehoud a skos:concept, skoslex:Act;
 	rdfs:label "Voorbehoud"@nl;
 	skos:prefLabel "Voorbehoud";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:OntbindendeVoorwaarde;
 .
-
+mak:VrijwaringEigenschappenNormaalGebruik a skos:concept, skoslex:Act;
+	rdfs:label "Vrijwaring eigenschappen normaal gebruik"@nl;
+	skos:prefLabel "Vrijwaring eigenschappen normaal gebruik";
+	skoslex:object mak:EigenschappenNormaalGebruik;
+	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
+.
+mak:VrijwaringLasten a skos:concept, skoslex:Act;
+	rdfs:label "Vrijwaring lasten"@nl;
+	skos:prefLabel "Vrijwaring lasten";
+	skoslex:object mak:Lasten;
+	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
+.
+mak:VrijwaringRechtenAanspraken a skos:concept, skoslex:Act;
+	rdfs:label "Vrijwaring rechten en aanspraken"@nl;
+	skos:prefLabel "Vrijwaring rechten en aanspraken";
+	skoslex:object mak:RechtenAanspraken;
+	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
+.
+mak:VrijwaringStaatOnroerendeZaak a skos:concept, skoslex:Act;
+	rdfs:label "Vrijwaring staat onroerende zaak"@nl;
+	skos:prefLabel "Vrijwaring staat onroerende zaak";
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:object mak:Aanspraak;
+	skoslex:object mak:StaatOnroerendeZaak;
+.
+#mak:VrijwaringVerontreiniging;
+#mak:VrijwaringOndergrondseTankVoorHetOpslaanVanVloeistoffen;
+#mak:VrijwaringAsbest;
+#mak:VrijwaringBeschikkingWetBodemsanering;
+#mak:VrijwaringInspectie;
+#mak:VrijwaringAanschrijvingOverheidNutsbedrijf;
+#kad:VrijwaringOnroerendMonument;
+#zv:VrijwaringBeschermdStadsDorpsgezicht;
+#mak:VrijwaringRechtenDerden;
+#mak:VrijwaringAanwijzingWVG;
+#not:VrijwaringWegneemrecht;
+#kad:VrijwaringGrootte;
+#kad:VrijwaringCanon;
+#mak:VrijwaringOnbekendheidsverklaring;
 
 #--
 #Other concepts (objects, records)
 #De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
 #--
-mak:Aanspraak a skos:Concept;
-	rdfs:label "Aanspraak"@nl;
-	skos:prefLabel "Aanspraak";
-	skos:definition "Een recht ten aanzien van een derde.";
-        rdfs:comment "Verkoper kan een aanspraak op een derde hebben. Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
-.
+
 mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: As is where is clausule"@nl;
 	skos:prefLabel "Artikel: As is where is clausule";
@@ -406,34 +543,6 @@ mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	skoslex:isAbout kad:OpenbareRegisters;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object;
-	rdfs:label "Staat onroerende zaak"@nl;
-	skos:prefLabel "Staat onroerende zaak";
-	skosthes:narrowerGeneric mak:RechtenAanspraken;
-	skosthes:narrowerGeneric mak:Lasten;
-	skosthes:narrowerGeneric mak:EigenschappenNormaalGebruik;
-	skosthes:narrowerGeneric mak:Verontreiniging;
-	skosthes:narrowerGeneric mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
-	skosthes:narrowerGeneric mak:Asbest;
-	skosthes:narrowerGeneric mak:BeschikkingWetBodemsanering;
-	skosthes:narrowerGeneric mak:Inspectie;
-	skosthes:narrowerGeneric mak:AanschrijvingOverheidNutsbedrijf;
-	skosthes:narrowerGeneric kad:OnroerendMonument;
-	skosthes:narrowerGeneric zv:BeschermdStadsDorpsgezicht;
-	skosthes:narrowerGeneric mak:RechtenDerden;
-	skosthes:narrowerGeneric mak:AanwijzingWVG;
-	skosthes:narrowerGeneric not:Wegneemrecht;
-	skosthes:narrowerGeneric kad:Grootte;
-	skosthes:narrowerGeneric kad:Canon;
-	skosthes:narrowerGeneric mak:Onbekendheidsverklaring;
-.
-mak:VrijwaringStaatOnroerendeZaak a skos:concept, skoslex:Act;
-	rdfs:label "Vrijwaring staat onroerende zaak"@nl;
-	skos:prefLabel "Vrijwaring staat onroerende zaak";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object mak:Aanspraak;
-	skoslex:object mak:StaatOnroerendeZaak;
-.
 mak:ArtikelStaatOnroerendeZaakGebruik a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Staat van onroerend goed/gebruik"@nl;
 	skos:prefLabel "Artikel: Staat van onroerend goed/gebruik";
@@ -473,25 +582,7 @@ In artikel 10 wordt nader ingegaan op de situatie dat de onroerende zaak niet ge
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 #Artikel 6.1 bevat de hoofdregel, de overige subartikelen de aanvullingen en uitzonderingen
-mak:RechtenAanspraken a skos:Concept, skoslex:Object;
-	rdfs:label "Rechten en aanspraken"@nl;
-	skos:prefLabel "Rechten en aanspraken";
-	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
-	skosthes:narrowerGeneric kad:HeersendeErf;
-	skosthes:narrowerGeneric not:KwalitatieveRechten;
-	skosthes:narrowerGeneric mak:ZichtbareEnOnzichtbareGebreken;
-	skosthes:narrowerGeneric not:RechtVanHypotheek;
-	skosthes:narrowerGeneric kad:Beslag;
-	skosthes:narrowerGeneric kad:InschrijvingOpenbareRegisters;
-	skosthes:narrowerGeneric kad:PubliekrechtelijkeBeperking;
-	skosthes:narrowerGeneric not:BijzondereLasten;
-.
-mak:VrijwaringRechtenAanspraken a skos:concept, skoslex:Act;
-	rdfs:label "Vrijwaring rechten en aanspraken"@nl;
-	skos:prefLabel "Vrijwaring rechten en aanspraken";
-	skoslex:object mak:RechtenAanspraken;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
-.
+
 mak:ArtikelRechtenAanspraken a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: rechten en aanspraken"@nl;
 	skos:prefLabel "Artikel: rechten en aanspraken";
@@ -499,22 +590,6 @@ mak:ArtikelRechtenAanspraken a skos:Concept, skoslex:Record;
 	skos:scopeNote "Artikel 6.1 van de model koopovereenkomst.";
 	skoslex:isAbout mak:VrijwaringRechtenAanspraken;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
-.
-mak:Lasten a skos:Concept, skoslex:Object;
-	rdfs:label "Lasten"@nl;
-	skos:prefLabel "Lasten";
-	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
-	skosthes:narrowerGeneric kad:DienendeErf;
-	skosthes:narrowerGeneric not:BijzondereLasten;
-	skosthes:narrowerGeneric kad:ZakelijkRecht;
-	skosthes:narrowerGeneric kad:Kettingbeding;
-	skosthes:narrowerGeneric kad:KwalitatieveVerplichting;
-.
-mak:VrijwaringLasten a skos:concept, skoslex:Act;
-	rdfs:label "Vrijwaring lasten"@nl;
-	skos:prefLabel "Vrijwaring lasten";
-	skoslex:object mak:Lasten;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
 .
 mak:ArtikelLasten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: (bijzondere) lasten"@nl;
@@ -525,16 +600,6 @@ Het is van belang dat verkoper aan koper vertelt wat hij weet, en dat koper op g
 	skos:scopeNote "Artikel 6.2 van de model koopovereenkomst.";
 	skoslex:isAbout mak:VrijwaringLasten;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
-.
-mak:EigenschappenNormaalGebruik a skos:Concept, skoslex:Object;
-	rdfs:label "Eigenschappen normaal gebruik"@nl;
-	skos:prefLabel "Eigenschappen normaal gebruik";
-.
-mak:VrijwaringEigenschappenNormaalGebruik a skos:concept, skoslex:Act;
-	rdfs:label "Vrijwaring eigenschappen normaal gebruik"@nl;
-	skos:prefLabel "Vrijwaring eigenschappen normaal gebruik";
-	skoslex:object mak:EigenschappenNormaalGebruik;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
 .
 mak:ArtikelEigenschappenNormaalGebruik a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: eigenschappen normaal gebruik"@nl;
@@ -550,18 +615,6 @@ Koper draagt het risico van de overige (gevolg) schade, tenzij verkoper een verw
 	skoslex:isAbout mak:VrijwaringEigenschappenNormaalGebruik;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
-mak:Verontreiniging a skos:Concept;
-	rdfs:label "Verontreiniging"@nl;
-	skos:prefLabel "Verontreiniging";
-	skos:definition "Een vervuiling (in de grond) van de onroerende zaak.";
-	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt.";
-.
-mak:OnbekendheidsverklaringVerontreiniging a skos:concept, skoslex:Act;
-	rdfs:label "Onbekendheidsverklaring verontreiniging"@nl;
-	skos:prefLabel "Onbekendheidsverklaring verontreiniging";
-	skoslex:object mak:Verontreiniging;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
-.
 mak:ArtikelVerontreiniging a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: verontreiniging"@nl;
 	skos:prefLabel "Artikel: verontreiniging";
@@ -570,50 +623,6 @@ mak:ArtikelVerontreiniging a skos:Concept, skoslex:Record;
 	skoslex:isAbout mak:OnbekendheidsverklaringVerontreiniging;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
-mak:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object;
-	rdfs:label "Beschikking wet bodemsanering"@nl;
-	skos:prefLabel "Beschikking wet bodemsanering";
-.
-mak:Inspectie a skos:Concept, skoslex:Object;
-	rdfs:label "Inspectie"@nl;
-	skos:prefLabel "Inspectie";
-.
-mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
-	rdfs:label "Aanschrijving overheid of nutsbedrijf"@nl;
-	skos:prefLabel "Aanschrijving overheid of nutsbedrijf";
-.
-mak:RechtenDerden a skos:Concept, skoslex:Object;
-	rdfs:label "Rechten van derden"@nl;
-	skos:prefLabel "Rechten van derden";
-	skosthes:narrowerGeneric not:Voorkeursrecht;
-	skosthes:narrowerGeneric not:Optierecht;
-	skosthes:narrowerGeneric not:Wederinkoop;
-.
-mak:AanwijzingWVG  a skos:Concept, skoslex:Object;
-	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
-	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
-.
-mak:Onbekendheidsverklaring a skos:Concept, skoslex:Object;
-	rdfs:label "Onbekendheidsverklaring"@nl;
-	skos:prefLabel "Onbekendheidsverklaring";
-.
-#mak:VrijwaringEigenschappenNormaalGebruik;
-#mak:VrijwaringVerontreiniging;
-#mak:VrijwaringOndergrondseTankVoorHetOpslaanVanVloeistoffen;
-#mak:VrijwaringAsbest;
-#mak:VrijwaringBeschikkingWetBodemsanering;
-#mak:VrijwaringInspectie;
-#mak:VrijwaringAanschrijvingOverheidNutsbedrijf;
-#kad:VrijwaringOnroerendMonument;
-#zv:VrijwaringBeschermdStadsDorpsgezicht;
-#mak:VrijwaringRechtenDerden;
-#mak:VrijwaringAanwijzingWVG;
-#not:VrijwaringWegneemrecht;
-#kad:VrijwaringGrootte;
-#kad:VrijwaringCanon;
-#mak:VrijwaringOnbekendheidsverklaring;
-
-
 mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Verkoop en koop"@nl;
 	skos:prefLabel "Artikel: erkoop en koop";
@@ -666,10 +675,12 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 	skos:prefLabel "Koopovereenkomst";
 	skos:altLabel "Koopcontract";
 	skos:definition "Een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd.";
-	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed.";
+#	rdfs:comment "In de schriftelijke koopovereenkomst worden alle afspraken tussen de verkoper en de koper vastgelegd, zoals de namen van de verkoper en de koper, de omschrijving van het registergoed, de prijs, de betalingscondities en wat er gebeurt als één van de betrokkenen de gemaakte afspraken niet nakomt. Aan de hand van de koopovereenkomst stelt de notaris de akte van levering op. De akte van levering wordt vervolgens ingeschreven in de openbare registers van het kadaster. Op het moment dat de akte van levering is ingeschreven, is de overdracht compleet en is koper eigenaar geworden van het registergoed."; hieronder tekst uit toelichting opgenomen.
+	rdfs:comment "Als u een woning koopt of verkoopt worden de afspraken vastgelegd in een koopovereenkomst. Indien u een woning koopt of verkoopt via een makelaarskantoor, zal de betrokken makelaar u hierbij assisteren. Het was altijd al verstandig om de koop van een woning schriftelijk aan te gaan, maar sinds 1 september 2003 is dat in de meeste gevallen zelfs noodzakelijk. In tegenstelling tot vroeger is een mondelinge (ver)koop van een woning veelal niet geldig. Na ondertekening door alle partijen zal de koopovereenkomst verzonden worden aan de in de koopovereenkomst genoemde notaris. In de meeste gevallen zal koper een zogenoemde bedenktijd hebben. Op deze bedenktijd zal bij de toelichting op artikel 16 nader worden ingegaan.";
 	skos:editorialNote "Soms (bijvoorbeeld in Amsterdam) stelt de notaris de koopovereenkomst op.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	skosthes:broaderGeneric not:OnderhandseAkte;
+	skos:semanticRelation mak:ModelKoopovereenkomst;
 .
 mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
