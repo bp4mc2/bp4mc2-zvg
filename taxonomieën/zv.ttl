@@ -191,7 +191,7 @@ zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2>;
 .
 #Begrippen 'BeschermdStadsDorpsgezicht' en 'Bestemmingsplan' in bestemmingsplan, straks omgevingsplan -> beheer door gemeenten
-zv:BeschermdStadsDorpsgezicht a skos:Concept;
+zv:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
 	#komt niet voor in de Kadaster taxonomie
 	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
 	skos:prefLabel "Beschermd stads-/dorpsgezicht";
@@ -199,7 +199,7 @@ zv:BeschermdStadsDorpsgezicht a skos:Concept;
 	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
 .
-zv:Bestemmingsplan a skos:Concept;
+zv:Bestemmingsplan a skos:Concept, skoslex:Record;
 	rdfs:label "Bestemmingsplan"@nl;
 	skos:prefLabel "Bestemmingsplan";
 	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
@@ -233,7 +233,7 @@ zv:Identiteitsdocument a skos:Concept, skoslex:Record;
 	skoslex:isAbout zv:NatuurlijkPersoon;
 	skos:editorialNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
 .
-zv:Faillissement a skos:Concept; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Faillissement"@nl;
 	skos:prefLabel "Faillissement";
 	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
@@ -256,7 +256,7 @@ zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in e
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=2>;
 .
-zv:NederlandsRecht a skos:Concept;
+zv:NederlandsRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Nederlands recht"@nl;
 	skos:prefLabel "Nederlands recht";
 	skos:definition "Het geheel van wettelijke regels die gelden in Nederland. Deze regels zijn met name te vinden in wetten, verdragen en rechtspraak. Het Nederlands recht is van toepassing op ingezetenen en iedereen die zich in het Koninkrijk bevindt.";
