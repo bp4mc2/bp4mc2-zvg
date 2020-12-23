@@ -33,7 +33,10 @@
 
 #Wet bodembescherming
 <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55> rdfs:label "artikel 55 van de Wet bodembescherming".
-#De koopovereenkomst wordt meestal door de verkoopmakelaar opgesteld. Maar het kan ook de aankoopmakelaar zijn. Soms wordt de koopovereenkomst door de notaris opgesteld en soms ook onderhands door de partijen zelf. De algemeen gebruikte koopovereenkomst wordt vaak NVM koopvereenkomst genoemd.
+
+#Besluit energieprestatie gebouwen
+<http://wetten.overheid.nl/jci1.3:c:BWBR0023734&afdeling=1&artikel=1.1> rdfs:label "Artikel 1.1 Besluit energieprestatie gebouwen".
+
 #--
 #Actors and Agents
 #--
@@ -83,6 +86,12 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 #--
 #Objects en niet nader geannoteeerde Concepts
 #==
+mak:Asbest a skos:Concept, skoslex:Object;
+	rdfs:label "Asbest"@nl;
+	skos:prefLabel "Asbest";
+	skos:definition "Een bouwmateriaal dat in het verleden is toegepast bij de bouw van registergoederen.";
+	rdfs:comment "In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.";
+.
 mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
 	rdfs:label "Aanschrijving overheid of nutsbedrijf"@nl;
 	skos:prefLabel "Aanschrijving overheid of nutsbedrijf";
@@ -97,15 +106,49 @@ mak:AanwijzingWVG  a skos:Concept, skoslex:Object;
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
 .
+mak:BankgarantieWaarborgsom a skos:Concept, skoslex:Object;
+	rdfs:label "Bankgarantie of waarborgsom"@nl;
+	skos:prefLabel "Bankgarantie of waarborgsom";
+	skosthes:narrowerGeneric fin:Bankgarantie;
+	skosthes:narrowerGeneric fin:Waarborgsom;
+#	skosthes:narrowerGeneric fin:SchuldsaneringFaillisement; <daar nog wel definiëren>
+.
 mak:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object;
 	rdfs:label "Beschikking wet bodemsanering"@nl;
 	skos:prefLabel "Beschikking wet bodemsanering";
+.
+mak:BouwkundigeKeuring a skos:Concept, skoslex:Object;
+	rdfs:label "Bouwkundige keuring"@nl;
+	skos:prefLabel "Bouwkundige keuring";
 .
 mak:EigenschappenNormaalGebruik a skos:Concept, skoslex:Object;
 	rdfs:label "Eigenschappen normaal gebruik"@nl;
 	skos:prefLabel "Eigenschappen normaal gebruik";
 .
-mak:Lasten a skos:Concept, skoslex:Object;
+mak:Energielabel a skos:Concept, skoslex:Object;
+	rdfs:label "Energielabel"@nl;
+	skos:prefLabel "Energielabel";
+	skos:definition "Een op een gebouw betrekking hebbende schriftelijke verklaring, waarin het resultaat is vermeld van de berekening van de energieprestatie, waarin referentiewaarden zijn vermeld waarmee de energieprestatie kan worden vergeleken en beoordeeld en die aanbevelingen voor een kostenoptimale of kosteneffectieve verbetering van de energieprestatie bevat, tenzij er voor een dergelijke verbetering geen redelijk potentieel is ten opzichte van de geldende energieprestatie-eisen. Deze aanbevelingen zijn technisch haalbaar voor het gebouw waarvoor het energielabelVolgende zoekterm markering is afgegeven en kunnen een raming bieden van de terugverdientijden of kostenvoordelen gedurende de economische levensduur. Deze aanbevelingen omvatten in ieder geval maatregelen betreffende de ingrijpende renovatie van de bouwschil of technische bouwsystemen en maatregelen voor individuele onderdelen van een gebouw zonder dat er sprake is van een ingrijpende renovatie, alsmede een vindplaats voor extra informatie.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023734&afdeling=1&artikel=1.1>;
+	rdfs:comment "In beginsel is elke verkoper verplicht een definitief energielabel aan koper te overhandigen bij de eigendomsoverdracht van zijn woning. Een energielabel laat zien hoe energiezuinig een woning is en wat er beter kan. Van de isolatie van het dak, de muren, de vloer(en) en de ramen tot de energiezuinigheid van verwarmingsinstallaties. Per 1 januari 2015 is de wetgeving op dit punt aangescherpt. Beschikt verkoper niet over een energielabel bij de levering, dan riskeert verkoper een sanctie.
+Er bestaan enkele uitzonderingen op de hoofdregel dat verkoper een definitief energielabel moet overhandigen bij de eigendomsoverdracht van zijn woning. Een uitzondering is bijvoorbeeld een beschermd monument. Uw makelaar kan u hierover inlichten. Eveneens kunt u informatie inwinnen op de website van de rijksoverheid: www.rijksoverheid.nl";
+.
+
+mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
+	rdfs:label "Financieringsvoorbehoud"@nl;
+	skos:prefLabel "Financieringsvoorbehoud";
+	skos:altLabel "Voorbehoud van financiering";
+	skos:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
+	rdfs:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
+.
+mak:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
+	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
+	skos:prefLabel "Kosten/Overdrachtsbelasting";
+	skosthes:narrowerGeneric not:Notariskosten;
+	skosthes:narrowerGeneric not:Kadasterkosten;
+	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
+.
+.mak:Lasten a skos:Concept, skoslex:Object;
 	rdfs:label "Lasten"@nl;
 	skos:prefLabel "Lasten";
 	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
@@ -132,9 +175,14 @@ mak:ModelKoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:comment "De model koopovereenkomst voor een bestaande eengezinswoning is in overleg vastgesteld door Vereniging Eigen Huis, de Consumentenbond, VastgoedPRO, VBO Makelaar en de Nederlandse Vereniging van Makelaars en Taxateurs in onroerende goederen NVM. Deze organisaties gebruiken alle vijf hetzelfde modelcontract.
 De model koopovereenkomst gaat uit van een soort standaardsituatie. Omdat geen enkele situatie precies gelijk is, kan de koopovereenkomst worden aangepast aan specifieke omstandigheden. De bij de transactie betrokken partijen en hun makelaars kunnen daartoe aanvullende afspraken tussen partijen in de koopovereenkomst opnemen. Uiteraard mogen partijen ook afwijken van hetgeen standaard in de koopovereenkomst staat.";
 .
-mak:Onbekendheidsverklaring a skos:Concept, skoslex:Object;
-	rdfs:label "Onbekendheidsverklaring"@nl;
-	skos:prefLabel "Onbekendheidsverklaring";
+mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object;
+	rdfs:label "Ontbindende voorwaarde"@nl;
+	skos:prefLabel "Ontbindende voorwaarde";
+	skos:definition "Een ontbindende voorwaarde is een voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
+	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
+	skosthes:narrowerGeneric mak:Financieringsvoorbehoud;
+# 	skosthes:narrowerGeneric fin:NationaleHypotheekgarantie; <daar nog wel definiëren>
+	skosthes:narrowerGeneric mak:BouwkundigeKeuring;
 .
 mak:RechtenAanspraken a skos:Concept, skoslex:Object;
 	rdfs:label "Rechten en aanspraken"@nl;
@@ -248,11 +296,9 @@ mak:Kostenverdeling a skos:concept, skoslex:Act;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:KostenEnOverdrachtsbelasting;
 .
-mak:OnbekendheidsverklaringVerontreiniging a skos:concept, skoslex:Act;
-	rdfs:label "Onbekendheidsverklaring verontreiniging"@nl;
-	skos:prefLabel "Onbekendheidsverklaring verontreiniging";
-	skoslex:object mak:Verontreiniging;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
+mak:Onbekendheidsverklaring a skos:Concept, skoslex:Act;
+	rdfs:label "Onbekendheidsverklaring"@nl;
+	skos:prefLabel "Onbekendheidsverklaring";
 .
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
@@ -318,30 +364,13 @@ mak:Voorbehoud a skos:concept, skoslex:Act;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:OntbindendeVoorwaarde;
 .
-mak:VrijwaringEigenschappenNormaalGebruik a skos:concept, skoslex:Act;
-	rdfs:label "Vrijwaring eigenschappen normaal gebruik"@nl;
-	skos:prefLabel "Vrijwaring eigenschappen normaal gebruik";
-	skoslex:object mak:EigenschappenNormaalGebruik;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
-.
-mak:VrijwaringLasten a skos:concept, skoslex:Act;
-	rdfs:label "Vrijwaring lasten"@nl;
-	skos:prefLabel "Vrijwaring lasten";
-	skoslex:object mak:Lasten;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
-.
-mak:VrijwaringRechtenAanspraken a skos:concept, skoslex:Act;
-	rdfs:label "Vrijwaring rechten en aanspraken"@nl;
-	skos:prefLabel "Vrijwaring rechten en aanspraken";
-	skoslex:object mak:RechtenAanspraken;
-	skosthes:broaderPartitive mak:VrijwaringStaatOnroerendeZaak;
-.
 mak:VrijwaringStaatOnroerendeZaak a skos:concept, skoslex:Act;
 	rdfs:label "Vrijwaring staat onroerende zaak"@nl;
 	skos:prefLabel "Vrijwaring staat onroerende zaak";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:Aanspraak;
 	skoslex:object mak:StaatOnroerendeZaak;
+	skoslex:record mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 #mak:VrijwaringVerontreiniging;
 #mak:VrijwaringOndergrondseTankVoorHetOpslaanVanVloeistoffen;
@@ -554,7 +583,6 @@ In artikel 10 wordt nader ingegaan op de situatie dat de onroerende zaak niet ge
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
 	skos:scopeNote "Artikel 6 van de model koopovereenkomst.";
-	skoslex:isAbout mak:VrijwaringStaatOnroerendeZaak;
 #	skoslex:isAbout mak:Aanspraak;
 #	skoslex:isAbout mak:Asbest;
 #	skoslex:isAbout zv:BeschermdStadsDorpsgezicht;
@@ -588,7 +616,7 @@ mak:ArtikelRechtenAanspraken a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel: rechten en aanspraken";
 	rdfs:comment "De onroerende zaak wordt vrij van hypotheken, beslagen en inschrijvingen daarvan geleverd. Verkoper moet de bestaande hypotheken aflossen en ervoor zorgen dat ze ook niet meer in de openbare registers staan ingeschreven. In de praktijk regelt de notaris dit laatste. Ook zorgt verkoper ervoor dat er geen beslagen rusten op de onroerende zaak. Zou er beslag zijn gelegd op de onroerende zaak, dan kan de levering doorgaans niet plaatsvinden, zolang het beslag niet is opgeheven.";
 	skos:scopeNote "Artikel 6.1 van de model koopovereenkomst.";
-	skoslex:isAbout mak:VrijwaringRechtenAanspraken;
+	skoslex:isAbout mak:RechtenAanspraken;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
 mak:ArtikelLasten a skos:Concept, skoslex:Record;
@@ -598,7 +626,7 @@ mak:ArtikelLasten a skos:Concept, skoslex:Record;
 Is verkoper ermee bekend dat er (ook) bijzondere lasten op de onroerende zaak rusten die niet blijken uit de aan koper ter hand gestelde akten, dan zal hij die bijzondere lasten aan koper moeten mededelen, zodat koper daarvan op de hoogte is wanneer de koopovereenkomst wordt gesloten. Voor publiekrechtelijke beperkingen (die als een bijzondere last op de onroerende zaak rusten) geldt dat deze lang niet altijd zijn vermeld in voorgaande notariële akten. De publiekrechtelijke beperkingen waarmee verkoper bekend is, kunnen expliciet in artikel 6.2 worden vermeld. Koper aanvaardt (uitdrukkelijk) de in artikel 6.2 vermelde beperkingen.
 Het is van belang dat verkoper aan koper vertelt wat hij weet, en dat koper op grond van hetgeen in artikel 6.2 is vermeld en de (in kopie) aan hem verstrekte voorgaande notariële akten weet welke (privaatrechtelijke en publiekrechtelijke) bijzondere lasten op de onroerende zaak rusten. Laat verkoper het verstrekken van informatie achterwege, dan kan hij later worden geconfronteerd met een eis tot schadevergoeding. Omdat de bijzondere lasten aanspraken van anderen op de onroerende zaak betreffen, zal verkoper die lasten vaak niet (of slechts met veel moeite) kunnen opheffen. Blijkt opheffing niet mogelijk, dan zal koper in beginsel schadevergoeding van verkoper kunnen vorderen. Het is daarom van belang dat verkoper aan koper vertelt welke bijzondere lasten op de onroerende zaak rusten (zodat deze door koper kunnen worden aanvaard).''';
 	skos:scopeNote "Artikel 6.2 van de model koopovereenkomst.";
-	skoslex:isAbout mak:VrijwaringLasten;
+	skoslex:isAbout mak:Lasten;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
 mak:ArtikelEigenschappenNormaalGebruik a skos:Concept, skoslex:Record;
@@ -612,15 +640,15 @@ De verplichting voor verkoper om een zaak te leveren die de eigenschappen bezit 
 De een-na-laatste zin van artikel 6.3. ziet op de herstelkosten. Voor gebreken die het normale gebruik belemmeren welke niet aan koper bekend of kenbaar waren op het moment van het tot stand komen van deze koopovereenkomst, is verkoper uitsluitend aansprakelijk voor de herstelkosten. Verkoper draagt daarmee het risico van het alsnog geschikt maken van de onroerende zaak voor normaal gebruik. Bij het vaststellen van de herstelkosten moet rekening worden gehouden met de aftrek ‘nieuw voor oud’. Bij het vaststellen van de aftrek ‘nieuw voor oud’ wordt rekening gehouden met enerzijds de kosten van vernieuwing en anderzijds de levensduur van het te vervangen onderdeel. Een voorbeeld: koper heeft verkoper op grond van artikel 6.3. van de koopovereenkomst aansprakelijk gesteld voor een niet functionerende cv-ketel. De cv-ketel dient in zijn geheel vervangen te worden. Een cv-installateur heeft de kosten van vervanging van de cv-ketel begroot op € 2.500,00. De verwachte levensduur wordt geschat op 20 jaar. Ten tijde van de koop was de cv-ketel 10 jaar oud. De aftrek ‘nieuw voor oud’ bedraagt dan 50%, te weten € 1.250,00. Verkoper dient dus de helft van de herstelkosten aan koper te voldoen.
 Koper draagt het risico van de overige (gevolg) schade, tenzij verkoper een verwijt treft. Verkoper treft een verwijt als hij bijvoorbeeld willens en wetens gebreken verzwijgt die het normale gebruik belemmeren.''';
 	skos:scopeNote "Artikel 6.3 van de model koopovereenkomst.";
-	skoslex:isAbout mak:VrijwaringEigenschappenNormaalGebruik;
+	skoslex:isAbout mak:EigenschappenNormaalGebruik;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
 mak:ArtikelVerontreiniging a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: verontreiniging"@nl;
 	skos:prefLabel "Artikel: verontreiniging";
-	rdfs:comment '''In artikel 6.4.1. kunnen partijen hun wetenschap over het al dan niet verontreinigd zijn van de onroerende zaak aangeven. Een dergelijke clausule wordt wel een ‘(on)bekendheidsverklaring’ genoemd. Ook de artikelen 6.4.2, 6.4.3, 6.4.4, 6.7.1 en 6.7.2 zijn voorbeelden van (on)bekendheidsverklaringen. Dergelijke clausules hebben een bewijs- en een signaalfunctie. De bewijsfunctie ligt hierin dat “welles-nietes-discussies” worden voorkomen. Als koper bijvoorbeeld verklaart dat hij bekend is met de aanwezigheid van een olietank (bekendheidsverklaring), kan hij moeilijk achteraf beweren dat verkoper zijn plicht heeft verzaakt om mededeling te doen over die aanwezigheid. Uit de koopovereenkomst blijkt duidelijk dat de aanwezigheid bekend was. Andersom, als verkoper verklaart niet bekend te zijn met de aanwezigheid van een olietank (onbekendheidsverklaring), kan hij moeilijk achteraf beweren dat hij koper op de aanwezigheid van de tank heeft gewezen of dat de aanwezigheid van de tank voor koper duidelijk zichtbaar was. Er staat immers zwart op wit dat verkoper niet wist of er een ondergrondse tank was. De signaalfunctie wordt vervuld doordat partijen op het onderwerp attent worden gemaakt. Zij worden min of meer gedwongen om daar iets over vast te leggen. Daardoor wordt verkoper gestimuleerd om zijn mededelingsplicht te doen, en koper om zijn onderzoeksplicht te doen. Om ieder misverstand te voorkomen is in artikel 6.13 uitdrukkelijk bepaald dat een onbekendheidsverklaring niet bedoeld is als garantie of uitsluiting/beperking van aansprakelijkheid. Zoals hierboven reeds aangegeven gaat het spreekwoord ‘wat niet weet wat niet deert’, noch op voor koper, noch voor verkoper. Of koper verkoper kan aanspreken volgt in beginsel uit artikel 6.1 en 6.3 van de koopovereenkomst, waarbij kenbare gebreken voor risico van koper komen. Uiteraard kunnen partijen, desgewenst per onderdeel, van de standaard in de koopovereenkomst opgenomen risicoverdeling afwijken.''';
+	rdfs:comment "In artikel 6.4.1. kunnen partijen hun wetenschap over het al dan niet verontreinigd zijn van de onroerende zaak aangeven. Een dergelijke clausule wordt wel een ‘(on)bekendheidsverklaring’ genoemd. Ook de artikelen 6.4.2, 6.4.3, 6.4.4, 6.7.1 en 6.7.2 zijn voorbeelden van (on)bekendheidsverklaringen. Dergelijke clausules hebben een bewijs- en een signaalfunctie. De bewijsfunctie ligt hierin dat “welles-nietes-discussies” worden voorkomen. Als koper bijvoorbeeld verklaart dat hij bekend is met de aanwezigheid van een olietank (bekendheidsverklaring), kan hij moeilijk achteraf beweren dat verkoper zijn plicht heeft verzaakt om mededeling te doen over die aanwezigheid. Uit de koopovereenkomst blijkt duidelijk dat de aanwezigheid bekend was. Andersom, als verkoper verklaart niet bekend te zijn met de aanwezigheid van een olietank (onbekendheidsverklaring), kan hij moeilijk achteraf beweren dat hij koper op de aanwezigheid van de tank heeft gewezen of dat de aanwezigheid van de tank voor koper duidelijk zichtbaar was. Er staat immers zwart op wit dat verkoper niet wist of er een ondergrondse tank was. De signaalfunctie wordt vervuld doordat partijen op het onderwerp attent worden gemaakt. Zij worden min of meer gedwongen om daar iets over vast te leggen. Daardoor wordt verkoper gestimuleerd om zijn mededelingsplicht te doen, en koper om zijn onderzoeksplicht te doen. Om ieder misverstand te voorkomen is in artikel 6.13 uitdrukkelijk bepaald dat een onbekendheidsverklaring niet bedoeld is als garantie of uitsluiting/beperking van aansprakelijkheid. Zoals hierboven reeds aangegeven gaat het spreekwoord ‘wat niet weet wat niet deert’, noch op voor koper, noch voor verkoper. Of koper verkoper kan aanspreken volgt in beginsel uit artikel 6.1 en 6.3 van de koopovereenkomst, waarbij kenbare gebreken voor risico van koper komen. Uiteraard kunnen partijen, desgewenst per onderdeel, van de standaard in de koopovereenkomst opgenomen risicoverdeling afwijken.";
 	skos:scopeNote "Artikel 6.4.1 van de model koopovereenkomst.";
-	skoslex:isAbout mak:OnbekendheidsverklaringVerontreiniging;
+	skoslex:isAbout mak:Verontreiniging;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaak;
 .
 mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
@@ -656,19 +684,6 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:Erfpachtvoorwaarden;
 	skoslex:isAbout not:HerzieningErfpacht;
 	skoslex:isAbout not:VoortdurendeErfpacht;
-.
-mak:Asbest a skos:Concept;
-	rdfs:label "Asbest"@nl;
-	skos:prefLabel "Asbest";
-	skos:definition "Een bouwmateriaal dat in het verleden is toegepast bij de bouw van registergoederen.";
-	rdfs:comment "In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.";
-.
-mak:Financieringsvoorbehoud a skos:Concept;
-	rdfs:label "Financieringsvoorbehoud"@nl;
-	skos:prefLabel "Financieringsvoorbehoud";
-	skos:altLabel "Voorbehoud van financiering";
-	skos:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
-	rdfs:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
 .
 mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Koopovereenkomst"@nl;
@@ -723,30 +738,4 @@ mak:ZichtbareEnOnzichtbareGebreken a skos:Concept;
 	rdfs:comment "Bij de verkoop van een onroerende zijn er gebreken die bij koper bekend zijn. Dit zijn de 'zichtbare gebreken'. Er kunnen ook gebreken in de onroerende zaak aanwezig zijn die niet bekend zijn bij zowel verkoper als koper. Dit zijn de 'onzichtbare gebrekenen', doorgaans 'verborgen gebreken' genoemd.";
 .
 #toegevoegd na opschonen artikelen
-mak:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
-	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
-	skos:prefLabel "Kosten/Overdrachtsbelasting";
-	skosthes:narrowerGeneric not:Notariskosten;
-	skosthes:narrowerGeneric not:Kadasterkosten;
-	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
-.
-mak:BankgarantieWaarborgsom a skos:Concept, skoslex:Object;
-	rdfs:label "Bankgarantie of waarborgsom"@nl;
-	skos:prefLabel "Bankgarantie of waarborgsom";
-	skosthes:narrowerGeneric fin:Bankgarantie;
-	skosthes:narrowerGeneric fin:Waarborgsom;
-#	skosthes:narrowerGeneric fin:SchuldsaneringFaillisement; <daar nog wel definiëren>
-.
-mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object;
-	rdfs:label "Ontbindende voorwaarde"@nl;
-	skos:prefLabel "Ontbindende voorwaarde";
-	skos:definition "Een ontbindende voorwaarde is een voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
-	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
-	skosthes:narrowerGeneric mak:Financieringsvoorbehoud;
-# 	skosthes:narrowerGeneric fin:NationaleHypotheekgarantie; <daar nog wel definiëren>
-	skosthes:narrowerGeneric mak:BouwkundigeKeuring;
-.
-mak:BouwkundigeKeuring a skos:Concept, skoslex:Object;
-	rdfs:label "Bouwkundige keuring"@nl;
-	skos:prefLabel "Bouwkundige keuring";
-.
+
