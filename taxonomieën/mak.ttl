@@ -127,13 +127,6 @@ mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 	skos:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
 	rdfs:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
 .
-mak:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
-	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
-	skos:prefLabel "Kosten/Overdrachtsbelasting";
-	skosthes:narrowerGeneric not:Notariskosten;
-	skosthes:narrowerGeneric not:Kadasterkosten;
-	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
-.
 mak:Lasten a skos:Concept, skoslex:Object;
 	rdfs:label "Lasten"@nl;
 	skos:prefLabel "Lasten";
@@ -895,10 +888,3 @@ mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Record;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
 .
-
-
-
-
-
-
-
