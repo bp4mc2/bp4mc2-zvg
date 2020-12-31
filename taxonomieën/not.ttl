@@ -84,21 +84,12 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
-not:Volmachtgever a skos:Concept, skoslex:Actor;
-	rdfs:label "Volmachtgever"@nl;
-	skos:prefLabel "Volmachtgever"@nl;
-	skos:definition" Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
-	skosthes:broaderGeneric zv:NatuurlijkPersoon;
-	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
-	skos:semanticRelation not:Volmacht;
-.
 not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolmachtigde"@nl;
 	skos:prefLabel "Gevolmachtigde"@nl;
 	skos:altLabel "Volmachtnemer";
 	skos:definition" Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
-	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
 	skos:semanticRelation not:Volmacht;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
@@ -123,6 +114,14 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
         rdfs:comment "Eigenaar van een (onroerende) zaak of recht die dat eigendom overdraagt aan een andere partij.";
         skosthes:narrowerGeneric mak:Verkoper; #Een verkoper is altijd een vervreemder, maar een vervreemder is niet altijd een verkoper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:broaderGeneric zv:Partij;
+.
+not:Volmachtgever a skos:Concept, skoslex:Actor;
+	rdfs:label "Volmachtgever"@nl;
+	skos:prefLabel "Volmachtgever"@nl;
+	skos:definition" Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
+	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
+	skos:semanticRelation not:Volmacht;
 .
 #--
 #Acts
