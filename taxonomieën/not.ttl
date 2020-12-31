@@ -126,17 +126,15 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
 .
 #--
 #Acts
-not:VerlenenVolmacht a skos:Concept, skoslex:Act;
-	rdfs:label "Verlenen volmacht"@nl;
-	skos:prefLabel "Verlenen volmacht"@nl;
-	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten."@nl;#was: "Het verlenen van een volmacht aan een ander om in zijn naam rechtshandelingen te verrichten"
-	skoslex:actor not:Volmachtgever;
-	skoslex:actor not:Gevolmachtigde;
+not:Afrekening a Skos:Concept skoslex:Act;
+	rdfs:label "Afrekening"@nl;
+	skos:prefLabel "Afrekening"@nl;
+	skos:definition "Als u naar de notaris gaat voor het tekenen van de hypotheek- en transportakte, krijgt u ruim van tevoren een zogenaamde afrekening. Dit is een overzicht waarop de bedragen staan die de notaris ontvangt en namens u aan verschillende instanties en personen zal betalen.";
+	skoslex:actor zv:Partij;
 	skoslex:agent not:Notaris;
-	skoslex:record not:AkteVanVolmacht;
-	skoslex:object not:NotarieleVolmacht;
+	skoslex:object mak:KostenEnOverdrachtsbelasing;
+	skoslex:record not:NotaVanAfrekening;
 .
-
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
@@ -160,12 +158,12 @@ not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Archiveren (leveringsakte)"@nl;
-	skos:prefLabel "Archiveren (leveringsakte)";
+	rdfs:label "Archiveren (akte van levering)"@nl;
+	skos:prefLabel "Archiveren (akte van levering)";
 	skos:definition "Opslaan of verzamelen van de leveringsakte in een archief of andere bewaarplaats.";
 	#rdfs:comment "Archiveren van de leveringsakte.";
 	skoslex:actor not:Notaris;
-	skoslex:object not:Leveringsakte;
+	skoslex:object not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
@@ -268,12 +266,12 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigingHypotheek;
 .
 not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Opstellen leveringsakte"@nl;
-	skos:prefLabel "Opstellen leveringsakte";
-	skos:definition "Het opstellen van de leveringsakte.";
-	rdfs:comment "Het maken van de leveringsakte.";
+	rdfs:label "Opstellen akte van levering"@nl;
+	skos:prefLabel "Opstellen akte van levering";
+	skos:definition "Het opstellen van de akte van levering.";
+	#rdfs:comment "Het maken van de leveringsakte.";
 	skoslex:actor not:Notaris;
-	skoslex:object not:Leveringsakte;
+	skoslex:object not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderGeneric not:OpstellenAkte;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
@@ -286,7 +284,7 @@ not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
 	skoslex:actor not:Verkrijger;
 	skoslex:object kad:ZakelijkRecht;
 	skoslex:agent not:Notaris;
-	skoslex:record not:Leveringsakte;
+	skoslex:record not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:Passeren a skos:Concept, skoslex:Act;
@@ -314,17 +312,17 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	#skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor.";
 .
 not:PasserenAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Passeren van de leveringsakte"@nl;
-	skos:prefLabel "Passeren van de leveringsakte";
+	rdfs:label "Passeren van de akte van levering"@nl;
+	skos:prefLabel "Passeren van de akte van levering";
 	skos:altLabel "Passeren";
 	skos:definition "Handeling bij de notaris, waarbij de leveringsakte door alle betrokkenen wordt ondertekend.";
-	rdfs:comment "Ondertekening van een leveringsakte, nadat een notaris heeft gecontroleerd of betrokken partijen begrijpen wat er in die akte staat.";
+	rdfs:comment "Ondertekening van een akte van levering, nadat een notaris heeft gecontroleerd of betrokken partijen begrijpen wat er in die akte staat.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
 	skoslex:actor not:Gevolmachtigde;
 	skoslex:actor not:Notaris;
 	skoslex:object not:DatumPasserenAkteLevering;
-	skoslex:object not:Leveringsakte;
+	skoslex:object not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 	skosthes:broaderGeneric not:Passeren;
 	#skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor.";
@@ -421,6 +419,16 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	skoslex:object not:Kwaliteitsrekening;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
+not:VerlenenVolmacht a skos:Concept, skoslex:Act;
+	rdfs:label "Verlenen volmacht"@nl;
+	skos:prefLabel "Verlenen volmacht"@nl;
+	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten."@nl;#was: "Het verlenen van een volmacht aan een ander om in zijn naam rechtshandelingen te verrichten"
+	skoslex:actor not:Volmachtgever;
+	skoslex:actor not:Gevolmachtigde;
+	skoslex:agent not:Notaris;
+	skoslex:record not:AkteVanVolmacht;
+	skoslex:object not:NotarieleVolmacht;
+.
 not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Vestigen beperkt recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen.";
@@ -473,6 +481,29 @@ not:Akte a skos:Concept, skoslex:Record;
 	skos:definition "Ondertekend geschrift, bedoeld om als bewijs te dienen. Een document waarin de juridische werkelijkheid is beschreven en dat kan dienen als bewijs.";
 	rdfs:comment "Ondertekend schriftelijk document, bedoeld om als bewijs te dienen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1>;
+.
+not:AkteVanLevering skos:Concept, skoslex:Record;
+	rdfs:label "Akte van levering"@nl;
+	skos:prefLabel "Leveringsakte";
+	skos:altLabel "Transportakte";
+	skos:altLabel "Overdrachtsakte";
+	skos:altLabel "Leveringsakte";
+	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
+	rdfs:comment "Officieel schriftelijk document van een notaris waarin afspraken staan over de overdracht van eigendom van de een partij aan een andere partij. Dit kan een overdracht zijn van onroerende zaken, maar ook van bijvoorbeeld aandelen in vennootschappen.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
+.
+not:AkteVanLeveringOnroerendeZaak a skos:Concept, skoslex:Record;
+	rdfs:label "Akte van levering (onroerende zaak)"@nl;
+	skos:prefLabel "Akte van levering";#Term die wordt genoemd in de koopovereenkomst is 'akte van levering' i.p.v. 'leveringsakte'. Gezien de 1e scope (de koopovereenkomst) heeft de term 'akte van levering' de voorkeur.
+	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
+	rdfs:comment "De notaris maakt aan de hand van de gegevens in de koopovereenkomst een akte van levering op. De akte van levering is de juridische uitwerking van de reeds gesloten koopovereenkomst, nodig voor het bewerkstelligen van de daadwerkelijke eigendomsoverdracht. Deze akte van levering wordt eerst aan alle partijen in concept toegestuurd. De notaris nodigt u tijdig uit voor het ondertekenen van de akte van levering. Op die dag neemt de notaris de voornaamste inhoud van de akte van levering door met koper en verkoper. De akte van levering wordt getekend door koper, verkoper (tenzij door koper of verkoper een volmacht is verleend) en de notaris. De notaris zorgt ervoor dat de akte van levering wordt ingeschreven in de openbare registers. Op het moment van inschrijving in de openbare registers wordt koper officieel eigenaar. Dit wordt verwerkt in het kadaster. Later ontvangt koper van de notaris een afschrift van deze akte: het 'eigendomsbewijs'. De originele akte blijft in bewaring bij de notaris.";
+	skosthes:broaderGeneric not:AkteVanLevering;
+	skoslex:isAbout kad:OnroerendeZaak;
+	skoslex:isAbout not:Koopsom;
+	skoslex:isAbout not:Kadasterkosten;
+	skoslex:isAbout zv:Overdrachtsbelasting;
+	skoslex:isAbout not:Notariskosten;
+	skoslex:isAbout not:Titel;
 .
 not:AkteVanVolmacht a skos:Concept, skoslex:Record;
 	rdfs:label "Akte van volmacht"@nl;
@@ -593,6 +624,14 @@ not:Koopsom a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
 	skos:related kad:Object;
 .
+not:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
+	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
+	skos:prefLabel "Kosten/Overdrachtsbelasting";
+	skos:definition "Geheel van kosten voor een levering.";
+	skosthes:narrowerGeneric not:Notariskosten;
+	skosthes:narrowerGeneric not:Kadasterkosten;
+	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
+.
 not:KwalitatieveRechten a skos:Concept;
 	rdfs:label "Kwalitatieve rechten"@nl;
 	skos:prefLabel "Kwalitatieve rechten";
@@ -607,23 +646,6 @@ not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	rdfs:comment "De kwaliteitsrekening (ook wel derdengeldenrekening genoemd) is een aparte bankrekening van de notaris voor geld van klanten die betrokken zijn bij een overdracht van eigendom. Deze rekening is beschermd tegen beslaglegging door schuldeisers van de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>;
 .
-not:Leveringsakte a skos:Concept, skoslex:Record;
-	rdfs:label "Leveringsakte"@nl;
-	skos:prefLabel "Leveringsakte";
-	skos:altLabel "Transportakte";
-	skos:altLabel "Overdrachtsakte";
-	skos:altLabel "Akte van levering";
-	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
-	rdfs:comment "Officieel schriftelijk document van een notaris waarin afspraken staan over de overdracht van eigendom van de een partij aan een andere partij. Dit kan een overdracht zijn van onroerende zaken, maar ook van bijvoorbeeld aandelen in vennootschappen.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
-	skosthes:broaderGeneric not:NotarieleAkte;
-	skoslex:isAbout kad:OnroerendeZaak;
-	skoslex:isAbout not:Koopsom;
-	skoslex:isAbout not:Kadasterkosten;
-	skoslex:isAbout zv:Overdrachtsbelasting;
-	skoslex:isAbout not:Notariskosten;
-	skoslex:isAbout not:Titel;
-.
 not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;
 	skos:prefLabel "Minuut";
@@ -636,8 +658,13 @@ not:Minuut a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:NotarieleAkte;
 	skos:semanticRelation not:AfschriftAkte;
 .
+not:NotaVanAfrekening a skos:Concept, skoslex:Record;
+	rdfs:label "Nota van afrekening"@nl;
+	skos:prefLabel "Nota van afrekening"@nl;
+	skos:definition "Tegelijk met de conceptakte van levering ontvangt u van de notaris een 'nota van afrekening'. In deze nota is voor koper (meestal) opgenomen de koopsom, de verrekening van lasten, de overdrachtsbelasting, de kosten van het kadaster enzovoort. Op de nota van afrekening van verkoper staat onder meer het bedrag van de eventueel af te lossen hypothecaire geldlening met de daarbij behorende kosten. Het is gebruikelijk dat de nog niet reeds voldane makelaarskosten en de advieskosten van de eventuele hypothecaire geldlening bij de notaris worden verrekend. De makelaarskosten worden betaald door degene die de makelaar heeft ingeschakeld. Onder aan de nota staat het bedrag dat u als koper nog moet betalen of dat u als verkoper ontvangt of bij moet betalen.";
+.
 not:NotarieleAkte a skos:Concept, skoslex:Record;
-	rdfs:label "Notariële akte"@nl;
+	rdfs:label "Notariële akte"@nl; 
 	skos:prefLabel "Notariële akte";
 	skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
 	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris.";
