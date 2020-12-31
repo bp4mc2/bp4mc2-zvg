@@ -160,8 +160,8 @@ not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
 not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Archiveren (akte van levering)"@nl;
 	skos:prefLabel "Archiveren (akte van levering)";
-	skos:definition "Opslaan of verzamelen van de leveringsakte in een archief of andere bewaarplaats.";
-	#rdfs:comment "Archiveren van de leveringsakte.";
+	skos:definition "Opslaan of verzamelen van de akte van levering in een archief of andere bewaarplaats.";
+	#rdfs:comment "Archiveren van de akte van levering.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
@@ -197,10 +197,10 @@ not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric not:IdentificerenAkteNotaris;
 .
 not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Identificeren van vervreemder/verkrijger (leveringsakte)"@nl;
-	skos:prefLabel "Identificeren van vervreemder/verkrijger (leveringsakte)";
+	rdfs:label "Identificeren van vervreemder/verkrijger (akte van levering)"@nl;
+	skos:prefLabel "Identificeren van vervreemder/verkrijger (akte van levering)";
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
-	rdfs:comment "Vaststellen van de identiteit van de partijen die op de leveringsakte komen.";
+	rdfs:comment "Vaststellen van de identiteit van de partijen die op de akte van levering komen.";
 	skos:scopeNote "De notaris stelt de identiteit van de comparanten vast op basis van een identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
 	skos:scopeNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden.";
 	skos:scopeNote "Als dezelfde notaris de leveringakte en de hypotheekakte opstelt, zal identificatie van eenzelfde persoon één keer worden uitvoerd.";#Aparte handeling, ook in kader van AVG.
@@ -215,8 +215,8 @@ not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
-	rdfs:label "Inschrijven leveringsakte"@nl;
-	skos:prefLabel "Inschrijven leveringsakte";
+	rdfs:label "Inschrijven akte van levering"@nl;
+	skos:prefLabel "Inschrijven akte van levering";
 	skos:definition "Vastleggen in het register van het Kadaster.";
 	rdfs:comment "Inschrijven van het eigendom van een onroerende zaak in het register van het Kadaster.";
 	skoslex:actor not:Notaris;
@@ -245,7 +245,7 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	skoslex:actor not:Verkrijger;
 	skoslex:actor kad:Rechthebbende;
 	skoslex:agent not:Notaris;
-	skoslex:record not:Leveringsakte;
+	skoslex:record not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
@@ -269,7 +269,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen akte van levering"@nl;
 	skos:prefLabel "Opstellen akte van levering";
 	skos:definition "Het opstellen van de akte van levering.";
-	#rdfs:comment "Het maken van de leveringsakte.";
+	#rdfs:comment "Het maken van de akte van levering.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderGeneric not:OpstellenAkte;
@@ -315,7 +315,7 @@ not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren van de akte van levering"@nl;
 	skos:prefLabel "Passeren van de akte van levering";
 	skos:altLabel "Passeren";
-	skos:definition "Handeling bij de notaris, waarbij de leveringsakte door alle betrokkenen wordt ondertekend.";
+	skos:definition "Handeling bij de notaris, waarbij de akte van levering door alle betrokkenen wordt ondertekend.";
 	rdfs:comment "Ondertekening van een akte van levering, nadat een notaris heeft gecontroleerd of betrokken partijen begrijpen wat er in die akte staat.";
 	skoslex:actor not:Vervreemder;
 	skoslex:actor not:Verkrijger;
@@ -351,8 +351,8 @@ not:RechercheAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric not:RechercheNotaris;
 .
 not:RechercheAkteLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Recherche (leveringsakte)"@nl;
-	skos:prefLabel "Recherche (leveringsakte)";
+	rdfs:label "Recherche (akte van levering)"@nl;
+	skos:prefLabel "Recherche (akte van levering)";
 	skos:definition "Het onderzoek dat de notaris doet in de diverse (basis)registraties van de overheid. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd.";
 	rdfs:comment "Wettelijk verplicht onderzoek dat een notaris moet doen in diverse (basis)registraties van de overheid, voordat hij/zij een notariële akte mag ondertekenen.";
 	skoslex:object not:Vervreemder;
@@ -397,10 +397,10 @@ not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
 	skos:editorialNote "In het notariaat wordt met registeren van de akte bedoeld dat deze bij de Belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.";
 .
 not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
-	rdfs:label "Registreren leveringsakte registratiewet 1970"@nl;
-	skos:prefLabel "Registreren leveringsakte registratiewet 1970";
+	rdfs:label "Registreren akte van levering registratiewet 1970"@nl;
+	skos:prefLabel "Registreren akte van levering registratiewet 1970";
 	skos:definition "Het toesturen van de akte aan de Belastingdienst opdat de Belastingdienst kan controleren welke en hoeveel belasting verschuldigd is.";
-	rdfs:comment "Registreren van een leveringsakte in het Centraal Digitaal Repertorium, opdat de Belastingdienst eventueel te betalen belastingen kan vaststellen. De notaris moet binnen 10 dagen na het moment van passeren bij de Belastingdienst een afschrift registeren.";
+	rdfs:comment "Registreren van een akte van levering in het Centraal Digitaal Repertorium, opdat de Belastingdienst eventueel te betalen belastingen kan vaststellen. De notaris moet binnen 10 dagen na het moment van passeren bij de Belastingdienst een afschrift registeren.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
 	skoslex:object zv:RegisterBelastingdienst;
@@ -484,7 +484,7 @@ not:Akte a skos:Concept, skoslex:Record;
 .
 not:AkteVanLevering skos:Concept, skoslex:Record;
 	rdfs:label "Akte van levering"@nl;
-	skos:prefLabel "Leveringsakte";
+	skos:prefLabel "Akte van levering";
 	skos:altLabel "Transportakte";
 	skos:altLabel "Overdrachtsakte";
 	skos:altLabel "Leveringsakte";
@@ -618,7 +618,7 @@ not:Koopsom a skos:Concept;
 	skos:altLabel "Koopprijs";
 	skos:altLabel "Tegenprestatie";
 	skos:definition "Een koopsom is het bedrag dat vermeld staat in de akte en dat als tegenprestatie geldt met betrekking tot een transactie of overdracht van een zakelijk recht van een object (of samen met meerdere objecten) en dat de verkrijger aan de vervreemder verschuldigd is. Dit bedrag hebben verkrijger en vervreemder onderling met elkaar afgesproken en wordt door een notaris opgenomen in de akte.";
-	rdfs:comment "Een koopsom is het bedrag, dat verkoper en koper hebben afgesproken voor de aankoop van een (onroerende) zaak. De koopsom wordt in de koopovereenkomst vermeld en ook in een leveringsakte als het om een een onroerende zaak gaat.";
+	rdfs:comment "Een koopsom is het bedrag, dat verkoper en koper hebben afgesproken voor de aankoop van een (onroerende) zaak. De koopsom wordt in de koopovereenkomst vermeld en ook in een akte van levering als het om een een onroerende zaak gaat.";
 	skos:scopeNote "Een koopsom is niet altijd gelijk aan de economische of WOZ waarde. Er kunnen redenen zijn, waarom een koopsom hoger of lager is dan die waarde. De notaris moet controleren of de koopsom redelijk is.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
@@ -674,7 +674,7 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
 	rdfs:label "Notariskosten"@nl;
 	skos:prefLabel "Notariskosten";
-	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de leveringsakte.";
+	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de akte van levering.";
 	rdfs:comment "Kosten die een notaris berekent voor zijn werkzaamheden.";
 .
 not:NotarieleVolmacht a skos:Concept, skoslex:Object;
@@ -754,7 +754,7 @@ not:Titel a skos:Concept, skoslex:Record;
 	skos:altLabel "Titel van aankomst";
 	skos:altLabel "Verkrijging";
 	skos:definition "Het document (koopovereenkomst) op grond waarvan een (niet-)natuurlijk persoon een onroerende zaak heeft gekocht.";
-	rdfs:comment "Juridische basis waarop een partij eigenaar is geworden van een (onroerende) zaak, bijvoorbeeld een leveringsakte.";
+	rdfs:comment "Juridische basis waarop een partij eigenaar is geworden van een (onroerende) zaak, bijvoorbeeld een akte van levering.";
 	skos:scopeNote "Titel is een juridische term voor een geldige (juridische) reden voor de overdracht. Die geldige reden kan bestaan uit bijvoorbeeld een koopovereenkomst of schenking.";
 	skos:scopeNote "Zonder geldige titel kan iemand zijn eigendomsrecht niet overdragen aan een ander.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
