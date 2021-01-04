@@ -380,7 +380,6 @@ mak:Schuldsaneringsregeling a skoslex:Act;
 	skos:prefLabel "Schuldsaneringsregeling";
 	skos:definition "Een natuurlijke persoon kan, indien redelijkerwijs is te voorzien dat hij niet zal kunnen voortgaan met het betalen van zijn schulden of indien hij in de toestand verkeert dat hij heeft opgehouden te betalen, verzoeken de toepassing van de schuldsaneringsregeling uit te spreken.";
 	rdfs:comment "De schuldsanering is een wettelijk regeling voor mensen met schulden. In 3 tot 5 jaar tijd kan men de schuld volledig aflossen. Na deze tijd ontvang de 	schuldenaar een 'schone lei'. Dat betekent dat men schuldenvrij is.";
-	skos:semanticRelation
 .
 mak:Taxatie a skos:Concept, skoslex:Act;
 	rdfs:label "Taxatie"@nl;
