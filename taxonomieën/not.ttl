@@ -125,7 +125,7 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 .
 #--
 #Acts
-not:Afrekening a Skos:Concept skoslex:Act;
+not:Afrekening a skos:Concept, skoslex:Act;
 	rdfs:label "Afrekening"@nl;
 	skos:prefLabel "Afrekening"@nl;
 	skos:definition "Als u naar de notaris gaat voor het tekenen van de hypotheek- en transportakte, krijgt u ruim van tevoren een zogenaamde afrekening. Dit is een overzicht waarop de bedragen staan die de notaris ontvangt en namens u aan verschillende instanties en personen zal betalen.";
@@ -481,7 +481,7 @@ not:Akte a skos:Concept, skoslex:Record;
 	rdfs:comment "Ondertekend schriftelijk document, bedoeld om als bewijs te dienen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1>;
 .
-not:AkteVanLevering skos:Concept, skoslex:Record;
+not:AkteVanLevering a skos:Concept, skoslex:Record;
 	rdfs:label "Akte van levering"@nl;
 	skos:prefLabel "Akte van levering";
 	skos:altLabel "Transportakte";
@@ -663,7 +663,7 @@ not:NotaVanAfrekening a skos:Concept, skoslex:Record;
 	skos:definition "Tegelijk met de conceptakte van levering ontvangt u van de notaris een 'nota van afrekening'. In deze nota is voor koper (meestal) opgenomen de koopsom, de verrekening van lasten, de overdrachtsbelasting, de kosten van het kadaster enzovoort. Op de nota van afrekening van verkoper staat onder meer het bedrag van de eventueel af te lossen hypothecaire geldlening met de daarbij behorende kosten. Het is gebruikelijk dat de nog niet reeds voldane makelaarskosten en de advieskosten van de eventuele hypothecaire geldlening bij de notaris worden verrekend. De makelaarskosten worden betaald door degene die de makelaar heeft ingeschakeld. Onder aan de nota staat het bedrag dat u als koper nog moet betalen of dat u als verkoper ontvangt of bij moet betalen.";
 .
 not:NotarieleAkte a skos:Concept, skoslex:Record;
-	rdfs:label "Notariële akte"@nl; 
+	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte";
 	skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
 	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris.";

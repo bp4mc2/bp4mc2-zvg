@@ -87,7 +87,7 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 	skosthes:broaderGeneric zv:Partij;
 .
 #--
-#Objects 
+#Objects
 #==
 mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:label "Asbest"@nl;
@@ -230,9 +230,9 @@ mak:ZichtbareEnOnzichtbareGebreken a skos:Concept, skoslex:Object;
 	skos:definition "Zichtbare en onzichtbare bouwkundige onvolkomenheden aan de onroerende zaak.";
 	rdfs:comment "Bij de verkoop van een onroerende zijn er gebreken die bij koper bekend zijn. Dit zijn de 'zichtbare gebreken'. Er kunnen ook gebreken in de onroerende zaak aanwezig zijn die niet bekend zijn bij zowel verkoper als koper. Dit zijn de 'onzichtbare gebrekenen', doorgaans 'verborgen gebreken' genoemd.";
 .
-#--
+#---
 #Acts
-==
+#---
 mak:Aankoop a skos:Concept, skoslex:Act;
 	rdfs:label "Aankoop"@nl;
 	skos:prefLabel "Aankoop";
@@ -259,7 +259,7 @@ mak:Betaling a skos:Concept, skoslex:Act;
 mak:Eigendomsoverdracht a skos:Concept, skoslex:Act;
 	rdfs:label "Eigendomsoverdracht"@nl;
 	skos:prefLabel "Eigendomsoverdracht";
-	skosthes:broaderPartitive not:Levering; 
+	skosthes:broaderPartitive not:Levering;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object kad:Eigendom;
 	skoslex:object kad:Erfpacht;
@@ -375,7 +375,7 @@ mak:Schoning a skos:Concept, skoslex:Act;
 	skos:definition "Het schoonmaken van de onroerende zaak";
 	rdfs:comment "Indien daartoe de noodzaak bestaat kan de eigenaar van de onroerende zaak door de daartoe bevoegde instantie verplicht worden om de onroerende zaak schoon te maken.";
 .
-mak:Schuldsaneringsregeling a skoslex:Act; 
+mak:Schuldsaneringsregeling a skoslex:Act;
 	rdfs:label "Schuldsaneringsregeling"@nl;
 	skos:prefLabel "Schuldsaneringsregeling";
 	skos:definition "Een natuurlijke persoon kan, indien redelijkerwijs is te voorzien dat hij niet zal kunnen voortgaan met het betalen van zijn schulden of indien hij in de toestand verkeert dat hij heeft opgehouden te betalen, verzoeken de toepassing van de schuldsaneringsregeling uit te spreken.";
@@ -450,15 +450,15 @@ mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
 	skos:prefLabel "Ondergetekenden";
 	skos:definition "Onderdeel met de namen van de personen die de koopvoereenkomst hebben ondertekend";
-	rdfs:comment '''Op het voorblad van de koopovereenkomst bij A worden de gegevens van verkoper ingevuld, inclusief het nummer van het paspoort, identiteitsbewijs of rijbewijs (legitimatie). Voor zover reeds bekend worden ook het toekomstige adres en telefoonnummer van verkoper vermeld; dit ten behoeve van eventuele verdere communicatie met de notaris en het kadaster (bijvoorbeeld voor toezending van de akte van levering). Indien sprake is van een medeverkoper, waaronder een echtgeno(o)t(e) of geregistreerd partner, worden ook diens gegevens ingevuld onder A. 
-Bij B worden de gegevens van koper ingevuld. Ook hier geldt dat indien sprake is van een medekoper, ook diens gegevens worden ingevuld onder B. 
+	rdfs:comment '''Op het voorblad van de koopovereenkomst bij A worden de gegevens van verkoper ingevuld, inclusief het nummer van het paspoort, identiteitsbewijs of rijbewijs (legitimatie). Voor zover reeds bekend worden ook het toekomstige adres en telefoonnummer van verkoper vermeld; dit ten behoeve van eventuele verdere communicatie met de notaris en het kadaster (bijvoorbeeld voor toezending van de akte van levering). Indien sprake is van een medeverkoper, waaronder een echtgeno(o)t(e) of geregistreerd partner, worden ook diens gegevens ingevuld onder A.
+Bij B worden de gegevens van koper ingevuld. Ook hier geldt dat indien sprake is van een medekoper, ook diens gegevens worden ingevuld onder B.
 Indien de echtgeno(o)t(e) of geregistreerd partner niet als medekoper of medeverkoper optreedt, maar de koopovereenkomst ondertekent als blijk van toestemming, wordt volstaan met het onderaan de akte opnemen van zijn of haar naam.
 Medeondertekening door echtgenoot / geregistreerd partner
 In het Burgerlijk Wetboek, artikel 1:88 lid 1 sub a staat:
 "Een echtgenoot behoeft de toestemming van de andere echtgenoot voor de volgende rechtshandelingen: overeenkomsten strekkende tot vervreemding, bezwaring of ingebruikgeving en rechtshandelingen strekkende tot beëindiging van het gebruik van een door de echtgenoten tezamen of door de andere echtgenoot alleen bewoonde woning of van zaken die bij een zodanige woning of tot de inboedel daarvan behoren.” Onder inboedel wordt hier verstaan het geheel van tot huisraad en tot stoffering en meubilering van een woning dienende roerende zaken, met uitzondering van boekerijen en verzamelingen van voorwerpen van kunst, wetenschap of geschiedkundige aard.
 Is de andere echtgenoot afwezig of is hij niet in staat zijn wil te verklaren en daardoor zijn toestemming niet verleent dan kan de beslissing van de kantonrechter worden ingeroepen.
 Voor geregistreerde partners geldt dezelfde regeling als voor echtgenoten.
-Ter uitvoering van hetgeen in dit wetsartikel is bepaald, moet de echtgenoot of geregistreerd partner van verkoper de koopovereenkomst meestal medeondertekenen voor toestemming tot verkoop. Er is op grond van dit wetsartikel geen toestemming nodig voor de koop van de echtgenoot of geregistreerd partner van koper; toestemming en medeondertekening is wel nodig voor het vestigen van een hypotheek met betrekking tot de onroerende zaak. Op het voorblad wordt vermeld wie koper(s) en verkoper(s) zijn. 
+Ter uitvoering van hetgeen in dit wetsartikel is bepaald, moet de echtgenoot of geregistreerd partner van verkoper de koopovereenkomst meestal medeondertekenen voor toestemming tot verkoop. Er is op grond van dit wetsartikel geen toestemming nodig voor de koop van de echtgenoot of geregistreerd partner van koper; toestemming en medeondertekening is wel nodig voor het vestigen van een hypotheek met betrekking tot de onroerende zaak. Op het voorblad wordt vermeld wie koper(s) en verkoper(s) zijn.
 Niet gehuwde of geregistreerde samenwonenden hoeven elkaar geen toestemming te geven voor de verkoop van de door hen samen bewoonde woning, maar het kan zijn dat in het samenlevingscontract iets anders is overeengekomen. Als samenwonenden samen eigenaar zijn, hebben ze wel elkaars medewerking nodig voor de verkoop van de woning.
 ''';
         skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -474,9 +474,9 @@ mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	skos:scopeNote "Artikel 1 van de model koopovereenkomst.";
 	skos:scopeNote "Keuze tussen eigendom en erfpacht.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
-	skoslex:isAbout kad:OnroerendeZaak
+	skoslex:isAbout kad:OnroerendeZaak;
 	skoslex:isAbout kad:KadastraleAanduiding;
-	skoslex:isAbout kad:KadastraleGrootte; 
+	skoslex:isAbout kad:KadastraleGrootte;
 	skoslex:isAbout not:Koopsom;
 	skoslex:isAbout not:PlaatselijkBekend;
 	skoslex:isAbout mak:OmschrijvingOnroerendeZaak;
@@ -517,8 +517,8 @@ mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 Makelaarskosten en hypotheekkosten vallen er onder andere niet onder! Er wordt apart aangegeven welke kosten die de notaris in rekening brengt voor rekening van verkoper of koper komen. De overdrachtsbelasting bedraagt een percentage van de koopsom. Als de waarde van de onroerende zaak hoger is dan de koopsom wordt de overdrachtsbelasting over deze waarde berekend.
 Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.
 
-Artikel 2.2 is van toepassing indien verkoper de onroerende zaak binnen een bepaalde termijn nadat hij eigenaar is geworden, verkoopt en overdraagt. Thans bedraagt de bepaalde termijn van artikel 13 Wet op belastingen van rechtsverkeer 6 maanden. Indien de eerste overdracht van de onroerende zaak heeft plaatsgevonden tussen 1 september 2012 en 1 januari 2015, geldt een termijn van 36 maanden vanaf de eerste overdracht. 
-Op grond van artikel 13 Wet op belastingen van rechtsverkeer mag het bedrag waarover overdrachtsbelasting of omzetbelasting ter zake van die vorige verkrijging was verschuldigd op de heffingsgrondslag in mindering worden gebracht. Er ontstaat dan een overdrachtsbelastingvoordeel vanwege de doorlevering van de onroerende zaak binnen een bepaalde termijn, welk voordeel op grond van artikel 13 Wet op belastingen van rechtsverkeer aan koper toekomt. Indien verkoper van dit voordeel gebruik wil maken moet verkoper dit met koper overeenkomen tijdens de onderhandelingen. In artikel 2.2. wordt dan ‘niet’ doorgestreept en koper betaalt dan aan verkoper dit voordeel als vergoeding. 
+Artikel 2.2 is van toepassing indien verkoper de onroerende zaak binnen een bepaalde termijn nadat hij eigenaar is geworden, verkoopt en overdraagt. Thans bedraagt de bepaalde termijn van artikel 13 Wet op belastingen van rechtsverkeer 6 maanden. Indien de eerste overdracht van de onroerende zaak heeft plaatsgevonden tussen 1 september 2012 en 1 januari 2015, geldt een termijn van 36 maanden vanaf de eerste overdracht.
+Op grond van artikel 13 Wet op belastingen van rechtsverkeer mag het bedrag waarover overdrachtsbelasting of omzetbelasting ter zake van die vorige verkrijging was verschuldigd op de heffingsgrondslag in mindering worden gebracht. Er ontstaat dan een overdrachtsbelastingvoordeel vanwege de doorlevering van de onroerende zaak binnen een bepaalde termijn, welk voordeel op grond van artikel 13 Wet op belastingen van rechtsverkeer aan koper toekomt. Indien verkoper van dit voordeel gebruik wil maken moet verkoper dit met koper overeenkomen tijdens de onderhandelingen. In artikel 2.2. wordt dan ‘niet’ doorgestreept en koper betaalt dan aan verkoper dit voordeel als vergoeding.
 Voorheen was goedgekeurd dat deze vergoeding aan verkoper niet in de heffing van de overdrachtsbelasting werd betrokken. Deze goedkeuring is op 1 juli 2011 komen te vervallen. De vergoeding die koper aan verkoper betaalt, valt sindsdien weer onder de tegenprestatie en daarover moet derhalve ook overdrachtsbelasting betaald worden. De laatste zin van artikel 2.2. bepaalt dat koper nooit méér overdrachtsbelasting betaalt dan dat hij betaald zou hebben als géén sprake was geweest van een doorlevering binnen 6 of 36 maanden. Het nadeel dat ontstaat door het vervallen van de goedkeuring komt dus voor rekening van verkoper.''';
 	skos:scopeNote "Artikel 2 van de model koopovereenkomst.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
@@ -719,7 +719,7 @@ mak:ArtikelWetVoorkeursrechtGemeenten a skos:Concept, skoslex:Record;
 mak:ArtikelWegneemrechtHuurder a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: wegneemrecht huurder"@nl;
 	skos:prefLabel "Artikel: wegneemrecht huurder";
-	rdfs:comment "Artikel 6.10. Als het verkochte een verhuurde woning betreft, en met de huurder is afgesproken dat deze de woning voor het passeren van de akte van levering zal ontruimen, dan moet rekening worden gehouden met het feit dat een huurder in beginsel het recht heeft om die zaken mee te nemen die hij heeft aangebracht. Hij dient de woning op te leveren in de oorspronkelijke staat waarin hij die bij aanvang van de huur heeft ontvangen. Een uitzondering is er voor geoorloofde veranderingen en toevoegingen en hetgeen door ouderdom is tenietgegaan of beschadigd. Het is voor koper en verkoper van belang elkaar goed te informeren over hetgeen tot het verkochte behoort.";	
+	rdfs:comment "Artikel 6.10. Als het verkochte een verhuurde woning betreft, en met de huurder is afgesproken dat deze de woning voor het passeren van de akte van levering zal ontruimen, dan moet rekening worden gehouden met het feit dat een huurder in beginsel het recht heeft om die zaken mee te nemen die hij heeft aangebracht. Hij dient de woning op te leveren in de oorspronkelijke staat waarin hij die bij aanvang van de huur heeft ontvangen. Een uitzondering is er voor geoorloofde veranderingen en toevoegingen en hetgeen door ouderdom is tenietgegaan of beschadigd. Het is voor koper en verkoper van belang elkaar goed te informeren over hetgeen tot het verkochte behoort.";
 	skos:scopeNote "Artikel 6.10 van de model koopovereenkomst.";
 	skoslex:isAbout not:Wegneemrecht;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
@@ -744,7 +744,7 @@ mak:ArtikelLastenVoorgaandeJaren a skos:Concept, skoslex:Record;
 mak:ArtikelOnbekenheidsverklaring a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: onbekendheidsverklaring"@nl;
 	skos:prefLabel "Artikel: onbekendheidsverklaring";
-	rdfs:comment "Artikel 6.13. Hier wordt nog eens benadrukt dat de verklaring van verkoper dat hij niet op de hoogte is van bijvoorbeeld bodemverontreiniging, niets zegt over wie het risico voor bodemverontreiniging draagt. Koper mag uit de onbekendheidsverklaring niet afleiden dat er geen sprake is van bodemverontreiniging. Hij krijgt dus geen garantie. Er is echter ook geen sprake van uitsluiting van aansprakelijkheid. Verkoper legt met een onbekendheidsverklaring het risico dus niet bij koper neer, zie de toelichting bij artikel 6.3. en 6.4.1. Risicoverdeling is een kwestie van afspraak. Bij een onbekendheidsverklaring gaat het om feitelijke wetenschap en niet om een afspraak. Je kunt nu eenmaal niet onderhandelen over de vraag of je iets wel of niet weet. ";	
+	rdfs:comment "Artikel 6.13. Hier wordt nog eens benadrukt dat de verklaring van verkoper dat hij niet op de hoogte is van bijvoorbeeld bodemverontreiniging, niets zegt over wie het risico voor bodemverontreiniging draagt. Koper mag uit de onbekendheidsverklaring niet afleiden dat er geen sprake is van bodemverontreiniging. Hij krijgt dus geen garantie. Er is echter ook geen sprake van uitsluiting van aansprakelijkheid. Verkoper legt met een onbekendheidsverklaring het risico dus niet bij koper neer, zie de toelichting bij artikel 6.3. en 6.4.1. Risicoverdeling is een kwestie van afspraak. Bij een onbekendheidsverklaring gaat het om feitelijke wetenschap en niet om een afspraak. Je kunt nu eenmaal niet onderhandelen over de vraag of je iets wel of niet weet. ";
 	skos:scopeNote "Artikel 6.13 van de model koopovereenkomst.";
 	skoslex:isAbout kad:Canon;
 	skosthes:broaderPartitive mak:Onbekendheidsverklaring;
@@ -753,7 +753,7 @@ mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record
 	rdfs:label "Artikel: Feitelijke levering"@nl;
 	skos:prefLabel "Artikel: Feitelijke levering";
 	skos:altLabel "Artikel: Eigendomsoverdracht";
-	rdfs:comment '''De feitelijke levering vindt plaats door het overhandigen van de sleutels en het in bezit nemen van het verkochte. In dit artikel wordt aangegeven dat de levering plaatsvindt op het moment van het ondertekenen van de akte van levering bij de notaris, tenzij tussen verkoper en koper een ander tijdstip is overeengekomen. 
+	rdfs:comment '''De feitelijke levering vindt plaats door het overhandigen van de sleutels en het in bezit nemen van het verkochte. In dit artikel wordt aangegeven dat de levering plaatsvindt op het moment van het ondertekenen van de akte van levering bij de notaris, tenzij tussen verkoper en koper een ander tijdstip is overeengekomen.
 Indien verkoper en koper een ander tijdstip van feitelijke levering overeenkomen, zijn over het algemeen aanvullende afspraken gewenst, bijvoorbeeld over het tijdstip waarop het risico overgaat (artikel 10). Overleg in dergelijke gevallen vooraf met uw verzekeraar en hypotheekverstrekker.''';
 	skos:scopeNote "Artikel 7.1 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
