@@ -140,8 +140,8 @@ mak:Lasten a skos:Concept, skoslex:Object;
 mak:ModelKoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Model koopovereenkomst"@nl;
 	skos:prefLabel "Model koopovereenkomst";
-	rdfs:comment "De model koopovereenkomst voor een bestaande eengezinswoning is in overleg vastgesteld door Vereniging Eigen Huis, de Consumentenbond, VastgoedPRO, VBO Makelaar en de Nederlandse Vereniging van Makelaars en Taxateurs in onroerende goederen NVM. Deze organisaties gebruiken alle vijf hetzelfde modelcontract.
-De model koopovereenkomst gaat uit van een soort standaardsituatie. Omdat geen enkele situatie precies gelijk is, kan de koopovereenkomst worden aangepast aan specifieke omstandigheden. De bij de transactie betrokken partijen en hun makelaars kunnen daartoe aanvullende afspraken tussen partijen in de koopovereenkomst opnemen. Uiteraard mogen partijen ook afwijken van hetgeen standaard in de koopovereenkomst staat.";
+	rdfs:comment '''De model koopovereenkomst voor een bestaande eengezinswoning is in overleg vastgesteld door Vereniging Eigen Huis, de Consumentenbond, VastgoedPRO, VBO Makelaar en de Nederlandse Vereniging van Makelaars en Taxateurs in onroerende goederen NVM. Deze organisaties gebruiken alle vijf hetzelfde modelcontract.
+De model koopovereenkomst gaat uit van een soort standaardsituatie. Omdat geen enkele situatie precies gelijk is, kan de koopovereenkomst worden aangepast aan specifieke omstandigheden. De bij de transactie betrokken partijen en hun makelaars kunnen daartoe aanvullende afspraken tussen partijen in de koopovereenkomst opnemen. Uiteraard mogen partijen ook afwijken van hetgeen standaard in de koopovereenkomst staat.''';
 	skos:editorialNote "model koopovereenkomst voor een bestaande eengezinswoning (model 2018)";
 .
 mak:OmschrijvingOnroerendeZaak a skos:Concept;
