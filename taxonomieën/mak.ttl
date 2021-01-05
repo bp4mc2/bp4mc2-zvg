@@ -509,6 +509,7 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:HerzieningErfpacht;
 	skoslex:isAbout not:VoortdurendeErfpacht;
 .
+not:KostenEnOverdrachtsbelasing skoslex:record mak:ArtikelKostenOverdrachtsbelasting.
 mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Artikel: Kosten/Overdrachtsbelasting";
