@@ -84,6 +84,16 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
+not:Gerechtigde a skos:Concept, skoslex:Actor;
+	rdfs:label "Gerechtigde"@nl;
+	skos:altLabel "Bevoegde";
+	skos:prefLabel "Gerechtigde";
+	skos:definition "Natuurlijk persoon die gerechtigd is te handelen.";
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
+	skos:semanticRelation not:Gevolmachtigde;
+	skos:semanticRelation kad:Rechthebbende;
+	skos:semanticRelation zv:Partij;
+.
 not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolmachtigde"@nl;
 	skos:prefLabel "Gevolmachtigde"@nl;
@@ -131,7 +141,7 @@ not:Afrekening a skos:Concept, skoslex:Act;
 	skos:definition "Als u naar de notaris gaat voor het tekenen van de hypotheek- en transportakte, krijgt u ruim van tevoren een zogenaamde afrekening. Dit is een overzicht waarop de bedragen staan die de notaris ontvangt en namens u aan verschillende instanties en personen zal betalen.";
 	skoslex:actor zv:Partij;
 	skoslex:agent not:Notaris;
-	skoslex:object mak:KostenEnOverdrachtsbelasing;
+	skoslex:object mak:KostenEnOverdrachtsbelasting;
 	skoslex:record not:NotaVanAfrekening;
 .
 #ArchiverenAkte of ArchiverenNOT?
@@ -519,6 +529,13 @@ not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	rdfs:comment "Authentieke akten zijn officiële schriftelijke documenten opgesteld door een ambtenaar (zoals de notaris). Authentieke akten dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen te dwingen. Zij dienen, met andere woorden, als dwingend bewijs.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
 	skosthes:broaderGeneric not:Akte;
+.
+not:Bezwaren a skos:Concept;
+	rdfs:label "Bezwaren"@nl;
+	skos:prefLabel "Bezwaren";
+	skos:definition "Het beperken van een meer omvattend recht met een beperkt recht.";
+	skos:related kad:BeperktRecht;
+	#Moet beter worden uitgewerkt en worden afgestemd met KNB
 .
 not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt vooral gekoppeld aan de koop. Enkele specialisaties verwijzen naar Kadaster begrippen, maar er zijn nog meer bijzondere lasten. Daarom toegevoegd aan het NOT-domein.
 	rdfs:label "Bijzondere lasten"@nl;
