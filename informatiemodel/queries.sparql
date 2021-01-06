@@ -114,3 +114,35 @@ where {
     ?s sh:property ?prop.
   }
 }
+
+###########
+# Controles
+###########
+
+# Classes
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?t ?tlabel
+where {
+  graph <http://localhost:8080/data2model/container/data> {
+    ?s a ?t
+  }
+  OPTIONAL {
+    graph <http://localhost:8080/data2model/container/model> {
+      ?t rdfs:label ?tlabel
+    }
+  }
+}
+
+# Properties
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?p ?plabel
+where {
+  graph <http://localhost:8080/data2model/container/data> {
+    ?s ?p ?o
+  }
+  OPTIONAL {
+    graph <http://localhost:8080/data2model/container/model> {
+      ?p rdfs:label ?plabel
+    }
+  }
+}
