@@ -433,8 +433,8 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	skosthes:broaderGeneric not:OnderhandseAkte;
 	skos:semanticRelation mak:ModelKoopovereenkomst;
-	skos:semanticRelation not:Leveringsakte;
-#	skos:semanticRelation not:NotaVanAfrekening; <nog toevoegen in notariële taxonomie>
+	skos:semanticRelation not:AkteVanLevering;
+	skos:semanticRelation not:NotaVanAfrekening;
 	skos:semanticRelation mak:Energielabel;
 .
 mak:Energielabel a skos:Concept, skoslex:Record;
