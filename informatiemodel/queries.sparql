@@ -1,0 +1,116 @@
+###################
+# shapesgraph maken
+###################
+
+# Verwijder owl:DatatypeProperty en owl:ObjectProperty
+#
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+	?s ?p ?o
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s ?p ?o.
+    ?s a ?t
+  FILTER (?t = owl:ObjectProperty || ?t = owl:DatatypeProperty)
+  }
+}
+
+# Verwijder owl:Class typering
+#
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+  	?s a owl:Class.
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s a owl:Class.
+  }
+}
+
+###################
+# shapesgraph maken
+###################
+
+# Verwijder sh:NodeShape typering
+#
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+  	?s a sh:NodeShape.
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s a sh:NodeShape.
+  }
+}
+
+# Verwijderen rdfs:seeAlso
+#
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+  	?s rdfs:seeAlso ?uml
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s rdfs:seeAlso ?uml
+  }
+}
+
+# Omzetten shacl naar rdfs:domain en rdfs:range
+#
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?property rdfs:domain ?domain.
+    ?property rdfs:range ?range.
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s sh:targetClass ?domain.
+    ?s sh:property ?ps.
+    ?ps sh:path ?property.
+    OPTIONAL {?ps sh:class ?range}
+  }
+}
+
+# Verwijder sh:PropertyShape
+#
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s ?p ?o
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s ?p ?o.
+    ?s a sh:PropertyShape
+  }
+}
+
+# Verwijder shacl elementen uit owl:Class specificatie
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s sh:name ?name.
+    ?s sh:targetClass ?class.
+    ?s sh:property ?prop.
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s sh:name ?name.
+    ?s sh:targetClass ?class.
+    ?s sh:property ?prop.
+  }
+}

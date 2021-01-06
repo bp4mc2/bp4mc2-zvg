@@ -15,19 +15,19 @@
   <key for="edge" id="d11" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
     <node id="n0">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#AdresBuitenland]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AdresBuitenland]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="105.0" width="200.0" x="1550.0" y="1547.5"/>
+          <y:Geometry height="105.0" width="200.0" x="1550.0" y="1697.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">AdresBuitenland</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.88671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">land [0,n]
-identificatie [0,n]
-woonplaats [0,n]
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.88671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">woonplaats [0,n]
+land [0,n]
+regio [0,n]
 adres [0,n]
-regio [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -35,11 +35,11 @@ regio [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:Model
       </data>
     </node>
     <node id="n1">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Appartementsrecht]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Appartementsrecht]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1750.0" y="555.0"/>
+          <y:Geometry height="40.0" width="200.0" x="225.0" y="1155.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Appartementsrecht</y:NodeLabel>
@@ -58,11 +58,11 @@ regio [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:Model
       </data>
     </node>
     <node id="n2">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#BeperktRecht]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1300.0" y="1055.0"/>
+          <y:Geometry height="40.0" width="200.0" x="225.0" y="805.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">BeperktRecht</y:NodeLabel>
@@ -81,11 +81,11 @@ regio [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:Model
       </data>
     </node>
     <node id="n3">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#DigitaleIdentiteit]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="950.0" y="1567.0"/>
+          <y:Geometry height="66.0" width="200.0" x="950.0" y="1717.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">DigitaleIdentiteit</y:NodeLabel>
@@ -98,16 +98,16 @@ adres [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:Model
       </data>
     </node>
     <node id="n4">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#DocumentIdentiteit]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="950.0" y="1767.0"/>
+          <y:Geometry height="66.0" width="200.0" x="950.0" y="1917.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">DocumentIdentiteit</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">soort [0,n]
-referentie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">referentie [0,n]
+soort [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -115,11 +115,11 @@ referentie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
       </data>
     </node>
     <node id="n5">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Eigendom]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Eigendom]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1025.0" y="1105.0"/>
+          <y:Geometry height="40.0" width="200.0" x="275.0" y="1005.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Eigendom</y:NodeLabel>
@@ -138,11 +138,11 @@ referentie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
       </data>
     </node>
     <node id="n6">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Erfdienstbaarheid]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfdienstbaarheid]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1300.0" y="980.0"/>
+          <y:Geometry height="40.0" width="200.0" x="0.0" y="805.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Erfdienstbaarheid</y:NodeLabel>
@@ -161,17 +161,17 @@ referentie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
       </data>
     </node>
     <node id="n7">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Erfpacht]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfpacht]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="79.0" width="200.0" x="1525.0" y="1035.5"/>
+          <y:Geometry height="79.0" width="200.0" x="225.0" y="885.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Erfpacht</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">bijzondereErfpachtvoorwaarden [0,n]
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">metErfpachtCanon [0,n]
 algemeneErfpachtvoorwaarden [0,n]
-metErfpachtCanon [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+bijzondereErfpachtvoorwaarden [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -179,23 +179,23 @@ metErfpachtCanon [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMod
       </data>
     </node>
     <node id="n8">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#GeregistreerdPersoon]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#GeregistreerdPersoon]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="157.0" width="200.0" x="1250.0" y="1546.5"/>
+          <y:Geometry height="157.0" width="200.0" x="1250.0" y="1696.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">GeregistreerdPersoon</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="109.99609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">inOnderzoek [0,n]
-heeftPartnerschap [0,n]
-naam [0,n]
-geboorte [0,n]
-adellijkeTitelOfPredikaat [0,n]
-aanduidingNaamgebruik [0,n]
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="109.99609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">overlijden [0,n]
 landWaarnaarVertrokken [0,n]
+naam [0,n]
+inOnderzoek [0,n]
 indicatieGeheim [0,n]
-overlijden [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+geboorte [0,n]
+heeftPartnerschap [0,n]
+aanduidingNaamgebruik [0,n]
+adellijkeTitelOfPredikaat [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -203,17 +203,17 @@ overlijden [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
       </data>
     </node>
     <node id="n9">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#KadastraleGrens]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadastraleGrens]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="79.0" width="200.0" x="1525.0" y="835.5"/>
+          <y:Geometry height="79.0" width="200.0" x="0.0" y="1560.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">KadastraleGrens</y:NodeLabel>
           <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">type [0,n]
-identificatie [0,n]
-grenslijn [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+grenslijn [0,n]
+identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -221,17 +221,17 @@ grenslijn [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:M
       </data>
     </node>
     <node id="n10">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="79.0" width="200.0" x="350.0" y="535.5"/>
+          <y:Geometry height="79.0" width="200.0" x="950.0" y="660.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Koop__overeenkomst_</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">identificatie [0,n]
-koopsom [0,n]
-status [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">koopsom [0,n]
+status [0,n]
+identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -239,11 +239,11 @@ status [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:Mode
       </data>
     </node>
     <node id="n11">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Koper]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koper]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="575.0" y="723.5"/>
+          <y:Geometry height="53.0" width="200.0" x="950.0" y="373.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Koper</y:NodeLabel>
@@ -255,11 +255,11 @@ status [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:Mode
       </data>
     </node>
     <node id="n12">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#KoperRecherche]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KoperRecherche]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="575.0" y="830.0"/>
+          <y:Geometry height="40.0" width="200.0" x="950.0" y="280.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">KoperRecherche</y:NodeLabel>
@@ -278,19 +278,19 @@ status [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:Mode
       </data>
     </node>
     <node id="n13">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Leidingnetwerk]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Leidingnetwerk]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="105.0" width="200.0" x="1300.0" y="322.5"/>
+          <y:Geometry height="105.0" width="200.0" x="225.0" y="1297.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Leidingnetwerk</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.88671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">breedteNetwerkstrook [0,n]
-aard [0,n]
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.88671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">omschrijving [0,n]
+breedteNetwerkstrook [0,n]
 hartlijn [0,n]
-begrenzing [0,n]
-omschrijving [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+aard [0,n]
+begrenzing [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -298,11 +298,11 @@ omschrijving [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><
       </data>
     </node>
     <node id="n14">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Levering]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Levering]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="800.0" y="198.5"/>
+          <y:Geometry height="53.0" width="200.0" x="725.0" y="798.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Levering</y:NodeLabel>
@@ -314,16 +314,16 @@ omschrijving [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><
       </data>
     </node>
     <node id="n15">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Ligplaats]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ligplaats]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="675.0" y="1667.0"/>
+          <y:Geometry height="66.0" width="200.0" x="675.0" y="1817.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Ligplaats</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">inOnderzoek [0,n]
-identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">identificatie [0,n]
+inOnderzoek [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -331,11 +331,11 @@ identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
       </data>
     </node>
     <node id="n16">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#LijstVanGoederen]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LijstVanGoederen]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="125.0" y="548.5"/>
+          <y:Geometry height="53.0" width="200.0" x="1225.0" y="548.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">LijstVanGoederen</y:NodeLabel>
@@ -347,11 +347,27 @@ identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
       </data>
     </node>
     <node id="n17">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#NatuurlijkPersoon]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LocatieRegistergoed]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="0.0" y="1417.0"/>
+          <y:Geometry height="53.0" width="200.0" x="725.0" y="1573.5"/>
+          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">LocatieRegistergoed</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.77734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">koppelingswijze [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n18">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon]]></data>
+      <data key="d4"/>
+      <data key="d5">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="66.0" width="200.0" x="1550.0" y="-8.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">NatuurlijkPersoon</y:NodeLabel>
@@ -363,37 +379,37 @@ indicatieAfschermingPersoonsgegevens [0,n]<y:LabelModel><y:ErdAttributesNodeLabe
         </y:GenericNode>
       </data>
     </node>
-    <node id="n18">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#NietNatuurlijkPersoon]]></data>
+    <node id="n19">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="79.0" width="200.0" x="800.0" y="60.5"/>
+          <y:Geometry height="79.0" width="200.0" x="725.0" y="910.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">NietNatuurlijkPersoon</y:NodeLabel>
           <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">statutaireZetel [0,n]
-statutaireNaam [0,n]
-rechtsvorm [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+rechtsvorm [0,n]
+statutaireNaam [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n19">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Nummeraanduiding]]></data>
+    <node id="n20">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="118.0" width="200.0" x="225.0" y="1641.0"/>
+          <y:Geometry height="118.0" width="200.0" x="225.0" y="1791.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Nummeraanduiding</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="74.6640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">postcode [0,n]
-identificatie [0,n]
-inOnderzoek [0,n]
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="74.6640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">inOnderzoek [0,n]
+postcode [0,n]
 huisnummertoevoeging [0,n]
+identificatie [0,n]
 huisletter [0,n]
 huisnummer [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
@@ -402,12 +418,12 @@ huisnummer [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
         </y:GenericNode>
       </data>
     </node>
-    <node id="n20">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#ObjectlocatieBinnenland]]></data>
+    <node id="n21">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1475.0" y="1205.0"/>
+          <y:Geometry height="40.0" width="200.0" x="2150.0" y="1580.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">ObjectlocatieBinnenland</y:NodeLabel>
@@ -425,12 +441,12 @@ huisnummer [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
         </y:GenericNode>
       </data>
     </node>
-    <node id="n21">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#ObjectlocatieBuitenland]]></data>
+    <node id="n22">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBuitenland]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1250.0" y="1130.0"/>
+          <y:Geometry height="40.0" width="200.0" x="1800.0" y="5.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">ObjectlocatieBuitenland</y:NodeLabel>
@@ -448,12 +464,12 @@ huisnummer [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
         </y:GenericNode>
       </data>
     </node>
-    <node id="n22">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Ontbinden]]></data>
+    <node id="n23">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ontbinden]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="350.0" y="205.0"/>
+          <y:Geometry height="40.0" width="200.0" x="1400.0" y="805.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Ontbinden</y:NodeLabel>
@@ -471,12 +487,12 @@ huisnummer [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:
         </y:GenericNode>
       </data>
     </node>
-    <node id="n23">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#OpenbareRuimte]]></data>
+    <node id="n24">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OpenbareRuimte]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="0.0" y="1667.0"/>
+          <y:Geometry height="66.0" width="200.0" x="0.0" y="1817.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">OpenbareRuimte</y:NodeLabel>
@@ -488,12 +504,12 @@ openbareRuimteNaam [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelM
         </y:GenericNode>
       </data>
     </node>
-    <node id="n24">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#OverheidsOrganisatie]]></data>
+    <node id="n25">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OverheidsOrganisatie]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="2150.0" y="1548.5"/>
+          <y:Geometry height="53.0" width="200.0" x="2150.0" y="1698.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">OverheidsOrganisatie</y:NodeLabel>
@@ -504,12 +520,12 @@ openbareRuimteNaam [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelM
         </y:GenericNode>
       </data>
     </node>
-    <node id="n25">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Partij]]></data>
+    <node id="n26">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="350.0" y="730.0"/>
+          <y:Geometry height="40.0" width="200.0" x="1200.0" y="380.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Partij</y:NodeLabel>
@@ -527,20 +543,20 @@ openbareRuimteNaam [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelM
         </y:GenericNode>
       </data>
     </node>
-    <node id="n26">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Perceel]]></data>
+    <node id="n27">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="118.0" width="200.0" x="1300.0" y="816.0"/>
+          <y:Geometry height="118.0" width="200.0" x="0.0" y="1391.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Perceel</y:NodeLabel>
           <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="74.6640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">perceelnummerVerschuiving [0,n]
-perceelnummerRotatie [0,n]
-meettariefVerschuldigd [0,n]
-begrenzingPerceel [0,n]
 plaatscoordinaten [0,n]
+meettariefVerschuldigd [0,n]
+perceelnummerRotatie [0,n]
+begrenzingPerceel [0,n]
 kadastraleGrootte [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
@@ -548,17 +564,17 @@ kadastraleGrootte [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMo
         </y:GenericNode>
       </data>
     </node>
-    <node id="n27">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#PostbusLocatie]]></data>
+    <node id="n28">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#PostbusLocatie]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="79.0" width="200.0" x="1475.0" y="1285.5"/>
+          <y:Geometry height="79.0" width="200.0" x="2025.0" y="160.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">PostbusLocatie</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">postcode [0,n]
-postbusnummer [0,n]
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">postbusnummer [0,n]
+postcode [0,n]
 woonplaatsNaam [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
@@ -566,35 +582,18 @@ woonplaatsNaam [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel
         </y:GenericNode>
       </data>
     </node>
-    <node id="n28">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Recherche]]></data>
+    <node id="n29">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="79.0" width="200.0" x="575.0" y="910.5"/>
+          <y:Geometry height="79.0" width="200.0" x="950.0" y="160.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Recherche</y:NodeLabel>
           <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.33203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">aardRecherche [0,n]
-uitgevoerdeControle [0,n]
-door → Onderzoeker [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
-          <y:StyleProperties>
-            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
-          </y:StyleProperties>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n29">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Rechtspersoon]]></data>
-      <data key="d4"/>
-      <data key="d5">
-        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="2425.0" y="1567.0"/>
-          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Rechtspersoon</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">kvkNummer [0,n]
-rsin [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+door → Onderzoeker [0,n]
+uitgevoerdeControle [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -602,16 +601,16 @@ rsin [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelP
       </data>
     </node>
     <node id="n30">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Standplaats]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Rechtspersoon]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="450.0" y="1567.0"/>
+          <y:Geometry height="66.0" width="200.0" x="2425.0" y="1717.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Standplaats</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">inOnderzoek [0,n]
-identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Rechtspersoon</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">rsin [0,n]
+kvkNummer [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -619,16 +618,16 @@ identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
       </data>
     </node>
     <node id="n31">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Verblijfsobject]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Standplaats]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="450.0" y="1767.0"/>
+          <y:Geometry height="66.0" width="200.0" x="450.0" y="1717.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Verblijfsobject</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">inOnderzoek [0,n]
-identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Standplaats</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">identificatie [0,n]
+inOnderzoek [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -636,11 +635,28 @@ identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
       </data>
     </node>
     <node id="n32">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Verkoper]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verblijfsobject]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="350.0" y="655.0"/>
+          <y:Geometry height="66.0" width="200.0" x="450.0" y="1917.0"/>
+          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Verblijfsobject</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.5546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">identificatie [0,n]
+inOnderzoek [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n33">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verkoper]]></data>
+      <data key="d4"/>
+      <data key="d5">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="40.0" width="200.0" x="1200.0" y="455.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Verkoper</y:NodeLabel>
@@ -658,12 +674,12 @@ identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n33">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Voorbehoud]]></data>
+    <node id="n34">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Voorbehoud]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="350.0" y="298.5"/>
+          <y:Geometry height="53.0" width="200.0" x="1400.0" y="673.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Voorbehoud</y:NodeLabel>
@@ -674,12 +690,12 @@ identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n34">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Voorwaarde]]></data>
+    <node id="n35">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Voorwaarde]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="350.0" y="423.5"/>
+          <y:Geometry height="53.0" width="200.0" x="1175.0" y="673.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Voorwaarde</y:NodeLabel>
@@ -690,12 +706,12 @@ identificatie [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n35">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#Woonplaats]]></data>
+    <node id="n36">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Woonplaats]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="66.0" width="200.0" x="0.0" y="1792.0"/>
+          <y:Geometry height="66.0" width="200.0" x="0.0" y="1942.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">Woonplaats</y:NodeLabel>
@@ -707,12 +723,12 @@ inOnderzoek [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y
         </y:GenericNode>
       </data>
     </node>
-    <node id="n36">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
+    <node id="n37">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1025.0" y="555.0"/>
+          <y:Geometry height="40.0" width="200.0" x="500.0" y="1005.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">ZakelijkRecht</y:NodeLabel>
@@ -730,12 +746,12 @@ inOnderzoek [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y
         </y:GenericNode>
       </data>
     </node>
-    <node id="n37">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRechtRecherche]]></data>
+    <node id="n38">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRechtRecherche]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="79.0" width="200.0" x="1850.0" y="1560.5"/>
+          <y:Geometry height="79.0" width="200.0" x="1850.0" y="1710.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">ZakelijkRechtRecherche</y:NodeLabel>
@@ -748,12 +764,12 @@ zakelijkRecht [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n38">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_AdresLocatie]]></data>
+    <node id="n39">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresLocatie]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="1250.0" y="1298.5"/>
+          <y:Geometry height="53.0" width="200.0" x="1800.0" y="173.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_AdresLocatie</y:NodeLabel>
@@ -764,12 +780,12 @@ zakelijkRecht [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n39">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_AdresseerbaarObject]]></data>
+    <node id="n40">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresseerbaarObject]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="450.0" y="1680.0"/>
+          <y:Geometry height="40.0" width="200.0" x="450.0" y="1830.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_AdresseerbaarObject</y:NodeLabel>
@@ -787,12 +803,12 @@ zakelijkRecht [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n40">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_Legitimatie]]></data>
+    <node id="n41">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Legitimatie]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="950.0" y="1680.0"/>
+          <y:Geometry height="40.0" width="200.0" x="950.0" y="1830.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_Legitimatie</y:NodeLabel>
@@ -810,12 +826,12 @@ zakelijkRecht [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n41">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_Objectlocatie]]></data>
+    <node id="n42">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Objectlocatie]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="1250.0" y="1205.0"/>
+          <y:Geometry height="40.0" width="200.0" x="1800.0" y="80.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_Objectlocatie</y:NodeLabel>
@@ -833,44 +849,25 @@ zakelijkRecht [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n42">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_OnroerendeZaak]]></data>
+    <node id="n43">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_OnroerendeZaak]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="170.0" width="200.0" x="1525.0" y="490.0"/>
+          <y:Geometry height="170.0" width="200.0" x="500.0" y="1090.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_OnroerendeZaak</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.7734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="255.3623046875" x="2.0" xml:space="preserve" y="32.1328125">tijdstipEersteOntstaan [0,n]
-aardCultuurOnbebouwd [0,n]
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.7734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="255.3623046875" x="2.0" xml:space="preserve" y="32.1328125">toestandsdatumOnderzoekErfdienstbaarheden [0,n]
+tijdstipEersteOntstaan [0,n]
 toelichtingBewaarder [0,n]
-landinrichtingsrente [0,n]
+aardCultuurOnbebouwd [0,n]
 kadastraleAanduiding [0,n]
-toestandsdatumOnderzoekErfdienstbaarheden [0,n]
-omschrijvingOnderzoekErfdienstbaarheden [0,n]
 aardCultuurBebouwd [0,n]
+omschrijvingOnderzoekErfdienstbaarheden [0,n]
+oudstDigitaalBekend [0,n]
 koopsom [0,n]
-oudstDigitaalBekend [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
-          <y:StyleProperties>
-            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
-          </y:StyleProperties>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n43">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d4"/>
-      <data key="d5">
-        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="92.0" width="200.0" x="0.0" y="1279.0"/>
-          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_Persoon</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="51.109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">indicatieNietToonbareDiakriet [0,n]
-identificatie [0,n]
-beschikkingsbevoegdheid [0,n]
-metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+landinrichtingsrente [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -878,11 +875,30 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
       </data>
     </node>
     <node id="n44">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_Rechtshandeling]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="40.0" width="200.0" x="575.0" y="205.0"/>
+          <y:Geometry height="92.0" width="200.0" x="1550.0" y="154.0"/>
+          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_Persoon</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="51.109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="2.0" xml:space="preserve" y="32.1328125">metNaamOpenbaarRegister [0,n]
+identificatie [0,n]
+indicatieNietToonbareDiakriet [0,n]
+beschikkingsbevoegdheid [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n45">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Rechtshandeling]]></data>
+      <data key="d4"/>
+      <data key="d5">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="40.0" width="200.0" x="950.0" y="805.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_Rechtshandeling</y:NodeLabel>
@@ -900,12 +916,12 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:GenericNode>
       </data>
     </node>
-    <node id="n45">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_Registergoed]]></data>
+    <node id="n46">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Registergoed]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="1525.0" y="348.5"/>
+          <y:Geometry height="53.0" width="200.0" x="725.0" y="1148.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_Registergoed</y:NodeLabel>
@@ -916,12 +932,12 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:GenericNode>
       </data>
     </node>
-    <node id="n46">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_VoorkomenNEN3610]]></data>
+    <node id="n47">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenNEN3610]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="1525.0" y="723.5"/>
+          <y:Geometry height="53.0" width="200.0" x="500.0" y="1573.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_VoorkomenNEN3610</y:NodeLabel>
@@ -932,12 +948,12 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:GenericNode>
       </data>
     </node>
-    <node id="n47">
-      <data key="d3" xml:space="preserve"><![CDATA[http://test/def#_VoorkomenOR]]></data>
+    <node id="n48">
+      <data key="d3" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenOR]]></data>
       <data key="d4"/>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="53.0" width="200.0" x="1025.0" y="-1.5"/>
+          <y:Geometry height="53.0" width="200.0" x="1550.0" y="998.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="200.0" x="0.0" xml:space="preserve" y="4.0">_VoorkomenOR</y:NodeLabel>
@@ -948,181 +964,215 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:GenericNode>
       </data>
     </node>
-    <edge id="e0" source="n2" target="n36">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#BeperktRecht]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#bezwaart]]></data>
+    <edge id="e0" source="n2" target="n37">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#bezwaart]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-15.0" tx="50.0" ty="20.0">
-            <y:Point x="1175.0" y="1060.0"/>
+          <y:Path sx="100.0" sy="-0.0" tx="-50.0" ty="-20.0">
+            <y:Point x="550.0" y="825.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.44921875" x="-130.556396484375" xml:space="preserve" y="-9.06640625">bezwaart [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.44921875" x="43.1376953125" xml:space="preserve" y="-9.06640625">bezwaart [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e1" source="n6" target="n26">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Erfdienstbaarheid]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Perceel]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#TenBehoeveVan]]></data>
+    <edge id="e1" source="n6" target="n27">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfdienstbaarheid]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#TenBehoeveVan]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-20.0" tx="0.0" ty="59.0"/>
+          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-59.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.0625" x="-63.03125" xml:space="preserve" y="-32.021484375">TenBehoeveVan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.0625" x="-63.03125" xml:space="preserve" y="263.93359375">TenBehoeveVan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e2" source="n9" target="n26">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#KadastraleGrens]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Perceel]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#perceelRechts]]></data>
+    <edge id="e2" source="n9" target="n27">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadastraleGrens]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#perceelLinks]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:Path sx="0.0" sy="-39.5" tx="0.0" ty="59.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="115.041015625" x="-70.4716796875" xml:space="preserve" y="-9.06640625">perceelRechts [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="107.013671875" x="-53.5068359375" xml:space="preserve" y="-34.791259765625">perceelLinks [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e3" source="n9" target="n26">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#KadastraleGrens]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Perceel]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#perceelLinks]]></data>
+    <edge id="e3" source="n9" target="n27">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadastraleGrens]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#perceelRechts]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-25.0" tx="100.0" ty="-25.0"/>
+          <y:Path sx="25.0" sy="-39.5" tx="25.0" ty="59.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="107.013671875" x="-66.4580078125" xml:space="preserve" y="-9.06640625">perceelLinks [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="115.041015625" x="-57.5205078125" xml:space="preserve" y="-34.791259765625">perceelRechts [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e4" source="n10" target="n16">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#LijstVanGoederen]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#bij]]></data>
+    <edge id="e4" source="n10" target="n11">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koper]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#aan]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:Path sx="0.0" sy="-39.5" tx="0.0" ty="26.5"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.10546875" x="-37.50390625" xml:space="preserve" y="-9.06640625">bij [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="55.134765625" x="-27.5673828125" xml:space="preserve" y="-126.037841796875">aan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n10" target="n32">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Verkoper]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#aangebodenDoor]]></data>
+    <edge id="e5" source="n10" target="n33">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verkoper]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#aangebodenDoor]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="39.5" tx="0.0" ty="-20.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.552734375" x="-67.2763671875" xml:space="preserve" y="11.18359375">aangebodenDoor [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e6" source="n10" target="n11">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Koper]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#aan]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="100.0" sy="25.0" tx="0.0" ty="-26.5">
-            <y:Point x="675.0" y="600.0"/>
+          <y:Path sx="25.0" sy="-39.5" tx="-100.0" ty="-0.0">
+            <y:Point x="1075.0" y="475.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="55.134765625" x="51.21630859375" xml:space="preserve" y="-9.06640625">aan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.552734375" x="-67.2763671875" xml:space="preserve" y="-108.8043212890625">aangebodenDoor [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e7" source="n10" target="n36">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#van]]></data>
+    <edge id="e6" source="n10" target="n37">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#van]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="-100.0" sy="-0.0" tx="25.0" ty="-20.0">
+            <y:Point x="625.0" y="700.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.71875" x="-205.9993896484375" xml:space="preserve" y="-9.06640625">van [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n10" target="n16">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LijstVanGoederen]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#bij]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="50.0" sy="-39.5" tx="-100.0" ty="-0.0">
+            <y:Point x="1100.0" y="575.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.10546875" x="-24.552734375" xml:space="preserve" y="-58.807861328125">bij [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n12" target="n11">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KoperRecherche]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koper]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#vanKoper]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-26.5"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.072265625" x="-44.5361328125" xml:space="preserve" y="17.68359375">vanKoper [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e9" source="n14" target="n10">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Levering]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#isUitvoeringVan]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-26.5" tx="-100.0" ty="25.0">
+            <y:Point x="825.0" y="725.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.787109375" x="-62.8935546875" xml:space="preserve" y="-52.813720703125">isUitvoeringVan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e10" source="n14" target="n19">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Levering]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#bijNotaris]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="26.5" tx="0.0" ty="-39.5"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.953125" x="-45.4765625" xml:space="preserve" y="20.43359375">bijNotaris [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n17" target="n46">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LocatieRegistergoed]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Registergoed]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#heeft]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-26.5" tx="0.0" ty="26.5"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="64.15234375" x="-32.076171875" xml:space="preserve" y="-195.02099609375">heeft [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e12" source="n17" target="n21">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LocatieRegistergoed]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#betreft]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.71875" x="210.140625" xml:space="preserve" y="-9.06640625">van [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="73.65625" x="575.671875" xml:space="preserve" y="-9.06640625">betreft [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e8" source="n12" target="n11">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#KoperRecherche]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Koper]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#vanKoper]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-20.0" tx="0.0" ty="26.5"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.072265625" x="-44.5361328125" xml:space="preserve" y="-35.790283203125">vanKoper [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e9" source="n14" target="n18">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Levering]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#NietNatuurlijkPersoon]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#bijNotaris]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-26.5" tx="0.0" ty="39.5"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.953125" x="-45.4765625" xml:space="preserve" y="-38.53759765625">bijNotaris [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e10" source="n14" target="n10">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Levering]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#isUitvoeringVan]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="26.5" tx="100.0" ty="-12.5">
-            <y:Point x="900.0" y="562.5"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.787109375" x="-62.8935546875" xml:space="preserve" y="153.466796875">isUitvoeringVan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e11" source="n19" target="n23">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Nummeraanduiding]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#OpenbareRuimte]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#gerelateerdeOpenbareRuimte]]></data>
+    <edge id="e13" source="n20" target="n24">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OpenbareRuimte]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#gerelateerdeOpenbareRuimte]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1134,15 +1184,15 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e12" source="n19" target="n35">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Nummeraanduiding]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Woonplaats]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#gerelateerdeWoonplaats]]></data>
+    <edge id="e14" source="n20" target="n36">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Woonplaats]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#gerelateerdeWoonplaats]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="59.0" tx="100.0" ty="-0.0">
-            <y:Point x="325.0" y="1825.0"/>
+            <y:Point x="325.0" y="1975.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1151,25 +1201,25 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n22" target="n33">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Ontbinden]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Voorbehoud]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#opBasisVanManifestatieVan]]></data>
+    <edge id="e15" source="n23" target="n34">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ontbinden]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Voorbehoud]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#opBasisVanManifestatieVan]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-26.5"/>
+          <y:Path sx="0.0" sy="-20.0" tx="0.0" ty="26.5"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="193.28125" x="-96.640625" xml:space="preserve" y="17.68359375">opBasisVanManifestatieVan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="193.28125" x="-96.640625" xml:space="preserve" y="-48.278076171875">opBasisVanManifestatieVan [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e14" source="n23" target="n35">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#OpenbareRuimte]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Woonplaats]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#gerelateerdeWoonplaats]]></data>
+    <edge id="e16" source="n24" target="n36">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OpenbareRuimte]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Woonplaats]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#gerelateerdeWoonplaats]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1181,74 +1231,72 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n28" target="n36">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Recherche]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#vanZakelijkRecht]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="100.0" sy="-0.0" tx="-25.0" ty="20.0">
-            <y:Point x="1100.0" y="950.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="132.255859375" x="131.93603515625" xml:space="preserve" y="-9.06640625">vanZakelijkRecht [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e16" source="n28" target="n43">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Recherche]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#vanPersoon]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="50.0" ty="-46.0">
-            <y:Point x="150.0" y="950.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.25390625" x="-290.91448974609375" xml:space="preserve" y="-9.06640625">vanPersoon [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e17" source="n34" target="n10">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Voorwaarde]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#isVanToepassingOp]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="26.5" tx="0.0" ty="-39.5"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="149.271484375" x="-74.6357421875" xml:space="preserve" y="20.43359375">isVanToepassingOp [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e18" source="n36" target="n42">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_OnroerendeZaak]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#rustOp]]></data>
+    <edge id="e17" source="n29" target="n44">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#vanPersoon]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="74.271484375" x="112.8642578125" xml:space="preserve" y="-9.06640625">rustOp [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.25390625" x="149.373046875" xml:space="preserve" y="-9.06640625">vanPersoon [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e19" source="n39" target="n19">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_AdresseerbaarObject]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Nummeraanduiding]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#hoofdadres]]></data>
+    <edge id="e18" source="n29" target="n37">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#vanZakelijkRecht]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="-100.0" sy="-0.0" tx="0.0" ty="-20.0">
+            <y:Point x="600.0" y="200.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="132.255859375" x="-276.649169921875" xml:space="preserve" y="-9.066406250000028">vanZakelijkRecht [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e19" source="n35" target="n10">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Voorwaarde]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#isVanToepassingOp]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="149.271484375" x="-87.5869140625" xml:space="preserve" y="-9.06640625">isVanToepassingOp [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e20" source="n37" target="n43">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_OnroerendeZaak]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#rustOp]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-85.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="74.271484375" x="-37.1357421875" xml:space="preserve" y="13.43359375">rustOp [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e21" source="n40" target="n20">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresseerbaarObject]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#hoofdadres]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1260,10 +1308,10 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e20" source="n39" target="n19">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_AdresseerbaarObject]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Nummeraanduiding]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#nevenadres]]></data>
+    <edge id="e22" source="n40" target="n20">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresseerbaarObject]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#nevenadres]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1275,15 +1323,32 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e21" source="n43" target="n41">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Objectlocatie]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#woonlocatie]]></data>
+    <edge id="e23" source="n44" target="n26">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#vertegenwoordigt]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="62.5" sy="-46.0" tx="-100.0" ty="-0.0">
-            <y:Point x="162.5" y="1225.0"/>
+          <y:Path sx="-75.0" sy="46.0" tx="100.0" ty="-15.0">
+            <y:Point x="1575.0" y="385.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.919921875" x="-68.4599609375" xml:space="preserve" y="67.466796875">vertegenwoordigt [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e24" source="n44" target="n42">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Objectlocatie]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#woonlocatie]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="25.0" sy="-46.0" tx="-100.0" ty="-0.0">
+            <y:Point x="1675.0" y="100.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1292,76 +1357,59 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e22" source="n43" target="n25">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Partij]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#vertegenwoordigt]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="37.5" sy="-46.0" tx="-100.0" ty="-0.0">
-            <y:Point x="137.5" y="750.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.919921875" x="-68.4599609375" xml:space="preserve" y="-280.5673828125">vertegenwoordigt [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e23" source="n43" target="n25">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Partij]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#hoortBij]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="25.0" sy="-46.0" tx="-100.0" ty="-15.0">
-            <y:Point x="125.0" y="735.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.04296875" x="-40.021484375" xml:space="preserve" y="-288.06640625">hoortBij [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e24" source="n43" target="n38">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_AdresLocatie]]></data>
-      <data key="d9" xml:space="preserve"><![CDATA[http://test/def#postlocatie]]></data>
+    <edge id="e25" source="n44" target="n39">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresLocatie]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#postlocatie]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.21875" x="475.890625" xml:space="preserve" y="-9.06640625">postlocatie [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.21875" x="-23.609375" xml:space="preserve" y="-9.06640625">postlocatie [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e25" source="n1" target="n42">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Appartementsrecht]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_OnroerendeZaak]]></data>
+    <edge id="e26" source="n44" target="n26">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#hoortBij]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:Path sx="-50.0" sy="46.0" tx="100.0" ty="-0.0">
+            <y:Point x="1600.0" y="400.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.04296875" x="-40.021484375" xml:space="preserve" y="74.966796875">hoortBij [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e27" source="n1" target="n43">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Appartementsrecht]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_OnroerendeZaak]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_delta"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e26" source="n2" target="n36">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#BeperktRecht]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
+    <edge id="e28" source="n2" target="n37">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="25.0" ty="20.0">
-            <y:Point x="1150.0" y="1075.0"/>
+          <y:Path sx="100.0" sy="-15.0" tx="-25.0" ty="-20.0">
+            <y:Point x="575.0" y="810.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_delta"/>
@@ -1369,9 +1417,9 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e27" source="n3" target="n40">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#DigitaleIdentiteit]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Legitimatie]]></data>
+    <edge id="e29" source="n3" target="n41">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Legitimatie]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1382,9 +1430,9 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e28" source="n4" target="n40">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#DocumentIdentiteit]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Legitimatie]]></data>
+    <edge id="e30" source="n4" target="n41">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Legitimatie]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1395,9 +1443,277 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e29" source="n5" target="n36">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Eigendom]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
+    <edge id="e31" source="n5" target="n37">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Eigendom]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e32" source="n6" target="n2">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfdienstbaarheid]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e33" source="n7" target="n2">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfpacht]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-39.5" tx="0.0" ty="20.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e34" source="n9" target="n47">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadastraleGrens]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenNEN3610]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e35" source="n10" target="n45">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop__overeenkomst_]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Rechtshandeling]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="39.5" tx="0.0" ty="-20.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e36" source="n11" target="n26">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koper]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e37" source="n12" target="n29">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KoperRecherche]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-20.0" tx="0.0" ty="39.5"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e38" source="n13" target="n43">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Leidingnetwerk]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_OnroerendeZaak]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-50.0" ty="85.0">
+            <y:Point x="550.0" y="1350.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e39" source="n14" target="n45">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Levering]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Rechtshandeling]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e40" source="n15" target="n40">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ligplaats]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresseerbaarObject]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e41" source="n17" target="n47">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LocatieRegistergoed]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenNEN3610]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e42" source="n18" target="n44">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="33.0" tx="0.0" ty="-46.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e43" source="n19" target="n44">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-25.0" ty="46.0">
+            <y:Point x="1625.0" y="950.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e44" source="n21" target="n42">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Objectlocatie]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-20.0" tx="100.0" ty="-0.0">
+            <y:Point x="2250.0" y="100.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e45" source="n22" target="n42">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBuitenland]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Objectlocatie]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-20.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e46" source="n23" target="n45">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ontbinden]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Rechtshandeling]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e47" source="n27" target="n43">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_OnroerendeZaak]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="100.0" sy="-0.0" tx="-25.0" ty="85.0">
+            <y:Point x="575.0" y="1450.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e48" source="n28" target="n39">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#PostbusLocatie]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresLocatie]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e49" source="n31" target="n40">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Standplaats]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresseerbaarObject]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="33.0" tx="0.0" ty="-20.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e50" source="n32" target="n40">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verblijfsobject]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresseerbaarObject]]></data>
+      <data key="d10"/>
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-33.0" tx="0.0" ty="20.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e51" source="n33" target="n26">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verkoper]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1408,22 +1724,9 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e30" source="n6" target="n2">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Erfdienstbaarheid]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#BeperktRecht]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-20.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e31" source="n7" target="n2">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Erfpacht]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#BeperktRecht]]></data>
+    <edge id="e52" source="n34" target="n35">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Voorbehoud]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Voorwaarde]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1434,158 +1737,9 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e32" source="n9" target="n46">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#KadastraleGrens]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_VoorkomenNEN3610]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-39.5" tx="0.0" ty="26.5"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e33" source="n10" target="n44">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Koop__overeenkomst_]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Rechtshandeling]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="100.0" sy="-25.0" tx="0.0" ty="20.0">
-            <y:Point x="675.0" y="550.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e34" source="n11" target="n25">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Koper]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Partij]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e35" source="n12" target="n28">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#KoperRecherche]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Recherche]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-39.5"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e36" source="n13" target="n42">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Leidingnetwerk]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_OnroerendeZaak]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="52.5" tx="-100.0" ty="-25.0">
-            <y:Point x="1400.0" y="550.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e37" source="n14" target="n44">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Levering]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Rechtshandeling]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e38" source="n15" target="n39">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Ligplaats]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_AdresseerbaarObject]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e39" source="n17" target="n43">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#NatuurlijkPersoon]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-33.0" tx="0.0" ty="46.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e40" source="n18" target="n43">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#NietNatuurlijkPersoon]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="12.5" ty="-46.0">
-            <y:Point x="112.5" y="100.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e41" source="n20" target="n41">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#ObjectlocatieBinnenland]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Objectlocatie]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e42" source="n21" target="n41">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#ObjectlocatieBuitenland]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Objectlocatie]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-20.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e43" source="n22" target="n44">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Ontbinden]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Rechtshandeling]]></data>
+    <edge id="e53" source="n37" target="n48">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenOR]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1596,109 +1750,14 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e44" source="n26" target="n42">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Perceel]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_OnroerendeZaak]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-59.0" tx="-100.0" ty="25.0">
-            <y:Point x="1400.0" y="600.0"/>
-          </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e45" source="n27" target="n38">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#PostbusLocatie]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_AdresLocatie]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="-100.0" sy="-0.0" tx="100.0" ty="-0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e46" source="n30" target="n39">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Standplaats]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_AdresseerbaarObject]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="33.0" tx="0.0" ty="-20.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e47" source="n31" target="n39">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Verblijfsobject]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_AdresseerbaarObject]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-33.0" tx="0.0" ty="20.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e48" source="n32" target="n25">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Verkoper]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Partij]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="20.0" tx="0.0" ty="-20.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e49" source="n33" target="n34">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#Voorbehoud]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#Voorwaarde]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="26.5" tx="0.0" ty="-26.5"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e50" source="n36" target="n47">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#ZakelijkRecht]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_VoorkomenOR]]></data>
-      <data key="d10"/>
-      <data key="d11">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-20.0" tx="0.0" ty="26.5"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e51" source="n38" target="n47">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_AdresLocatie]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_VoorkomenOR]]></data>
+    <edge id="e54" source="n39" target="n48">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresLocatie]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenOR]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="26.5" tx="100.0" ty="-0.0">
-            <y:Point x="1350.0" y="1400.0"/>
-            <y:Point x="1975.0" y="1400.0"/>
-            <y:Point x="1975.0" y="25.0"/>
+            <y:Point x="1900.0" y="1025.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_delta"/>
@@ -1706,9 +1765,9 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e52" source="n41" target="n38">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_Objectlocatie]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_AdresLocatie]]></data>
+    <edge id="e55" source="n42" target="n39">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Objectlocatie]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_AdresLocatie]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1719,22 +1778,22 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e53" source="n42" target="n45">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_OnroerendeZaak]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_Registergoed]]></data>
+    <edge id="e56" source="n43" target="n46">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_OnroerendeZaak]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Registergoed]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-85.0" tx="0.0" ty="26.5"/>
+          <y:Path sx="100.0" sy="-0.0" tx="-100.0" ty="-0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_delta"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e54" source="n42" target="n46">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_OnroerendeZaak]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_VoorkomenNEN3610]]></data>
+    <edge id="e57" source="n43" target="n47">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_OnroerendeZaak]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenNEN3610]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
@@ -1745,15 +1804,13 @@ metNaamOpenbaarRegister [0,n]<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:L
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e55" source="n43" target="n47">
-      <data key="d7" xml:space="preserve"><![CDATA[http://test/def#_Persoon]]></data>
-      <data key="d8" xml:space="preserve"><![CDATA[http://test/def#_VoorkomenOR]]></data>
+    <edge id="e58" source="n44" target="n48">
+      <data key="d7" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_Persoon]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[http://taxonomie.zorgeloosvastgoed.nl/def/zvg#_VoorkomenOR]]></data>
       <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="-46.0" tx="-100.0" ty="-0.0">
-            <y:Point x="100.0" y="25.0"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="46.0" tx="0.0" ty="-26.5"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_delta"/>
           <y:BendStyle smoothed="false"/>
