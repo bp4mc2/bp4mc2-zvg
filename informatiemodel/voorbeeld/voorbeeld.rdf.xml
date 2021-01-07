@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="en" xmlns:zv="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+
+    <zv:Koop__overeenkomst_ rdf:about="https://janssen/Koopovereenkomst/id/123e4567-e89b-12d3-a456-426614174000">
+        <zv:identificatie>123e4567-e89b-12d3-a456-426614174000</zv:identificatie>
+        <zv:koopsom>1</zv:koopsom>
+        <zv:status/>
+        <zv:aangebodenDoor rdf:resource="https://www.nvm.nl/over-nvm/"/>
+        <zv:aan>
+            <zv:Koper rdf:about="https://damir.inrupt.net/profile/card#me">
+              <zv:aandeel>1.00</zv:aandeel>
+            </zv:Koper>
+        </zv:aan>
+        <zv:van>
+            <zv:ZakelijkRecht>
+                <zv:rustOp>
+                    <zv:Perceel rdf:about="http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000">
+                        <zv:identificatie>Jutphaas, sectie C no. 2248</zv:identificatie>
+                        <zv:kadastraleGrootte>0 hectare, 14 are, 24 centiare</zv:kadastraleGrootte>
+                    </zv:Perceel>
+                </zv:rustOp>
+            </zv:ZakelijkRecht>
+        </zv:van>
+    </zv:Koop__overeenkomst_>
+
+    <zv:LocatieRegistergoed>
+        <zv:heeft rdf:resource="http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000"/>
+        <zv:betreft>
+            <zv:ObjectlocatieBinnenland>
+                <zv:adresgegevens rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/0356200000032392"/>
+            </zv:ObjectlocatieBinnenland>
+        </zv:betreft>
+    </zv:LocatieRegistergoed>
+
+    <zv:Woonplaats rdf:about="urn:woonplaats#2248">
+        <zv:woonplaatsNaam>Nieuwegein</zv:woonplaatsNaam>
+    </zv:Woonplaats>
+
+    <!-- Verkoper Rechtspersoon-->
+    <zv:NietNatuurlijkPersoon rdf:about="https://www.nvm.nl/over-nvm/">
+        <zv:statutaireNaam>Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A.</zv:statutaireNaam>
+        <zv:rechtsvorm rdf:resource="https://ondernemersplein.kvk.nl/de-vereniging/"/>
+        <zv:betreft>
+            <zv:Rechtspersoon rdf:about="urn:rechtspersoonId">
+                <zv:kvkNummer>40476604</zv:kvkNummer>
+            </zv:Rechtspersoon>
+        </zv:betreft>
+        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#OnnoHoes"/>
+        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#AdrianusJacobusChristianusKlijsen"/>
+        <zv:postlocatie>
+            <zv:ObjectlocatieBinnenland>
+                <!-- zelf ingevuld - ontbreekt!!! -->
+                <zv:adresgegevens>
+                  <zv:Nummeraanduiding rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/0356200000032392">
+                    <zv:huisnummer>1</zv:huisnummer>
+                    <zv:postcode>3431HZ</zv:postcode>
+                    <zv:gerelateerdeOpenbareRuimte>
+                      <zv:OpenbareRuimte rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/0356300000001156">
+                        <zv:openbareRuimteNaam>Fakkelstede</zv:openbareRuimteNaam>
+                        <zv:gerelateerdeWoonplaats>
+                          <zv:Woonplaats rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/1108">
+                            <zv:woonplaatsNaam>Nieuwegein</zv:woonplaatsNaam>
+                          </zv:Woonplaats>
+                        </zv:gerelateerdeWoonplaats>
+                      </zv:OpenbareRuimte>
+                    </zv:gerelateerdeOpenbareRuimte>
+                  </zv:Nummeraanduiding>
+                </zv:adresgegevens>
+            </zv:ObjectlocatieBinnenland>
+        </zv:postlocatie>
+    </zv:NietNatuurlijkPersoon>
+
+    <!-- Verkoper GeregistreerdPersoon -->
+    <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#OnnoHoes">
+        <zv:naam>
+            <zv:Naam>
+                <zv:geslachtsnaam>Hoes</zv:geslachtsnaam>
+                <zv:voornamen>Onno</zv:voornamen>
+            </zv:Naam>
+        </zv:naam>
+    </zv:GeregistreerdPersoon>
+
+    <!-- Verkoper GeregistreerdPersoon -->
+    <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#AdrianusJacobusChristianusKlijsen">
+        <zv:naam>
+            <zv:Naam>
+                <zv:geslachtsnaam>Klijsen</zv:geslachtsnaam>
+                <zv:voornamen>Adrianus Jacobus Christianus</zv:voornamen>
+            </zv:Naam>
+        </zv:naam>
+    </zv:GeregistreerdPersoon>
+
+    <!-- ID van vertegenwoordiger Verkoper Onno -->
+    <zv:Identificatie_Persoon rdf:about="https://cleverbas/person/Id#Onno">
+        <zv:metIdentificatie rdf:resource="https://www.nvm.nl/over-nvm/personen#OnnoHoes"/>
+        <zv:identificatieDatum>22-12-2020</zv:identificatieDatum>
+        <zv:opBasisVan>
+            <zv:DigitaleIdentiteit>
+                <zv:adres><![CDATA[https://cleverbas/person/Id#Onno]]]]></zv:adres>
+            </zv:DigitaleIdentiteit> </zv:opBasisVan>
+    </zv:Identificatie_Persoon>
+
+    <!-- Koper -->
+    <zv:NatuurlijkPersoon rdf:about="https://damir.inrupt.net/profile/card#me">
+        <zv:postlocatie>
+            <zv:ObjectlocatieBinnenland rdf:about="http://bag/kadaster.nl/id/0445476889">
+                <!-- zelf ingevuld - ontbreekt!!! -->
+                <zv:adresgegevens>
+                    <zv:Nummeraanduiding>
+                      <zv:openbareRuimteNaam>Orteliuslaan</zv:openbareRuimteNaam>
+                      <zv:huisnummer>850</zv:huisnummer>
+                      <zv:woonplaatsNaam>Utrecht</zv:woonplaatsNaam>
+                      <zv:postcode>3528 BB</zv:postcode>
+                    </zv:Nummeraanduiding>
+                </zv:adresgegevens>
+            </zv:ObjectlocatieBinnenland>
+        </zv:postlocatie>
+    </zv:NatuurlijkPersoon>
+
+    <!-- Koper GeregistreerdPersoon -->
+    <zv:GeregistreerdPersoon rdf:about="https://damir.inrupt.net/profile/card#me">
+        <zv:naam>
+            <zv:Naam>
+                <zv:geslachtsnaam>Hubanic</zv:geslachtsnaam>
+                <zv:voornamen>Damir</zv:voornamen>
+            </zv:Naam>
+        </zv:naam>
+    </zv:GeregistreerdPersoon>
+
+    <!-- Koper identificatie -->
+    <zv:Identificatie_Persoon rdf:about="urn:DamirId">
+        <zv:metIdentificatie rdf:resource="https://damir.inrupt.net/profile/card#me"/>
+        <zv:identificatieDatum>05-01-2021</zv:identificatieDatum>
+        <zv:opBasisVan>
+            <zv:DigitaleIdentiteit>
+                <zv:adres><![CDATA[https://damir.inrupt.net/profile/card#me]]]]></zv:adres>
+            </zv:DigitaleIdentiteit> </zv:opBasisVan>
+    </zv:Identificatie_Persoon>
+
+</rdf:RDF>

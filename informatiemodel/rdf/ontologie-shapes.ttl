@@ -84,6 +84,62 @@ zvg:BeperktRecht.bezwaart a sh:PropertyShape;
     sh:path zvg:bezwaart;
     rdfs:seeAlso <uuid:EAID_F6072CD9_EA91_4d72_8594_A02304752067>
 .
+zvg:Canon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Canon";
+    sh:property zvg:Canon.einddatumAfkoop;
+    sh:property zvg:Canon.indicatieOudeOnroerendeZaakBetrokken;
+    sh:property zvg:Canon.jaarlijksBedrag;
+    sh:property zvg:Canon.soort;
+    sh:targetClass zvg:Canon;
+    rdfs:label "Canon"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_2543A689_C42B_4b86_BF86_C09AF5A65740>
+.
+zvg:Canon.einddatumAfkoop a sh:PropertyShape;
+    sh:name "einddatumAfkoop";
+    sh:path zvg:einddatumAfkoop;
+    rdfs:seeAlso <uuid:EAID_26D4E950_0448_4fb6_9753_8153ECBD1BF8>
+.
+zvg:Canon.indicatieOudeOnroerendeZaakBetrokken a sh:PropertyShape;
+    sh:name "indicatieOudeOnroerendeZaakBetrokken";
+    sh:path zvg:indicatieOudeOnroerendeZaakBetrokken;
+    rdfs:seeAlso <uuid:EAID_904B9955_7F32_41bf_B98A_D8AEB93638FD>
+.
+zvg:Canon.jaarlijksBedrag a sh:PropertyShape;
+    sh:name "jaarlijksBedrag";
+    sh:path zvg:jaarlijksBedrag;
+    rdfs:comment ""^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_469A8191_DF64_44e8_B8AB_E0AF20156D09>
+.
+zvg:Canon.soort a sh:PropertyShape;
+    sh:name "soort";
+    sh:path zvg:soort;
+    rdfs:seeAlso <uuid:EAID_02AA0BAC_175D_409c_9EA6_420C1A7D9FDF>
+.
+zvg:Contactgegevens a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Contactgegevens";
+    sh:property zvg:Contactgegevens.e-mailAdres;
+    sh:property zvg:Contactgegevens.telefoonnummer;
+    sh:property zvg:Contactgegevens.van;
+    sh:targetClass zvg:Contactgegevens;
+    rdfs:label "Contactgegevens"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_61AFF3F4_8919_4592_8240_F2845529373D>
+.
+zvg:Contactgegevens.e-mailAdres a sh:PropertyShape;
+    sh:name "e-mailAdres";
+    sh:path zvg:e-mailAdres;
+    rdfs:seeAlso <uuid:EAID_70E2F20B_A658_4334_8213_3A65F0E82FBA>
+.
+zvg:Contactgegevens.telefoonnummer a sh:PropertyShape;
+    sh:name "telefoonnummer";
+    sh:path zvg:telefoonnummer;
+    rdfs:seeAlso <uuid:EAID_EABD8195_DAF5_475a_AB32_3AB0CE79E14E>
+.
+zvg:Contactgegevens.van a sh:PropertyShape;
+    sh:class zvg:_Persoon;
+    sh:name "van";
+    sh:path zvg:van;
+    rdfs:seeAlso <uuid:EAID_29CD3D04_DC66_4750_A28D_C8F2E790A98D>
+.
 zvg:DigitaleIdentiteit a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "DigitaleIdentiteit";
     sh:property zvg:DigitaleIdentiteit.adres;
@@ -169,9 +225,91 @@ zvg:Erfpacht.bijzondereErfpachtvoorwaarden a sh:PropertyShape;
     rdfs:seeAlso <uuid:EAID_BF011193_EEBB_4792_BCD0_46A62A1A69CC>
 .
 zvg:Erfpacht.metErfpachtCanon a sh:PropertyShape;
+    sh:class zvg:Canon;
     sh:name "metErfpachtCanon";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:metErfpachtCanon;
     rdfs:seeAlso <uuid:EAID_B89F2F8C_FC1B_4c90_9084_3CAC428A9F9C>
+.
+zvg:Geboorte a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Geboorte";
+    sh:property zvg:Geboorte.geboortedatum;
+    sh:property zvg:Geboorte.geboorteland;
+    sh:property zvg:Geboorte.geboorteplaats;
+    sh:targetClass zvg:Geboorte;
+    rdfs:comment '''--Definitie--
+Geboorte is een groep gegevens over de geboorte van een GeregisteerdPersoon.
+
+--Toelichting--
+De gegevensgroep Geboorte bevat de volgende gegevens
+- Geboortedatum
+- Geboorteplaats
+- Geboorteland'''^^xsd:string;
+    rdfs:label "Geboorte"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_F2B5280F_8C22_4b3f_80E5_282D68F21FC3>
+.
+zvg:Geboorte.geboortedatum a sh:PropertyShape;
+    sh:name "geboortedatum";
+    sh:path zvg:geboortedatum;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De geboortedatum is de datum waarop de persoon is geboren.
+ '''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_61EA939B_3751_462f_8C51_AF6A235489E1>
+.
+zvg:Geboorte.geboorteland a sh:PropertyShape;
+    sh:name "geboorteland";
+    sh:path zvg:geboorteland;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+Het geboorteland is de naam, die het land aangeeft waar de persoon is geboren.
+'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_F1F55F0A_5698_41fe_A723_C2744A061638>
+.
+zvg:Geboorte.geboorteplaats a sh:PropertyShape;
+    sh:name "geboorteplaats";
+    sh:path zvg:geboorteplaats;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De geboorteplaats is de plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren
+'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_7EAA2A9F_31D4_494e_A60F_4365BFF41056>
+.
+zvg:Gerechtigde a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Gerechtigde";
+    sh:property zvg:Gerechtigde.aandeel;
+    sh:property zvg:Gerechtigde.akteReferentie;
+    sh:property zvg:Gerechtigde.is;
+    sh:property zvg:Gerechtigde.van;
+    sh:targetClass zvg:Gerechtigde;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/begrip/Gerechtigde>;
+    rdfs:label "Gerechtigde"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_BFB3117B_CCDB_4c32_AA8D_A4BD68D65A3B>
+.
+zvg:Gerechtigde.aandeel a sh:PropertyShape;
+    sh:name "aandeel";
+    sh:path zvg:aandeel;
+    rdfs:seeAlso <uuid:EAID_F00DB5D0_6BEA_4f6c_8F4D_2E3F6C7BB7CD>
+.
+zvg:Gerechtigde.akteReferentie a sh:PropertyShape;
+    sh:name "akteReferentie";
+    sh:path zvg:akteReferentie;
+    rdfs:seeAlso <uuid:EAID_6C7B4809_F134_4fee_8359_A03C2DD14DD8>
+.
+zvg:Gerechtigde.is a sh:PropertyShape;
+    sh:class zvg:_Persoon;
+    sh:name "is";
+    sh:path zvg:is;
+    rdfs:seeAlso <uuid:EAID_764DFF77_74C8_4d48_874F_69165E5B5157>
+.
+zvg:Gerechtigde.van a sh:PropertyShape;
+    sh:class zvg:ZakelijkRecht;
+    sh:name "van";
+    sh:path zvg:van;
+    rdfs:seeAlso <uuid:EAID_F5FD2E21_89F2_4fef_A828_DF37242CE7F0>
 .
 zvg:GeregistreerdPersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "GeregistreerdPersoon";
@@ -216,17 +354,23 @@ adellijkeTitelOfPredikaat is de adellijke titel of het predikaat dat behoort tot
     rdfs:seeAlso <uuid:EAID_88146508_B162_462a_B1D5_0F4E4663CE70>
 .
 zvg:GeregistreerdPersoon.geboorte a sh:PropertyShape;
+    sh:class zvg:Geboorte;
     sh:name "geboorte";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:geboorte;
     rdfs:seeAlso <uuid:EAID_E40799E4_71C6_48ec_A852_931CE5AF349C>
 .
 zvg:GeregistreerdPersoon.heeftPartnerschap a sh:PropertyShape;
+    sh:class zvg:Partnerschap;
     sh:name "heeftPartnerschap";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:heeftPartnerschap;
     rdfs:seeAlso <uuid:EAID_F6AEA464_DF24_4705_BBA0_5FB748304A08>
 .
 zvg:GeregistreerdPersoon.inOnderzoek a sh:PropertyShape;
+    sh:class zvg:Procedure;
     sh:name "inOnderzoek";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:inOnderzoek;
     rdfs:seeAlso <uuid:EAID_F42AA37A_C8C4_4b36_B269_9EB45D53122E>
 .
@@ -253,18 +397,201 @@ Als we van BRP een mutatiemelding krijgen met enkel een land dat wordt dat gereg
     rdfs:seeAlso <uuid:EAID_388A7849_22D5_4454_9D33_1C038C4D960B>
 .
 zvg:GeregistreerdPersoon.naam a sh:PropertyShape;
+    sh:class zvg:Naam;
     sh:name "naam";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:naam;
     rdfs:seeAlso <uuid:EAID_C08223F6_ED6B_4fc7_AE7F_ACF61A9633C8>
 .
 zvg:GeregistreerdPersoon.overlijden a sh:PropertyShape;
+    sh:class zvg:Overlijden;
     sh:name "overlijden";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:overlijden;
     rdfs:seeAlso <uuid:EAID_1CFF49E3_927F_4422_B073_F6FB71A80AA5>
 .
+zvg:Geslacht a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Geslacht";
+    sh:property zvg:Geslacht.geslachtsaanduiding;
+    sh:targetClass zvg:Geslacht;
+    rdfs:comment '''--Definitie--
+Geslacht is een groep gegevens die waarmee het geslacht van de persoon wordt aangeduid.
+
+'''^^xsd:string;
+    rdfs:label "Geslacht"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_B46E8FA6_21C0_4411_AF75_7FE737E47E4E>
+.
+zvg:Geslacht.geslachtsaanduiding a sh:PropertyShape;
+    sh:name "geslachtsaanduiding";
+    sh:path zvg:geslachtsaanduiding;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De geslachtsaanduiding is een gegeven over het geslacht van de persoon (man, vrouw, of onbekend). '''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_3D3BF741_DC32_4abb_BA90_8766D75C275D>
+.
+zvg:Identificatie_Persoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Identificatie_Persoon";
+    sh:property zvg:Identificatie_Persoon.identificatieDatum;
+    sh:property zvg:Identificatie_Persoon.metIdentificatie;
+    sh:property zvg:Identificatie_Persoon.opBasisVan;
+    sh:targetClass zvg:Identificatie_Persoon;
+    rdfs:label "Identificatie Persoon"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_A8146DD7_6246_4b24_9BE8_38D10AD1F529>
+.
+zvg:Identificatie_Persoon.identificatieDatum a sh:PropertyShape;
+    sh:name "identificatieDatum";
+    sh:path zvg:identificatieDatum;
+    rdfs:seeAlso <uuid:EAID_58F1B3A8_C861_4f67_889A_C3F876301CE3>
+.
+zvg:Identificatie_Persoon.metIdentificatie a sh:PropertyShape;
+    sh:class zvg:NatuurlijkPersoon;
+    sh:name "metIdentificatie";
+    sh:path zvg:metIdentificatie;
+    rdfs:seeAlso <uuid:EAID_6BE16794_21C6_4495_83AB_82BA8FB74C56>
+.
+zvg:Identificatie_Persoon.opBasisVan a sh:PropertyShape;
+    sh:class zvg:_Legitimatie;
+    sh:name "opBasisVan";
+    sh:path zvg:opBasisVan;
+    rdfs:seeAlso <uuid:EAID_44503B77_9299_43aa_9431_6759E72ADFE9>
+.
+zvg:KadasterHistorieNEN3610 a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "KadasterHistorieNEN3610";
+    sh:property zvg:KadasterHistorieNEN3610.beginGeldigheid;
+    sh:property zvg:KadasterHistorieNEN3610.eindGeldigheid;
+    sh:property zvg:KadasterHistorieNEN3610.eindRegistratie;
+    sh:property zvg:KadasterHistorieNEN3610.statusHistorie;
+    sh:property zvg:KadasterHistorieNEN3610.tijdstipRegistratie;
+    sh:property zvg:KadasterHistorieNEN3610.volgnummer;
+    sh:targetClass zvg:KadasterHistorieNEN3610;
+    rdfs:comment '''--Definitie--
+KadasterHistorie is een verzameling gegevens waarmee historie vastgelegd wordt. Historie betreft alleen voorkomens van objecten, dus het object op een bepaald moment. De historie is conform het Kadaster historiemodel.
+--Toelichting--
+Alle datums in dit gegevensgroeptype moeten voldoen aan de datumdefinitie zoals vastgelegd in het Kadaster Historie Model: yyyy-mm-dd:hh:mm:ss.fff (datum + tijd met miliseconden).  '''^^xsd:string;
+    rdfs:label "KadasterHistorieNEN3610"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_EB778A53_A1EC_4308_BF8D_3361DC848863>
+.
+zvg:KadasterHistorieNEN3610.beginGeldigheid a sh:PropertyShape;
+    sh:name "beginGeldigheid";
+    sh:path zvg:beginGeldigheid;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de werkelijkheid is ontstaan.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_3B9F341D_C449_4bd4_BA27_F91373670595>
+.
+zvg:KadasterHistorieNEN3610.eindGeldigheid a sh:PropertyShape;
+    sh:name "eindGeldigheid";
+    sh:path zvg:eindGeldigheid;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de werkelijkheid is vervallen. Wanneer deze waarde niet is opgegeven is de instantie nog geldig.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_4D397A5A_1CD0_4c12_A319_56C0E0E83F63>
+.
+zvg:KadasterHistorieNEN3610.eindRegistratie a sh:PropertyShape;
+    sh:name "eindRegistratie";
+    sh:path zvg:eindRegistratie;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de registratie is vervallen. Wanneer deze waarde niet is opgegeven is de instantie nog geldig.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_941CA132_DBC2_4f36_850C_4A1B79A40471>
+.
+zvg:KadasterHistorieNEN3610.statusHistorie a sh:PropertyShape;
+    sh:name "statusHistorie";
+    sh:path zvg:statusHistorie;
+    rdfs:comment '''
+---IMKAD---
+Status geeft de status van de versie van het voorkomen aan (geldig/correctie/audit). De waarden zijn opgenomen in een waardelijst.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_7B5FEEFA_61EF_480b_82EB_08A61891C71C>
+.
+zvg:KadasterHistorieNEN3610.tijdstipRegistratie a sh:PropertyShape;
+    sh:name "tijdstipRegistratie";
+    sh:path zvg:tijdstipRegistratie;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de registratie is ontstaan.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_D85108D0_11DF_4218_86A3_1814C0E00399>
+.
+zvg:KadasterHistorieNEN3610.volgnummer a sh:PropertyShape;
+    sh:name "volgnummer";
+    sh:path zvg:volgnummer;
+    rdfs:comment '''
+---IMKAD---
+Opvolgend nummer ter identificatie van een versie indien de
+identificatie van die versie niet wijzigt. Initieel heeft dit
+attribuut de waarde 0.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_9327522C_AC65_4e4a_ACF1_A55BC782F8A1>
+.
+zvg:KadasterHistorieOR a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "KadasterHistorieOR";
+    sh:property zvg:KadasterHistorieOR.eindRegistratie;
+    sh:property zvg:KadasterHistorieOR.statusHistorie;
+    sh:property zvg:KadasterHistorieOR.tijdstipRegistratie;
+    sh:property zvg:KadasterHistorieOR.tijdstipRegistratieOR;
+    sh:property zvg:KadasterHistorieOR.tijdstipVervallenOR;
+    sh:property zvg:KadasterHistorieOR.volgnummer;
+    sh:targetClass zvg:KadasterHistorieOR;
+    rdfs:comment '''--Definitie--
+KadasterHistorie is een verzameling gegevens waarmee historie vastgelegd wordt. Historie betreft alleen voorkomens van objecten, dus het object op een bepaald moment. De historie is conform het Kadaster historiemodel.
+--Toelichting--
+Alle datums in dit gegevensgroeptype moeten voldoen aan de datumdefinitie zoals vastgelegd in het Kadaster Historie Model: yyyy-mm-dd:hh:mm:ss.fff (datum + tijd met miliseconden).  '''^^xsd:string;
+    rdfs:label "KadasterHistorieOR"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_2D302D79_611C_416e_A7A9_E99462550E40>
+.
+zvg:KadasterHistorieOR.eindRegistratie a sh:PropertyShape;
+    sh:name "eindRegistratie";
+    sh:path zvg:eindRegistratie;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de registratie is vervallen. Wanneer deze waarde niet is opgegeven is
+de instantie nog geldig.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_8B971582_5366_4d2e_8596_6AB05A994621>
+.
+zvg:KadasterHistorieOR.statusHistorie a sh:PropertyShape;
+    sh:name "statusHistorie";
+    sh:path zvg:statusHistorie;
+    rdfs:comment '''
+---IMKAD---
+Status geeft de status van de versie van het voorkomen aan (geldig/correctie/audit). De waarden zijn opgenomen in een waardelijst.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_9397C5A4_CFB6_4493_BFE9_F86142793236>
+.
+zvg:KadasterHistorieOR.tijdstipRegistratie a sh:PropertyShape;
+    sh:name "tijdstipRegistratie";
+    sh:path zvg:tijdstipRegistratie;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de registratie is ontstaan.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_6B541749_F7D6_4b72_827E_51DD8BD0112B>
+.
+zvg:KadasterHistorieOR.tijdstipRegistratieOR a sh:PropertyShape;
+    sh:name "tijdstipRegistratieOR";
+    sh:path zvg:tijdstipRegistratieOR;
+    rdfs:comment '''
+---IMKAD---
+Het tijdstipRegistratieOR is het moment waarop de akte in het openbaar register is ingeschreven. De gegevens in de registratie (van dit voorkomen) zijn op deze akte gebaseerd.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_9D9DA025_F632_40f6_9E0F_87F3A3E65010>
+.
+zvg:KadasterHistorieOR.tijdstipVervallenOR a sh:PropertyShape;
+    sh:name "tijdstipVervallenOR";
+    sh:path zvg:tijdstipVervallenOR;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de werkelijkheid is vervallen. Wanneer deze waarde niet is opgegeven
+is de instantie nog geldig.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_8DC4C584_1CE5_4dcc_928C_848F0EC319E4>
+.
+zvg:KadasterHistorieOR.volgnummer a sh:PropertyShape;
+    sh:name "volgnummer";
+    sh:path zvg:volgnummer;
+    rdfs:comment '''
+---IMKAD---
+Opvolgend nummer ter identificatie van een versie indien de
+identificatie van die versie niet wijzigt. Initieel heeft dit
+attribuut de waarde 0.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_9329B5AF_1CEB_4e86_9359_337253F5393C>
+.
 zvg:KadastraleGrens a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "KadastraleGrens";
-    sh:property zvg:KadastraleGrens.grenslijn;
     sh:property zvg:KadastraleGrens.identificatie;
     sh:property zvg:KadastraleGrens.perceelLinks;
     sh:property zvg:KadastraleGrens.perceelRechts;
@@ -281,15 +608,6 @@ Met het begrip 'Kadastrale grens' in relatie tot de BRK bedoelen we de kaartgren
     rdfs:label "KadastraleGrens"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_8D7893BA_EDB9_4d11_B484_F2D89A9C2D6B>;
     rdfs:subClassOf zvg:_VoorkomenNEN3610
-.
-zvg:KadastraleGrens.grenslijn a sh:PropertyShape;
-    sh:name "grenslijn";
-    sh:path zvg:grenslijn;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Een grenslijn is of een lijn (GML LineString), of een boog (GML ArcString).'''^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_DCB423F1_A0F9_46d6_956E_442ADDDBE284>
 .
 zvg:KadastraleGrens.identificatie a sh:PropertyShape;
     sh:name "identificatie";
@@ -408,8 +726,6 @@ zvg:KoperRecherche.vanKoper a sh:PropertyShape;
 .
 zvg:Leidingnetwerk a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Leidingnetwerk";
-    sh:property zvg:Leidingnetwerk.aard;
-    sh:property zvg:Leidingnetwerk.begrenzing;
     sh:property zvg:Leidingnetwerk.breedteNetwerkstrook;
     sh:property zvg:Leidingnetwerk.hartlijn;
     sh:property zvg:Leidingnetwerk.omschrijving;
@@ -418,20 +734,6 @@ zvg:Leidingnetwerk a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     rdfs:label "Leidingnetwerk"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_6F882AC5_1FFB_4225_972F_FB164433ECF1>;
     rdfs:subClassOf zvg:_OnroerendeZaak
-.
-zvg:Leidingnetwerk.aard a sh:PropertyShape;
-    sh:name "aard";
-    sh:path zvg:aard;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Leidingnetwerk.aard is een aanduiding van het soort leidingnetwerk.'''^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_A671F499_9DF0_4357_940A_7BCE174B3582>
-.
-zvg:Leidingnetwerk.begrenzing a sh:PropertyShape;
-    sh:name "begrenzing";
-    sh:path zvg:begrenzing;
-    rdfs:seeAlso <uuid:EAID_79E115B8_53D0_4492_8C28_F68179D60B84>
 .
 zvg:Leidingnetwerk.breedteNetwerkstrook a sh:PropertyShape;
     sh:name "breedteNetwerkstrook";
@@ -482,22 +784,12 @@ zvg:Levering.isUitvoeringVan a sh:PropertyShape;
 .
 zvg:Ligplaats a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Ligplaats";
-    sh:property zvg:Ligplaats.identificatie;
     sh:property zvg:Ligplaats.inOnderzoek;
     sh:targetClass zvg:Ligplaats;
     dct:subject <http://bag.basisregistraties.overheid.nl/doc/begrip/Ligplaats>;
     rdfs:label "Ligplaats"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_6AEE8A7A_FC79_47bc_968A_E0F0F19A6262>;
     rdfs:subClassOf zvg:_AdresseerbaarObject
-.
-zvg:Ligplaats.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie. '''^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_16839B59_0CE1_4a62_827C_7ED29B4E8859>
 .
 zvg:Ligplaats.inOnderzoek a sh:PropertyShape;
     sh:name "inOnderzoek";
@@ -569,8 +861,63 @@ Koppelingswijze beschrijft de kwaliteit van de LKO-koppeling op een van de volge
 </ul>'''^^xsd:string;
     rdfs:seeAlso <uuid:EAID_E89401B8_DD62_43b7_8FB9_538B1702CC2A>
 .
+zvg:Naam a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Naam";
+    sh:property zvg:Naam.geslachtsnaam;
+    sh:property zvg:Naam.voornamen;
+    sh:property zvg:Naam.voorvoegselsgeslachtsnaam;
+    sh:targetClass zvg:Naam;
+    rdfs:comment '''--Definitie--
+Naam is een groep gegevens met de  geslachtsnaam, voorletters en voornamen die men wil gebruiken bij aanschrijving. '''^^xsd:string;
+    rdfs:label "Naam"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_7F819EAA_77FC_4b94_96DE_9EE55E835EC1>
+.
+zvg:Naam.geslachtsnaam a sh:PropertyShape;
+    sh:name "geslachtsnaam";
+    sh:path zvg:geslachtsnaam;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De geslachtsnaam is de (geslachts)naam waarvan de eventueel aanwezige voorvoegsels en <a href="https://www.amsterdam.nl/stelselpedia/brp-index/catalogus-brp/objectklasse-4/tabel-38-adellijke/"><font color="#0000ff"><u>adellijke titel</u></font></a> zijn afgesplitst.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_A9B66E91_89DC_49d5_ACE5_19429B96FAF1>
+.
+zvg:Naam.voornamen a sh:PropertyShape;
+    sh:name "voornamen";
+    sh:path zvg:voornamen;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_FA90C8CE_2728_40ef_8AA4_C6F3B8C10712>
+.
+zvg:Naam.voorvoegselsgeslachtsnaam a sh:PropertyShape;
+    sh:name "voorvoegselsgeslachtsnaam";
+    sh:path zvg:voorvoegselsgeslachtsnaam;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+Voorvoegselsgeslachtsnaam zijn dat deel van de geslachtsnaam dat voorkomt in Tabel 36, Voorvoegseltabel en, gescheiden door een spatie, vooraf gaat aan de rest van de geslachtsnaam.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_CD2C7F3A_09E2_4352_A43D_0990B469076D>
+.
+zvg:NaamOpenbaarRegister a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "NaamOpenbaarRegister";
+    sh:property zvg:NaamOpenbaarRegister.naam;
+    sh:targetClass zvg:NaamOpenbaarRegister;
+    rdfs:comment '''--Definitie--
+NaamOpenbaarRegister is gegevensgroep waarin, indien van toepassing, een afwijkende schrijfwijze van de naam van een persoon volgens het openbare register van het Kadaster wordt vastgelegd.
+--Toelichting--
+De NaamOpenbaarRegister is zowel voor een natuurlijk persoon als niet natuurlijk persoon van toepassing.'''^^xsd:string;
+    rdfs:label "NaamOpenbaarRegister"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_5585AE76_91B2_40c4_8144_FC7D423A78D4>
+.
+zvg:NaamOpenbaarRegister.naam a sh:PropertyShape;
+    sh:name "naam";
+    sh:path zvg:naam;
+    rdfs:seeAlso <uuid:EAID_34256C6E_F551_4dc4_AEBB_8D0C217DEE2A>
+.
 zvg:NatuurlijkPersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "NatuurlijkPersoon";
+    sh:property zvg:NatuurlijkPersoon.betreft;
     sh:property zvg:NatuurlijkPersoon.indicatieAfschermingPersoonsgegevens;
     sh:property zvg:NatuurlijkPersoon.indicatieOverleden;
     sh:targetClass zvg:NatuurlijkPersoon;
@@ -578,6 +925,12 @@ zvg:NatuurlijkPersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     rdfs:label "NatuurlijkPersoon"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_7ECCC940_3E6A_4d8a_A51E_0A74641494F5>;
     rdfs:subClassOf zvg:_Persoon
+.
+zvg:NatuurlijkPersoon.betreft a sh:PropertyShape;
+    sh:class zvg:GeregistreerdPersoon;
+    sh:name "betreft";
+    sh:path zvg:betreft;
+    rdfs:seeAlso <uuid:EAID_138412D6_22AD_4642_87F1_DED091E9B008>
 .
 zvg:NatuurlijkPersoon.indicatieAfschermingPersoonsgegevens a sh:PropertyShape;
     sh:name "indicatieAfschermingPersoonsgegevens";
@@ -599,6 +952,8 @@ De datum van overlijden is soms niet bekend, maar wel dat iemand overleden is.''
 .
 zvg:NietNatuurlijkPersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "NietNatuurlijkPersoon";
+    sh:property zvg:NietNatuurlijkPersoon.betreft;
+    sh:property zvg:NietNatuurlijkPersoon.identificeertZichAls;
     sh:property zvg:NietNatuurlijkPersoon.rechtsvorm;
     sh:property zvg:NietNatuurlijkPersoon.statutaireNaam;
     sh:property zvg:NietNatuurlijkPersoon.statutaireZetel;
@@ -607,6 +962,26 @@ zvg:NietNatuurlijkPersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     rdfs:label "NietNatuurlijkPersoon"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_37E0C481_30A7_49d6_80FD_6179F396ADD4>;
     rdfs:subClassOf zvg:_Persoon
+.
+zvg:NietNatuurlijkPersoon.betreft a sh:PropertyShape;
+    sh:class zvg:Rechtspersoon;
+    sh:name "betreft";
+    sh:path zvg:betreft;
+    rdfs:seeAlso <uuid:EAID_50042DEB_401E_47cc_AFC1_BD36E09862EA>
+.
+zvg:NietNatuurlijkPersoon.identificeertZichAls a sh:PropertyShape;
+    sh:class zvg:OverheidsOrganisatie;
+    sh:name "identificeertZichAls";
+    sh:path zvg:identificeertZichAls;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+Koppeling naar het OIN.
+
+--Toelichting--
+Beschikbaar voor organisaties met een publieke taak, ten behoeve van identificatie in het kader inschrijvingen in de BRK-PB. Niet bedoeld voor authenticatie.
+'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_D76D19C6_173A_436c_B6D8_4CAEA0A84ACA>
 .
 zvg:NietNatuurlijkPersoon.rechtsvorm a sh:PropertyShape;
     sh:name "rechtsvorm";
@@ -721,6 +1096,7 @@ URI https://bag.basisregistraties.overheid.nl/doc/begrip/Postcode'''^^xsd:string
 .
 zvg:ObjectlocatieBinnenland a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "ObjectlocatieBinnenland";
+    sh:property zvg:ObjectlocatieBinnenland.adresgegevens;
     sh:targetClass zvg:ObjectlocatieBinnenland;
     rdfs:comment '''--Definitie--
 Een ObjectlocatieBinnenland is een adres binnen nederland.
@@ -733,8 +1109,15 @@ In uitzonderlijke situaties kunnen de BAG-gegevens niet worden overgenomen. Derg
     rdfs:seeAlso <uuid:EAID_F924BACE_C916_4753_ADBA_94D30426AA4B>;
     rdfs:subClassOf zvg:_Objectlocatie
 .
+zvg:ObjectlocatieBinnenland.adresgegevens a sh:PropertyShape;
+    sh:class zvg:Nummeraanduiding;
+    sh:name "adresgegevens";
+    sh:path zvg:adresgegevens;
+    rdfs:seeAlso <uuid:EAID_44BF8380_29FD_4a53_B209_0DDE0E5AA8A3>
+.
 zvg:ObjectlocatieBuitenland a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "ObjectlocatieBuitenland";
+    sh:property zvg:ObjectlocatieBuitenland.adresgegevens;
     sh:targetClass zvg:ObjectlocatieBuitenland;
     rdfs:comment '''--Definitie--
 Een objectlocatiebuitenland is een adres buiten Nederland.
@@ -743,6 +1126,12 @@ Een objectlocatiebuitenland is een adres buiten Nederland.
     rdfs:label "ObjectlocatieBuitenland"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_4ECBF4CA_5238_4047_AFBA_406314709B25>;
     rdfs:subClassOf zvg:_Objectlocatie
+.
+zvg:ObjectlocatieBuitenland.adresgegevens a sh:PropertyShape;
+    sh:class zvg:AdresBuitenland;
+    sh:name "adresgegevens";
+    sh:path zvg:adresgegevens;
+    rdfs:seeAlso <uuid:EAID_A628AB7A_380F_4ef3_9A33_3E2BFE9CB897>
 .
 zvg:Onderzoeker a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Onderzoeker";
@@ -811,12 +1200,58 @@ zvg:OverheidsOrganisatie.oin a sh:PropertyShape;
     sh:path zvg:oin;
     rdfs:seeAlso <uuid:EAID_2769E634_DE1C_4663_8C20_1379B6A49D8F>
 .
+zvg:Overlijden a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Overlijden";
+    sh:property zvg:Overlijden.datumOverlijden;
+    sh:targetClass zvg:Overlijden;
+    rdfs:comment '''--Definitie--
+Overlijden is een groep gegevens over het overlijden van een persoon.'''^^xsd:string;
+    rdfs:label "Overlijden"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_BD581A2B_8A84_46e4_ADD9_ACD56EE1EEA0>
+.
+zvg:Overlijden.datumOverlijden a sh:PropertyShape;
+    sh:name "datumOverlijden";
+    sh:path zvg:datumOverlijden;
+    rdfs:comment '''
+---IMKAD---
+datumOverlijden is de datum waarop de persoon overleden is.  '''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_800E7296_9289_44d5_A353_02B1C4948BF1>
+.
 zvg:Partij a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Partij";
     sh:targetClass zvg:Partij;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/begrip/Partij>;
     rdfs:label "Partij"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_24CD2AC3_7D09_4e81_B867_2E4E32C902D1>
+.
+zvg:Partnerschap a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Partnerschap";
+    sh:property zvg:Partnerschap.datumOntbinding;
+    sh:property zvg:Partnerschap.datumSluiting;
+    sh:targetClass zvg:Partnerschap;
+    rdfs:comment '''--Definitie--
+Partnerschap is een groep gegevens over de huwelijkse- of partnerschapstatus van een persoon.
+'''^^xsd:string;
+    rdfs:label "Partnerschap"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_1673F612_35C9_4a3b_A184_00CAC2C33C5F>
+.
+zvg:Partnerschap.datumOntbinding a sh:PropertyShape;
+    sh:name "datumOntbinding";
+    sh:path zvg:datumOntbinding;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+datumOntbinding is de datum waarop het huwelijk/geregistreerd partnerschap is ontbonden of nietig verklaard.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_DF91CE06_7A0C_40f4_AC2B_368F11CC4427>
+.
+zvg:Partnerschap.datumSluiting a sh:PropertyShape;
+    sh:name "datumSluiting";
+    sh:path zvg:datumSluiting;
+    rdfs:comment '''
+---IMKAD---
+datumSluiting is de datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan.
+'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_06298F68_9317_49f0_9B4D_BA31C14E4EDA>
 .
 zvg:Perceel a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Perceel";
@@ -922,6 +1357,52 @@ zvg:PostbusLocatie.woonplaatsNaam a sh:PropertyShape;
     sh:path zvg:woonplaatsNaam;
     rdfs:seeAlso <uuid:EAID_8509D066_13AE_45e0_985E_DAE9A6685B86>
 .
+zvg:Procedure a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Procedure";
+    sh:property zvg:Procedure.aanduidingGegevensInOnderzoek;
+    sh:property zvg:Procedure.datumEinde;
+    sh:property zvg:Procedure.datumIngang;
+    sh:targetClass zvg:Procedure;
+    rdfs:comment '''--Definitie--
+Procedure is een groep gegevens waarmee wordt aangegeven of de juistheid van een gegeven bij de BRP in onderzoek is.
+--Toelichting--
+Indien bij GBA twijfel bestaat omtrent de juistheid van de geregistreerde gegevens worden deze in onderzoek geplaatst ("Procedure").'''^^xsd:string;
+    rdfs:label "Procedure"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_D812D2F1_7EC6_475a_A139_A05861A51A33>
+.
+zvg:Procedure.aanduidingGegevensInOnderzoek a sh:PropertyShape;
+    sh:name "aanduidingGegevensInOnderzoek";
+    sh:path zvg:aanduidingGegevensInOnderzoek;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+aanduidingGegevensInOnderzoek is een uit de registratie afgeleide indicatie dat het daadwerkelijk geleverde BRP-gegeven in het product 'in onderzoek' is.
+
+--Toelichting--
+Geeft aan welke gegevens in onderzoek zijn:
+- Indien voor één gegeven een onderzoek loopt, wordt het elementnummer ingevuld.
+- Indien bij meerdere gegevens uit een groep een onderzoek loopt, wordt het betreffende categorienummer, aangevuld met 0000 ingevuld.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_2A91D80E_7765_4404_A4B1_0E9E60B6215C>
+.
+zvg:Procedure.datumEinde a sh:PropertyShape;
+    sh:name "datumEinde";
+    sh:path zvg:datumEinde;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+datumEinde is de datum waarop een onderzoek inzake de onjuistheid of de strijdigheid met de openbare orde is beëindigd.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_768C3824_C0FF_4781_BC9C_DC68784ACF67>
+.
+zvg:Procedure.datumIngang a sh:PropertyShape;
+    sh:name "datumIngang";
+    sh:path zvg:datumIngang;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+datumIngang (onderzoek) is de datum waarop een onderzoek inzake de onjuistheid of de strijdigheid met de openbare orde is gestart.
+'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_DCBE46BC_64CB_4136_8DAE_6DF13D05576F>
+.
 zvg:Recherche a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Recherche";
     sh:property zvg:Recherche.aardRecherche;
@@ -946,7 +1427,9 @@ zvg:Recherche.door a sh:PropertyShape;
     rdfs:seeAlso <uuid:EAID_63B4685C_A882_45e1_A29B_DBA501411CCD>
 .
 zvg:Recherche.uitgevoerdeControle a sh:PropertyShape;
+    sh:class zvg:RechercheItem;
     sh:name "uitgevoerdeControle";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:uitgevoerdeControle;
     rdfs:seeAlso <uuid:EAID_A32BA471_9990_43a7_A9FD_0F16866C2FD4>
 .
@@ -961,6 +1444,44 @@ zvg:Recherche.vanZakelijkRecht a sh:PropertyShape;
     sh:name "vanZakelijkRecht";
     sh:path zvg:vanZakelijkRecht;
     rdfs:seeAlso <uuid:EAID_CA5F198A_75F5_4e09_A3FC_5E8ECB96A5E4>
+.
+zvg:RechercheItem a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "RechercheItem";
+    sh:property zvg:RechercheItem.bronLink;
+    sh:property zvg:RechercheItem.onderwerp;
+    sh:property zvg:RechercheItem.onderzoeksDatum;
+    sh:property zvg:RechercheItem.resultaat;
+    sh:targetClass zvg:RechercheItem;
+    rdfs:comment '''--Definitie--
+Een recherche item is een ondewerp waarnaar recherche moet worden gedaan.'''^^xsd:string;
+    rdfs:label "RechercheItem"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_A5E11066_1736_42fd_8953_74089C7A05CC>
+.
+zvg:RechercheItem.bronLink a sh:PropertyShape;
+    sh:name "bronLink";
+    sh:path zvg:bronLink;
+    rdfs:comment '''--Definitie--
+Vastlegging van het brondocument wat gebruikt is bij de recherche.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_E0E1792F_0F88_4902_9BE6_057EB4B4801F>
+.
+zvg:RechercheItem.onderwerp a sh:PropertyShape;
+    sh:name "onderwerp";
+    sh:path zvg:onderwerp;
+    rdfs:seeAlso <uuid:EAID_2F58E149_7641_40fa_97E9_84F24A173C0F>
+.
+zvg:RechercheItem.onderzoeksDatum a sh:PropertyShape;
+    sh:name "onderzoeksDatum";
+    sh:path zvg:onderzoeksDatum;
+    rdfs:seeAlso <uuid:EAID_80AD4F4E_79B8_44cf_980D_4A6360C10DE1>
+.
+zvg:RechercheItem.resultaat a sh:PropertyShape;
+    sh:name "resultaat";
+    sh:path zvg:resultaat;
+    rdfs:comment '''Gecheckt en akkoord
+Gecheckt en niet akkoord
+Onvolledig
+'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_87A1260A_EB39_46c2_88AD_12B856B34E75>
 .
 zvg:Rechtspersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Rechtspersoon";
@@ -995,23 +1516,12 @@ Een eenmanszaak is geen rechtspersoon en heeft dus ook geen RSIN.
 .
 zvg:Standplaats a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Standplaats";
-    sh:property zvg:Standplaats.identificatie;
     sh:property zvg:Standplaats.inOnderzoek;
     sh:targetClass zvg:Standplaats;
     dct:subject <http://bag.basisregistraties.overheid.nl/doc/begrip/Standplaats>;
     rdfs:label "Standplaats"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_5E972F99_AD4B_44e9_8F19_EC5BDE7EFB52>;
     rdfs:subClassOf zvg:_AdresseerbaarObject
-.
-zvg:Standplaats.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie.
-'''^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_6DB6E2BB_02B5_4a41_BB10_9C4EEF1238C3>
 .
 zvg:Standplaats.inOnderzoek a sh:PropertyShape;
     sh:name "inOnderzoek";
@@ -1022,25 +1532,77 @@ zvg:TenBehoeveVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "TenBehoeveVan"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_42416224_70E0_4de3_927A_EB76BB69BC13>
 .
+zvg:TypeKoopsom a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "TypeKoopsom";
+    sh:property zvg:TypeKoopsom.bedrag;
+    sh:property zvg:TypeKoopsom.indicatieMeerObjecten;
+    sh:property zvg:TypeKoopsom.koopjaar;
+    sh:targetClass zvg:TypeKoopsom;
+    rdfs:comment '''---Definitie---
+De koopsom is het in een ter inschrijving aangeboden stuk vermelde bedrag, waarvoor 1 of meer onroerende zaken zijn verkregen, alsmede het koopjaar (Het jaar van overdracht waarbij deze koopsom bij deze onroerende zaak in de akte is vermeld.) en een indicator of het meerdere onroerende goederen betreft. Koopsom is altijd een positief bedrag. Dit is een bedrag (omgerekend naar) euro's. '''^^xsd:string;
+    rdfs:label "TypeKoopsom"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_12300BFC_BAFC_42f7_B86D_592D9317C35D>
+.
+zvg:TypeKoopsom.bedrag a sh:PropertyShape;
+    sh:name "bedrag";
+    sh:path zvg:bedrag;
+    rdfs:comment '''
+---IMKAD---
+Het in een ter inschrijving aangeboden stuk vermelde bedrag, waarvoor 1 of meer onroerende zaken zijn verkregen. Koopsom is altijd een positief bedrag. Dit is een bedrag (omgerekend naar) euro's. '''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_C8329F30_0DB1_4346_8388_8EF1DBDB7503>
+.
+zvg:TypeKoopsom.indicatieMeerObjecten a sh:PropertyShape;
+    sh:name "indicatieMeerObjecten";
+    sh:path zvg:indicatieMeerObjecten;
+    rdfs:comment '''
+---IMKAD---
+Geeft aan of de koopsom betrekking heeft op meer dan 1 kadastraal object.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_241DCEE7_5AFA_42c5_A0C4_4194B03FBD58>
+.
+zvg:TypeKoopsom.koopjaar a sh:PropertyShape;
+    sh:name "koopjaar";
+    sh:path zvg:koopjaar;
+    rdfs:comment '''
+---IMKAD---
+Het jaar waarin het belangrijkste recht van het kadastraal object is verkregen.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_4F914CF0_13EB_47ac_BF4C_D211F0A69951>
+.
+zvg:TypeLandinrichtingsrente a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "TypeLandinrichtingsrente";
+    sh:property zvg:TypeLandinrichtingsrente.bedrag;
+    sh:property zvg:TypeLandinrichtingsrente.eindjaar;
+    sh:targetClass zvg:TypeLandinrichtingsrente;
+    rdfs:comment '''---Definitie---
+De rente die berekend wordt over de percelen die in een herverkavelingblok van een landinrichtingsproject hebben gelegen. Deze rente wordt berekend om de niet gesubsidieerde kosten van het herverkavelingproject te dekken.'''^^xsd:string;
+    rdfs:label "TypeLandinrichtingsrente"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_BCDE7C65_FA95_4428_82D4_6F2857D46259>
+.
+zvg:TypeLandinrichtingsrente.bedrag a sh:PropertyShape;
+    sh:name "bedrag";
+    sh:path zvg:bedrag;
+    rdfs:comment '''
+---IMKAD---
+Het bedrag waarmee de Onroerende zaak is belast in het kader van de landinrichtingswet.
+
+Let op: Het bedrag is in AKR in euro-centen opgenomen!'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_140EF94E_7C7B_4976_8C7D_6D1ABC21D5D8>
+.
+zvg:TypeLandinrichtingsrente.eindjaar a sh:PropertyShape;
+    sh:name "eindjaar";
+    sh:path zvg:eindjaar;
+    rdfs:comment '''
+---IMKAD---
+Het laatste kalenderjaar waarin de rente in het kader van landinrichtingswet nog verschuldigd is.'''^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_4B0FB9A9_C9DB_45cd_B21F_62638EDE6F35>
+.
 zvg:Verblijfsobject a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Verblijfsobject";
-    sh:property zvg:Verblijfsobject.identificatie;
     sh:property zvg:Verblijfsobject.inOnderzoek;
     sh:targetClass zvg:Verblijfsobject;
     dct:subject <http://bag.basisregistraties.overheid.nl/id/begrip/Verblijfsobject>;
     rdfs:label "Verblijfsobject"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_BCBFEB8F_3537_4204_87D7_776A3DCC356F>;
     rdfs:subClassOf zvg:_AdresseerbaarObject
-.
-zvg:Verblijfsobject.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie.
-'''^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_171D702A_D03A_47c3_A6F4_2BB7A469EE6B>
 .
 zvg:Verblijfsobject.inOnderzoek a sh:PropertyShape;
     sh:name "inOnderzoek";
@@ -1152,22 +1714,12 @@ zvg:ZakelijkRechtRecherche.zakelijkRecht a sh:PropertyShape;
 .
 zvg:_AdresLocatie a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "_AdresLocatie";
-    sh:property zvg:_AdresLocatie.identificatie;
     sh:targetClass zvg:_AdresLocatie;
     rdfs:comment '''--Definitie--
 Een AdresLocatie is een ObjectLocatie of een PostbusLocatie'''^^xsd:string;
     rdfs:label "_AdresLocatie"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_99A562B2_6028_4745_8042_3AA1E05ECC3E>;
     rdfs:subClassOf zvg:_VoorkomenOR
-.
-zvg:_AdresLocatie.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Identificatie is een door het Kadaster toegekend landelijk uniek nummer aan een object binnen de kadastrale registratie. '''^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_A8BD26D3_1174_49e6_BD28_8B68CC247BC3>
 .
 zvg:_AdresseerbaarObject a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "_AdresseerbaarObject";
@@ -1267,12 +1819,16 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
     rdfs:seeAlso <uuid:EAID_453F510D_D03E_4fdc_80F8_55B3D0324C42>
 .
 zvg:_OnroerendeZaak.koopsom a sh:PropertyShape;
+    sh:class zvg:TypeKoopsom;
     sh:name "koopsom";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:koopsom;
     rdfs:seeAlso <uuid:EAID_5A3DCE7E_EA75_4939_9326_E1B58399D793>
 .
 zvg:_OnroerendeZaak.landinrichtingsrente a sh:PropertyShape;
+    sh:class zvg:TypeLandinrichtingsrente;
     sh:name "landinrichtingsrente";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:landinrichtingsrente;
     rdfs:comment '''
 ---IMKAD---
@@ -1349,7 +1905,9 @@ zvg:_Persoon.indicatieNietToonbareDiakriet a sh:PropertyShape;
     rdfs:seeAlso <uuid:EAID_BAEC6D2A_82E2_468c_973C_F783A5558F5F>
 .
 zvg:_Persoon.metNaamOpenbaarRegister a sh:PropertyShape;
+    sh:class zvg:NaamOpenbaarRegister;
     sh:name "metNaamOpenbaarRegister";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:metNaamOpenbaarRegister;
     rdfs:seeAlso <uuid:EAID_284F2229_B0C4_47f3_A3FA_5F2110EB4EDD>
 .
@@ -1410,7 +1968,9 @@ Er wordt aangegeven op basis waarvan de informatie deze vorm heeft gekregen ("au
     rdfs:seeAlso <uuid:EAID_DE34D5AB_6215_4144_9BA4_33609312FC30>
 .
 zvg:_VoorkomenNEN3610.historie a sh:PropertyShape;
+    sh:class zvg:KadasterHistorieNEN3610;
     sh:name "historie";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:historie;
     rdfs:comment '''
 ---IMKAD---
@@ -1429,7 +1989,9 @@ Er wordt aangegeven op basis waarvan de informatie deze vorm heeft gekregen ("au
     rdfs:seeAlso <uuid:EAID_D314E866_18BD_4346_AC2D_250C9C217F2E>
 .
 zvg:_VoorkomenOR.historie a sh:PropertyShape;
+    sh:class zvg:KadasterHistorieOR;
     sh:name "historie";
+    sh:nodeKind sh:BlankNode;
     sh:path zvg:historie;
     rdfs:comment '''
 ---IMKAD---
@@ -1442,7 +2004,21 @@ zvg:aan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 .
 zvg:aandeel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "aandeel"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_9F7F68BE_F54B_4f0f_9B70_9F031F5525B6>
+    rdfs:seeAlso <uuid:EAID_9F7F68BE_F54B_4f0f_9B70_9F031F5525B6>;
+    rdfs:seeAlso <uuid:EAID_F00DB5D0_6BEA_4f6c_8F4D_2E3F6C7BB7CD>
+.
+zvg:aanduidingGegevensInOnderzoek a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+aanduidingGegevensInOnderzoek is een uit de registratie afgeleide indicatie dat het daadwerkelijk geleverde BRP-gegeven in het product 'in onderzoek' is.
+
+--Toelichting--
+Geeft aan welke gegevens in onderzoek zijn:
+- Indien voor één gegeven een onderzoek loopt, wordt het elementnummer ingevuld.
+- Indien bij meerdere gegevens uit een groep een onderzoek loopt, wordt het betreffende categorienummer, aangevuld met 0000 ingevuld.'''^^xsd:string;
+    rdfs:label "aanduidingGegevensInOnderzoek"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_2A91D80E_7765_4404_A4B1_0E9E60B6215C>
 .
 zvg:aanduidingNaamgebruik a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''
@@ -1455,14 +2031,6 @@ aanduidingNaamgebruik is een aanduiding voor de wijze van aanschrijving van de i
 zvg:aangebodenDoor a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "aangebodenDoor"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_8710575F_F18C_456c_A6B1_4666A7D866BB>
-.
-zvg:aard a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Leidingnetwerk.aard is een aanduiding van het soort leidingnetwerk.'''^^xsd:string;
-    rdfs:label "aard"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_A671F499_9DF0_4357_940A_7BCE174B3582>
 .
 zvg:aardCultuurBebouwd a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''
@@ -1506,6 +2074,15 @@ Het adres is een combinatie van de straat en huisnummer.
     rdfs:seeAlso <uuid:EAID_67E35BE3_44F1_4679_8672_0B8D207511AB>;
     rdfs:seeAlso <uuid:EAID_9F3D0152_7181_4fc8_9D56_47A4B348A38D>
 .
+zvg:adresgegevens a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "adresgegevens"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_44BF8380_29FD_4a53_B209_0DDE0E5AA8A3>;
+    rdfs:seeAlso <uuid:EAID_A628AB7A_380F_4ef3_9A33_3E2BFE9CB897>
+.
+zvg:akteReferentie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "akteReferentie"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_6C7B4809_F134_4fee_8359_A03C2DD14DD8>
+.
 zvg:algemeneErfpachtvoorwaarden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''--Definitie--
 Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.
@@ -1514,12 +2091,25 @@ Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de a
     rdfs:seeAlso <uuid:EAID_9EBF8FC2_2B55_433b_9985_E69941C58B04>
 .
 zvg:bedrag a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het in een ter inschrijving aangeboden stuk vermelde bedrag, waarvoor 1 of meer onroerende zaken zijn verkregen. Koopsom is altijd een positief bedrag. Dit is een bedrag (omgerekend naar) euro's. '''^^xsd:string;
+    rdfs:comment '''
+---IMKAD---
+Het bedrag waarmee de Onroerende zaak is belast in het kader van de landinrichtingswet.
+
+Let op: Het bedrag is in AKR in euro-centen opgenomen!'''^^xsd:string;
     rdfs:label "bedrag"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_C6A2C553_85D2_4575_AF04_F04EDF996AE8>
+    rdfs:seeAlso <uuid:EAID_140EF94E_7C7B_4976_8C7D_6D1ABC21D5D8>;
+    rdfs:seeAlso <uuid:EAID_C6A2C553_85D2_4575_AF04_F04EDF996AE8>;
+    rdfs:seeAlso <uuid:EAID_C8329F30_0DB1_4346_8388_8EF1DBDB7503>
 .
-zvg:begrenzing a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:label "begrenzing"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_79E115B8_53D0_4492_8C28_F68179D60B84>
+zvg:beginGeldigheid a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de werkelijkheid is ontstaan.'''^^xsd:string;
+    rdfs:label "beginGeldigheid"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_3B9F341D_C449_4bd4_BA27_F91373670595>
 .
 zvg:begrenzingPerceel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "begrenzingPerceel"^^xsd:string;
@@ -1531,6 +2121,8 @@ zvg:beschikkingsbevoegdheid a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 .
 zvg:betreft a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "betreft"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_138412D6_22AD_4642_87F1_DED091E9B008>;
+    rdfs:seeAlso <uuid:EAID_50042DEB_401E_47cc_AFC1_BD36E09862EA>;
     rdfs:seeAlso <uuid:EAID_66C2477F_3330_42a9_8F5F_6252D0FD47D3>
 .
 zvg:bezwaart a <http://www.w3.org/2002/07/owl#ObjectProperty>;
@@ -1553,17 +2145,123 @@ zvg:breedteNetwerkstrook a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "breedteNetwerkstrook"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_9481BB86_FCC8_42fe_87E8_F4706F33956F>
 .
+zvg:bronLink a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''--Definitie--
+Vastlegging van het brondocument wat gebruikt is bij de recherche.'''^^xsd:string;
+    rdfs:label "bronLink"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_E0E1792F_0F88_4902_9BE6_057EB4B4801F>
+.
 zvg:datumAfspraak a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "datumAfspraak"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_994D4868_6E48_4660_BE58_EE35FA2BC31E>
+.
+zvg:datumEinde a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+datumEinde is de datum waarop een onderzoek inzake de onjuistheid of de strijdigheid met de openbare orde is beëindigd.'''^^xsd:string;
+    rdfs:label "datumEinde"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_768C3824_C0FF_4781_BC9C_DC68784ACF67>
+.
+zvg:datumIngang a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+datumIngang (onderzoek) is de datum waarop een onderzoek inzake de onjuistheid of de strijdigheid met de openbare orde is gestart.
+'''^^xsd:string;
+    rdfs:label "datumIngang"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_DCBE46BC_64CB_4136_8DAE_6DF13D05576F>
+.
+zvg:datumOntbinding a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+datumOntbinding is de datum waarop het huwelijk/geregistreerd partnerschap is ontbonden of nietig verklaard.'''^^xsd:string;
+    rdfs:label "datumOntbinding"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_DF91CE06_7A0C_40f4_AC2B_368F11CC4427>
+.
+zvg:datumOverlijden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+datumOverlijden is de datum waarop de persoon overleden is.  '''^^xsd:string;
+    rdfs:label "datumOverlijden"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_800E7296_9289_44d5_A353_02B1C4948BF1>
+.
+zvg:datumSluiting a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+datumSluiting is de datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan.
+'''^^xsd:string;
+    rdfs:label "datumSluiting"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_06298F68_9317_49f0_9B4D_BA31C14E4EDA>
 .
 zvg:door a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "door"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_63B4685C_A882_45e1_A29B_DBA501411CCD>
 .
-zvg:geboorte a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:label "geboorte"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_E40799E4_71C6_48ec_A852_931CE5AF349C>
+zvg:e-mailAdres a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "e-mailAdres"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_70E2F20B_A658_4334_8213_3A65F0E82FBA>
+.
+zvg:eindGeldigheid a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de werkelijkheid is vervallen. Wanneer deze waarde niet is opgegeven is de instantie nog geldig.'''^^xsd:string;
+    rdfs:label "eindGeldigheid"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_4D397A5A_1CD0_4c12_A319_56C0E0E83F63>
+.
+zvg:eindRegistratie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de registratie is vervallen. Wanneer deze waarde niet is opgegeven is
+de instantie nog geldig.'''^^xsd:string;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de registratie is vervallen. Wanneer deze waarde niet is opgegeven is de instantie nog geldig.'''^^xsd:string;
+    rdfs:label "eindRegistratie"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_8B971582_5366_4d2e_8596_6AB05A994621>;
+    rdfs:seeAlso <uuid:EAID_941CA132_DBC2_4f36_850C_4A1B79A40471>
+.
+zvg:einddatumAfkoop a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "einddatumAfkoop"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_26D4E950_0448_4fb6_9753_8153ECBD1BF8>
+.
+zvg:eindjaar a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het laatste kalenderjaar waarin de rente in het kader van landinrichtingswet nog verschuldigd is.'''^^xsd:string;
+    rdfs:label "eindjaar"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_4B0FB9A9_C9DB_45cd_B21F_62638EDE6F35>
+.
+zvg:geboorte a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "geboorte"^^xsd:string
+.
+zvg:geboortedatum a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De geboortedatum is de datum waarop de persoon is geboren.
+ '''^^xsd:string;
+    rdfs:label "geboortedatum"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_61EA939B_3751_462f_8C51_AF6A235489E1>
+.
+zvg:geboorteland a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+Het geboorteland is de naam, die het land aangeeft waar de persoon is geboren.
+'''^^xsd:string;
+    rdfs:label "geboorteland"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_F1F55F0A_5698_41fe_A723_C2744A061638>
+.
+zvg:geboorteplaats a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De geboorteplaats is de plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren
+'''^^xsd:string;
+    rdfs:label "geboorteplaats"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_7EAA2A9F_31D4_494e_A60F_4365BFF41056>
 .
 zvg:gerelateerdeOpenbareRuimte a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:comment '''
@@ -1576,24 +2274,32 @@ waaraan een adresseerbaar object is gelegen.'''^^xsd:string;
 zvg:gerelateerdeWoonplaats a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:comment '''
 ---IMKAD---
-Unieke aanduiding van de woonplaats waarbinnen een
-OPENBARE RUIMTE is gelegen.'''^^xsd:string;
-    rdfs:comment '''
----IMKAD---
 Unieke aanduiding van de woonplaats waarbinnen het
 object waaraan de NUMMERAANDUIDING is toegekend
 is gelegen. Dit gegeven wordt opgenomen indien het object is gelegen in een andere woonplaats dan de openbare ruimte waaraan de nummeraanduiding is gerelateerd.'''^^xsd:string;
+    rdfs:comment '''
+---IMKAD---
+Unieke aanduiding van de woonplaats waarbinnen een
+OPENBARE RUIMTE is gelegen.'''^^xsd:string;
     rdfs:label "gerelateerdeWoonplaats"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_3BE713EE_E4EA_464d_B821_0CB552716920>;
     rdfs:seeAlso <uuid:EAID_D6EBB5BB_3C37_434a_8016_DD7C27B7E0A5>
 .
-zvg:grenslijn a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+zvg:geslachtsaanduiding a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''
 ---IMKAD---
 --Definitie--
-Een grenslijn is of een lijn (GML LineString), of een boog (GML ArcString).'''^^xsd:string;
-    rdfs:label "grenslijn"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_DCB423F1_A0F9_46d6_956E_442ADDDBE284>
+De geslachtsaanduiding is een gegeven over het geslacht van de persoon (man, vrouw, of onbekend). '''^^xsd:string;
+    rdfs:label "geslachtsaanduiding"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_3D3BF741_DC32_4abb_BA90_8766D75C275D>
+.
+zvg:geslachtsnaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De geslachtsnaam is de (geslachts)naam waarvan de eventueel aanwezige voorvoegsels en <a href="https://www.amsterdam.nl/stelselpedia/brp-index/catalogus-brp/objectklasse-4/tabel-38-adellijke/"><font color="#0000ff"><u>adellijke titel</u></font></a> zijn afgesplitst.'''^^xsd:string;
+    rdfs:label "geslachtsnaam"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_A9B66E91_89DC_49d5_ACE5_19429B96FAF1>
 .
 zvg:hartlijn a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "hartlijn"^^xsd:string;
@@ -1603,17 +2309,11 @@ zvg:heeft a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "heeft"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_774C8699_7EC8_4c48_AA15_F0A07511B637>
 .
-zvg:heeftPartnerschap a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:label "heeftPartnerschap"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_F6AEA464_DF24_4705_BBA0_5FB748304A08>
+zvg:heeftPartnerschap a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "heeftPartnerschap"^^xsd:string
 .
-zvg:historie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
-Gegevens omtrent de historie van een voorkomen van dit type.'''^^xsd:string;
-    rdfs:label "historie"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_342B2451_EE94_4481_BA8F_81AD99CA0F33>;
-    rdfs:seeAlso <uuid:EAID_E0723CCB_EECC_4f1c_9342_6D04222E09EB>
+zvg:historie a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "historie"^^xsd:string
 .
 zvg:hoofdadres a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "hoofdadres"^^xsd:string;
@@ -1653,15 +2353,6 @@ zvg:identificatie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''
 ---IMKAD---
 --Definitie--
-Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie. '''^^xsd:string;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-De Kadaster identificatie is een door het Kadaster toegekend landelijk uniek nummer aan dit object binnen de kadastrale registratie.
-'''^^xsd:string;
-    rdfs:comment '''
----IMKAD---
---Definitie--
 Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie.
 '''^^xsd:string;
     rdfs:comment '''
@@ -1672,23 +2363,40 @@ Identificatie is een door het Kadaster toegekend landelijk uniek nummer aan een 
 ---IMKAD---
 --Definitie--
 Identificatie is een door de Basisregistratie Personen toegekend landelijk uniek nummer aan een object. '''^^xsd:string;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De Kadaster identificatie is een door het Kadaster toegekend landelijk uniek nummer aan dit object binnen de kadastrale registratie.
+'''^^xsd:string;
     rdfs:label "identificatie"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_16839B59_0CE1_4a62_827C_7ED29B4E8859>;
-    rdfs:seeAlso <uuid:EAID_171D702A_D03A_47c3_A6F4_2BB7A469EE6B>;
-    rdfs:seeAlso <uuid:EAID_6DB6E2BB_02B5_4a41_BB10_9C4EEF1238C3>;
     rdfs:seeAlso <uuid:EAID_72AA9F48_3548_4f93_99EC_6EAF85900F29>;
     rdfs:seeAlso <uuid:EAID_83CE81AD_8ACB_464e_A922_4BE1A97D0F86>;
     rdfs:seeAlso <uuid:EAID_8EDD0270_B2C2_4ba1_9D54_BEC698F5A77F>;
-    rdfs:seeAlso <uuid:EAID_A8BD26D3_1174_49e6_BD28_8B68CC247BC3>;
     rdfs:seeAlso <uuid:EAID_BA98A209_ABD4_4ded_B4DB_09772DF240D3>;
     rdfs:seeAlso <uuid:EAID_CF81FAB3_CF42_4547_B46D_81A6081EBB6A>;
     rdfs:seeAlso <uuid:EAID_DBB61688_1712_4994_BE62_34F4F9B52641>
+.
+zvg:identificatieDatum a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "identificatieDatum"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_58F1B3A8_C861_4f67_889A_C3F876301CE3>
+.
+zvg:identificeertZichAls a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+Koppeling naar het OIN.
+
+--Toelichting--
+Beschikbaar voor organisaties met een publieke taak, ten behoeve van identificatie in het kader inschrijvingen in de BRK-PB. Niet bedoeld voor authenticatie.
+'''^^xsd:string;
+    rdfs:label "identificeertZichAls"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_D76D19C6_173A_436c_B6D8_4CAEA0A84ACA>
 .
 zvg:identityResult a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "identityResult"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_5EF0C930_9540_4aad_A3F2_F0CAD108CA81>
 .
-zvg:inOnderzoek a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+zvg:inOnderzoek a <http://www.w3.org/2002/07/owl#DatatypeProperty>, <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:comment '''
 ---IMKAD---
 --Definitie--
@@ -1705,8 +2413,7 @@ InOnderzoek kan niet beschikbaar (voidable) zijn, wanneer het adres niet een bin
     rdfs:seeAlso <uuid:EAID_250E0BD6_AEB6_4c31_A741_7FE482C01E48>;
     rdfs:seeAlso <uuid:EAID_265C6792_E04C_49e6_8BAA_074894E16BFB>;
     rdfs:seeAlso <uuid:EAID_D51D1687_2689_4bbf_9857_9211D76C4DE2>;
-    rdfs:seeAlso <uuid:EAID_F0E93EE0_3F92_4573_81FF_50B4A1AF1440>;
-    rdfs:seeAlso <uuid:EAID_F42AA37A_C8C4_4b36_B269_9EB45D53122E>
+    rdfs:seeAlso <uuid:EAID_F0E93EE0_3F92_4573_81FF_50B4A1AF1440>
 .
 zvg:indicatieAfschermingPersoonsgegevens a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "indicatieAfschermingPersoonsgegevens"^^xsd:string;
@@ -1720,9 +2427,20 @@ indicatieGeheim is een aanduiding die aangeeft dat gegevens van een persoon wel 
     rdfs:label "indicatieGeheim"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_834247E4_5324_442e_B9B2_477AA7FFC403>
 .
+zvg:indicatieMeerObjecten a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Geeft aan of de koopsom betrekking heeft op meer dan 1 kadastraal object.'''^^xsd:string;
+    rdfs:label "indicatieMeerObjecten"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_241DCEE7_5AFA_42c5_A0C4_4194B03FBD58>
+.
 zvg:indicatieNietToonbareDiakriet a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "indicatieNietToonbareDiakriet"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_BAEC6D2A_82E2_468c_973C_F783A5558F5F>
+.
+zvg:indicatieOudeOnroerendeZaakBetrokken a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "indicatieOudeOnroerendeZaakBetrokken"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_904B9955_7F32_41bf_B98A_D8AEB93638FD>
 .
 zvg:indicatieOverleden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''
@@ -1736,6 +2454,10 @@ De datum van overlijden is soms niet bekend, maar wel dat iemand overleden is.''
     rdfs:label "indicatieOverleden"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_09D70025_0330_4886_894B_46B961095AF2>
 .
+zvg:is a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "is"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_764DFF77_74C8_4d48_874F_69165E5B5157>
+.
 zvg:isUitvoeringVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "isUitvoeringVan"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_1E193C12_66E2_4a46_B0CA_C55174D4AEB5>
@@ -1743,6 +2465,11 @@ zvg:isUitvoeringVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 zvg:isVanToepassingOp a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "isVanToepassingOp"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_6E838751_6C8C_475f_9E9F_DECABBF8194E>
+.
+zvg:jaarlijksBedrag a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment ""^^xsd:string;
+    rdfs:label "jaarlijksBedrag"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_469A8191_DF64_44e8_B8AB_E0AF20156D09>
 .
 zvg:kadastraleAanduiding a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''
@@ -1763,9 +2490,15 @@ Oppervlak grootte, in vierkante meters. '''^^xsd:string;
     rdfs:label "kadastraleGrootte"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_1500DA40_5A3D_4711_9211_1B07186A962F>
 .
-zvg:koopsom a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+zvg:koopjaar a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het jaar waarin het belangrijkste recht van het kadastraal object is verkregen.'''^^xsd:string;
+    rdfs:label "koopjaar"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_4F914CF0_13EB_47ac_BF4C_D211F0A69951>
+.
+zvg:koopsom a <http://www.w3.org/2002/07/owl#DatatypeProperty>, <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "koopsom"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_5A3DCE7E_EA75_4939_9326_E1B58399D793>;
     rdfs:seeAlso <uuid:EAID_BEF5D4E0_4952_4355_BC8E_3CCAD98EAD23>
 .
 zvg:koppelingswijze a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
@@ -1813,31 +2546,26 @@ Als we van BRP een mutatiemelding krijgen met enkel een land dat wordt dat gereg
     rdfs:label "landWaarnaarVertrokken"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_388A7849_22D5_4454_9D33_1C038C4D960B>
 .
-zvg:landinrichtingsrente a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
-Landinrichtingsrente is het bedrag waarmee de Onroerende zaak is belast in het kader van de landinrichtingswet.
-Opgebouwd uit de onderdelen Aanduiding Landinrichtingsrente, Bedrag Landinrichtingsrente, en Eindjaar Landinrichtingsrente.
-
-Als twee percelen met elk  landinrichtingsrente-gegevens met verschillende eindjaren verenigd worden, worden beide landinrichtingsrente-gegevensgroepen bij het nieuwe perceel opgenomen.'''^^xsd:string;
-    rdfs:label "landinrichtingsrente"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_3E6633FE_5FDF_48c2_9C0D_10398BED6220>
+zvg:landinrichtingsrente a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "landinrichtingsrente"^^xsd:string
 .
 zvg:meettariefVerschuldigd a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "meettariefVerschuldigd"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_45AC8503_F2EA_41c8_89FD_7F16667F6C19>
 .
-zvg:metErfpachtCanon a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:label "metErfpachtCanon"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_B89F2F8C_FC1B_4c90_9084_3CAC428A9F9C>
+zvg:metErfpachtCanon a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "metErfpachtCanon"^^xsd:string
 .
-zvg:metNaamOpenbaarRegister a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:label "metNaamOpenbaarRegister"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_284F2229_B0C4_47f3_A3FA_5F2110EB4EDD>
+zvg:metIdentificatie a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "metIdentificatie"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_6BE16794_21C6_4495_83AB_82BA8FB74C56>
 .
-zvg:naam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+zvg:metNaamOpenbaarRegister a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "metNaamOpenbaarRegister"^^xsd:string
+.
+zvg:naam a <http://www.w3.org/2002/07/owl#DatatypeProperty>, <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "naam"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_C08223F6_ED6B_4fc7_AE7F_ACF61A9633C8>
+    rdfs:seeAlso <uuid:EAID_34256C6E_F551_4dc4_AEBB_8D0C217DEE2A>
 .
 zvg:nevenadres a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "nevenadres"^^xsd:string;
@@ -1859,6 +2587,18 @@ zvg:omschrijvingOnderzoekErfdienstbaarheden a <http://www.w3.org/2002/07/owl#Dat
     rdfs:label "omschrijvingOnderzoekErfdienstbaarheden"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_8E3C62A5_9613_4102_B659_A0CB93622186>
 .
+zvg:onderwerp a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "onderwerp"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_2F58E149_7641_40fa_97E9_84F24A173C0F>
+.
+zvg:onderzoeksDatum a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "onderzoeksDatum"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_80AD4F4E_79B8_44cf_980D_4A6360C10DE1>
+.
+zvg:opBasisVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "opBasisVan"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_44503B77_9299_43aa_9431_6759E72ADFE9>
+.
 zvg:opBasisVanManifestatieVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "opBasisVanManifestatieVan"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_E71C598B_B507_4dcd_B4D6_DD39AE84F20E>
@@ -1871,9 +2611,8 @@ zvg:oudstDigitaalBekend a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "oudstDigitaalBekend"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_6C8FC83F_F990_4423_8666_1523890BDFFA>
 .
-zvg:overlijden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:label "overlijden"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_1CFF49E3_927F_4422_B073_F6FB71A80AA5>
+zvg:overlijden a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "overlijden"^^xsd:string
 .
 zvg:perceel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "perceel"^^xsd:string;
@@ -1958,6 +2697,14 @@ zvg:regio a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "regio"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_9D239420_D51E_40ca_8151_98F549B3649C>
 .
+zvg:resultaat a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''Gecheckt en akkoord
+Gecheckt en niet akkoord
+Onvolledig
+'''^^xsd:string;
+    rdfs:label "resultaat"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_87A1260A_EB39_46c2_88AD_12B856B34E75>
+.
 zvg:rsin a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''
 ---IMKAD---
@@ -1975,6 +2722,7 @@ zvg:rustOp a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 .
 zvg:soort a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "soort"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_02AA0BAC_175D_409c_9EA6_420C1A7D9FDF>;
     rdfs:seeAlso <uuid:EAID_4AA4A23C_7571_44c7_AB5A_505D640CAA1F>
 .
 zvg:status a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
@@ -1982,6 +2730,14 @@ zvg:status a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 De status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proces zit. De waarden zijn opgenomen in een waardelijst.'''^^xsd:string;
     rdfs:label "status"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_6DDF283D_6CF9_4bc3_9A4F_7435235812FF>
+.
+zvg:statusHistorie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Status geeft de status van de versie van het voorkomen aan (geldig/correctie/audit). De waarden zijn opgenomen in een waardelijst.'''^^xsd:string;
+    rdfs:label "statusHistorie"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_7B5FEEFA_61EF_480b_82EB_08A61891C71C>;
+    rdfs:seeAlso <uuid:EAID_9397C5A4_CFB6_4493_BFE9_F86142793236>
 .
 zvg:statutaireNaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "statutaireNaam"^^xsd:string;
@@ -1991,6 +2747,10 @@ zvg:statutaireZetel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "statutaireZetel"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_6E585A2C_96CF_46f3_B9DD_67D5610898AF>
 .
+zvg:telefoonnummer a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "telefoonnummer"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_EABD8195_DAF5_475a_AB32_3AB0CE79E14E>
+.
 zvg:tenaamstelling a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "tenaamstelling"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_2DCB510C_1AFB_4b90_8AE7_E6E9AD505FC8>
@@ -1998,6 +2758,29 @@ zvg:tenaamstelling a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 zvg:tijdstipEersteOntstaan a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "tijdstipEersteOntstaan"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_D040B03A_D972_4091_A31C_7D780208F7FF>
+.
+zvg:tijdstipRegistratie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de registratie is ontstaan.'''^^xsd:string;
+    rdfs:label "tijdstipRegistratie"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_6B541749_F7D6_4b72_827E_51DD8BD0112B>;
+    rdfs:seeAlso <uuid:EAID_D85108D0_11DF_4218_86A3_1814C0E00399>
+.
+zvg:tijdstipRegistratieOR a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het tijdstipRegistratieOR is het moment waarop de akte in het openbaar register is ingeschreven. De gegevens in de registratie (van dit voorkomen) zijn op deze akte gebaseerd.'''^^xsd:string;
+    rdfs:label "tijdstipRegistratieOR"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_9D9DA025_F632_40f6_9E0F_87F3A3E65010>
+.
+zvg:tijdstipVervallenOR a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Het moment waarop het voorkomen  in de werkelijkheid is vervallen. Wanneer deze waarde niet is opgegeven
+is de instantie nog geldig.'''^^xsd:string;
+    rdfs:label "tijdstipVervallenOR"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_8DC4C584_1CE5_4dcc_928C_848F0EC319E4>
 .
 zvg:toelichtingBewaarder a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "toelichtingBewaarder"^^xsd:string;
@@ -2015,13 +2798,14 @@ Kadastralegrens.type geeft aan of het een definitieve, voorlopige of administrat
     rdfs:label "type"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_CB23E4E1_0D4E_43b2_A524_7AB2508C369A>
 .
-zvg:uitgevoerdeControle a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:label "uitgevoerdeControle"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_A32BA471_9990_43a7_A9FD_0F16866C2FD4>
+zvg:uitgevoerdeControle a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "uitgevoerdeControle"^^xsd:string
 .
 zvg:van a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "van"^^xsd:string;
-    rdfs:seeAlso <uuid:EAID_7BDC2305_37FE_4a5a_B8FF_0BA4C018E103>
+    rdfs:seeAlso <uuid:EAID_29CD3D04_DC66_4750_A28D_C8F2E790A98D>;
+    rdfs:seeAlso <uuid:EAID_7BDC2305_37FE_4a5a_B8FF_0BA4C018E103>;
+    rdfs:seeAlso <uuid:EAID_F5FD2E21_89F2_4fef_A828_DF37242CE7F0>
 .
 zvg:vanKoper a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "vanKoper"^^xsd:string;
@@ -2038,6 +2822,32 @@ zvg:vanZakelijkRecht a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 zvg:vertegenwoordigt a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "vertegenwoordigt"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_2092E551_33C8_476d_B554_4BE05A17877B>
+.
+zvg:volgnummer a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+Opvolgend nummer ter identificatie van een versie indien de
+identificatie van die versie niet wijzigt. Initieel heeft dit
+attribuut de waarde 0.'''^^xsd:string;
+    rdfs:label "volgnummer"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_9327522C_AC65_4e4a_ACF1_A55BC782F8A1>;
+    rdfs:seeAlso <uuid:EAID_9329B5AF_1CEB_4e86_9359_337253F5393C>
+.
+zvg:voornamen a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst.'''^^xsd:string;
+    rdfs:label "voornamen"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_FA90C8CE_2728_40ef_8AA4_C6F3B8C10712>
+.
+zvg:voorvoegselsgeslachtsnaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:comment '''
+---IMKAD---
+--Definitie--
+Voorvoegselsgeslachtsnaam zijn dat deel van de geslachtsnaam dat voorkomt in Tabel 36, Voorvoegseltabel en, gescheiden door een spatie, vooraf gaat aan de rest van de geslachtsnaam.'''^^xsd:string;
+    rdfs:label "voorvoegselsgeslachtsnaam"^^xsd:string;
+    rdfs:seeAlso <uuid:EAID_CD2C7F3A_09E2_4352_A43D_0990B469076D>
 .
 zvg:waarde a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "waarde"^^xsd:string;

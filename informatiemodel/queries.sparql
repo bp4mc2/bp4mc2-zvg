@@ -135,12 +135,14 @@ where {
 
 # Properties
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-select distinct ?p ?plabel
+select distinct ?t ?p
 where {
   graph <http://localhost:8080/data2model/container/data> {
     ?s ?p ?o
+    OPTIONAL {?s a ?t}.
+    FILTER (?p!=rdf:type)
   }
-  OPTIONAL {
+  FILTER NOT EXISTS {
     graph <http://localhost:8080/data2model/container/model> {
       ?p rdfs:label ?plabel
     }
