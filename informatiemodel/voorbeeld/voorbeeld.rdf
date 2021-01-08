@@ -16,6 +16,7 @@
         </zv:aan>
         <zv:van>
             <zv:ZakelijkRecht>
+                <rdfs:label>Eigendom van perceel Jutphaas, sectie C no. 2248</rdfs:label>
                 <zv:rustOp>
                     <zv:Perceel rdf:about="http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000">
                         <zv:identificatie>Jutphaas, sectie C no. 2248</zv:identificatie>
@@ -41,6 +42,7 @@
 
     <!-- Verkoper Rechtspersoon-->
     <zv:NietNatuurlijkPersoon rdf:about="https://www.nvm.nl/over-nvm/">
+        <rdfs:label>NVM</rdfs:label>
         <zv:statutaireNaam>Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A.</zv:statutaireNaam>
         <zv:rechtsvorm rdf:resource="https://ondernemersplein.kvk.nl/de-vereniging/"/>
         <zv:betreft>
@@ -105,6 +107,7 @@
 
     <!-- Koper -->
     <zv:NatuurlijkPersoon rdf:about="https://damir.inrupt.net/profile/card#me">
+        <rdfs:label>Damir Hubanic</rdfs:label>
         <zv:postlocatie>
             <zv:ObjectlocatieBinnenland rdf:about="http://bag/kadaster.nl/id/0445476889">
                 <!-- zelf ingevuld - ontbreekt!!! -->
