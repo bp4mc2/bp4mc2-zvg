@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xml:lang="en" xmlns:zv="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#"
+<rdf:RDF xml:lang="nl" xmlns:zv="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-
-    <zv:Koop__overeenkomst_ rdf:about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">
+    <zv:Koop__overeenkomst_ rdf:about="http://mak.zorgeloosvastgoed.nl/koopovereenkomst/id/123e4567-e89b-12d3-a456-426614174000">
         <zv:identificatie>123e4567-e89b-12d3-a456-426614174000</zv:identificatie>
-        <zv:koopsom>1</zv:koopsom>
-        <zv:status/>
+        <zv:koopsom>1.100.000</zv:koopsom>
         <zv:aangebodenDoor rdf:resource="https://www.nvm.nl/over-nvm/"/>
         <zv:aan>
-            <zv:Koper rdf:about="https://damir.inrupt.net/profile/card#me">
+            <zv:Koper rdf:about="https://changchozv.inrupt.net/profile/card#me">
               <zv:aandeel>1.00</zv:aandeel>
             </zv:Koper>
         </zv:aan>
@@ -18,27 +16,14 @@
             <zv:ZakelijkRecht>
                 <rdfs:label>Eigendom van perceel Jutphaas, sectie C no. 2248</rdfs:label>
                 <zv:rustOp>
-                    <zv:Perceel rdf:about="http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000">
+                    <zv:Perceel rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861">
                         <zv:identificatie>Jutphaas, sectie C no. 2248</zv:identificatie>
-                        <zv:kadastraleGrootte>0 hectare, 14 are, 24 centiare</zv:kadastraleGrootte>
+                        <zv:kadastraleGrootte>2942</zv:kadastraleGrootte>
                     </zv:Perceel>
                 </zv:rustOp>
             </zv:ZakelijkRecht>
         </zv:van>
     </zv:Koop__overeenkomst_>
-
-    <zv:LocatieRegistergoed>
-        <zv:heeft rdf:resource="http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000"/>
-        <zv:betreft>
-            <zv:ObjectlocatieBinnenland>
-                <zv:adresgegevens rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/0356200000032392"/>
-            </zv:ObjectlocatieBinnenland>
-        </zv:betreft>
-    </zv:LocatieRegistergoed>
-
-    <zv:Woonplaats rdf:about="urn:woonplaats#2248">
-        <zv:woonplaatsNaam>Nieuwegein</zv:woonplaatsNaam>
-    </zv:Woonplaats>
 
     <!-- Verkoper Rechtspersoon-->
     <zv:NietNatuurlijkPersoon rdf:about="https://www.nvm.nl/over-nvm/">
@@ -50,97 +35,117 @@
                 <zv:kvkNummer>40476604</zv:kvkNummer>
             </zv:Rechtspersoon>
         </zv:betreft>
-        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#OnnoHoes"/>
-        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#AdrianusJacobusChristianusKlijsen"/>
+        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling"/>
+        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus"/>
         <zv:postlocatie>
-            <zv:ObjectlocatieBinnenland>
-                <!-- zelf ingevuld - ontbreekt!!! -->
+            <zv:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861">
                 <zv:adresgegevens>
-                  <zv:Nummeraanduiding rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/0356200000032392">
-                    <zv:huisnummer>1</zv:huisnummer>
-                    <zv:postcode>3431HZ</zv:postcode>
-                    <zv:gerelateerdeOpenbareRuimte>
-                      <zv:OpenbareRuimte rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/0356300000001156">
-                        <zv:openbareRuimteNaam>Fakkelstede</zv:openbareRuimteNaam>
-                        <zv:gerelateerdeWoonplaats>
-                          <zv:Woonplaats rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/1108">
-                            <zv:woonplaatsNaam>Nieuwegein</zv:woonplaatsNaam>
-                          </zv:Woonplaats>
-                        </zv:gerelateerdeWoonplaats>
-                      </zv:OpenbareRuimte>
-                    </zv:gerelateerdeOpenbareRuimte>
-                  </zv:Nummeraanduiding>
+                    <zv:Nummeraanduiding rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/0356200000032392">
+                        <zv:huisnummer>1</zv:huisnummer>
+                        <zv:postcode>3431HZ</zv:postcode>
+                        <zv:gerelateerdeOpenbareRuimte>
+                            <zv:OpenbareRuimte rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/0356300000001156">
+                                <zv:openbareRuimteNaam>Fakkelstede</zv:openbareRuimteNaam>
+                                <zv:gerelateerdeWoonplaats>
+                                    <zv:Woonplaats rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/1108">
+                                        <zv:woonplaatsNaam>Nieuwegein</zv:woonplaatsNaam>
+                                    </zv:Woonplaats>
+                                </zv:gerelateerdeWoonplaats>
+                            </zv:OpenbareRuimte>
+                        </zv:gerelateerdeOpenbareRuimte>
+                    </zv:Nummeraanduiding>
                 </zv:adresgegevens>
             </zv:ObjectlocatieBinnenland>
         </zv:postlocatie>
     </zv:NietNatuurlijkPersoon>
 
     <!-- Verkoper GeregistreerdPersoon -->
-    <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#OnnoHoes">
+    <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling">
         <zv:naam>
-            <zv:Naam>
-                <zv:geslachtsnaam>Hoes</zv:geslachtsnaam>
-                <zv:voornamen>Onno</zv:voornamen>
-            </zv:Naam>
+            <rdf:Description>
+                <zv:geslachtsnaam>Anderling</zv:geslachtsnaam>
+                <zv:voornamen>Minerva</zv:voornamen>
+            </rdf:Description>
         </zv:naam>
     </zv:GeregistreerdPersoon>
-
+    
     <!-- Verkoper GeregistreerdPersoon -->
-    <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#AdrianusJacobusChristianusKlijsen">
+    <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus">
         <zv:naam>
-            <zv:Naam>
-                <zv:geslachtsnaam>Klijsen</zv:geslachtsnaam>
-                <zv:voornamen>Adrianus Jacobus Christianus</zv:voornamen>
-            </zv:Naam>
+            <rdf:Description>
+                <zv:geslachtsnaam>Perkamentus</zv:geslachtsnaam>
+                <zv:voornamen>Albus Parcival Wolfram Bertus</zv:voornamen>
+            </rdf:Description>
         </zv:naam>
     </zv:GeregistreerdPersoon>
-
-    <!-- ID van vertegenwoordiger Verkoper Onno -->
-    <zv:Identificatie_Persoon rdf:about="https://cleverbas/person/Id#Onno">
-        <zv:metIdentificatie rdf:resource="https://www.nvm.nl/over-nvm/personen#OnnoHoes"/>
+    
+    <!-- ID van vertegenwoordiger Verkoper Minerva Anderling -->
+    <zv:Identificatie_Persoon rdf:about="urn:MinervaAnderlingId">
+        <zv:metIdentificatie rdf:resource="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling"/>
         <zv:identificatieDatum>22-12-2020</zv:identificatieDatum>
         <zv:opBasisVan>
             <zv:DigitaleIdentiteit>
-                <zv:adres><![CDATA[https://cleverbas/person/Id#Onno]]]]></zv:adres>
+                <zv:adres rdf:resource="https://cleverbase/person/Id#Minerva_Anderling"/>
             </zv:DigitaleIdentiteit> </zv:opBasisVan>
     </zv:Identificatie_Persoon>
+    
 
     <!-- Koper -->
-    <zv:NatuurlijkPersoon rdf:about="https://damir.inrupt.net/profile/card#me">
-        <rdfs:label>Damir Hubanic</rdfs:label>
+    <zv:NatuurlijkPersoon rdf:about="https://changchozv.inrupt.net/profile/card#me">
+        <rdfs:label>Chang Cho</rdfs:label>
         <zv:postlocatie>
-            <zv:ObjectlocatieBinnenland rdf:about="http://bag/kadaster.nl/id/0445476889">
-                <!-- zelf ingevuld - ontbreekt!!! -->
+            <zv:ObjectlocatieBinnenland rdf:about="https://changchozv.inrupt.net/profile/card#id1610045292055">
                 <zv:adresgegevens>
                     <zv:Nummeraanduiding>
-                      <zv:openbareRuimteNaam>Orteliuslaan</zv:openbareRuimteNaam>
-                      <zv:huisnummer>850</zv:huisnummer>
-                      <zv:woonplaatsNaam>Utrecht</zv:woonplaatsNaam>
-                      <zv:postcode>3528 BB</zv:postcode>
+                        <zv:openbareRuimteNaam>Ravenklauw</zv:openbareRuimteNaam>
+                        <zv:huisnummer>850</zv:huisnummer>
+                        <zv:woonplaatsNaam>Zweinstein</zv:woonplaatsNaam>
+                        <zv:postcode>3528 BB</zv:postcode>
                     </zv:Nummeraanduiding>
                 </zv:adresgegevens>
             </zv:ObjectlocatieBinnenland>
         </zv:postlocatie>
     </zv:NatuurlijkPersoon>
-
+    
     <!-- Koper GeregistreerdPersoon -->
-    <zv:GeregistreerdPersoon rdf:about="https://damir.inrupt.net/profile/card#me">
+    <zv:GeregistreerdPersoon rdf:about="https://changchozv.inrupt.net/profile/card#me">
         <zv:naam>
-            <zv:Naam>
-                <zv:geslachtsnaam>Hubanic</zv:geslachtsnaam>
-                <zv:voornamen>Damir</zv:voornamen>
-            </zv:Naam>
+            <rdf:Description>
+                <zv:geslachtsnaam>Chang</zv:geslachtsnaam>
+                <zv:voornamen>Cho</zv:voornamen>
+            </rdf:Description>
         </zv:naam>
     </zv:GeregistreerdPersoon>
-
+    
     <!-- Koper identificatie -->
-    <zv:Identificatie_Persoon rdf:about="urn:DamirId">
-        <zv:metIdentificatie rdf:resource="https://damir.inrupt.net/profile/card#me"/>
+    <zv:Identificatie_Persoon rdf:about="urn:ChangChoId">
+        <zv:metIdentificatie rdf:resource="https://changchozv.inrupt.net/profile/card#me"/>
         <zv:identificatieDatum>05-01-2021</zv:identificatieDatum>
         <zv:opBasisVan>
             <zv:DigitaleIdentiteit>
-                <zv:adres><![CDATA[https://damir.inrupt.net/profile/card#me]]]]></zv:adres>
+                <zv:adres rdf:resource="https://changchozv.inrupt.net/profile/card#me"/>
             </zv:DigitaleIdentiteit> </zv:opBasisVan>
     </zv:Identificatie_Persoon>
+    
+    <!-- Object -->
+    <zv:LocatieRegistergoed rdf:about="urn:locatieObject#0356100000076861">
+        <zv:heeft rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861"/>
+        <zv:betreft>
+            <zv:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861">
+                <zv:adresgegevens>
+                    <zv:Nummeraanduiding>
+                        <zv:identificatie>0356100000076861</zv:identificatie>
+                        <zv:huisnummer>1</zv:huisnummer>
+                        <zv:postcode>3431HZ</zv:postcode>
+                        <zv:gerelateerdeWoonplaats rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/1108"/>
+                    </zv:Nummeraanduiding>
+                </zv:adresgegevens>
+            </zv:ObjectlocatieBinnenland>
+        </zv:betreft>
+    </zv:LocatieRegistergoed>
+    
+    <zv:Woonplaats rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/1108">
+        <zv:woonplaatsNaam>Nieuwegein</zv:woonplaatsNaam>
+    </zv:Woonplaats>
 
 </rdf:RDF>
