@@ -4,7 +4,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
 
-    <zv:Koop__overeenkomst_ rdf:about="http://mak.zorgeloosvastgoed.nl/koopovereenkomst/id/123e4567-e89b-12d3-a456-426614174000">
+    <zv:Koop__overeenkomst_ rdf:about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">
         <zv:identificatie>123e4567-e89b-12d3-a456-426614174000</zv:identificatie>
         <zv:koopsom>1</zv:koopsom>
         <zv:status/>
