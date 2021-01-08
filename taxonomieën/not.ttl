@@ -141,7 +141,7 @@ not:Afrekening a skos:Concept, skoslex:Act;
 	skos:definition "Als u naar de notaris gaat voor het tekenen van de hypotheek- en transportakte, krijgt u ruim van tevoren een zogenaamde afrekening. Dit is een overzicht waarop de bedragen staan die de notaris ontvangt en namens u aan verschillende instanties en personen zal betalen.";
 	skoslex:actor zv:Partij;
 	skoslex:agent not:Notaris;
-	skoslex:object mak:KostenEnOverdrachtsbelasting;
+	skoslex:object not:KostenEnOverdrachtsbelasting;
 	skoslex:record not:NotaVanAfrekening;
 .
 #ArchiverenAkte of ArchiverenNOT?
