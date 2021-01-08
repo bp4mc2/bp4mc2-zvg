@@ -6,8 +6,8 @@
 GRAPH config:Theatre {
 
   config:Site a elmo:Site;
-    elmo:domain "localhost";
-#    elmo:domain "taxonomie.zorgeloosvastgoed.nl";
+#    elmo:domain "localhost";
+    elmo:domain "taxonomie.zorgeloosvastgoed.nl";
   .
 
   config:BelSite a elmo:Site;
@@ -17,6 +17,7 @@ GRAPH config:Theatre {
     elmo:domain "fin.zorgeloosvastgoed.nl";
   .
   config:MakSite a elmo:Site;
+#    elmo:domain "localhost";
     elmo:domain "mak.zorgeloosvastgoed.nl";
   .
   config:NotSite a elmo:Site;

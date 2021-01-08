@@ -43,10 +43,15 @@ GRAPH config:Theatre {
     elmo:stage config:FinStage;
     elmo:getRepresentation config:CleanURIResource;
   .
-  config:MakResourceURIEndpoint a elmo:Endpoint;
-    elmo:pathPattern "/doc/{class}/{reference}";
+  config:MakResourceConceptURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/concept/{reference}";
     elmo:stage config:MakStage;
     elmo:getRepresentation config:CleanURIResource;
+  .
+  config:MakResourceVoorbeeldURIEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/doc/koopovereenkomst/{reference}";
+    elmo:stage config:MakStage;
+    elmo:getRepresentation config:VoorbeeldURI;
   .
   config:NotResourceURIEndpoint a elmo:Endpoint;
     elmo:pathPattern "/doc/{class}/{reference}";

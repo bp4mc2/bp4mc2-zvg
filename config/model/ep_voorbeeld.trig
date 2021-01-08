@@ -1,0 +1,44 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix zvg: <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#>.
+
+GRAPH config:Theatre {
+
+  config:VoorbeeldEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/resource";
+    elmo:stage config:MakStage;
+    elmo:getRepresentation config:Voorbeeld;
+  .
+
+  config:Voorbeeld a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:VoorbeeldData;
+    elmo:appearance config:VoorbeeldAppearance;
+.
+
+config:VoorbeeldURI a elmo:Representation;
+  elmo:stage config:Stage;
+  elmo:parameterMapper config:SubjectFromUrl;
+  elmo:informationProduct config:VoorbeeldData;
+  elmo:appearance config:VoorbeeldAppearance;
+.
+
+
+  config:VoorbeeldAppearance a elmo:Appearance;
+    elmo:fragment [
+      elmo:appliesTo rdf:type;
+      rdfs:label "type"@nl;
+      elmo:appearance elmo:GlobalLink;
+    ];
+    elmo:fragment [
+      elmo:appliesTo rdfs:label;
+      elmo:appearance elmo:HiddenAppearance;
+    ];
+    elmo:fragment [
+      elmo:appliesTo zvg:naam;
+      elmo:appearance elmo:NestedAppearance;
+    ]
+  .
+
+}
