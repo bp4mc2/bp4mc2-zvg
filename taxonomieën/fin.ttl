@@ -29,6 +29,10 @@
 #Begrippen die essentieel zijn voor de activiteiten het hypotheekdomein, maar die in andere domeinen worden gedefinieerd.
 #--
 #Actors and Agents
+fin:Bewindvoerder a skos:Concept, skoslex:Actor;
+	rdfs:label "Bewindvoerder"@nl;
+	skos:prefLabel "Bewindvoerder";
+.
 fin:Borg a skos:Concept, skoslex:Actor;
 	rdfs:label "Borg"@nl;
 	skos:prefLabel "Borg";
@@ -37,6 +41,10 @@ fin:Borg a skos:Concept, skoslex:Actor;
 	skos:semanticRelation fin:Schuldenaar;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
+.
+fin:Curator a skos:Concept, skoslex:Actor;
+	rdfs:label "Curator"@nl;
+	skos:prefLabel "Curator";
 .
 fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	rdfs:label "Hypotheekadviseur"@nl;
@@ -111,6 +119,10 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 .
+fin:Verbeuren a skos:Concept, skoslex:Act;
+	rdfs:label "Verbeuren"@nl;
+	skos:prefLabel "Verbeuren";
+.
 fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
 	rdfs:label "Verstrekken bindend aanbod"@nl;
 	skos:prefLabel "Verstrekken bindend aanbod";
@@ -156,6 +168,10 @@ fin:BindendeOfferte a skos:Concept, skoslex:Record;
 	skos:altLabel "Hypotheekofferte"@nl;
 	skos:definition "Een bindend aanbod van een geldverstrekker ter verstrekking van een hypotheek.";
 	skos:semanticRelation fin:Hypotheekadvies;
+.
+fin:Faillisement a skos:Concept, skoslex:Object;
+	rdfs:label "Faillisement"@nl;
+	skos:prefLabel "Faillisement";
 .
 fin:HoofdelijkeAansprakelijkheid a skos:Concept;
 	rdfs:label "Hoofdelijke aansprakelijkheid"@nl;
@@ -206,6 +222,10 @@ fin:Overbruggingslening a skos:Concept, skoslex:Record;
 	skos:altLabel "Overbruggingskrediet";
 	skos:definition "Koopt u eerst een nieuw huis en gaat u daarna pas het oude verkopen, dan kunt u de opbrengst van uw oude huis (nog) niet gebruiken voor de aanschaf van uw nieuwe huis. Een overbruggingslening, ook wel overbruggingskrediet genoemd, biedt dan uitkomst, ook wanneer uw huis langer te koop staat dan u op voorhand verwacht had. Op het moment dat uw oude woning verkocht is wordt de overbruggingslening afgelost.";
 	skosthes:narrowerGeneric fin:Lening;
+.
+fin:Schuldsaneringsregeling a skos:Concept, skoslex:Object;
+	rdfs:label "Schuldsaneringsregeling"@nl;
+	skos:prefLabel "Schuldsaneringsregeling";
 .
 fin:Waarborgsom a skos:Concept, skoslex:Object;
 	rdfs:label "Waarborgsom"@nl;
