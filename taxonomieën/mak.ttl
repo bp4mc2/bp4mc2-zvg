@@ -89,6 +89,10 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 #--
 #Objects
 #==
+mak:AftrekNieuwVoorOud a skos:Concept;
+	rdfs:label "Aftrek nieuw voor oud"@nl;
+	skos:prefLabel "Aftrek nieuw voor oud";
+.
 mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:label "Asbest"@nl;
 	skos:prefLabel "Asbest";
