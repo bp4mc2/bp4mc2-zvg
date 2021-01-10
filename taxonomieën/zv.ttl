@@ -147,6 +147,10 @@ zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=5>;
 	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon>;
 .
+zv:Verordening a skos:Concept, skoslex:Object; 
+	rdfs:label "Verordening"@nl;
+	skos:prefLabel "Verordening";
+.
 #--
 #Acts
 zv:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
