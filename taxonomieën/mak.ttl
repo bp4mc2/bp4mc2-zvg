@@ -269,14 +269,14 @@ mak:Eigendomsoverdracht a skos:Concept, skoslex:Act;
 	skoslex:object kad:Erfpacht;
 	skoslex:record mak:ArtikelEigendomsoverdracht;
 .
-mak:FeitelijkeLevering a skos:concept, skoslex:Act;
+mak:FeitelijkeLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Feitelijke levering"@nl;
 	skos:prefLabel "Feitelijke levering";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:Woning;
 	skoslex:record mak:ArtikelFeitelijkeLevering;
 .
-mak:Garantie a skos:concept, skoslex:Act;
+mak:Garantie a skos:Concept, skoslex:Act;
 	rdfs:label "Garantie"@nl;
 	skos:prefLabel "Garantie";
 	skosthes:broaderPartitive mak:Koop;
@@ -325,7 +325,7 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
-mak:Kostenverdeling a skos:concept, skoslex:Act;
+mak:Kostenverdeling a skos:Concept, skoslex:Act;
 	rdfs:label "Kostenverdeling"@nl;
 	skos:prefLabel "Kostenverdeling";
 	skosthes:broaderPartitive mak:Koop;
@@ -406,13 +406,13 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
-mak:Voorbehoud a skos:concept, skoslex:Act;
+mak:Voorbehoud a skos:Concept, skoslex:Act;
 	rdfs:label "Voorbehoud"@nl;
 	skos:prefLabel "Voorbehoud";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:OntbindendeVoorwaarde;
 .
-mak:VrijwaringStaatOnroerendeZaak a skos:concept, skoslex:Act;
+mak:VrijwaringStaatOnroerendeZaak a skos:Concept, skoslex:Act;
 	rdfs:label "Vrijwaring staat onroerende zaak"@nl;
 	skos:prefLabel "Vrijwaring staat onroerende zaak";
 	skosthes:broaderPartitive mak:Koop;
