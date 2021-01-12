@@ -131,6 +131,14 @@ mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 	skos:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
 	rdfs:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
 .
+mak:Huurovereenkomst a skos:Concept, skoslex:Object;
+	rdfs:label "Huurovereenkomst"@nl;
+	skos:prefLabel "Huurovereenkomst";
+.
+mak:Huurkoopovereenkomst a skos:Concept, skoslex:Object;
+	rdfs:label "Huurkoopovereenkomst"@nl;
+	skos:prefLabel "Huurkoopovereenkomst";
+.
 mak:Lasten a skos:Concept, skoslex:Object;
 	rdfs:label "Lasten"@nl;
 	skos:prefLabel "Lasten";
@@ -140,6 +148,10 @@ mak:Lasten a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:ZakelijkRecht;
 	skosthes:narrowerGeneric kad:Kettingbeding;
 	skosthes:narrowerGeneric kad:KwalitatieveVerplichting;
+.
+mak:Leaseovereenkomst a skos:Concept, skoslex:Object;
+	rdfs:label "Leaseovereenkomst"@nl;
+	skos:prefLabel "Leaseovereenkomst";
 .
 mak:ModelKoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Model koopovereenkomst"@nl;
@@ -776,6 +788,9 @@ mak:ArtikelHuurLeaseHuurkoopovereenkomsten a skos:Concept, skoslex:Record;
 	rdfs:comment '''Tevens wordt aangegeven hoe de levering plaatsvindt, namelijk vrij van huur-, lease- of huurkoopovereenkomsten met uitzondering van eventueel in te vullen overeenkomsten. Het gaat hierbij dus niet alleen om de vraag of de onroerende zaak geheel of gedeeltelijk verhuurd is, maar ook of verkoper bepaalde onderdelen zoals de cv-ketel of de keuken gehuurd of geleased heeft. Als de onroerende zaak vrij van huur etc. wordt geleverd, zijn de artikelen 6.10 en 7.3 niet van toepassing.
 Indien verkoper en koper een ander tijdstip van feitelijke levering overeenkomen, zijn over het algemeen aanvullende afspraken gewenst, bijvoorbeeld over het tijdstip waarop het risico overgaat (artikel 10). Overleg in dergelijke gevallen vooraf met uw verzekeraar en hypotheekverstrekker.''';
 	skos:scopeNote "Artikel 7.3 van de model koopovereenkomst.";
+	skoslex:isAbout mak:Huurovereenkomst;
+	skoslex:isAbout mak:Leaseovereenkomst;
+	skoslex:isAbout mak:Huurkoopovereenkomst;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOverdrachtAanspraken a skos:Concept, skoslex:Record;
@@ -783,10 +798,8 @@ mak:ArtikelOverdrachtAanspraken a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel: Overdracht aanspraken";
 	rdfs:comment '''In artikel 7.4 wordt aangegeven dat alle aanspraken die verkoper kan doen gelden, over gaan op koper. Het betreft hier bijvoorbeeld een garantie die verkoper heeft op een verbouwing, op dubbel glas of op de dakbedekking. De in artikel 7.4 gegeven opsomming is niet uitputtend. Indien op de te kopen onroerende zaak de garantie- en waarborgregeling SWK, Woningborg, Bouwgarant of GIW van toepassing is, geldt dat de garantie automatisch overgaat. Informatie over de termijnen en de te volgen procedure is te vinden in de betreffende waarborgregeling.''';
 	skos:scopeNote "Artikel 7.4 van de model koopovereenkomst.";
-	skoslex:isAbout not:AanspraakTotGebruik;
-	skoslex:isAbout kad:Huurkoop;
-	skoslex:isAbout not:Ongevorderd;
-skosthes:broaderPartitive mak:Koopovereenkomst;
+	skoslex:isAbout mak:Aanspraak;
+	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 #--
 #Hieronder nog verder uit te werken  met structuur object -> act -> record

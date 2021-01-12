@@ -563,10 +563,6 @@ not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;
 	skos:definition "Datum waarop de akte van levering wordt gepasseerd.";
 	rdfs:comment "Datum waarop de akte van levering wordt ondertekend.";
 .
-not:Derdenrekening a skos:Concept, skoslex:Object;
-	rdfs:label "Derdenrekening"@nl;
-	skos:prefLabel "Derdenrekening";
-.
 not:EeuwigdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
 	rdfs:label "Eeuwigdurende erfpacht"@nl;
 	skos:prefLabel "Eeuwigdurende erfpacht";
@@ -662,6 +658,7 @@ not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	rdfs:label "Kwaliteitsrekening"@nl;
 	skos:prefLabel "Kwaliteitsrekening";
 	skos:altLabel "Derdengeldenrekening";
+	skos:altLabel "Derdenrekening";
 	skos:definition "Met de kwaliteitsrekening houdt de notaris de gelden van cliënten gescheiden van het eigen kantoorvermogen. Daarmee zijn de gelden van cliënten beschermd tegen oneigenlijk gebruik of faillissement.";
 	rdfs:comment "De kwaliteitsrekening (ook wel derdengeldenrekening genoemd) is een aparte bankrekening van de notaris voor geld van klanten die betrokken zijn bij een overdracht van eigendom. Deze rekening is beschermd tegen beslaglegging door schuldeisers van de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>;
