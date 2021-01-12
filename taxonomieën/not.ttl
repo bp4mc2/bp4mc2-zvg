@@ -566,6 +566,7 @@ not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;
 not:Derdenrekening a skos:Concept, skoslex:Object;
 	rdfs:label "Derdenrekening"@nl;
 	skos:prefLabel "Derdenrekening";
+	skos:exactMatch not:Kwaliteitsrekening;#Begrippen moeten nog worden samengevoegd tot 1
 .
 not:EeuwigdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
 	rdfs:label "Eeuwigdurende erfpacht"@nl;
