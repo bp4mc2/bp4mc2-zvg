@@ -19,7 +19,7 @@ zvg:koopsom dct:subject notbegrip:Koopsom.
 zvg:van dct:subject begrip:Van.
 zvg:aandeel dct:subject begrip:Aandeel.
 zvg:naam dct:subject begrip:Naam.
-zvg:gerelateerdeOpenbareRuimte begrip:OpenbareRuimte.
+zvg:gerelateerdeOpenbareRuimte dct:subject begrip:OpenbareRuimte.
 
 #Ontbrekende begrippen (maar wel eigenschappen)
 #Bewust geen klasse toegevoegd, zodat deze niet in het model wordt meegenomen
