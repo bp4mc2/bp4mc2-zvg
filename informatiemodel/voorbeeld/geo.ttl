@@ -1,3 +1,7 @@
 @prefix gsp: <http://www.opengis.net/ont/geosparql#>.
+
 <http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000> gsp:hasGeometry <http://brk.basisregistraties.overheid.nl/brk/id/geometry/6147FE4397FCC3403D90CEE7A20DA192>.
 <http://brk.basisregistraties.overheid.nl/brk/id/geometry/6147FE4397FCC3403D90CEE7A20DA192> gsp:asWKT "POLYGON ((5.086724209 52.028367317,5.086856593 52.028325347,5.086765829 52.028216593,5.087079438 52.028117641,5.087150439 52.028205259,5.087378662 52.028482675,5.087382000 52.028486872,5.086935894 52.028624819,5.086875496 52.028550782,5.086724209 52.028367317),(5.086799007 52.028436258,5.086817623 52.028458956,5.086850126 52.028448810,5.086831511 52.028426112,5.086799007 52.028436258))"^^gsp:wktLiteral.
+
+<http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889> gsp:hasGeometry <http://bag.basisregistraties.overheid.nl/bag/id/geometry/75FE72FE7842F51CC2CEDE880841F091>.
+<http://bag.basisregistraties.overheid.nl/bag/id/geometry/75FE72FE7842F51CC2CEDE880841F091> gsp:asWKT "POINT (5.086916798 52.028484519)"^^gsp:wktLiteral.

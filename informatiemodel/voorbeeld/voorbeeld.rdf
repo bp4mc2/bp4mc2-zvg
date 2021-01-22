@@ -38,7 +38,7 @@
         <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling"/>
         <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus"/>
         <zv:postlocatie>
-            <zv:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861">
+            <zv:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889">
                 <zv:adresgegevens>
                     <zv:Nummeraanduiding rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/0356200000032392">
                         <zv:huisnummer>1</zv:huisnummer>
@@ -131,7 +131,7 @@
     <zv:LocatieRegistergoed rdf:about="urn:locatieObject#0356100000076861">
         <zv:heeft rdf:resource="http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000"/>
         <zv:betreft>
-            <zv:ObjectlocatieBinnenland rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861"/>
+            <zv:ObjectlocatieBinnenland rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889"/>
         </zv:betreft>
     </zv:LocatieRegistergoed>
 
