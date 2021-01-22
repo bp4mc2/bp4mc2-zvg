@@ -2,7 +2,7 @@
 <rdf:RDF xml:lang="nl" xmlns:zv="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    
+
     <zv:Koop__overeenkomst_ rdf:about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">
         <zv:identificatie>123e4567-e89b-12d3-a456-426614174000</zv:identificatie>
         <zv:koopsom>1.100.000</zv:koopsom>
@@ -24,7 +24,7 @@
             </zv:ZakelijkRecht>
         </zv:van>
     </zv:Koop__overeenkomst_>
-    
+
     <!-- Verkoper Rechtspersoon-->
     <zv:NietNatuurlijkPersoon rdf:about="https://www.nvm.nl/over-nvm/">
         <rdfs:label>NVM</rdfs:label>
@@ -58,7 +58,7 @@
             </zv:ObjectlocatieBinnenland>
         </zv:postlocatie>
     </zv:NietNatuurlijkPersoon>
-    
+
     <!-- Verkoper GeregistreerdPersoon -->
     <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling">
         <zv:naam>
@@ -68,7 +68,7 @@
             </rdf:Description>
         </zv:naam>
     </zv:GeregistreerdPersoon>
-    
+
     <!-- Verkoper GeregistreerdPersoon -->
     <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus">
         <zv:naam>
@@ -78,7 +78,7 @@
             </rdf:Description>
         </zv:naam>
     </zv:GeregistreerdPersoon>
-    
+
     <!-- ID van vertegenwoordiger Verkoper Minerva Anderling -->
     <zv:Identificatie_Persoon rdf:about="urn:MinervaAnderlingId">
         <zv:metIdentificatie rdf:resource="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling"/>
@@ -88,8 +88,8 @@
                 <zv:adres rdf:resource="https://cleverbase/person/Id#Minerva_Anderling"/>
             </zv:DigitaleIdentiteit> </zv:opBasisVan>
     </zv:Identificatie_Persoon>
-    
-    
+
+
     <!-- Koper -->
     <zv:NatuurlijkPersoon rdf:about="https://changchozv.inrupt.net/profile/card#me">
         <rdfs:label>Chang Cho</rdfs:label>
@@ -106,7 +106,7 @@
             </zv:ObjectlocatieBinnenland>
         </zv:postlocatie>
     </zv:NatuurlijkPersoon>
-    
+
     <!-- Koper GeregistreerdPersoon -->
     <zv:GeregistreerdPersoon rdf:about="https://changchozv.inrupt.net/profile/card#me">
         <zv:naam>
@@ -116,7 +116,7 @@
             </rdf:Description>
         </zv:naam>
     </zv:GeregistreerdPersoon>
-    
+
     <!-- Koper identificatie -->
     <zv:Identificatie_Persoon rdf:about="urn:ChangChoId">
         <zv:metIdentificatie rdf:resource="https://changchozv.inrupt.net/profile/card#me"/>
@@ -126,26 +126,17 @@
                 <zv:adres rdf:resource="https://changchozv.inrupt.net/profile/card#me"/>
             </zv:DigitaleIdentiteit> </zv:opBasisVan>
     </zv:Identificatie_Persoon>
-    
+
     <!-- Object -->
     <zv:LocatieRegistergoed rdf:about="urn:locatieObject#0356100000076861">
         <zv:heeft rdf:resource="http://brk.basisregistraties.overheid.nl/brk/id/perceel/NL.IMKAD.KadastraalObject.26790224870000"/>
         <zv:betreft>
-            <zv:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861">
-                <zv:adresgegevens>
-                    <zv:Nummeraanduiding>
-                        <zv:identificatie>0356100000076861</zv:identificatie>
-                        <zv:huisnummer>1</zv:huisnummer>
-                        <zv:postcode>3431HZ</zv:postcode>
-                        <zv:gerelateerdeWoonplaats rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/1108"/>
-                    </zv:Nummeraanduiding>
-                </zv:adresgegevens>
-            </zv:ObjectlocatieBinnenland>
+            <zv:ObjectlocatieBinnenland rdf:resource="http://bag.basisregistraties.overheid.nl/bag/id/pand/0356100000076861"/>
         </zv:betreft>
     </zv:LocatieRegistergoed>
-    
+
     <zv:Woonplaats rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/1108">
         <zv:woonplaatsNaam>Nieuwegein</zv:woonplaatsNaam>
     </zv:Woonplaats>
-    
+
 </rdf:RDF>
