@@ -4,6 +4,10 @@
 
 GRAPH config:Theatre {
 
+  config:BrkBackend a elmo:SparqlBackend;
+    elmo:endpoint "https://brk.basisregistraties.overheid.nl/sparql"^^xsd:anyURI
+  .
+
   config:FusekiBackend a elmo:SparqlBackend;
     elmo:endpoint "http://localhost:3030/zvg/query"^^xsd:anyURI
   .

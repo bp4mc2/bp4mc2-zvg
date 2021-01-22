@@ -15,6 +15,7 @@ GRAPH config:Theatre {
     elmo:stage config:Stage;
     elmo:informationProduct config:VoorbeeldData;
     elmo:appearance config:VoorbeeldAppearance;
+    elmo:contains config:VoorbeeldGeo;
 .
 
 config:VoorbeeldURI a elmo:Representation;
@@ -22,14 +23,30 @@ config:VoorbeeldURI a elmo:Representation;
   elmo:parameterMapper config:SubjectFromUrl;
   elmo:informationProduct config:VoorbeeldData;
   elmo:appearance config:VoorbeeldAppearance;
+  elmo:contains config:VoorbeeldGeo;
 .
 
+
+config:VoorbeeldGeo a elmo:Representation;
+  elmo:stage config:Stage;
+  elmo:informationProduct config:VoorbeeldGeoData;
+  elmo:appearance config:VoorbeeldGeoAppearance;
+.
+
+config:VoorbeeldGeoAppearance a elmo:GeoAppearance;
+  elmo:fragment [
+    elmo:appliesTo elmo:Appearance;
+#    elmo:backmap "brt";
+  ]
+.
 
   config:VoorbeeldAppearance a elmo:Appearance;
     elmo:fragment [
       elmo:appliesTo rdf:type;
-      rdfs:label "type"@nl;
+      rdfs:label "Type object"@nl;
       elmo:appearance elmo:GlobalLink;
+#      xhtml:meta rdf:nil;
+      elmo:index 1 ;
     ];
     elmo:fragment [
       elmo:appliesTo rdfs:label;
@@ -37,6 +54,10 @@ config:VoorbeeldURI a elmo:Representation;
     ];
     elmo:fragment [
       elmo:appliesTo zvg:naam;
+      elmo:appearance elmo:NestedAppearance;
+    ];
+    elmo:fragment [
+      elmo:appliesTo zvg:adresgegevens;
       elmo:appearance elmo:NestedAppearance;
     ]
   .

@@ -13,22 +13,86 @@ GRAPH config:Theatre {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
       PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+      PREFIX dct: <http://purl.org/dc/terms/>
       PREFIX zvg: <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#>
+      PREFIX html: <http://www.w3.org/1999/xhtml/>
+      PREFIX gsp: <http://www.opengis.net/ont/geosparql#>
       CONSTRUCT {
+        ?p rdfs:label ?blabel.
+        ?p rdfs:comment ?bcomment.
         ?subject ?p ?o.
         ?o rdfs:label ?olabel.
         ?o zvg:geslachtsnaam ?gn.
         ?o zvg:voornamen ?vn.
+        ?o zvg:postcode ?pc.
+        ?o zvg:huisnummer ?hnr.
+        ?o zvg:gerelateerdeOpenbareRuimte ?or.
+        ?or rdfs:label ?orl.
       }
       WHERE {
-        ?subject ?p ?o
-        OPTIONAL {?o rdfs:label ?olabel}
-        OPTIONAL {
-          ?o zvg:geslachtsnaam ?gn.
-          ?o zvg:voornamen ?vn.
+        {
+          ?subject ?p ?o.
+          FILTER (?p!=gsp:hasGeometry)
+          OPTIONAL {
+            ?p dct:subject ?begrip.
+            ?begrip rdfs:label ?blabel.
+            ?begrip rdfs:comment ?bcomment.
+          }
+          OPTIONAL {?o rdfs:label ?olabel}
+          OPTIONAL {
+            ?o zvg:geslachtsnaam ?gn.
+            ?o zvg:voornamen ?vn.
+          }
+          OPTIONAL {
+            ?o zvg:postcode ?pc.
+            ?o zvg:huisnummer ?hnr.
+            ?o zvg:gerelateerdeOpenbareRuimte ?or.
+            ?or zvg:openbareRuimteNaam ?orl.
+          }
+        }
+        UNION
+        {
+          ?subject zvg:adresgegevens/zvg:gerelateerdeOpenbareRuimte ?x.
+          ?p dct:subject ?begrip.
+          ?begrip rdfs:label ?blabel.
+          ?begrip rdfs:comment ?bcomment.
+          FILTER (?p = zvg:gerelateerdeOpenbareRuimte)
         }
       }
     """
+  .
+
+  config:VoorbeeldGeoData a elmo:InformationProduct;
+    elmo:backend config:DefaultBackend;
+    elmo:requiredParameter elmo:SubjectParameter;
+    elmo:query '''
+      prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+      prefix gsp: <http://www.opengis.net/ont/geosparql#>
+      prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      prefix zvg: <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#>
+      CONSTRUCT {
+        ?geo geo:geometry ?wkt.
+        ?geo rdfs:label "Perceel".
+      }
+      WHERE {
+        {
+          ?subject gsp:hasGeometry ?geo.
+          ?geo gsp:asWKT ?wkt
+        }
+        UNION
+        {
+          ?subject zvg:rustOp ?perceel.
+          ?perceel gsp:hasGeometry ?geo.
+          ?geo gsp:asWKT ?wkt
+        }
+        UNION
+        {
+          ?subject zvg:van/zvg:rustOp ?perceel.
+          ?perceel gsp:hasGeometry ?geo.
+          ?geo gsp:asWKT ?wkt
+        }
+      }
+    '''
   .
 
 }
