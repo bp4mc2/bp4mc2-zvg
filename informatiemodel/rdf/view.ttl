@@ -7,5 +7,18 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix begrip: <http://taxonomie.zorgeloosvastgoed.nl/id/concept/>.
 @prefix makbegrip: <http://mak.zorgeloosvastgoed.nl/id/concept/>.
+@prefix notbegrip: <http://not.zorgeloosvastgoed.nl/id/concept/>.
+
+# Links tussen eigenschappen en de bijbehorende begrippen
 zvg:aan dct:subject makbegrip:Koper.
+zvg:aangebodenDoor dct:subject makbegrip:Verkoper.
+zvg:identificatie dct:subject begrip:Identificatie.
+zvg:koopsom dct:subject notbegrip:Koopsom.
+
+#Ontbrekende begrippen (maar wel eigenschappen)
+#Bewust geen klasse toegevoegd, zodat deze niet in het model wordt meegenomen
+begrip:Identificatie rdfs:label "Identificatie";
+  rdfs:comment "Het unieke nummer van dit object"
+.
