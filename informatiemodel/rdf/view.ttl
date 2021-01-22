@@ -19,6 +19,7 @@ zvg:koopsom dct:subject notbegrip:Koopsom.
 zvg:van dct:subject begrip:Van.
 zvg:aandeel dct:subject begrip:Aandeel.
 zvg:naam dct:subject begrip:Naam.
+zvg:gerelateerdeOpenbareRuimte begrip:OpenbareRuimte.
 
 #Ontbrekende begrippen (maar wel eigenschappen)
 #Bewust geen klasse toegevoegd, zodat deze niet in het model wordt meegenomen
@@ -33,4 +34,7 @@ begrip:Aandeel rdfs:label "Aandeel";
 .
 begrip:Naam rdfs:label "Naam";
   rdfs:comment "De naam van een persoon, bestaande uit voornamen, geslachtsnaam en eventuele tussenvoegsels";
+.
+begrip:OpenbareRuimte rdfs:label "Openbare ruimte";
+  rdfs:comment "Een straat, plein, weg, laan, etc. Een openbare ruimte is een verzamelnaam voor alle buitenruimten die een naam hebben gekregen van de gemeente.";
 .

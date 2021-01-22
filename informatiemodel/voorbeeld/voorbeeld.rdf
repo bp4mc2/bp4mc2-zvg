@@ -39,6 +39,7 @@
         <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus"/>
         <zv:postlocatie>
             <zv:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889">
+                <rdfs:label>Fakkelstede 1, 3431HZ Nieuwegein</rdfs:label>
                 <zv:adresgegevens>
                     <zv:Nummeraanduiding rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/0356200000032392">
                         <zv:huisnummer>1</zv:huisnummer>
