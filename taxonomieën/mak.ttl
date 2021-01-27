@@ -10,6 +10,7 @@
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/concept/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/concept/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/concept/>.
+@prefix bag: <http://bag.basisregistraties.overheid.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
@@ -89,7 +90,12 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 #--
 #Objects
 #==
-mak:AftrekNieuwVoorOud a skos:Concept;
+mak:Aanhorigheden a skos:Concept, skoslex:Object;
+	rdfs:label "Aanhorigheden"@nl;
+	skos:prefLabel "Aanhorigheden";
+	skos:semanticRelation mak:Woning;
+.
+mak:AftrekNieuwVoorOud a skos:Concept, skoslex:Object;
 	rdfs:label "Aftrek nieuw voor oud"@nl;
 	skos:prefLabel "Aftrek nieuw voor oud";
 .
@@ -227,18 +233,12 @@ mak:Verontreiniging a skos:Concept, skoslex:Object;
 	skos:definition "Een vervuiling (in de grond) van de onroerende zaak.";
 	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt.";
 .
-mak:WaarderingRoerendeZaken a skos:Concept;
-	rdfs:label "Waardering roerende zaken"@nl;
-	skos:prefLabel "Waardering roerende zaken";
-	rdfs:comment '''Dat de lijst van zaken voorbij gaat aan de vraag of iets roerend of onroerend is, betekent niet dat het onderscheid onbelangrijk is. Om fiscale redenen is het voor zowel koper als verkoper van belang om zich daarin te verdiepen. Voor de overdracht van onroerende zaken moet koper namelijk overdrachtsbelasting betalen. Voor de overdracht van roerende zaken is dat niet het geval. Daar staat tegenover dat de rentelasten die betrekking hebben op de aankoop van roerende zaken niet aftrekbaar zijn in het kader van de inkomstenbelasting. Bovendien kan de opbrengst van de onroerende zaak van invloed zijn op het bedrag dat verkoper in de toekomst kan lenen met behoud van hypotheekrenteaftrek.
-In de koopovereenkomst wordt aangegeven op welk bedrag de meeverkochte roerende zaken worden gewaardeerd. Het voor roerende zaken ingevulde bedrag moet uiteraard wel reëel zijn. De belastingdienst kan daarop controleren en om een nadere toelichting vragen. Staat het bedrag in geen verhouding tot de werkelijke waarde van de betreffende roerende zaken, dan loopt koper het risico een boete te moeten betalen.
-Zoals vermeld, is het onderscheid roerend en onroerend niet altijd even gemakkelijk te hanteren. Het komt dan ook regelmatig voor dat partijen van mening verschillen over het al dan niet roerende karakter van bepaalde zaken. Omdat partijen niet kunnen onderhandelen over het al dan niet (on)roerende karakter van zaken, is het weinig zinvol voor hen om daarover in discussie te gaan. Of iets roerend of onroerend is, volgt uit de wet, ongeacht de vraag hoe partijen daar over denken. Voor het vaststellen van de overdrachtsbelasting is dan ook in feite voldoende dat duidelijk is wat er allemaal in de koop begrepen is (lijst van zaken).
-Indien ook roerende zaken zijn verkocht moet de notaris bij de akte van levering aangeven welke roerende zaken het betreft, voor welk bedrag deze werden verkregen en of dat bedrag bij de prijs voor de onroerende zaak is inbegrepen. Omdat de notaris veelal geen concreet beeld van het verkochte heeft, is het voor hem plezierig als de (makelaar van de) koper op de lijst van zaken aangeeft welke zaken naar zijn mening roerend zijn.''';
-.
 mak:Woning a skos:Concept, skoslex:Object;
 	rdfs:label "Woning"@nl;
 	skos:definition "Een (deel van) een gebouw, bestemd voor bewoning.";
 	skos:editorialNote "'Woning' is de gebruikelijk term binnen de makkelaarswereld. Binnen zorgeloosvastgoed spreken we meer generieker van 'Huis'";
+	skos:semanticRelation kad:Perceel;
+	skos:closeMatch bag:Verblijfsobject;
 .
 mak:ZichtbareEnOnzichtbareGebreken a skos:Concept, skoslex:Object;
 	rdfs:label "Zichtbare en onzichtbare gebreken"@nl;
@@ -433,8 +433,14 @@ mak:VrijwaringStaatOnroerendeZaak a skos:Concept, skoslex:Act;
 	skoslex:object mak:StaatOnroerendeZaak;
 	skoslex:record mak:ArtikelStaatOnroerendeZaakGebruik;
 .
-
-
+mak:WaarderingRoerendeZaken a skos:Concept, skoslex:Act;
+	rdfs:label "Waardering roerende zaken"@nl;
+	skos:prefLabel "Waardering roerende zaken";
+	rdfs:comment '''Dat de lijst van zaken voorbij gaat aan de vraag of iets roerend of onroerend is, betekent niet dat het onderscheid onbelangrijk is. Om fiscale redenen is het voor zowel koper als verkoper van belang om zich daarin te verdiepen. Voor de overdracht van onroerende zaken moet koper namelijk overdrachtsbelasting betalen. Voor de overdracht van roerende zaken is dat niet het geval. Daar staat tegenover dat de rentelasten die betrekking hebben op de aankoop van roerende zaken niet aftrekbaar zijn in het kader van de inkomstenbelasting. Bovendien kan de opbrengst van de onroerende zaak van invloed zijn op het bedrag dat verkoper in de toekomst kan lenen met behoud van hypotheekrenteaftrek.
+In de koopovereenkomst wordt aangegeven op welk bedrag de meeverkochte roerende zaken worden gewaardeerd. Het voor roerende zaken ingevulde bedrag moet uiteraard wel reëel zijn. De belastingdienst kan daarop controleren en om een nadere toelichting vragen. Staat het bedrag in geen verhouding tot de werkelijke waarde van de betreffende roerende zaken, dan loopt koper het risico een boete te moeten betalen.
+Zoals vermeld, is het onderscheid roerend en onroerend niet altijd even gemakkelijk te hanteren. Het komt dan ook regelmatig voor dat partijen van mening verschillen over het al dan niet roerende karakter van bepaalde zaken. Omdat partijen niet kunnen onderhandelen over het al dan niet (on)roerende karakter van zaken, is het weinig zinvol voor hen om daarover in discussie te gaan. Of iets roerend of onroerend is, volgt uit de wet, ongeacht de vraag hoe partijen daar over denken. Voor het vaststellen van de overdrachtsbelasting is dan ook in feite voldoende dat duidelijk is wat er allemaal in de koop begrepen is (lijst van zaken).
+Indien ook roerende zaken zijn verkocht moet de notaris bij de akte van levering aangeven welke roerende zaken het betreft, voor welk bedrag deze werden verkregen en of dat bedrag bij de prijs voor de onroerende zaak is inbegrepen. Omdat de notaris veelal geen concreet beeld van het verkochte heeft, is het voor hem plezierig als de (makelaar van de) koper op de lijst van zaken aangeeft welke zaken naar zijn mening roerend zijn.''';
+.
 #--
 #Records
 #--
