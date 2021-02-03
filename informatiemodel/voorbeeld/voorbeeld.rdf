@@ -26,10 +26,12 @@
     </zv:Koop__overeenkomst_>
 
     <!-- Verkoper Rechtspersoon-->
-    <zv:NietNatuurlijkPersoon rdf:about="https://www.nvm.nl/over-nvm/">
+    <zv:NietNatuurlijkPersoon rdf:about="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=404766040000">
         <rdfs:label>NVM</rdfs:label>
         <zv:statutaireNaam>Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A.</zv:statutaireNaam>
-        <zv:rechtsvorm rdf:resource="https://ondernemersplein.kvk.nl/de-cooperatie/"/>
+        <zv:rechtsvorm rdf:resource="https://ondernemersplein.kvk.nl/de-cooperatie/">
+          <rdfs:label>Coöperatie</rdfs:label>
+        </zv:rechtsvorm>
         <zv:betreft>
             <zv:Rechtspersoon rdf:about="urn:rechtspersoonId">
                 <zv:kvkNummer>40476604</zv:kvkNummer>
@@ -99,8 +101,8 @@
         <rdfs:label>Chang Cho</rdfs:label>
         <zv:postlocatie>
             <zv:ObjectlocatieBinnenland rdf:about="https://changchozv.inrupt.net/profile/card#id1610045292055">
+                <rdfs:label>Ravenklauw 850, 3528BB Zweinstein</rdfs:label>
                 <zv:adresgegevens>
-                  <rdfs:label>Ravenklauw 850, 3528BB Zweinstein</rdfs:label>
                   <!-- Nummeraanduiding komt niet voor in de BAG, dus geen linkjes, maar wel de structuur overnemen -->
                   <zv:Nummeraanduiding>
                       <zv:huisnummer>850</zv:huisnummer>
