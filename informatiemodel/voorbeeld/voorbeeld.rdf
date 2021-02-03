@@ -29,8 +29,10 @@
     <zv:NietNatuurlijkPersoon rdf:about="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=404766040000">
         <rdfs:label>NVM</rdfs:label>
         <zv:statutaireNaam>Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A.</zv:statutaireNaam>
-        <zv:rechtsvorm rdf:resource="https://ondernemersplein.kvk.nl/de-cooperatie/">
-          <rdfs:label>Coöperatie</rdfs:label>
+        <zv:rechtsvorm>
+          <zv:Rechtsvorm rdf:resource="https://ondernemersplein.kvk.nl/de-cooperatie/">
+            <rdfs:label>Coöperatie</rdfs:label>
+          </zv:Rechtsvorm>
         </zv:rechtsvorm>
         <zv:betreft>
             <zv:Rechtspersoon rdf:about="urn:rechtspersoonId">
