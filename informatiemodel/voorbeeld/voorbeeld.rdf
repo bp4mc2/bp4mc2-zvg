@@ -6,7 +6,7 @@
     <zv:Koop__overeenkomst_ rdf:about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">
         <zv:identificatie>123e4567-e89b-12d3-a456-426614174000</zv:identificatie>
         <zv:koopsom>1.100.000</zv:koopsom>
-        <zv:aangebodenDoor rdf:resource="https://www.nvm.nl/over-nvm/"/>
+        <zv:aangebodenDoor rdf:resource="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=404766040000"/>
         <zv:aan>
             <zv:Koper rdf:about="https://changchozv.inrupt.net/profile/card#me">
                 <zv:aandeel>1.00</zv:aandeel>
