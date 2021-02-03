@@ -35,8 +35,9 @@
                 <zv:kvkNummer>40476604</zv:kvkNummer>
             </zv:Rechtspersoon>
         </zv:betreft>
-        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling"/>
-        <zv:vertegenwoordigt rdf:resource="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus"/>
+        <!-- zv:ertegenwoordtDoor owl:inverseOf zv:vertegenwoordt, echter deze property zit nog niet in te ontologie! -->
+        <zv:vertegenwoordigtDoor rdf:resource="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling"/>
+        <zv:vertegenwoordigtDoor rdf:resource="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus"/>
         <zv:postlocatie>
             <zv:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889">
                 <rdfs:label>Fakkelstede 1, 3431HZ Nieuwegein</rdfs:label>
@@ -62,6 +63,7 @@
 
     <!-- Verkoper GeregistreerdPersoon -->
     <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#Minerva_Anderling">
+        <rdfs:label>Minerva Anderling</rdfs:label>
         <zv:naam>
             <rdf:Description>
                 <zv:geslachtsnaam>Anderling</zv:geslachtsnaam>
@@ -72,6 +74,7 @@
 
     <!-- Verkoper GeregistreerdPersoon -->
     <zv:GeregistreerdPersoon rdf:about="https://www.nvm.nl/over-nvm/personen#Albus_Parcival_Wolfram_Bertus_Perkamentus">
+        <rdfs:label>Albus Parcival Wolfram Bertus Perkamentus</rdfs:label>
         <zv:naam>
             <rdf:Description>
                 <zv:geslachtsnaam>Perkamentus</zv:geslachtsnaam>
@@ -97,12 +100,22 @@
         <zv:postlocatie>
             <zv:ObjectlocatieBinnenland rdf:about="https://changchozv.inrupt.net/profile/card#id1610045292055">
                 <zv:adresgegevens>
-                    <zv:Nummeraanduiding>
-                        <zv:openbareRuimteNaam>Ravenklauw</zv:openbareRuimteNaam>
-                        <zv:huisnummer>850</zv:huisnummer>
-                        <zv:woonplaatsNaam>Zweinstein</zv:woonplaatsNaam>
-                        <zv:postcode>3528 BB</zv:postcode>
-                    </zv:Nummeraanduiding>
+                  <rdfs:label>Ravenklauw 850, 3528BB Zweinstein</rdfs:label>
+                  <!-- Nummeraanduiding komt niet voor in de BAG, dus geen linkjes, maar wel de structuur overnemen -->
+                  <zv:Nummeraanduiding>
+                      <zv:huisnummer>850</zv:huisnummer>
+                      <zv:postcode>3528BB</zv:postcode>
+                      <zv:gerelateerdeOpenbareRuimte>
+                          <zv:OpenbareRuimte>
+                              <zv:openbareRuimteNaam>Ravenklauw</zv:openbareRuimteNaam>
+                              <zv:gerelateerdeWoonplaats>
+                                  <zv:Woonplaats>
+                                      <zv:woonplaatsNaam>Zweinstein</zv:woonplaatsNaam>
+                                  </zv:Woonplaats>
+                              </zv:gerelateerdeWoonplaats>
+                          </zv:OpenbareRuimte>
+                      </zv:gerelateerdeOpenbareRuimte>
+                  </zv:Nummeraanduiding>
                 </zv:adresgegevens>
             </zv:ObjectlocatieBinnenland>
         </zv:postlocatie>
