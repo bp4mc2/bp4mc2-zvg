@@ -1,4 +1,36 @@
 ###################
+# MIM opschonen
+###################
+
+# Verwijder lege definities
+#
+prefix mim: <http://bp4mc2.org/def/mim#>
+delete {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:definitie ""^^xsd:string
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:definitie ""^^xsd:string
+  }
+}
+
+# Verwijder rdfs:seeAlso
+#
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+delete {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s rdfs:seeAlso ?r
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s rdfs:seeAlso ?r
+  }
+}
+
+###################
 # shapesgraph maken
 ###################
 
