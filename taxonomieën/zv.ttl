@@ -91,18 +91,6 @@ zv:Belastinginspecteur a skos:Concept, skoslex:Agent; #Begrip hoort thuis in een
 	skos:definition "Een ambtenaar die controleert of de belastingwetgeving wordt nageleefd en/of gestelde normen worden gehaald.";
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
-zv:Beschikking a skos:Concept, skoslex:Object; 
-	rdfs:label "Beschikking"@nl;
-	skos:prefLabel "Beschikking";
-.
-zv:Bevel a skos:Concept, skoslex:Object; 
-	rdfs:label "Bevel"@nl;
-	skos:prefLabel "Bevel";
-.
-zv:BevoegdGezag a skos:Concept, skoslex:Object; 
-	rdfs:label "Bevoegd gezag"@nl;
-	skos:prefLabel "Bevoegd gezag";
-.
 zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
 	skos:prefLabel "Natuurlijk persoon";
@@ -146,10 +134,6 @@ zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=5>;
 	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon>;
-.
-zv:Verordening a skos:Concept, skoslex:Object; 
-	rdfs:label "Verordening"@nl;
-	skos:prefLabel "Verordening";
 .
 #--
 #Acts
@@ -198,38 +182,6 @@ zv:InningOverdrachtsbelasting a skos:Concept, skoslex:Act; #Begrip hoort thuis i
 .
 #--
 #Other concepts (objects, records)
-zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
-	rdfs:label "Basisregistratie personen"@nl;
-	skos:prefLabel "Basisregistratie personen";
-        skos:altLabel "BRP";
-	skos:definition "De basisregistratie bevat persoonsgegevens over ingezetenen van Nederland en over niet-ingezetenen voor zover de wet daarin voorziet.";
-	rdfs:comment "Voortdurend bijgehouden bestand met persoonsgegevens van inwoners van Nederland.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2>;
-.
-#Begrippen 'BeschermdStadsDorpsgezicht' en 'Bestemmingsplan' in bestemmingsplan, straks omgevingsplan -> beheer door gemeenten
-zv:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
-	#komt niet voor in de Kadaster taxonomie
-	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
-	skos:prefLabel "Beschermd stads-/dorpsgezicht";
-	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
-	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
-.
-zv:Bestemmingsplan a skos:Concept, skoslex:Record;
-	rdfs:label "Bestemmingsplan"@nl;
-	skos:prefLabel "Bestemmingsplan";
-	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
-.
-zv:HuidigAdres a skos:Concept, skoslex:Record;
-	rdfs:label "Huidig adres"@nl;
-	skos:prefLabel "Huidig adres";
-	skos:altLabel "Wonende";
-	skos:definition "Het adres waar een natuurlijk persoon woont.";
-	#rdfs:comment "";
-	skos:semanticRelation kad:Adres;
-	skos:semanticRelation zv:ToekomstigAdres;
-.
 zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je zegt 'Ik koop een huis', terwijl je formeel het recht heb gekocht op erfpacht op een onroerende zaak zoals in Amsterdam.
 	rdfs:label "Huis"@nl;
 	skos:prefLabel "Huis";
@@ -249,21 +201,6 @@ zv:Identiteitsdocument a skos:Concept, skoslex:Record;
 	skoslex:isAbout zv:NatuurlijkPersoon;
 	skos:editorialNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
 .
-zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
-	rdfs:label "Faillissement"@nl;
-	skos:prefLabel "Faillissement";
-	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
-	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
-.
-zv:OpgegevenGrootte a skos:Concept;
-	rdfs:label "Opgegeven grootte"@nl;
-	skos:prefLabel "Opgegeven grootte";
-	skosthes:broaderGeneric kad:KadastraleGrootte;
-#	skos:closeMatch kad:WerkelijkeGrootte;
-			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
-	skos:semanticRelation kad:Perceel;
-.
 zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Overdrachtsbelasting";
 	skos:prefLabel "Overdrachtsbelasting";
@@ -282,6 +219,96 @@ zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in
 	skos:prefLabel "Register Belastingdienst";
 	skos:definition "Voortdurend bijgehouden bestand van de Belastingdienst met gegevens over personen of zaken in relatie tot de belastingwet.";
 .
+#Nog te vewrdelen concepten
+zv:BasisregistratiePersonen a skos:Concept, skoslex:Object;
+	rdfs:label "Basisregistratie personen"@nl;
+	skos:prefLabel "Basisregistratie personen";
+        skos:altLabel "BRP";
+	skos:definition "De basisregistratie bevat persoonsgegevens over ingezetenen van Nederland en over niet-ingezetenen voor zover de wet daarin voorziet.";
+	rdfs:comment "Voortdurend bijgehouden bestand met persoonsgegevens van inwoners van Nederland.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2>;
+.
+zv:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
+	#komt niet voor in de Kadaster taxonomie
+	rdfs:label "Beschermd stads-/dorpsgezicht"@nl;
+	skos:prefLabel "Beschermd stads-/dorpsgezicht";
+	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht";
+	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
+.
+zv:Bestemmingsplan a skos:Concept, skoslex:Record;
+	rdfs:label "Bestemmingsplan"@nl;
+	skos:prefLabel "Bestemmingsplan";
+	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
+.
+zv:Beschikking a skos:Concept, skoslex:Object; 
+	rdfs:label "Beschikking"@nl;
+	skos:prefLabel "Beschikking";
+.
+zv:Bevel a skos:Concept, skoslex:Object; 
+	rdfs:label "Bevel"@nl;
+	skos:prefLabel "Bevel";
+.
+zv:BevoegdGezag a skos:Concept, skoslex:Object; 
+	rdfs:label "Bevoegd gezag"@nl;
+	skos:prefLabel "Bevoegd gezag";
+.
+zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+	rdfs:label "Faillissement"@nl;
+	skos:prefLabel "Faillissement";
+	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
+	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
+.
+zv:GevestigdTe a skos:Concept; 
+	rdfs:label "Gevestigd te"@nl;
+	skos:prefLabel "Gevestigd te";
+	skos:semanticRelation zv:Rechtspersoon;
+.
+zv:HandelendAls a skos:Concept; 
+	rdfs:label "Handelend als"@nl;
+	skos:prefLabel "Handelend als";
+	skos:semanticRelation zv:Natuurlijk Persoon;
+.
+zv:HuidigAdres a skos:Concept, skoslex:Record;
+	rdfs:label "Huidig adres"@nl;
+	skos:prefLabel "Huidig adres";
+	skos:altLabel "Wonende";
+	skos:definition "Het adres waar een natuurlijk persoon woont.";
+	#rdfs:comment "";
+	skos:semanticRelation kad:Adres;
+	skos:semanticRelation zv:ToekomstigAdres;
+.
+zv:Huwelijksgoederenrecht a skos:Concept; 
+	rdfs:label "Huwelijksgoederenrecht"@nl;
+	skos:prefLabel "Huwelijksgoederenrecht";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
+zv:Legitimatie a skos:Concept; 
+	rdfs:label "Legitimatie"@nl;
+	skos:prefLabel "Legitimatie";
+	skos:altLabel "Legitimatiebewijs";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
+zv:InschrijvingHandelsregister a skos:Concept; 
+	rdfs:label "Inschrijving Handelsregister"@nl;
+	skos:prefLabel "Inschrijving Handelsregister";
+	skos:semanticRelation zv:Rechtspersoon;
+.
+zv:NietTegenwerken a skos:Concept, skoslex:Act;
+	rdfs:label "Niet tegenwerken"@nl;
+	skos:prefLabel "Niet tegenwerken";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
+zv:OpgegevenGrootte a skos:Concept;
+	rdfs:label "Opgegeven grootte"@nl;
+	skos:prefLabel "Opgegeven grootte";
+	skosthes:broaderGeneric kad:Grootte;
+#	skos:closeMatch kad:WerkelijkeGrootte;
+			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
+	skos:semanticRelation kad:Perceel;
+.
 zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Toekomstig adres"@nl;
 	skos:prefLabel "Toekomstig adres";
@@ -289,9 +316,24 @@ zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	#rdfs:comment "";
 	skos:semanticRelation kad:Adres;
 .
+zv:ToestemmingPartner a skos:Concept; 
+	rdfs:label "Toestemming partner"@nl;
+	skos:prefLabel "Toestemming partner";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
+zv:Verordening a skos:Concept, skoslex:Object; 
+	rdfs:label "Verordening"@nl;
+	skos:prefLabel "Verordening";
+.
+zv:VertegenwoordigdDoor a skos:Concept; 
+	rdfs:label "Vertegenwoordigd door"@nl;
+	skos:prefLabel "Vertegenwoordigd door";
+	skos:semanticRelation zv:Persoon;
+.
 zv:WerkelijkeGrootte a skos:Concept;
 	rdfs:label "Werkelijke grootte"@nl;
 	skos:prefLabel "Werkelijke grootte";
-	skosthes:broaderGeneric kad:KadastraleGrootte;
+	skosthes:broaderGeneric kad:Grootte;
 	skos:semanticRelation kad:Perceel;
 .
+
