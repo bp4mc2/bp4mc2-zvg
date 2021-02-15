@@ -30,5 +30,9 @@
    * de kosten die op de eigendomsoverdracht betrekking hebben, in relatie tot een koper of verkoper en in relatie hiermee de aanwijzing van de notaris door een koper of verkoper.
    * de kosten die de notaris in rekening brengt in verband met aflossing en doorhaling in relatie tot een verkoper.
    * kosten die de notaris in rekening brengt in verband met het vestigen van een hypotheek in relatie tot een koper.
-   * de overige kosten in relatie tot een partij (die hier gebruik van maakt)
-* Artikel 2.2 beschrijft het verrekenen (skoslex:Act) van het 'artikel 13 verschil' (skoslex:Object). 
+   * de overige kosten in relatie tot een partij (die hier gebruik van maakt).
+* Omdat er geen skoslex:Act is worden deze onderwerpen via skoslex:isAbout verbonden aan het skoslex:Record.
+* Artikel 2.2 beschrijft het verrekenen (skoslex:Act) van het 'artikel 13 verschil' (skoslex:Object). Hier ligt de relatie naar het skoslex:Record andersom: zv:VerrekeningOverdrachtsbelastingArt13 (skoslex:Act) is via skoslex:record verbonden met mak:Artikel13Verschil (skoslex:Record).
+# Artikel 3
+* De eerste zin is een mooi voorbeeld van een zin die bijna volledig semantisch worden beschreven in de vorm van een aantal samenhangende concepten: De _Betaling_ (skoslex:act) van de _Koopsom_ (skoslex:Object) via de _Notaris_ (skoslex:Agent) als _OnderdeelVan (skosthes:broaderPartitive) het _PasserenAktelevering (skoslex:Act).
+* De tweede zin is opnieuw een impliciete afspraak die niet is gemodelleerd als skoslex:act. Dit is een puur informatieve zin.
