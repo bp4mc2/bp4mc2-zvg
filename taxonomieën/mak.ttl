@@ -270,6 +270,9 @@ mak:Betaling a skos:Concept, skoslex:Act;
 	skos:prefLabel "Betaling";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object not:Koopsom;
+	skoslex:object not:KostenEnOverdrachtsbelasing;
+	skoslex:agent not:Notaris;
+	skoshtes:broaderPartitive not:PasserenAkteLevering;
 	skoslex:record mak:ArtikelBetaling;
 .
 mak:Eigendomsoverdracht a skos:Concept, skoslex:Act;
@@ -532,24 +535,28 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:HerzieningErfpacht;
 	skoslex:isAbout not:VoortdurendeErfpacht;
 .
-not:KostenEnOverdrachtsbelasing skoslex:record mak:ArtikelKostenOverdrachtsbelasting.
 mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Artikel: Kosten/Overdrachtsbelasting";
 	rdfs:comment '''In dit artikel wordt ingevuld wie de kosten voor zijn rekening neemt: koper of verkoper. Als verkoper deze kosten betaalt, spreekt men van "v.o.n." (vrij op naam). Als koper deze kosten betaalt, spreekt men van "k.k." (kosten koper). Onder deze kosten worden verstaan: notariskosten voor de akte van levering (incl. BTW), kosten van het kadaster en overdrachtsbelasting.
 Makelaarskosten en hypotheekkosten vallen er onder andere niet onder! Er wordt apart aangegeven welke kosten die de notaris in rekening brengt voor rekening van verkoper of koper komen. De overdrachtsbelasting bedraagt een percentage van de koopsom. Als de waarde van de onroerende zaak hoger is dan de koopsom wordt de overdrachtsbelasting over deze waarde berekend.
-Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.
-
-Artikel 2.2 is van toepassing indien verkoper de onroerende zaak binnen een bepaalde termijn nadat hij eigenaar is geworden, verkoopt en overdraagt. Thans bedraagt de bepaalde termijn van artikel 13 Wet op belastingen van rechtsverkeer 6 maanden. Indien de eerste overdracht van de onroerende zaak heeft plaatsgevonden tussen 1 september 2012 en 1 januari 2015, geldt een termijn van 36 maanden vanaf de eerste overdracht.
+Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.'''
+	skos:scopeNote "Artikel 2.1 van de model koopovereenkomst.";
+	skoslex:isAbout not:KostenEnOverdrachtsbelasing;
+	skoslex:isAbout zv:KostenAflossingDoorhaling;
+	skoslex:isAbout zv:KostenVestigenHypotheek;
+	skoslex:isAbout zv:OverigeNotariskosten;
+	skosthes:broaderPartitive mak:Koopovereenkomst;
+.
+zv:VerrekeningOverdrachtsbelastingArt13 skoslex:record mak:Artikel13Verschil.
+mak:Artikel13Verschil a skos:Concept, skoslex:Record;
+	rdfs:label "artikel 13 verschil"@nl;
+	skos:prefLabel "artikel 13 verschil";
+	rdfs:comment '''Artikel 2.2 is van toepassing indien verkoper de onroerende zaak binnen een bepaalde termijn nadat hij eigenaar is geworden, verkoopt en overdraagt. Thans bedraagt de bepaalde termijn van artikel 13 Wet op belastingen van rechtsverkeer 6 maanden. Indien de eerste overdracht van de onroerende zaak heeft plaatsgevonden tussen 1 september 2012 en 1 januari 2015, geldt een termijn van 36 maanden vanaf de eerste overdracht.
 Op grond van artikel 13 Wet op belastingen van rechtsverkeer mag het bedrag waarover overdrachtsbelasting of omzetbelasting ter zake van die vorige verkrijging was verschuldigd op de heffingsgrondslag in mindering worden gebracht. Er ontstaat dan een overdrachtsbelastingvoordeel vanwege de doorlevering van de onroerende zaak binnen een bepaalde termijn, welk voordeel op grond van artikel 13 Wet op belastingen van rechtsverkeer aan koper toekomt. Indien verkoper van dit voordeel gebruik wil maken moet verkoper dit met koper overeenkomen tijdens de onderhandelingen. In artikel 2.2. wordt dan ‘niet’ doorgestreept en koper betaalt dan aan verkoper dit voordeel als vergoeding.
 Voorheen was goedgekeurd dat deze vergoeding aan verkoper niet in de heffing van de overdrachtsbelasting werd betrokken. Deze goedkeuring is op 1 juli 2011 komen te vervallen. De vergoeding die koper aan verkoper betaalt, valt sindsdien weer onder de tegenprestatie en daarover moet derhalve ook overdrachtsbelasting betaald worden. De laatste zin van artikel 2.2. bepaalt dat koper nooit méér overdrachtsbelasting betaalt dan dat hij betaald zou hebben als géén sprake was geweest van een doorlevering binnen 6 of 36 maanden. Het nadeel dat ontstaat door het vervallen van de goedkeuring komt dus voor rekening van verkoper.''';
-	skos:scopeNote "Artikel 2 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 2.2 van de model koopovereenkomst.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
-	skoslex:isAbout fin:Aflossen;
-	skoslex:isAbout kad:DoorhalingHypotheek;
-	skoslex:isAbout not:Grondslagwaarde;
-	skoslex:isAbout fin:Overbruggingslening;
-	skoslex:isAbout not:Levering;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelBetaling a skos:Concept, skoslex:Record;
@@ -557,8 +564,6 @@ mak:ArtikelBetaling a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel: Betaling";
 	rdfs:comment "De notaris ontvangt de koopsom van koper en voldoet – nadat eerst de schuldeisers van verkoper, waaronder hypotheekverstrekker(s) en beslaglegger(s), die uit de koopsom behoren te worden voldaan in verband met de correcte afwikkeling van de koop en levering overeenkomstig de voor de notaris geldende beroeps- en beleidsregels, het overblijvende restant van die koopsom aan verkoper. Omdat de notaris ervoor moet instaan, dat het verkochte bij de inschrijving in de openbare registers onbelast is met bijvoorbeeld hypotheken of beslagen en hij dit eerst na de leveringsdatum officieel bevestigd krijgt, mag hij - mede verzekeringstechnisch - de koopsom namens koper pas uitbetalen als hij deze bevestiging heeft, meestal enkele dagen na de datum van levering.";
 	skos:scopeNote "Artikel 3 van de model koopovereenkomst.";
-	skoslex:isAbout kad:Beslag;
-	skoslex:isAbout not:Passeren;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
