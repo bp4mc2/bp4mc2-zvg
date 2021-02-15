@@ -341,7 +341,7 @@ mak:Kostenverdeling a skos:Concept, skoslex:Act;
 	rdfs:label "Kostenverdeling"@nl;
 	skos:prefLabel "Kostenverdeling";
 	skosthes:broaderPartitive mak:Koop;
-	skoslex:object mak:KostenEnOverdrachtsbelasting;
+	skoslex:object not:KostenEnOverdrachtsbelasting;
 	skoslex:record mak:ArtikelKostenOverdrachtsbelasting;
 .
 mak:Onbekendheidsverklaring a skos:Concept, skoslex:Act;
