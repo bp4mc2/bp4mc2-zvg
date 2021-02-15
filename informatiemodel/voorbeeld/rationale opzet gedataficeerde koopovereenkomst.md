@@ -19,9 +19,16 @@
   * Het object/de objecten van handeling, in dit artikel de onroerende zaak met eventuele roerende zaken die daarbij horen.
 * Het waarderen van de onroerende zaken wordt niet beschouwd als een aparte rechtshandeling, maar als de waardering die is gerelateerd aan de roerende zaken.
 * Wanneer het erfpacht betreft zijn er enkele subartikelen. Ieder subartikel kan worden gezien als een rechtshandeling/afspraak, maar bij artikelen 1.2, 1.3 en 1.4 worden geen expliciete handelingen benoemd anders dan 'verklaart kennis te hebben genomen van ...'. Net als de laatste alinea bij het voorblad worden deze dan ook niet expliciet als skoslex:Act gemodelleerd. De onderlinge samenhang van de concepten geeft ook hier voldoende betekenis aan de relevante data.
-# Artikel 2 en verder
+# Artikel 2
 * Alle overige artikelen beschrijven onderdelen van de koop.
 * De taxonomie van ieder (sub)artikel is opgebouwd uit dezelfde 3 onderdelen als hierboven beschreven:
    * Het skoslex:Record met de beschrijving (en in de taxonomie de uitleg).
    * De skoslex:Act met de rechtshandling. Actoren zijn altijd koper en/of verkoper.
    * Het/de skoslex:Object(s) met de onderwerpen.
+* Artikel 2 bevat geen expliciete rechtshandelingen. Deze worden dan ook benoemd.
+* Artikel 2.1 bevat 4 _onderwerpen_:
+   * de kosten die op de eigendomsoverdracht betrekking hebben, in relatie tot een koper of verkoper en in relatie hiermee de aanwijzing van de notaris door een koper of verkoper.
+   * de kosten die de notaris in rekening brengt in verband met aflossing en doorhaling in relatie tot een verkoper.
+   * kosten die de notaris in rekening brengt in verband met het vestigen van een hypotheek in relatie tot een koper.
+   * de overige kosten in relatie tot een partij (die hier gebruik van maakt)
+* Artikel 2.2 beschrijft het verrekenen (skoslex:Act) van het 'artikel 13 verschil' (skoslex:Object). 
