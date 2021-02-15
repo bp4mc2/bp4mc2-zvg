@@ -19,7 +19,7 @@
 ** Het object/de objecten van handeling, in dit artikel de onroerende zaak met eventuele roerende zaken die daarbij horen.
 ** Het waarderen van de onroerende zaken wordt niet beschouwd als een aparte rechtshandeling, maar als de waardering die is gerelateerd aan de roerende zaken.
 * Wanneer het erfpacht betreft zijn er enkele subartikelen. Ieder subartikel kan worden gezien als een rechtshandeling/afspraak, maar bij artikelen 1.2, 1.3 en 1.4 worden geen expliciete handelingen benoemd anders dan 'verklaart kennis te hebben genomen van ...'. Net als de laatste alinea bij het voorblad worden deze dan ook niet expliciet als skoslex:Act gemodelleerd. De onderlinge samenhang van de concepten geeft ook hier voldoende betekenis aan de relevante data.
-Artikel 2 en verder
+# Artikel 2 en verder
 * Alle overige artikelen beschrijven onderdelen van de koop.
 * De taxonomie van ieder (sub)artikel is opgebouwd uit dezelfde 3 onderdelen als hierboven beschreven:
 ** Het skoslex:Record met de beschrijving (en in de taxonomie de uitleg).
