@@ -11,7 +11,7 @@
 * Het voorblad bevat alle concepten die relevant zijn in relatie tot de koper en verkoper, eventuele vertegenwoordigers, partners en andere belanghebbenden, inclusief de onderlinge semantische relaties tussen deze concepten. N.B. het is een taxonomie. Daarin is bijvoorbeeld het begrip 'Partner' semantisch verbonden met het begrip 'Natuurlijk Persoon', maar ook niet meer dan dat. Het is geen datamodel of ontologie, waarin je aan kunt geven dat meneer x gehuwd is met meneer y. 
 * Koper, verkoper, etc. zijn een skoslex:Object. Zij zijn verderop skoslex:Actor in skoslex:Acts.
 * De laatste alinea bevat 2 zinnen die kunnen worden gezien als een soort mini-(rechts)handeling: 'Koper verklaart ...' en 'Door medeondertekening verklaart de echtgeno(o)t(e)/geregistreerd partner ...' Deze zijn niet expliciet als skoslex:Act gemodelleerd. De rationale is dat de onderlinge samenhang van de concepten primair betekenis geeft aan het (mede)ondertekenen en geen relevante data bevat.
-#Artikel 1
+# Artikel 1
 * Artikel 1 is het hoofdartikel van de koopovereenkomst. Hierin wordt de koop beschreven.
 * De taxonomie bestaat uit 3 onderdelen:
 ** Het skoslex:Record waarin de rechtshandeling is beschreven, met als belangrijkst eigenschap de uitleg.  Die is integraal overgenomen uit de toelichting op de koopovereenkomst. 
