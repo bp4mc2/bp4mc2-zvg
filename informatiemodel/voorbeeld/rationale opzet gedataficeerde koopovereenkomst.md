@@ -22,6 +22,6 @@
 # Artikel 2 en verder
 * Alle overige artikelen beschrijven onderdelen van de koop.
 * De taxonomie van ieder (sub)artikel is opgebouwd uit dezelfde 3 onderdelen als hierboven beschreven:
-** Het skoslex:Record met de beschrijving (en in de taxonomie de uitleg).
-** De skoslex:Act met de rechtshandling. Actoren zijn altijd koper en/of verkoper.
-** Het/de skoslex:Object(s) met de onderwerpen.
+ * Het skoslex:Record met de beschrijving (en in de taxonomie de uitleg).
+ * De skoslex:Act met de rechtshandling. Actoren zijn altijd koper en/of verkoper.
+ * Het/de skoslex:Object(s) met de onderwerpen.
