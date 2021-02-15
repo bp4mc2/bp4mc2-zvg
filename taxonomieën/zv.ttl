@@ -10,6 +10,7 @@
 @prefix not: <http://not.zorgeloosvastgoed.nl/id/concept/>.
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/concept/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/concept/>.
+@prefix bag: <http://bag.basisregistraties.overheid.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
@@ -242,6 +243,12 @@ zv:Bestemmingsplan a skos:Concept, skoslex:Record;
 	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
 .
+zv:Bereikbaarheid a skos:Concept; 
+	dfs:label "Bereikbaarheid"@nl;
+	skos:prefLabel "Bereikbaarheid";
+	skos:altLabel "Bereikbaar";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
 zv:Beschikking a skos:Concept, skoslex:Object; 
 	rdfs:label "Beschikking"@nl;
 	skos:prefLabel "Beschikking";
@@ -260,6 +267,40 @@ zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een dome
 	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard.";
 	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
+.
+zv:BurgerlijkeStaat a skos:Concept, skos:Collection; 
+	dfs:label "Burgerlijke staat"@nl;
+	skos:prefLabel "Burgerlijke staat";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:member zv:Gehuwd;
+	skos:member zv:GeregistreerdPartnerschap;
+	skos:member zv:Ongehuwd;
+.
+zv:Geboorteplaats a skos:Concept; 
+	dfs:label "Geboorteplaats"@nl;
+	skos:prefLabel "Geboorteplaats";
+	skos:altLabel "Geboortegemeente";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
+zv:Geboortedatum a skos:Concept; 
+	dfs:label "Geboortedatum"@nl;
+	skos:prefLabel "Geboortedatum";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
+zv:Gehuwd a skos:Concept; 
+	rdfs:label "Gehuwd"@nl;
+	skos:prefLabel "Gehuwd";
+	skos:broaderGeneric zv:BurgerlijkeStaat;
+.
+zv:GemeenschapVanGoederen a skos:Concept; 
+	rdfs:label "Gemeenschap van goederen"@nl;
+	skos:prefLabel "Gemeenschap van goederen";
+	skos:broaderGeneric zv:Huwelijksgoederenrecht;
+.
+zv:GeregistreerdPartnerschap a skos:Concept; 
+	rdfs:label "Geregistreerd partnerschap"@nl;
+	skos:prefLabel "Geregistreerd partnerschap";
+	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
 zv:GevestigdTe a skos:Concept; 
 	rdfs:label "Gevestigd te"@nl;
@@ -280,10 +321,24 @@ zv:HuidigAdres a skos:Concept, skoslex:Record;
 	skos:semanticRelation kad:Adres;
 	skos:semanticRelation zv:ToekomstigAdres;
 .
-zv:Huwelijksgoederenrecht a skos:Concept; 
+zv:Huisnummer a skos:Concept; 
+	dfs:label "Huisnummer"@nl;
+	skos:prefLabel "Huisnummer";
+	skos:altLabel "Nummeraanduiding";
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:Nummeraanduiding;
+.
+zv:HuwelijkseVoorwaarden a skos:Concept; 
+	rdfs:label "Huwelijkse voorwaarden"@nl;
+	skos:prefLabel "Huwelijkse voorwaarden";
+	skos:broaderGeneric zv:Huwelijksgoederenrecht;
+.
+zv:Huwelijksgoederenrecht a skos:Concept skos:Collection; 
 	rdfs:label "Huwelijksgoederenrecht"@nl;
 	skos:prefLabel "Huwelijksgoederenrecht";
 	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:menber zv:GemeenschapVanGoederen;
+	skos:member zv:HuwelijkseVoorwaarden;
 .
 zv:Legitimatie a skos:Concept; 
 	rdfs:label "Legitimatie"@nl;
@@ -296,10 +351,28 @@ zv:InschrijvingHandelsregister a skos:Concept;
 	skos:prefLabel "Inschrijving Handelsregister";
 	skos:semanticRelation zv:Rechtspersoon;
 .
+zv:Mailadres a skos:Concept; 
+	dfs:label "Mailadres"@nl;
+	skos:prefLabel "Mailadres";
+	skos:altLabel "E-mailadres";
+	skos:broaderGeneric zv:Bereikbaarheid;
+.
+zv:Naam a skos:Concept; 
+	dfs:label "Naam"@nl;
+	skos:prefLabel "Naam";
+	skos:altLabel "Achternaam";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
 zv:NietTegenwerken a skos:Concept, skoslex:Act;
 	rdfs:label "Niet tegenwerken"@nl;
 	skos:prefLabel "Niet tegenwerken";
 	skos:semanticRelation zv:NatuurlijkPersoon;
+.
+zv:Ongehuwd a skos:Concept; 
+	rdfs:label ""@nl;
+	skos:prefLabel "Ongehuwd";
+	skos:altLabel "Ongehuwd en geen geregistreerd partnerschap";
+	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
 zv:OpgegevenGrootte a skos:Concept;
 	rdfs:label "Opgegeven grootte"@nl;
@@ -308,6 +381,31 @@ zv:OpgegevenGrootte a skos:Concept;
 #	skos:closeMatch kad:WerkelijkeGrootte;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skos:semanticRelation kad:Perceel;
+.
+zv:Postcode a skos:Concept; 
+	rdfs:label "Postcode"@nl;
+	skos:prefLabel "Postcode";
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:Postcode;
+.
+zv:Straat a skos:Concept; 
+	rdfs:label "Straat"@nl;
+	skos:prefLabel "Straat";
+	skos:altLabel "Openbare ruimte";
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:OpenbareRuimte;
+.
+zv:Telefoon a skos:Concept; 
+	dfs:label "Telefoon"@nl;
+	skos:prefLabel "Telefoon";
+	skos:altLabel "Telefoonmummer"
+	skos:broaderGeneric zv:Bereikbaarheid;
+.
+zv:Mailadres a skos:Concept; 
+	dfs:label "Mailadres"@nl;
+	skos:prefLabel "Mailadres";
+	skos:altLabel "E-mailadres";
+	skos:broaderGeneric zv:Bereikbaarheid;
 .
 zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Toekomstig adres"@nl;
@@ -330,10 +428,21 @@ zv:VertegenwoordigdDoor a skos:Concept;
 	skos:prefLabel "Vertegenwoordigd door";
 	skos:semanticRelation zv:Persoon;
 .
+zv:Voornamen a skos:Concept; 
+	dfs:label "Voornamen"@nl;
+	skos:prefLabel "Voornamen";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+.
 zv:WerkelijkeGrootte a skos:Concept;
 	rdfs:label "Werkelijke grootte"@nl;
 	skos:prefLabel "Werkelijke grootte";
 	skosthes:broaderGeneric kad:Grootte;
 	skos:semanticRelation kad:Perceel;
+.
+zv:Woonplaats a skos:Concept; 
+	dfs:label "Woonplaats"@nl;
+	skos:prefLabel "Woonplaats";
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:Woonplaats;
 .
 
