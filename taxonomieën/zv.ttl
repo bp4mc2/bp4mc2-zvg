@@ -244,7 +244,7 @@ zv:Bestemmingsplan a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
 .
 zv:Bereikbaarheid a skos:Concept; 
-	dfs:label "Bereikbaarheid"@nl;
+	rdfs:label "Bereikbaarheid"@nl;
 	skos:prefLabel "Bereikbaarheid";
 	skos:altLabel "Bereikbaar";
 	skos:semanticRelation zv:NatuurlijkPersoon;
@@ -269,21 +269,31 @@ zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een dome
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
 .
 zv:BurgerlijkeStaat a skos:Concept, skos:Collection; 
-	dfs:label "Burgerlijke staat"@nl;
+	rdfs:label "Burgerlijke staat"@nl;
 	skos:prefLabel "Burgerlijke staat";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 	skos:member zv:Gehuwd;
 	skos:member zv:GeregistreerdPartnerschap;
 	skos:member zv:Ongehuwd;
 .
+zv:Doorhaling  a skos:Concept skoslex:Act;
+	rdfs:label "Doorhaling"@nl;
+	skos:prefLabel "Doorhaling";
+	skos:exactMatch <http://tax.kadaster.nl/id/begrip/Doorhaling>;
+.
+zv:DoorhalingBeslag  a skos:Concept skoslex:Act;
+	rdfs:label "Doorhaling beslag"@nl;
+	skos:prefLabel "Doorhaling beslag";
+	skos:broaderGeneric zv:Doorhaling; #deze ook nog aanbrengen voor DoorhalingHypotheek
+.
 zv:Geboorteplaats a skos:Concept; 
-	dfs:label "Geboorteplaats"@nl;
+	rdfs:label "Geboorteplaats"@nl;
 	skos:prefLabel "Geboorteplaats";
 	skos:altLabel "Geboortegemeente";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
 zv:Geboortedatum a skos:Concept; 
-	dfs:label "Geboortedatum"@nl;
+	rdfs:label "Geboortedatum"@nl;
 	skos:prefLabel "Geboortedatum";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
@@ -322,7 +332,7 @@ zv:HuidigAdres a skos:Concept, skoslex:Record;
 	skos:semanticRelation zv:ToekomstigAdres;
 .
 zv:Huisnummer a skos:Concept; 
-	dfs:label "Huisnummer"@nl;
+	rdfs:label "Huisnummer"@nl;
 	skos:prefLabel "Huisnummer";
 	skos:altLabel "Nummeraanduiding";
 	skos:semanticRelation kad:Adres;
@@ -337,7 +347,7 @@ zv:Huwelijksgoederenrecht a skos:Concept skos:Collection;
 	rdfs:label "Huwelijksgoederenrecht"@nl;
 	skos:prefLabel "Huwelijksgoederenrecht";
 	skos:semanticRelation zv:NatuurlijkPersoon;
-	skos:menber zv:GemeenschapVanGoederen;
+	skos:member zv:GemeenschapVanGoederen;
 	skos:member zv:HuwelijkseVoorwaarden;
 .
 zv:Legitimatie a skos:Concept; 
@@ -351,14 +361,35 @@ zv:InschrijvingHandelsregister a skos:Concept;
 	skos:prefLabel "Inschrijving Handelsregister";
 	skos:semanticRelation zv:Rechtspersoon;
 .
+zv:KostenAflossingDoorhaling a skos:Concept skoslex:Object;
+	rdfs:label "Kosten aflossing en doorhaling"@nl;
+	skos:prefLabel "Kosten aflossing en doorhaling";
+	skos:broaderGeneric not:Notariskosten;
+	skos:semanticRelation fin:Aflossen;
+	skos:semanticRelation zv:Doorhaling;
+	skos:semanticRelation mak:Verkoper;
+.
+zv:KostenVestigenHypotheek a skos:Concept skoslex:Object;
+	rdfs:label "Kosten vestigen hypotheek"@nl;
+	skos:prefLabel "Kosten vestigen hypotheek";
+	skos:broaderGeneric not:Notariskosten;
+	skos:semanticRelation not:VestigingHypotheek;
+	skos:semanticRelation mak:Koper;
+.
+zv:LooptijdErfpacht a skos:Concept; 
+	rdfs:label "Looptijd erfpacht"@nl;
+	skos:prefLabel "Looptijd erfpacht";
+	skos:altLabel "Einddatum erfpacht";
+	skos:semanticRelation kad:Erfpacht;
+.
 zv:Mailadres a skos:Concept; 
-	dfs:label "Mailadres"@nl;
+	rdfs:label "Mailadres"@nl;
 	skos:prefLabel "Mailadres";
 	skos:altLabel "E-mailadres";
 	skos:broaderGeneric zv:Bereikbaarheid;
 .
 zv:Naam a skos:Concept; 
-	dfs:label "Naam"@nl;
+	rdfs:label "Naam"@nl;
 	skos:prefLabel "Naam";
 	skos:altLabel "Achternaam";
 	skos:semanticRelation zv:NatuurlijkPersoon;
@@ -382,6 +413,14 @@ zv:OpgegevenGrootte a skos:Concept;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skos:semanticRelation kad:Perceel;
 .
+zv:OverigeNotariskosten a skos:Concept skoslex:Object;
+	rdfs:label "Overige notariskosten"@nl;
+	skos:prefLabel "Overige notariskosten";
+	skos:broaderGeneric not:Notariskosten;
+	skos:semanticRelation not:Volmacht;
+	skos:semanticRelation zv:Tolk;
+	skos:semanticRelation zv:Partij;
+.
 zv:Postcode a skos:Concept; 
 	rdfs:label "Postcode"@nl;
 	skos:prefLabel "Postcode";
@@ -396,16 +435,14 @@ zv:Straat a skos:Concept;
 	skos:exactMatch bag:OpenbareRuimte;
 .
 zv:Telefoon a skos:Concept; 
-	dfs:label "Telefoon"@nl;
+	rdfs:label "Telefoon"@nl;
 	skos:prefLabel "Telefoon";
 	skos:altLabel "Telefoonmummer"
 	skos:broaderGeneric zv:Bereikbaarheid;
 .
-zv:Mailadres a skos:Concept; 
-	dfs:label "Mailadres"@nl;
-	skos:prefLabel "Mailadres";
-	skos:altLabel "E-mailadres";
-	skos:broaderGeneric zv:Bereikbaarheid;
+zv:Tolk a skos:Concept skoslex:Object; 
+	rdfs:label "Tolk"@nl;
+	skos:prefLabel "Tolk";
 .
 zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Toekomstig adres"@nl;
@@ -419,9 +456,20 @@ zv:ToestemmingPartner a skos:Concept;
 	skos:prefLabel "Toestemming partner";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
+zv:VerminderingOverdrachtsbelastingArt13 a skos:concept skoslex:Object
+	rdfs:label "Vermindering overdrachtsbelasting artikel 13"@nl;
+	skos:prefLabel "Vermindering overdrachtsbelasting artikel 13";
+.
 zv:Verordening a skos:Concept, skoslex:Object; 
 	rdfs:label "Verordening"@nl;
 	skos:prefLabel "Verordening";
+.
+zv:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act; 
+	rdfs:label "Verrekening overdrachtsbelasting artikel 13"@nl;
+	skos:prefLabel "Verrekening overdrachtsbelasting artikel 13";
+	skoslex:actor mak:Koper;
+	skoslex:actor mak:Verkoper;
+	skoslex:Object zv:VerminderingOverdrachtsbelastingArt13;
 .
 zv:VertegenwoordigdDoor a skos:Concept; 
 	rdfs:label "Vertegenwoordigd door"@nl;
@@ -429,7 +477,7 @@ zv:VertegenwoordigdDoor a skos:Concept;
 	skos:semanticRelation zv:Persoon;
 .
 zv:Voornamen a skos:Concept; 
-	dfs:label "Voornamen"@nl;
+	rdfs:label "Voornamen"@nl;
 	skos:prefLabel "Voornamen";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
@@ -440,7 +488,7 @@ zv:WerkelijkeGrootte a skos:Concept;
 	skos:semanticRelation kad:Perceel;
 .
 zv:Woonplaats a skos:Concept; 
-	dfs:label "Woonplaats"@nl;
+	rdfs:label "Woonplaats"@nl;
 	skos:prefLabel "Woonplaats";
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Woonplaats;
