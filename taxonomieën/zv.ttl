@@ -243,21 +243,21 @@ zv:Bestemmingsplan a skos:Concept, skoslex:Record;
 	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
 .
-zv:Bereikbaarheid a skos:Concept; 
+zv:Bereikbaarheid a skos:Concept;
 	rdfs:label "Bereikbaarheid"@nl;
 	skos:prefLabel "Bereikbaarheid";
 	skos:altLabel "Bereikbaar";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:Beschikking a skos:Concept, skoslex:Object; 
+zv:Beschikking a skos:Concept, skoslex:Object;
 	rdfs:label "Beschikking"@nl;
 	skos:prefLabel "Beschikking";
 .
-zv:Bevel a skos:Concept, skoslex:Object; 
+zv:Bevel a skos:Concept, skoslex:Object;
 	rdfs:label "Bevel"@nl;
 	skos:prefLabel "Bevel";
 .
-zv:BevoegdGezag a skos:Concept, skoslex:Object; 
+zv:BevoegdGezag a skos:Concept, skoslex:Object;
 	rdfs:label "Bevoegd gezag"@nl;
 	skos:prefLabel "Bevoegd gezag";
 .
@@ -268,7 +268,7 @@ zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een dome
 	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
 .
-zv:BurgerlijkeStaat a skos:Concept, skos:Collection; 
+zv:BurgerlijkeStaat a skos:Concept, skos:Collection;
 	rdfs:label "Burgerlijke staat"@nl;
 	skos:prefLabel "Burgerlijke staat";
 	skos:semanticRelation zv:NatuurlijkPersoon;
@@ -276,92 +276,91 @@ zv:BurgerlijkeStaat a skos:Concept, skos:Collection;
 	skos:member zv:GeregistreerdPartnerschap;
 	skos:member zv:Ongehuwd;
 .
-zv:Doorhaling  a skos:Concept skoslex:Act;
+zv:Doorhaling a skos:Concept, skoslex:Act;
 	rdfs:label "Doorhaling"@nl;
 	skos:prefLabel "Doorhaling";
 	skos:exactMatch <http://tax.kadaster.nl/id/begrip/Doorhaling>;
 .
-zv:DoorhalingBeslag  a skos:Concept skoslex:Act;
+zv:DoorhalingBeslag a skos:Concept, skoslex:Act;
 	rdfs:label "Doorhaling beslag"@nl;
 	skos:prefLabel "Doorhaling beslag";
 	skos:broaderGeneric zv:Doorhaling; #deze ook nog aanbrengen voor DoorhalingHypotheek
 .
-zv:Geboorteplaats a skos:Concept; 
+zv:Geboorteplaats a skos:Concept;
 	rdfs:label "Geboorteplaats"@nl;
 	skos:prefLabel "Geboorteplaats";
 	skos:altLabel "Geboortegemeente";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:Geboortedatum a skos:Concept; 
+zv:Geboortedatum a skos:Concept;
 	rdfs:label "Geboortedatum"@nl;
 	skos:prefLabel "Geboortedatum";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:Gehuwd a skos:Concept; 
+zv:Gehuwd a skos:Concept;
 	rdfs:label "Gehuwd"@nl;
 	skos:prefLabel "Gehuwd";
 	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
-zv:GemeenschapVanGoederen a skos:Concept; 
+zv:GemeenschapVanGoederen a skos:Concept;
 	rdfs:label "Gemeenschap van goederen"@nl;
 	skos:prefLabel "Gemeenschap van goederen";
 	skos:broaderGeneric zv:Huwelijksgoederenrecht;
 .
-zv:GeregistreerdPartnerschap a skos:Concept; 
+zv:GeregistreerdPartnerschap a skos:Concept;
 	rdfs:label "Geregistreerd partnerschap"@nl;
 	skos:prefLabel "Geregistreerd partnerschap";
 	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
-zv:GevestigdTe a skos:Concept; 
+zv:GevestigdTe a skos:Concept;
 	rdfs:label "Gevestigd te"@nl;
 	skos:prefLabel "Gevestigd te";
 	skos:semanticRelation zv:Rechtspersoon;
 .
-zv:HandelendAls a skos:Concept; 
+zv:HandelendAls a skos:Concept;
 	rdfs:label "Handelend als"@nl;
 	skos:prefLabel "Handelend als";
-	skos:semanticRelation zv:Natuurlijk Persoon;
+	skos:semanticRelation zv:NatuurlijkPersoon;
 .
 zv:HuidigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Huidig adres"@nl;
 	skos:prefLabel "Huidig adres";
 	skos:altLabel "Wonende";
 	skos:definition "Het adres waar een natuurlijk persoon woont.";
-	#rdfs:comment "";
 	skos:semanticRelation kad:Adres;
 	skos:semanticRelation zv:ToekomstigAdres;
 .
-zv:Huisnummer a skos:Concept; 
+zv:Huisnummer a skos:Concept;
 	rdfs:label "Huisnummer"@nl;
 	skos:prefLabel "Huisnummer";
 	skos:altLabel "Nummeraanduiding";
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Nummeraanduiding;
 .
-zv:HuwelijkseVoorwaarden a skos:Concept; 
+zv:HuwelijkseVoorwaarden a skos:Concept;
 	rdfs:label "Huwelijkse voorwaarden"@nl;
 	skos:prefLabel "Huwelijkse voorwaarden";
 	skos:broaderGeneric zv:Huwelijksgoederenrecht;
 .
-zv:Huwelijksgoederenrecht a skos:Concept skos:Collection; 
+zv:Huwelijksgoederenrecht a skos:Concept, skos:Collection;
 	rdfs:label "Huwelijksgoederenrecht"@nl;
 	skos:prefLabel "Huwelijksgoederenrecht";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 	skos:member zv:GemeenschapVanGoederen;
 	skos:member zv:HuwelijkseVoorwaarden;
 .
-zv:Legitimatie a skos:Concept; 
+zv:Legitimatie a skos:Concept;
 	rdfs:label "Legitimatie"@nl;
 	skos:prefLabel "Legitimatie";
 	skos:altLabel "Legitimatiebewijs";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:InschrijvingHandelsregister a skos:Concept; 
+zv:InschrijvingHandelsregister a skos:Concept;
 	rdfs:label "Inschrijving Handelsregister"@nl;
 	skos:prefLabel "Inschrijving Handelsregister";
 	skos:semanticRelation zv:Rechtspersoon;
 .
-zv:KostenAflossingDoorhaling a skos:Concept skoslex:Object;
+zv:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten aflossing en doorhaling"@nl;
 	skos:prefLabel "Kosten aflossing en doorhaling";
 	skos:broaderGeneric not:Notariskosten;
@@ -369,26 +368,26 @@ zv:KostenAflossingDoorhaling a skos:Concept skoslex:Object;
 	skos:semanticRelation zv:Doorhaling;
 	skos:semanticRelation mak:Verkoper;
 .
-zv:KostenVestigenHypotheek a skos:Concept skoslex:Object;
+zv:KostenVestigenHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten vestigen hypotheek"@nl;
 	skos:prefLabel "Kosten vestigen hypotheek";
 	skos:broaderGeneric not:Notariskosten;
 	skos:semanticRelation not:VestigingHypotheek;
 	skos:semanticRelation mak:Koper;
 .
-zv:LooptijdErfpacht a skos:Concept; 
+zv:LooptijdErfpacht a skos:Concept;
 	rdfs:label "Looptijd erfpacht"@nl;
 	skos:prefLabel "Looptijd erfpacht";
 	skos:altLabel "Einddatum erfpacht";
 	skos:semanticRelation kad:Erfpacht;
 .
-zv:Mailadres a skos:Concept; 
+zv:Mailadres a skos:Concept;
 	rdfs:label "Mailadres"@nl;
 	skos:prefLabel "Mailadres";
 	skos:altLabel "E-mailadres";
 	skos:broaderGeneric zv:Bereikbaarheid;
 .
-zv:Naam a skos:Concept; 
+zv:Naam a skos:Concept;
 	rdfs:label "Naam"@nl;
 	skos:prefLabel "Naam";
 	skos:altLabel "Achternaam";
@@ -399,7 +398,7 @@ zv:NietTegenwerken a skos:Concept, skoslex:Act;
 	skos:prefLabel "Niet tegenwerken";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:Ongehuwd a skos:Concept; 
+zv:Ongehuwd a skos:Concept;
 	rdfs:label ""@nl;
 	skos:prefLabel "Ongehuwd";
 	skos:altLabel "Ongehuwd en geen geregistreerd partnerschap";
@@ -413,7 +412,7 @@ zv:OpgegevenGrootte a skos:Concept;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skos:semanticRelation kad:Perceel;
 .
-zv:OverigeNotariskosten a skos:Concept skoslex:Object;
+zv:OverigeNotariskosten a skos:Concept, skoslex:Object;
 	rdfs:label "Overige notariskosten"@nl;
 	skos:prefLabel "Overige notariskosten";
 	skos:broaderGeneric not:Notariskosten;
@@ -421,26 +420,26 @@ zv:OverigeNotariskosten a skos:Concept skoslex:Object;
 	skos:semanticRelation zv:Tolk;
 	skos:semanticRelation zv:Partij;
 .
-zv:Postcode a skos:Concept; 
+zv:Postcode a skos:Concept;
 	rdfs:label "Postcode"@nl;
 	skos:prefLabel "Postcode";
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Postcode;
 .
-zv:Straat a skos:Concept; 
+zv:Straat a skos:Concept;
 	rdfs:label "Straat"@nl;
 	skos:prefLabel "Straat";
 	skos:altLabel "Openbare ruimte";
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:OpenbareRuimte;
 .
-zv:Telefoon a skos:Concept; 
+zv:Telefoon a skos:Concept;
 	rdfs:label "Telefoon"@nl;
 	skos:prefLabel "Telefoon";
-	skos:altLabel "Telefoonmummer"
+	skos:altLabel "Telefoonmummer";
 	skos:broaderGeneric zv:Bereikbaarheid;
 .
-zv:Tolk a skos:Concept skoslex:Object; 
+zv:Tolk a skos:Concept, skoslex:Object;
 	rdfs:label "Tolk"@nl;
 	skos:prefLabel "Tolk";
 .
@@ -451,32 +450,32 @@ zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	#rdfs:comment "";
 	skos:semanticRelation kad:Adres;
 .
-zv:ToestemmingPartner a skos:Concept; 
+zv:ToestemmingPartner a skos:Concept;
 	rdfs:label "Toestemming partner"@nl;
 	skos:prefLabel "Toestemming partner";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:VerminderingOverdrachtsbelastingArt13 a skos:concept skoslex:Object
+zv:VerminderingOverdrachtsbelastingArt13 a skos:concept, skoslex:Object;
 	rdfs:label "Vermindering overdrachtsbelasting artikel 13"@nl;
 	skos:prefLabel "Vermindering overdrachtsbelasting artikel 13";
 .
-zv:Verordening a skos:Concept, skoslex:Object; 
+zv:Verordening a skos:Concept, skoslex:Object;
 	rdfs:label "Verordening"@nl;
 	skos:prefLabel "Verordening";
 .
-zv:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act; 
+zv:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening overdrachtsbelasting artikel 13"@nl;
 	skos:prefLabel "Verrekening overdrachtsbelasting artikel 13";
 	skoslex:actor mak:Koper;
 	skoslex:actor mak:Verkoper;
 	skoslex:Object zv:VerminderingOverdrachtsbelastingArt13;
 .
-zv:VertegenwoordigdDoor a skos:Concept; 
+zv:VertegenwoordigdDoor a skos:Concept;
 	rdfs:label "Vertegenwoordigd door"@nl;
 	skos:prefLabel "Vertegenwoordigd door";
 	skos:semanticRelation zv:Persoon;
 .
-zv:Voornamen a skos:Concept; 
+zv:Voornamen a skos:Concept;
 	rdfs:label "Voornamen"@nl;
 	skos:prefLabel "Voornamen";
 	skos:semanticRelation zv:NatuurlijkPersoon;
@@ -487,10 +486,9 @@ zv:WerkelijkeGrootte a skos:Concept;
 	skosthes:broaderGeneric kad:Grootte;
 	skos:semanticRelation kad:Perceel;
 .
-zv:Woonplaats a skos:Concept; 
+zv:Woonplaats a skos:Concept;
 	rdfs:label "Woonplaats"@nl;
 	skos:prefLabel "Woonplaats";
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Woonplaats;
 .
-

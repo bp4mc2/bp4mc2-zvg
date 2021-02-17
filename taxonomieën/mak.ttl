@@ -272,7 +272,7 @@ mak:Betaling a skos:Concept, skoslex:Act;
 	skoslex:object not:Koopsom;
 	skoslex:object not:KostenEnOverdrachtsbelasing;
 	skoslex:agent not:Notaris;
-	skoshtes:broaderPartitive not:PasserenAkteLevering;
+	skosthes:broaderPartitive not:PasserenAkteLevering;
 	skoslex:record mak:ArtikelBetaling;
 .
 mak:Eigendomsoverdracht a skos:Concept, skoslex:Act;
@@ -540,7 +540,7 @@ mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel: Kosten/Overdrachtsbelasting";
 	rdfs:comment '''In dit artikel wordt ingevuld wie de kosten voor zijn rekening neemt: koper of verkoper. Als verkoper deze kosten betaalt, spreekt men van "v.o.n." (vrij op naam). Als koper deze kosten betaalt, spreekt men van "k.k." (kosten koper). Onder deze kosten worden verstaan: notariskosten voor de akte van levering (incl. BTW), kosten van het kadaster en overdrachtsbelasting.
 Makelaarskosten en hypotheekkosten vallen er onder andere niet onder! Er wordt apart aangegeven welke kosten die de notaris in rekening brengt voor rekening van verkoper of koper komen. De overdrachtsbelasting bedraagt een percentage van de koopsom. Als de waarde van de onroerende zaak hoger is dan de koopsom wordt de overdrachtsbelasting over deze waarde berekend.
-Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.'''
+Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.''';
 	skos:scopeNote "Artikel 2.1 van de model koopovereenkomst.";
 	skoslex:isAbout not:KostenEnOverdrachtsbelasing;
 	skoslex:isAbout zv:KostenAflossingDoorhaling;
