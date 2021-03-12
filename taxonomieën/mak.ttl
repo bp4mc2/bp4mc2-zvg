@@ -543,8 +543,8 @@ Makelaarskosten en hypotheekkosten vallen er onder andere niet onder! Er wordt a
 Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.''';
 	skos:scopeNote "Artikel 2.1 van de model koopovereenkomst.";
 	skoslex:isAbout not:KostenEnOverdrachtsbelasing;
-	skoslex:isAbout zv:KostenAflossingDoorhaling;
-	skoslex:isAbout zv:KostenVestigenHypotheek;
+	skoslex:isAbout not:KostenAflossingDoorhaling;
+	skoslex:isAbout not:KostenVestigenHypotheek;
 	skoslex:isAbout not:OverigeNotariskosten;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
