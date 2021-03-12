@@ -455,26 +455,6 @@ zv:ToestemmingPartner a skos:Concept;
 	skos:prefLabel "Toestemming partner";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:VerminderingOverdrachtsbelastingArt13 a skos:concept, skoslex:Object;
-	rdfs:label "Vermindering overdrachtsbelasting artikel 13"@nl;
-	skos:prefLabel "Vermindering overdrachtsbelasting artikel 13";
-.
-zv:Verordening a skos:Concept, skoslex:Object;
-	rdfs:label "Verordening"@nl;
-	skos:prefLabel "Verordening";
-.
-zv:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act;
-	rdfs:label "Verrekening overdrachtsbelasting artikel 13"@nl;
-	skos:prefLabel "Verrekening overdrachtsbelasting artikel 13";
-	skoslex:actor mak:Koper;
-	skoslex:actor mak:Verkoper;
-	skoslex:Object zv:VerminderingOverdrachtsbelastingArt13;
-.
-zv:VertegenwoordigdDoor a skos:Concept;
-	rdfs:label "Vertegenwoordigd door"@nl;
-	skos:prefLabel "Vertegenwoordigd door";
-	skos:semanticRelation zv:Persoon;
-.
 zv:Voornamen a skos:Concept;
 	rdfs:label "Voornamen"@nl;
 	skos:prefLabel "Voornamen";
