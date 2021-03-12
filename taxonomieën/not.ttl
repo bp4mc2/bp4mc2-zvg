@@ -36,7 +36,9 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37> rdfs:label "artikel 37 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=38&lid=1> rdfs:label "artikel 38, eerste lid, van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39> rdfs:label "artikel 39 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1> rdfs:label "artikel 39, eerste lid, van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40> rdfs:label "artikel 40 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2> rdfs:label "artikel 40, tweede lid, van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46> rdfs:label "artikel 46 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49> rdfs:label "artikel 49 van de Wet op het notarisambt".
 
@@ -55,6 +57,7 @@
 <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01> rdfs:label "Registratiewet 1970".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9> rdfs:label "artikel 9 van de Wet op belastingen van rechtsverkeer".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2> rdfs:label "bijlage 2 van de Regeling toegelaten instellingen volkshuisvesting 2015".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13> rdfs:label " artikel 13 van de Wet op belastingen van rechtsverkeer".
 
 #--
 #De notaris is al bij het opstellen van de koopovereenkomst bekend. De naam van de notaris wordt in de koopovereenkomst opgenomen.
@@ -64,17 +67,19 @@
 not:Comparant a skos:Concept, skoslex:Actor;
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant";
-	skos:definition "Persoon die bij een notaris (of een rechter) verschijnt om een akte te laten opmaken, die als partij in de akte is opgenomen en die de akte ondertekent.";
+	skos:definition "Natuurlijke persoon die bij het verlijden van een notariële akte aan de notaris verschijnt.";
 	rdfs:comment "Een persoon die als (gemachtigde van een) partij in de notariële akte is vermeld.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
 	skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen.";
 	skosthes:broaderGeneric zv:Partij;
 	skosthes:narrowerGeneric not:Vervreemder;
 	skosthes:narrowerGeneric not:Verkrijger;
+	skosthes:narrowerGeneric not:Vertegenwoordiger;
+	skosthes:narrowerGeneric not:Gevolmachtigde;
 .
 not:Notaris a skos:Concept, skoslex:Agent;
 	rdfs:label "Notaris"@nl;
-	#rdfs:label "Notary"@en;
+	#rdfs:label "Notary"@en
 	skos:prefLabel "Notaris";
 	skos:altLabel "Ambtenaar";
 	skos:altLabel "Bevoegd protocolhouder";
@@ -112,6 +117,14 @@ not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van obje
         rdfs:comment "Partij die eigenaar wordt van een (onroerende) zaak of recht.";
         skosthes:narrowerGeneric mak:Koper;  #Een koper is altijd een verkrijger, maar een verkrijger is niet altijd een koper. Vandaar vanuit dit object een relatie naar verkoper en een narrowerGeneric.
 	skosthes:broaderGeneric zv:Partij;
+.
+not:Vertegenwoordiger a skos:Concept;
+	rdfs:label "Vertegenwoordiger"@nl;
+	skos:prefLabel "Vertegenwoordiger"@nl;
+	skos:definition "Persoon die bevoegd is om een andere persoon te vertegenwoordigen, om namens een andere persoon (de vertegenwoordigde) (bepaalde) rechtshandelingen te verrichten."@nl;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Vervreemder"@nl;
@@ -438,6 +451,15 @@ not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 	skoslex:record not:AkteVanVolmacht;
 	skoslex:object not:NotarieleVolmacht;
 .
+not:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act;
+	rdfs:label "Verrekening overdrachtsbelasting artikel 13"@nl;
+	skos:prefLabel "Verrekening overdrachtsbelasting artikel 13";
+	skos:definition: "U betaalt overdrachtsbelasting vanaf het moment dat de overdracht bij de notaris heeft plaats gevonden en het pand is ingeschreven in het Kadaster. In Nederland moet de notaris er op toezien dat voldoende overdrachtsbelasting betaald wordt. Een verrekening wordt door de notaris meegenomen."@nl;
+	skoslex:actor mak:Koper;
+	skoslex:actor mak:Verkoper;
+	skoslex:agent not:Notaris;
+	skoslex:object not:VerminderingOverdrachtsbelastingArt13;
+.
 not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
 	rdfs:label "Vestigen beperkt recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen.";
@@ -727,6 +749,15 @@ not:Optierecht a skos:Concept, skoslex:Object;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FOptierecht>;
         skosthes:broaderGeneric kad:ZakelijkRecht;
 .
+not:OverigeNotariskosten a skos:Concept, skoslex:Object;
+	rdfs:label "Overige notariskosten"@nl;
+	skos:prefLabel "Overige notariskosten";
+	skos:definition "In een akte kunnen overige notariskosten worden genoemd. Dit kunnen kosten zijn voor een volmacht of inhuren van een tolk.";
+	skos:broaderGeneric not:Notariskosten;
+	skos:related not:Volmacht;
+	skos:related zv:Tolk;
+	skos:related zv:Partij;
+.
 not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of akte. Het is geen specialisatie van Adres, maar kan ook de aanduiding van een weiland zijn (tegenover ….) of de naam van een landhuis. Dit is niet iets dat het Kadaster registreert.
                rdfs:label "Plaatselijk bekend"@nl;
                skos:prefLabel "Plaatselijk bekend";
@@ -801,6 +832,28 @@ not:VanRechtswegeOntbonden a skos:Concept;
 	skos:definition "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is.";
 	rdfs:comment "Automatisch einde van een juridsche afspraak.";
 .
+not:VerminderingOverdrachtsbelastingArt13 a skos:concept, skoslex:Object;
+	rdfs:label "Vermindering overdrachtsbelasting artikel 13"@nl;
+	skos:prefLabel "Vermindering overdrachtsbelasting artikel 13";
+	skos:definition "In geval van verkrijging binnen zes maanden na een vorige verkrijging van dezelfde goederen door een ander wordt de waarde verminderd met het bedrag waarover ter zake van de vorige verkrijging was verschuldigd hetzij overdrachtsbelasting welke niet in mindering heeft gestrekt van schenk- of erfbelasting, hetzij omzetbelasting welke in het geheel niet op grond vanartikel 15 van de Wet op de omzetbelasting 1968in aftrek kon worden gebracht.";
+	rdfs:comment "Artikel 13 van de Wet op belastingen van rechtsverkeer zorgt ervoor dat er geen cumulatie van overdrachtsbelasting ontstaat indien een onroerende zaak binnen een bepaalde termijn na een voorafgaande verkrijging weer wordt overgedragen. Bij de volgende verkrijging hoeft alleen overdrachtsbelasting betaald te worden over de meerwaarde.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
+.
+not:Verordening a skos:Concept, skoslex:Object;#Deze hoort wellicht thuis in het domein van het Kadaster
+	rdfs:label "Verordening"@nl;
+	skos:prefLabel "Verordening";
+	skos:definition "Een voorschrift van de gemeenteraad met betrekking tot a) gebruik van woningen, woonketen, woonwagens, andere gebouwen, bouwwerken die geen gebouwen zijn, standplaatsen en open erven; b) tegengaan van bouwen op verontreinigde grond; c) slopen; d) aanvragen woonvergunningen en e) overdracht van bouwvergunningen.";
+	rdfs:comment "Een door de gemeenteraad opgelegde regeling die gaat over gebouwen of grond.";
+.
+not:VertegenwoordigdDoor a skos:Concept;
+	rdfs:label "Vertegenwoordigd door"@nl;
+	skos:prefLabel "Vertegenwoordigd door";
+	skos:definition "Een persoon (de vertegenwoordigde) kan worden vertegenwoordigd door een ander persoon (de vertegenwoordiger), die (bepaalde) rechtshandelingen kan verrichten namens de vertegenwoordigde."@nl;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";	
+	skos:semanticRelation zv:Persoon;
+	skos:semanticRelation not:Vertegenwoordiger;
+.
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
 	skos:prefLabel "Volmacht";
@@ -833,12 +886,12 @@ not:Wederinkoop a skos:Concept; #Zou het beste in in het Kadaster-domein passen,
 	#rdfs:comment "";
 .
 not:Wegneemrecht a skos:Concept, skoslex:Object;
-               rdfs:label "Wegneemrecht"@nl;
-               skos:prefLabel "Wegneemrecht";
-               skos:altLabel "Wettelijk wegneemrecht";
-               skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
-               rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
-               dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
-               skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
-               skos:semanticRelation kad:Erfpacht;
+	rdfs:label "Wegneemrecht"@nl;
+	skos:prefLabel "Wegneemrecht";
+	skos:altLabel "Wettelijk wegneemrecht";
+	skos:definition "Recht van een erfpachter om gebouwen, werken en beplantingen, die door hemzelf of een rechtsvoorganger onverplicht zijn aangebracht of van de eigenaar tegen vergoeding zijn overgenomen, weg te nemen, mits hij de in erfpacht gegeven zaak in de oude toestand terugbrengt.";
+	rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
+	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
+	skos:semanticRelation kad:Erfpacht;
 .
