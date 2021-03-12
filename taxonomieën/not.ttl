@@ -662,6 +662,16 @@ not:Koopsom a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=46>;
 	skos:related kad:Object;
 .
+not:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
+	rdfs:label "Kosten aflossing en doorhaling"@nl;
+	skos:prefLabel "Kosten aflossing en doorhaling";
+	skos:definition "Voor het doorhalen van een hypotheekakte bij het Kadaster is een royementsakte nodig. Deze wordt opgesteld door de notaris en een notaris brengt hiervoor kosten in rekening. Een royementsakte is nodig bij het oversluiten van een hypotheek naar een andere geldverstrekker; bij de verkoop van je huis; of bij de aflossing van de hypotheek.";
+	skos:broaderGeneric not:Notariskosten;
+	skos:semanticRelation fin:Aflossen;
+	skos:semanticRelation zv:Doorhaling;
+	skos:semanticRelation kad:DoorhalingHypotheek;
+	skos:semanticRelation mak:Verkoper;
+.
 not:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Kosten/Overdrachtsbelasting";
@@ -669,6 +679,14 @@ not:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric not:Notariskosten;
 	skosthes:narrowerGeneric not:Kadasterkosten;
 	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
+.
+not:KostenVestigenHypotheek a skos:Concept, skoslex:Object;
+	rdfs:label "Kosten vestigen hypotheek"@nl;
+	skos:prefLabel "Kosten vestigen hypotheek";
+	skos:definition "Geheel van kosten voor het vestigen van een hypotheek.";
+	skos:broaderGeneric not:Notariskosten;
+	skos:semanticRelation not:VestigingHypotheek;
+	skos:semanticRelation mak:Koper;
 .
 not:KwalitatieveRechten a skos:Concept;
 	rdfs:label "Kwalitatieve rechten"@nl;
@@ -759,11 +777,11 @@ not:OverigeNotariskosten a skos:Concept, skoslex:Object;
 	skos:related zv:Partij;
 .
 not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of akte. Het is geen specialisatie van Adres, maar kan ook de aanduiding van een weiland zijn (tegenover ….) of de naam van een landhuis. Dit is niet iets dat het Kadaster registreert.
-               rdfs:label "Plaatselijk bekend"@nl;
-               skos:prefLabel "Plaatselijk bekend";
-               skos:definition "De plaatselijke benaming, zo deze bekend is.";
-               skosthes:broaderGeneric kad:Adres;
-               skos:semanticRelation kad:OnroerendeZaak;
+	rdfs:label "Plaatselijk bekend"@nl;
+	skos:prefLabel "Plaatselijk bekend";
+	skos:definition "De plaatselijke benaming, zo deze bekend is.";
+	skosthes:broaderGeneric kad:Adres;
+	skos:semanticRelation kad:OnroerendeZaak;
 .
 not:PlaatsVanVestiging a skos:Concept;
 	rdfs:label "Plaats van vestiging"@nl;
