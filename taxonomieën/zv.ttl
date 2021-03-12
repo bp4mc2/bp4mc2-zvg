@@ -338,6 +338,19 @@ zv:Huisnummer a skos:Concept;
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Nummeraanduiding;
 .
+zv:HuwelijkseVoorwaarden a skos:Concept;
+	rdfs:label "Huwelijkse voorwaarden"@nl;
+	skos:prefLabel "Huwelijkse voorwaarden";
+	skos:broaderGeneric zv:Huwelijksgoederenrecht;
+.
+zv:Huwelijksgoederenrecht a skos:Concept, skos:Collection;#Waarom een collectie?
+	rdfs:label "Huwelijksgoederenrecht"@nl;
+	skos:prefLabel "Huwelijksgoederenrecht";
+	skos:definition "Rechtsgebied uit boeken 1 en 6 Burgerlijk Wetboek die gaat over de zakelijke verhouding tussen (ex-)echtelieden. Een voorbeeld is de mate waarin gemeenschap van goederen in de huwelijkse voorwaarden is uitgesloten of schenkingen in de gemeenschap vallen.";
+	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:member zv:GemeenschapVanGoederen;
+	skos:member zv:HuwelijkseVoorwaarden;
+.
 zv:Legitimatie a skos:Concept;
 	rdfs:label "Legitimatie"@nl;
 	skos:prefLabel "Legitimatie";
