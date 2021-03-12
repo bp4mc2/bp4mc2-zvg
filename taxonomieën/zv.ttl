@@ -73,6 +73,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1> rdfs:label "artikel 1 van de Faillissementswet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1> rdfs:label "artikel 3.1 van de Wet ruimtelijke ordening".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0028575> rdfs:label "Wet identificatieplicht BES".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0006297&hoofdstuk=II&artikel=2> rdfs:label "artikel 2 van de Wet op de identificatieplicht".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42> rdfs:label "artikel 42 van de Invorderingswet 1990".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0024282&hoofdstuk=2&paragraaf=2.1&artikel=3&lid=5> rdfs:label "artikel 3, vijfde lid, van de Wet ter voorkoming van witwassen en financieren van terrorisme".
 
@@ -353,27 +354,14 @@ zv:Legitimatie a skos:Concept;
 	rdfs:label "Legitimatie"@nl;
 	skos:prefLabel "Legitimatie";
 	skos:altLabel "Legitimatiebewijs";
+	skos:definition "Het adres waar een natuurlijk persoon zal wonen met ingang van een bepaalde datum in de toekomst.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0006297&hoofdstuk=II&artikel=2>;
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
 zv:InschrijvingHandelsregister a skos:Concept;
 	rdfs:label "Inschrijving Handelsregister"@nl;
 	skos:prefLabel "Inschrijving Handelsregister";
 	skos:semanticRelation zv:Rechtspersoon;
-.
-zv:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
-	rdfs:label "Kosten aflossing en doorhaling"@nl;
-	skos:prefLabel "Kosten aflossing en doorhaling";
-	skos:broaderGeneric not:Notariskosten;
-	skos:semanticRelation fin:Aflossen;
-	skos:semanticRelation zv:Doorhaling;
-	skos:semanticRelation mak:Verkoper;
-.
-zv:KostenVestigenHypotheek a skos:Concept, skoslex:Object;
-	rdfs:label "Kosten vestigen hypotheek"@nl;
-	skos:prefLabel "Kosten vestigen hypotheek";
-	skos:broaderGeneric not:Notariskosten;
-	skos:semanticRelation not:VestigingHypotheek;
-	skos:semanticRelation mak:Koper;
 .
 zv:LooptijdErfpacht a skos:Concept;
 	rdfs:label "Looptijd erfpacht"@nl;
