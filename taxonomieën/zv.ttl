@@ -338,18 +338,6 @@ zv:Huisnummer a skos:Concept;
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Nummeraanduiding;
 .
-zv:HuwelijkseVoorwaarden a skos:Concept;
-	rdfs:label "Huwelijkse voorwaarden"@nl;
-	skos:prefLabel "Huwelijkse voorwaarden";
-	skos:broaderGeneric zv:Huwelijksgoederenrecht;
-.
-zv:Huwelijksgoederenrecht a skos:Concept, skos:Collection;
-	rdfs:label "Huwelijksgoederenrecht"@nl;
-	skos:prefLabel "Huwelijksgoederenrecht";
-	skos:semanticRelation zv:NatuurlijkPersoon;
-	skos:member zv:GemeenschapVanGoederen;
-	skos:member zv:HuwelijkseVoorwaarden;
-.
 zv:Legitimatie a skos:Concept;
 	rdfs:label "Legitimatie"@nl;
 	skos:prefLabel "Legitimatie";
