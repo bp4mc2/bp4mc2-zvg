@@ -412,14 +412,6 @@ zv:OpgegevenGrootte a skos:Concept;
 			# weggehaald: is er wel een relatie tussen de opgegeven grootte en de weergegeven grootte? Er mist nog een definitie?
 	skos:semanticRelation kad:Perceel;
 .
-zv:OverigeNotariskosten a skos:Concept, skoslex:Object;
-	rdfs:label "Overige notariskosten"@nl;
-	skos:prefLabel "Overige notariskosten";
-	skos:broaderGeneric not:Notariskosten;
-	skos:semanticRelation not:Volmacht;
-	skos:semanticRelation zv:Tolk;
-	skos:semanticRelation zv:Partij;
-.
 zv:Postcode a skos:Concept;
 	rdfs:label "Postcode"@nl;
 	skos:prefLabel "Postcode";
