@@ -545,7 +545,7 @@ Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoor
 	skoslex:isAbout not:KostenEnOverdrachtsbelasing;
 	skoslex:isAbout zv:KostenAflossingDoorhaling;
 	skoslex:isAbout zv:KostenVestigenHypotheek;
-	skoslex:isAbout zv:OverigeNotariskosten;
+	skoslex:isAbout not:OverigeNotariskosten;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 zv:VerrekeningOverdrachtsbelastingArt13 skoslex:record mak:Artikel13Verschil.
