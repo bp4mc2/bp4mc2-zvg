@@ -646,6 +646,7 @@ De een-na-laatste zin van artikel 6.3. ziet op de herstelkosten. Voor gebreken d
 Koper draagt het risico van de overige (gevolg) schade, tenzij verkoper een verwijt treft. Verkoper treft een verwijt als hij bijvoorbeeld willens en wetens gebreken verzwijgt die het normale gebruik belemmeren.''';
 	skos:scopeNote "Artikel 6.3 van de model koopovereenkomst.";
 	skoslex:isAbout mak:EigenschappenNormaalGebruik;
+	skoslex:isAbout not:AftrekNieuwVoorOud;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelVerontreiniging a skos:Concept, skoslex:Record;
