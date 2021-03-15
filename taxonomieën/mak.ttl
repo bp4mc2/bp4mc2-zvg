@@ -261,16 +261,6 @@ mak:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
 .
-mak:Betaling a skos:Concept, skoslex:Act;
-	rdfs:label "Betaling"@nl;
-	skos:prefLabel "Betaling";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object not:Koopsom;
-	skoslex:object not:KostenEnOverdrachtsbelasing;
-	skoslex:agent not:Notaris;
-	skosthes:broaderPartitive not:PasserenAkteLevering;
-	skoslex:record mak:ArtikelBetaling;
-.
 mak:Eigendomsoverdracht a skos:Concept, skoslex:Act;
 	rdfs:label "Eigendomsoverdracht"@nl;
 	skos:prefLabel "Eigendomsoverdracht";
