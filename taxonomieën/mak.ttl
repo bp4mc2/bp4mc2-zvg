@@ -95,10 +95,6 @@ mak:Aanhorigheden a skos:Concept, skoslex:Object;
 	skos:prefLabel "Aanhorigheden";
 	skos:semanticRelation mak:Woning;
 .
-mak:AftrekNieuwVoorOud a skos:Concept, skoslex:Object;
-	rdfs:label "Aftrek nieuw voor oud"@nl;
-	skos:prefLabel "Aftrek nieuw voor oud";
-.
 mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:label "Asbest"@nl;
 	skos:prefLabel "Asbest";
