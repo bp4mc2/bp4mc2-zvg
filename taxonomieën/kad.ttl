@@ -115,6 +115,10 @@ kad:Rechthebbende a skos:Concept;
 .
 #--
 #Acts
+kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
+	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
+	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
+.
 kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
 #	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster; -> nog te definiëren
 	rdfs:label "Bijwerking basisregistratie Kadaster";
@@ -215,6 +219,10 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	rdfs:comment "Een beperkt recht is dat iemand geen volledig recht heeft op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
+.
+kad:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object;
+	rdfs:label "Beschikking wet bodemsanering"@nl;
+	skos:prefLabel "Beschikking wet bodemsanering";
 .
 kad:Beslag a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Beslag;
@@ -632,6 +640,14 @@ kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Vermogensrecht;
 	skos:semanticRelation kad:Zaak;
 .
+#Overige concepts
+kad:OmschrijvingOnroerendeZaak a skos:Concept;
+	rdfs:label "Omschrijving onroerende zaak"@nl;
+	skos:prefLabel "Omschrijving onroerende zaak";
+	rdfs:comment "De gegevens van de onroerende zaak worden ingevuld, zoals de straat, het huisnummer, de gemeente en de kadastrale gegevens. Bij de grootte van het grondoppervlak wordt doorgaans uitgegaan van de vermelde gegevens in de openbare registers. Deze gegevens kunnen afwijken van de feitelijke situatie, zie artikel 6.11. Tenslotte wordt de koopsom ingevuld, eerst in cijfers en dan voluit geschreven.";
+	skos:semanticRelation kad:OnroerendeZaak;
+.
+
 #---
 # Voorbeeldsituatie uitwerking metadata-link
 #---
