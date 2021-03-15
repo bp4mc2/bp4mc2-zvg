@@ -250,14 +250,6 @@ zv:Bereikbaarheid a skos:Concept;
 	skos:altLabel "Bereikbaar";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
-zv:Beschikking a skos:Concept, skoslex:Object;
-	rdfs:label "Beschikking"@nl;
-	skos:prefLabel "Beschikking";
-.
-zv:Bevel a skos:Concept, skoslex:Object;
-	rdfs:label "Bevel"@nl;
-	skos:prefLabel "Bevel";
-.
 zv:BevoegdGezag a skos:Concept, skoslex:Object;
 	rdfs:label "Bevoegd gezag"@nl;
 	skos:prefLabel "Bevoegd gezag";
