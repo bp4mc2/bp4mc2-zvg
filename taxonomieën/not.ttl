@@ -505,6 +505,12 @@ not:AfschriftAkte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=49>;
         skosthes:broaderGeneric not:NotarieleAkte;
 .
+not:AftrekNieuwVoorOud a skos:Concept, skoslex:Object;
+	rdfs:label "Aftrek nieuw voor oud"@nl;
+	skos:prefLabel "Aftrek nieuw voor oud";
+	skos:altLabel "Aftrek wegens veronderstelde verbetering van oud tot nieuw";
+	skos:definition "Voor gebreken die het normale gebruik belemmeren en die niet aan koper bekend of kenbaar waren op het moment van het tot stand komen van deze koopovereenkomst is verkoper uitsluitend aansprakelijk voor de herstelkosten. Bij het vaststellen van de herstelkosten wordt rekening gehouden met de aftrek ‘nieuw voor oud’. Verkoper is niet aansprakelijk voor overige (aanvullende) schade, tenzij verkoper een verwijt treft.";
+.
 not:Akte a skos:Concept, skoslex:Record;
 	rdfs:label "Akte"@nl;
 	#rdfs:label "Deed"@en;
