@@ -278,6 +278,14 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
 	#Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 	#Dit moet er nog in de taxonomie worden opgenomen.
 .
+not:Kostenverdeling a skos:Concept, skoslex:Act;
+	rdfs:label "Kostenverdeling"@nl;
+	skos:prefLabel "Kostenverdeling"@nl;
+	skos:definition "De notaris neemt de kostenverdeling mee bij de leveringsakte."@nl;
+	skos:editorialNote "Begrip is niet gevalideerd door de KNB."@nl;
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:object not:KostenEnOverdrachtsbelasting;
+.
 not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als die van Notaris. Voor beiden is wat te zeggen. De mening van de KNB is dat deze meer thuishoort in het domein van de notaris, vanwege de rol die de notaris bij de levering inneemt.
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
 	skos:prefLabel "Levering";
