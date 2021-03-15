@@ -261,21 +261,11 @@ mak:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
 .
-mak:Eigendomsoverdracht a skos:Concept, skoslex:Act;
-	rdfs:label "Eigendomsoverdracht"@nl;
-	skos:prefLabel "Eigendomsoverdracht";
-	skosthes:broaderPartitive not:Levering;
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object kad:Eigendom;
-	skoslex:object kad:Erfpacht;
-	skoslex:record mak:ArtikelEigendomsoverdracht;
-.
 mak:FeitelijkeLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Feitelijke levering"@nl;
 	skos:prefLabel "Feitelijke levering";
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:Woning;
-	skoslex:record mak:ArtikelFeitelijkeLevering;
 .
 mak:Garantie a skos:Concept, skoslex:Act;
 	rdfs:label "Garantie"@nl;
@@ -559,6 +549,8 @@ mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	rdfs:comment '''Er zijn verschillende soorten overdrachten. De belangrijkste zijn de juridische en de feitelijke overdracht. De juridische overdracht (ook wel juridische levering, eigendomsoverdracht of transport genoemd) vindt plaats bij de notaris via een notariële akte van levering en inschrijving daarvan in de openbare registers. De feitelijke overdracht vindt plaats door het overhandigen van de sleutels en het in bezit nemen van de verkochte onroerende zaak. Het is mogelijk dat er twee data zijn voor de verschillende overdrachten (zie artikel 7); maar vaak vallen de twee data echter samen (namelijk indien de akte van levering nog dezelfde dag wordt ingeschreven).''';
 	skos:scopeNote "Artikel 4 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
+	skoslex:isAbout not:Eigendomsoverdracht;
+	skoslex:isAbout not:FeitelijkeLevering;
 .
 mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht, lid 1"@nl;
