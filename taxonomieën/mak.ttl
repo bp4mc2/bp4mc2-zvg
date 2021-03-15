@@ -316,13 +316,6 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
-mak:Kostenverdeling a skos:Concept, skoslex:Act;
-	rdfs:label "Kostenverdeling"@nl;
-	skos:prefLabel "Kostenverdeling";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object not:KostenEnOverdrachtsbelasting;
-	skoslex:record mak:ArtikelKostenOverdrachtsbelasting;
-.
 mak:Onbekendheidsverklaring a skos:Concept, skoslex:Act;
 	rdfs:label "Onbekendheidsverklaring"@nl;
 	skos:prefLabel "Onbekendheidsverklaring";
@@ -522,6 +515,7 @@ Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoor
 	skoslex:isAbout not:KostenAflossingDoorhaling;
 	skoslex:isAbout not:KostenVestigenHypotheek;
 	skoslex:isAbout not:OverigeNotariskosten;
+	skoslex:isAbout not:Kostenverdeling;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 zv:VerrekeningOverdrachtsbelastingArt13 skoslex:record mak:Artikel13Verschil.
