@@ -188,6 +188,19 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:object not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
+not:Betaling a skos:Concept, skoslex:Act;
+	rdfs:label "Betaling"@nl;
+	skos:prefLabel "Betaling"@nl;
+	skos:definition "De overdracht van geld."@nl;
+	rdfs:comment "De notaris ontvangt de koopsom van koper en voldoet – nadat eerst de schuldeisers van verkoper, waaronder hypotheekverstrekker(s) en beslaglegger(s), die uit de koopsom behoren te worden voldaan in verband met de correcte afwikkeling van de koop en levering overeenkomstig de voor de notaris geldende beroeps- en beleidsregels, het overblijvende restant van die koopsom aan verkoper. Omdat de notaris ervoor moet instaan, dat het verkochte bij de inschrijving in de openbare registers onbelast is met bijvoorbeeld hypotheken of beslagen en hij dit eerst na de leveringsdatum officieel bevestigd krijgt, mag hij - mede verzekeringstechnisch - de koopsom namens koper pas uitbetalen als hij deze bevestiging heeft, meestal enkele dagen na de datum van levering."@nl;
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:object not:Koopsom;
+	skoslex:object not:KostenEnOverdrachtsbelasing;
+	skoslex:agent not:Notaris;
+	skosthes:broaderPartitive not:PasserenAkteLevering;
+	skoslex:record mak:ArtikelBetaling;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
+.
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden, bijvoorbeeld een gemachtigde. Dit begrip moet nog geintroduceerd worden.
 	skos:prefLabel "Identificeren voor akte (notaris)";
@@ -510,6 +523,7 @@ not:AftrekNieuwVoorOud a skos:Concept, skoslex:Object;
 	skos:prefLabel "Aftrek nieuw voor oud";
 	skos:altLabel "Aftrek wegens veronderstelde verbetering van oud tot nieuw";
 	skos:definition "Voor gebreken die het normale gebruik belemmeren en die niet aan koper bekend of kenbaar waren op het moment van het tot stand komen van deze koopovereenkomst is verkoper uitsluitend aansprakelijk voor de herstelkosten. Bij het vaststellen van de herstelkosten wordt rekening gehouden met de aftrek ‘nieuw voor oud’. Verkoper is niet aansprakelijk voor overige (aanvullende) schade, tenzij verkoper een verwijt treft.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:Akte a skos:Concept, skoslex:Record;
 	rdfs:label "Akte"@nl;
