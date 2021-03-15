@@ -657,6 +657,8 @@ mak:ArtikelBeschikkingWetBodemsanering a skos:Concept, skoslex:Record;
 	skos:scopeNote "Artikel 6.4.4 van de model koopovereenkomst.";
 	skoslex:isAbout mak:BeschikkingWetBodemsanering;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
+	skoslex:isAbout not:Beschikking;
+	skoslex:isAbout not:Bevel;
 .
 mak:ArtikelInspectie a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: inspectie"@nl;
