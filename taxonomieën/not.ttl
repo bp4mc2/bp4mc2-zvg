@@ -193,13 +193,28 @@ not:Betaling a skos:Concept, skoslex:Act;
 	skos:prefLabel "Betaling"@nl;
 	skos:definition "De overdracht van geld."@nl;
 	rdfs:comment "De notaris ontvangt de koopsom van koper en voldoet – nadat eerst de schuldeisers van verkoper, waaronder hypotheekverstrekker(s) en beslaglegger(s), die uit de koopsom behoren te worden voldaan in verband met de correcte afwikkeling van de koop en levering overeenkomstig de voor de notaris geldende beroeps- en beleidsregels, het overblijvende restant van die koopsom aan verkoper. Omdat de notaris ervoor moet instaan, dat het verkochte bij de inschrijving in de openbare registers onbelast is met bijvoorbeeld hypotheken of beslagen en hij dit eerst na de leveringsdatum officieel bevestigd krijgt, mag hij - mede verzekeringstechnisch - de koopsom namens koper pas uitbetalen als hij deze bevestiging heeft, meestal enkele dagen na de datum van levering."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object not:Koopsom;
 	skoslex:object not:KostenEnOverdrachtsbelasing;
 	skoslex:agent not:Notaris;
 	skosthes:broaderPartitive not:PasserenAkteLevering;
 	skoslex:record mak:ArtikelBetaling;
+.
+not:Eigendomsoverdracht a skos:Concept, skoslex:Act;
+	rdfs:label "Eigendomsoverdracht"@nl;
+	skos:prefLabel "Eigendomsoverdracht"@nl;
+	skos:altLabel "Juridische levering"@nl;
+	skos:altLabel "Transport"@nl;
+	skos:definition "De juridische overdracht vindt plaats bij de notaris via een notariële akte van levering en inschrijving daarvan in de openbare registers."@nl;
+	#rdfs:comment "."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
+	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:object kad:Eigendom;
+	skoslex:object kad:Erfpacht;
+	skoslex:record mak:ArtikelEigendomsoverdracht;
+	skosthes:broaderPartitive not:Levering;
 .
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden, bijvoorbeeld een gemachtigde. Dit begrip moet nog geintroduceerd worden.
@@ -267,7 +282,6 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
 	skos:prefLabel "Levering";
 	skos:altLabel "Leveren";
-	skos:altLabel "Eigendomsoverdracht";
 	skos:altLabel "Overdracht";
 	skos:altLabel "Overdragen";
 	skos:altLabel "Transport";
