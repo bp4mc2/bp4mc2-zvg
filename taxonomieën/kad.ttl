@@ -119,6 +119,22 @@ kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
 .
+kad:BeschikkingWetBodemsanering a skos:Concept, skoslex:Act;
+	rdfs:label "Beschikking wet bodemsanering"@nl;
+	skos:prefLabel "Beschikking wet bodemsanering";
+.
+kad:Beslag a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Beslag;
+	rdfs:label "Beslag"@nl;
+	skos:prefLabel "Beslag";
+	skos:definition "Een Beslag is een voorlopige maatregel waarbij de overheid, al dan niet op vordering van een belanghebbende, bepaalde zaken aan iemands vrije beschikking onttrekt, of wel deze onder zich neemt.";
+	rdfs:comment "Een beslag is een tijdelijke maatregel waarbij de overheid bepaalde zaken van iemand afneemt, zodat hij er niets meer mee kan doen.";
+  skos:scopeNote "De belanghebbende kan vorderen tot leggen van beslag op goederen.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=509>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
+.
 kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
 #	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster; -> nog te definiëren
 	rdfs:label "Bijwerking basisregistratie Kadaster";
@@ -167,6 +183,44 @@ kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 	skoslex:object kad:KadastraleGrens;
 	skoslex:actor kad:DeDienst;
+.
+kad:Overeenkomst a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Overeenkomst;
+	rdfs:label "Overeenkomst"@nl;
+	skos:prefLabel "Overeenkomst";
+	skos:definition "Een overeenkomst is een meerzijdige rechtshandeling, waarbij een of meer partijen jegens een of meer andere partijen een verbintenis aan gaan.";
+	rdfs:comment "Een overeenkomst is een afspraak tussen twee of meer partijen";
+	skos:semanticRelation zv:Partij;
+	skosthes:broaderGeneric kad:Rechtshandeling;
+.
+kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Publiekrechtelijke_beperking;
+	rdfs:label "Publiekrechtelijke beperking"@nl;
+	skos:prefLabel "Publiekrechtelijke beperking";
+	skos:definition "Een publiekrechtelijke beperking is een beperking van de bevoegdheid tot gebruik van of beschikking over een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen, niet zijnde een privaatrechtelijke beperking en/of een schuldplichtigheid die rust op een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen.";
+	rdfs:comment "Een publiekrechtelijke beperking is dat de overheid besluit dat iemand niet alles met een huis of stuk grond mag doen. Of niet alles mag doen met de rechten die hij heeft op een huis of stuk grond. Bij een publiekrechtelijke beperking gaat het niet om een beperking volgens het privaatrecht. Ook een schuld voor een huis kan geen publiekrechtelijke beperking zijn.";
+	skos:scopeNote "Onder een publiekrechtelijke beperking wordt verstaan iedere inbreuk op het recht van gebruik en beschikking van onroerende zaken, welke krachtens wet- of regelgeving door de overheid wordt gemaakt. Het zijn door de overheid opgelegde beperkingen. Deze beperkingen bepalen wat wel of niet met een stuk grond of gebouw mag gebeuren. Het aanwijzingsbesluit bevat een overzicht waaruit de verschillende publiekrechtelijke beperkingen gehaald kunnen worden. Hierbij gaat het om bijvoorbeeld: •beschermde monumenten; •beschermde leefomgeving (natuurmonumenten); •bodembescherming (verplichting tot registratie van verontreinigde grond); •maatregelen nodig voor de landsverdediging; •eisen die in het kader van de Woningwet worden gesteld, zoals middelen om bepaalde voorzieningen voor een pand af te kunnen dwingen.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
+	skosthes:broaderGeneric kad:BeperktRecht;
+.
+kad:Rangwisseling a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Rangwisseling;
+	rdfs:label "Rangwisseling"@nl;
+	skos:prefLabel "Rangwisseling";
+	skos:definition "Een Rangwisseling is een bepaling in een notariële akte die in de openbare registers van het Kadaster wordt ingeschreven waarin wordt bepaald dat een hypotheek ten aanzien van een of meer hypotheken of andere beperkte rechten op hetzelfde goed een hogere rang heeft dan haar volgens het tijdstip van haar inschrijving toekomt, mits uit de akte blijkt dat de gerechtigden tot die andere hypotheken of beperkte rechten daarin toestemmen. ";
+	rdfs:comment "Een rangwisseling is dat een hypotheek voorrang heeft boven eerder ingeschreven hypotheken of rechten op datzelfde goed. Hiervoor is een akte van een notaris nodig die wordt ingeschreven in het openbare register van het Kadaster. In de akte staan dat degenen die recht hebben op de andere hypotheken of rechten akkoord gaan met de rangwisseling.";
+	skos:scopeNote "Bij een notariële akte die in de registers wordt ingeschreven, kan worden bepaald dat een hypotheek ten aanzien van een of meer hypotheken op het zelfde goed een hogere rang heeft dan haar volgens het tijdstip van inschrijving toekomt, mits uit de akte blijkt dat de gerechtigden tot die andere hypotheek of hypotheken daarin toestemmen. Met overeenkomstige toepassing van het eerste lid kan ook worden bepaald dat een hypotheek en een ander beperkt recht ten aanzien van elkaar worden geacht in andere volgorde te zijn ontstaan dan is geschied. Let wel: rangwisseling tussen een hypotheek en een beslag is NIET mogelijk omdat een beslag geen beperkt recht is ! Van een dergelijk feit wordt aantekening gemaakt.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
+	skos:semanticRelation not:RechtVanHypotheek;
+.
+kad:Rechtshandeling a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Rechtshandeling;
+	rdfs:label "Rechtshandeling"@nl;
+	skos:prefLabel "Rechtshandeling";
+	skos:definition "Een rechtshandeling is een handeling van een persoon met de bedoeling om een bepaald rechtsgevolg tot stand te brengen.";
+	rdfs:comment "Een rechtshandeling is dat een persoon of rechtspersoon iets doet om een juridisch doel te bereiken. Dit doel noemen juristen een 'rechtsgevolg'.";
+	skos:scopeNote "Een rechtshandeling vereist een op een rechtsgevolg gerichte wil die zich door een verklaring heeft geopenbaard.";
+	skos:semanticRelation zv:Persoon;
 .
 #--
 #Objects, records
@@ -219,22 +273,6 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	rdfs:comment "Een beperkt recht is dat iemand geen volledig recht heeft op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
-.
-kad:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object;
-	rdfs:label "Beschikking wet bodemsanering"@nl;
-	skos:prefLabel "Beschikking wet bodemsanering";
-.
-kad:Beslag a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Beslag;
-	rdfs:label "Beslag"@nl;
-	skos:prefLabel "Beslag";
-	skos:definition "Een Beslag is een voorlopige maatregel waarbij de overheid, al dan niet op vordering van een belanghebbende, bepaalde zaken aan iemands vrije beschikking onttrekt, of wel deze onder zich neemt.";
-	rdfs:comment "Een beslag is een tijdelijke maatregel waarbij de overheid bepaalde zaken van iemand afneemt, zodat hij er niets meer mee kan doen.";
-  skos:scopeNote "De belanghebbende kan vorderen tot leggen van beslag op goederen.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439>;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=509>;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563>;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 .
 #kad:Bezwaard a skos:Concept; De vraag is of we ook relaties willen definiëren. Onderstaande definitie is een andere formulering van de definitie van BeperktRecht.
 #	rdfs:label "Bezwaard"@nl;
@@ -511,15 +549,6 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
 	rdfs:comment "Openbare registers zijn registers waarin je alle notariële akten vindt die betrekking hebben op registergoederen in Nederland. De inschrijving in het openbaar register is nodig om het eigendomsrecht van een registergoed te krijgen.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16>
 .
-kad:Overeenkomst a skos:Concept, skoslex:Act;
-	skos:exactMatch brk:Overeenkomst;
-	rdfs:label "Overeenkomst"@nl;
-	skos:prefLabel "Overeenkomst";
-	skos:definition "Een overeenkomst is een meerzijdige rechtshandeling, waarbij een of meer partijen jegens een of meer andere partijen een verbintenis aan gaan.";
-	rdfs:comment "Een overeenkomst is een afspraak tussen twee of meer partijen";
-	skos:semanticRelation zv:Partij;
-	skosthes:broaderGeneric kad:Rechtshandeling;
-.
 kad:Perceel a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Perceel;
 	rdfs:label "Perceel"@nl;
@@ -539,41 +568,12 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
-kad:PubliekrechtelijkeBeperking a skos:Concept;
-	skos:exactMatch brk:Publiekrechtelijke_beperking;
-	rdfs:label "Publiekrechtelijke beperking"@nl;
-	skos:prefLabel "Publiekrechtelijke beperking";
-	skos:definition "Een publiekrechtelijke beperking is een beperking van de bevoegdheid tot gebruik van of beschikking over een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen, niet zijnde een privaatrechtelijke beperking en/of een schuldplichtigheid die rust op een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen.";
-	rdfs:comment "Een publiekrechtelijke beperking is dat de overheid besluit dat iemand niet alles met een huis of stuk grond mag doen. Of niet alles mag doen met de rechten die hij heeft op een huis of stuk grond. Bij een publiekrechtelijke beperking gaat het niet om een beperking volgens het privaatrecht. Ook een schuld voor een huis kan geen publiekrechtelijke beperking zijn.";
-	skos:scopeNote "Onder een publiekrechtelijke beperking wordt verstaan iedere inbreuk op het recht van gebruik en beschikking van onroerende zaken, welke krachtens wet- of regelgeving door de overheid wordt gemaakt. Het zijn door de overheid opgelegde beperkingen. Deze beperkingen bepalen wat wel of niet met een stuk grond of gebouw mag gebeuren. Het aanwijzingsbesluit bevat een overzicht waaruit de verschillende publiekrechtelijke beperkingen gehaald kunnen worden. Hierbij gaat het om bijvoorbeeld: •beschermde monumenten; •beschermde leefomgeving (natuurmonumenten); •bodembescherming (verplichting tot registratie van verontreinigde grond); •maatregelen nodig voor de landsverdediging; •eisen die in het kader van de Woningwet worden gesteld, zoals middelen om bepaalde voorzieningen voor een pand af te kunnen dwingen.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-	skosthes:broaderGeneric kad:BeperktRecht;
-.
-kad:Rangwisseling a skos:Concept;
-	skos:exactMatch brk:Rangwisseling;
-	rdfs:label "Rangwisseling"@nl;
-	skos:prefLabel "Rangwisseling";
-	skos:definition "Een Rangwisseling is een bepaling in een notariële akte die in de openbare registers van het Kadaster wordt ingeschreven waarin wordt bepaald dat een hypotheek ten aanzien van een of meer hypotheken of andere beperkte rechten op hetzelfde goed een hogere rang heeft dan haar volgens het tijdstip van haar inschrijving toekomt, mits uit de akte blijkt dat de gerechtigden tot die andere hypotheken of beperkte rechten daarin toestemmen. ";
-	rdfs:comment "Een rangwisseling is dat een hypotheek voorrang heeft boven eerder ingeschreven hypotheken of rechten op datzelfde goed. Hiervoor is een akte van een notaris nodig die wordt ingeschreven in het openbare register van het Kadaster. In de akte staan dat degenen die recht hebben op de andere hypotheken of rechten akkoord gaan met de rangwisseling.";
-	skos:scopeNote "Bij een notariële akte die in de registers wordt ingeschreven, kan worden bepaald dat een hypotheek ten aanzien van een of meer hypotheken op het zelfde goed een hogere rang heeft dan haar volgens het tijdstip van inschrijving toekomt, mits uit de akte blijkt dat de gerechtigden tot die andere hypotheek of hypotheken daarin toestemmen. Met overeenkomstige toepassing van het eerste lid kan ook worden bepaald dat een hypotheek en een ander beperkt recht ten aanzien van elkaar worden geacht in andere volgorde te zijn ontstaan dan is geschied. Let wel: rangwisseling tussen een hypotheek en een beslag is NIET mogelijk omdat een beslag geen beperkt recht is ! Van een dergelijk feit wordt aantekening gemaakt.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
-	skos:semanticRelation not:RechtVanHypotheek;
-.
 kad:Recht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Recht;
 	rdfs:label "Recht"@nl;
 	skos:prefLabel "Recht";
 	skos:definition "Een recht is een door het objectieve recht verleende en beschermde bevoegdheid van een persoon.";
 	rdfs:comment "Een recht is iets wat iemand of een organisatie volgens de geschreven en ongeschreven regels mag.";
-	skos:semanticRelation zv:Persoon;
-.
-kad:Rechtshandeling a skos:Concept, skoslex:Act;
-	skos:exactMatch brk:Rechtshandeling;
-	rdfs:label "Rechtshandeling"@nl;
-	skos:prefLabel "Rechtshandeling";
-	skos:definition "Een rechtshandeling is een handeling van een persoon met de bedoeling om een bepaald rechtsgevolg tot stand te brengen.";
-	rdfs:comment "Een rechtshandeling is dat een persoon of rechtspersoon iets doet om een juridisch doel te bereiken. Dit doel noemen juristen een 'rechtsgevolg'.";
-	skos:scopeNote "Een rechtshandeling vereist een op een rechtsgevolg gerichte wil die zich door een verklaring heeft geopenbaard.";
 	skos:semanticRelation zv:Persoon;
 .
 kad:Registergoed a skos:Concept, skoslex:Object;
@@ -647,7 +647,6 @@ kad:OmschrijvingOnroerendeZaak a skos:Concept;
 	rdfs:comment "De gegevens van de onroerende zaak worden ingevuld, zoals de straat, het huisnummer, de gemeente en de kadastrale gegevens. Bij de grootte van het grondoppervlak wordt doorgaans uitgegaan van de vermelde gegevens in de openbare registers. Deze gegevens kunnen afwijken van de feitelijke situatie, zie artikel 6.11. Tenslotte wordt de koopsom ingevuld, eerst in cijfers en dan voluit geschreven.";
 	skos:semanticRelation kad:OnroerendeZaak;
 .
-
 #---
 # Voorbeeldsituatie uitwerking metadata-link
 #---
