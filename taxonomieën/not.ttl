@@ -214,6 +214,10 @@ not:Eigendomsoverdracht a skos:Concept, skoslex:Act;
 	skoslex:object kad:Erfpacht;
 	skosthes:broaderPartitive not:Levering;
 .
+not:FeitelijkeLevering a skos:Concept, skoslex:Act; #toegevoegd omdat dit voorkomt in koopovereenkomst. is relatie met Levering en met Eigendomsoverdracht. Er is wat voor te zeggen om het begrip Eigedomsoverdracht als generiek begrip te gebruiken, Levering voor de juridische levering (passeren akte) en FeitelijkeLevering voor de sleuteloverdracht.
+	rdfs:label "Feitelijke levering"@nl;
+	skos:prefLabel "Feitelijke levering";
+.
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden, bijvoorbeeld een gemachtigde. Dit begrip moet nog geintroduceerd worden.
 	skos:prefLabel "Identificeren voor akte (notaris)";
