@@ -107,17 +107,6 @@ mak:Aanspraak a skos:Concept, skoslex:Object;
 	skos:definition "Een recht ten aanzien van een derde.";
         rdfs:comment "Verkoper kan een aanspraak op een derde hebben. Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
 .
-mak:BankgarantieWaarborgsom a skos:Concept, skoslex:Object;
-	rdfs:label "Bankgarantie of waarborgsom"@nl;
-	skos:prefLabel "Bankgarantie of waarborgsom";
-	skosthes:narrowerGeneric fin:Bankgarantie;
-	skosthes:narrowerGeneric fin:Waarborgsom;
-#	skosthes:narrowerGeneric fin:Faillisement; <daar nog wel definiëren>
-.
-mak:BeschikkingWetBodemsanering a skos:Concept, skoslex:Object;
-	rdfs:label "Beschikking wet bodemsanering"@nl;
-	skos:prefLabel "Beschikking wet bodemsanering";
-.
 mak:BouwkundigeKeuring a skos:Concept, skoslex:Object;
 	rdfs:label "Bouwkundige keuring"@nl;
 	skos:prefLabel "Bouwkundige keuring";
@@ -161,11 +150,6 @@ mak:ModelKoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:comment '''De model koopovereenkomst voor een bestaande eengezinswoning is in overleg vastgesteld door Vereniging Eigen Huis, de Consumentenbond, VastgoedPRO, VBO Makelaar en de Nederlandse Vereniging van Makelaars en Taxateurs in onroerende goederen NVM. Deze organisaties gebruiken alle vijf hetzelfde modelcontract.
 De model koopovereenkomst gaat uit van een soort standaardsituatie. Omdat geen enkele situatie precies gelijk is, kan de koopovereenkomst worden aangepast aan specifieke omstandigheden. De bij de transactie betrokken partijen en hun makelaars kunnen daartoe aanvullende afspraken tussen partijen in de koopovereenkomst opnemen. Uiteraard mogen partijen ook afwijken van hetgeen standaard in de koopovereenkomst staat.''';
 	skos:editorialNote "model koopovereenkomst voor een bestaande eengezinswoning (model 2018)";
-.
-mak:OmschrijvingOnroerendeZaak a skos:Concept;
-	rdfs:label "Omschrijving onroerende zaak"@nl;
-	skos:prefLabel "Omschrijving onroerende zaak";
-	rdfs:comment "De gegevens van de onroerende zaak worden ingevuld, zoals de straat, het huisnummer, de gemeente en de kadastrale gegevens. Bij de grootte van het grondoppervlak wordt doorgaans uitgegaan van de vermelde gegevens in de openbare registers. Deze gegevens kunnen afwijken van de feitelijke situatie, zie artikel 6.11. Tenslotte wordt de koopsom ingevuld, eerst in cijfers en dan voluit geschreven.";
 .
 mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Object;
 	rdfs:label "Ondergrondse tank voor het opslaan van (vloei)stoffen"@nl;
@@ -257,21 +241,12 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
-mak:AanwijzingWVG  a skos:Concept, skoslex:Act;
-	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
-	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
-.
-mak:FeitelijkeLevering a skos:Concept, skoslex:Act;
-	rdfs:label "Feitelijke levering"@nl;
-	skos:prefLabel "Feitelijke levering";
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object mak:Woning;
-.
 mak:Garantie a skos:Concept, skoslex:Act;
 	rdfs:label "Garantie"@nl;
 	skos:prefLabel "Garantie";
 	skosthes:broaderPartitive mak:Koop;
-	skoslex:object mak:BankgarantieWaarborgsom;
+	skoslex:object fin:Bankgarantie;
+	skoslex:object fin:Waarborgsom;
 	skoslex:record mak:ArtikelBankgarantieWaarborgsom;
 .
 mak:IdentificerenKoop a skos:Concept, skoslex:Act;
@@ -504,6 +479,7 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:HerzieningErfpacht;
 	skoslex:isAbout not:VoortdurendeErfpacht;
 .
+not:Afrekening skoslex:record mak:ArtikelKostenOverdrachtsbelasting.
 mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Artikel: Kosten/Overdrachtsbelasting";
@@ -511,14 +487,9 @@ mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 Makelaarskosten en hypotheekkosten vallen er onder andere niet onder! Er wordt apart aangegeven welke kosten die de notaris in rekening brengt voor rekening van verkoper of koper komen. De overdrachtsbelasting bedraagt een percentage van de koopsom. Als de waarde van de onroerende zaak hoger is dan de koopsom wordt de overdrachtsbelasting over deze waarde berekend.
 Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.''';
 	skos:scopeNote "Artikel 2.1 van de model koopovereenkomst.";
-	skoslex:isAbout not:KostenEnOverdrachtsbelasing;
-	skoslex:isAbout not:KostenAflossingDoorhaling;
-	skoslex:isAbout not:KostenVestigenHypotheek;
-	skoslex:isAbout not:OverigeNotariskosten;
-	skoslex:isAbout not:Kostenverdeling;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-zv:VerrekeningOverdrachtsbelastingArt13 skoslex:record mak:Artikel13Verschil.
+not:VerrekeningOverdrachtsbelastingArt13 skoslex:record mak:Artikel13Verschil.
 mak:Artikel13Verschil a skos:Concept, skoslex:Record;
 	rdfs:label "artikel 13 verschil"@nl;
 	skos:prefLabel "artikel 13 verschil";
@@ -530,6 +501,7 @@ Voorheen was goedgekeurd dat deze vergoeding aan verkoper niet in de heffing van
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout not:VerminderingOverdrachtsbelastingArt13;
 .
+not:Betaling skoslex:record mak:ArtikelBetaling.
 mak:ArtikelBetaling a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Betaling"@nl;
 	skos:prefLabel "Artikel: Betaling";
@@ -537,13 +509,13 @@ mak:ArtikelBetaling a skos:Concept, skoslex:Record;
 	skos:scopeNote "Artikel 3 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
+not:Eigendomsoverdracht skoslex:record mak:ArtikelEigendomsoverdracht.
 mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel: Eigendomsoverdracht"@nl;
 	skos:prefLabel "Artikel: Eigendomsoverdracht";
 	rdfs:comment '''Er zijn verschillende soorten overdrachten. De belangrijkste zijn de juridische en de feitelijke overdracht. De juridische overdracht (ook wel juridische levering, eigendomsoverdracht of transport genoemd) vindt plaats bij de notaris via een notariële akte van levering en inschrijving daarvan in de openbare registers. De feitelijke overdracht vindt plaats door het overhandigen van de sleutels en het in bezit nemen van de verkochte onroerende zaak. Het is mogelijk dat er twee data zijn voor de verschillende overdrachten (zie artikel 7); maar vaak vallen de twee data echter samen (namelijk indien de akte van levering nog dezelfde dag wordt ingeschreven).''';
 	skos:scopeNote "Artikel 4 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
-	skoslex:isAbout not:Eigendomsoverdracht;
 	skoslex:isAbout not:FeitelijkeLevering;
 .
 mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
@@ -575,7 +547,6 @@ mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel: Bankgarantie/Waarborgsom";
 	rdfs:comment '''Het is gebruikelijk om overeen te komen, dat koper na het tot stand komen van de koopovereenkomst een bankgarantie stelt voor een bedrag van 10% van de koopsom. Het gaat daarbij om een verklaring van de bank waarin wordt gegarandeerd dat de bank dit bedrag zal uitkeren indien koper zijn verplichtingen niet zal nakomen. Met het stellen van een bankgarantie gaat enige tijd gemoeid. Doorgaans wordt de bankgarantie gesteld binnen enkele dagen na het verloop van het financieringsvoorbehoud. Voor een garantieverklaring berekent de bank een vergoeding.
 In plaats van een bankgarantie te stellen kan koper een waarborgsom storten. Het is gebruikelijk en verstandig om een eventuele waarborgsom te storten bij de notaris. Als koper als consument koopt, mag de waarborgsom of de bankgarantie op grond van de wet vaak niet hoger zijn dan 10% van de koopsom.
-
 Artikel 5 beoogt verkoper een bepaalde zekerheid te bieden dat koper aan zijn verplichtingen zal voldoen. Eventueel kan de boete, die in artikel 11 wordt genoemd, op de bankgarantie of de waarborgsom worden verhaald. Als de waarborgsom van enige omvang is of niet al te kort bij de notaris berust, zal de notaris doorgaans rente aan koper vergoeden.''';
 	skos:scopeNote "Artikel 5 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
