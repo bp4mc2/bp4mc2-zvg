@@ -49,6 +49,11 @@
 	skos:member mak:Taxatie;
 	skos:member mak:Taxateur;
 .
+<http://taxonomie.zorgeloosvastgoed.nl/id/collectie/BurgerlijkeStaat> a skos:Collection;
+	skos:member zv:Gehuwd;
+	skos:member zv:GeregistreerdPartnerschap;
+	skos:member zv:Ongehuwd;
+.
 
 #--
 #Wetgeving links
@@ -261,13 +266,10 @@ zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een dome
 	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
 .
-zv:BurgerlijkeStaat a skos:Concept, skos:Collection;
+zv:BurgerlijkeStaat a skos:Concept;
 	rdfs:label "Burgerlijke staat"@nl;
 	skos:prefLabel "Burgerlijke staat";
 	skos:semanticRelation zv:NatuurlijkPersoon;
-	skos:member zv:Gehuwd;
-	skos:member zv:GeregistreerdPartnerschap;
-	skos:member zv:Ongehuwd;
 .
 zv:Doorhaling a skos:Concept, skoslex:Act;
 	rdfs:label "Doorhaling"@nl;
