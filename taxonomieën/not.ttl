@@ -809,7 +809,7 @@ not:OverigeNotariskosten a skos:Concept, skoslex:Object;
 	skos:definition "In een akte kunnen overige notariskosten worden genoemd. Dit kunnen kosten zijn voor een volmacht of inhuren van een tolk.";
 	skos:broaderGeneric not:Notariskosten;
 	skos:related not:Volmacht;
-	skos:related zv:Tolk;
+	skos:related not:Tolk;
 	skos:related zv:Partij;
 .
 not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of akte. Het is geen specialisatie van Adres, maar kan ook de aanduiding van een weiland zijn (tegenover ….) of de naam van een landhuis. Dit is niet iets dat het Kadaster registreert.
@@ -949,3 +949,10 @@ not:Wegneemrecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
 	skos:semanticRelation kad:Erfpacht;
 .
+#toegevoegd
+not:Tolk a skos:Concept, skoslex:Object;
+	rdfs:label "Tolk"@nl;
+	skos:prefLabel "Tolk";
+.
+# is gerelateerd aan not:OverigeNotariskosten en wordt in die context gebruikt
+
