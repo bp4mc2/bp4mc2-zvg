@@ -217,6 +217,11 @@ not:Eigendomsoverdracht a skos:Concept, skoslex:Act;
 not:FeitelijkeLevering a skos:Concept, skoslex:Act; #toegevoegd omdat dit voorkomt in koopovereenkomst. is relatie met Levering en met Eigendomsoverdracht. Er is wat voor te zeggen om het begrip Eigedomsoverdracht als generiek begrip te gebruiken, Levering voor de juridische levering (passeren akte) en FeitelijkeLevering voor de sleuteloverdracht.
 	rdfs:label "Feitelijke levering"@nl;
 	skos:prefLabel "Feitelijke levering";
+	skos:definition "Bezitsverschaffing."@nl;
+	rdfs:comment "De feitelijke levering vindt plaats door het overhandigen van de sleutels en het in bezit nemen van het verkochte. In dit artikel wordt aangegeven dat de levering plaatsvindt op het moment van het ondertekenen van de akte van levering bij de notaris, tenzij tussen verkoper en koper een ander tijdstip is overeengekomen."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
+	skoslex:record mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken;
+	skosthes:broaderPartitive not:Levering;
 .
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden, bijvoorbeeld een gemachtigde. Dit begrip moet nog geintroduceerd worden.
