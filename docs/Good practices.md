@@ -30,6 +30,7 @@ De gebruikelijke conventies zijn:
   1. Het gaat 1 kant uit. Van meest ingewikkelde begrip naar meer eenvoudige en
   2. De begrippen die in de definitie van een begrip A worden gebruikt, dan verwijs je naar deze begrippen vanuit begrip A.
   3. Als we aan bovenstaande regels niet kunnen voldoen, omdat het geen recht doet aan de werkelijkheid, dan geven we in commentaar aan waarom we hiervan afwijken.
+* Over relaties, rechtshandelingen en artikelen. Als een skoslex:Record een duidelijke vastlegging is van een skoslex:Act, dan wordt de relatie gelegd vanuit skoslex.Act naar  skoslex:Record via een skoslex:record relatie. Als er geen skoslex:Act is, wordt er vanuit het skoslex:Record verbonden naar andere concepten via een skoslex:isAbout relatie.
 
 ## SCOPE
 
