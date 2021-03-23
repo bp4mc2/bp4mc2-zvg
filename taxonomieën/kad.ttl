@@ -15,6 +15,7 @@
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/concept/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/concept/>.
 @prefix brk: <http://tax.kadaster.nl/id/begrip/>.
+@prefix bag: <http://bag.basisregistraties.overheid.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
@@ -120,8 +121,9 @@ kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
 .
 kad:BeschikkingWetBodemsanering a skos:Concept, skoslex:Act;
-	rdfs:label "Beschikking wet bodemsanering"@nl;
-	skos:prefLabel "Beschikking wet bodemsanering";
+	rdfs:label "Beschikking of bevel wet bodemsanering"@nl;
+	skos:prefLabel "Beschikking of bevel wet bodemsanering";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>
 .
 kad:Beslag a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Beslag;
@@ -144,6 +146,16 @@ kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
 	skoslex:actor kad:Bewaarder;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
 .
+kad:Doorhaling a skos:Concept, skoslex:Act;
+	skos:exactMatch brk:Doorhaling;
+	rdfs:label "Doorhaling"@nl;
+	skos:prefLabel "Doorhaling";
+.
+kad:DoorhalingBeslag a skos:Concept, skoslex:Act;
+	rdfs:label "Doorhaling beslag"@nl;
+	skos:prefLabel "Doorhaling beslag";
+	skos:broaderGeneric kad:Doorhaling; 
+.
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Doorhaling_hypotheek;
 	rdfs:label "Doorhaling hypotheek"@nl;
@@ -158,6 +170,7 @@ kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:actor kad:Bewaarder;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skos:broaderGeneric kad:Doorhaling;
 .
 kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Inschrijving;
@@ -222,17 +235,26 @@ kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:scopeNote "Een rechtshandeling vereist een op een rechtsgevolg gerichte wil die zich door een verklaring heeft geopenbaard.";
 	skos:semanticRelation zv:Persoon;
 .
+#kad:Vernummering a skos:Concept, skoslex:Record; Even geparkeerd. Wellicht beter om brk:Splitsing_onroerende_zaak te gebruiken.
+#	skos:exactMatch brk:Vernummering;
+#	rdfs:label "Vernummering"@nl;
+#	skos:prefLabel "Vernummering";
+#	skos:definition "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
+#	rdfs:comment "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
+#	skosthes:broaderPartitive kad:KadastraleAanduiding;
+#	#https://tax.kadaster.nl/doc/begrip/Vernummering
+#.
+
 #--
 #Objects, records
 kad:Adres a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Adres;
 	rdfs:label "Adres"@nl;
 	skos:prefLabel "Adres";
 	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats";
 	rdfs:comment "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
 	skosthes:broaderPartitive kad:BasisregistratieAdressenEnGebouwen;
-#Je verwacht hier semantische relaties met Nummeraanduiding, OpenbareRuimte en Woonplaats -> kortsluiten met Kadaster.
+	skos:exactMatch bag:Adres;
 .
 kad:Basisregistratie a skos:Concept, skoslex:Object;
 	skos:exactMatch kad:Basisregistratie;
@@ -274,14 +296,6 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 .
-#kad:Bezwaard a skos:Concept; De vraag is of we ook relaties willen definiëren. Onderstaande definitie is een andere formulering van de definitie van BeperktRecht.
-#	rdfs:label "Bezwaard"@nl;
-#	skos:prefLabel "Bezwaard";
-#	skos:definition "Een recht kan worden bezwaard met een beperkt recht dat is afgeleid uit dit meer omvattende recht.";
-#	rdfs:comment "Wanneer een recht wordt bezwaard met een beperkt recht heeft iemand geen volledig recht op een goed, maar een stuk ervan. Dit betekent dat hij niet alles met dat goed mag doen. Het beperkte recht geeft aan wat hij er wel en niet mee mag doen.";
-#		dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8>;
-#skos:semanticRelation kad:BeperktRecht;
-#.
 kad:Canon a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Canon;
 	rdfs:label "Canon"@nl;
@@ -292,20 +306,6 @@ kad:Canon a skos:Concept, skoslex:Object;
 	rdfs:comment "Een canon is een geldbedrag dat iemand regelmatig moet betalen voor het recht om gebruik te maken van een stuk grond.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85>;
 	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
-.
-kad:CanonJaarlijksBedrag a skos:Concept;
-#	skos:exactMatch brk:xxx; nog niet gedefinieerd in Kadaster taxonomie (wel in IMKAD)
-	rdfs:label "jaarlijks bedrag canon"@nl;
-	skos:prefLabel "jaarlijks bedrag canon";
-	skos:definition "Het Jaarlijks bedrag is het bedrag dat jaarlijks als erpachtcanon moet worden betaald.";
-	skosthes:semanticRelation kad:Canon;
-.
-kad:CanonIndexatiedatum a skos:Concept;
-#	skos:exactMatch brk:xxx; nog niet gedefinieerd in Kadaster taxonomie (ook niet onderdeel van IMKAD). Dit is onderdeel van de erfpachtvoorwaarden net als een periodieke herziening van de canon op basis van taxatie.
-	rdfs:label "indexatiedatum canon"@nl;
-	skos:prefLabel "indexatiedatum canon";
-	skos:definition "De datum waarop de canon jaarlijks wordt geïndexeerd op basis van de ontwikkeling van de prijsindex.";
-	skosthes:semanticRelation kad:Canon;
 .
 kad:DienendeErf a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Dienende_erf;
@@ -368,15 +368,6 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
-kad:GeschatteGrootte a skos:Concept;
-	skos:exactMatch brk:Geschatte_grootte;
-	rdfs:label "Geschatte grootte"@nl;
-	skos:prefLabel "Geschatte grootte";
-	skos:definition "De geschatte grootte is de oppervlakte van een gedeeltelijk perceel die door of namens partijen bij de overdracht is aangegeven in de notariële akte voordat er een meting heeft plaatsgevonden.";
-	rdfs:comment "De geschatte grootte van een perceel is de geschatte oppervlakte van een stuk grond voordat er een meting namens het Kadaster is gedaan.";
-	skos:scopeNote "Bij levering van kadastrale percelen wordt in de notariele akte meestal een geschatte grootte van het verkochte opgenomen. Tot uitmeting van het perceel heeft plaatsgevonden (zie ook aanwijs) wordt bij de onroerende zaak in de Basisregistratie Kadaster de geschatte grootte vermeld. Pas na de uitmeting wordt op basis van de bestaande en de nieuwe grenzen de nieuwe kadastrale grootte berekend.";
-	skosthes:broaderGeneric kad:Grootte;
-.
 kad:Goed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Goed;
 	rdfs:label "Goed"@nl;
@@ -386,14 +377,6 @@ kad:Goed a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=1>;
 	skosthes:narrowerGeneric kad:Vermogensrecht;
 	skosthes:narrowerGeneric kad:Zaak;
-.
-kad:Grootte a skos:Concept, skoslex:Object; 
-	skos:exactMatch brk:Grootte;
-	rdfs:label "Grootte"@nl;
-	skos:prefLabel "Grootte";
-	skos:definition "De grootte is de omvang van een perceel, uitgedrukt in een oppervlakte-eenheid.";
-	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters..";
-	skos:semanticRelation kad:Perceel;
 .
 kad:HeersendeErf a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Heersende_erf;
@@ -453,50 +436,6 @@ kad:KadastraleGrens a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50>;
 .
-kad:KadastraleGrootte a skos:Concept;
-	skos:exactMatch brk:Kadastrale_grootte;
-	rdfs:label "Kadastrale grootte"@nl;
-	skos:prefLabel "Kadastrale grootte";
-	skos:altLabel "Kadastergrootte";
-	skos:altLabel "Grootte";
-	skos:definition "De grootte van een perceel zoals vermeld in de kadastrale registratie.";
-	rdfs:comment "De Kadastrale grootte is de oppervlakte van een stuk grond zoals deze bij het Kadaster is vastgesteld en vastgelegd.";
-	skosthes:broaderGeneric kad:Grootte;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
-.
-kad:Kettingbeding a skos:Concept;
-	skos:exactMatch brk:Kettingbeding;
-	rdfs:label "Kettingbeding"@nl;
-	skos:prefLabel "Kettingbeding";
-	skos:definition "Een kettingbeding is een verbintenis dat de schuldenaar bij overdracht van een registergoed, op straffe van een boete, ten behoeve van de schuldeiser bepaalde verplichtingen, onder gelijke verbintenis, aan zijn verkrijgers moet opleggen.";
-	rdfs:comment "Een kettingbeding is een afspraak die de verkoper met de koper bij de koop van een gebouw, een stuk grond, vliegtuig of schip maakt. Deze afspraak houdt in dat de koper een verplichting heeft en dat hij deze verplichting ook aan een volgdende koper moet opleggen. Als hij dit niet doet, moet hij een boete aan de verkoper betalen.";
-	skosthes:broaderGeneric kad:KwalitatieveVerplichting
-.
-kad:KwalitatieveVerplichting a skos:Concept;
-	skos:exactMatch brk:Kwalitatieve_verplichting;
-	rdfs:label "Kwalitatieve verplichting"@nl;
-	skos:prefLabel "Kwalitatieve verplichting";
-	skos:definition "Een Kwalitatieve Verplichting is een overeenkomst waarbij bedongen wordt dat de verplichting van een van de partijen om iets te dulden of niet te doen ten aanzien van een haar toebehorend registergoed, zal overgaan op degenen die het goed onder bijzondere titel zullen verkrijgen, en dat mede gebonden zullen zijn degenen die van de rechthebbende een recht tot gebruik van het goed zullen verkrijgen.";
-	rdfs:comment "Een Kwalitatieve Verplichting is een afspraak om iets toe te staan, of om iets niet te doen, met een gebouw of stuk grond. Deze afspraak geldt ook voor iemand die het gebouw of stuk grond gebruikt of krijgt door overdracht, verjaring of onteigening.";
-        skos:scopeNote "Tevens gaat de kwalitatieve verplichting over op rechtsopvolgers. De kwalitatieve verplichting moet worden aangegaan bij notariële akte.Van een dergelijke overeenkomst kan een aantekening worden gemaakt. Een dergelijke verplichting is niet nodig bij verkrijging onder algemene titel, aangezien bij een dergelijke verkrijging de kwalitatieve verplichting van rechtswege voortgezet wordt.";
-        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252>;
-	skosthes:broaderGeneric kad:Overeenkomst;
-	skosthes:broaderGeneric kad:Recht;
-.
-#kad:NaamVanEenOpenbareRuimte a skos:Concept, skoslex:Object;
-#	rdfs:label "Naam van een openbare ruimte"@nl;
-#	skos:prefLabel "Naam van een openbare ruimte";
-#	skos:definition "De naam van een openbare ruimte is de door het bevoegde gemeentelijke orgaan aan een openbare ruimte toegekende benaming en een authentiek gegeven.";
-#	rdfs:comment "De naam openbare ruimte is de naam die de gemeente heeft gegeven aan een openbare ruimte.";
-#	skosthes:broaderPartitive kad:Adres;
-#.
-#kad:NaamVanEenWoonplaats a skos:Concept, skoslex:Object;
-#	rdfs:label "Naam van een woonplaats"@nl;
-#	skos:prefLabel "Naam van een woonplaats";
-#	skos:definition "De naam van een woonplaats is de door het bevoegde gemeentelijke orgaan aan een woonplaats toegekende benaming en een authentiek gegeven.";
-#	rdfs:comment "De naam van een woonplaats is de naam die de gemeente aan een woonplaats heeft gegeven.";
-#	skosthes:broaderPartitive kad:Adres;
-#.
 kad:Landgoed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Landgoed;
 	rdfs:label "Landgoed"@nl;
@@ -613,15 +552,6 @@ kad:Vermogensrecht a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3>;
 	skosthes:broaderGeneric kad:Recht;
 .
-#kad:Vernummering a skos:Concept, skoslex:Record; Even geparkeerd. Wellicht beter om brk:Splitsing_onroerende_zaak te gebruiken.
-#	skos:exactMatch brk:Vernummering;
-#	rdfs:label "Vernummering"@nl;
-#	skos:prefLabel "Vernummering";
-#	skos:definition "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
-#	rdfs:comment "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
-#	skosthes:broaderPartitive kad:KadastraleAanduiding;
-#	#https://tax.kadaster.nl/doc/begrip/Vernummering
-#.
 kad:Zaak a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Zaak;
 	rdfs:label "Zaak"@nl;
@@ -640,13 +570,128 @@ kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Vermogensrecht;
 	skos:semanticRelation kad:Zaak;
 .
-#Overige concepts
+#Overige concepts (geen agent, act, record, object)
+kad:CanonJaarlijksBedrag a skos:Concept;
+	rdfs:label "jaarlijks bedrag canon"@nl;
+	skos:prefLabel "jaarlijks bedrag canon";
+	skos:definition "Het Jaarlijks bedrag is het bedrag dat jaarlijks als erpachtcanon moet worden betaald.";
+	skosthes:semanticRelation kad:Canon;
+.
+kad:CanonIndexatiedatum a skos:Concept;
+	rdfs:label "indexatiedatum canon"@nl;
+	skos:prefLabel "indexatiedatum canon";
+	skos:definition "De datum waarop de canon jaarlijks wordt geïndexeerd op basis van de ontwikkeling van de prijsindex.";
+	skosthes:semanticRelation kad:Canon;
+.
+kad:GeschatteGrootte a skos:Concept;
+	skos:exactMatch brk:Geschatte_grootte;
+	rdfs:label "Geschatte grootte"@nl;
+	skos:prefLabel "Geschatte grootte";
+	skos:definition "De geschatte grootte is de oppervlakte van een gedeeltelijk perceel die door of namens partijen bij de overdracht is aangegeven in de notariële akte voordat er een meting heeft plaatsgevonden.";
+	rdfs:comment "De geschatte grootte van een perceel is de geschatte oppervlakte van een stuk grond voordat er een meting namens het Kadaster is gedaan.";
+	skos:scopeNote "Bij levering van kadastrale percelen wordt in de notariele akte meestal een geschatte grootte van het verkochte opgenomen. Tot uitmeting van het perceel heeft plaatsgevonden (zie ook aanwijs) wordt bij de onroerende zaak in de Basisregistratie Kadaster de geschatte grootte vermeld. Pas na de uitmeting wordt op basis van de bestaande en de nieuwe grenzen de nieuwe kadastrale grootte berekend.";
+	skosthes:broaderGeneric kad:Grootte;
+.
+kad:Grootte a skos:Concept, skoslex:Object; 
+	skos:exactMatch brk:Grootte;
+	rdfs:label "Grootte"@nl;
+	skos:prefLabel "Grootte";
+	skos:definition "De grootte is de omvang van een perceel, uitgedrukt in een oppervlakte-eenheid.";
+	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters..";
+	skos:semanticRelation kad:Perceel;
+.
+kad:Huisnummer a skos:Concept;
+	rdfs:label "Huisnummer"@nl;
+	skos:prefLabel "Huisnummer";
+	skos:definition "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.";
+	skos:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
+#	dcterms:source <jci1.31:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=l&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:Nummeraanduiding;
+.
+kad:KadastraleGrootte a skos:Concept;
+	skos:exactMatch brk:Kadastrale_grootte;
+	rdfs:label "Kadastrale grootte"@nl;
+	skos:prefLabel "Kadastrale grootte";
+	skos:altLabel "Kadastergrootte";
+	skos:altLabel "Grootte";
+	skos:definition "De grootte van een perceel zoals vermeld in de kadastrale registratie.";
+	rdfs:comment "De Kadastrale grootte is de oppervlakte van een stuk grond zoals deze bij het Kadaster is vastgesteld en vastgelegd.";
+	skosthes:broaderGeneric kad:Grootte;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
+.
+kad:Kettingbeding a skos:Concept;
+	skos:exactMatch brk:Kettingbeding;
+	rdfs:label "Kettingbeding"@nl;
+	skos:prefLabel "Kettingbeding";
+	skos:definition "Een kettingbeding is een verbintenis dat de schuldenaar bij overdracht van een registergoed, op straffe van een boete, ten behoeve van de schuldeiser bepaalde verplichtingen, onder gelijke verbintenis, aan zijn verkrijgers moet opleggen.";
+	rdfs:comment "Een kettingbeding is een afspraak die de verkoper met de koper bij de koop van een gebouw, een stuk grond, vliegtuig of schip maakt. Deze afspraak houdt in dat de koper een verplichting heeft en dat hij deze verplichting ook aan een volgdende koper moet opleggen. Als hij dit niet doet, moet hij een boete aan de verkoper betalen.";
+	skosthes:broaderGeneric kad:KwalitatieveVerplichting
+.
+kad:KwalitatieveVerplichting a skos:Concept;
+	skos:exactMatch brk:Kwalitatieve_verplichting;
+	rdfs:label "Kwalitatieve verplichting"@nl;
+	skos:prefLabel "Kwalitatieve verplichting";
+	skos:definition "Een Kwalitatieve Verplichting is een overeenkomst waarbij bedongen wordt dat de verplichting van een van de partijen om iets te dulden of niet te doen ten aanzien van een haar toebehorend registergoed, zal overgaan op degenen die het goed onder bijzondere titel zullen verkrijgen, en dat mede gebonden zullen zijn degenen die van de rechthebbende een recht tot gebruik van het goed zullen verkrijgen.";
+	rdfs:comment "Een Kwalitatieve Verplichting is een afspraak om iets toe te staan, of om iets niet te doen, met een gebouw of stuk grond. Deze afspraak geldt ook voor iemand die het gebouw of stuk grond gebruikt of krijgt door overdracht, verjaring of onteigening.";
+        skos:scopeNote "Tevens gaat de kwalitatieve verplichting over op rechtsopvolgers. De kwalitatieve verplichting moet worden aangegaan bij notariële akte.Van een dergelijke overeenkomst kan een aantekening worden gemaakt. Een dergelijke verplichting is niet nodig bij verkrijging onder algemene titel, aangezien bij een dergelijke verkrijging de kwalitatieve verplichting van rechtswege voortgezet wordt.";
+        dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252>;
+	skosthes:broaderGeneric kad:Overeenkomst;
+	skosthes:broaderGeneric kad:Recht;
+.
+kad:LooptijdErfpacht a skos:Concept;
+	rdfs:label "Looptijd erfpacht"@nl;
+	skos:prefLabel "Looptijd erfpacht";
+	skos:altLabel "Einddatum erfpacht";
+	skos:semanticRelation kad:Erfpacht;
+.
+kad:NaamOpenbareRuimte a skos:Concept;
+	rdfs:label "Naam van een openbare ruimte"@nl;
+	skos:prefLabel "Naam van een openbare ruimte";
+	skos:altLabel "Straatnaam";
+	skos:definition "De naam van een openbare ruimte is de door het bevoegde gemeentelijke orgaan aan een openbare ruimte toegekende benaming en een authentiek gegeven.";
+	rdfs:comment "De naam openbare ruimte is de naam die de gemeente heeft gegeven aan een openbare ruimte.";
+#       dcterms:source < jci1.31:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=n&z=2012-10-01&g=2012-10-01>, <jci1.31:c:BWBR0023466&hoofdstuk=3&paragraaf=2&artikel=20&lid=1&opsommingsonderdeel=c&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:Naam_OpenbareRuimte;
+.
+zv:Postcode a skos:Concept;
+	rdfs:label "Postcode"@nl;
+	skos:prefLabel "Postcode";
+	skos:definition "De postcode is een coderingssystematiek zoals ontwikkeld en beheerd door PostNL. Een postcode is een niet-authentiek gegeven met betrekking tot een nummeraanduiding."
+	skos:comment "Een postcode is een korte reeks tekens die in een postadres wordt opgenomen om het automatisch sorteren van de post makkelijker te maken."
+#	dcterms:source <jci1.31:c:BWBR0023466&hoofdstuk=3&paragraaf=2&artikel=21&lid=2&opsommingsonderdeel=a&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:Postcode;
+.
+kad:NaamWoonplaats a skos:Concept;
+	rdfs:label "Naam van een woonplaats"@nl;
+	skos:prefLabel "Naam van een woonplaats";
+	skos:definition "De naam van een woonplaats is de door het bevoegde gemeentelijke orgaan aan een woonplaats toegekende benaming en een authentiek gegeven.";
+	rdfs:comment "De naam van een woonplaats is de naam die de gemeente aan een woonplaats heeft gegeven.";
+#	dcterms:source <jci1.31:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=r&z=2012-10-01&g=2012-10-01>, <jci1.31:c:BWBR0023466&hoofdstuk=3&paragraaf=2&artikel=19&lid=1&opsommingsonderdeel=b&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
+	skos:semanticRelation kad:Adres;
+	skos:exactMatch bag:Naam_Woonplaats;
+.
 kad:OmschrijvingOnroerendeZaak a skos:Concept;
 	rdfs:label "Omschrijving onroerende zaak"@nl;
 	skos:prefLabel "Omschrijving onroerende zaak";
 	rdfs:comment "De gegevens van de onroerende zaak worden ingevuld, zoals de straat, het huisnummer, de gemeente en de kadastrale gegevens. Bij de grootte van het grondoppervlak wordt doorgaans uitgegaan van de vermelde gegevens in de openbare registers. Deze gegevens kunnen afwijken van de feitelijke situatie, zie artikel 6.11. Tenslotte wordt de koopsom ingevuld, eerst in cijfers en dan voluit geschreven.";
 	skos:semanticRelation kad:OnroerendeZaak;
 .
+kad:OpgegevenGrootte a skos:Concept;
+	rdfs:label "Opgegeven grootte"@nl;
+	skos:prefLabel "Opgegeven grootte";
+	skosthes:broaderGeneric kad:Grootte;
+	skos:semanticRelation kad:Perceel;
+.
+kad:WerkelijkeGrootte a skos:Concept;
+	rdfs:label "Werkelijke grootte"@nl;
+	skos:prefLabel "Werkelijke grootte";
+	skosthes:broaderGeneric kad:Grootte;
+	skos:semanticRelation kad:Perceel;
+.
+
 #---
 # Voorbeeldsituatie uitwerking metadata-link
 #---
