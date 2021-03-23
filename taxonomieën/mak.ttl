@@ -291,6 +291,12 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
+mak:NietTegenwerken a skos:Concept, skoslex:Act;
+	rdfs:label "Niet tegenwerken"@nl;
+	skos:prefLabel "Niet tegenwerken";
+	skoslex:actor zv:Partner;
+.
+
 mak:Onbekendheidsverklaring a skos:Concept, skoslex:Act;
 	rdfs:label "Onbekendheidsverklaring"@nl;
 	skos:prefLabel "Onbekendheidsverklaring";
@@ -353,6 +359,11 @@ mak:Taxatie a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
+.
+mak:ToestemmingPartner a skos:Concept, skoslex:Act;
+	rdfs:label "Toestemming partner"@nl;
+	skos:prefLabel "Toestemming partner";
+	skoslex:actor zv:Partner;
 .
 mak:Verkoop a skos:Concept, skoslex:Act;
 	rdfs:label "Verkoop"@nl;
