@@ -152,9 +152,9 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
 not:Volmachtgever a skos:Concept, skoslex:Actor;
 	rdfs:label "Volmachtgever"@nl;
 	skos:prefLabel "Volmachtgever"@nl;
-	skos:definition" Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
-	skosthes:broaderGeneric zv:NatuurlijkPersoon;
-	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
+	skos:definition "Persoon die aan een andere persoon (de gevolmachtigde) de bevoegdheid heeft verleend om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;
+	rdfs:comment "Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
+	skosthes:broaderGeneric zv:Persoon;
 	skos:semanticRelation not:Volmacht;
 .
 #--
@@ -162,7 +162,8 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 not:Afrekening a skos:Concept, skoslex:Act;
 	rdfs:label "Afrekening"@nl;
 	skos:prefLabel "Afrekening"@nl;
-	skos:definition "Als u naar de notaris gaat voor het tekenen van de hypotheek- en transportakte, krijgt u ruim van tevoren een zogenaamde afrekening. Dit is een overzicht waarop de bedragen staan die de notaris ontvangt en namens u aan verschillende instanties en personen zal betalen.";
+	skos:definition "Als u naar de notaris gaat voor het tekenen van de hypotheek- en transportakte, krijgt u ruim van tevoren een zogenaamde afrekening. Dit is een overzicht waarop de bedragen staan die de notaris ontvangt en namens u aan verschillende instanties en personen zal betalen."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skoslex:actor zv:Partij;
 	skoslex:agent not:Notaris;
 	skoslex:object not:KostenEnOverdrachtsbelasting;
@@ -234,17 +235,19 @@ not:FeitelijkeLevering a skos:Concept, skoslex:Act; #toegevoegd omdat dit voorko
 	skoslex:record mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken;
 	skosthes:broaderPartitive not:Levering;
 .
-not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;
+not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;#Wijkt af van begrip in KNB taxo's
 	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden, bijvoorbeeld een gemachtigde. Dit begrip moet nog geintroduceerd worden.
 	skos:prefLabel "Identificeren voor akte (notaris)";
 	skos:altLabel "Identificatie comparant";
-	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
-	rdfs:comment "Controleren of partijen echt zijn wie ze zeggen dat ze zijn.";
+	skos:definition "Het vaststellen van de identiteit van een natuurlijke persoon."@nl; 
+	rdfs:comment "Controleren of partijen echt zijn wie ze zeggen dat ze zijn."@nl;
+	#skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden.";
+	#rdfs:comment "Controleren of partijen echt zijn wie ze zeggen dat ze zijn.";
 	skos:scopeNote "De notaris stelt de identiteit van de comparanten vast op basis van een identiteitsbewijs zoals paspoort, identiteitskaart, rijbewijs, ID-kaart, een paspoort uit een EER-land of een Nederlands Vreemdelingendocument.";
 	skos:scopeNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
 	#skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
 	skos:editorialNote "De identificatieplicht van de notaris valt onder een andere wet dan het gekoppelde begrip van identificeren. Toch is er voor gekozen om alle identificerende handelingen, ook die van de notaris, onder één bovenliggend algemeen begrip van identificeren te scharen.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39>;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
 	skosthes:broaderGeneric zv:Identificeren;
 .
 not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
@@ -297,6 +300,7 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
 	#Dit moet er nog in de taxonomie worden opgenomen.
 .
 not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als die van Notaris. Voor beiden is wat te zeggen. De mening van de KNB is dat deze meer thuishoort in het domein van de notaris, vanwege de rol die de notaris bij de levering inneemt.
+	#Begrip moet nader worden uitgewerkt met een jurist van de KNB. De levering valt uiteen in feitelijke en juridische levering. Er is begonnen met dit begrip. Later zijn de feitelijke en juridsche eraan toegevoegd, maar dit begrip is nog niet herzien.
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
 	skos:prefLabel "Levering";
 	skos:altLabel "Leveren";
@@ -490,6 +494,7 @@ not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 	rdfs:label "Verlenen volmacht"@nl;
 	skos:prefLabel "Verlenen volmacht"@nl;
 	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten."@nl;#was: "Het verlenen van een volmacht aan een ander om in zijn naam rechtshandelingen te verrichten"
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skoslex:actor not:Volmachtgever;
 	skoslex:actor not:Gevolmachtigde;
 	skoslex:agent not:Notaris;
@@ -500,6 +505,7 @@ not:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening overdrachtsbelasting artikel 13"@nl;
 	skos:prefLabel "Verrekening overdrachtsbelasting artikel 13";
 	skos:definition "U betaalt overdrachtsbelasting vanaf het moment dat de overdracht bij de notaris heeft plaats gevonden en het pand is ingeschreven in het Kadaster. In Nederland moet de notaris er op toezien dat voldoende overdrachtsbelasting betaald wordt. Een verrekening wordt door de notaris meegenomen."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skoslex:actor mak:Koper;
 	skoslex:actor mak:Verkoper;
 	skoslex:agent not:Notaris;
@@ -597,6 +603,13 @@ not:AkteVanVolmacht a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:NotarieleAkte;
 	skoslex:isAbout not:NotarieleVolmacht;
 .
+not:Artikel a skos:Concept, skoslex:Record;
+	rdfs:label "Artikel"@nl;
+	skos:prefLabel "Artikel"@nl;
+	skos:definition "Op leden na, de kleinste onderverdeling in akten."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
+	skosthes:broaderPartitive not:Akte;
+.
 not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Authentieke akte"@nl;
 	skos:prefLabel "Authentieke akte";
@@ -661,6 +674,13 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
 	skos:semanticRelation kad:OnroerendeZaak;
 	skos:semanticRelation zv:Overdrachtsbelasting;
+.
+not:GrondVanBevoegdheid a skos:Concept;
+	rdfs:label "Grond van bevoegdheid"@nl;
+	skos:prefLabel "Grond van bevoegdheid"@nl;
+	skos:definition "De grond van de bevoegdheid van een persoon om een andere persoon te vertegenwoordigen, om namens een andere persoon (de vertegenwoordigde) (bepaalde) rechtshandelingen te verrichten, zoals een volmacht of het zijn van bestuurder van een rechtspersoon."@nl;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
+	skos:semanticRelation not:Volmacht;
 .
 not:HerzieningErfpacht a skos:Concept;
 	rdfs:label "Herziening erfpacht"@nl;
@@ -755,6 +775,13 @@ not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	skos:definition "Met de kwaliteitsrekening houdt de notaris de gelden van cliënten gescheiden van het eigen kantoorvermogen. Daarmee zijn de gelden van cliënten beschermd tegen oneigenlijk gebruik of faillissement.";
 	rdfs:comment "De kwaliteitsrekening (ook wel derdengeldenrekening genoemd) is een aparte bankrekening van de notaris voor geld van klanten die betrokken zijn bij een overdracht van eigendom. Deze rekening is beschermd tegen beslaglegging door schuldeisers van de notaris.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>;
+.
+not:LidAkte a skos:Concept;
+	rdfs:label "Lid"@nl;
+	skos:prefLabel "Lid"@nl;
+	skos:definition "De kleinste onderverdeling in akten."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
+	skosthes:broaderPartitive not:Artikel;
 .
 not:Minuut a skos:Concept, skoslex:Record;
 	rdfs:label "Minuut"@nl;
