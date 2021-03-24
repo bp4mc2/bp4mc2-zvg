@@ -488,7 +488,7 @@ not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 not:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening overdrachtsbelasting artikel 13"@nl;
 	skos:prefLabel "Verrekening overdrachtsbelasting artikel 13";
-	skos:definition: "U betaalt overdrachtsbelasting vanaf het moment dat de overdracht bij de notaris heeft plaats gevonden en het pand is ingeschreven in het Kadaster. In Nederland moet de notaris er op toezien dat voldoende overdrachtsbelasting betaald wordt. Een verrekening wordt door de notaris meegenomen."@nl;
+	skos:definition "U betaalt overdrachtsbelasting vanaf het moment dat de overdracht bij de notaris heeft plaats gevonden en het pand is ingeschreven in het Kadaster. In Nederland moet de notaris er op toezien dat voldoende overdrachtsbelasting betaald wordt. Een verrekening wordt door de notaris meegenomen."@nl;
 	skoslex:actor mak:Koper;
 	skoslex:actor mak:Verkoper;
 	skoslex:agent not:Notaris;
@@ -563,6 +563,7 @@ not:AkteVanLevering a skos:Concept, skoslex:Record;
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
 	rdfs:comment "Officieel schriftelijk document van een notaris waarin afspraken staan over de overdracht van eigendom van de een partij aan een andere partij. Dit kan een overdracht zijn van onroerende zaken, maar ook van bijvoorbeeld aandelen in vennootschappen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
+	skosthes:broaderGeneric not:NotarieleAkte;
 .
 not:AkteVanLeveringOnroerendeZaak a skos:Concept, skoslex:Record;
 	rdfs:label "Akte van levering (onroerende zaak)"@nl;
