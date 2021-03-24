@@ -70,7 +70,7 @@ not:Comparant a skos:Concept, skoslex:Actor;
 	skos:definition "Natuurlijke persoon die bij het verlijden van een notariële akte aan de notaris verschijnt.";
 	rdfs:comment "Een persoon die als (gemachtigde van een) partij in de notariële akte is vermeld.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
-	skos:editorialNote "Comparant kan ook een vertegenwoordiger zijn van de vervreemder of verkrijger. Dit scenario is niet meegenomen.";
+	skos:scopeNote "Een comparant kan ook een vertegenwoordiger zijn."@nl;
 	skosthes:broaderGeneric zv:Partij;
 	skosthes:narrowerGeneric not:Vervreemder;
 	skosthes:narrowerGeneric not:Verkrijger;
@@ -83,17 +83,24 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:prefLabel "Notaris";
 	skos:altLabel "Ambtenaar";
 	skos:altLabel "Bevoegd protocolhouder";
-	skos:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";
+	skos:altLabel "Protocolhouder";
+	skos:definition "Bekleder van het ambt als bedoeld in artikel 2 van de Wet op het notarisambt."@nl; #Input Jacco Sjerps
+	#skos:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit.";#Input Hengs Meengs
+	#2 verschillende definities uit 1 KNB Juridische afdeling. Tsja.
 	rdfs:comment "Ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een klant op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet-)natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. Een notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid.";
-	#skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris (naast het begrip van notaris). Dit is niet hierin opgenomen.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
-	skosthes:broaderGeneric zv:Rechtspersoon;
+	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris, naast het begrip van notaris. Deze begrippen zijn hierin niet opgenomen.";#...omdat het niet relevant is voor de buitenwereld.
+	skos:scopeNote "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit."@nl;
+	skos:editorialNote "Een notaris mag niet in een afhankelijke positie zitten en mag daarom niet in loondienst zijn. Een notaris kan volgens de wet alleen een persoon zijn die aan alle voorwaarden voldoet om in aanmerking te komen om benoemd te worden bij koninklijk besluit. Iemand is pas notaris (en mag zich alleen zo noemen) na dat hij door de koning benoemd is. Het is een benoeming aan de persoon, is niet overdraagbaar en eindigt bij overlijden. Om die redenen kan een notaris dus nooit een rechtspersoon."@nl;
+	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1";
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 not:Gerechtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gerechtigde"@nl;
 	skos:altLabel "Bevoegde";
 	skos:prefLabel "Gerechtigde";
 	skos:definition "Natuurlijk persoon die gerechtigd is te handelen.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 	skos:semanticRelation not:Gevolmachtigde;
 	skos:semanticRelation kad:Rechthebbende;
@@ -103,7 +110,11 @@ not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolmachtigde"@nl;
 	skos:prefLabel "Gevolmachtigde"@nl;
 	skos:altLabel "Volmachtnemer";
-	skos:definition" Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
+	skos:definition "Persoon waaraan een andere persoon (de volmachtgever) de bevoegdheid heeft verleend om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;
+	rdfs:comment "Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1";
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 	skos:semanticRelation not:Volmacht;
 .
@@ -878,6 +889,13 @@ not:TitelVanAankomst a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:Titel;
 	#Onderdeel van titel van aankomst is datumdeel/nr dat Kadaster levert na inschrijving in register. Dit moet hier nog bij.
 .
+#Is gerelateerd aan not:OverigeNotariskosten en wordt in die context gebruikt. Mogelijk hoort dit beter thuis in het ZV-domein.
+not:Tolk a skos:Concept, skoslex:Object;
+	rdfs:label "Tolk"@nl;
+	skos:prefLabel "Tolk";
+	skos:definition "Een tolk is iemand die luistert naar een spreker en die zijn woorden mondeling, of in het geval van de gebarentolk met gebaren, vertaalt voor degenen die de oorspronkelijke taal niet begrijpen."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
+.
 not:TotaalbedragInschrijving a skos:Concept;
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
 	skos:prefLabel "Totaalbedrag van de inschrijving";
@@ -955,10 +973,4 @@ not:Wegneemrecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
 	skos:semanticRelation kad:Erfpacht;
 .
-#toegevoegd
-not:Tolk a skos:Concept, skoslex:Object;
-	rdfs:label "Tolk"@nl;
-	skos:prefLabel "Tolk";
-.
-# is gerelateerd aan not:OverigeNotariskosten en wordt in die context gebruikt
 
