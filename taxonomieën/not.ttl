@@ -539,12 +539,13 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 #--
-#Objects
+#Objects, Records and other Concepts
 not:AanspraakTotGebruik a skos:Concept;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik";
 	skos:definition "Vermeend recht of claim op gebruik of bezit.";
 	#rdfs:comment ".";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:AfschriftAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Afschrift (akte)"@nl;
@@ -587,6 +588,7 @@ not:AkteVanLeveringOnroerendeZaak a skos:Concept, skoslex:Record;
 	skos:prefLabel "Akte van levering";#Term die wordt genoemd in de koopovereenkomst is 'akte van levering' i.p.v. 'leveringsakte'. Gezien de 1e scope (de koopovereenkomst) heeft de term 'akte van levering' de voorkeur.
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven.";
 	rdfs:comment "De notaris maakt aan de hand van de gegevens in de koopovereenkomst een akte van levering op. De akte van levering is de juridische uitwerking van de reeds gesloten koopovereenkomst, nodig voor het bewerkstelligen van de daadwerkelijke eigendomsoverdracht. Deze akte van levering wordt eerst aan alle partijen in concept toegestuurd. De notaris nodigt u tijdig uit voor het ondertekenen van de akte van levering. Op die dag neemt de notaris de voornaamste inhoud van de akte van levering door met koper en verkoper. De akte van levering wordt getekend door koper, verkoper (tenzij door koper of verkoper een volmacht is verleend) en de notaris. De notaris zorgt ervoor dat de akte van levering wordt ingeschreven in de openbare registers. Op het moment van inschrijving in de openbare registers wordt koper officieel eigenaar. Dit wordt verwerkt in het kadaster. Later ontvangt koper van de notaris een afschrift van deze akte: het 'eigendomsbewijs'. De originele akte blijft in bewaring bij de notaris.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric not:AkteVanLevering;
 	skoslex:isAbout kad:OnroerendeZaak;
 	skoslex:isAbout not:Koopsom;
@@ -600,6 +602,7 @@ not:AkteVanVolmacht a skos:Concept, skoslex:Record;
 	skos:prefLabel "Akte van volmacht"@nl;
 	skos:altLabel "Notariële volmacht"@nl;
 	skos:definition "Een akte van volmacht is een notariële akte waarmee een volmacht wordt gevestigd.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric not:NotarieleAkte;
 	skoslex:isAbout not:NotarieleVolmacht;
 .
@@ -613,7 +616,9 @@ not:Artikel a skos:Concept, skoslex:Record;
 not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Authentieke akte"@nl;
 	skos:prefLabel "Authentieke akte";
-	skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt.";
+	#skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt.";#Input Hengs Meengs
+	skos:definition "Akte die in de vereiste vorm en bevoegdelijk is opgemaakt door een ambtenaar aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hem gedane waarnemingen of verrichtingen."@nl;#Input Jacco Sjerps
+	#2 definities van verschillende personen voor 1 begrip. Met KNB afstemmen welke het zou moeten worden
 	rdfs:comment "Authentieke akten zijn officiële schriftelijke documenten opgesteld door een ambtenaar (zoals de notaris). Authentieke akten dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen te dwingen. Zij dienen, met andere woorden, als dwingend bewijs.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
 	skosthes:broaderGeneric not:Akte;
