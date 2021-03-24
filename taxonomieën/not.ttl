@@ -710,7 +710,7 @@ not:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
 	skos:definition "Voor het doorhalen van een hypotheekakte bij het Kadaster is een royementsakte nodig. Deze wordt opgesteld door de notaris en een notaris brengt hiervoor kosten in rekening. Een royementsakte is nodig bij het oversluiten van een hypotheek naar een andere geldverstrekker; bij de verkoop van je huis; of bij de aflossing van de hypotheek.";
 	skos:broaderGeneric not:Notariskosten;
 	skos:semanticRelation fin:Aflossen;
-	skos:semanticRelation zv:Doorhaling;
+	skos:semanticRelation kad:Doorhaling;
 	skos:semanticRelation kad:DoorhalingHypotheek;
 	skos:semanticRelation mak:Verkoper;
 .
