@@ -627,6 +627,7 @@ not:Bezwaren a skos:Concept;
 	rdfs:label "Bezwaren"@nl;
 	skos:prefLabel "Bezwaren";
 	skos:definition "Het beperken van een meer omvattend recht met een beperkt recht.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:related kad:BeperktRecht;
 	#Moet beter worden uitgewerkt en worden afgestemd met KNB
 .
@@ -635,6 +636,7 @@ not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt 
 	skos:prefLabel "Bijzondere lasten";
 	skos:definition "De verkoper is verplicht de onroerende zaak in eigendom over te dragen vrij van alle bijzondere lasten en beperkingen, met uitzondering van die welke de koper uitdrukkelijk heeft aanvaard.";
 	rdfs:comment "Bijzondere lasten zijn juridische lasten/ beperkingen die op de onroerende zaak rusten. Dit kunnen privaatrechtelijke lasten/ beperkingen zijn zoals (lijdende) erfdienstbaarheden, kwalitatieve verplichtingen en zogenoemde ‘kettingbedingen’. Op grond van zulke lasten/ beperkingen heeft een ander (dan de eigenaar) een aanspraak op de onroerende zaak (bijvoorbeeld een recht van overpad over de grond). Het kan ook gaan om publiekrechtelijke lasten/ beperkingen zoals een besluit van het college van B & W tot het vestigen van een wettelijk voorkeursrecht. Een bijzondere publiekrechtelijke last/ beperking vindt haar grondslag in een specifiek tegen de onroerende zaak gericht besluit.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:narrowerGeneric kad:KwalitatieveVerplichting;
 	skosthes:narrowerGeneric kad:Kettingbeding;
 	skosthes:narrowerGeneric kad:DienendeErf;
@@ -642,24 +644,35 @@ not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt 
 .
 not:Comparitie a skos:Concept, skoslex:Record;
 	rdfs:label "Verschijnen voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
-	skos:prefLabel "Verschijnen voor notaris";
-	skos:altLabel "Comparitie";
-	skos:definition "Het eerste onderdeel van de notariële akte, waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is.";
-	rdfs:comment "Partijen verschijnen bij de notaris voor het ondertekenen van de akte. Ook bekend als comparitie.";
+	skos:prefLabel "Verschijnen voor notaris"@nl;
+	skos:altLabel "Comparitie"@nl;
+	skos:definition "Het eerste onderdeel van de notariële akte, waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is."@nl;
+	rdfs:comment "Partijen verschijnen bij de notaris voor het ondertekenen van de akte. Ook bekend als comparitie."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 	skosthes:broaderPartitive not:NotarieleAkte;
 	skoslex:isAbout not:Comparant;
+	skoslex:isAbout not:Gevolmachtigde;
+	skoslex:isAbout not:DatumPasserenAkteLevering;
+	skoslex:isAbout not:PlaatsVanVerlijdenAkte;
+	#skoslex:isAbout not:Notaris, plaats van vestiging, identiteitsdocument;
 .
-not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;
+not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;#Wellicht moet dit een generiekere naam worden. Bespreken met KNB juristen.
 	rdfs:label "Datum van passeren (akte van levering)"@nl;
 	skos:prefLabel "Datum van passeren (akte van levering)";
-	skos:definition "Datum waarop de akte van levering wordt gepasseerd.";
-	rdfs:comment "Datum waarop de akte van levering wordt ondertekend.";
+	skos:altLabel "Datum van verlijden"@nl;
+	skos:altLabel "Datum van verschijnen"@nl;
+	skos:altLabel "Passeerdatum"@nl;
+	skos:altLabel "Verschijningsdatum"@nl;
+	skos:definition "Datum waarop de akte wordt gepasseerd."@nl;
+	rdfs:comment "Datum waarop de akte wordt ondertekend."@nl;
+	#skos:definition "Datum waarop de akte van levering wordt gepasseerd.";
+	#rdfs:comment "Datum waarop de akte van levering wordt ondertekend.";
 .
 not:EeuwigdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
 	rdfs:label "Eeuwigdurende erfpacht"@nl;
 	skos:prefLabel "Eeuwigdurende erfpacht";
 	skos:definition "Bij eeuwigdurende erfpacht is het economisch recht van de grond voor eens en voor altijd gevestigd.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric kad:Erfpacht;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
 .
@@ -667,6 +680,7 @@ not:Erfpachtvoorwaarden a skos:Concept;#Erfpacht wordt geregistreerd door Kadast
 	rdfs:label "Erfpachtvoorwaarden"@nl;
 	skos:prefLabel "Erfpachtvoorwaarden";
 	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
 	skos:semanticRelation kad:Erfpacht;
 .
@@ -693,6 +707,7 @@ not:HerzieningErfpacht a skos:Concept;
 	skos:altLabel "Herziening erfpacht";
 	skos:altLabel "Herziening canon";
 	skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
 	skos:semanticRelation kad:Canon;
 .
@@ -718,6 +733,7 @@ not:KadasterkostenKik a skos:Concept;#Mogelijk splitsen in een variant voor leve
 	rdfs:label "Kadasterkosten KIK"@nl;
 	skos:prefLabel "Kadasterkosten KIK";
 	skos:definition "Voor het digitaal inschrijven van de akten van de notaris via het KIK-systeem, rekent het Kadaster kosten. Deze kosten zijn lager dan de kosten voor inschrijven buiten KIK om.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderPartitive not:Kadasterkosten;
 	skos:scopeNote "KIK staat voor Ketenintegratie Inschrijving Kadaster.";
 .
@@ -725,6 +741,7 @@ not:KadasterkostenGeenKik a skos:Concept;#Mogelijk splitsen in een variant voor 
 	rdfs:label "Kadasterkosten geen KIK"@nl;
 	skos:prefLabel "Kadasterkosten geen KIK";
 	skos:definition "Voor het inschrijven van de akten van de notaris, rekent het Kadaster kosten. Deze kosten zijn hoger als hierbij geen gebruik wordt gemaakt van het KIK-systeem.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderPartitive not:Kadasterkosten;
 	skos:scopeNote "KIK staat voor Ketenintegratie Inschrijving Kadaster.";
 .
@@ -744,6 +761,7 @@ not:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten aflossing en doorhaling"@nl;
 	skos:prefLabel "Kosten aflossing en doorhaling";
 	skos:definition "Voor het doorhalen van een hypotheekakte bij het Kadaster is een royementsakte nodig. Deze wordt opgesteld door de notaris en een notaris brengt hiervoor kosten in rekening. Een royementsakte is nodig bij het oversluiten van een hypotheek naar een andere geldverstrekker; bij de verkoop van je huis; of bij de aflossing van de hypotheek.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:broaderGeneric not:Notariskosten;
 	skos:semanticRelation fin:Aflossen;
 	skos:semanticRelation kad:Doorhaling;
@@ -754,6 +772,7 @@ not:KostenEnOverdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Kosten/Overdrachtsbelasting";
 	skos:definition "Geheel van kosten voor een levering.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:narrowerGeneric not:Notariskosten;
 	skosthes:narrowerGeneric not:Kadasterkosten;
 	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
@@ -762,6 +781,7 @@ not:KostenVestigenHypotheek a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten vestigen hypotheek"@nl;
 	skos:prefLabel "Kosten vestigen hypotheek";
 	skos:definition "Geheel van kosten voor het vestigen van een hypotheek.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:broaderGeneric not:Notariskosten;
 	skos:semanticRelation not:VestigingHypotheek;
 	skos:semanticRelation mak:Koper;
@@ -771,6 +791,7 @@ not:KwalitatieveRechten a skos:Concept;
 	skos:prefLabel "Kwalitatieve rechten";
 	skos:definition "Staat een uit een overeenkomst voortvloeiend, voor overgang vatbaar recht in een zodanig verband met een aan de schuldeiser toebehorend goed, dat hij bij dat recht slechts belang heeft, zolang hij het goed behoudt, dan gaat dat recht over op degene die dat goed onder bijzondere titel verkrijgt.";
 	rdfs:comment "Rechten die samenhangen met een onroerende zaak en die bij verkoop overgaan naar een nieuwe eigenaar van die onroerende zaak.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	rdfs:label "Kwaliteitsrekening"@nl;
@@ -804,41 +825,50 @@ not:NotaVanAfrekening a skos:Concept, skoslex:Record;
 	rdfs:label "Nota van afrekening"@nl;
 	skos:prefLabel "Nota van afrekening"@nl;
 	skos:definition "Tegelijk met de conceptakte van levering ontvangt u van de notaris een 'nota van afrekening'. In deze nota is voor koper (meestal) opgenomen de koopsom, de verrekening van lasten, de overdrachtsbelasting, de kosten van het kadaster enzovoort. Op de nota van afrekening van verkoper staat onder meer het bedrag van de eventueel af te lossen hypothecaire geldlening met de daarbij behorende kosten. Het is gebruikelijk dat de nog niet reeds voldane makelaarskosten en de advieskosten van de eventuele hypothecaire geldlening bij de notaris worden verrekend. De makelaarskosten worden betaald door degene die de makelaar heeft ingeschakeld. Onder aan de nota staat het bedrag dat u als koper nog moet betalen of dat u als verkoper ontvangt of bij moet betalen.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:NotarieleAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Notariële akte"@nl;
-	skos:prefLabel "Notariële akte";
-	skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";
-	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
+	skos:prefLabel "Notariële akte"@nl;
+	#skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd.";#Definitie Hengs Meengs
+	skos:definition "Door een notaris verleden authentieke akte."@nl;#Definitie Jacco Sjerps
+	#2 verschillende definities van KNB Juridische Zaken. Moet worden afgestemd welke het gaat worden.
+	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris."@nl;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=2&lid=1";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>";
+	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
+	#2 verschillende linkjes naar artikelen van KNB Juridische Zaken. Moet worden afgestemd welke het gaat worden.
+	skos:editorialNote "artikel 2 lid 1 Wna jo artikel 156 lid 2 Rv"@nl;#Hoe de artikelen samen gelezen moeten worden
 	skosthes:broaderGeneric not:AuthentiekeAkte;
-.
-not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
-	rdfs:label "Notariskosten"@nl;
-	skos:prefLabel "Notariskosten";
-	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de hypotheekakte en de akte van levering.";
-	rdfs:comment "Kosten die een notaris berekent voor zijn werkzaamheden.";
 .
 not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Notariële volmacht"@nl;
-	skos:prefLabel "Notariële volmacht";
-	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk.";
+	skos:prefLabel "Notariële volmacht"@nl;
+	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk."@nl;
 	rdfs:comment "Volmacht die is opgeschreven in een officieel schriftelijk document van een notaris.";
+	skos:scopeNote "Een volmacht die bij een (authentieke) notariële akte is verleend."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	skosthes:broaderGeneric not:Volmacht;
 .
+not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
+	rdfs:label "Notariskosten"@nl;
+	skos:prefLabel "Notariskosten"@nl;
+	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de notariële akte."@nl;
+	rdfs:comment "Kosten die een notaris berekent voor zijn werkzaamheden."@nl;
+.
 not:OnderhandseAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Onderhandse akte"@nl;
-	skos:prefLabel "Onderhandse akte";
-	skos:definition "Niet-authentieke akte";
-	rdfs:comment "Ondertekend schriftelijk document, niet zijnde een authentieke akte.";#"Ondertekend schriftelijk document waarbij geen (bevoegde) ambtenaar betrokken is.": Deze definitie is niet helemaal correct. Notarissen kunnen ook onderhandse akten opstellen (bijv. koopovereenkomsten in Amsterdam). De definitie van een authentieke akte rust niet enkel en alleen op de betrokkenheid van de notaris.
+	skos:prefLabel "Onderhandse akte"@nl;
+	skos:definition "Niet-authentieke akte"@nl;
+	rdfs:comment "Ondertekend schriftelijk document, niet zijnde een authentieke akte."@nl;#"Ondertekend schriftelijk document waarbij geen (bevoegde) ambtenaar betrokken is.": Deze definitie is niet helemaal correct. Notarissen kunnen ook onderhandse akten opstellen.
+	skos:editorialNote "Notarissen kunnen ook onderhandse akten opstellen (bijvoorbeeld koopovereenkomsten in Amsterdam). De definitie van een authentieke akte rust niet enkel en alleen op de betrokkenheid van de notaris."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=3>;
 	skosthes:broaderGeneric not:Akte;
 .
 not:Ongevorderd a skos:Concept;
 	rdfs:label "Ongevorderd"@nl;
-	skos:prefLabel "Ongevorderd";
-	skos:definition "Zonder uitstaande claims op het bezit.";
+	skos:prefLabel "Ongevorderd"@nl;
+	skos:definition "Zonder uitstaande claims op het bezit."@nl;
 	#rdfs:comment "";
 .
 not:Optierecht a skos:Concept, skoslex:Object;
@@ -850,12 +880,14 @@ not:Optierecht a skos:Concept, skoslex:Object;
         skos:scopeNote "Een optierecht is alleen mogelijk op een luchtvaartuig.";
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005034&boek=8&hoofdstuk=V&titeldeel=15&afdeling=1&artikel=1308>;
         #dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http%3A%2F%2Fbrk.basisregistraties.overheid.nl%2Fid%2Fbegrip%2FOptierecht>;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
         skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 not:OverigeNotariskosten a skos:Concept, skoslex:Object;
 	rdfs:label "Overige notariskosten"@nl;
 	skos:prefLabel "Overige notariskosten";
 	skos:definition "In een akte kunnen overige notariskosten worden genoemd. Dit kunnen kosten zijn voor een volmacht of inhuren van een tolk.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:broaderGeneric not:Notariskosten;
 	skos:related not:Volmacht;
 	skos:related not:Tolk;
@@ -863,17 +895,32 @@ not:OverigeNotariskosten a skos:Concept, skoslex:Object;
 .
 not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of akte. Het is geen specialisatie van Adres, maar kan ook de aanduiding van een weiland zijn (tegenover ….) of de naam van een landhuis. Dit is niet iets dat het Kadaster registreert.
 	rdfs:label "Plaatselijk bekend"@nl;
-	skos:prefLabel "Plaatselijk bekend";
+	skos:prefLabel "Plaatselijk bekend"@nl;
 	skos:definition "De plaatselijke benaming, zo deze bekend is.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric kad:Adres;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
+not:PlaatsVanVerlijdenAkte a skos:Concept;
+	rdfs:label "Plaats van verlijden akte"@nl;
+	skos:prefLabel "Plaats van verlijden akte"@nl;
+	skos:definition "De plaats waar een notariële akte van oprichting is verleden."@nl;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
+.
 not:PlaatsVanVestiging a skos:Concept;
 	rdfs:label "Plaats van vestiging"@nl;
-	skos:prefLabel "Plaats van vestiging";
-	skos:definition "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld, en aldaar zijn protocol te bewaren. In het Koninklijk besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven.";
+	skos:prefLabel "Plaats van vestiging"@nl;
+	skos:altLabel "Vestigingsplaats"@nl;
+	skos:altLabel "Standplaats"@nl;
+	skos:definition "De plaats waar een notaris is gevestigd."@nl;
+	skos:scopeNote "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld, en aldaar zijn protocol te bewaren. In het Koninklijk besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven."@nl;
 	rdfs:comment "Een gemeente in Nederland waar het kantoor van de notaris staat.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
+	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=3&lid=1";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=10";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=13";
+	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40";
+	#Hens Meengs en Jacco Sjerps zijn beiden met andere artikelen gekomen. Overleg met KNB nodig.
 	skos:scopeNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
 	skos:semanticRelation not:Notaris;
 	#skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd.";
@@ -896,6 +943,7 @@ not:TijdelijkeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaste
 	rdfs:label "Tijdelijke erfpacht"@nl;
 	skos:prefLabel "Tijdelijke erfpacht";
 	skos:definition "Bij tijdelijke erfpacht eindigt het recht aan het einde van de termijn waarvoor het is aangegaan. Hierbij geldt wel dat het in de praktijk voorkomt dat erfpachtrechten in voorkomende gevallen ‘tijdelijk’ genoemd worden doch in de praktijk ‘voortdurend’ zijn omdat ze strikt genomen uitgaan van continuering bij het einde van het tijdvak.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric kad:Erfpacht;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
 .
@@ -934,6 +982,7 @@ not:TotaalbedragInschrijving a skos:Concept;
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer.";
 	rdfs:comment "Het bedrag dat in de hypotheekakte staat.";
 	skos:scopeNote "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:semanticRelation not:RechtVanHypotheek;
 .
 not:VanRechtswegeOntbonden a skos:Concept;
@@ -947,6 +996,7 @@ not:VerminderingOverdrachtsbelastingArt13 a skos:concept, skoslex:Object;
 	skos:prefLabel "Vermindering overdrachtsbelasting artikel 13";
 	skos:definition "In geval van verkrijging binnen zes maanden na een vorige verkrijging van dezelfde goederen door een ander wordt de waarde verminderd met het bedrag waarover ter zake van de vorige verkrijging was verschuldigd hetzij overdrachtsbelasting welke niet in mindering heeft gestrekt van schenk- of erfbelasting, hetzij omzetbelasting welke in het geheel niet op grond vanartikel 15 van de Wet op de omzetbelasting 1968in aftrek kon worden gebracht.";
 	rdfs:comment "Artikel 13 van de Wet op belastingen van rechtsverkeer zorgt ervoor dat er geen cumulatie van overdrachtsbelasting ontstaat indien een onroerende zaak binnen een bepaalde termijn na een voorafgaande verkrijging weer wordt overgedragen. Bij de volgende verkrijging hoeft alleen overdrachtsbelasting betaald te worden over de meerwaarde.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 .
 not:Verordening a skos:Concept, skoslex:Object;#Deze hoort wellicht thuis in het domein van het Kadaster
@@ -954,6 +1004,7 @@ not:Verordening a skos:Concept, skoslex:Object;#Deze hoort wellicht thuis in het
 	skos:prefLabel "Verordening";
 	skos:definition "Een voorschrift van de gemeenteraad met betrekking tot a) gebruik van woningen, woonketen, woonwagens, andere gebouwen, bouwwerken die geen gebouwen zijn, standplaatsen en open erven; b) tegengaan van bouwen op verontreinigde grond; c) slopen; d) aanvragen woonvergunningen en e) overdracht van bouwvergunningen.";
 	rdfs:comment "Een door de gemeenteraad opgelegde regeling die gaat over gebouwen of grond.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:VertegenwoordigdDoor a skos:Concept;
 	rdfs:label "Vertegenwoordigd door"@nl;
@@ -961,16 +1012,23 @@ not:VertegenwoordigdDoor a skos:Concept;
 	skos:definition "Een persoon (de vertegenwoordigde) kan worden vertegenwoordigd door een ander persoon (de vertegenwoordiger), die (bepaalde) rechtshandelingen kan verrichten namens de vertegenwoordigde."@nl;
 	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
 	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";	
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:semanticRelation zv:Persoon;
 	skos:semanticRelation not:Vertegenwoordiger;
 .
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
-	skos:prefLabel "Volmacht";
-	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden.";
+	skos:prefLabel "Volmacht"@nl;
+	skos:definition "De bevoegdheid die een persoon (de volmachtgever) verleent aan een andere persoon (de gevolmachtigde) om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;#Definitie Jacco Sjerps
+	skos:scopeNote "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden."@nl;
+	#skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden.";#Definitie Hens Meengs
 	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem rechtshandelingen te verrichten zoals het ondertekenen van een notariële akte.";
 	skos:scopeNote "De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
+	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
+	dcterms:source <ttp://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1>;
+	#2 verschillende definities en linkjes. Overleg met KNB juristen welke moeten worden gebruikt
 	#Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .
 not:Voorkeursrecht a skos:Concept; #Zou ook in het Kadaster-domein kunnen, maar dat begrip is daar nu niet bekend. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
@@ -978,6 +1036,7 @@ not:Voorkeursrecht a skos:Concept; #Zou ook in het Kadaster-domein kunnen, maar 
 	skos:prefLabel "Voorkeursrecht";
 	skos:altLabel "Recht van voorverkoop";
 	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt.";
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 	skos:semanticRelation kad:Registergoed;
 .
