@@ -154,7 +154,7 @@ kad:Doorhaling a skos:Concept, skoslex:Act;
 kad:DoorhalingBeslag a skos:Concept, skoslex:Act;
 	rdfs:label "Doorhaling beslag"@nl;
 	skos:prefLabel "Doorhaling beslag";
-	skos:broaderGeneric kad:Doorhaling; 
+	skos:broaderGeneric kad:Doorhaling;
 .
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Doorhaling_hypotheek;
@@ -592,7 +592,7 @@ kad:GeschatteGrootte a skos:Concept;
 	skos:scopeNote "Bij levering van kadastrale percelen wordt in de notariele akte meestal een geschatte grootte van het verkochte opgenomen. Tot uitmeting van het perceel heeft plaatsgevonden (zie ook aanwijs) wordt bij de onroerende zaak in de Basisregistratie Kadaster de geschatte grootte vermeld. Pas na de uitmeting wordt op basis van de bestaande en de nieuwe grenzen de nieuwe kadastrale grootte berekend.";
 	skosthes:broaderGeneric kad:Grootte;
 .
-kad:Grootte a skos:Concept, skoslex:Object; 
+kad:Grootte a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Grootte;
 	rdfs:label "Grootte"@nl;
 	skos:prefLabel "Grootte";
@@ -658,8 +658,8 @@ kad:NaamOpenbareRuimte a skos:Concept;
 zv:Postcode a skos:Concept;
 	rdfs:label "Postcode"@nl;
 	skos:prefLabel "Postcode";
-	skos:definition "De postcode is een coderingssystematiek zoals ontwikkeld en beheerd door PostNL. Een postcode is een niet-authentiek gegeven met betrekking tot een nummeraanduiding."
-	skos:comment "Een postcode is een korte reeks tekens die in een postadres wordt opgenomen om het automatisch sorteren van de post makkelijker te maken."
+	skos:definition "De postcode is een coderingssystematiek zoals ontwikkeld en beheerd door PostNL. Een postcode is een niet-authentiek gegeven met betrekking tot een nummeraanduiding.";
+	skos:comment "Een postcode is een korte reeks tekens die in een postadres wordt opgenomen om het automatisch sorteren van de post makkelijker te maken.";
 #	dcterms:source <jci1.31:c:BWBR0023466&hoofdstuk=3&paragraaf=2&artikel=21&lid=2&opsommingsonderdeel=a&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Postcode;
