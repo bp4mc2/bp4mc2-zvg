@@ -196,7 +196,7 @@ not:Betaling a skos:Concept, skoslex:Act;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object not:Koopsom;
-	skoslex:object not:KostenEnOverdrachtsbelasing;
+	skoslex:object not:KostenEnOverdrachtsbelasting;
 	skoslex:agent not:Notaris;
 	skosthes:broaderPartitive not:PasserenAkteLevering;
 .
@@ -714,7 +714,7 @@ not:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
 	skos:semanticRelation kad:DoorhalingHypotheek;
 	skos:semanticRelation mak:Verkoper;
 .
-not:KostenEnOverdrachtsbelasing a skos:Concept, skoslex:Object;
+not:KostenEnOverdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Kosten/Overdrachtsbelasting";
 	skos:definition "Geheel van kosten voor een levering.";
