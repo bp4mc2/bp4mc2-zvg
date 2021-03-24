@@ -714,8 +714,8 @@ mak:ArtikelOppervlakte a skos:Concept, skoslex:Record;
 	rdfs:comment "Artikel 6.11 ziet op alle oppervlakten, zoals de kadastrale oppervlakte van het perceel en de vloeroppervlakte van de onroerende zaak. Omdat koper de situatie ter plaatse heeft bekeken en hij dus ziet wat hij koopt, maakt het vaak niet veel uit of de opgegeven grootte afwijkt van de werkelijke grootte. Daarom is het gebruikelijk om af te spreken dat er geen verrekening plaatsvindt bij verschil tussen de opgegeven en de werkelijke grootte. Soms kan het voor koper toch belangrijk zijn dat de daadwerkelijke oppervlakte klopt of nagenoeg klopt met de opgegeven oppervlakte. In afwijking van de hoofdregel kunnen partijen dan iets anders afspreken. Dit kan op de stippellijn van artikel 6.11. Partijen kunnen bijvoorbeeld opnemen dat koper recht heeft op een vergoeding van verkoper als blijkt dat de oppervlakte minimaal 5% minder bedraagt dan opgegeven. Leg ook de hoogte van de vergoeding vast, bijvoorbeeld een bedrag voor iedere m2 die de opgegeven oppervlakte overschrijdt. Omdat in de koopovereenkomst geen melding wordt gemaakt van de gebruiksoppervlakte van de woning, is het verstandig om dit ook op te nemen op de stippellijn. De verkopend makelaar kan hierbij helpen. Makelaars (behorend bij NVM, VBO of VastgoedPRO) zijn namelijk verplicht om de woning volgens de ‘meetinstructie gebruiksoppervlakte woningen’ op te meten, zodat de gegevens bekend zijn. De grootte van het perceel wordt overigens in artikel 1 van de koopovereenkomst genoemd";
 	skos:scopeNote "Artikel 6.11 van de model koopovereenkomst.";
 	skoslex:isAbout kad:KadastraleGrootte;
-	skoslex:isAbout zv:OpgegevenGrootte;
-	skoslex:isAbout zv:WerkelijkeGrootte;
+	skoslex:isAbout kad:OpgegevenGrootte;
+	skoslex:isAbout kad:WerkelijkeGrootte;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelLastenVoorgaandeJaren a skos:Concept, skoslex:Record;
