@@ -13,7 +13,7 @@ GRAPH config:Theatre {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX skoslex: <http://bp4mc2.org/def/skos-lex#>
       PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
-      SELECT DISTINCT ?domein ?begrip
+      SELECT DISTINCT ?domein (str(?concept) as ?uri) ?begrip
              GROUP_CONCAT(DISTINCT ?voorkeursterm1;separator="; ") as ?voorkeursterm
              GROUP_CONCAT(DISTINCT ?alternatieve_aanduiding1;separator="; ") as ?alternatieve_aanduiding
              GROUP_CONCAT(DISTINCT ?definitie1;separator="; ") as ?definitie
@@ -36,7 +36,7 @@ GRAPH config:Theatre {
           OPTIONAL { ?concept skos:scopeNote ?toelichting1}
         }
       }
-      GROUP BY ?concept ?domein ?begrip
+      GROUP BY ?concept ?domein ?begrip ?concept
       ORDER BY ?domein ?begrip
     """
   .
