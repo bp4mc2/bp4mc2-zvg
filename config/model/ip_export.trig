@@ -28,10 +28,12 @@ GRAPH config:Theatre {
           OPTIONAL { ?concept skos:prefLabel ?voorkeursterm1}
           OPTIONAL { ?concept skos:altLabel ?alternatieve_aanduiding1}
           OPTIONAL { ?concept skos:definition ?definitie1}
-          OPTIONAL { ?concept rdfs:comment ?uitleg1}
+          OPTIONAL {
+            ?concept rdfs:comment ?uitleg1
+            FILTER (strlen(?uitleg1)<2000)
+          }
           OPTIONAL { ?concept skos:editorialNote ?rationale1}
           OPTIONAL { ?concept skos:scopeNote ?toelichting1}
-          FILTER (strlen(?uitleg1)<2000)
         }
       }
       GROUP BY ?concept ?domein ?begrip
