@@ -30,12 +30,15 @@
 
 #Wet op het notarisambt (WNA)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1> rdfs:label "artikel 1, eerste lid, van de Wet op het notarisambt".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II> rdfs:label "artikel 2 van de Wet op het notarisambt".
+#<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II> rdfs:label "artikel 2 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=2&lid=1> rdfs:label "artikel 2, eerste lid, van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=3&lid=1> rdfs:label "artikel 3, eerste lid, van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=10> rdfs:label "artikel 10 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12> rdfs:label "artikel 12 van de Wet op het notarisambt".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=13> rdfs:label "artikel 13 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25> rdfs:label "artikel 25 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37> rdfs:label "artikel 37 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=38&lid=1> rdfs:label "artikel 38, eerste lid, van de Wet op het notarisambt".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39> rdfs:label "artikel 39 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1> rdfs:label "artikel 39, eerste lid, van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40> rdfs:label "artikel 40 van de Wet op het notarisambt".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2> rdfs:label "artikel 40, tweede lid, van de Wet op het notarisambt".
@@ -44,9 +47,9 @@
 
 #Burgerlijk Wetboek (BW)
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60> rdfs:label "artikel 60 van Boek 3 van het Burgerlijk Wetboek".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1> rdfs:label "artikel 60, eerste lid, van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83> rdfs:label "Artikel 83 van Boek 3 van het Burgelijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84> rdfs:label "artikel 84 van Boek 3 van het Burgerlijk Wetboek".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4> rdfs:label "artikel 89, vierde lid, van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "artikel 227 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260> rdfs:label "artikel 260 van Boek 3 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89> rdfs:label "artikel 89 van Boek 5 van het Burgerlijk Wetboek".
@@ -92,7 +95,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:scopeNote "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit."@nl;
 	skos:editorialNote "Een notaris mag niet in een afhankelijke positie zitten en mag daarom niet in loondienst zijn. Een notaris kan volgens de wet alleen een persoon zijn die aan alle voorwaarden voldoet om in aanmerking te komen om benoemd te worden bij koninklijk besluit. Iemand is pas notaris (en mag zich alleen zo noemen) na dat hij door de koning benoemd is. Het is een benoeming aan de persoon, is niet overdraagbaar en eindigt bij overlijden. Om die redenen kan een notaris dus nooit een rechtspersoon."@nl;
 	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II>;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1>;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 not:Gerechtigde a skos:Concept, skoslex:Actor;
@@ -112,9 +115,9 @@ not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	skos:altLabel "Volmachtnemer";
 	skos:definition "Persoon waaraan een andere persoon (de volmachtgever) de bevoegdheid heeft verleend om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;
 	rdfs:comment "Een gevolmachtigde is een persoon die van een ander een volmacht heeft gekregen"@nl;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1>;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 	skos:semanticRelation not:Volmacht;
 .
@@ -133,8 +136,8 @@ not:Vertegenwoordiger a skos:Concept;
 	rdfs:label "Vertegenwoordiger"@nl;
 	skos:prefLabel "Vertegenwoordiger"@nl;
 	skos:definition "Persoon die bevoegd is om een andere persoon te vertegenwoordigen, om namens een andere persoon (de vertegenwoordigde) (bepaalde) rechtshandelingen te verrichten."@nl;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
@@ -247,7 +250,7 @@ not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;#Wijkt af van begrip in
 	skos:scopeNote "Identificatie hoeft niet alleen op vervreemder of verkrijger plaats te vinden. Recherche zou bijvoorbeeld ook kunnen plaatsvinden op ouders die borg staan.";
 	#skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten.";
 	skos:editorialNote "De identificatieplicht van de notaris valt onder een andere wet dan het gekoppelde begrip van identificeren. Toch is er voor gekozen om alle identificerende handelingen, ook die van de notaris, onder één bovenliggend algemeen begrip van identificeren te scharen.";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
 	skosthes:broaderGeneric zv:Identificeren;
 .
 not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
@@ -698,7 +701,7 @@ not:GrondVanBevoegdheid a skos:Concept;
 	rdfs:label "Grond van bevoegdheid"@nl;
 	skos:prefLabel "Grond van bevoegdheid"@nl;
 	skos:definition "De grond van de bevoegdheid van een persoon om een andere persoon te vertegenwoordigen, om namens een andere persoon (de vertegenwoordigde) (bepaalde) rechtshandelingen te verrichten, zoals een volmacht of het zijn van bestuurder van een rechtspersoon."@nl;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
 	skos:semanticRelation not:Volmacht;
 .
 not:HerzieningErfpacht a skos:Concept;
@@ -834,8 +837,8 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	skos:definition "Door een notaris verleden authentieke akte."@nl;#Definitie Jacco Sjerps
 	#2 verschillende definities van KNB Juridische Zaken. Moet worden afgestemd welke het gaat worden.
 	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris."@nl;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=2&lid=1";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=2&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
 	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=37>;
 	#2 verschillende linkjes naar artikelen van KNB Juridische Zaken. Moet worden afgestemd welke het gaat worden.
 	skos:editorialNote "artikel 2 lid 1 Wna jo artikel 156 lid 2 Rv"@nl;#Hoe de artikelen samen gelezen moeten worden
@@ -905,7 +908,7 @@ not:PlaatsVanVerlijdenAkte a skos:Concept;
 	rdfs:label "Plaats van verlijden akte"@nl;
 	skos:prefLabel "Plaats van verlijden akte"@nl;
 	skos:definition "De plaats waar een notariële akte van oprichting is verleden."@nl;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
 .
 not:PlaatsVanVestiging a skos:Concept;
 	rdfs:label "Plaats van vestiging"@nl;
@@ -916,10 +919,10 @@ not:PlaatsVanVestiging a skos:Concept;
 	skos:scopeNote "De notaris is verplicht kantoor te houden in de plaats van vestiging die in het besluit van zijn benoeming is vermeld, en aldaar zijn protocol te bewaren. In het Koninklijk besluit waarbij de notaris is benoemd, wordt de plaats van vestiging aangegeven."@nl;
 	rdfs:comment "Een gemeente in Nederland waar het kantoor van de notaris staat.";
 	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=12>;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=3&lid=1";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=10";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=13";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=3&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=10>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=13>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 	#Hens Meengs en Jacco Sjerps zijn beiden met andere artikelen gekomen. Overleg met KNB nodig.
 	skos:scopeNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt.";
 	skos:semanticRelation not:Notaris;
@@ -1010,8 +1013,8 @@ not:VertegenwoordigdDoor a skos:Concept;
 	rdfs:label "Vertegenwoordigd door"@nl;
 	skos:prefLabel "Vertegenwoordigd door";
 	skos:definition "Een persoon (de vertegenwoordigde) kan worden vertegenwoordigd door een ander persoon (de vertegenwoordiger), die (bepaalde) rechtshandelingen kan verrichten namens de vertegenwoordigde."@nl;
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1";
-	dcterms:source "http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2";	
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;	
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:semanticRelation zv:Persoon;
 	skos:semanticRelation not:Vertegenwoordiger;
@@ -1027,7 +1030,7 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
-	dcterms:source <ttp://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1>;
 	#2 verschillende definities en linkjes. Overleg met KNB juristen welke moeten worden gebruikt
 	#Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .
@@ -1064,4 +1067,3 @@ not:Wegneemrecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
 	skos:semanticRelation kad:Erfpacht;
 .
-
