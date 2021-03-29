@@ -43,8 +43,8 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 van Boek 5 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 van Boek 6 van het Burgerlijk Wetboek".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=2b&afdeling=2&paragraaf=1&artikel=101> rdfs:label "artikel 101 van Boek 7 van het Burgerlijk Wetboek".
-
-#Wetboek van Burgerlijke Rechtsvordering
+<https://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=274> rdfs:label "Artikel 274 Burgerlijk Wetboek Boek 3".
+#Wetboek van Burgerlijke Rechtsvordering"
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439> rdfs:label "artikel 439 van het Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=509> rdfs:label "artikel 509 van het Wetboek van Burgerlijke Rechtsvordering".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563> rdfs:label "artikel 563 van het Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)".
@@ -61,6 +61,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a> rdfs:label "artikel 1a van de Kadasterwet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6> rdfs:label "artikel 6 van de Kadasterwet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=2&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van de Kadasterwet".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&titel=1&afdeling=2&artikel=28> rdfs:label "artikel 28 van de Kadasterwet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50> rdfs:label "artikel 50 van de Kadasterwet".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53> rdfs:label "artikel 53 van de Kadasterwet".
 
@@ -70,8 +71,8 @@
 #Diverse
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004471&hoofdstuk=I&artikel=1> rdfs:label "artikel 1 van de Monumentenwet 1988".
 <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1> rdfs:label "Artikel 1 Natuurschoonwet 1928".
-<http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 van de Wet basisregistratie adressen en gebouwen".
-
+<https://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "Artikel 1 Wet basisregistratie adressen en gebouwen".
+<https://wetten.overheid.nl/jci1.3:c:BWBR0003391&artikel=2> rdfs:label "Artikel 2 Wet voorkeursrecht gemeenten".
 #--
 #Basisregistratie links
 #Test of dit werkt.
@@ -119,11 +120,17 @@ kad:Rechthebbende a skos:Concept;
 kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten";
+#	skos:exactMatch brk:AanwijzingWVG; 
+	skos:definition "Een aanwijzing door de gemeenteraad dat een vervreemder kan eerst tot kan vervreemding overgaan nadat de gemeente in de gelegenheid is gesteld het desbetreffende goed te verkrijgen.";
+	rdfs:comment "Een besluit van de gemeenteraad dat een huis eerst aan de gemeente moet worden aangeboden voordat het openbaar te koop wordt gezet";
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0003391&artikel=2>;
 .
-kad:BeschikkingWetBodemsanering a skos:Concept, skoslex:Act;
-	rdfs:label "Beschikking of bevel wet bodemsanering"@nl;
-	skos:prefLabel "Beschikking of bevel wet bodemsanering";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>
+kad:BeschikkingWetBodembescherming a skos:Concept, skoslex:Act;
+	rdfs:label "Beschikking of bevel wet bodembescherming"@nl;
+	skos:prefLabel "Beschikking of bevel wet bodembescherming";
+#	skos:exactMatch brk:BeschikkingWetBodembescherming; 
+skos:definition "Een vaststelling van gedeputeerde staten dat sprake is van een geval van ernstige verontreiniging of de naar het oordeel van gedeputeerde staten noodzakelijke maatregelen ten einde de oorzaak van de verontreiniging of aantasting weg te nemen en de verontreiniging of de aantasting en de directe gevolgen daarvan te beperken en zoveel mogelijk ongedaan te maken als ten gevolge van een ongewoon voorval een geval van ernstige verontreiniging ontstaat of de bodem ernstig is of dreigt te worden aangetast.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
 .
 kad:Beslag a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Beslag;
@@ -131,16 +138,17 @@ kad:Beslag a skos:Concept, skoslex:Act;
 	skos:prefLabel "Beslag";
 	skos:definition "Een Beslag is een voorlopige maatregel waarbij de overheid, al dan niet op vordering van een belanghebbende, bepaalde zaken aan iemands vrije beschikking onttrekt, of wel deze onder zich neemt.";
 	rdfs:comment "Een beslag is een tijdelijke maatregel waarbij de overheid bepaalde zaken van iemand afneemt, zodat hij er niets meer mee kan doen.";
-  skos:scopeNote "De belanghebbende kan vorderen tot leggen van beslag op goederen.";
+  	skos:scopeNote "De belanghebbende kan vorderen tot leggen van beslag op goederen.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=509>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 .
 kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
-#	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster; -> nog te definiëren
+#	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster;
 	rdfs:label "Bijwerking basisregistratie Kadaster";
 	skos:prefLabel "Bijwerking basisregistratie Kadaster";
+	skos:definition "Bijwerking van de Basisregistratie Kadaster vindt plaats als bijhouding dan wel als vernieuwing."; 
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53>;
 	skoslex:object kad:BasisregistratieKadaster;
 	skoslex:actor kad:Bewaarder;
@@ -150,26 +158,31 @@ kad:Doorhaling a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Doorhaling;
 	rdfs:label "Doorhaling"@nl;
 	skos:prefLabel "Doorhaling";
+	skos:definition "Een doorhaling is het machtigen van de bewaarder tot een doorhaling van een hypotheek of een beslag door een inschrijving van een verklaring van waardeloosheid op een inschrijving van een hypotheek of een beslag in de openbare registers.";
+	rdfs:comment "Doorhaling is het ongedaan maken van de inschrijving van een stuk in de openbare registers.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&titel=1&afdeling=2&artikel=28>;
+	skoslex:actor kad:Bewaarder;
+	skoslex:object kad:OpenbareRegisters;
 .
 kad:DoorhalingBeslag a skos:Concept, skoslex:Act;
 	rdfs:label "Doorhaling beslag"@nl;
 	skos:prefLabel "Doorhaling beslag";
+#	skos:exactMatch brk:DoorhalingBeslag'
+	skos:definition "De inschrijving van het beslag kan worden doorgehaald als de bewaarder  tot doorhaling wordt gemachtigd door een ingeschreven schriftelijke verklaring van de deurwaarder dat hij in opdracht van de executant het beslag opheft of dat het beslag is vervallen of door een rechterlijke uitspraak die tot opheffing van het beslag strekt.";
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=513>;
+	skoslex:object kad:Beslag; 
 	skos:broaderGeneric kad:Doorhaling;
 .
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Doorhaling_hypotheek;
 	rdfs:label "Doorhaling hypotheek"@nl;
 	skos:prefLabel "Doorhaling hypotheek";
-	#skos:altLabel "Doorhalen"; staat niet in Kadaster taxonomie
 	skos:altLabel "Royering hypotheek";
-	#skos:altLabel "Uitschrijven"; staat niet in Kadaster taxonomie
 	skoslex:record not:AfschriftAkte;
 	skos:definition "Doorhaling hypotheek is het inschrijven van een authentieke akte die een verklaring van de schuldeiser bevat, dat de op het bezwaarde goed rustende hypotheek is vervallen, deze machtigt de bewaarder tot doorhaling van de hypotheek.";
 	rdfs:comment "Een doorhaling hypotheek is een authentieke akte waarin degene die het hypotheekrecht heeft (meestal een bank), dat de hypotheek is komen te vervallen.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=28>;
-	skoslex:object kad:OpenbareRegisters;
-	skoslex:actor kad:Bewaarder;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=274>;
+	skoslex:object not:RechtVanHypotheek; 
 	skos:broaderGeneric kad:Doorhaling;
 .
 kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
@@ -182,7 +195,7 @@ kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
 	skoslex:object not:AfschriftAkte;
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:object kad:Registergoed;
-	#skoslex:actor not:Notaris; De notaris biedt de akte ter inischrijving aan als onderdeel van OverdragenZakelijkRecht.
+	skoslex:actor not:Notaris;
 	skoslex:actor kad:Bewaarder;
 	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
         #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
@@ -235,15 +248,6 @@ kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:scopeNote "Een rechtshandeling vereist een op een rechtsgevolg gerichte wil die zich door een verklaring heeft geopenbaard.";
 	skos:semanticRelation zv:Persoon;
 .
-#kad:Vernummering a skos:Concept, skoslex:Record; Even geparkeerd. Wellicht beter om brk:Splitsing_onroerende_zaak te gebruiken.
-#	skos:exactMatch brk:Vernummering;
-#	rdfs:label "Vernummering"@nl;
-#	skos:prefLabel "Vernummering";
-#	skos:definition "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
-#	rdfs:comment "Vernummering is het proces waardoor kadastrale objecten een andere kadastrale aanduiding krijgen bij splitsing en samenvoeging.";
-#	skosthes:broaderPartitive kad:KadastraleAanduiding;
-#	#https://tax.kadaster.nl/doc/begrip/Vernummering
-#.
 
 #--
 #Objects, records
@@ -265,10 +269,12 @@ kad:Basisregistratie a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 .
 kad:BasisregistratieAdressenEnGebouwen a skos:Concept, skoslex:Object;
-#	skos:exactMatch brk:Basisregistratie_adressen_en_gebouwen; -> nog te definiëren
+#	skos:exactMatch bag:Basisregistratie_adressen_en_gebouwen; -> nog te definiëren
 	rdfs:label "Basisregistratie Adressen en Gebouwen"@nl;
 	skos:prefLabel "Basisregistratie Adressen en Gebouwen";
+	skos:definition "De basisregistratie adressen en gebouwen is de door burgemeester en wethouders gehouden een geautomatiseerde basisregistratie van panden, verblijfsobjecten, standplaatsen, ligplaatsen, woonplaatsen, openbare ruimten en nummeraanduidingen, en situaties van feitelijk gebruik hiervan";
 	skosthes:broaderPartitive kad:Basisregistratie;
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
 .
 kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Basisregistratie_Kadaster;
@@ -446,13 +452,6 @@ kad:Landgoed a skos:Concept, skoslex:Object;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1>;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
-kad:Nummeraanduiding a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Nummeraanduiding;
-	rdfs:label "Nummeraanduiding"@nl;
-	skos:prefLabel "Nummeraanduding";
-	skos:definition "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.";
-	rdfs:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
-.
 kad:Object a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Object;
 	rdfs:label "Object"@nl;
@@ -600,21 +599,12 @@ kad:Grootte a skos:Concept, skoslex:Object;
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters..";
 	skos:semanticRelation kad:Perceel;
 .
-kad:Huisnummer a skos:Concept;
-	rdfs:label "Huisnummer"@nl;
-	skos:prefLabel "Huisnummer";
-	skos:definition "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.";
-	skos:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
-#	dcterms:source <jci1.31:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=l&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
-	skos:semanticRelation kad:Adres;
-	skos:exactMatch bag:Nummeraanduiding;
-.
+
 kad:KadastraleGrootte a skos:Concept;
 	skos:exactMatch brk:Kadastrale_grootte;
 	rdfs:label "Kadastrale grootte"@nl;
 	skos:prefLabel "Kadastrale grootte";
-	skos:altLabel "Kadastergrootte";
-	skos:altLabel "Grootte";
+	skos:altLabel "Werkelijke grootte";
 	skos:definition "De grootte van een perceel zoals vermeld in de kadastrale registratie.";
 	rdfs:comment "De Kadastrale grootte is de oppervlakte van een stuk grond zoals deze bij het Kadaster is vastgesteld en vastgelegd.";
 	skosthes:broaderGeneric kad:Grootte;
@@ -649,9 +639,9 @@ kad:NaamOpenbareRuimte a skos:Concept;
 	rdfs:label "Naam van een openbare ruimte"@nl;
 	skos:prefLabel "Naam van een openbare ruimte";
 	skos:altLabel "Straatnaam";
+	skos:exactMatch bag:Naam_OpenbareRuimte;
 	skos:definition "De naam van een openbare ruimte is de door het bevoegde gemeentelijke orgaan aan een openbare ruimte toegekende benaming en een authentiek gegeven.";
 	rdfs:comment "De naam openbare ruimte is de naam die de gemeente heeft gegeven aan een openbare ruimte.";
-#       dcterms:source < jci1.31:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=n&z=2012-10-01&g=2012-10-01>, <jci1.31:c:BWBR0023466&hoofdstuk=3&paragraaf=2&artikel=20&lid=1&opsommingsonderdeel=c&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Naam_OpenbareRuimte;
 .
@@ -660,7 +650,6 @@ zv:Postcode a skos:Concept;
 	skos:prefLabel "Postcode";
 	skos:definition "De postcode is een coderingssystematiek zoals ontwikkeld en beheerd door PostNL. Een postcode is een niet-authentiek gegeven met betrekking tot een nummeraanduiding.";
 	skos:comment "Een postcode is een korte reeks tekens die in een postadres wordt opgenomen om het automatisch sorteren van de post makkelijker te maken.";
-#	dcterms:source <jci1.31:c:BWBR0023466&hoofdstuk=3&paragraaf=2&artikel=21&lid=2&opsommingsonderdeel=a&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Postcode;
 .
@@ -669,9 +658,17 @@ kad:NaamWoonplaats a skos:Concept;
 	skos:prefLabel "Naam van een woonplaats";
 	skos:definition "De naam van een woonplaats is de door het bevoegde gemeentelijke orgaan aan een woonplaats toegekende benaming en een authentiek gegeven.";
 	rdfs:comment "De naam van een woonplaats is de naam die de gemeente aan een woonplaats heeft gegeven.";
-#	dcterms:source <jci1.31:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=r&z=2012-10-01&g=2012-10-01>, <jci1.31:c:BWBR0023466&hoofdstuk=3&paragraaf=2&artikel=19&lid=1&opsommingsonderdeel=b&z=2012-10-01&g=2012-10-01>; overgenomen uit BAG, resolved niet
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Naam_Woonplaats;
+.
+kad:Nummeraanduiding a skos:Concept;
+	skos:exactMatch bag:Nummeraanduiding;
+	rdfs:label "Nummeraanduiding"@nl;
+	skos:prefLabel "Nummeraanduding";
+	rdfs:altLabel "Huisnummer";
+	skos:definition "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.";
+	rdfs:comment "Een nummeraanduiding is het nummer dat de gemeente heeft gegeven aan een verblijfsobject, standplaats of ligplaats. Het nummer bestaat uit een huisnummer, huisletter en huisnummertoevoeging.";
+	skos:semanticRelation kad:Adres;
 .
 kad:OmschrijvingOnroerendeZaak a skos:Concept;
 	rdfs:label "Omschrijving onroerende zaak"@nl;
@@ -682,12 +679,7 @@ kad:OmschrijvingOnroerendeZaak a skos:Concept;
 kad:OpgegevenGrootte a skos:Concept;
 	rdfs:label "Opgegeven grootte"@nl;
 	skos:prefLabel "Opgegeven grootte";
-	skosthes:broaderGeneric kad:Grootte;
-	skos:semanticRelation kad:Perceel;
-.
-kad:WerkelijkeGrootte a skos:Concept;
-	rdfs:label "Werkelijke grootte"@nl;
-	skos:prefLabel "Werkelijke grootte";
+	skos:definition "De opgegeven grootte van een perceel is de grootte die de notaris opgeeft bij een voorlopige grens";
 	skosthes:broaderGeneric kad:Grootte;
 	skos:semanticRelation kad:Perceel;
 .
