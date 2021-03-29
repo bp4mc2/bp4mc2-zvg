@@ -395,16 +395,6 @@ kad:HeersendeErf a skos:Concept, skoslex:Object;
   	skos:semanticRelation kad:Erfdienstbaarheid;
   	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
-kad:Hoofdsom a skos:Concept; #Afstemmen met Kadaster of Inschrijvingsbedrag of BedragZekerheidstellingHypotheek niet beter is als term
-	skos:exactMatch brk:Hoofdsom;
-	rdfs:label "Hoofdsom"@nl;
-	skos:prefLabel "Hoofdsom";
-	skos:altLabel "Inschrijvingsbedrag";
-	skos:definition "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
-	         #Voor het meerdere komt de opbrengst ook toe aan overige schuldeisers; bij KNB even navragen hoe dan de verdeling is  (wel met inachtneming van het opslagbedrag, zie verderop).
-	rdfs:comment "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
-	skos:semanticRelation not:RechtVanHypotheek;
-.
 kad:Huurkoop a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Huurkoop; #definitie in BRK is ontleend aan vervallen wetsartikel. Moet worden aangepast aan onderstaande artikel.
 	rdfs:label "Huurkoop"@nl;
@@ -599,7 +589,16 @@ kad:Grootte a skos:Concept, skoslex:Object;
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters..";
 	skos:semanticRelation kad:Perceel;
 .
-
+kad:Hoofdsom a skos:Concept; 
+	skos:exactMatch brk:Hoofdsom;
+	rdfs:label "Hoofdsom"@nl;
+	skos:prefLabel "Hoofdsom";
+	skos:altLabel "Inschrijvingsbedrag";
+	skos:altLabel "Bedrag zekerheidstelling";
+	skos:definition "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
+	rdfs:comment "De hoofdsom is de waarde van het recht van hypotheek, zonder rente en kosten dat in een hypotheekakte genoemd staat.";
+	skos:semanticRelation not:RechtVanHypotheek;
+.
 kad:KadastraleGrootte a skos:Concept;
 	skos:exactMatch brk:Kadastrale_grootte;
 	rdfs:label "Kadastrale grootte"@nl;
@@ -633,6 +632,8 @@ kad:LooptijdErfpacht a skos:Concept;
 	rdfs:label "Looptijd erfpacht"@nl;
 	skos:prefLabel "Looptijd erfpacht";
 	skos:altLabel "Einddatum erfpacht";
+	skos:definition "De looptijd erfpacht wordt bepaald door de datum waarop een recht van erfpacht eindigt";
+#	skos:exactMatch brk:EinddatumErfpacht;
 	skos:semanticRelation kad:Erfpacht;
 .
 kad:NaamOpenbareRuimte a skos:Concept;
@@ -673,6 +674,7 @@ kad:Nummeraanduiding a skos:Concept;
 kad:OmschrijvingOnroerendeZaak a skos:Concept;
 	rdfs:label "Omschrijving onroerende zaak"@nl;
 	skos:prefLabel "Omschrijving onroerende zaak";
+	rdfs:definition "De omschrijving van de onroerende zaak is de omschrijving zoals die bij de koop wordt opgenomen";
 	rdfs:comment "De gegevens van de onroerende zaak worden ingevuld, zoals de straat, het huisnummer, de gemeente en de kadastrale gegevens. Bij de grootte van het grondoppervlak wordt doorgaans uitgegaan van de vermelde gegevens in de openbare registers. Deze gegevens kunnen afwijken van de feitelijke situatie, zie artikel 6.11. Tenslotte wordt de koopsom ingevuld, eerst in cijfers en dan voluit geschreven.";
 	skos:semanticRelation kad:OnroerendeZaak;
 .
