@@ -1,0 +1,7 @@
+/* Style for Kadaster Werkversie */
+
+@import "base.css";
+
+body {
+  background-image: url('logo.png');
+}

@@ -1,0 +1,7 @@
+/* Style for Kadaster Definitieve Versie */
+
+@import "base.css";
+
+body {
+  background-image: url('KAD-DEF.svg');
+}

@@ -1,0 +1,79 @@
+/*******************************************************************************
+ *                              Local stylesheet                               *
+ * 
+ * Local stylesheet:
+ * Kadaster sample 
+ *
+ ******************************************************************************/
+
+/******************************************************************************/
+/*                              Generic section                               */
+/******************************************************************************/
+.generic {
+	background-color: #E7F0F4;
+	border-left-width: .5em;
+	border-left-style: solid;
+	border-color: #FFFFFF;
+	padding: .5em;
+}
+/******************************************************************************/
+/*                              Table section                               */
+/******************************************************************************/
+table {
+	border-collapse: collapse;
+	border: 1px solid #FFFFFF;
+	width: 100%;
+	empty-cells: hide;
+}
+tbody {
+	background-color: #E7F0F4;
+}
+
+
+td {
+	border: 1px solid #FFFFFF;
+	hyphens: auto;
+	padding: 0.25em;
+	vertical-align: top;
+	font-size: 80%;
+	min-width: 100px;
+}
+th {
+	background-color: #009ec2;
+	border: 1px solid #E7F0F4;
+	hyphens: auto;
+	padding: 0.25em;
+	vertical-align: top;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+
+tr:nth-child(even) {
+	background-color: #CBDFE9;
+}
+
+th>p, td>p {
+	margin: 0 0 1em;
+}
+
+caption {
+	font-style: italic;
+	text-align: left;
+}
+
+.deepheader {
+	margin-top: 1em;
+}
+
+.supplier {
+	color: gray;
+}
+
+.supplier::after {
+	content: " - ";
+}
+
+.small {
+	font-size: 80%;
+}
