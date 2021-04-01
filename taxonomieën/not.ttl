@@ -1027,11 +1027,10 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	#skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden.";#Definitie Hens Meengs
 	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem rechtshandelingen te verrichten zoals het ondertekenen van een notariële akte.";
 	skos:scopeNote "De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris.";
-	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;
+	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;#2 verschillende definities en linkjes. Overleg met KNB juristen welke moeten worden gebruikt
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1>;
-	#2 verschillende definities en linkjes. Overleg met KNB juristen welke moeten worden gebruikt
 	#Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .
 not:Voorkeursrecht a skos:Concept; #Zou ook in het Kadaster-domein kunnen, maar dat begrip is daar nu niet bekend. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
