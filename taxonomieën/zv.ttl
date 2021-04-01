@@ -312,29 +312,38 @@ zv:Geboorteplaats a skos:Concept;#https://www.stelselcatalogus.nl/registraties/B
 	skos:semanticRelation zv:NatuurlijkPersoon;
 	#Staat in de stelselcatalogus, maar het lijkt me netter om aan een begrip in BRK zelf te kunnen linken. Maar die is niet gevonden.
 .
-zv:Geboortedatum a skos:Concept;
+zv:Geboortedatum a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Natuurlijk_persoon/Geboortedatum_persoon
 	rdfs:label "Geboortedatum"@nl;
 	skos:prefLabel "Geboortedatum";
 	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:definition "De datum waarop de persoon is geboren."@nl;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=2&artikel=2.3>;
+	#Staat in de stelselcatalogus, maar het lijkt me netter om aan een begrip in BRK zelf te kunnen linken. Maar die is niet gevonden.
 .
-zv:Gehuwd a skos:Concept;
+zv:Gehuwd a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Partner/Soort_verbintenis
 	rdfs:label "Gehuwd"@nl;
 	skos:prefLabel "Gehuwd";
+	skos:definition "Een aanduiding voor de soort verbintenis die is aangegaan."@nl;
 	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
 zv:GemeenschapVanGoederen a skos:Concept;
 	rdfs:label "Gemeenschap van goederen"@nl;
 	skos:prefLabel "Gemeenschap van goederen";
+	skos:definition "Situatie dat een of meer goederen toebehoren aan twee of meer deelgenoten gezamenlijk."@nl;
 	skos:broaderGeneric zv:Huwelijksgoederenrecht;
 .
-zv:GeregistreerdPartnerschap a skos:Concept;
+zv:GeregistreerdPartnerschap a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Partner/Soort_verbintenis
 	rdfs:label "Geregistreerd partnerschap"@nl;
 	skos:prefLabel "Geregistreerd partnerschap";
+	skos:definition "Een aanduiding voor de soort verbintenis die is aangegaan."@nl;
 	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
 zv:GevestigdTe a skos:Concept;
 	rdfs:label "Gevestigd te"@nl;
-	skos:prefLabel "Gevestigd te";
+	skos:prefLabel "Gevestigd te"@nl;
+	skos:altLabel "Zetel"@nl;
+	skos:definition "Formele woonplaats van de rechtspersoon."@nl;
+	rfds:comment "Als het ware de woonplaats van de rechtspersoon."@nl;
 	skos:semanticRelation zv:Rechtspersoon;
 .
 zv:HandelendAls a skos:Concept;
@@ -354,6 +363,7 @@ zv:HuidigAdres a skos:Concept, skoslex:Record;
 zv:HuwelijkseVoorwaarden a skos:Concept;
 	rdfs:label "Huwelijkse voorwaarden"@nl;
 	skos:prefLabel "Huwelijkse voorwaarden";
+	skos:definition "Huwelijksgoederenregime waarbij (aanstaande) echtgenoten de vermogensrechtelijke gevolgen van hun huwelijk regelen in een notariële akte die in het huwelijksgoederenregister wordt ingeschreven. Zonder huwelijkse voorwaarden zijn beide echtgenoten ieder tot de helft gerechtigd."@nl;
 	skos:broaderGeneric zv:Huwelijksgoederenrecht;
 .
 zv:Huwelijksgoederenrecht a skos:Concept;
@@ -373,22 +383,27 @@ zv:Mailadres a skos:Concept;
 	skos:altLabel "E-mailadres";
 	skos:broaderGeneric zv:Bereikbaarheid;
 .
-zv:Naam a skos:Concept;
+zv:Naam a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Natuurlijk_persoon/Geslachtsnaam_persoon
 	rdfs:label "Naam"@nl;
-	skos:prefLabel "Naam";
-	skos:altLabel "Achternaam";
+	skos:prefLabel "Naam"@nl;
+	skos:altLabel "Achternaam"@nl;
+	skos:altLabel "Familienaam"@nl;
+	skos:altLabel "Geslachtsnaam"@nl;
+	skos:definition "De familienaam of geslachtsnaam van een natuurlijke persoon."@nl;
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
 zv:Ongehuwd a skos:Concept;
 	rdfs:label ""@nl;
-	skos:prefLabel "Ongehuwd";
-	skos:altLabel "Ongehuwd en geen geregistreerd partnerschap";
+	skos:prefLabel "Ongehuwd"@nl;
+	skos:altLabel "Ongehuwd en geen geregistreerd partnerschap"@nl;
+	skos:definition "Ongehuwd en geen geregistreerd partnerschap"@nl;
 	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
 zv:Telefoon a skos:Concept;
 	rdfs:label "Telefoon"@nl;
-	skos:prefLabel "Telefoon";
-	skos:altLabel "Telefoonmummer";
+	skos:prefLabel "Telefoon"@nl;
+	skos:altLabel "Telefoonmummer"@nl;
+	skos:definition "Een telefoonnummer is het unieke nummer dat toegekend wordt om een aansluiting op het PSTN (telefoonnet) te identificeren."@nl;
 	skos:broaderGeneric zv:Bereikbaarheid;
 .
 zv:ToekomstigAdres a skos:Concept, skoslex:Record;
@@ -400,6 +415,8 @@ zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 .
 zv:Voornamen a skos:Concept;
 	rdfs:label "Voornamen"@nl;
-	skos:prefLabel "Voornamen";
+	skos:prefLabel "Voornamen"@nl;
+	skos:altLabel "Voorna(a)m(en)"@nl;
+	skos:definition "Aan de naam van een natuurlijke persoon voorafgaande onderscheidende na(a)m(en) van die natuurlijke persoon."@nl;
 	skos:semanticRelation zv:NatuurlijkPersoon;
 .
