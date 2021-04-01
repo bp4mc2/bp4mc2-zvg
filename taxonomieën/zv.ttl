@@ -75,6 +75,8 @@
 #Wet basisregistratie personen
 <http://wetten.overheid.nl/jci1.3:c:BWBR0033715> rdfs:label "Wet basisregistratie personen".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=1&paragraaf=1&artikel=1.2> rdfs:label "artikel 1.2 van de Wet basisregistratie personen".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=2&artikel=2.3> rdfs:label "artikel 2.3 van de Wet basisregistratie personen".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=3&artikel=2.7&lid=1> rdfs:label "artikel 2.7, eerste lid, van de Wet basisregistratie personen".
 
 #Diverse wetten
 <http://wetten.overheid.nl/jci1.3:c:BWBR0027565> rdfs:label "Mandaatbesluit beschermde stads- en dorpsgezichten".
@@ -84,6 +86,9 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0006297&hoofdstuk=II&artikel=2> rdfs:label "artikel 2 van de Wet op de identificatieplicht".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004770&hoofdstuk=VI&afdeling=1&artikel=42> rdfs:label "artikel 42 van de Invorderingswet 1990".
 <http://wetten.overheid.nl/jci1.3:c:BWBR0024282&hoofdstuk=2&paragraaf=2.1&artikel=3&lid=5> rdfs:label "artikel 3, vijfde lid, van de Wet ter voorkoming van witwassen en financieren van terrorisme".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001840&hoofdstuk=1&artikel=5> rdfs:label "artikel 5 van de Grondwet".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005181&hoofdstuk=I&artikel=1> rdfs:label "artikel 1 van de Woningwet".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0024779&hoofdstuk=1&artikel=1.1> rdfs:label "artikel 1.1 van de Wet algemene bepalingen omgevingsrecht".
 
 #Catalogi
 <https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Natuurlijk persoon".
@@ -103,12 +108,20 @@ zv:Belastinginspecteur a skos:Concept, skoslex:Agent; #Begrip hoort thuis in een
 .
 zv:BevoegdGezag a skos:Concept, skoslex:Actor;
 	rdfs:label "Bevoegd gezag"@nl;
-	skos:prefLabel "Bevoegd gezag";
+	skos:prefLabel "Bevoegd gezag"@nl;
+	skos:definition "Een bevoegd gezag is een orgaan van een rechtspersoon, of een ander persoon of college, dat bevoegd is tot een publiekrechtelijke rechtshandeling."@nl;
+	rdfs:comment "Afhankelijk van de wetgeving wordt onder het bevoegd gezag bijvoorbeeld een bestuursorgaan, burgemeester of een andere functionaris of overheidsorgaan bedoeld."@nl;
+	skosthes:broaderGeneric zv:Rechtspersoon;
+	skos:exactMatch brk:Bevoegd_gezag;
+	#dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Bevoegd_gezag>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001840&hoofdstuk=1&artikel=5>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005181&hoofdstuk=I&artikel=1>;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0024779&hoofdstuk=1&artikel=1.1>;
 .
 zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	rdfs:label "Natuurlijk persoon"@nl;
 	skos:prefLabel "Natuurlijk persoon";
-	skos:definition "Een natuurlijk persoon is een mens als subject en drager van rechten en plichten.";
+	skos:definition "Een natuurlijk persoon is een mens als subject en drager van rechten en plichten."@nl;
 	skosthes:broaderGeneric zv:Persoon;
 	#Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen. Van belang daarbij is wel het onderscheid tussen de mens in juridische zin, en "echte" mensen.
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715>;
@@ -132,7 +145,9 @@ zv:Partij a skos:Concept, skoslex:Actor;
 .
 zv:Partner a skos:Concept, skoslex:Actor;
 	rdfs:label "Partner"@nl;
-	skos:prefLabel "Partner";
+	skos:prefLabel "Partner"@nl;
+	skos:definition "Degene met wie de persoon het leven deelt en samenwoont. Bijv. dit kan blijken uit het voeren van een gemeenschappelijke huishouding."@nl;
+	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 zv:Persoon a skos:Concept, skoslex:Actor; #Indien persoon als object wordt gebruikt in een act, blijft de Persoon zelf een actor, die in de rol van object in de betreffende handeling aanwezig is.
 	rdfs:label "Persoon"@nl;
@@ -277,17 +292,25 @@ zv:Bereikbaarheid a skos:Concept;
 	skos:prefLabel "Bereikbaarheid";
 	skos:altLabel "Bereikbaar";
 	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:definition "De mate van, of manier waarop een persoon te benaderen is, of een bepaald gebied te bereiken is."@nl;
 .
 zv:BurgerlijkeStaat a skos:Concept;
 	rdfs:label "Burgerlijke staat"@nl;
-	skos:prefLabel "Burgerlijke staat";
+	skos:prefLabel "Burgerlijke staat"@nl;
+	skos:altLabel "Soort verbintenis"@nl;
+	skos:definition "Staat/positie van een natuurlijke persoon volgens het Burgerlijk Wetboek, zoals gehuwd en ongehuwd."@nl;
 	skos:semanticRelation zv:NatuurlijkPersoon;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=3&artikel=2.7&lid=1>;
+	#Gek genoeg is dit begrip niet te vinden https://brk.basisregistraties.overheid.nl/begrippenlijst
 .
-zv:Geboorteplaats a skos:Concept;
+zv:Geboorteplaats a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Natuurlijk_persoon/Geboorteplaats_persoon
 	rdfs:label "Geboorteplaats"@nl;
 	skos:prefLabel "Geboorteplaats";
 	skos:altLabel "Geboortegemeente";
+	skos:definition "Een code, opgenomen in de Gemeententabel, die aangeeft in welke gemeente de persoon is geboren of een buitenlandse plaats die aangeeft waar de persoon is geboren of een plaatsbepaling, die aangeeft waar de persoon is geboren.@nl"
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=2&artikel=2.3>;
 	skos:semanticRelation zv:NatuurlijkPersoon;
+	#Staat in de stelselcatalogus, maar het lijkt me netter om aan een begrip in BRK zelf te kunnen linken. Maar die is niet gevonden.
 .
 zv:Geboortedatum a skos:Concept;
 	rdfs:label "Geboortedatum"@nl;
