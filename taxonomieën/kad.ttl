@@ -559,7 +559,22 @@ kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Vermogensrecht;
 	skos:semanticRelation kad:Zaak;
 .
+#
 #Overige concepts (geen agent, act, record, object)
+#
+
+kad:AandeelRecht a skos:Concept;
+	rdfs:label "Aandeel recht"@nl;
+	skos:prefLabel "Aandeel recht";
+	skos:definition "Het aandeel van iemand in een Zakelijk recht, uitgedrukt in een percentage.";
+	skosthes:semanticRelation kad:Canon;
+.
+kad:AanpassingCanon a skos:Concept;
+	rdfs:label "Aanpassing canon"@nl;
+	skos:prefLabel "Aanpassing canon";
+	skos:definition "De periode waarin de canon wordt aangepast en de datum van de eerste aanpassing";
+	skosthes:semanticRelation kad:Canon;
+.
 kad:CanonJaarlijksBedrag a skos:Concept;
 	rdfs:label "jaarlijks bedrag canon"@nl;
 	skos:prefLabel "jaarlijks bedrag canon";
@@ -581,7 +596,7 @@ kad:GeschatteGrootte a skos:Concept;
 	skos:scopeNote "Bij levering van kadastrale percelen wordt in de notariele akte meestal een geschatte grootte van het verkochte opgenomen. Tot uitmeting van het perceel heeft plaatsgevonden (zie ook aanwijs) wordt bij de onroerende zaak in de Basisregistratie Kadaster de geschatte grootte vermeld. Pas na de uitmeting wordt op basis van de bestaande en de nieuwe grenzen de nieuwe kadastrale grootte berekend.";
 	skosthes:broaderGeneric kad:Grootte;
 .
-kad:Grootte a skos:Concept, skoslex:Object;
+kad:Grootte a skos:Concept;
 	skos:exactMatch brk:Grootte;
 	rdfs:label "Grootte"@nl;
 	skos:prefLabel "Grootte";
