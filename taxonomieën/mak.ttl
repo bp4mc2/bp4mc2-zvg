@@ -144,6 +144,11 @@ mak:Leaseovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Leaseovereenkomst"@nl;
 	skos:prefLabel "Leaseovereenkomst";
 .
+mak:LijstVanGoederen a skos:Concept, skoslex:Object;
+	rdfs:label "Lijst van goederen"@nl;
+	skos:prefLabel "Lijst van goederen";
+	skos:definition "De lijst van roerende goederen die bij de koop zijn inbegrepen.";
+.
 mak:ModelKoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Model koopovereenkomst"@nl;
 	skos:prefLabel "Model koopovereenkomst";
@@ -301,6 +306,11 @@ mak:Onbekendheidsverklaring a skos:Concept, skoslex:Act;
 	rdfs:label "Onbekendheidsverklaring"@nl;
 	skos:prefLabel "Onbekendheidsverklaring";
 .
+mak:Ontbinden a skos:Concept, skoslex:Act;
+	rdfs:label "Ontbinden"@nl;
+	skos:prefLabel "Ontbinden";
+	skos:definition "Het  ontbinden van de koop wanneer een voorwaarde zich voordoet'";
+.
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
 	skos:prefLabel "Opstellen koopovereenkomst";
@@ -399,6 +409,7 @@ In de koopovereenkomst wordt aangegeven op welk bedrag de meeverkochte roerende 
 Zoals vermeld, is het onderscheid roerend en onroerend niet altijd even gemakkelijk te hanteren. Het komt dan ook regelmatig voor dat partijen van mening verschillen over het al dan niet roerende karakter van bepaalde zaken. Omdat partijen niet kunnen onderhandelen over het al dan niet (on)roerende karakter van zaken, is het weinig zinvol voor hen om daarover in discussie te gaan. Of iets roerend of onroerend is, volgt uit de wet, ongeacht de vraag hoe partijen daar over denken. Voor het vaststellen van de overdrachtsbelasting is dan ook in feite voldoende dat duidelijk is wat er allemaal in de koop begrepen is (lijst van zaken).
 Indien ook roerende zaken zijn verkocht moet de notaris bij de akte van levering aangeven welke roerende zaken het betreft, voor welk bedrag deze werden verkregen en of dat bedrag bij de prijs voor de onroerende zaak is inbegrepen. Omdat de notaris veelal geen concreet beeld van het verkochte heeft, is het voor hem plezierig als de (makelaar van de) koper op de lijst van zaken aangeeft welke zaken naar zijn mening roerend zijn.''';
 .
+
 #--
 #Records
 #--
@@ -872,4 +883,65 @@ mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Record;
 	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
+.
+#
+#Overige concepten
+#
+mak:AanwijzerNotaris a skos:Concept;
+	rdfs:label "Aanwijzer notaris"@nl;
+	skos:prefLabel "Aanwijzer notaris";
+	skos:definition "Degene die de notaris voor de levering aanwijst, de koper of de verkoper.";
+	skos:semanticRelation mak:KostenEnOverdrachtsbelasting;
+.
+mak:BetalerKosten a skos:Concept;
+	rdfs:label "Betaler kosten"@nl;
+	skos:prefLabel "Betaler kosten";
+	skos:definition "Degene die de kosten voor de levering betaalt, de koper of de verkoper.";
+	skos:semanticRelation mak:KostenEnOverdrachtsbelasting;
+.
+mak:AardClausule a skos:Concept;
+	rdfs:label "Aard Clausule"@nl;
+	skos:prefLabel "Aard Clausule";
+	skos:definition "Een aanduiding van de clausule of artikel.";
+	skos:semanticRelation mak:Voorbehoud;	
+.
+mak:Koopidentificatie a skos:Concept;
+	rdfs:label "Koop indentificatie"@nl;
+	skos:prefLabel "Koop identificatie";
+	skos:definition "Een unieke identificatie van de koop.";
+	skos:semanticRelation mak:Koop;
+.
+mak:Koopsom a skos:Concept;
+	rdfs:label "Koopsom"@nl;
+	skos:prefLabel "Koopsom";
+	skos:definition "Een bedrag voor alle zaken waarop de koopovereenkomst betrekking heeft.";
+	skos:semanticRelation mak:Koop;
+.
+mak:KoopStatus a skos:Concept;
+	rdfs:label "Koop status"@nl;
+	skos:prefLabel "Koop status";
+	skos:definition "Een status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proces zit. De waarden zijn opgenomen in een waardelijst.";
+	skos:semanticRelation mak:Koop;
+.
+mak:KoopStandaardBetalingscondities a skos:Concept;
+	rdfs:label "Standaard betalingscondities"@nl;
+	skos:prefLabel "Standaard betalingscondities";
+	skos:definition "Een indicatie of de standaard betalingscondities van toepassing zijn. Standaard vind de betaling plaats bij de levering door de notaris.";
+	skos:semanticRelation mak:Koop;
+.
+mak:LijstVanGoederenReferentie a skos:Concept;
+	rdfs:label "Referentie lijst van goederen"@nl;
+	skos:prefLabel "Referentie lijst van goederen";
+	skos:definition "Een unieke identificatie van de lijst van goederen.";
+.
+mak:LijstVanGoederenWaarde a skos:Concept;
+	rdfs:label "Waarde lijst van goederen"@nl;
+	skos:prefLabel "Waarde lijst van goederen";
+	skos:definition "Een waarde van de lijst van goederen.";
+.
+mak:Verrekeningoverdrachtsbelastingart13 a skos:Concept;
+	rdfs:label "Verrekening overdrachtsbelasting art 13"@nl;
+	skos:prefLabel "Verrekening overdrachtsbelasting art 13";
+	skos:definition "Een indicatie of de verrekeing van de overdrachtsbelasting conform artikel 13 van toepassing is.";
+	skos:semanticRelation mak:Koop;
 .
