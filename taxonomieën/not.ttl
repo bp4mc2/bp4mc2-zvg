@@ -1066,3 +1066,63 @@ not:Wegneemrecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
 	skos:semanticRelation kad:Erfpacht;
 .
+
+#
+#Nieuwe begrippen na crosscheck informatiemodel
+#
+#De definities zijn voorlopig en moeten nog worden getoetst, worden voorzien van een uitleg en een juridische bron
+not:DigitaleIdentiteit a skos:Concept, skoslex:Object;
+	rdfs:label "Digitale identiteit"@nl;
+	skos:prefLabel "Digitale identiteit";
+ 	skos:altLabel "Legitimatie";
+	skos:definition "Een gevalideerde digitale identiteit.";
+	rdfs:comment "Een digitaal middel om je als (natuurlijk) persoon te kunnen identificeren.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
+	skoslex:isAbout zv:NatuurlijkPersoon;
+	skos:scopeNote "Soorten identiteitsdoucmenten zijn een E-id, DigID, Cleverbase ID, etc.";
+.
+not:Identiteitsdocument a skos:Concept, skoslex:Record;
+	rdfs:label "Identiteitsdocument"@nl;
+	skos:prefLabel "Identiteitsdocument";
+        skos:altLabel "Legitimatiebewijs";
+	skos:altLabel "Legitimatie";
+	skos:definition "Een officieel document waarmee een natuurlijk persoon zich in Nederland kan identificeren vanaf 14 jaar en ouder.";
+	rdfs:comment "Een document om je als (natuurlijk) persoon te kunnen identificeren.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
+	skoslex:isAbout zv:NatuurlijkPersoon;
+	skos:scopeNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument.";
+.
+not:IdentiteitsdocumentReferentie  a skos:Concept;
+	rdfs:label "Identiteitsdocument referentie"@nl;
+	skos:prefLabel "Identiteitsdocument referentie";
+	skos:definition "Een unieke identificatie van het identiteitsdocument.";
+	rdfs:comment "Een identificatie van het indentiteitsdocument zoals het paspoortnummer of rijbewijsnummer.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
+	skos:semanticRelation not:Identiteitsdocument;
+.
+not:IdentiteitsdocumentSoort   a skos:Concept;
+	rdfs:label "Identiteitsdocument soort"@nl;
+	skos:prefLabel "Identiteitsdocument soort";
+	skos:definition "Een typering van het identiteitsdocument.";
+	rdfs:comment "Een typering van het indentiteitsdocument zoals het paspoort of rijbewijs.";
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
+	skos:semanticRelation not:Identiteitsdocument;
+.
+
+not:Legitimatie a skos:Concept, skoslex:Object;
+	rdfs:label "Legitimatie"@nl;
+	skos:prefLabel "Legitimatie";
+	skos:definition "Een bewijsmiddel waarmee iemand zich kan identificeren. Dit kan digitaal of fysiek zijn.";
+.
+not:Leveringsdatum a skos:Concept;
+	rdfs:label "Leveringsdatum"@nl;
+	skos:prefLabel "Leveringsdatum";
+	skos:definition "Een datum waarop de levering plaatsvindt.";
+	skos:semanticRelation not:Levering;
+.
+not:OnroerendeZaakOmschrijving a skos:Concept;
+	rdfs:label "Omschrijving onroerende zaak"@nl;
+	skos:prefLabel "Omschrijving onroerende zaak";
+	skos:definition "De omschrijving van een onroerende zaak.";
+	skos:semanticRelation kad:OnroerendeZaak;
+.
