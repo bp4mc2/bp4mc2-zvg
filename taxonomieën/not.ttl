@@ -1114,6 +1114,12 @@ not:Legitimatie a skos:Concept, skoslex:Object;
 	skos:prefLabel "Legitimatie";
 	skos:definition "Een bewijsmiddel waarmee iemand zich kan identificeren. Dit kan digitaal of fysiek zijn.";
 .
+not:LegitimatieIdentificatie a skos:Concept, skoslex:Object;
+  	rdfs:label "Identificatie legitimatie"@nl;
+	skos:prefLabel "Identificatie legitimatie";
+	skos:definition "De unieke identificatie van de legitimatie.";
+	skos:semanticRelation not:Legitimatie;
+.
 not:Leveringsdatum a skos:Concept;
 	rdfs:label "Leveringsdatum"@nl;
 	skos:prefLabel "Leveringsdatum";
