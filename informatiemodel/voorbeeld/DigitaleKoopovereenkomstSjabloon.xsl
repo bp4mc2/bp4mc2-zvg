@@ -1,5 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:zvg="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#" xml:lang="en" lang="en">
+<xsl:stylesheet version="2.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:zvg="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#"
+	xmlns="http://www.w3.org/1999/xhtml"
+
+	exclude-result-prefixes="xsl xs rdf"
+>
+
+<xsl:output method="html" omit-xml-declaration="yes" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
+
+<xsl:template match="rdf:RDF">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <title>KOOPAKTE BESTAANDE EENGEZINSWONING</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -51,9 +64,71 @@ Gebruik van dit model is uitsluitend toegestaan indien de ingevulde, de toegevoe
 afwijkende tekst duidelijk als zodanig herkenbaar is.
 </p>
 
-<div about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000" typeof="zvg:Koop">
+<xsl:apply-templates select="zvg:Koop"/>
+
+<p>* Doorhalen wat niet van toepassing is</p>
+
+</body>
+
+</html>
+</xsl:template>
+
+<xsl:template match="zvg:ObjectlocatieBinnenland">
+  <span about="{@rdf:about}" typeof="zvg:ObjectlocatieBinnenland">
+    <span property="zvg:woonplaatsNaam"><xsl:value-of select="zvg:woonplaatsNaam"/></span><xsl:text>, </xsl:text>
+    <span property="zvg:openbareRuimteNaam"><xsl:value-of select="zvg:openbareRuimteNaam"/></span><xsl:text> </xsl:text>
+    <span property="zvg:huisnummer"><xsl:value-of select="zvg:huisnummer"/></span><xsl:text> (</xsl:text>
+    <span property="zvg:postcode"><xsl:value-of select="zvg:postcode"/></span><xsl:text>)</xsl:text>
+  </span>
+</xsl:template>
+
+<xsl:template match="zvg:Verkoper">
+
+<table>
+  <tr>
+    <td width="30">A.</td>
+    <td><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">Verkoper</a>(s)</td>
+  </tr>
+  <tr property="zvg:aangebodenDoor" resource="{@rdf:about}">
+    <td/>
+    <td about="{@rdf:about}" typeof="zvg:Verkoper">
+      <p>
+        <a class="link" href="{@rdf:about}"><span property="zvg:statutaireNaam"><xsl:value-of select="zvg:statutaireNaam"/></span></a>,
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/GevestigdTe">gevestigd</a> te
+        <a class="link" property="zvg:postlocatie" href="{zvg:postlocatie/@rdf:resource}"><xsl:apply-templates select="zvg:postlocatie/zvg:ObjectlocatieBinnenland"/></a>,
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/InschrijvingHandelsregister">ingeschreven in het Handelsregister van de Kamer van Koophandel</a> onder nummer
+        <a class="link" href="{@rdf:about}"><span property="zvg:kvkNummer"><xsl:value-of select="zvg:kvkNummer"/></span></a>, ten dezen
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/VertegenwoordigdDoor">vertegenwoordigd door</a>:
+      </p>
+      <p>1. <a class="link" href="#">..................</a>,
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Bereikbaar">bereikbaar</a> via
+        <span>..................</span>,
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Legitimatie">legitimatie</a>
+        <a class="link" href="#">...................</a>
+      </p>
+
+      <p>2. <a class="link" href="#">...................</a>,
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Bereikbaar">bereikbaar</a> via
+        <span>..................</span>,
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Legitimatie">legitimatie</a>
+        <a class="link" href="#">....................</a>
+      </p>
+
+      <p>Ten dezen
+        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/HandelendAls">handelend als</a> respectievelijk
+        <span>................</span> en
+        <span>................</span>
+      </p>
+    </td>
+  </tr>
+</table>
+</xsl:template>
+
+<xsl:template match="zvg:Koop">
+
+<div about="{@rdf:about}" typeof="zvg:Koop">
 <p><i>
-Bij <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">deze koopovereenkomst</a>
+Bij <a class="concept" href="{@rdf:about}">deze koopovereenkomst</a>
 behoort de "Toelichting op de koopovereenkomst voor de consument".
 </i></p>
 
@@ -61,45 +136,7 @@ behoort de "Toelichting op de koopovereenkomst voor de consument".
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/OndergetekendenKoopovereenkomst">De ondergetekende(n)</a>:
 </b></p>
 
-<table>
-  <tr>
-    <td width="30">A.</td>
-    <td><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">Verkoper</a>(s)</td>
-  </tr>
-  <tr property="zvg:aangebodenDoor" resource="http://www.nvm.nl/over-nvm">
-    <td/>
-    <td about="http://www.nvm.nl/over-nvm" typeof="zvg:Verkoper">
-      <p>
-        <a class="link" href="http://www.nvm.nl/over-nvm"><span property="zvg:statutaireNaam">Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A.</span></a>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/GevestigdTe">gevestigd</a> te
-        <a class="link" property="zvg:postlocatie" href="http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889">
-          <span about="http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889" typeof="zvg:ObjectlocatieBinnenland"><span property="zvg:woonplaatsNaam">Nieuwegein</span>, <span property="zvg:openbareRuimteNaam">Fakkelstede</span> <span property="zvg:huisnummer">1</span> (<span property="zvg:postcode">3431 HZ</span>)</span></a>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/InschrijvingHandelsregister">ingeschreven in het Handelsregister van de Kamer van Koophandel</a> onder nummer
-        <a class="link" href="http://www.nvm.nl/over-nvm"><span property="zvg:kvkNummer">40476604</span></a>, ten dezen
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/VertegenwoordigdDoor">vertegenwoordigd door</a>:
-      </p>
-      <p>1. <a class="link" href="">Johannes Martinus Fransen</a>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Bereikbaar">bereikbaar</a> via
-        <span>030 608 5185</span>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Legitimatie">legitimatie</a>
-        <a class="link" href="https://fransenjohannes.inrupt.net/profile/card#me">https://fransenjohannes.inrupt.net/profile/card#me</a>
-      </p>
-
-      <p>2. <a class="link" href="">Marieke Theodora Pietersen</a>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Bereikbaar">bereikbaar</a> via
-        <span>030 608 5185</span>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Legitimatie">legitimatie</a>
-        <a class="link" href="https://pietersenmarieke.inrupt.net/profile/card#me">https://pietersenmarieke.inrupt.net/profile/card#me</a>
-      </p>
-
-      <p>Ten dezen
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/HandelendAls">handelend als</a> respectievelijk
-        <span>voorzitter</span> en
-        <span>bestuurder</span>
-      </p>
-    </td>
-  </tr>
-</table>
+<xsl:apply-templates select="zvg:aangebodenDoor/zvg:Verkoper"/>
 
 <p>De onder (A) genoemde perso(o)n(en) hierna (samen) te noemen "<a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a>".</p>
 
@@ -117,25 +154,25 @@ behoort de "Toelichting op de koopovereenkomst voor de consument".
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Naam">Naam</a>:</td>
-    <td><a class="link" href="https://changchozv.inrupt.net/profile/card#me">Jansen</a></td>
+    <td><a class="link" href="#">......................</a></td>
     <td>.........................................</td>
   </tr>
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Voornamen">Voornamen</a>:</td>
-    <td><a class="link" href="">Cho Chang</a></td>
+    <td><a class="link" href="#">.................</a></td>
     <td>.........................................</td>
   </tr>
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Geboorteplaats">Geboorteplaats</a>:</td>
-    <td><a class="link" href="">Amersfoort</a></td>
+    <td><a class="link" href="#">....................</a></td>
     <td>.........................................</td>
   </tr>
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Geboortedatum">Geboortedatum</a>:</td>
-    <td><a class="link" href="">12 april 1986</a></td>
+    <td><a class="link" href="#">...................</a></td>
     <td>.........................................</td>
   </tr>
   <tr>
@@ -144,31 +181,31 @@ behoort de "Toelichting op de koopovereenkomst voor de consument".
       <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Straat">Straat</a>,
       <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Huisnummer">huisnummer</a>:
     </td>
-    <td><a class="link" href="">Ravenklauw 850</a></td>
+    <td><a class="link" href="#">.....................</a></td>
     <td>.........................................</td>
   </tr>
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Postcode">Postcode</a>:</td>
-    <td><a class="link" href="">3528 BB</a></td>
+    <td><a class="link" href="#">.....................</a></td>
     <td>.........................................</td>
   </tr>
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Woonplaats">Woonplaats </a></td>
-    <td><a class="link" href="">Utrecht</a></td>
+    <td><a class="link" href="#">....................</a></td>
     <td>.........................................</td>
   </tr>
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Mailadres">E-mailadres</a>:</td>
-    <td><span>c.c.jansen@gmail.com</span></td>
+    <td><span>.......................</span></td>
     <td>.........................................</td>
   </tr>
   <tr>
     <td />
     <td><a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Telefoon">Telefoon</a>:</td>
-    <td><span>030 767 1018</span></td>
+    <td><span>..........................</span></td>
     <td>.........................................</td>
   </tr>
 </table>
@@ -1317,8 +1354,6 @@ voor ogen staan.
 
 </div>
 
-<p>* Doorhalen wat niet van toepassing is</p>
+</xsl:template>
 
-</body>
-
-</html>
+</xsl:stylesheet>

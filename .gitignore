@@ -2,3 +2,6 @@ data
 hooktest
 **/*.archimate.bak
 **/*.ldb
+lib/*.jar
+informatiemodel/voorbeeld/generate/**
+!informatiemodel/voorbeeld/generate/README.md
