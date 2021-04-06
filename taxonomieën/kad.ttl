@@ -835,6 +835,12 @@ kad:RegistergoedLocatie a skos:Concept;
 	rdfs:comment "Bij onroerende zaken betreft dit de locatie waar de Onroerende zaak is gelegen. Bij Teboekgestelde zaken wordt locatie gebruikt voor het zogenaamde waladres. Leidingnetwerken kennen geen locatie kadastraal object. De Locatie van een kadastraal object wordt bepaald aan de hand van gegevens die de gemeente verstrekt uit de Basisregistratie Adressen en Gebouwen en/of de gegevens die in het openbaar register zijn vermeld;";
 	skos:semanticRelation kad:Registergoed;
 .
+kad:TenaamstellingIdentificatie a skos:Concept;
+	rdfs:label "Rechtshandeling tenaamstelling"@nl;
+	skos:prefLabel "Rechtshandeling tenaamstelling";
+	skos:definition "Een tenaamstelling identificatie is de unieke identificatie van een tenaamstelling.";
+	skos:semanticRelation kad:Tenaamstelling;
+.
 kad:ZakelijkRechtIdentificatie a skos:Concept;
 	rdfs:label "Zakelijk recht identificatie"@nl;
 	skos:prefLabel "Zakelijk recht identificatie";
