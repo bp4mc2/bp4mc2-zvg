@@ -11,6 +11,7 @@
 @prefix kad: <http://kad.zorgeloosvastgoed.nl/id/concept/>.
 @prefix bel: <http://bel.zorgeloosvastgoed.nl/id/concept/>.
 @prefix bag: <http://bag.basisregistraties.overheid.nl/id/begrip/>.
+@prefix brk: <http://brk.basisregistraties.overheid.nl/id/begrip/>.
 @prefix person: <http://www.w3.org/ns/person#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
@@ -275,7 +276,7 @@ zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in
 zv:Vertegenwoordiging a skos:Concept, skoslex:Object;
 	rdfs:label "Vertegenwoordiging"@nl;
 	skos:prefLabel "Vertegenwoordiging";
-	skos:definition "Een hoedanigheid waarin een natuurlijk persoon een andere persoon kan vertegenwoordigen."
+	skos:definition "Een hoedanigheid waarin een natuurlijk persoon een andere persoon kan vertegenwoordigen.";
 	skos:semanticRelation zv:NatuurlijkPersoon;
 	skos:semanticRelation zv:Persoon;
 .
@@ -351,7 +352,7 @@ zv:StatutaireNaam a skos:Concept;
 	skos:altLabel "Gevestigd te"@nl;
 	skos:definition "De zetel is de plaats waar een Rechtspersoon volgens de statuten gevestigd is."@nl;
 	skos:semanticRelation zv:Rechtspersoon;
-	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutaire_zetel-Rechtspersoon>; 
+	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutaire_zetel-Rechtspersoon>;
 .
 zv:StatutaireZetel a skos:Concept;
 	rdfs:label "Statutaire zetel"@nl;
@@ -359,14 +360,14 @@ zv:StatutaireZetel a skos:Concept;
 	skos:altLabel "Gevestigd te"@nl;
 	skos:definition "De zetel is de plaats waar een Rechtspersoon volgens de statuten gevestigd is."@nl;
 	skos:semanticRelation zv:Rechtspersoon;
-	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutaire_zetel-Rechtspersoon>; 
+	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutaire_zetel-Rechtspersoon>;
 .
 zv:StatutaireNaam a skos:Concept;
 	rdfs:label "Statutaire naam"@nl;
 	skos:prefLabel "Statutaire naam"@nl;
 	skos:definition "De naam van de Niet-Natuurlijk Persoon."@nl;
 	skos:semanticRelation zv:Rechtspersoon;
-	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutairenaam-Niet_Natuurlijk_Persoon>; 
+	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutairenaam-Niet_Natuurlijk_Persoon>;
 .
 
 zv:HandelendAls a skos:Concept;
@@ -397,7 +398,7 @@ zv:Huwelijksgoederenrecht a skos:Concept;
 .
 zv:KvKnummer a skos:Concept;
 	rdfs:label "KvKnummer"@nl;
-	rdfs:altLabel "Inschrijving Handelsregister"
+	rdfs:altLabel "Inschrijving Handelsregister";
 	skos:prefLabel "KvKnummer";
 	skos:definiton "Betreft het identificerende gegeven voor de Maatschappelijke Activiteit, het KVK-nummer.";
 	skos:semanticRelation zv:Rechtspersoon;
@@ -449,7 +450,7 @@ zv:PartnnerschapDatumOntbinding a skos:Concept;
 .
 zv:Rechtsvorm a skos:Concept;
 	rdfs:label "Rechtsvorm"@nl;
-	rdfs:altLabel "Rechtsvorm"
+	rdfs:altLabel "Rechtsvorm";
 	skos:prefLabel "Rechtsvorm";
 	skos:definiton "De rechtsvorm van de Rechtspersoon.";
 	skos:semanticRelation zv:Rechtspersoon;
