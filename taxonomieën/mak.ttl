@@ -905,12 +905,6 @@ mak:AardClausule a skos:Concept;
 	skos:definition "Een aanduiding van de clausule of artikel.";
 	skos:semanticRelation mak:Voorbehoud;	
 .
-mak:Koopidentificatie a skos:Concept;
-	rdfs:label "Koop indentificatie"@nl;
-	skos:prefLabel "Koop identificatie";
-	skos:definition "Een unieke identificatie van de koop.";
-	skos:semanticRelation mak:Koop;
-.
 mak:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;
 	skos:prefLabel "Koopsom";
