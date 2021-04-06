@@ -945,3 +945,9 @@ mak:Verrekeningoverdrachtsbelastingart13 a skos:Concept;
 	skos:definition "Een indicatie of de verrekeing van de overdrachtsbelasting conform artikel 13 van toepassing is.";
 	skos:semanticRelation mak:Koop;
 .
+mak:VoorwaardenIdentificatie a skos:Concept;
+	rdfs:label "Identificatie voorwaarden"@nl;
+	skos:prefLabel "Identificatie voorwaarden";
+	skos:definition "De unieke identificatie van de voorwaarden.";
+	skos:semanticRelation mak:Voorwaarden;
+.
