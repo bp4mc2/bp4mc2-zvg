@@ -21,7 +21,6 @@ zvg:BeperktRecht a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "BeperktRecht";
     sh:property zvg:BeperktRecht.bezwaart;
     sh:targetClass zvg:BeperktRecht;
-    rdfs:comment ""^^xsd:string;
     rdfs:label "BeperktRecht"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_7C1A1376_9E0E_4ac0_B456_D191F63F64F8>;
     rdfs:subClassOf zvg:ZakelijkRecht
@@ -84,7 +83,6 @@ zvg:Canon.indexering a sh:PropertyShape;
 zvg:Canon.jaarlijksBedrag a sh:PropertyShape;
     sh:name "jaarlijksBedrag";
     sh:path zvg:jaarlijksBedrag;
-    rdfs:comment ""^^xsd:string;
     rdfs:seeAlso <uuid:EAID_469A8191_DF64_44e8_B8AB_E0AF20156D09>
 .
 zvg:Contactgegevens a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
@@ -409,12 +407,14 @@ zvg:Koop a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Koop";
     sh:property zvg:Koop.aan;
     sh:property zvg:Koop.aangebodenDoor;
+    sh:property zvg:Koop.bevat;
     sh:property zvg:Koop.identificatie;
     sh:property zvg:Koop.koopsom;
     sh:property zvg:Koop.kosten;
     sh:property zvg:Koop.standaardBetalingsconditie;
     sh:property zvg:Koop.status;
     sh:property zvg:Koop.van;
+    sh:property zvg:Koop.wordtUitgevoerdIn;
     sh:targetClass zvg:Koop;
     dct:subject <https://mak.zorgeloosvastgoed.nl/id/concept/Koop>;
     rdfs:label "Koop"^^xsd:string;
@@ -432,6 +432,11 @@ zvg:Koop.aangebodenDoor a sh:PropertyShape;
     sh:name "aangebodenDoor";
     sh:path zvg:aangebodenDoor;
     rdfs:seeAlso <uuid:EAID_8710575F_F18C_456c_A6B1_4666A7D866BB>
+.
+zvg:Koop.bevat a sh:PropertyShape;
+    sh:class zvg:LijstVanGoederen;
+    sh:name "bevat";
+    sh:path zvg:bevat
 .
 zvg:Koop.identificatie a sh:PropertyShape;
     sh:name "identificatie";
@@ -469,6 +474,11 @@ zvg:Koop.van a sh:PropertyShape;
     sh:name "van";
     sh:path zvg:van;
     rdfs:seeAlso <uuid:EAID_7BDC2305_37FE_4a5a_B8FF_0BA4C018E103>
+.
+zvg:Koop.wordtUitgevoerdIn a sh:PropertyShape;
+    sh:class zvg:Levering;
+    sh:name "wordtUitgevoerdIn";
+    sh:path zvg:wordtUitgevoerdIn
 .
 zvg:Koper a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Koper";
@@ -655,8 +665,8 @@ zvg:NatuurlijkPersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:property zvg:NatuurlijkPersoon.betreft;
     sh:property zvg:NatuurlijkPersoon.indicatieAfschermingPersoonsgegevens;
     sh:property zvg:NatuurlijkPersoon.indicatieOverleden;
+    sh:property zvg:NatuurlijkPersoon.isVerbondenIn;
     sh:targetClass zvg:NatuurlijkPersoon;
-    rdfs:comment ""^^xsd:string;
     rdfs:label "NatuurlijkPersoon"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_7ECCC940_3E6A_4d8a_A51E_0A74641494F5>;
     rdfs:subClassOf zvg:_Persoon
@@ -684,6 +694,11 @@ Toelichting
 Deze indicatie is enkel van belang als de gegevens uit de BRP niet beschikbaar zijn
 De datum van overlijden is soms niet bekend, maar wel dat iemand overleden is.'''^^xsd:string;
     rdfs:seeAlso <uuid:EAID_09D70025_0330_4886_894B_46B961095AF2>
+.
+zvg:NatuurlijkPersoon.isVerbondenIn a sh:PropertyShape;
+    sh:class zvg:Verbintenis;
+    sh:name "isVerbondenIn";
+    sh:path zvg:isVerbondenIn
 .
 zvg:NietNatuurlijkPersoon a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "NietNatuurlijkPersoon";
@@ -882,6 +897,7 @@ datumOverlijden is de datum waarop de persoon overleden is.  '''^^xsd:string;
 zvg:Partij a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Partij";
     sh:property zvg:Partij.identificatie;
+    sh:property zvg:Partij.vertegenwoordigdDoor;
     sh:targetClass zvg:Partij;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij>;
     rdfs:label "Partij"^^xsd:string;
@@ -892,9 +908,15 @@ zvg:Partij.identificatie a sh:PropertyShape;
     sh:path zvg:identificatie;
     rdfs:seeAlso <uuid:EAID_B6A2F368_7581_46b1_81E5_155CEC110498>
 .
+zvg:Partij.vertegenwoordigdDoor a sh:PropertyShape;
+    sh:class zvg:_Persoon;
+    sh:name "vertegenwoordigdDoor";
+    sh:path zvg:vertegenwoordigdDoor
+.
 zvg:Perceel a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Perceel";
     sh:property zvg:Perceel.begrenzingPerceel;
+    sh:property zvg:Perceel.heerstMet;
     sh:property zvg:Perceel.kadastraleGrootte;
     sh:targetClass zvg:Perceel;
     dct:subject <https://kad.zorgeloosvastgoed.nl/id/concept/Perceel>;
@@ -906,6 +928,11 @@ zvg:Perceel.begrenzingPerceel a sh:PropertyShape;
     sh:name "begrenzingPerceel";
     sh:path zvg:begrenzingPerceel;
     rdfs:seeAlso <uuid:EAID_7BB763BC_08F1_489b_8C02_2C6D435510DA>
+.
+zvg:Perceel.heerstMet a sh:PropertyShape;
+    sh:class zvg:Erfdienstbaarheid;
+    sh:name "heerstMet";
+    sh:path zvg:heerstMet
 .
 zvg:Perceel.kadastraleGrootte a sh:PropertyShape;
     sh:name "kadastraleGrootte";
@@ -1106,6 +1133,7 @@ zvg:_Legitimatie a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
 .
 zvg:_OnroerendeZaak a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "_OnroerendeZaak";
+    sh:property zvg:_OnroerendeZaak.isBelastMet;
     sh:property zvg:_OnroerendeZaak.kadastraleAanduiding;
     sh:property zvg:_OnroerendeZaak.omschrijvingOnroerendeZaak;
     sh:targetClass zvg:_OnroerendeZaak;
@@ -1113,6 +1141,11 @@ zvg:_OnroerendeZaak a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     rdfs:label "_OnroerendeZaak"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_9FB8E66F_178A_4a4c_B311_A50CDC7EA840>;
     rdfs:subClassOf zvg:_Registergoed
+.
+zvg:_OnroerendeZaak.isBelastMet a sh:PropertyShape;
+    sh:class zvg:ZakelijkRecht;
+    sh:name "isBelastMet";
+    sh:path zvg:isBelastMet
 .
 zvg:_OnroerendeZaak.kadastraleAanduiding a sh:PropertyShape;
     sh:name "kadastraleAanduiding";
@@ -1178,7 +1211,6 @@ zvg:_Registergoed a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "_Registergoed";
     sh:property zvg:_Registergoed.identificatie;
     sh:targetClass zvg:_Registergoed;
-    rdfs:comment ""^^xsd:string;
     rdfs:label "_Registergoed"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_02C68C94_6B70_442a_B9A9_7AD326EE84F8>
 .
@@ -1265,6 +1297,9 @@ zvg:betreft a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:seeAlso <uuid:EAID_138412D6_22AD_4642_87F1_DED091E9B008>;
     rdfs:seeAlso <uuid:EAID_50042DEB_401E_47cc_AFC1_BD36E09862EA>;
     rdfs:seeAlso <uuid:EAID_66C2477F_3330_42a9_8F5F_6252D0FD47D3>
+.
+zvg:bevat a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "bevat"^^xsd:string
 .
 zvg:bevoegdheid a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''onbekend,
@@ -1387,6 +1422,9 @@ zvg:heeft a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "heeft"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_774C8699_7EC8_4c48_AA15_F0A07511B637>
 .
+zvg:heerstMet a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "heerstMet"^^xsd:string
+.
 zvg:herziening a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "herziening"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_79D9D9AC_4B21_4fea_A99D_CC7C0917B059>
@@ -1474,6 +1512,9 @@ zvg:is a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "is"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_764DFF77_74C8_4d48_874F_69165E5B5157>
 .
+zvg:isBelastMet a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "isBelastMet"^^xsd:string
+.
 zvg:isUitvoeringVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "isUitvoeringVan"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_1E193C12_66E2_4a46_B0CA_C55174D4AEB5>
@@ -1482,8 +1523,10 @@ zvg:isVanToepassingOp a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "isVanToepassingOp"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_6E838751_6C8C_475f_9E9F_DECABBF8194E>
 .
+zvg:isVerbondenIn a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "isVerbondenIn"^^xsd:string
+.
 zvg:jaarlijksBedrag a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment ""^^xsd:string;
     rdfs:label "jaarlijksBedrag"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_469A8191_DF64_44e8_B8AB_E0AF20156D09>
 .
@@ -1680,6 +1723,9 @@ zvg:verrekeningOverdrachtsbelastingArt13 a <http://www.w3.org/2002/07/owl#Dataty
     rdfs:label "verrekeningOverdrachtsbelastingArt13"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_C069BFFE_B41A_48c2_AC22_BB62BA1991D7>
 .
+zvg:vertegenwoordigdDoor a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "vertegenwoordigdDoor"^^xsd:string
+.
 zvg:vertegenwoordigt a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "vertegenwoordigt"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_2092E551_33C8_476d_B554_4BE05A17877B>
@@ -1708,4 +1754,7 @@ zvg:woonplaatsNaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/NaamWoonplaats>;
     rdfs:label "woonplaatsNaam"^^xsd:string;
     rdfs:seeAlso <uuid:EAID_422DDB5E_AF5A_4f00_ACBF_410CCB6486CB>
+.
+zvg:wordtUitgevoerdIn a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "wordtUitgevoerdIn"^^xsd:string
 .
