@@ -602,18 +602,6 @@ kad:AandeelRecht a skos:Concept;
 	skos:definition "Het aandeel van iemand in een Zakelijk recht, uitgedrukt in een percentage.";
 	skosthes:semanticRelation kad:Tenaamstelling;
 .
-kad:AanpassingCanon a skos:Concept;
-	rdfs:label "Aanpassing canon"@nl;
-	skos:prefLabel "Aanpassing canon";
-	skos:definition "De periode waarin de canon wordt aangepast en de datum van de eerste aanpassing";
-	skosthes:semanticRelation kad:Canon;
-.
-kad:AanpassingCanon a skos:Concept;
-	rdfs:label "Aanpassing canon"@nl;
-	skos:prefLabel "Aanpassing canon";
-	skos:definition "De periode waarin de canon wordt aangepast en de datum van de eerste aanpassing";
-	skosthes:semanticRelation kad:Canon;
-.
 kad:AdresHuisnummer a skos:Concept;
 	rdfs:label "Huisnummer"@nl;
 	skos:prefLabel "Huisnummer";
@@ -655,6 +643,12 @@ kad:BijzondereErfpachtvoorwaarden a skos:Concept;
 	skos:prefLabel "Bijzondere erfpachtvoorwaarden";
 	skos:definition "De bijzondere voorwaarden voor de erfpacht als aanvulling op de betreffende modelovereenkomst.";
 	skosthes:semanticRelation kad:Erfpacht;
+.
+kad:CanonAanpassing a skos:Concept;
+	rdfs:label "Aanpassing canon"@nl;
+	skos:prefLabel "Aanpassing canon";
+	skos:definition "De periode waarin de canon wordt aangepast en de datum van de eerste aanpassing";
+	skosthes:semanticRelation kad:Canon;
 .
 kad:CanonAfgekocht a skos:Concept;
 	rdfs:label "Canon afgekocht"@nl;
@@ -821,6 +815,12 @@ kad:Postcode a skos:Concept;
 	skos:comment "Een postcode is een korte reeks tekens die in een postadres wordt opgenomen om het automatisch sorteren van de post makkelijker te maken.";
 	skos:semanticRelation kad:Adres;
 	skos:exactMatch bag:Postcode;
+.
+kad:RechtshandelingIdentificatie a skos:Concept;
+	rdfs:label "Rechtshandeling identificatie"@nl;
+	skos:prefLabel "Rechtshandeling identificatie";
+	skos:definition "Een rechtshandeling identificatie is de unieke identificatie van een rechtshandeling.";
+	skos:semanticRelation kad:Rechtshandeling;
 .
 kad:RegistergoedIdentificatie a skos:Concept;
 	rdfs:label "Registergoed identificatie"@nl;
