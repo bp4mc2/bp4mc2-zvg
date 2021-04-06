@@ -255,6 +255,12 @@ zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je
 	skosthes:narrowerGeneric kad:OnroerendeZaak;#Elk huis is een onroerende zaak, maar niet iedere onroerende zaak is een huis.
 	skosthes:broaderGeneric kad:Registergoed;
 .
+zv:Objectlocatie a skos:Concept, skoslex:Object;
+	rdfs:label "Objectlocatie"@nl;
+	skos:prefLabel "Objectlocatie";
+	skos:definition "Een objectlocatie is een binnenlands of buitenlands adres.";
+	skos:semanticRelation zv:Persoon;
+.
 zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Overdrachtsbelasting";
 	skos:prefLabel "Overdrachtsbelasting";
@@ -340,6 +346,12 @@ zv:GeregistreerdPartnerschap a skos:Concept;#https://www.stelselcatalogus.nl/reg
 	skos:definition "Een aanduiding voor de soort verbintenis die is aangegaan."@nl;
 	skos:broaderGeneric zv:BurgerlijkeStaat;
 .
+zv:ObjectlocatieIdentificatie a skos:Concept, skoslex:Object;
+	rdfs:label "Identificatie objectlocatie"@nl;
+	skos:prefLabel "Identificatie objectlocatie";
+	skos:definition "De unieke identificatie van een objectlocatie.";
+	skos:semanticRelation zv:Objectlocatie;
+.
 zv:PartijIdentificatie a skos:Concept;
 	rdfs:label "Identificatie partij"@nl;
 	skos:prefLabel "Identificatie partij";
@@ -369,7 +381,6 @@ zv:StatutaireNaam a skos:Concept;
 	skos:semanticRelation zv:Rechtspersoon;
 	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutairenaam-Niet_Natuurlijk_Persoon>;
 .
-
 zv:HandelendAls a skos:Concept;
 	rdfs:label "Handelend als"@nl;
 	skos:prefLabel "Handelend als";
@@ -447,6 +458,12 @@ zv:PartnnerschapDatumOntbinding a skos:Concept;
 	skos:prefLabel "Datum ontbinding partnnerschap"@nl;
 	skos:definition "Een datum waarop het partnerschap is ontbonden."@nl;
 	skos:semanticRelation zv:Partner;
+.
+zv:PersoonIdentificatie a skos:Concept;
+	rdfs:label "Identificatie persoon"@nl;
+	skos:prefLabel "Identificatie persoon"@nl;
+	skos:definition "De unieke identificatie van een persoon."@nl;
+	skos:semanticRelation zv:Persoon;
 .
 zv:Rechtsvorm a skos:Concept;
 	rdfs:label "Rechtsvorm"@nl;
