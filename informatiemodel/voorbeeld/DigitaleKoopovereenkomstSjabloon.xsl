@@ -82,6 +82,18 @@ afwijkende tekst duidelijk als zodanig herkenbaar is.
   </span>
 </xsl:template>
 
+<xsl:template match="zvg:vertegenwoordigdDoor">
+	<xsl:for-each select="*">
+		<span about="{@rdf:about}" typeof="zvg:NatuurlijkPersoon">
+			<a class="link" property="zvg:vertegenwoordigdDoor" href="{@rdf:about}"><xsl:value-of select="zvg:naam"/></a>,
+			<a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Bereikbaar">bereikbaar</a> via
+			<span property="zvg:contactGegevens" resource="_:cg"><span about="_:cg" typeof="zvg:Contactgegevens"><span property="zvg:telefoonnummer"><xsl:value-of select="zvg:contactGegevens/zvg:ContactGegevens/zvg:telefoonnummer"/></span></span></span>,
+			<a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Legitimatie">legitimatie</a><xsl:text> </xsl:text>
+			<a class="link" property="zvg:identificatie" href="{zvg:identificatie/@rdf:resource}"><xsl:value-of select="zvg:identificatie/@rdf:resource"/></a>
+		</span>
+	</xsl:for-each>
+</xsl:template>
+
 <xsl:template match="zvg:Verkoper">
 
 <table>
@@ -100,19 +112,11 @@ afwijkende tekst duidelijk als zodanig herkenbaar is.
         <a class="link" href="{@rdf:about}"><span property="zvg:kvkNummer"><xsl:value-of select="zvg:kvkNummer"/></span></a>, ten dezen
         <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/VertegenwoordigdDoor">vertegenwoordigd door</a>:
       </p>
-      <p>1. <a class="link" href="#">..................</a>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Bereikbaar">bereikbaar</a> via
-        <span>..................</span>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Legitimatie">legitimatie</a>
-        <a class="link" href="#">...................</a>
-      </p>
-
-      <p>2. <a class="link" href="#">...................</a>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Bereikbaar">bereikbaar</a> via
-        <span>..................</span>,
-        <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Legitimatie">legitimatie</a>
-        <a class="link" href="#">....................</a>
-      </p>
+			<xsl:for-each select="zvg:vertegenwoordigdDoor">
+				<p><xsl:value-of select="position()"/><xsl:text>. </xsl:text>
+					<xsl:apply-templates select="."/>
+				</p>
+			</xsl:for-each>
 
       <p>Ten dezen
         <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/HandelendAls">handelend als</a> respectievelijk
