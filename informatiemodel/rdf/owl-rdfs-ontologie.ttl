@@ -4,7 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 zvg:AardClausule a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/begrip/Voorwaarde>;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/AardClausule>;
     rdfs:domain zvg:Voorwaarde;
     rdfs:label "AardClausule"^^xsd:string
 .
@@ -24,10 +24,12 @@ zvg:Contactgegevens a <http://www.w3.org/2002/07/owl#Class>;
     rdfs:label "Contactgegevens"^^xsd:string
 .
 zvg:DigitaleIdentiteit a <http://www.w3.org/2002/07/owl#Class>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/DigitaleIdentiteit>;
     rdfs:label "DigitaleIdentiteit"^^xsd:string;
     rdfs:subClassOf zvg:_Legitimatie
 .
 zvg:DocumentIdentiteit a <http://www.w3.org/2002/07/owl#Class>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/Identiteitsdocument>;
     rdfs:label "DocumentIdentiteit"^^xsd:string;
     rdfs:subClassOf zvg:_Legitimatie
 .
@@ -35,10 +37,6 @@ zvg:Eigendom a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Eigendom>;
     rdfs:label "Eigendom"^^xsd:string;
     rdfs:subClassOf zvg:ZakelijkRecht
-.
-zvg:Eigendomsoverdracht a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:label "Eigendomsoverdracht"^^xsd:string;
-    rdfs:subClassOf zvg:Voorwaarde
 .
 zvg:Erfdienstbaarheid a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Erfdienstbaarheid>;
@@ -51,33 +49,11 @@ zvg:Erfpacht a <http://www.w3.org/2002/07/owl#Class>;
     rdfs:subClassOf zvg:BeperktRecht
 .
 zvg:Geboorte a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:comment '''--Definitie--
-Geboorte is een groep gegevens over de geboorte van een GeregisteerdPersoon.
-
---Toelichting--
-De gegevensgroep Geboorte bevat de volgende gegevens
-- Geboortedatum
-- Geboorteplaats
-- Geboorteland'''^^xsd:string;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/Geboorte>;
     rdfs:label "Geboorte"^^xsd:string
 .
-zvg:Gerechtigde a <http://www.w3.org/2002/07/owl#Class>;
-    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/Gerechtigde>;
-    rdfs:label "Gerechtigde"^^xsd:string
-.
-zvg:GeregistreerdPersoon a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:comment '''--Definitie--
-Een GeregistreerdPersoon is natuurlijk persoon die is geregistreerd in de Basisregistatie Kadaster.  Het betreft of een ingezetene of een niet ingezetene.
---Toelichting--
-Een Geregistreerd persoon heeft in principe een BSN. Dit is zo wanneer de persoon in de BRP bekend is. Geregistreerde personen zonder BSN zijn niet geregistreerd in de BRP c.q. worden alleen in de BRK geregisteerd.
-
-Voor het Kadaster is het verschil tussen ingezetene en niet-ingezetene niet relevant, behalve voor de inschrijvingseis dat een niet ingezetene domicilie moet kiezen in Nederland. Een geregistreerd persoon is een niet ingezetene in de BRP als deze een AdresBuitenland heeft als woonlocatie.
-
-(In de Registratie Niet-Ingezetenen (RNI) staan de persoonsgegevens van mensen die niet in Nederland wonen, maar wel een relatie met Nederland hebben. Daarbij gaat het bijvoorbeeld om mensen die in het buitenland wonen, maar een pensioen uit Nederland ontvangen. Ook mensen die korter dan vier maanden in Nederland verblijven, kunnen zich inschrijven in deze registratie. De Rijksdienst voor Identiteitsgegevens (RvIG) beheert de RNI. )
-'''^^xsd:string;
-    rdfs:label "GeregistreerdPersoon"^^xsd:string
-.
 zvg:Identificatie_Persoon a <http://www.w3.org/2002/07/owl#Class>;
+    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/IdentificatiePersoon>;
     rdfs:label "Identificatie Persoon"^^xsd:string
 .
 zvg:Koop a <http://www.w3.org/2002/07/owl#Class>;
@@ -100,24 +76,15 @@ zvg:Levering a <http://www.w3.org/2002/07/owl#Class>;
     rdfs:subClassOf zvg:_Rechtshandeling
 .
 zvg:LijstVanGoederen a <http://www.w3.org/2002/07/owl#Class>;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/LijstVanGoederen>;
     rdfs:label "LijstVanGoederen"^^xsd:string
 .
 zvg:LocatieRegistergoed a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:comment '''--Definitie--
-Een Locatie Registergoed is een aanduiding voor de locatie van het Registergoed in Nederland.
-
---Toelichting--
-Bij onroerende zaken betreft dit de locatie waar de Onroerende zaak is gelegen.
-Bij Teboekgestelde zaken wordt locatie gebruikt voor het zogenaamde waladres.
-Leidingnetwerken kennen geen locatie kadastraal object.
-De Locatie van een kadastraal object wordt bepaald aan de hand van gegevens die:
-- de gemeente verstrekt (Basisregistratie Adressen en Gebouwen);
-- in het openbaar register zijn vermeld;  '''^^xsd:string;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/RegistergoedLocatie>;
     rdfs:label "LocatieRegistergoed"^^xsd:string
 .
 zvg:Naam a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:comment '''--Definitie--
-Naam is een groep gegevens met de  geslachtsnaam, voorletters en voornamen die men wil gebruiken bij aanschrijving. '''^^xsd:string;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/Naam>;
     rdfs:label "Naam"^^xsd:string
 .
 zvg:NatuurlijkPersoon a <http://www.w3.org/2002/07/owl#Class>;
@@ -134,18 +101,9 @@ zvg:Nummeraanduiding a <http://www.w3.org/2002/07/owl#Class>;
     rdfs:label "Nummeraanduiding"^^xsd:string
 .
 zvg:ObjectlocatieBinnenland a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:comment '''--Definitie--
-Een ObjectlocatieBinnenland is een adres binnen nederland.
---Toelichting--
-Een Objectlocatie Binnenland is gemodelleerd als een BAGadres.
-
-In het huidige bijhoudingsproces van de BRK worden de gegevens van een ObjectlocatieBinnenland initieel geregistreerd conform de Openbare registers. Kort daarna worden deze gegevens vervangen door de BAG-gegevens.
-In uitzonderlijke situaties kunnen de BAG-gegevens niet worden overgenomen. Dergelijke situatie worden teruggemeld aan de BRP.'''^^xsd:string;
-    rdfs:label "ObjectlocatieBinnenland"^^xsd:string
-.
-zvg:Onderzoeker a <http://www.w3.org/2002/07/owl#Class>;
-    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/Onderzoeker>;
-    rdfs:label "Onderzoeker"^^xsd:string
+    rdfs:comment "Een ObjectlocatieBinnenland is een adres binnen nederland."^^xsd:string;
+    rdfs:label "ObjectlocatieBinnenland"^^xsd:string;
+    rdfs:subClassOf zvg:_ObjectLocatie
 .
 zvg:Ontbinden a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/Ontbinden>;
@@ -157,37 +115,35 @@ zvg:OpenbareRuimte a <http://www.w3.org/2002/07/owl#Class>;
     rdfs:label "OpenbareRuimte"^^xsd:string
 .
 zvg:Overlijden a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:comment '''--Definitie--
-Overlijden is een groep gegevens over het overlijden van een persoon.'''^^xsd:string;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/Overlijden>;
     rdfs:label "Overlijden"^^xsd:string
 .
 zvg:Partij a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij>;
     rdfs:label "Partij"^^xsd:string
 .
+zvg:Partnerschap a <http://www.w3.org/2002/07/owl#Class>;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/Partnerschap>;
+    rdfs:label "Partnerschap"^^xsd:string
+.
 zvg:Perceel a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <https://kad.zorgeloosvastgoed.nl/id/concept/Perceel>;
     rdfs:label "Perceel"^^xsd:string;
     rdfs:subClassOf zvg:_OnroerendeZaak
-.
-zvg:Rechtspersoon a <http://www.w3.org/2002/07/owl#Class>;
-    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/id/concept/Rechtspersoon>;
-    rdfs:label "Rechtspersoon"^^xsd:string
 .
 zvg:TenBehoeveVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:domain zvg:Erfdienstbaarheid;
     rdfs:label "TenBehoeveVan"^^xsd:string;
     rdfs:range zvg:Perceel
 .
+zvg:Tenaamstelling a <http://www.w3.org/2002/07/owl#Class>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/Tenaamstelling>;
+    rdfs:label "Tenaamstelling"^^xsd:string
+.
 zvg:Type a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/CanonType>;
     rdfs:domain zvg:Canon;
     rdfs:label "Type"^^xsd:string
-.
-zvg:Verbintenis a <http://www.w3.org/2002/07/owl#Class>;
-    rdfs:comment '''--Definitie--
-Partnerschap is een groep gegevens over de huwelijkse- of partnerschapstatus van een persoon.
-'''^^xsd:string;
-    rdfs:label "Verbintenis"^^xsd:string
 .
 zvg:Verkoper a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <https://mak.zorgeloosvastgoed.nl/id/concept/Verkoper>;
@@ -203,6 +159,11 @@ zvg:Voorwaarde a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/Voorwaarde>;
     rdfs:label "Voorwaarde"^^xsd:string
 .
+zvg:Woonlocatie a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:domain zvg:_Persoon;
+    rdfs:label "Woonlocatie"^^xsd:string;
+    rdfs:range zvg:_ObjectLocatie
+.
 zvg:Woonplaats a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <http://bag.basisregistraties.overheid.nl/id/concept/Woonplaats>;
     rdfs:label "Woonplaats"^^xsd:string
@@ -212,7 +173,11 @@ zvg:ZakelijkRecht a <http://www.w3.org/2002/07/owl#Class>;
     rdfs:label "ZakelijkRecht"^^xsd:string
 .
 zvg:_Legitimatie a <http://www.w3.org/2002/07/owl#Class>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/Legitimatie>;
     rdfs:label "_Legitimatie"^^xsd:string
+.
+zvg:_ObjectLocatie a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "_ObjectLocatie"^^xsd:string
 .
 zvg:_OnroerendeZaak a <http://www.w3.org/2002/07/owl#Class>;
     dct:subject <https://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak>;
@@ -224,7 +189,7 @@ zvg:_Persoon a <http://www.w3.org/2002/07/owl#Class>;
     rdfs:label "_Persoon"^^xsd:string
 .
 zvg:_Rechtshandeling a <http://www.w3.org/2002/07/owl#Class>;
-    dct:subject <https://bp4mc2.org/def/skos-lex#Act>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/Rechtshandeling>;
     rdfs:label "_Rechtshandeling"^^xsd:string
 .
 zvg:_Registergoed a <http://www.w3.org/2002/07/owl#Class>;
@@ -236,16 +201,13 @@ zvg:aan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:Koper
 .
 zvg:aandeel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:domain zvg:Gerechtigde;
     rdfs:domain zvg:Koper;
+    rdfs:domain zvg:Tenaamstelling;
     rdfs:label "aandeel"^^xsd:string
 .
 zvg:aanduidingNaamgebruik a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-aanduidingNaamgebruik is een aanduiding voor de wijze van aanschrijving van de ingeschrevene.'''^^xsd:string;
-    rdfs:domain zvg:GeregistreerdPersoon;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/AanduidingNaamgrbruik>;
+    rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "aanduidingNaamgebruik"^^xsd:string
 .
 zvg:aangebodenDoor a <http://www.w3.org/2002/07/owl#ObjectProperty>;
@@ -254,19 +216,18 @@ zvg:aangebodenDoor a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:Verkoper
 .
 zvg:aanpassing a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/CanonAanpassing>;
     rdfs:domain zvg:Canon;
     rdfs:label "aanpassing"^^xsd:string
 .
 zvg:aanwijzerNotaris a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/AanwijzerNotaris>;
     rdfs:domain zvg:KostenEnOverdrachtsbelasting;
     rdfs:label "aanwijzerNotaris"^^xsd:string
 .
 zvg:adellijkeTitelOfPredikaat a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-adellijkeTitelOfPredikaat is de adellijke titel of het predikaat dat behoort tot de naam  van de persoon (bij adellijke titel geslachtsnaam, bij predikaat voornaam).'''^^xsd:string;
-    rdfs:domain zvg:GeregistreerdPersoon;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/AdellijkeTitelPredikaat>;
+    rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "adellijkeTitelOfPredikaat"^^xsd:string
 .
 zvg:adres a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
@@ -279,41 +240,33 @@ zvg:adresgegevens a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:Nummeraanduiding
 .
 zvg:akteReferentie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:domain zvg:Gerechtigde;
+    rdfs:domain zvg:Tenaamstelling;
     rdfs:label "akteReferentie"^^xsd:string
 .
 zvg:algemeneErfpachtvoorwaarden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''--Definitie--
-Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.
-'''^^xsd:string;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/AlgemeneErfpachtvoorwaarden>;
     rdfs:domain zvg:Erfpacht;
     rdfs:label "algemeneErfpachtvoorwaarden"^^xsd:string
 .
 zvg:bedrag a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/VoorbehoudBedrag>;
     rdfs:domain zvg:Voorbehoud;
     rdfs:label "bedrag"^^xsd:string
 .
 zvg:begrenzingPerceel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/BegrenzingPerceel>;
     rdfs:domain zvg:Perceel;
     rdfs:label "begrenzingPerceel"^^xsd:string
 .
-zvg:beschikkingsbevoegdheid a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:domain zvg:_Persoon;
-    rdfs:label "beschikkingsbevoegdheid"^^xsd:string
-.
 zvg:betalerKosten a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment "Waardelijst met de waarden koper of verkoper."^^xsd:string;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/BetalerKosten>;
     rdfs:domain zvg:KostenEnOverdrachtsbelasting;
     rdfs:label "betalerKosten"^^xsd:string
 .
 zvg:betreft a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:domain zvg:LocatieRegistergoed;
-    rdfs:domain zvg:NatuurlijkPersoon;
-    rdfs:domain zvg:NietNatuurlijkPersoon;
     rdfs:label "betreft"^^xsd:string;
-    rdfs:range zvg:GeregistreerdPersoon;
-    rdfs:range zvg:ObjectlocatieBinnenland;
-    rdfs:range zvg:Rechtspersoon
+    rdfs:range zvg:ObjectlocatieBinnenland
 .
 zvg:bevat a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:domain zvg:Koop;
@@ -323,8 +276,7 @@ zvg:bevat a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 zvg:bevoegdheid a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:comment '''onbekend,
 eigenverklaring
-gerechercheerd
-'''^^xsd:string;
+gerechercheerd'''^^xsd:string;
     rdfs:domain zvg:Verkoper;
     rdfs:label "bevoegdheid"^^xsd:string
 .
@@ -339,37 +291,32 @@ zvg:bijNotaris a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:NietNatuurlijkPersoon
 .
 zvg:bijzondereErfpachtvoorwaarden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/BijzondereErfpachtvoorwaarden>;
     rdfs:domain zvg:Erfpacht;
     rdfs:label "bijzondereErfpachtvoorwaarden"^^xsd:string
 .
 zvg:datumAfspraak a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/Leveringsdatum>;
     rdfs:domain zvg:Levering;
     rdfs:label "datumAfspraak"^^xsd:string
 .
 zvg:datumOntbinding a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-datumOntbinding is de datum waarop het huwelijk/geregistreerd partnerschap is ontbonden of nietig verklaard.'''^^xsd:string;
-    rdfs:domain zvg:Verbintenis;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/PartnerschapDatumOntbinding>;
+    rdfs:domain zvg:Partnerschap;
     rdfs:label "datumOntbinding"^^xsd:string
 .
 zvg:datumOverlijden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
-datumOverlijden is de datum waarop de persoon overleden is.  '''^^xsd:string;
+    rdfs:comment "datumOverlijden is de datum waarop de persoon overleden is."^^xsd:string;
     rdfs:domain zvg:Overlijden;
     rdfs:label "datumOverlijden"^^xsd:string
 .
 zvg:datumSluiting a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
-datumSluiting is de datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan.
-'''^^xsd:string;
-    rdfs:domain zvg:Verbintenis;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/PartnerschapDatumSluiting>;
+    rdfs:domain zvg:Partnerschap;
     rdfs:label "datumSluiting"^^xsd:string
 .
 zvg:datumVooruitbetaling a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/CanonVooruitbetaald>;
     rdfs:domain zvg:Canon;
     rdfs:label "datumVooruitbetaling"^^xsd:string
 .
@@ -379,15 +326,17 @@ zvg:e-mailAdres a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "e-mailAdres"^^xsd:string
 .
 zvg:einddatumAfkoop a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/CanonAfgekocht>;
     rdfs:domain zvg:Canon;
     rdfs:label "einddatumAfkoop"^^xsd:string
 .
 zvg:einddatumErfpacht a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/EinddatumRecht=>;
     rdfs:domain zvg:Canon;
     rdfs:label "einddatumErfpacht"^^xsd:string
 .
 zvg:geboorte a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    rdfs:domain zvg:GeregistreerdPersoon;
+    rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "geboorte"^^xsd:string;
     rdfs:range zvg:Geboorte
 .
@@ -397,42 +346,28 @@ zvg:geboortedatum a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "geboortedatum"^^xsd:string
 .
 zvg:geboorteland a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Het geboorteland is de naam, die het land aangeeft waar de persoon is geboren.
-'''^^xsd:string;
+    rdfs:comment "Het geboorteland is de naam, die het land aangeeft waar de persoon is geboren."^^xsd:string;
     rdfs:domain zvg:Geboorte;
     rdfs:label "geboorteland"^^xsd:string
 .
 zvg:geboorteplaats a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-De geboorteplaats is de plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren
-'''^^xsd:string;
+    rdfs:comment "De geboorteplaats is de plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren"^^xsd:string;
     rdfs:domain zvg:Geboorte;
     rdfs:label "geboorteplaats"^^xsd:string
 .
 zvg:gerelateerdeOpenbareRuimte a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    rdfs:comment '''
----IMKAD---
-De unieke aanduiding van een OPENBARE RUIMTE
+    rdfs:comment '''De unieke aanduiding van een OPENBARE RUIMTE
 waaraan een adresseerbaar object is gelegen.'''^^xsd:string;
     rdfs:domain zvg:Nummeraanduiding;
     rdfs:label "gerelateerdeOpenbareRuimte"^^xsd:string;
     rdfs:range zvg:OpenbareRuimte
 .
 zvg:gerelateerdeWoonplaats a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    rdfs:comment '''
----IMKAD---
-Unieke aanduiding van de woonplaats waarbinnen het
+    rdfs:comment '''Unieke aanduiding van de woonplaats waarbinnen een
+OPENBARE RUIMTE is gelegen.'''^^xsd:string;
+    rdfs:comment '''Unieke aanduiding van de woonplaats waarbinnen het
 object waaraan de NUMMERAANDUIDING is toegekend
 is gelegen. Dit gegeven wordt opgenomen indien het object is gelegen in een andere woonplaats dan de openbare ruimte waaraan de nummeraanduiding is gerelateerd.'''^^xsd:string;
-    rdfs:comment '''
----IMKAD---
-Unieke aanduiding van de woonplaats waarbinnen een
-OPENBARE RUIMTE is gelegen.'''^^xsd:string;
     rdfs:domain zvg:Nummeraanduiding;
     rdfs:domain zvg:OpenbareRuimte;
     rdfs:label "gerelateerdeWoonplaats"^^xsd:string;
@@ -454,6 +389,7 @@ zvg:heerstMet a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:Erfdienstbaarheid
 .
 zvg:herziening a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/CanonHerziening>;
     rdfs:domain zvg:Canon;
     rdfs:label "herziening"^^xsd:string
 .
@@ -465,10 +401,7 @@ zvg:hoortBij a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:Partij
 .
 zvg:huisletter a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-URI https://bag.basisregistraties.overheid.nl/doc/begrip/Huisletter'''^^xsd:string;
+    rdfs:comment "URI https://bag.basisregistraties.overheid.nl/doc/begrip/Huisletter"^^xsd:string;
     rdfs:domain zvg:Nummeraanduiding;
     rdfs:label "huisletter"^^xsd:string
 .
@@ -478,58 +411,47 @@ zvg:huisnummer a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "huisnummer"^^xsd:string
 .
 zvg:huisnummertoevoeging a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-URI https://bag.basisregistraties.overheid.nl/doc/begrip/Huisnummertoevoeging'''^^xsd:string;
+    rdfs:comment "URI https://bag.basisregistraties.overheid.nl/doc/begrip/Huisnummertoevoeging"^^xsd:string;
     rdfs:domain zvg:Nummeraanduiding;
     rdfs:label "huisnummertoevoeging"^^xsd:string
 .
 zvg:identificatie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''--Definitie--
-TBD:
-Identificatie is een door het ZorgeloosVastgoed toegekend landelijk uniek nummer aan een object binnen de Zorgeloos Vastgoed context. (registratie). '''^^xsd:string;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie.
-'''^^xsd:string;
-    rdfs:domain zvg:Koop;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/RechtshandelingIdentificatie>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/RegistergoedIdentificatie>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/ZakelijkRechtIdentificatie>;
+    dct:subject <https://makt.zorgeloosvastgoed.nl/doc/concept/VoorwaardeIdentificatie>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/LegitimatieIdentificatie>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/TenaamstellingIdentificatie>;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/PartijIdentificatie>;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/id/concept/PersoonIdentificatie>;
+    rdfs:comment "Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie."^^xsd:string;
     rdfs:domain zvg:Nummeraanduiding;
     rdfs:domain zvg:Partij;
+    rdfs:domain zvg:Tenaamstelling;
+    rdfs:domain zvg:Voorwaarde;
     rdfs:domain zvg:ZakelijkRecht;
+    rdfs:domain zvg:_Legitimatie;
     rdfs:domain zvg:_Persoon;
+    rdfs:domain zvg:_Rechtshandeling;
     rdfs:domain zvg:_Registergoed;
     rdfs:label "identificatie"^^xsd:string
-.
-zvg:identificatieDatum a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:domain zvg:Identificatie_Persoon;
-    rdfs:label "identificatieDatum"^^xsd:string
 .
 zvg:identityResult a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:domain zvg:DigitaleIdentiteit;
     rdfs:label "identityResult"^^xsd:string
 .
 zvg:indexering a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/CanonIndexering>;
     rdfs:domain zvg:Canon;
     rdfs:label "indexering"^^xsd:string
 .
-zvg:indicatieAfschermingPersoonsgegevens a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:domain zvg:NatuurlijkPersoon;
-    rdfs:label "indicatieAfschermingPersoonsgegevens"^^xsd:string
-.
 zvg:indicatieGeheim a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-indicatieGeheim is een aanduiding die aangeeft dat gegevens van een persoon wel of niet verstrekt mogen worden.'''^^xsd:string;
-    rdfs:domain zvg:GeregistreerdPersoon;
+    rdfs:comment "indicatieGeheim is een aanduiding die aangeeft dat gegevens van een persoon wel of niet verstrekt mogen worden."^^xsd:string;
+    rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "indicatieGeheim"^^xsd:string
 .
 zvg:indicatieOverleden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
-Natuurlijk persoon is al dan niet overleden en is niet gekoppeld aan de BRP.
+    rdfs:comment '''Natuurlijk persoon is al dan niet overleden en is niet gekoppeld aan de BRP.
 Definitie
 Indicatie Overleden is een indicatie of de persoon al dan niet overleden is.
 Toelichting
@@ -539,7 +461,7 @@ De datum van overlijden is soms niet bekend, maar wel dat iemand overleden is.''
     rdfs:label "indicatieOverleden"^^xsd:string
 .
 zvg:is a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    rdfs:domain zvg:Gerechtigde;
+    rdfs:domain zvg:Tenaamstelling;
     rdfs:label "is"^^xsd:string;
     rdfs:range zvg:_Persoon
 .
@@ -561,55 +483,27 @@ zvg:isVanToepassingOp a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 zvg:isVerbondenIn a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "isVerbondenIn"^^xsd:string;
-    rdfs:range zvg:Verbintenis
+    rdfs:range zvg:Partnerschap
 .
 zvg:jaarlijksBedrag a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/CanonJaarlijksBedrag>;
     rdfs:domain zvg:Canon;
     rdfs:label "jaarlijksBedrag"^^xsd:string
 .
 zvg:kadastraleAanduiding a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
--- Definitie --
-Kadastrale aanduiding is de unieke aanduiding van een onroerende zaak, die door het kadaster wordt vastgesteld.
-
--- Toelichting --
-In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidingen hebben, te weten in het geval dat er een herindeling plaatsvindt.  '''^^xsd:string;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/KadastraleAanduiding>;
     rdfs:domain zvg:_OnroerendeZaak;
     rdfs:label "kadastraleAanduiding"^^xsd:string
 .
 zvg:kadastraleGrootte a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Toelichting--
-Oppervlak grootte, in vierkante meters. '''^^xsd:string;
+    dct:subject <https://kad.zorgeloosvastgoed.nl/doc/concept/KadastraleGroote>;
     rdfs:domain zvg:Perceel;
     rdfs:label "kadastraleGrootte"^^xsd:string
 .
 zvg:koopsom a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/Koopsom>;
+    dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Koopsom>;
     rdfs:domain zvg:Koop;
     rdfs:label "koopsom"^^xsd:string
-.
-zvg:koppelingswijze a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Koppelingswijze is de beschrijving van de manier waarop de koppeling tussen het Kadastraalobject (Perceel of Appartementsrecht) met ObjectlocatieBinnenland bepaald is. De koppeling kan administratief bepaald zijn op basis van overeenkomstige adresgegevens en of geometrisch bepaald zijn, op basis van overeenkomstige geometrie.
-
---Toelichting--
-Koppelingswijze beschrijft de kwaliteit van de LKO-koppeling op een van de volgende manieren:
-<ul>
- <li>Administratief: de adresgegevens van ObjectlocatieBinnenland komen functioneel overeen met de adresgegevens uit een akte over het Kadastraalobject.</li>
-</ul>
-<ul>
- <li>Geometrisch: de geometrie van het adresseerbaar object bij de ObjectlocatieBinnenland (dat een dus ook BAG object is) overlapt (geheel of gedeeltelijk) de geometrie van het Perceel. Als het Kadastraalobject een appartementsrecht is, is de geometrie van de groep van percelen waarvan de rechten zijn opgesplitst in o.a. dit appartementsrecht, genomen.</li>
-</ul>
-<ul>
- <li>Administratief en Geometrisch: beide koppelwijzen zijn aan de orde.</li>
-</ul>'''^^xsd:string;
-    rdfs:domain zvg:LocatieRegistergoed;
-    rdfs:label "koppelingswijze"^^xsd:string
 .
 zvg:kosten a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:domain zvg:Koop;
@@ -617,27 +511,17 @@ zvg:kosten a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:KostenEnOverdrachtsbelasting
 .
 zvg:kvkNummer a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Het KvKNummer is een uniek identificerend administratienummer van een rechtspersoon zijnde een niet-natuurlijk persoon zoals toegewezen door de Kamer van Koophandel
-'''^^xsd:string;
-    rdfs:domain zvg:Rechtspersoon;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/KvKNummer>;
+    rdfs:domain zvg:NietNatuurlijkPersoon;
     rdfs:label "kvkNummer"^^xsd:string
 .
 zvg:landWaarnaarVertrokken a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-landWaarnaarVertrokken is het land dat de ingeschrevene opgeeft bij vertrek naar het buitenland.
-
-
---Toelichting--
-Als we van BRP een mutatiemelding krijgen met enkel een land dat wordt dat geregistreerd als landWaarnaarVertrokken. Worden ook andere adresgegevens ontvangen, minimaal woonplaats, dan wordt dit als buitenlandsadres geregistreerd.'''^^xsd:string;
-    rdfs:domain zvg:GeregistreerdPersoon;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/LandVertrokken>;
+    rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "landWaarnaarVertrokken"^^xsd:string
 .
 zvg:lijstReferentie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/LijstVanGoederenReferentie>;
     rdfs:domain zvg:LijstVanGoederen;
     rdfs:label "lijstReferentie"^^xsd:string
 .
@@ -652,11 +536,12 @@ zvg:metIdentificatie a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:NatuurlijkPersoon
 .
 zvg:naam a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    rdfs:domain zvg:GeregistreerdPersoon;
+    rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "naam"^^xsd:string;
     rdfs:range zvg:Naam
 .
 zvg:omschrijvingOnroerendeZaak a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/OnroerendeZaakOmschrijving>;
     rdfs:domain zvg:_OnroerendeZaak;
     rdfs:label "omschrijvingOnroerendeZaak"^^xsd:string
 .
@@ -676,7 +561,7 @@ zvg:openbareRuimteNaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "openbareRuimteNaam"^^xsd:string
 .
 zvg:overlijden a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    rdfs:domain zvg:GeregistreerdPersoon;
+    rdfs:domain zvg:NatuurlijkPersoon;
     rdfs:label "overlijden"^^xsd:string;
     rdfs:range zvg:Overlijden
 .
@@ -690,23 +575,21 @@ zvg:rechercheReferentie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "rechercheReferentie"^^xsd:string
 .
 zvg:rechtsvorm a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/id/concept/Rechtspersoon>;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/id/concept/Rechtsvorm>;
     rdfs:domain zvg:NietNatuurlijkPersoon;
     rdfs:label "rechtsvorm"^^xsd:string
 .
 zvg:referentie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/IdentiteitsdocumentReferentie>;
     rdfs:domain zvg:DocumentIdentiteit;
     rdfs:label "referentie"^^xsd:string
 .
 zvg:rsin a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
-Het RSIN is het Rechtspersonen Samenwerkingsverbanden Informatie Nummer is een uniek nummer wat iedere rechtspersoon krijgt.
+    rdfs:comment '''Het RSIN is het Rechtspersonen Samenwerkingsverbanden Informatie Nummer is een uniek nummer wat iedere rechtspersoon krijgt.
 
 --toelichting--
-Een eenmanszaak is geen rechtspersoon en heeft dus ook geen RSIN.
-'''^^xsd:string;
-    rdfs:domain zvg:Rechtspersoon;
+Een eenmanszaak is geen rechtspersoon en heeft dus ook geen RSIN.'''^^xsd:string;
+    rdfs:domain zvg:NietNatuurlijkPersoon;
     rdfs:label "rsin"^^xsd:string
 .
 zvg:rustOp a <http://www.w3.org/2002/07/owl#ObjectProperty>;
@@ -715,22 +598,22 @@ zvg:rustOp a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:_OnroerendeZaak
 .
 zvg:soort a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://not.zorgeloosvastgoed.nl/doc/concept/IdentiteitsdocumentSoort>;
     rdfs:domain zvg:DocumentIdentiteit;
     rdfs:label "soort"^^xsd:string
 .
 zvg:soortVerbintenis a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/SoortVerbintenis>;
-    rdfs:domain zvg:Verbintenis;
+    rdfs:domain zvg:Partnerschap;
     rdfs:label "soortVerbintenis"^^xsd:string
 .
 zvg:standaardBetalingsconditie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment "Als true(ja) dan standaard betalingscondities"^^xsd:string;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/KoopStandaardBetalingsconditie>;
     rdfs:domain zvg:Koop;
     rdfs:label "standaardBetalingsconditie"^^xsd:string
 .
 zvg:status a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''--Definitie--
-De status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proces zit. De waarden zijn opgenomen in een waardelijst.'''^^xsd:string;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/>;
     rdfs:domain zvg:Koop;
     rdfs:label "status"^^xsd:string
 .
@@ -740,6 +623,7 @@ zvg:statutaireNaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "statutaireNaam"^^xsd:string
 .
 zvg:statutaireZetel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/StatutaireZetel>;
     rdfs:domain zvg:NietNatuurlijkPersoon;
     rdfs:label "statutaireZetel"^^xsd:string
 .
@@ -750,28 +634,24 @@ zvg:telefoonnummer a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 .
 zvg:van a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:domain zvg:Contactgegevens;
-    rdfs:domain zvg:Gerechtigde;
     rdfs:domain zvg:Koop;
+    rdfs:domain zvg:Tenaamstelling;
     rdfs:label "van"^^xsd:string;
     rdfs:range zvg:ZakelijkRecht;
     rdfs:range zvg:_Persoon
 .
 zvg:verbindt a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-    rdfs:domain zvg:Verbintenis;
+    rdfs:domain zvg:Partnerschap;
     rdfs:label "verbindt"^^xsd:string;
     rdfs:range zvg:NatuurlijkPersoon
 .
 zvg:verbintenisVoorwaarden a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Huwelijksgoederenrecht>;
-    rdfs:domain zvg:Verbintenis;
+    rdfs:domain zvg:Partnerschap;
     rdfs:label "verbintenisVoorwaarden"^^xsd:string
 .
-zvg:verkoperBevoegdheid a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment "waarde komt uit waardelijst Gerechercheerd door notaris of op basis van eigenverklaring. "^^xsd:string;
-    rdfs:domain zvg:Eigendomsoverdracht;
-    rdfs:label "verkoperBevoegdheid"^^xsd:string
-.
 zvg:verrekeningOverdrachtsbelastingArt13 a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/Verrekeningoverdrachtsbelasingart13>;
     rdfs:domain zvg:KostenEnOverdrachtsbelasting;
     rdfs:label "verrekeningOverdrachtsbelastingArt13"^^xsd:string
 .
@@ -786,22 +666,17 @@ zvg:vertegenwoordigt a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:range zvg:Partij
 .
 zvg:voornamen a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst.'''^^xsd:string;
+    rdfs:comment "De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst."^^xsd:string;
     rdfs:domain zvg:Naam;
     rdfs:label "voornamen"^^xsd:string
 .
 zvg:voorvoegselsgeslachtsnaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
-    rdfs:comment '''
----IMKAD---
---Definitie--
-Voorvoegselsgeslachtsnaam zijn dat deel van de geslachtsnaam dat voorkomt in Tabel 36, Voorvoegseltabel en, gescheiden door een spatie, vooraf gaat aan de rest van de geslachtsnaam.'''^^xsd:string;
+    rdfs:comment "Voorvoegselsgeslachtsnaam zijn dat deel van de geslachtsnaam dat voorkomt in Tabel 36, Voorvoegseltabel en, gescheiden door een spatie, vooraf gaat aan de rest van de geslachtsnaam."^^xsd:string;
     rdfs:domain zvg:Naam;
     rdfs:label "voorvoegselsgeslachtsnaam"^^xsd:string
 .
 zvg:waarde a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    dct:subject <https://mak.zorgeloosvastgoed.nl/doc/concept/LijstVanGoederenWaarde>;
     rdfs:domain zvg:LijstVanGoederen;
     rdfs:label "waarde"^^xsd:string
 .

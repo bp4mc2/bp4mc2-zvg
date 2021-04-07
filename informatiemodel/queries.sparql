@@ -1,20 +1,44 @@
 ###################
-# MIM opschonen
+# Algemeen
 ###################
 
-# Verwijder lege definities
+# Verwijder string datatype
 #
-prefix mim: <http://bp4mc2.org/def/mim#>
 delete {
-  graph <http://localhost:8080/data2model/container/mim> {
-    ?s mim:definitie ""^^xsd:string
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s ?p ?strliteral
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s ?p ?literal
   }
 }
 where {
-  graph <http://localhost:8080/data2model/container/mim> {
-    ?s mim:definitie ""^^xsd:string
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s ?p ?strliteral
+    FILTER (datatype(?strliteral) = xsd:string)
+    BIND (str(?strliteral) as ?literal)
   }
 }
+
+# Verwijderen rdfs:seeAlso
+#
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+  	?s rdfs:seeAlso ?uml
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s rdfs:seeAlso ?uml
+  }
+}
+
+###################
+# MIM opschonen
+###################
 
 # Verwijder rdfs:seeAlso
 #
@@ -27,6 +51,40 @@ delete {
 where {
   graph <http://localhost:8080/data2model/container/mim> {
     ?s rdfs:seeAlso ?r
+  }
+}
+
+# Verwijder Kadaster-specifiek gebruik van opmaak in definities
+#
+prefix mim: <http://bp4mc2.org/def/mim#>
+delete {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:definitie ?def
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:definitie ?definitie
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:definitie ?def
+	BIND (replace(replace(replace(replace(replace(?def,"---IMKAD---\n",""),"--Definitie--\n",""),"--Toelichting--(\n.*)*$",""),"^[\n| ]+",""),"[\n| ]+$","") as ?definitie)
+  }
+}
+
+# Verwijder lege definities
+#
+prefix mim: <http://bp4mc2.org/def/mim#>
+delete {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:definitie ""
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:definitie ""
   }
 }
 
@@ -79,20 +137,6 @@ delete {
 where {
   graph <http://localhost:8080/data2model/container/model> {
     ?s a sh:NodeShape.
-  }
-}
-
-# Verwijderen rdfs:seeAlso
-#
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-delete {
-  graph <http://localhost:8080/data2model/container/model> {
-  	?s rdfs:seeAlso ?uml
-  }
-}
-where {
-  graph <http://localhost:8080/data2model/container/model> {
-    ?s rdfs:seeAlso ?uml
   }
 }
 
@@ -151,7 +195,7 @@ where {
 # Controles
 ###########
 
-# Classes
+# Classes uit het voorbeeld (voorbeeld zit in /data)
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select distinct ?t ?tlabel
 where {
@@ -165,7 +209,7 @@ where {
   }
 }
 
-# Properties
+# Properties uit het voorbeeld (voorbeeld zit in /data)
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select distinct ?t ?p
 where {
@@ -177,6 +221,19 @@ where {
   FILTER NOT EXISTS {
     graph <http://localhost:8080/data2model/container/model> {
       ?p rdfs:label ?plabel
+    }
+  }
+}
+
+# Link naar de begrippen (begrippen zijn opgenomen in /data)
+select distinct ?s ?begrip
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s dct:subject ?begrip
+  }
+  FILTER NOT EXISTS {
+    graph <http://localhost:8080/data2model/container/data> {
+      ?begrip a skos:Concept
     }
   }
 }

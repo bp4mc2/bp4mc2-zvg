@@ -10,16 +10,16 @@
 @prefix begrip: <http://taxonomie.zorgeloosvastgoed.nl/id/concept/>.
 @prefix makbegrip: <http://mak.zorgeloosvastgoed.nl/id/concept/>.
 @prefix notbegrip: <http://not.zorgeloosvastgoed.nl/id/concept/>.
+@prefix kadbegrip: <http://kad.zorgeloosvastgoed.nl/id/concept/>.
 
 # Links tussen eigenschappen en de bijbehorende begrippen
 zvg:aan dct:subject makbegrip:Koper.
 zvg:aangebodenDoor dct:subject makbegrip:Verkoper.
-zvg:identificatie dct:subject begrip:Identificatie.
-zvg:koopsom dct:subject notbegrip:Koopsom.
+zvg:identificatie dct:subject begrip:Identificatie. #In de ontologie komen er nu een heleboel voor: dat kan niet kloppen!
 zvg:van dct:subject begrip:Van.
-zvg:aandeel dct:subject begrip:Aandeel.
+zvg:aandeel dct:subject kadbegrip:AandeelRecht.
 zvg:naam dct:subject begrip:Naam.
-zvg:gerelateerdeOpenbareRuimte dct:subject begrip:OpenbareRuimte.
+zvg:gerelateerdeOpenbareRuimte dct:subject kadbegrip:OpenbareRuimte.
 
 #Ontbrekende begrippen (maar wel eigenschappen)
 #Bewust geen klasse toegevoegd, zodat deze niet in het model wordt meegenomen
@@ -28,13 +28,4 @@ begrip:Identificatie rdfs:label "Identificatie";
 .
 begrip:Van rdfs:label "Van";
   # Dit begrip is ambigue: "van" wordt zowel gebruikt in de context van het verkochte goed, als de contactgegevens!
-.
-begrip:Aandeel rdfs:label "Aandeel";
-  rdfs:comment "Het aandeel dat een persoon heeft in de koop. Indien bijvoorbeeld twee personen partij zijn in de koop en een evenredig aandeel hebben. zal dit aandeel 0,5 betreffen voor elke persoon."
-.
-begrip:Naam rdfs:label "Naam";
-  rdfs:comment "De naam van een persoon, bestaande uit voornamen, geslachtsnaam en eventuele tussenvoegsels";
-.
-begrip:OpenbareRuimte rdfs:label "Openbare ruimte";
-  rdfs:comment "Een straat, plein, weg, laan, etc. Een openbare ruimte is een verzamelnaam voor alle buitenruimten die een naam hebben gekregen van de gemeente.";
 .
