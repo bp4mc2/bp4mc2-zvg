@@ -51,6 +51,7 @@ De gebruikelijke conventies zijn:
 
 ## CONCEPTEN
 
+* Wanneer wordt een begrip als concept meegenomen in de taxonomie en wanneer niet? Daar zijn geen harde regels voor te geven. Wat je in achterhoofd moet houden; een informatiemodel is om iets begrijpbaar te maken voor machines, een taxonomie is om iets begrijpbaar te maken voor mensen (dat kan uitleg over een begrip zijn, maar ook toelichting bijvoorbeeld de toelichting bij een emailadres dat als je dit invult dat dit in een register terecht komt). 
 * Uitleg met voorbeelden wanneer een concept een actor, agent, handeling, object of record is, is hier te vinden: [Roles and classes](roles-and-classes.md). Enkele voorbeelden aan de hand van de Zorgeloos Vastgoed taxonomie: 
   1. Een notaris kan handelen (actor), maar wordt benoemd als agent gezien, omdat hij/zij faciliteert in de aan- en verkoop van een huis. De notaris zet niet aan tot handelen hierin, dat zijn de koper en verkoper. Een notaris is daarom een agent.
   2. In een koopovereenkomst wordt gesproken over de werkelijke grootte van een perceel en bij deze werkelijke grootte hoort een afmeting van X vierkante meter. We nemen de werkelijke grootte daarom op in de taxonomie. Er is bij deze echter geen sprake van een object (misschien wel een record). Voor nu gekozen dit alleen als concept op te nemen.
