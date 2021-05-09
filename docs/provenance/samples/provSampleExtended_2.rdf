@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="en"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:prov="http://www.w3.org/ns/prov#">
+    
+    <prov:Activity rdf:about="Activiteit:makenVanKoopovereenkomst_ex1">
+        <prov:startedAtTime>2021-05-08T10:20:15</prov:startedAtTime>
+        <prov:endedAtTime>2021-05-09T10:18:54</prov:endedAtTime>
+        <prov:generated rdf:resource="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000"/>
+        <prov:wasAssociatedWith rdf:resource="ex:Bob_Makelaar"/>
+        <prov:qualifiedAssociation rdf:resource="ex:Bob_Makelaar_Uitgebreide_info"/>
+        <prov:qualifiedAssociation rdf:resource="ex:Alice_Makelaar_Uitgebreide_info"/>
+    </prov:Activity>
+    
+    <prov:Entity rdf:about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">
+        <prov:generatedAtTime>2021-05-09T10:20:15</prov:generatedAtTime>
+        <prov:wasAttributedTo rdf:resource="https://changchozv.inrupt.net/profile/card#me"/>
+        <prov:wasGeneratedBy rdf:resource="Activiteit:makenVanKoopovereenkomst_ex1"/>
+    </prov:Entity>
+    
+    <!--  An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity.  -->
+    <prov:Association rdf:about="ex:Bob_Makelaar_Uitgebreide_info">
+        <prov:agent rdf:resource="ex:Bob_Makelaar"/>
+        <prov:hadRole>Makelaar verantwoordelijk voor het opstellen Koopovereenkomst</prov:hadRole>
+        <prov:atLocation>Amsterdam</prov:atLocation>
+    </prov:Association>
+    
+    <!--  An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity.  -->
+    <prov:Association rdf:about="ex:Alice_Makelaar_Uitgebreide_info">
+        <prov:agent rdf:resource="ex:Alice_Makelaar"/>
+        <prov:hadRole>Assistent-Makelaar</prov:hadRole>
+        <prov:atLocation>Naarden</prov:atLocation>
+    </prov:Association>
+    
+ 
+    
+</rdf:RDF>  
