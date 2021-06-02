@@ -17,8 +17,8 @@ GRAPH config:Theatre {
     elmo:domain "fin.zorgeloosvastgoed.nl";
   .
   config:MakSite a elmo:Site;
-    elmo:domain "localhost";
-#    elmo:domain "mak.zorgeloosvastgoed.nl";
+#    elmo:domain "localhost";
+    elmo:domain "mak.zorgeloosvastgoed.nl";
   .
   config:NotSite a elmo:Site;
     elmo:domain "not.zorgeloosvastgoed.nl";
