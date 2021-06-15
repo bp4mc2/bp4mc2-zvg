@@ -2,9 +2,9 @@
 * De inleiding bevat een korte toelichting, geen inhoud. 
 * De relevante begrippen zijn 'Koopovereenkomst' en 'Model koopovereenkomst'.
 * 'deze koopovereenkomst' bestaat uit 3 onverbrekelijk verbonden onderdelen: 
-** de voor mensen leesbare tekst.
-** de voor computers leesbare data conform de ontologie. Deze data hebben links naar de data die 'resolven' vanuit de datakluis van de koper/verkoper. Deze data is verbonden met de concepten in de taxonomie. De opzet is dat de data daarmee 1 op 1 dezelfde status en betekenis heeft als de voor mensen leesbare tekst. De link bij 'deze koopovereenkomst' gaat naar deze data.
-** de uitleg van alle in de koopovereenkomst gebruikte begrippen.
+  * de voor mensen leesbare tekst.
+  * de voor computers leesbare data conform de ontologie. Deze data hebben links naar de data die 'resolven' vanuit de datakluis van de koper/verkoper. Deze data is verbonden met de concepten in de taxonomie. De opzet is dat de data daarmee 1 op 1 dezelfde status en betekenis heeft als de voor mensen leesbare tekst. De link bij 'deze koopovereenkomst' gaat naar deze data.
+  * de uitleg van alle in de koopovereenkomst gebruikte begrippen.
 # Voorblad
 * Het voorblad met 'De ondergetekenden' gaat over het eerste deel van de overeenkomst waar de partijen worden benoemd. Als onderdeel van de koopovereenkomst is dit een skoslex:record.
 * De belangrijkste eigenschap van dit concept is de uitleg. Die is integraal overgenomen uit de toelichting op de koopovereenkomst. 
