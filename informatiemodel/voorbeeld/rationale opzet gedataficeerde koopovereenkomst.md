@@ -15,7 +15,7 @@
 * Artikel 1 is het hoofdartikel van de koopovereenkomst. Hierin wordt de koop beschreven.
 * De taxonomie bestaat uit 3 onderdelen:
   * Het skoslex:Record waarin de rechtshandeling is beschreven, met als belangrijkst eigenschap de uitleg.  Die is integraal overgenomen uit de toelichting op de koopovereenkomst. 
-  * De beschrijving van de rechtshandeling, de skoslex:act. Dit gebeurt altijd in de vorm van een werkwoord, in dit geval kopen/verkopen. De actoren zijn net als bij alle andere artikelen de koper en verkoper.
+  * De beschrijving van de rechtshandeling, de skoslex:Act. Dit gebeurt altijd in de vorm van een werkwoord, in dit geval kopen/verkopen. De actoren zijn net als bij alle andere artikelen de koper en verkoper.
   * Het object/de objecten van handeling, in dit artikel de onroerende zaak met eventuele roerende zaken die daarbij horen.
 * Het waarderen van de onroerende zaken wordt niet beschouwd als een aparte rechtshandeling, maar als de waardering die is gerelateerd aan de roerende zaken.
 * Wanneer het erfpacht betreft zijn er enkele subartikelen. Ieder subartikel kan worden gezien als een rechtshandeling/afspraak, maar bij artikelen 1.2, 1.3 en 1.4 worden geen expliciete handelingen benoemd anders dan 'verklaart kennis te hebben genomen van ...'. Net als de laatste alinea bij het voorblad worden deze dan ook niet expliciet als skoslex:Act gemodelleerd. De onderlinge samenhang van de concepten geeft ook hier voldoende betekenis aan de relevante data.
