@@ -6,7 +6,7 @@
   * de voor computers leesbare data conform de ontologie. Deze data hebben links naar de data die 'resolven' vanuit de datakluis van de koper/verkoper. Deze data is verbonden met de concepten in de taxonomie. De opzet is dat de data daarmee 1 op 1 dezelfde status en betekenis heeft als de voor mensen leesbare tekst. De link bij 'deze koopovereenkomst' gaat naar deze data.
   * de uitleg van alle in de koopovereenkomst gebruikte begrippen.
 # Voorblad
-* Het voorblad met 'De ondergetekenden' gaat over het eerste deel van de overeenkomst waar de partijen worden benoemd. Als onderdeel van de koopovereenkomst is dit een skoslex:record.
+* Het voorblad met 'De ondergetekenden' gaat over het eerste deel van de overeenkomst waar de partijen worden benoemd. Als onderdeel van de koopovereenkomst is dit een skoslex:Record.
 * De belangrijkste eigenschap van dit concept is de uitleg. Die is integraal overgenomen uit de toelichting op de koopovereenkomst. 
 * Het voorblad bevat alle concepten die relevant zijn in relatie tot de koper en verkoper, eventuele vertegenwoordigers, partners en andere belanghebbenden, inclusief de onderlinge semantische relaties tussen deze concepten. N.B. het is een taxonomie. Daarin is bijvoorbeeld het begrip 'Partner' semantisch verbonden met het begrip 'Natuurlijk Persoon', maar ook niet meer dan dat. Het is geen datamodel of ontologie, waarin je aan kunt geven dat meneer x gehuwd is met meneer y. 
 * Koper, verkoper, etc. zijn een skoslex:Object. Zij zijn verderop skoslex:Actor in skoslex:Acts.
@@ -16,14 +16,14 @@
 * De taxonomie bestaat uit 3 onderdelen:
   * Het skoslex:Record waarin de rechtshandeling is beschreven, met als belangrijkst eigenschap de uitleg.  Die is integraal overgenomen uit de toelichting op de koopovereenkomst. 
   * De beschrijving van de rechtshandeling, de skoslex:Act. Dit gebeurt altijd in de vorm van een werkwoord, in dit geval kopen/verkopen. De actoren zijn net als bij alle andere artikelen de koper en verkoper.
-  * Het object/de objecten van handeling, in dit artikel de onroerende zaak met eventuele roerende zaken die daarbij horen.
+  * Het object/de objecten van handeling, het skoslex:Object. In dit artikel is dat de onroerende zaak met eventuele roerende zaken die daarbij horen.
 * Het waarderen van de onroerende zaken wordt niet beschouwd als een aparte rechtshandeling, maar als de waardering die is gerelateerd aan de roerende zaken.
 * Wanneer het erfpacht betreft zijn er enkele subartikelen. Ieder subartikel kan worden gezien als een rechtshandeling/afspraak, maar bij artikelen 1.2, 1.3 en 1.4 worden geen expliciete handelingen benoemd anders dan 'verklaart kennis te hebben genomen van ...'. Net als de laatste alinea bij het voorblad worden deze dan ook niet expliciet als skoslex:Act gemodelleerd. De onderlinge samenhang van de concepten geeft ook hier voldoende betekenis aan de relevante data.
 # Artikel 2
 * Alle overige artikelen beschrijven onderdelen van de koop.
 * De taxonomie van ieder (sub)artikel is opgebouwd uit dezelfde 3 onderdelen als hierboven beschreven:
    * Het skoslex:Record met de beschrijving (en in de taxonomie de uitleg).
-   * De skoslex:Act met de rechtshandling. Actoren zijn altijd koper en/of verkoper.
+   * De skoslex:Act met de rechtshandeling. Actoren zijn altijd koper en/of verkoper.
    * Het/de skoslex:Object(s) met de onderwerpen.
 * Artikel 2 bevat geen expliciete rechtshandelingen. Deze worden dan ook benoemd.
 * Artikel 2.1 bevat 4 _onderwerpen_:
