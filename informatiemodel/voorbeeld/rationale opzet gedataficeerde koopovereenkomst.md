@@ -36,3 +36,10 @@
 # Artikel 3
 * De eerste zin is een mooi voorbeeld van een zin die bijna volledig semantisch worden beschreven in de vorm van een aantal samenhangende concepten: De _Betaling_ (skoslex:act) van de _Koopsom_ (skoslex:Object) via de _Notaris_ (skoslex:Agent) als _OnderdeelVan (skosthes:broaderPartitive) het _PasserenAktelevering (skoslex:Act).
 * De tweede zin is opnieuw een impliciete afspraak die niet is gemodelleerd als skoslex:act. Dit is een puur informatieve zin.
+# Artikel 4
+* Ook hier is sprake van een notaris (skoslex:Agent), die de Akte van levering (skoslex:Object) zal passeren (skoslex:Act).
+* Artikel 4.2 en 4.3 bevatten een nadere verduidelijking van 4.1, maar geven geen extra informatie. Daarom worden deze niet verder semantisch geduid.
+# Artikel 5
+* De koper (skoslex:Actor) stelt (skolex:Act) een bankgarantie (skoslex:Object).
+* Of de koper (skoslex:Actor stort (skoslex:Act) een waarborgsom (skoslex:Object) op de derdenrekening (skoslex:Object) van de notaris (skoslex:Agent).
+* Bij faillisement (skoslex:Object) van de koper (skoslex:Object) - faillisement koper is de conditie - wordt de bankgarantie (skoslex:Object) of de waarborgsom (skoslex:Object) verbeurd (skoslex:Act) aan de verkoper (skoslex:Actor).
