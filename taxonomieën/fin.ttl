@@ -119,9 +119,29 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 .
+fin:StellenBankgarantie a skos:Concept, skoslex:Act;
+	rdfs:label "Stellen bankgarantie"@nl;
+	skos:prefLabel "Stellen bankgarantie";
+	skos:definition "Het stellen van een bankgarantie.";
+	skoslex:object fin:Bankgarantie;
+	skoslex:agent not:Notaris;
+	skoslex:actor mak:Koper;
+.
+fin:StortenWaarborgsom a skos:Concept, skoslex:Act;
+	rdfs:label "Storten waarborgsom"@nl;
+	skos:prefLabel "Storten waarborgsom";
+	skos:definition "Het storten van een waarborgsom.";
+	skoslex:object fin:Waarborgsom;
+	skoslex:agent not:Notaris;
+	skoslex:actor mak:Koper;
+.
 fin:Verbeuren a skos:Concept, skoslex:Act;
 	rdfs:label "Verbeuren"@nl;
 	skos:prefLabel "Verbeuren";
+	skoslex:object fin:Waarborgsom;
+	skoslex:object fin:Bankgarantie;
+	skoslex:agent not:Notaris;
+	skoslex:actor mak:Verkoper;
 .
 fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
 	rdfs:label "Verstrekken bindend aanbod"@nl;
