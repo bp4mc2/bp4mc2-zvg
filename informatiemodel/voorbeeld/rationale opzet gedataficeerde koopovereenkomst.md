@@ -43,3 +43,13 @@
 * De koper (skoslex:Actor) stelt (skolex:Act) een bankgarantie (skoslex:Object).
 * Of de koper (skoslex:Actor stort (skoslex:Act) een waarborgsom (skoslex:Object) op de derdenrekening (skoslex:Object) van de notaris (skoslex:Agent).
 * Bij faillisement (skoslex:Object) van de koper (skoslex:Object) - faillisement koper is de conditie - wordt de bankgarantie (skoslex:Object) of de waarborgsom (skoslex:Object) verbeurd (skoslex:Act) aan de verkoper (skoslex:Actor).
+# Artikel 6
+* Artikel 6.1 gaat over de staat (mak:StaatOnroerendeZaak), rechten (een heel lijstje) en beperkingen (ook een heel lijstje, met een aparte zin voor publiekrechtelijke beperkingen) van de onroerende zaak (kad:OnroerendeZaak).  
+  * Er staat een juridische formulering dat de koper deze rechten en beperkingen aanvaardt, maar dit is artikel is primair een nadere specificatie van onroerende zaak als het object van koop en is daarom niet semantisch geduid als rechtshandeling.
+* Artikel 6.2 heeft dezelfde structuur. Ook hier gaat het primair om een nadere specificatie van de onroerende zaak.
+  * Hier staan 3 juridische formuleringen, namelijk (1) dat de verkoper verklaart deze akten aan de koper te hebben gegeven, (2) dat de koper deze heeft gelezen en (3) een door de koper meegedeeld/opgesteld lijstje van publiekrechtelijke beperkingen (die overigens onderwerp zijn van 6.1). Ook deze 3 formeleringen zijn niet expliciet semantisch geduid als rechtshandelingen.
+* Artikel 6.3 gaat over de eigenschappen voor normaal gebruik, gebreken die normaal gebruik belemmeren en herstelkosten.
+  * De aansprakelijkheid van de verkoper voor de herstelkosten (waarvoor de aftrek nieuw voor oud geldt)is expliciet benoemd als rechtshandeling.
+  * De overige zinnen niet.
+* Artikel 6.4 t/m 6.13 zijn allemaal semantisch geduid als beschrijvingen.
+* De formulering is hier en daar nog wel belangrijk: soms verklaart de verkoper dat hij 'niet bekend is met' en soms verklaart de koper dat hij 'bekend is met'. Dit resulteert in een juridische aansprakelijkheid die, zeker als dit een keuze is terug moet komen in het datamodel.  
