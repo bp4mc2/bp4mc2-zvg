@@ -64,6 +64,20 @@ mak:Makelaar a skos:Concept, skoslex:Agent;
 	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed.";
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
+mak:Nutsbedrijf a skos:Concept, skoslex:Agent;
+	rdfs:label "Nutsbedrijf"@nl;
+	skos:prefLabel "Nutsbedrijf";
+	skos:definition "Een bedrijf wat een de infrastructuur beheert om een voorziening aan een adres te leveren.";
+	rdfs:comment "Placeholder";
+	skosthes:broaderGeneric zv:Rechtspersoon;
+.
+mak:Overheidsinstantie a skos:Concept, skoslex:Agent;
+	rdfs:label "Overheidsinstantie"@nl;
+	skos:prefLabel "Overheidsinstantie";
+	skos:definition "Een instantie die namens de overheid een specifieke uitvoerende taak heeft";
+	rdfs:comment "Placeholder";
+	skosthes:broaderGeneric zv:Rechtspersoon;
+.
 mak:Taxateur a skos:Concept, skoslex:Agent;
 	rdfs:label "Taxateur"@nl;
 	skos:definition "een daartoe bevoegd persoon die een waarde toekent in het taxatierapport aan het registergoed op basis van zijn vakbekwaamheid";
@@ -246,6 +260,23 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Woning;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
+mak:Aanschrijven a skos:Concept, skoslex:Act;
+	rdfs:label "Aanschrijven"@nl;
+	skos:prefLabel "Aanschrijven";
+	skoslex:actor mak:Overheidsinstantie;
+	skoslex:actor mak:Nutsbedrijf;
+	skoslex:object mak:OnroerendeZaak
+	skoslex:record mak:ArtikelAanschrijvingOverheidNutsbedrijf
+.
+
+mak:Betalen a skos:Concept, skoslex:Act;
+	rdfs:label "Betalen"@nl;
+	skos:prefLabel "Betalen";
+	skoslex:actor mak:Verkoper;
+	skoslex:actor mak:Koper;
+	skoslex:record mak:ArtikelBetaling;
+.
+
 mak:Garantie a skos:Concept, skoslex:Act;
 	rdfs:label "Garantie"@nl;
 	skos:prefLabel "Garantie";
@@ -254,6 +285,7 @@ mak:Garantie a skos:Concept, skoslex:Act;
 	skoslex:object fin:Waarborgsom;
 	skoslex:record mak:ArtikelBankgarantieWaarborgsom;
 .
+
 mak:IdentificerenKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van cliënt (koop/verkoop)"@nl;
 	skos:prefLabel "Identificeren van cliënt (koop/verkoop)";
@@ -293,6 +325,8 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
 	skoslex:record mak:Koopovereenkomst;
+	skoslex:record mak:ArtikelVerkoopEnKoop;
+	skoslex:record mak:ArtikelVerkoopEnKoopOptieBErfpacht;		
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
@@ -311,6 +345,15 @@ mak:Ontbinden a skos:Concept, skoslex:Act;
 	skos:prefLabel "Ontbinden";
 	skos:definition "Het  ontbinden van de koop wanneer een voorwaarde zich voordoet'";
 .
+
+mak:Opleveren a skos:Concept, skoslex:Act;
+	rdfs:label "Opleveren"@nl;
+	skos:prefLabel "Opleveren";
+	skos:definition "Het  opleveren van een object aan de koper'";
+	skos:scopeNote "Placeholder";	
+	skoslex:actor mak:Verkoper;
+	skoslex:actor mak:Koper;
+.
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
 	skos:prefLabel "Opstellen koopovereenkomst";
@@ -325,6 +368,35 @@ mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	skoslex:object mak:ModelKoopovereenkomst;
 	skoslex:object mak:Koopovereenkomst;
 .
+
+mak:OverdrachtAanspraken a skos:Concept, skoslex:Act;
+	rdfs:label "Overdracht Aanspraken"@nl;
+	skos:prefLabel "Overdracht Aanspraken";
+	skos:definition "Aanspraken'";
+	skos:scopeNote "Placeholder";
+	skoslex:actor mak:Verkoper;
+	skoslex:actor mak:Koper;
+	skoslex:record mak:ArtikelOverdrachtAanspraken;
+.
+
+mak:OverdrachtvanRechtvanErfpacht a skos:Concept, skoslex:Act;
+	rdfs:label "Overdracht Recht van Erfpacht"@nl;
+	skos:prefLabel "Overdracht Recht van Erfpacht";
+	skos:definition "Het  ontbinden van de koop wanneer een voorwaarde zich voordoet'";
+	skos:scopeNote "Placeholder";
+	skoslex:actor mak:Verkoper;
+	skoslex:actor mak:Koper;
+	skoslex:record mak:ArtikelOverdrachtvanhetRechtvanErfpacht;
+.
+mak:Perceelvorming a skos:Concept, skoslex:Act;
+	rdfs:label "Perceelvorming"@nl;
+	skos:prefLabel "Perceelvorming";
+	skos:definition "Het  opmeten van een perceel'";
+	skos:scopeNote "Placeholder";	
+	skoslex:actor kad:kadaster;
+	skoslex:record 
+.
+
 mak:RechercheKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche koop"@nl;
 	skos:prefLabel "Recherche koop";
@@ -779,6 +851,14 @@ mak:ArtikelOverdrachtAanspraken a skos:Concept, skoslex:Record;
 	skoslex:isAbout mak:Aanspraak;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
+mak:ArtikelOverdrachtvanhetRechtvanErfpacht a skos:Concept, skoslex:Record;
+	rdfs:label "Artikel: Overdracht van het recht van erfpacht"@nl;
+	skos:prefLabel "Artikel: Overdracht van het recht van erfpacht";
+	rdfs:comment '''In artikel 7.4 wordt aangegeven dat alle aanspraken die verkoper kan doen gelden, over gaan op koper. Het betreft hier bijvoorbeeld een garantie die verkoper heeft op een verbouwing, op dubbel glas of op de dakbedekking. De in artikel 7.4 gegeven opsomming is niet uitputtend. Indien op de te kopen onroerende zaak de garantie- en waarborgregeling SWK, Woningborg, Bouwgarant of GIW van toepassing is, geldt dat de garantie automatisch overgaat. Informatie over de termijnen en de te volgen procedure is te vinden in de betreffende waarborgregeling.''';
+	skos:scopeNote "Placeholder, nog juiste wettekst nodig";
+	skoslex:isAbout kad:Erfpacht;
+.
+
 #--
 #Hieronder nog verder uit te werken  met structuur object -> act -> record
 #--
