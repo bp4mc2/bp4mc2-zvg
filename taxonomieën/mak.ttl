@@ -262,11 +262,11 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 .
 mak:Aanschrijven a skos:Concept, skoslex:Act;
 	rdfs:label "Aanschrijven"@nl;
-	skos:prefLabel "Aanschrijven";
+	skos:prefLabel "Aanschrijven"@nl;
 	skoslex:actor mak:Overheidsinstantie;
 	skoslex:actor mak:Nutsbedrijf;
-	skoslex:object mak:OnroerendeZaak
-	skoslex:record mak:ArtikelAanschrijvingOverheidNutsbedrijf
+	skoslex:object mak:OnroerendeZaak;
+	skoslex:record mak:ArtikelAanschrijvingOverheidNutsbedrijf;
 .
 
 mak:Betalen a skos:Concept, skoslex:Act;
@@ -388,15 +388,6 @@ mak:OverdrachtvanRechtvanErfpacht a skos:Concept, skoslex:Act;
 	skoslex:actor mak:Koper;
 	skoslex:record mak:ArtikelOverdrachtvanhetRechtvanErfpacht;
 .
-mak:Perceelvorming a skos:Concept, skoslex:Act;
-	rdfs:label "Perceelvorming"@nl;
-	skos:prefLabel "Perceelvorming";
-	skos:definition "Het  opmeten van een perceel'";
-	skos:scopeNote "Placeholder";	
-	skoslex:actor kad:kadaster;
-	skoslex:record 
-.
-
 mak:RechercheKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche koop"@nl;
 	skos:prefLabel "Recherche koop";
