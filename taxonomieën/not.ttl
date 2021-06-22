@@ -215,20 +215,6 @@ not:Betaling a skos:Concept, skoslex:Act;
 	skoslex:agent not:Notaris;
 	skosthes:broaderPartitive not:PasserenAkteLevering;
 .
-not:Eigendomsoverdracht a skos:Concept, skoslex:Act;
-	rdfs:label "Eigendomsoverdracht"@nl;
-	skos:prefLabel "Eigendomsoverdracht"@nl;
-	skos:altLabel "Juridische levering"@nl;
-	skos:altLabel "Transport"@nl;
-	skos:definition "De juridische overdracht vindt plaats bij de notaris via een notariële akte van levering en inschrijving daarvan in de openbare registers."@nl;
-	#rdfs:comment "."@nl;
-	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
-	skosthes:broaderPartitive not:Levering;
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object kad:Eigendom;
-	skoslex:object kad:Erfpacht;
-	skosthes:broaderPartitive not:Levering;
-.
 not:FeitelijkeLevering a skos:Concept, skoslex:Act; #toegevoegd omdat dit voorkomt in koopovereenkomst. is relatie met Levering en met Eigendomsoverdracht. Er is wat voor te zeggen om het begrip Eigedomsoverdracht als generiek begrip te gebruiken, Levering voor de juridische levering (passeren akte) en FeitelijkeLevering voor de sleuteloverdracht.
 	rdfs:label "Feitelijke levering"@nl;
 	skos:prefLabel "Feitelijke levering";
@@ -301,6 +287,20 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
 	#Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer.
 	#Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 	#Dit moet er nog in de taxonomie worden opgenomen.
+.
+not:JuridischeLevering a skos:Concept, skoslex:Act;
+	rdfs:label "Juridische levering"@nl;
+	skos:prefLabel "Juridische levering"@nl;
+	skos:altLabel "Eigendomsoverdracht"@nl;
+	skos:altLabel "Transport"@nl;
+	skos:definition "De juridische overdracht vindt plaats bij de notaris via een notariële akte van levering en inschrijving daarvan in de openbare registers."@nl;
+	#rdfs:comment "."@nl;
+	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
+	skosthes:broaderPartitive not:Levering;
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:object kad:Eigendom;
+	skoslex:object kad:Erfpacht;
+	skosthes:broaderPartitive not:Levering;
 .
 not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als die van Notaris. Voor beiden is wat te zeggen. De mening van de KNB is dat deze meer thuishoort in het domein van de notaris, vanwege de rol die de notaris bij de levering inneemt.
 	#Begrip moet nader worden uitgewerkt met een jurist van de KNB. De levering valt uiteen in feitelijke en juridische levering. Er is begonnen met dit begrip. Later zijn de feitelijke en juridsche eraan toegevoegd, maar dit begrip is nog niet herzien.
