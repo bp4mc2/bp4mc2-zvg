@@ -201,7 +201,7 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	#rdfs:comment "Archiveren van de akte van levering.";
 	skoslex:actor not:Notaris;
 	skoslex:object not:AkteVanLeveringOnroerendeZaak;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
 .
 not:Betaling a skos:Concept, skoslex:Act;
 	rdfs:label "Betaling"@nl;
@@ -270,7 +270,7 @@ not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:object zv:Identiteitsdocument;
 	skoslex:object zv:BasisregistratiePersonen;
 	skoslex:actor not:Notaris;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
 	skosthes:broaderGeneric not:IdentificerenAkteNotaris;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
@@ -283,16 +283,16 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
 	skoslex:object kad:OpenbareRegisters;
 	skoslex:object not:AfschriftAkte;
 	skoslex:object not:TitelVanAankomst;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
 	#Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer.
-	#Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
-	#Dit moet er nog in de taxonomie worden opgenomen.
+	#Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken. Dit moet er nog in de taxonomie worden opgenomen.
 .
 not:JuridischeLevering a skos:Concept, skoslex:Act;
 	rdfs:label "Juridische levering"@nl;
 	skos:prefLabel "Juridische levering"@nl;
 	skos:altLabel "Eigendomsoverdracht"@nl;
 	skos:altLabel "Transport"@nl;
+	skos:altLabel "Overdracht van zakelijk recht"@nl;
 	skos:definition "De juridische overdracht vindt plaats bij de notaris via een notariële akte van levering en inschrijving daarvan in de openbare registers."@nl;
 	#rdfs:comment "."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
@@ -312,6 +312,8 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	skos:altLabel "Transport";
 	skos:definition "Levering is in het Nederlands recht een vast onderdeel van de eigendomsoverdracht. Het omvat het geheel aan handelingen dat tot doel heeft een goed van het vermogen van een vervreemder in het vermogen van een verkrijger te doen overgaan.";
 	rdfs:comment "Verschillende te verrichten handelingen met als doel om tot eigendomsoverdracht over te gaan.";
+	skos:scopeNote "Wijzigen van een eigenaar van de rechten die horen bij een (onroerende) zaak (bijvoorbeeld eigendomsrecht).";
+	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht, zijnde hypotheekrecht. Dit gebeurt meestal bij dezelfde notaris, maar dat is niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheekrecht en er geen andere beperkte rechten (bijv. erfdienstbaarheid) op zitten.";
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=83>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=89&lid=4>;
 	skoslex:object kad:OnroerendeZaak;
@@ -320,7 +322,8 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	skoslex:actor kad:Rechthebbende;
 	skoslex:agent not:Notaris;
 	skoslex:record not:AkteVanLeveringOnroerendeZaak;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skoslex:object kad:ZakelijkRecht;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen (akte)"@nl;
@@ -347,19 +350,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object not:AkteVanLeveringOnroerendeZaak;
 	skosthes:broaderGeneric not:OpstellenAkte;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
-.
-not:OverdragenZakelijkRecht a skos:Concept, skoslex:Act;
-	rdfs:label "Overdragen zakelijk recht"@nl;
-	skos:definition "Verschillende te verrichten handelingen om eigendom te kunnen overdragen.";
-	rdfs:comment "Wijzigen van een eigenaar van de rechten die horen bij een (onroerende) zaak (bijvoorbeeld eigendomsrecht).";
-	skos:scopeNote "Vindt doorgaans tegelijkertijd plaats met het vestigen van het beperkt recht, zijnde hypotheekrecht. Dit gebeurt meestal bij dezelfde notaris, maar dat is niet altijd het geval. Ook is er niet altijd sprake van beperkt recht, bijvoorbeeld als iemand een huis kan kopen zonder hypotheekrecht en er geen andere beperkte rechten (bijv. erfdienstbaarheid) op zitten.";
-	skoslex:actor not:Vervreemder;
-	skoslex:actor not:Verkrijger;
-	skoslex:object kad:ZakelijkRecht;
-	skoslex:agent not:Notaris;
-	skoslex:record not:AkteVanLeveringOnroerendeZaak;
-	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
+	skosthes:broaderPartitive not:JuridischeLevering;
 .
 not:Passeren a skos:Concept, skoslex:Act;
 	rdfs:label "Passeren"@nl;
@@ -397,7 +388,7 @@ not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object not:DatumPasserenAkteLevering;
 	skoslex:object not:AkteVanLeveringOnroerendeZaak;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
 	skosthes:broaderGeneric not:Passeren;
 	#skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor.";
 .
@@ -435,7 +426,7 @@ not:RechercheAkteLevering a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object kad:OnroerendeZaak;
         skoslex:object kad:OpenbareRegisters;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
 	skosthes:broaderGeneric not:RechercheNotaris;
 .
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
@@ -447,7 +438,7 @@ not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object zv:Overdrachtsbelasting;
 	skoslex:object zv:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:Levering;
 .
 not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	rdfs:label "Registreren akte registratiewet 1970"@nl;
@@ -478,7 +469,7 @@ not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object not:AfschriftAkte; #Of zou hier de minuut moeten staan?
 	skoslex:object zv:RegisterBelastingdienst;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
 	skosthes:broaderGeneric not:RegistrerenAkteRegistratiewet1970;
 	skos:editorialNote "In het notariaat wordt met registeren van de akte bedoeld dat deze bij de Belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.";
 .
@@ -491,7 +482,7 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	skoslex:actor not:Notaris;
 	skoslex:object fin:Waarborgsom;
 	skoslex:object not:Kwaliteitsrekening;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:Levering;
 .
 not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 	rdfs:label "Verlenen volmacht"@nl;
