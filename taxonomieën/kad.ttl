@@ -152,7 +152,7 @@ kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53>;
 	skoslex:object kad:BasisregistratieKadaster;
 	skoslex:actor kad:Bewaarder;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
 .
 kad:Doorhaling a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Doorhaling;
@@ -197,7 +197,7 @@ kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
 	skoslex:object kad:Registergoed;
 	skoslex:actor not:Notaris;
 	skoslex:actor kad:Bewaarder;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:JuridischeLevering;
         #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 .
 kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
