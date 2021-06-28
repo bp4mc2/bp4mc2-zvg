@@ -39,7 +39,8 @@
 	skos:member mak:Koop;
 	skos:member mak:Makelaar;
 	skos:member mak:Koopovereenkomst;
-	skos:member not:OverdragenZakelijkRecht;
+	skos:member not:JuridischeLevering;
+	skos:member not:FeitelijkeLevering;
 	skos:member not:VestigenBeperktRecht;
 	skos:member not:Leveringsakte;
 	skos:member not:Hypotheekakte;
@@ -180,7 +181,7 @@ zv:AangifteAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	skoslex:object zv:Overdrachtsbelasting;
 	skoslex:object zv:RegisterBelastingdienst;
 	skoslex:object not:Grondslagwaarde;
-	skosthes:broaderPartitive not:OverdragenZakelijkRecht;
+	skosthes:broaderPartitive not:Levering;
 .
 zv:AanOfVerkoopVanEenHuis a skos:Concept, skoslex:Act;
 	rdfs:label "Aan- of verkoop van een huis"@nl;
