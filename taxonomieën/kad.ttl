@@ -448,16 +448,7 @@ kad:ObjectlocatieBinnenland a skos:Concept, skoslex:Object;
 	skos:prefLabel "Objectlocatie binnenland";
 	skos:definition "Een ObjectlocatieBinnenland is een adres binnen nederland.";
 	rdfs:comment "Een ObjectlocatieBinnenland is een adres binnen nederland. Meestal is dit een adres dat in de BAG voorkomt, maar het kan voorkomen dat een adres niet kan worden gekoppeld aan een BAG adres.";
-.
-kad:ObjectlocatieBinnenland a skos:Concept, skoslex:Object;
-	skos:exactMatch brk:Onroerende_zaak;
-	rdfs:label "Onroerende zaak"@nl;
-	skos:prefLabel "Onroerende zaak";
-	skos:altLabel "Onroerend goed";
-	skos:definition "Onroerend zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken. Onroerende zaken kunnen bezwaard worden met een beperkt of zakelijk recht.";
-	rdfs:comment "Een onroerende zaak is de grond en alles wat erin zit of erop staat. Daarbij horen ook zaken die vastzitten aan de grond of aan een gebouw en die je niet kunt meenemen zonder iets te beschadigen. Bijvoorbeeld een perceel grond, een woning, fabriekspand, winkel etc.";
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1>;
-	skosthes:broaderGeneric kad:Zaak
+	skos:scopeNote "Een Objectlocatie Binnenland is gemodelleerd als een BAGadres. In het huidige bijhoudingsproces van de BRK worden de gegevens van een ObjectlocatieBinnenland initieel geregistreerd conform de Openbare registers. Kort daarna worden deze gegevens vervangen door de BAG-gegevens. In uitzonderlijke situaties kunnen de BAG-gegevens niet worden overgenomen. Dergelijke situatie worden teruggemeld aan de BRP.";
 .
 kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Onroerende_zaak;
@@ -780,7 +771,7 @@ kad:ObjectlocatieBinnenlandIdentificatie a skos:Concept;
 	rdfs:label "Objectlocatie binnenland identificatie"@nl;
 	skos:prefLabel "Objectlocatie binnenland identificatie";
 	skos:definition "Een Objectlocatie binnenland identificatie is de unieke identificatie van een objectlocatie binnenland in de BRK.";
-	skos:semanticRelation kad:Object;
+	skos:semanticRelation kad:ObjectlocatieBinnenland;
 .
 kad:OnroerendeZaakKadastraleAanduiding a skos:Concept;
 	rdfs:label "Kadastrale aanduiding"@nl;
