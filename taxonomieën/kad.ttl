@@ -444,6 +444,7 @@ kad:Landgoed a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
 kad:ObjectlocatieBinnenland a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:ObjectlocatieBinnenland;
 	rdfs:label "Objectlocatie binnenland"@nl;
 	skos:prefLabel "Objectlocatie binnenland";
 	skos:definition "Een ObjectlocatieBinnenland is een adres binnen nederland.";
