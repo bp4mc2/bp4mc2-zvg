@@ -157,6 +157,7 @@ mak:Lasten a skos:Concept, skoslex:Object;
 mak:Leaseovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Leaseovereenkomst"@nl;
 	skos:prefLabel "Leaseovereenkomst";
+	skos:definition " ";
 .
 mak:LijstVanGoederen a skos:Concept, skoslex:Object;
 	rdfs:label "Lijst van goederen"@nl;
@@ -795,12 +796,16 @@ mak:ArtikelOnbekenheidsverklaring a skos:Concept, skoslex:Record;
 	skoslex:isAbout kad:Canon;
 	skosthes:broaderPartitive mak:Onbekendheidsverklaring;
 .
-mak:ArtikelFeitelijkeLeveringOverdrachtAanspraken a skos:Concept, skoslex:Record;
+mak:ArtikelFeitelijkeLevering a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7.1: Feitelijke levering"@nl;
 	skos:prefLabel "Artikel 7.1: Feitelijke levering";
 	rdfs:comment '''De feitelijke levering vindt plaats door het overhandigen van de sleutels en het in bezit nemen van het verkochte. In dit artikel wordt aangegeven dat de levering plaatsvindt op het moment van het ondertekenen van de akte van levering bij de notaris, tenzij tussen verkoper en koper een ander tijdstip is overeengekomen.
 Indien verkoper en koper een ander tijdstip van feitelijke levering overeenkomen, zijn over het algemeen aanvullende afspraken gewenst, bijvoorbeeld over het tijdstip waarop het risico overgaat (artikel 10). Overleg in dergelijke gevallen vooraf met uw verzekeraar en hypotheekverstrekker.''';
 	skos:scopeNote "Artikel 7.1 van de model koopovereenkomst.";
+	skoslex:isAbout not:FeitelijkeLevering;
+	skoslex:isAbout mak:Huurovereenkomst;
+	skoslex:isAbout mak:Leaseovereenkomst;
+	skoslex:isAbout mak:Huurkoopovereenkomst;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOngevorderdLeeg a skos:Concept, skoslex:Record;
@@ -808,7 +813,9 @@ mak:ArtikelOngevorderdLeeg a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel 7.2: ongevorderd en leeg";
 	skos:scopeNote "Artikel 7.2 van de model koopovereenkomst.";
 	skosthes:broaderPartitive mak:Koopovereenkomst;
+	skoslex:isAbout mak:AanspraakTotGebruik;
 	skoslex:isAbout not:Ongevorderd;
+	skoslex:isAbout mak:LeegEnOntruimd;
 .
 mak:ArtikelHuurLeaseHuurkoopovereenkomsten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7.3: huur-, lease- of huurkoopovereenkomsten"@nl;
@@ -816,9 +823,8 @@ mak:ArtikelHuurLeaseHuurkoopovereenkomsten a skos:Concept, skoslex:Record;
 	rdfs:comment '''Tevens wordt aangegeven hoe de levering plaatsvindt, namelijk vrij van huur-, lease- of huurkoopovereenkomsten met uitzondering van eventueel in te vullen overeenkomsten. Het gaat hierbij dus niet alleen om de vraag of de onroerende zaak geheel of gedeeltelijk verhuurd is, maar ook of verkoper bepaalde onderdelen zoals de cv-ketel of de keuken gehuurd of geleased heeft. Als de onroerende zaak vrij van huur etc. wordt geleverd, zijn de artikelen 6.10 en 7.3 niet van toepassing.
 Indien verkoper en koper een ander tijdstip van feitelijke levering overeenkomen, zijn over het algemeen aanvullende afspraken gewenst, bijvoorbeeld over het tijdstip waarop het risico overgaat (artikel 10). Overleg in dergelijke gevallen vooraf met uw verzekeraar en hypotheekverstrekker.''';
 	skos:scopeNote "Artikel 7.3 van de model koopovereenkomst.";
-	skoslex:isAbout mak:Huurovereenkomst;
-	skoslex:isAbout mak:Leaseovereenkomst;
-	skoslex:isAbout mak:Huurkoopovereenkomst;
+	skoslex:isAbout mak:BetalingToekomstigeTermijn;
+	skoslex:isAbout mak:BeslagToekomstigeTermijn;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOverdrachtAanspraken a skos:Concept, skoslex:Record;
@@ -981,6 +987,11 @@ mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
 	rdfs:label "Aanschrijving overheid of nutsbedrijf"@nl;
 	skos:prefLabel "Aanschrijving overheid of nutsbedrijf";
 .
+mak:AanspraakTotGebruik  a skos:Concept, skoslex:Object;
+	rdfs:label "Aanspraak tot gebruik"@nl;
+	skos:prefLabel "Aanspraak tot gebruik";
+	skos:semanticRelation kad:OnroerendeZaak;
+.
 mak:AanwijzerNotaris a skos:Concept;
 	rdfs:label "Aanwijzer notaris"@nl;
 	skos:prefLabel "Aanwijzer notaris";
@@ -993,17 +1004,33 @@ mak:AardClausule a skos:Concept;
 	skos:definition "Een aanduiding van de clausule of artikel.";
 	skos:semanticRelation mak:Voorbehoud;	
 .
+mak:Baten a skos:Concept, skoslex:Object;
+	rdfs:label "Baten"@nl;
+	skos:prefLabel "Baten";
+	skos:definition "Baten uit de onroerende zaak, bijvoorbeeld huren.";
+	skos:semanticRelation mak:OnroerendeZaak;
+.
 mak:BetalerKosten a skos:Concept;
 	rdfs:label "Betaler kosten"@nl;
 	skos:prefLabel "Betaler kosten";
 	skos:definition "Degene die de kosten voor de levering betaalt, de koper of de verkoper.";
 	skos:semanticRelation mak:KostenEnOverdrachtsbelasting;
 .
-mak:Baten a skos:Concept, skoslex:Object;
-	rdfs:label "Baten"@nl;
-	skos:prefLabel "Baten";
-	skos:definition "Baten uit de onroerende zaak, bijvoorbeeld huren.";
-	skos:semanticRelation mak:OnroerendeZaak;
+mak:BeslagToekomstigeTermijn a skos:Concept, skoslex:Act;
+	rdfs:label "Beslag toekomstige termijn"@nl;
+	skos:prefLabel "Beslag toekomstige termijn";
+	skos:definition "Beslag op toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten.";
+	skos:semanticRelation mak:Huurovereenkomst;
+	skos:semanticRelation mak:Leaseovereenkomst;
+	skos:semanticRelation mak:Huurkoopovereenkomst;
+.
+mak:BetalingToekomstigeTermijn a skos:Concept, skoslex:Act;
+	rdfs:label "Betaling toekomstige termijn"@nl;
+	skos:prefLabel "Betaling toekomstige termijn";
+	skos:definition "Betalingen van toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten.";
+	skos:semanticRelation mak:Huurovereenkomst;
+	skos:semanticRelation mak:Leaseovereenkomst;
+	skos:semanticRelation mak:Huurkoopovereenkomst;
 .
 mak:Heffingen a skos:Concept, skoslex:Object;
 	rdfs:label "Heffingen"@nl;
@@ -1040,6 +1067,13 @@ mak:KoopStandaardBetalingscondities a skos:Concept;
 	skos:definition "Een indicatie of de standaard betalingscondities van toepassing zijn. Standaard vind de betaling plaats bij de levering door de notaris.";
 	skos:semanticRelation mak:Koop;
 .
+mak:LeegEnOntruimd a skos:Concept, skoslex:Object;
+	rdfs:label "Leeg en ontruimd"@nl;
+	skos:prefLabel "Leeg en ontruimd";
+	skos:definition "Een woning is leeg en ontruimd als alle niet meeverkochte roerende goederen eruit zijn verwijderd.";
+	skos:semanticRelation kad:OnroerendeZaak;
+.
+
 mak:LijstVanGoederenReferentie a skos:Concept;
 	rdfs:label "Referentie lijst van goederen"@nl;
 	skos:prefLabel "Referentie lijst van goederen";
