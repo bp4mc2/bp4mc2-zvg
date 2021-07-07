@@ -52,4 +52,11 @@
   * De aansprakelijkheid van de verkoper voor de herstelkosten (waarvoor de aftrek nieuw voor oud geldt)is expliciet benoemd als rechtshandeling.
   * De overige zinnen niet.
 * Artikel 6.4 t/m 6.13 zijn allemaal semantisch geduid als beschrijvingen.
-* De formulering is hier en daar nog wel belangrijk: soms verklaart de verkoper dat hij 'niet bekend is met' en soms verklaart de koper dat hij 'bekend is met'. Dit resulteert in een juridische aansprakelijkheid die, zeker als dit een keuze is terug moet komen in het datamodel.  
+* De formulering is hier en daar nog wel belangrijk: soms verklaart de verkoper dat hij 'niet bekend is met' en soms verklaart de koper dat hij 'bekend is met'. Dit resulteert in een juridische aansprakelijkheid die, zeker als dit een keuze is terug komt in het datamodel.
+# Artikel 7
+* Artikel 7.1 is een standaard clausule over de feitelijke levering (not:FeitelijkeLevering) en ook over de bij de aan de onroerende zaak horende huurovereenkomsten (mak:Huurovereenkomst), leaseovereenkomsten (mak:Leaseovereenkomst) en huurkoopovereenkomsten (mak:Huurkoopovereenkomst). Dit is niet echt een aparte rechtshandeling en wordt dus ook niet als zodanig geduid.
+* Dit geldt ook voor artikel 7.2
+* Artikel 7.3 beschrijft 2 potentiële rechtshandelingen, namelijk betalingen van toekomstige termijnen (mak:BetalingToekomstigeTermijn) en beslagen (mak:BeslagToekomstigeTermijn)van toekomstige termijnen op huurovereenkomsten (mak:Huurovereenkomst), leaseovereenkomsten (mak:Leaseovereenkomst) en huurkoopovereenkomsten (mak:Huurkoopovereenkomst).
+* Artikel 7.4 zegt eigenlijk alleen maar dat aanspraken (mak:aanspraak) overgaan van verkoper naar koper, dus onderdeel zijn van de koop (mak:ArtikelOverdrachtAanspraken skosthes:broaderPartitive mak:Koopovereenkomst).
+# Artikel 8
+
