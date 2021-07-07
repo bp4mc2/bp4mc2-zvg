@@ -327,7 +327,7 @@ mak:Koop a skos:Concept, skoslex:Act;
 	skoslex:object mak:Woning;
 	skoslex:record mak:Koopovereenkomst;
 	skoslex:record mak:ArtikelVerkoopEnKoop;
-	skoslex:record mak:ArtikelVerkoopEnKoopOptieBErfpacht;		
+	skoslex:record mak:ArtikelVerkoopEnKoopOptieBErfpacht;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 .
@@ -351,7 +351,7 @@ mak:Opleveren a skos:Concept, skoslex:Act;
 	rdfs:label "Opleveren"@nl;
 	skos:prefLabel "Opleveren";
 	skos:definition "Het  opleveren van een object aan de koper'";
-	skos:scopeNote "Placeholder";	
+	skos:scopeNote "Placeholder";
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 .
@@ -838,7 +838,7 @@ mak:ArtikelOverdrachtAanspraken a skos:Concept, skoslex:Record;
 mak:ArtikelBatenLastenCanons a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 8: baten, lasten en canons"@nl;
 	skos:prefLabel "Artikel 8: baten, lasten en canons";
-	rdfs:comment "In artikel 8 wordt aangegeven op welke datum de baten (bijvoorbeeld de huren), de lasten, belastingen, heffingen en verschuldigde canons overgaan op koper. Meestal wordt overeengekomen dat deze overgaan met ingang van de datum van eigendomsoverdracht: zie artikel 4. Belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak worden niet tussen verkoper en koper verrekend. Wanneer verkoper verhuist naar een andere gemeente dan heeft verkoper doorgaans recht op ontheffing van de belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak voor de resterende volle maanden van het jaar. Verhuist verkoper naar een andere woning in dezelfde gemeente dan blijft de aanslag doorgaans in stand. Raadpleeg voor meer informatie over belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak uw gemeente."; 
+	rdfs:comment "In artikel 8 wordt aangegeven op welke datum de baten (bijvoorbeeld de huren), de lasten, belastingen, heffingen en verschuldigde canons overgaan op koper. Meestal wordt overeengekomen dat deze overgaan met ingang van de datum van eigendomsoverdracht: zie artikel 4. Belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak worden niet tussen verkoper en koper verrekend. Wanneer verkoper verhuist naar een andere gemeente dan heeft verkoper doorgaans recht op ontheffing van de belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak voor de resterende volle maanden van het jaar. Verhuist verkoper naar een andere woning in dezelfde gemeente dan blijft de aanslag doorgaans in stand. Raadpleeg voor meer informatie over belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak uw gemeente.";
 	skos:scopeNote "Artikel 8 van de model koopovereenkomst.";
 	skoslex:isAbout mak:Bate;
 	skoslex:isAbout mak:Last;
@@ -859,10 +859,10 @@ mak:ArtikelHoofdelijkheid a skos:Concept, skoslex:Record;
 mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 10: Overmacht, risico, verzekeringen"@nl;
 	skos:prefLabel "Artikel 10: Overmacht, risico, verzekeringen";
-	rdfs:comment "Volgens artikel 6 van de koopovereenkomst moet de onroerende zaak worden geleverd in de staat waarin het zich bevindt bij het tot stand komen van de koopovereenkomst. Tussen dit tijdstip en het moment van de eigendomsoverdracht kan er van alles gebeuren, waardoor de staat verandert. Vanaf het moment van de notariële eigendomsoverdracht is de onroerende zaak voor risico van koper. Omdat het tekenen van de akte van levering doorslaggevend is, doet verkoper er verstandig aan om zijn opstalverzekering niet voor die tijd op te zeggen. Het risico gaat namelijk niet automatisch op koper over als de levering door toedoen of nalaten van koper wordt uitgesteld. Als de feitelijke levering eerder plaats vindt dan de juridische levering, rust het risico op koper vanaf de feitelijke levering en doet koper er verstandig aan om een opstalverzekering vanaf dat moment af te sluiten. Het is echter mogelijk dat koper de koopovereenkomst ontbindt nadat de overdracht heeft plaatsgevonden. Indien artikel 7:10 lid 3 BW in dat geval van toepassing zou zijn, zouden de risico's verbonden aan de onroerende zaak door de ontbinding van de koopovereenkomst bij verkoper zijn achtergebleven. Dit kan grote gevolgen hebben voor verkoper, omdat deze na de overdracht niet meer verzekerd zal zijn voor het verkochte. Door de toepassing van artikel 7:10 lid 3 BW uit te sluiten voor die risico's die door een gebruikelijke opstalverzekering worden gedekt, wordt voorkomen dat na ontbinding van de koopovereenkomst op goede gronden door koper, bepaalde risico's voor de onroerende zaak terug gaan naar verkoper en blijven die risico's bij koper die daar wel voor verzekerd zal zijn.
+	rdfs:comment '''Volgens artikel 6 van de koopovereenkomst moet de onroerende zaak worden geleverd in de staat waarin het zich bevindt bij het tot stand komen van de koopovereenkomst. Tussen dit tijdstip en het moment van de eigendomsoverdracht kan er van alles gebeuren, waardoor de staat verandert. Vanaf het moment van de notariële eigendomsoverdracht is de onroerende zaak voor risico van koper. Omdat het tekenen van de akte van levering doorslaggevend is, doet verkoper er verstandig aan om zijn opstalverzekering niet voor die tijd op te zeggen. Het risico gaat namelijk niet automatisch op koper over als de levering door toedoen of nalaten van koper wordt uitgesteld. Als de feitelijke levering eerder plaats vindt dan de juridische levering, rust het risico op koper vanaf de feitelijke levering en doet koper er verstandig aan om een opstalverzekering vanaf dat moment af te sluiten. Het is echter mogelijk dat koper de koopovereenkomst ontbindt nadat de overdracht heeft plaatsgevonden. Indien artikel 7:10 lid 3 BW in dat geval van toepassing zou zijn, zouden de risico's verbonden aan de onroerende zaak door de ontbinding van de koopovereenkomst bij verkoper zijn achtergebleven. Dit kan grote gevolgen hebben voor verkoper, omdat deze na de overdracht niet meer verzekerd zal zijn voor het verkochte. Door de toepassing van artikel 7:10 lid 3 BW uit te sluiten voor die risico's die door een gebruikelijke opstalverzekering worden gedekt, wordt voorkomen dat na ontbinding van de koopovereenkomst op goede gronden door koper, bepaalde risico's voor de onroerende zaak terug gaan naar verkoper en blijven die risico's bij koper die daar wel voor verzekerd zal zijn.
 Artikel 10 regelt wat er moet gebeuren in geval van overmacht (bijvoorbeeld blikseminslag of brandstichting door derden) waar koper en verkoper geen van beiden iets aan kunnen doen. Als de onroerende zaak voor de eigendomsoverdracht bijvoorbeeld door brand geheel of gedeeltelijk wordt verwoest, zijn beide partijen niet langer aan de koopovereenkomst gebonden. Als koper de onroerende zaak toch wil afnemen moet verkoper hem de rechten uit bijvoorbeeld een opstalverzekering overdragen. Ook verkoper kan bewerkstelligen dat de onroerende zaak toch conform de koopovereenkomst in eigendom wordt overgedragen.
 Hij dient dan tijdig aan koper mede te delen dat hij de onroerende zaak voor de afgesproken datum van eigendomsoverdracht (of als dat later is: binnen vier weken na het onheil) voor eigen rekening zal herstellen.
-Als de situatie zoals bedoeld in dit artikel optreedt, is het verstandig dat partijen eerst met elkaar overleggen. Partijen kunnen uiteindelijk, mochten ze niet tot een aanvaardbare oplossing komen, kiezen de ontbinding van de koopovereenkomst in stand te laten. Het is verstandig een dergelijke afspraak schriftelijk vast te leggen.";
+Als de situatie zoals bedoeld in dit artikel optreedt, is het verstandig dat partijen eerst met elkaar overleggen. Partijen kunnen uiteindelijk, mochten ze niet tot een aanvaardbare oplossing komen, kiezen de ontbinding van de koopovereenkomst in stand te laten. Het is verstandig een dergelijke afspraak schriftelijk vast te leggen.''';
 	skos:scopeNote "Artikel 10 van de model koopovereenkomst.";
 	skoslex:isAbout not:VanRechtswegeOntbonden;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -870,8 +870,8 @@ Als de situatie zoals bedoeld in dit artikel optreedt, is het verstandig dat par
 mak:ArtikelIngebrekestelling a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 11.1: ingebrekestelling/ontbinding"@nl;
 	skos:prefLabel "Artikel 11.1: ingebrekestelling/ontbinding";
-	rdfs:comment "Indien één van de partijen niet voldoet aan zijn verplichtingen (in de koopovereenkomst of in de wet vastgelegd), schiet hij tekort (wanprestatie). In dit artikel wordt vooropgesteld, dat wanprestatie altijd duidelijk moet worden geconstateerd voordat de wederpartij iets kan ondernemen op grond van wanprestatie.
-Dit constateren vindt plaats door de andere partij in gebreke te stellen, dat wil zeggen, in een officieel stuk mee te delen dat deze zijn verplichtingen niet nakomt. Dit moet gepaard gaan met een sommatie om alsnog binnen acht dagen de verplichting na te komen. Hiermee geeft men de wederpartij als het ware een laatste kans.";
+	rdfs:comment '''Indien één van de partijen niet voldoet aan zijn verplichtingen (in de koopovereenkomst of in de wet vastgelegd), schiet hij tekort (wanprestatie). In dit artikel wordt vooropgesteld, dat wanprestatie altijd duidelijk moet worden geconstateerd voordat de wederpartij iets kan ondernemen op grond van wanprestatie.
+Dit constateren vindt plaats door de andere partij in gebreke te stellen, dat wil zeggen, in een officieel stuk mee te delen dat deze zijn verplichtingen niet nakomt. Dit moet gepaard gaan met een sommatie om alsnog binnen acht dagen de verplichting na te komen. Hiermee geeft men de wederpartij als het ware een laatste kans.''';
 	skos:scopeNote "Artikel 11.1 van de model koopovereenkomst.";
 	skoslex:isAbout mak:Ingebrekestelling;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -879,7 +879,7 @@ Dit constateren vindt plaats door de andere partij in gebreke te stellen, dat wi
 mak:ArtikelOntbindenTekortkoming a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 11.2: ontbinding op grond van tekortkoming"@nl;
 	skos:prefLabel "Artikel 11.2: ontbinding op grond van tekortkoming";
-	rdfs:comment "Artikel 11 zegt nu dat de koopovereenkomst door middel van een schriftelijke verklaring aan de nalatige kan worden ontbonden, wanneer er na het verstrijken van deze laatste kans, acht dagen na de ingebrekestelling, nog niets is gebeurd. Het tweede lid van artikel 11 stelt dat de "foute" partij bij ontbinding van de koopovereenkomst een boete ter grootte van tien procent van de koopsom moet betalen. Mocht de werkelijke schade hoger zijn dan de boete, dan kan een aanvullende schadevergoeding worden geëist. Met het betalen van de schadevergoeding alleen is de foute partij er niet altijd van af. De zogenaamde kosten van verhaal, dat zijn bijvoorbeeld invorderingskosten, mogen ook gevorderd worden.";
+	rdfs:comment '''Artikel 11 zegt nu dat de koopovereenkomst door middel van een schriftelijke verklaring aan de nalatige kan worden ontbonden, wanneer er na het verstrijken van deze laatste kans, acht dagen na de ingebrekestelling, nog niets is gebeurd. Het tweede lid van artikel 11 stelt dat de "foute" partij bij ontbinding van de koopovereenkomst een boete ter grootte van tien procent van de koopsom moet betalen. Mocht de werkelijke schade hoger zijn dan de boete, dan kan een aanvullende schadevergoeding worden geëist. Met het betalen van de schadevergoeding alleen is de foute partij er niet altijd van af. De zogenaamde kosten van verhaal, dat zijn bijvoorbeeld invorderingskosten, mogen ook gevorderd worden.''';
 	skos:scopeNote "Artikel 11.2 van de model koopovereenkomst.";
 	skoslex:isAbout mak:OntbindingTekortkoming;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -887,8 +887,8 @@ mak:ArtikelOntbindenTekortkoming a skos:Concept, skoslex:Record;
 mak:ArtikelSchadevergoeding a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 11.3: Schadevergoeding"@nl;
 	skos:prefLabel "Artikel 11.3: Schadevergoeding";
-	rdfs:comment "Daarmee hebben noch koper noch verkoper echter bereikt wat zij oorspronkelijk wilden. De "goede" partij heeft daarom de mogelijkheid na het verstrijken van de termijn van 8 dagen in plaats van ontbinding nakoming van de koopovereenkomst te eisen. Hij wil natuurlijk wel voor de geleden schade een vergoeding hebben.
-Om zijn vordering kracht bij te zetten, kan hij met ingang van de negende dag na de ingebrekestelling, per dag een boete vorderen totdat de koopovereenkomst nagekomen is. Het bedrag van de boete is vastgesteld op drie promille van de koopsom van de onroerende zaak, met een maximum van tien procent van de koopsom, onverminderd het recht op een aanvullende schadevergoeding indien de daadwerkelijke schade hoger is dan de onmiddellijk opeisbare boete, en onverminderd vergoeding van kosten van verhaal. Als de partij die nakoming verlangt, toch besluit om de koopovereenkomst alsnog te ontbinden, is de nalatige partij een boete verschuldigd van tien procent van de koopsom, verminderd met de reeds betaalde dagboete (op grond van 11.3), maar onverminderd het recht op aanvullende schadevergoeding indien de werkelijke schade hoger is en onverminderd vergoeding van kosten van verhaal. Ook als een nalatige partij, die in gebreke is gesteld, toch aan zijn verplichtingen gaat voldoen, heeft de wederpartij recht op schadevergoeding indien deze schade heeft geleden.";
+	rdfs:comment '''Daarmee hebben noch koper noch verkoper echter bereikt wat zij oorspronkelijk wilden. De "goede" partij heeft daarom de mogelijkheid na het verstrijken van de termijn van 8 dagen in plaats van ontbinding nakoming van de koopovereenkomst te eisen. Hij wil natuurlijk wel voor de geleden schade een vergoeding hebben.
+Om zijn vordering kracht bij te zetten, kan hij met ingang van de negende dag na de ingebrekestelling, per dag een boete vorderen totdat de koopovereenkomst nagekomen is. Het bedrag van de boete is vastgesteld op drie promille van de koopsom van de onroerende zaak, met een maximum van tien procent van de koopsom, onverminderd het recht op een aanvullende schadevergoeding indien de daadwerkelijke schade hoger is dan de onmiddellijk opeisbare boete, en onverminderd vergoeding van kosten van verhaal. Als de partij die nakoming verlangt, toch besluit om de koopovereenkomst alsnog te ontbinden, is de nalatige partij een boete verschuldigd van tien procent van de koopsom, verminderd met de reeds betaalde dagboete (op grond van 11.3), maar onverminderd het recht op aanvullende schadevergoeding indien de werkelijke schade hoger is en onverminderd vergoeding van kosten van verhaal. Ook als een nalatige partij, die in gebreke is gesteld, toch aan zijn verplichtingen gaat voldoen, heeft de wederpartij recht op schadevergoeding indien deze schade heeft geleden.''';
 	skos:scopeNote "Artikel 11.3 van de model koopovereenkomst.";
 	skoslex:isAbout mak:Schadevergoeding;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -999,7 +999,7 @@ mak:AardClausule a skos:Concept;
 	rdfs:label "Aard Clausule"@nl;
 	skos:prefLabel "Aard Clausule";
 	skos:definition "Een aanduiding van de clausule of artikel.";
-	skos:semanticRelation mak:Voorbehoud;	
+	skos:semanticRelation mak:Voorbehoud;
 .
 mak:Bate a skos:Concept, skoslex:Object;
 	rdfs:label "Bate"@nl;
@@ -1087,14 +1087,14 @@ mak:LijstVanGoederenWaarde a skos:Concept;
 	skos:prefLabel "Waarde lijst van goederen";
 	skos:definition "Een waarde van de lijst van goederen.";
 .
-mak:OntbindingTekortkoming, skoslex:Object;
+mak:OntbindingTekortkoming a skoslex:Object;
 	rdfs:label "Ontbinding op basis van tekortkoming"@nl;
 	skos:prefLabel "Ontbinding op basis van tekortkoming";
 	skos:definition "Ontbinding op basis van tekortkoming";
 	skos:semanticRelation mak:Ingebrekestelling;
 	skos:semanticRelation mak:Koop;
 .
-mak:Schadevergoeding, skoslex:Object;
+mak:Schadevergoeding a skoslex:Object;
 	rdfs:label "Schadevergoeding"@nl;
 	skos:prefLabel "Schadevergoeding";
 	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming";
