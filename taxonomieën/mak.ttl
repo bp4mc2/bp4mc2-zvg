@@ -835,20 +835,17 @@ mak:ArtikelOverdrachtAanspraken a skos:Concept, skoslex:Record;
 	skoslex:isAbout mak:Aanspraak;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
-
-
-#--
-#Hieronder nog verder uit te werken  met structuur object -> act -> record
-#--
 mak:ArtikelBatenLastenCanons a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 8: baten, lasten en canons"@nl;
 	skos:prefLabel "Artikel 8: baten, lasten en canons";
 	rdfs:comment "In artikel 8 wordt aangegeven op welke datum de baten (bijvoorbeeld de huren), de lasten, belastingen, heffingen en verschuldigde canons overgaan op koper. Meestal wordt overeengekomen dat deze overgaan met ingang van de datum van eigendomsoverdracht: zie artikel 4. Belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak worden niet tussen verkoper en koper verrekend. Wanneer verkoper verhuist naar een andere gemeente dan heeft verkoper doorgaans recht op ontheffing van de belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak voor de resterende volle maanden van het jaar. Verhuist verkoper naar een andere woning in dezelfde gemeente dan blijft de aanslag doorgaans in stand. Raadpleeg voor meer informatie over belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak uw gemeente."; 
 	skos:scopeNote "Artikel 8 van de model koopovereenkomst.";
-	skoslex:isAbout mak:Baten;
-	skoslex:isAbout mak:Lasten;
+	skoslex:isAbout mak:Bate;
+	skoslex:isAbout mak:Last;
+	skoslex:isAbout mak:Belasting;
 	skoslex:isAbout mak:Heffing;
 	skoslex:isAbout kad:Canon;
+	skoslex:isAbout mak:VerrekeningBatenLastenCanons;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelHoofdelijkheid a skos:Concept, skoslex:Record;
@@ -1004,10 +1001,16 @@ mak:AardClausule a skos:Concept;
 	skos:definition "Een aanduiding van de clausule of artikel.";
 	skos:semanticRelation mak:Voorbehoud;	
 .
-mak:Baten a skos:Concept, skoslex:Object;
-	rdfs:label "Baten"@nl;
-	skos:prefLabel "Baten";
-	skos:definition "Baten uit de onroerende zaak, bijvoorbeeld huren.";
+mak:Bate a skos:Concept, skoslex:Object;
+	rdfs:label "Bate"@nl;
+	skos:prefLabel "Bate";
+	skos:definition "Een baten uit de onroerende zaak, bijvoorbeeld huur.";
+	skos:semanticRelation mak:OnroerendeZaak;
+.
+mak:Belasting a skos:Concept, skoslex:Object;
+	rdfs:label "Belasting"@nl;
+	skos:prefLabel "Belasting";
+	skos:definition "Belasting op de onroerende zaakn.";
 	skos:semanticRelation mak:OnroerendeZaak;
 .
 mak:BetalerKosten a skos:Concept;
@@ -1032,10 +1035,10 @@ mak:BetalingToekomstigeTermijn a skos:Concept, skoslex:Act;
 	skos:semanticRelation mak:Leaseovereenkomst;
 	skos:semanticRelation mak:Huurkoopovereenkomst;
 .
-mak:Heffingen a skos:Concept, skoslex:Object;
-	rdfs:label "Heffingen"@nl;
-	skos:prefLabel "Heffingen";
-	skos:definition "Heffingen op de onroerende zaak, bijvoorbeeld belastingen.";
+mak:Heffing a skos:Concept, skoslex:Object;
+	rdfs:label "Heffing"@nl;
+	skos:prefLabel "Heffingn";
+	skos:definition "Heffing op de onroerende zaak.";
 	skos:semanticRelation mak:OnroerendeZaak;
 .
 mak:Hoofdelijkheid a skos:Concept, skoslex:Object;
@@ -1097,7 +1100,17 @@ mak:Schadevergoeding, skoslex:Object;
 	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming";
 	skos:semanticRelation mak:Ingebrekestelling;
 .
-mak:Verrekeningoverdrachtsbelastingart13 a skos:Concept;
+mak:VerrekeningBatenLastenCanons a skos:Concept, skoslex:Act;
+	rdfs:label "Verrekening baten, lasten en canons"@nl;
+	skos:prefLabel "Verrekening baten, lasten en canons";
+	skos:definition "De verrekening van baten, lasten, belastingen, heffingen en canons bij de koop.";
+	skos:semanticRelation mak:Bate;
+	skos:semanticRelation mak:Last;
+	skos:semanticRelation mak:Belasting;
+	skos:semanticRelation mak:Heffing;
+	skos:semanticRelation kad:Canon;
+.
+mak:Verrekeningoverdrachtsbelastingart13 a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening overdrachtsbelasting art 13"@nl;
 	skos:prefLabel "Verrekening overdrachtsbelasting art 13";
 	skos:definition "Een indicatie of de verrekeing van de overdrachtsbelasting conform artikel 13 van toepassing is.";
