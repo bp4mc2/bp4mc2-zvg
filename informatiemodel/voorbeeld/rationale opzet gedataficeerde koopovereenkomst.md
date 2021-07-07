@@ -59,4 +59,5 @@
 * Artikel 7.3 beschrijft 2 potentiële rechtshandelingen, namelijk betalingen van toekomstige termijnen (mak:BetalingToekomstigeTermijn) en beslagen (mak:BeslagToekomstigeTermijn)van toekomstige termijnen op huurovereenkomsten (mak:Huurovereenkomst), leaseovereenkomsten (mak:Leaseovereenkomst) en huurkoopovereenkomsten (mak:Huurkoopovereenkomst).
 * Artikel 7.4 zegt eigenlijk alleen maar dat aanspraken (mak:aanspraak) overgaan van verkoper naar koper, dus onderdeel zijn van de koop (mak:ArtikelOverdrachtAanspraken skosthes:broaderPartitive mak:Koopovereenkomst).
 # Artikel 8
-
+* Het eerste deel gaat over baten (mak:Bate), lasten (mak:Last), belastingen (mak:Belasting), heffingen (mak:Heffing) en canons (kad:Canon), namelijk dat die op een datum (onderdeel van de ontologie) overgaan op de koper.
+* Het tweede deel is een eventuele rechtshandeling, namelijk de verrekening (mak:VerrekeningBatenLasten,Canons) van de baten, lasten, belastingen, heffingen en canons.
