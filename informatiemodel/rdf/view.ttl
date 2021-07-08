@@ -18,7 +18,6 @@ zvg:aangebodenDoor dct:subject makbegrip:Verkoper.
 zvg:identificatie dct:subject begrip:Identificatie. #In de ontologie komen er nu een heleboel voor: dat kan niet kloppen!
 zvg:van dct:subject begrip:Van.
 zvg:aandeel dct:subject kadbegrip:AandeelRecht.
-zvg:naam dct:subject begrip:Naam.
 zvg:gerelateerdeOpenbareRuimte dct:subject kadbegrip:OpenbareRuimte.
 
 #Ontbrekende begrippen (maar wel eigenschappen)
@@ -27,5 +26,5 @@ begrip:Identificatie rdfs:label "Identificatie";
   rdfs:comment "Het unieke nummer van dit object"
 .
 begrip:Van rdfs:label "Van";
-  # Dit begrip is ambigue: "van" wordt zowel gebruikt in de context van het verkochte goed, als de contactgegevens!
+  # Dit begrip is ambigue: "van" wordt zowel gebruikt in de context van het verkochte goed, tenaamstelling als de contactgegevens!
 .

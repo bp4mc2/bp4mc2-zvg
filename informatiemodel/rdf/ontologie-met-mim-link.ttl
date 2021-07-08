@@ -1,4 +1,4 @@
-@prefix zvg: <http://test/def#>.
+@prefix zvg: <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.

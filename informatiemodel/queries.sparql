@@ -1,5 +1,22 @@
 ###################
-# Algemeen
+# AANPAK
+###################
+
+1. Uploaden XMI
+2. Uitvoeren: "Create model from MIM"
+3. Voer de queries uit m.b.t. het opschonen van het MIM model
+4. Ga naar "Edit MIM model", fix prefixes en sla deze op als mim/model-mim-ld.ttl
+5. Uitvoeren: "Create model from MIM"
+6. Voer de queries uit m.b.t. het opschonen van het model (dwz: de ontologie)
+7. Ga naar "Edit model", fix prefixes en sla deze op als rdf/ontologie.ttl
+8. Ga naar Download, Grafische weergave (technische namen) en sla yEd plaatje op als rdf/ontologie.graphml en rdf/ontologie.png
+9. Herlaad het model, voer de queries uit voor de shapesgraph en query verwijderen string datatype (onder Model opschonen)
+10. Ga naar "Edit model", fix prefixes en sla deze op als shapesgraph.ttl
+11. Herlaad het model, voer de queries uit voor de owl-rdfs en query verwijderen string datatype (onder Model opschonen)
+12. Ga naar "Edit model", fix prefixes en sla deze op als owl-rdfs-ontologie.ttl
+
+###################
+# Model opschonen
 ###################
 
 # Verwijder string datatype
