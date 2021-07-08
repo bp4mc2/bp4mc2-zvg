@@ -105,6 +105,27 @@ where {
   }
 }
 
+# Verwijder Kadaster-specifiek gebruik van namen van abstracte klassen
+#
+prefix mim: <http://bp4mc2.org/def/mim#>
+delete {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:naam ?anaam
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:naam ?naam
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/mim> {
+    ?s mim:naam ?anaam
+    BIND (replace(?anaam,"^_(.*)$","$1") as ?naam)
+    FILTER (regex(?anaam,"^_(.*)$"))
+  }
+}
+
 ###################
 # shapesgraph maken
 ###################

@@ -14,7 +14,7 @@
 <uuid:EAID_02C68C94_6B70_442a_B9A9_7AD326EE84F8> a mim:Objecttype;
     mim:attribuut <uuid:EAID_CF81FAB3_CF42_4547_B46D_81A6081EBB6A>;
     mim:begripsterm "http://kad.zorgeloosvastgoed.nl/id/concept/Registergoed "^^xsd:string;
-    mim:naam "_Registergoed"^^xsd:string
+    mim:naam "Registergoed"
 .
 <uuid:EAID_0371BAC5_51C0_428e_831F_1E5BD93309B9> a mim:Generalisatie;
     mim:subtype <uuid:EAID_05E1F45F_2980_454d_A77A_D79C13C418CE>;
@@ -113,7 +113,7 @@
     mim:attribuut <uuid:EAID_7D103280_AF27_437b_B31D_D04599E2A57D>;
     mim:attribuut <uuid:EAID_91CF35C1_FBCD_4a9c_83CD_524DC8E0A89D>;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Voorwaarde>;
-    mim:naam "_Clausule"^^xsd:string
+    mim:naam "Clausule"
 .
 <uuid:EAID_189AA4A8_D962_4af3_A4E4_A946482921A3> a mim:Attribuutsoort;
     mim:naam "expiratieDatum"^^xsd:string
@@ -155,12 +155,12 @@
 <uuid:EAID_249B94D8_8164_4ea3_B7BA_2F183B55DC6A> a mim:Objecttype;
     mim:attribuut <uuid:EAID_8EDD0270_B2C2_4ba1_9D54_BEC698F5A77F>;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Rechtshandeling>;
-    mim:naam "_Rechtshandeling"^^xsd:string
+    mim:naam "Rechtshandeling"
 .
 <uuid:EAID_24CD2AC3_7D09_4e81_B867_2E4E32C902D1> a mim:Objecttype;
     mim:attribuut <uuid:EAID_B6A2F368_7581_46b1_81E5_155CEC110498>;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij>;
-    mim:naam "_Partij"^^xsd:string
+    mim:naam "Partij"
 .
 <uuid:EAID_2543A689_C42B_4b86_BF86_C09AF5A65740> a mim:Gegevensgroeptype;
     mim:attribuut <uuid:EAID_02AA0BAC_175D_409c_9EA6_420C1A7D9FDF>;
@@ -259,7 +259,7 @@ Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''
     mim:naam "Verkoper"^^xsd:string
 .
 <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF> a mim:Objecttype;
-    mim:naam "_Afspraak"^^xsd:string
+    mim:naam "Afspraak"
 .
 <uuid:EAID_417D2D14_2CED_4613_8B6B_A84F2F96BC2D> a mim:Objecttype;
     mim:attribuut <uuid:EAID_BBA189C0_CAF6_45be_AFAA_B430B4D43CDA>;
@@ -548,7 +548,7 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
 <uuid:EAID_80A94808_571F_401c_B5DD_D5C2842A7869> a mim:Objecttype;
     mim:attribuut <uuid:EAID_2A190F96_2F6E_4a18_A4CB_2B201FAC8FE5>;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/Legitimatie>;
-    mim:naam "_Legitimatie"^^xsd:string
+    mim:naam "Legitimatie"
 .
 <uuid:EAID_834247E4_5324_442e_B9B2_477AA7FFC403> a mim:Attribuutsoort;
     mim:definitie "indicatieGeheim is een aanduiding die aangeeft dat gegevens van een persoon wel of niet verstrekt mogen worden.";
@@ -653,7 +653,7 @@ attribuut de waarde 0.''';
     mim:supertype <uuid:EAID_16D39029_C62B_4efb_861F_E04E8794843F>
 .
 <uuid:EAID_9624A353_103C_456d_AB98_ED3D2235809A> a mim:Objecttype;
-    mim:naam "_ObjectLocatie"^^xsd:string
+    mim:naam "ObjectLocatie"
 .
 <uuid:EAID_962AFA91_D309_4e8f_A1BC_AE0F85BB9C3E> a mim:Relatiesoort;
     mim:bron <uuid:EAID_8797E569_3544_4bd5_B594_2E18F821ED5A>;
@@ -695,7 +695,7 @@ attribuut de waarde 0.''';
     mim:attribuut <uuid:EAID_09BD0457_3102_4c0d_BA47_3677451D36C5>;
     mim:attribuut <uuid:EAID_453F510D_D03E_4fdc_80F8_55B3D0324C42>;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak>;
-    mim:naam "_OnroerendeZaak"^^xsd:string
+    mim:naam "OnroerendeZaak"
 .
 <uuid:EAID_A21B26D3_51AD_4c57_9237_588540F46958> a mim:Gegevensgroeptype;
     mim:attribuut <uuid:EAID_0C8E69F1_B3A4_4499_87F8_18A764EC2E3C>;
@@ -1054,7 +1054,7 @@ gerechercheerd''';
 <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F> a mim:Objecttype;
     mim:attribuut <uuid:EAID_83CE81AD_8ACB_464e_A922_4BE1A97D0F86>;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon>;
-    mim:naam "_Persoon"^^xsd:string
+    mim:naam "Persoon"
 .
 <uuid:EAID_FA90C8CE_2728_40ef_8AA4_C6F3B8C10712> a mim:Attribuutsoort;
     mim:definitie "De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst.";
