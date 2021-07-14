@@ -1035,6 +1035,12 @@ mak:BetalingToekomstigeTermijn a skos:Concept, skoslex:Act;
 	skos:semanticRelation mak:Leaseovereenkomst;
 	skos:semanticRelation mak:Huurkoopovereenkomst;
 .
+mak:Gezamenlijkheid a skos:Concept;
+	rdfs:label "Gezamenlijkheid"@nl;
+	skos:prefLabel "Gezamenlijkheid";
+	skos:definition "De uit meerdere personen bestaande partij oefent ten opzichte van de wederpartij gezamenlijk hun rechten en verplichtingen uit.";
+	skos:semanticRelation zv:Partij;
+.
 mak:Heffing a skos:Concept, skoslex:Object;
 	rdfs:label "Heffing"@nl;
 	skos:prefLabel "Heffingn";
@@ -1087,18 +1093,43 @@ mak:LijstVanGoederenWaarde a skos:Concept;
 	skos:prefLabel "Waarde lijst van goederen";
 	skos:definition "Een waarde van de lijst van goederen.";
 .
-mak:OntbindingTekortkoming a skoslex:Object;
+mak:Nakomen a skos:Concept, skoslex:Act;
+	rdfs:label "Nakomen"@nl;
+	skos:prefLabel "Nakomen";
+	skos:definition "van een verplichting.";
+	skoslex:object kad:Verplichting;
+	skoslex:actor zv:Partij;
+.mak:OntbindingTekortkoming a skoslex:Object;
 	rdfs:label "Ontbinding op basis van tekortkoming"@nl;
 	skos:prefLabel "Ontbinding op basis van tekortkoming";
 	skos:definition "Ontbinding op basis van tekortkoming";
 	skos:semanticRelation mak:Ingebrekestelling;
 	skos:semanticRelation mak:Koop;
 .
-mak:Schadevergoeding a skoslex:Object;
+mak:Schadevergoeding a skos:Concept,skoslex:Object;
 	rdfs:label "Schadevergoeding"@nl;
 	skos:prefLabel "Schadevergoeding";
 	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming";
 	skos:semanticRelation mak:Ingebrekestelling;
+.
+mak:TenLasteGebruik a skos:Concept,;
+	rdfs:label "Ten laste van het gebruik"@nl;
+	skos:prefLabel "Ten laste van het gebruik";
+	skos:definition "Ten laste van het gebruik";
+	skos:semanticRelation mak:Belasting;
+	skos:semanticRelation mak:Heffing;
+.
+mak:Uitoefenen a skos:Concept, skoslex:Act;
+	rdfs:label "Uitoefenen"@nl;
+	skos:prefLabel "Uitoefenen";
+	skos:definition "van een recht of verplichting.";
+	skoslex:object kad:Recht;
+	skoslex:actor zv:Partij;
+.
+mak:Verplichting a skos:Concept,;
+	rdfs:label "Verplichting"@nl;
+	skos:prefLabel "Verplichting";
+	skos:definition "Een verplichting is het tegenovergestelde van een recht";
 .
 mak:VerrekeningBatenLastenCanons a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening baten, lasten en canons"@nl;
