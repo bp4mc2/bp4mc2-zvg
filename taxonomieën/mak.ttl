@@ -864,6 +864,7 @@ Artikel 10 regelt wat er moet gebeuren in geval van overmacht (bijvoorbeeld blik
 Hij dient dan tijdig aan koper mede te delen dat hij de onroerende zaak voor de afgesproken datum van eigendomsoverdracht (of als dat later is: binnen vier weken na het onheil) voor eigen rekening zal herstellen.
 Als de situatie zoals bedoeld in dit artikel optreedt, is het verstandig dat partijen eerst met elkaar overleggen. Partijen kunnen uiteindelijk, mochten ze niet tot een aanvaardbare oplossing komen, kiezen de ontbinding van de koopovereenkomst in stand te laten. Het is verstandig een dergelijke afspraak schriftelijk vast te leggen.''';
 	skos:scopeNote "Artikel 10 van de model koopovereenkomst.";
+	skoslex:isAbout mak:Risico;
 	skoslex:isAbout not:VanRechtswegeOntbonden;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
@@ -1111,6 +1112,12 @@ mak:Schadevergoeding a skos:Concept,skoslex:Object;
 	skos:prefLabel "Schadevergoeding";
 	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming";
 	skos:semanticRelation mak:Ingebrekestelling;
+.
+mak:Risico a skos:Concept,skoslex:Object;
+	rdfs:label "Risico"@nl;
+	skos:prefLabel "Risico";
+	skos:definition "";
+	skos:semanticRelation zv:Partij;
 .
 mak:TenLasteGebruik a skos:Concept,;
 	rdfs:label "Ten laste van het gebruik"@nl;
