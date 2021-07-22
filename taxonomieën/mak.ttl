@@ -1028,6 +1028,12 @@ mak:BeslagToekomstigeTermijn a skos:Concept, skoslex:Act;
 	skos:semanticRelation mak:Leaseovereenkomst;
 	skos:semanticRelation mak:Huurkoopovereenkomst;
 .
+mak:Beschadigen a skos:Concept, skoslex:Act;
+	rdfs:label "Beschadigen"@nl;
+	skos:prefLabel "Beschadigen";
+	skos:definition "Beschadigen";
+	skosthes:broaderGeneric mak:Onheil;
+.
 mak:BetalingToekomstigeTermijn a skos:Concept, skoslex:Act;
 	rdfs:label "Betaling toekomstige termijn"@nl;
 	skos:prefLabel "Betaling toekomstige termijn";
@@ -1044,9 +1050,16 @@ mak:Gezamenlijkheid a skos:Concept;
 .
 mak:Heffing a skos:Concept, skoslex:Object;
 	rdfs:label "Heffing"@nl;
-	skos:prefLabel "Heffingn";
+	skos:prefLabel "Heffing";
 	skos:definition "Heffing op de onroerende zaak.";
 	skos:semanticRelation mak:OnroerendeZaak;
+.
+mak:Herstel a skos:Concept, skoslex:Act;
+	rdfs:label "Herstel"@nl;
+	skos:prefLabel "Herstel";
+	skos:definition "Herstel van de onroerende zaak na beschadiging voor de dag van eigendomsoverdracht.";
+	skoslex:actor mak:Verkoper;
+	skoslex:object mak:OnroerendeZaak;
 .
 mak:Hoofdelijkheid a skos:Concept, skoslex:Object;
 	rdfs:label "Hoofdelijkheid"@nl;
@@ -1100,12 +1113,24 @@ mak:Nakomen a skos:Concept, skoslex:Act;
 	skos:definition "van een verplichting.";
 	skoslex:object kad:Verplichting;
 	skoslex:actor zv:Partij;
-.mak:OntbindingTekortkoming a skoslex:Object;
+.
+mak:OntbindingTekortkoming a skos:Concept, a skoslex:Object;
 	rdfs:label "Ontbinding op basis van tekortkoming"@nl;
 	skos:prefLabel "Ontbinding op basis van tekortkoming";
 	skos:definition "Ontbinding op basis van tekortkoming";
 	skos:semanticRelation mak:Ingebrekestelling;
 	skos:semanticRelation mak:Koop;
+.
+mak:Onheil a skos:Concept, skoslex:Act;
+	rdfs:label "Onheil"@nl;
+	skos:prefLabel "Onheil";
+	skos:definition "Beschadiging of verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming";
+	skostlex:object kad:OnroerendeZaak;
+.
+mak:Overmacht a skoslex:Object;
+	rdfs:label "Overmacht"@nl;
+	skos:prefLabel "Overmacht";
+	skos:definition "Overmacht";
 .
 mak:Schadevergoeding a skos:Concept,skoslex:Object;
 	rdfs:label "Schadevergoeding"@nl;
@@ -1117,7 +1142,14 @@ mak:Risico a skos:Concept,skoslex:Object;
 	rdfs:label "Risico"@nl;
 	skos:prefLabel "Risico";
 	skos:definition "";
-	skos:semanticRelation zv:Partij;
+	skos:semanticRelation kad:OnroerendeZaak;
+.
+mak:RisicoOvergang a skos:Concept,skoslex:Act;
+	rdfs:label "Risico-overgang"@nl;
+	skos:prefLabel "Risico-overgang";
+	skos:definition "De overgang van het risico van de verkoper op de koper";
+	skoslex:actor zv:Partij;
+	skoslex:object mak:Risico;
 .
 mak:TenLasteGebruik a skos:Concept,;
 	rdfs:label "Ten laste van het gebruik"@nl;
@@ -1132,6 +1164,12 @@ mak:Uitoefenen a skos:Concept, skoslex:Act;
 	skos:definition "van een recht of verplichting.";
 	skoslex:object kad:Recht;
 	skoslex:actor zv:Partij;
+.
+mak:VerlorenGaan a skos:Concept, skoslex:Act;
+	rdfs:label "Verloren gaan"@nl;
+	skos:prefLabel "Verloren gaan";
+	skos:definition "Verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming";
+	skosthes:broaderGeneric mak:Onheil;
 .
 mak:Verplichting a skos:Concept,;
 	rdfs:label "Verplichting"@nl;
