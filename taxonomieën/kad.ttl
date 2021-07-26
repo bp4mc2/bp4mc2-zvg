@@ -513,6 +513,15 @@ kad:Recht a skos:Concept, skoslex:Object;
 	rdfs:comment "Een recht is iets wat iemand of een organisatie volgens de geschreven en ongeschreven regels mag.";
 	skos:semanticRelation zv:Persoon;
 .
+kad:RechtVanHypotheek a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Recht_van_hypotheek;
+	rdfs:label "Recht van hypotheek"@nl;
+	skos:prefLabel "Recht van hypotheek";
+	skos:definition "Het recht van hypotheek is een beperkt recht, strekkende om op de daaraan onderworpen registergoederen, een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen.";
+	rdfs:comment "Het recht van hypotheek is een beperkt recht en houdt in dat een bank of andere geldgever een huis of ander registergoed mag verkopen als de eigenaar de lening die ten grondslag ligt aan het recht van hypotheek niet meer kan terugbetalen. Het geld uit de verkoop gaat eerst naar de bank of geldgever die het recht op hypotheek heeft. Als er nog geld overblijft, gaat dat naar andere schuldeisers.";
+	skos:semanticRelation kad:Registergoed;
+	skosthes:broaderGeneric:kad:BeperktRecht;
+.
 kad:Registergoed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Registergoed;
 	rdfs:label "Registergoed"@nl;
