@@ -833,6 +833,15 @@ kad:TenaamstellingIdentificatie a skos:Concept;
 	skos:definition "Een tenaamstelling identificatie is de unieke identificatie van een tenaamstelling.";
 	skos:semanticRelation kad:Tenaamstelling;
 .
+kad:GekozenWoonplaats a skos:Concept;
+	skos:exactMatch brk:Gekozen_woonplaats;
+	rdfs:label "Gekozen woonplaats"@nl;
+	skos:prefLabel "Gekozen woonplaats";
+	skos:definition "Een Gekozen woonplaats is een woonplaats van een natuurlijk persoon die hij in afwijking van artikel 1:10 Burgerlijk Wetboek kan kiezen, wanneer de wet hem daartoe verplicht, of wanneer de keuze bij schriftelijke of langs elektronische weg aangegane overeenkomst voor een of meer bepaalde rechtshandelingen of rechtsbetrekkingen geschiedt en voor de gekozen woonplaats een redelijk belang aanwezig is.";
+	rdfs:comment "Een gekozen woonplaats is dat iemand afspreekt in welke plaats hij bepaalde beslissingen zal nemen of acties zal doen. Soms bepaalt de wet die plaats. Soms beslist de persoon zelf in een overeenkomst wat de plaats wordt."; 
+	skos:semanticRelation zv:NatuurlijkPersoon;
+	skosthes:broaderPartitive kad:Rechtshandeling;
+.
 kad:ZakelijkRechtIdentificatie a skos:Concept;
 	rdfs:label "Zakelijk recht identificatie"@nl;
 	skos:prefLabel "Zakelijk recht identificatie";
