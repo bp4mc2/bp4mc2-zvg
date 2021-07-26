@@ -61,3 +61,16 @@
 # Artikel 8
 * Het eerste deel gaat over baten (mak:Bate), lasten (mak:Last), belastingen (mak:Belasting), heffingen (mak:Heffing) en canons (kad:Canon), namelijk dat die op een datum (onderdeel van de ontologie) overgaan op de koper.
 * Het tweede deel is een eventuele rechtshandeling, namelijk de verrekening (mak:VerrekeningBatenLasten,Canons) van de baten, lasten, belastingen, heffingen en canons.
+# Artikel 9
+* Artikel 9 begint met een 'als' met als concepten de koper (mak:Koper) en verkoper (mak:Verkoper) en het feit dat die 2 of meer (rechts)personen (zv:Persoon) zijn.
+* Artikel 9a zegt dat de actoren (mak:Koper) en verkoper (mak:Verkoper) die meerdere (rechts)personen (zv:Persoon) alleen samen (mak:Gezamenlijkheid) de objecten rechten (kad:Recht) en verplichtingen (mak:Verplichting) kunnen uitoefenen (mak:Uitoefenen) respectievelijk nakomen (mak:Nakomen), beiden rechtshandelingen.
+* Artikel 9b is vergelijkbaar opgebouwd, maar dan over de handeling volmacht verlenen aan elkaar (not:VerlenenVolmacht met not:Volmacht als object). 
+* Artikel 9c idem, maar dan over hoofdelijkheid, niet gemodelleerd als een expliciete rechtshandeling, maar als een concept dat iets zegt over de kopers/verkopers (mak:Hoofdelijkheid).
+# Artikel 10
+* In artikel 10.1 gaat over de handeling van het regelen van de overgang (mak:RisicoOvergang) van het object risico (mak:Risico) op de onroerende zaak (kad:OnroerendeZaak) door  de actoren (mak:Koper en mak:Verkoper). Semantisch is dit een onderdeel van het passeren van de akte van levering (not:PasserenAkteLevering) of van de feitelijke levering (not:FeitelijkeLevering). 
+* Artikel 10.2 gaat over de gebeurtenissen beschadigen (mak:Beschadigen) of verloren gaan (mak:VerlorenGaan) van het object (kad:OnroerendeZaak). Actoren zijn verkoper en koper. Het 'onverwijld in kennis stellen' is niet expliciet gemodelleerd als rechtshandeling.
+* Artikel 10.3 gaat over het van rechtswege ontbonden zijn (not:VanRechtswegeOntbonden) van de koopovereenkomst (mak:Koop, die betreft de rechtshandeling, mak:Koopovereenkomst betreft de vastlegging daarvan). 
+* 10.3a is lastig. Je kunt het 'verlangen van' de uitvoering van de koopovereenkomst (i.c. de levering) zien als de handeling waar het om gaat. Maar eigenlijk gaat het om het (toch) leveren (de feitelijke rechtshandeling. Het tweede deel gaat dan over alle rechten (mak:RechtenAanspraken) in relatie tot het onheil (mak:Onheil) die ook van de verkoper op de koper overgaan bij de levering.
+* 10.3b gaat over herstel (mak:Herstel) door de verkoper (mak:Verkoper) voor de levering (not:Levering). De laatste zin gaat over de koper in relatie tot de verkoper.
+* 10.4 gaat over het risico na ontbinding van de koop op goede gronden, dus niet van rechtswege (mak:OntbindingTekortkoming) na de levering (not:Levering).
+# Artikel 11
