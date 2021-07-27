@@ -948,7 +948,7 @@ Koper kan ook afzien van een of meer ontbindende voorwaarden, bijvoorbeeld omdat
 	skoslex:isAbout mak:NationaleHypotheekgarantie;
 	skoslex:isAbout mak:BouwkundigeKeuring;
 .
-mak:ArtikelOntbindingOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
+mak:ArtikelOntbindingVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 15.3: Ontbinding op grond van ontbindende voorwaarden"@nl;
 	skos:prefLabel "Artikel 15.3: Ontbinding op grond van ontbindende voorwaarden";
 	rdfs:comment 'In het derde lid is een inspanningsverplichting van partijen opgenomen om al het redelijk mogelijke te doen om de financiering en/of Nationale Hypotheek Garantie, toezeggingen of andere zaken te verkrijgen. 
