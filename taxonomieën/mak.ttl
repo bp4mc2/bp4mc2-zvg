@@ -874,7 +874,7 @@ mak:ArtikelIngebrekestelling a skos:Concept, skoslex:Record;
 	rdfs:comment '''Indien één van de partijen niet voldoet aan zijn verplichtingen (in de koopovereenkomst of in de wet vastgelegd), schiet hij tekort (wanprestatie). In dit artikel wordt vooropgesteld, dat wanprestatie altijd duidelijk moet worden geconstateerd voordat de wederpartij iets kan ondernemen op grond van wanprestatie.
 Dit constateren vindt plaats door de andere partij in gebreke te stellen, dat wil zeggen, in een officieel stuk mee te delen dat deze zijn verplichtingen niet nakomt. Dit moet gepaard gaan met een sommatie om alsnog binnen acht dagen de verplichting na te komen. Hiermee geeft men de wederpartij als het ware een laatste kans.''';
 	skos:scopeNote "Artikel 11.1 van de model koopovereenkomst.";
-	skoslex:isAbout mak:Ingebrekestelling;
+	skoslex:isAbout mak:Ingebrekestellen;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOntbindenTekortkoming a skos:Concept, skoslex:Record;
@@ -882,7 +882,7 @@ mak:ArtikelOntbindenTekortkoming a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel 11.2: ontbinding op grond van tekortkoming";
 	rdfs:comment '''Artikel 11 zegt nu dat de koopovereenkomst door middel van een schriftelijke verklaring aan de nalatige kan worden ontbonden, wanneer er na het verstrijken van deze laatste kans, acht dagen na de ingebrekestelling, nog niets is gebeurd. Het tweede lid van artikel 11 stelt dat de "foute" partij bij ontbinding van de koopovereenkomst een boete ter grootte van tien procent van de koopsom moet betalen. Mocht de werkelijke schade hoger zijn dan de boete, dan kan een aanvullende schadevergoeding worden geëist. Met het betalen van de schadevergoeding alleen is de foute partij er niet altijd van af. De zogenaamde kosten van verhaal, dat zijn bijvoorbeeld invorderingskosten, mogen ook gevorderd worden.''';
 	skos:scopeNote "Artikel 11.2 van de model koopovereenkomst.";
-	skoslex:isAbout mak:OntbindingTekortkoming;
+	skoslex:isAbout mak:Ontbinden;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelSchadevergoeding a skos:Concept, skoslex:Record;
@@ -1102,6 +1102,11 @@ mak:Beschadigen a skos:Concept, skoslex:Act;
 	skos:definition "Beschadigen";
 	skosthes:broaderGeneric mak:Onheil;
 .
+mak:Boete a skos:Concept, skoslex:Object;
+	rdfs:label "Boete"@nl;
+	skos:prefLabel "Boete";
+	skos:definition "Boete";
+.
 mak:BetalingToekomstigeTermijn a skos:Concept, skoslex:Act;
 	rdfs:label "Betaling toekomstige termijn"@nl;
 	skos:prefLabel "Betaling toekomstige termijn";
@@ -1134,18 +1139,33 @@ mak:Hoofdelijkheid a skos:Concept, skoslex:Object;
 	skos:prefLabel "Hoofdelijkheid";
 	skos:definition "De uit meerdere personen bestaande partij treedt ten opzichte van de wederpartij op alsof er slechts van één persoon sprake is.";
 .
-mak:Ingebrekestelling a skos:Concept, skoslex:Object;
-	rdfs:label "Ingebrekestelling"@nl;
-	skos:prefLabel "Ingebrekestelling";
-	skos:definition "In een officieel stuk mee te delen dat een van de partijen zijn verplichtingen niet nakomt";
+mak:Ingebrekestellen a skos:Concept, skoslex:Act;
+	rdfs:label "Ingebrekestellen"@nl;
+	skos:prefLabel "Ingebrekestellen";
+	skos:definition "In een officieel stuk meedelen dat een van de partijen zijn verplichtingen niet nakomt";
 	skos:semanticRelation zv:Partij;
 .
 mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven koopovereenkomst"@nl;
 	skos:prefLabel "Inschrijven koopovereenkomst";
 	skos:definition "Inschrijven van de koopovereenkomst bij het Kadaster";
+	skosthes:broadergeneric kad:InschrijvingOpenbareRegisters
 	skoslex:object mak:Koopovereenkomst;
 	skoslex:agent not:Notaris;
+.
+mak:mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
+	rdfs:label "Inschrijven koopovereenkomst"@nl;
+	skos:prefLabel "Inschrijven koopovereenkomst";
+	skos:definition "Inschrijven van de koopovereenkomst bij het Kadaster";
+	skosthes:broadergeneric kad:InschrijvingOpenbareRegisters
+	skoslex:object mak:Koopovereenkomst;
+	skoslex:object mak:Inschrijvingskosten;
+	skoslex:agent not:Notaris;
+.
+mak:Inschrijvingskosten a skos:Concept, skoslex:Object;
+	rdfs:label "Inschrijvingskosten"@nl;
+	skos:prefLabel "Inschrijvingskosten";
+	skos:definition "De kosten van het inschrijven van een akte bij het Kadaster";
 .
 mak:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;
@@ -1189,18 +1209,17 @@ mak:Nakomen a skos:Concept, skoslex:Act;
 	skoslex:object kad:Verplichting;
 	skoslex:actor zv:Partij;
 .
+mak:NalatigZijn a skos:Concept, skoslex:Act;
+	rdfs:label "Nalatig zijn";
+	skos:definition "Nalatig zijn";
+	skoslex:object kad:Verplichting;
+	skoslex:actor zv:Partij;
+.
 mak:NationaleHypotheekgarantie a skos:Concept;
 	rdfs:label "Nationale hypotheekgarantie"@nl;
 	skos:prefLabel "Nationale hypotheekgarantie";
 	skos:definition "Nationale hypotheekgarantie";
 	skos:semanticRelation kad:RechtVanHypotheek;
-.
-mak:OntbindingTekortkoming a skos:Concept, a skoslex:Object;
-	rdfs:label "Ontbinding op basis van tekortkoming"@nl;
-	skos:prefLabel "Ontbinding op basis van tekortkoming";
-	skos:definition "Ontbinding op basis van tekortkoming";
-	skos:semanticRelation mak:Ingebrekestelling;
-	skos:semanticRelation mak:Koop;
 .
 mak:Onheil a skos:Concept, skoslex:Act;
 	rdfs:label "Onheil"@nl;
@@ -1219,11 +1238,25 @@ mak:Overmacht a skoslex:Object;
 	skos:prefLabel "Overmacht";
 	skos:definition "Overmacht";
 .
+mak:OnderZichHouden a skos:Concept,skoslex:Act;
+	rdfs:label "Onder zich houden"@nl;
+	skos:prefLabel "Onder zich houden";
+	skos:definition "van een boete of een waarborgsom";
+	skoslex:actor not:Notaris;
+	skoslex:object fin:Bankgarantie;
+	skoslex:object fin:Waarborgsom;
+.
+mak:Schade a skos:Concept,skoslex:Object;
+	rdfs:label "Schade"@nl;
+	skos:prefLabel "Schade";
+	skos:definition "";
+.
 mak:Schadevergoeding a skos:Concept,skoslex:Object;
 	rdfs:label "Schadevergoeding"@nl;
 	skos:prefLabel "Schadevergoeding";
 	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming";
-	skos:semanticRelation mak:Ingebrekestelling;
+	skos:semanticRelation mak:Schade;
+	skos:semanticRelation mak:Ingebrekestellen;
 .
 mak:Risico a skos:Concept,skoslex:Object;
 	rdfs:label "Risico"@nl;
@@ -1240,6 +1273,18 @@ mak:RisicoOvergang a skos:Concept,skoslex:Act;
 	skoslex:actor zv:Partij;
 	skoslex:object mak:Risico;
 .
+mak:Tekortkoming a skos:Concept,skoslex:Object;
+	rdfs:label "Tekortkoming"@nl;
+	skos:prefLabel "Tekortkoming";
+	skos:definition "";
+	skos:semanticRelation kad:OnroerendeZaak;
+.
+mak:Tekortschieten a skos:Concept,skoslex:Act;
+	rdfs:label "Tekortschieten"@nl;
+	skos:prefLabel "Tekortschieten";
+	skos:definition "";
+	skos:semanticRelation mak:Verplichting;
+.
 mak:TenLasteGebruik a skos:Concept,;
 	rdfs:label "Ten laste van het gebruik"@nl;
 	skos:prefLabel "Ten laste van het gebruik";
@@ -1247,12 +1292,38 @@ mak:TenLasteGebruik a skos:Concept,;
 	skos:semanticRelation mak:Belasting;
 	skos:semanticRelation mak:Heffing;
 .
+mak:Terugbetalen a skos:Concept, skoslex:Act;
+	rdfs:label "Terugbetalen"@nl;
+	skos:prefLabel "Terugbetalen";
+	skos:definition "van een waarborgsom.";
+	skoslex:object fin:Waarborgsom;
+	skoslex:agent not:Notaris;
+.
+mak:Terugbetalen a skos:Concept, skoslex:Act;
+	rdfs:label "Terugbetalen"@nl;
+	skos:prefLabel "Terugbetalen";
+	skos:definition "van een waarborgsom.";
+	skoslex:object fin:Waarborgsom;
+	skoslex:agent not:Notaris;
+.
+mak:Terugzenden a skos:Concept, skoslex:Act;
+	rdfs:label "Terugzenden"@nl;
+	skos:prefLabel "Terugzenden";
+	skos:definition "van een bankgarantie.";
+	skoslex:object fin:Bankgarantie;
+	skoslex:agent not:Notaris;
+.
 mak:Uitoefenen a skos:Concept, skoslex:Act;
 	rdfs:label "Uitoefenen"@nl;
 	skos:prefLabel "Uitoefenen";
 	skos:definition "van een recht of verplichting.";
 	skoslex:object kad:Recht;
 	skoslex:actor zv:Partij;
+.
+mak:VerhaalKosten a skos:Concept, skoslex:Object;
+	rdfs:label "Kosten van verhaal"@nl;
+	skos:prefLabel "Kosten van verhaal";
+	skos:definition "Verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming";
 .
 mak:VerlorenGaan a skos:Concept, skoslex:Act;
 	rdfs:label "Verloren gaan"@nl;
@@ -1280,6 +1351,13 @@ mak:Verrekeningoverdrachtsbelastingart13 a skos:Concept, skoslex:Act;
 	skos:prefLabel "Verrekening overdrachtsbelasting art 13";
 	skos:definition "Een indicatie of de verrekeing van de overdrachtsbelasting conform artikel 13 van toepassing is.";
 	skos:semanticRelation mak:Koop;
+.
+mak:Vorderen a skos:Concept, skoslex:Act;
+	rdfs:label "Vorderen"@nl;
+	skos:prefLabel "Vorderen";
+	skos:definition "Vorderen";
+	skoslex:actor zv:Partij;
+	skoslex:object mak:Schadevergoeding;
 .
 mak:VoorwaardenIdentificatie a skos:Concept;
 	rdfs:label "Identificatie voorwaarden"@nl;
