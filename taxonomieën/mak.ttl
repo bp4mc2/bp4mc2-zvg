@@ -1314,13 +1314,6 @@ mak:Terugbetalen a skos:Concept, skoslex:Act;
 	skoslex:object fin:Waarborgsom;
 	skoslex:agent not:Notaris;
 .
-mak:Terugbetalen a skos:Concept, skoslex:Act;
-	rdfs:label "Terugbetalen"@nl;
-	skos:prefLabel "Terugbetalen";
-	skos:definition "van een waarborgsom.";
-	skoslex:object fin:Waarborgsom;
-	skoslex:agent not:Notaris;
-.
 mak:Terugzenden a skos:Concept, skoslex:Act;
 	rdfs:label "Terugzenden"@nl;
 	skos:prefLabel "Terugzenden";
