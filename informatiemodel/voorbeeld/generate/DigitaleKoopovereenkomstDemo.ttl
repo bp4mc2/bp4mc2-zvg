@@ -1,0 +1,63 @@
+@prefix sindice: <http://vocab.sindice.net/> .
+
+<file:/Users/marcobrattinga/GITREPO/bp4mc2-zvg/informatiemodel/voorbeeld/scripts/../DigitaleKoopovereenkomstDemo.xhtml>
+  <http://vocab.sindice.net/any23#Content-Type> "text/html; charset=utf-8"@en .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<file:/Users/marcobrattinga/GITREPO/bp4mc2-zvg/informatiemodel/voorbeeld/scripts/../DigitaleKoopovereenkomstDemo.xhtml>
+  dcterms:title "KOOPAKTE BESTAANDE EENGEZINSWONING"@en .
+
+<http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000>
+  a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#aangebodenDoor> <http://www.nvm.nl/over-nvm> .
+
+<http://www.nvm.nl/over-nvm> a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verkoper>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#statutaireNaam> "Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A."@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#postlocatie> <http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889> .
+
+<http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889>
+  a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#woonplaatsNaam> "Nieuwegein"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#openbareRuimteNaam> "Fakkelstede"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#huisnummer> "1"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#postcode> "3431 HZ"@en .
+
+<http://www.nvm.nl/over-nvm> <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#kvkNummer>
+    "40476604"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#vertegenwoordigdDoor> <https://fransenjohannes.inrupt.net/profile/card#me> .
+
+<https://fransenjohannes.inrupt.net/profile/card#me> a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#naam> "Johannes Martinus Fransen"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#contactGegevens> _:n0 .
+
+_:n0 a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ContactGegevens>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#telefoonnummer> "030 608 5185"@en .
+
+<https://fransenjohannes.inrupt.net/profile/card#me> <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#identificatie>
+    <https://fransenjohannes.inrupt.net/profile/card#me> .
+
+<http://www.nvm.nl/over-nvm> <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#vertegenwoordigdDoor>
+    <https://pietersenmarieke.inrupt.net/profile/card#me> .
+
+<https://pietersenmarieke.inrupt.net/profile/card#me> a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#naam> "Marieke Theodora Pietersen"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#contactGegevens> _:n1 .
+
+_:n1 a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ContactGegevens>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#telefoonnummer> "030 608 5185"@en .
+
+<https://pietersenmarieke.inrupt.net/profile/card#me> <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#identificatie>
+    <https://pietersenmarieke.inrupt.net/profile/card#me> .
+
+<http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000>
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#aan> <https://changchozv.inrupt.net/profile/card#me>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#koopsom> "1.100.000"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#wordtUitgevoerdIn> _:n2 .
+
+_:n2 a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#JuridischeLevering>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#datumAfspraak> "31 januari 2019"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#bijNotaris> _:n3 .
+
+_:n3 a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon>;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#statutaireNaam> "Sneep"@en;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#statutaireZetel> "Utrecht"@en .

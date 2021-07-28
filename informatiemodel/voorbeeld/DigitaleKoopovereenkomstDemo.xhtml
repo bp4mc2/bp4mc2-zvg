@@ -113,7 +113,7 @@ behoort de "Toelichting op de koopovereenkomst voor de consument".
   <s>Verkoper verklaart voor zover nodig te handelen met toestemming van zijn echtgeno(o)t(e)/geregistreerd partner die als bewijs daarvan deze akte medeondertekent.</s>
 </p>
 
-<table>
+<table property="zvg:aan" resource="https://changchozv.inrupt.net/profile/card#me">
   <tr>
     <td width="30">B.</td>
     <td width="150"><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">Koper</a>(s)</td>
@@ -276,7 +276,7 @@ behoort de "Toelichting op de koopovereenkomst voor de consument".
 
 <p>tegen een
   <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Koopsom">koopsom</a> van
-  €<span>1.100.000</span>, zegge <span>EEN MILJOEN HONDERDDUIZEND EURO</span>
+  €<span property="zvg:koopsom">1.100.000</span>, zegge <span>EEN MILJOEN HONDERDDUIZEND EURO</span>
 </p>
 
 <p>met inbegrip van de
@@ -499,14 +499,20 @@ zal dit via de notaris gelijktijdig met de betaling van de koopsom plaatsvinden.
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelEigendomsoverdracht">Eigendomsoverdracht</a>
 </h2>
 
-<p>
-  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelEigendomsoverdrachtLid1">4.1.</a></b> De
-  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/AkteVanLevering">akte van levering</a> zal
-  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/PasserenAkteLevering">gepasseerd</a> worden op
-  <span>31 januari 2019</span> of zoveel eerder of later als partijen tezamen nader overeenkomen, ten overstaan van een notaris verbonden aan notariskantoor
-  <span>Sneep</span>, gevestigd te
-  <span>Utrecht</span>, hierna verder te noemen
-  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a>.
+<p property="zvg:wordtUitgevoerdIn" resource="_:levering">
+  <span about="_:levering" typeof="zvg:JuridischeLevering">
+    <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelEigendomsoverdrachtLid1">4.1.</a></b> De
+    <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/AkteVanLevering">akte van levering</a> zal
+    <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/PasserenAkteLevering">gepasseerd</a> worden op
+    <span property="zvg:datumAfspraak">31 januari 2019</span> of zoveel eerder of later als partijen tezamen nader overeenkomen, ten overstaan van een notaris verbonden aan notariskantoor
+    <span property="zvg:bijNotaris" resource="_:notaris">
+      <span about="_:notaris" typeof="zvg:NietNatuurlijkPersoon">
+        <span property="zvg:statutaireNaam">Sneep</span>, gevestigd te
+        <span property="zvg:statutaireZetel">Utrecht</span>, hierna verder te noemen
+        <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a>.
+      </span>
+    </span>
+  </span>
 </p>
 
 <p>
