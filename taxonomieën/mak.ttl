@@ -1061,14 +1061,6 @@ mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
 	skos:definition "Inschrijven van de koopovereenkomst bij het Kadaster";
 	skosthes:broadergeneric kad:InschrijvingOpenbareRegisters
 	skoslex:object mak:Koopovereenkomst;
-	skoslex:agent not:Notaris;
-.
-mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
-	rdfs:label "Inschrijven koopovereenkomst"@nl;
-	skos:prefLabel "Inschrijven koopovereenkomst";
-	skos:definition "Inschrijven van de koopovereenkomst bij het Kadaster";
-	skosthes:broadergeneric kad:InschrijvingOpenbareRegisters
-	skoslex:object mak:Koopovereenkomst;
 	skoslex:object mak:Inschrijvingskosten;
 	skoslex:agent not:Notaris;
 .
