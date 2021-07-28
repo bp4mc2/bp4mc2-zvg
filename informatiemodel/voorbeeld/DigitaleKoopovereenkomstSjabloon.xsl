@@ -536,7 +536,8 @@ zal dit via de notaris gelijktijdig met de betaling van de koopsom plaatsvinden.
 
 <p>
   <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelEigendomsoverdrachtLid1">4.1.</a></b> De
-  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/AkteVanLevering">akte van levering</a> zal gepasseerd worden op
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/AkteVanLevering">akte van levering</a> zal
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/PasserenAkteLevering">gepasseerd</a> worden op
   <span>31 januari 2019</span> of zoveel eerder of later als partijen tezamen nader overeenkomen, ten overstaan van een notaris verbonden aan notariskantoor
   <span>Sneep</span>, gevestigd te
   <span>Utrecht</span>, hierna verder te noemen
@@ -559,9 +560,11 @@ van de verkoop van een recht van erfpacht moet in deze koopovereenkomst voor
 </h2>
 
 <p>
-  <b>5.1.</b> Tot zekerheid voor de nakoming van de verplichtingen van koper zal deze uiterlijk
+  <b>5.1.</b> Tot zekerheid voor de nakoming van de verplichtingen van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> zal deze uiterlijk
   <span>één week na het vervallen van het financieringsvoorbehoud</span> een schriftelijke door een bankinstelling afgegeven
-  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a> doen stellen voor een bedrag van
+  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a> doen
+  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/StellenBankgarantie">stellen</a> voor een bedrag van
   €<span>110.000</span>, zegge <span>HONDERDTIENDUIZEND EURO</span>.
 Deze bankgarantie moet onvoorwaardelijk zijn, voortduren tot ten minste één
 maand na de overeengekomen datum van eigendomsoverdracht, en de clausule
@@ -578,8 +581,10 @@ bankgarantie kan vervallen. Onder bankinstelling wordt in dit artikel begrepen
 een bank of verzekeraar in de zin van artikel 1:1 Wet op het financieel
 toezicht.</p>
 
-<p><b>5.2.</b> In plaats van deze bankgarantie te stellen kan koper een
-  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Waarborgsom">waarborgsom</a> storten ter hoogte van het in artikel 5.1 genoemde bedrag in handen van de notaris via diens
+<p><b>5.2.</b> In plaats van deze bankgarantie te stellen kan
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> een
+  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Waarborgsom">waarborgsom</a>
+  storten ter hoogte van het in artikel 5.1 genoemde bedrag in handen van de notaris via diens
   <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Kwaliteitsrekening">derdenrekening</a>.
 </p>
 
@@ -595,7 +600,8 @@ aan zijn verplichtingen op grond van deze koopovereenkomst heeft voldaan.</p>
 
 <p>Als de notaris over de waarborgsom rente vergoedt, komt deze rente aan koper toe.</p>
 
-<p><b>5.3.</b> Indien koper in staat van
+<p><b>5.3.</b> Indien
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> in staat van
   <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Faillisement">faillissement</a> wordt verklaard of is toegelaten tot de
   <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Schuldsaneringsregeling">schuldsaneringsregeling</a>
   <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/doc/concept/NatuurlijkPersoon">natuurlijke personen</a> en de
@@ -613,7 +619,9 @@ rechtswege als boete bedoeld in artikel 11.2 aan verkoper zijn
 
 <p>
   <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelRechtenAanspraken">6.1.</a></b>
-De onroerende zaak zal aan koper in eigendom worden overgedragen in de staat waarin deze zich
+De
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak">onroerende zaak</a> zal aan koper in eigendom worden overgedragen in de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/StaatOnroerendeZaak">staat</a> waarin deze zich
 bij het tot stand komen van deze koopovereenkomst bevindt, derhalve met alle
 daarbij behorende
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/RechtenAanspraken">rechten en aanspraken</a>,
@@ -628,14 +636,16 @@ daarbij behorende
 </p>
 
 <p><b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelLasten">6.2</a>.</b>
+Koper aanvaardt uitdrukkelijk alle
   <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/DienendeErf">lijdende erfdienstbaarheden</a>,
   <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/BijzondereLasten">bijzondere lasten</a> en beperkingen, afzonderlijke
   <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/ZakelijkRecht">zakelijke rechten</a>,
   <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Kettingbeding">kettingbedingen</a> en
-  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/KwalitatieveVerplichting">kwalitatieve verplichtingen</a> die op de onroerende zaak rusten, e.e.a. voor zover blijkend en/of voortvloeiend uit de laatste en voorgaande
-  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/NotarieleAkte">notariële akten</a> van
-  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">levering</a> en/of van
-  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/VestigenBeperktRecht">vestiging van een beperkt recht</a> op de onroerende zaak, dan wel blijkend en/of voortvloeiend uit een afzonderlijke notariële akte.
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/KwalitatieveVerplichting">kwalitatieve verplichtingen</a> die op de
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak">onroerende zaak</a> rusten, e.e.a. voor zover blijkend en/of voortvloeiend uit de laatste en voorgaande notariële
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/AkteVanLevering">akten van levering</a> en/of van
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/VestigenBeperktRecht">vestiging van een beperkt recht</a> op de onroerende zaak, dan wel blijkend en/of voortvloeiend uit een afzonderlijke
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/NotarieleAkte">notariële akte</a>.
 </p>
 
 <p>Verkoper heeft van al deze notariële akten de letterlijke tekst (in kopie) aan koper ter hand gesteld.</p>
@@ -667,15 +677,17 @@ kenbaar zijn op het moment van het tot stand komen van deze koopovereenkomst
 komen voor rekening en risico van koper.</p>
 
 <p>Voor
-gebreken die het normale gebruik belemmeren en die niet aan koper bekend of
+<a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/GebrekenBelemmeringNormaalGebruik">gebreken die het normale gebruik belemmeren</a> en die niet aan koper bekend of
 kenbaar waren op het moment van het tot stand komen van deze koopovereenkomst
-is verkoper uitsluitend aansprakelijk voor de herstelkosten. Bij het
+is
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> uitsluitend
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/AansprakelijkZijn">aansprakelijk</a> voor de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Herstelkosten">herstelkosten</a>. Bij het
 vaststellen van de herstelkosten wordt rekening gehouden met de
-  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/AftrekNieuwVoorOud">aftrek "nieuw voor oud"</a>.
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/AftrekNieuwVoorOud">aftrek "nieuw voor oud"</a>.
 </p>
 
-<p>Verkoper is
-niet aansprakelijk voor overige (aanvullende) schade, tenzij verkoper een
+<p> Verkoper is niet aansprakelijk voor overige (aanvullende) schade, tenzij verkoper een
 verwijt treft.</p>
 
 <p>
@@ -822,13 +834,12 @@ houdt geen
 in voor koper of verkoper.
 </p>
 
-<h2>Artikel 7
-  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelFeitelijkeLeveringOverdrachtAanspraken">Feitelijke levering/ Overdracht aanspraken</a>
+<h2>Artikel 7 Feitelijke levering/ Overdracht aanspraken
 </h2>
 
 <p>
-  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelFeitelijkeLeveringOverdrachtAanspraken">7.1.</a></b> De
-  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/FeitelijkeLevering">feitelijke levering en aanvaarding</a> vindt plaats op het moment van het ondertekenen van de
+  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelFeitelijkeLevering">7.1.</a></b> De
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/FeitelijkeLevering">feitelijke levering en aanvaarding</a> vindt plaats op het moment van het ondertekenen van de
   <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/AkteVanLevering">akte van levering</a> zoals weergegeven in artikel 4.1, tenzij tussen verkoper en koper een ander tijdstip is overeengekomen, vrij van
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Huurovereenkomst">huur-</a>,
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Leaseovereenkomst">lease</a>- en/of
@@ -844,20 +855,24 @@ artikel 7.1 niet anders voortvloeit staat verkoper ervoor in dat de onroerende z
 bij de feitelijke levering vrij is van
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/AanspraakTotGebruik">aanspraken tot gebruik</a>,
   <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Ongevorderd">ongevorderd</a>
-is, en behoudens de eventueel meeverkochte roerende zaken, leeg en ontruimd is.
+is, en behoudens de eventueel meeverkochte roerende zaken,
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/LeegEnOntruimd">leeg en ontruimd</a> is.
 </p>
 
 <p>
   <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelHuurLeaseHuurkoopovereenkomsten">7.3.</a></b>
 Indien koper de
-onroerende zaak geheel of gedeeltelijk aanvaardt onder gestanddoening van
+    <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak">onroerende zaak</a>
+ geheel of gedeeltelijk aanvaardt onder gestanddoening van
 lopende
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Huurovereenkomst">huur</a>-,
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Leaseovereenkomst">lease</a>- of
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Huurkoopovereenkomst">huurkoopovereenkomsten</a>:<br />
 a. staat verkoper
-  ervoor in dat hij ten tijde van de feitelijke levering niet reeds betalingen
-  heeft ontvangen voor toekomstige termijnen en dat er tevens geen beslag is
+  ervoor in dat hij ten tijde van de feitelijke levering niet reeds
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/BetalingToekomstigeTermijn">betalingen</a>
+  heeft ontvangen voor toekomstige termijnen en dat er tevens geen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/BeslagToekomstigeTermijn">beslag</a> is
   gelegd op dergelijke termijnen;<br />
 b. staat verkoper ervoor in dat vanaf het tot stand komen van deze koopovereenkomst bestaande
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Huurovereenkomst">huur</a>-,
@@ -888,98 +903,176 @@ aan koper te verstrekken en machtigt verkoper koper hierbij, voor zover nodig,
 deze overdracht van aanspraken voor rekening van koper te doen mededelen aan de
 desbetreffende derden overeenkomstig de wettelijke bepalingen.</p>
 
-<h2>Artikel 8 Baten, lasten en canons</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelBatenLastenCanons">Artikel 8 Baten, lasten en canons</a></h2>
 
-<p>De baten,
-lasten, belastingen, heffingen en verschuldigde canons komen voor rekening van
+<p>De
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Bate">baten</a>,
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Last">lasten</a>,
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Belasting">belastingen</a>,
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Heffing">heffingen</a> en verschuldigde
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Canon">canons</a> komen voor rekening van
 koper met ingang van
   <span>de datum der eigendomsoverdracht</span>.
 </p>
 
-<p>De dan
-lopende baten, lasten, belastingen, heffingen en canons, zullen per die datum tussen
-partijen naar rato van tijd worden verrekend. Deze verrekening vindt
-gelijktijdig plaats met de betaling van de koopsom. Voor zover er met
-betrekking tot de onroerende zaak belastingen en/ of heffingen ten laste van
-het gebruik worden geheven zullen deze niet tussen partijen worden verrekend.</p>
+<p>De dan lopende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Bate">baten</a>,
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Last">lasten</a>,
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Belasting">belastingen</a>,
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Heffing">heffingen</a> en
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Canon">canons</a>, zullen per die datum tussen
+partijen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/NaarRatoVanTijd">naar rato van tijd</a> worden
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VerrekeningBatenLastenCanons">verrekend</a>. Deze verrekening vindt
+gelijktijdig plaats met de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Betaling">betaling</a> van de koopsom. Voor zover er met
+betrekking tot de onroerende zaak
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Belasting">belastingen</a> en/ of
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Heffing">heffingen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/TenLasteGebruik">ten laste van het gebruik</a> worden
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Heffing">geheven</a> zullen deze niet tussen partijen worden
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VerrekeningBatenLastenCanons">verrekend</a>.</p>
 
-<h2>Artikel 9 Hoofdelijkheid</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelHoofdelijkheid">Artikel 9 Hoofdelijkheid</a></h2>
 
-<p>Indien verkoper en/of koper twee of meer (rechts)personen zijn, geldt het volgende: <br />
+<p>Indien
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> en/of
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> twee of meer
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon">(rechts)personen</a> zijn, geldt het volgende: <br />
 a. de
-  (rechts)personen die verkoper, respectievelijk koper zijn, kunnen slechts
-  gezamenlijk de voor hen uit deze koopovereenkomst voortvloeiende rechten
-  uitoefenen, respectievelijk de voor hen uit deze koopovereenkomst voortvloeiende
-  verplichtingen nakomen;<br />
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon">(rechts)personen</a> die
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a>, respectievelijk
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> zijn, kunnen slechts
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Gezamenlijkheid">gezamenlijk</a> de voor hen uit deze koopovereenkomst voortvloeiende
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Recht">rechten</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Uitoefenen">uitoefenen</a>, respectievelijk de voor hen uit deze koopovereenkomst voortvloeiende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verplichting">verplichtingen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Nakomen">nakomen</a>;<br />
 b. de
-  (rechts)personen die verkoper, respectievelijk koper zijn, verlenen elkaar bij
-  dezen onherroepelijk volmacht om namens elkaar de uit deze koopovereenkomst
-  voortvloeiende rechten uit te oefenen, respectievelijk de voor hen uit deze koopovereenkomst
-  voortvloeiende verplichtingen na te komen; en<br />
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon">(rechts)personen</a> die
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a>, respectievelijk
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> zijn,
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/VerlenenVolmacht">verlenen</a> elkaar bij
+  dezen onherroepelijk
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Volmacht">volmacht</a> om namens elkaar de uit deze koopovereenkomst
+  voortvloeiende
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Recht">rechten</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Uitoefenen">uit te oefenen</a>, respectievelijk de voor hen uit deze koopovereenkomst
+  voortvloeiende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verplichting">verplichtingen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Nakomen">na te komen</a>; en<br />
 c. de
-  (rechts)personen die verkoper, respectievelijk koper zijn, zijn hoofdelijk
-  verbonden voor de uit deze koopovereenkomst voortvloeiende verplichtingen.<br />
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon">(rechts)personen</a> die
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a>, respectievelijk
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> zijn, zijn
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Hoofdelijkheid">hoofdelijk verbonden</a>
+  voor de uit deze koopovereenkomst voortvloeiende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verplichting">verplichtingen</a>.<br />
 </p>
-
-<h2>artikel 10 Risico-overgang/ Beschadiging door overmacht</h2>
-
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelOvermachtRisicoVerzekeringen">artikel 10 Risico-overgang/ Beschadiging door overmacht</a></h2>
 <p>
   <b>10.1.</b>
-De onroerende zaak is met ingang
-van het moment van tekenen van de akte van levering voor risico van koper,
-tenzij de feitelijke levering eerder plaatsvindt, in welk geval het risico per
-dat moment overgaat op koper.
+De
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak">onroerende zaak</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/RisicoOvergang">is</a> met ingang
+van het moment van
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/PasserenAkteLevering">tekenen van de akte van levering</a> voor
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Risico">risico</a> van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a>,
+tenzij de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/FeitelijkeLevering">feitelijke levering</a> eerder plaatsvindt, in welk geval het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Risico">risico</a> per
+dat moment overgaat op
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a>.
 </p>
 
 <p>
   <b>10.2.</b>
-Indien de onroerende zaak voor het
-tijdstip van risico-overgang wordt beschadigd dan wel geheel of gedeeltelijk
-verloren gaat, is verkoper verplicht koper hiervan onverwijld in kennis te
+Indien de
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak">onroerende zaak</a> voor het
+tijdstip van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/RisicoOvergang">risico-overgang</a> wordt
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Beschadigen">beschadigd</a> dan wel geheel of gedeeltelijk
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VerlorenGaan">verloren gaat</a>, is
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> verplicht
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> hiervan onverwijld in kennis te
 stellen.
 </p>
 
 <p>
   <b>10.3.</b>
 Indien de onroerende zaak door
-overmacht voor het tijdstip van risico-overgang wordt beschadigd dan wel geheel
-of gedeeltelijk verloren gaat, is deze koopovereenkomst van rechtswege
-ontbonden, tenzij binnen vier weken na het onheil, maar in ieder geval vóór de
-overeengekomen dag van eigendomsoverdracht:<br />
-a. koper
-  uitvoering van deze koopovereenkomst verlangt, in welk geval verkoper -zonder
-  enige bijzondere tegenprestatie naast de vastgestelde koopsom- aan koper op
-  de overeengekomen dag van eigendomsoverdracht de onroerende zaak aflevert in de
-  staat waarin deze zich dan bevindt, met daarbij alle rechten welke verkoper ter
-  zake van het onheil -hetzij uit hoofde van verzekering, hetzij uit anderen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Overmacht">overmacht</a> voor het tijdstip van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/RisicoOvergang">risico-overgang</a> wordt <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Beschadigen">beschadigd</a> dan wel geheel of gedeeltelijk
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VerlorenGaan">verloren gaat</a>, is deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a>
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/VanRechtswegeOntbonden">van rechtswege ontbonden</a>, tenzij binnen vier weken na het onheil, maar in ieder geval vóór de
+overeengekomen dag van
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a>:<br />
+a. <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a>
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">uitvoering van deze koopovereenkomst</a> verlangt, in welk geval
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> -zonder
+  enige bijzondere tegenprestatie naast de vastgestelde
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Koopsom">koopsom</a>- aan
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> op
+  de overeengekomen dag van
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a> de
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak">onroerende zaak</a>
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">aflevert</a> in de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/StaatOnroerendeZaak">staat</a> waarin deze zich dan bevindt, met daarbij alle
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/RechtenAanspraken">rechten</a> welke
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> ter
+  zake van het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Onheil">onheil</a> -hetzij uit hoofde van verzekering, hetzij uit anderen
   hoofde- jegens derden toekomen. De levering van deze rechten geschiedt
   overeenkomstig het bepaalde in artikel 7.4; dan wel<br />
-b. verkoper verklaart de schade voor zijn rekening te zullen herstellen vóór de
-  overeengekomen dag van eigendomsoverdracht dan wel indien het onheil zich
+b. <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> verklaart de schade voor zijn rekening te zullen
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Herstel">herstellen</a> vóór de
+  overeengekomen dag van
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a> dan wel indien het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Onheil">onheil</a> zich
   voordoet in de vier weken voorafgaande aan de overeengekomen dag van
-  eigendomsoverdracht, binnen vier weken na het onheil. In het laatste geval
-  verschuift een eerder overeengekomen datum van eigendomsoverdracht naar de dag
-  volgend op die waarop die vier weken na het onheil zijn verstreken. Vindt
-  herstel niet ten genoegen van koper plaats, dan is deze koopovereenkomst alsnog
-  ontbonden, tenzij koper binnen veertien dagen nadat op basis van dit artikel
-  herstel plaatsgevonden behoort te hebben, verklaart alsnog gebruik te willen
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a>, binnen vier weken na het onheil. In het laatste geval
+  verschuift een eerder overeengekomen datum van
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a> naar de dag
+  volgend op die waarop die vier weken na het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Onheil">onheil</a> zijn verstreken. Vindt
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Herstel">herstel</a> niet ten genoegen van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> plaats, dan is deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> alsnog
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/VanRechtswegeOntbonden">van rechtswege ontbonden</a>, tenzij
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> binnen veertien dagen nadat op basis van dit artikel
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Herstel">herstel</a> plaatsgevonden behoort te hebben, verklaart alsnog gebruik te willen
   maken van het hem onder sub a. van dit artikel 10.3 toegekende recht, in welk
-  geval de eigendomsoverdracht plaatsvindt op de overeengekomen datum dan wel,
-  indien het onheil zich voordoet binnen vier weken voorafgaande aan de
-  overeengekomen dag van eigendomsoverdracht, uiterlijk zes weken na het onheil.
+  geval de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a> plaatsvindt op de overeengekomen datum dan wel,
+  indien het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Onheil">onheil</a> zich voordoet binnen vier weken voorafgaande aan de
+  overeengekomen dag van
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a>, uiterlijk zes weken na het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Onheil">onheil</a>.
 </p>
 
 <p>Ingeval
-zowel koper als verkoper verklaren gebruik te willen maken van de in artikel
+zowel
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> als
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> verklaren gebruik te willen maken van de in artikel
 10.3 toegekende rechten, prevaleert de keuze van koper.</p>
 
 <p>
   <b>10.4.</b>
-Indien koper na de eigendomsoverdracht
-de koop op goede gronden heeft ontbonden als bedoeld in artikel 7:10 lid 3 BW,
-blijft het risico in afwijking van die bepaling voor koper tot aan het moment
-van de terugoverdracht aan verkoper, indien en voor zover dat risico door koper
-is verzekerd of - bij gebreke daarvan - indien en voor zover dat risico bij
+Indien
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> na de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">eigendomsoverdracht</a>
+de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koop</a> op goede gronden heeft
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/OntbindingTekortkoming">ontbonden</a> als bedoeld in artikel 7:10 lid 3 BW,
+blijft het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Risico">risico</a> in afwijking van die bepaling voor koper tot aan het moment
+van de terugoverdracht aan
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a>, indien en voor zover dat
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Risico">risico</a> door
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> is verzekerd of - bij gebreke daarvan - indien en voor zover dat risico bij
 een object als het verkochte door een gebruikelijke opstalverzekering pleegt te
 worden gedekt. Voor de overige risico's waartegen koper niet is verzekerd en die
 bij een object als het verkochte ook niet plegen te worden verzekerd, blijft
@@ -987,169 +1080,271 @@ het bepaalde in artikel 7:10 leden 3 en 4 BW van kracht.
 </p>
 
 <h2>artikel 11 Ingebrekestelling/ Ontbinding</h2>
-
 <p>
-  <b>11.1.</b>
-Indien één van de partijen, na in
-gebreke te zijn gesteld, gedurende acht dagen nalatig is of blijft in de
-nakoming van één of meer van haar uit deze koopovereenkomst voortvloeiende
-verplichtingen, kan de wederpartij van de nalatige partij deze koopovereenkomst
-zonder rechterlijke tussenkomst ontbinden door middel van een schriftelijke
+  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelIngebrekestelling">11.1.</a></b>
+Indien één van de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a>, na
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ingebrekestellen">in gebreke te zijn gesteld</a>, gedurende acht dagen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/NalatigZijn">nalatig is</a> of blijft in de
+nakoming van één of meer van haar uit deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> voortvloeiende
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Verplichting">verplichtingen</a>, kan de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">wederpartij</a> van de nalatige
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a>
+zonder rechterlijke tussenkomst
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbinden</a> door middel van een schriftelijke
 verklaring aan de nalatige partij.
 </p>
 
 <p>
-  <b>11.2.</b>
-Ontbinding op grond van
-tekortkoming is slechts mogelijk na voorafgaande ingebrekestelling. Bij
-ontbinding van de koopovereenkomst op grond van toerekenbare tekortkoming zal
-de nalatige partij ten behoeve van de wederpartij een zonder rechterlijke tussenkomst
-terstond opeisbare boete van tien procent (10%) van de koopsom verbeuren, onverminderd
-het recht op aanvullende schadevergoeding, indien de daadwerkelijke schade
-hoger is dan de onmiddellijk opeisbare boete, en onverminderd vergoeding van
-kosten van verhaal.
+  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelOntbindenTekortkoming">11.2.</a></b>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">Ontbinding</a> op grond van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Tekortkoming">tekortkoming</a>
+ is slechts mogelijk na voorafgaande
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ingebrekestellen">ingebrekestelling</a>. Bij
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbinding</a>
+ van de koopovereenkomst op grond van toerekenbare
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">Ontbinding</a> zal
+de nalatige
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> ten behoeve van de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">wederpartij</a> een zonder rechterlijke tussenkomst
+terstond opeisbare
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a> van tien procent (10%) van de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopsom">koopsom</a>
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Verbeuren">verbeuren</a>, onverminderd
+het recht op aanvullende schadevergoeding, indien de daadwerkelijke
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Schade">schade</a>
+hoger is dan de onmiddellijk opeisbare
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a>, en onverminderd vergoeding van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VerhaalKosten">kosten van verhaal</a>.
 </p>
 
 <p>
-  <b>11.3.</b>
-Indien de wederpartij geen gebruik
-maakt van haar recht de koopovereenkomst te ontbinden en nakoming verlangt, zal
-de nalatige partij ten behoeve van de wederpartij na afloop van de in artikel 11.1
+  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelSchadevergoeding">11.3.</a></b>
+Indien de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">wederpartij</a> geen gebruik
+maakt van haar
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Recht">recht</a> de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> te
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbinden</a> en
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Nakomen">nakoming</a> verlangt, zal
+de nalatige
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> ten behoeve van de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">wederpartij</a> na afloop van de in artikel 11.1
 vermelde termijn van acht dagen voor elke sedertdien verstreken dag tot aan de
-dag van nakoming een onmiddellijk opeisbare boete verschuldigd zijn van drie
-promille (3‰) van de koopsom met een maximum van tien procent (10%) van de
-koopsom, onverminderd het recht op aanvullende schadevergoeding, indien de
-daadwerkelijke schade hoger is dan de onmiddellijk opeisbare boete, en onverminderd
-vergoeding van kosten van verhaal.
+dag van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Nakomen">nakoming</a> een onmiddellijk opeisbare
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a> verschuldigd zijn van drie
+promille (3‰) van de
+  koopsom met een maximum van tien procent (10%) van de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopsom">koopsom</a>, onverminderd het
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Recht">recht</a> op aanvullende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Schadevergoeding">schadevergoeding</a>, indien de
+daadwerkelijke
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Schade">schade</a> hoger is dan de onmiddellijk opeisbare
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a>, en onverminderd
+vergoeding van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VerhaalKosten">kosten van verhaal</a>.
 </p>
 
-<p>Indien de wederpartij
-na verloop van tijd de koopovereenkomst alsnog ontbindt dan zal de nalatige
-partij een boete verschuldigd zijn van tien procent (10%) van de koopsom
+<p>Indien de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">wederpartij</a>
+na verloop van tijd de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> alsnog
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbindt</a> dan zal de nalatige
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a>
+een
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a> verschuldigd zijn van tien procent (10%) van de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopsom">koopsom</a>
 verminderd met het reeds in de vorm van een dagboete betaalde bedrag, onverminderd
-het recht op aanvullende schadevergoeding, indien de daadwerkelijke schade
-hoger is dan de onmiddellijk opeisbare boete, en onverminderd vergoeding van
-kosten van verhaal.</p>
+het recht op aanvullende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Schadevergoeding">schadevergoeding</a>, indien de daadwerkelijke
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Schade">schade</a>
+hoger is dan de onmiddellijk opeisbare
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a>, en onverminderd vergoeding van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VerhaalKosten">kosten van verhaal</a>.</p>
 
 <p>
   <b>11.4.</b>
-Indien de nalatige partij na ingebreke
-te zijn gesteld binnen de voormelde termijn van acht dagen alsnog haar
-verplichtingen nakomt, is de nalatige partij desalniettemin gehouden aan de
-wederpartij diens schade als gevolg van de niet-tijdige nakoming te vergoeden.
+Indien de nalatige
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> na
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ingebrekestellen">ingebreke te zijn gesteld</a> binnen de voormelde termijn van acht dagen alsnog haar
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verplichting">verplichtingen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Nakomen">nakomt</a>, is de nalatige
+  betalen desalniettemin gehouden aan de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">wederpartij</a>
+ diens
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Schade">schade</a> als gevolg van de niet-tijdige
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Nakomen">nakoming</a> te vergoeden.
 </p>
 
 <p>
   <b>11.5.</b>
-De notaris wordt bij dezen verplicht, en voor zover nodig door partijen onherroepelijk gemachtigd, om:<br />
+De
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a> wordt bij dezen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verplichting">verplicht</a>, en voor zover nodig door partijen onherroepelijk
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/VerlenenVolmacht">gemachtigd</a>, om:<br />
 a. indien
-  koper een boete is verschuldigd, het bedrag van deze boete uit het aan de notaris
-  uitgekeerde bedrag van de bankgarantie dan wel uit de bij de notaris gestorte waarborgsom,
-  aan verkoper te betalen;<br />
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> een
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a> is verschuldigd, het bedrag van deze boete uit het aan de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a>
+  uitgekeerde bedrag van de
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a> dan wel uit de bij de notaris gestorte
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Waarborgsom">waarborgsom</a>,
+  aan
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> te betalen;<br />
 b. indien
-  verkoper een boete is verschuldigd, de aan de notaris ter hand gestelde bankgarantie
-  aan de bankinstelling terug te zenden dan wel de door koper bij de notaris
-  gestorte waarborgsom aan koper terug te betalen;<br />
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> een
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a> is verschuldigd, de aan de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a> ter hand gestelde
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a>
+  aan de bankinstelling
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Terugzenden">terug te zenden</a> dan wel de door
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> bij de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a>
+  gestorte
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Waarborgsom">waarborgsom</a> aan
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Terugbetalen">terug te betalen</a>;<br />
 c. indien
-  het geval van artikel 5.3 zich voordoet het bedrag van de bankgarantie
-  respectievelijk de waarborgsom als boete aan verkoper te betalen;<br />
+  het geval van artikel 5.3 zich voordoet het bedrag van de
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a>
+  respectievelijk de
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Waarborgsom">waarborgsom</a> als
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boete</a> aan
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> te
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Betalen">betalen</a>;<br />
 d. indien
-  beide partijen tekortschieten of de notaris onvoldoende kan beoordelen wie van
+  beide
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Tekortschieten">tekortschieten</a> of de notaris onvoldoende kan beoordelen wie van
   beide partijen tekortschiet dan wel of er sprake is van tekortschieten, -
-  behoudens eensluidende betalingsopdracht van partijen - de bankgarantie of
-  waarborgsom onder zich te houden totdat bij in kracht van gewijsde gegane
+  behoudens eensluidende betalingsopdracht van partijen - de
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a> of
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/Waarborgsom">waarborgsom</a>
+   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/OnderZichHouden">onder zich te houden</a> totdat bij in kracht van gewijsde gegane
   uitspraak of uitvoerbaar bij voorraad verklaard vonnis is beslist aan wie hij
   het bedrag moet afdragen.
 </p>
 
 <p>
-  <b>11.6.</b>
-Er kunnen geen boetes meer worden
-verbeurd op grond van artikel 11.2 en/of artikel 11.3 zodra de koopsom is
-betaald en de levering van de onroerende zaak heeft plaatsgevonden. De boetes
-die tot dat moment ingevolge artikel 11.3 zijn verbeurd, blijven verschuldigd. De
-omstandigheid dat geen boetes meer kunnen worden verbeurd krachtens artikel
+  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelVervallenBoeteregeling">11.6.</a></b>
+Er kunnen geen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boetes</a> meer worden
+  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Verbeuren">verbeurd</a> op grond van artikel 11.2 en/of artikel 11.3 zodra de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopsom">koopsom</a> is
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Betalen">betaald</a> en de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Levering">levering</a> van de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak">onroerende zaak</a> heeft plaatsgevonden. De
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boetes</a>
+die tot dat moment ingevolge artikel 11.3 zijn
+  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Verbeuren">verbeurd</a>, blijven verschuldigd. De
+omstandigheid dat geen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Boete">boetes</a> meer kunnen worden
+  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Verbeuren">verbeurd</a> krachtens artikel
 11.2 en/of artikel 11.3 (nadat de koopsom is betaald en de onroerende zaak aan
-koper is geleverd), laat onverlet dat een partij schadevergoeding kan vorderen
+koper is geleverd), laat onverlet dat een
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Schadevergoeding">schadevergoeding</a> kan
+  <a class="concept" href="https://mak.zorgeloosvastgoed.nl/id/concept/Vorderen">vorderen</a>
 indien aan de daarvoor geldende wettelijke eisen is voldaan.
 </p>
 
-<h2>Artikel 12 Woonplaats</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelWoonplaats">Artikel 12 Woonplaats</a></h2>
 
 <p>
-Deze koopovereenkomst
-wordt verzonden naar de notaris en partijen kiezen ter zake van deze koopovereenkomst
-woonplaats ten kantore van de notaris.
+Deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a>
+wordt verzonden naar de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a> en
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a> kiezen ter zake van deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a>
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/GekozenWoonplaats ">woonplaats</a> ten kantore van de notaris.
 </p>
 
-<h2>Artikel 13 Registratie koopovereenkomst</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelRegistratieKoopovereenkomst">Artikel 13 Registratie koopovereenkomst</a></h2>
 
 <p><s>
-Partijen
-geven de notaris hiermee wel/niet* de opdracht deze koopovereenkomst zo spoedig
-mogelijk in de openbare registers in te laten schrijven. De inschrijving vindt
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">Partijen</a>
+geven de
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Notaris">notaris</a> hiermee wel/niet* de opdracht deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a> zo spoedig
+mogelijk
+   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/InschrijvenKoopovereenkomst">in de openbare registers in te laten schrijven</a>in de openbare registers in te laten schrijven. De inschrijving vindt
 niet eerder plaats dan <span>...........</span>.</s>
 </p>
 
 <p><s>
-De aan deze inschrijving verbonden kosten komen voor rekening van
+De aan deze inschrijving verbonden
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Inschrijvingskosten">kosten</a> komen voor rekening van
   <span>koper/verkoper*.</span>
 </s></p>
 
-<p>
-  <b>13.1</b> Registratie artikel 13
-</p>
-
-<p>Koper geeft
-de notaris op dit moment geen opdracht deze overeenkomst in de openbare registers
-in te laten schrijven. Koper behoudt zich het recht voor de overeenkomst in een
-later stadium (doch niet eerder dan zes maanden voor de datum der eigendomsoverdracht)
-middels opdracht aan de notaris deze overeenkomst in de openbare registers in
-te laten schrijven.
-</p>
-
-<h2>Artikel 14 Identiteit partijen</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelIdentiteitPartijen">Artikel 14 Identiteit partijen</a></h2>
 
 <p>Koper en
-verkoper stemmen ermee in, dat indien één van partijen daarom verzoekt, de wederpartij
-zich jegens de verzoekende partij zal identificeren door het tonen van een
-geldig identiteitsbewijs.
+verkoper stemmen ermee in, dat indien één van partijen daarom verzoekt, de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">wederpartij</a>
+zich jegens de verzoekende
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> zal
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Identificeren">identificeren</a> door het tonen van een
+geldig
+  <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Identiteitsdocument">identiteitsbewijs</a>.
 </p>
 
 <h2>Artikel 15 Ontbindende voorwaarden</h2>
 
 <p>
-  <b>15.1.</b>
-Deze koopovereenkomst kan door koper worden ontbonden indien uiterlijk:<br />
+  <b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelOntbindendeVoorwaarden">15.1.</a></b>
+Deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> kan door
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> worden
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbonden">ontbonden</a> indien uiterlijk:<br />
 a. op
-  <span>20 november 2018</span> koper voor de financiering van de onroerende zaak voor een bedrag van
-  <span>de koopsom en €200.000 verbouwingskosten</span>, zegge
-  <span>de koopsom en TWEEHONDERDDUIZEND EURO verbouwkosten</span>
-geen bindend aanbod tot een hypothecaire
-geldlening van een erkende geldverstrekkende bankinstelling heeft verkregen, <s>zulks
-tegen geen hogere bruto jaarlast dan <span>..............</span> zegge <span>.........</span>, of een rentepercentage
-niet hoger dan <span>.......</span>, bij de volgende hypotheekvorm: <span>........</span></s>.<br />
+  <span>.........</span>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> voor de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Financieringsvoorbehoud">financiering van de onroerende zaak</a> voor een bedrag van
+  <span>.........</span>, zegge
+  <span>.........</span>
+geen
+  <a class="concept" href="http://fin.zorgeloosvastgoed.nl/id/concept/BindendeOfferte">bindend aanbod</a> tot een
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/HypothecaireGeldlening">hypothecaire geldlening</a> van een
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ErkendeBankinstelling">erkende geldverstrekkende bankinstelling</a> heeft verkregen, <s>zulks
+tegen geen hogere
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/BrutoJaarlast">bruto jaarlast</a> dan <span>..............</span> zegge <span>.........</span>, of een
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Rentepercentage">rentepercentage</a>
+niet hoger dan <span>.......</span>, bij de volgende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Hypotheekvorm">hypotheekvorm</a>: <span>........</span></s>.<br />
   Onder bankinstelling wordt in dit artikel begrepen een bank of verzekeraar in de zin
   van artikel 1:1 Wet op het financieel toezicht; <s>of<br />
 b. op <span>.....................</span> koper geen met de aangevraagde hypothecaire geldlening
-  corresponderende Nationale Hypotheek Garantie heeft verkregen; of <br />
-c. op <span>.....................</span> uit het rapport van een bouwtechnische keuring uitgevoerd door
+  corresponderende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/NationaleHypotheekgarantie">Nationale Hypotheek Garantie</a> heeft verkregen; of <br />
+c. op <span>.....................</span> uit het rapport van een
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/BouwkundigeKeuring;">bouwtechnische keuring</a> uitgevoerd door
 <span>.......... (naam keurder) / nader te bepalen</span>* blijkt dat de kosten van direct
-noodzakelijk herstel van gebreken en achterstallig onderhoud een bedrag van <span>..................</span>,
-zegge <span>............</span>, te boven gaan of als aanvullend specialistisch onderzoek
+noodzakelijk
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Herstel;">herstel</a> van
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Gebrek;">gebreken</a> en
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/AchterstalligOnderhoud;">achterstallig onderhoud</a> een bedrag van <span>..................</span>,
+zegge <span>............</span>, te boven gaan of als aanvullend
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/SpecialistischOnderzoek;">specialistisch onderzoek</a>
 wordt aanbevolen. Als de keurder bij onderdelen in het rapport een bandbreedte
 in de herstelkosten aanhoudt, wordt uitgegaan van het hoogste bedrag.</s>
 </p>
 
 <p><b>15.2.</b>Deze koopovereenkomst kan door
-ieder van de partijen worden ontbonden indien verkoper ingevolge de Wet
-voorkeursrecht gemeenten niet in staat is om de eigendom van de onroerende zaak
+ieder van de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a> worden
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbonden</a> indien verkoper ingevolge de
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/AanwijzingWVG">Wet voorkeursrecht gemeenten</a> niet in staat is om de eigendom van de onroerende zaak
 op de overeengekomen dag over te dragen. Verkoper is verplicht om zodra duidelijk
 is dat hij ingevolge genoemde wet niet of niet tijdig aan zijn verplichting tot
 levering kan voldoen, koper daarvan schriftelijk op de hoogte te stellen.
 </p>
 
-<p><b>15.3.</b>
+<p><b><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelOntbindingVoorwaarden">15.3.</a></b>
 Partijen verplichten zich over en
 weer al het redelijk mogelijke te doen teneinde de hierboven bedoelde financiering
 en/of Nationale Hypotheek Garantie en/of toezegging(en) en/of andere zaken te
@@ -1158,9 +1353,10 @@ verkrijgen.
 
 <p>De partij
 die de ontbinding inroept, dient er zorg voor te dragen dat de mededeling dat de
-ontbinding wordt ingeroepen, uiterlijk op de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbinding</a> wordt ingeroepen, uiterlijk op de
   <span>eerste</span>
-werkdag na de datum waarvan in de betreffende ontbindende voorwaarde sprake is
+werkdag na de datum waarvan in de betreffende
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/OntbindendeVoorwaarde">ontbindende voorwaarde</a> sprake is
 door de wederpartij of diens makelaar is ontvangen.
 </p>
 
@@ -1189,12 +1385,17 @@ onder zich hebben worden daartoe bij dezen verplicht, en voor zover nodig
 onherroepelijk gemachtigd.
 </p>
 
-<h2>Artikel 16 Bedenktijd</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelBedenktijd">Artikel 16 Bedenktijd</a></h2>
 
 <p>
-De koper
-die een natuurlijke persoon is en niet handelt in de uitoefening van een beroep
-of bedrijf heeft bedenktijd om deze koopovereenkomst te ontbinden. De
+De
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a>
+die een
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/NatuurlijkPersoon">natuurlijke persoon</a> is en niet handelt in de uitoefening van een beroep
+of bedrijf heeft
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Bedenktijd">bedenktijd</a> om deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> te
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbinden</a>. De
 bedenktijd duurt drie dagen en begint om 0.00 uur van de dag die volgt op de
 dag dat de door partijen ondertekende koopovereenkomst (in kopie) aan koper ter
 hand gesteld is.
@@ -1202,50 +1403,83 @@ hand gesteld is.
 
 <p>
 Indien de
-bedenktijd op een zaterdag, zondag of algemeen erkende feestdag eindigt, wordt
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Bedenktijd">bedenktijd</a> op een zaterdag, zondag of algemeen erkende feestdag eindigt, wordt
 deze verlengd tot en met de eerstvolgende dag die niet een zaterdag, zondag of
 algemeen erkende feestdag is.
 </p>
 
 <p>
 De
-bedenktijd wordt, zo nodig, zoveel verlengd, dat daarin ten minste twee dagen
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Bedenktijd">bedenktijd</a> wordt, zo nodig, zoveel verlengd, dat daarin ten minste twee dagen
 voorkomen die niet een zaterdag, zondag of algemeen erkende feestdag zijn.
 </p>
 
 <p>
 Als koper
-binnen de bedenktijd de koopovereenkomst wil ontbinden, moet hij ervoor
-zorgdragen dat de ontbindingsverklaring verkoper of diens makelaar voor het einde
-van de bedenktijd bereikt.
+binnen de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Bedenktijd">bedenktijd</a> de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> wil
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden">ontbinden</a>, moet hij ervoor
+zorgdragen dat de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ontbindingsverklaring">ontbindingsverklaring</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper">verkoper</a> of diens
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Makelaar">makelaar</a> voor het einde
+van de
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Bedenktijd">bedenktijd</a> bereikt.
 </p>
 
-<h2>Artikel 17 Schriftelijke vastlegging</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelOndertekening">Artikel 17 Schriftelijke vastlegging</a></h2>
 
 <p>
   <b>17.1.</b>
-Uit deze koopovereenkomst vloeien
-pas verplichtingen voort als beide partijen deze koopovereenkomst hebben ondertekend.
+Uit deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> vloeien
+pas
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Verplichting">verplichtingen</a> voort als beide
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a> deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a> hebben
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ondertekenen">ondertekend</a>.
 </p>
 
 <p><b>17.2.</b>
-De partij die deze koopovereenkomst
-als eerste ondertekent, doet dit onder voorbehoud dat hij uiterlijk op de
+De
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> die deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a>
+als eerste
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ondertekenen">ondertekent</a>, doet dit onder
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Voorbehoud">voorbehoud</a> dat hij uiterlijk op de
   <span>vijfde</span>
 werkdag nadat hij de koopovereenkomst ondertekend heeft
-(een kopie van) de door beide partijen ondertekende koopovereenkomst heeft ontvangen.
-Indien de partij die als eerste heeft ondertekend niet tijdig (een kopie van)
-de door beide partijen ondertekende koopovereenkomst heeft ontvangen, heeft
-deze partij het recht zich op het voorbehoud te beroepen, waardoor hij niet
-(meer) gebonden is. Dit recht vervalt als daar niet uiterlijk op de tweede werkdag
-nadat alsnog (een kopie van) de door beide partijen ondertekende koopovereenkomst
+(een kopie van) de door beide
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ondertekenen">ondertekende</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a> heeft ontvangen.
+Indien de
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> die als eerste heeft
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ondertekenen">ondertekend</a> niet tijdig (een kopie van)
+de door beide
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ondertekenen">ondertekende</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a> heeft ontvangen, heeft
+deze
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partij</a> het
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Recht">recht</a> zich op het
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Voorbehoud">voorbehoud</a> te beroepen, waardoor hij niet
+(meer) gebonden is. Dit
+  <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/Recht">recht</a> vervalt als daar niet uiterlijk op de tweede werkdag
+nadat alsnog (een kopie van) de door beide
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij">partijen</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Ondertekenen">ondertekende</a>
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koopovereenkomst">koopovereenkomst</a>
 is ontvangen, gebruik van is gemaakt.
 </p>
 
-<h2>Artikel 18 Nederlands recht</h2>
+<h2><a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelNederlandsRecht">Artikel 18 Nederlands recht</a></h2>
 
 <p>
-Op deze koopovereenkomst is Nederlands recht van toepassing.
+Op deze
+  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koop">koopovereenkomst</a> is
+  <a class="concept" href="http://taxonomie.zorgeloosvastgoed.nl/id/concept/NederlandsRecht">Nederlands recht</a> van toepassing.
 </p>
 
 <h2>Artikel 19 Bijlagen</h2>
