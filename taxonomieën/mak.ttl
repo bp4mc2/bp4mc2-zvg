@@ -813,7 +813,7 @@ mak:ArtikelOndertekening a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel 17:  ondertekenin";
 	rdfs:comment "In veel gevallen vloeit al uit de wet voort dat beide partijen de koopovereenkomst moeten ondertekenen. Vaak zullen partijen dat direct na elkaar doen. Het kan echter voorkomen dat er enige tijd zit tussen het moment dat de ene partij de koopovereenkomst ondertekent en het moment dat de andere partij dat doet. Deze situatie doet zich bijvoorbeeld voor wanneer de ene partij het contract aan de ander opstuurt. Artikel 17 lid 2 voorkomt dat partijen elkaar onnodig lang in onzekerheid laten. Als de eerste ondertekenaar niet binnen de afgesproken tijd de door de andere partij ondertekende koopovereenkomst terugontvangt, kan de eerste ondertekenaar gedurende een bepaalde periode van de koopovereenkomst afzien. Hij hoeft dat uiteraard niet te doen, hij heeft de keuze. Er zijn geen eisen gesteld aan de vorm waarin de eerste ondertekenaar de overeenkomst moet ontbinden. Uiteraard is het verstandig om dat op een achteraf bewijsbare wijze te doen.";
 	skos:scopeNote "Artikel 17 van de model koopovereenkomst.";
-	skoslex:isAbout mak:Ondertekening;
+	skoslex:isAbout mak:Ondertekenen;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
@@ -1169,7 +1169,7 @@ mak:Onheil a skos:Concept, skoslex:Act;
 	skos:definition "Beschadiging of verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming";
 	skostlex:object kad:OnroerendeZaak;
 .
-mak:Ondertekening a skos:Concept, skoslex:Act;
+mak:Ondertekenen a skos:Concept, skoslex:Act;
 	rdfs:label "Ondertekening"@nl;
 	skos:prefLabel "Ondertekening";
 	skos:definition "Ondertekening van een overeenkomst.";
