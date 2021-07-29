@@ -5,18 +5,31 @@
     xmlns:j.0="http://vocab.sindice.net/any23#"
     xmlns:j.1="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#">
   <j.1:Koop rdf:about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">
+    <j.1:omvat>
+      <j.1:StaatOnroerendeZaak>
+        <j.1:isPubliekrechtelijkBeperkt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</j.1:isPubliekrechtelijkBeperkt>
+      </j.1:StaatOnroerendeZaak>
+    </j.1:omvat>
+    <j.1:omvat>
+      <j.1:ArtikelBankgarantieWaarborgsom>
+        <j.1:bedrag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >110000</j.1:bedrag>
+      </j.1:ArtikelBankgarantieWaarborgsom>
+    </j.1:omvat>
     <j.1:wordtUitgevoerdIn>
       <j.1:JuridischeLevering>
         <j.1:bijNotaris>
           <j.1:NietNatuurlijkPersoon>
-            <j.1:statutaireZetel xml:lang="en">Utrecht</j.1:statutaireZetel>
-            <j.1:statutaireNaam xml:lang="en">Sneep</j.1:statutaireNaam>
+            <j.1:statutaireZetel xml:lang="nl">Utrecht</j.1:statutaireZetel>
+            <j.1:statutaireNaam xml:lang="nl">Sneep</j.1:statutaireNaam>
           </j.1:NietNatuurlijkPersoon>
         </j.1:bijNotaris>
-        <j.1:datumAfspraak xml:lang="en">31 januari 2019</j.1:datumAfspraak>
+        <j.1:datumAfspraak xml:lang="nl">31 januari 2019</j.1:datumAfspraak>
       </j.1:JuridischeLevering>
     </j.1:wordtUitgevoerdIn>
-    <j.1:koopsom xml:lang="en">1.100.000</j.1:koopsom>
+    <j.1:koopsom rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1100000</j.1:koopsom>
     <j.1:aan rdf:resource="https://changchozv.inrupt.net/profile/card#me"/>
     <j.1:aangebodenDoor>
       <j.1:Verkoper rdf:about="http://www.nvm.nl/over-nvm">
@@ -25,10 +38,10 @@
             <j.1:identificatie rdf:resource="https://pietersenmarieke.inrupt.net/profile/card#me"/>
             <j.1:contactGegevens>
               <j.1:ContactGegevens>
-                <j.1:telefoonnummer xml:lang="en">030 608 5185</j.1:telefoonnummer>
+                <j.1:telefoonnummer xml:lang="nl">030 608 5185</j.1:telefoonnummer>
               </j.1:ContactGegevens>
             </j.1:contactGegevens>
-            <j.1:naam xml:lang="en">Marieke Theodora Pietersen</j.1:naam>
+            <j.1:naam xml:lang="nl">Marieke Theodora Pietersen</j.1:naam>
           </j.1:NatuurlijkPersoon>
         </j.1:vertegenwoordigdDoor>
         <j.1:vertegenwoordigdDoor>
@@ -36,27 +49,27 @@
             <j.1:identificatie rdf:resource="https://fransenjohannes.inrupt.net/profile/card#me"/>
             <j.1:contactGegevens>
               <j.1:ContactGegevens>
-                <j.1:telefoonnummer xml:lang="en">030 608 5185</j.1:telefoonnummer>
+                <j.1:telefoonnummer xml:lang="nl">030 608 5185</j.1:telefoonnummer>
               </j.1:ContactGegevens>
             </j.1:contactGegevens>
-            <j.1:naam xml:lang="en">Johannes Martinus Fransen</j.1:naam>
+            <j.1:naam xml:lang="nl">Johannes Martinus Fransen</j.1:naam>
           </j.1:NatuurlijkPersoon>
         </j.1:vertegenwoordigdDoor>
-        <j.1:kvkNummer xml:lang="en">40476604</j.1:kvkNummer>
+        <j.1:kvkNummer xml:lang="nl">40476604</j.1:kvkNummer>
         <j.1:postlocatie>
           <j.1:ObjectlocatieBinnenland rdf:about="http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889">
-            <j.1:postcode xml:lang="en">3431 HZ</j.1:postcode>
-            <j.1:huisnummer xml:lang="en">1</j.1:huisnummer>
-            <j.1:openbareRuimteNaam xml:lang="en">Fakkelstede</j.1:openbareRuimteNaam>
-            <j.1:woonplaatsNaam xml:lang="en">Nieuwegein</j.1:woonplaatsNaam>
+            <j.1:postcode xml:lang="nl">3431 HZ</j.1:postcode>
+            <j.1:huisnummer xml:lang="nl">1</j.1:huisnummer>
+            <j.1:openbareRuimteNaam xml:lang="nl">Fakkelstede</j.1:openbareRuimteNaam>
+            <j.1:woonplaatsNaam xml:lang="nl">Nieuwegein</j.1:woonplaatsNaam>
           </j.1:ObjectlocatieBinnenland>
         </j.1:postlocatie>
-        <j.1:statutaireNaam xml:lang="en">Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A.</j.1:statutaireNaam>
+        <j.1:statutaireNaam xml:lang="nl">Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A.</j.1:statutaireNaam>
       </j.1:Verkoper>
     </j.1:aangebodenDoor>
   </j.1:Koop>
   <rdf:Description rdf:about="file:///Users/marcobrattinga/GITREPO/bp4mc2-zvg/informatiemodel/voorbeeld/DigitaleKoopovereenkomstDemo.xhtml">
-    <dcterms:title xml:lang="en">KOOPAKTE BESTAANDE EENGEZINSWONING</dcterms:title>
-    <j.0:Content-Type xml:lang="en">text/html; charset=utf-8</j.0:Content-Type>
+    <dcterms:title xml:lang="nl">KOOPAKTE BESTAANDE EENGEZINSWONING</dcterms:title>
+    <j.0:Content-Type xml:lang="nl">text/html; charset=utf-8</j.0:Content-Type>
   </rdf:Description>
 </rdf:RDF>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:zvg="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:zvg="http://taxonomie.zorgeloosvastgoed.nl/def/zvg#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:lang="nl" lang="nl">
 <head>
   <title>KOOPAKTE BESTAANDE EENGEZINSWONING</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -276,7 +276,7 @@ behoort de "Toelichting op de koopovereenkomst voor de consument".
 
 <p>tegen een
   <a class="concept" href="http://not.zorgeloosvastgoed.nl/id/concept/Koopsom">koopsom</a> van
-  €<span property="zvg:koopsom">1.100.000</span>, zegge <span>EEN MILJOEN HONDERDDUIZEND EURO</span>
+  €<span property="zvg:koopsom" datatype="xsd:integer" content="1100000">1.100.000</span>, zegge <span>EEN MILJOEN HONDERDDUIZEND EURO</span>
 </p>
 
 <p>met inbegrip van de
@@ -530,27 +530,30 @@ van de verkoop van een recht van erfpacht moet in deze koopovereenkomst voor
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelBankgarantieWaarborgsom">Bankgarantie/ Waarborgsom</a>
 </h2>
 
-<p>
-  <b>5.1.</b> Tot zekerheid voor de nakoming van de verplichtingen van
-  <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> zal deze uiterlijk
-  <span>één week na het vervallen van het financieringsvoorbehoud</span> een schriftelijke door een bankinstelling afgegeven
-  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a> doen
-  <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/StellenBankgarantie">stellen</a> voor een bedrag van
-  €<span>110.000</span>, zegge <span>HONDERDTIENDUIZEND EURO</span>.
-Deze bankgarantie moet onvoorwaardelijk zijn, voortduren tot ten minste één
-maand na de overeengekomen datum van eigendomsoverdracht, en de clausule
-bevatten dat de desbetreffende bankinstelling op eerste verzoek van de notaris
-het bedrag van de garantie aan de notaris zal uitkeren. Indien het bedrag van
-de garantie aan de notaris wordt uitgekeerd, zal deze daarmee handelen als in
-artikel 11 is bepaald. Indien zich het gestelde in artikel 11.5 sub d voordoet,
-dient de bankgarantie te worden verlengd bij gebreke waarvan partijen de
-notaris ingevolge deze koopovereenkomst verplichten de bankgarantie te innen. Bij
-dezen wordt de notaris verplicht en voor zover nodig onherroepelijk gemachtigd
-om, zodra koper aan zijn verplichtingen heeft voldaan en de juridische levering
-is voltooid, de bankinstelling te berichten dat de door koper gestelde
-bankgarantie kan vervallen. Onder bankinstelling wordt in dit artikel begrepen
-een bank of verzekeraar in de zin van artikel 1:1 Wet op het financieel
-toezicht.</p>
+<p property="zvg:omvat" resource="_:bankgarantie">
+  <span about="_:bankgarantie" typeof="zvg:ArtikelBankgarantieWaarborgsom">
+    <b>5.1.</b> Tot zekerheid voor de nakoming van de verplichtingen van
+    <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> zal deze uiterlijk
+    <span about="zvg:uiterlijkeDatumGarantie">één week na het vervallen van het financieringsvoorbehoud</span> een schriftelijke door een bankinstelling afgegeven
+    <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Bankgarantie">bankgarantie</a> doen
+    <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/StellenBankgarantie">stellen</a> voor een bedrag van
+    €<span property="zvg:bedrag" datatype="xsd:integer" content="110000">110.000</span>, zegge <span>HONDERDTIENDUIZEND EURO</span>.
+  </span>
+  Deze bankgarantie moet onvoorwaardelijk zijn, voortduren tot ten minste één
+  maand na de overeengekomen datum van eigendomsoverdracht, en de clausule
+  bevatten dat de desbetreffende bankinstelling op eerste verzoek van de notaris
+  het bedrag van de garantie aan de notaris zal uitkeren. Indien het bedrag van
+  de garantie aan de notaris wordt uitgekeerd, zal deze daarmee handelen als in
+  artikel 11 is bepaald. Indien zich het gestelde in artikel 11.5 sub d voordoet,
+  dient de bankgarantie te worden verlengd bij gebreke waarvan partijen de
+  notaris ingevolge deze koopovereenkomst verplichten de bankgarantie te innen. Bij
+  dezen wordt de notaris verplicht en voor zover nodig onherroepelijk gemachtigd
+  om, zodra koper aan zijn verplichtingen heeft voldaan en de juridische levering
+  is voltooid, de bankinstelling te berichten dat de door koper gestelde
+  bankgarantie kan vervallen. Onder bankinstelling wordt in dit artikel begrepen
+  een bank of verzekeraar in de zin van artikel 1:1 Wet op het financieel
+  toezicht.
+</p>
 
 <p><b>5.2.</b> In plaats van deze bankgarantie te stellen kan
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/Koper">koper</a> een
@@ -584,6 +587,7 @@ rechtswege als boete bedoeld in artikel 11.2 aan verkoper zijn
   <a class="concept" href="https://fin.zorgeloosvastgoed.nl/id/concept/Verbeuren">verbeurd</a>.
 </p>
 
+<span property="zvg:omvat" resource="_:staat"><span about="_:staat" typeof="zvg:StaatOnroerendeZaak">
 <h2>Artikel 6
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/ArtikelStaatOnroerendeZaakGebruik">Staat van de onroerende zaak/ Gebruik</a>
 </h2>
@@ -625,7 +629,7 @@ Koper aanvaardt uitdrukkelijk alle
 
 <p>Verkoper heeft aan koper medegedeeld dat de volgende
   <a class="concept" href="http://kad.zorgeloosvastgoed.nl/id/concept/PubliekrechtelijkeBeperking">publiekrechtelijke beperkingen</a> op de onroerende zaak rusten:
-  <span>geen</span>
+  <span property="zvg:isPubliekrechtelijkBeperkt" content="false" datatype="xsd:boolean">geen</span>
 </p>
 
 <p>Koper verklaart deze bijzondere (publiekrechtelijke) lasten uitdrukkelijk te aanvaarden.</p>
@@ -804,6 +808,7 @@ houdt geen
   <a class="concept" href="http://mak.zorgeloosvastgoed.nl/id/concept/VrijwaringStaatOnroerendeZaak">vrijwaring</a>
 in voor koper of verkoper.
 </p>
+</span></span>
 
 <h2>Artikel 7 Feitelijke levering/ Overdracht aanspraken
 </h2>
