@@ -72,4 +72,7 @@ _:n4 a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ArtikelBankgarantieWaarbor
   <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#omvat> _:n5 .
 
 _:n5 a <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak>;
-  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#isPubliekrechtelijkBeperkt> false .
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#isPubliekrechtelijkBeperkt> false;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#gebruik> "particulier woonhuis"@nl;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#isVerontreinigingBekend> false;
+  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#isOndergrondsetankBekend> false .

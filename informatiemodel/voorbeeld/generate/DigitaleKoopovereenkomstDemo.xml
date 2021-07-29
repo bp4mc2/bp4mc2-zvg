@@ -7,6 +7,11 @@
   <j.1:Koop rdf:about="http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000">
     <j.1:omvat>
       <j.1:StaatOnroerendeZaak>
+        <j.1:isOndergrondsetankBekend rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</j.1:isOndergrondsetankBekend>
+        <j.1:isVerontreinigingBekend rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</j.1:isVerontreinigingBekend>
+        <j.1:gebruik xml:lang="nl">particulier woonhuis</j.1:gebruik>
         <j.1:isPubliekrechtelijkBeperkt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >false</j.1:isPubliekrechtelijkBeperkt>
       </j.1:StaatOnroerendeZaak>
