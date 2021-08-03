@@ -16,7 +16,7 @@
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
 <http://zorgeloosvastgoed.nl/data/mak> a owl:Ontology;
-	rdfs:label "Domein Makelaar";
+	rdfs:label "Domein Makelaar"@nl;
 .
 #--
 #Wetgeving links
@@ -24,81 +24,81 @@
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit
 #--
 #Burgerlijk wetboek
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "Artikel 1, Burgerlijk wetboek, boek 7".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1> rdfs:label "Artikel 1, Burgerlijk wetboek, boek 7"@nl.
 
 #Erfgoedwet
-<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1> rdfs:label "artikel 9.1, eerste lid, van de Erfgoedwet".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1> rdfs:label "artikel 9.1, eerste lid, van de Erfgoedwet"@nl.
 
 #Wet op belasting van rechtsverkeer (WBR)
-<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13> rdfs:label "artikel 13 van de Wet op belastingen van rechtsverkeer".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13> rdfs:label "artikel 13 van de Wet op belastingen van rechtsverkeer"@nl.
 
 #Wet bodembescherming
-<http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55> rdfs:label "artikel 55 van de Wet bodembescherming".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55> rdfs:label "artikel 55 van de Wet bodembescherming"@nl.
 
 #Besluit energieprestatie gebouwen
-<http://wetten.overheid.nl/jci1.3:c:BWBR0023734&afdeling=1&artikel=1.1> rdfs:label "Artikel 1.1 Besluit energieprestatie gebouwen".
+<http://wetten.overheid.nl/jci1.3:c:BWBR0023734&afdeling=1&artikel=1.1> rdfs:label "Artikel 1.1 Besluit energieprestatie gebouwen"@nl.
 
 #--
 #Actors and Agents
 #--
 mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Aankoopmakelaar"@nl;
-	skos:prefLabel "Aankoopmakelaar";
-	skos:definition "een makelaar die is ingeschakeld door de koper en die namens de koper bemiddelt bij de aankoop van een registergoed";
-	rdfs:comment "Een aankoopmakelaar wordt door koper ingeschakeld. Hij bemiddelt namens de koper bij aan de aankoop van het registergoed. Hij voert doorgaans namens de koper de onderhandelingen met de verkoopmakelaar.";
+	skos:prefLabel "Aankoopmakelaar"@nl;
+	skos:definition "een makelaar die is ingeschakeld door de koper en die namens de koper bemiddelt bij de aankoop van een registergoed"@nl;
+	rdfs:comment "Een aankoopmakelaar wordt door koper ingeschakeld. Hij bemiddelt namens de koper bij aan de aankoop van het registergoed. Hij voert doorgaans namens de koper de onderhandelingen met de verkoopmakelaar."@nl;
 	skosthes:broaderGeneric mak:Makelaar;
 	skos:semanticRelation mak:Koper;
 	skos:semanticRelation mak:Verkoopmakelaar;
 .
 mak:Koper a skos:Concept, skoslex:Actor;
 	rdfs:label "Koper"@nl;
-	skos:prefLabel "Koper";
-	skos:definition "Degene die het registergoed heeft aangekocht.";
-	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
+	skos:prefLabel "Koper"@nl;
+	skos:definition "Degene die het registergoed heeft aangekocht."@nl;
+	rdfs:comment "Een koper is degene die het registergoed heeft aangekocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn."@nl;
 	skosthes:broaderGeneric zv:Partij;
 .
 mak:Makelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Makelaar"@nl;
-	skos:prefLabel "Makelaar";
-	skos:definition "Een makelaar is een persoon die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed.";
-	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed.";
+	skos:prefLabel "Makelaar"@nl;
+	skos:definition "Een makelaar is een persoon die bemiddelt tussen de koper en de verkoper bij de verkoop van een registergoed."@nl;
+	rdfs:comment "Een makelaar wordt ingeschakeld voor de verkoop of de aankoop van een registergoed."@nl;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 mak:Nutsbedrijf a skos:Concept, skoslex:Agent;
 	rdfs:label "Nutsbedrijf"@nl;
-	skos:prefLabel "Nutsbedrijf";
-	skos:definition "Een bedrijf wat een de infrastructuur beheert om een voorziening aan een adres te leveren.";
-	rdfs:comment "Placeholder";
+	skos:prefLabel "Nutsbedrijf"@nl;
+	skos:definition "Een bedrijf wat een de infrastructuur beheert om een voorziening aan een adres te leveren."@nl;
+	rdfs:comment "Placeholder"@nl;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 mak:Overheidsinstantie a skos:Concept, skoslex:Agent;
 	rdfs:label "Overheidsinstantie"@nl;
-	skos:prefLabel "Overheidsinstantie";
-	skos:definition "Een instantie die namens de overheid een specifieke uitvoerende taak heeft";
-	rdfs:comment "Placeholder";
+	skos:prefLabel "Overheidsinstantie"@nl;
+	skos:definition "Een instantie die namens de overheid een specifieke uitvoerende taak heeft"@nl;
+	rdfs:comment "Placeholder"@nl;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 mak:Taxateur a skos:Concept, skoslex:Agent;
 	rdfs:label "Taxateur"@nl;
-	skos:prefLabel "Taxateur";
-	skos:definition "een daartoe bevoegd persoon die een waarde toekent in het taxatierapport aan het registergoed op basis van zijn vakbekwaamheid";
-	rdfs:comment "Een taxateur is een persoon die op basis van zijn vakbekwaamheid een waarde toekent in het taxatierapport aan het registergoed. Het taxatierapport heeft de koper doorgaans nodig voor de financiering van het registergoed.  ";
+	skos:prefLabel "Taxateur"@nl;
+	skos:definition "een daartoe bevoegd persoon die een waarde toekent in het taxatierapport aan het registergoed op basis van zijn vakbekwaamheid"@nl;
+	rdfs:comment "Een taxateur is een persoon die op basis van zijn vakbekwaamheid een waarde toekent in het taxatierapport aan het registergoed. Het taxatierapport heeft de koper doorgaans nodig voor de financiering van het registergoed.  "@nl;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	rdfs:label "Verkoopmakelaar"@nl;
-	skos:prefLabel "Verkoopmakelaar";
-	skos:definition "een makelaar die is ingeschakeld door de verkoper en die namens de verkoper bemiddelt bij de verkoop van een registergoed ";
-	rdfs:comment "Een verkoopmakelaar bemiddelt tussen de verkoper en de koper. De verkoopmakelaar is ingeschakeld door verkoper. De verkoopmakelaar voert namens de verkoper de onderhandelingen, regelt de bezichtigingen van de woning en stelt doorgaans de koopovereenkomst op. ";
+	skos:prefLabel "Verkoopmakelaar"@nl;
+	skos:definition "een makelaar die is ingeschakeld door de verkoper en die namens de verkoper bemiddelt bij de verkoop van een registergoed "@nl;
+	rdfs:comment "Een verkoopmakelaar bemiddelt tussen de verkoper en de koper. De verkoopmakelaar is ingeschakeld door verkoper. De verkoopmakelaar voert namens de verkoper de onderhandelingen, regelt de bezichtigingen van de woning en stelt doorgaans de koopovereenkomst op. "@nl;
 	skosthes:broaderGeneric mak:Makelaar;
 	skos:semanticRelation mak:Verkoper;
 	skos:semanticRelation mak:Aankoopmakelaar;
 .
 mak:Verkoper a skos:Concept, skoslex:Actor;
 	rdfs:label "Verkoper"@nl;
-	skos:prefLabel "Verkoper";
-	skos:definition "Degene die het registergoed heeft verkocht.";
-	rdfs:comment "Een verkoper is degene die het registergoed heeft verkocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn.";
+	skos:prefLabel "Verkoper"@nl;
+	skos:definition "Degene die het registergoed heeft verkocht."@nl;
+	rdfs:comment "Een verkoper is degene die het registergoed heeft verkocht. Dit kan zowel een natuurlijk persoon als een rechtspersoon zijn."@nl;
 	skosthes:broaderGeneric zv:Partij;
 .
 #--
@@ -106,72 +106,72 @@ mak:Verkoper a skos:Concept, skoslex:Actor;
 #==
 mak:Asbest a skos:Concept, skoslex:Object;
 	rdfs:label "Asbest"@nl;
-	skos:prefLabel "Asbest";
-	skos:definition "Een bouwmateriaal dat in het verleden is toegepast bij de bouw van registergoederen.";
+	skos:prefLabel "Asbest"@nl;
+	skos:definition "Een bouwmateriaal dat in het verleden is toegepast bij de bouw van registergoederen."@nl;
 	rdfs:comment '''In het verleden is asbest veelvuldig toegepast in de bouwsector. In 1993 is het gebruik van asbest in de bouw verboden. Asbest is typeren als  'hechtgebonden' of 'niet-hechtgebonden'. Voorbeelden van hechtgebonden producten zijn golfplaten, asbestcement, dakleien, schoorsteen pijpen, kruipluik en asbestplaten. In deze vorm is asbest vrij onschadelijk omdat de vezels stevig ingesloten zitten in een mengsel van cement. Wanneer dit product wordt bewerkt door er bijvoorbeeld in te boren of in te snijden kunnen de vezels vrijkomen. Niet-hechtgebonden asbest is tot de eind jaren 70 veel gebruikt als brandwerend isolatie materiaal (spuitasbest) in gebouwen. Het gebruik van dit type asbest werd in 1978 verboden. Dit product is niet zo slijtvast als asbest cement en kan snel beschadigen waarna er vezels vrij kunnen komen. Niet-hechtgebonden asbest is dan ook de gevaarlijkste vorm van asbest in registergoederen. Zie voor de voorschriften met betrekking tot het verwijderen van asbest het Asbestverwijderingsbesluit.''';
 .
 mak:Aanspraak a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak"@nl;
-	skos:prefLabel "Aanspraak";
-	skos:definition "Een recht ten aanzien van een derde.";
-        rdfs:comment "Verkoper kan een aanspraak op een derde hebben. Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak.";
+	skos:prefLabel "Aanspraak"@nl;
+	skos:definition "Een recht ten aanzien van een derde."@nl;
+        rdfs:comment "Verkoper kan een aanspraak op een derde hebben. Denk bijvoorbeeld aan en garantie die verkoper heeft met betrekking tot een reparatie aan de onroerende zaak."@nl;
 .
 mak:Financieringsvoorbehoud a skos:Concept, skoslex:Object;
 	rdfs:label "Financieringsvoorbehoud"@nl;
-	skos:prefLabel "Financieringsvoorbehoud";
-	skos:altLabel "Voorbehoud van financiering";
-	skos:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren.";
-	rdfs:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud.";
+	skos:prefLabel "Financieringsvoorbehoud"@nl;
+	skos:altLabel "Voorbehoud van financiering"@nl;
+	skos:definition "Een ontbindende voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen welke voorwaarde koper de mogelijkheid geeft om de koopovereenkomst te ontbinden indien de koper de aankoop van de onroerende zaak niet kan financieren."@nl;
+	rdfs:comment "Voor de aankoop van de onroerende zaak heeft koper vaak een financiering nodig. Doorgaans maakt koper gebruik van een hypotheek. Indien koper de aankoop van de onroerende zaak niet kan financieren - dat wil zeggen dat koper geen hypotheek krijgt van een bank - dan heeft koper de mogelijk om de koopovereenkomst te ontbinden op grond van het financieringsvoorbehoud."@nl;
 .
 mak:ModelKoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Model koopovereenkomst"@nl;
-	skos:prefLabel "Model koopovereenkomst";
+	skos:prefLabel "Model koopovereenkomst"@nl;
 	rdfs:comment '''De model koopovereenkomst voor een bestaande eengezinswoning is in overleg vastgesteld door Vereniging Eigen Huis, de Consumentenbond, VastgoedPRO, VBO Makelaar en de Nederlandse Vereniging van Makelaars en Taxateurs in onroerende goederen NVM. Deze organisaties gebruiken alle vijf hetzelfde modelcontract.
 De model koopovereenkomst gaat uit van een soort standaardsituatie. Omdat geen enkele situatie precies gelijk is, kan de koopovereenkomst worden aangepast aan specifieke omstandigheden. De bij de transactie betrokken partijen en hun makelaars kunnen daartoe aanvullende afspraken tussen partijen in de koopovereenkomst opnemen. Uiteraard mogen partijen ook afwijken van hetgeen standaard in de koopovereenkomst staat.''';
-	skos:editorialNote "model koopovereenkomst voor een bestaande eengezinswoning (model 2018)";
+	skos:editorialNote "model koopovereenkomst voor een bestaande eengezinswoning (model 2018)"@nl;
 .
 mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Object;
 	rdfs:label "Ondergrondse tank voor het opslaan van (vloei)stoffen"@nl;
-	skos:prefLabel "Ondergrondse tank voor het opslaan van (vloei)stoffen";
-	skos:definition "Ondergrondse tanks voor het opslaan van (vloei)stoffen.";
-	rdfs:comment "In de grond van de onroerende zaak kunnen zich ondergrondse tanks bevinden voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks.";
+	skos:prefLabel "Ondergrondse tank voor het opslaan van (vloei)stoffen"@nl;
+	skos:definition "Ondergrondse tanks voor het opslaan van (vloei)stoffen."@nl;
+	rdfs:comment "In de grond van de onroerende zaak kunnen zich ondergrondse tanks bevinden voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks."@nl;
 .
 mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Ontbindende voorwaarde"@nl;
-	skos:prefLabel "Ontbindende voorwaarde";
-	skos:definition "Een ontbindende voorwaarde is een voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
-	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst.";
+	skos:prefLabel "Ontbindende voorwaarde"@nl;
+	skos:definition "Een ontbindende voorwaarde is een voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden."@nl;
+	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst."@nl;
 	skosthes:narrowerGeneric mak:Financieringsvoorbehoud;
 # 	skosthes:narrowerGeneric fin:NationaleHypotheekgarantie; <daar nog wel definiëren>
 	skosthes:narrowerGeneric mak:BouwkundigeKeuring;
 .
 mak:Verontreiniging a skos:Concept, skoslex:Object;
 	rdfs:label "Verontreiniging"@nl;
-	skos:prefLabel "Verontreiniging";
-	skos:definition "Een vervuiling (in de grond) van de onroerende zaak.";
-	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt.";
+	skos:prefLabel "Verontreiniging"@nl;
+	skos:definition "Een vervuiling (in de grond) van de onroerende zaak."@nl;
+	rdfs:comment "De (grond van de) onroerende zaak kan verontreining bevatten doordat de onroerende zaak in het verleden op een bepaalde manier is  gebruikt."@nl;
 .
 mak:Woning a skos:Concept, skoslex:Object;
 	rdfs:label "Woning"@nl;
-	skos:definition "Een (deel van) een gebouw, bestemd voor bewoning.";
-	skos:editorialNote "'Woning' is de gebruikelijk term binnen de makkelaarswereld. Binnen zorgeloosvastgoed spreken we meer generieker van 'Huis'";
+	skos:definition "Een (deel van) een gebouw, bestemd voor bewoning."@nl;
+	skos:editorialNote "'Woning' is de gebruikelijk term binnen de makkelaarswereld. Binnen zorgeloosvastgoed spreken we meer generieker van 'Huis'"@nl;
 	skos:semanticRelation kad:Perceel;
 	skos:closeMatch bag:Verblijfsobject;
 .
 mak:ZichtbareEnOnzichtbareGebreken a skos:Concept, skoslex:Object;
 	rdfs:label "Zichtbare en onzichtbare gebreken"@nl;
-	skos:prefLabel "Zichtbare en onzichtbare gebreken";
-	skos:definition "Zichtbare en onzichtbare bouwkundige onvolkomenheden aan de onroerende zaak.";
-	rdfs:comment "Bij de verkoop van een onroerende zijn er gebreken die bij koper bekend zijn. Dit zijn de 'zichtbare gebreken'. Er kunnen ook gebreken in de onroerende zaak aanwezig zijn die niet bekend zijn bij zowel verkoper als koper. Dit zijn de 'onzichtbare gebrekenen', doorgaans 'verborgen gebreken' genoemd.";
+	skos:prefLabel "Zichtbare en onzichtbare gebreken"@nl;
+	skos:definition "Zichtbare en onzichtbare bouwkundige onvolkomenheden aan de onroerende zaak."@nl;
+	rdfs:comment "Bij de verkoop van een onroerende zijn er gebreken die bij koper bekend zijn. Dit zijn de 'zichtbare gebreken'. Er kunnen ook gebreken in de onroerende zaak aanwezig zijn die niet bekend zijn bij zowel verkoper als koper. Dit zijn de 'onzichtbare gebrekenen', doorgaans 'verborgen gebreken' genoemd."@nl;
 .
 #---
 #Acts
 #---
 mak:Aankoop a skos:Concept, skoslex:Act;
 	rdfs:label "Aankoop"@nl;
-	skos:prefLabel "Aankoop";
-	skos:definition "Aankoop van een registergoed door middel van een koopovereenkomst.";
-	rdfs:comment "Er is sprake van een 'aankoop' indien het registergoed door de koper wordt aangekocht.";
+	skos:prefLabel "Aankoop"@nl;
+	skos:definition "Aankoop van een registergoed door middel van een koopovereenkomst."@nl;
+	rdfs:comment "Er is sprake van een 'aankoop' indien het registergoed door de koper wordt aangekocht."@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skos:semanticRelation mak:Verkoop;
 	skoslex:agent mak:Aankoopmakelaar;
@@ -181,10 +181,10 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 .
 mak:IdentificerenKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van cliënt (koop/verkoop)"@nl;
-	skos:prefLabel "Identificeren van cliënt (koop/verkoop)";
-	skos:definition "Het identificeren van de cliënt (verkoper en koper) en het verifiëren van diens identiteit op grond van een wettelijke verplichting ";
-	rdfs:comment "De verkoopmakelaar is wettelijk verplicht om de verkoper, zijn opdrachtgever, en de koper, de wederpartij van de verkoper, te identificeren en diens identiteit te verifiëren.";
-	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt en wordt de identificatie ook door de notaris uitgevoerd.";
+	skos:prefLabel "Identificeren van cliënt (koop/verkoop)"@nl;
+	skos:definition "Het identificeren van de cliënt (verkoper en koper) en het verifiëren van diens identiteit op grond van een wettelijke verplichting "@nl;
+	rdfs:comment "De verkoopmakelaar is wettelijk verplicht om de verkoper, zijn opdrachtgever, en de koper, de wederpartij van de verkoper, te identificeren en diens identiteit te verifiëren."@nl;
+	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt en wordt de identificatie ook door de notaris uitgevoerd."@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
@@ -194,9 +194,9 @@ mak:IdentificerenKoop a skos:Concept, skoslex:Act;
 .
 mak:IdentificerenTaxatie a skos:Concept, skoslex:Act;
 	rdfs:label "Identificeren van opdrachtgever (taxatie)"@nl;
-	skos:prefLabel "Identificeren van opdrachtgever (taxatie)";
-	skos:definition "Het identificeren van de opdrachtgever door de taxateur in het kader van de opdracht tot taxatie";
-	rdfs:comment "In het kader van de opdracht tot taxatie moet de taxateur weten wie zijn opdrachtgever is. Daarom stelt de taxateur de identiteit van de opdrachtgever vast.";
+	skos:prefLabel "Identificeren van opdrachtgever (taxatie)"@nl;
+	skos:definition "Het identificeren van de opdrachtgever door de taxateur in het kader van de opdracht tot taxatie"@nl;
+	rdfs:comment "In het kader van de opdracht tot taxatie moet de taxateur weten wie zijn opdrachtgever is. Daarom stelt de taxateur de identiteit van de opdrachtgever vast."@nl;
 	skosthes:broaderPartitive mak:Taxatie;
 	skoslex:actor mak:Taxateur;
 	skoslex:object mak:Koper;
@@ -204,10 +204,10 @@ mak:IdentificerenTaxatie a skos:Concept, skoslex:Act;
 .
 mak:Koop a skos:Concept, skoslex:Act;
 	rdfs:label "Koop"@nl;
-	skos:prefLabel "Koop";
-	skos:definition "Een koop is een overeenkomst tussen verkoper en koper, waarbij de verkoper zich verbindt een registergoed te geven tegen een door de koper te betalen prijs ";
-	rdfs:comment "Als verkoper en koper het eens zijn over de voorwaarden ontstaat er een overeenkomst. Bij de verkoop van een registergoed verbindt de verkoper zich om het registergoed te geven tegen een door koper te betalen prijs. De overeenkomst wordt doorgaans vastgelegd in een schriftelijke koopovereenkomst. ";
-	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt.";
+	skos:prefLabel "Koop"@nl;
+	skos:definition "Een koop is een overeenkomst tussen verkoper en koper, waarbij de verkoper zich verbindt een registergoed te geven tegen een door de koper te betalen prijs "@nl;
+	rdfs:comment "Als verkoper en koper het eens zijn over de voorwaarden ontstaat er een overeenkomst. Bij de verkoop van een registergoed verbindt de verkoper zich om het registergoed te geven tegen een door koper te betalen prijs. De overeenkomst wordt doorgaans vastgelegd in een schriftelijke koopovereenkomst. "@nl;
+	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt."@nl;
 	skoslex:agent mak:Makelaar;
 	skoslex:agent not:Notaris;
 	skoslex:actor mak:Verkoper;
@@ -221,20 +221,20 @@ mak:Koop a skos:Concept, skoslex:Act;
 .
 mak:Opleveren a skos:Concept, skoslex:Act;
 	rdfs:label "Opleveren"@nl;
-	skos:prefLabel "Opleveren";
-	skos:definition "Het  opleveren van een object aan de koper'";
-	skos:scopeNote "Placeholder";
+	skos:prefLabel "Opleveren"@nl;
+	skos:definition "Het  opleveren van een object aan de koper'"@nl;
+	skos:scopeNote "Placeholder"@nl;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 .
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
-	skos:prefLabel "Opstellen koopovereenkomst";
-	skos:altLabel "Opstellen koopocontract";
-	skos:definition "Het proces dat ziet op het opstellen van het schriftelijke document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van het registergoed worden vastgelegd ";
-	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt.";
-	skos:scopeNote "Als een notaris de koopovereenkomst opsetelt en ondertekend, betekent dit niet dat de koopovereenkomst hiermee een notariële akte is. Voor notariële akten gelden meer vereisten. Een koopovereenkomst kán wel in de vorm van een notariële akte opgesteld worden. Dat geeft bijvoorbeeld extra bewijskracht omdat deze dan in het Centraal Repertorium is opgenomen. In zeer uitzonderlijke gevallen wordt de koopovereenkomst als notariële akte opgesteld. Partijen en/of de notaris kunnen hiervoor kiezen als er extra bewijskracht en/of een zogenaamde executoriale titel nodig is. Maar dit komt dus in de praktijk nagenoeg nooit voor.";
-	skos:editorialNote "Omdat een koopovereenkomst alleen in zeer uitzonderlijke gevallen een notariële akte kan zijn, is ervoor gekozen dit scenario niet op te nemen in deze taxonomie.";
+	skos:prefLabel "Opstellen koopovereenkomst"@nl;
+	skos:altLabel "Opstellen koopocontract"@nl;
+	skos:definition "Het proces dat ziet op het opstellen van het schriftelijke document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van het registergoed worden vastgelegd "@nl;
+	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt."@nl;
+	skos:scopeNote "Als een notaris de koopovereenkomst opsetelt en ondertekend, betekent dit niet dat de koopovereenkomst hiermee een notariële akte is. Voor notariële akten gelden meer vereisten. Een koopovereenkomst kán wel in de vorm van een notariële akte opgesteld worden. Dat geeft bijvoorbeeld extra bewijskracht omdat deze dan in het Centraal Repertorium is opgenomen. In zeer uitzonderlijke gevallen wordt de koopovereenkomst als notariële akte opgesteld. Partijen en/of de notaris kunnen hiervoor kiezen als er extra bewijskracht en/of een zogenaamde executoriale titel nodig is. Maar dit komt dus in de praktijk nagenoeg nooit voor."@nl;
+	skos:editorialNote "Omdat een koopovereenkomst alleen in zeer uitzonderlijke gevallen een notariële akte kan zijn, is ervoor gekozen dit scenario niet op te nemen in deze taxonomie."@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
@@ -243,10 +243,10 @@ mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 .
 mak:RechercheKoop a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche koop"@nl;
-	skos:prefLabel "Recherche koop";
-	skos:definition "het onderzoek dat de makelaar uitvoert in de openbare registers van het kadaster met betrekking tot het registergoed voordat de koopovereenkomst wordt opgesteld";
-	rdfs:comment "Als een verkoopmakelaar een registergoed verkoopt dan verricht de verkoopmakelaar onderzoek in de openbare registers van het kadaster. Door dit onderzoek krijgt de verkoopmakelaar inzicht in zaken die van belang zijn bij de verkoop van het registergoed.";
-	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt en wordt de recherche ook door de notaris uitgevoerd.";
+	skos:prefLabel "Recherche koop"@nl;
+	skos:definition "het onderzoek dat de makelaar uitvoert in de openbare registers van het kadaster met betrekking tot het registergoed voordat de koopovereenkomst wordt opgesteld"@nl;
+	rdfs:comment "Als een verkoopmakelaar een registergoed verkoopt dan verricht de verkoopmakelaar onderzoek in de openbare registers van het kadaster. Door dit onderzoek krijgt de verkoopmakelaar inzicht in zaken die van belang zijn bij de verkoop van het registergoed."@nl;
+	skos:scopeNote "De koopovereenkomst wordt doorgaans opgesteld door de verkoopmakelaar. In sommige gemeenten, zoals Amsterdam, is het gebruikelijk dat de notaris de koopovereenkomst opstelt en wordt de recherche ook door de notaris uitgevoerd."@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:actor mak:Makelaar;
 	skoslex:actor not:Notaris;
@@ -257,30 +257,30 @@ mak:RechercheKoop a skos:Concept, skoslex:Act;
 .
 mak:RechercheTaxatie a skos:Concept, skoslex:Act;
 	rdfs:label "Recherche taxatie"@nl;
-	skos:prefLabel "Recherche taxatie";
-	skos:definition "Het onderzoek dat de taxateur verricht in de openbare registers van het kadaster met betrekking tot het registergoed voordat het taxatierapport wordt opgesteld";
-	rdfs:comment "Als een taxateur een taxatierapport opstelt dan verricht hij onderzoek in de openbare reigsters van het kadaster. Door dit onderzoek krijgt hij inzicht in zaken die de waarde van het registergoed positief of negatief beïnvloeden.";
+	skos:prefLabel "Recherche taxatie"@nl;
+	skos:definition "Het onderzoek dat de taxateur verricht in de openbare registers van het kadaster met betrekking tot het registergoed voordat het taxatierapport wordt opgesteld"@nl;
+	rdfs:comment "Als een taxateur een taxatierapport opstelt dan verricht hij onderzoek in de openbare reigsters van het kadaster. Door dit onderzoek krijgt hij inzicht in zaken die de waarde van het registergoed positief of negatief beïnvloeden."@nl;
 	skosthes:broaderPartitive mak:Taxatie;
 	skoslex:actor mak:Taxateur;
 	skoslex:object mak:Woning;
 .
 mak:Schoning a skos:Concept, skoslex:Act;
 	rdfs:label "Schoning"@nl;
-	skos:prefLabel "Schoning";
-	skos:definition "Het schoonmaken van de onroerende zaak";
-	rdfs:comment "Indien daartoe de noodzaak bestaat kan de eigenaar van de onroerende zaak door de daartoe bevoegde instantie verplicht worden om de onroerende zaak schoon te maken.";
+	skos:prefLabel "Schoning"@nl;
+	skos:definition "Het schoonmaken van de onroerende zaak"@nl;
+	rdfs:comment "Indien daartoe de noodzaak bestaat kan de eigenaar van de onroerende zaak door de daartoe bevoegde instantie verplicht worden om de onroerende zaak schoon te maken."@nl;
 .
 mak:Schuldsaneringsregeling a skoslex:Act;
 	rdfs:label "Schuldsaneringsregeling"@nl;
-	skos:prefLabel "Schuldsaneringsregeling";
-	skos:definition "Een natuurlijke persoon kan, indien redelijkerwijs is te voorzien dat hij niet zal kunnen voortgaan met het betalen van zijn schulden of indien hij in de toestand verkeert dat hij heeft opgehouden te betalen, verzoeken de toepassing van de schuldsaneringsregeling uit te spreken.";
-	rdfs:comment "De schuldsanering is een wettelijk regeling voor mensen met schulden. In 3 tot 5 jaar tijd kan men de schuld volledig aflossen. Na deze tijd ontvang de 	schuldenaar een 'schone lei'. Dat betekent dat men schuldenvrij is.";
+	skos:prefLabel "Schuldsaneringsregeling"@nl;
+	skos:definition "Een natuurlijke persoon kan, indien redelijkerwijs is te voorzien dat hij niet zal kunnen voortgaan met het betalen van zijn schulden of indien hij in de toestand verkeert dat hij heeft opgehouden te betalen, verzoeken de toepassing van de schuldsaneringsregeling uit te spreken."@nl;
+	rdfs:comment "De schuldsanering is een wettelijk regeling voor mensen met schulden. In 3 tot 5 jaar tijd kan men de schuld volledig aflossen. Na deze tijd ontvang de 	schuldenaar een 'schone lei'. Dat betekent dat men schuldenvrij is."@nl;
 .
 mak:Taxatie a skos:Concept, skoslex:Act;
 	rdfs:label "Taxatie"@nl;
-	skos:prefLabel "Taxatie";
-	skos:definition "Een door een taxateur afgegeven waarde in een taxatierapport van een registergoed waaraan in het maatschappelijk en economische verkeer vertrouwen kan worden ontleend.";
-	rdfs:comment "Een taxatie wordt  doorgaans uitgevoerd als de koper met een hypothecaire geldlening de aankoop van het registergoed wil financieren. De financier (doorgaans een erkende geldverstrekkende bankinstelling) wil ter onderbouwing van de hypothecaire geldlening de waarde van het registergoed laten vaststellen door een taxateur.";
+	skos:prefLabel "Taxatie"@nl;
+	skos:definition "Een door een taxateur afgegeven waarde in een taxatierapport van een registergoed waaraan in het maatschappelijk en economische verkeer vertrouwen kan worden ontleend."@nl;
+	rdfs:comment "Een taxatie wordt  doorgaans uitgevoerd als de koper met een hypothecaire geldlening de aankoop van het registergoed wil financieren. De financier (doorgaans een erkende geldverstrekkende bankinstelling) wil ter onderbouwing van de hypothecaire geldlening de waarde van het registergoed laten vaststellen door een taxateur."@nl;
 	skoslex:actor mak:Taxateur;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
@@ -289,8 +289,8 @@ mak:Taxatie a skos:Concept, skoslex:Act;
 mak:Verkoop a skos:Concept, skoslex:Act;
 	rdfs:label "Verkoop"@nl;
 	skos:prefLabel "Verkoop"@nl;
-	skos:definition "verkoop van een registergoed door middel van een koopovereenkomst";
-	rdfs:comment "Er is sprake van een 'verkoop' indien het registergoed van de verkoper wordt verkocht.";
+	skos:definition "verkoop van een registergoed door middel van een koopovereenkomst"@nl;
+	rdfs:comment "Er is sprake van een 'verkoop' indien het registergoed van de verkoper wordt verkocht."@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:agent mak:Verkoopmakelaar;
 	skoslex:actor mak:Verkoper;
@@ -299,7 +299,7 @@ mak:Verkoop a skos:Concept, skoslex:Act;
 .
 mak:WaarderingRoerendeZaken a skos:Concept, skoslex:Act;
 	rdfs:label "Waardering roerende zaken"@nl;
-	skos:prefLabel "Waardering roerende zaken";
+	skos:prefLabel "Waardering roerende zaken"@nl;
 	rdfs:comment '''Dat de lijst van zaken voorbij gaat aan de vraag of iets roerend of onroerend is, betekent niet dat het onderscheid onbelangrijk is. Om fiscale redenen is het voor zowel koper als verkoper van belang om zich daarin te verdiepen. Voor de overdracht van onroerende zaken moet koper namelijk overdrachtsbelasting betalen. Voor de overdracht van roerende zaken is dat niet het geval. Daar staat tegenover dat de rentelasten die betrekking hebben op de aankoop van roerende zaken niet aftrekbaar zijn in het kader van de inkomstenbelasting. Bovendien kan de opbrengst van de onroerende zaak van invloed zijn op het bedrag dat verkoper in de toekomst kan lenen met behoud van hypotheekrenteaftrek.
 In de koopovereenkomst wordt aangegeven op welk bedrag de meeverkochte roerende zaken worden gewaardeerd. Het voor roerende zaken ingevulde bedrag moet uiteraard wel reëel zijn. De belastingdienst kan daarop controleren en om een nadere toelichting vragen. Staat het bedrag in geen verhouding tot de werkelijke waarde van de betreffende roerende zaken, dan loopt koper het risico een boete te moeten betalen.
 Zoals vermeld, is het onderscheid roerend en onroerend niet altijd even gemakkelijk te hanteren. Het komt dan ook regelmatig voor dat partijen van mening verschillen over het al dan niet roerende karakter van bepaalde zaken. Omdat partijen niet kunnen onderhandelen over het al dan niet (on)roerende karakter van zaken, is het weinig zinvol voor hen om daarover in discussie te gaan. Of iets roerend of onroerend is, volgt uit de wet, ongeacht de vraag hoe partijen daar over denken. Voor het vaststellen van de overdrachtsbelasting is dan ook in feite voldoende dat duidelijk is wat er allemaal in de koop begrepen is (lijst van zaken).
@@ -312,11 +312,11 @@ Indien ook roerende zaken zijn verkocht moet de notaris bij de akte van levering
 #volgorde op basis van de opbouw van de koopovereenkomst
 mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Koopovereenkomst"@nl;
-	skos:prefLabel "Koopovereenkomst";
-	skos:altLabel "Koopcontract";
-	skos:definition "Een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd.";
-	rdfs:comment "Als u een woning koopt of verkoopt worden de afspraken vastgelegd in een koopovereenkomst. Indien u een woning koopt of verkoopt via een makelaarskantoor, zal de betrokken makelaar u hierbij assisteren. Het was altijd al verstandig om de koop van een woning schriftelijk aan te gaan, maar sinds 1 september 2003 is dat in de meeste gevallen zelfs noodzakelijk. In tegenstelling tot vroeger is een mondelinge (ver)koop van een woning veelal niet geldig. Na ondertekening door alle partijen zal de koopovereenkomst verzonden worden aan de in de koopovereenkomst genoemde notaris. In de meeste gevallen zal koper een zogenoemde bedenktijd hebben. Op deze bedenktijd zal bij de toelichting op artikel 16 nader worden ingegaan.";
-	skos:editorialNote "Soms (bijvoorbeeld in Amsterdam) stelt de notaris de koopovereenkomst op.";
+	skos:prefLabel "Koopovereenkomst"@nl;
+	skos:altLabel "Koopcontract"@nl;
+	skos:definition "Een schriftelijk document waarin de rechten en verplichtingen tussen de verkoper en de koper met betrekking tot de koop van een registergoed worden vastgelegd."@nl;
+	rdfs:comment "Als u een woning koopt of verkoopt worden de afspraken vastgelegd in een koopovereenkomst. Indien u een woning koopt of verkoopt via een makelaarskantoor, zal de betrokken makelaar u hierbij assisteren. Het was altijd al verstandig om de koop van een woning schriftelijk aan te gaan, maar sinds 1 september 2003 is dat in de meeste gevallen zelfs noodzakelijk. In tegenstelling tot vroeger is een mondelinge (ver)koop van een woning veelal niet geldig. Na ondertekening door alle partijen zal de koopovereenkomst verzonden worden aan de in de koopovereenkomst genoemde notaris. In de meeste gevallen zal koper een zogenoemde bedenktijd hebben. Op deze bedenktijd zal bij de toelichting op artikel 16 nader worden ingegaan."@nl;
+	skos:editorialNote "Soms (bijvoorbeeld in Amsterdam) stelt de notaris de koopovereenkomst op."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	skosthes:broaderGeneric not:OnderhandseAkte;
 	skos:semanticRelation mak:ModelKoopovereenkomst;
@@ -326,16 +326,16 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 .
 mak:Energielabel a skos:Concept, skoslex:Record;
 	rdfs:label "Energielabel"@nl;
-	skos:prefLabel "Energielabel";
-	skos:definition "Een op een gebouw betrekking hebbende schriftelijke verklaring, waarin het resultaat is vermeld van de berekening van de energieprestatie, waarin referentiewaarden zijn vermeld waarmee de energieprestatie kan worden vergeleken en beoordeeld en die aanbevelingen voor een kostenoptimale of kosteneffectieve verbetering van de energieprestatie bevat, tenzij er voor een dergelijke verbetering geen redelijk potentieel is ten opzichte van de geldende energieprestatie-eisen. Deze aanbevelingen zijn technisch haalbaar voor het gebouw waarvoor het energielabelVolgende zoekterm markering is afgegeven en kunnen een raming bieden van de terugverdientijden of kostenvoordelen gedurende de economische levensduur. Deze aanbevelingen omvatten in ieder geval maatregelen betreffende de ingrijpende renovatie van de bouwschil of technische bouwsystemen en maatregelen voor individuele onderdelen van een gebouw zonder dat er sprake is van een ingrijpende renovatie, alsmede een vindplaats voor extra informatie.";
+	skos:prefLabel "Energielabel"@nl;
+	skos:definition "Een op een gebouw betrekking hebbende schriftelijke verklaring, waarin het resultaat is vermeld van de berekening van de energieprestatie, waarin referentiewaarden zijn vermeld waarmee de energieprestatie kan worden vergeleken en beoordeeld en die aanbevelingen voor een kostenoptimale of kosteneffectieve verbetering van de energieprestatie bevat, tenzij er voor een dergelijke verbetering geen redelijk potentieel is ten opzichte van de geldende energieprestatie-eisen. Deze aanbevelingen zijn technisch haalbaar voor het gebouw waarvoor het energielabelVolgende zoekterm markering is afgegeven en kunnen een raming bieden van de terugverdientijden of kostenvoordelen gedurende de economische levensduur. Deze aanbevelingen omvatten in ieder geval maatregelen betreffende de ingrijpende renovatie van de bouwschil of technische bouwsystemen en maatregelen voor individuele onderdelen van een gebouw zonder dat er sprake is van een ingrijpende renovatie, alsmede een vindplaats voor extra informatie."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023734&afdeling=1&artikel=1.1>;
 	rdfs:comment '''In beginsel is elke verkoper verplicht een definitief energielabel aan koper te overhandigen bij de eigendomsoverdracht van zijn woning. Een energielabel laat zien hoe energiezuinig een woning is en wat er beter kan. Van de isolatie van het dak, de muren, de vloer(en) en de ramen tot de energiezuinigheid van verwarmingsinstallaties. Per 1 januari 2015 is de wetgeving op dit punt aangescherpt. Beschikt verkoper niet over een energielabel bij de levering, dan riskeert verkoper een sanctie.
 Er bestaan enkele uitzonderingen op de hoofdregel dat verkoper een definitief energielabel moet overhandigen bij de eigendomsoverdracht van zijn woning. Een uitzondering is bijvoorbeeld een beschermd monument. Uw makelaar kan u hierover inlichten. Eveneens kunt u informatie inwinnen op de website van de rijksoverheid: www.rijksoverheid.nl''';
 .
 mak:OndergetekendenKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Ondergetekenden koopovereenkomst"@nl;
-	skos:prefLabel "Ondergetekenden";
-	skos:definition "Onderdeel met de namen van de personen die de koopvoereenkomst hebben ondertekend";
+	skos:prefLabel "Ondergetekenden"@nl;
+	skos:definition "Onderdeel met de namen van de personen die de koopvoereenkomst hebben ondertekend"@nl;
 	rdfs:comment '''Op het voorblad van de koopovereenkomst bij A worden de gegevens van verkoper ingevuld, inclusief het nummer van het paspoort, identiteitsbewijs of rijbewijs (legitimatie). Voor zover reeds bekend worden ook het toekomstige adres en telefoonnummer van verkoper vermeld; dit ten behoeve van eventuele verdere communicatie met de notaris en het kadaster (bijvoorbeeld voor toezending van de akte van levering). Indien sprake is van een medeverkoper, waaronder een echtgeno(o)t(e) of geregistreerd partner, worden ook diens gegevens ingevuld onder A.
 Bij B worden de gegevens van koper ingevuld. Ook hier geldt dat indien sprake is van een medekoper, ook diens gegevens worden ingevuld onder B.
 Indien de echtgeno(o)t(e) of geregistreerd partner niet als medekoper of medeverkoper optreedt, maar de koopovereenkomst ondertekent als blijk van toestemming, wordt volstaan met het onderaan de akte opnemen van zijn of haar naam.
@@ -356,10 +356,10 @@ Niet gehuwde of geregistreerde samenwonenden hoeven elkaar geen toestemming te g
 .
 mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 1: Verkoop en koop"@nl;
-	skos:prefLabel "Artikel 1: Verkoop en koop";
-	rdfs:comment "In dit artikel dient aangegeven te worden of het een koop van een onroerende zaak in eigendom betreft of een koop van een recht van erfpacht op een onroerende zaak.";
-	skos:scopeNote "Artikel 1 van de model koopovereenkomst.";
-	skos:scopeNote "Keuze tussen eigendom en erfpacht.";
+	skos:prefLabel "Artikel 1: Verkoop en koop"@nl;
+	rdfs:comment "In dit artikel dient aangegeven te worden of het een koop van een onroerende zaak in eigendom betreft of een koop van een recht van erfpacht op een onroerende zaak."@nl;
+	skos:scopeNote "Artikel 1 van de model koopovereenkomst."@nl;
+	skos:scopeNote "Keuze tussen eigendom en erfpacht."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout kad:OnroerendeZaak;
 	skoslex:isAbout kad:KadastraleAanduiding;
@@ -372,25 +372,25 @@ mak:ArtikelVerkoopEnKoop a skos:Concept, skoslex:Record;
 .
 mak:LijstVanZaken a skos:Concept, skoslex:Record;
 	rdfs:label "Lijst van zaken"@nl;
-	skos:prefLabel "Lijst van zaken";
-	rdfs:comment "Bij de koopovereenkomst behoort ook een lijst van zaken. Als koper en verkoper niet duidelijk met elkaar afspreken welke zaken bij de koop zijn inbegrepen, kan dat tot problemen leiden. Koper kan bijvoorbeeld stellen dat de voorzethaard is meeverkocht, terwijl verkoper daar heel anders over denkt. Als partijen van mening verschillen over wat precies tot het verkochte behoort, moet de knoop soms doorgehakt worden aan de hand van het juridische onderscheid tussen roerende zaken en onroerende zaken. Dat onderscheid is echter -zelfs voor juristen- vaak moeilijk te hanteren. Om te voorkomen dat kopers en verkopers zich in een juridisch doolhof moeten begeven, is de lijst van zaken opgesteld. Er staan zowel roerende als onroerende zaken op. Het is verstandig om de hele lijst samen door te lopen. Uiteraard kunnen er zaken aan worden toegevoegd of weggestreept.";
+	skos:prefLabel "Lijst van zaken"@nl;
+	rdfs:comment "Bij de koopovereenkomst behoort ook een lijst van zaken. Als koper en verkoper niet duidelijk met elkaar afspreken welke zaken bij de koop zijn inbegrepen, kan dat tot problemen leiden. Koper kan bijvoorbeeld stellen dat de voorzethaard is meeverkocht, terwijl verkoper daar heel anders over denkt. Als partijen van mening verschillen over wat precies tot het verkochte behoort, moet de knoop soms doorgehakt worden aan de hand van het juridische onderscheid tussen roerende zaken en onroerende zaken. Dat onderscheid is echter -zelfs voor juristen- vaak moeilijk te hanteren. Om te voorkomen dat kopers en verkopers zich in een juridisch doolhof moeten begeven, is de lijst van zaken opgesteld. Er staan zowel roerende als onroerende zaken op. Het is verstandig om de hele lijst samen door te lopen. Uiteraard kunnen er zaken aan worden toegevoegd of weggestreept."@nl;
 .
 mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel1 : Verkoop en koop - eigendom"@nl;
-	skos:prefLabel "Artikel 1: Verkoop en koop - eigendom";
+	skos:prefLabel "Artikel 1: Verkoop en koop - eigendom"@nl;
 	skos:definition '''Optie A van artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de 'Toelichting op de koopovereenkomst', welke als bijlage is toegevoegd aan de koopovereenkomst. In de 'Toelichting op de koopovereenkomst' wordt elke artikel uit de koopovereenkomst uitvoering besproken.''';
 	rdfs:comment '''In het geval van een koop van een onroerende zaak in eigendom, wordt koper eigenaar van het perceel grond met de erop staande woning.''';
-	skos:scopeNote "Optie A van artikel 1 van de model koopovereenkomst.";
+	skos:scopeNote "Optie A van artikel 1 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
 	skoslex:isAbout mak:Woning;
 	skoslex:isAbout kad:Eigendom;
 .
 mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 1: Verkoop en koop - erfpacht"@nl;
-	skos:prefLabel "Artikel 1: erkoop en koop - erfpacht";
-	skos:definition "Optie B van artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
-	rdfs:comment "Bij de koop van een recht van erfpacht wordt koper geen eigenaar maar erfpachter van de grond met de erop staande woning. Erfpacht is een recht dat de erfpachter de bevoegdheid geeft om de grond met de daarop staande gebouwen, die eigendom van een ander zijn, te houden en te gebruiken. Omdat een ander eigenaar is en blijft van de grond met woning, zijn er voorwaarden verbonden aan het erfpachtrecht en dient er in veel gevallen een vergoeding (“canon”) betaald te worden voor het gebruik van de grond. Deze voorwaarden worden in de Optie Erfpacht onder artikel 1.2 aangeduid. In artikel 1.3 en 1.4 wordt aangegeven wat de erfpacht precies inhoudt en hoeveel de canon bedraagt.";
-	skos:scopeNote "Optie B van artikel 1 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 1: erkoop en koop - erfpacht"@nl;
+	skos:definition "Optie B van artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken."@nl;
+	rdfs:comment "Bij de koop van een recht van erfpacht wordt koper geen eigenaar maar erfpachter van de grond met de erop staande woning. Erfpacht is een recht dat de erfpachter de bevoegdheid geeft om de grond met de daarop staande gebouwen, die eigendom van een ander zijn, te houden en te gebruiken. Omdat een ander eigenaar is en blijft van de grond met woning, zijn er voorwaarden verbonden aan het erfpachtrecht en dient er in veel gevallen een vergoeding (“canon”) betaald te worden voor het gebruik van de grond. Deze voorwaarden worden in de Optie Erfpacht onder artikel 1.2 aangeduid. In artikel 1.3 en 1.4 wordt aangegeven wat de erfpacht precies inhoudt en hoeveel de canon bedraagt."@nl;
+	skos:scopeNote "Optie B van artikel 1 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:ArtikelVerkoopEnKoop;
 	skoslex:isAbout kad:Canon;
 	skoslex:isAbout not:Erfpachtvoorwaarden;
@@ -400,21 +400,21 @@ mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 not:Afrekening skoslex:record mak:ArtikelKostenOverdrachtsbelasting.
 mak:ArtikelKostenOverdrachtsbelasting a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 2.1: Kosten/Overdrachtsbelasting"@nl;
-	skos:prefLabel "Artikel 2.1: Kosten/Overdrachtsbelasting";
+	skos:prefLabel "Artikel 2.1: Kosten/Overdrachtsbelasting"@nl;
 	rdfs:comment '''In dit artikel wordt ingevuld wie de kosten voor zijn rekening neemt: koper of verkoper. Als verkoper deze kosten betaalt, spreekt men van "v.o.n." (vrij op naam). Als koper deze kosten betaalt, spreekt men van "k.k." (kosten koper). Onder deze kosten worden verstaan: notariskosten voor de akte van levering (incl. BTW), kosten van het kadaster en overdrachtsbelasting.
 Makelaarskosten en hypotheekkosten vallen er onder andere niet onder! Er wordt apart aangegeven welke kosten die de notaris in rekening brengt voor rekening van verkoper of koper komen. De overdrachtsbelasting bedraagt een percentage van de koopsom. Als de waarde van de onroerende zaak hoger is dan de koopsom wordt de overdrachtsbelasting over deze waarde berekend.
 Er is een kans dat over de koopsom omzetbelasting (BTW) is verschuldigd. Bijvoorbeeld als er recentelijk een verbouwing geweest is, of als er een praktijkruimte meeverkocht wordt. Duidelijk moet dan zijn wie deze BTW voor zijn rekening neemt. Bij nieuwbouw is de BTW gewoonlijk inbegrepen in de koopsom. Uw makelaar kan u hierover inlichten.''';
-	skos:scopeNote "Artikel 2.1 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 2.1 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 not:VerrekeningOverdrachtsbelastingArt13 skoslex:record mak:Artikel13Verschil.
 mak:Artikel13Verschil a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 2.2: artikel 13 verschil"@nl;
-	skos:prefLabel "Artikel 2.2: artikel 13 verschil";
+	skos:prefLabel "Artikel 2.2: artikel 13 verschil"@nl;
 	rdfs:comment '''Artikel 2.2 is van toepassing indien verkoper de onroerende zaak binnen een bepaalde termijn nadat hij eigenaar is geworden, verkoopt en overdraagt. Thans bedraagt de bepaalde termijn van artikel 13 Wet op belastingen van rechtsverkeer 6 maanden. Indien de eerste overdracht van de onroerende zaak heeft plaatsgevonden tussen 1 september 2012 en 1 januari 2015, geldt een termijn van 36 maanden vanaf de eerste overdracht.
 Op grond van artikel 13 Wet op belastingen van rechtsverkeer mag het bedrag waarover overdrachtsbelasting of omzetbelasting ter zake van die vorige verkrijging was verschuldigd op de heffingsgrondslag in mindering worden gebracht. Er ontstaat dan een overdrachtsbelastingvoordeel vanwege de doorlevering van de onroerende zaak binnen een bepaalde termijn, welk voordeel op grond van artikel 13 Wet op belastingen van rechtsverkeer aan koper toekomt. Indien verkoper van dit voordeel gebruik wil maken moet verkoper dit met koper overeenkomen tijdens de onderhandelingen. In artikel 2.2. wordt dan ‘niet’ doorgestreept en koper betaalt dan aan verkoper dit voordeel als vergoeding.
 Voorheen was goedgekeurd dat deze vergoeding aan verkoper niet in de heffing van de overdrachtsbelasting werd betrokken. Deze goedkeuring is op 1 juli 2011 komen te vervallen. De vergoeding die koper aan verkoper betaalt, valt sindsdien weer onder de tegenprestatie en daarover moet derhalve ook overdrachtsbelasting betaald worden. De laatste zin van artikel 2.2. bepaalt dat koper nooit méér overdrachtsbelasting betaalt dan dat hij betaald zou hebben als géén sprake was geweest van een doorlevering binnen 6 of 36 maanden. Het nadeel dat ontstaat door het vervallen van de goedkeuring komt dus voor rekening van verkoper.''';
-	skos:scopeNote "Artikel 2.2 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 2.2 van de model koopovereenkomst."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout not:VerminderingOverdrachtsbelastingArt13;
@@ -422,25 +422,25 @@ Voorheen was goedgekeurd dat deze vergoeding aan verkoper niet in de heffing van
 not:Betaling skoslex:record mak:ArtikelBetaling.
 mak:ArtikelBetaling a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 3: Betaling"@nl;
-	skos:prefLabel "Artikel 3: Betaling";
-	rdfs:comment "De notaris ontvangt de koopsom van koper en voldoet – nadat eerst de schuldeisers van verkoper, waaronder hypotheekverstrekker(s) en beslaglegger(s), die uit de koopsom behoren te worden voldaan in verband met de correcte afwikkeling van de koop en levering overeenkomstig de voor de notaris geldende beroeps- en beleidsregels, het overblijvende restant van die koopsom aan verkoper. Omdat de notaris ervoor moet instaan, dat het verkochte bij de inschrijving in de openbare registers onbelast is met bijvoorbeeld hypotheken of beslagen en hij dit eerst na de leveringsdatum officieel bevestigd krijgt, mag hij - mede verzekeringstechnisch - de koopsom namens koper pas uitbetalen als hij deze bevestiging heeft, meestal enkele dagen na de datum van levering.";
-	skos:scopeNote "Artikel 3 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 3: Betaling"@nl;
+	rdfs:comment "De notaris ontvangt de koopsom van koper en voldoet – nadat eerst de schuldeisers van verkoper, waaronder hypotheekverstrekker(s) en beslaglegger(s), die uit de koopsom behoren te worden voldaan in verband met de correcte afwikkeling van de koop en levering overeenkomstig de voor de notaris geldende beroeps- en beleidsregels, het overblijvende restant van die koopsom aan verkoper. Omdat de notaris ervoor moet instaan, dat het verkochte bij de inschrijving in de openbare registers onbelast is met bijvoorbeeld hypotheken of beslagen en hij dit eerst na de leveringsdatum officieel bevestigd krijgt, mag hij - mede verzekeringstechnisch - de koopsom namens koper pas uitbetalen als hij deze bevestiging heeft, meestal enkele dagen na de datum van levering."@nl;
+	skos:scopeNote "Artikel 3 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 not:Eigendomsoverdracht skoslex:record mak:ArtikelEigendomsoverdracht.
 mak:ArtikelEigendomsoverdracht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 4: Eigendomsoverdracht"@nl;
-	skos:prefLabel "Artikel 4: Eigendomsoverdracht";
+	skos:prefLabel "Artikel 4: Eigendomsoverdracht"@nl;
 	rdfs:comment '''Er zijn verschillende soorten overdrachten. De belangrijkste zijn de juridische en de feitelijke overdracht. De juridische overdracht (ook wel juridische levering, eigendomsoverdracht of transport genoemd) vindt plaats bij de notaris via een notariële akte van levering en inschrijving daarvan in de openbare registers. De feitelijke overdracht vindt plaats door het overhandigen van de sleutels en het in bezit nemen van de verkochte onroerende zaak. Het is mogelijk dat er twee data zijn voor de verschillende overdrachten (zie artikel 7); maar vaak vallen de twee data echter samen (namelijk indien de akte van levering nog dezelfde dag wordt ingeschreven).''';
-	skos:scopeNote "Artikel 4 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 4 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout not:FeitelijkeLevering;
 .
 mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 4.1: Eigendomsoverdracht, lid 1"@nl;
-	skos:prefLabel "Artikel 4.1: Eigendomsoverdracht, lid 1";
-	rdfs:comment "In artikel 4 moet de datum van de juridische overdracht worden ingevuld, bij artikel 4.1. Wanneer de feitelijke overdracht vooraf gaat aan de juridische overdracht kan er sprake zijn van een economische eigendomsoverdracht. In dat geval kan het verstandig zijn om contact op te nemen met de notaris in verband met eventuele verschuldigdheid van de overdrachtsbelasting. Ook wordt in dit artikel de naam van het notariskantoor ingevuld dat de akte van levering verzorgt. De keuze van de notaris ligt meestal bij koper, behalve als verkoper voor het sluiten van de koopovereenkomst bekend maakt, dat hij de keuze van de notaris voorbehoudt. Dit gebeurt dikwijls bij nieuwbouw om het gehele project bij een zelfde notaris te laten leveren.";
-	skos:scopeNote "Artikel 4, lid 1 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 4.1: Eigendomsoverdracht, lid 1"@nl;
+	rdfs:comment "In artikel 4 moet de datum van de juridische overdracht worden ingevuld, bij artikel 4.1. Wanneer de feitelijke overdracht vooraf gaat aan de juridische overdracht kan er sprake zijn van een economische eigendomsoverdracht. In dat geval kan het verstandig zijn om contact op te nemen met de notaris in verband met eventuele verschuldigdheid van de overdrachtsbelasting. Ook wordt in dit artikel de naam van het notariskantoor ingevuld dat de akte van levering verzorgt. De keuze van de notaris ligt meestal bij koper, behalve als verkoper voor het sluiten van de koopovereenkomst bekend maakt, dat hij de keuze van de notaris voorbehoudt. Dit gebeurt dikwijls bij nieuwbouw om het gehele project bij een zelfde notaris te laten leveren."@nl;
+	skos:scopeNote "Artikel 4, lid 1 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 	skoslex:isAbout not:DatumPasserenAkteLevering;
 	skoslex:isAbout not:Notaris;
@@ -448,125 +448,125 @@ mak:ArtikelEigendomsoverdrachtLid1 a skos:Concept, skoslex:Record;
 .
 mak:ArtikelEigendomsoverdrachtLid2 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 4.2: Eigendomsoverdracht, lid 2"@nl;
-	skos:prefLabel "Artikel 4.2: Eigendomsoverdracht, lid 2";
-	skos:scopeNote "Artikel 4, lid 2 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 4.2: Eigendomsoverdracht, lid 2"@nl;
+	skos:scopeNote "Artikel 4, lid 2 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 	skoslex:isAbout kad:Rechthebbende;
 .
 mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 4.3: Eigendomsoverdracht, lid 3"@nl;
-	skos:prefLabel "Artikel 4.3: Eigendomsoverdracht, lid 3";
-	rdfs:comment "Omdat de modelkoopovereenkomst de mogelijkheid geeft voor 2 soorten koop – namelijk de koop van het eigendom van de onroerende zaak of de koop van het recht van erfpacht op de onroerende zaak – is aangegeven hoe de terminologie in de koopovereenkomst moet worden gelezen.";
-	skos:scopeNote "Artikel 4 lid 3 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 4.3: Eigendomsoverdracht, lid 3"@nl;
+	rdfs:comment "Omdat de modelkoopovereenkomst de mogelijkheid geeft voor 2 soorten koop – namelijk de koop van het eigendom van de onroerende zaak of de koop van het recht van erfpacht op de onroerende zaak – is aangegeven hoe de terminologie in de koopovereenkomst moet worden gelezen."@nl;
+	skos:scopeNote "Artikel 4 lid 3 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 .
 mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 5: Bankgarantie/Waarborgsom"@nl;
-	skos:prefLabel "Artikel 5: Bankgarantie/Waarborgsom";
+	skos:prefLabel "Artikel 5: Bankgarantie/Waarborgsom"@nl;
 	rdfs:comment '''Het is gebruikelijk om overeen te komen, dat koper na het tot stand komen van de koopovereenkomst een bankgarantie stelt voor een bedrag van 10% van de koopsom. Het gaat daarbij om een verklaring van de bank waarin wordt gegarandeerd dat de bank dit bedrag zal uitkeren indien koper zijn verplichtingen niet zal nakomen. Met het stellen van een bankgarantie gaat enige tijd gemoeid. Doorgaans wordt de bankgarantie gesteld binnen enkele dagen na het verloop van het financieringsvoorbehoud. Voor een garantieverklaring berekent de bank een vergoeding.
 In plaats van een bankgarantie te stellen kan koper een waarborgsom storten. Het is gebruikelijk en verstandig om een eventuele waarborgsom te storten bij de notaris. Als koper als consument koopt, mag de waarborgsom of de bankgarantie op grond van de wet vaak niet hoger zijn dan 10% van de koopsom.
 Artikel 5 beoogt verkoper een bepaalde zekerheid te bieden dat koper aan zijn verplichtingen zal voldoen. Eventueel kan de boete, die in artikel 11 wordt genoemd, op de bankgarantie of de waarborgsom worden verhaald. Als de waarborgsom van enige omvang is of niet al te kort bij de notaris berust, zal de notaris doorgaans rente aan koper vergoeden.''';
-	skos:scopeNote "Artikel 5 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 5 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelStaatOnroerendeZaakGebruik a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6: Staat van onroerend goed/gebruik"@nl;
-	skos:prefLabel "Artikel 61: Staat van onroerend goed/gebruik";
+	skos:prefLabel "Artikel 61: Staat van onroerend goed/gebruik"@nl;
 	rdfs:comment '''In artikel 6.1, staat dat koper de onroerende zaak koopt in de staat waarin het zich bevindt ten tijde van het aangaan van de koopovereenkomst. De hoofdregel is dat verkoper in beginsel niet instaat voor de afwezigheid van (verborgen) gebreken. Met andere woorden: de onroerende zaak zal aan koper in eigendom worden overgedragen met inbegrip van alle zichtbare en onzichtbare gebreken. Alle risico wordt dus in eerste instantie bij koper neergelegd. Dit geldt zowel voor feitelijke gebreken als voor overige gebreken voor zover deze niet als ‘bijzondere lasten’ in de zin van art. 7:15 van het Burgerlijk Wetboek zijn aan te merken. Artikel 6.2 gaat over die ‘bijzondere lasten’.
 Gelet op de hoofdregel dat alle risico in eerste instantie op hem rust, wordt van koper verlangd dat hij tot op zekere hoogte onderzoek doet. Zo dient hij in beginsel zelf bij de gemeente te informeren welke bestemming krachtens het ter plaatse geldende bestemmingsplan op de onroerende zaak rust. Wel moet verkoper de hem bekende informatie aan koper verstrekken: hij moet dus in beginsel aan koper vertellen wat hij weet over de eigenschappen en (feitelijke) gebreken van de onroerende zaak.
 Op voormelde hoofdregel dat alle risico in eerste instantie op koper rust, wordt in artikel 6.3. een belangrijke uitzondering gemaakt voor zover het de feitelijke eigenschappen van de onroerende zaak betreft. Hieronder wordt in de toelichting op artikel 6.3. uitgebreid aandacht aan deze uitzondering besteed.
 In artikel 10 wordt nader ingegaan op de situatie dat de onroerende zaak niet geleverd kan worden in de staat waarin deze zich bij het tot stand komen van deze koopovereenkomst bevindt, omdat de zaak na de koop – maar voor de levering – geheel of gedeeltelijk verloren is gegaan.''';
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=9&artikel=9.1&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
-	skos:scopeNote "Artikel 6 van de model koopovereenkomst.";
-	skos:editorialNote "Artikel 6.1 bevat de hoofdregel, de overige subartikelen de aanvullingen en uitzonderingen";
+	skos:scopeNote "Artikel 6 van de model koopovereenkomst."@nl;
+	skos:editorialNote "Artikel 6.1 bevat de hoofdregel, de overige subartikelen de aanvullingen en uitzonderingen"@nl;
 	skoslex:isAbout zv:Bestemmingsplan;
 .
 mak:ArtikelRechtenAanspraken a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.1: rechten en aanspraken"@nl;
-	skos:prefLabel "Artikel 6.1: rechten en aanspraken";
-	rdfs:comment "De onroerende zaak wordt vrij van hypotheken, beslagen en inschrijvingen daarvan geleverd. Verkoper moet de bestaande hypotheken aflossen en ervoor zorgen dat ze ook niet meer in de openbare registers staan ingeschreven. In de praktijk regelt de notaris dit laatste. Ook zorgt verkoper ervoor dat er geen beslagen rusten op de onroerende zaak. Zou er beslag zijn gelegd op de onroerende zaak, dan kan de levering doorgaans niet plaatsvinden, zolang het beslag niet is opgeheven.";
-	skos:scopeNote "Artikel 6.1 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.1: rechten en aanspraken"@nl;
+	rdfs:comment "De onroerende zaak wordt vrij van hypotheken, beslagen en inschrijvingen daarvan geleverd. Verkoper moet de bestaande hypotheken aflossen en ervoor zorgen dat ze ook niet meer in de openbare registers staan ingeschreven. In de praktijk regelt de notaris dit laatste. Ook zorgt verkoper ervoor dat er geen beslagen rusten op de onroerende zaak. Zou er beslag zijn gelegd op de onroerende zaak, dan kan de levering doorgaans niet plaatsvinden, zolang het beslag niet is opgeheven."@nl;
+	skos:scopeNote "Artikel 6.1 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:RechtenAanspraken;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelLasten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.2: (bijzondere) lasten"@nl;
-	skos:prefLabel "Artikel 6.2: (bijzondere) lasten";
+	skos:prefLabel "Artikel 6.2: (bijzondere) lasten"@nl;
 	rdfs:comment '''Artikel 6.2 gaat over ‘bijzondere lasten en beperkingen’ die op de onroerende zaak rusten (een term afkomstig uit art. 7:15 van het Burgerlijk Wetboek). ’Bijzondere lasten en beperkingen’ (hierna: ‘bijzondere lasten’) zijn juridische beperkingen die op de onroerende zaak rusten. Dit kunnen privaatrechtelijke beperkingen zijn zoals (lijdende) erfdienstbaarheden, kwalitatieve verplichtingen en zogenoemde ‘kettingbedingen’. Op grond van zulke beperkingen heeft een ander (dan de eigenaar) een aanspraak op de onroerende zaak (bijvoorbeeld een recht van overpad over de grond). Het kan ook gaan om publiekrechtelijke beperkingen zoals een besluit van het college van B & W tot het vestigen van een wettelijk voorkeursrecht. Verkoper dient koper voorafgaand aan de koop te informeren over de juridische beperkingen die als ‘bijzondere lasten’ op de onroerende zaak rusten. Daartoe zal hij aan koper (in kopie) verstrekken de (voorgaande) notariële akten waarover hij beschikt. Koper kan dan in deze akten lezen welke bijzondere lasten op de onroerende zaak rusten. Uit artikel 6.2 volgt dat koper de bijzondere lasten die uit deze akten voortvloeien, (uitdrukkelijk) aanvaardt.
 Is verkoper ermee bekend dat er (ook) bijzondere lasten op de onroerende zaak rusten die niet blijken uit de aan koper ter hand gestelde akten, dan zal hij die bijzondere lasten aan koper moeten mededelen, zodat koper daarvan op de hoogte is wanneer de koopovereenkomst wordt gesloten. Voor publiekrechtelijke beperkingen (die als een bijzondere last op de onroerende zaak rusten) geldt dat deze lang niet altijd zijn vermeld in voorgaande notariële akten. De publiekrechtelijke beperkingen waarmee verkoper bekend is, kunnen expliciet in artikel 6.2 worden vermeld. Koper aanvaardt (uitdrukkelijk) de in artikel 6.2 vermelde beperkingen.
 Het is van belang dat verkoper aan koper vertelt wat hij weet, en dat koper op grond van hetgeen in artikel 6.2 is vermeld en de (in kopie) aan hem verstrekte voorgaande notariële akten weet welke (privaatrechtelijke en publiekrechtelijke) bijzondere lasten op de onroerende zaak rusten. Laat verkoper het verstrekken van informatie achterwege, dan kan hij later worden geconfronteerd met een eis tot schadevergoeding. Omdat de bijzondere lasten aanspraken van anderen op de onroerende zaak betreffen, zal verkoper die lasten vaak niet (of slechts met veel moeite) kunnen opheffen. Blijkt opheffing niet mogelijk, dan zal koper in beginsel schadevergoeding van verkoper kunnen vorderen. Het is daarom van belang dat verkoper aan koper vertelt welke bijzondere lasten op de onroerende zaak rusten (zodat deze door koper kunnen worden aanvaard).''';
-	skos:scopeNote "Artikel 6.2 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 6.2 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Lasten;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelEigenschappenNormaalGebruik a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.3: eigenschappen normaal gebruik"@nl;
-	skos:prefLabel "Artikel 6.3: eigenschappen normaal gebruik";
+	skos:prefLabel "Artikel 6.3: eigenschappen normaal gebruik"@nl;
 	rdfs:comment '''In artikel 6.3 wordt een vergaande uitzondering gemaakt op de hoofdregel dat de onroerende zaak aan koper in eigendom zal worden overgedragen met inbegrip van alle zichtbare en onzichtbare gebreken. Artikel 6.3 bepaalt dat de onroerende zaak bij de eigendomsoverdracht de feitelijke eigenschappen zal bezitten die voor een normaal gebruik nodig zijn. Normaal gebruik bij een woning betekent onder meer dat in de woning gewoond moet kunnen worden op een veilige manier en met een bepaalde mate van duurzaamheid. Belemmert een gebrek het normale gebruik, dan kan koper verkoper hierop aanspreken. Het wil echter niet zeggen dat elk gebrek het normale gebruik belemmert. Koper van een bestaande woning zal, afhankelijk van ouderdom en prijs daarvan, tot op zekere hoogte rekening moeten houden met een bepaalde mate van meteen te verrichten (achterstallig) onderhoud en aanpassingen aan de eisen van de tijd, ook al was de noodzaak daartoe ten tijde van het sluiten van de koop niet direct zichtbaar. Daarnaast is in artikel 6.3. bepaald dat gebreken die het normale gebruik belemmeren en die aan koper “bekend” zijn of “kenbaar” zijn op het moment van het tot stand komen van deze koopovereenkomst, voor rekening en risico van koper komen. Een voorbeeld. Verkoper verkoopt een woning met een verrot dakbeschot. Er is vastgesteld dat het verrotte dakbeschot het normale gebruik van de woning belemmert. Koper is hiermee bekend bij de ondertekening van de koopovereenkomst. Koper kan na de ondertekening van de koopovereenkomst niet verkoper aanspreken omdat het ‘normale gebruik’ in artikel 6.3 belemmerd wordt door het verrotte dakbeschot. Ten tijde van de ondertekening van de koopovereenkomst was koper hier immers mee bekend en partijen hebben afgesproken dat gebreken die het normale gebruik belemmeren en die aan koper bekend zijn of kenbaar zijn op het moment van het tot stand komen van de koopovereenkomst, voor rekening en risico van koper komen. Het begrip “kenbaar” is ruimer dan “bekend”. Ook gebreken die koper niet kent maar die hij had moeten ontdekken als hij voldoende zorgvuldig te werk was gegaan, zijn “kenbaar”. Koper mag er dus niet zomaar vanuit gaan dat alles wel in orde is. Van koper wordt verwacht dat hij nagaat -of laat nagaan- of de zaak aan de door hem te stellen eisen voldoet. Het spreekwoord ‘wat niet weet, wat niet deert’ gaat hier niet op. Koper moet bij twijfel vragen stellen en/of zelf onderzoek (laten) verrichten. Dat betekent niet dat verkoper altijd zijn mond mag houden. Op hem rust een mededelingsplicht. Hij moet koper op de hoogte stellen van gebreken waarvan hij behoort te weten dat ze voor koper van belang zijn en waarvan hij weet of vermoedt dat koper ze niet kent.
 Deze mededelingsplicht is niet beperkt tot voorgenoemde gebreken. Als koper heeft aangegeven dat hij de onroerende zaak voor een bijzonder doel wil gebruiken, zal verkoper, als hij weet dat het verkochte niet voor dat gebruik geschikt is, dat aan koper moeten melden. Alhoewel uit artikel 6.3 volgt dat verkoper niet in staat voor de geschiktheid van het verkochte voor het beoogde bijzondere gebruik, heeft verkoper wel een mededelingsplicht. Als verkoper niet aan de mededelingsplicht voldoet, kan koper –indien deze het gebrek niet kende- verkoper aansprakelijk stellen.
 Ook voor verkoper gaat het spreekwoord ‘wat niet weet, wat niet deert’ niet op. Als ondanks voldoende onderzoek door koper, achteraf blijkt dat ten tijde van de eigendomsoverdracht toch sprake is van een gebrek dat een normaal gebruik in de weg staat, kan verkoper daar in principe op worden aangesproken. Dat geldt ook voor bodemverontreiniging. Als zowel aan verkoper als aan koper volledig onbekend is of er bodemverontreiniging aanwezig is, dan zal, wanneer het normale gebruik van de onroerende zaak in het geding is, het risico in beginsel op verkoper rusten. Staat een verontreiniging een normaal gebruik niet in de weg, dan berust het risico in beginsel op koper.
 De verplichting voor verkoper om een zaak te leveren die de eigenschappen bezit die voor een normaal gebruik ervan nodig zijn, geldt in beginsel ook voor de meeverkochte (roerende) zaken. Ook in dat geval geldt dat verkoper koper moet informeren over gebreken die het normale gebruik belemmeren en die voor koper niet direct waarneembaar zijn. Als koper zelf reden heeft om te twijfelen, moet hij verkoper vragen stellen of de meegekochte zaak (laten) onderzoeken.
 De een-na-laatste zin van artikel 6.3. ziet op de herstelkosten. Voor gebreken die het normale gebruik belemmeren welke niet aan koper bekend of kenbaar waren op het moment van het tot stand komen van deze koopovereenkomst, is verkoper uitsluitend aansprakelijk voor de herstelkosten. Verkoper draagt daarmee het risico van het alsnog geschikt maken van de onroerende zaak voor normaal gebruik. Bij het vaststellen van de herstelkosten moet rekening worden gehouden met de aftrek ‘nieuw voor oud’. Bij het vaststellen van de aftrek ‘nieuw voor oud’ wordt rekening gehouden met enerzijds de kosten van vernieuwing en anderzijds de levensduur van het te vervangen onderdeel. Een voorbeeld: koper heeft verkoper op grond van artikel 6.3. van de koopovereenkomst aansprakelijk gesteld voor een niet functionerende cv-ketel. De cv-ketel dient in zijn geheel vervangen te worden. Een cv-installateur heeft de kosten van vervanging van de cv-ketel begroot op € 2.500,00. De verwachte levensduur wordt geschat op 20 jaar. Ten tijde van de koop was de cv-ketel 10 jaar oud. De aftrek ‘nieuw voor oud’ bedraagt dan 50%, te weten € 1.250,00. Verkoper dient dus de helft van de herstelkosten aan koper te voldoen.
 Koper draagt het risico van de overige (gevolg) schade, tenzij verkoper een verwijt treft. Verkoper treft een verwijt als hij bijvoorbeeld willens en wetens gebreken verzwijgt die het normale gebruik belemmeren.''';
-	skos:scopeNote "Artikel 6.3 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 6.3 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:EigenschappenNormaalGebruik;
 	skoslex:isAbout not:AftrekNieuwVoorOud;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelVerontreiniging a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.4.1: verontreiniging"@nl;
-	skos:prefLabel "Artikel 6.4.1: verontreiniging";
-	rdfs:comment "In artikel 6.4.1. kunnen partijen hun wetenschap over het al dan niet verontreinigd zijn van de onroerende zaak aangeven. Een dergelijke clausule wordt wel een ‘(on)bekendheidsverklaring’ genoemd. Ook de artikelen 6.4.2, 6.4.3, 6.4.4, 6.7.1 en 6.7.2 zijn voorbeelden van (on)bekendheidsverklaringen. Dergelijke clausules hebben een bewijs- en een signaalfunctie. De bewijsfunctie ligt hierin dat “welles-nietes-discussies” worden voorkomen. Als koper bijvoorbeeld verklaart dat hij bekend is met de aanwezigheid van een olietank (bekendheidsverklaring), kan hij moeilijk achteraf beweren dat verkoper zijn plicht heeft verzaakt om mededeling te doen over die aanwezigheid. Uit de koopovereenkomst blijkt duidelijk dat de aanwezigheid bekend was. Andersom, als verkoper verklaart niet bekend te zijn met de aanwezigheid van een olietank (onbekendheidsverklaring), kan hij moeilijk achteraf beweren dat hij koper op de aanwezigheid van de tank heeft gewezen of dat de aanwezigheid van de tank voor koper duidelijk zichtbaar was. Er staat immers zwart op wit dat verkoper niet wist of er een ondergrondse tank was. De signaalfunctie wordt vervuld doordat partijen op het onderwerp attent worden gemaakt. Zij worden min of meer gedwongen om daar iets over vast te leggen. Daardoor wordt verkoper gestimuleerd om zijn mededelingsplicht te doen, en koper om zijn onderzoeksplicht te doen. Om ieder misverstand te voorkomen is in artikel 6.13 uitdrukkelijk bepaald dat een onbekendheidsverklaring niet bedoeld is als garantie of uitsluiting/beperking van aansprakelijkheid. Zoals hierboven reeds aangegeven gaat het spreekwoord ‘wat niet weet wat niet deert’, noch op voor koper, noch voor verkoper. Of koper verkoper kan aanspreken volgt in beginsel uit artikel 6.1 en 6.3 van de koopovereenkomst, waarbij kenbare gebreken voor risico van koper komen. Uiteraard kunnen partijen, desgewenst per onderdeel, van de standaard in de koopovereenkomst opgenomen risicoverdeling afwijken.";
-	skos:scopeNote "Artikel 6.4.1 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.4.1: verontreiniging"@nl;
+	rdfs:comment "In artikel 6.4.1. kunnen partijen hun wetenschap over het al dan niet verontreinigd zijn van de onroerende zaak aangeven. Een dergelijke clausule wordt wel een ‘(on)bekendheidsverklaring’ genoemd. Ook de artikelen 6.4.2, 6.4.3, 6.4.4, 6.7.1 en 6.7.2 zijn voorbeelden van (on)bekendheidsverklaringen. Dergelijke clausules hebben een bewijs- en een signaalfunctie. De bewijsfunctie ligt hierin dat “welles-nietes-discussies” worden voorkomen. Als koper bijvoorbeeld verklaart dat hij bekend is met de aanwezigheid van een olietank (bekendheidsverklaring), kan hij moeilijk achteraf beweren dat verkoper zijn plicht heeft verzaakt om mededeling te doen over die aanwezigheid. Uit de koopovereenkomst blijkt duidelijk dat de aanwezigheid bekend was. Andersom, als verkoper verklaart niet bekend te zijn met de aanwezigheid van een olietank (onbekendheidsverklaring), kan hij moeilijk achteraf beweren dat hij koper op de aanwezigheid van de tank heeft gewezen of dat de aanwezigheid van de tank voor koper duidelijk zichtbaar was. Er staat immers zwart op wit dat verkoper niet wist of er een ondergrondse tank was. De signaalfunctie wordt vervuld doordat partijen op het onderwerp attent worden gemaakt. Zij worden min of meer gedwongen om daar iets over vast te leggen. Daardoor wordt verkoper gestimuleerd om zijn mededelingsplicht te doen, en koper om zijn onderzoeksplicht te doen. Om ieder misverstand te voorkomen is in artikel 6.13 uitdrukkelijk bepaald dat een onbekendheidsverklaring niet bedoeld is als garantie of uitsluiting/beperking van aansprakelijkheid. Zoals hierboven reeds aangegeven gaat het spreekwoord ‘wat niet weet wat niet deert’, noch op voor koper, noch voor verkoper. Of koper verkoper kan aanspreken volgt in beginsel uit artikel 6.1 en 6.3 van de koopovereenkomst, waarbij kenbare gebreken voor risico van koper komen. Uiteraard kunnen partijen, desgewenst per onderdeel, van de standaard in de koopovereenkomst opgenomen risicoverdeling afwijken."@nl;
+	skos:scopeNote "Artikel 6.4.1 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Verontreiniging;
 	skoslex:isAbout mak:Schoning;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelOndergrondseTankVoorHetOpslaanVanVloeistoffen a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.4.2: ondergrondse opslagtanks voor het opslaan van (vloei)stoffen"@nl;
-	skos:prefLabel "Artikel 6.4.2: ondergrondse opslagtanks voor het opslaan van (vloei)stoffen";
-	rdfs:comment "Artikel 6.4.2. heeft betrekking op ondergrondse opslagtanks voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks. Met name voor gebruik en sanering van ondergrondse olietanks gelden speciale regels. Verkoper kan aangeven of de tanks nog in gebruik zijn, of ze onklaar gemaakt zijn, zo ja, wanneer dat is gebeurd en of daarbij de wettelijke voorschriften in acht zijn genomen. Als een niet in gebruik zijnde olietank niet onklaar gemaakt is, doen koper en verkoper er verstandig aan om afspraken te maken over het saneren of verwijderen van de tank en de daaraan verbonden kosten. Dat soort afspraken kunnen in de opengelaten ruimte onder het artikel vastgelegd worden. Als verkoper niet weet of er nog olietanks aanwezig zijn, doet koper er goed aan om vooraf onderzoek te doen naar de aanwezigheid van olietanks. Wanneer zich in de tuin een nog niet of niet conform het Activiteitenbesluit milieubeheer is gesaneerd, kan het bevoegd gezag een verplichting opleggen tot (her)sanering of verwijdering van de tank. Hierbij dient eerst bodemonderzoek te worden gedaan naar mogelijke bodemverontreiniging die als gevolg van olielekkage kan zijn ontstaan en waardoor de bodem gesaneerd dient te worden. De wijze van sanering is afhankelijk van de mate van vervuiling en moet gedaan worden door een erkende saneerder.";
-	skos:scopeNote "Artikel 6.4.2 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.4.2: ondergrondse opslagtanks voor het opslaan van (vloei)stoffen"@nl;
+	rdfs:comment "Artikel 6.4.2. heeft betrekking op ondergrondse opslagtanks voor het opslaan van (vloei)stoffen, zoals olietanks en septictanks. Met name voor gebruik en sanering van ondergrondse olietanks gelden speciale regels. Verkoper kan aangeven of de tanks nog in gebruik zijn, of ze onklaar gemaakt zijn, zo ja, wanneer dat is gebeurd en of daarbij de wettelijke voorschriften in acht zijn genomen. Als een niet in gebruik zijnde olietank niet onklaar gemaakt is, doen koper en verkoper er verstandig aan om afspraken te maken over het saneren of verwijderen van de tank en de daaraan verbonden kosten. Dat soort afspraken kunnen in de opengelaten ruimte onder het artikel vastgelegd worden. Als verkoper niet weet of er nog olietanks aanwezig zijn, doet koper er goed aan om vooraf onderzoek te doen naar de aanwezigheid van olietanks. Wanneer zich in de tuin een nog niet of niet conform het Activiteitenbesluit milieubeheer is gesaneerd, kan het bevoegd gezag een verplichting opleggen tot (her)sanering of verwijdering van de tank. Hierbij dient eerst bodemonderzoek te worden gedaan naar mogelijke bodemverontreiniging die als gevolg van olielekkage kan zijn ontstaan en waardoor de bodem gesaneerd dient te worden. De wijze van sanering is afhankelijk van de mate van vervuiling en moet gedaan worden door een erkende saneerder."@nl;
+	skos:scopeNote "Artikel 6.4.2 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelAsbest a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.4.3: asbest"@nl;
-	skos:prefLabel "Artikel 6.4.3: asbest";
-	rdfs:comment "In artikel 6.4.3. moet verkoper mededelen of hij er al dan niet mee bekend is of er asbest in de onroerende zaak is verwerkt. Dit geldt ook als bijvoorbeeld in een schuur of afdakje of in de verharding van een tuinpad asbest is gebruikt. Bij verwijdering van asbest dienen speciale maatregelen genomen te worden. Indien er asbest is geconstateerd, kunnen partijen desgewenst in de koopovereenkomst opnemen, of, en voor wiens kosten het wordt verwijderd. Ook hier geldt dat als verkoper niet weet of er asbest in het huis is verwerkt, koper daar onderzoek naar kan laten verrichten.";
-	skos:scopeNote "Artikel 6.4.3 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.4.3: asbest"@nl;
+	rdfs:comment "In artikel 6.4.3. moet verkoper mededelen of hij er al dan niet mee bekend is of er asbest in de onroerende zaak is verwerkt. Dit geldt ook als bijvoorbeeld in een schuur of afdakje of in de verharding van een tuinpad asbest is gebruikt. Bij verwijdering van asbest dienen speciale maatregelen genomen te worden. Indien er asbest is geconstateerd, kunnen partijen desgewenst in de koopovereenkomst opnemen, of, en voor wiens kosten het wordt verwijderd. Ook hier geldt dat als verkoper niet weet of er asbest in het huis is verwerkt, koper daar onderzoek naar kan laten verrichten."@nl;
+	skos:scopeNote "Artikel 6.4.3 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Asbest;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelBeschikkingWetBodemsanering a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.4.4: beschikking wet bodemsanering"@nl;
-	skos:prefLabel "Artikel 6.4.4: beschikking wet bodemsanering";
-	rdfs:comment "Artikel 6.4.4. gaat over beschikkingen of bevelen in de zin van artikel 55 van de Wet Bodembescherming. Op grond van deze wet kan de provincie of de gemeente een beschikking of bevel tot bijvoorbeeld onderzoek of sanering van de grond nemen. Indien verkoper weet dat een dergelijke beschikking of bevel gegeven is, moet hij koper daarvan op de hoogte stellen.";
-	skos:scopeNote "Artikel 6.4.4 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.4.4: beschikking wet bodemsanering"@nl;
+	rdfs:comment "Artikel 6.4.4. gaat over beschikkingen of bevelen in de zin van artikel 55 van de Wet Bodembescherming. Op grond van deze wet kan de provincie of de gemeente een beschikking of bevel tot bijvoorbeeld onderzoek of sanering van de grond nemen. Indien verkoper weet dat een dergelijke beschikking of bevel gegeven is, moet hij koper daarvan op de hoogte stellen."@nl;
+	skos:scopeNote "Artikel 6.4.4 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:BeschikkingWetBodemsanering;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelInspectie a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.5: inspectie"@nl;
-	skos:prefLabel "Artikel 6.5: inspectie";
-	rdfs:comment "Uit artikel 6.5. volgt dat koper direct voorafgaand aan het passeren van de akte van levering bij de notaris de onroerende zaak van binnen en van buiten mag inspecteren. Er is gekozen om dit vlak voor het passeren van de akte van levering te doen, omdat dit het beste moment is. Er kan namelijk nog van alles aan de onroerende zaak veranderen. Daarom wordt hier nog eens de mogelijkheid geboden te controleren of de onroerende zaak zich in dezelfde staat bevindt als toen het gekocht werd. Indien een makelaar betrokken is bij de verkoop van de woning, zal deze vaak bij de inspectie aanwezig zijn.";
-	skos:scopeNote "Artikel 6.5 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.5: inspectie"@nl;
+	rdfs:comment "Uit artikel 6.5. volgt dat koper direct voorafgaand aan het passeren van de akte van levering bij de notaris de onroerende zaak van binnen en van buiten mag inspecteren. Er is gekozen om dit vlak voor het passeren van de akte van levering te doen, omdat dit het beste moment is. Er kan namelijk nog van alles aan de onroerende zaak veranderen. Daarom wordt hier nog eens de mogelijkheid geboden te controleren of de onroerende zaak zich in dezelfde staat bevindt als toen het gekocht werd. Indien een makelaar betrokken is bij de verkoop van de woning, zal deze vaak bij de inspectie aanwezig zijn."@nl;
+	skos:scopeNote "Artikel 6.5 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Inspectie;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelAanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.6: aanschrijvingen van de overheid of nutsbedrijven"@nl;
-	skos:prefLabel "Artikel 6.6: aanschrijvingen van de overheid of nutsbedrijven";
-	rdfs:comment "Artikel 6.6. ziet op zogenoemde aanschrijvingen van de overheid of door nutsbedrijven. De overheid of een nutsbedrijf kan een eigenaar de verplichting opleggen om zijn onroerende zaak in een bepaald opzicht te verbeteren of te herstellen, bijvoorbeeld de aanschrijving van een nutsbedrijf dat men de elektrische installatie moet verbeteren of de aanschrijving van een gemeente dat de eigenaar de voorgevel moet opknappen. Het is voor koper van belang om te weten of dat is gebeurd. Het nakomen van zo'n verplichting kost immers geld en bovendien moet een en ander binnen een bepaalde periode worden uitgevoerd. De bepaling moet voorkomen dat koper voor verrassingen komt te staan. Een aanschrijving komt doorgaans niet onverwacht, in die zin dat meestal al langer duidelijk is dat er iets niet in orde is. Als koper en verkoper aan hun onderzoeksplicht resp. mededelingsplicht hebben voldaan, zal koper de gebreken al kennen. In verband daarmee zijn de kosten in beginsel voor rekening van koper als de overheid of het nutsbedrijf na het tekenen van de koopovereenkomst, maar voor de eigendomsoverdracht een herstel- of verbeteringsplicht oplegt. Aanschrijvingen in verband met bouwen zonder, of in strijd met, een vergunning komen in beginsel voor rekening van verkoper.";
-	skos:scopeNote "Artikel 6.6. van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.6: aanschrijvingen van de overheid of nutsbedrijven"@nl;
+	rdfs:comment "Artikel 6.6. ziet op zogenoemde aanschrijvingen van de overheid of door nutsbedrijven. De overheid of een nutsbedrijf kan een eigenaar de verplichting opleggen om zijn onroerende zaak in een bepaald opzicht te verbeteren of te herstellen, bijvoorbeeld de aanschrijving van een nutsbedrijf dat men de elektrische installatie moet verbeteren of de aanschrijving van een gemeente dat de eigenaar de voorgevel moet opknappen. Het is voor koper van belang om te weten of dat is gebeurd. Het nakomen van zo'n verplichting kost immers geld en bovendien moet een en ander binnen een bepaalde periode worden uitgevoerd. De bepaling moet voorkomen dat koper voor verrassingen komt te staan. Een aanschrijving komt doorgaans niet onverwacht, in die zin dat meestal al langer duidelijk is dat er iets niet in orde is. Als koper en verkoper aan hun onderzoeksplicht resp. mededelingsplicht hebben voldaan, zal koper de gebreken al kennen. In verband daarmee zijn de kosten in beginsel voor rekening van koper als de overheid of het nutsbedrijf na het tekenen van de koopovereenkomst, maar voor de eigendomsoverdracht een herstel- of verbeteringsplicht oplegt. Aanschrijvingen in verband met bouwen zonder, of in strijd met, een vergunning komen in beginsel voor rekening van verkoper."@nl;
+	skos:scopeNote "Artikel 6.6. van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:AanschrijvingOverheidNutsbedrijf;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelMonument a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.7.1: monument"@nl;
-	skos:prefLabel "Artikel 6.7.1: monument";
-	skos:scopeNote "Artikel 6.7.1 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.7.1: monument"@nl;
+	skos:scopeNote "Artikel 6.7.1 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:GemeentelijkMonument;
 	skoslex:isAbout kad:ProvinciaalMonument;
 	skoslex:isAbout kad:Rijksmonument;
@@ -574,15 +574,15 @@ mak:ArtikelMonument a skos:Concept, skoslex:Record;
 .
 mak:ArtikelBeschermdStadsDorpsgezicht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.7.2: beschermd stads- of dorpsgezicht"@nl;
-	skos:prefLabel "Artikel 6.7.2: beschermd stads- of dorpsgezicht";
-	skos:scopeNote "Artikel 6.7.2 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.7.2: beschermd stads- of dorpsgezicht"@nl;
+	skos:scopeNote "Artikel 6.7.2 van de model koopovereenkomst."@nl;
 	skoslex:isAbout zv:BeschermdStadsDorpsgezicht;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelVerplichtingenDerden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.8: verplichtingen ten opzichte van derden"@nl;
-	skos:prefLabel "Artikel 6.8: verplichtingen ten opzichte van derden";
-	skos:scopeNote "Artikel 6.8 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.8: verplichtingen ten opzichte van derden"@nl;
+	skos:scopeNote "Artikel 6.8 van de model koopovereenkomst."@nl;
 	skoslex:isAbout not:Optierecht;
 	skoslex:isAbout not:Voorkeursrecht;
 	skoslex:isAbout not:Wederinkoop;
@@ -590,24 +590,24 @@ mak:ArtikelVerplichtingenDerden a skos:Concept, skoslex:Record;
 .
 mak:ArtikelWetVoorkeursrechtGemeenten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.9: Wet voorkeursrecht gemeenten"@nl;
-	skos:prefLabel "Artikel 6.9: Wet voorkeursrecht gemeenten";
-	skos:scopeNote "Artikel 6.9 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.9: Wet voorkeursrecht gemeenten"@nl;
+	skos:scopeNote "Artikel 6.9 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:AanwijzingWVG;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelWegneemrechtHuurder a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.10: wegneemrecht huurder"@nl;
-	skos:prefLabel "Artikel 6.10: wegneemrecht huurder";
-	rdfs:comment "Artikel 6.10. Als het verkochte een verhuurde woning betreft, en met de huurder is afgesproken dat deze de woning voor het passeren van de akte van levering zal ontruimen, dan moet rekening worden gehouden met het feit dat een huurder in beginsel het recht heeft om die zaken mee te nemen die hij heeft aangebracht. Hij dient de woning op te leveren in de oorspronkelijke staat waarin hij die bij aanvang van de huur heeft ontvangen. Een uitzondering is er voor geoorloofde veranderingen en toevoegingen en hetgeen door ouderdom is tenietgegaan of beschadigd. Het is voor koper en verkoper van belang elkaar goed te informeren over hetgeen tot het verkochte behoort.";
-	skos:scopeNote "Artikel 6.10 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.10: wegneemrecht huurder"@nl;
+	rdfs:comment "Artikel 6.10. Als het verkochte een verhuurde woning betreft, en met de huurder is afgesproken dat deze de woning voor het passeren van de akte van levering zal ontruimen, dan moet rekening worden gehouden met het feit dat een huurder in beginsel het recht heeft om die zaken mee te nemen die hij heeft aangebracht. Hij dient de woning op te leveren in de oorspronkelijke staat waarin hij die bij aanvang van de huur heeft ontvangen. Een uitzondering is er voor geoorloofde veranderingen en toevoegingen en hetgeen door ouderdom is tenietgegaan of beschadigd. Het is voor koper en verkoper van belang elkaar goed te informeren over hetgeen tot het verkochte behoort."@nl;
+	skos:scopeNote "Artikel 6.10 van de model koopovereenkomst."@nl;
 	skoslex:isAbout not:Wegneemrecht;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelOppervlakte a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.11: oppervlakte"@nl;
-	skos:prefLabel "Artikel 6.11: oppervlakte";
-	rdfs:comment "Artikel 6.11 ziet op alle oppervlakten, zoals de kadastrale oppervlakte van het perceel en de vloeroppervlakte van de onroerende zaak. Omdat koper de situatie ter plaatse heeft bekeken en hij dus ziet wat hij koopt, maakt het vaak niet veel uit of de opgegeven grootte afwijkt van de werkelijke grootte. Daarom is het gebruikelijk om af te spreken dat er geen verrekening plaatsvindt bij verschil tussen de opgegeven en de werkelijke grootte. Soms kan het voor koper toch belangrijk zijn dat de daadwerkelijke oppervlakte klopt of nagenoeg klopt met de opgegeven oppervlakte. In afwijking van de hoofdregel kunnen partijen dan iets anders afspreken. Dit kan op de stippellijn van artikel 6.11. Partijen kunnen bijvoorbeeld opnemen dat koper recht heeft op een vergoeding van verkoper als blijkt dat de oppervlakte minimaal 5% minder bedraagt dan opgegeven. Leg ook de hoogte van de vergoeding vast, bijvoorbeeld een bedrag voor iedere m2 die de opgegeven oppervlakte overschrijdt. Omdat in de koopovereenkomst geen melding wordt gemaakt van de gebruiksoppervlakte van de woning, is het verstandig om dit ook op te nemen op de stippellijn. De verkopend makelaar kan hierbij helpen. Makelaars (behorend bij NVM, VBO of VastgoedPRO) zijn namelijk verplicht om de woning volgens de ‘meetinstructie gebruiksoppervlakte woningen’ op te meten, zodat de gegevens bekend zijn. De grootte van het perceel wordt overigens in artikel 1 van de koopovereenkomst genoemd";
-	skos:scopeNote "Artikel 6.11 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.11: oppervlakte"@nl;
+	rdfs:comment "Artikel 6.11 ziet op alle oppervlakten, zoals de kadastrale oppervlakte van het perceel en de vloeroppervlakte van de onroerende zaak. Omdat koper de situatie ter plaatse heeft bekeken en hij dus ziet wat hij koopt, maakt het vaak niet veel uit of de opgegeven grootte afwijkt van de werkelijke grootte. Daarom is het gebruikelijk om af te spreken dat er geen verrekening plaatsvindt bij verschil tussen de opgegeven en de werkelijke grootte. Soms kan het voor koper toch belangrijk zijn dat de daadwerkelijke oppervlakte klopt of nagenoeg klopt met de opgegeven oppervlakte. In afwijking van de hoofdregel kunnen partijen dan iets anders afspreken. Dit kan op de stippellijn van artikel 6.11. Partijen kunnen bijvoorbeeld opnemen dat koper recht heeft op een vergoeding van verkoper als blijkt dat de oppervlakte minimaal 5% minder bedraagt dan opgegeven. Leg ook de hoogte van de vergoeding vast, bijvoorbeeld een bedrag voor iedere m2 die de opgegeven oppervlakte overschrijdt. Omdat in de koopovereenkomst geen melding wordt gemaakt van de gebruiksoppervlakte van de woning, is het verstandig om dit ook op te nemen op de stippellijn. De verkopend makelaar kan hierbij helpen. Makelaars (behorend bij NVM, VBO of VastgoedPRO) zijn namelijk verplicht om de woning volgens de ‘meetinstructie gebruiksoppervlakte woningen’ op te meten, zodat de gegevens bekend zijn. De grootte van het perceel wordt overigens in artikel 1 van de koopovereenkomst genoemd"@nl;
+	skos:scopeNote "Artikel 6.11 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:KadastraleGrootte;
 	skoslex:isAbout kad:OpgegevenGrootte;
 	skoslex:isAbout kad:WerkelijkeGrootte;
@@ -615,25 +615,25 @@ mak:ArtikelOppervlakte a skos:Concept, skoslex:Record;
 .
 mak:ArtikelLastenVoorgaandeJaren a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.12: lasten voorgaande jaren"@nl;
-	skos:prefLabel "Artikel 6.12: lasten voorgaande jaren";
-	skos:scopeNote "Artikel 6.12 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.12: lasten voorgaande jaren"@nl;
+	skos:scopeNote "Artikel 6.12 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:Canon;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelOnbekenheidsverklaring a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.13: onbekendheidsverklaring"@nl;
-	skos:prefLabel "Artikel 6.13: onbekendheidsverklaring";
-	rdfs:comment "Artikel 6.13. Hier wordt nog eens benadrukt dat de verklaring van verkoper dat hij niet op de hoogte is van bijvoorbeeld bodemverontreiniging, niets zegt over wie het risico voor bodemverontreiniging draagt. Koper mag uit de onbekendheidsverklaring niet afleiden dat er geen sprake is van bodemverontreiniging. Hij krijgt dus geen garantie. Er is echter ook geen sprake van uitsluiting van aansprakelijkheid. Verkoper legt met een onbekendheidsverklaring het risico dus niet bij koper neer, zie de toelichting bij artikel 6.3. en 6.4.1. Risicoverdeling is een kwestie van afspraak. Bij een onbekendheidsverklaring gaat het om feitelijke wetenschap en niet om een afspraak. Je kunt nu eenmaal niet onderhandelen over de vraag of je iets wel of niet weet. ";
-	skos:scopeNote "Artikel 6.13 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 6.13: onbekendheidsverklaring"@nl;
+	rdfs:comment "Artikel 6.13. Hier wordt nog eens benadrukt dat de verklaring van verkoper dat hij niet op de hoogte is van bijvoorbeeld bodemverontreiniging, niets zegt over wie het risico voor bodemverontreiniging draagt. Koper mag uit de onbekendheidsverklaring niet afleiden dat er geen sprake is van bodemverontreiniging. Hij krijgt dus geen garantie. Er is echter ook geen sprake van uitsluiting van aansprakelijkheid. Verkoper legt met een onbekendheidsverklaring het risico dus niet bij koper neer, zie de toelichting bij artikel 6.3. en 6.4.1. Risicoverdeling is een kwestie van afspraak. Bij een onbekendheidsverklaring gaat het om feitelijke wetenschap en niet om een afspraak. Je kunt nu eenmaal niet onderhandelen over de vraag of je iets wel of niet weet. "@nl;
+	skos:scopeNote "Artikel 6.13 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:Canon;
 	skosthes:broaderPartitive mak:Onbekendheidsverklaring;
 .
 mak:ArtikelFeitelijkeLevering a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7.1: Feitelijke levering"@nl;
-	skos:prefLabel "Artikel 7.1: Feitelijke levering";
+	skos:prefLabel "Artikel 7.1: Feitelijke levering"@nl;
 	rdfs:comment '''De feitelijke levering vindt plaats door het overhandigen van de sleutels en het in bezit nemen van het verkochte. In dit artikel wordt aangegeven dat de levering plaatsvindt op het moment van het ondertekenen van de akte van levering bij de notaris, tenzij tussen verkoper en koper een ander tijdstip is overeengekomen.
 Indien verkoper en koper een ander tijdstip van feitelijke levering overeenkomen, zijn over het algemeen aanvullende afspraken gewenst, bijvoorbeeld over het tijdstip waarop het risico overgaat (artikel 10). Overleg in dergelijke gevallen vooraf met uw verzekeraar en hypotheekverstrekker.''';
-	skos:scopeNote "Artikel 7.1 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 7.1 van de model koopovereenkomst."@nl;
 	skoslex:isAbout not:FeitelijkeLevering;
 	skoslex:isAbout mak:Huurovereenkomst;
 	skoslex:isAbout mak:Leaseovereenkomst;
@@ -642,8 +642,8 @@ Indien verkoper en koper een ander tijdstip van feitelijke levering overeenkomen
 .
 mak:ArtikelOngevorderdLeeg a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7.2: ongevorderd en leeg"@nl;
-	skos:prefLabel "Artikel 7.2: ongevorderd en leeg";
-	skos:scopeNote "Artikel 7.2 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 7.2: ongevorderd en leeg"@nl;
+	skos:scopeNote "Artikel 7.2 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout mak:AanspraakTotGebruik;
 	skoslex:isAbout not:Ongevorderd;
@@ -651,27 +651,27 @@ mak:ArtikelOngevorderdLeeg a skos:Concept, skoslex:Record;
 .
 mak:ArtikelHuurLeaseHuurkoopovereenkomsten a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7.3: huur-, lease- of huurkoopovereenkomsten"@nl;
-	skos:prefLabel "Artikel 7.3: huur-, lease- of huurkoopovereenkomsten";
+	skos:prefLabel "Artikel 7.3: huur-, lease- of huurkoopovereenkomsten"@nl;
 	rdfs:comment '''Tevens wordt aangegeven hoe de levering plaatsvindt, namelijk vrij van huur-, lease- of huurkoopovereenkomsten met uitzondering van eventueel in te vullen overeenkomsten. Het gaat hierbij dus niet alleen om de vraag of de onroerende zaak geheel of gedeeltelijk verhuurd is, maar ook of verkoper bepaalde onderdelen zoals de cv-ketel of de keuken gehuurd of geleased heeft. Als de onroerende zaak vrij van huur etc. wordt geleverd, zijn de artikelen 6.10 en 7.3 niet van toepassing.
 Indien verkoper en koper een ander tijdstip van feitelijke levering overeenkomen, zijn over het algemeen aanvullende afspraken gewenst, bijvoorbeeld over het tijdstip waarop het risico overgaat (artikel 10). Overleg in dergelijke gevallen vooraf met uw verzekeraar en hypotheekverstrekker.''';
-	skos:scopeNote "Artikel 7.3 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 7.3 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:BetalingToekomstigeTermijn;
 	skoslex:isAbout mak:BeslagToekomstigeTermijn;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOverdrachtAanspraken a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7.4: Overdracht aanspraken"@nl;
-	skos:prefLabel "Artikel 7.4: Overdracht aanspraken";
+	skos:prefLabel "Artikel 7.4: Overdracht aanspraken"@nl;
 	rdfs:comment '''In artikel 7.4 wordt aangegeven dat alle aanspraken die verkoper kan doen gelden, over gaan op koper. Het betreft hier bijvoorbeeld een garantie die verkoper heeft op een verbouwing, op dubbel glas of op de dakbedekking. De in artikel 7.4 gegeven opsomming is niet uitputtend. Indien op de te kopen onroerende zaak de garantie- en waarborgregeling SWK, Woningborg, Bouwgarant of GIW van toepassing is, geldt dat de garantie automatisch overgaat. Informatie over de termijnen en de te volgen procedure is te vinden in de betreffende waarborgregeling.''';
-	skos:scopeNote "Artikel 7.4 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 7.4 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Aanspraak;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelBatenLastenCanons a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 8: baten, lasten en canons"@nl;
-	skos:prefLabel "Artikel 8: baten, lasten en canons";
-	rdfs:comment "In artikel 8 wordt aangegeven op welke datum de baten (bijvoorbeeld de huren), de lasten, belastingen, heffingen en verschuldigde canons overgaan op koper. Meestal wordt overeengekomen dat deze overgaan met ingang van de datum van eigendomsoverdracht: zie artikel 4. Belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak worden niet tussen verkoper en koper verrekend. Wanneer verkoper verhuist naar een andere gemeente dan heeft verkoper doorgaans recht op ontheffing van de belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak voor de resterende volle maanden van het jaar. Verhuist verkoper naar een andere woning in dezelfde gemeente dan blijft de aanslag doorgaans in stand. Raadpleeg voor meer informatie over belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak uw gemeente.";
-	skos:scopeNote "Artikel 8 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 8: baten, lasten en canons"@nl;
+	rdfs:comment "In artikel 8 wordt aangegeven op welke datum de baten (bijvoorbeeld de huren), de lasten, belastingen, heffingen en verschuldigde canons overgaan op koper. Meestal wordt overeengekomen dat deze overgaan met ingang van de datum van eigendomsoverdracht: zie artikel 4. Belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak worden niet tussen verkoper en koper verrekend. Wanneer verkoper verhuist naar een andere gemeente dan heeft verkoper doorgaans recht op ontheffing van de belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak voor de resterende volle maanden van het jaar. Verhuist verkoper naar een andere woning in dezelfde gemeente dan blijft de aanslag doorgaans in stand. Raadpleeg voor meer informatie over belastingen en/of heffingen ten laste van het gebruik van de onroerende zaak uw gemeente."@nl;
+	skos:scopeNote "Artikel 8 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Bate;
 	skoslex:isAbout mak:Last;
 	skoslex:isAbout mak:Belasting;
@@ -682,90 +682,90 @@ mak:ArtikelBatenLastenCanons a skos:Concept, skoslex:Record;
 .
 mak:ArtikelHoofdelijkheid a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 9: hoofdelijkheid"@nl;
-	skos:prefLabel "Artikel 9: hoofdelijkheid";
-	rdfs:comment "Voor de praktijk heeft dit artikel het gevolg dat, wanneer er aan verkopende of kopende zijde meer personen naast elkaar staan (bijvoorbeeld echtgenoten of erfgenamen), men mag volstaan met zich tot één van hen te richten; men wordt dan geacht zich ook tot de ander(en) te hebben gericht. Een brief gericht tot één van drie kopers, wordt dus geacht voldoende te zijn om alle drie op de hoogte te stellen. De uit meerdere personen bestaande partij treedt dus ten opzichte van de wederpartij op alsof er slechts van één persoon sprake is.";
-	skos:scopeNote "Artikel 9 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 9: hoofdelijkheid"@nl;
+	rdfs:comment "Voor de praktijk heeft dit artikel het gevolg dat, wanneer er aan verkopende of kopende zijde meer personen naast elkaar staan (bijvoorbeeld echtgenoten of erfgenamen), men mag volstaan met zich tot één van hen te richten; men wordt dan geacht zich ook tot de ander(en) te hebben gericht. Een brief gericht tot één van drie kopers, wordt dus geacht voldoende te zijn om alle drie op de hoogte te stellen. De uit meerdere personen bestaande partij treedt dus ten opzichte van de wederpartij op alsof er slechts van één persoon sprake is."@nl;
+	skos:scopeNote "Artikel 9 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Hoofdelijkheid;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOvermachtRisicoVerzekeringen a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 10: Overmacht, risico, verzekeringen"@nl;
-	skos:prefLabel "Artikel 10: Overmacht, risico, verzekeringen";
+	skos:prefLabel "Artikel 10: Overmacht, risico, verzekeringen"@nl;
 	rdfs:comment '''Volgens artikel 6 van de koopovereenkomst moet de onroerende zaak worden geleverd in de staat waarin het zich bevindt bij het tot stand komen van de koopovereenkomst. Tussen dit tijdstip en het moment van de eigendomsoverdracht kan er van alles gebeuren, waardoor de staat verandert. Vanaf het moment van de notariële eigendomsoverdracht is de onroerende zaak voor risico van koper. Omdat het tekenen van de akte van levering doorslaggevend is, doet verkoper er verstandig aan om zijn opstalverzekering niet voor die tijd op te zeggen. Het risico gaat namelijk niet automatisch op koper over als de levering door toedoen of nalaten van koper wordt uitgesteld. Als de feitelijke levering eerder plaats vindt dan de juridische levering, rust het risico op koper vanaf de feitelijke levering en doet koper er verstandig aan om een opstalverzekering vanaf dat moment af te sluiten. Het is echter mogelijk dat koper de koopovereenkomst ontbindt nadat de overdracht heeft plaatsgevonden. Indien artikel 7:10 lid 3 BW in dat geval van toepassing zou zijn, zouden de risico's verbonden aan de onroerende zaak door de ontbinding van de koopovereenkomst bij verkoper zijn achtergebleven. Dit kan grote gevolgen hebben voor verkoper, omdat deze na de overdracht niet meer verzekerd zal zijn voor het verkochte. Door de toepassing van artikel 7:10 lid 3 BW uit te sluiten voor die risico's die door een gebruikelijke opstalverzekering worden gedekt, wordt voorkomen dat na ontbinding van de koopovereenkomst op goede gronden door koper, bepaalde risico's voor de onroerende zaak terug gaan naar verkoper en blijven die risico's bij koper die daar wel voor verzekerd zal zijn.
 Artikel 10 regelt wat er moet gebeuren in geval van overmacht (bijvoorbeeld blikseminslag of brandstichting door derden) waar koper en verkoper geen van beiden iets aan kunnen doen. Als de onroerende zaak voor de eigendomsoverdracht bijvoorbeeld door brand geheel of gedeeltelijk wordt verwoest, zijn beide partijen niet langer aan de koopovereenkomst gebonden. Als koper de onroerende zaak toch wil afnemen moet verkoper hem de rechten uit bijvoorbeeld een opstalverzekering overdragen. Ook verkoper kan bewerkstelligen dat de onroerende zaak toch conform de koopovereenkomst in eigendom wordt overgedragen.
 Hij dient dan tijdig aan koper mede te delen dat hij de onroerende zaak voor de afgesproken datum van eigendomsoverdracht (of als dat later is: binnen vier weken na het onheil) voor eigen rekening zal herstellen.
 Als de situatie zoals bedoeld in dit artikel optreedt, is het verstandig dat partijen eerst met elkaar overleggen. Partijen kunnen uiteindelijk, mochten ze niet tot een aanvaardbare oplossing komen, kiezen de ontbinding van de koopovereenkomst in stand te laten. Het is verstandig een dergelijke afspraak schriftelijk vast te leggen.''';
-	skos:scopeNote "Artikel 10 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 10 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Risico;
 	skoslex:isAbout not:VanRechtswegeOntbonden;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelIngebrekestelling a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 11.1: ingebrekestelling/ontbinding"@nl;
-	skos:prefLabel "Artikel 11.1: ingebrekestelling/ontbinding";
+	skos:prefLabel "Artikel 11.1: ingebrekestelling/ontbinding"@nl;
 	rdfs:comment '''Indien één van de partijen niet voldoet aan zijn verplichtingen (in de koopovereenkomst of in de wet vastgelegd), schiet hij tekort (wanprestatie). In dit artikel wordt vooropgesteld, dat wanprestatie altijd duidelijk moet worden geconstateerd voordat de wederpartij iets kan ondernemen op grond van wanprestatie.
 Dit constateren vindt plaats door de andere partij in gebreke te stellen, dat wil zeggen, in een officieel stuk mee te delen dat deze zijn verplichtingen niet nakomt. Dit moet gepaard gaan met een sommatie om alsnog binnen acht dagen de verplichting na te komen. Hiermee geeft men de wederpartij als het ware een laatste kans.''';
-	skos:scopeNote "Artikel 11.1 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 11.1 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Ingebrekestellen;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOntbindenTekortkoming a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 11.2: ontbinding op grond van tekortkoming"@nl;
-	skos:prefLabel "Artikel 11.2: ontbinding op grond van tekortkoming";
+	skos:prefLabel "Artikel 11.2: ontbinding op grond van tekortkoming"@nl;
 	rdfs:comment '''Artikel 11 zegt nu dat de koopovereenkomst door middel van een schriftelijke verklaring aan de nalatige kan worden ontbonden, wanneer er na het verstrijken van deze laatste kans, acht dagen na de ingebrekestelling, nog niets is gebeurd. Het tweede lid van artikel 11 stelt dat de "foute" partij bij ontbinding van de koopovereenkomst een boete ter grootte van tien procent van de koopsom moet betalen. Mocht de werkelijke schade hoger zijn dan de boete, dan kan een aanvullende schadevergoeding worden geëist. Met het betalen van de schadevergoeding alleen is de foute partij er niet altijd van af. De zogenaamde kosten van verhaal, dat zijn bijvoorbeeld invorderingskosten, mogen ook gevorderd worden.''';
-	skos:scopeNote "Artikel 11.2 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 11.2 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Ontbinden;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelSchadevergoeding a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 11.3: Schadevergoeding"@nl;
-	skos:prefLabel "Artikel 11.3: Schadevergoeding";
+	skos:prefLabel "Artikel 11.3: Schadevergoeding"@nl;
 	rdfs:comment '''Daarmee hebben noch koper noch verkoper echter bereikt wat zij oorspronkelijk wilden. De "goede" partij heeft daarom de mogelijkheid na het verstrijken van de termijn van 8 dagen in plaats van ontbinding nakoming van de koopovereenkomst te eisen. Hij wil natuurlijk wel voor de geleden schade een vergoeding hebben.
 Om zijn vordering kracht bij te zetten, kan hij met ingang van de negende dag na de ingebrekestelling, per dag een boete vorderen totdat de koopovereenkomst nagekomen is. Het bedrag van de boete is vastgesteld op drie promille van de koopsom van de onroerende zaak, met een maximum van tien procent van de koopsom, onverminderd het recht op een aanvullende schadevergoeding indien de daadwerkelijke schade hoger is dan de onmiddellijk opeisbare boete, en onverminderd vergoeding van kosten van verhaal. Als de partij die nakoming verlangt, toch besluit om de koopovereenkomst alsnog te ontbinden, is de nalatige partij een boete verschuldigd van tien procent van de koopsom, verminderd met de reeds betaalde dagboete (op grond van 11.3), maar onverminderd het recht op aanvullende schadevergoeding indien de werkelijke schade hoger is en onverminderd vergoeding van kosten van verhaal. Ook als een nalatige partij, die in gebreke is gesteld, toch aan zijn verplichtingen gaat voldoen, heeft de wederpartij recht op schadevergoeding indien deze schade heeft geleden.
 
 Indien de verschuldigde boete in de gegeven omstandigheden tot een buitensporig en onaanvaardbaar resultaat leidt dan kan de rechter de boete matigen. Daarbij zal de rechter niet alleen moeten letten op de verhouding tussen de werkelijke schade en de hoogte van de boete, maar ook op de aard van de overeenkomst, de inhoud en de strekking van het beding en de omstandigheden waaronder het is ingeroepen.''';
-	skos:scopeNote "Artikel 11.3 van de model koopovereenkomst.";
+	skos:scopeNote "Artikel 11.3 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Schadevergoeding;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelVervallenBoeteregeling a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 11.6: Vervallen boeteregeling"@nl;
-	skos:prefLabel "Artikel 11.3: Vervallen boeteregeling";
-	rdfs:comment "Artikel 11.6 bepaalt dat de boeteregeling zoals vervat in de artikelen 11.2 en 11.3 is ‘uitgewerkt’ zodra de koopsom is betaald en koper eigenaar van de onroerende zaak is geworden (doordat de notariële leveringsakte in de openbare registers is ingeschreven). Mocht een partij voordien boetes hebben verbeurd op grond van artikel 11.3, dan blijven deze boetes verbeurd. Mocht later blijken dat sprake is van een tekortkoming (bijvoorbeeld omdat de onroerende zaak niet de feitelijke eigenschappen blijkt te hebben zoals omschreven in artikel 6.3), dan zal geen boete kunnen worden gevorderd, maar eventueel wel schadevergoeding op grond van de bepalingen uit het Burgerlijk Wetboek.";
-	skos:scopeNote "Artikel 11.6 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 11.3: Vervallen boeteregeling"@nl;
+	rdfs:comment "Artikel 11.6 bepaalt dat de boeteregeling zoals vervat in de artikelen 11.2 en 11.3 is ‘uitgewerkt’ zodra de koopsom is betaald en koper eigenaar van de onroerende zaak is geworden (doordat de notariële leveringsakte in de openbare registers is ingeschreven). Mocht een partij voordien boetes hebben verbeurd op grond van artikel 11.3, dan blijven deze boetes verbeurd. Mocht later blijken dat sprake is van een tekortkoming (bijvoorbeeld omdat de onroerende zaak niet de feitelijke eigenschappen blijkt te hebben zoals omschreven in artikel 6.3), dan zal geen boete kunnen worden gevorderd, maar eventueel wel schadevergoeding op grond van de bepalingen uit het Burgerlijk Wetboek."@nl;
+	skos:scopeNote "Artikel 11.6 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Schadevergoeding;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelWoonplaats a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 12: Woonplaats"@nl;
-	skos:prefLabel "Artikel 12: Woonplaats";
-	rdfs:comment "Woonplaatskeuze wil zeggen: wettelijk verblijf kiezen voor het ten uitvoer leggen van een rechtshandeling. Een brief die ontvangen is op het adres van de woonplaatskeuze wordt geacht door elk van de partijen te zijn ontvangen. De woonplaatskeuze, is vooral bedoeld als achtervang. Als een van de partijen bijvoorbeeld moeilijk bereikbaar is, kan de andere hem officieel toch altijd bereiken. Ook kan het belangrijk zijn om te bewijzen dat een bepaalde brief verstuurd is. In dat kader is het vaak handig om de brief zowel naar het feitelijke woonadres te sturen als naar het adres van de woonplaatskeuze.";
-	skos:scopeNote "Artikel 12 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 12: Woonplaats"@nl;
+	rdfs:comment "Woonplaatskeuze wil zeggen: wettelijk verblijf kiezen voor het ten uitvoer leggen van een rechtshandeling. Een brief die ontvangen is op het adres van de woonplaatskeuze wordt geacht door elk van de partijen te zijn ontvangen. De woonplaatskeuze, is vooral bedoeld als achtervang. Als een van de partijen bijvoorbeeld moeilijk bereikbaar is, kan de andere hem officieel toch altijd bereiken. Ook kan het belangrijk zijn om te bewijzen dat een bepaalde brief verstuurd is. In dat kader is het vaak handig om de brief zowel naar het feitelijke woonadres te sturen als naar het adres van de woonplaatskeuze."@nl;
+	skos:scopeNote "Artikel 12 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:GekozenWoonplaats;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 13: Registratie koopovereenkomst"@nl;
-	skos:prefLabel "Artikel 13: Registratie koopovereenkomst";
+	skos:prefLabel "Artikel 13: Registratie koopovereenkomst"@nl;
 	rdfs:comment "Zodra de koopovereenkomst is getekend door beide partijen, bestaat de mogelijkheid deze te laten inschrijven in de openbare registers. Of partijen dit al dan niet willen, wordt in artikel 13 aangegeven. De notaris zal, zodra hij de koopovereenkomst heeft ontvangen, de inschrijving verzorgen. 
 Het laten inschrijven van de koopovereenkomst in de openbare registers heeft tot gevolg dat latere faillissementen, overdrachten, beslagen, en een later gevestigd voorkeursrecht van de gemeente niet tegen koper kunnen worden ingeroepen. De inschrijving heeft aldus een dubbele basis: inschrijving op grond van het Burgerlijk Wetboek (als bescherming tegen latere faillissementen, overdrachten en beslagen) en inschrijving op grond van de Wet voorkeursrecht gemeenten (als bescherming tegen een later gevestigd voorkeursrecht). 
-Als het passeren van de akte van levering (zie artikel 4) langer dan zes maanden na de aankoop is gepland, is het verstandig om nader advies in te winnen over het beste moment van inschrijving. De inschrijving heeft namelijk een geldigheidsduur van zes maanden. Overigens, ook als niet direct opdracht aan de notaris wordt verstrekt om de koopovereenkomst in te laten schrijven, behoudt koper het recht om dat op eigen kosten alsnog te laten doen. Dat geldt ook voor het laten inschrijven op een eerder moment dan in de koopovereenkomst is opgenomen.";
-	skos:scopeNote "Artikel 13 van de model koopovereenkomst.";
+Als het passeren van de akte van levering (zie artikel 4) langer dan zes maanden na de aankoop is gepland, is het verstandig om nader advies in te winnen over het beste moment van inschrijving. De inschrijving heeft namelijk een geldigheidsduur van zes maanden. Overigens, ook als niet direct opdracht aan de notaris wordt verstrekt om de koopovereenkomst in te laten schrijven, behoudt koper het recht om dat op eigen kosten alsnog te laten doen. Dat geldt ook voor het laten inschrijven op een eerder moment dan in de koopovereenkomst is opgenomen."@nl;
+	skos:scopeNote "Artikel 13 van de model koopovereenkomst."@nl;
 	skoslex:isAbout not:InschrijvenKoopovereenkomst;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelIdentiteitPartijen a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 14: Identiteit partijen"@nl;
-	skos:prefLabel "Artikel 14: Identiteit partijen";
-	rdfs:comment "Zowel koper als verkoper hebben er belang bij dat de koopovereenkomst tot een goed einde gebracht wordt. Het kan daarom ook van belang zijn om te weten met welke partij men te doen heeft. Daarom kunnen zowel koper als verkoper van elkaar verlangen zich te identificeren. De notaris zal, voordat hij de akte van levering kan opmaken, u ook om een identificatiebewijs vragen. Als geldig 'ID-bewijs' wordt o.a. aangemerkt: een geldig paspoort, een geldige Nederlandse identiteitskaart, een geldig Nederlands rijbewijs en een geldig Nederlands vreemdelingendocument (verblijfsdocument).";
-	skos:scopeNote "Artikel 14 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 14: Identiteit partijen"@nl;
+	rdfs:comment "Zowel koper als verkoper hebben er belang bij dat de koopovereenkomst tot een goed einde gebracht wordt. Het kan daarom ook van belang zijn om te weten met welke partij men te doen heeft. Daarom kunnen zowel koper als verkoper van elkaar verlangen zich te identificeren. De notaris zal, voordat hij de akte van levering kan opmaken, u ook om een identificatiebewijs vragen. Als geldig 'ID-bewijs' wordt o.a. aangemerkt: een geldig paspoort, een geldige Nederlandse identiteitskaart, een geldig Nederlands rijbewijs en een geldig Nederlands vreemdelingendocument (verblijfsdocument)."@nl;
+	skos:scopeNote "Artikel 14 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:RechtshandelingIdentificatie;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 15.1: Ontbindende voorwaarden"@nl;
-	skos:prefLabel "Artikel 15.1: Ontbindende voorwaarden";
-	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden.";
+	skos:prefLabel "Artikel 15.1: Ontbindende voorwaarden"@nl;
+	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden."@nl;
 	rdfs:comment "In artikel 15.1. kunnen één of meer data opgenomen worden voor ontbindende voorwaarden. Een ontbindende voorwaarde biedt één of meer partijen de mogelijkheid om in bepaalde gevallen de koopovereenkomst te ontbinden. Bijvoorbeeld als koper de financiering niet rond krijgt (a), geen Nationale Hypotheek Garantie krijgt (b) of een bouwtechnische keuring negatief uitpakt (c). Het is verstandig de termijnen reëel vast te stellen, afhankelijk van de periode om de financiering, de Nationale Hypotheek Garantie rond te krijgen of een bouwtechnische keuring uit te laten voeren. Naast de in artikel 15 lid 1 genoemde ontbindende voorwaarden voor de financiering, de Nationale Hypotheek Garantie en de bouwtechnische keuring kunnen partijen nog andere ontbindende voorwaarden afspreken. Het is van belang dat alle afgesproken ontbindende voorwaarden goed in de koopovereenkomst worden vastgelegd.
 
 In verband met de hypothekenrichtlijn mag een geldverstrekker niet een voorlopige offerte, dat wil zeggen een offerte met voorbehouden, verstrekken. Op grond van de richtlijn doet de geldverstrekker een bindend aanbod, ook wel bindende offerte genoemd. Dat is een offerte zonder voorbehouden. Dit heeft tot gevolg dat de geldverstrekker voorafgaand aan het uitbrengen van de bindende offerte moet beschikken over alle benodigde gegevens van koper, zoals inkomensgegevens, een werkgeversverklaring en een taxatierapport. In verband met de termijn van de ontbindende voorwaarde voor de financiering is het dus voor koper van belang dat hij alle benodigde stukken zo snel mogelijk aanlevert. 
@@ -773,8 +773,8 @@ In verband met de hypothekenrichtlijn mag een geldverstrekker niet een voorlopig
 Onder de bruto jaarlast wordt verstaan het totale bedrag dat jaarlijks aan hypotheekrente, aflossing en (risico-)premies tezamen wordt betaald, alsmede eventuele extra aflossingen in verband met de afgegeven Nationale Hypotheek Garantie. 
 
 Koper kan ook afzien van een of meer ontbindende voorwaarden, bijvoorbeeld omdat verkoper niet akkoord gaat met een ontbindende voorwaarde. Daar zijn echter wel risico’s aan verbonden. Als partijen bijvoorbeeld geen ontbindende voorwaarde voor financiering overeenkomen en artikel 15.1 onder a doorstrepen, dan heeft dit tot gevolg dat als koper wel een geldlening nodig heeft en deze niet krijgt, dat geen reden is om de koopovereenkomst te ontbinden. Het al dan niet slagen van de financiering van de onroerende zaak komt dan volledig voor rekening en risico van koper. Een vergelijkbaar gevolg heeft het afzien van het voorbehoud van een bouwtechnische keuring. Indien partijen kiezen om geen gebruik te maken van de ontbindende voorwaarde voor een bouwtechnische keuring door artikel 15.1 onder c door te strepen, dan heeft dit tot gevolg dat koper niet de mogelijkheid heeft om de koopovereenkomst te ontbinden als de kosten van direct noodzakelijk herstel van gebreken en achterstallig onderhoud hoger zijn dan waarop hij had gerekend. Verkoper kan overigens nog wel aansprakelijk zijn voor verborgen gebreken op grond van de koopovereenkomst of de wet.
-";
-	skos:scopeNote "Artikel 15.1 van de model koopovereenkomst.";
+"@nl;
+	skos:scopeNote "Artikel 15.1 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout mak:Financieringsvoorbehoud;
 	skoslex:isAbout mak:NationaleHypotheekGarantie;
@@ -782,7 +782,7 @@ Koper kan ook afzien van een of meer ontbindende voorwaarden, bijvoorbeeld omdat
 .
 mak:ArtikelOntbindingVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 15.3: Ontbinding op grond van ontbindende voorwaarden"@nl;
-	skos:prefLabel "Artikel 15.3: Ontbinding op grond van ontbindende voorwaarden";
+	skos:prefLabel "Artikel 15.3: Ontbinding op grond van ontbindende voorwaarden"@nl;
 	rdfs:comment 'In het derde lid is een inspanningsverplichting van partijen opgenomen om al het redelijk mogelijke te doen om de financiering en/of Nationale Hypotheek Garantie, toezeggingen of andere zaken te verkrijgen. 
 
 De ontbinding van de koopovereenkomst geschiedt echter niet vanzelf, doch dient door degene die ontbindt aan de andere partij bekend te worden gemaakt. Partijen dienen overeen te komen, binnen hoeveel werkdagen na de datum waarop de ontbindende voorwaarde verstrijkt, het bericht van ontbinding door de wederpartij of diens makelaar moet zijn ontvangen. Zaterdagen, zondagen en algemeen erkende feestdagen tellen in de berekening niet mee. Aan het einde van de in 15.1 vermelde termijn staat vast of er een beroep op de ontbindende voorwaarde gedaan kan worden. Aan het einde van de in 15.3 genoemde termijn staat vast of er daadwerkelijk een beroep op de ontbindende voorwaarde is gedaan. 
@@ -798,29 +798,29 @@ wordt gedaan. Het voordeel hiervan is dat aangetoond kan worden dat de mededelin
 .
 mak:ArtikelBedenktijd a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 16: Bedenktijd"@nl;
-	skos:prefLabel "Artikel 16: Bedenktijd";
+	skos:prefLabel "Artikel 16: Bedenktijd"@nl;
 	rdfs:comment "Als een consument een woning koopt, heeft koper drie dagen bedenktijd om te beslissen of hij de koop door wil laten gaan. In bijna alle gevallen vloeit deze bedenktijd voort uit de wet. De wettelijke bedenktijd mag niet worden ingekort. Wel mogen partijen afspreken dat koper een langere bedenktermijn krijgt.
 De wet kent geen bedenktijd voor verkoper. Partijen kunnen overeenkomen dat ook verkoper bedenktijd krijgt.
 De bedenktijd begint bij aanvang van de dag, volgende op de datum dat koper (een afschrift van) de door beide partijen ondertekende koopovereenkomst heeft ontvangen. Meestal zal (de makelaar van) verkoper direct nadat beide partijen hebben ondertekend een kopie van de koopovereenkomst aan koper overhandigen. De (makelaar van de) verkoper zal dan een ontvangstbewijs van koper vragen. Het ontvangstbewijs moet voorzien zijn van een datum zodat duidelijk is wanneer koper de kopie van de koopovereenkomst heeft ontvangen. Voor de start van de bedenktijd is het niet per se noodzakelijk dat koper de (kopie) koopovereenkomst persoonlijk overhandigd krijgt. Hoewel overhandiging de voorkeur verdient kan de koopovereenkomst ook opgestuurd worden, bijvoorbeeld per aangetekende brief. Als de koopovereenkomst wordt opgestuurd in plaats van overhandigd, wordt aangeraden om deze zowel naar het feitelijke woonadres als naar het adres van de woonplaatskeuze (zie artikel 12) te sturen.
 Als koper binnen de bedenktijd afziet van de koop, moet hij ervoor zorgdragen dat de ontbindingsverklaring verkoper of diens makelaar voor het einde van de bedenktijd bereikt. Er zijn geen wettelijke eisen voor de vorm waarin koper aan verkoper mee moet delen dat hij van de koop afziet. Maar het ontbinden van de koop op bewijsbare wijze, bijvoorbeeld per aangetekende brief, is wel altijd aan te raden. Voor het optimaal kunnen benutten van de bedenktijd is de woonplaatskeuze (zie artikel 12) van groot belang. Als koper op het laatste moment de koopovereenkomst wil ontbinden, maar verkoper of diens makelaar is niet bereikbaar, dan kan hij de notaris in kennis stellen van de ontbinding. Als gevolg van de woonplaatskeuze wordt de mededeling dat de koopovereenkomst is ontbonden geacht verkoper bereikt te hebben. Met name in het kader van de bewijspositie is dat van belang.
-";
-	skos:scopeNote "Artikel 16 van de model koopovereenkomst.";
+"@nl;
+	skos:scopeNote "Artikel 16 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Bedenktijd;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelOndertekening a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 17:  ondertekening"@nl;
-	skos:prefLabel "Artikel 17:  ondertekenin";
-	rdfs:comment "In veel gevallen vloeit al uit de wet voort dat beide partijen de koopovereenkomst moeten ondertekenen. Vaak zullen partijen dat direct na elkaar doen. Het kan echter voorkomen dat er enige tijd zit tussen het moment dat de ene partij de koopovereenkomst ondertekent en het moment dat de andere partij dat doet. Deze situatie doet zich bijvoorbeeld voor wanneer de ene partij het contract aan de ander opstuurt. Artikel 17 lid 2 voorkomt dat partijen elkaar onnodig lang in onzekerheid laten. Als de eerste ondertekenaar niet binnen de afgesproken tijd de door de andere partij ondertekende koopovereenkomst terugontvangt, kan de eerste ondertekenaar gedurende een bepaalde periode van de koopovereenkomst afzien. Hij hoeft dat uiteraard niet te doen, hij heeft de keuze. Er zijn geen eisen gesteld aan de vorm waarin de eerste ondertekenaar de overeenkomst moet ontbinden. Uiteraard is het verstandig om dat op een achteraf bewijsbare wijze te doen.";
-	skos:scopeNote "Artikel 17 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 17:  ondertekenin"@nl;
+	rdfs:comment "In veel gevallen vloeit al uit de wet voort dat beide partijen de koopovereenkomst moeten ondertekenen. Vaak zullen partijen dat direct na elkaar doen. Het kan echter voorkomen dat er enige tijd zit tussen het moment dat de ene partij de koopovereenkomst ondertekent en het moment dat de andere partij dat doet. Deze situatie doet zich bijvoorbeeld voor wanneer de ene partij het contract aan de ander opstuurt. Artikel 17 lid 2 voorkomt dat partijen elkaar onnodig lang in onzekerheid laten. Als de eerste ondertekenaar niet binnen de afgesproken tijd de door de andere partij ondertekende koopovereenkomst terugontvangt, kan de eerste ondertekenaar gedurende een bepaalde periode van de koopovereenkomst afzien. Hij hoeft dat uiteraard niet te doen, hij heeft de keuze. Er zijn geen eisen gesteld aan de vorm waarin de eerste ondertekenaar de overeenkomst moet ontbinden. Uiteraard is het verstandig om dat op een achteraf bewijsbare wijze te doen."@nl;
+	skos:scopeNote "Artikel 17 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Ondertekenen;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 18: Nederlands recht"@nl;
-	skos:prefLabel "Artikel 18: Nederlands recht";
-	rdfs:comment "Deze bepaling is opgenomen om te voorkomen dat er onduidelijkheid bestaat over partijen met verschillende nationaliteiten die bij de koopovereenkomst betrokken zijn. Door het van toepassing verklaren van Nederlands recht, geldt dat de Nederlandse rechter autoriteit heeft om eventuele geschillen die voortvloeien uit de koopovereenkomst te beslechten.";
-	skos:scopeNote "Artikel 18 van de model koopovereenkomst.";
+	skos:prefLabel "Artikel 18: Nederlands recht"@nl;
+	rdfs:comment "Deze bepaling is opgenomen om te voorkomen dat er onduidelijkheid bestaat over partijen met verschillende nationaliteiten die bij de koopovereenkomst betrokken zijn. Door het van toepassing verklaren van Nederlands recht, geldt dat de Nederlandse rechter autoriteit heeft om eventuele geschillen die voortvloeien uit de koopovereenkomst te beslechten."@nl;
+	skos:scopeNote "Artikel 18 van de model koopovereenkomst."@nl;
 	skoslex:isAbout zv:NederlandsRecht;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
@@ -829,45 +829,45 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 #--
 #mak:ArtikelAsIswhereIsClausule a skos:Concept, skoslex:Record;
 #	rdfs:label "Artikel: As is where is clausule"@nl;
-#	skos:prefLabel "Artikel: As is where is clausule";
-#	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn.";
-#	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
-#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
+#	skos:prefLabel "Artikel: As is where is clausule"@nl;
+#	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat alle (verborgen) gebreken voor rekening en risico van koper zijn."@nl;
+#	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn."@nl;
+#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
 #	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
 #.
 #mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Record;
 #	rdfs:label "Artikel: Kadastraal inmeten"@nl;
-#	skos:prefLabel "Artikel: Kadastraal inmeten";
-#	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
-#	rdfs:comment ".";
-#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
+#	skos:prefLabel "Artikel: Kadastraal inmeten"@nl;
+#	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken."@nl;
+#	rdfs:comment "@nl."@nl;
+#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
 #.
 #mak:ArtikelNietzelfbewonerClausule a skos:Concept, skoslex:Record;
 #	rdfs:label "Artikel: Niet zelf bewoner clausule"@nl;
-#	skos:prefLabel "Artikel: Niet zelf bewoner clausule";
-#	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken die verband houden met het niet zelf bewonen voor rekening en risico van koper zijn.";
-#	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
-#	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst.";
+#	skos:prefLabel "Artikel: Niet zelf bewoner clausule"@nl;
+#	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken die verband houden met het niet zelf bewonen voor rekening en risico van koper zijn."@nl;
+#	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn."@nl;
+#	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
 #	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken
 #.
 #mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Record;
 #	rdfs:label "Artikel: NSW landgoed"@nl;
-#	skos:prefLabel "Artikel: NSW landgoed";
-#	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken.";
-#	rdfs:comment ".";
-#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
+#	skos:prefLabel "Artikel: NSW landgoed"@nl;
+#	skos:definition "Extra artikel en niet opgenomen in de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken."@nl;
+#	rdfs:comment "@nl."@nl;
+#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
 #	skoslex:isAbout kad:Landgoed;
 #.
 #mak:ArtikelOuderdomsClausule a skos:Concept, skoslex:Record;
 #	rdfs:label "Artikel: Ouderdomsclausule"@nl;
-#	skos:prefLabel "Artikel: Ouderdomsclausule";
-#	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken als gevolg van de ouderdom voor rekening en risico van koper zijn.";
-#	rdfs:comment "In de praktijk wordt bij de verkoop van een (oudere) woning geregeld gebruik gemaakt van een zogenoemde ‘ouderdomsclausule’. Zo’n clausule wordt dan, op initiatief van de verkoper of diens makelaar, handmatig aan de koopovereenkomst toegevoegd. In de clausule komen verkoper en koper overeen dat (verborgen) gebreken voor rekening en risico van koper zijn. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn.";
-#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst.";
+#	skos:prefLabel "Artikel: Ouderdomsclausule"@nl;
+#	skos:definition "Een clausule in de koopovereenkomst waarin verkoper en koper overeenkomen dat (verborgen) gebreken als gevolg van de ouderdom voor rekening en risico van koper zijn."@nl;
+#	rdfs:comment "In de praktijk wordt bij de verkoop van een (oudere) woning geregeld gebruik gemaakt van een zogenoemde ‘ouderdomsclausule’. Zo’n clausule wordt dan, op initiatief van de verkoper of diens makelaar, handmatig aan de koopovereenkomst toegevoegd. In de clausule komen verkoper en koper overeen dat (verborgen) gebreken voor rekening en risico van koper zijn. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn."@nl;
+#	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
 #	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
 #.
@@ -876,7 +876,7 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 #
 mak:Aanhorigheden a skos:Concept, skoslex:Object;
 	rdfs:label "Aanhorigheden"@nl;
-	skos:prefLabel "Aanhorigheden";
+	skos:prefLabel "Aanhorigheden"@nl;
 	skos:semanticRelation mak:Woning;
 .
 mak:Aanschrijven a skos:Concept, skoslex:Act;
@@ -889,112 +889,112 @@ mak:Aanschrijven a skos:Concept, skoslex:Act;
 .
 mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
 	rdfs:label "Aanschrijving overheid of nutsbedrijf"@nl;
-	skos:prefLabel "Aanschrijving overheid of nutsbedrijf";
+	skos:prefLabel "Aanschrijving overheid of nutsbedrijf"@nl;
 .
 mak:AanspraakTotGebruik  a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak tot gebruik"@nl;
-	skos:prefLabel "Aanspraak tot gebruik";
+	skos:prefLabel "Aanspraak tot gebruik"@nl;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 mak:AanwijzerNotaris a skos:Concept;
 	rdfs:label "Aanwijzer notaris"@nl;
-	skos:prefLabel "Aanwijzer notaris";
-	skos:definition "Degene die de notaris voor de levering aanwijst, de koper of de verkoper.";
+	skos:prefLabel "Aanwijzer notaris"@nl;
+	skos:definition "Degene die de notaris voor de levering aanwijst, de koper of de verkoper."@nl;
 	skos:semanticRelation mak:KostenEnOverdrachtsbelasting;
 .
 mak:AardClausule a skos:Concept;
 	rdfs:label "Aard Clausule"@nl;
-	skos:prefLabel "Aard Clausule";
-	skos:definition "Een aanduiding van de clausule of artikel.";
+	skos:prefLabel "Aard Clausule"@nl;
+	skos:definition "Een aanduiding van de clausule of artikel."@nl;
 	skos:semanticRelation mak:Voorbehoud;
 .
 mak:AchterstalligOnderhoud a skos:Concept;
 	rdfs:label "Achterstallig onderhoud"@nl;
-	skos:prefLabel "Achterstallig onderhoud";
-	skos:definition "van een onroerende zaak";
+	skos:prefLabel "Achterstallig onderhoud"@nl;
+	skos:definition "van een onroerende zaak"@nl;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 mak:Bate a skos:Concept, skoslex:Object;
 	rdfs:label "Bate"@nl;
-	skos:prefLabel "Bate";
-	skos:definition "Een bate uit de onroerende zaak, bijvoorbeeld huur.";
+	skos:prefLabel "Bate"@nl;
+	skos:definition "Een bate uit de onroerende zaak, bijvoorbeeld huur."@nl;
 	skos:semanticRelation mak:OnroerendeZaak;
 .
 mak:Bedenktijd a skos:Concept, skoslex:Object;
 	rdfs:label "Bedenktijd"@nl;
-	skos:prefLabel "Bedenktijd";
-	skos:definition "De 3 dagen bedenktijd die de koper heeft na het afsluiten van een koopovereenkomst";
+	skos:prefLabel "Bedenktijd"@nl;
+	skos:definition "De 3 dagen bedenktijd die de koper heeft na het afsluiten van een koopovereenkomst"@nl;
 	skos:semanticRelation mak:Koop;
 	skos:semanticRelation mak:Koper;
 .
 mak:Belasting a skos:Concept, skoslex:Object;
 	rdfs:label "Belasting"@nl;
-	skos:prefLabel "Belasting";
-	skos:definition "Belasting op de onroerende zaak.";
+	skos:prefLabel "Belasting"@nl;
+	skos:definition "Belasting op de onroerende zaak."@nl;
 	skos:semanticRelation mak:OnroerendeZaak;
 .
 mak:Betalen a skos:Concept, skoslex:Act;
 	rdfs:label "Betalen"@nl;
-	skos:prefLabel "Betalen";
+	skos:prefLabel "Betalen"@nl;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 	skoslex:record mak:ArtikelBetaling;
 .
 mak:BetalerKosten a skos:Concept;
 	rdfs:label "Betaler kosten"@nl;
-	skos:prefLabel "Betaler kosten";
-	skos:definition "Degene die de kosten voor de levering betaalt, de koper of de verkoper.";
+	skos:prefLabel "Betaler kosten"@nl;
+	skos:definition "Degene die de kosten voor de levering betaalt, de koper of de verkoper."@nl;
 	skos:semanticRelation mak:KostenEnOverdrachtsbelasting;
 .
 mak:BeslagToekomstigeTermijn a skos:Concept, skoslex:Act;
 	rdfs:label "Beslag toekomstige termijn"@nl;
-	skos:prefLabel "Beslag toekomstige termijn";
-	skos:definition "Beslag op toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten.";
+	skos:prefLabel "Beslag toekomstige termijn"@nl;
+	skos:definition "Beslag op toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten."@nl;
 	skos:semanticRelation mak:Huurovereenkomst;
 	skos:semanticRelation mak:Leaseovereenkomst;
 	skos:semanticRelation mak:Huurkoopovereenkomst;
 .
 mak:Beschadigen a skos:Concept, skoslex:Act;
 	rdfs:label "Beschadigen"@nl;
-	skos:prefLabel "Beschadigen";
-	skos:definition "Beschadigen";
+	skos:prefLabel "Beschadigen"@nl;
+	skos:definition "Beschadigen"@nl;
 	skosthes:broaderGeneric mak:Onheil;
 .
 mak:Boete a skos:Concept, skoslex:Object;
 	rdfs:label "Boete"@nl;
-	skos:prefLabel "Boete";
-	skos:definition "Boete";
+	skos:prefLabel "Boete"@nl;
+	skos:definition "Boete"@nl;
 .
 mak:BetalingToekomstigeTermijn a skos:Concept, skoslex:Act;
 	rdfs:label "Betaling toekomstige termijn"@nl;
-	skos:prefLabel "Betaling toekomstige termijn";
-	skos:definition "Betalingen van toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten.";
+	skos:prefLabel "Betaling toekomstige termijn"@nl;
+	skos:definition "Betalingen van toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten."@nl;
 	skos:semanticRelation mak:Huurovereenkomst;
 	skos:semanticRelation mak:Leaseovereenkomst;
 	skos:semanticRelation mak:Huurkoopovereenkomst;
 .
 mak:BouwkundigeKeuring a skos:Concept, skoslex:Object;
 	rdfs:label "Bouwkundige keuring"@nl;
-	skos:prefLabel "Bouwkundige keuring";
+	skos:prefLabel "Bouwkundige keuring"@nl;
 .
 mak:BrutoJaarlast a skos:Concept;
 	rdfs:label "Bruto jaarlast"@nl;
-	skos:prefLabel "Bruto jaarlast";
-	skos:definition "van een hypothecaire lening";
+	skos:prefLabel "Bruto jaarlast"@nl;
+	skos:definition "van een hypothecaire lening"@nl;
 	skos:semanticRelation mak:HypothecaireGeldlening;
 .
 mak:EigenschappenNormaalGebruik a skos:Concept, skoslex:Object;
 	rdfs:label "Eigenschappen normaal gebruik"@nl;
-	skos:prefLabel "Eigenschappen normaal gebruik";
+	skos:prefLabel "Eigenschappen normaal gebruik"@nl;
 .
 mak:ErkendeBankinstelling a skos:Concept, skoslex:Actor;
 	rdfs:label "Erkende bankinstelling"@nl;
-	skos:prefLabel "Erkende bankinstelling";
-	skos:definition "Een erkende geldverstrekkende bankinstelling";
+	skos:prefLabel "Erkende bankinstelling"@nl;
+	skos:definition "Een erkende geldverstrekkende bankinstelling"@nl;
 .
 mak:Garantie a skos:Concept, skoslex:Act;
 	rdfs:label "Garantie"@nl;
-	skos:prefLabel "Garantie";
+	skos:prefLabel "Garantie"@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object fin:Bankgarantie;
 	skoslex:object fin:Waarborgsom;
@@ -1002,63 +1002,63 @@ mak:Garantie a skos:Concept, skoslex:Act;
 .
 mak:Gebrek a skos:Concept;
 	rdfs:label "Gebrek"@nl;
-	skos:prefLabel "Gebrek";
-	skos:definition "van een onroerende zaak";
+	skos:prefLabel "Gebrek"@nl;
+	skos:definition "van een onroerende zaak"@nl;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 mak:Gezamenlijkheid a skos:Concept;
 	rdfs:label "Gezamenlijkheid"@nl;
-	skos:prefLabel "Gezamenlijkheid";
-	skos:definition "De uit meerdere personen bestaande partij oefent ten opzichte van de wederpartij gezamenlijk hun rechten en verplichtingen uit.";
+	skos:prefLabel "Gezamenlijkheid"@nl;
+	skos:definition "De uit meerdere personen bestaande partij oefent ten opzichte van de wederpartij gezamenlijk hun rechten en verplichtingen uit."@nl;
 	skos:semanticRelation zv:Partij;
 .
 mak:Heffing a skos:Concept, skoslex:Object;
 	rdfs:label "Heffing"@nl;
-	skos:prefLabel "Heffing";
-	skos:definition "Heffing op de onroerende zaak.";
+	skos:prefLabel "Heffing"@nl;
+	skos:definition "Heffing op de onroerende zaak."@nl;
 	skos:semanticRelation mak:OnroerendeZaak;
 .
 mak:Herstel a skos:Concept, skoslex:Act;
 	rdfs:label "Herstel"@nl;
-	skos:prefLabel "Herstel";
-	skos:definition "Herstel van de onroerende zaak.";
+	skos:prefLabel "Herstel"@nl;
+	skos:definition "Herstel van de onroerende zaak."@nl;
 	skoslex:actor zv:Partij;
 	skoslex:object mak:OnroerendeZaak;
 .
 mak:Hoofdelijkheid a skos:Concept, skoslex:Object;
 	rdfs:label "Hoofdelijkheid"@nl;
-	skos:prefLabel "Hoofdelijkheid";
-	skos:definition "De uit meerdere personen bestaande partij treedt ten opzichte van de wederpartij op alsof er slechts van één persoon sprake is.";
+	skos:prefLabel "Hoofdelijkheid"@nl;
+	skos:definition "De uit meerdere personen bestaande partij treedt ten opzichte van de wederpartij op alsof er slechts van één persoon sprake is."@nl;
 .
 mak:Huurovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Huurovereenkomst"@nl;
-	skos:prefLabel "Huurovereenkomst";
+	skos:prefLabel "Huurovereenkomst"@nl;
 .
 mak:Huurkoopovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Huurkoopovereenkomst"@nl;
-	skos:prefLabel "Huurkoopovereenkomst";
+	skos:prefLabel "Huurkoopovereenkomst"@nl;
 .
 mak:HypothecaireGeldlening a skos:Concept, skoslex:Object;
 	rdfs:label "Hypothecaire geldlening"@nl;
-	skos:prefLabel "Hypothecaire geldlening";
-	skos:definition "De hypothecaire lening volgens het contract met de geldverstrekker";
+	skos:prefLabel "Hypothecaire geldlening"@nl;
+	skos:definition "De hypothecaire lening volgens het contract met de geldverstrekker"@nl;
 .
 mak:Hypotheekvorm a skos:Concept;
 	rdfs:label "Hypotheekvorm"@nl;
-	skos:prefLabel "Hypotheekvorm";
-	skos:definition "van een hypothecaire lening";
+	skos:prefLabel "Hypotheekvorm"@nl;
+	skos:definition "van een hypothecaire lening"@nl;
 	skos:semanticRelation mak:HypothecaireGeldlening;
 .
 mak:Ingebrekestellen a skos:Concept, skoslex:Act;
 	rdfs:label "Ingebrekestellen"@nl;
-	skos:prefLabel "Ingebrekestellen";
-	skos:definition "In een officieel stuk meedelen dat een van de partijen zijn verplichtingen niet nakomt";
+	skos:prefLabel "Ingebrekestellen"@nl;
+	skos:definition "In een officieel stuk meedelen dat een van de partijen zijn verplichtingen niet nakomt"@nl;
 	skos:semanticRelation zv:Partij;
 .
 mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven koopovereenkomst"@nl;
-	skos:prefLabel "Inschrijven koopovereenkomst";
-	skos:definition "Inschrijven van de koopovereenkomst bij het Kadaster";
+	skos:prefLabel "Inschrijven koopovereenkomst"@nl;
+	skos:definition "Inschrijven van de koopovereenkomst bij het Kadaster"@nl;
 	skosthes:broadergeneric kad:InschrijvingOpenbareRegisters
 	skoslex:object mak:Koopovereenkomst;
 	skoslex:object mak:Inschrijvingskosten;
@@ -1066,34 +1066,34 @@ mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
 .
 mak:Inschrijvingskosten a skos:Concept, skoslex:Object;
 	rdfs:label "Inschrijvingskosten"@nl;
-	skos:prefLabel "Inschrijvingskosten";
-	skos:definition "De kosten van het inschrijven van een akte bij het Kadaster";
+	skos:prefLabel "Inschrijvingskosten"@nl;
+	skos:definition "De kosten van het inschrijven van een akte bij het Kadaster"@nl;
 .
 mak:Inspectie a skos:Concept, skoslex:Act;
 	rdfs:label "Inspectie"@nl;
-	skos:prefLabel "Inspectie";
+	skos:prefLabel "Inspectie"@nl;
 .
 mak:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;
-	skos:prefLabel "Koopsom";
-	skos:definition "Een bedrag voor alle zaken waarop de koopovereenkomst betrekking heeft.";
+	skos:prefLabel "Koopsom"@nl;
+	skos:definition "Een bedrag voor alle zaken waarop de koopovereenkomst betrekking heeft."@nl;
 	skos:semanticRelation mak:Koop;
 .
 mak:KoopStatus a skos:Concept;
 	rdfs:label "Koop status"@nl;
-	skos:prefLabel "Koop status";
-	skos:definition "Een status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proces zit. De waarden zijn opgenomen in een waardelijst.";
+	skos:prefLabel "Koop status"@nl;
+	skos:definition "Een status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proces zit. De waarden zijn opgenomen in een waardelijst."@nl;
 	skos:semanticRelation mak:Koop;
 .
 mak:KoopStandaardBetalingscondities a skos:Concept;
 	rdfs:label "Standaard betalingscondities"@nl;
-	skos:prefLabel "Standaard betalingscondities";
-	skos:definition "Een indicatie of de standaard betalingscondities van toepassing zijn. Standaard vind de betaling plaats bij de levering door de notaris.";
+	skos:prefLabel "Standaard betalingscondities"@nl;
+	skos:definition "Een indicatie of de standaard betalingscondities van toepassing zijn. Standaard vind de betaling plaats bij de levering door de notaris."@nl;
 	skos:semanticRelation mak:Koop;
 .
 mak:Lasten a skos:Concept, skoslex:Object;
 	rdfs:label "Lasten"@nl;
-	skos:prefLabel "Lasten";
+	skos:prefLabel "Lasten"@nl;
 	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
 	skosthes:narrowerGeneric kad:DienendeErf;
 	skosthes:narrowerGeneric not:BijzondereLasten;
@@ -1103,114 +1103,114 @@ mak:Lasten a skos:Concept, skoslex:Object;
 .
 mak:Leaseovereenkomst a skos:Concept, skoslex:Object;
 	rdfs:label "Leaseovereenkomst"@nl;
-	skos:prefLabel "Leaseovereenkomst";
-	skos:definition " ";
+	skos:prefLabel "Leaseovereenkomst"@nl;
+	skos:definition " "@nl;
 .
 mak:LeegEnOntruimd a skos:Concept, skoslex:Object;
 	rdfs:label "Leeg en ontruimd"@nl;
-	skos:prefLabel "Leeg en ontruimd";
-	skos:definition "Een woning is leeg en ontruimd als alle niet meeverkochte roerende goederen eruit zijn verwijderd.";
+	skos:prefLabel "Leeg en ontruimd"@nl;
+	skos:definition "Een woning is leeg en ontruimd als alle niet meeverkochte roerende goederen eruit zijn verwijderd."@nl;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 mak:LijstVanGoederen a skos:Concept, skoslex:Object;
 	rdfs:label "Lijst van goederen"@nl;
-	skos:prefLabel "Lijst van goederen";
-	skos:definition "De lijst van roerende goederen die bij de koop zijn inbegrepen.";
+	skos:prefLabel "Lijst van goederen"@nl;
+	skos:definition "De lijst van roerende goederen die bij de koop zijn inbegrepen."@nl;
 .
 mak:LijstVanGoederenReferentie a skos:Concept;
 	rdfs:label "Referentie lijst van goederen"@nl;
-	skos:prefLabel "Referentie lijst van goederen";
-	skos:definition "Een unieke identificatie van de lijst van goederen.";
+	skos:prefLabel "Referentie lijst van goederen"@nl;
+	skos:definition "Een unieke identificatie van de lijst van goederen."@nl;
 .
 mak:LijstVanGoederenWaarde a skos:Concept;
 	rdfs:label "Waarde lijst van goederen"@nl;
-	skos:prefLabel "Waarde lijst van goederen";
-	skos:definition "Een waarde van de lijst van goederen.";
+	skos:prefLabel "Waarde lijst van goederen"@nl;
+	skos:definition "Een waarde van de lijst van goederen."@nl;
 .
 mak:Nakomen a skos:Concept, skoslex:Act;
 	rdfs:label "Nakomen"@nl;
-	skos:prefLabel "Nakomen";
-	skos:definition "van een verplichting.";
+	skos:prefLabel "Nakomen"@nl;
+	skos:definition "van een verplichting."@nl;
 	skoslex:object kad:Verplichting;
 	skoslex:actor zv:Partij;
 .
 mak:NalatigZijn a skos:Concept, skoslex:Act;
-	rdfs:label "Nalatig zijn";
-	skos:definition "Nalatig zijn";
+	rdfs:label "Nalatig zijn"@nl;
+	skos:definition "Nalatig zijn"@nl;
 	skoslex:object kad:Verplichting;
 	skoslex:actor zv:Partij;
 .
 mak:NationaleHypotheekGarantie a skos:Concept;
 	rdfs:label "Nationale hypotheekgarantie"@nl;
-	skos:prefLabel "Nationale hypotheekgarantie";
-	skos:definition "Nationale hypotheekgarantie";
+	skos:prefLabel "Nationale hypotheekgarantie"@nl;
+	skos:definition "Nationale hypotheekgarantie"@nl;
 	skos:semanticRelation kad:RechtVanHypotheek;
 .
 mak:NietTegenwerken a skos:Concept, skoslex:Act;
 	rdfs:label "Niet tegenwerken"@nl;
-	skos:prefLabel "Niet tegenwerken";
+	skos:prefLabel "Niet tegenwerken"@nl;
 	skoslex:actor zv:Partner;
 .
 mak:Onbekendheidsverklaring a skos:Concept, skoslex:Act;
 	rdfs:label "Onbekendheidsverklaring"@nl;
-	skos:prefLabel "Onbekendheidsverklaring";
+	skos:prefLabel "Onbekendheidsverklaring"@nl;
 .
 mak:Onheil a skos:Concept, skoslex:Act;
 	rdfs:label "Onheil"@nl;
-	skos:prefLabel "Onheil";
-	skos:definition "Beschadiging of verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming";
+	skos:prefLabel "Onheil"@nl;
+	skos:definition "Beschadiging of verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming"@nl;
 	skostlex:object kad:OnroerendeZaak;
 .
 mak:Ondertekenen a skos:Concept, skoslex:Act;
 	rdfs:label "Ondertekening"@nl;
-	skos:prefLabel "Ondertekening";
-	skos:definition "Ondertekening van een overeenkomst.";
+	skos:prefLabel "Ondertekening"@nl;
+	skos:definition "Ondertekening van een overeenkomst."@nl;
 	skostlex:object mak:Koopovereenkomst;
 .
 mak:Ontbinden a skos:Concept, skoslex:Act;
 	rdfs:label "Ontbinden"@nl;
-	skos:prefLabel "Ontbinden";
-	skos:definition "Het  ontbinden van de koop";
+	skos:prefLabel "Ontbinden"@nl;
+	skos:definition "Het  ontbinden van de koop"@nl;
 .
 mak:Ontbindingsverklaring a skos:Concept, skoslex:Record;
 	rdfs:label "Ontbindingsverklaring"@nl;
-	skos:prefLabel "Ontbindingsverklaring";
-	skos:definition "De verklaring omtrent het ontbinden van de koop";
+	skos:prefLabel "Ontbindingsverklaring"@nl;
+	skos:definition "De verklaring omtrent het ontbinden van de koop"@nl;
 .
 mak:OverdrachtAanspraken a skos:Concept, skoslex:Act;
 	rdfs:label "Overdracht Aanspraken"@nl;
-	skos:prefLabel "Overdracht Aanspraken";
-	skos:definition "Aanspraken'";
-	skos:scopeNote "Placeholder";
+	skos:prefLabel "Overdracht Aanspraken"@nl;
+	skos:definition "Aanspraken'"@nl;
+	skos:scopeNote "Placeholder"@nl;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 	skoslex:record mak:ArtikelOverdrachtAanspraken;
 .
 mak:OverdrachtvanRechtvanErfpacht a skos:Concept, skoslex:Act;
 	rdfs:label "Overdracht Recht van Erfpacht"@nl;
-	skos:prefLabel "Overdracht Recht van Erfpacht";
-	skos:definition "Het  ontbinden van de koop wanneer een voorwaarde zich voordoet'";
-	skos:scopeNote "Placeholder";
+	skos:prefLabel "Overdracht Recht van Erfpacht"@nl;
+	skos:definition "Het  ontbinden van de koop wanneer een voorwaarde zich voordoet'"@nl;
+	skos:scopeNote "Placeholder"@nl;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
 	skoslex:record mak:ArtikelOverdrachtvanhetRechtvanErfpacht;
 .
 mak:Overmacht a skoslex:Object;
 	rdfs:label "Overmacht"@nl;
-	skos:prefLabel "Overmacht";
-	skos:definition "Overmacht";
+	skos:prefLabel "Overmacht"@nl;
+	skos:definition "Overmacht"@nl;
 .
 mak:OnderZichHouden a skos:Concept,skoslex:Act;
 	rdfs:label "Onder zich houden"@nl;
-	skos:prefLabel "Onder zich houden";
-	skos:definition "van een boete of een waarborgsom";
+	skos:prefLabel "Onder zich houden"@nl;
+	skos:definition "van een boete of een waarborgsom"@nl;
 	skoslex:actor not:Notaris;
 	skoslex:object fin:Bankgarantie;
 	skoslex:object fin:Waarborgsom;
 .
 mak:RechtenAanspraken a skos:Concept, skoslex:Object;
 	rdfs:label "Rechten en aanspraken"@nl;
-	skos:prefLabel "Rechten en aanspraken";
+	skos:prefLabel "Rechten en aanspraken"@nl;
 	skosthes:narrowerGeneric kad:Erfdienstbaarheid;
 	skosthes:narrowerGeneric kad:HeersendeErf;
 	skosthes:narrowerGeneric not:KwalitatieveRechten;
@@ -1223,14 +1223,14 @@ mak:RechtenAanspraken a skos:Concept, skoslex:Object;
 .
 mak:RechtenDerden a skos:Concept, skoslex:Object;
 	rdfs:label "Rechten van derden"@nl;
-	skos:prefLabel "Rechten van derden";
+	skos:prefLabel "Rechten van derden"@nl;
 	skosthes:narrowerGeneric not:Voorkeursrecht;
 	skosthes:narrowerGeneric not:Optierecht;
 	skosthes:narrowerGeneric not:Wederinkoop;
 .
 mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object;
 	rdfs:label "Staat onroerende zaak"@nl;
-	skos:prefLabel "Staat onroerende zaak";
+	skos:prefLabel "Staat onroerende zaak"@nl;
 	skosthes:narrowerGeneric mak:RechtenAanspraken;
 	skosthes:narrowerGeneric mak:Lasten;
 	skosthes:narrowerGeneric mak:EigenschappenNormaalGebruik;
@@ -1251,20 +1251,20 @@ mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object;
 .
 mak:Renteperentage a skos:Concept;
 	rdfs:label "Renteperentage"@nl;
-	skos:prefLabel "Renteperentage";
-	skos:definition "van een hypothecaire lening";
+	skos:prefLabel "Renteperentage"@nl;
+	skos:definition "van een hypothecaire lening"@nl;
 	skos:semanticRelation mak:HypothecaireGeldlening;
 .
 mak:Risico a skos:Concept,skoslex:Object;
 	rdfs:label "Risico"@nl;
-	skos:prefLabel "Risico";
-	skos:definition "";
+	skos:prefLabel "Risico"@nl;
+	skos:definition ""@nl;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 mak:RisicoOvergang a skos:Concept,skoslex:Act;
 	rdfs:label "Risico-overgang"@nl;
-	skos:prefLabel "Risico-overgang";
-	skos:definition "De overgang van het risico van de verkoper op de koper";
+	skos:prefLabel "Risico-overgang"@nl;
+	skos:definition "De overgang van het risico van de verkoper op de koper"@nl;
 	skosthes:broaderPartitive not:PasserenAkteLevering;
 	skosthes:broaderPartitive not:FeitelijkeLevering;
 	skoslex:actor zv:Partij;
@@ -1272,87 +1272,87 @@ mak:RisicoOvergang a skos:Concept,skoslex:Act;
 .
 mak:Schade a skos:Concept,skoslex:Object;
 	rdfs:label "Schade"@nl;
-	skos:prefLabel "Schade";
-	skos:definition "";
+	skos:prefLabel "Schade"@nl;
+	skos:definition ""@nl;
 .
 mak:Schadevergoeding a skos:Concept,skoslex:Object;
 	rdfs:label "Schadevergoeding"@nl;
-	skos:prefLabel "Schadevergoeding";
-	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming";
+	skos:prefLabel "Schadevergoeding"@nl;
+	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming"@nl;
 	skos:semanticRelation mak:Schade;
 	skos:semanticRelation mak:Ingebrekestellen;
 .
 mak:SpecialistischOnderzoek a skos:Concept, skoslex:Object;
 	rdfs:label "Specialistisch onderzoek"@nl;
-	skos:prefLabel "Specialistisch onderzoek";
-	skos:definition "Specialistisch onderzoek naar de bouwkundige staat";
+	skos:prefLabel "Specialistisch onderzoek"@nl;
+	skos:definition "Specialistisch onderzoek naar de bouwkundige staat"@nl;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 mak:Tekortkoming a skos:Concept,skoslex:Object;
 	rdfs:label "Tekortkoming"@nl;
-	skos:prefLabel "Tekortkoming";
-	skos:definition "";
+	skos:prefLabel "Tekortkoming"@nl;
+	skos:definition ""@nl;
 	skos:semanticRelation kad:OnroerendeZaak;
 .
 mak:Tekortschieten a skos:Concept,skoslex:Act;
 	rdfs:label "Tekortschieten"@nl;
-	skos:prefLabel "Tekortschieten";
-	skos:definition "";
+	skos:prefLabel "Tekortschieten"@nl;
+	skos:definition ""@nl;
 	skos:semanticRelation mak:Verplichting;
 .
 mak:TenLasteGebruik a skos:Concept,;
 	rdfs:label "Ten laste van het gebruik"@nl;
-	skos:prefLabel "Ten laste van het gebruik";
-	skos:definition "Ten laste van het gebruik";
+	skos:prefLabel "Ten laste van het gebruik"@nl;
+	skos:definition "Ten laste van het gebruik"@nl;
 	skos:semanticRelation mak:Belasting;
 	skos:semanticRelation mak:Heffing;
 .
 mak:Terugbetalen a skos:Concept, skoslex:Act;
 	rdfs:label "Terugbetalen"@nl;
-	skos:prefLabel "Terugbetalen";
-	skos:definition "van een waarborgsom.";
+	skos:prefLabel "Terugbetalen"@nl;
+	skos:definition "van een waarborgsom."@nl;
 	skoslex:object fin:Waarborgsom;
 	skoslex:agent not:Notaris;
 .
 mak:Terugzenden a skos:Concept, skoslex:Act;
 	rdfs:label "Terugzenden"@nl;
-	skos:prefLabel "Terugzenden";
-	skos:definition "van een bankgarantie.";
+	skos:prefLabel "Terugzenden"@nl;
+	skos:definition "van een bankgarantie."@nl;
 	skoslex:object fin:Bankgarantie;
 	skoslex:agent not:Notaris;
 .
 mak:ToestemmingPartner a skos:Concept, skoslex:Act;
 	rdfs:label "Toestemming partner"@nl;
-	skos:prefLabel "Toestemming partner";
+	skos:prefLabel "Toestemming partner"@nl;
 	skoslex:actor zv:Partner;
 .
 mak:Uitoefenen a skos:Concept, skoslex:Act;
 	rdfs:label "Uitoefenen"@nl;
-	skos:prefLabel "Uitoefenen";
-	skos:definition "van een recht of verplichting.";
+	skos:prefLabel "Uitoefenen"@nl;
+	skos:definition "van een recht of verplichting."@nl;
 	skoslex:object kad:Recht;
 	skoslex:actor zv:Partij;
 .
 mak:VerhaalKosten a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten van verhaal"@nl;
-	skos:prefLabel "Kosten van verhaal";
-	skos:definition "Verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming";
+	skos:prefLabel "Kosten van verhaal"@nl;
+	skos:definition "Verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming"@nl;
 .
 mak:VerlorenGaan a skos:Concept, skoslex:Act;
 	rdfs:label "Verloren gaan"@nl;
-	skos:prefLabel "Verloren gaan";
-	skos:definition "Verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming";
+	skos:prefLabel "Verloren gaan"@nl;
+	skos:definition "Verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming"@nl;
 	skosthes:broaderGeneric mak:Onheil;
 .
 mak:Verplichting a skos:Concept,;
 	rdfs:label "Verplichting"@nl;
-	skos:prefLabel "Verplichting";
-	skos:definition "Een verplichting is het tegenovergestelde van een recht";
+	skos:prefLabel "Verplichting"@nl;
+	skos:definition "Een verplichting is het tegenovergestelde van een recht"@nl;
 .
 mak:VerrekeningBatenLastenCanons a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening baten, lasten en canons"@nl;
-	skos:prefLabel "Verrekening baten, lasten en canons";
-	skos:definition "De verrekening van baten, lasten, belastingen, heffingen en canons bij de koop.";
+	skos:prefLabel "Verrekening baten, lasten en canons"@nl;
+	skos:definition "De verrekening van baten, lasten, belastingen, heffingen en canons bij de koop."@nl;
 	skos:semanticRelation mak:Bate;
 	skos:semanticRelation mak:Last;
 	skos:semanticRelation mak:Belasting;
@@ -1361,36 +1361,37 @@ mak:VerrekeningBatenLastenCanons a skos:Concept, skoslex:Act;
 .
 mak:Verrekeningoverdrachtsbelastingart13 a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening overdrachtsbelasting art 13"@nl;
-	skos:prefLabel "Verrekening overdrachtsbelasting art 13";
-	skos:definition "Een indicatie of de verrekeing van de overdrachtsbelasting conform artikel 13 van toepassing is.";
+	skos:prefLabel "Verrekening overdrachtsbelasting art 13"@nl;
+	skos:definition "Een indicatie of de verrekeing van de overdrachtsbelasting conform artikel 13 van toepassing is."@nl;
 	skos:semanticRelation mak:Koop;
 .
 mak:Vorderen a skos:Concept, skoslex:Act;
 	rdfs:label "Vorderen"@nl;
-	skos:prefLabel "Vorderen";
-	skos:definition "Vorderen";
+	skos:prefLabel "Vorderen"@nl;
+	skos:definition "Vorderen"@nl;
 	skoslex:actor zv:Partij;
 	skoslex:object mak:Schadevergoeding;
 .
 mak:Voorbehoud a skos:Concept, skoslex:Act;
 	rdfs:label "Voorbehoud"@nl;
-	skos:prefLabel "Voorbehoud";
+	skos:prefLabel "Voorbehoud"@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skoslex:object mak:OntbindendeVoorwaarde;
 .
 mak:VoorwaardenIdentificatie a skos:Concept;
 	rdfs:label "Identificatie voorwaarden"@nl;
-	skos:prefLabel "Identificatie voorwaarden";
-	skos:definition "De unieke identificatie van de voorwaarden.";
+	skos:prefLabel "Identificatie voorwaarden"@nl;
+	skos:definition "De unieke identificatie van de voorwaarden."@nl;
 	skos:semanticRelation mak:Voorwaarden;
 .
 mak:VrijwaringStaatOnroerendeZaak a skos:Concept, skoslex:Act;
 	rdfs:label "Vrijwaring staat onroerende zaak"@nl;
-	skos:prefLabel "Vrijwaring staat onroerende zaak";
+	skos:prefLabel "Vrijwaring staat onroerende zaak"@nl;
 	skosthes:broaderPartitive mak:Koop;
 	skosthes:narrowerGeneric mak:Onbekendheidsverklaring;
 	skoslex:object mak:Aanspraak;
 	skoslex:object mak:StaatOnroerendeZaak;
 	skoslex:record mak:ArtikelStaatOnroerendeZaakGebruik;
 .
+
 
