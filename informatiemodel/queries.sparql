@@ -247,7 +247,7 @@ where {
 # MIM opschonen
 ###################
 
-# Verwijder rdfs:seeAlso
+# Verwijder rdfs:seeAlso (pas op het laatst doen!!!)
 #
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 delete {

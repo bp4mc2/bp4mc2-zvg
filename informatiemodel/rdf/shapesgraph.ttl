@@ -4,48 +4,92 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-zvg:Activiteit a sh:NodeShape;
-    sh:name "Activiteit";
-    sh:property zvg:Activiteit.activiteitNaam;
-    sh:property zvg:Activiteit.eindTijd;
-    sh:property zvg:Activiteit.metInformatieVan;
-    sh:property zvg:Activiteit.startTijd;
-    sh:property zvg:Activiteit.wasGedaanDoor;
-    sh:targetClass zvg:Activiteit;
-    rdfs:label "Activiteit"
+zvg:AanduidingGeslacht a sh:NodeShape;
+    sh:name "AanduidingGeslacht";
+    sh:targetClass zvg:AanduidingGeslacht;
+    rdfs:label "AanduidingGeslacht"
 .
-zvg:Activiteit.activiteitNaam a sh:PropertyShape;
+zvg:AanvullendeVoorwaarden a sh:NodeShape;
+    sh:name "AanvullendeVoorwaarden";
+    sh:property zvg:AanvullendeVoorwaarden.voorwaadenTekst;
+    sh:targetClass zvg:AanvullendeVoorwaarden;
+    rdfs:label "AanvullendeVoorwaarden";
+    rdfs:subClassOf zvg:OntbindendeVoorwaarde
+.
+zvg:AanvullendeVoorwaarden.voorwaadenTekst a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "voorwaadenTekst";
+    sh:path zvg:voorwaadenTekst
+.
+zvg:Activity a sh:NodeShape;
+    sh:name "Activity";
+    sh:property zvg:Activity.activiteitNaam;
+    sh:property zvg:Activity.eindTijd;
+    sh:property zvg:Activity.metInformatieVan;
+    sh:property zvg:Activity.startTijd;
+    sh:property zvg:Activity.wasGedaanDoor;
+    sh:targetClass zvg:Activity;
+    dct:subject <http://www.w3.org/ns/prov#Activity>;
+    rdfs:label "Activity"
+.
+zvg:Activity.activiteitNaam a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "activiteitNaam";
     sh:path zvg:activiteitNaam;
     rdfs:comment '''Registratie
 Recherche'''
 .
-zvg:Activiteit.eindTijd a sh:PropertyShape;
+zvg:Activity.eindTijd a sh:PropertyShape;
+    sh:datatype xsd:dateTime;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "eindTijd";
     sh:path zvg:eindTijd
 .
-zvg:Activiteit.metInformatieVan a sh:PropertyShape;
-    sh:class zvg:Activiteit;
+zvg:Activity.metInformatieVan a sh:PropertyShape;
+    sh:class zvg:Activity;
     sh:name "metInformatieVan";
     sh:path zvg:metInformatieVan
 .
-zvg:Activiteit.startTijd a sh:PropertyShape;
+zvg:Activity.startTijd a sh:PropertyShape;
+    sh:datatype xsd:dateTime;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "startTijd";
     sh:path zvg:startTijd
 .
-zvg:Activiteit.wasGedaanDoor a sh:PropertyShape;
+zvg:Activity.wasGedaanDoor a sh:PropertyShape;
     sh:class zvg:Agent;
     sh:name "wasGedaanDoor";
     sh:path zvg:wasGedaanDoor
+.
+zvg:AdellijkeTitelOfPredikaat a sh:NodeShape;
+    sh:name "AdellijkeTitelOfPredikaat";
+    sh:targetClass zvg:AdellijkeTitelOfPredikaat;
+    rdfs:label "AdellijkeTitelOfPredikaat"
+.
+zvg:Afspraak a sh:NodeShape;
+    sh:name "Afspraak";
+    sh:targetClass zvg:Afspraak;
+    rdfs:label "Afspraak";
+    rdfs:subClassOf zvg:Clausule
 .
 zvg:Agent a sh:NodeShape;
     sh:name "Agent";
     sh:property zvg:Agent.identificatie;
     sh:property zvg:Agent.treed_op_namens;
     sh:targetClass zvg:Agent;
+    dct:subject <http://www.w3.org/ns/prov#Agent>;
     rdfs:label "Agent"
 .
 zvg:Agent.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "identificatie";
     sh:path zvg:identificatie
 .
@@ -59,7 +103,17 @@ zvg:Appartementsrecht a sh:NodeShape;
     sh:targetClass zvg:Appartementsrecht;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Appartementsrecht>;
     rdfs:label "Appartementsrecht";
-    rdfs:subClassOf zvg:_OnroerendeZaak
+    rdfs:subClassOf zvg:OnroerendeZaak
+.
+zvg:BRPAanduidingNaamgebruik a sh:NodeShape;
+    sh:name "BRPAanduidingNaamgebruik";
+    sh:targetClass zvg:BRPAanduidingNaamgebruik;
+    rdfs:label "BRPAanduidingNaamgebruik"
+.
+zvg:BRPLand a sh:NodeShape;
+    sh:name "BRPLand";
+    sh:targetClass zvg:BRPLand;
+    rdfs:label "BRPLand"
 .
 zvg:BankgarantieOfWaarborgsom a sh:NodeShape;
     sh:name "BankgarantieOfWaarborgsom";
@@ -68,17 +122,25 @@ zvg:BankgarantieOfWaarborgsom a sh:NodeShape;
     sh:property zvg:BankgarantieOfWaarborgsom.uiterlijkeDatumGarantie;
     sh:targetClass zvg:BankgarantieOfWaarborgsom;
     rdfs:label "BankgarantieOfWaarborgsom";
-    rdfs:subClassOf zvg:_Afspraak
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:BankgarantieOfWaarborgsom.bedrag a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "bedrag";
     sh:path zvg:bedrag
 .
 zvg:BankgarantieOfWaarborgsom.garantie a sh:PropertyShape;
+    sh:class zvg:SoortGarantie;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "garantie";
     sh:path zvg:garantie
 .
 zvg:BankgarantieOfWaarborgsom.uiterlijkeDatumGarantie a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "uiterlijkeDatumGarantie";
     sh:path zvg:uiterlijkeDatumGarantie
 .
@@ -87,11 +149,20 @@ zvg:BatenLastenCanons a sh:NodeShape;
     sh:property zvg:BatenLastenCanons.overgenomenMetIngangVan;
     sh:targetClass zvg:BatenLastenCanons;
     rdfs:label "BatenLastenCanons";
-    rdfs:subClassOf zvg:_Afspraak
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:BatenLastenCanons.overgenomenMetIngangVan a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "overgenomenMetIngangVan";
     sh:path zvg:overgenomenMetIngangVan
+.
+zvg:Bedenktijd a sh:NodeShape;
+    sh:name "Bedenktijd";
+    sh:targetClass zvg:Bedenktijd;
+    rdfs:label "Bedenktijd";
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:BeperktRecht a sh:NodeShape;
     sh:name "BeperktRecht";
@@ -105,6 +176,20 @@ zvg:BeperktRecht.bezwaart a sh:PropertyShape;
     sh:name "bezwaart";
     sh:path zvg:bezwaart
 .
+zvg:Betaling a sh:NodeShape;
+    sh:name "Betaling";
+    sh:targetClass zvg:Betaling;
+    rdfs:label "Betaling";
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:BevoegdheidVerkoper a sh:NodeShape;
+    sh:name "BevoegdheidVerkoper";
+    sh:targetClass zvg:BevoegdheidVerkoper;
+    rdfs:comment '''onbekend,
+eigenverklaring
+gerechercheerd''';
+    rdfs:label "BevoegdheidVerkoper"
+.
 zvg:BouwtechnischeKeuring a sh:NodeShape;
     sh:name "BouwtechnischeKeuring";
     sh:property zvg:BouwtechnischeKeuring.maximaleHerstelKosten;
@@ -114,6 +199,8 @@ zvg:BouwtechnischeKeuring a sh:NodeShape;
     rdfs:subClassOf zvg:OntbindendeVoorwaarde
 .
 zvg:BouwtechnischeKeuring.maximaleHerstelKosten a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "maximaleHerstelKosten";
     sh:path zvg:maximaleHerstelKosten
 .
@@ -141,67 +228,113 @@ zvg:Canon a sh:NodeShape;
     rdfs:label "Canon"
 .
 zvg:Canon.aanpassing a sh:PropertyShape;
+    sh:maxCount "1";
     sh:name "aanpassing";
     sh:path zvg:aanpassing;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/CanonAanpassing>
 .
 zvg:Canon.datumVooruitbetaling a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
     sh:name "datumVooruitbetaling";
     sh:path zvg:datumVooruitbetaling;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/CanonVooruitbetaald>
 .
 zvg:Canon.einddatumAfkoop a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
     sh:name "einddatumAfkoop";
     sh:path zvg:einddatumAfkoop;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/CanonAfgekocht>
 .
 zvg:Canon.einddatumErfpacht a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
     sh:name "einddatumErfpacht";
     sh:path zvg:einddatumErfpacht;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/EinddatumRecht=>
 .
 zvg:Canon.herziening a sh:PropertyShape;
+    sh:maxCount "1";
     sh:name "herziening";
     sh:path zvg:herziening;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/CanonHerziening>
 .
 zvg:Canon.indexering a sh:PropertyShape;
+    sh:maxCount "1";
     sh:name "indexering";
     sh:path zvg:indexering;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/CanonIndexering>
 .
 zvg:Canon.jaarlijksBedrag a sh:PropertyShape;
+    sh:maxCount "1";
     sh:name "jaarlijksBedrag";
     sh:path zvg:jaarlijksBedrag;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/CanonJaarlijksBedrag>
 .
 zvg:Canon.type a sh:PropertyShape;
+    sh:class zvg:ErfpachtType;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "type";
     sh:path zvg:type;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/CanonType>
+.
+zvg:Clausule a sh:NodeShape;
+    sh:name "Clausule";
+    sh:property zvg:Clausule.aardClausule;
+    sh:property zvg:Clausule.identificatie;
+    sh:property zvg:Clausule.isVanToepassingOp;
+    sh:targetClass zvg:Clausule;
+    dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Voorwaarde>;
+    rdfs:label "Clausule"
+.
+zvg:Clausule.aardClausule a sh:PropertyShape;
+    sh:class zvg:Waardelijst;
+    sh:maxCount "1";
+    sh:name "aardClausule";
+    sh:path zvg:aardClausule;
+    dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/AardClausule>
+.
+zvg:Clausule.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "identificatie";
+    sh:path zvg:identificatie;
+    dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/VoorwaardeIdentificatie>
+.
+zvg:Clausule.isVanToepassingOp a sh:PropertyShape;
+    sh:class zvg:Koop;
+    sh:name "isVanToepassingOp";
+    sh:path zvg:isVanToepassingOp
 .
 zvg:Contactgegevens a sh:NodeShape;
     sh:name "Contactgegevens";
     sh:property zvg:Contactgegevens.e-mailAdres;
     sh:property zvg:Contactgegevens.telefoonnummer;
-    sh:property zvg:Contactgegevens.van;
+    sh:property zvg:Contactgegevens.vanPersoon;
     sh:targetClass zvg:Contactgegevens;
     rdfs:label "Contactgegevens"
 .
 zvg:Contactgegevens.e-mailAdres a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "e-mailAdres";
     sh:path zvg:e-mailAdres;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Mailadres>
 .
 zvg:Contactgegevens.telefoonnummer a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:minCount "1";
     sh:name "telefoonnummer";
     sh:path zvg:telefoonnummer;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Telefoon>
 .
-zvg:Contactgegevens.van a sh:PropertyShape;
-    sh:class zvg:_Persoon;
-    sh:name "van";
-    sh:path zvg:van
+zvg:Contactgegevens.vanPersoon a sh:PropertyShape;
+    sh:class zvg:Persoon;
+    sh:name "vanPersoon";
+    sh:path zvg:vanPersoon
 .
 zvg:DigitaleIdentiteit a sh:NodeShape;
     sh:name "DigitaleIdentiteit";
@@ -210,13 +343,19 @@ zvg:DigitaleIdentiteit a sh:NodeShape;
     sh:targetClass zvg:DigitaleIdentiteit;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/DigitaleIdentiteit>;
     rdfs:label "DigitaleIdentiteit";
-    rdfs:subClassOf zvg:_Legitimatie
+    rdfs:subClassOf zvg:Legitimatie
 .
 zvg:DigitaleIdentiteit.adres a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "adres";
     sh:path zvg:adres
 .
 zvg:DigitaleIdentiteit.identityResult a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "identityResult";
     sh:path zvg:identityResult
 .
@@ -227,14 +366,20 @@ zvg:DocumentIdentiteit a sh:NodeShape;
     sh:targetClass zvg:DocumentIdentiteit;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/Identiteitsdocument>;
     rdfs:label "DocumentIdentiteit";
-    rdfs:subClassOf zvg:_Legitimatie
+    rdfs:subClassOf zvg:Legitimatie
 .
 zvg:DocumentIdentiteit.referentie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "referentie";
     sh:path zvg:referentie;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/IdentiteitsdocumentReferentie>
 .
 zvg:DocumentIdentiteit.soort a sh:PropertyShape;
+    sh:class zvg:Waardelijst;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "soort";
     sh:path zvg:soort;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/IdentiteitsdocumentSoort>
@@ -245,6 +390,12 @@ zvg:Eigendom a sh:NodeShape;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Eigendom>;
     rdfs:label "Eigendom";
     rdfs:subClassOf zvg:ZakelijkRecht
+.
+zvg:Eigendomsoverdracht a sh:NodeShape;
+    sh:name "Eigendomsoverdracht";
+    sh:targetClass zvg:Eigendomsoverdracht;
+    rdfs:label "Eigendomsoverdracht";
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:Erfdienstbaarheid a sh:NodeShape;
     sh:name "Erfdienstbaarheid";
@@ -270,29 +421,70 @@ zvg:Erfpacht a sh:NodeShape;
     rdfs:subClassOf zvg:BeperktRecht
 .
 zvg:Erfpacht.algemeneErfpachtvoorwaarden a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "algemeneErfpachtvoorwaarden";
     sh:path zvg:algemeneErfpachtvoorwaarden;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/AlgemeneErfpachtvoorwaarden>
 .
 zvg:Erfpacht.bijzondereErfpachtvoorwaarden a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "bijzondereErfpachtvoorwaarden";
     sh:path zvg:bijzondereErfpachtvoorwaarden;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/BijzondereErfpachtvoorwaarden>
 .
 zvg:Erfpacht.metErfpachtCanon a sh:PropertyShape;
     sh:class zvg:Canon;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "metErfpachtCanon";
     sh:nodeKind sh:BlankNode;
     sh:path zvg:metErfpachtCanon
 .
+zvg:ErfpachtType a sh:NodeShape;
+    sh:name "ErfpachtType";
+    sh:targetClass zvg:ErfpachtType;
+    rdfs:comment "Referentielijst SoortCanon";
+    rdfs:label "ErfpachtType"
+.
 zvg:FeitelijkeLevering a sh:NodeShape;
     sh:name "FeitelijkeLevering";
+    sh:property zvg:FeitelijkeLevering.huurLeaseHuurkoopovereenkomste;
+    sh:property zvg:FeitelijkeLevering.ongevorderdLeeg;
+    sh:property zvg:FeitelijkeLevering.overdrachtAanspraken;
     sh:property zvg:FeitelijkeLevering.overdrachtOvereenkomsten;
     sh:targetClass zvg:FeitelijkeLevering;
     rdfs:label "FeitelijkeLevering";
-    rdfs:subClassOf zvg:_Afspraak
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:FeitelijkeLevering.huurLeaseHuurkoopovereenkomste a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "huurLeaseHuurkoopovereenkomste";
+    sh:path zvg:huurLeaseHuurkoopovereenkomste
+.
+zvg:FeitelijkeLevering.ongevorderdLeeg a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "ongevorderdLeeg";
+    sh:path zvg:ongevorderdLeeg
+.
+zvg:FeitelijkeLevering.overdrachtAanspraken a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "overdrachtAanspraken";
+    sh:path zvg:overdrachtAanspraken
 .
 zvg:FeitelijkeLevering.overdrachtOvereenkomsten a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "overdrachtOvereenkomsten";
     sh:path zvg:overdrachtOvereenkomsten
 .
@@ -304,8 +496,24 @@ zvg:Financiering a sh:NodeShape;
     rdfs:subClassOf zvg:OntbindendeVoorwaarde
 .
 zvg:Financiering.financieringsbedrag a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "financieringsbedrag";
     sh:path zvg:financieringsbedrag
+.
+zvg:FinancieringMetNHGGarantie a sh:NodeShape;
+    sh:name "FinancieringMetNHGGarantie";
+    sh:property zvg:FinancieringMetNHGGarantie.vanToepassing;
+    sh:targetClass zvg:FinancieringMetNHGGarantie;
+    rdfs:label "FinancieringMetNHGGarantie";
+    rdfs:subClassOf zvg:OntbindendeVoorwaarde
+.
+zvg:FinancieringMetNHGGarantie.vanToepassing a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "vanToepassing";
+    sh:path zvg:vanToepassing
 .
 zvg:Geboorte a sh:NodeShape;
     sh:name "Geboorte";
@@ -317,37 +525,73 @@ zvg:Geboorte a sh:NodeShape;
     rdfs:label "Geboorte"
 .
 zvg:Geboorte.geboortedatum a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "geboortedatum";
     sh:path zvg:geboortedatum;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Geboortedatum>
 .
 zvg:Geboorte.geboorteland a sh:PropertyShape;
+    sh:class zvg:BRPLand;
+    sh:maxCount "1";
     sh:name "geboorteland";
     sh:path zvg:geboorteland;
     rdfs:comment "Het geboorteland is de naam, die het land aangeeft waar de persoon is geboren."
 .
 zvg:Geboorte.geboorteplaats a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "geboorteplaats";
     sh:path zvg:geboorteplaats;
     rdfs:comment "De geboorteplaats is de plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren"
 .
-zvg:Identificatie_Persoon a sh:NodeShape;
-    sh:name "Identificatie_Persoon";
-    sh:property zvg:Identificatie_Persoon.metIdentificatie;
-    sh:property zvg:Identificatie_Persoon.opBasisVan;
-    sh:targetClass zvg:Identificatie_Persoon;
+zvg:GrondslagBevoegdheid a sh:NodeShape;
+    sh:name "GrondslagBevoegdheid";
+    sh:targetClass zvg:GrondslagBevoegdheid;
+    rdfs:comment "Referentielijst GrondslagSoort is een opsomming van de mogelijke functies die als vertegenwoordiger van een organisatie kunnen optreden.";
+    rdfs:label "GrondslagBevoegdheid"
+.
+zvg:Hoofdelijkheid a sh:NodeShape;
+    sh:name "Hoofdelijkheid";
+    sh:targetClass zvg:Hoofdelijkheid;
+    rdfs:label "Hoofdelijkheid";
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:IdentificatiePersoon a sh:NodeShape;
+    sh:name "IdentificatiePersoon";
+    sh:property zvg:IdentificatiePersoon.opBasisVan;
+    sh:property zvg:IdentificatiePersoon.vanPersoon;
+    sh:targetClass zvg:IdentificatiePersoon;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/IdentificatiePersoon>;
-    rdfs:label "Identificatie Persoon"
+    rdfs:label "IdentificatiePersoon"
 .
-zvg:Identificatie_Persoon.metIdentificatie a sh:PropertyShape;
-    sh:class zvg:NatuurlijkPersoon;
-    sh:name "metIdentificatie";
-    sh:path zvg:metIdentificatie
-.
-zvg:Identificatie_Persoon.opBasisVan a sh:PropertyShape;
-    sh:class zvg:_Legitimatie;
+zvg:IdentificatiePersoon.opBasisVan a sh:PropertyShape;
+    sh:class zvg:Legitimatie;
     sh:name "opBasisVan";
     sh:path zvg:opBasisVan
+.
+zvg:IdentificatiePersoon.vanPersoon a sh:PropertyShape;
+    sh:class zvg:NatuurlijkPersoon;
+    sh:name "vanPersoon";
+    sh:path zvg:vanPersoon
+.
+zvg:IdentiteitPartijen a sh:NodeShape;
+    sh:name "IdentiteitPartijen";
+    sh:targetClass zvg:IdentiteitPartijen;
+    rdfs:label "IdentiteitPartijen";
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:InGebrekestellingOfOntbinding a sh:NodeShape;
+    sh:name "InGebrekestellingOfOntbinding";
+    sh:targetClass zvg:InGebrekestellingOfOntbinding;
+    rdfs:label "InGebrekestellingOfOntbinding";
+    rdfs:subClassOf zvg:OntbindendeVoorwaarde
+.
+zvg:Ingebrekestelling a sh:NodeShape;
+    sh:name "Ingebrekestelling";
+    sh:targetClass zvg:Ingebrekestelling;
+    rdfs:label "Ingebrekestelling";
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:JuridischeLevering a sh:NodeShape;
     sh:name "JuridischeLevering";
@@ -357,7 +601,7 @@ zvg:JuridischeLevering a sh:NodeShape;
     sh:targetClass zvg:JuridischeLevering;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/Levering>;
     rdfs:label "JuridischeLevering";
-    rdfs:subClassOf zvg:_Rechtshandeling
+    rdfs:subClassOf zvg:Rechtshandeling
 .
 zvg:JuridischeLevering.bijNotaris a sh:PropertyShape;
     sh:class zvg:NietNatuurlijkPersoon;
@@ -365,6 +609,9 @@ zvg:JuridischeLevering.bijNotaris a sh:PropertyShape;
     sh:path zvg:bijNotaris
 .
 zvg:JuridischeLevering.datumAfspraak a sh:PropertyShape;
+    sh:datatype xsd:dateTime;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "datumAfspraak";
     sh:path zvg:datumAfspraak;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/Leveringsdatum>
@@ -374,21 +621,28 @@ zvg:JuridischeLevering.isUitvoeringVan a sh:PropertyShape;
     sh:name "isUitvoeringVan";
     sh:path zvg:isUitvoeringVan
 .
+zvg:KadastraleGemeente a sh:NodeShape;
+    sh:name "KadastraleGemeente";
+    sh:targetClass zvg:KadastraleGemeente;
+    rdfs:comment "Referentielijst KadastraleGemeente is een opsomming van de mogelijke Kadastrale gemeenten.";
+    rdfs:label "KadastraleGemeente"
+.
 zvg:Koop a sh:NodeShape;
     sh:name "Koop";
     sh:property zvg:Koop.aan;
     sh:property zvg:Koop.aangebodenDoor;
     sh:property zvg:Koop.bevat;
+    sh:property zvg:Koop.gebruikt;
     sh:property zvg:Koop.koopsom;
     sh:property zvg:Koop.kosten;
     sh:property zvg:Koop.standaardBetalingsconditie;
     sh:property zvg:Koop.status;
-    sh:property zvg:Koop.van;
+    sh:property zvg:Koop.vanZakelijkRecht;
     sh:property zvg:Koop.wordtUitgevoerdIn;
     sh:targetClass zvg:Koop;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Koop>;
     rdfs:label "Koop";
-    rdfs:subClassOf zvg:_Rechtshandeling
+    rdfs:subClassOf zvg:Rechtshandeling
 .
 zvg:Koop.aan a sh:PropertyShape;
     sh:class zvg:Koper;
@@ -405,32 +659,47 @@ zvg:Koop.bevat a sh:PropertyShape;
     sh:name "bevat";
     sh:path zvg:bevat
 .
+zvg:Koop.gebruikt a sh:PropertyShape;
+    sh:class zvg:Clausule;
+    sh:name "gebruikt";
+    sh:path zvg:gebruikt
+.
 zvg:Koop.koopsom a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "koopsom";
     sh:path zvg:koopsom;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Koopsom>
 .
 zvg:Koop.kosten a sh:PropertyShape;
     sh:class zvg:KostenEnOverdrachtsbelasting;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "kosten";
     sh:nodeKind sh:BlankNode;
     sh:path zvg:kosten;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/KostenEnOverdrachtsbelasing>
 .
 zvg:Koop.standaardBetalingsconditie a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "standaardBetalingsconditie";
     sh:path zvg:standaardBetalingsconditie;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/KoopStandaardBetalingsconditie>
 .
 zvg:Koop.status a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "status";
     sh:path zvg:status;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/>
 .
-zvg:Koop.van a sh:PropertyShape;
+zvg:Koop.vanZakelijkRecht a sh:PropertyShape;
     sh:class zvg:ZakelijkRecht;
-    sh:name "van";
-    sh:path zvg:van
+    sh:name "vanZakelijkRecht";
+    sh:path zvg:vanZakelijkRecht
 .
 zvg:Koop.wordtUitgevoerdIn a sh:PropertyShape;
     sh:class zvg:JuridischeLevering;
@@ -443,11 +712,22 @@ zvg:Koper a sh:NodeShape;
     sh:targetClass zvg:Koper;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Koper>;
     rdfs:label "Koper";
-    rdfs:subClassOf zvg:_Partij
+    rdfs:subClassOf zvg:Partij
 .
 zvg:Koper.aandeel a sh:PropertyShape;
+    sh:maxCount "1";
     sh:name "aandeel";
     sh:path zvg:aandeel
+.
+zvg:KoperOfVerkoper a sh:NodeShape;
+    sh:name "KoperOfVerkoper";
+    sh:targetClass zvg:KoperOfVerkoper;
+    rdfs:label "KoperOfVerkoper"
+.
+zvg:Koppelingswijze a sh:NodeShape;
+    sh:name "Koppelingswijze";
+    sh:targetClass zvg:Koppelingswijze;
+    rdfs:label "Koppelingswijze"
 .
 zvg:KostenEnOverdrachtsbelasting a sh:NodeShape;
     sh:name "KostenEnOverdrachtsbelasting";
@@ -459,56 +739,90 @@ zvg:KostenEnOverdrachtsbelasting a sh:NodeShape;
     rdfs:label "KostenEnOverdrachtsbelasting"
 .
 zvg:KostenEnOverdrachtsbelasting.aanwijzerNotaris a sh:PropertyShape;
+    sh:class zvg:KoperOfVerkoper;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "aanwijzerNotaris";
     sh:path zvg:aanwijzerNotaris;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/AanwijzerNotaris>
 .
 zvg:KostenEnOverdrachtsbelasting.betalerKosten a sh:PropertyShape;
+    sh:class zvg:KoperOfVerkoper;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "betalerKosten";
     sh:path zvg:betalerKosten;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/BetalerKosten>
 .
 zvg:KostenEnOverdrachtsbelasting.verrekeningOverdrachtsbelastingArt13 a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "verrekeningOverdrachtsbelastingArt13";
     sh:path zvg:verrekeningOverdrachtsbelastingArt13;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Verrekeningoverdrachtsbelasingart13>
 .
 zvg:KostenVerdeling a sh:NodeShape;
     sh:name "KostenVerdeling";
-    sh:property zvg:KostenVerdeling.artike13Verschil;
+    sh:property zvg:KostenVerdeling.artikel13Verschil;
     sh:property zvg:KostenVerdeling.kostenKoperofVerkoper;
     sh:targetClass zvg:KostenVerdeling;
     rdfs:label "KostenVerdeling";
-    rdfs:subClassOf zvg:_Afspraak
+    rdfs:subClassOf zvg:Afspraak
 .
-zvg:KostenVerdeling.artike13Verschil a sh:PropertyShape;
-    sh:name "artike13Verschil";
-    sh:path zvg:artike13Verschil
+zvg:KostenVerdeling.artikel13Verschil a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "artikel13Verschil";
+    sh:path zvg:artikel13Verschil
 .
 zvg:KostenVerdeling.kostenKoperofVerkoper a sh:PropertyShape;
+    sh:class zvg:KoperOfVerkoper;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "kostenKoperofVerkoper";
     sh:path zvg:kostenKoperofVerkoper
 .
+zvg:Legitimatie a sh:NodeShape;
+    sh:name "Legitimatie";
+    sh:property zvg:Legitimatie.identificatie;
+    sh:targetClass zvg:Legitimatie;
+    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/Legitimatie>;
+    rdfs:label "Legitimatie"
+.
+zvg:Legitimatie.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "identificatie";
+    sh:path zvg:identificatie;
+    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/LegitimatieIdentificatie>
+.
 zvg:LijstVanGoederen a sh:NodeShape;
     sh:name "LijstVanGoederen";
-    sh:property zvg:LijstVanGoederen.hoortBij;
+    sh:property zvg:LijstVanGoederen.isOnderdeelVan;
     sh:property zvg:LijstVanGoederen.lijstReferentie;
     sh:property zvg:LijstVanGoederen.waarde;
     sh:targetClass zvg:LijstVanGoederen;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederen>;
     rdfs:label "LijstVanGoederen"
 .
-zvg:LijstVanGoederen.hoortBij a sh:PropertyShape;
+zvg:LijstVanGoederen.isOnderdeelVan a sh:PropertyShape;
     sh:class zvg:Koop;
-    sh:name "hoortBij";
-    sh:path zvg:hoortBij
+    sh:name "isOnderdeelVan";
+    sh:path zvg:isOnderdeelVan
 .
 zvg:LijstVanGoederen.lijstReferentie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "lijstReferentie";
     sh:path zvg:lijstReferentie;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenReferentie>
 .
 zvg:LijstVanGoederen.waarde a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "waarde";
     sh:path zvg:waarde;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenWaarde>
@@ -527,7 +841,7 @@ zvg:LocatieRegistergoed.betreft a sh:PropertyShape;
     sh:path zvg:betreft
 .
 zvg:LocatieRegistergoed.heeft a sh:PropertyShape;
-    sh:class zvg:_Registergoed;
+    sh:class zvg:Registergoed;
     sh:name "heeft";
     sh:path zvg:heeft
 .
@@ -538,11 +852,9 @@ zvg:Medewerker a sh:NodeShape;
     rdfs:label "Medewerker";
     rdfs:subClassOf zvg:Agent
 .
-zvg:NHGGarantie a sh:NodeShape;
-    sh:name "NHGGarantie";
-    sh:targetClass zvg:NHGGarantie;
-    rdfs:label "NHGGarantie";
-    rdfs:subClassOf zvg:OntbindendeVoorwaarde
+zvg:NEN3610ID a rdf:Datatype;
+    rdfs:comment "Het NEN3610ID-2020 is een datatype om de identificatie vast te leggen, conform NEN3610-2020.";
+    rdfs:label "NEN3610ID"
 .
 zvg:Naam a sh:NodeShape;
     sh:name "Naam";
@@ -554,16 +866,23 @@ zvg:Naam a sh:NodeShape;
     rdfs:label "Naam"
 .
 zvg:Naam.geslachtsnaam a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "geslachtsnaam";
     sh:path zvg:geslachtsnaam;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Naam>
 .
 zvg:Naam.voornamen a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "voornamen";
     sh:path zvg:voornamen;
     rdfs:comment "De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst."
 .
 zvg:Naam.voorvoegselsgeslachtsnaam a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "voorvoegselsgeslachtsnaam";
     sh:path zvg:voorvoegselsgeslachtsnaam;
     rdfs:comment "Voorvoegselsgeslachtsnaam zijn dat deel van de geslachtsnaam dat voorkomt in Tabel 36, Voorvoegseltabel en, gescheiden door een spatie, vooraf gaat aan de rest van de geslachtsnaam."
@@ -577,34 +896,46 @@ zvg:NatuurlijkPersoon a sh:NodeShape;
     sh:property zvg:NatuurlijkPersoon.indicatieOverleden;
     sh:property zvg:NatuurlijkPersoon.isVerbondenIn;
     sh:property zvg:NatuurlijkPersoon.landWaarnaarVertrokken;
+    sh:property zvg:NatuurlijkPersoon.metIdentificatie;
     sh:property zvg:NatuurlijkPersoon.naam;
     sh:property zvg:NatuurlijkPersoon.overlijden;
     sh:targetClass zvg:NatuurlijkPersoon;
     rdfs:label "NatuurlijkPersoon";
-    rdfs:subClassOf zvg:_Persoon
+    rdfs:subClassOf zvg:Persoon
 .
 zvg:NatuurlijkPersoon.aanduidingNaamgebruik a sh:PropertyShape;
+    sh:class zvg:BRPAanduidingNaamgebruik;
+    sh:maxCount "1";
     sh:name "aanduidingNaamgebruik";
     sh:path zvg:aanduidingNaamgebruik;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/AanduidingNaamgrbruik>
 .
 zvg:NatuurlijkPersoon.adellijkeTitelOfPredikaat a sh:PropertyShape;
+    sh:class zvg:AdellijkeTitelOfPredikaat;
+    sh:maxCount "1";
     sh:name "adellijkeTitelOfPredikaat";
     sh:path zvg:adellijkeTitelOfPredikaat;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/AdellijkeTitelPredikaat>
 .
 zvg:NatuurlijkPersoon.geboorte a sh:PropertyShape;
     sh:class zvg:Geboorte;
+    sh:maxCount "1";
     sh:name "geboorte";
     sh:nodeKind sh:BlankNode;
     sh:path zvg:geboorte
 .
 zvg:NatuurlijkPersoon.indicatieGeheim a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "indicatieGeheim";
     sh:path zvg:indicatieGeheim;
     rdfs:comment "indicatieGeheim is een aanduiding die aangeeft dat gegevens van een persoon wel of niet verstrekt mogen worden."
 .
 zvg:NatuurlijkPersoon.indicatieOverleden a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "indicatieOverleden";
     sh:path zvg:indicatieOverleden;
     rdfs:comment "Indicatie Overleden is een indicatie of de persoon al dan niet overleden is."
@@ -615,12 +946,21 @@ zvg:NatuurlijkPersoon.isVerbondenIn a sh:PropertyShape;
     sh:path zvg:isVerbondenIn
 .
 zvg:NatuurlijkPersoon.landWaarnaarVertrokken a sh:PropertyShape;
+    sh:class zvg:BRPLand;
+    sh:maxCount "1";
     sh:name "landWaarnaarVertrokken";
     sh:path zvg:landWaarnaarVertrokken;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/LandVertrokken>
 .
+zvg:NatuurlijkPersoon.metIdentificatie a sh:PropertyShape;
+    sh:class zvg:IdentificatiePersoon;
+    sh:name "metIdentificatie";
+    sh:path zvg:metIdentificatie
+.
 zvg:NatuurlijkPersoon.naam a sh:PropertyShape;
     sh:class zvg:Naam;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "naam";
     sh:nodeKind sh:BlankNode;
     sh:path zvg:naam;
@@ -628,9 +968,16 @@ zvg:NatuurlijkPersoon.naam a sh:PropertyShape;
 .
 zvg:NatuurlijkPersoon.overlijden a sh:PropertyShape;
     sh:class zvg:Overlijden;
+    sh:maxCount "1";
     sh:name "overlijden";
     sh:nodeKind sh:BlankNode;
     sh:path zvg:overlijden
+.
+zvg:NederlandsRecht a sh:NodeShape;
+    sh:name "NederlandsRecht";
+    sh:targetClass zvg:NederlandsRecht;
+    rdfs:label "NederlandsRecht";
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:NietNatuurlijkPersoon a sh:NodeShape;
     sh:name "NietNatuurlijkPersoon";
@@ -642,29 +989,42 @@ zvg:NietNatuurlijkPersoon a sh:NodeShape;
     sh:targetClass zvg:NietNatuurlijkPersoon;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/NietNatuurlijkPersoon>;
     rdfs:label "NietNatuurlijkPersoon";
-    rdfs:subClassOf zvg:_Persoon
+    rdfs:subClassOf zvg:Persoon
 .
 zvg:NietNatuurlijkPersoon.kvkNummer a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "kvkNummer";
     sh:path zvg:kvkNummer;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/KvKNummer>
 .
 zvg:NietNatuurlijkPersoon.rechtsvorm a sh:PropertyShape;
+    sh:class zvg:Rechtsvorm;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "rechtsvorm";
     sh:path zvg:rechtsvorm;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Rechtsvorm>
 .
 zvg:NietNatuurlijkPersoon.rsin a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "rsin";
     sh:path zvg:rsin;
     rdfs:comment "Het RSIN is het Rechtspersonen Samenwerkingsverbanden Informatie Nummer is een uniek nummer dat iedere rechtspersoon krijgt."
 .
 zvg:NietNatuurlijkPersoon.statutaireNaam a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "statutaireNaam";
     sh:path zvg:statutaireNaam;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/StatutaireNaam>
 .
 zvg:NietNatuurlijkPersoon.statutaireZetel a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "statutaireZetel";
     sh:path zvg:statutaireZetel;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/StatutaireZetel>
@@ -696,29 +1056,45 @@ zvg:Nummeraanduiding.gerelateerdeWoonplaats a sh:PropertyShape;
 Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDUIDING is toegekend is gelegen. Dit gegeven wordt opgenomen indien het object is gelegen in een andere woonplaats dan de openbare ruimte waaraan de nummeraanduiding is gerelateerd.'''
 .
 zvg:Nummeraanduiding.huisletter a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "huisletter";
     sh:path zvg:huisletter;
     rdfs:comment "URI https://bag.basisregistraties.overheid.nl/id/begrip/Huisletter"
 .
 zvg:Nummeraanduiding.huisnummer a sh:PropertyShape;
+    sh:datatype xsd:integer;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "huisnummer";
     sh:path zvg:huisnummer;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Huisnummer>
 .
 zvg:Nummeraanduiding.huisnummertoevoeging a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "huisnummertoevoeging";
     sh:path zvg:huisnummertoevoeging;
     rdfs:comment "URI https://bag.basisregistraties.overheid.nl/id/begrip/Huisnummertoevoeging"
 .
 zvg:Nummeraanduiding.identificatie a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "identificatie";
     sh:path zvg:identificatie;
     rdfs:comment "Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie."
 .
 zvg:Nummeraanduiding.postcode a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "postcode";
     sh:path zvg:postcode;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Postcode>
+.
+zvg:ObjectLocatie a sh:NodeShape;
+    sh:name "ObjectLocatie";
+    sh:targetClass zvg:ObjectLocatie;
+    rdfs:label "ObjectLocatie"
 .
 zvg:ObjectlocatieBinnenland a sh:NodeShape;
     sh:name "ObjectlocatieBinnenland";
@@ -726,12 +1102,48 @@ zvg:ObjectlocatieBinnenland a sh:NodeShape;
     sh:targetClass zvg:ObjectlocatieBinnenland;
     rdfs:comment "Een ObjectlocatieBinnenland is een adres binnen nederland.";
     rdfs:label "ObjectlocatieBinnenland";
-    rdfs:subClassOf zvg:_ObjectLocatie
+    rdfs:subClassOf zvg:ObjectLocatie
 .
 zvg:ObjectlocatieBinnenland.adresgegevens a sh:PropertyShape;
     sh:class zvg:Nummeraanduiding;
     sh:name "adresgegevens";
     sh:path zvg:adresgegevens
+.
+zvg:Ondertekening a sh:NodeShape;
+    sh:name "Ondertekening";
+    sh:targetClass zvg:Ondertekening;
+    rdfs:label "Ondertekening";
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:OnroerendeZaak a sh:NodeShape;
+    sh:name "OnroerendeZaak";
+    sh:property zvg:OnroerendeZaak.isBelastMet;
+    sh:property zvg:OnroerendeZaak.kadastraleAanduiding;
+    sh:property zvg:OnroerendeZaak.omschrijvingOnroerendeZaak;
+    sh:targetClass zvg:OnroerendeZaak;
+    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak>;
+    rdfs:label "OnroerendeZaak";
+    rdfs:subClassOf zvg:Registergoed
+.
+zvg:OnroerendeZaak.isBelastMet a sh:PropertyShape;
+    sh:class zvg:ZakelijkRecht;
+    sh:name "isBelastMet";
+    sh:path zvg:isBelastMet
+.
+zvg:OnroerendeZaak.kadastraleAanduiding a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "kadastraleAanduiding";
+    sh:path zvg:kadastraleAanduiding;
+    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleAanduiding>
+.
+zvg:OnroerendeZaak.omschrijvingOnroerendeZaak a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "omschrijvingOnroerendeZaak";
+    sh:path zvg:omschrijvingOnroerendeZaak;
+    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/OnroerendeZaakOmschrijving>
 .
 zvg:Ontbinden a sh:NodeShape;
     sh:name "Ontbinden";
@@ -739,7 +1151,7 @@ zvg:Ontbinden a sh:NodeShape;
     sh:targetClass zvg:Ontbinden;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden>;
     rdfs:label "Ontbinden";
-    rdfs:subClassOf zvg:_Rechtshandeling
+    rdfs:subClassOf zvg:Rechtshandeling
 .
 zvg:Ontbinden.opBasisVanManifestatieVan a sh:PropertyShape;
     sh:class zvg:OntbindendeVoorwaarde;
@@ -751,9 +1163,12 @@ zvg:OntbindendeVoorwaarde a sh:NodeShape;
     sh:property zvg:OntbindendeVoorwaarde.expiratieDatum;
     sh:targetClass zvg:OntbindendeVoorwaarde;
     rdfs:label "OntbindendeVoorwaarde";
-    rdfs:subClassOf zvg:_Clausule
+    rdfs:subClassOf zvg:Clausule
 .
 zvg:OntbindendeVoorwaarde.expiratieDatum a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "expiratieDatum";
     sh:path zvg:expiratieDatum
 .
@@ -773,21 +1188,24 @@ zvg:OpenbareRuimte.gerelateerdeWoonplaats a sh:PropertyShape;
 Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.'''
 .
 zvg:OpenbareRuimte.openbareRuimteNaam a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "openbareRuimteNaam";
     sh:path zvg:openbareRuimteNaam;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/NaamOpenbareRuimte>
 .
 zvg:Organisatie a sh:NodeShape;
     sh:name "Organisatie";
-    sh:property zvg:Organisatie.betreft;
+    sh:property zvg:Organisatie.betreftEen;
     sh:targetClass zvg:Organisatie;
     rdfs:label "Organisatie";
     rdfs:subClassOf zvg:Agent
 .
-zvg:Organisatie.betreft a sh:PropertyShape;
+zvg:Organisatie.betreftEen a sh:PropertyShape;
     sh:class zvg:NietNatuurlijkPersoon;
-    sh:name "betreft";
-    sh:path zvg:betreft
+    sh:name "betreftEen";
+    sh:path zvg:betreftEen
 .
 zvg:Overlijden a sh:NodeShape;
     sh:name "Overlijden";
@@ -797,9 +1215,38 @@ zvg:Overlijden a sh:NodeShape;
     rdfs:label "Overlijden"
 .
 zvg:Overlijden.datumOverlijden a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "datumOverlijden";
     sh:path zvg:datumOverlijden;
     rdfs:comment "datumOverlijden is de datum waarop de persoon overleden is."
+.
+zvg:OvermachtRisicoVerzekeringen a sh:NodeShape;
+    sh:name "OvermachtRisicoVerzekeringen";
+    sh:targetClass zvg:OvermachtRisicoVerzekeringen;
+    rdfs:label "OvermachtRisicoVerzekeringen";
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:Partij a sh:NodeShape;
+    sh:name "Partij";
+    sh:property zvg:Partij.identificatie;
+    sh:property zvg:Partij.vertegenwoordigdDoor;
+    sh:targetClass zvg:Partij;
+    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij>;
+    rdfs:label "Partij"
+.
+zvg:Partij.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "identificatie";
+    sh:path zvg:identificatie;
+    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PartijIdentificatie>
+.
+zvg:Partij.vertegenwoordigdDoor a sh:PropertyShape;
+    sh:class zvg:Persoon;
+    sh:name "vertegenwoordigdDoor";
+    sh:path zvg:vertegenwoordigdDoor
 .
 zvg:Partnerschap a sh:NodeShape;
     sh:name "Partnerschap";
@@ -813,16 +1260,22 @@ zvg:Partnerschap a sh:NodeShape;
     rdfs:label "Partnerschap"
 .
 zvg:Partnerschap.datumOntbinding a sh:PropertyShape;
+    sh:maxCount "1";
     sh:name "datumOntbinding";
     sh:path zvg:datumOntbinding;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PartnerschapDatumOntbinding>
 .
 zvg:Partnerschap.datumSluiting a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "datumSluiting";
     sh:path zvg:datumSluiting;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PartnerschapDatumSluiting>
 .
 zvg:Partnerschap.soortVerbintenis a sh:PropertyShape;
+    sh:class zvg:VerbintenisSoort;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "soortVerbintenis";
     sh:path zvg:soortVerbintenis;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/SoortVerbintenis>
@@ -833,6 +1286,9 @@ zvg:Partnerschap.verbindt a sh:PropertyShape;
     sh:path zvg:verbindt
 .
 zvg:Partnerschap.verbintenisVoorwaarden a sh:PropertyShape;
+    sh:class zvg:VoorwaardenVerbintenis;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "verbintenisVoorwaarden";
     sh:path zvg:verbintenisVoorwaarden;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Huwelijksgoederenrecht>
@@ -845,9 +1301,12 @@ zvg:Perceel a sh:NodeShape;
     sh:targetClass zvg:Perceel;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Perceel>;
     rdfs:label "Perceel";
-    rdfs:subClassOf zvg:_OnroerendeZaak
+    rdfs:subClassOf zvg:OnroerendeZaak
 .
 zvg:Perceel.begrenzingPerceel a sh:PropertyShape;
+    sh:datatype <http://www.opengis.net/ont/sf#Surface>;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "begrenzingPerceel";
     sh:path zvg:begrenzingPerceel;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/BegrenzingPerceel>
@@ -858,9 +1317,90 @@ zvg:Perceel.heerstMet a sh:PropertyShape;
     sh:path zvg:heerstMet
 .
 zvg:Perceel.kadastraleGrootte a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "kadastraleGrootte";
     sh:path zvg:kadastraleGrootte;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleGroote>
+.
+zvg:Persoon a sh:NodeShape;
+    sh:name "Persoon";
+    sh:property zvg:Persoon.contactVia;
+    sh:property zvg:Persoon.hoortBij;
+    sh:property zvg:Persoon.identificatie;
+    sh:property zvg:Persoon.vertegenwoordigt;
+    sh:property zvg:Persoon.woonlocatie;
+    sh:targetClass zvg:Persoon;
+    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon>;
+    rdfs:label "Persoon"
+.
+zvg:Persoon.contactVia a sh:PropertyShape;
+    sh:class zvg:Contactgegevens;
+    sh:name "contactVia";
+    sh:path zvg:contactVia
+.
+zvg:Persoon.hoortBij a sh:PropertyShape;
+    sh:class zvg:Partij;
+    sh:name "hoortBij";
+    sh:path zvg:hoortBij
+.
+zvg:Persoon.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "identificatie";
+    sh:path zvg:identificatie;
+    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PersoonIdentificatie>
+.
+zvg:Persoon.vertegenwoordigt a sh:PropertyShape;
+    sh:class zvg:Partij;
+    sh:name "vertegenwoordigt";
+    sh:path zvg:vertegenwoordigt
+.
+zvg:Persoon.woonlocatie a sh:PropertyShape;
+    sh:class zvg:ObjectLocatie;
+    sh:name "woonlocatie";
+    sh:path zvg:woonlocatie
+.
+zvg:Rechtshandeling a sh:NodeShape;
+    sh:name "Rechtshandeling";
+    sh:property zvg:Rechtshandeling.identificatie;
+    sh:targetClass zvg:Rechtshandeling;
+    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Rechtshandeling>;
+    rdfs:label "Rechtshandeling"
+.
+zvg:Rechtshandeling.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "identificatie";
+    sh:path zvg:identificatie;
+    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/RechtshandelingIdentificatie>
+.
+zvg:Rechtsvorm a sh:NodeShape;
+    sh:name "Rechtsvorm";
+    sh:targetClass zvg:Rechtsvorm;
+    rdfs:label "Rechtsvorm"
+.
+zvg:Registergoed a sh:NodeShape;
+    sh:name "Registergoed";
+    sh:property zvg:Registergoed.identificatie;
+    sh:property zvg:Registergoed.metLocatie;
+    sh:targetClass zvg:Registergoed;
+    rdfs:label "Registergoed"
+.
+zvg:Registergoed.identificatie a sh:PropertyShape;
+    sh:datatype zvg:NEN3610ID;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "identificatie";
+    sh:path zvg:identificatie;
+    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/RegistergoedIdentificatie>
+.
+zvg:Registergoed.metLocatie a sh:PropertyShape;
+    sh:class zvg:LocatieRegistergoed;
+    sh:name "metLocatie";
+    sh:path zvg:metLocatie
 .
 zvg:RegistratieKoopovereenkomst a sh:NodeShape;
     sh:name "RegistratieKoopovereenkomst";
@@ -869,17 +1409,26 @@ zvg:RegistratieKoopovereenkomst a sh:NodeShape;
     sh:property zvg:RegistratieKoopovereenkomst.registrerenNa;
     sh:targetClass zvg:RegistratieKoopovereenkomst;
     rdfs:label "RegistratieKoopovereenkomst";
-    rdfs:subClassOf zvg:_Afspraak
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:RegistratieKoopovereenkomst.inschrijvenKadaster a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "inschrijvenKadaster";
     sh:path zvg:inschrijvenKadaster
 .
 zvg:RegistratieKoopovereenkomst.registratieKostenToedeling a sh:PropertyShape;
+    sh:class zvg:KoperOfVerkoper;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "registratieKostenToedeling";
     sh:path zvg:registratieKostenToedeling
 .
 zvg:RegistratieKoopovereenkomst.registrerenNa a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "registrerenNa";
     sh:path zvg:registrerenNa
 .
@@ -889,11 +1438,25 @@ zvg:SoftwareAgent a sh:NodeShape;
     rdfs:label "SoftwareAgent";
     rdfs:subClassOf zvg:Agent
 .
+zvg:SoortGarantie a sh:NodeShape;
+    sh:name "SoortGarantie";
+    sh:targetClass zvg:SoortGarantie;
+    rdfs:label "SoortGarantie"
+.
+zvg:SoortGrootte a sh:NodeShape;
+    sh:name "SoortGrootte";
+    sh:targetClass zvg:SoortGrootte;
+    rdfs:comment "Referentielijst SoortGrootte is een opsomming van de mogelijke typen soorten van de grootte van een perceel.";
+    rdfs:label "SoortGrootte"
+.
 zvg:StaatOnroerendeZaak a sh:NodeShape;
     sh:name "StaatOnroerendeZaak";
+    sh:property zvg:StaatOnroerendeZaak.aanschrijvingOverheidNutsbedrijf;
+    sh:property zvg:StaatOnroerendeZaak.belastMetPubliekrechtelijkeBeperking;
     sh:property zvg:StaatOnroerendeZaak.gebruik;
     sh:property zvg:StaatOnroerendeZaak.heeftAanwijzingWVG;
     sh:property zvg:StaatOnroerendeZaak.heeftBetrekkingOp;
+    sh:property zvg:StaatOnroerendeZaak.inspectie;
     sh:property zvg:StaatOnroerendeZaak.isAanwijzingProvinciaalOfGemeentelijkMonumentBekend;
     sh:property zvg:StaatOnroerendeZaak.isAanwijzingRijksmonumentBekend;
     sh:property zvg:StaatOnroerendeZaak.isArtikel55WetBodembeschermingBekend;
@@ -902,54 +1465,154 @@ zvg:StaatOnroerendeZaak a sh:NodeShape;
     sh:property zvg:StaatOnroerendeZaak.isOndergrondsetankBekend;
     sh:property zvg:StaatOnroerendeZaak.isPubliekrechtelijkBeperkt;
     sh:property zvg:StaatOnroerendeZaak.isVerontreinigingBekend;
+    sh:property zvg:StaatOnroerendeZaak.lastenVoorgaandeJaren;
+    sh:property zvg:StaatOnroerendeZaak.onbekenheidsverklaring;
+    sh:property zvg:StaatOnroerendeZaak.oppervlakte;
+    sh:property zvg:StaatOnroerendeZaak.verplichtingenDerden;
+    sh:property zvg:StaatOnroerendeZaak.wegneemrechtHuurder;
     sh:targetClass zvg:StaatOnroerendeZaak;
     rdfs:label "StaatOnroerendeZaak";
-    rdfs:subClassOf zvg:_Clausule
+    rdfs:subClassOf zvg:Clausule
+.
+zvg:StaatOnroerendeZaak.aanschrijvingOverheidNutsbedrijf a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "aanschrijvingOverheidNutsbedrijf";
+    sh:path zvg:aanschrijvingOverheidNutsbedrijf
+.
+zvg:StaatOnroerendeZaak.belastMetPubliekrechtelijkeBeperking a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:name "belastMetPubliekrechtelijkeBeperking";
+    sh:path zvg:belastMetPubliekrechtelijkeBeperking
 .
 zvg:StaatOnroerendeZaak.gebruik a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "gebruik";
     sh:path zvg:gebruik
 .
 zvg:StaatOnroerendeZaak.heeftAanwijzingWVG a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "heeftAanwijzingWVG";
     sh:path zvg:heeftAanwijzingWVG
 .
 zvg:StaatOnroerendeZaak.heeftBetrekkingOp a sh:PropertyShape;
-    sh:class zvg:_OnroerendeZaak;
+    sh:class zvg:OnroerendeZaak;
     sh:name "heeftBetrekkingOp";
     sh:path zvg:heeftBetrekkingOp
 .
+zvg:StaatOnroerendeZaak.inspectie a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "inspectie";
+    sh:path zvg:inspectie
+.
 zvg:StaatOnroerendeZaak.isAanwijzingProvinciaalOfGemeentelijkMonumentBekend a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isAanwijzingProvinciaalOfGemeentelijkMonumentBekend";
     sh:path zvg:isAanwijzingProvinciaalOfGemeentelijkMonumentBekend
 .
 zvg:StaatOnroerendeZaak.isAanwijzingRijksmonumentBekend a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isAanwijzingRijksmonumentBekend";
     sh:path zvg:isAanwijzingRijksmonumentBekend
 .
 zvg:StaatOnroerendeZaak.isArtikel55WetBodembeschermingBekend a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isArtikel55WetBodembeschermingBekend";
     sh:path zvg:isArtikel55WetBodembeschermingBekend
 .
 zvg:StaatOnroerendeZaak.isAsbestAanwezig a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isAsbestAanwezig";
     sh:path zvg:isAsbestAanwezig
 .
 zvg:StaatOnroerendeZaak.isBeschermdStadsOfDorpsGezichtBekend a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isBeschermdStadsOfDorpsGezichtBekend";
     sh:path zvg:isBeschermdStadsOfDorpsGezichtBekend
 .
 zvg:StaatOnroerendeZaak.isOndergrondsetankBekend a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isOndergrondsetankBekend";
     sh:path zvg:isOndergrondsetankBekend
 .
 zvg:StaatOnroerendeZaak.isPubliekrechtelijkBeperkt a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isPubliekrechtelijkBeperkt";
     sh:path zvg:isPubliekrechtelijkBeperkt
 .
 zvg:StaatOnroerendeZaak.isVerontreinigingBekend a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "isVerontreinigingBekend";
     sh:path zvg:isVerontreinigingBekend
+.
+zvg:StaatOnroerendeZaak.lastenVoorgaandeJaren a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "lastenVoorgaandeJaren";
+    sh:path zvg:lastenVoorgaandeJaren
+.
+zvg:StaatOnroerendeZaak.onbekenheidsverklaring a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "onbekenheidsverklaring";
+    sh:path zvg:onbekenheidsverklaring
+.
+zvg:StaatOnroerendeZaak.oppervlakte a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "oppervlakte";
+    sh:path zvg:oppervlakte
+.
+zvg:StaatOnroerendeZaak.verplichtingenDerden a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "verplichtingenDerden";
+    sh:path zvg:verplichtingenDerden
+.
+zvg:StaatOnroerendeZaak.wegneemrechtHuurder a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "wegneemrechtHuurder";
+    sh:path zvg:wegneemrechtHuurder
+.
+zvg:StatusHistorie a sh:NodeShape;
+    sh:name "StatusHistorie";
+    sh:targetClass zvg:StatusHistorie;
+    rdfs:label "StatusHistorie"
+.
+zvg:StellenOfStorten a sh:NodeShape;
+    sh:name "StellenOfStorten";
+    sh:targetClass zvg:StellenOfStorten;
+    rdfs:label "StellenOfStorten"
 .
 zvg:Tenaamstelling a sh:NodeShape;
     sh:name "Tenaamstelling";
@@ -963,20 +1626,27 @@ zvg:Tenaamstelling a sh:NodeShape;
     rdfs:label "Tenaamstelling"
 .
 zvg:Tenaamstelling.aandeel a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "aandeel";
     sh:path zvg:aandeel
 .
 zvg:Tenaamstelling.akteReferentie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:minCount "1";
     sh:name "akteReferentie";
     sh:path zvg:akteReferentie
 .
 zvg:Tenaamstelling.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "identificatie";
     sh:path zvg:identificatie;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/TenaamstellingIdentificatie>
 .
 zvg:Tenaamstelling.is a sh:PropertyShape;
-    sh:class zvg:_Persoon;
+    sh:class zvg:Persoon;
     sh:name "is";
     sh:path zvg:is
 .
@@ -985,6 +1655,17 @@ zvg:Tenaamstelling.van a sh:PropertyShape;
     sh:name "van";
     sh:path zvg:van
 .
+zvg:Valuta a sh:NodeShape;
+    sh:name "Valuta";
+    sh:targetClass zvg:Valuta;
+    rdfs:comment "Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst.";
+    rdfs:label "Valuta"
+.
+zvg:VerbintenisSoort a sh:NodeShape;
+    sh:name "VerbintenisSoort";
+    sh:targetClass zvg:VerbintenisSoort;
+    rdfs:label "VerbintenisSoort"
+.
 zvg:Verkoper a sh:NodeShape;
     sh:name "Verkoper";
     sh:property zvg:Verkoper.bevoegdheid;
@@ -992,9 +1673,12 @@ zvg:Verkoper a sh:NodeShape;
     sh:targetClass zvg:Verkoper;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper>;
     rdfs:label "Verkoper";
-    rdfs:subClassOf zvg:_Partij
+    rdfs:subClassOf zvg:Partij
 .
 zvg:Verkoper.bevoegdheid a sh:PropertyShape;
+    sh:class zvg:BevoegdheidVerkoper;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "bevoegdheid";
     sh:path zvg:bevoegdheid;
     rdfs:comment '''onbekend,
@@ -1002,6 +1686,8 @@ eigenverklaring
 gerechercheerd'''
 .
 zvg:Verkoper.rechercheReferentie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
     sh:name "rechercheReferentie";
     sh:path zvg:rechercheReferentie
 .
@@ -1011,21 +1697,38 @@ zvg:Voorbehoud a sh:NodeShape;
     sh:targetClass zvg:Voorbehoud;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Voorbehoud>;
     rdfs:label "Voorbehoud";
-    rdfs:subClassOf zvg:_Clausule
+    rdfs:subClassOf zvg:Clausule
 .
 zvg:Voorbehoud.bedrag a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "bedrag";
     sh:path zvg:bedrag;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/VoorbehoudBedrag>
+.
+zvg:VoorwaardenVerbintenis a sh:NodeShape;
+    sh:name "VoorwaardenVerbintenis";
+    sh:targetClass zvg:VoorwaardenVerbintenis;
+    rdfs:label "VoorwaardenVerbintenis"
+.
+zvg:Waardelijst a sh:NodeShape;
+    sh:name "Waardelijst";
+    sh:targetClass zvg:Waardelijst;
+    rdfs:comment "Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst.";
+    rdfs:label "Waardelijst"
 .
 zvg:Woonplaats a sh:NodeShape;
     sh:name "Woonplaats";
     sh:property zvg:Woonplaats.woonplaatsNaam;
     sh:targetClass zvg:Woonplaats;
     dct:subject <http://bag.basisregistraties.overheid.nl/id/concept/Woonplaats>;
-    rdfs:label "Woonplaats"
+    rdfs:label "Woonplaats";
+    rdfs:subClassOf zvg:Afspraak
 .
 zvg:Woonplaats.woonplaatsNaam a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "woonplaatsNaam";
     sh:path zvg:woonplaatsNaam;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/NaamWoonplaats>
@@ -1043,33 +1746,49 @@ zvg:ZVGHistorie a sh:NodeShape;
     rdfs:label "ZVGHistorie"
 .
 zvg:ZVGHistorie.eindRegistratie a sh:PropertyShape;
+    sh:datatype xsd:dateTime;
+    sh:maxCount "1";
     sh:name "eindRegistratie";
     sh:path zvg:eindRegistratie;
     rdfs:comment '''Het moment waarop het voorkomen  in de registratie is vervallen. Wanneer deze waarde niet is opgegeven is
 de instantie nog geldig.'''
 .
 zvg:ZVGHistorie.statusHistorie a sh:PropertyShape;
+    sh:class zvg:StatusHistorie;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "statusHistorie";
     sh:path zvg:statusHistorie;
     rdfs:comment "Status geeft de status van de versie van het voorkomen aan (geldig/correctie/audit). De waarden zijn opgenomen in een waardelijst."
 .
 zvg:ZVGHistorie.tijdstipRegistratie a sh:PropertyShape;
+    sh:datatype xsd:dateTime;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "tijdstipRegistratie";
     sh:path zvg:tijdstipRegistratie;
     rdfs:comment "Het moment waarop het voorkomen  in de registratie is ontstaan."
 .
 zvg:ZVGHistorie.tijdstipRegistratieOR a sh:PropertyShape;
+    sh:datatype xsd:dateTime;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "tijdstipRegistratieOR";
     sh:path zvg:tijdstipRegistratieOR;
     rdfs:comment "Het tijdstipRegistratieOR is het moment waarop de akte in het openbaar register is ingeschreven. De gegevens in de registratie (van dit voorkomen) zijn op deze akte gebaseerd."
 .
 zvg:ZVGHistorie.tijdstipVervallenOR a sh:PropertyShape;
+    sh:datatype xsd:dateTime;
+    sh:maxCount "1";
     sh:name "tijdstipVervallenOR";
     sh:path zvg:tijdstipVervallenOR;
     rdfs:comment '''Het moment waarop het voorkomen  in de werkelijkheid is vervallen. Wanneer deze waarde niet is opgegeven
 is de instantie nog geldig.'''
 .
 zvg:ZVGHistorie.volgnummer a sh:PropertyShape;
+    sh:datatype xsd:integer;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "volgnummer";
     sh:path zvg:volgnummer;
     rdfs:comment '''Opvolgend nummer ter identificatie van een versie indien de
@@ -1078,162 +1797,28 @@ attribuut de waarde 0.'''
 .
 zvg:ZakelijkRecht a sh:NodeShape;
     sh:name "ZakelijkRecht";
+    sh:property zvg:ZakelijkRecht.heeft;
     sh:property zvg:ZakelijkRecht.identificatie;
     sh:property zvg:ZakelijkRecht.rustOp;
     sh:targetClass zvg:ZakelijkRecht;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/ZakelijkRecht>;
     rdfs:label "ZakelijkRecht"
 .
+zvg:ZakelijkRecht.heeft a sh:PropertyShape;
+    sh:class zvg:Tenaamstelling;
+    sh:name "heeft";
+    sh:path zvg:heeft
+.
 zvg:ZakelijkRecht.identificatie a sh:PropertyShape;
+    sh:datatype zvg:NEN3610ID;
+    sh:maxCount "1";
+    sh:minCount "1";
     sh:name "identificatie";
     sh:path zvg:identificatie;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/ZakelijkRechtIdentificatie>
 .
 zvg:ZakelijkRecht.rustOp a sh:PropertyShape;
-    sh:class zvg:_OnroerendeZaak;
+    sh:class zvg:OnroerendeZaak;
     sh:name "rustOp";
     sh:path zvg:rustOp
-.
-zvg:_Afspraak a sh:NodeShape;
-    sh:name "_Afspraak";
-    sh:targetClass zvg:_Afspraak;
-    rdfs:label "_Afspraak";
-    rdfs:subClassOf zvg:_Clausule
-.
-zvg:_Clausule a sh:NodeShape;
-    sh:name "_Clausule";
-    sh:property zvg:_Clausule.aardClausule;
-    sh:property zvg:_Clausule.identificatie;
-    sh:property zvg:_Clausule.isVanToepassingOp;
-    sh:targetClass zvg:_Clausule;
-    dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/Voorwaarde>;
-    rdfs:label "_Clausule"
-.
-zvg:_Clausule.aardClausule a sh:PropertyShape;
-    sh:name "aardClausule";
-    sh:path zvg:aardClausule;
-    dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/AardClausule>
-.
-zvg:_Clausule.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/VoorwaardeIdentificatie>
-.
-zvg:_Clausule.isVanToepassingOp a sh:PropertyShape;
-    sh:class zvg:Koop;
-    sh:name "isVanToepassingOp";
-    sh:path zvg:isVanToepassingOp
-.
-zvg:_Legitimatie a sh:NodeShape;
-    sh:name "_Legitimatie";
-    sh:property zvg:_Legitimatie.identificatie;
-    sh:targetClass zvg:_Legitimatie;
-    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/Legitimatie>;
-    rdfs:label "_Legitimatie"
-.
-zvg:_Legitimatie.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/LegitimatieIdentificatie>
-.
-zvg:_ObjectLocatie a sh:NodeShape;
-    sh:name "_ObjectLocatie";
-    sh:targetClass zvg:_ObjectLocatie;
-    rdfs:label "_ObjectLocatie"
-.
-zvg:_OnroerendeZaak a sh:NodeShape;
-    sh:name "_OnroerendeZaak";
-    sh:property zvg:_OnroerendeZaak.isBelastMet;
-    sh:property zvg:_OnroerendeZaak.kadastraleAanduiding;
-    sh:property zvg:_OnroerendeZaak.omschrijvingOnroerendeZaak;
-    sh:targetClass zvg:_OnroerendeZaak;
-    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak>;
-    rdfs:label "_OnroerendeZaak";
-    rdfs:subClassOf zvg:_Registergoed
-.
-zvg:_OnroerendeZaak.isBelastMet a sh:PropertyShape;
-    sh:class zvg:ZakelijkRecht;
-    sh:name "isBelastMet";
-    sh:path zvg:isBelastMet
-.
-zvg:_OnroerendeZaak.kadastraleAanduiding a sh:PropertyShape;
-    sh:name "kadastraleAanduiding";
-    sh:path zvg:kadastraleAanduiding;
-    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleAanduiding>
-.
-zvg:_OnroerendeZaak.omschrijvingOnroerendeZaak a sh:PropertyShape;
-    sh:name "omschrijvingOnroerendeZaak";
-    sh:path zvg:omschrijvingOnroerendeZaak;
-    dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/OnroerendeZaakOmschrijving>
-.
-zvg:_Partij a sh:NodeShape;
-    sh:name "_Partij";
-    sh:property zvg:_Partij.identificatie;
-    sh:property zvg:_Partij.vertegenwoordigdDoor;
-    sh:targetClass zvg:_Partij;
-    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij>;
-    rdfs:label "_Partij"
-.
-zvg:_Partij.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PartijIdentificatie>
-.
-zvg:_Partij.vertegenwoordigdDoor a sh:PropertyShape;
-    sh:class zvg:_Persoon;
-    sh:name "vertegenwoordigdDoor";
-    sh:path zvg:vertegenwoordigdDoor
-.
-zvg:_Persoon a sh:NodeShape;
-    sh:name "_Persoon";
-    sh:property zvg:_Persoon.hoortBij;
-    sh:property zvg:_Persoon.identificatie;
-    sh:property zvg:_Persoon.vertegenwoordigt;
-    sh:property zvg:_Persoon.woonlocatie;
-    sh:targetClass zvg:_Persoon;
-    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon>;
-    rdfs:label "_Persoon"
-.
-zvg:_Persoon.hoortBij a sh:PropertyShape;
-    sh:class zvg:_Partij;
-    sh:name "hoortBij";
-    sh:path zvg:hoortBij
-.
-zvg:_Persoon.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PersoonIdentificatie>
-.
-zvg:_Persoon.vertegenwoordigt a sh:PropertyShape;
-    sh:class zvg:_Partij;
-    sh:name "vertegenwoordigt";
-    sh:path zvg:vertegenwoordigt
-.
-zvg:_Persoon.woonlocatie a sh:PropertyShape;
-    sh:class zvg:_ObjectLocatie;
-    sh:name "woonlocatie";
-    sh:path zvg:woonlocatie
-.
-zvg:_Rechtshandeling a sh:NodeShape;
-    sh:name "_Rechtshandeling";
-    sh:property zvg:_Rechtshandeling.identificatie;
-    sh:targetClass zvg:_Rechtshandeling;
-    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Rechtshandeling>;
-    rdfs:label "_Rechtshandeling"
-.
-zvg:_Rechtshandeling.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/RechtshandelingIdentificatie>
-.
-zvg:_Registergoed a sh:NodeShape;
-    sh:name "_Registergoed";
-    sh:property zvg:_Registergoed.identificatie;
-    sh:targetClass zvg:_Registergoed;
-    rdfs:label "_Registergoed"
-.
-zvg:_Registergoed.identificatie a sh:PropertyShape;
-    sh:name "identificatie";
-    sh:path zvg:identificatie;
-    dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/RegistergoedIdentificatie>
 .

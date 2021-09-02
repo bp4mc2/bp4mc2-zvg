@@ -1,5 +1,4 @@
 @prefix mim: <http://bp4mc2.org/def/mim#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 <uuid:EAID_01CFBE1A_9D91_412a_BA51_BFD1F4A9AE43> a mim:Relatiesoort;
     mim:bron <uuid:EAID_1673F612_35C9_4a3b_A184_00CAC2C33C5F>;
@@ -7,18 +6,24 @@
     mim:naam "verbindt"^^xsd:string;
     mim:relatierol <uuid:EAID_srcCFBE1A_9D91_412a_BA51_BFD1F4A9AE43>
 .
+<uuid:EAID_01D15C51_BD27_4ad8_8D09_E7A628F9535A> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "oppervlakte"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_029C2C42_3D99_4c8e_B132_BFF5121D8971> a mim:Referentielijst;
+    mim:naam "VoorwaardenVerbintenis"^^xsd:string
+.
 <uuid:EAID_02AA0BAC_175D_409c_9EA6_420C1A7D9FDF> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/CanonType>;
-    mim:naam "type"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "type"^^xsd:string;
+    mim:type <uuid:EAID_BC52C885_0B0E_41bf_84A9_3E0A228F5C83>
 .
 <uuid:EAID_02C68C94_6B70_442a_B9A9_7AD326EE84F8> a mim:Objecttype;
     mim:attribuut <uuid:EAID_CF81FAB3_CF42_4547_B46D_81A6081EBB6A>;
     mim:begripsterm "http://kad.zorgeloosvastgoed.nl/id/concept/Registergoed "^^xsd:string;
     mim:naam "Registergoed"
-.
-<uuid:EAID_0371BAC5_51C0_428e_831F_1E5BD93309B9> a mim:Generalisatie;
-    mim:subtype <uuid:EAID_05E1F45F_2980_454d_A77A_D79C13C418CE>;
-    mim:supertype <uuid:EAID_F022CA42_4F72_4508_9C55_9C89F328A1A1>
 .
 <uuid:EAID_0407869E_EC9E_49d3_9CA8_7E5C020895DB> a mim:Generalisatie;
     mim:subtype <uuid:EAID_4EF17D6A_B796_4947_8333_B07C8F5ECD2A>;
@@ -30,12 +35,25 @@
     mim:naam "heeftBetrekkingOp"^^xsd:string
 .
 <uuid:EAID_05E1F45F_2980_454d_A77A_D79C13C418CE> a mim:Objecttype;
-    mim:naam "NHGGarantie"^^xsd:string
+    mim:attribuut <uuid:EAID_1B28D735_63E5_49bd_BA67_4645A6A26F48>;
+    mim:naam "FinancieringMetNHGGarantie"^^xsd:string
+.
+<uuid:EAID_062653A0_9845_456d_BC9E_52246C861991> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_7D01B2EE_7102_489e_BDA5_11735CEE2965>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
 .
 <uuid:EAID_06298F68_9317_49f0_9B4D_BA31C14E4EDA> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PartnerschapDatumSluiting>;
     mim:definitie "datumSluiting is de datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan.";
-    mim:naam "datumSluiting"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "datumSluiting"^^xsd:string;
+    mim:type <uuid:EAID_162A96E4_F53B_454c_86B4_63B2F473C893>
+.
+<uuid:EAID_069CEDD2_895C_436e_B89F_44C476C41321> a mim:ReferentieElement;
+    mim:definitie "De code van deze waarde. De code is uniek binnen de Waardelijst en taalonafhankelijk.";
+    mim:kardinaliteit "1..1";
+    mim:naam "code"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_06E44859_0694_43d9_8092_349D4ED96408> a mim:Generalisatie;
     mim:subtype <uuid:EAID_D04FD057_BF08_4bb7_8752_128E58F8AD99>;
@@ -45,6 +63,11 @@
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/RegistergoedLocatie>;
     mim:definitie "Een Locatie Registergoed is een aanduiding voor de locatie van het Registergoed in Nederland.";
     mim:naam "LocatieRegistergoed"^^xsd:string
+.
+<uuid:EAID_07BF65CD_5AA6_4d2f_A978_0168A88E8B5B> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "onbekenheidsverklaring"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_08725DA4_0C47_44e5_8B6A_552A03251349> a mim:Objecttype;
     mim:attribuut <uuid:EAID_2D492680_F32A_4e02_B513_1357C2668046>;
@@ -66,39 +89,79 @@
 .
 <uuid:EAID_09BD0457_3102_4c0d_BA47_3677451D36C5> a mim:Attribuutsoort;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/OnroerendeZaakOmschrijving>;
-    mim:naam "omschrijvingOnroerendeZaak"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "omschrijvingOnroerendeZaak"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_09D70025_0330_4886_894B_46B961095AF2> a mim:Attribuutsoort;
     mim:definitie "Indicatie Overleden is een indicatie of de persoon al dan niet overleden is.";
-    mim:naam "indicatieOverleden"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "indicatieOverleden"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_0B2DE6C3_1437_4c5b_8ECA_2BA2B655A5C2> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_26C6AC6F_FBB2_474d_AB61_459D36FF86B9>;
+    mim:dataElement <uuid:EAID_471E7715_82DC_4465_B201_DFF45AB87A81>;
+    mim:dataElement <uuid:EAID_4C1D026B_5297_424d_B895_25A0951BB5FC>;
+    mim:naam "JaarlijksBedrag"^^xsd:string
 .
 <uuid:EAID_0B99DC1D_7F2F_4f12_84B8_5FE89ABF41BE> a mim:Attribuutsoort;
-    mim:naam "isVerontreinigingBekend"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isVerontreinigingBekend"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_0C8E69F1_B3A4_4499_87F8_18A764EC2E3C> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/BetalerKosten>;
     mim:definitie "Waardelijst met de waarden koper of verkoper.";
-    mim:naam "betalerKosten"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "betalerKosten"^^xsd:string;
+    mim:type <uuid:EAID_3A52C749_9562_4c63_8BF0_0C2A0D4DB0DF>
+.
+<uuid:EAID_0D822404_A7E7_4d7a_AF2A_F980F4AB8BC3> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "overdrachtAanspraken"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_0F817D84_EB0D_49f0_825A_B9F254A3E766> a mim:Attribuutsoort;
-    mim:naam "heeftAanwijzingWVG"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "heeftAanwijzingWVG"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_0FE8AE0D_765C_403c_B816_8C265805891E> a mim:Generalisatie;
     mim:subtype <uuid:EAID_08725DA4_0C47_44e5_8B6A_552A03251349>;
     mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
+.
+<uuid:EAID_12A119F9_2F94_442e_B47F_FF26168411E3> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_3D9761B6_B979_473f_8662_98BE2A1FFC62>;
+    mim:dataElement <uuid:EAID_7A76738E_1ED6_4596_8482_D26E966A2D8C>;
+    mim:naam "TypeBreuk"^^xsd:string
 .
 <uuid:EAID_13E60A06_1760_4d14_81E2_561FB555565F> a mim:Relatiesoort;
     mim:bron <uuid:EAID_672C5BB6_1ABE_4230_83B3_14866F0AC669>;
     mim:doel <uuid:EAID_672C5BB6_1ABE_4230_83B3_14866F0AC669>;
     mim:naam "treed op namens"^^xsd:string
 .
+<uuid:EAID_14E80CF6_AAF3_44c1_8125_57B33CCB5619> a mim:Objecttype;
+    mim:naam "OvermachtRisicoVerzekeringen"^^xsd:string
+.
 <uuid:EAID_1500DA40_5A3D_4711_9211_1B07186A962F> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleGroote>;
-    mim:naam "kadastraleGrootte"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "kadastraleGrootte"^^xsd:string;
+    mim:type <uuid:EAID_AE489F79_919B_4daf_BC8E_A5F56765A975>
+.
+<uuid:EAID_1542BA05_6E43_4e4f_B81B_A96198235B42> a mim:Attribuutsoort;
+    mim:kardinaliteit "0..1";
+    mim:naam "belastMetPubliekrechtelijkeBeperking"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_156387A4_8175_4151_87BB_9E699B6CE82B> a mim:Generalisatie;
     mim:subtype <uuid:EAID_F7E23CB2_4C3F_4975_AC49_AA4C968D26F2>;
     mim:supertype <uuid:EAID_9FB8E66F_178A_4a4c_B311_A50CDC7EA840>
+.
+<uuid:EAID_162A96E4_F53B_454c_86B4_63B2F473C893> a mim:Keuze;
+    mim:definitie "TypeOnvolledigeDatum is een samengesteld datatype voor een mogelijk onvolledige datum waarbij jaar kan worden gevolgd door maand, en maand kan worden gevolgd door dag.";
+    mim:naam "TypeOnvolledigeDatum"^^xsd:string
 .
 <uuid:EAID_1673F612_35C9_4a3b_A184_00CAC2C33C5F> a mim:Objecttype;
     mim:attribuut <uuid:EAID_06298F68_9317_49f0_9B4D_BA31C14E4EDA>;
@@ -115,8 +178,27 @@
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Voorwaarde>;
     mim:naam "Clausule"
 .
+<uuid:EAID_1756A110_1561_47fc_AE47_53B4BC0A0EF9> a mim:Objecttype;
+    mim:naam "Hoofdelijkheid"^^xsd:string
+.
+<uuid:EAID_17C6C32F_207C_4e20_AFF0_ABEC39B30ACC> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "huurLeaseHuurkoopovereenkomste"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_4B9DB2CB_7AB5_45a3_BA75_94621F38E87F>;
+    mim:dataElement <uuid:EAID_6097EBE9_E85E_45f9_ACD4_0A1E19972C81>;
+    mim:definitie "Bedrag is samengesteld datatype voor het vastleggen van een hoeveelheid geld in cijfers in een bepaalde valuta.";
+    mim:naam "Bedrag"^^xsd:string
+.
 <uuid:EAID_189AA4A8_D962_4af3_A4E4_A946482921A3> a mim:Attribuutsoort;
-    mim:naam "expiratieDatum"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "expiratieDatum"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
+.
+<uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041> a mim:PrimitiefDatatype;
+    mim:naam "CharacterString"^^xsd:string
 .
 <uuid:EAID_19B8FC9D_3B01_402d_ACB1_46A770A421EF> a mim:Generalisatie;
     mim:subtype <uuid:EAID_898A9CD9_A52B_407b_9419_591F4EF01637>;
@@ -129,11 +211,23 @@
 <uuid:EAID_1A9C4B10_5DD5_44bc_AD92_4C18596660AB> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Huwelijksgoederenrecht>;
     mim:definitie "Huwelijkevoorwaarden of of gemeenschap van goederen.";
-    mim:naam "verbintenisVoorwaarden"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "verbintenisVoorwaarden"^^xsd:string;
+    mim:type <uuid:EAID_029C2C42_3D99_4c8e_B132_BFF5121D8971>
+.
+<uuid:EAID_1B28D735_63E5_49bd_BA67_4645A6A26F48> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "vanToepassing"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_1B6161B0_E951_4d37_9726_C588B5CB4C22> a mim:Referentielijst;
+    mim:naam "Koppelingswijze"^^xsd:string
 .
 <uuid:EAID_1CFF49E3_927F_4422_B073_F6FB71A80AA5> a mim:Gegevensgroep;
     mim:gegevensgroeptype <uuid:EAID_BD581A2B_8A84_46e4_ADD9_ACD56EE1EEA0>;
-    mim:naam "overlijden"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "overlijden"^^xsd:string;
+    mim:type <uuid:EAID_BD581A2B_8A84_46e4_ADD9_ACD56EE1EEA0>
 .
 <uuid:EAID_1E193C12_66E2_4a46_B0CA_C55174D4AEB5> a mim:Relatiesoort;
     mim:bron <uuid:EAID_487DB418_86F9_41f6_9D98_572B1EB3703C>;
@@ -146,11 +240,20 @@
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Voorbehoud>;
     mim:naam "Voorbehoud"^^xsd:string
 .
+<uuid:EAID_1FE133E8_D4AE_453f_BEF1_FBF3A624F0DE> a mim:Referentielijst;
+    mim:naam "BRPAanduidingNaamgebruik"^^xsd:string
+.
 <uuid:EAID_2092E551_33C8_476d_B554_4BE05A17877B> a mim:Relatiesoort;
     mim:bron <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>;
     mim:doel <uuid:EAID_24CD2AC3_7D09_4e81_B867_2E4E32C902D1>;
     mim:naam "vertegenwoordigt"^^xsd:string;
     mim:relatierol <uuid:EAID_src92E551_33C8_476d_B554_4BE05A17877B>
+.
+<uuid:EAID_23E2194D_19FC_48ba_8586_B30C1862F1A7> a mim:DataElement;
+    mim:definitie "indexering op basis van de prijsindex meestal jaarlijks";
+    mim:kardinaliteit "1..1";
+    mim:naam "datumIndexering"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
 .
 <uuid:EAID_249B94D8_8164_4ea3_B7BA_2F183B55DC6A> a mim:Objecttype;
     mim:attribuut <uuid:EAID_8EDD0270_B2C2_4ba1_9D54_BEC698F5A77F>;
@@ -174,18 +277,36 @@
     mim:begripsterm "http://kad.zorgeloosvastgoed.nl/id/concept/Canon "^^xsd:string;
     mim:naam "Canon"^^xsd:string
 .
+<uuid:EAID_2623C0A0_8D38_4630_AF3F_B477F6F634BB> a mim:PrimitiefDatatype;
+    mim:definitie "Indicatie is een boolean  met de waarden J (ja/true) of N (nee/false).";
+    mim:naam "Indicatie"^^xsd:string
+.
+<uuid:EAID_26C6AC6F_FBB2_474d_AB61_459D36FF86B9> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "meerdereOnroerendeZakenBetroken"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
 <uuid:EAID_26D4E950_0448_4fb6_9753_8153ECBD1BF8> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/CanonAfgekocht>;
-    mim:naam "einddatumAfkoop"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "einddatumAfkoop"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
+.
+<uuid:EAID_26E45195_DB13_4fb3_932E_B73CB915FD36> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_BC52C885_0B0E_41bf_84A9_3E0A228F5C83>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
 .
 <uuid:EAID_29CD3D04_DC66_4750_A28D_C8F2E790A98D> a mim:Relatiesoort;
     mim:bron <uuid:EAID_61AFF3F4_8919_4592_8240_F2845529373D>;
     mim:doel <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>;
-    mim:naam "van"^^xsd:string
+    mim:naam "vanPersoon"^^xsd:string;
+    mim:relatierol <uuid:EAID_srcCD3D04_DC66_4750_A28D_C8F2E790A98D>
 .
 <uuid:EAID_2A190F96_2F6E_4a18_A4CB_2B201FAC8FE5> a mim:Attribuutsoort;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/LegitimatieIdentificatie>;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_2BAB35C8_3804_4e6f_9FC7_1C3CAED3E148> a mim:Objecttype;
     mim:attribuut <uuid:EAID_8A204AAE_2B32_42e0_8682_56F6E8B9A154>;
@@ -202,22 +323,52 @@
     mim:naam "ZVGHistorie"^^xsd:string
 .
 <uuid:EAID_2D492680_F32A_4e02_B513_1357C2668046> a mim:Attribuutsoort;
-    mim:naam "inschrijvenKadaster"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "inschrijvenKadaster"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_2DB49B02_1FB6_48bd_B439_E0A3BD6BEB99> a mim:Relatiesoort;
     mim:bron <uuid:EAID_ADF5951B_2060_4ca6_BBDD_051E44B3F88E>;
     mim:doel <uuid:EAID_37E0C481_30A7_49d6_80FD_6179F396ADD4>;
-    mim:naam "betreft"^^xsd:string
+    mim:naam "betreftEen"^^xsd:string
+.
+<uuid:EAID_2DE22614_DE36_44ca_94B6_76E160C20711> a mim:DataElement;
+    mim:definitie "Oppervlak grootte, in vierkante meters.";
+    mim:kardinaliteit "1..1";
+    mim:naam "waarde"^^xsd:string;
+    mim:type <uuid:EAID_4B14AA67_7035_465b_B4A5_AACAB944175E>
 .
 <uuid:EAID_2E61D052_9879_4aa4_AF3D_305C097E4C7E> a mim:Attribuutsoort;
-    mim:naam "artike13Verschil"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "artikel13Verschil"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_2EABC9AF_FC6C_41ef_82FF_CEDB2121C0CA> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_7EB1E333_9AC7_4831_92C5_2AF7E08D6A8A>;
+    mim:naam "AanvullendeVoorwaarden"^^xsd:string
 .
 <uuid:EAID_3039D005_F2EC_426c_9061_51716E973B3D> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Rechtsvorm>;
-    mim:naam "rechtsvorm"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "rechtsvorm"^^xsd:string;
+    mim:type <uuid:EAID_E3BF3802_9C35_415f_B3DE_FBB7BD7712C2>
+.
+<uuid:EAID_30830377_3D0E_43dc_A42D_9EB91905ECEB> a mim:Objecttype;
+    mim:naam "Woonplaats"^^xsd:string
 .
 <uuid:EAID_30DA9C49_F368_45cf_921F_CFC534D4E050> a mim:Attribuutsoort;
-    mim:naam "isBeschermdStadsOfDorpsGezichtBekend"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isBeschermdStadsOfDorpsGezichtBekend"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_335576D6_0DD9_4de6_8414_4060D2401448> a mim:Referentielijst;
+    mim:definitie '''onbekend,
+eigenverklaring
+gerechercheerd''';
+    mim:naam "BevoegdheidVerkoper"^^xsd:string
+.
+<uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7> a mim:PrimitiefDatatype;
+    mim:naam "DateTime"^^xsd:string
 .
 <uuid:EAID_36DCCB81_D96D_49b3_8B6D_320CF28B790C> a mim:Relatiesoort;
     mim:bron <uuid:EAID_CAA27791_43E7_4a01_9C1A_99713B5622C4>;
@@ -237,10 +388,39 @@
 <uuid:EAID_388A7849_22D5_4454_9D33_1C038C4D960B> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/LandVertrokken>;
     mim:definitie "landWaarnaarVertrokken is het land dat de ingeschrevene opgeeft bij vertrek naar het buitenland.";
-    mim:naam "landWaarnaarVertrokken"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "landWaarnaarVertrokken"^^xsd:string;
+    mim:type <uuid:EAID_E6F4CE8B_46AF_47d2_BA54_4F182ECF3E23>
 .
 <uuid:EAID_38B481D5_24CE_4362_9D52_09BF5A0F4D58> a mim:Attribuutsoort;
-    mim:naam "isPubliekrechtelijkBeperkt"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isPubliekrechtelijkBeperkt"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_3934CBFA_800C_4eca_B13A_886401AEF7C3> a mim:DataElement;
+    mim:definitie "De soortGrootte geeft aan of de grootte van het perceel voorlopig, administratief of definitief is vastgesteld.";
+    mim:kardinaliteit "1..1";
+    mim:naam "soortGrootte"^^xsd:string;
+    mim:type <uuid:EAID_E6B51C30_CF01_4674_A3C0_607D657D68DC>
+.
+<uuid:EAID_3986F90B_AA05_42ae_9B58_D2860A797039> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_53BF7282_6B06_41e4_968D_9BCB149A686C>;
+    mim:dataElement <uuid:EAID_5EBB1F3F_9955_4733_9902_2524675EBAE9>;
+    mim:dataElement <uuid:EAID_68E4B7E7_733E_4796_9ECA_BD328ABBCDA1>;
+    mim:dataElement <uuid:EAID_FA258613_AB62_4adb_80F9_531923335C36>;
+    mim:definitie "Kadastrale aanduiding is de unieke aanduiding van een onroerende zaak, die door het Kadaster wordt vastgesteld.";
+    mim:naam "TypeKadastraleAanduiding"^^xsd:string
+.
+<uuid:EAID_3A52C749_9562_4c63_8BF0_0C2A0D4DB0DF> a mim:Referentielijst;
+    mim:naam "KoperOfVerkoper"^^xsd:string
+.
+<uuid:EAID_3ACE2A87_558D_45ed_B641_41240CA0E0B6> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_A3CF5837_28D8_4172_A310_E77102E76B23>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_3BE61FE8_AFA0_4214_BE1E_A1D1DA0B147F> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_1756A110_1561_47fc_AE47_53B4BC0A0EF9>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
 .
 <uuid:EAID_3BE713EE_E4EA_464d_B821_0CB552716920> a mim:Relatiesoort;
     mim:bron <uuid:EAID_5E4F1500_0A67_4d58_85D5_274CC21EE948>;
@@ -249,8 +429,18 @@ Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''
     mim:doel <uuid:EAID_B865A197_C216_486d_BBAD_1764163F9735>;
     mim:naam "gerelateerdeWoonplaats"^^xsd:string
 .
+<uuid:EAID_3C4BBF7A_20EC_4a62_A172_F00A6D73FD5E> a mim:PrimitiefDatatype;
+    mim:naam "Real"^^xsd:string
+.
 <uuid:EAID_3D0B0658_B5AD_462b_AB57_12CDE153AF1F> a mim:Attribuutsoort;
-    mim:naam "isAanwijzingProvinciaalOfGemeentelijkMonumentBekend"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isAanwijzingProvinciaalOfGemeentelijkMonumentBekend"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_3D9761B6_B979_473f_8662_98BE2A1FFC62> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "noemer"^^xsd:string;
+    mim:type <uuid:EAID_F38912FB_7856_4a9d_AF96_CB2238371C04>
 .
 <uuid:EAID_3DD634A7_BBA1_4708_94BB_F58CACCA1555> a mim:Objecttype;
     mim:attribuut <uuid:EAID_E88A3A24_B29F_429b_8869_187EEBF06228>;
@@ -258,11 +448,17 @@ Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper>;
     mim:naam "Verkoper"^^xsd:string
 .
+<uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04> a mim:PrimitiefDatatype;
+    mim:naam "Date"^^xsd:string
+.
 <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF> a mim:Objecttype;
     mim:naam "Afspraak"
 .
 <uuid:EAID_417D2D14_2CED_4613_8B6B_A84F2F96BC2D> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_0D822404_A7E7_4d7a_AF2A_F980F4AB8BC3>;
+    mim:attribuut <uuid:EAID_17C6C32F_207C_4e20_AFF0_ABEC39B30ACC>;
     mim:attribuut <uuid:EAID_BBA189C0_CAF6_45be_AFAA_B430B4D43CDA>;
+    mim:attribuut <uuid:EAID_CBB9CA2A_6F01_43c4_9167_6236B0B2785D>;
     mim:naam "FeitelijkeLevering"^^xsd:string
 .
 <uuid:EAID_421EE75B_6584_4472_89DD_B1324D35D956> a mim:Generalisatie;
@@ -271,13 +467,18 @@ Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''
 .
 <uuid:EAID_422DDB5E_AF5A_4f00_ACBF_410CCB6486CB> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/NaamWoonplaats>;
-    mim:naam "woonplaatsNaam"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "woonplaatsNaam"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_42416224_70E0_4de3_927A_EB76BB69BC13> a mim:Relatiesoort;
     mim:bron <uuid:EAID_EB110115_556B_42f2_AAAF_2A10FFBD14C7>;
     mim:doel <uuid:EAID_D04FD057_BF08_4bb7_8752_128E58F8AD99>;
     mim:naam "tenBehoeveVan"^^xsd:string;
     mim:relatierol <uuid:EAID_src416224_70E0_4de3_927A_EB76BB69BC13>
+.
+<uuid:EAID_427C0973_E12D_47f8_A326_AACBADEE5AE6> a mim:PrimitiefDatatype;
+    mim:naam "Day"^^xsd:string
 .
 <uuid:EAID_4310705B_9203_4461_B2A9_612095591E16> a mim:Relatiesoort;
     mim:bron <uuid:EAID_487DB418_86F9_41f6_9D98_572B1EB3703C>;
@@ -291,7 +492,9 @@ Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''
 .
 <uuid:EAID_44BDDDF4_4549_4ab8_9C05_F887C2EE03EF> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/NaamOpenbareRuimte>;
-    mim:naam "openbareRuimteNaam"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "openbareRuimteNaam"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_44BF8380_29FD_4a53_B209_0DDE0E5AA8A3> a mim:ExterneKoppeling;
     mim:bron <uuid:EAID_F924BACE_C916_4753_ADBA_94D30426AA4B>;
@@ -305,19 +508,40 @@ Kadastrale aanduiding is de unieke aanduiding van een onroerende zaak, die door 
 
 -- Toelichting --
 In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidingen hebben, te weten in het geval dat er een herindeling plaatsvindt.''';
-    mim:naam "kadastraleAanduiding"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "kadastraleAanduiding"^^xsd:string;
+    mim:type <uuid:EAID_3986F90B_AA05_42ae_9B58_D2860A797039>
+.
+<uuid:EAID_45F48CFF_4A2A_4318_8726_DD3ACCC94008> a mim:DataElement;
+    mim:definitie "meestal eens per 10 jaar";
+    mim:kardinaliteit "1..1";
+    mim:naam "datumAanpassing"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
 .
 <uuid:EAID_469A8191_DF64_44e8_B8AB_E0AF20156D09> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/CanonJaarlijksBedrag>;
-    mim:naam "jaarlijksBedrag"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "jaarlijksBedrag"^^xsd:string;
+    mim:type <uuid:EAID_0B2DE6C3_1437_4c5b_8ECA_2BA2B655A5C2>
 .
 <uuid:EAID_470EE595_892E_477e_A5E2_A1EE3B1A02AE> a mim:Objecttype;
     mim:attribuut <uuid:EAID_BAE9BDBD_E1B5_49d8_9EF7_36315D19658D>;
     mim:naam "BouwtechnischeKeuring"^^xsd:string
 .
+<uuid:EAID_471E7715_82DC_4465_B201_DFF45AB87A81> a mim:DataElement;
+    mim:definitie "Afspraak over wanneer en hoe de erfpacht voldaan dient te worden.";
+    mim:kardinaliteit "1..1";
+    mim:naam "betalingsConditie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
 <uuid:EAID_481BEB98_005F_426c_AD07_868E07365EF7> a mim:Generalisatie;
     mim:subtype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>;
     mim:supertype <uuid:EAID_16D39029_C62B_4efb_861F_E04E8794843F>
+.
+<uuid:EAID_483B8614_0F3F_462d_831C_FF7927D4CE45> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "lastenVoorgaandeJaren"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_487DB418_86F9_41f6_9D98_572B1EB3703C> a mim:Objecttype;
     mim:attribuut <uuid:EAID_994D4868_6E48_4660_BE58_EE35FA2BC31E>;
@@ -335,50 +559,136 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
 .
 <uuid:EAID_49157EF1_98FB_461e_BE5E_1C6F9A865435> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/EinddatumRecht=>;
-    mim:naam "einddatumErfpacht"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "einddatumErfpacht"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
 .
 <uuid:EAID_4AA4A23C_7571_44c7_AB5A_505D640CAA1F> a mim:Attribuutsoort;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/IdentiteitsdocumentSoort>;
-    mim:naam "soort"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "soort"^^xsd:string;
+    mim:type <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_4B14AA67_7035_465b_B4A5_AACAB944175E> a mim:PrimitiefDatatype;
+    mim:naam "Decimal"^^xsd:string
 .
 <uuid:EAID_4B72E421_C366_4477_945E_8D2C32F46AF0> a mim:Attribuutsoort;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/IdentiteitsdocumentReferentie>;
-    mim:naam "referentie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "referentie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_4B9DB2CB_7AB5_45a3_BA75_94621F38E87F> a mim:DataElement;
+    mim:definitie "Aanduiding van de valutasoort.";
+    mim:kardinaliteit "1..1";
+    mim:naam "valuta"^^xsd:string;
+    mim:type <uuid:EAID_4BFBA567_FBA2_4e84_8DED_2C68944F73D0>
+.
+<uuid:EAID_4BFBA567_FBA2_4e84_8DED_2C68944F73D0> a mim:Referentielijst;
+    mim:definitie "Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst.";
+    mim:naam "Valuta"^^xsd:string
+.
+<uuid:EAID_4C1D026B_5297_424d_B895_25A0951BB5FC> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "Bedrag"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
+.
+<uuid:EAID_4DA242C6_3972_4f1e_86F0_BBB8046F4BC9> a mim:PrimitiefDatatype;
+    mim:naam "Year"^^xsd:string
+.
+<uuid:EAID_4E92D43E_99FD_4859_9496_CE1CD3EBB39F> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "herzieningsTermijn"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_4EF17D6A_B796_4947_8333_B07C8F5ECD2A> a mim:Objecttype;
     mim:naam "SoftwareAgent"^^xsd:string
 .
+<uuid:EAID_504659C8_55E9_49b9_B17D_1211E9BF5443> a mim:Referentielijst;
+    mim:naam "AdellijkeTitelOfPredikaat"^^xsd:string
+.
+<uuid:EAID_5152C3CE_FB8B_4103_BA92_782B54012570> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_1B6161B0_E951_4d37_9726_C588B5CB4C22>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
 <uuid:EAID_515A31B2_0514_4fe8_9C71_4084641EC47C> a mim:Gegevensgroep;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/KostenEnOverdrachtsbelasing>;
     mim:gegevensgroeptype <uuid:EAID_A21B26D3_51AD_4c57_9237_588540F46958>;
-    mim:naam "kosten"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "kosten"^^xsd:string;
+    mim:type <uuid:EAID_A21B26D3_51AD_4c57_9237_588540F46958>
+.
+<uuid:EAID_53BF7282_6B06_41e4_968D_9BCB149A686C> a mim:DataElement;
+    mim:definitie "Nummer dat het kadastraal object uniek identificeert als een appartementsrecht binnen het complex.";
+    mim:kardinaliteit "0..1";
+    mim:naam "appartementsrechtVolgnummer"^^xsd:string;
+    mim:type <uuid:EAID_F38912FB_7856_4a9d_AF96_CB2238371C04>
+.
+<uuid:EAID_55ADEE00_188D_4b84_B378_A8CE0D8135ED> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_DA73B047_CC15_412a_8224_97E19254DA75>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_5604C796_6A28_4802_8A9B_CBE341928C33> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_586BAFEE_EFBF_47ce_B4A0_C7E95765FE17>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_561CBF27_CB85_49ad_AFA5_2C8CEB05B253> a mim:Keuze;
+    mim:naam "entiteit of document"^^xsd:string
 .
 <uuid:EAID_57AAEDBD_4264_40a6_BC34_EF20102C9EEA> a mim:Attribuutsoort;
-    mim:naam "overgenomenMetIngangVan"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "overgenomenMetIngangVan"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_586BAFEE_EFBF_47ce_B4A0_C7E95765FE17> a mim:Referentielijst;
+    mim:definitie "Referentielijst GrondslagSoort is een opsomming van de mogelijke functies die als vertegenwoordiger van een organisatie kunnen optreden.";
+    mim:naam "GrondslagBevoegdheid"^^xsd:string
 .
 <uuid:EAID_596311C2_E775_4aff_B08B_B1951EFC734D> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/CanonAanpassing>;
-    mim:naam "aanpassing"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "aanpassing"^^xsd:string;
+    mim:type <uuid:EAID_C36539D6_8DF6_440a_87E2_6F490A3DF4B5>
 .
 <uuid:EAID_5B36E1AC_3F59_40d6_8772_B78EC7AF3E4E> a mim:Attribuutsoort;
-    mim:naam "bedrag"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "bedrag"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
 .
 <uuid:EAID_5E4F1500_0A67_4d58_85D5_274CC21EE948> a mim:Objecttype;
     mim:attribuut <uuid:EAID_44BDDDF4_4549_4ab8_9C05_F887C2EE03EF>;
     mim:begrip <http://bag.basisregistraties.overheid.nl/id/concept/OpenbareRuimte>;
     mim:naam "OpenbareRuimte"^^xsd:string
 .
+<uuid:EAID_5EBB1F3F_9955_4733_9902_2524675EBAE9> a mim:DataElement;
+    mim:definitie '''<font color="#0f0f0f">Sectie is een onderverdeling van de kadastrale gemeente, bedoeld om het werk van de meetdienst en de kadastrale kaarten overzichtelijk te houden. </font>
+<font color="#0f0f0f">
+</font><font color="#0f0f0f">Per kadastrale gemeente zijn er max. 26x26 secties . Elke sectie heeft een of twee letters (bijv. "A", 'B', ....'AA', 'AB', ....'ZZ' . Alleen de sectieletter "J" werd niet gebruikt om verwarring (handgeschreven) te voorkomen met "I"</font>''';
+    mim:kardinaliteit "1..1";
+    mim:naam "sectie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
 <uuid:EAID_5EF0C930_9540_4aad_A3F2_F0CAD108CA81> a mim:Attribuutsoort;
-    mim:naam "identityResult"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identityResult"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_5F1029E8_4EF2_44b2_9488_B74BAEF3D699> a mim:Generalisatie;
     mim:subtype <uuid:EAID_7C1A1376_9E0E_4ac0_B456_D191F63F64F8>;
     mim:supertype <uuid:EAID_CAA27791_43E7_4a01_9C1A_99713B5622C4>
 .
+<uuid:EAID_6097EBE9_E85E_45f9_ACD4_0A1E19972C81> a mim:DataElement;
+    mim:definitie "Het bedrag. Dit is een waarde met max. 2 decimalen.";
+    mim:kardinaliteit "1..1";
+    mim:naam "som"^^xsd:string;
+    mim:type <uuid:EAID_4B14AA67_7035_465b_B4A5_AACAB944175E>
+.
 <uuid:EAID_618ACE7E_B618_4c4b_BCB2_D574051159AF> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Postcode>;
     mim:definitie "URI https://bag.basisregistraties.overheid.nl/id/begrip/Postcode";
-    mim:naam "postcode"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "postcode"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_61AFF3F4_8919_4592_8240_F2845529373D> a mim:Objecttype;
     mim:attribuut <uuid:EAID_70E2F20B_A658_4334_8213_3A65F0E82FBA>;
@@ -388,7 +698,13 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
 <uuid:EAID_61EA939B_3751_462f_8C51_AF6A235489E1> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Geboortedatum>;
     mim:definitie "De geboortedatum is de datum waarop de persoon is geboren.";
-    mim:naam "geboortedatum"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "geboortedatum"^^xsd:string;
+    mim:type <uuid:EAID_162A96E4_F53B_454c_86B4_63B2F473C893>
+.
+<uuid:EAID_628AE785_7639_4b4b_9409_5E4055AADA2F> a mim:PrimitiefDatatype;
+    mim:definitie "Gewone tekens die in Europa gangbaar zijn.";
+    mim:naam "AN"^^xsd:string
 .
 <uuid:EAID_631006D4_8631_4d62_BB7A_49A17CB824E0> a mim:Generalisatie;
     mim:subtype <uuid:EAID_E742C766_8D4A_4d6a_92E2_99075B9221C1>;
@@ -404,8 +720,22 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
     mim:naam "betreft"^^xsd:string
 .
 <uuid:EAID_672C5BB6_1ABE_4230_83B3_14866F0AC669> a mim:Objecttype;
+    mim:alias "Agent"^^xsd:string;
     mim:attribuut <uuid:EAID_D0C242F8_518C_40a3_9020_BBA422EA7C90>;
+    mim:begrip <http://www.w3.org/ns/prov#Agent>;
     mim:naam "Agent"^^xsd:string
+.
+<uuid:EAID_6785BCEF_E19F_407a_90AE_BA69E5517409> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_3A52C749_9562_4c63_8BF0_0C2A0D4DB0DF>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_68E4B7E7_733E_4796_9ECA_BD328ABBCDA1> a mim:DataElement;
+    mim:definitie '''Het perceelnummer dat een geheel perceel of een complex uniek identificeert binnen de sectie.
+
+Per kadastrale gemeente en per sectie heeft een perceel een perceelnummer oplopend door de jaren heen van "00001" tot max "99999"''';
+    mim:kardinaliteit "1..1";
+    mim:naam "perceelnummer"^^xsd:string;
+    mim:type <uuid:EAID_F38912FB_7856_4a9d_AF96_CB2238371C04>
 .
 <uuid:EAID_6979DE6B_D410_494c_BBA6_0C316ED45AF7> a mim:Objecttype;
     mim:attribuut <uuid:EAID_9EBF8FC2_2B55_433b_9985_E69941C58B04>;
@@ -417,104 +747,190 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
 <uuid:EAID_6A6A62B3_1D07_4521_8640_6880E28A006D> a mim:Objecttype;
     mim:naam "Brondocument"^^xsd:string
 .
+<uuid:EAID_6AE676B5_F43E_4160_B091_BBDD125D033C> a mim:Objecttype;
+    mim:naam "NederlandsRecht"^^xsd:string
+.
 <uuid:EAID_6B541749_F7D6_4b72_827E_51DD8BD0112B> a mim:Attribuutsoort;
     mim:definitie "Het moment waarop het voorkomen  in de registratie is ontstaan.";
-    mim:naam "tijdstipRegistratie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "tijdstipRegistratie"^^xsd:string;
+    mim:type <uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7>
+.
+<uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377> a mim:Referentielijst;
+    mim:definitie "Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst.";
+    mim:naam "Waardelijst"^^xsd:string
+.
+<uuid:EAID_6B9B8893_E5BC_4ee4_8D5D_3BBEB7544F3A> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_BA3F1D1B_AC35_4fbb_B2D8_80CB7CC1EADA>;
+    mim:dataElement <uuid:EAID_CCB609CB_E1D8_448d_B163_4044643B111B>;
+    mim:naam "Tijdstip"^^xsd:string
 .
 <uuid:EAID_6BAAF3C7_5A0D_407d_ACED_6DC789C05D4F> a mim:Attribuutsoort;
-    mim:naam "registrerenNa"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "registrerenNa"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
 .
 <uuid:EAID_6BE16794_21C6_4495_83AB_82BA8FB74C56> a mim:Relatiesoort;
     mim:bron <uuid:EAID_A8146DD7_6246_4b24_9BE8_38D10AD1F529>;
     mim:doel <uuid:EAID_7ECCC940_3E6A_4d8a_A51E_0A74641494F5>;
-    mim:naam "metIdentificatie"^^xsd:string
+    mim:naam "vanPersoon"^^xsd:string;
+    mim:relatierol <uuid:EAID_srcE16794_21C6_4495_83AB_82BA8FB74C56>
 .
 <uuid:EAID_6C7B4809_F134_4fee_8359_A03C2DD14DD8> a mim:Attribuutsoort;
-    mim:naam "akteReferentie"^^xsd:string
+    mim:kardinaliteit "1..-1";
+    mim:naam "akteReferentie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_6CE3B463_E955_4abb_8B45_68EFB08FF140> a mim:Attribuutsoort;
-    mim:naam "isAsbestAanwezig"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isAsbestAanwezig"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_6DDF283D_6CF9_4bc3_9A4F_7435235812FF> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/>;
     mim:definitie "De status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proces zit. De waarden zijn opgenomen in een waardelijst.";
-    mim:naam "status"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "status"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_6E585A2C_96CF_46f3_B9DD_67D5610898AF> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/StatutaireZetel>;
-    mim:naam "statutaireZetel"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "statutaireZetel"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_6E838751_6C8C_475f_9E9F_DECABBF8194E> a mim:Relatiesoort;
     mim:bron <uuid:EAID_16D39029_C62B_4efb_861F_E04E8794843F>;
     mim:doel <uuid:EAID_8E18D907_1F75_40b5_A79C_46D4F53AB071>;
-    mim:naam "isVanToepassingOp"^^xsd:string
+    mim:naam "isVanToepassingOp"^^xsd:string;
+    mim:relatierol <uuid:EAID_src838751_6C8C_475f_9E9F_DECABBF8194E>
 .
 <uuid:EAID_6FD921B1_EB63_4463_88CA_7F602D334C67> a mim:Attribuutsoort;
     mim:definitie "Het RSIN is het Rechtspersonen Samenwerkingsverbanden Informatie Nummer is een uniek nummer dat iedere rechtspersoon krijgt.";
-    mim:naam "rsin"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "rsin"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_70AB0027_54AE_4c41_BA17_6737375721BC> a mim:Attribuutsoort;
-    mim:naam "eindTijd"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "eindTijd"^^xsd:string;
+    mim:type <uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7>
 .
 <uuid:EAID_70E2F20B_A658_4334_8213_3A65F0E82FBA> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Mailadres>;
-    mim:naam "e-mailAdres"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "e-mailAdres"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB> a mim:PrimitiefDatatype;
+    mim:naam "Boolean"^^xsd:string
 .
 <uuid:EAID_7194CBFF_333D_4493_80BE_A875F5EC086D> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/SoortVerbintenis>;
     mim:definitie "Huwelijk of Geregistreerd Partnerschap";
-    mim:naam "soortVerbintenis"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "soortVerbintenis"^^xsd:string;
+    mim:type <uuid:EAID_894AA05A_DC00_40e3_8353_FE51516ADD96>
 .
 <uuid:EAID_72AA9F48_3548_4f93_99EC_6EAF85900F29> a mim:Attribuutsoort;
     mim:definitie "Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie.";
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_D6FEFF9E_004C_4026_9BDB_5F3941DA2972>
 .
 <uuid:EAID_73565BFB_2AD1_4165_9E2F_D2601E683722> a mim:Generalisatie;
     mim:subtype <uuid:EAID_2BAB35C8_3804_4e6f_9FC7_1C3CAED3E148>;
     mim:supertype <uuid:EAID_F022CA42_4F72_4508_9C55_9C89F328A1A1>
 .
 <uuid:EAID_746601BA_4724_467a_8E5C_A512B03695C8> a mim:Attribuutsoort;
-    mim:naam "garantie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "garantie"^^xsd:string;
+    mim:type <uuid:EAID_D907BD58_50DB_40bf_996C_16A61BFE3AAA>
 .
 <uuid:EAID_764DFF77_74C8_4d48_874F_69165E5B5157> a mim:Relatiesoort;
     mim:bron <uuid:EAID_BFB3117B_CCDB_4c32_AA8D_A4BD68D65A3B>;
     mim:doel <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>;
     mim:naam "is"^^xsd:string
 .
+<uuid:EAID_76AC54AE_A95F_4f8a_BFDC_D4223BED8A97> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_30830377_3D0E_43dc_A42D_9EB91905ECEB>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
+.
 <uuid:EAID_774C8699_7EC8_4c48_AA15_F0A07511B637> a mim:Relatiesoort;
     mim:bron <uuid:EAID_07735DCE_2E3A_4f3f_A739_4AE0F2BA5938>;
     mim:doel <uuid:EAID_02C68C94_6B70_442a_B9A9_7AD326EE84F8>;
-    mim:naam "heeft"^^xsd:string
+    mim:naam "heeft"^^xsd:string;
+    mim:relatierol <uuid:EAID_src4C8699_7EC8_4c48_AA15_F0A07511B637>
+.
+<uuid:EAID_77F008F2_70B5_41ca_B072_61BF9AD71599> a mim:Objecttype;
+    mim:naam "IdentiteitPartijen"^^xsd:string
+.
+<uuid:EAID_79028B0D_4BB3_434a_9D1A_8D340D810ABE> a mim:PrimitiefDatatype;
+    mim:naam "Time"^^xsd:string
 .
 <uuid:EAID_79D9D9AC_4B21_4fea_A99D_CC7C0917B059> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/CanonHerziening>;
-    mim:naam "herziening"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "herziening"^^xsd:string;
+    mim:type <uuid:EAID_D69896DD_45EA_49ef_AE16_0FDCBF4BE138>
+.
+<uuid:EAID_7A76738E_1ED6_4596_8482_D26E966A2D8C> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "teller"^^xsd:string;
+    mim:type <uuid:EAID_F38912FB_7856_4a9d_AF96_CB2238371C04>
 .
 <uuid:EAID_7BB763BC_08F1_489b_8C02_2C6D435510DA> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/BegrenzingPerceel>;
-    mim:naam "begrenzingPerceel"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "begrenzingPerceel"^^xsd:string;
+    mim:type <uuid:EAID_BB22F120_C7B2_4c67_B59C_134BBC6C9486>
 .
 <uuid:EAID_7BDC2305_37FE_4a5a_B8FF_0BA4C018E103> a mim:Relatiesoort;
     mim:bron <uuid:EAID_8E18D907_1F75_40b5_A79C_46D4F53AB071>;
     mim:doel <uuid:EAID_CAA27791_43E7_4a01_9C1A_99713B5622C4>;
-    mim:naam "van"^^xsd:string
+    mim:naam "vanZakelijkRecht"^^xsd:string
 .
 <uuid:EAID_7C1A1376_9E0E_4ac0_B456_D191F63F64F8> a mim:Objecttype;
     mim:begripsterm "http://kad.zorgeloosvastgoed.nl/id/concept/BeperktRecht "^^xsd:string;
     mim:naam "BeperktRecht"^^xsd:string
 .
+<uuid:EAID_7C6F689F_4BD7_480c_AF1D_81DF9A559F97> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_979BE0AA_5CD4_4aee_A5D4_0D8F226DA3C8>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
+.
+<uuid:EAID_7D01B2EE_7102_489e_BDA5_11735CEE2965> a mim:Objecttype;
+    mim:naam "Ingebrekestelling"^^xsd:string
+.
+<uuid:EAID_7D099919_8C46_4fd2_B31F_F9D2B864F4A0> a mim:Objecttype;
+    mim:naam "Eigendomsoverdracht"^^xsd:string
+.
 <uuid:EAID_7D103280_AF27_437b_B31D_D04599E2A57D> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/VoorwaardeIdentificatie>;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_7D9EA3FD_F4F2_4918_A01D_F4013C5C3497> a mim:Referentielijst;
+    mim:definitie "Referentielijst KadastraleGemeente is een opsomming van de mogelijke Kadastrale gemeenten.";
+    mim:naam "KadastraleGemeente"^^xsd:string
 .
 <uuid:EAID_7E8592E4_295A_4d03_8027_73CFF94D1E5A> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/KoopStandaardBetalingsconditie>;
     mim:definitie "Als true(ja) dan standaard betalingscondities";
-    mim:naam "standaardBetalingsconditie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "standaardBetalingsconditie"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_7EAA2A9F_31D4_494e_A60F_4365BFF41056> a mim:Attribuutsoort;
     mim:definitie "De geboorteplaats is de plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren";
-    mim:naam "geboorteplaats"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "geboorteplaats"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_7EB1E333_9AC7_4831_92C5_2AF7E08D6A8A> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "voorwaadenTekst"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_7ECCC940_3E6A_4d8a_A51E_0A74641494F5> a mim:Objecttype;
     mim:attribuut <uuid:EAID_09D70025_0330_4886_894B_46B961095AF2>;
@@ -538,7 +954,16 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
 .
 <uuid:EAID_800E7296_9289_44d5_A353_02B1C4948BF1> a mim:Attribuutsoort;
     mim:definitie "datumOverlijden is de datum waarop de persoon overleden is.";
-    mim:naam "datumOverlijden"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "datumOverlijden"^^xsd:string;
+    mim:type <uuid:EAID_162A96E4_F53B_454c_86B4_63B2F473C893>
+.
+<uuid:EAID_802E17B5_810C_4c95_B06B_1D3CB269522F> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_E3BF3802_9C35_415f_B3DE_FBB7BD7712C2>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_8047D44B_74C1_4403_ADCC_D3DBAC83FBEC> a mim:Referentielijst;
+    mim:naam "AanduidingGeslacht"^^xsd:string
 .
 <uuid:EAID_8056F1D4_BF13_4ab4_8C71_F5DF2152C56F> a mim:Relatiesoort;
     mim:bron <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>;
@@ -552,17 +977,26 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
 .
 <uuid:EAID_834247E4_5324_442e_B9B2_477AA7FFC403> a mim:Attribuutsoort;
     mim:definitie "indicatieGeheim is een aanduiding die aangeeft dat gegevens van een persoon wel of niet verstrekt mogen worden.";
-    mim:naam "indicatieGeheim"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "indicatieGeheim"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_83466BC2_DE1E_406a_80BF_902A60D146BC> a mim:PrimitiefDatatype;
+    mim:naam "Tijd"^^xsd:string
 .
 <uuid:EAID_83CE81AD_8ACB_464e_A922_4BE1A97D0F86> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PersoonIdentificatie>;
     mim:definitie '''TBD:
 Identificatie is een door het ZorgeloosVastgoed toegekend landelijk uniek nummer aan een object binnen de Zorgeloos Vastgoed context. (registratie).''';
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_84C3F2B6_C809_4b5a_9D64_0528CB131509> a mim:Attribuutsoort;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/TenaamstellingIdentificatie>;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_8710575F_F18C_456c_A6B1_4666A7D866BB> a mim:Relatiesoort;
     mim:bron <uuid:EAID_8E18D907_1F75_40b5_A79C_46D4F53AB071>;
@@ -570,10 +1004,12 @@ Identificatie is een door het ZorgeloosVastgoed toegekend landelijk uniek nummer
     mim:naam "aangebodenDoor"^^xsd:string
 .
 <uuid:EAID_8797E569_3544_4bd5_B594_2E18F821ED5A> a mim:Objecttype;
+    mim:alias "Activiteit"^^xsd:string;
     mim:attribuut <uuid:EAID_70AB0027_54AE_4c41_BA17_6737375721BC>;
     mim:attribuut <uuid:EAID_C9372558_FBD0_46a7_B400_9A90C4E7497B>;
     mim:attribuut <uuid:EAID_D836FFB1_2C31_4639_A865_E36674382EF3>;
-    mim:naam "Activiteit"^^xsd:string
+    mim:begrip <http://www.w3.org/ns/prov#Activity>;
+    mim:naam "Activity"^^xsd:string
 .
 <uuid:EAID_87CFF4D1_E061_41b8_81B5_8589BE036512> a mim:Generalisatie;
     mim:subtype <uuid:EAID_AEEF8312_D021_4aac_B90B_EEF214E9A260>;
@@ -582,7 +1018,12 @@ Identificatie is een door het ZorgeloosVastgoed toegekend landelijk uniek nummer
 <uuid:EAID_88146508_B162_462a_B1D5_0F4E4663CE70> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/AdellijkeTitelPredikaat>;
     mim:definitie "adellijkeTitelOfPredikaat is de adellijke titel of het predikaat dat behoort tot de naam  van de persoon (bij adellijke titel geslachtsnaam, bij predikaat voornaam).";
-    mim:naam "adellijkeTitelOfPredikaat"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "adellijkeTitelOfPredikaat"^^xsd:string;
+    mim:type <uuid:EAID_504659C8_55E9_49b9_B17D_1211E9BF5443>
+.
+<uuid:EAID_894AA05A_DC00_40e3_8353_FE51516ADD96> a mim:Referentielijst;
+    mim:naam "VerbintenisSoort"^^xsd:string
 .
 <uuid:EAID_898A9CD9_A52B_407b_9419_591F4EF01637> a mim:Objecttype;
     mim:attribuut <uuid:EAID_4AA4A23C_7571_44c7_AB5A_505D640CAA1F>;
@@ -591,12 +1032,21 @@ Identificatie is een door het ZorgeloosVastgoed toegekend landelijk uniek nummer
     mim:naam "DocumentIdentiteit"^^xsd:string
 .
 <uuid:EAID_8A204AAE_2B32_42e0_8682_56F6E8B9A154> a mim:Attribuutsoort;
-    mim:naam "financieringsbedrag"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "financieringsbedrag"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
+.
+<uuid:EAID_8B49D605_93AE_4b3a_ABAF_52AFEBFA4540> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "verplichtingenDerden"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_8B971582_5366_4d2e_8596_6AB05A994621> a mim:Attribuutsoort;
     mim:definitie '''Het moment waarop het voorkomen  in de registratie is vervallen. Wanneer deze waarde niet is opgegeven is
 de instantie nog geldig.''';
-    mim:naam "eindRegistratie"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "eindRegistratie"^^xsd:string;
+    mim:type <uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7>
 .
 <uuid:EAID_8DA7CB71_702B_43ca_858F_68F976D009E1> a mim:Generalisatie;
     mim:subtype <uuid:EAID_D48CA4E0_38A8_464f_A0AF_3DA24BE784B6>;
@@ -605,7 +1055,9 @@ de instantie nog geldig.''';
 <uuid:EAID_8DC4C584_1CE5_4dcc_928C_848F0EC319E4> a mim:Attribuutsoort;
     mim:definitie '''Het moment waarop het voorkomen  in de werkelijkheid is vervallen. Wanneer deze waarde niet is opgegeven
 is de instantie nog geldig.''';
-    mim:naam "tijdstipVervallenOR"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "tijdstipVervallenOR"^^xsd:string;
+    mim:type <uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7>
 .
 <uuid:EAID_8E18D907_1F75_40b5_A79C_46D4F53AB071> a mim:Objecttype;
     mim:attribuut <uuid:EAID_6DDF283D_6CF9_4bc3_9A4F_7435235812FF>;
@@ -617,32 +1069,50 @@ is de instantie nog geldig.''';
 .
 <uuid:EAID_8EDD0270_B2C2_4ba1_9D54_BEC698F5A77F> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/RechtshandelingIdentificatie>;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_8F53E2FF_5BD1_481d_8CD7_ADB7A01CAD4A> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_05E1F45F_2980_454d_A77A_D79C13C418CE>;
+    mim:supertype <uuid:EAID_F022CA42_4F72_4508_9C55_9C89F328A1A1>
 .
 <uuid:EAID_90733022_3014_4b6e_8AAB_6351F8C8D9DE> a mim:Relatiesoort;
     mim:bron <uuid:EAID_DE56DBA5_AA7E_47b0_AFA3_3AB5BA2EB1E1>;
     mim:doel <uuid:EAID_8E18D907_1F75_40b5_A79C_46D4F53AB071>;
-    mim:naam "hoortBij"^^xsd:string;
+    mim:naam "isOnderdeelVan"^^xsd:string;
     mim:relatierol <uuid:EAID_src733022_3014_4b6e_8AAB_6351F8C8D9DE>
+.
+<uuid:EAID_9114E2AE_DF77_41b4_9B76_26A57EA70C77> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_7D099919_8C46_4fd2_B31F_F9D2B864F4A0>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
 .
 <uuid:EAID_91AD6CCA_814C_4fdb_B3D6_C1787ED19B87> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/AanduidingNaamgrbruik>;
     mim:definitie "aanduidingNaamgebruik is een aanduiding voor de wijze van aanschrijving van de ingeschrevene.";
-    mim:naam "aanduidingNaamgebruik"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "aanduidingNaamgebruik"^^xsd:string;
+    mim:type <uuid:EAID_1FE133E8_D4AE_453f_BEF1_FBF3A624F0DE>
 .
 <uuid:EAID_91CF35C1_FBCD_4a9c_83CD_524DC8E0A89D> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/AardClausule>;
-    mim:naam "aardClausule"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "aardClausule"^^xsd:string;
+    mim:type <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
 .
 <uuid:EAID_9329B5AF_1CEB_4e86_9359_337253F5393C> a mim:Attribuutsoort;
     mim:definitie '''Opvolgend nummer ter identificatie van een versie indien de
 identificatie van die versie niet wijzigt. Initieel heeft dit
 attribuut de waarde 0.''';
-    mim:naam "volgnummer"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "volgnummer"^^xsd:string;
+    mim:type <uuid:EAID_F38912FB_7856_4a9d_AF96_CB2238371C04>
 .
 <uuid:EAID_9397C5A4_CFB6_4493_BFE9_F86142793236> a mim:Attribuutsoort;
     mim:definitie "Status geeft de status van de versie van het voorkomen aan (geldig/correctie/audit). De waarden zijn opgenomen in een waardelijst.";
-    mim:naam "statusHistorie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "statusHistorie"^^xsd:string;
+    mim:type <uuid:EAID_A3CF5837_28D8_4172_A310_E77102E76B23>
 .
 <uuid:EAID_95A369F3_8302_4aa5_A1B9_6D64FF24B295> a mim:Generalisatie;
     mim:subtype <uuid:EAID_9FB8E66F_178A_4a4c_B311_A50CDC7EA840>;
@@ -661,7 +1131,16 @@ attribuut de waarde 0.''';
     mim:naam "metInformatieVan"^^xsd:string
 .
 <uuid:EAID_962D8E4E_58E1_4a4f_9F9B_00EED3BBB11D> a mim:Attribuutsoort;
-    mim:naam "isAanwijzingRijksmonumentBekend"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isAanwijzingRijksmonumentBekend"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_979BE0AA_5CD4_4aee_A5D4_0D8F226DA3C8> a mim:Objecttype;
+    mim:naam "Bedenktijd"^^xsd:string
+.
+<uuid:EAID_98B58B72_3980_4f73_9673_654DDBE1786D> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_77F008F2_70B5_41ca_B072_61BF9AD71599>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
 .
 <uuid:EAID_98C5D89B_0209_406d_BE33_958C318A3442> a mim:Generalisatie;
     mim:subtype <uuid:EAID_470EE595_892E_477e_A5E2_A1EE3B1A02AE>;
@@ -669,11 +1148,23 @@ attribuut de waarde 0.''';
 .
 <uuid:EAID_994D4868_6E48_4660_BE58_EE35FA2BC31E> a mim:Attribuutsoort;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/Leveringsdatum>;
-    mim:naam "datumAfspraak"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "datumAfspraak"^^xsd:string;
+    mim:type <uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7>
+.
+<uuid:EAID_99A0C8CA_58F9_4a10_90BC_2BE21CD6DC53> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "wegneemrechtHuurder"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_9B43C4B0_1A49_42fc_94B3_8C7B34ABE9C7> a mim:Objecttype;
+    mim:naam "Ondertekening"^^xsd:string
 .
 <uuid:EAID_9D9DA025_F632_40f6_9E0F_87F3A3E65010> a mim:Attribuutsoort;
     mim:definitie "Het tijdstipRegistratieOR is het moment waarop de akte in het openbaar register is ingeschreven. De gegevens in de registratie (van dit voorkomen) zijn op deze akte gebaseerd.";
-    mim:naam "tijdstipRegistratieOR"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "tijdstipRegistratieOR"^^xsd:string;
+    mim:type <uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7>
 .
 <uuid:EAID_9E3FB716_CADE_4753_80F1_656CE65D20BA> a mim:Objecttype;
     mim:attribuut <uuid:EAID_9F7F68BE_F54B_4f0f_9B70_9F031F5525B6>;
@@ -683,19 +1174,33 @@ attribuut de waarde 0.''';
 <uuid:EAID_9EBF8FC2_2B55_433b_9985_E69941C58B04> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/AlgemeneErfpachtvoorwaarden>;
     mim:definitie "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden.";
-    mim:naam "algemeneErfpachtvoorwaarden"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "algemeneErfpachtvoorwaarden"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_9F3D0152_7181_4fc8_9D56_47A4B348A38D> a mim:Attribuutsoort;
-    mim:naam "adres"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "adres"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_9F7F68BE_F54B_4f0f_9B70_9F031F5525B6> a mim:Attribuutsoort;
-    mim:naam "aandeel"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "aandeel"^^xsd:string;
+    mim:type <uuid:EAID_12A119F9_2F94_442e_B47F_FF26168411E3>
 .
 <uuid:EAID_9FB8E66F_178A_4a4c_B311_A50CDC7EA840> a mim:Objecttype;
     mim:attribuut <uuid:EAID_09BD0457_3102_4c0d_BA47_3677451D36C5>;
     mim:attribuut <uuid:EAID_453F510D_D03E_4fdc_80F8_55B3D0324C42>;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak>;
     mim:naam "OnroerendeZaak"
+.
+<uuid:EAID_A186A020_B3AB_4690_B2D0_09D2790DDD09> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_6AE676B5_F43E_4160_B091_BBDD125D033C>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
+.
+<uuid:EAID_A19D3B18_3E06_4252_AEE0_9A5C3395B171> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_9B43C4B0_1A49_42fc_94B3_8C7B34ABE9C7>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
 .
 <uuid:EAID_A21B26D3_51AD_4c57_9237_588540F46958> a mim:Gegevensgroeptype;
     mim:attribuut <uuid:EAID_0C8E69F1_B3A4_4499_87F8_18A764EC2E3C>;
@@ -704,17 +1209,45 @@ attribuut de waarde 0.''';
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/KostenEnOverdrachtsbelasing>;
     mim:naam "KostenEnOverdrachtsbelasting"^^xsd:string
 .
+<uuid:EAID_A24E10EC_0DD8_40fb_AF35_97B52BE8A073> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_1FE133E8_D4AE_453f_BEF1_FBF3A624F0DE>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_A3201878_0A0D_4e9d_B038_C53042691BCA> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_7D9EA3FD_F4F2_4918_A01D_F4013C5C3497>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
 <uuid:EAID_A38DAFDE_834A_485f_8991_8D74AC6E70FE> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/KvKNummer>;
     mim:definitie "Het KvKNummer is een uniek identificerend administratienummer van een rechtspersoon zijnde een niet-natuurlijk persoon zoals toegewezen door de Kamer van Koophandel";
-    mim:naam "kvkNummer"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "kvkNummer"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_A3CF5837_28D8_4172_A310_E77102E76B23> a mim:Referentielijst;
+    mim:naam "StatusHistorie"^^xsd:string
+.
+<uuid:EAID_A4B575B9_15CC_4cb7_8227_677D3433DBFC> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_E6F4CE8B_46AF_47d2_BA54_4F182ECF3E23>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
 .
 <uuid:EAID_A5A0B174_BD72_4f0b_B6D5_553DEBBD4B76> a mim:Attribuutsoort;
-    mim:naam "uiterlijkeDatumGarantie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "uiterlijkeDatumGarantie"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
+.
+<uuid:EAID_A5AB7EF1_68AE_4162_A9CD_94162D2528F2> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_8047D44B_74C1_4403_ADCC_D3DBAC83FBEC>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
 .
 <uuid:EAID_A682234D_EA37_4e4d_9846_536C5A17D718> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenWaarde>;
-    mim:naam "waarde"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "waarde"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
+.
+<uuid:EAID_A69F4EF6_65B9_4a9f_BB90_B6BA3C08CB4D> a mim:PrimitiefDatatype;
+    mim:naam "YearMonth"^^xsd:string
 .
 <uuid:EAID_A76F126A_32DE_4914_8FDE_1C811F1A8074> a mim:Relatiesoort;
     mim:bron <uuid:EAID_8797E569_3544_4bd5_B594_2E18F821ED5A>;
@@ -723,31 +1256,58 @@ attribuut de waarde 0.''';
 .
 <uuid:EAID_A8146DD7_6246_4b24_9BE8_38D10AD1F529> a mim:Objecttype;
     mim:begrip <http://not.zorgeloosvastgoed.nl/id/concept/IdentificatiePersoon>;
-    mim:naam "Identificatie Persoon"^^xsd:string
+    mim:naam "IdentificatiePersoon"^^xsd:string
 .
 <uuid:EAID_A9B66E91_89DC_49d5_ACE5_19429B96FAF1> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Naam>;
     mim:definitie '''De geslachtsnaam is de (geslachts)naam waarvan de eventueel aanwezige voorvoegsels en <a href="https://www.amsterdam.nl/stelselpedia/brp-index/catalogus-brp/objectklasse-4/tabel-38-adellijke/"><font color="#0000ff"><u>adellijke titel</u></font></a> zijn afgesplitst.''';
-    mim:naam "geslachtsnaam"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "geslachtsnaam"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_A9F66AA2_E3BF_4725_8B4E_374112D36690> a mim:PrimitiefDatatype;
+    mim:definitie '''TypePostcode is samengesteld datatype voor het vastleggen van een postcode.
+.''';
+    mim:naam "TypePostcode"^^xsd:string
 .
 <uuid:EAID_AABCD4B3_0AAC_4fae_9E65_93BBBAD5193A> a mim:Generalisatie;
     mim:subtype <uuid:EAID_F924BACE_C916_4753_ADBA_94D30426AA4B>;
     mim:supertype <uuid:EAID_9624A353_103C_456d_AB98_ED3D2235809A>
 .
 <uuid:EAID_AAF01974_30FE_4480_AA25_101CFB0AE7D6> a mim:Attribuutsoort;
-    mim:naam "kostenKoperofVerkoper"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "kostenKoperofVerkoper"^^xsd:string;
+    mim:type <uuid:EAID_3A52C749_9562_4c63_8BF0_0C2A0D4DB0DF>
+.
+<uuid:EAID_AC240311_8D94_42a4_9D3A_0D8382F8A144> a mim:DataElement;
+    mim:definitie "meestal eens per 30 jaar";
+    mim:kardinaliteit "1..1";
+    mim:naam "datumHerziening"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
+.
+<uuid:EAID_AC3A24A8_F5FC_4161_969C_122D4B9AD9DD> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_E6B51C30_CF01_4674_A3C0_607D657D68DC>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
 .
 <uuid:EAID_ACE04D1B_E3EF_4695_8FDB_5993D10129B8> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_01D15C51_BD27_4ad8_8D09_E7A628F9535A>;
+    mim:attribuut <uuid:EAID_07BF65CD_5AA6_4d2f_A978_0168A88E8B5B>;
     mim:attribuut <uuid:EAID_0B99DC1D_7F2F_4f12_84B8_5FE89ABF41BE>;
     mim:attribuut <uuid:EAID_0F817D84_EB0D_49f0_825A_B9F254A3E766>;
+    mim:attribuut <uuid:EAID_1542BA05_6E43_4e4f_B81B_A96198235B42>;
     mim:attribuut <uuid:EAID_30DA9C49_F368_45cf_921F_CFC534D4E050>;
     mim:attribuut <uuid:EAID_38B481D5_24CE_4362_9D52_09BF5A0F4D58>;
     mim:attribuut <uuid:EAID_3D0B0658_B5AD_462b_AB57_12CDE153AF1F>;
+    mim:attribuut <uuid:EAID_483B8614_0F3F_462d_831C_FF7927D4CE45>;
     mim:attribuut <uuid:EAID_6CE3B463_E955_4abb_8B45_68EFB08FF140>;
+    mim:attribuut <uuid:EAID_8B49D605_93AE_4b3a_ABAF_52AFEBFA4540>;
     mim:attribuut <uuid:EAID_962D8E4E_58E1_4a4f_9F9B_00EED3BBB11D>;
+    mim:attribuut <uuid:EAID_99A0C8CA_58F9_4a10_90BC_2BE21CD6DC53>;
     mim:attribuut <uuid:EAID_B750BA58_68B9_457e_A3C5_25747D267F17>;
+    mim:attribuut <uuid:EAID_B9E117AE_700A_4701_AC4F_C1EF1C5F7659>;
     mim:attribuut <uuid:EAID_C087ED87_6409_4617_8D1C_D5E669FD16AD>;
     mim:attribuut <uuid:EAID_F441A9A9_F633_4c19_88B4_F8B05CBBDC12>;
+    mim:attribuut <uuid:EAID_F5FCFAC2_5358_4590_8AA6_C0DA177C1B32>;
     mim:naam "StaatOnroerendeZaak"^^xsd:string
 .
 <uuid:EAID_ADF5951B_2060_4ca6_BBDD_051E44B3F88E> a mim:Objecttype;
@@ -759,20 +1319,45 @@ attribuut de waarde 0.''';
     mim:attribuut <uuid:EAID_A5A0B174_BD72_4f0b_B6D5_553DEBBD4B76>;
     mim:naam "BankgarantieOfWaarborgsom"^^xsd:string
 .
+<uuid:EAID_AE489F79_919B_4daf_BC8E_A5F56765A975> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_2DE22614_DE36_44ca_94B6_76E160C20711>;
+    mim:dataElement <uuid:EAID_3934CBFA_800C_4eca_B13A_886401AEF7C3>;
+    mim:definitie "Oppervlakte.";
+    mim:naam "TypeOppervlak"^^xsd:string
+.
 <uuid:EAID_AEEF8312_D021_4aac_B90B_EEF214E9A260> a mim:Objecttype;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Eigendom>;
     mim:naam "Eigendom"^^xsd:string
+.
+<uuid:EAID_B18F8209_191D_4708_A89F_E9E5FA174E3D> a mim:Objecttype;
+    mim:naam "InGebrekestellingOfOntbinding"^^xsd:string
+.
+<uuid:EAID_B3F92A1B_AF64_4313_961D_A639F05D4634> a mim:PrimitiefDatatype;
+    mim:naam "JaarMaand"^^xsd:string
 .
 <uuid:EAID_B4A0EF4B_4721_44c4_BE12_975AD89D01A4> a mim:Generalisatie;
     mim:subtype <uuid:EAID_F022CA42_4F72_4508_9C55_9C89F328A1A1>;
     mim:supertype <uuid:EAID_16D39029_C62B_4efb_861F_E04E8794843F>
 .
+<uuid:EAID_B51BB062_E4D9_4911_938D_151055233DCD> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_23E2194D_19FC_48ba_8586_B30C1862F1A7>;
+    mim:dataElement <uuid:EAID_E58A4150_9474_4d6b_9797_02A3B24C8368>;
+    mim:naam "Indexering"^^xsd:string
+.
+<uuid:EAID_B6228770_4680_450c_A177_712CDA7D0CD9> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_BD7F8005_EB22_481b_91E9_593D455C9D01>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
+.
 <uuid:EAID_B6A2F368_7581_46b1_81E5_155CEC110498> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PartijIdentificatie>;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_B750BA58_68B9_457e_A3C5_25747D267F17> a mim:Attribuutsoort;
-    mim:naam "gebruik"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "gebruik"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_B865A197_C216_486d_BBAD_1764163F9735> a mim:Objecttype;
     mim:attribuut <uuid:EAID_422DDB5E_AF5A_4f00_ACBF_410CCB6486CB>;
@@ -781,14 +1366,30 @@ attribuut de waarde 0.''';
 .
 <uuid:EAID_B89F2F8C_FC1B_4c90_9084_3CAC428A9F9C> a mim:Gegevensgroep;
     mim:gegevensgroeptype <uuid:EAID_2543A689_C42B_4b86_BF86_C09AF5A65740>;
-    mim:naam "metErfpachtCanon"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "metErfpachtCanon"^^xsd:string;
+    mim:type <uuid:EAID_2543A689_C42B_4b86_BF86_C09AF5A65740>
 .
 <uuid:EAID_B92CC679_D6ED_4b1d_92C5_7965B8C333C7> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/ZakelijkRechtIdentificatie>;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_E93EFA54_4CFB_4e08_80C9_1F4043C2BC6F>
+.
+<uuid:EAID_B9E117AE_700A_4701_AC4F_C1EF1C5F7659> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "aanschrijvingOverheidNutsbedrijf"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_BA3F1D1B_AC35_4fbb_B2D8_80CB7CC1EADA> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "tijd"^^xsd:string;
+    mim:type <uuid:EAID_83466BC2_DE1E_406a_80BF_902A60D146BC>
 .
 <uuid:EAID_BAE9BDBD_E1B5_49d8_9EF7_36315D19658D> a mim:Attribuutsoort;
-    mim:naam "maximaleHerstelKosten"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "maximaleHerstelKosten"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
 .
 <uuid:EAID_BB0674EC_2CE3_499f_ADF4_4CF6A1A85775> a mim:Relatiesoort;
     mim:bron <uuid:EAID_48AD7DF4_3BE1_4588_8BBB_1ED39A4B851E>;
@@ -796,22 +1397,46 @@ attribuut de waarde 0.''';
     mim:doel <uuid:EAID_5E4F1500_0A67_4d58_85D5_274CC21EE948>;
     mim:naam "gerelateerdeOpenbareRuimte"^^xsd:string
 .
+<uuid:EAID_BB22F120_C7B2_4c67_B59C_134BBC6C9486> a mim:PrimitiefDatatype;
+    mim:alias "Vlak"^^xsd:string;
+    mim:naam "GM_Surface"^^xsd:string
+.
 <uuid:EAID_BB76A8F3_135B_4375_B785_077433F8FBEA> a mim:Generalisatie;
     mim:subtype <uuid:EAID_ADF5951B_2060_4ca6_BBDD_051E44B3F88E>;
     mim:supertype <uuid:EAID_672C5BB6_1ABE_4230_83B3_14866F0AC669>
 .
 <uuid:EAID_BB8DD28C_2F66_45b4_B60F_B4AED1F7CD08> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/StatutaireNaam>;
-    mim:naam "statutaireNaam"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "statutaireNaam"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_BBA189C0_CAF6_45be_AFAA_B430B4D43CDA> a mim:Attribuutsoort;
-    mim:naam "overdrachtOvereenkomsten"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "overdrachtOvereenkomsten"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_BBE59C1B_50D3_438a_B661_6ABF359D48BE> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_4BFBA567_FBA2_4e84_8DED_2C68944F73D0>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_BC52C885_0B0E_41bf_84A9_3E0A228F5C83> a mim:Referentielijst;
+    mim:definitie "Referentielijst SoortCanon";
+    mim:naam "ErfpachtType"^^xsd:string
 .
 <uuid:EAID_BD581A2B_8A84_46e4_ADD9_ACD56EE1EEA0> a mim:Gegevensgroeptype;
     mim:attribuut <uuid:EAID_800E7296_9289_44d5_A353_02B1C4948BF1>;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Overlijden>;
     mim:definitie "Overlijden is een groep gegevens over het overlijden van een persoon.";
     mim:naam "Overlijden"^^xsd:string
+.
+<uuid:EAID_BD7F8005_EB22_481b_91E9_593D455C9D01> a mim:Objecttype;
+    mim:naam "Betaling"^^xsd:string
+.
+<uuid:EAID_BE25D230_D55C_47dc_A4D3_4492D42E3BF9> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "aanpassingsTermijn"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_BE45F1BA_4077_4298_BABD_F4A15959008C> a mim:Relatiesoort;
     mim:bron <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>;
@@ -820,15 +1445,21 @@ attribuut de waarde 0.''';
 .
 <uuid:EAID_BE998726_9CED_4a85_B58E_E3D52D2054C6> a mim:Attribuutsoort;
     mim:definitie "URI https://bag.basisregistraties.overheid.nl/id/begrip/Huisletter";
-    mim:naam "huisletter"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "huisletter"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_BEF5D4E0_4952_4355_BC8E_3CCAD98EAD23> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Koopsom>;
-    mim:naam "koopsom"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "koopsom"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
 .
 <uuid:EAID_BF011193_EEBB_4792_BCD0_46A62A1A69CC> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/BijzondereErfpachtvoorwaarden>;
-    mim:naam "bijzondereErfpachtvoorwaarden"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "bijzondereErfpachtvoorwaarden"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_BFB3117B_CCDB_4c32_AA8D_A4BD68D65A3B> a mim:Objecttype;
     mim:attribuut <uuid:EAID_6C7B4809_F134_4fee_8359_A03C2DD14DD8>;
@@ -837,31 +1468,52 @@ attribuut de waarde 0.''';
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Tenaamstelling>;
     mim:naam "Tenaamstelling"^^xsd:string
 .
+<uuid:EAID_C00CB558_1E09_44ae_BD8D_53579E7CDB2D> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_B18F8209_191D_4708_A89F_E9E5FA174E3D>;
+    mim:supertype <uuid:EAID_F022CA42_4F72_4508_9C55_9C89F328A1A1>
+.
 <uuid:EAID_C069BFFE_B41A_48c2_AC22_BB62BA1991D7> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Verrekeningoverdrachtsbelasingart13>;
-    mim:naam "verrekeningOverdrachtsbelastingArt13"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "verrekeningOverdrachtsbelastingArt13"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_C08223F6_ED6B_4fc7_AE7F_ACF61A9633C8> a mim:Gegevensgroep;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Naam>;
     mim:gegevensgroeptype <uuid:EAID_7F819EAA_77FC_4b94_96DE_9EE55E835EC1>;
-    mim:naam "naam"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "naam"^^xsd:string;
+    mim:type <uuid:EAID_7F819EAA_77FC_4b94_96DE_9EE55E835EC1>
 .
 <uuid:EAID_C087ED87_6409_4617_8D1C_D5E669FD16AD> a mim:Attribuutsoort;
-    mim:naam "isArtikel55WetBodembeschermingBekend"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isArtikel55WetBodembeschermingBekend"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_C36539D6_8DF6_440a_87E2_6F490A3DF4B5> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_45F48CFF_4A2A_4318_8726_DD3ACCC94008>;
+    mim:dataElement <uuid:EAID_BE25D230_D55C_47dc_A4D3_4492D42E3BF9>;
+    mim:naam "Aanpassing"^^xsd:string
 .
 <uuid:EAID_C6A2C553_85D2_4575_AF04_F04EDF996AE8> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/VoorbehoudBedrag>;
-    mim:naam "bedrag"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "bedrag"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
 .
 <uuid:EAID_C8A9ECED_8F26_46ff_9536_4696423B6529> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Huisnummer>;
     mim:definitie "URI https://bag.basisregistraties.overheid.nl/id/begrip/Huisnummer";
-    mim:naam "huisnummer"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "huisnummer"^^xsd:string;
+    mim:type <uuid:EAID_F38912FB_7856_4a9d_AF96_CB2238371C04>
 .
 <uuid:EAID_C9372558_FBD0_46a7_B400_9A90C4E7497B> a mim:Attribuutsoort;
     mim:definitie '''Registratie
 Recherche''';
-    mim:naam "activiteitNaam"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "activiteitNaam"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_CA93E700_9D86_4995_AA67_BCBF87114EB0> a mim:Objecttype;
     mim:attribuut <uuid:EAID_5EF0C930_9540_4aad_A3F2_F0CAD108CA81>;
@@ -874,9 +1526,21 @@ Recherche''';
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/ZakelijkRecht>;
     mim:naam "ZakelijkRecht"^^xsd:string
 .
+<uuid:EAID_CBB9CA2A_6F01_43c4_9167_6236B0B2785D> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "ongevorderdLeeg"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_CCB609CB_E1D8_448d_B163_4044643B111B> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "datum"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
+.
 <uuid:EAID_CD2C7F3A_09E2_4352_A43D_0990B469076D> a mim:Attribuutsoort;
     mim:definitie "Voorvoegselsgeslachtsnaam zijn dat deel van de geslachtsnaam dat voorkomt in Tabel 36, Voorvoegseltabel en, gescheiden door een spatie, vooraf gaat aan de rest van de geslachtsnaam.";
-    mim:naam "voorvoegselsgeslachtsnaam"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "voorvoegselsgeslachtsnaam"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_CDC88E90_B234_4a96_A70C_F67681D8AE12> a mim:Generalisatie;
     mim:subtype <uuid:EAID_487DB418_86F9_41f6_9D98_572B1EB3703C>;
@@ -884,7 +1548,9 @@ Recherche''';
 .
 <uuid:EAID_CF81FAB3_CF42_4547_B46D_81A6081EBB6A> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/RegistergoedIdentificatie>;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_E93EFA54_4CFB_4e08_80C9_1F4043C2BC6F>
 .
 <uuid:EAID_D04FD057_BF08_4bb7_8752_128E58F8AD99> a mim:Objecttype;
     mim:attribuut <uuid:EAID_1500DA40_5A3D_4711_9211_1B07186A962F>;
@@ -893,10 +1559,14 @@ Recherche''';
     mim:naam "Perceel"^^xsd:string
 .
 <uuid:EAID_D06C7BD1_0202_45ac_8D5A_42D413320B3C> a mim:Attribuutsoort;
-    mim:naam "registratieKostenToedeling"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "registratieKostenToedeling"^^xsd:string;
+    mim:type <uuid:EAID_3A52C749_9562_4c63_8BF0_0C2A0D4DB0DF>
 .
 <uuid:EAID_D0C242F8_518C_40a3_9020_BBA422EA7C90> a mim:Attribuutsoort;
-    mim:naam "identificatie"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_D2A78D35_1EBD_4286_A23E_D2C82C63ED96> a mim:Objecttype;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden>;
@@ -904,11 +1574,17 @@ Recherche''';
 .
 <uuid:EAID_D3262785_03B3_45a0_9FAB_82136DA8C03E> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenReferentie>;
-    mim:naam "lijstReferentie"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "lijstReferentie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_D38008AD_F03F_48d2_AE27_6CB20DAF0004> a mim:Generalisatie;
     mim:subtype <uuid:EAID_9E3FB716_CADE_4753_80F1_656CE65D20BA>;
     mim:supertype <uuid:EAID_24CD2AC3_7D09_4e81_B867_2E4E32C902D1>
+.
+<uuid:EAID_D3A0A274_72C7_4ee6_B9B9_EC5B07E7A0CB> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_D907BD58_50DB_40bf_996C_16A61BFE3AAA>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
 .
 <uuid:EAID_D48CA4E0_38A8_464f_A0AF_3DA24BE784B6> a mim:Objecttype;
     mim:attribuut <uuid:EAID_57AAEDBD_4264_40a6_BC34_EF20102C9EEA>;
@@ -918,6 +1594,11 @@ Recherche''';
     mim:subtype <uuid:EAID_EB110115_556B_42f2_AAAF_2A10FFBD14C7>;
     mim:supertype <uuid:EAID_7C1A1376_9E0E_4ac0_B456_D191F63F64F8>
 .
+<uuid:EAID_D69896DD_45EA_49ef_AE16_0FDCBF4BE138> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_4E92D43E_99FD_4859_9496_CE1CD3EBB39F>;
+    mim:dataElement <uuid:EAID_AC240311_8D94_42a4_9D3A_0D8382F8A144>;
+    mim:naam "Herziening"^^xsd:string
+.
 <uuid:EAID_D6EBB5BB_3C37_434a_8016_DD7C27B7E0A5> a mim:Relatiesoort;
     mim:bron <uuid:EAID_48AD7DF4_3BE1_4588_8BBB_1ED39A4B851E>;
     mim:definitie '''---Definitie---
@@ -925,12 +1606,41 @@ Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDU
     mim:doel <uuid:EAID_B865A197_C216_486d_BBAD_1764163F9735>;
     mim:naam "gerelateerdeWoonplaats"^^xsd:string
 .
+<uuid:EAID_D6FEFF9E_004C_4026_9BDB_5F3941DA2972> a mim:GestructureerdDatatype;
+    mim:dataElement <uuid:EAID_D9CF0598_9A42_4b56_A3CD_6C65289C65A0>;
+    mim:dataElement <uuid:EAID_F3E04458_C9FF_4d59_A053_5470E52068ED>;
+    mim:dataElement <uuid:EAID_F7E35161_B2F6_46c0_B76E_F4F19408EC9B>;
+    mim:definitie "Unieke objectaanduiding binnen een gemeente, bestaande uit 16 cijfers.";
+    mim:naam "Objectnummering"^^xsd:string
+.
 <uuid:EAID_D836FFB1_2C31_4639_A865_E36674382EF3> a mim:Attribuutsoort;
-    mim:naam "startTijd"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "startTijd"^^xsd:string;
+    mim:type <uuid:EAID_366435A3_6E41_4add_A833_21873B97D7C7>
+.
+<uuid:EAID_D907BD58_50DB_40bf_996C_16A61BFE3AAA> a mim:Referentielijst;
+    mim:naam "SoortGarantie"^^xsd:string
+.
+<uuid:EAID_D9CF0598_9A42_4b56_A3CD_6C65289C65A0> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "objecttypecode"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_DA73B047_CC15_412a_8224_97E19254DA75> a mim:Referentielijst;
+    mim:naam "StellenOfStorten"^^xsd:string
+.
+<uuid:EAID_DAB6A78C_1FE9_4ecf_9DB3_45B541679D62> a mim:PrimitiefDatatype;
+    mim:naam "URI"^^xsd:string
+.
+<uuid:EAID_DB62FB98_D1C4_47c4_88E3_6E305F627ED0> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_2EABC9AF_FC6C_41ef_82FF_CEDB2121C0CA>;
+    mim:supertype <uuid:EAID_F022CA42_4F72_4508_9C55_9C89F328A1A1>
 .
 <uuid:EAID_DC2A37D6_181D_438c_996A_77091E275FC0> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/CanonIndexering>;
-    mim:naam "indexering"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "indexering"^^xsd:string;
+    mim:type <uuid:EAID_B51BB062_E4D9_4911_938D_151055233DCD>
 .
 <uuid:EAID_DE56DBA5_AA7E_47b0_AFA3_3AB5BA2EB1E1> a mim:Objecttype;
     mim:attribuut <uuid:EAID_A682234D_EA37_4e4d_9846_536C5A17D718>;
@@ -950,19 +1660,50 @@ Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDU
 <uuid:EAID_DF91CE06_7A0C_40f4_AC2B_368F11CC4427> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/PartnerschapDatumOntbinding>;
     mim:definitie "datumOntbinding is de datum waarop het huwelijk/geregistreerd partnerschap is ontbonden of nietig verklaard.";
-    mim:naam "datumOntbinding"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "datumOntbinding"^^xsd:string;
+    mim:type <uuid:EAID_162A96E4_F53B_454c_86B4_63B2F473C893>
 .
 <uuid:EAID_E00DAAF7_2E00_45cb_AA90_5B569A4BD4AE> a mim:Generalisatie;
     mim:subtype <uuid:EAID_7ECCC940_3E6A_4d8a_A51E_0A74641494F5>;
     mim:supertype <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>
 .
+<uuid:EAID_E0AAEB1B_E737_4c4c_959A_3D88A8C45C1A> a mim:ReferentieElement;
+    mim:definitie "De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geassocieerd is met de meegeleverde code is onbepaald.";
+    mim:kardinaliteit "0..1";
+    mim:naam "waarde"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_E1274F5F_B4A6_4c28_A9A0_6169C972854B> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_504659C8_55E9_49b9_B17D_1211E9BF5443>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_E3BF3802_9C35_415f_B3DE_FBB7BD7712C2> a mim:Referentielijst;
+    mim:naam "Rechtsvorm"^^xsd:string
+.
 <uuid:EAID_E40799E4_71C6_48ec_A852_931CE5AF349C> a mim:Gegevensgroep;
     mim:gegevensgroeptype <uuid:EAID_F2B5280F_8C22_4b3f_80E5_282D68F21FC3>;
-    mim:naam "geboorte"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "geboorte"^^xsd:string;
+    mim:type <uuid:EAID_F2B5280F_8C22_4b3f_80E5_282D68F21FC3>
+.
+<uuid:EAID_E58A4150_9474_4d6b_9797_02A3B24C8368> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "indexeringsTermijn"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_E6738509_6636_4ebb_B3A7_2D079B1693B8> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/AanwijzerNotaris>;
-    mim:naam "aanwijzerNotaris"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "aanwijzerNotaris"^^xsd:string;
+    mim:type <uuid:EAID_3A52C749_9562_4c63_8BF0_0C2A0D4DB0DF>
+.
+<uuid:EAID_E6B51C30_CF01_4674_A3C0_607D657D68DC> a mim:Referentielijst;
+    mim:definitie "Referentielijst SoortGrootte is een opsomming van de mogelijke typen soorten van de grootte van een perceel.";
+    mim:naam "SoortGrootte"^^xsd:string
+.
+<uuid:EAID_E6F4CE8B_46AF_47d2_BA54_4F182ECF3E23> a mim:Referentielijst;
+    mim:naam "BRPLand"^^xsd:string
 .
 <uuid:EAID_E71C598B_B507_4dcd_B4D6_DD39AE84F20E> a mim:Relatiesoort;
     mim:bron <uuid:EAID_D2A78D35_1EBD_4286_A23E_D2C82C63ED96>;
@@ -978,21 +1719,37 @@ Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDU
     mim:definitie '''onbekend,
 eigenverklaring
 gerechercheerd''';
-    mim:naam "bevoegdheid"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "bevoegdheid"^^xsd:string;
+    mim:type <uuid:EAID_335576D6_0DD9_4de6_8414_4060D2401448>
+.
+<uuid:EAID_E93EFA54_4CFB_4e08_80C9_1F4043C2BC6F> a mim:PrimitiefDatatype;
+    mim:definitie "Het NEN3610ID-2020 is een datatype om de identificatie vast te leggen, conform NEN3610-2020.";
+    mim:naam "NEN3610ID"^^xsd:string
 .
 <uuid:EAID_EABD8195_DAF5_475a_AB32_3AB0CE79E14E> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Telefoon>;
-    mim:naam "telefoonnummer"^^xsd:string
+    mim:kardinaliteit "1..-1";
+    mim:naam "telefoonnummer"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_EB110115_556B_42f2_AAAF_2A10FFBD14C7> a mim:Objecttype;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Erfdienstbaarheid>;
     mim:naam "Erfdienstbaarheid"^^xsd:string
 .
+<uuid:EAID_ED4CFD6D_FF09_4b7d_A977_62EB72ACF2EA> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_335576D6_0DD9_4de6_8414_4060D2401448>;
+    mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
 <uuid:EAID_ED6D2318_01BE_41d9_A0A4_CA40262DF637> a mim:Attribuutsoort;
-    mim:naam "rechercheReferentie"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "rechercheReferentie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_F00DB5D0_6BEA_4f6c_8F4D_2E3F6C7BB7CD> a mim:Attribuutsoort;
-    mim:naam "aandeel"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "aandeel"^^xsd:string;
+    mim:type <uuid:EAID_12A119F9_2F94_442e_B47F_FF26168411E3>
 .
 <uuid:EAID_F022CA42_4F72_4508_9C55_9C89F328A1A1> a mim:Objecttype;
     mim:attribuut <uuid:EAID_189AA4A8_D962_4af3_A4E4_A946482921A3>;
@@ -1000,7 +1757,9 @@ gerechercheerd''';
 .
 <uuid:EAID_F1F55F0A_5698_41fe_A723_C2744A061638> a mim:Attribuutsoort;
     mim:definitie "Het geboorteland is de naam, die het land aangeeft waar de persoon is geboren.";
-    mim:naam "geboorteland"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "geboorteland"^^xsd:string;
+    mim:type <uuid:EAID_E6F4CE8B_46AF_47d2_BA54_4F182ECF3E23>
 .
 <uuid:EAID_F2742983_ECBB_49cb_9865_74DA523FFBB7> a mim:Generalisatie;
     mim:subtype <uuid:EAID_6979DE6B_D410_494c_BBA6_0C316ED45AF7>;
@@ -1014,16 +1773,28 @@ gerechercheerd''';
     mim:definitie "Geboorte is een groep gegevens over de geboorte van een GeregisteerdPersoon.";
     mim:naam "Geboorte"^^xsd:string
 .
+<uuid:EAID_F38912FB_7856_4a9d_AF96_CB2238371C04> a mim:PrimitiefDatatype;
+    mim:naam "Integer"^^xsd:string
+.
+<uuid:EAID_F3E04458_C9FF_4d59_A053_5470E52068ED> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "gemeentecode"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
 <uuid:EAID_F409188E_4DD3_4eff_AFF4_B7225BE9F496> a mim:Generalisatie;
     mim:subtype <uuid:EAID_CA93E700_9D86_4995_AA67_BCBF87114EB0>;
     mim:supertype <uuid:EAID_80A94808_571F_401c_B5DD_D5C2842A7869>
 .
 <uuid:EAID_F441A9A9_F633_4c19_88B4_F8B05CBBDC12> a mim:Attribuutsoort;
-    mim:naam "isOndergrondsetankBekend"^^xsd:string
+    mim:kardinaliteit "1..1";
+    mim:naam "isOndergrondsetankBekend"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_F4C8AF79_E98C_43cc_96E5_F39CA96D1EBA> a mim:Attribuutsoort;
     mim:definitie "URI https://bag.basisregistraties.overheid.nl/id/begrip/Huisnummertoevoeging";
-    mim:naam "huisnummertoevoeging"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "huisnummertoevoeging"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_F5522265_E5DF_4647_B167_9E6CB205150E> a mim:Generalisatie;
     mim:subtype <uuid:EAID_1F1AAA64_7A94_4b50_A1D3_19A31AB894CA>;
@@ -1031,12 +1802,24 @@ gerechercheerd''';
 .
 <uuid:EAID_F567CEC6_7732_4b93_BA07_B4D88101BA25> a mim:Attribuutsoort;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/CanonVooruitbetaald>;
-    mim:naam "datumVooruitbetaling"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "datumVooruitbetaling"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
+.
+<uuid:EAID_F56B4F07_F962_4c0a_BE5B_539FC03A4E10> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_14E80CF6_AAF3_44c1_8125_57B33CCB5619>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
+.
+<uuid:EAID_F5FCFAC2_5358_4590_8AA6_C0DA177C1B32> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "inspectie"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
 <uuid:EAID_F5FD2E21_89F2_4fef_A828_DF37242CE7F0> a mim:Relatiesoort;
     mim:bron <uuid:EAID_BFB3117B_CCDB_4c32_AA8D_A4BD68D65A3B>;
     mim:doel <uuid:EAID_CAA27791_43E7_4a01_9C1A_99713B5622C4>;
-    mim:naam "van"^^xsd:string
+    mim:naam "van"^^xsd:string;
+    mim:relatierol <uuid:EAID_srcFD2E21_89F2_4fef_A828_DF37242CE7F0>
 .
 <uuid:EAID_F6072CD9_EA91_4d72_8594_A02304752067> a mim:Relatiesoort;
     mim:bron <uuid:EAID_7C1A1376_9E0E_4ac0_B456_D191F63F64F8>;
@@ -1047,9 +1830,22 @@ gerechercheerd''';
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Appartementsrecht>;
     mim:naam "Appartementsrecht"^^xsd:string
 .
+<uuid:EAID_F7E35161_B2F6_46c0_B76E_F4F19408EC9B> a mim:DataElement;
+    mim:kardinaliteit "1..1";
+    mim:naam "nummer"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
 <uuid:EAID_F924BACE_C916_4753_ADBA_94D30426AA4B> a mim:Objecttype;
     mim:definitie "Een ObjectlocatieBinnenland is een adres binnen nederland.";
     mim:naam "ObjectlocatieBinnenland"^^xsd:string
+.
+<uuid:EAID_FA258613_AB62_4adb_80F9_531923335C36> a mim:DataElement;
+    mim:definitie '''De kadastrale gemeente, deel van de kadastrale aanduiding van de onroerende zaak. De waarden komen uit een Waardelijst.
+
+Er zijn 1111 kadastrale gemeentenamen. Elke kadastrale gemeentenaam is uniek.''';
+    mim:kardinaliteit "1..1";
+    mim:naam "kadastraleGemeente"^^xsd:string;
+    mim:type <uuid:EAID_7D9EA3FD_F4F2_4918_A01D_F4013C5C3497>
 .
 <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F> a mim:Objecttype;
     mim:attribuut <uuid:EAID_83CE81AD_8ACB_464e_A922_4BE1A97D0F86>;
@@ -1058,7 +1854,9 @@ gerechercheerd''';
 .
 <uuid:EAID_FA90C8CE_2728_40ef_8AA4_C6F3B8C10712> a mim:Attribuutsoort;
     mim:definitie "De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst.";
-    mim:naam "voornamen"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "voornamen"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
 .
 <uuid:EAID_FB53815E_F414_4032_B476_A5871C2B58D7> a mim:Relatiesoort;
     mim:bron <uuid:EAID_8E18D907_1F75_40b5_A79C_46D4F53AB071>;
@@ -1069,44 +1867,60 @@ gerechercheerd''';
     mim:subtype <uuid:EAID_8E18D907_1F75_40b5_A79C_46D4F53AB071>;
     mim:supertype <uuid:EAID_249B94D8_8164_4ea3_B7BA_2F183B55DC6A>
 .
+<uuid:EAID_FC8CFD1F_45A2_4507_90DA_82453E61834B> a mim:PrimitiefDatatype;
+    mim:alias "Vlak"^^xsd:string;
+    mim:naam "Month"^^xsd:string
+.
 <uuid:EAID_src193C12_66E2_4a46_B0CA_C55174D4AEB5> a mim:RelatierolBron;
-    mim:naam "wordtUitgevoerdIn"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "wordtUitgevoerdIn"^^xsd:string;
+    mim:type <uuid:EAID_487DB418_86F9_41f6_9D98_572B1EB3703C>
 .
 <uuid:EAID_src416224_70E0_4de3_927A_EB76BB69BC13> a mim:RelatierolBron;
-    mim:naam "heerstMet"^^xsd:string
+    mim:naam "heerstMet"^^xsd:string;
+    mim:type <uuid:EAID_EB110115_556B_42f2_AAAF_2A10FFBD14C7>
+.
+<uuid:EAID_src4C8699_7EC8_4c48_AA15_F0A07511B637> a mim:RelatierolBron;
+    mim:kardinaliteit "0..-1";
+    mim:naam "metLocatie"^^xsd:string;
+    mim:type <uuid:EAID_07735DCE_2E3A_4f3f_A739_4AE0F2BA5938>
 .
 <uuid:EAID_src733022_3014_4b6e_8AAB_6351F8C8D9DE> a mim:RelatierolBron;
-    mim:naam "bevat"^^xsd:string
+    mim:kardinaliteit "0..1";
+    mim:naam "bevat"^^xsd:string;
+    mim:type <uuid:EAID_DE56DBA5_AA7E_47b0_AFA3_3AB5BA2EB1E1>
+.
+<uuid:EAID_src838751_6C8C_475f_9E9F_DECABBF8194E> a mim:RelatierolBron;
+    mim:kardinaliteit "0..-1";
+    mim:naam "gebruikt"^^xsd:string;
+    mim:type <uuid:EAID_16D39029_C62B_4efb_861F_E04E8794843F>
 .
 <uuid:EAID_src92E551_33C8_476d_B554_4BE05A17877B> a mim:RelatierolBron;
     mim:begripsterm '''$ea_notes=Description: Verwijzing naar een begrip. De verwijzing heeft de vorm van een term of een URI.
 '''^^xsd:string;
-    mim:naam "vertegenwoordigdDoor"^^xsd:string
+    mim:naam "vertegenwoordigdDoor"^^xsd:string;
+    mim:type <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>
+.
+<uuid:EAID_srcCD3D04_DC66_4750_A28D_C8F2E790A98D> a mim:RelatierolBron;
+    mim:naam "contactVia"^^xsd:string;
+    mim:type <uuid:EAID_61AFF3F4_8919_4592_8240_F2845529373D>
 .
 <uuid:EAID_srcCFBE1A_9D91_412a_BA51_BFD1F4A9AE43> a mim:RelatierolBron;
-    mim:naam "isVerbondenIn"^^xsd:string
+    mim:kardinaliteit "0..-1";
+    mim:naam "isVerbondenIn"^^xsd:string;
+    mim:type <uuid:EAID_1673F612_35C9_4a3b_A184_00CAC2C33C5F>
 .
 <uuid:EAID_srcDCCB81_D96D_49b3_8B6D_320CF28B790C> a mim:RelatierolBron;
-    mim:naam "isBelastMet"^^xsd:string
+    mim:naam "isBelastMet"^^xsd:string;
+    mim:type <uuid:EAID_CAA27791_43E7_4a01_9C1A_99713B5622C4>
 .
-<uuid:EAJava_CharacterString> a mim:PrimitiefDatatype;
-    mim:naam "CharacterString"^^xsd:string
+<uuid:EAID_srcE16794_21C6_4495_83AB_82BA8FB74C56> a mim:RelatierolBron;
+    mim:kardinaliteit "0..-1";
+    mim:naam "metIdentificatie"^^xsd:string;
+    mim:type <uuid:EAID_A8146DD7_6246_4b24_9BE8_38D10AD1F529>
 .
-<uuid:EAJava_Date> a mim:PrimitiefDatatype;
-    mim:naam "Date"^^xsd:string
-.
-<uuid:EAJava_DateTime> a mim:PrimitiefDatatype;
-    mim:naam "DateTime"^^xsd:string
-.
-<uuid:EAJava_Integer> a mim:PrimitiefDatatype;
-    mim:naam "Integer"^^xsd:string
-.
-<uuid:EAJava_Real> a mim:PrimitiefDatatype;
-    mim:naam "Real"^^xsd:string
-.
-<uuid:EAJava_Year> a mim:PrimitiefDatatype;
-    mim:naam "Year"^^xsd:string
-.
-<uuid:EAJava_boolean> a mim:PrimitiefDatatype;
-    mim:naam "boolean"^^xsd:string
+<uuid:EAID_srcFD2E21_89F2_4fef_A828_DF37242CE7F0> a mim:RelatierolBron;
+    mim:kardinaliteit "1..-1";
+    mim:naam "heeft"^^xsd:string;
+    mim:type <uuid:EAID_BFB3117B_CCDB_4c32_AA8D_A4BD68D65A3B>
 .
