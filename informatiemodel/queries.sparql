@@ -3,21 +3,211 @@
 ###################
 
 1. Uploaden XMI
-2. Uitvoeren: "Create model from MIM"
-3. Voer de queries uit m.b.t. het opschonen van het MIM model
-4. Ga naar "Edit MIM model", fix prefixes en sla deze op als mim/model-mim-ld.ttl
-5. Uitvoeren: "Create model from MIM"
-6. Voer de queries uit m.b.t. het opschonen van het model (dwz: de ontologie)
-7. Ga naar "Edit model", fix prefixes en sla deze op als rdf/ontologie.ttl
-8. Ga naar Download, Grafische weergave (technische namen) en sla yEd plaatje op als rdf/ontologie.graphml en rdf/ontologie.png
-9. Herlaad het model, voer de queries uit voor de shapesgraph en query verwijderen string datatype (onder Model opschonen)
-10. Ga naar "Edit model", fix prefixes en sla deze op als shapesgraph.ttl
-11. Herlaad het model, voer de queries uit voor de owl-rdfs en query verwijderen string datatype (onder Model opschonen)
-12. Ga naar "Edit model", fix prefixes en sla deze op als owl-rdfs-ontologie.ttl
+2. Voer de queries uit m.b.t. het opschonen van het UML model
+3. Uitvoeren: "Create MIM model from UML"
+4. Voer de queries uit m.b.t. het opschonen van het MIM model
+5. Ga naar "Edit MIM model", fix prefixes en sla deze op als mim/model-mim-ld.ttl
+6. Uitvoeren: "Create model from MIM"
+7. Voer de queries uit m.b.t. het opschonen van het model (dwz: de ontologie)
+8. Ga naar "Edit model", fix prefixes en sla deze op als rdf/ontologie.ttl
+9. Ga naar Download, Grafische weergave (technische namen) en sla yEd plaatje op als rdf/ontologie.graphml en rdf/ontologie.png
+10. Herlaad het model, voer de queries uit voor de shapesgraph en query verwijderen string datatype (onder Model opschonen)
+11. Ga naar "Edit model", fix prefixes en sla deze op als shapesgraph.ttl
+12. Herlaad het model, voer de queries uit voor de owl-rdfs en query verwijderen string datatype (onder Model opschonen)
+13. Ga naar "Edit model", fix prefixes en sla deze op als owl-rdfs-ontologie.ttl
+
+###################
+# UML Model opschonen
+###################
+
+# Wijzig 1 specifiek datatype van klasse uml:Class naar uml:DataType
+PREFIX uml: <http://schema.omg.org/spec/UML/2.1.1#>
+DELETE {
+  GRAPH <http://localhost:8080/data2model/container/data> {
+    <uuid:EAID_BB22F120_C7B2_4c67_B59C_134BBC6C9486> a uml:Class.
+  }
+}
+INSERT {
+  GRAPH <http://localhost:8080/data2model/container/data> {
+    <uuid:EAID_BB22F120_C7B2_4c67_B59C_134BBC6C9486> a uml:DataType.
+  }
+}
+WHERE {
+  GRAPH <http://localhost:8080/data2model/container/data> {
+    <uuid:EAID_BB22F120_C7B2_4c67_B59C_134BBC6C9486> a uml:Class.
+  }
+}
+
+# Wijzig "interface" stereotype in "Primitief datatype" stereotype
+#
+PREFIX uml: <http://schema.omg.org/spec/UML/2.1.1#>
+PREFIX ea: <http://www.sparxsystems.com/extender/EA6.5#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+DELETE {
+  GRAPH <http://localhost:8080/data2model/container/data> {
+    ?class ea:stereotype ?stereotype.
+  }
+}
+INSERT {
+  GRAPH <http://localhost:8080/data2model/container/data> {
+    ?class ea:stereotype "Primitief datatype"^^xsd:string.
+  }
+}
+WHERE {
+  GRAPH <http://localhost:8080/data2model/container/data> {
+    ?class a uml:DataType.
+    ?class ea:stereotype ?stereotype.
+    FILTER REGEX(?stereotype,"^interface$","i")
+  }
+}
 
 ###################
 # Model opschonen
 ###################
+
+# Omzetten van primitieve datatypen naar standaard xsd datatypen
+# Zie ook: https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
+#
+#string
+prefix test: <http://test/def#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:CharacterString
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype xsd:string
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:CharacterString
+  }
+}
+#boolean
+prefix test: <http://test/def#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:Boolean
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype xsd:boolean
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:Boolean
+  }
+}
+#integer
+prefix test: <http://test/def#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:Integer
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype xsd:integer
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:Integer
+  }
+}
+#date
+prefix test: <http://test/def#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:Date
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype xsd:date
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:Date
+  }
+}
+#dateTime
+prefix test: <http://test/def#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:DateTime
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype xsd:dateTime
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:DateTime
+  }
+}
+#Surface
+prefix test: <http://test/def#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix sf: <http://www.opengis.net/ont/sf#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:GM_Surface
+  }
+}
+insert {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype sf:Surface
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?prop sh:datatype test:GM_Surface
+  }
+}
+
+# Verwijder verwijzing naar klasse Waardelijst
+#
+prefix test: <http://test/def#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s rdfs:subClassOf test:Waardelijst
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?s rdfs:subClassOf test:Waardelijst
+  }
+}
+# Verwijder ongebruikte datatypen
+#
+prefix sh: <http://www.w3.org/ns/shacl#>
+delete {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?type ?ptype ?otype
+  }
+}
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?type a rdf:Datatype.
+    ?type ?ptype ?otype.
+    FILTER NOT EXISTS {
+      ?prop sh:datatype ?type
+    }
+  }
+}
 
 # Verwijder string datatype
 #
@@ -275,3 +465,34 @@ where {
     }
   }
 }
+
+# Ontbrekende datatypen
+PREFIX ea: <http://www.sparxsystems.com/extender/EA6.5#>
+PREFIX uml: <http://schema.omg.org/spec/UML/2.1.1#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mim: <http://bp4mc2.org/def/mim#>
+select distinct ?class ?stereotype ?type ?type_label
+where {
+  graph <http://localhost:8080/data2model/container/data> {
+    ?attr uml:type ?type.
+    ?type rdfs:label ?type_label.
+    ?type a ?class.
+    ?type ea:stereotype ?stereotype
+  }
+  FILTER NOT EXISTS {
+    graph <http://localhost:8080/data2model/container/mim> {
+      ?datatype rdfs:seeAlso ?type
+    }
+  }
+}
+
+# Datatypen die wel/niet in gebruik zijn
+prefix sh: <http://www.w3.org/ns/shacl#>
+select ?type (count(?prop) as ?aantal)
+where {
+  graph <http://localhost:8080/data2model/container/model> {
+    ?type a rdf:Datatype.
+    OPTIONAL {?prop sh:datatype ?type}
+  }
+}
+group by ?type
