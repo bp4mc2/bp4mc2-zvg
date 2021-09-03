@@ -120,7 +120,7 @@ kad:Rechthebbende a skos:Concept;
 kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
-#	skos:exactMatch brk:AanwijzingWVG; 
+#	skos:exactMatch brk:AanwijzingWVG;
 	skos:definition "Een aanwijzing door de gemeenteraad dat een vervreemder kan eerst tot kan vervreemding overgaan nadat de gemeente in de gelegenheid is gesteld het desbetreffende goed te verkrijgen."@nl;
 	rdfs:comment "Een besluit van de gemeenteraad dat een huis eerst aan de gemeente moet worden aangeboden voordat het openbaar te koop wordt gezet"@nl;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0003391&artikel=2>;
@@ -128,7 +128,7 @@ kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
 kad:BeschikkingWetBodembescherming a skos:Concept, skoslex:Act;
 	rdfs:label "Beschikking of bevel wet bodembescherming"@nl;
 	skos:prefLabel "Beschikking of bevel wet bodembescherming"@nl;
-#	skos:exactMatch brk:BeschikkingWetBodembescherming; 
+#	skos:exactMatch brk:BeschikkingWetBodembescherming;
 skos:definition "Een vaststelling van gedeputeerde staten dat sprake is van een geval van ernstige verontreiniging of de naar het oordeel van gedeputeerde staten noodzakelijke maatregelen ten einde de oorzaak van de verontreiniging of aantasting weg te nemen en de verontreiniging of de aantasting en de directe gevolgen daarvan te beperken en zoveel mogelijk ongedaan te maken als ten gevolge van een ongewoon voorval een geval van ernstige verontreiniging ontstaat of de bodem ernstig is of dreigt te worden aangetast."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
 .
@@ -148,7 +148,7 @@ kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
 #	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster;
 	rdfs:label "Bijwerking basisregistratie Kadaster"@nl;
 	skos:prefLabel "Bijwerking basisregistratie Kadaster"@nl;
-	skos:definition "Bijwerking van de Basisregistratie Kadaster vindt plaats als bijhouding dan wel als vernieuwing."@nl; 
+	skos:definition "Bijwerking van de Basisregistratie Kadaster vindt plaats als bijhouding dan wel als vernieuwing."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53>;
 	skoslex:object kad:BasisregistratieKadaster;
 	skoslex:actor kad:Bewaarder;
@@ -170,7 +170,7 @@ kad:DoorhalingBeslag a skos:Concept, skoslex:Act;
 #	skos:exactMatch brk:DoorhalingBeslag'
 	skos:definition "De inschrijving van het beslag kan worden doorgehaald als de bewaarder  tot doorhaling wordt gemachtigd door een ingeschreven schriftelijke verklaring van de deurwaarder dat hij in opdracht van de executant het beslag opheft of dat het beslag is vervallen of door een rechterlijke uitspraak die tot opheffing van het beslag strekt."@nl;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=513>;
-	skoslex:object kad:Beslag; 
+	skoslex:object kad:Beslag;
 	skos:broaderGeneric kad:Doorhaling;
 .
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
@@ -182,7 +182,7 @@ kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skos:definition "Doorhaling hypotheek is het inschrijven van een authentieke akte die een verklaring van de schuldeiser bevat, dat de op het bezwaarde goed rustende hypotheek is vervallen, deze machtigt de bewaarder tot doorhaling van de hypotheek."@nl;
 	rdfs:comment "Een doorhaling hypotheek is een authentieke akte waarin degene die het hypotheekrecht heeft (meestal een bank), dat de hypotheek is komen te vervallen."@nl;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=274>;
-	skoslex:object not:RechtVanHypotheek; 
+	skoslex:object not:RechtVanHypotheek;
 	skos:broaderGeneric kad:Doorhaling;
 .
 kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
@@ -520,7 +520,7 @@ kad:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	skos:definition "Het recht van hypotheek is een beperkt recht, strekkende om op de daaraan onderworpen registergoederen, een vordering tot voldoening van een geldsom bij voorrang boven andere schuldeisers te verhalen."@nl;
 	rdfs:comment "Het recht van hypotheek is een beperkt recht en houdt in dat een bank of andere geldgever een huis of ander registergoed mag verkopen als de eigenaar de lening die ten grondslag ligt aan het recht van hypotheek niet meer kan terugbetalen. Het geld uit de verkoop gaat eerst naar de bank of geldgever die het recht op hypotheek heeft. Als er nog geld overblijft, gaat dat naar andere schuldeisers."@nl;
 	skos:semanticRelation kad:Registergoed;
-	skosthes:broaderGeneric:kad:BeperktRecht;
+	skosthes:broaderGeneric kad:BeperktRecht;
 .
 kad:Registergoed a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Registergoed;
@@ -693,7 +693,7 @@ kad:EinddatumRecht a skos:Concept;
 	rdfs:label "Einddatum recht"@nl;
 	skos:prefLabel "Einddatum recht"@nl;
 	skos:definition "EinddatumRecht is de datum waarop een recht eindigt."@nl;
-	skosthes:semanticRelation kad:Erfpacht; 
+	skosthes:semanticRelation kad:Erfpacht;
 .
 kad:GeschatteGrootte a skos:Concept;
 	skos:exactMatch brk:Geschatte_grootte;
@@ -712,7 +712,7 @@ kad:Grootte a skos:Concept;
 	rdfs:comment "De grootte van een perceel is de omvang van een perceel. De grootte drukken we uit in een oppervlakte – eenheid, bijvoorbeeld: hectare, are of centiare of in vierkante meters.."@nl;
 	skos:semanticRelation kad:Perceel;
 .
-kad:Hoofdsom a skos:Concept; 
+kad:Hoofdsom a skos:Concept;
 	skos:exactMatch brk:Hoofdsom;
 	rdfs:label "Hoofdsom"@nl;
 	skos:prefLabel "Hoofdsom"@nl;
@@ -847,7 +847,7 @@ kad:GekozenWoonplaats a skos:Concept;
 	rdfs:label "Gekozen woonplaats"@nl;
 	skos:prefLabel "Gekozen woonplaats"@nl;
 	skos:definition "Een Gekozen woonplaats is een woonplaats van een natuurlijk persoon die hij in afwijking van artikel 1:10 Burgerlijk Wetboek kan kiezen, wanneer de wet hem daartoe verplicht, of wanneer de keuze bij schriftelijke of langs elektronische weg aangegane overeenkomst voor een of meer bepaalde rechtshandelingen of rechtsbetrekkingen geschiedt en voor de gekozen woonplaats een redelijk belang aanwezig is."@nl;
-	rdfs:comment "Een gekozen woonplaats is dat iemand afspreekt in welke plaats hij bepaalde beslissingen zal nemen of acties zal doen. Soms bepaalt de wet die plaats. Soms beslist de persoon zelf in een overeenkomst wat de plaats wordt."@nl; 
+	rdfs:comment "Een gekozen woonplaats is dat iemand afspreekt in welke plaats hij bepaalde beslissingen zal nemen of acties zal doen. Soms bepaalt de wet die plaats. Soms beslist de persoon zelf in een overeenkomst wat de plaats wordt."@nl;
 	skos:semanticRelation zv:NatuurlijkPersoon;
 	skosthes:broaderPartitive kad:Rechtshandeling;
 .

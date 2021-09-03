@@ -747,9 +747,9 @@ mak:ArtikelWoonplaats a skos:Concept, skoslex:Record;
 mak:ArtikelRegistratieKoopovereenkomst a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 13: Registratie koopovereenkomst"@nl;
 	skos:prefLabel "Artikel 13: Registratie koopovereenkomst"@nl;
-	rdfs:comment "Zodra de koopovereenkomst is getekend door beide partijen, bestaat de mogelijkheid deze te laten inschrijven in de openbare registers. Of partijen dit al dan niet willen, wordt in artikel 13 aangegeven. De notaris zal, zodra hij de koopovereenkomst heeft ontvangen, de inschrijving verzorgen. 
-Het laten inschrijven van de koopovereenkomst in de openbare registers heeft tot gevolg dat latere faillissementen, overdrachten, beslagen, en een later gevestigd voorkeursrecht van de gemeente niet tegen koper kunnen worden ingeroepen. De inschrijving heeft aldus een dubbele basis: inschrijving op grond van het Burgerlijk Wetboek (als bescherming tegen latere faillissementen, overdrachten en beslagen) en inschrijving op grond van de Wet voorkeursrecht gemeenten (als bescherming tegen een later gevestigd voorkeursrecht). 
-Als het passeren van de akte van levering (zie artikel 4) langer dan zes maanden na de aankoop is gepland, is het verstandig om nader advies in te winnen over het beste moment van inschrijving. De inschrijving heeft namelijk een geldigheidsduur van zes maanden. Overigens, ook als niet direct opdracht aan de notaris wordt verstrekt om de koopovereenkomst in te laten schrijven, behoudt koper het recht om dat op eigen kosten alsnog te laten doen. Dat geldt ook voor het laten inschrijven op een eerder moment dan in de koopovereenkomst is opgenomen."@nl;
+	rdfs:comment '''Zodra de koopovereenkomst is getekend door beide partijen, bestaat de mogelijkheid deze te laten inschrijven in de openbare registers. Of partijen dit al dan niet willen, wordt in artikel 13 aangegeven. De notaris zal, zodra hij de koopovereenkomst heeft ontvangen, de inschrijving verzorgen.
+Het laten inschrijven van de koopovereenkomst in de openbare registers heeft tot gevolg dat latere faillissementen, overdrachten, beslagen, en een later gevestigd voorkeursrecht van de gemeente niet tegen koper kunnen worden ingeroepen. De inschrijving heeft aldus een dubbele basis: inschrijving op grond van het Burgerlijk Wetboek (als bescherming tegen latere faillissementen, overdrachten en beslagen) en inschrijving op grond van de Wet voorkeursrecht gemeenten (als bescherming tegen een later gevestigd voorkeursrecht).
+Als het passeren van de akte van levering (zie artikel 4) langer dan zes maanden na de aankoop is gepland, is het verstandig om nader advies in te winnen over het beste moment van inschrijving. De inschrijving heeft namelijk een geldigheidsduur van zes maanden. Overigens, ook als niet direct opdracht aan de notaris wordt verstrekt om de koopovereenkomst in te laten schrijven, behoudt koper het recht om dat op eigen kosten alsnog te laten doen. Dat geldt ook voor het laten inschrijven op een eerder moment dan in de koopovereenkomst is opgenomen.'''@nl;
 	skos:scopeNote "Artikel 13 van de model koopovereenkomst."@nl;
 	skoslex:isAbout not:InschrijvenKoopovereenkomst;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -766,14 +766,14 @@ mak:ArtikelOntbindendeVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 15.1: Ontbindende voorwaarden"@nl;
 	skos:prefLabel "Artikel 15.1: Ontbindende voorwaarden"@nl;
 	skos:definition "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden."@nl;
-	rdfs:comment "In artikel 15.1. kunnen één of meer data opgenomen worden voor ontbindende voorwaarden. Een ontbindende voorwaarde biedt één of meer partijen de mogelijkheid om in bepaalde gevallen de koopovereenkomst te ontbinden. Bijvoorbeeld als koper de financiering niet rond krijgt (a), geen Nationale Hypotheek Garantie krijgt (b) of een bouwtechnische keuring negatief uitpakt (c). Het is verstandig de termijnen reëel vast te stellen, afhankelijk van de periode om de financiering, de Nationale Hypotheek Garantie rond te krijgen of een bouwtechnische keuring uit te laten voeren. Naast de in artikel 15 lid 1 genoemde ontbindende voorwaarden voor de financiering, de Nationale Hypotheek Garantie en de bouwtechnische keuring kunnen partijen nog andere ontbindende voorwaarden afspreken. Het is van belang dat alle afgesproken ontbindende voorwaarden goed in de koopovereenkomst worden vastgelegd.
+	rdfs:comment '''In artikel 15.1. kunnen één of meer data opgenomen worden voor ontbindende voorwaarden. Een ontbindende voorwaarde biedt één of meer partijen de mogelijkheid om in bepaalde gevallen de koopovereenkomst te ontbinden. Bijvoorbeeld als koper de financiering niet rond krijgt (a), geen Nationale Hypotheek Garantie krijgt (b) of een bouwtechnische keuring negatief uitpakt (c). Het is verstandig de termijnen reëel vast te stellen, afhankelijk van de periode om de financiering, de Nationale Hypotheek Garantie rond te krijgen of een bouwtechnische keuring uit te laten voeren. Naast de in artikel 15 lid 1 genoemde ontbindende voorwaarden voor de financiering, de Nationale Hypotheek Garantie en de bouwtechnische keuring kunnen partijen nog andere ontbindende voorwaarden afspreken. Het is van belang dat alle afgesproken ontbindende voorwaarden goed in de koopovereenkomst worden vastgelegd.
 
-In verband met de hypothekenrichtlijn mag een geldverstrekker niet een voorlopige offerte, dat wil zeggen een offerte met voorbehouden, verstrekken. Op grond van de richtlijn doet de geldverstrekker een bindend aanbod, ook wel bindende offerte genoemd. Dat is een offerte zonder voorbehouden. Dit heeft tot gevolg dat de geldverstrekker voorafgaand aan het uitbrengen van de bindende offerte moet beschikken over alle benodigde gegevens van koper, zoals inkomensgegevens, een werkgeversverklaring en een taxatierapport. In verband met de termijn van de ontbindende voorwaarde voor de financiering is het dus voor koper van belang dat hij alle benodigde stukken zo snel mogelijk aanlevert. 
+In verband met de hypothekenrichtlijn mag een geldverstrekker niet een voorlopige offerte, dat wil zeggen een offerte met voorbehouden, verstrekken. Op grond van de richtlijn doet de geldverstrekker een bindend aanbod, ook wel bindende offerte genoemd. Dat is een offerte zonder voorbehouden. Dit heeft tot gevolg dat de geldverstrekker voorafgaand aan het uitbrengen van de bindende offerte moet beschikken over alle benodigde gegevens van koper, zoals inkomensgegevens, een werkgeversverklaring en een taxatierapport. In verband met de termijn van de ontbindende voorwaarde voor de financiering is het dus voor koper van belang dat hij alle benodigde stukken zo snel mogelijk aanlevert.
 
-Onder de bruto jaarlast wordt verstaan het totale bedrag dat jaarlijks aan hypotheekrente, aflossing en (risico-)premies tezamen wordt betaald, alsmede eventuele extra aflossingen in verband met de afgegeven Nationale Hypotheek Garantie. 
+Onder de bruto jaarlast wordt verstaan het totale bedrag dat jaarlijks aan hypotheekrente, aflossing en (risico-)premies tezamen wordt betaald, alsmede eventuele extra aflossingen in verband met de afgegeven Nationale Hypotheek Garantie.
 
 Koper kan ook afzien van een of meer ontbindende voorwaarden, bijvoorbeeld omdat verkoper niet akkoord gaat met een ontbindende voorwaarde. Daar zijn echter wel risico’s aan verbonden. Als partijen bijvoorbeeld geen ontbindende voorwaarde voor financiering overeenkomen en artikel 15.1 onder a doorstrepen, dan heeft dit tot gevolg dat als koper wel een geldlening nodig heeft en deze niet krijgt, dat geen reden is om de koopovereenkomst te ontbinden. Het al dan niet slagen van de financiering van de onroerende zaak komt dan volledig voor rekening en risico van koper. Een vergelijkbaar gevolg heeft het afzien van het voorbehoud van een bouwtechnische keuring. Indien partijen kiezen om geen gebruik te maken van de ontbindende voorwaarde voor een bouwtechnische keuring door artikel 15.1 onder c door te strepen, dan heeft dit tot gevolg dat koper niet de mogelijkheid heeft om de koopovereenkomst te ontbinden als de kosten van direct noodzakelijk herstel van gebreken en achterstallig onderhoud hoger zijn dan waarop hij had gerekend. Verkoper kan overigens nog wel aansprakelijk zijn voor verborgen gebreken op grond van de koopovereenkomst of de wet.
-"@nl;
+'''@nl;
 	skos:scopeNote "Artikel 15.1 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout mak:Financieringsvoorbehoud;
@@ -783,14 +783,14 @@ Koper kan ook afzien van een of meer ontbindende voorwaarden, bijvoorbeeld omdat
 mak:ArtikelOntbindingVoorwaarden a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 15.3: Ontbinding op grond van ontbindende voorwaarden"@nl;
 	skos:prefLabel "Artikel 15.3: Ontbinding op grond van ontbindende voorwaarden"@nl;
-	rdfs:comment 'In het derde lid is een inspanningsverplichting van partijen opgenomen om al het redelijk mogelijke te doen om de financiering en/of Nationale Hypotheek Garantie, toezeggingen of andere zaken te verkrijgen. 
+	rdfs:comment '''In het derde lid is een inspanningsverplichting van partijen opgenomen om al het redelijk mogelijke te doen om de financiering en/of Nationale Hypotheek Garantie, toezeggingen of andere zaken te verkrijgen.
 
-De ontbinding van de koopovereenkomst geschiedt echter niet vanzelf, doch dient door degene die ontbindt aan de andere partij bekend te worden gemaakt. Partijen dienen overeen te komen, binnen hoeveel werkdagen na de datum waarop de ontbindende voorwaarde verstrijkt, het bericht van ontbinding door de wederpartij of diens makelaar moet zijn ontvangen. Zaterdagen, zondagen en algemeen erkende feestdagen tellen in de berekening niet mee. Aan het einde van de in 15.1 vermelde termijn staat vast of er een beroep op de ontbindende voorwaarde gedaan kan worden. Aan het einde van de in 15.3 genoemde termijn staat vast of er daadwerkelijk een beroep op de ontbindende voorwaarde is gedaan. 
+De ontbinding van de koopovereenkomst geschiedt echter niet vanzelf, doch dient door degene die ontbindt aan de andere partij bekend te worden gemaakt. Partijen dienen overeen te komen, binnen hoeveel werkdagen na de datum waarop de ontbindende voorwaarde verstrijkt, het bericht van ontbinding door de wederpartij of diens makelaar moet zijn ontvangen. Zaterdagen, zondagen en algemeen erkende feestdagen tellen in de berekening niet mee. Aan het einde van de in 15.1 vermelde termijn staat vast of er een beroep op de ontbindende voorwaarde gedaan kan worden. Aan het einde van de in 15.3 genoemde termijn staat vast of er daadwerkelijk een beroep op de ontbindende voorwaarde is gedaan.
 
 Het inroepen van ontbinding dient "schriftelijk en goed gedocumenteerd via gangbare communicatiemiddelen" te geschieden. Schriftelijk houdt in dat een telefoontje niet voldoende is. Wat “goed gedocumenteerd” inhoudt is afhankelijk van de inhoud van de ontbindende voorwaarde. Standaard is in de koopovereenkomst opgenomen dat koper één afwijzing moet overleggen om een beroep te doen op het financieringsvoorbehoud. In veel gevallen zal dit voldoende zijn. Geldverstrekkers zijn tegenwoordig zodanig aan regels gebonden door de Wet op het financieel toezicht dat er van uitgegaan mag worden dat een afwijzing van een geldverstrekker gebaseerd is op een grondige beoordeling van de financiële situatie van koper, zelfs als de afwijzing summier is geformuleerd. Als gevolg van gedragscodes en wetgeving wijken acceptatievoorwaarden van geldverstrekkers onderling niet of nauwelijks af. Het indienen van een aanvraag bij een tweede geldverstrekker zal dus waarschijnlijk eveneens tot een afwijzing leiden. Hiernaast geldt sinds 1 januari 2013 het provisieverbod. Dit houdt voor een koper in dat hij advieskosten moet betalen aan de hypotheekadviseur of de geldverstrekker. Als na één afwijzing duidelijk is dat de financiering niet rond komt, is het voor koper bezwaarlijk om nogmaals advieskosten te moeten betalen voor een tweede afwijzing. Daarnaast kan de factor tijd problemen geven als na de eerste afwijzing het traject nogmaals doorlopen moet worden. De termijn van de ontbindende voorwaarden kan daarvoor te kort zijn. Derhalve zal in veel gevallen het overleggen van één afwijzing voldoende zijn om gerechtvaardigd te kunnen ontbinden. Het staat partijen vrij om af te spreken dat meerdere afwijzingen moeten worden overlegd of dat er naast een afwijzing nog (een) ander(e) relevant(e) stuk(ken), waarover koper de beschikking heeft of redelijkerwijs moet kunnen krijgen, overlegd dient/dienen te worden. Indien partijen hiervan gebruik willen maken dan kunnen de vereiste stukken op de stippellijn in artikel 15.3 worden ingevuld. Dit kan bijvoorbeeld zijn een kopie van de aanvraag van de hypotheek, kopieën van  loonstroken, etc. Indien koper de ontbinding wenst in te roepen als gevolg van de bouwtechnische keuring als bedoeld in artikel 15.1 onder c wordt onder ‘goed gedocumenteerd’ verstaan dat een kopie van het keuringsrapport, met daarin een overzicht van de kosten voor het direct noodzakelijk herstel van gebreken en het achterstallig onderhoud, aan verkoper of diens makelaar dient te worden overgelegd.
 
-Via gangbare communicatiemiddelen betekent bijvoorbeeld dat een mededeling per aangetekende post 
-wordt gedaan. Het voordeel hiervan is dat aangetoond kan worden dat de mededeling daadwerkelijk heeft plaatsgevonden. Als echter tussen verkoper en koper (al dan niet met tussenkomst van een makelaar) via email is gecommuniceerd, kan dat tussen betrokken partijen ook een ‘gangbaar communicatiemiddel’ zijn.';
+Via gangbare communicatiemiddelen betekent bijvoorbeeld dat een mededeling per aangetekende post
+wordt gedaan. Het voordeel hiervan is dat aangetoond kan worden dat de mededeling daadwerkelijk heeft plaatsgevonden. Als echter tussen verkoper en koper (al dan niet met tussenkomst van een makelaar) via email is gecommuniceerd, kan dat tussen betrokken partijen ook een ‘gangbaar communicatiemiddel’ zijn.''';
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout mak:Financieringsvoorbehoud;
 	skoslex:isAbout mak:NationaleHypotheekgarantie;
@@ -799,11 +799,11 @@ wordt gedaan. Het voordeel hiervan is dat aangetoond kan worden dat de mededelin
 mak:ArtikelBedenktijd a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 16: Bedenktijd"@nl;
 	skos:prefLabel "Artikel 16: Bedenktijd"@nl;
-	rdfs:comment "Als een consument een woning koopt, heeft koper drie dagen bedenktijd om te beslissen of hij de koop door wil laten gaan. In bijna alle gevallen vloeit deze bedenktijd voort uit de wet. De wettelijke bedenktijd mag niet worden ingekort. Wel mogen partijen afspreken dat koper een langere bedenktermijn krijgt.
+	rdfs:comment '''Als een consument een woning koopt, heeft koper drie dagen bedenktijd om te beslissen of hij de koop door wil laten gaan. In bijna alle gevallen vloeit deze bedenktijd voort uit de wet. De wettelijke bedenktijd mag niet worden ingekort. Wel mogen partijen afspreken dat koper een langere bedenktermijn krijgt.
 De wet kent geen bedenktijd voor verkoper. Partijen kunnen overeenkomen dat ook verkoper bedenktijd krijgt.
 De bedenktijd begint bij aanvang van de dag, volgende op de datum dat koper (een afschrift van) de door beide partijen ondertekende koopovereenkomst heeft ontvangen. Meestal zal (de makelaar van) verkoper direct nadat beide partijen hebben ondertekend een kopie van de koopovereenkomst aan koper overhandigen. De (makelaar van de) verkoper zal dan een ontvangstbewijs van koper vragen. Het ontvangstbewijs moet voorzien zijn van een datum zodat duidelijk is wanneer koper de kopie van de koopovereenkomst heeft ontvangen. Voor de start van de bedenktijd is het niet per se noodzakelijk dat koper de (kopie) koopovereenkomst persoonlijk overhandigd krijgt. Hoewel overhandiging de voorkeur verdient kan de koopovereenkomst ook opgestuurd worden, bijvoorbeeld per aangetekende brief. Als de koopovereenkomst wordt opgestuurd in plaats van overhandigd, wordt aangeraden om deze zowel naar het feitelijke woonadres als naar het adres van de woonplaatskeuze (zie artikel 12) te sturen.
 Als koper binnen de bedenktijd afziet van de koop, moet hij ervoor zorgdragen dat de ontbindingsverklaring verkoper of diens makelaar voor het einde van de bedenktijd bereikt. Er zijn geen wettelijke eisen voor de vorm waarin koper aan verkoper mee moet delen dat hij van de koop afziet. Maar het ontbinden van de koop op bewijsbare wijze, bijvoorbeeld per aangetekende brief, is wel altijd aan te raden. Voor het optimaal kunnen benutten van de bedenktijd is de woonplaatskeuze (zie artikel 12) van groot belang. Als koper op het laatste moment de koopovereenkomst wil ontbinden, maar verkoper of diens makelaar is niet bereikbaar, dan kan hij de notaris in kennis stellen van de ontbinding. Als gevolg van de woonplaatskeuze wordt de mededeling dat de koopovereenkomst is ontbonden geacht verkoper bereikt te hebben. Met name in het kader van de bewijspositie is dat van belang.
-"@nl;
+'''@nl;
 	skos:scopeNote "Artikel 16 van de model koopovereenkomst."@nl;
 	skoslex:isAbout mak:Bedenktijd;
 	skosthes:broaderPartitive mak:Koopovereenkomst;
@@ -1059,7 +1059,7 @@ mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven koopovereenkomst"@nl;
 	skos:prefLabel "Inschrijven koopovereenkomst"@nl;
 	skos:definition "Inschrijven van de koopovereenkomst bij het Kadaster"@nl;
-	skosthes:broadergeneric kad:InschrijvingOpenbareRegisters
+	skosthes:broadergeneric kad:InschrijvingOpenbareRegisters;
 	skoslex:object mak:Koopovereenkomst;
 	skoslex:object mak:Inschrijvingskosten;
 	skoslex:agent not:Notaris;
@@ -1159,13 +1159,13 @@ mak:Onheil a skos:Concept, skoslex:Act;
 	rdfs:label "Onheil"@nl;
 	skos:prefLabel "Onheil"@nl;
 	skos:definition "Beschadiging of verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming"@nl;
-	skostlex:object kad:OnroerendeZaak;
+	skoslex:object kad:OnroerendeZaak;
 .
 mak:Ondertekenen a skos:Concept, skoslex:Act;
 	rdfs:label "Ondertekening"@nl;
 	skos:prefLabel "Ondertekening"@nl;
 	skos:definition "Ondertekening van een overeenkomst."@nl;
-	skostlex:object mak:Koopovereenkomst;
+	skoslex:object mak:Koopovereenkomst;
 .
 mak:Ontbinden a skos:Concept, skoslex:Act;
 	rdfs:label "Ontbinden"@nl;
@@ -1300,7 +1300,7 @@ mak:Tekortschieten a skos:Concept,skoslex:Act;
 	skos:definition ""@nl;
 	skos:semanticRelation mak:Verplichting;
 .
-mak:TenLasteGebruik a skos:Concept,;
+mak:TenLasteGebruik a skos:Concept;
 	rdfs:label "Ten laste van het gebruik"@nl;
 	skos:prefLabel "Ten laste van het gebruik"@nl;
 	skos:definition "Ten laste van het gebruik"@nl;
@@ -1344,7 +1344,7 @@ mak:VerlorenGaan a skos:Concept, skoslex:Act;
 	skos:definition "Verloren gaan van de onroerende zaak, bijvoorbeeld door brand of overstroming"@nl;
 	skosthes:broaderGeneric mak:Onheil;
 .
-mak:Verplichting a skos:Concept,;
+mak:Verplichting a skos:Concept;
 	rdfs:label "Verplichting"@nl;
 	skos:prefLabel "Verplichting"@nl;
 	skos:definition "Een verplichting is het tegenovergestelde van een recht"@nl;
@@ -1393,5 +1393,3 @@ mak:VrijwaringStaatOnroerendeZaak a skos:Concept, skoslex:Act;
 	skoslex:object mak:StaatOnroerendeZaak;
 	skoslex:record mak:ArtikelStaatOnroerendeZaakGebruik;
 .
-
-
