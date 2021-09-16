@@ -387,7 +387,7 @@ mak:ArtikelVerkoopEnKoopOptieAEigendom a skos:Concept, skoslex:Record;
 .
 mak:ArtikelVerkoopEnKoopOptieBErfpacht a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 1: Verkoop en koop - erfpacht"@nl;
-	skos:prefLabel "Artikel 1: erkoop en koop - erfpacht"@nl;
+	skos:prefLabel "Artikel 1: Verkoop en koop - erfpacht"@nl;
 	skos:definition "Optie B van artikel 1 van de model koopovereenkomst. Voor meer informatie met betrekking tot dit artikel zie de ‘Toelichting op de koopovereenkomst’, welke als bijlage is toegevoegd aan de koopovereenkomst. In de ‘Toelichting op de koopovereenkomst’ wordt elke artikel uit de koopovereenkomst uitvoering besproken."@nl;
 	rdfs:comment "Bij de koop van een recht van erfpacht wordt koper geen eigenaar maar erfpachter van de grond met de erop staande woning. Erfpacht is een recht dat de erfpachter de bevoegdheid geeft om de grond met de daarop staande gebouwen, die eigendom van een ander zijn, te houden en te gebruiken. Omdat een ander eigenaar is en blijft van de grond met woning, zijn er voorwaarden verbonden aan het erfpachtrecht en dient er in veel gevallen een vergoeding (“canon”) betaald te worden voor het gebruik van de grond. Deze voorwaarden worden in de Optie Erfpacht onder artikel 1.2 aangeduid. In artikel 1.3 en 1.4 wordt aangegeven wat de erfpacht precies inhoudt en hoeveel de canon bedraagt."@nl;
 	skos:scopeNote "Optie B van artikel 1 van de model koopovereenkomst."@nl;
