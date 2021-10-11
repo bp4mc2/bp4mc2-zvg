@@ -19,37 +19,34 @@
 <http://zorgeloosvastgoed.nl/data/zv> a owl:Ontology;
 	rdfs:label "Domein Zorgeloos vastgoed (algemeen)"@nl;
 .
-
+#De topconcepten zijn een samenvoeging van de eerdere topconcepten en de eerdere collectie hoofdbegrippen. Persoon is een vreemde eend in de bijt omdat verkoper, veroper, hypotheekgever en hypotheeknemer specialisaties zijn van persoon en makelaar, taxateur, notaris en taxateur specialisaties zijn van natuurlijk persoon, waarvan persoon een generalisatie is. Eigenlijk laten we hiermee een andere lijn zien waarlangs je deze begrippen kunt ordenen. Dat geldt ook voor AanOfVerkoopVanEeenHuis, waarvan de Koop, Taxatie, Juridische Levering, etc. onderdeel zijn. En in zekere zin ook voor Registergoed, Akte en Adres. Strikt genomen hadden we ook met slechts deze 5 concepten het scenario 'kopen van een huis' kunnen ondersteunen.
 <http://taxonomie.zorgeloosvastgoed.nl/id/stelsel/algemeen> a skos:ConceptScheme;
-	rdfs:label "Algemeen begrippenstelsel zorgeloosvastgoed"@nl;
+	rdfs:label "Begrippenstelsel zorgeloosvastgoed"@nl;
 	skos:hasTopConcept zv:AanOfVerkoopVanEenHuis;
 	skos:hasTopConcept zv:Persoon;
+	skos:hasTopConcept zv:Huis;
+	skos:hasTopConcept zv:Identificeren;
+	skos:hasTopConcept mak:Verkoper;
+	skos:hasTopConcept mak:Koper;
+	skos:hasTopConcept mak:Makelaar;
+	skos:hasTopConcept mak:Koop;
+	skos:hasTopConcept mak:Koopovereenkomst;
+	skos:hasTopConcept mak:Taxateur;
+	skos:hasTopConcept mak:Taxatie;
+	skos:hasTopConcept not:Notaris;
 	skos:hasTopConcept not:Akte;
-	skos:hasTopConcept kad:ZakelijkRecht;
+	skos:hasTopConcept not:JuridischeLevering;
+	skos:hasTopConcept not:FeitelijkeLevering;
+	skos:hasTopConcept not:Leveringsakte;
+	skos:hasTopConcept not:VestigingHypotheek; #ipv skos:hasTopConcept not:VestigenBeperktRecht;
+	skos:hasTopConcept not:Hypotheekakte;
+	skos:hasTopConcept fin:Hypotheeknemer;
+	skos:hasTopConcept fin:Hypotheekgever;
+	skos:hasTopConcept fin:Hypotheekadviseur;
+#	skos:hasTopConcept kad:ZakelijkRecht; is een specialisatie van Registergoed;
 	skos:hasTopConcept kad:Registergoed;
 	skos:hasTopConcept kad:Adres;
-.
-
-<http://taxonomie.zorgeloosvastgoed.nl/id/collectie/Hoofdbegrippen> a skos:Collection;
-	rdfs:label "Hoofdbegrippen"@nl;
-	skos:member zv:AanOfVerkoopVanEenHuis;
-	skos:member zv:Huis;
-	skos:member mak:Verkoper;
-	skos:member mak:Koper;
-	skos:member mak:Koop;
-	skos:member mak:Makelaar;
-	skos:member mak:Koopovereenkomst;
-	skos:member not:JuridischeLevering;
-	skos:member not:FeitelijkeLevering;
-	skos:member not:VestigenBeperktRecht;
-	skos:member not:Leveringsakte;
-	skos:member not:Hypotheekakte;
-	skos:member not:Notaris;
-	skos:member fin:Hypotheeknemer;
-	skos:member fin:Hypotheekgever;
-	skos:member fin:Hypotheekadviseur;
-	skos:member mak:Taxatie;
-	skos:member mak:Taxateur;
+	skos:hasTopConcept kad:Basisregistratie;
 .
 <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/SoortenBurgerlijkeStaat> a skos:Collection;
 	skos:member zv:Gehuwd;
@@ -233,12 +230,14 @@ zv:BeschermdStadsDorpsgezicht a skos:Concept, skoslex:Object;
 	skos:altLabel "Rijksbeschermd stads-/dorpsgezicht"@nl;
 	skos:definition "Een beschermd dorps/stadsgezicht is in Nederland een samenhangende groep van objecten en gebouwen in een dorp of stad die van overheidswege beschermd wordt door de Nederlandse Monumentenwet."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0027565>;
+#in domein mak wordt dit concept als skos:narrower van mak:StaatOnroerendeZaak gedefinieerd.
 .
 zv:Bestemmingsplan a skos:Concept, skoslex:Record;
 	rdfs:label "Bestemmingsplan"@nl;
 	skos:prefLabel "Bestemmingsplan"@nl;
 	skos:definition "Het plan waarin een gemeente vastlegt waarvoor de verschillende delen van het grondgebied van de gemeente mogen worden gebruikt."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020449&hoofdstuk=3&afdeling=3.1&artikel=3.1>;
+#in domein mak wordt dit concept als skoslex:isAbout van mak:ArtikelStaatOnroerendeZaakGebruik gedefinieerd.
 .
 zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	rdfs:label "Faillissement"@nl;
@@ -246,6 +245,7 @@ zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een dome
 	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard."@nl;
 	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
+	skos:semanticRelation zv:Persoon;
 .
 zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je zegt 'Ik koop een huis', terwijl je formeel het recht heb gekocht op erfpacht op een onroerende zaak zoals in Amsterdam.
 	rdfs:label "Huis"@nl;
@@ -253,8 +253,7 @@ zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je
 	skos:definition "Een (deel van een) gebouw dat bestemd is voor bewoning."@nl;
 	rdfs:comment "Een gebouw dat bedoeld is om in te wonen."@nl;
 	skosthes:narrowerGeneric mak:Woning;#Huis is een generalisatie van woning.
-	skosthes:narrowerGeneric kad:OnroerendeZaak;#Elk huis is een onroerende zaak, maar niet iedere onroerende zaak is een huis.
-	skosthes:broaderGeneric kad:Registergoed;
+	skosthes:narrowerGeneric kad:Registergoed; #Een huis kan meerdere registergoederen omvatten, bijvoorbeeld meerdere percelen en/of merdere beperkte rechten.
 .
 zv:Objectlocatie a skos:Concept, skoslex:Object;
 	rdfs:label "Objectlocatie"@nl;
@@ -269,17 +268,19 @@ zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in e
 	rdfs:comment "De overdrachtsbelasting is de belasting die de koper van een onroerende zaak moet betalen aan de belastingdienst."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=1&artikel=2&lid=2>;
+#in domein mak wordt dit concept als skoslex:object van mak:RechercheKoop gedefinieerd.
 .
 zv:NederlandsRecht a skos:Concept, skoslex:Object;
 	rdfs:label "Nederlands recht"@nl;
 	skos:prefLabel "Nederlands recht"@nl;
 	skos:definition "Het geheel van wettelijke regels die gelden in Nederland. Deze regels zijn met name te vinden in wetten, verdragen en rechtspraak. Het Nederlands recht is van toepassing op ingezetenen en iedereen die zich in het Koninkrijk bevindt."@nl;
+#in domein mak wordt dit concept als skoslex:isAbout van mak:ArtikelNederlandsRecht gedefinieerd.
 .
-zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
-	rdfs:label "Register Belastingdienst"@nl;
-	skos:prefLabel "Register Belastingdienst"@nl;
-	skos:definition "Voortdurend bijgehouden bestand van de Belastingdienst met gegevens over personen of zaken in relatie tot de belastingwet."@nl;
-.
+#zv:RegisterBelastingdienst a skos:Concept, skoslex:Object;#Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
+#	rdfs:label "Register Belastingdienst"@nl;
+#	skos:prefLabel "Register Belastingdienst"@nl;
+#	skos:definition "Voortdurend bijgehouden bestand van de Belastingdienst met gegevens over personen of zaken in relatie tot de belastingwet."@nl;
+#.
 zv:Vertegenwoordiging a skos:Concept, skoslex:Object;
 	rdfs:label "Vertegenwoordiging"@nl;
 	skos:prefLabel "Vertegenwoordiging"@nl;
@@ -385,8 +386,7 @@ zv:StatutaireNaam a skos:Concept;
 zv:HandelendAls a skos:Concept;
 	rdfs:label "Handelend als"@nl;
 	skos:prefLabel "Handelend als"@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
-	skos:semanticRelation zv:Rechtspersoon;
+	skos:semanticRelation zv:Persoon;
 .
 zv:HuidigAdres a skos:Concept, skoslex:Record;
 	rdfs:label "Huidig adres"@nl;
