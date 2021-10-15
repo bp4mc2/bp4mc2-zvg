@@ -460,6 +460,7 @@ mak:ArtikelEigendomsoverdrachtLid3 a skos:Concept, skoslex:Record;
 	skos:scopeNote "Artikel 4 lid 3 van de model koopovereenkomst."@nl;
 	skosthes:broaderPartitive mak:ArtikelEigendomsoverdracht;
 .
+fin:Garantie skoslex:record mak:ArtikelBankgarantieWaarborgsom.
 mak:ArtikelBankgarantieWaarborgsom a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 5: Bankgarantie/Waarborgsom"@nl;
 	skos:prefLabel "Artikel 5: Bankgarantie/Waarborgsom"@nl;
@@ -992,14 +993,7 @@ mak:ErkendeBankinstelling a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Erkende bankinstelling"@nl;
 	skos:definition "Een erkende geldverstrekkende bankinstelling"@nl;
 .
-mak:Garantie a skos:Concept, skoslex:Act;
-	rdfs:label "Garantie"@nl;
-	skos:prefLabel "Garantie"@nl;
-	skosthes:broaderPartitive mak:Koop;
-	skoslex:object fin:Bankgarantie;
-	skoslex:object fin:Waarborgsom;
-	skoslex:record mak:ArtikelBankgarantieWaarborgsom;
-.
+
 mak:Gebrek a skos:Concept;
 	rdfs:label "Gebrek"@nl;
 	skos:prefLabel "Gebrek"@nl;
