@@ -264,7 +264,7 @@ zv:Faillissement a skos:Concept, skoslex:Object; #Begrip hoort thuis in een dome
 	skos:definition "De schuldenaar, die in de toestand verkeert dat hij heeft opgehouden te betalen, wordt, hetzij op eigen aangifte, hetzij op verzoek van een of meer zijner schuldeisers, bij rechterlijk vonnis in staat van faillissement verklaard."@nl;
 	rdfs:comment "Een faillissement is een gerechtelijk beslag op het vermogen. De schuldenaar verliest de zeggenschap over het vermogen door een faillissement. Zowel een rechtspersoon (bijvoorbeeld een BV.) als een natuurlijk persoon (zoals een eigenaar van een eenmanszaak) kan failliet worden verklaard."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001860&titeldeel=I&afdeling=Eerste&artikel=1>;
-	skos:semanticRelation zv:Persoon;
+	skos:related zv:Persoon;
 .
 zv:Huis a skos:Concept, skoslex:Object;#Term opgenomen omdat dit gangbaar is. Je zegt 'Ik koop een huis', terwijl je formeel het recht heb gekocht op erfpacht op een onroerende zaak zoals in Amsterdam.
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -280,7 +280,7 @@ zv:Objectlocatie a skos:Concept, skoslex:Object;
 	rdfs:label "Objectlocatie"@nl;
 	skos:prefLabel "Objectlocatie"@nl;
 	skos:definition "Een objectlocatie is een binnenlands of buitenlands adres."@nl;
-	skos:semanticRelation zv:Persoon;
+	skos:related zv:Persoon;
 .
 zv:Overdrachtsbelasting a skos:Concept, skoslex:Object; #Begrip hoort thuis in een domein Belastingdienst, maar deze is nu geen deelnemer van het Zorgeloos Vastgoed initiatief.
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -309,8 +309,8 @@ zv:Vertegenwoordiging a skos:Concept, skoslex:Object;
 	rdfs:label "Vertegenwoordiging"@nl;
 	skos:prefLabel "Vertegenwoordiging"@nl;
 	skos:definition "Een hoedanigheid waarin een natuurlijk persoon een andere persoon kan vertegenwoordigen."@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
-	skos:semanticRelation zv:Persoon;
+	skos:related zv:NatuurlijkPersoon;
+	skos:related zv:Persoon;
 .
 
 #
@@ -320,7 +320,7 @@ zv:AanduidingNaamgebruik a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Aanduiding naamgebruik"@nl;
 	skos:prefLabel "Aanduiding naamgebruik"@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 	skos:definition "Een aanduiding van de wijze van aanschrijving van de persoon."@nl;
 	skos:exactMatch <https://opendata.stelselcatalogus.nl/brp/id/gegevenselement/Aanduiding_naamgebruik_persoon-Natuurlijk_persoon>;
 .
@@ -328,7 +328,7 @@ zv:AdellijkeTitelPredikaat a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Adellijke titel of predikaat"@nl;
 	skos:prefLabel "Adellijke titel of predikaat"@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 	skos:definition "Een code, opgenomen in de Tabel Adellijke titel/predikaat, die aangeeft welke titel of welk predikaat behoort tot de naam (bij adellijke titel geslachtsnaam, bij predikaat voornaam) van de persoon."@nl;
 	skos:exactMatch <http://opendata.stelselcatalogus.nl/brp/id/gegevenselement/Adellijke_titelpredikaat_persoon-Natuurlijk_persoon>
 .
@@ -337,7 +337,7 @@ zv:Bereikbaarheid a skos:Concept;
 	rdfs:label "Bereikbaarheid"@nl;
 	skos:prefLabel "Bereikbaarheid"@nl;
 	skos:altLabel "Bereikbaar"@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 	skos:definition "De mate van, of manier waarop een persoon te benaderen is, of een bepaald gebied te bereiken is."@nl;
 .
 zv:BurgerlijkeStaat a skos:Concept;
@@ -346,7 +346,7 @@ zv:BurgerlijkeStaat a skos:Concept;
 	skos:prefLabel "Burgerlijke staat"@nl;
 	skos:altLabel "Soort verbintenis"@nl;
 	skos:definition "Staat/positie van een natuurlijke persoon volgens het Burgerlijk Wetboek, zoals gehuwd en ongehuwd."@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=3&artikel=2.7&lid=1>;
 	#Gek genoeg is dit begrip niet te vinden https://brk.basisregistraties.overheid.nl/begrippenlijst
 .
@@ -357,7 +357,7 @@ zv:Geboorte a skos:Concept;
 	skos:altLabel "Geboortegemeente"@nl;
 	skos:definition "De datum, plaats volgens de gemeentetabel en het land volgens de landentabel waarop iemand is geboren"@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=2&artikel=2.3>;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 .
 zv:Gehuwd a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Soort_verbintenis
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -385,14 +385,14 @@ zv:ObjectlocatieIdentificatie a skos:Concept, skoslex:Object;
 	rdfs:label "Identificatie objectlocatie"@nl;
 	skos:prefLabel "Identificatie objectlocatie"@nl;
 	skos:definition "De unieke identificatie van een objectlocatie."@nl;
-	skos:semanticRelation zv:Objectlocatie;
+	skos:related zv:Objectlocatie;
 .
 zv:PartijIdentificatie a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Identificatie partij"@nl;
 	skos:prefLabel "Identificatie partij"@nl;
 	skos:definition "De unieke aanduiding van een partij."@nl;
-	skos:semanticRelation zv:Partij;
+	skos:related zv:Partij;
 .
 zv:StatutaireNaam a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -400,7 +400,7 @@ zv:StatutaireNaam a skos:Concept;
 	skos:prefLabel "StatutaireZetel"@nl;
 	skos:altLabel "Gevestigd te"@nl;
 	skos:definition "De zetel is de plaats waar een Rechtspersoon volgens de statuten gevestigd is."@nl;
-	skos:semanticRelation zv:Rechtspersoon;
+	skos:related zv:Rechtspersoon;
 	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutaire_zetel-Rechtspersoon>;
 .
 zv:StatutaireZetel a skos:Concept;
@@ -409,7 +409,7 @@ zv:StatutaireZetel a skos:Concept;
 	skos:prefLabel "Statutaire zetel"@nl;
 	skos:altLabel "Gevestigd te"@nl;
 	skos:definition "De zetel is de plaats waar een Rechtspersoon volgens de statuten gevestigd is."@nl;
-	skos:semanticRelation zv:Rechtspersoon;
+	skos:related zv:Rechtspersoon;
 	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutaire_zetel-Rechtspersoon>;
 .
 zv:StatutaireNaam a skos:Concept;
@@ -417,14 +417,14 @@ zv:StatutaireNaam a skos:Concept;
 	rdfs:label "Statutaire naam"@nl;
 	skos:prefLabel "Statutaire naam"@nl;
 	skos:definition "De naam van de Niet-Natuurlijk Persoon."@nl;
-	skos:semanticRelation zv:Rechtspersoon;
+	skos:related zv:Rechtspersoon;
 	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Statutairenaam-Niet_Natuurlijk_Persoon>;
 .
 zv:HandelendAls a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Handelend als"@nl;
 	skos:prefLabel "Handelend als"@nl;
-	skos:semanticRelation zv:Persoon;
+	skos:related zv:Persoon;
 .
 zv:HuidigAdres a skos:Concept, skoslex:Record;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -432,22 +432,22 @@ zv:HuidigAdres a skos:Concept, skoslex:Record;
 	skos:prefLabel "Huidig adres"@nl;
 	skos:altLabel "Wonende"@nl;
 	skos:definition "Het adres waar een natuurlijk persoon woont."@nl;
-	skos:semanticRelation kad:Adres;
-	skos:semanticRelation zv:ToekomstigAdres;
+	skos:related kad:Adres;
+	skos:related zv:ToekomstigAdres;
 .
 zv:Huwelijksgoederenrecht a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Huwelijksgoederenrecht"@nl;
 	skos:prefLabel "Huwelijksgoederenrecht"@nl;
 	skos:definition "Rechtsgebied uit boeken 1 en 6 Burgerlijk Wetboek die gaat over de zakelijke verhouding tussen (ex-)echtelieden. Een voorbeeld is de mate waarin gemeenschap van goederen in de huwelijkse voorwaarden is uitgesloten of schenkingen in de gemeenschap vallen."@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 .
 zv:Huwelijksgoederenrecht a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Huwelijksgoederenrecht"@nl;
 	skos:prefLabel "Huwelijksgoederenrecht"@nl;
 	skos:definition "Rechtsgebied uit boeken 1 en 6 Burgerlijk Wetboek die gaat over de zakelijke verhouding tussen (ex-)echtelieden. Een voorbeeld is de mate waarin gemeenschap van goederen in de huwelijkse voorwaarden is uitgesloten of schenkingen in de gemeenschap vallen."@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 .
 zv:KvKnummer a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -455,7 +455,7 @@ zv:KvKnummer a skos:Concept;
 	rdfs:altLabel "Inschrijving Handelsregister"@nl;
 	skos:prefLabel "KvKnummer"@nl;
 	skos:definiton "Betreft het identificerende gegeven voor de Maatschappelijke Activiteit, het KVK-nummer."@nl;
-	skos:semanticRelation zv:Rechtspersoon;
+	skos:related zv:Rechtspersoon;
 	skos:exactMatch <https://opendata.stelselcatalogus.nl/hr/id/gegevenselement/KVK-nummer-Maatschappelijke_Activiteit>;
 .
 zv:LandVertrokken a skos:Concept;
@@ -463,7 +463,7 @@ zv:LandVertrokken a skos:Concept;
 	rdfs:label "Land waarnaar vertrokken"@nl;
 	skos:prefLabel "Land waarnaar vertrokken"@nl;
 	skos:definition "Het land waarin de persoon bij emigratie heeft aangegeven te gaan verblijven dan wel het land waarin de persoon verblijft."@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 	skos:exactMatch <https://opendata.stelselcatalogus.nl/brp/id/begrip/Woonland>;
 .
 zv:Mailadres a skos:Concept;
@@ -478,7 +478,7 @@ zv:Naam a skos:Concept;
 	rdfs:label "Naam"@nl;
 	skos:prefLabel "Naam"@nl;
 	skos:definition "De voornamen, voorvoegsels en de familienaam of geslachtsnaam van een natuurlijke persoon."@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 .
 zv:Ongehuwd a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -493,28 +493,28 @@ zv:Overlijden a skos:Concept;
 	rdfs:label "Overlijden"@nl;
 	skos:prefLabel "Overlijden"@nl;
 	skos:definition "De datum waarop iemand is overleden"@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 .
 zv:PartnnerschapDatumSluiting a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Datum sluiting partnnerschap"@nl;
 	skos:prefLabel "Datum sluiting partnnerschap"@nl;
 	skos:definition "Een datum waarop het partnerschap is gesloten."@nl;
-	skos:semanticRelation zv:Partner;
+	skos:related zv:Partner;
 .
 zv:PartnnerschapDatumOntbinding a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Datum ontbinding partnnerschap"@nl;
 	skos:prefLabel "Datum ontbinding partnnerschap"@nl;
 	skos:definition "Een datum waarop het partnerschap is ontbonden."@nl;
-	skos:semanticRelation zv:Partner;
+	skos:related zv:Partner;
 .
 zv:PersoonIdentificatie a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	rdfs:label "Identificatie persoon"@nl;
 	skos:prefLabel "Identificatie persoon"@nl;
 	skos:definition "De unieke identificatie van een persoon."@nl;
-	skos:semanticRelation zv:Persoon;
+	skos:related zv:Persoon;
 .
 zv:Rechtsvorm a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -522,7 +522,7 @@ zv:Rechtsvorm a skos:Concept;
 	rdfs:altLabel "Rechtsvorm"@nl;
 	skos:prefLabel "Rechtsvorm"@nl;
 	skos:definiton "De rechtsvorm van de Rechtspersoon."@nl;
-	skos:semanticRelation zv:Rechtspersoon;
+	skos:related zv:Rechtspersoon;
 	skos:exactMatch <https://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Rechtsvorm-Rechtspersoon>;
 .
 zv:Telefoon a skos:Concept;
@@ -539,7 +539,7 @@ zv:ToekomstigAdres a skos:Concept, skoslex:Record;
 	skos:prefLabel "Toekomstig adres"@nl;
 	skos:definition "Het adres waar een natuurlijk persoon zal wonen met ingang van een bepaalde datum in de toekomst."@nl;
 	#rdfs:comment ""@nl;
-	skos:semanticRelation kad:Adres;
+	skos:related kad:Adres;
 .
 zv:VertegenwoordigingHoedanigheid a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -547,7 +547,7 @@ zv:VertegenwoordigingHoedanigheid a skos:Concept;
 	skos:prefLabel "Hoedanigheid"@nl;
 	skos:definition "Een aanduiding van de hoedanigheid waarin een persoon een andere persoon vertegenwoordigt."@nl;
 	rdfs:comment "Een aanduiding van de hoedanigheid waarin een natuurlijk persoon een andere persoon vertegenwoordigt. Dit kan zijn als eigenaar (van een organisatie), voorzitter, secretaris, etc. (van een organisatie) of als erfgenaam."@nl;
-	skos:semanticRelation zv:Vertegenwoordiging;
+	skos:related zv:Vertegenwoordiging;
 .
 
 zv:Voornamen a skos:Concept;
@@ -556,5 +556,5 @@ zv:Voornamen a skos:Concept;
 	skos:prefLabel "Voornamen"@nl;
 	skos:altLabel "Voorna(a)m(en)"@nl;
 	skos:definition "Aan de naam van een natuurlijke persoon voorafgaande onderscheidende na(a)m(en) van die natuurlijke persoon."@nl;
-	skos:semanticRelation zv:NatuurlijkPersoon;
+	skos:related zv:NatuurlijkPersoon;
 .
