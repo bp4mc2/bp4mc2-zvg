@@ -45,7 +45,7 @@ fin:Borg a skos:Concept, skoslex:Actor;
 	skos:prefLabel "Borg"@nl;
 	skos:definition "De persoon die garant staat voor de nakoming van de verplichting van een andere persoon."@nl;
 	rdfs:comment "Als een schuldenaar zijn verplichting niet nakomt, is de borg verplicht om de borgsom te betalen aan de schuldeiser. De borg krijgt daarna een vordering op de schuldenaar."@nl;
-	skos:semanticRelation fin:Schuldenaar;
+	skos:related fin:Schuldenaar;
 	skosthes:broaderGeneric zv:Persoon;
 .
 fin:Curator a skos:Concept, skoslex:Actor;
@@ -170,7 +170,7 @@ fin:Verbeuren a skos:Concept, skoslex:Act;
 	skoslex:object fin:Bankgarantie;
 	skoslex:agent not:Notaris;
 	skoslex:actor mak:Verkoper;
-	skos:semanticRelation fin:Garantie;
+	skos:related fin:Garantie;
 .
 fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
 	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
@@ -212,7 +212,7 @@ fin:BindendeOfferte a skos:Concept, skoslex:Record;
 	skos:prefLabel "Bindende offerte"@nl;
 	skos:altLabel "Hypotheekofferte"@nl;
 	skos:definition "Een bindend aanbod van een geldverstrekker ter verstrekking van een hypotheek."@nl;
-	skos:semanticRelation fin:Hypotheekadvies;
+	skos:related fin:Hypotheekadvies;
 .
 fin:Faillisement a skos:Concept, skoslex:Object;
 	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
@@ -226,15 +226,15 @@ fin:HoofdelijkeAansprakelijkheid a skos:Concept;
 	skos:prefLabel "Hoofdelijke aansprakelijkheid"@nl;
 	skos:definition "Meerdere schuldenaren zijn ieder afzonderlijk voor het geheel aansprakelijk voor de terugbetaling van de lening."@nl;
 	rdfs:comment "Als de schuldenaren hoofdelijk aansprakelijk zijn, dan is ieder van hen verplicht om op verzoek van de schuldeiser de gehele schuld te voldoen. Een schuldenaar mag zich dus niet beperken tot diens aandeel in de schuld. Eventuele verrekening onderling tussen de schuldenaren vindt dan later plaats. "@nl;
-	skos:semanticRelation fin:Schuldenaar;
-	skos:semanticRelation fin:Lening;
+	skos:related fin:Schuldenaar;
+	skos:related fin:Lening;
 .
 fin:Hypotheekadvies a skos:Concept, skoslex:Record;
 	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	rdfs:label "Hypotheekadvies"@nl;
 	skos:prefLabel "Hypotheekadvies"@nl;
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument."@nl;
-	skos:semanticRelation fin:Onderpand;
+	skos:related fin:Onderpand;
 .
 fin:Lening a skos:Concept, skoslex:Record;
 	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
@@ -242,8 +242,8 @@ fin:Lening a skos:Concept, skoslex:Record;
 	skos:prefLabel "Lening"@nl;
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over een te lenen geldbedrag"@nl;
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald."@nl;
-	skos:semanticRelation fin:Schuldenaar;
-	skos:semanticRelation fin:Schuldeiser;
+	skos:related fin:Schuldenaar;
+	skos:related fin:Schuldeiser;
 .
 #Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
 #Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
@@ -257,8 +257,8 @@ fin:Onderpand a skos:Concept, skoslex:Object;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
 	skos:editorialNote "De relatie met registergoed is een lastige. Een onderpand is geen verbijzondering van registergoed zoals een woning dat is. Maar in de context van het kopen van een huis, zou je kunnen stellen dat een onderpand juist wel een verbijzondering is van een registergoed (in de vorm van een woning), omdat er meestal sprake is van een onderpand in de vorm van een woning die is gekocht, ten behoeve van de hypotheek."@nl;
 	skosthes:broaderGeneric kad:Goed; 
-	skos:semanticRelation not:RechtVanHypotheek;
-	skos:semanticRelation fin:Lening;
+	skos:related not:RechtVanHypotheek;
+	skos:related fin:Lening;
 .
 fin:Opslagbedrag a skos:Concept;
 	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
