@@ -33,46 +33,47 @@
 #--
 #Burgerlijk wetboek
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3>  rdfs:label "Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 van Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=2> rdfs:label "artikel 2 van Boek 3 van het Burgerlijk Wetboek"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=1> rdfs:label "artikel 1 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=2> rdfs:label "artikel 2 Burgerlijk Wetboek Boek 3"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=3&lid=1> rdfs:label "artikel 3, eerste lid, van Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=10> rdfs:label "artikel 10 van Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16> rdfs:label "artikel 16 van Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 van Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=28> rdfs:label "artikel 28 van Boek 3 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1> rdfs:label "artikel 1 van Boek 5 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 van Boek 5 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 van Boek 5 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 van Boek 6 van het Burgerlijk Wetboek"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=2b&afdeling=2&paragraaf=1&artikel=101> rdfs:label "artikel 101 van Boek 7 van het Burgerlijk Wetboek"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=10> rdfs:label "artikel 10 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16> rdfs:label "artikel 16 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=28> rdfs:label "artikel 28 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1> rdfs:label "artikel 1 Burgerlijk Wetboek Boek 5"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 Burgerlijk Wetboek Boek 5"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 Burgerlijk Wetboek Boek 5"@nl.
+<https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "Artikel 213 Burgerlijk Wetboek Boek 6"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 Burgerlijk Wetboek Boek 6"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=2b&afdeling=2&paragraaf=1&artikel=101> rdfs:label "artikel 101 Burgerlijk Wetboek Boek 7"@nl.
 <https://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=274> rdfs:label "Artikel 274 Burgerlijk Wetboek Boek 3"@nl.
 #Wetboek van Burgerlijke Rechtsvordering"
-<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439> rdfs:label "artikel 439 van het Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=509> rdfs:label "artikel 509 van het Wetboek van Burgerlijke Rechtsvordering"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563> rdfs:label "artikel 563 van het Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a> rdfs:label "artikel 584a van het Wetboek van Burgerlijke Rechtsvordering"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Tweede&afdeling=Eerste&artikel=439> rdfs:label "artikel 439 Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Derde&afdeling=Eerste&artikel=509> rdfs:label "artikel 509 Wetboek van Burgerlijke Rechtsvordering"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Eerste&artikel=563> rdfs:label "artikel 563 Wetboek van Burgerlijke Rechtsvordering (geldt in geval van digitaal procederen)"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a> rdfs:label "artikel 584a Wetboek van Burgerlijke Rechtsvordering"@nl.
 
 #Wet kenbaarheid publiekrechtelijke beperkingen onroerende zaken
-<http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1> rdfs:label "artikel 1 van de Wet kenbaarheid publiekrechtelijke beperkingen onroerende zaken"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1> rdfs:label "artikel 1 Wet kenbaarheid publiekrechtelijke beperkingen onroerende zaken"@nl.
 
 #Organisatiewet Kadaster
-<http://wetten.overheid.nl/jci1.3:c:BWBR0006463&hoofdstuk=1&artikel=2> rdfs:label "artikel 2 van de Organisatiewet Kadaster"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0006463&hoofdstuk=1&artikel=2> rdfs:label "artikel 2 Organisatiewet Kadaster"@nl.
 
 #Kadasterwet
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1> rdfs:label "artikel 1 Kadasterwet"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a> rdfs:label "artikel 1a van de Kadasterwet"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6> rdfs:label "artikel 6 van de Kadasterwet"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=2&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 van de Kadasterwet"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&titel=1&afdeling=2&artikel=28> rdfs:label "artikel 28 van de Kadasterwet"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50> rdfs:label "artikel 50 van de Kadasterwet"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53> rdfs:label "artikel 53 van de Kadasterwet"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a> rdfs:label "artikel 1a Kadasterwet"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6> rdfs:label "artikel 6 Kadasterwet"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=2&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 Kadasterwet"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&titel=1&afdeling=2&artikel=28> rdfs:label "artikel 28 Kadasterwet"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50> rdfs:label "artikel 50 Kadasterwet"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53> rdfs:label "artikel 53 Kadasterwet"@nl.
 
 #Erfgoedwet
 <http://wetten.overheid.nl/jci1.3:c:BWBR0037521&hoofdstuk=1&artikel=1.1> rdfs:label "Artikel 1.1 Erfgoedwet"@nl.
 
 #Diverse
-<http://wetten.overheid.nl/jci1.3:c:BWBR0004471&hoofdstuk=I&artikel=1> rdfs:label "artikel 1 van de Monumentenwet 1988"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004471&hoofdstuk=I&artikel=1> rdfs:label "artikel 1 Monumentenwet 1988"@nl.
 <https://wetten.overheid.nl/jci1.3:c:BWBR0001939&artikel=1> rdfs:label "Artikel 1 Natuurschoonwet 1928"@nl.
 <https://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1> rdfs:label "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl.
 <https://wetten.overheid.nl/jci1.3:c:BWBR0003391&artikel=2> rdfs:label "Artikel 2 Wet voorkeursrecht gemeenten"@nl.
@@ -224,6 +225,7 @@ kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 	skoslex:object kad:KadastraleGrens;
 	skoslex:actor kad:DeDienst;
+	skoslex:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 kad:Overeenkomst a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Overeenkomst;
@@ -231,16 +233,9 @@ kad:Overeenkomst a skos:Concept, skoslex:Act;
 	skos:prefLabel "Overeenkomst"@nl;
 	skos:definition "Een overeenkomst is een meerzijdige rechtshandeling, waarbij een of meer partijen jegens een of meer andere partijen een verbintenis aan gaan."@nl;
 	rdfs:comment "Een overeenkomst is een afspraak tussen twee of meer partijen"@nl;
+	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213>;
 	skos:related zv:Partij;
-kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Act;
-	skos:exactMatch brk:Publiekrechtelijke_beperking;
-	rdfs:label "Publiekrechtelijke beperking"@nl;
-	skos:prefLabel "Publiekrechtelijke beperking"@nl;
-	skos:definition "Een publiekrechtelijke beperking is een beperking van de bevoegdheid tot gebruik van of beschikking over een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen, niet zijnde een privaatrechtelijke beperking en/of een schuldplichtigheid die rust op een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen."@nl;
-	rdfs:comment "Een publiekrechtelijke beperking is dat de overheid besluit dat iemand niet alles met een huis of stuk grond mag doen. Of niet alles mag doen met de rechten die hij heeft op een huis of stuk grond. Bij een publiekrechtelijke beperking gaat het niet om een beperking volgens het privaatrecht. Ook een schuld voor een huis kan geen publiekrechtelijke beperking zijn."@nl;
-	skos:scopeNote "Onder een publiekrechtelijke beperking wordt verstaan iedere inbreuk op het recht van gebruik en beschikking van onroerende zaken, welke krachtens wet- of regelgeving door de overheid wordt gemaakt. Het zijn door de overheid opgelegde beperkingen. Deze beperkingen bepalen wat wel of niet met een stuk grond of gebouw mag gebeuren. Het aanwijzingsbesluit bevat een overzicht waaruit de verschillende publiekrechtelijke beperkingen gehaald kunnen worden. Hierbij gaat het om bijvoorbeeld: •beschermde monumenten; •beschermde leefomgeving (natuurmonumenten); •bodembescherming (verplichting tot registratie van verontreinigde grond); •maatregelen nodig voor de landsverdediging; •eisen die in het kader van de Woningwet worden gesteld, zoals middelen om bepaalde voorzieningen voor een pand af te kunnen dwingen."@nl;
-	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
-	skosthes:broaderGeneric kad:BeperktRecht;
+	skos:broaderGeneric kad:Rechtshandeling;
 .
 kad:Rangwisseling a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Rangwisseling;
@@ -251,6 +246,7 @@ kad:Rangwisseling a skos:Concept, skoslex:Act;
 	skos:scopeNote "Bij een notariële akte die in de registers wordt ingeschreven, kan worden bepaald dat een hypotheek ten aanzien van een of meer hypotheken op het zelfde goed een hogere rang heeft dan haar volgens het tijdstip van inschrijving toekomt, mits uit de akte blijkt dat de gerechtigden tot die andere hypotheek of hypotheken daarin toestemmen. Met overeenkomstige toepassing van het eerste lid kan ook worden bepaald dat een hypotheek en een ander beperkt recht ten aanzien van elkaar worden geacht in andere volgorde te zijn ontstaan dan is geschied. Let wel: rangwisseling tussen een hypotheek en een beslag is NIET mogelijk omdat een beslag geen beperkt recht is ! Van een dergelijk feit wordt aantekening gemaakt."@nl;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21>;
 	skos:related not:RechtVanHypotheek;
+	skos:broaderPartitive not:VestigingHypotheek;
 .
 kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Rechtshandeling;
@@ -270,9 +266,8 @@ kad:Adres a skos:Concept, skoslex:Object;
 	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats"@nl;
 	rdfs:comment "Een adres is een adres vastgesteld door een bevoegd gemeentelijk orgaan"@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
-	skosthes:broaderPartitive kad:BasisregistratieAdressenEnGebouwen;
 	skos:exactMatch bag:Adres;
-	skos:saemanticRelation kad:ObjectlocatieBinnenland;
+	skos:related kad:ObjectlocatieBinnenland;
 .
 kad:Basisregistratie a skos:Concept, skoslex:Object;
 	skos:exactMatch kad:Basisregistratie;
@@ -298,6 +293,7 @@ kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
 	rdfs:comment "De Basisregistratie Kadaster is een verzameling gegevens over percelen, eigendom, hypotheken, beperkte rechten (zoals recht van erfpacht, opstal en vruchtgebruik) en leidingnetwerken. Daarnaast staan er kadastrale kaarten in met perceel, perceelnummer, oppervlakte, kadastrale grens en de grenzen van het rijk, de provincies en gemeenten."@nl;
 	skos:scopeNote "Nieuwe naam (vanaf januari 2009) voor de kadastrale registratie. De BRK is een administratie waaruit we de rechtstoestand en de feitelijke gesteldheid van onroerende zaken (en schepen en luchtvaartuigen) kunnen lezen. Bijhouding van de Basisregistratie Kadaster vindt plaats onder andere naar aanleiding van ter inschrijving aangeboden stukken (art. 54 Kadasterwet). De Basisregistratie Kadaster en de kadastrale kaarten behoren NIET tot de Openbare Registers. De Basisregistratie Kadaster heeft verschillende functies: (1) Het verschaffen van toegang tot de openbare registers. De Basisregistratie Kadaster bevat namelijk een verwijzing naar het kenmerk, waaronder stukken in het openbaar register zijn opgenomen. Voor ingeschreven stukken is dit het deel en nummer van inschrijving. Voor 4d stukken is dat een doorlopend volgnummer; (2) Het verschaffen van een overzichtelijke en systematische weergave van gegevens betreffende de rechtstoestand van onroerende zaken en de feitelijke gesteldheid van die zaken. Dit overzicht heeft formeel geen juridische betekenis (de kadastrale eigenaar is niet altijd de juridische eigenaar), doch in de praktijk wordt daar grote betekenis aan toegekend. De kadastrale tenaamstelling is bijvoorbeeld uitgangspunt voor belastingheffing. Bij landinrichtingsprojecten en onteigening vindt vastelling van de rechthebbenden plaats via de Basisregistratie Kadaster."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1a>
+	skosthes:broaderPartitive kad:Basisregistratie;
 .
 kad:Beding a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Beding;
@@ -517,6 +513,16 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
 	skosthes:broaderGeneric kad:OnroerendMonument;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
+.
+kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
+	skos:exactMatch brk:Publiekrechtelijke_beperking;
+	rdfs:label "Publiekrechtelijke beperking"@nl;
+	skos:prefLabel "Publiekrechtelijke beperking"@nl;
+	skos:definition "Een publiekrechtelijke beperking is een beperking van de bevoegdheid tot gebruik van of beschikking over een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen, niet zijnde een privaatrechtelijke beperking en/of een schuldplichtigheid die rust op een onroerende zaak of een recht waaraan die onroerende zaak is onderworpen."@nl;
+	rdfs:comment "Een publiekrechtelijke beperking is dat de overheid besluit dat iemand niet alles met een huis of stuk grond mag doen. Of niet alles mag doen met de rechten die hij heeft op een huis of stuk grond. Bij een publiekrechtelijke beperking gaat het niet om een beperking volgens het privaatrecht. Ook een schuld voor een huis kan geen publiekrechtelijke beperking zijn."@nl;
+	skos:scopeNote "Onder een publiekrechtelijke beperking wordt verstaan iedere inbreuk op het recht van gebruik en beschikking van onroerende zaken, welke krachtens wet- of regelgeving door de overheid wordt gemaakt. Het zijn door de overheid opgelegde beperkingen. Deze beperkingen bepalen wat wel of niet met een stuk grond of gebouw mag gebeuren. Het aanwijzingsbesluit bevat een overzicht waaruit de verschillende publiekrechtelijke beperkingen gehaald kunnen worden. Hierbij gaat het om bijvoorbeeld: •beschermde monumenten; •beschermde leefomgeving (natuurmonumenten); •bodembescherming (verplichting tot registratie van verontreinigde grond); •maatregelen nodig voor de landsverdediging; •eisen die in het kader van de Woningwet worden gesteld, zoals middelen om bepaalde voorzieningen voor een pand af te kunnen dwingen."@nl;
+	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0016876&paragraaf=1&artikel=1>;
+	skosthes:broaderGeneric kad:BeperktRecht;
 .
 kad:Recht a skos:Concept, skoslex:Object;
 	skos:exactMatch brk:Recht;
