@@ -44,6 +44,7 @@
 	skos:hasTopConcept fin:Hypotheekgever;
 	skos:hasTopConcept fin:Hypotheekadviseur;
 #	skos:hasTopConcept kad:ZakelijkRecht; is een specialisatie van Registergoed;
+	skos:hasTopConcept kad:Rechtshandeling;
 	skos:hasTopConcept kad:Registergoed;
 	skos:hasTopConcept kad:Adres;
 	skos:hasTopConcept kad:Basisregistratie;
