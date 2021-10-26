@@ -150,7 +150,7 @@ kad:Beslag a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 	skosthes:broaderGeneric kad:Recht;
 .
-kad:Besluit skos:Concept, skoslex:Act;
+kad:Besluit a skos:Concept, skoslex:Act;
 	skos:exactMatch brk:Besluit;
 	rdfs:label "Besluit"@nl;
 	skos:prefLabel "Besluit"@nl;
