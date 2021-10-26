@@ -105,9 +105,9 @@ not:Gerechtigde a skos:Concept, skoslex:Actor;
 	skos:definition "Natuurlijk persoon die gerechtigd is te handelen."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
-	skos:semanticRelation not:Gevolmachtigde;
-	skos:semanticRelation kad:Rechthebbende;
-	skos:semanticRelation zv:Partij;
+	skos:related not:Gevolmachtigde;
+	skos:related kad:Rechthebbende;
+	skos:related zv:Partij;
 .
 not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	rdfs:label "Gevolmachtigde"@nl;
@@ -119,7 +119,7 @@ not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60&lid=1>;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
-	skos:semanticRelation not:Volmacht;
+	skos:related not:Volmacht;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
 	rdfs:label "Verkrijger"@nl;
@@ -158,7 +158,7 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 	skos:definition "Persoon die aan een andere persoon (de gevolmachtigde) de bevoegdheid heeft verleend om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;
 	rdfs:comment "Een volmachtgever is een persoon die een ander een volmacht geeft"@nl;
 	skosthes:broaderGeneric zv:Persoon;
-	skos:semanticRelation not:Volmacht;
+	skos:related not:Volmacht;
 .
 #--
 #Acts
@@ -676,7 +676,7 @@ not:Erfpachtvoorwaarden a skos:Concept;#Erfpacht wordt geregistreerd door Kadast
 	skos:definition "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
-	skos:semanticRelation kad:Erfpacht;
+	skos:related kad:Erfpacht;
 .
 not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	rdfs:label "Grondslagwaarde"@nl;
@@ -685,15 +685,15 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	skos:definition "De belasting wordt berekend over de waarde van de onroerende zaak of het recht waaraan deze is onderworpen, waarop de verkrijging betrekking heeft. De waarde is ten minste gelijk aan die van de tegenprestatie."@nl;
 	rdfs:comment "De waarde van onroerende zaken waarover het tarief van de overdrachtsbelasting wordt berekend."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=9>;
-	skos:semanticRelation kad:OnroerendeZaak;
-	skos:semanticRelation zv:Overdrachtsbelasting;
+	skos:related kad:OnroerendeZaak;
+	skos:related zv:Overdrachtsbelasting;
 .
 not:GrondVanBevoegdheid a skos:Concept;
 	rdfs:label "Grond van bevoegdheid"@nl;
 	skos:prefLabel "Grond van bevoegdheid"@nl;
 	skos:definition "De grond van de bevoegdheid van een persoon om een andere persoon te vertegenwoordigen, om namens een andere persoon (de vertegenwoordigde) (bepaalde) rechtshandelingen te verrichten, zoals een volmacht of het zijn van bestuurder van een rechtspersoon."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
-	skos:semanticRelation not:Volmacht;
+	skos:related not:Volmacht;
 .
 not:HerzieningErfpacht a skos:Concept;
 	rdfs:label "Herziening erfpacht"@nl;
@@ -703,7 +703,7 @@ not:HerzieningErfpacht a skos:Concept;
 	skos:definition "In de voorwaarden van de erfpacht staat vastgelegd wanneer de canon zal worden herzien. Dit betekend dat er na een bepaalde periode (tussen de 10 en 50 jaar) de canon opnieuw zal worden vastgesteld op basis van de actuele grond- en vastgoedwaarde. Ook kan een herziening plaats vinden bij een wijziging van het bestemmingsplan of bij de verbouwing van de woning. Dit valt echter niet onder herziening en zal moeten zijn opgenomen in de erfpachtakte."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
-	skos:semanticRelation kad:Canon;
+	skos:related kad:Canon;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Record;
 	rdfs:label "Hypotheekakte"@nl;
@@ -757,10 +757,10 @@ not:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
 	skos:definition "Voor het doorhalen van een hypotheekakte bij het Kadaster is een royementsakte nodig. Deze wordt opgesteld door de notaris en een notaris brengt hiervoor kosten in rekening. Een royementsakte is nodig bij het oversluiten van een hypotheek naar een andere geldverstrekker; bij de verkoop van je huis; of bij de aflossing van de hypotheek."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:broaderGeneric not:Notariskosten;
-	skos:semanticRelation fin:Aflossen;
-	skos:semanticRelation kad:Doorhaling;
-	skos:semanticRelation kad:DoorhalingHypotheek;
-	skos:semanticRelation mak:Verkoper;
+	skos:related fin:Aflossen;
+	skos:related kad:Doorhaling;
+	skos:related kad:DoorhalingHypotheek;
+	skos:related mak:Verkoper;
 .
 not:KostenEnOverdrachtsbelasting a skos:Concept, skoslex:Object;
 	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
@@ -777,8 +777,8 @@ not:KostenVestigenHypotheek a skos:Concept, skoslex:Object;
 	skos:definition "Geheel van kosten voor het vestigen van een hypotheek."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skos:broaderGeneric not:Notariskosten;
-	skos:semanticRelation not:VestigingHypotheek;
-	skos:semanticRelation mak:Koper;
+	skos:related not:VestigingHypotheek;
+	skos:related mak:Koper;
 .
 not:KwalitatieveRechten a skos:Concept;
 	rdfs:label "Kwalitatieve rechten"@nl;
@@ -813,7 +813,7 @@ not:Minuut a skos:Concept, skoslex:Record;
 	#skos:editorialNote "De minuut maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel)."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=I&artikel=1&lid=1>;
 	skosthes:broaderGeneric not:NotarieleAkte;
-	skos:semanticRelation not:AfschriftAkte;
+	skos:related not:AfschriftAkte;
 .
 not:NotaVanAfrekening a skos:Concept, skoslex:Record;
 	rdfs:label "Nota van afrekening"@nl;
@@ -893,7 +893,7 @@ not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of a
 	skos:definition "De plaatselijke benaming, zo deze bekend is."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric kad:Adres;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 not:PlaatsVanVerlijdenAkte a skos:Concept;
 	rdfs:label "Plaats van verlijden akte"@nl;
@@ -916,7 +916,7 @@ not:PlaatsVanVestiging a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
 	#Hens Meengs en Jacco Sjerps zijn beiden met andere artikelen gekomen. Overleg met KNB nodig.
 	skos:scopeNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt."@nl;
-	skos:semanticRelation not:Notaris;
+	skos:related not:Notaris;
 	#skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd."@nl;
 .
 not:RechtVanHypotheek a skos:Concept, skoslex:Object;
@@ -930,8 +930,8 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=4&artikel=260>;
 	skosthes:broaderGeneric kad:BeperktRecht;
-	skos:semanticRelation kad:OnroerendeZaak;
-	skos:semanticRelation fin:Lening;
+	skos:related kad:OnroerendeZaak;
+	skos:related fin:Lening;
 .
 not:TijdelijkeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
 	rdfs:label "Tijdelijke erfpacht"@nl;
@@ -977,7 +977,7 @@ not:TotaalbedragInschrijving a skos:Concept;
 	rdfs:comment "Het bedrag dat in de hypotheekakte staat."@nl;
 	skos:scopeNote "De hypotheeknemer mag nooit meer dan het bedrag dat als totaalbedrag in de hypotheekakte is vermeld rechtstreeks ontvangen uit de verkoopopbrengst van het onderpand."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
-	skos:semanticRelation not:RechtVanHypotheek;
+	skos:related not:RechtVanHypotheek;
 .
 not:VanRechtswegeOntbonden a skos:Concept;
 	rdfs:label "Van rechtswege ontbonden"@nl;
@@ -1007,8 +1007,8 @@ not:VertegenwoordigdDoor a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=39&lid=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;	
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
-	skos:semanticRelation zv:Persoon;
-	skos:semanticRelation not:Vertegenwoordiger;
+	skos:related zv:Persoon;
+	skos:related not:Vertegenwoordiger;
 .
 not:Volmacht a skos:Concept, skoslex:Object;
 	rdfs:label "Volmacht"@nl;
@@ -1031,7 +1031,7 @@ not:Voorkeursrecht a skos:Concept; #Zou ook in het Kadaster-domein kunnen, maar 
 	skos:definition "Een wettelijk of contractueel recht ten gunste van bepaalde privépersonen (huurders, landbouwers, mede-eigenaren van een onverdeelde boedel, enz.) of publiekrechtelijke rechtspersonen (lokale overheden, enz.) om een goed met voorrang op alle andere personen te kopen wanneer de eigenaar zijn voornemen tot verkopen kenbaar maakt."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
-	skos:semanticRelation kad:Registergoed;
+	skos:related kad:Registergoed;
 .
 not:VoortdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
 	rdfs:label "Voordturende erfpacht"@nl;
@@ -1055,7 +1055,8 @@ not:Wegneemrecht a skos:Concept, skoslex:Object;
 	rdfs:comment "Wegneemrecht is het recht van een erfpachter om weg te nemen wat op zijn kosten is aangebracht, mits dat wordt gedaan zonder beschadigingen achter te laten."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=89>;
 	skosthes:broaderGeneric kad:ZakelijkRecht;#Relatie is niet helemaal correct. Het kan een vorm van goederenrecht zijn, maar ook van verbintenisrecht. Zie https://www.juridischwoordenboek.nl/zoek/wegneemrecht
-	skos:semanticRelation kad:Erfpacht;
+	skos:relatedf
+kad:Erfpacht;
 .
 
 #
@@ -1089,7 +1090,7 @@ not:IdentiteitsdocumentReferentie  a skos:Concept;
 	skos:definition "Een unieke identificatie van het identiteitsdocument."@nl;
 	rdfs:comment "Een identificatie van het indentiteitsdocument zoals het paspoortnummer of rijbewijsnummer."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
-	skos:semanticRelation not:Identiteitsdocument;
+	skos:related not:Identiteitsdocument;
 .
 not:IdentiteitsdocumentSoort   a skos:Concept;
 	rdfs:label "Identiteitsdocument soort"@nl;
@@ -1097,7 +1098,7 @@ not:IdentiteitsdocumentSoort   a skos:Concept;
 	skos:definition "Een typering van het identiteitsdocument."@nl;
 	rdfs:comment "Een typering van het indentiteitsdocument zoals het paspoort of rijbewijs."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0028575>;
-	skos:semanticRelation not:Identiteitsdocument;
+	skos:related not:Identiteitsdocument;
 .
 
 not:Legitimatie a skos:Concept, skoslex:Object;
@@ -1109,17 +1110,17 @@ not:LegitimatieIdentificatie a skos:Concept, skoslex:Object;
   	rdfs:label "Identificatie legitimatie"@nl;
 	skos:prefLabel "Identificatie legitimatie"@nl;
 	skos:definition "De unieke identificatie van de legitimatie."@nl;
-	skos:semanticRelation not:Legitimatie;
+	skos:related not:Legitimatie;
 .
 not:Leveringsdatum a skos:Concept;
 	rdfs:label "Leveringsdatum"@nl;
 	skos:prefLabel "Leveringsdatum"@nl;
 	skos:definition "Een datum waarop de levering plaatsvindt."@nl;
-	skos:semanticRelation not:Levering;
+	skos:related not:Levering;
 .
 not:OnroerendeZaakOmschrijving a skos:Concept;
 	rdfs:label "Omschrijving onroerende zaak"@nl;
 	skos:prefLabel "Omschrijving onroerende zaak"@nl;
 	skos:definition "De omschrijving van een onroerende zaak."@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
