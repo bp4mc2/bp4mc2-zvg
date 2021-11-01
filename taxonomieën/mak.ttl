@@ -47,8 +47,8 @@ mak:Aankoopmakelaar a skos:Concept, skoslex:Agent;
 	skos:definition "een makelaar die is ingeschakeld door de koper en die namens de koper bemiddelt bij de aankoop van een registergoed"@nl;
 	rdfs:comment "Een aankoopmakelaar wordt door koper ingeschakeld. Hij bemiddelt namens de koper bij aan de aankoop van het registergoed. Hij voert doorgaans namens de koper de onderhandelingen met de verkoopmakelaar."@nl;
 	skosthes:broaderGeneric mak:Makelaar;
-	skos:semanticRelation mak:Koper;
-	skos:semanticRelation mak:Verkoopmakelaar;
+	skos:related mak:Koper;
+	skos:related mak:Verkoopmakelaar;
 .
 mak:Koper a skos:Concept, skoslex:Actor;
 	rdfs:label "Koper"@nl;
@@ -91,8 +91,8 @@ mak:Verkoopmakelaar a skos:Concept, skoslex:Agent;
 	skos:definition "een makelaar die is ingeschakeld door de verkoper en die namens de verkoper bemiddelt bij de verkoop van een registergoed "@nl;
 	rdfs:comment "Een verkoopmakelaar bemiddelt tussen de verkoper en de koper. De verkoopmakelaar is ingeschakeld door verkoper. De verkoopmakelaar voert namens de verkoper de onderhandelingen, regelt de bezichtigingen van de woning en stelt doorgaans de koopovereenkomst op. "@nl;
 	skosthes:broaderGeneric mak:Makelaar;
-	skos:semanticRelation mak:Verkoper;
-	skos:semanticRelation mak:Aankoopmakelaar;
+	skos:related mak:Verkoper;
+	skos:related mak:Aankoopmakelaar;
 .
 mak:Verkoper a skos:Concept, skoslex:Actor;
 	rdfs:label "Verkoper"@nl;
@@ -155,7 +155,7 @@ mak:Woning a skos:Concept, skoslex:Object;
 	rdfs:label "Woning"@nl;
 	skos:definition "Een (deel van) een gebouw, bestemd voor bewoning."@nl;
 	skos:editorialNote "'Woning' is de gebruikelijk term binnen de makkelaarswereld. Binnen zorgeloosvastgoed spreken we meer generieker van 'Huis'"@nl;
-	skos:semanticRelation kad:Perceel;
+	skos:related kad:Perceel;
 	skos:closeMatch bag:Verblijfsobject;
 .
 mak:ZichtbareEnOnzichtbareGebreken a skos:Concept, skoslex:Object;
@@ -173,7 +173,7 @@ mak:Aankoop a skos:Concept, skoslex:Act;
 	skos:definition "Aankoop van een registergoed door middel van een koopovereenkomst."@nl;
 	rdfs:comment "Er is sprake van een 'aankoop' indien het registergoed door de koper wordt aangekocht."@nl;
 	skosthes:broaderPartitive mak:Koop;
-	skos:semanticRelation mak:Verkoop;
+	skos:related mak:Verkoop;
 	skoslex:agent mak:Aankoopmakelaar;
 	skoslex:actor mak:Koper;
 	skoslex:object mak:Woning;
@@ -319,10 +319,10 @@ mak:Koopovereenkomst a skos:Concept, skoslex:Record;
 	skos:editorialNote "Soms (bijvoorbeeld in Amsterdam) stelt de notaris de koopovereenkomst op."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=1&afdeling=1&artikel=1>;
 	skosthes:broaderGeneric not:OnderhandseAkte;
-	skos:semanticRelation mak:ModelKoopovereenkomst;
-	skos:semanticRelation not:AkteVanLevering;
-	skos:semanticRelation not:NotaVanAfrekening;
-	skos:semanticRelation mak:Energielabel;
+	skos:related mak:ModelKoopovereenkomst;
+	skos:related not:AkteVanLevering;
+	skos:related not:NotaVanAfrekening;
+	skos:related mak:Energielabel;
 .
 mak:Energielabel a skos:Concept, skoslex:Record;
 	rdfs:label "Energielabel"@nl;
@@ -835,7 +835,7 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 #	rdfs:comment "In de “as is, where is” clausule komen verkoper en koper overeen dat alle (verborgen) gebreken voor rekening en risico van koper zijn. Ook (verborgen) gebreken die niet het gevolg zijn van de ouderdom van de woning komen voor rekening en risico van koper. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn."@nl;
 #	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
-#	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
+#	skos:related mak:ZichtbareEnOnzichtbareGebreken;
 #.
 #mak:ArtikelKadastaalInmeten a skos:Concept, skoslex:Record;
 #	rdfs:label "Artikel: Kadastraal inmeten"@nl;
@@ -852,7 +852,7 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 #	rdfs:comment "Als een verkoper een woning niet zelf feitelijk heeft bewoond dan kan een verkoper zijn aansprakelijkheid met betrekking tot (verborgen) gebreken die verband houden met de bewoning beperken. Deze beperking van de aansprakelijkheid voor (verborgen) gebreken ziet dan op gebreken waarvan verkoper op de hoogte zou zijn geweest indien de verkoper de woning zelf feitelijk had bewoond. Denk bijvoorbeeld aan een niet goed functionerende  cv-installatie. Als verkoper de woning zelf feitelijk had bewoond dan was hij op de hoogte geweest van dit gebrek. Nu verkoper de woning niet zelf feitelijk heeft bewoond komt het niet goed functioneren van de cv-installatie voor rekening en risico van koper.  Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn."@nl;
 #	skos:scopeNote "Is een extra artikel en is niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
-#	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken
+#	skos:related mak:ZichtbareEnOnzichtbareGebreken
 #.
 #mak:ArtikelNSWLandgoed a skos:Concept, skoslex:Record;
 #	rdfs:label "Artikel: NSW landgoed"@nl;
@@ -870,7 +870,7 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 #	rdfs:comment "In de praktijk wordt bij de verkoop van een (oudere) woning geregeld gebruik gemaakt van een zogenoemde ‘ouderdomsclausule’. Zo’n clausule wordt dan, op initiatief van de verkoper of diens makelaar, handmatig aan de koopovereenkomst toegevoegd. In de clausule komen verkoper en koper overeen dat (verborgen) gebreken voor rekening en risico van koper zijn. Overigens laat dit onverlet dat verkoper melding moet doen van gebreken die hem bekend zijn."@nl;
 #	skos:scopeNote "Extra artikel en niet opgenomen in de model koopovereenkomst."@nl;
 #	skosthes:broaderPartitive mak:Koopovereenkomst;
-#	skos:semanticRelation mak:ZichtbareEnOnzichtbareGebreken;
+#	skos:related mak:ZichtbareEnOnzichtbareGebreken;
 #.
 #
 #Overige concepten
@@ -878,7 +878,7 @@ mak:ArtikelNederlandsRecht a skos:Concept, skoslex:Record;
 mak:Aanhorigheden a skos:Concept, skoslex:Object;
 	rdfs:label "Aanhorigheden"@nl;
 	skos:prefLabel "Aanhorigheden"@nl;
-	skos:semanticRelation mak:Woning;
+	skos:related mak:Woning;
 .
 mak:Aanschrijven a skos:Concept, skoslex:Act;
 	rdfs:label "Aanschrijven"@nl;
@@ -895,44 +895,44 @@ mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
 mak:AanspraakTotGebruik  a skos:Concept, skoslex:Object;
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik"@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 mak:AanwijzerNotaris a skos:Concept;
 	rdfs:label "Aanwijzer notaris"@nl;
 	skos:prefLabel "Aanwijzer notaris"@nl;
 	skos:definition "Degene die de notaris voor de levering aanwijst, de koper of de verkoper."@nl;
-	skos:semanticRelation mak:KostenEnOverdrachtsbelasting;
+	skos:related mak:KostenEnOverdrachtsbelasting;
 .
 mak:AardClausule a skos:Concept;
 	rdfs:label "Aard Clausule"@nl;
 	skos:prefLabel "Aard Clausule"@nl;
 	skos:definition "Een aanduiding van de clausule of artikel."@nl;
-	skos:semanticRelation mak:Voorbehoud;
+	skos:related mak:Voorbehoud;
 .
 mak:AchterstalligOnderhoud a skos:Concept;
 	rdfs:label "Achterstallig onderhoud"@nl;
 	skos:prefLabel "Achterstallig onderhoud"@nl;
 	skos:definition "van een onroerende zaak"@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 mak:Bate a skos:Concept, skoslex:Object;
 	rdfs:label "Bate"@nl;
 	skos:prefLabel "Bate"@nl;
 	skos:definition "Een bate uit de onroerende zaak, bijvoorbeeld huur."@nl;
-	skos:semanticRelation mak:OnroerendeZaak;
+	skos:related mak:OnroerendeZaak;
 .
 mak:Bedenktijd a skos:Concept, skoslex:Object;
 	rdfs:label "Bedenktijd"@nl;
 	skos:prefLabel "Bedenktijd"@nl;
 	skos:definition "De 3 dagen bedenktijd die de koper heeft na het afsluiten van een koopovereenkomst"@nl;
-	skos:semanticRelation mak:Koop;
-	skos:semanticRelation mak:Koper;
+	skos:related mak:Koop;
+	skos:related mak:Koper;
 .
 mak:Belasting a skos:Concept, skoslex:Object;
 	rdfs:label "Belasting"@nl;
 	skos:prefLabel "Belasting"@nl;
 	skos:definition "Belasting op de onroerende zaak."@nl;
-	skos:semanticRelation mak:OnroerendeZaak;
+	skos:related mak:OnroerendeZaak;
 .
 mak:Betalen a skos:Concept, skoslex:Act;
 	rdfs:label "Betalen"@nl;
@@ -945,15 +945,15 @@ mak:BetalerKosten a skos:Concept;
 	rdfs:label "Betaler kosten"@nl;
 	skos:prefLabel "Betaler kosten"@nl;
 	skos:definition "Degene die de kosten voor de levering betaalt, de koper of de verkoper."@nl;
-	skos:semanticRelation mak:KostenEnOverdrachtsbelasting;
+	skos:related mak:KostenEnOverdrachtsbelasting;
 .
 mak:BeslagToekomstigeTermijn a skos:Concept, skoslex:Act;
 	rdfs:label "Beslag toekomstige termijn"@nl;
 	skos:prefLabel "Beslag toekomstige termijn"@nl;
 	skos:definition "Beslag op toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten."@nl;
-	skos:semanticRelation mak:Huurovereenkomst;
-	skos:semanticRelation mak:Leaseovereenkomst;
-	skos:semanticRelation mak:Huurkoopovereenkomst;
+	skos:related mak:Huurovereenkomst;
+	skos:related mak:Leaseovereenkomst;
+	skos:related mak:Huurkoopovereenkomst;
 .
 mak:Beschadigen a skos:Concept, skoslex:Act;
 	rdfs:label "Beschadigen"@nl;
@@ -970,9 +970,9 @@ mak:BetalingToekomstigeTermijn a skos:Concept, skoslex:Act;
 	rdfs:label "Betaling toekomstige termijn"@nl;
 	skos:prefLabel "Betaling toekomstige termijn"@nl;
 	skos:definition "Betalingen van toekomstige termijnen van lopende huur-, lease- of huurkoopovereenkomsten."@nl;
-	skos:semanticRelation mak:Huurovereenkomst;
-	skos:semanticRelation mak:Leaseovereenkomst;
-	skos:semanticRelation mak:Huurkoopovereenkomst;
+	skos:related mak:Huurovereenkomst;
+	skos:related mak:Leaseovereenkomst;
+	skos:related mak:Huurkoopovereenkomst;
 .
 mak:BouwkundigeKeuring a skos:Concept, skoslex:Object;
 	rdfs:label "Bouwkundige keuring"@nl;
@@ -982,7 +982,7 @@ mak:BrutoJaarlast a skos:Concept;
 	rdfs:label "Bruto jaarlast"@nl;
 	skos:prefLabel "Bruto jaarlast"@nl;
 	skos:definition "van een hypothecaire lening"@nl;
-	skos:semanticRelation mak:HypothecaireGeldlening;
+	skos:related mak:HypothecaireGeldlening;
 .
 mak:EigenschappenNormaalGebruik a skos:Concept, skoslex:Object;
 	rdfs:label "Eigenschappen normaal gebruik"@nl;
@@ -998,19 +998,19 @@ mak:Gebrek a skos:Concept;
 	rdfs:label "Gebrek"@nl;
 	skos:prefLabel "Gebrek"@nl;
 	skos:definition "van een onroerende zaak"@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 mak:Gezamenlijkheid a skos:Concept;
 	rdfs:label "Gezamenlijkheid"@nl;
 	skos:prefLabel "Gezamenlijkheid"@nl;
 	skos:definition "De uit meerdere personen bestaande partij oefent ten opzichte van de wederpartij gezamenlijk hun rechten en verplichtingen uit."@nl;
-	skos:semanticRelation zv:Partij;
+	skos:related zv:Partij;
 .
 mak:Heffing a skos:Concept, skoslex:Object;
 	rdfs:label "Heffing"@nl;
 	skos:prefLabel "Heffing"@nl;
 	skos:definition "Heffing op de onroerende zaak."@nl;
-	skos:semanticRelation mak:OnroerendeZaak;
+	skos:related mak:OnroerendeZaak;
 .
 mak:Herstel a skos:Concept, skoslex:Act;
 	rdfs:label "Herstel"@nl;
@@ -1041,13 +1041,13 @@ mak:Hypotheekvorm a skos:Concept;
 	rdfs:label "Hypotheekvorm"@nl;
 	skos:prefLabel "Hypotheekvorm"@nl;
 	skos:definition "van een hypothecaire lening"@nl;
-	skos:semanticRelation mak:HypothecaireGeldlening;
+	skos:related mak:HypothecaireGeldlening;
 .
 mak:Ingebrekestellen a skos:Concept, skoslex:Act;
 	rdfs:label "Ingebrekestellen"@nl;
 	skos:prefLabel "Ingebrekestellen"@nl;
 	skos:definition "In een officieel stuk meedelen dat een van de partijen zijn verplichtingen niet nakomt"@nl;
-	skos:semanticRelation zv:Partij;
+	skos:related zv:Partij;
 .
 mak:InschrijvenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Inschrijven koopovereenkomst"@nl;
@@ -1071,19 +1071,19 @@ mak:Koopsom a skos:Concept;
 	rdfs:label "Koopsom"@nl;
 	skos:prefLabel "Koopsom"@nl;
 	skos:definition "Een bedrag voor alle zaken waarop de koopovereenkomst betrekking heeft."@nl;
-	skos:semanticRelation mak:Koop;
+	skos:related mak:Koop;
 .
 mak:KoopStatus a skos:Concept;
 	rdfs:label "Koop status"@nl;
 	skos:prefLabel "Koop status"@nl;
 	skos:definition "Een status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proces zit. De waarden zijn opgenomen in een waardelijst."@nl;
-	skos:semanticRelation mak:Koop;
+	skos:related mak:Koop;
 .
 mak:KoopStandaardBetalingscondities a skos:Concept;
 	rdfs:label "Standaard betalingscondities"@nl;
 	skos:prefLabel "Standaard betalingscondities"@nl;
 	skos:definition "Een indicatie of de standaard betalingscondities van toepassing zijn. Standaard vind de betaling plaats bij de levering door de notaris."@nl;
-	skos:semanticRelation mak:Koop;
+	skos:related mak:Koop;
 .
 mak:Lasten a skos:Concept, skoslex:Object;
 	rdfs:label "Lasten"@nl;
@@ -1104,7 +1104,7 @@ mak:LeegEnOntruimd a skos:Concept, skoslex:Object;
 	rdfs:label "Leeg en ontruimd"@nl;
 	skos:prefLabel "Leeg en ontruimd"@nl;
 	skos:definition "Een woning is leeg en ontruimd als alle niet meeverkochte roerende goederen eruit zijn verwijderd."@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 mak:LijstVanGoederen a skos:Concept, skoslex:Object;
 	rdfs:label "Lijst van goederen"@nl;
@@ -1138,7 +1138,7 @@ mak:NationaleHypotheekGarantie a skos:Concept;
 	rdfs:label "Nationale hypotheekgarantie"@nl;
 	skos:prefLabel "Nationale hypotheekgarantie"@nl;
 	skos:definition "Nationale hypotheekgarantie"@nl;
-	skos:semanticRelation kad:RechtVanHypotheek;
+	skos:related kad:RechtVanHypotheek;
 .
 mak:NietTegenwerken a skos:Concept, skoslex:Act;
 	rdfs:label "Niet tegenwerken"@nl;
@@ -1247,13 +1247,13 @@ mak:Renteperentage a skos:Concept;
 	rdfs:label "Renteperentage"@nl;
 	skos:prefLabel "Renteperentage"@nl;
 	skos:definition "van een hypothecaire lening"@nl;
-	skos:semanticRelation mak:HypothecaireGeldlening;
+	skos:related mak:HypothecaireGeldlening;
 .
 mak:Risico a skos:Concept,skoslex:Object;
 	rdfs:label "Risico"@nl;
 	skos:prefLabel "Risico"@nl;
 	skos:definition ""@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 mak:RisicoOvergang a skos:Concept,skoslex:Act;
 	rdfs:label "Risico-overgang"@nl;
@@ -1273,33 +1273,33 @@ mak:Schadevergoeding a skos:Concept,skoslex:Object;
 	rdfs:label "Schadevergoeding"@nl;
 	skos:prefLabel "Schadevergoeding"@nl;
 	skos:definition "Vergoeding na ingebrekestelling op basis van tekortkoming"@nl;
-	skos:semanticRelation mak:Schade;
-	skos:semanticRelation mak:Ingebrekestellen;
+	skos:related mak:Schade;
+	skos:related mak:Ingebrekestellen;
 .
 mak:SpecialistischOnderzoek a skos:Concept, skoslex:Object;
 	rdfs:label "Specialistisch onderzoek"@nl;
 	skos:prefLabel "Specialistisch onderzoek"@nl;
 	skos:definition "Specialistisch onderzoek naar de bouwkundige staat"@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 mak:Tekortkoming a skos:Concept,skoslex:Object;
 	rdfs:label "Tekortkoming"@nl;
 	skos:prefLabel "Tekortkoming"@nl;
 	skos:definition ""@nl;
-	skos:semanticRelation kad:OnroerendeZaak;
+	skos:related kad:OnroerendeZaak;
 .
 mak:Tekortschieten a skos:Concept,skoslex:Act;
 	rdfs:label "Tekortschieten"@nl;
 	skos:prefLabel "Tekortschieten"@nl;
 	skos:definition ""@nl;
-	skos:semanticRelation mak:Verplichting;
+	skos:related mak:Verplichting;
 .
 mak:TenLasteGebruik a skos:Concept;
 	rdfs:label "Ten laste van het gebruik"@nl;
 	skos:prefLabel "Ten laste van het gebruik"@nl;
 	skos:definition "Ten laste van het gebruik"@nl;
-	skos:semanticRelation mak:Belasting;
-	skos:semanticRelation mak:Heffing;
+	skos:related mak:Belasting;
+	skos:related mak:Heffing;
 .
 mak:Terugbetalen a skos:Concept, skoslex:Act;
 	rdfs:label "Terugbetalen"@nl;
@@ -1347,17 +1347,17 @@ mak:VerrekeningBatenLastenCanons a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening baten, lasten en canons"@nl;
 	skos:prefLabel "Verrekening baten, lasten en canons"@nl;
 	skos:definition "De verrekening van baten, lasten, belastingen, heffingen en canons bij de koop."@nl;
-	skos:semanticRelation mak:Bate;
-	skos:semanticRelation mak:Last;
-	skos:semanticRelation mak:Belasting;
-	skos:semanticRelation mak:Heffing;
-	skos:semanticRelation kad:Canon;
+	skos:related mak:Bate;
+	skos:related mak:Last;
+	skos:related mak:Belasting;
+	skos:related mak:Heffing;
+	skos:related kad:Canon;
 .
 mak:Verrekeningoverdrachtsbelastingart13 a skos:Concept, skoslex:Act;
 	rdfs:label "Verrekening overdrachtsbelasting art 13"@nl;
 	skos:prefLabel "Verrekening overdrachtsbelasting art 13"@nl;
 	skos:definition "Een indicatie of de verrekeing van de overdrachtsbelasting conform artikel 13 van toepassing is."@nl;
-	skos:semanticRelation mak:Koop;
+	skos:related mak:Koop;
 .
 mak:Vorderen a skos:Concept, skoslex:Act;
 	rdfs:label "Vorderen"@nl;
@@ -1376,7 +1376,7 @@ mak:VoorwaardenIdentificatie a skos:Concept;
 	rdfs:label "Identificatie voorwaarden"@nl;
 	skos:prefLabel "Identificatie voorwaarden"@nl;
 	skos:definition "De unieke identificatie van de voorwaarden."@nl;
-	skos:semanticRelation mak:Voorwaarden;
+	skos:related mak:Voorwaarden;
 .
 mak:VrijwaringStaatOnroerendeZaak a skos:Concept, skoslex:Act;
 	rdfs:label "Vrijwaring staat onroerende zaak"@nl;
