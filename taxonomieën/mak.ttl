@@ -142,7 +142,7 @@ mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object;
 	skos:definition "Een ontbindende voorwaarde is een voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden."@nl;
 	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst."@nl;
 	skosthes:narrowerGeneric mak:Financieringsvoorbehoud;
-# 	skosthes:narrowerGeneric fin:NationaleHypotheekgarantie; <daar nog wel definiëren>
+ 	skosthes:narrowerGeneric mak:NationaleHypotheekgarantie; 
 	skosthes:narrowerGeneric mak:BouwkundigeKeuring;
 .
 mak:Verontreiniging a skos:Concept, skoslex:Object;
@@ -226,6 +226,7 @@ mak:Opleveren a skos:Concept, skoslex:Act;
 	skos:scopeNote "Placeholder"@nl;
 	skoslex:actor mak:Verkoper;
 	skoslex:actor mak:Koper;
+	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 mak:OpstellenKoopovereenkomst a skos:Concept, skoslex:Act;
 	rdfs:label "Opstellen koopovereenkomst"@nl;
@@ -304,6 +305,7 @@ mak:WaarderingRoerendeZaken a skos:Concept, skoslex:Act;
 In de koopovereenkomst wordt aangegeven op welk bedrag de meeverkochte roerende zaken worden gewaardeerd. Het voor roerende zaken ingevulde bedrag moet uiteraard wel reëel zijn. De belastingdienst kan daarop controleren en om een nadere toelichting vragen. Staat het bedrag in geen verhouding tot de werkelijke waarde van de betreffende roerende zaken, dan loopt koper het risico een boete te moeten betalen.
 Zoals vermeld, is het onderscheid roerend en onroerend niet altijd even gemakkelijk te hanteren. Het komt dan ook regelmatig voor dat partijen van mening verschillen over het al dan niet roerende karakter van bepaalde zaken. Omdat partijen niet kunnen onderhandelen over het al dan niet (on)roerende karakter van zaken, is het weinig zinvol voor hen om daarover in discussie te gaan. Of iets roerend of onroerend is, volgt uit de wet, ongeacht de vraag hoe partijen daar over denken. Voor het vaststellen van de overdrachtsbelasting is dan ook in feite voldoende dat duidelijk is wat er allemaal in de koop begrepen is (lijst van zaken).
 Indien ook roerende zaken zijn verkocht moet de notaris bij de akte van levering aangeven welke roerende zaken het betreft, voor welk bedrag deze werden verkregen en of dat bedrag bij de prijs voor de onroerende zaak is inbegrepen. Omdat de notaris veelal geen concreet beeld van het verkochte heeft, is het voor hem plezierig als de (makelaar van de) koper op de lijst van zaken aangeeft welke zaken naar zijn mening roerend zijn.''';
+	skosthes:broaderPartitive mak:Koop;
 .
 
 #--
@@ -482,6 +484,7 @@ In artikel 10 wordt nader ingegaan op de situatie dat de onroerende zaak niet ge
 	skos:scopeNote "Artikel 6 van de model koopovereenkomst."@nl;
 	skos:editorialNote "Artikel 6.1 bevat de hoofdregel, de overige subartikelen de aanvullingen en uitzonderingen"@nl;
 	skoslex:isAbout zv:Bestemmingsplan;
+	skosthes:broaderPartitive mak:Koopovereenkomst;
 .
 mak:ArtikelRechtenAanspraken a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 6.1: rechten en aanspraken"@nl;
@@ -627,7 +630,8 @@ mak:ArtikelOnbekenheidsverklaring a skos:Concept, skoslex:Record;
 	rdfs:comment "Artikel 6.13. Hier wordt nog eens benadrukt dat de verklaring van verkoper dat hij niet op de hoogte is van bijvoorbeeld bodemverontreiniging, niets zegt over wie het risico voor bodemverontreiniging draagt. Koper mag uit de onbekendheidsverklaring niet afleiden dat er geen sprake is van bodemverontreiniging. Hij krijgt dus geen garantie. Er is echter ook geen sprake van uitsluiting van aansprakelijkheid. Verkoper legt met een onbekendheidsverklaring het risico dus niet bij koper neer, zie de toelichting bij artikel 6.3. en 6.4.1. Risicoverdeling is een kwestie van afspraak. Bij een onbekendheidsverklaring gaat het om feitelijke wetenschap en niet om een afspraak. Je kunt nu eenmaal niet onderhandelen over de vraag of je iets wel of niet weet. "@nl;
 	skos:scopeNote "Artikel 6.13 van de model koopovereenkomst."@nl;
 	skoslex:isAbout kad:Canon;
-	skosthes:broaderPartitive mak:Onbekendheidsverklaring;
+	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
+	skosthes:broaderGeneric mak:Onbekendheidsverklaring;
 .
 mak:ArtikelFeitelijkeLevering a skos:Concept, skoslex:Record;
 	rdfs:label "Artikel 7.1: Feitelijke levering"@nl;
@@ -880,14 +884,6 @@ mak:Aanhorigheden a skos:Concept, skoslex:Object;
 	skos:prefLabel "Aanhorigheden"@nl;
 	skos:related mak:Woning;
 .
-mak:Aanschrijven a skos:Concept, skoslex:Act;
-	rdfs:label "Aanschrijven"@nl;
-	skos:prefLabel "Aanschrijven"@nl;
-	skoslex:actor mak:Overheidsinstantie;
-	skoslex:actor mak:Nutsbedrijf;
-	skoslex:object mak:OnroerendeZaak;
-	skoslex:record mak:ArtikelAanschrijvingOverheidNutsbedrijf;
-.
 mak:AanschrijvingOverheidNutsbedrijf a skos:Concept, skoslex:Object;
 	rdfs:label "Aanschrijving overheid of nutsbedrijf"@nl;
 	skos:prefLabel "Aanschrijving overheid of nutsbedrijf"@nl;
@@ -902,12 +898,60 @@ mak:AanwijzerNotaris a skos:Concept;
 	skos:prefLabel "Aanwijzer notaris"@nl;
 	skos:definition "Degene die de notaris voor de levering aanwijst, de koper of de verkoper."@nl;
 	skos:related mak:KostenEnOverdrachtsbelasting;
+	skosthes:broaderGeneric zv:Partij;
 .
-mak:AardClausule a skos:Concept;
+mak:AardClausule a skos:Collection;
 	rdfs:label "Aard Clausule"@nl;
 	skos:prefLabel "Aard Clausule"@nl;
 	skos:definition "Een aanduiding van de clausule of artikel."@nl;
 	skos:related mak:Voorbehoud;
+	skos:member mak:ArtikelVerkoopEnKoopOptieAEigendom;
+	skos:member mak:ArtikelVerkoopEnKoopOptieBErfpacht;
+	skos:member mak:ArtikelKostenOverdrachtsbelasting;
+	skos:member mak:Artikel13Verschil;
+	skos:member mak:ArtikelBetaling;
+	skos:member mak:ArtikelEigendomsoverdracht;
+	skos:member mak:ArtikelEigendomsoverdrachtLid1;
+	skos:member mak:ArtikelEigendomsoverdrachtLid2;
+	skos:member mak:ArtikelEigendomsoverdrachtLid3;
+	skos:member mak:ArtikelBankgarantieWaarborgsom;
+	skos:member mak:ArtikelStaatOnroerendeZaakGebruik;
+	skos:member mak:ArtikelRechtenAanspraken;
+	skos:member mak:ArtikelLasten;
+	skos:member mak:ArtikelEigenschappenNormaalGebruik;
+	skos:member mak:ArtikelVerontreiniging;
+	skos:member mak:ArtikelOndergrondseTankVoorHetOpslaanVanVloeistoffen;
+	skos:member mak:ArtikelAsbest;
+	skos:member mak:ArtikelBeschikkingWetBodemsanering;
+	skos:member mak:ArtikelInspectie;
+	skos:member mak:ArtikelAanschrijvingOverheidNutsbedrijf;
+	skos:member mak:ArtikelMonument;
+	skos:member mak:ArtikelBeschermdStadsDorpsgezicht;
+	skos:member mak:ArtikelVerplichtingenDerden;
+	skos:member mak:ArtikelWetVoorkeursrechtGemeenten;
+	skos:member mak:ArtikelWegneemrechtHuurder;
+	skos:member mak:ArtikelOppervlakte;
+	skos:member mak:ArtikelLastenVoorgaandeJaren;
+	skos:member mak:ArtikelOnbekenheidsverklaring;
+	skos:member mak:ArtikelFeitelijkeLevering;
+	skos:member mak:ArtikelOngevorderdLeeg;
+	skos:member mak:ArtikelHuurLeaseHuurkoopovereenkomsten;
+	skos:member mak:ArtikelOverdrachtAanspraken;
+	skos:member mak:ArtikelBatenLastenCanons;
+	skos:member mak:ArtikelHoofdelijkheid;
+	skos:member mak:ArtikelOvermachtRisicoVerzekeringen;
+	skos:member mak:ArtikelIngebrekestelling;
+	skos:member mak:ArtikelOntbindenTekortkoming;
+	skos:member mak:ArtikelSchadevergoeding;
+	skos:member mak:ArtikelVervallenBoeteregeling;
+	skos:member mak:ArtikelWoonplaats;
+	skos:member mak:ArtikelRegistratieKoopovereenkomst;
+	skos:member mak:ArtikelIdentiteitPartijen;
+	skos:member mak:ArtikelOntbindendeVoorwaarden;
+	skos:member mak:ArtikelOntbindingVoorwaarden;
+	skos:member mak:ArtikelBedenktijd;
+	skos:member mak:ArtikelOndertekening;
+	skos:member mak:ArtikelNederlandsRecht;
 .
 mak:AchterstalligOnderhoud a skos:Concept;
 	rdfs:label "Achterstallig onderhoud"@nl;
