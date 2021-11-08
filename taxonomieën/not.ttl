@@ -17,7 +17,9 @@
 <http://zorgeloosvastgoed.nl/data/not> a owl:Ontology;
 	rdfs:label "Domein Notariaat"@nl;
 .
-#--
+<http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not> a skos:ConceptScheme;
+	rdfs:label "algemeen begrippenkader Notariaat"@nl;
+.#--
 #Wetgeving links
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
 #Links zijn aangemaakt d.m.v. de Linktool van LiDO (linkeddata.overheid.nl) functionaliteit.
@@ -68,6 +70,7 @@
 #--
 #Actors and Agents
 not:Comparant a skos:Concept, skoslex:Actor;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Comparant"@nl;
 	skos:prefLabel "Comparant"@nl;
 	skos:definition "Natuurlijke persoon die bij het verlijden van een notariële akte aan de notaris verschijnt."@nl;
@@ -81,6 +84,7 @@ not:Comparant a skos:Concept, skoslex:Actor;
 	skosthes:narrowerGeneric not:Gevolmachtigde;
 .
 not:Notaris a skos:Concept, skoslex:Agent;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Notaris"@nl;
 	#rdfs:label "Notary"@en
 	skos:prefLabel "Notaris"@nl;
@@ -99,6 +103,7 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 not:Gerechtigde a skos:Concept, skoslex:Actor;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Gerechtigde"@nl;
 	skos:altLabel "Bevoegde"@nl;
 	skos:prefLabel "Gerechtigde"@nl;
@@ -110,6 +115,7 @@ not:Gerechtigde a skos:Concept, skoslex:Actor;
 	skos:related zv:Partij;
 .
 not:Gevolmachtigde a skos:Concept, skoslex:Actor;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Gevolmachtigde"@nl;
 	skos:prefLabel "Gevolmachtigde"@nl;
 	skos:altLabel "Volmachtnemer"@nl;
@@ -122,6 +128,7 @@ not:Gevolmachtigde a skos:Concept, skoslex:Actor;
 	skos:related not:Volmacht;
 .
 not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Verkrijger"@nl;
 	skos:prefLabel "Verkrijger"@nl;
 	skos:altLabel "Koper"@nl;
@@ -133,6 +140,7 @@ not:Verkrijger a skos:Concept, skoslex:Actor; #Als de verkrijger de rol van obje
 	skosthes:broaderGeneric zv:Partij;
 .
 not:Vertegenwoordiger a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Vertegenwoordiger"@nl;
 	skos:prefLabel "Vertegenwoordiger"@nl;
 	skos:definition "Persoon die bevoegd is om een andere persoon te vertegenwoordigen, om namens een andere persoon (de vertegenwoordigde) (bepaalde) rechtshandelingen te verrichten."@nl;
@@ -141,6 +149,7 @@ not:Vertegenwoordiger a skos:Concept;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van object heeft in de handeling, zien we hem als geobjectiveerde actor, niet als object
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Vervreemder"@nl;
 	skos:prefLabel "Vervreemder"@nl;
 	skos:altLabel "Verkoper"@nl;
@@ -153,6 +162,7 @@ not:Vervreemder a skos:Concept, skoslex:Actor;  #Als de vervreemder de rol van o
 	skosthes:broaderGeneric zv:Partij;
 .
 not:Volmachtgever a skos:Concept, skoslex:Actor;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Volmachtgever"@nl;
 	skos:prefLabel "Volmachtgever"@nl;
 	skos:definition "Persoon die aan een andere persoon (de gevolmachtigde) de bevoegdheid heeft verleend om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;
@@ -163,6 +173,7 @@ not:Volmachtgever a skos:Concept, skoslex:Actor;
 #--
 #Acts
 not:Afrekening a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Afrekening"@nl;
 	skos:prefLabel "Afrekening"@nl;
 	skos:definition "Als u naar de notaris gaat voor het tekenen van de hypotheek- en transportakte, krijgt u ruim van tevoren een zogenaamde afrekening. Dit is een overzicht waarop de bedragen staan die de notaris ontvangt en namens u aan verschillende instanties en personen zal betalen."@nl;
@@ -175,6 +186,7 @@ not:Afrekening a skos:Concept, skoslex:Act;
 #ArchiverenAkte of ArchiverenNOT?
 #Archiveren maakt geen deel uit van de eerste scope van de werkgroep (koopovereenkomst tot en met het overhandigen van de sleutel). Toch laten staan.
 not:ArchiverenAkte a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Archiveren (akte)"@nl;
 	skos:prefLabel "Archiveren (akte)"@nl;
 	skos:definition "De notaris is verplicht de voor hem verleden akten in zijn protocol op te nemen."@nl;
@@ -186,6 +198,7 @@ not:ArchiverenAkte a skos:Concept, skoslex:Act;
 	skoslex:object not:Akte;
 .
 not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Archiveren (hypotheekakte)"@nl;
 	skos:prefLabel "Archiveren (hypotheekakte)"@nl;
 	skos:definition "Opslaan of verzamelen van de hypotheekakte in een archief of andere bewaarplaats."@nl;
@@ -195,6 +208,7 @@ not:ArchiverenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigenBeperktRecht;
 .
 not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Archiveren (akte van levering)"@nl;
 	skos:prefLabel "Archiveren (akte van levering)"@nl;
 	skos:definition "Opslaan of verzamelen van de akte van levering in een archief of andere bewaarplaats."@nl;
@@ -204,6 +218,7 @@ not:ArchiverenAkteLevering a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:JuridischeLevering;
 .
 not:Betaling a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Betaling"@nl;
 	skos:prefLabel "Betaling"@nl;
 	skos:definition "De overdracht van geld."@nl;
@@ -216,6 +231,7 @@ not:Betaling a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:PasserenAkteLevering;
 .
 not:FeitelijkeLevering a skos:Concept, skoslex:Act; #toegevoegd omdat dit voorkomt in koopovereenkomst. is relatie met Levering en met Eigendomsoverdracht. Er is wat voor te zeggen om het begrip Eigedomsoverdracht als generiek begrip te gebruiken, Levering voor de juridische levering (passeren akte) en FeitelijkeLevering voor de sleuteloverdracht.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Feitelijke levering"@nl;
 	skos:prefLabel "Feitelijke levering"@nl;
 	skos:definition "Bezitsverschaffing."@nl;
@@ -225,6 +241,7 @@ not:FeitelijkeLevering a skos:Concept, skoslex:Act; #toegevoegd omdat dit voorko
 	skosthes:broaderPartitive not:Levering;
 .
 not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;#Wijkt af van begrip in KNB taxo's
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Identificeren voor akte (notaris)"@nl;#Besproken met KNB, voorkeur gaat uit naar huidige label, ook omdat er een bredere identificatie dan die van comparanten kan plaatsvinden, bijvoorbeeld een gemachtigde. Dit begrip moet nog geintroduceerd worden.
 	skos:prefLabel "Identificeren voor akte (notaris)"@nl;
 	skos:altLabel "Identificatie comparant"@nl;
@@ -240,6 +257,7 @@ not:IdentificerenAkteNotaris a skos:Concept, skoslex:Act;#Wijkt af van begrip in
 	skosthes:broaderGeneric zv:Identificeren;
 .
 not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Identificeren van vervreemder/verkrijger (hypotheekakte)"@nl;
 	skos:prefLabel "Identificeren van vervreemder/verkrijger (hypotheekakte)"@nl;
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden."@nl;
@@ -257,6 +275,7 @@ not:IdentificerenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric not:IdentificerenAkteNotaris;
 .
 not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Identificeren van vervreemder/verkrijger (akte van levering)"@nl;
 	skos:prefLabel "Identificeren van vervreemder/verkrijger (akte van levering)"@nl;
 	skos:definition "De notaris is wettelijk verplicht om mensen die hem willen inschakelen, te identificeren voordat de werkzaamheden plaatsvinden."@nl;
@@ -275,6 +294,7 @@ not:IdentificerenAkteLevering a skos:Concept, skoslex:Act;
 .
 #Let op! In het notariaat wordt met het registreren van de akte bedoeld dat deze bij de belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving.
 not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of InschrijvenNOT?
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Inschrijven akte van levering"@nl;
 	skos:prefLabel "Inschrijven akte van levering"@nl;
 	skos:definition "Vastleggen in het register van het Kadaster."@nl;
@@ -288,6 +308,7 @@ not:InschrijvenAkteLevering a skos:Concept, skoslex:Act;#InschrijvenAkte of Insc
 	#Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken. Dit moet er nog in de taxonomie worden opgenomen.
 .
 not:JuridischeLevering a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Juridische levering"@nl;
 	skos:prefLabel "Juridische levering"@nl;
 	skos:altLabel "Eigendomsoverdracht"@nl;
@@ -303,6 +324,7 @@ not:JuridischeLevering a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:Levering;
 .
 not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als die van Notaris. Voor beiden is wat te zeggen. De mening van de KNB is dat deze meer thuishoort in het domein van de notaris, vanwege de rol die de notaris bij de levering inneemt.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	#Begrip moet nader worden uitgewerkt met een jurist van de KNB. De levering valt uiteen in feitelijke en juridische levering. Er is begonnen met dit begrip. Later zijn de feitelijke en juridsche eraan toegevoegd, maar dit begrip is nog niet herzien.
 	rdfs:label "Levering"@nl;#Afspraak is gebruiken van werkwoorden. De inschatting is echter dat de term 'levering' beter herkenbaar is bij de koopovereenkomst dan 'leveren'.
 	skos:prefLabel "Levering"@nl;
@@ -326,6 +348,7 @@ not:Levering a skos:Concept, skoslex:Act; #Kan zowel in domein van Kadaster als 
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:OpstellenAkte a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Opstellen (akte)"@nl;
 	skos:prefLabel "Opstellen (akte)"@nl;
 	skos:definition "Het opstellen van de akte in welke vorm dan ook."@nl;
@@ -333,6 +356,7 @@ not:OpstellenAkte a skos:Concept, skoslex:Act;
 	#skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten."@nl;
 .
 not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Opstellen hypotheekakte"@nl;
 	skos:prefLabel "Opstellen hypotheekakte"@nl;
 	skos:definition "Het opstellen van de hypotheekakte."@nl;
@@ -343,6 +367,7 @@ not:OpstellenAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:VestigingHypotheek;
 .
 not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Opstellen akte van levering"@nl;
 	skos:prefLabel "Opstellen akte van levering"@nl;
 	skos:definition "Het opstellen van de akte van levering."@nl;
@@ -353,6 +378,7 @@ not:OpstellenAkteLevering a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:JuridischeLevering;
 .
 not:Passeren a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Passeren"@nl;
 	skos:prefLabel "Passeren"@nl;
 	skos:altLabel "Verlijden"@nl;
@@ -362,6 +388,7 @@ not:Passeren a skos:Concept, skoslex:Act;
 	#skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten."@nl;
 .
 not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Passeren van de hypotheekakte"@nl;
 	skos:prefLabel "Passeren van de hypotheekakte"@nl;
 	skos:altLabel "Passeren"@nl;
@@ -377,6 +404,7 @@ not:PasserenAkteHypotheek a skos:Concept, skoslex:Act;
 	#skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor."@nl;
 .
 not:PasserenAkteLevering a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Passeren van de akte van levering"@nl;
 	skos:prefLabel "Passeren van de akte van levering"@nl;
 	skos:altLabel "Passeren"@nl;
@@ -393,6 +421,7 @@ not:PasserenAkteLevering a skos:Concept, skoslex:Act;
 	#skos:editorialNote "Input KNB: De notaris is bij deze handeling geen agent maar een actor."@nl;
 .
 not:RechercheNotaris a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Recherche door notaris"@nl;
 	skos:prefLabel "Recherche door notaris"@nl;
 	skos:altLabel "Rechercheplicht"@nl;
@@ -402,6 +431,7 @@ not:RechercheNotaris a skos:Concept, skoslex:Act;
 	#skos:editorialNote "Dit begrip is opgenomen als algemene beschrijving van meerdere specifieke handelingen en daarom is gekozen de relaties naar bijvoorbeeld notaris (behalve de relaties naar specifieke handelingen) weg te laten."@nl;
 .
 not:RechercheAkteHypotheek a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Recherche (hypotheekakte)"@nl;
 	skos:prefLabel "Recherche (hypotheekakte)"@nl;
 	skos:definition "Het onderzoek dat de notaris doet in de diverse (basis)registraties van de overheid. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd."@nl;
@@ -416,6 +446,7 @@ not:RechercheAkteHypotheek a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric not:RechercheNotaris;
 .
 not:RechercheAkteLevering a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Recherche (akte van levering)"@nl;
 	skos:prefLabel "Recherche (akte van levering)"@nl;
 	skos:definition "Het onderzoek dat de notaris doet in de diverse (basis)registraties van de overheid. De notaris is wettelijk verplicht dit onderzoek uit te voeren. Dit wordt de rechercheplicht of onderzoeksplicht genoemd."@nl;
@@ -430,6 +461,7 @@ not:RechercheAkteLevering a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric not:RechercheNotaris;
 .
 not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Registreren overdrachtsbelasting"@nl;
 	skos:prefLabel "Registreren overdrachtsbelasting"@nl;
 	skos:definition "Vastleggen van de overdrachtsbelasting bij de Belastingdienst."@nl;
@@ -441,6 +473,7 @@ not:RegistrerenAkteOverdrachtsbelasting a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:Levering;
 .
 not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Registreren akte registratiewet 1970"@nl;
 	skos:prefLabel "Registreren akte registratiewet 1970"@nl;
 	skos:definition "Het toesturen van de akte aan de Belastingdienst opdat de Belastingdienst kan controleren welke en hoeveel belasting verschuldigd is."@nl;
@@ -450,6 +483,7 @@ not:RegistrerenAkteRegistratiewet1970 a skos:Concept, skoslex:Act;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0002739&z=2019-01-01&g=2019-01-01>;
 .
 not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Registreren hypotheekakte registratiewet 1970"@nl;
 	skos:prefLabel "Registreren hypotheekakte registratiewet 1970"@nl;
 	skos:definition "Het toesturen van de akte aan de Belastingdienst opdat de Belastingdienst kan controleren welke en hoeveel belasting verschuldigd is."@nl;
@@ -462,6 +496,7 @@ not:RegistrerenAkteHypotheekRegistratiewet1970 a skos:Concept, skoslex:Act;
 	skos:editorialNote "In het notariaat wordt met registeren van de akte bedoeld dat deze bij de Belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving."@nl;
 .
 not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Registreren akte van levering registratiewet 1970"@nl;
 	skos:prefLabel "Registreren akte van levering registratiewet 1970"@nl;
 	skos:definition "Het toesturen van de akte aan de Belastingdienst opdat de Belastingdienst kan controleren welke en hoeveel belasting verschuldigd is."@nl;
@@ -474,6 +509,7 @@ not:RegistrerenAkteLeveringRegistratiewet1970 a skos:Concept, skoslex:Act;
 	skos:editorialNote "In het notariaat wordt met registeren van de akte bedoeld dat deze bij de Belastingdienst wordt geregistreerd. Bij het openbaar register wordt gesproken over inschrijving."@nl;
 .
 not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Toezicht waarborgsom"@nl;
 	skos:prefLabel "Toezicht waarborgsom"@nl;
 	skos:definition "Controle van de notaris op de waarborgsom."@nl;
@@ -485,6 +521,7 @@ not:ToezichtWaarborgsomNotaris a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:Levering;
 .
 not:VerlenenVolmacht a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Verlenen volmacht"@nl;
 	skos:prefLabel "Verlenen volmacht"@nl;
 	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten."@nl;#was: "Het verlenen van een volmacht aan een ander om in zijn naam rechtshandelingen te verrichten"
@@ -496,6 +533,7 @@ not:VerlenenVolmacht a skos:Concept, skoslex:Act;
 	skoslex:object not:NotarieleVolmacht;
 .
 not:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Verrekening overdrachtsbelasting artikel 13"@nl;
 	skos:prefLabel "Verrekening overdrachtsbelasting artikel 13"@nl;
 	skos:definition "U betaalt overdrachtsbelasting vanaf het moment dat de overdracht bij de notaris heeft plaats gevonden en het pand is ingeschreven in het Kadaster. In Nederland moet de notaris er op toezien dat voldoende overdrachtsbelasting betaald wordt. Een verrekening wordt door de notaris meegenomen."@nl;
@@ -506,6 +544,7 @@ not:VerrekeningOverdrachtsbelastingArt13 a skos:Concept, skoslex:Act;
 	skoslex:object not:VerminderingOverdrachtsbelastingArt13;
 .
 not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Vestigen beperkt recht"@nl;
 	skos:definition "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen."@nl;
 	rdfs:comment "Verschillende te verrichten handelingen om het beperkt recht te kunnen vestigen."@nl;
@@ -518,6 +557,7 @@ not:VestigenBeperktRecht a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 not:VestigingHypotheek a skos:Concept, skoslex:Act;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Vestiging hypotheek"@nl;
 	skos:prefLabel "Vestiging hypotheek"@nl;
 	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers."@nl;
@@ -535,6 +575,7 @@ not:VestigingHypotheek a skos:Concept, skoslex:Act;
 #--
 #Objects, Records and other Concepts
 not:AanspraakTotGebruik a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Aanspraak tot gebruik"@nl;
 	skos:prefLabel "Aanspraak tot gebruik"@nl;
 	skos:definition "Vermeend recht of claim op gebruik of bezit."@nl;
@@ -542,6 +583,7 @@ not:AanspraakTotGebruik a skos:Concept;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:AfschriftAkte a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Afschrift (akte)"@nl;
 	skos:prefLabel "Afschrift (akte)"@nl;
 	skos:altLabel "Gewaarmerkte kopie"@nl;
@@ -552,6 +594,7 @@ not:AfschriftAkte a skos:Concept, skoslex:Record;
         skosthes:broaderGeneric not:NotarieleAkte;
 .
 not:AftrekNieuwVoorOud a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Aftrek nieuw voor oud"@nl;
 	skos:prefLabel "Aftrek nieuw voor oud"@nl;
 	skos:altLabel "Aftrek wegens veronderstelde verbetering van oud tot nieuw"@nl;
@@ -559,6 +602,7 @@ not:AftrekNieuwVoorOud a skos:Concept, skoslex:Object;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:Akte a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Akte"@nl;
 	#rdfs:label "Deed"@en;
 	skos:prefLabel "Akte"@nl;
@@ -567,6 +611,7 @@ not:Akte a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=1>;
 .
 not:AkteVanLevering a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Akte van levering"@nl;
 	skos:prefLabel "Akte van levering"@nl;
 	skos:altLabel "Transportakte"@nl;
@@ -578,6 +623,7 @@ not:AkteVanLevering a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:NotarieleAkte;
 .
 not:AkteVanLeveringOnroerendeZaak a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Akte van levering (onroerende zaak)"@nl;
 	skos:prefLabel "Akte van levering"@nl;#Term die wordt genoemd in de koopovereenkomst is 'akte van levering' i.p.v. 'leveringsakte'. Gezien de 1e scope (de koopovereenkomst) heeft de term 'akte van levering' de voorkeur.
 	skos:definition "De voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers. Zowel de verkrijger als de vervreemder kan de akte doen inschrijven."@nl;
@@ -592,6 +638,7 @@ not:AkteVanLeveringOnroerendeZaak a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:Titel;
 .
 not:AkteVanVolmacht a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Akte van volmacht"@nl;
 	skos:prefLabel "Akte van volmacht"@nl;
 	skos:altLabel "Notariële volmacht"@nl;
@@ -601,6 +648,7 @@ not:AkteVanVolmacht a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:NotarieleVolmacht;
 .
 not:Artikel a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Artikel"@nl;
 	skos:prefLabel "Artikel"@nl;
 	skos:definition "Op leden na, de kleinste onderverdeling in akten."@nl;
@@ -608,6 +656,7 @@ not:Artikel a skos:Concept, skoslex:Record;
 	skosthes:broaderPartitive not:Akte;
 .
 not:AuthentiekeAkte a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Authentieke akte"@nl;
 	skos:prefLabel "Authentieke akte"@nl;
 	#skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt."@nl;#Input Hengs Meengs
@@ -618,6 +667,7 @@ not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:Akte;
 .
 not:Bezwaren a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Bezwaren"@nl;
 	skos:prefLabel "Bezwaren"@nl;
 	skos:definition "Het beperken van een meer omvattend recht met een beperkt recht."@nl;
@@ -626,6 +676,7 @@ not:Bezwaren a skos:Concept;
 	#Moet beter worden uitgewerkt en worden afgestemd met KNB
 .
 not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt vooral gekoppeld aan de koop. Enkele specialisaties verwijzen naar Kadaster begrippen, maar er zijn nog meer bijzondere lasten. Daarom toegevoegd aan het NOT-domein.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Bijzondere lasten"@nl;
 	skos:prefLabel "Bijzondere lasten"@nl;
 	skos:definition "De verkoper is verplicht de onroerende zaak in eigendom over te dragen vrij van alle bijzondere lasten en beperkingen, met uitzondering van die welke de koper uitdrukkelijk heeft aanvaard."@nl;
@@ -637,6 +688,7 @@ not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt 
 	skosthes:narrowerGeneric not:Voorkeursrecht;
 .
 not:Comparitie a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Verschijnen voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
 	skos:prefLabel "Verschijnen voor notaris"@nl;
 	skos:altLabel "Comparitie"@nl;
@@ -651,6 +703,7 @@ not:Comparitie a skos:Concept, skoslex:Record;
 	#skoslex:isAbout not:Notaris, plaats van vestiging, identiteitsdocument;
 .
 not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;#Wellicht moet dit een generiekere naam worden. Bespreken met KNB juristen.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Datum van passeren (akte van levering)"@nl;
 	skos:prefLabel "Datum van passeren (akte van levering)"@nl;
 	skos:altLabel "Datum van verlijden"@nl;
@@ -663,6 +716,7 @@ not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;#Wellicht moet dit 
 	#rdfs:comment "Datum waarop de akte van levering wordt ondertekend."@nl;
 .
 not:EeuwigdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Eeuwigdurende erfpacht"@nl;
 	skos:prefLabel "Eeuwigdurende erfpacht"@nl;
 	skos:definition "Bij eeuwigdurende erfpacht is het economisch recht van de grond voor eens en voor altijd gevestigd."@nl;
@@ -679,6 +733,7 @@ not:Erfpachtvoorwaarden a skos:Concept;#Erfpacht wordt geregistreerd door Kadast
 	skos:related kad:Erfpacht;
 .
 not:Grondslagwaarde a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Grondslagwaarde"@nl;
 	skos:prefLabel "Grondslagwaarde"@nl;
 	skos:altLabel "Heffingsgrondslag"@nl;
@@ -689,6 +744,7 @@ not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	skos:related zv:Overdrachtsbelasting;
 .
 not:GrondVanBevoegdheid a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Grond van bevoegdheid"@nl;
 	skos:prefLabel "Grond van bevoegdheid"@nl;
 	skos:definition "De grond van de bevoegdheid van een persoon om een andere persoon te vertegenwoordigen, om namens een andere persoon (de vertegenwoordigde) (bepaalde) rechtshandelingen te verrichten, zoals een volmacht of het zijn van bestuurder van een rechtspersoon."@nl;
@@ -696,6 +752,7 @@ not:GrondVanBevoegdheid a skos:Concept;
 	skos:related not:Volmacht;
 .
 not:HerzieningErfpacht a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Herziening erfpacht"@nl;
 	skos:prefLabel "Herziening"@nl;
 	skos:altLabel "Herziening erfpacht"@nl;
@@ -706,6 +763,7 @@ not:HerzieningErfpacht a skos:Concept;
 	skos:related kad:Canon;
 .
 not:Hypotheekakte a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Hypotheekakte"@nl;
 	skos:prefLabel "Hypotheekakte"@nl;
 	skos:definition "Hypotheek wordt gevestigd door een tussen partijen opgemaakte notariële akte waarbij de hypotheekgever aan de hypotheekhouder hypotheek op een registergoed verleent, gevolgd door haar inschrijving in de daartoe bestemde openbare registers. De akte moet een aanduiding bevatten van de vordering waarvoor de hypotheek tot zekerheid strekt, of van de feiten aan de hand waarvan die vordering zal kunnen worden bepaald. Tevens moet het bedrag worden vermeld waarvoor de hypotheek wordt verleend of, wanneer dit bedrag nog niet vaststaat, het maximumbedrag dat uit hoofde van de hypotheek op het goed kan worden verhaald. De hypotheekhouder moet in de akte woonplaats kiezen in Nederland."@nl;
@@ -718,12 +776,14 @@ not:Hypotheekakte a skos:Concept, skoslex:Record;
 	skoslex:isAbout not:Grondslagwaarde;
 .
 not:Kadasterkosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kadasterkosten"@nl;
 	skos:prefLabel "Kadasterkosten"@nl;
 	skos:definition "Voor het inschrijven van de akten van de notaris rekent het Kadaster kosten."@nl;
 	rdfs:comment "Kosten voor de inschrijving van een eigenaar van een onroerende zaak in het register van het Kadaster."@nl;
 .
 not:KadasterkostenKik a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kadasterkosten KIK"@nl;
 	skos:prefLabel "Kadasterkosten KIK"@nl;
 	skos:definition "Voor het digitaal inschrijven van de akten van de notaris via het KIK-systeem, rekent het Kadaster kosten. Deze kosten zijn lager dan de kosten voor inschrijven buiten KIK om."@nl;
@@ -732,6 +792,7 @@ not:KadasterkostenKik a skos:Concept;#Mogelijk splitsen in een variant voor leve
 	skos:scopeNote "KIK staat voor Ketenintegratie Inschrijving Kadaster."@nl;
 .
 not:KadasterkostenGeenKik a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kadasterkosten geen KIK"@nl;
 	skos:prefLabel "Kadasterkosten geen KIK"@nl;
 	skos:definition "Voor het inschrijven van de akten van de notaris, rekent het Kadaster kosten. Deze kosten zijn hoger als hierbij geen gebruik wordt gemaakt van het KIK-systeem."@nl;
@@ -740,6 +801,7 @@ not:KadasterkostenGeenKik a skos:Concept;#Mogelijk splitsen in een variant voor 
 	skos:scopeNote "KIK staat voor Ketenintegratie Inschrijving Kadaster."@nl;
 .
 not:Koopsom a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Koopsom"@nl;
 	skos:prefLabel "Koopsom"@nl;
 	skos:altLabel "Koopprijs"@nl;
@@ -752,6 +814,7 @@ not:Koopsom a skos:Concept;
 	skos:related kad:Object;
 .
 not:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kosten aflossing en doorhaling"@nl;
 	skos:prefLabel "Kosten aflossing en doorhaling"@nl;
 	skos:definition "Voor het doorhalen van een hypotheekakte bij het Kadaster is een royementsakte nodig. Deze wordt opgesteld door de notaris en een notaris brengt hiervoor kosten in rekening. Een royementsakte is nodig bij het oversluiten van een hypotheek naar een andere geldverstrekker; bij de verkoop van je huis; of bij de aflossing van de hypotheek."@nl;
@@ -763,6 +826,7 @@ not:KostenAflossingDoorhaling a skos:Concept, skoslex:Object;
 	skos:related mak:Verkoper;
 .
 not:KostenEnOverdrachtsbelasting a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kosten/Overdrachtsbelasting"@nl;
 	skos:prefLabel "Kosten/Overdrachtsbelasting"@nl;
 	skos:definition "Geheel van kosten voor een levering."@nl;
@@ -772,6 +836,7 @@ not:KostenEnOverdrachtsbelasting a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric zv:Overdrachtsbelasting;
 .
 not:KostenVestigenHypotheek a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kosten vestigen hypotheek"@nl;
 	skos:prefLabel "Kosten vestigen hypotheek"@nl;
 	skos:definition "Geheel van kosten voor het vestigen van een hypotheek."@nl;
@@ -781,6 +846,7 @@ not:KostenVestigenHypotheek a skos:Concept, skoslex:Object;
 	skos:related mak:Koper;
 .
 not:KwalitatieveRechten a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kwalitatieve rechten"@nl;
 	skos:prefLabel "Kwalitatieve rechten"@nl;
 	skos:definition "Staat een uit een overeenkomst voortvloeiend, voor overgang vatbaar recht in een zodanig verband met een aan de schuldeiser toebehorend goed, dat hij bij dat recht slechts belang heeft, zolang hij het goed behoudt, dan gaat dat recht over op degene die dat goed onder bijzondere titel verkrijgt."@nl;
@@ -788,6 +854,7 @@ not:KwalitatieveRechten a skos:Concept;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Kwaliteitsrekening"@nl;
 	skos:prefLabel "Kwaliteitsrekening"@nl;
 	skos:altLabel "Derdengeldenrekening"@nl;
@@ -797,6 +864,7 @@ not:Kwaliteitsrekening a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=III&artikel=25>;
 .
 not:LidAkte a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Lid"@nl;
 	skos:prefLabel "Lid"@nl;
 	skos:definition "De kleinste onderverdeling in akten."@nl;
@@ -804,6 +872,7 @@ not:LidAkte a skos:Concept;
 	skosthes:broaderPartitive not:Artikel;
 .
 not:Minuut a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Minuut"@nl;
 	skos:prefLabel "Minuut"@nl;
 	skos:altLabel "Minuutakte"@nl;
@@ -816,12 +885,14 @@ not:Minuut a skos:Concept, skoslex:Record;
 	skos:related not:AfschriftAkte;
 .
 not:NotaVanAfrekening a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Nota van afrekening"@nl;
 	skos:prefLabel "Nota van afrekening"@nl;
 	skos:definition "Tegelijk met de conceptakte van levering ontvangt u van de notaris een 'nota van afrekening'. In deze nota is voor koper (meestal) opgenomen de koopsom, de verrekening van lasten, de overdrachtsbelasting, de kosten van het kadaster enzovoort. Op de nota van afrekening van verkoper staat onder meer het bedrag van de eventueel af te lossen hypothecaire geldlening met de daarbij behorende kosten. Het is gebruikelijk dat de nog niet reeds voldane makelaarskosten en de advieskosten van de eventuele hypothecaire geldlening bij de notaris worden verrekend. De makelaarskosten worden betaald door degene die de makelaar heeft ingeschakeld. Onder aan de nota staat het bedrag dat u als koper nog moet betalen of dat u als verkoper ontvangt of bij moet betalen."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:NotarieleAkte a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte"@nl;
 	#skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd."@nl;#Definitie Hengs Meengs
@@ -836,6 +907,7 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:AuthentiekeAkte;
 .
 not:NotarieleVolmacht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Notariële volmacht"@nl;
 	skos:prefLabel "Notariële volmacht"@nl;
 	skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden. Bij een notariële volmacht is de volmacht altijd uitdrukkelijk."@nl;
@@ -845,12 +917,14 @@ not:NotarieleVolmacht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric not:Volmacht;
 .
 not:Notariskosten a skos:Concept;#Mogelijk splitsen in een variant voor levering en hypotheek
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Notariskosten"@nl;
 	skos:prefLabel "Notariskosten"@nl;
 	skos:definition "De notariskosten bestaan uit alle kosten die de notaris berekent voor het opstellen van de notariële akte."@nl;
 	rdfs:comment "Kosten die een notaris berekent voor zijn werkzaamheden."@nl;
 .
 not:OnderhandseAkte a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Onderhandse akte"@nl;
 	skos:prefLabel "Onderhandse akte"@nl;
 	skos:definition "Niet-authentieke akte"@nl;
@@ -860,12 +934,14 @@ not:OnderhandseAkte a skos:Concept, skoslex:Record;
 	skosthes:broaderGeneric not:Akte;
 .
 not:Ongevorderd a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Ongevorderd"@nl;
 	skos:prefLabel "Ongevorderd"@nl;
 	skos:definition "Zonder uitstaande claims op het bezit."@nl;
 	#rdfs:comment ""@nl;
 .
 not:Optierecht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Optierecht"@nl;
 	skos:prefLabel "Optierecht"@nl;
 	skos:altLabel "Zakelijk optierecht"@nl;
@@ -878,6 +954,7 @@ not:Optierecht a skos:Concept, skoslex:Object;
         skosthes:broaderGeneric kad:ZakelijkRecht;
 .
 not:OverigeNotariskosten a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Overige notariskosten"@nl;
 	skos:prefLabel "Overige notariskosten"@nl;
 	skos:definition "In een akte kunnen overige notariskosten worden genoemd. Dit kunnen kosten zijn voor een volmacht of inhuren van een tolk."@nl;
@@ -888,6 +965,7 @@ not:OverigeNotariskosten a skos:Concept, skoslex:Object;
 	skos:related zv:Partij;
 .
 not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of akte. Het is geen specialisatie van Adres, maar kan ook de aanduiding van een weiland zijn (tegenover ….) of de naam van een landhuis. Dit is niet iets dat het Kadaster registreert.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Plaatselijk bekend"@nl;
 	skos:prefLabel "Plaatselijk bekend"@nl;
 	skos:definition "De plaatselijke benaming, zo deze bekend is."@nl;
@@ -896,12 +974,14 @@ not:PlaatselijkBekend a skos:Concept; #Typisch een term uit de overeenkomst of a
 	skos:related kad:OnroerendeZaak;
 .
 not:PlaatsVanVerlijdenAkte a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Plaats van verlijden akte"@nl;
 	skos:prefLabel "Plaats van verlijden akte"@nl;
 	skos:definition "De plaats waar een notariële akte van oprichting is verleden."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40&lid=2>;
 .
 not:PlaatsVanVestiging a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Plaats van vestiging"@nl;
 	skos:prefLabel "Plaats van vestiging"@nl;
 	skos:altLabel "Vestigingsplaats"@nl;
@@ -920,6 +1000,7 @@ not:PlaatsVanVestiging a skos:Concept;
 	#skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd."@nl;
 .
 not:RechtVanHypotheek a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Recht van hypotheek"@nl;
 	skos:prefLabel "Recht van hypotheek"@nl;
 	skos:altLabel "Hypotheek"@nl;
@@ -934,6 +1015,7 @@ not:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	skos:related fin:Lening;
 .
 not:TijdelijkeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Tijdelijke erfpacht"@nl;
 	skos:prefLabel "Tijdelijke erfpacht"@nl;
 	skos:definition "Bij tijdelijke erfpacht eindigt het recht aan het einde van de termijn waarvoor het is aangegaan. Hierbij geldt wel dat het in de praktijk voorkomt dat erfpachtrechten in voorkomende gevallen ‘tijdelijk’ genoemd worden doch in de praktijk ‘voortdurend’ zijn omdat ze strikt genomen uitgaan van continuering bij het einde van het tijdvak."@nl;
@@ -942,6 +1024,7 @@ not:TijdelijkeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaste
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
 .
 not:Titel a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Titel"@nl;
 	skos:prefLabel "Titel"@nl;
 	skos:altLabel "Titel van aankomst"@nl;
@@ -953,6 +1036,7 @@ not:Titel a skos:Concept, skoslex:Record;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=4&afdeling=2&artikel=84>;
 .
 not:TitelVanAankomst a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Titel van aankomst"@nl;
 	skos:prefLabel "Titel van aankomst"@nl;
 	skos:altLabel "Wijze van verkrijging"@nl;
@@ -965,12 +1049,14 @@ not:TitelVanAankomst a skos:Concept, skoslex:Record;
 .
 #Is gerelateerd aan not:OverigeNotariskosten en wordt in die context gebruikt. Mogelijk hoort dit beter thuis in het ZV-domein.
 not:Tolk a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Tolk"@nl;
 	skos:prefLabel "Tolk"@nl;
 	skos:definition "Een tolk is iemand die luistert naar een spreker en die zijn woorden mondeling, of in het geval van de gebarentolk met gebaren, vertaalt voor degenen die de oorspronkelijke taal niet begrijpen."@nl;
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:TotaalbedragInschrijving a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Totaalbedrag van de inschrijving"@nl;
 	skos:prefLabel "Totaalbedrag van de inschrijving"@nl;
 	skos:definition "Het bedrag ter grootte waarvan maximaal de opbrengst van het onderpand met voorrang op andere schuldeisers ten goede mag komen voor terugbetaling van de schuld aan de hypotheeknemer."@nl;
@@ -980,12 +1066,14 @@ not:TotaalbedragInschrijving a skos:Concept;
 	skos:related not:RechtVanHypotheek;
 .
 not:VanRechtswegeOntbonden a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Van rechtswege ontbonden"@nl;
 	skos:prefLabel "Van rechtswege ontbonden"@nl;
 	skos:definition "De ontbinding van rechtswege gebeurt automatisch, zonder dat enige tussenkomst vereist is."@nl;
 	rdfs:comment "Automatisch einde van een juridsche afspraak."@nl;
 .
 not:VerminderingOverdrachtsbelastingArt13 a skos:concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Vermindering overdrachtsbelasting artikel 13"@nl;
 	skos:prefLabel "Vermindering overdrachtsbelasting artikel 13"@nl;
 	skos:definition "In geval van verkrijging binnen zes maanden na een vorige verkrijging van dezelfde goederen door een ander wordt de waarde verminderd met het bedrag waarover ter zake van de vorige verkrijging was verschuldigd hetzij overdrachtsbelasting welke niet in mindering heeft gestrekt van schenk- of erfbelasting, hetzij omzetbelasting welke in het geheel niet op grond vanartikel 15 van de Wet op de omzetbelasting 1968in aftrek kon worden gebracht."@nl;
@@ -994,6 +1082,7 @@ not:VerminderingOverdrachtsbelastingArt13 a skos:concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0002740&hoofdstuk=II&afdeling=2&artikel=13>;
 .
 not:Verordening a skos:Concept, skoslex:Object;#Deze hoort wellicht thuis in het domein van het Kadaster
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Verordening"@nl;
 	skos:prefLabel "Verordening"@nl;
 	skos:definition "Een voorschrift van de gemeenteraad met betrekking tot a) gebruik van woningen, woonketen, woonwagens, andere gebouwen, bouwwerken die geen gebouwen zijn, standplaatsen en open erven; b) tegengaan van bouwen op verontreinigde grond; c) slopen; d) aanvragen woonvergunningen en e) overdracht van bouwvergunningen."@nl;
@@ -1001,6 +1090,7 @@ not:Verordening a skos:Concept, skoslex:Object;#Deze hoort wellicht thuis in het
 	skos:editorialNote "Begrip nog niet gevalideerd door Juridische Zaken van de KNB."@nl;
 .
 not:VertegenwoordigdDoor a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Vertegenwoordigd door"@nl;
 	skos:prefLabel "Vertegenwoordigd door"@nl;
 	skos:definition "Een persoon (de vertegenwoordigde) kan worden vertegenwoordigd door een ander persoon (de vertegenwoordiger), die (bepaalde) rechtshandelingen kan verrichten namens de vertegenwoordigde."@nl;
@@ -1011,6 +1101,7 @@ not:VertegenwoordigdDoor a skos:Concept;
 	skos:related not:Vertegenwoordiger;
 .
 not:Volmacht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Volmacht"@nl;
 	skos:prefLabel "Volmacht"@nl;
 	skos:definition "De bevoegdheid die een persoon (de volmachtgever) verleent aan een andere persoon (de gevolmachtigde) om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;#Definitie Jacco Sjerps
@@ -1025,6 +1116,7 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	#Wellicht nog relaties toevoegen. Mogelijk aan comparant, aan actoren.
 .
 not:Voorkeursrecht a skos:Concept; #Zou ook in het Kadaster-domein kunnen, maar dat begrip is daar nu niet bekend. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Voorkeursrecht"@nl;
 	skos:prefLabel "Voorkeursrecht"@nl;
 	skos:altLabel "Recht van voorverkoop"@nl;
@@ -1034,6 +1126,7 @@ not:Voorkeursrecht a skos:Concept; #Zou ook in het Kadaster-domein kunnen, maar 
 	skos:related kad:Registergoed;
 .
 not:VoortdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Voordturende erfpacht"@nl;
 	skos:prefLabel "Voortdurende erfpacht"@nl;
 	skos:definition "Bij voortdurende erfpacht is in principe sprake van eeuwigdurende erfpacht, met dien verstande dat deze eventueel tussentijds bij het einde van een tijdvak kan eindigen als de grondeigenaar en de erfpachter geen overeenstemming kunnen bereiken over de erfpachtvoorwaarden van het nieuwe tijdvak. Dit laatste is overigens hypothetisch zodat in de praktijk naar tijdsindeling de eeuwigdurende erfpacht en de voortdurende erfpacht hetzelfde uitpakken."@nl;
@@ -1042,12 +1135,14 @@ not:VoortdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadas
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0036709&bijlage=2>;
 .
 not:Wederinkoop a skos:Concept; #Zou het beste in in het Kadaster-domein passen, maar dat begrip is daar nu niet bekend. Meenemen met alle publiekrechtelijke beperkingen/privaatrechtlijke beperkingen.
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Wederinkoop"@nl;
 	skos:prefLabel "Wederinkoop"@nl;
 	skos:definition "Een beding van wederinkoop doet zich voor als een verkoper van een vastgoed, in akkoord met de koper, in de notariële akte een mogelijkheid inschrijft om zijn huis terug te kopen, uiterlijk binnen vijf jaar na de verkoop en tegen de oorspronkelijke prijs plus een vergoeding."@nl;
 	#rdfs:comment ""@nl;
 .
 not:Wegneemrecht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Wegneemrecht"@nl;
 	skos:prefLabel "Wegneemrecht"@nl;
 	skos:altLabel "Wettelijk wegneemrecht"@nl;
@@ -1064,6 +1159,7 @@ kad:Erfpacht;
 #
 #De definities zijn voorlopig en moeten nog worden getoetst, worden voorzien van een uitleg en een juridische bron
 not:DigitaleIdentiteit a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Digitale identiteit"@nl;
 	skos:prefLabel "Digitale identiteit"@nl;
  	skos:altLabel "Legitimatie"@nl;
@@ -1074,6 +1170,7 @@ not:DigitaleIdentiteit a skos:Concept, skoslex:Object;
 	skos:scopeNote "Soorten identiteitsdoucmenten zijn een E-id, DigID, Cleverbase ID, etc."@nl;
 .
 not:Identiteitsdocument a skos:Concept, skoslex:Record;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Identiteitsdocument"@nl;
 	skos:prefLabel "Identiteitsdocument"@nl;
         skos:altLabel "Legitimatiebewijs"@nl;
@@ -1085,6 +1182,7 @@ not:Identiteitsdocument a skos:Concept, skoslex:Record;
 	skos:scopeNote "Soorten identiteitsdoucmenten zijn een paspoort, Nederlandse identiteitskaart, een rijbewijs,  een ID-kaart of paspoort uit een EER-land, een Nederlands vreemdelingendocument."@nl;
 .
 not:IdentiteitsdocumentReferentie  a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Identiteitsdocument referentie"@nl;
 	skos:prefLabel "Identiteitsdocument referentie"@nl;
 	skos:definition "Een unieke identificatie van het identiteitsdocument."@nl;
@@ -1093,6 +1191,7 @@ not:IdentiteitsdocumentReferentie  a skos:Concept;
 	skos:related not:Identiteitsdocument;
 .
 not:IdentiteitsdocumentSoort   a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Identiteitsdocument soort"@nl;
 	skos:prefLabel "Identiteitsdocument soort"@nl;
 	skos:definition "Een typering van het identiteitsdocument."@nl;
@@ -1102,23 +1201,27 @@ not:IdentiteitsdocumentSoort   a skos:Concept;
 .
 
 not:Legitimatie a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Legitimatie"@nl;
 	skos:prefLabel "Legitimatie"@nl;
 	skos:definition "Een bewijsmiddel waarmee iemand zich kan identificeren. Dit kan digitaal of fysiek zijn."@nl;
 .
 not:LegitimatieIdentificatie a skos:Concept, skoslex:Object;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
   	rdfs:label "Identificatie legitimatie"@nl;
 	skos:prefLabel "Identificatie legitimatie"@nl;
 	skos:definition "De unieke identificatie van de legitimatie."@nl;
 	skos:related not:Legitimatie;
 .
 not:Leveringsdatum a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Leveringsdatum"@nl;
 	skos:prefLabel "Leveringsdatum"@nl;
 	skos:definition "Een datum waarop de levering plaatsvindt."@nl;
 	skos:related not:Levering;
 .
 not:OnroerendeZaakOmschrijving a skos:Concept;
+	skos:inScheme <https://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	rdfs:label "Omschrijving onroerende zaak"@nl;
 	skos:prefLabel "Omschrijving onroerende zaak"@nl;
 	skos:definition "De omschrijving van een onroerende zaak."@nl;
