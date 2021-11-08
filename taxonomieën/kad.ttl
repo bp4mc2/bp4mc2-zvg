@@ -91,6 +91,7 @@
 #---
 #Actors and Agents
 kad:DeDienst a skos:Concept, skoslex:Actor;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:De_dienst;
 	rdfs:label "De dienst"@nl;
 	skos:prefLabel "De dienst"@nl;
@@ -100,6 +101,7 @@ kad:DeDienst a skos:Concept, skoslex:Actor;
 	skosthes:broaderTransitive zv:Rechtspersoon;
 .
 kad:Bewaarder a skos:Concept, skoslex:Actor;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Bewaarder;
 	rdfs:label "Bewaarder"@nl;
 	skos:prefLabel "Bewaarder"@nl;	
@@ -109,6 +111,7 @@ kad:Bewaarder a skos:Concept, skoslex:Actor;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
 kad:Rechthebbende a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Rechthebbende;
 	rdfs:label "Rechthebbende"@nl;
 	skos:prefLabel "Rechthebbende"@nl;
@@ -122,6 +125,7 @@ kad:Rechthebbende a skos:Concept;
 #--
 #Acts
 kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:prefLabel "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
 	skos:exactMatch brk:Aanwijzing_van_gronden_Wet_voorkeursrecht_gemeenten;
@@ -131,6 +135,7 @@ kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric kad:Besluit;
 .
 kad:BeschikkingWetBodembescherming a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Beschikking of bevel wet bodembescherming"@nl;
 	skos:prefLabel "Beschikking of bevel wet bodembescherming"@nl;
 #	skos:exactMatch brk:BeschikkingWetBodembescherming;
@@ -139,6 +144,7 @@ skos:definition "Een vaststelling van gedeputeerde staten dat sprake is van een 
 	skosthes:broaderGeneric kad:Besluit;
 .
 kad:Beslag a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Beslag;
 	rdfs:label "Beslag"@nl;
 	skos:prefLabel "Beslag"@nl;
@@ -152,6 +158,7 @@ kad:Beslag a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric kad:Recht;
 .
 kad:Besluit a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Besluit;
 	rdfs:label "Besluit"@nl;
 	skos:prefLabel "Besluit"@nl;
@@ -161,6 +168,7 @@ kad:Besluit a skos:Concept, skoslex:Act;
 	skos:related kad:ZakelijkRecht;
 .
 kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 #	skos:exactMatch brk:Bijwerking_Basisregistratie_Kadaster;
 	rdfs:label "Bijwerking basisregistratie Kadaster"@nl;
 	skos:prefLabel "Bijwerking basisregistratie Kadaster"@nl;
@@ -171,6 +179,7 @@ kad:BijwerkingBasisregistratieKadaster a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:JuridischeLevering;
 .
 kad:Doorhaling a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Doorhaling;
 	rdfs:label "Doorhaling"@nl;
 	skos:prefLabel "Doorhaling"@nl;
@@ -182,6 +191,7 @@ kad:Doorhaling a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric kad:BijwerkingBasisregistratieKadaster;
 .
 kad:DoorhalingBeslag a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Doorhaling beslag"@nl;
 	skos:prefLabel "Doorhaling beslag"@nl;
 #	skos:exactMatch brk:DoorhalingBeslag'
@@ -191,6 +201,7 @@ kad:DoorhalingBeslag a skos:Concept, skoslex:Act;
 	skos:broaderGeneric kad:Doorhaling;
 .
 kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Doorhaling_hypotheek;
 	rdfs:label "Doorhaling hypotheek"@nl;
 	skos:prefLabel "Doorhaling hypotheek"@nl;
@@ -203,6 +214,7 @@ kad:DoorhalingHypotheek a skos:Concept, skoslex:Act;
 	skos:broaderGeneric kad:Doorhaling;
 .
 kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Inschrijving;
 	rdfs:label "Inschrijving openbare registers"@nl;
 	skos:prefLabel "Inschrijving openbare registers"@nl;
@@ -218,6 +230,7 @@ kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
         #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 .
 kad:Kettingbeding a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Kettingbeding;
 	rdfs:label "Kettingbeding"@nl;
 	skos:prefLabel "Kettingbeding"@nl;
@@ -226,6 +239,7 @@ kad:Kettingbeding a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric kad:KwalitatieveVerplichting;
 .
 kad:KwalitatieveVerplichting a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Kwalitatieve_verplichting;
 	rdfs:label "Kwalitatieve verplichting"@nl;
 	skos:prefLabel "Kwalitatieve verplichting"@nl;
@@ -236,6 +250,7 @@ kad:KwalitatieveVerplichting a skos:Concept, skoslex:Act;
 	skosthes:broaderGeneric kad:Overeenkomst;
 .
 kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Meting_kadastrale_grens;
 	rdfs:label "Meting kadastrale grens"@nl;
 	skos:prefLabel "Meting kadastrale grens"@nl;
@@ -247,6 +262,7 @@ kad:MetingKadastraleGrens a skos:Concept, skoslex:Act;
 	skoslex:broaderPartitive zv:AanOfVerkoopVanEenHuis;
 .
 kad:Overeenkomst a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Overeenkomst;
 	rdfs:label "Overeenkomst"@nl;
 	skos:prefLabel "Overeenkomst"@nl;
@@ -257,6 +273,7 @@ kad:Overeenkomst a skos:Concept, skoslex:Act;
 	skos:broaderGeneric kad:Rechtshandeling;
 .
 kad:Rangwisseling a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Rangwisseling;
 	rdfs:label "Rangwisseling"@nl;
 	skos:prefLabel "Rangwisseling"@nl;
@@ -268,6 +285,7 @@ kad:Rangwisseling a skos:Concept, skoslex:Act;
 	skos:broaderPartitive not:VestigingHypotheek;
 .
 kad:Rechtshandeling a skos:Concept, skoslex:Act;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Rechtshandeling;
 	rdfs:label "Rechtshandeling"@nl;
 	skos:prefLabel "Rechtshandeling"@nl;
@@ -280,6 +298,7 @@ kad:Rechtshandeling a skos:Concept, skoslex:Act;
 #--
 #Objects, records
 kad:Adres a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Adres"@nl;
 	skos:prefLabel "Adres"@nl;
 	skos:definition "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats"@nl;
@@ -289,6 +308,7 @@ kad:Adres a skos:Concept, skoslex:Object;
 	skos:related kad:ObjectlocatieBinnenland;
 .
 kad:Basisregistratie a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch kad:Basisregistratie;
 	rdfs:label "Basisregistratie"@nl;
 	skos:prefLabel "Basisregistratie"@nl;
@@ -297,6 +317,7 @@ kad:Basisregistratie a skos:Concept, skoslex:Object;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 .
 kad:BasisregistratieAdressenEnGebouwen a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 #	skos:exactMatch bag:Basisregistratie_adressen_en_gebouwen; -> nog te definiëren
 	rdfs:label "Basisregistratie Adressen en Gebouwen"@nl;
 	skos:prefLabel "Basisregistratie Adressen en Gebouwen"@nl;
@@ -305,6 +326,7 @@ kad:BasisregistratieAdressenEnGebouwen a skos:Concept, skoslex:Object;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
 .
 kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Basisregistratie_Kadaster;
 	rdfs:label "Basisregistratie Kadaster"@nl;
 	skos:prefLabel "Basisregistratie Kadaster"@nl;
@@ -315,6 +337,7 @@ kad:BasisregistratieKadaster a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Basisregistratie;
 .
 kad:Beding a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Beding;
 	rdfs:label "Beding"@nl;
 	skos:prefLabel "Beding"@nl;
@@ -323,6 +346,7 @@ kad:Beding a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive kad:Overeenkomst;
 .
 kad:BeperktRecht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Beperkt_recht;
 	rdfs:label "Beperkt recht"@nl;
 	skos:prefLabel "Beperkt recht"@nl;
@@ -333,6 +357,7 @@ kad:BeperktRecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Recht;
 .
 kad:Canon a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Canon;
 	rdfs:label "Canon"@nl;
 	skos:prefLabel "Canon"@nl;
@@ -344,6 +369,7 @@ kad:Canon a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive not:Erfpachtvoorwaarden;
 .
 kad:DienendeErf a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Dienende_erf;
 	rdfs:label "Dienende erf"@nl;
 	skos:prefLabel "Dienende erf"@nl;
@@ -356,6 +382,7 @@ kad:DienendeErf a skos:Concept, skoslex:Object;
   	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
 kad:Eigendom a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Eigendom;
 	rdfs:label "Eigendom"@nl;
 	skos:prefLabel "Eigendom"@nl;
@@ -369,6 +396,7 @@ kad:Eigendom a skos:Concept, skoslex:Object;
 	skos:related kad:Zaak;
 .
 kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Erfdienstbaarheid;
 	rdfs:label "Erfdienstbaarheid"@nl;
 	skos:prefLabel "Erfdienstbaarheid"@nl;
@@ -383,6 +411,7 @@ kad:Erfdienstbaarheid a skos:Concept, skoslex:Object;
 	skos:related kad:KwalitatieveVerplichting;
 .
 kad:Erfpacht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Erfpacht;
 	rdfs:label "Erfpacht"@nl;
 	skos:prefLabel "Erfpacht"@nl;
@@ -395,6 +424,7 @@ kad:Erfpacht a skos:Concept, skoslex:Object;
 	skos:related kad:OnroerendeZaak;
 .
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Gemeentelijk_monument;
 	rdfs:label "Gemeentelijk monument"@nl;
 	skos:prefLabel "Gemeentelijk monument"@nl;
@@ -406,6 +436,7 @@ kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:Goed a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Goed;
 	rdfs:label "Goed"@nl;
 	skos:prefLabel "Goed"@nl;
@@ -416,6 +447,7 @@ kad:Goed a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Zaak;
 .
 kad:HeersendeErf a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Heersende_erf;
 	rdfs:label "Heersende erf"@nl;
 	skos:prefLabel "Heersende erf"@nl;
@@ -427,6 +459,7 @@ kad:HeersendeErf a skos:Concept, skoslex:Object;
   	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
 kad:Huurkoop a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Huurkoop; #definitie in BRK is ontleend aan vervallen wetsartikel. Moet worden aangepast aan onderstaande artikel.
 	rdfs:label "Huurkoop"@nl;
 	skos:prefLabel "Huurkoop"@nl;
@@ -437,6 +470,7 @@ kad:Huurkoop a skos:Concept, skoslex:Object;
         skosthes:broaderGeneric mak:Koop;
 .
 kad:KadastraleAanduiding a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Kadastrale_aanduiding;
 	rdfs:label "Kadastrale aanduiding"@nl;
 	skos:prefLabel "Kadastrale aanduiding"@nl;
@@ -447,6 +481,7 @@ kad:KadastraleAanduiding a skos:Concept;
 	skos:related kad:OnroerendeZaak;
 .
 kad:KadastraleGemeente a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Kadastrale_gemeente;
 	rdfs:label "Kadastrale gemeente"@nl;
 	skos:prefLabel "Kadastrale gemeente"@nl;
@@ -455,6 +490,7 @@ kad:KadastraleGemeente a skos:Concept, skoslex:Object;
 	skos:related kad:OnroerendeZaak;
 .
 kad:KadastraleGrens a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Kadastrale_grens;
 	rdfs:label "Kadastrale grens"@nl;
 	skos:prefLabel "Kadastrale grens"@nl;
@@ -466,6 +502,7 @@ kad:KadastraleGrens a skos:Concept, skoslex:Object;
 	skos:related kad:OnroerendeZaak;
 .
 kad:Landgoed a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Landgoed;
 	rdfs:label "Landgoed"@nl;
 	skos:prefLabel "Landgoed"@nl;
@@ -476,6 +513,7 @@ kad:Landgoed a skos:Concept, skoslex:Object;
 	skos:related kad:OnroerendeZaak;
 .
 kad:ObjectlocatieBinnenland a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:ObjectlocatieBinnenland;
 	rdfs:label "Objectlocatie binnenland"@nl;
 	skos:prefLabel "Objectlocatie binnenland"@nl;
@@ -486,6 +524,7 @@ kad:ObjectlocatieBinnenland a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric kad:Adres;
 .
 kad:OnroerendeZaak a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Onroerende_zaak;
 	rdfs:label "Onroerende zaak"@nl;
 	skos:prefLabel "Onroerende zaak"@nl;
@@ -496,6 +535,7 @@ kad:OnroerendeZaak a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Zaak;
 .
 kad:OnroerendMonument a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Onroerend_monument;
 	rdfs:label "Onroerend monument"@nl;
 	skos:prefLabel "Onroerend monument"@nl;
@@ -506,6 +546,7 @@ kad:OnroerendMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
 kad:OpenbareRegisters a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Openbare_registers;
 	rdfs:label "Openbare registers"@nl;
 	skos:prefLabel "Openbare registers"@nl;
@@ -514,6 +555,7 @@ kad:OpenbareRegisters a skos:Concept, skoslex:Object;
         dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16>;
 .
 kad:OpenbareRuimte a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch bag:OpenbareRuimte;
 	rdfs:label "Openbare ruimte"@nl;
 	skos:prefLabel "Openbare ruimte"@nl;
@@ -522,6 +564,7 @@ kad:OpenbareRuimte a skos:Concept, skoslex:Object;
 	skosthes:broaderPartitive kad:Adres;
 .
 kad:Perceel a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Perceel;
 	rdfs:label "Perceel"@nl;
 	skos:prefLabel "Perceel"@nl;
@@ -531,6 +574,7 @@ kad:Perceel a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:OnroerendeZaak;
 .
 kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Provinciaal_monument;
 	rdfs:label "Provinciaal monument"@nl;
 	skos:prefLabel "Provinciaal monument"@nl;
@@ -542,6 +586,7 @@ kad:ProvinciaalMonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Publiekrechtelijke_beperking;
 	rdfs:label "Publiekrechtelijke beperking"@nl;
 	skos:prefLabel "Publiekrechtelijke beperking"@nl;
@@ -552,6 +597,7 @@ kad:PubliekrechtelijkeBeperking a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:BeperktRecht;
 .
 kad:Recht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Recht;
 	rdfs:label "Recht"@nl;
 	skos:prefLabel "Recht"@nl;
@@ -560,6 +606,7 @@ kad:Recht a skos:Concept, skoslex:Object;
 	skos:related zv:Persoon;
 .
 kad:RechtVanHypotheek a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Recht_van_hypotheek;
 	rdfs:label "Recht van hypotheek"@nl;
 	skos:prefLabel "Recht van hypotheek"@nl;
@@ -571,6 +618,7 @@ kad:RechtVanHypotheek a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Vermogensrecht;
 .
 kad:Registergoed a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Registergoed;
 	rdfs:label "Registergoed"@nl;
 	skos:prefLabel "Registergoed"@nl;
@@ -582,6 +630,7 @@ kad:Registergoed a skos:Concept, skoslex:Object;
 #Bij het Kadaster worden ook vaar- en vliegtuigen genoemd als goederen die moeten worden ingeschreven, maar deze vallen buiten de context van Zorgeloos Vastgoed.
 .
 kad:Rijksmonument a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 #	skos:exactMatch brk:Rijksmonument #mist nu nog in tax.kadaster.nl
 	rdfs:label "Rijksmonument"@nl;
 	skos:prefLabel "Rijksmonument"@nl;
@@ -592,6 +641,7 @@ kad:Rijksmonument a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:PubliekrechtelijkeBeperking;
 .
 kad:Sectie a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Sectie;
 	rdfs:label "Sectie"@nl;
 	skos:prefLabel "Sectie"@nl;
@@ -600,6 +650,7 @@ kad:Sectie a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Adres;
 .
 kad:Tenaamstelling a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Tenaamstelling;
 	rdfs:label "Tenaamstelling"@nl;
 	skos:prefLabel "Tenaamstelling"@nl;
@@ -609,6 +660,7 @@ kad:Tenaamstelling a skos:Concept, skoslex:Object;
 	skos:related kad:Persoon;
 .
 kad:Vermogensrecht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Vermogensrecht;
 	rdfs:label "Vermogensrecht"@nl;
 	skos:prefLabel "Vermogensrecht"@nl;
@@ -618,6 +670,7 @@ kad:Vermogensrecht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Recht;
 .
 kad:Woonplaats a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch bag:Woonplaats;
 	rdfs:label "Woonplaats"@nl;
 	skos:prefLabel "Woonplaats"@nl;
@@ -626,6 +679,7 @@ kad:Woonplaats a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Adres;
 .
 kad:Zaak a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Zaak;
 	rdfs:label "Zaak"@nl;
 	skos:prefLabel "Zaak"@nl;
@@ -634,6 +688,7 @@ kad:Zaak a skos:Concept, skoslex:Object;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=2>;
 .
 kad:ZakelijkRecht a skos:Concept, skoslex:Object;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Zakelijk_recht;
 	rdfs:label "Zakelijk recht"@nl;
 	skos:prefLabel "Zakelijk recht"@nl;
@@ -648,66 +703,77 @@ kad:ZakelijkRecht a skos:Concept, skoslex:Object;
 #
 
 kad:AandeelRecht a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Aandeel recht"@nl;
 	skos:prefLabel "Aandeel recht"@nl;
 	skos:definition "Het aandeel van iemand in een Zakelijk recht, uitgedrukt in een percentage."@nl;
 	skosthes:related kad:Tenaamstelling;
 .
 kad:AdresHuisnummer a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Huisnummer"@nl;
 	skos:prefLabel "Huisnummer"@nl;
 	skos:definition "Een huisnummer is een door het bevoegde gemeentelijke orgaan als zodanig toegekende nummer van een verblijfsobject, een standplaats of een ligplaats."@nl;
 	skos:related kad:Adres;
 .
 kad:AdresHuisletter a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Huisletter"@nl;
 	skos:prefLabel "Huisletter"@nl;
 	skos:definition "Een huisnummer is een door het bevoegde gemeentelijke orgaan als zodanig toegekende letter bij het huisnummer van een verblijfsobject, een standplaats of een ligplaats."@nl;
 	skos:related kad:Adres;
 .
 kad:AdresHuisnummertoevoeging a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Huisnummertoevoeging"@nl;
 	skos:prefLabel "Huisnummertoevoeging"@nl;
 	skos:definition "Een huisnummer is een door het bevoegde gemeentelijke orgaan als zodanig toegekende toevinging bij het huisnummer van een verblijfsobject, een standplaats of een ligplaats."@nl;
 	skos:related kad:Adres;
 .
 kad:AdresIdentificatie a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Adres identificatie"@nl;
 	skos:prefLabel "Adres identificatie"@nl;
 	skos:definition "Een adres identificatie is de unieke identificatie van een nummeraanduiding in de BAG."@nl;
 	skos:related kad:Adres;
 .
 kad:AlgemeneErfpachtvoorwaarden a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Algemene erfpachtvoorwaarden"@nl;
 	skos:prefLabel "Algemene erfpachtvoorwaarden"@nl;
 	skos:definition "De algemene voorwaarden voor de erfpacht volgens de betreffende modelovereenkomst."@nl;
 	skosthes:related kad:Erfpacht;
 .
 kad:BegrenzingPerceel a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Begrenzing perceel"@nl;
 	skos:prefLabel "Begrenzing perceel"@nl;
 	skos:definition "Het geheel van lijnketens waarmee de vlakomtrek van een perceel wordt gevormd."@nl;
 	skosthes:related kad:Erfpacht;
 .
 kad:BijzondereErfpachtvoorwaarden a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Bijzonder erfpachtvoorwaarden"@nl;
 	skos:prefLabel "Bijzondere erfpachtvoorwaarden"@nl;
 	skos:definition "De bijzondere voorwaarden voor de erfpacht als aanvulling op de betreffende modelovereenkomst."@nl;
 	skosthes:related kad:Erfpacht;
 .
 kad:CanonAanpassing a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Aanpassing canon"@nl;
 	skos:prefLabel "Aanpassing canon"@nl;
 	skos:definition "De periode waarin de canon wordt aangepast en de datum van de eerste aanpassing"@nl;
 	skosthes:related kad:Canon;
 .
 kad:CanonAfgekocht a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Canon afgekocht"@nl;
 	skos:prefLabel "Canon afgekocht"@nl;
 	skos:definition "De datum tot wanneer de canon is afgekocht."@nl;
 	skosthes:related kad:Canon;
 .
 kad:CanonHerziening a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Canon herziening"@nl;
 	skos:prefLabel "Canon herziening"@nl;
 	skos:definition "De periode waarna de canon wordt herzien en de datum van de eerstvolgende herziening."@nl;
@@ -715,12 +781,14 @@ kad:CanonHerziening a skos:Concept;
 	skosthes:related kad:Canon;
 .
 kad:CanonJaarlijksBedrag a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "jaarlijks bedrag canon"@nl;
 	skos:prefLabel "jaarlijks bedrag canon"@nl;
 	skos:definition "Het Jaarlijks bedrag is het bedrag dat jaarlijks als erpachtcanon moet worden betaald."@nl;
 	skosthes:related kad:Canon;
 .
 kad:CanonIndexering a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "indexering canon"@nl;
 	skos:prefLabel "indexering canon"@nl;
 	skos:definition "De termijn  waarop de canon wordt geïndexeerd op basis van de ontwikkeling van de prijsindex en de eerste datum."@nl;
@@ -728,24 +796,28 @@ kad:CanonIndexering a skos:Concept;
 	skosthes:related kad:Canon;
 .
 kad:CanonType a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Canon type"@nl;
 	skos:prefLabel "Canon type"@nl;
 	skos:definition "Het type canon, namelijk tijdelijk, voortdurend of doorlopend."@nl;
 	skosthes:related kad:Canon;
 .
 kad:CanonVooruitbetaald a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Canon vooruitbetaald"@nl;
 	skos:prefLabel "Canon vooruitbetaald"@nl;
 	skos:definition "De datum tot wanneer de canon is vooruitbetaald."@nl;
 	skosthes:related kad:Canon;
 .
 kad:EinddatumRecht a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Einddatum recht"@nl;
 	skos:prefLabel "Einddatum recht"@nl;
 	skos:definition "EinddatumRecht is de datum waarop een recht eindigt."@nl;
 	skosthes:related kad:Erfpacht;
 .
 kad:GeschatteGrootte a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Geschatte_grootte;
 	rdfs:label "Geschatte grootte"@nl;
 	skos:prefLabel "Geschatte grootte"@nl;
@@ -755,6 +827,7 @@ kad:GeschatteGrootte a skos:Concept;
 	skosthes:broaderGeneric kad:Grootte;
 .
 kad:Grootte a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Grootte;
 	rdfs:label "Grootte"@nl;
 	skos:prefLabel "Grootte"@nl;
@@ -763,6 +836,7 @@ kad:Grootte a skos:Concept;
 	skos:related kad:Perceel;
 .
 kad:Hoofdsom a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Hoofdsom;
 	rdfs:label "Hoofdsom"@nl;
 	skos:prefLabel "Hoofdsom"@nl;
@@ -773,6 +847,7 @@ kad:Hoofdsom a skos:Concept;
 	skos:related not:RechtVanHypotheek;
 .
 kad:KadastraleGrootte a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Kadastrale_grootte;
 	rdfs:label "Kadastrale grootte"@nl;
 	skos:prefLabel "Kadastrale grootte"@nl;
@@ -783,6 +858,7 @@ kad:KadastraleGrootte a skos:Concept;
 	dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=1>;
 .
 kad:LooptijdErfpacht a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Looptijd erfpacht"@nl;
 	skos:prefLabel "Looptijd erfpacht"@nl;
 	skos:altLabel "Einddatum erfpacht"@nl;
@@ -791,6 +867,7 @@ kad:LooptijdErfpacht a skos:Concept;
 	skos:related kad:Erfpacht;
 .
 kad:NaamOpenbareRuimte a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Naam van een openbare ruimte"@nl;
 	skos:prefLabel "Naam van een openbare ruimte"@nl;
 	skos:altLabel "Straatnaam"@nl;
@@ -801,6 +878,7 @@ kad:NaamOpenbareRuimte a skos:Concept;
 	skos:exactMatch bag:Naam_OpenbareRuimte;
 .
 kad:NaamWoonplaats a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Naam van een woonplaats"@nl;
 	skos:prefLabel "Naam van een woonplaats"@nl;
 	skos:definition "De naam van een woonplaats is de door het bevoegde gemeentelijke orgaan aan een woonplaats toegekende benaming en een authentiek gegeven."@nl;
@@ -809,24 +887,28 @@ kad:NaamWoonplaats a skos:Concept;
 	skos:exactMatch bag:Naam_Woonplaats;
 .
 kad:ObjectlocatieBinnenlandIdentificatie a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Objectlocatie binnenland identificatie"@nl;
 	skos:prefLabel "Objectlocatie binnenland identificatie"@nl;
 	skos:definition "Een Objectlocatie binnenland identificatie is de unieke identificatie van een objectlocatie binnenland in de BRK."@nl;
 	skos:related kad:ObjectlocatieBinnenland;
 .
 kad:OnroerendeZaakKadastraleAanduiding a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Kadastrale aanduiding"@nl;
 	skos:prefLabel "Kadastrale aanduiding"@nl;
 	skos:definition "De unieke aanduiding van een onroerende zaak door vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de percelen, gedeelten van percelen en appartementsrechten zijn gelegen waarvan het grondgebied tot die zaak behoort, alsmede de nummers van die percelen."@nl;
 	skos:related kad:OnroerendeZaak;
 .
 kad:OnroerendeZaakKoopsom a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Koopsom onroerende zaak"@nl;
 	skos:prefLabel "Koopsom onroerende zaak"@nl;
 	skos:definition "De unieke aanduiding van een onroerende zaak door vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de percelen, gedeelten van percelen en appartementsrechten zijn gelegen waarvan het grondgebied tot die zaak behoort, alsmede de nummers van die percelen."@nl;
 	skos:related kad:OnroerendeZaak;
 .
 kad:OmschrijvingOnroerendeZaak a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Omschrijving onroerende zaak"@nl;
 	skos:prefLabel "Omschrijving onroerende zaak"@nl;
 	rdfs:definition "De omschrijving van de onroerende zaak is de omschrijving zoals die bij de koop wordt opgenomen"@nl;
@@ -834,6 +916,7 @@ kad:OmschrijvingOnroerendeZaak a skos:Concept;
 	skos:related kad:OnroerendeZaak;
 .
 kad:OpgegevenGrootte a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Opgegeven grootte"@nl;
 	skos:prefLabel "Opgegeven grootte"@nl;
 	skos:definition "De opgegeven grootte van een perceel is de grootte die de notaris opgeeft bij een voorlopige grens"@nl;
@@ -841,6 +924,7 @@ kad:OpgegevenGrootte a skos:Concept;
 	skos:related kad:Perceel;
 .
 kad:Postcode a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Postcode"@nl;
 	skos:prefLabel "Postcode"@nl;
 	skos:definition "De postcode is een coderingssystematiek zoals ontwikkeld en beheerd door PostNL. Een postcode is een niet-authentiek gegeven met betrekking tot een nummeraanduiding."@nl;
@@ -849,18 +933,21 @@ kad:Postcode a skos:Concept;
 	skos:exactMatch bag:Postcode;
 .
 kad:RechtshandelingIdentificatie a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Rechtshandeling identificatie"@nl;
 	skos:prefLabel "Rechtshandeling identificatie"@nl;
 	skos:definition "Een rechtshandeling identificatie is de unieke identificatie van een rechtshandeling."@nl;
 	skos:related kad:Rechtshandeling;
 .
 kad:RegistergoedIdentificatie a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Registergoed identificatie"@nl;
 	skos:prefLabel "Registergoed identificatie"@nl;
 	skos:definition "Een registergoed identificatie is de unieke identificatie van een registergoed in de BRK."@nl;
 	skos:related kad:Registergoed;
 .
 kad:RegistergoedLocatie a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Registergoed locatie"@nl;
 	skos:prefLabel "Registergoed locatie"@nl;
 	skos:definition "Een registergoed locatie is een aanduiding voor de locatie van het Registergoed in Nederland."@nl;
@@ -868,12 +955,14 @@ kad:RegistergoedLocatie a skos:Concept;
 	skos:related kad:Registergoed;
 .
 kad:TenaamstellingIdentificatie a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Rechtshandeling tenaamstelling"@nl;
 	skos:prefLabel "Rechtshandeling tenaamstelling"@nl;
 	skos:definition "Een tenaamstelling identificatie is de unieke identificatie van een tenaamstelling."@nl;
 	skos:related kad:Tenaamstelling;
 .
 kad:GekozenWoonplaats a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:exactMatch brk:Gekozen_woonplaats;
 	rdfs:label "Gekozen woonplaats"@nl;
 	skos:prefLabel "Gekozen woonplaats"@nl;
@@ -883,6 +972,7 @@ kad:GekozenWoonplaats a skos:Concept;
 	skosthes:broaderPartitive kad:Rechtshandeling;
 .
 kad:ZakelijkRechtIdentificatie a skos:Concept;
+	skos:inScheme <https://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	rdfs:label "Zakelijk recht identificatie"@nl;
 	skos:prefLabel "Zakelijk recht identificatie"@nl;
 	skos:definition "Een Zakelijk recht identificatie is de unieke identificatie van een zakelijk recht in de BRK."@nl;
