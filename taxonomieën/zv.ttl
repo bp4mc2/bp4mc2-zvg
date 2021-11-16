@@ -105,10 +105,10 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0024779&hoofdstuk=1&artikel=1.1> rdfs:label "artikel 1.1 van de Wet algemene bepalingen omgevingsrecht"@nl.
 
 #Catalogi
-<https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Natuurlijk persoon"@nl.
-<https://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Niet natuurlijk persoon"@nl.
-<https://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon> rdfs:label "Basisregistratie Kadaster: Rechtspersoon"@nl.
-<https://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon> rdfs:label "Basisregistratie Kadaster: Persoon"@nl.
+<http://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Natuurlijk persoon"@nl.
+<http://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon> rdfs:label "Basisregistratie Kadaster: Niet natuurlijk persoon"@nl.
+<http://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon> rdfs:label "Basisregistratie Kadaster: Rechtspersoon"@nl.
+<http://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon> rdfs:label "Basisregistratie Kadaster: Persoon"@nl.
 
 #--
 #Een aantal concepten is algemeen en wordt voor het gehele domein van Zorgeloos Vastgoed gedefinieerd. Sommige begrippen zoals mens, organisatie en persoon zijn domeinoverstijgend.
@@ -131,7 +131,7 @@ zv:BevoegdGezag a skos:Concept, skoslex:Actor;
 	rdfs:comment "Afhankelijk van de wetgeving wordt onder het bevoegd gezag bijvoorbeeld een bestuursorgaan, burgemeester of een andere functionaris of overheidsorgaan bedoeld."@nl;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 	skos:exactMatch brk:Bevoegd_gezag;
-	#dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Bevoegd_gezag>;
+	#dcterms:source <http://brk.basisregistraties.overheid.nl/doc/begrip/Bevoegd_gezag>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001840&hoofdstuk=1&artikel=5>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005181&hoofdstuk=I&artikel=1>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0024779&hoofdstuk=1&artikel=1.1>;
@@ -145,7 +145,7 @@ zv:NatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	skosthes:broaderGeneric zv:Persoon;
 	#Dit concept kan worden verbonden met de ISA2 person-ontologie voor natuurlijke personen. Van belang daarbij is wel het onderscheid tussen de mens in juridische zin, en "echte" mensen.
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715>;
-	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon>;
+	dcterms:source <http://brk.basisregistraties.overheid.nl/doc/begrip/Natuurlijk_persoon>;
 .
 zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -155,7 +155,7 @@ zv:NietNatuurlijkPersoon a skos:Concept, skoslex:Actor;
 	skos:altLabel "Organisatie"@nl;
 	skos:definition "Een niet-natuurlijk persoon is een rechtspersoon of een samenwerkingsverband zonder rechtspersoonlijkheid."@nl;
 	skosthes:broaderGeneric zv:Persoon;
-	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon>;
+	dcterms:source <http://brk.basisregistraties.overheid.nl/doc/begrip/Niet-natuurlijk_persoon>;
 .
 zv:Partij a skos:Concept, skoslex:Actor;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -182,7 +182,7 @@ zv:Persoon a skos:Concept, skoslex:Actor; #Indien persoon als object wordt gebru
 	skos:prefLabel "Persoon"@nl;
 	skos:definition "Een persoon is een natuurlijk persoon of een niet-natuurlijk persoon."@nl;
   	rdfs:comment "Een persoon is een natuurlijk persoon, een mens, of een niet-natuurlijk persoon."@nl;
-	dcterms:source <https://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon>;
+	dcterms:source <http://brk.basisregistraties.overheid.nl/begripdetail?subject=http://brk.basisregistraties.overheid.nl/id/begrip/Persoon>;
 .
 zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -196,7 +196,7 @@ zv:Rechtspersoon a skos:Concept, skoslex:Actor;
 	skos:scopeNote "Rechtspersonen zijn publiekrechtelijke rechtspersonen, privaatrechtelijke rechtspersonen of kerkgenootschappen."@nl;
 	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=5>;
-	dcterms:source <https://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon>;
+	dcterms:source <http://brk.basisregistraties.overheid.nl/doc/begrip/Rechtspersoon>;
 .
 #--
 #Acts
@@ -356,7 +356,7 @@ zv:AanduidingNaamgebruik a skos:Concept;
 	skos:prefLabel "Aanduiding naamgebruik"@nl;
 	skos:related zv:NatuurlijkPersoon;
 	skos:definition "Een aanduiding van de wijze van aanschrijving van de persoon."@nl;
-	skos:exactMatch <https://opendata.stelselcatalogus.nl/brp/id/gegevenselement/Aanduiding_naamgebruik_persoon-Natuurlijk_persoon>;
+	skos:exactMatch <http://opendata.stelselcatalogus.nl/brp/id/gegevenselement/Aanduiding_naamgebruik_persoon-Natuurlijk_persoon>;
 .
 zv:AdellijkeTitelPredikaat a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -385,7 +385,7 @@ zv:BurgerlijkeStaat a skos:Concept;
 	skos:definition "Staat/positie van een natuurlijke persoon volgens het Burgerlijk Wetboek, zoals gehuwd en ongehuwd."@nl;
 	skos:related zv:NatuurlijkPersoon;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=3&artikel=2.7&lid=1>;
-	#Gek genoeg is dit begrip niet te vinden https://brk.basisregistraties.overheid.nl/begrippenlijst
+	#Gek genoeg is dit begrip niet te vinden http://brk.basisregistraties.overheid.nl/begrippenlijst
 .
 zv:Geboorte a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -397,7 +397,7 @@ zv:Geboorte a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0033715&hoofdstuk=2&afdeling=1&paragraaf=2&artikel=2.3>;
 	skos:related zv:NatuurlijkPersoon;
 .
-zv:Gehuwd a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Soort_verbintenis
+zv:Gehuwd a skos:Concept;#http://www.stelselcatalogus.nl/registraties/BRP/Soort_verbintenis
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Gehuwd"@nl;
@@ -413,7 +413,7 @@ zv:GemeenschapVanGoederen a skos:Concept;
 	skos:definition "Situatie dat een of meer goederen toebehoren aan twee of meer deelgenoten gezamenlijk."@nl;
 	skos:broaderGeneric zv:Huwelijksgoederenrecht;
 .
-zv:GeregistreerdPartnerschap a skos:Concept;#https://www.stelselcatalogus.nl/registraties/BRP/Partner/Soort_verbintenis
+zv:GeregistreerdPartnerschap a skos:Concept;#http://www.stelselcatalogus.nl/registraties/BRP/Partner/Soort_verbintenis
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Geregistreerd partnerschap"@nl;
@@ -507,7 +507,7 @@ zv:KvKnummer a skos:Concept;
 	skos:prefLabel "KvKnummer"@nl;
 	skos:definiton "Betreft het identificerende gegeven voor de Maatschappelijke Activiteit, het KVK-nummer."@nl;
 	skos:related zv:Rechtspersoon;
-	skos:exactMatch <https://opendata.stelselcatalogus.nl/hr/id/gegevenselement/KVK-nummer-Maatschappelijke_Activiteit>;
+	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/KVK-nummer-Maatschappelijke_Activiteit>;
 .
 zv:LandVertrokken a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -516,7 +516,7 @@ zv:LandVertrokken a skos:Concept;
 	skos:prefLabel "Land waarnaar vertrokken"@nl;
 	skos:definition "Het land waarin de persoon bij emigratie heeft aangegeven te gaan verblijven dan wel het land waarin de persoon verblijft."@nl;
 	skos:related zv:NatuurlijkPersoon;
-	skos:exactMatch <https://opendata.stelselcatalogus.nl/brp/id/begrip/Woonland>;
+	skos:exactMatch <http://opendata.stelselcatalogus.nl/brp/id/begrip/Woonland>;
 .
 zv:Mailadres a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
@@ -583,7 +583,7 @@ zv:Rechtsvorm a skos:Concept;
 	skos:prefLabel "Rechtsvorm"@nl;
 	skos:definiton "De rechtsvorm van de Rechtspersoon."@nl;
 	skos:related zv:Rechtspersoon;
-	skos:exactMatch <https://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Rechtsvorm-Rechtspersoon>;
+	skos:exactMatch <http://opendata.stelselcatalogus.nl/hr/id/gegevenselement/Rechtsvorm-Rechtspersoon>;
 .
 zv:Telefoon a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
