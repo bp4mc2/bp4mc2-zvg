@@ -199,7 +199,7 @@ fin:VerstrekkenHypotheekadvies a skos:Concept, skoslex:Act;
 .
 #--
 #Other concepts (objects, records)
-fin:Bankgarantie a skos:Concept skoslex:Object;
+fin:Bankgarantie a skos:Concept, skoslex:Object;
 	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie"@nl;
