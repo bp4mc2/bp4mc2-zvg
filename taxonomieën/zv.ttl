@@ -54,11 +54,15 @@
 	rdfs:label "algemeen begrippenkader Zorgeloos Vastgoed"@nl;
 .
 <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/SoortenBurgerlijkeStaat> a skos:Collection;
+	rdfs:label "Soorten burgerlijke staat";
+	skos:prefLabel "Soorten burgerlijke staat"@nl;
 	skos:member zv:Gehuwd;
 	skos:member zv:GeregistreerdPartnerschap;
 	skos:member zv:Ongehuwd;
 .
 <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/SoortenHuwelijksgoederenrecht> a skos:Collection;
+	rdfs:label "Soorten huwelijks goederenrecht";
+	skos:prefLabel "Soorten huwelijks goederenrecht"@nl;
 	skos:member zv:GemeenschapVanGoederen;
 	skos:member zv:HuwelijkseVoorwaarden;
 .
