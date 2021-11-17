@@ -175,7 +175,7 @@ mak:OntbindendeVoorwaarde a skos:Concept, skoslex:Object;
 	skos:definition "Een ontbindende voorwaarde is een voorwaarde die koper en verkoper in de koopovereenkomst hebben opgenomen om de koopovereenomst te kunnen ontbinden."@nl;
 	rdfs:comment "Ontbindende voorwaarden zijn voorwaarden die koper en verkoper in de koopovereenkomst hebben opgenomen en die de koop kunnen ontbinden. Denk hierbij aan het voorbehoud financiering hypotheek, het voorbehoud Nationale Hypotheek Garantie en het voorbehoud bouwtechnische keuring. Meerdere ontbindende voorwaarden kunnen worden toegevoegd aan de koopovereenkomst."@nl;
 	skosthes:narrowerGeneric mak:Financieringsvoorbehoud;
- 	skosthes:narrowerGeneric mak:NationaleHypotheekgarantie; 
+ 	skosthes:narrowerGeneric mak:NationaleHypotheekGarantie; 
 	skosthes:narrowerGeneric mak:BouwkundigeKeuring;
 .
 mak:Verontreiniging a skos:Concept, skoslex:Object;
@@ -962,7 +962,7 @@ Via gangbare communicatiemiddelen betekent bijvoorbeeld dat een mededeling per a
 wordt gedaan. Het voordeel hiervan is dat aangetoond kan worden dat de mededeling daadwerkelijk heeft plaatsgevonden. Als echter tussen verkoper en koper (al dan niet met tussenkomst van een makelaar) via email is gecommuniceerd, kan dat tussen betrokken partijen ook een ‘gangbaar communicatiemiddel’ zijn.''';
 	skosthes:broaderPartitive mak:Koopovereenkomst;
 	skoslex:isAbout mak:Financieringsvoorbehoud;
-	skoslex:isAbout mak:NationaleHypotheekgarantie;
+	skoslex:isAbout mak:NationaleHypotheekGarantie;
 	skoslex:isAbout mak:BouwkundigeKeuring;
 .
 mak:ArtikelBedenktijd a skos:Concept, skoslex:Record;
