@@ -660,7 +660,7 @@ mak:ArtikelBeschikkingWetBodemsanering a skos:Concept, skoslex:Record;
 	skos:prefLabel "Artikel 6.4.4: beschikking wet bodemsanering"@nl;
 	rdfs:comment "Artikel 6.4.4. gaat over beschikkingen of bevelen in de zin van artikel 55 van de Wet Bodembescherming. Op grond van deze wet kan de provincie of de gemeente een beschikking of bevel tot bijvoorbeeld onderzoek of sanering van de grond nemen. Indien verkoper weet dat een dergelijke beschikking of bevel gegeven is, moet hij koper daarvan op de hoogte stellen."@nl;
 	skos:scopeNote "Artikel 6.4.4 van de model koopovereenkomst."@nl;
-	skoslex:isAbout kad:BeschikkingWetBodemsanering;
+	skoslex:isAbout kad:BeschikkingWetBodembescherming;
 	skosthes:broaderPartitive mak:ArtikelStaatOnroerendeZaakGebruik;
 .
 mak:ArtikelInspectie a skos:Concept, skoslex:Record;
@@ -1075,7 +1075,7 @@ mak:AanwijzerNotaris a skos:Concept;
 	rdfs:label "Aanwijzer notaris"@nl;
 	skos:prefLabel "Aanwijzer notaris"@nl;
 	skos:definition "Degene die de notaris voor de levering aanwijst, de koper of de verkoper."@nl;
-	skos:related mak:KostenEnOverdrachtsbelasting;
+	skos:related not:KostenEnOverdrachtsbelasting;
 	skosthes:broaderGeneric zv:Partij;
 .
 mak:AardClausule a skos:Collection;
@@ -1181,7 +1181,7 @@ mak:BetalerKosten a skos:Concept;
 	rdfs:label "Betaler kosten"@nl;
 	skos:prefLabel "Betaler kosten"@nl;
 	skos:definition "Degene die de kosten voor de levering betaalt, de koper of de verkoper."@nl;
-	skos:related mak:KostenEnOverdrachtsbelasting;
+	skos:related not:KostenEnOverdrachtsbelasting;
 .
 mak:BeslagToekomstigeTermijn a skos:Concept, skoslex:Act;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>; 
@@ -1559,7 +1559,7 @@ mak:StaatOnroerendeZaak a skos:Concept, skoslex:Object;
 	skosthes:narrowerGeneric mak:Verontreiniging;
 	skosthes:narrowerGeneric mak:OndergrondseTankVoorHetOpslaanVanVloeistoffen;
 	skosthes:narrowerGeneric mak:Asbest;
-	skosthes:narrowerGeneric kad:BeschikkingWetBodemsanering;
+	skosthes:narrowerGeneric kad:BeschikkingWetBodembescherming;
 	skosthes:narrowerGeneric mak:Inspectie;
 	skosthes:narrowerGeneric mak:AanschrijvingOverheidNutsbedrijf;
 	skosthes:narrowerGeneric kad:OnroerendMonument;
@@ -1746,7 +1746,6 @@ mak:VoorwaardenIdentificatie a skos:Concept;
 	rdfs:label "Identificatie voorwaarden"@nl;
 	skos:prefLabel "Identificatie voorwaarden"@nl;
 	skos:definition "De unieke identificatie van de voorwaarden."@nl;
-	skos:related mak:Voorwaarden;
 .
 mak:VrijwaringStaatOnroerendeZaak a skos:Concept, skoslex:Act;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>; 
