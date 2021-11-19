@@ -19,10 +19,15 @@
 <http://zorgeloosvastgoed.nl/data/zv> a owl:Ontology;
 	rdfs:label "Domein Zorgeloos vastgoed (algemeen)"@nl;
 .
-#De topconcepten zijn een samenvoeging van de eerdere topconcepten en de eerdere collectie hoofdbegrippen. Persoon is een vreemde eend in de bijt omdat verkoper, veroper, hypotheekgever en hypotheeknemer specialisaties zijn van persoon en makelaar, taxateur, notaris en taxateur specialisaties zijn van natuurlijk persoon, waarvan persoon een generalisatie is. Eigenlijk laten we hiermee een andere lijn zien waarlangs je deze begrippen kunt ordenen. Dat geldt ook voor AanOfVerkoopVanEeenHuis, waarvan de Koop, Taxatie, Juridische Levering, etc. onderdeel zijn. En in zekere zin ook voor Registergoed, Akte en Adres. Strikt genomen hadden we ook met slechts deze 5 concepten het scenario 'kopen van een huis' kunnen ondersteunen.
 <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed> a skos:ConceptScheme;
 	rdfs:label "Alle begrippen in het Zorgeloos Vastgoed begrippenstelsel"@nl;
 	skos:prefLabel "Alle begrippen in het Zorgeloos Vastgoed begrippenstelsel"@nl;
+	dcterms:creator "Werkgroep Taxonomie Zorgeloos Vastgoed";
+	dcterms:description "Een thesaurus van alle concepten in het Zorgeloos Vastgoed afsprakenstelsel die relevant zijn voor informatie uitwisseling";
+	dcterms:language "Nederlands";
+	dcterms:publisher "Zorgeloos Vastgoed";
+	dcterms:rights <https://creativecommons.org/licenses/by/4.0/deed.nl>;
+#De topconcepten zijn een samenvoeging van de eerdere topconcepten en de eerdere collectie hoofdbegrippen. Persoon is een vreemde eend in de bijt omdat verkoper, veroper, hypotheekgever en hypotheeknemer specialisaties zijn van persoon en makelaar, taxateur, notaris en taxateur specialisaties zijn van natuurlijk persoon, waarvan persoon een generalisatie is. Eigenlijk laten we hiermee een andere lijn zien waarlangs je deze begrippen kunt ordenen. Dat geldt ook voor AanOfVerkoopVanEeenHuis, waarvan de Koop, Taxatie, Juridische Levering, etc. onderdeel zijn. En in zekere zin ook voor Registergoed, Akte en Adres. Strikt genomen hadden we ook met slechts deze 5 concepten het scenario 'kopen van een huis' kunnen ondersteunen.
 	skos:hasTopConcept zv:AanOfVerkoopVanEenHuis;
 	skos:hasTopConcept zv:Huis;
 	skos:hasTopConcept zv:Identificeren;
@@ -54,6 +59,11 @@
 <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv> a skos:ConceptScheme;
 	rdfs:label "Begrippenkader Zorgeloos Vastgoed algemeen"@nl;
 	skos:prefLabel "Begrippenkader Zorgeloos Vastgoed algemeen"@nl;
+	dcterms:creator "Werkgroep Taxonomie Zorgeloos Vastgoed";
+	dcterms:description "Een thesaurus van alle concepten in het Zorgeloos Vastgoed afsprakenstelsel die relevant zijn voor informatie uitwisseling";
+	dcterms:language "Nederlands";
+	dcterms:publisher "Zorgeloos Vastgoed";
+	dcterms:rights <https://creativecommons.org/licenses/by/4.0/deed.nl>;
 .
 <http://taxonomie.zorgeloosvastgoed.nl/id/collectie/SoortenBurgerlijkeStaat> a skos:Collection;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualFramework/zv>; 
