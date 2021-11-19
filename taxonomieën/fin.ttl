@@ -20,6 +20,11 @@
 <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin> a skos:ConceptScheme;
 	rdfs:label "Begrippenkader Zorgeloos Vastgoed financieel"@nl;
 	skos:prefLabel "Begrippenkader Zorgeloos Vastgoed financieel"@nl;
+	dcterms:creator "Werkgroep Taxonomie Zorgeloos Vastgoed";
+	dcterms:description "Een thesaurus van alle concepten in het Zorgeloos Vastgoed afsprakenstelsel die relevant zijn voor informatie uitwisseling";
+	dcterms:language "Nederlands";
+	dcterms:publisher "Zorgeloos Vastgoed";
+	dcterms:rights <https://creativecommons.org/licenses/by/4.0/deed.nl>;
 .
 #--
 #Wetgeving links
