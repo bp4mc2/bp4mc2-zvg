@@ -17,6 +17,15 @@
 <http://zorgeloosvastgoed.nl/data/fin> a owl:Ontology;
 	rdfs:label "Domein Hypotheken";
 .
+<http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin> a skos:ConceptScheme;
+	rdfs:label "Begrippenkader Zorgeloos Vastgoed financieel"@nl;
+	skos:prefLabel "Begrippenkader Zorgeloos Vastgoed financieel"@nl;
+	dcterms:creator "Werkgroep Taxonomie Zorgeloos Vastgoed";
+	dcterms:description "Een thesaurus van alle concepten in het Zorgeloos Vastgoed afsprakenstelsel die relevant zijn voor informatie uitwisseling";
+	dcterms:language "Nederlands";
+	dcterms:publisher "Zorgeloos Vastgoed";
+	dcterms:rights <https://creativecommons.org/licenses/by/4.0/deed.nl>;
+.
 #--
 #Wetgeving links
 #Merk op dat de links op alfabetische volgorde zijn geplaatst om sneller dubbelingen te kunnen ontdekken
@@ -30,25 +39,34 @@
 #--
 #Actors and Agents
 fin:Bewindvoerder a skos:Concept, skoslex:Actor;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Bewindvoerder"@nl;
 	skos:prefLabel "Bewindvoerder"@nl;
 	skos:definition "tbd"@nl;
+	skosthes:broaderGeneric zv:Persoon;
 .
 fin:Borg a skos:Concept, skoslex:Actor;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Borg"@nl;
 	skos:prefLabel "Borg"@nl;
 	skos:definition "De persoon die garant staat voor de nakoming van de verplichting van een andere persoon."@nl;
 	rdfs:comment "Als een schuldenaar zijn verplichting niet nakomt, is de borg verplicht om de borgsom te betalen aan de schuldeiser. De borg krijgt daarna een vordering op de schuldenaar."@nl;
-	skos:semanticRelation fin:Schuldenaar;
-	skosthes:broaderGeneric zv:NatuurlijkPersoon;
-	skosthes:broaderGeneric zv:NietNatuurlijkPersoon;
+	skos:related fin:Schuldenaar;
+	skosthes:broaderGeneric zv:Persoon;
 .
 fin:Curator a skos:Concept, skoslex:Actor;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Curator"@nl;
 	skos:prefLabel "Curator"@nl;
 	skos:definition "tbd"@nl;
+	skosthes:broaderGeneric zv:Persoon;
 .
 fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Hypotheekadviseur"@nl;
 	skos:prefLabel "Hypotheekadviseur"@nl;
 	skos:altLabel "Financieel adviseur"@nl;
@@ -57,36 +75,46 @@ fin:Hypotheekadviseur a skos:Concept, skoslex:Agent;
 	skosthes:broaderGeneric zv:Rechtspersoon;
 .
 fin:Hypotheekgever a skos:Concept, skoslex:Actor;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Hypotheekgever"@nl;
 	skos:definition "Persoon die aan de bank een beperkt zekerheidsrecht op zijn registergoed (hypotheek) geeft, zodat de bank het geleende geld met voorrang op andere schuldeisers kan terugkrijgen."@nl;
 	rdfs:comment "De hypotheekgever is de geldnemer. Bij het afsluiten van een hypotheek bent u de hypotheekgever. U geeft dan een huis in onderpand om de financiering te krijgen die nodig is om dat huis te kopen. De financiering wordt de hypotheeksom genoemd."@nl;
 	skosthes:broaderGeneric mak:Koper;
+	skosthes:broaderGeneric fin:Schuldenaar;
 .
 fin:Hypotheeknemer a skos:Concept, skoslex:Actor;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Hypotheeknemer"@nl;
 	skos:definition "Meestal de bank die aan een persoon geld leent en ter verzekering van terugbetaling het recht verkrijgt om bij voorrang op het onderzette goed (bijv. het huis) verhaal te nemen."@nl;
 	rdfs:comment "Een hypotheeknemer is een geldverstrekker, bijvoorbeeld een bank, die geld uitleent aan een hypotheekgever, bijvoorbeeld een koper van een huis. Tegenover deze geldverstrekking staat dat de hypotheeknemer een hypotheek neemt op het onderpand."@nl;
 	skosthes:broaderGeneric zv:Rechtspersoon;
+	skosthes:broaderGeneric fin:Schuldeiser;
 .
 fin:Schuldeiser a skos:Concept, skoslex:Actor;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Schuldeiser"@nl;
 	skos:prefLabel "Schuldeiser"@nl;
 	skos:definition "De persoon die een recht heeft om een geldbedrag terug te ontvangen."@nl;
 	rdfs:comment "Door het verstrekken van een lening bedrag ontstaat een schuld bij de persoon die dat bedrag heeft ontvangen. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser."@nl;
 	skosthes:broaderGeneric zv:Partij;
-	skosthes:narrowerGeneric fin:Hypotheeknemer;
 .
 fin:Schuldenaar a skos:Concept, skoslex:Actor;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Schuldenaar"@nl;
 	skos:prefLabel "Schuldenaar"@nl;
 	skos:definition "De persoon die een verplichting heeft om een geldbedrag terug te betalen."@nl;
 	rdfs:comment "Door het ontvangen van een lening bedrag ontstaat een schuld aan de persoon die dat bedrag heeft verstrekt. De ontvanger van het lening bedrag is de schuldenaar. De verstrekker van het lening bedrag is de schuldeiser."@nl;
 	skosthes:broaderGeneric zv:Partij;
-	skosthes:narrowerGeneric fin:Hypotheekgever;
 .
 #--
 #Acts
 fin:Aflossen a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Aflossen"@nl;
 	skos:prefLabel "Aflossen"@nl;
 	skos:definition "Het terugbetalen van een schuld."@nl;
@@ -95,6 +123,8 @@ fin:Aflossen a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekgever;
 .
 fin:BesprekenHypotheekadvies a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Bespreken hypotheekadvies"@nl;
 	skos:prefLabel "Bespreken hypotheekadvies"@nl;
 	skos:altLabel "Hypotheekadvies gesprek"@nl;
@@ -104,7 +134,21 @@ fin:BesprekenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:object fin:Hypotheekadvies;
 	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 .
+fin:Garantie a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
+	rdfs:label "Garantie"@nl;
+	skos:prefLabel "Garantie"@nl;
+	skos:definition "tbd"@nl;
+	skosthes:broaderPartitive mak:Koop;
+	skoslex:narrowerPartitive fin:StellenBankgarantie;
+	skoslex:narrowerPartitive fin:StortenWaarborgsom;
+	skoslex:agent not:Notaris;
+	skoslex:actor mak:Koper;
+.
 fin:IdentificerenHypotheekadvies a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Identificeren van consument (hypotheekadvies)"@nl;
 	skos:prefLabel "Identificeren van consument (hypotheekadvies)"@nl;
 	skos:definition "Het identificeren van de [consument] ter verstrekking van een hypotheekadvies."@nl;
@@ -112,8 +156,11 @@ fin:IdentificerenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekadviseur;
 	skoslex:object fin:Hypotheekgever;
 	skosthes:broaderGeneric zv:Identificeren;
+	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 .
 fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Opstellen hypotheekadvies"@nl;
 	skos:prefLabel "Opstellen hypotheekadvies"@nl;
 	skos:definition "Het maken van een hypotheekadvies."@nl;
@@ -122,30 +169,35 @@ fin:OpstellenHypotheekadvies a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 .
 fin:StellenBankgarantie a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Stellen bankgarantie"@nl;
 	skos:prefLabel "Stellen bankgarantie"@nl;
 	skos:definition "Het stellen van een bankgarantie."@nl;
 	skoslex:object fin:Bankgarantie;
-	skoslex:agent not:Notaris;
-	skoslex:actor mak:Koper;
 .
 fin:StortenWaarborgsom a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Storten waarborgsom"@nl;
 	skos:prefLabel "Storten waarborgsom"@nl;
 	skos:definition "Het storten van een waarborgsom."@nl;
 	skoslex:object fin:Waarborgsom;
-	skoslex:agent not:Notaris;
-	skoslex:actor mak:Koper;
 .
 fin:Verbeuren a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Verbeuren"@nl;
 	skos:prefLabel "Verbeuren"@nl;
 	skoslex:object fin:Waarborgsom;
 	skoslex:object fin:Bankgarantie;
 	skoslex:agent not:Notaris;
 	skoslex:actor mak:Verkoper;
+	skos:related fin:Garantie;
 .
 fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Verstrekken bindend aanbod"@nl;
 	skos:prefLabel "Verstrekken bindend aanbod"@nl;
 	skos:definition "Verstrekken van een bindend aanbod door een geldverstrekker, vastgelegd in een bindende offerte"@nl;
@@ -155,9 +207,11 @@ fin:VerstrekkenBindendAanbod a skos:Concept, skoslex:Act;
 	skoslex:record fin:BindendeOfferte;
 	rdfs:seeAlso fin:Hypotheekadvies;
 	skoslex:object kad:OnroerendeZaak;
-	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
+	skosthes:broaderPartitive fin:VerstrekkenHypotheekadvies;
 .
 fin:VerstrekkenHypotheekadvies a skos:Concept, skoslex:Act;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Verstrekken hypotheekadvies"@nl;
 	skos:prefLabel "Verstrekken hypotheekadvies"@nl;
 	skos:definition "Het adviseren ter aanbeveling van een hypotheekconstructie."@nl;
@@ -167,60 +221,66 @@ fin:VerstrekkenHypotheekadvies a skos:Concept, skoslex:Act;
 	skoslex:actor fin:Hypotheekgever;
 	skoslex:record fin:Hypotheekadvies;
 	skosthes:broaderPartitive zv:AanOfVerkoopVanEenHuis;
-	#skosthes:broaderGeneric fin:FinancieelAdvies;
 .
-#fin:FinancieelAdvies a skos:Concept, skoslex:Act;#Has no value in the current scope of the taxonomy
-#	rdfs:label "Geven van een financieel advies"@nl;
-#	skos:prefLabel "Geven van een financieel advies"@nl;
-#	skos:definition "het in de uitoefening van een beroep of bedrijf aanbevelen van een of meer specifieke financiële producten"@nl;
-#	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0020368&titeldeel=1&hoofdstuk=1.1&afdeling=1.1.1&artikel=1:1>;
-#.
 #--
 #Other concepts (objects, records)
-fin:Bankgarantie a skos:Concept;
+fin:Bankgarantie a skos:Concept, skoslex:Object;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Bankgarantie"@nl;
 	skos:prefLabel "Bankgarantie"@nl;
 	skos:definition "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak."@nl;
 	rdfs:comment "Met een bankgarantie staat een bank garant voor de nakoming van de financiële verplichting van een andere persoon. Meestal is dat de koper van een onroerende zaak."@nl;
-	skos:semanticRelation fin:Waarborgsom;
 .
 fin:BindendeOfferte a skos:Concept, skoslex:Record;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Bindende offerte"@nl;
 	skos:prefLabel "Bindende offerte"@nl;
 	skos:altLabel "Hypotheekofferte"@nl;
 	skos:definition "Een bindend aanbod van een geldverstrekker ter verstrekking van een hypotheek."@nl;
-	skos:semanticRelation fin:Hypotheekadvies;
+	skos:related fin:Hypotheekadvies;
 .
 fin:Faillisement a skos:Concept, skoslex:Object;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Faillisement"@nl;
 	skos:prefLabel "Faillisement"@nl;
 	skos:definition "tbd"@nl;
 .
 fin:HoofdelijkeAansprakelijkheid a skos:Concept;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Hoofdelijke aansprakelijkheid"@nl;
 	skos:prefLabel "Hoofdelijke aansprakelijkheid"@nl;
 	skos:definition "Meerdere schuldenaren zijn ieder afzonderlijk voor het geheel aansprakelijk voor de terugbetaling van de lening."@nl;
 	rdfs:comment "Als de schuldenaren hoofdelijk aansprakelijk zijn, dan is ieder van hen verplicht om op verzoek van de schuldeiser de gehele schuld te voldoen. Een schuldenaar mag zich dus niet beperken tot diens aandeel in de schuld. Eventuele verrekening onderling tussen de schuldenaren vindt dan later plaats. "@nl;
-	skos:semanticRelation fin:Schuldenaar;
-	skos:semanticRelation fin:Lening;
+	skos:related fin:Schuldenaar;
+	skos:related fin:Lening;
 .
 fin:Hypotheekadvies a skos:Concept, skoslex:Record;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Hypotheekadvies"@nl;
 	skos:prefLabel "Hypotheekadvies"@nl;
 	skos:definition "Een hypotheekadvies is het aanbevelen van een hypotheekconstructie door de hypotheekadviseur aan de consument."@nl;
-	skos:semanticRelation fin:Onderpand;
+	skos:related fin:Onderpand;
 .
 fin:Lening a skos:Concept, skoslex:Record;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Lening"@nl;
 	skos:prefLabel "Lening"@nl;
 	skos:definition "Een overeenkomst tussen schuldeiser(s) en schuldena(a)r(en) over een te lenen geldbedrag"@nl;
 	rdfs:comment "Een lening is een geldbedrag dat door een partij wordt verstrekt aan een andere partij op voorwaarde dat het later terug wordt betaald."@nl;
-	skos:semanticRelation fin:Schuldenaar;
-	skos:semanticRelation fin:Schuldeiser;
+	skos:related fin:Schuldenaar;
+	skos:related fin:Schuldeiser;
 .
 #Als het onderpand onroerend goed (of een registergoed) is, dan heet het zekerheidsrecht “hypotheekrecht”; als het onderpand roerend goed is, dan heet het zekerheidsrecht “pandrecht”.
 #Bij een hypotheekakte worden meestal beide rechten gevestigd, hypotheek op het onroerend goed en pand op de roerende goederen zoals bijvoorbeeld deuren, radiatoren etc.
 fin:Onderpand a skos:Concept, skoslex:Object;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Onderpand"@nl;
 	skos:prefLabel "Onderpand"@nl;
 	skos:altLabel "Hypothecair onderpand"@nl;#Is eigenlijk juiste term, maar hoeft pas te worden toegevoegd als er ook andere vormen van onderpand in deze taxonomie worden opgenomen.
@@ -228,11 +288,13 @@ fin:Onderpand a skos:Concept, skoslex:Object;
 	rdfs:comment "De verkoopopbrengst van het onderpand komt rechtstreeks ten goede aan de hypotheeknemer ter voldoening van de schuld van de hypotheekgever."@nl;
         dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=229>;
 	skos:editorialNote "De relatie met registergoed is een lastige. Een onderpand is geen verbijzondering van registergoed zoals een woning dat is. Maar in de context van het kopen van een huis, zou je kunnen stellen dat een onderpand juist wel een verbijzondering is van een registergoed (in de vorm van een woning), omdat er meestal sprake is van een onderpand in de vorm van een woning die is gekocht, ten behoeve van de hypotheek."@nl;
-	skos:semanticRelation not:RechtVanHypotheek;
-	skos:semanticRelation kad:Registergoed;
-	skosthes:broaderPartitive fin:Lening;
+	skosthes:broaderGeneric kad:Goed; 
+	skos:related not:RechtVanHypotheek;
+	skos:related fin:Lening;
 .
 fin:Opslagbedrag a skos:Concept;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Opslagbedrag"@nl;
 	skos:prefLabel "Opslagbedrag"@nl;
 	skos:definition "Voor zover de oorspronkelijke schuld hoger is geworden ten gevolge van het niet nakomen van rentebetalingen, boetes en kosten, dan mag dat bedrag rechtstreeks uit de verkoopopbrengst aan de hypotheeknemer worden voldaan, maar nooit meer dan het bedrag dat als opslag in de hypotheekakte is vermeld."@nl;
@@ -240,6 +302,8 @@ fin:Opslagbedrag a skos:Concept;
 	skosthes:broaderPartitive not:TotaalbedragInschrijving;
 .
 fin:Overbruggingslening a skos:Concept, skoslex:Record;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Overbruggingslening"@nl;
 	skos:prefLabel "Overbruggingslening"@nl;
 	skos:altLabel "Overbruggingskrediet"@nl;
@@ -247,11 +311,16 @@ fin:Overbruggingslening a skos:Concept, skoslex:Record;
 	skosthes:narrowerGeneric fin:Lening;
 .
 fin:Schuldsaneringsregeling a skos:Concept, skoslex:Object;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Schuldsaneringsregeling"@nl;
 	skos:prefLabel "Schuldsaneringsregeling"@nl;
-	skos:definition ""@nl;
+	skos:definition "tbd"@nl;
+#moet ook nog een plekje krijgen tov andere begrippen.
 .
 fin:Waarborgsom a skos:Concept, skoslex:Object;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Waarborgsom"@nl;
 	skos:prefLabel "Waarborgsom"@nl;
 	skos:altLabel "Bankgarantie"@nl;
