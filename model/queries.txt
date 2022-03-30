@@ -1,0 +1,59 @@
+#
+# Verwijderen klassen die we niet willen zien
+#
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+delete {
+  graph <http://linkeddata.ordina.nl/data2viz/container/data> {
+    ?s?p?o
+  }
+}
+where {
+  graph <http://linkeddata.ordina.nl/data2viz/container/data> {
+    ?s?p?o
+    FILTER NOT EXISTS {
+      ?s a skos:Concept
+    }
+  }
+}
+
+#
+# Verwijderen triples die we niet willen zien
+#
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+delete {
+  graph <http://linkeddata.ordina.nl/data2viz/container/data> {
+    ?s?p?o
+  }
+}
+where {
+  graph <http://linkeddata.ordina.nl/data2viz/container/data> {
+    ?s?p?o
+    FILTER (?p!=rdfs:label && ?p!=skosthes:broaderGeneric && ?p!=skosthes:narrowerGeneric)
+  }
+}
+
+#
+# Omdraaien en alleen skos:broader gebruiken
+#
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skosthes: <http://purl.org/iso25964/skos-thes#>
+delete {
+  graph <http://linkeddata.ordina.nl/data2viz/container/data> {
+    ?s skosthes:broaderGeneric ?sb.
+    ?s skosthes:narrowerGeneric ?sn.
+  }
+}
+insert {
+  graph <http://linkeddata.ordina.nl/data2viz/container/data> {
+    ?s skos:broader ?sb.
+    ?sn skos:broader ?s.
+  }
+}
+where {
+  graph <http://linkeddata.ordina.nl/data2viz/container/data> {
+    {?s skosthes:broaderGeneric ?sb}
+    UNION
+    {?s skosthes:narrowerGeneric ?sn}
+  }
+}
