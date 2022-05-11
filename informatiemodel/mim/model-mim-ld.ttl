@@ -136,6 +136,11 @@
     mim:dataElement <uuid:EAID_7A76738E_1ED6_4596_8482_D26E966A2D8C>;
     mim:naam "TypeBreuk"^^xsd:string
 .
+<uuid:EAID_12FA46ED_B9DC_45ca_AA6E_38AEE153A633> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "identificatie"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
 <uuid:EAID_13E60A06_1760_4d14_81E2_561FB555565F> a mim:Relatiesoort;
     mim:bron <uuid:EAID_672C5BB6_1ABE_4230_83B3_14866F0AC669>;
     mim:doel <uuid:EAID_672C5BB6_1ABE_4230_83B3_14866F0AC669>;
@@ -240,6 +245,10 @@
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/Voorbehoud>;
     mim:naam "Voorbehoud"^^xsd:string
 .
+<uuid:EAID_1FDF285D_496E_46cd_A226_86840250389E> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_C93DD7C9_09BE_4a24_8CED_45C9CFDB3145>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
+.
 <uuid:EAID_1FE133E8_D4AE_453f_BEF1_FBF3A624F0DE> a mim:Referentielijst;
     mim:naam "BRPAanduidingNaamgebruik"^^xsd:string
 .
@@ -248,6 +257,11 @@
     mim:doel <uuid:EAID_24CD2AC3_7D09_4e81_B867_2E4E32C902D1>;
     mim:naam "vertegenwoordigt"^^xsd:string;
     mim:relatierol <uuid:EAID_src92E551_33C8_476d_B554_4BE05A17877B>
+.
+<uuid:EAID_212B92BD_9F88_47c3_B930_6E34AA4C8117> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "lastenEnVerplichtingen"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
 .
 <uuid:EAID_23E2194D_19FC_48ba_8586_B30C1862F1A7> a mim:DataElement;
     mim:definitie "indexering op basis van de prijsindex meestal jaarlijks";
@@ -418,6 +432,12 @@ gerechercheerd''';
     mim:subtype <uuid:EAID_A3CF5837_28D8_4172_A310_E77102E76B23>;
     mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
 .
+<uuid:EAID_3B3B6E16_6135_4b81_8327_B6FFD365D849> a mim:Gegevensgroep;
+    mim:gegevensgroeptype <uuid:EAID_3F542A41_7D16_42f5_8EAB_A2396FCA9B3D>;
+    mim:kardinaliteit "1..1";
+    mim:naam "machtigingVVEVergadering"^^xsd:string;
+    mim:type <uuid:EAID_3F542A41_7D16_42f5_8EAB_A2396FCA9B3D>
+.
 <uuid:EAID_3BE61FE8_AFA0_4214_BE1E_A1D1DA0B147F> a mim:Generalisatie;
     mim:subtype <uuid:EAID_1756A110_1561_47fc_AE47_53B4BC0A0EF9>;
     mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
@@ -431,6 +451,11 @@ Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''
 .
 <uuid:EAID_3C4BBF7A_20EC_4a62_A172_F00A6D73FD5E> a mim:PrimitiefDatatype;
     mim:naam "Real"^^xsd:string
+.
+<uuid:EAID_3C8520E4_413A_4bca_A9BA_DE2889919490> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "datum"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
 .
 <uuid:EAID_3D0B0658_B5AD_462b_AB57_12CDE153AF1F> a mim:Attribuutsoort;
     mim:kardinaliteit "1..1";
@@ -450,6 +475,11 @@ Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''
 .
 <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04> a mim:PrimitiefDatatype;
     mim:naam "Date"^^xsd:string
+.
+<uuid:EAID_3F542A41_7D16_42f5_8EAB_A2396FCA9B3D> a mim:Gegevensgroeptype;
+    mim:attribuut <uuid:EAID_97AF25D7_63C5_482e_8D16_AAE4F8EDE460>;
+    mim:attribuut <uuid:EAID_E08754CD_4291_4406_BB5D_72EBB8DFD5AE>;
+    mim:naam "MachtigingVVEVergadering"^^xsd:string
 .
 <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF> a mim:Objecttype;
     mim:naam "Afspraak"
@@ -511,6 +541,11 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
     mim:kardinaliteit "1..1";
     mim:naam "kadastraleAanduiding"^^xsd:string;
     mim:type <uuid:EAID_3986F90B_AA05_42ae_9B58_D2860A797039>
+.
+<uuid:EAID_45DF06D0_6CBC_41cb_9D1D_237BEDEF47DD> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "aandeelInGemeenschap"^^xsd:string;
+    mim:type <uuid:EAID_4B14AA67_7035_465b_B4A5_AACAB944175E>
 .
 <uuid:EAID_45F48CFF_4A2A_4318_8726_DD3ACCC94008> a mim:DataElement;
     mim:definitie "meestal eens per 10 jaar";
@@ -706,6 +741,11 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
     mim:definitie "Gewone tekens die in Europa gangbaar zijn.";
     mim:naam "AN"^^xsd:string
 .
+<uuid:EAID_62FD85C4_BB2D_4cb1_971D_0349D489C7BA> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "bron"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
 <uuid:EAID_631006D4_8631_4d62_BB7A_49A17CB824E0> a mim:Generalisatie;
     mim:subtype <uuid:EAID_E742C766_8D4A_4d6a_92E2_99075B9221C1>;
     mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
@@ -728,6 +768,10 @@ In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidin
 <uuid:EAID_6785BCEF_E19F_407a_90AE_BA69E5517409> a mim:Generalisatie;
     mim:subtype <uuid:EAID_3A52C749_9562_4c63_8BF0_0C2A0D4DB0DF>;
     mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_67EBEC04_AAD4_427a_B5B4_2202D0FA7C32> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_9726BD73_680D_4fd4_A989_75A43BAF404B>;
+    mim:naam "ReglementAkteVanSplitsing"^^xsd:string
 .
 <uuid:EAID_68E4B7E7_733E_4796_9ECA_BD328ABBCDA1> a mim:DataElement;
     mim:definitie '''Het perceelnummer dat een geheel perceel of een complex uniek identificeert binnen de sectie.
@@ -785,6 +829,10 @@ Per kadastrale gemeente en per sectie heeft een perceel een perceelnummer oplope
     mim:kardinaliteit "1..1";
     mim:naam "isAsbestAanwezig"^^xsd:string;
     mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_6DA32FBA_0504_46eb_8310_CFF0C0BCA290> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_67EBEC04_AAD4_427a_B5B4_2202D0FA7C32>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
 .
 <uuid:EAID_6DDF283D_6CF9_4bc3_9A4F_7435235812FF> a mim:Attribuutsoort;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/>;
@@ -847,6 +895,12 @@ Per kadastrale gemeente en per sectie heeft een perceel een perceelnummer oplope
     mim:naam "garantie"^^xsd:string;
     mim:type <uuid:EAID_D907BD58_50DB_40bf_996C_16A61BFE3AAA>
 .
+<uuid:EAID_74B656B9_47E5_4c96_86C2_4A4BBD67ABCE> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_E94649D2_8E5F_417f_837F_8820BE04D473>;
+    mim:gegevensgroep <uuid:EAID_3B3B6E16_6135_4b81_8327_B6FFD365D849>;
+    mim:gegevensgroep <uuid:EAID_C236066B_EAF4_4a39_8DB7_C5FA0A2C6005>;
+    mim:naam "FinancienVerenigingVanEigenaars"^^xsd:string
+.
 <uuid:EAID_764DFF77_74C8_4d48_874F_69165E5B5157> a mim:Relatiesoort;
     mim:bron <uuid:EAID_BFB3117B_CCDB_4c32_AA8D_A4BD68D65A3B>;
     mim:doel <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>;
@@ -873,6 +927,12 @@ Per kadastrale gemeente en per sectie heeft een perceel een perceelnummer oplope
     mim:kardinaliteit "0..1";
     mim:naam "herziening"^^xsd:string;
     mim:type <uuid:EAID_D69896DD_45EA_49ef_AE16_0FDCBF4BE138>
+.
+<uuid:EAID_7A495A70_7AB9_4b3a_A4B1_3C501BF5493F> a mim:Gegevensgroeptype;
+    mim:attribuut <uuid:EAID_3C8520E4_413A_4bca_A9BA_DE2889919490>;
+    mim:attribuut <uuid:EAID_62FD85C4_BB2D_4cb1_971D_0349D489C7BA>;
+    mim:attribuut <uuid:EAID_FFF79DF4_DFD2_4e79_987E_2BD8BC8647A9>;
+    mim:naam "WaardeAandeelVVE"^^xsd:string
 .
 <uuid:EAID_7A76738E_1ED6_4596_8482_D26E966A2D8C> a mim:DataElement;
     mim:kardinaliteit "1..1";
@@ -980,6 +1040,10 @@ Per kadastrale gemeente en per sectie heeft een perceel een perceelnummer oplope
     mim:kardinaliteit "1..1";
     mim:naam "indicatieGeheim"^^xsd:string;
     mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
+<uuid:EAID_834435B0_F626_42f6_9821_93F8DE534014> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_74B656B9_47E5_4c96_86C2_4A4BBD67ABCE>;
+    mim:supertype <uuid:EAID_3F5C3142_80D2_4f4f_85BF_1201E9FCFEDF>
 .
 <uuid:EAID_83466BC2_DE1E_406a_80BF_902A60D146BC> a mim:PrimitiefDatatype;
     mim:naam "Tijd"^^xsd:string
@@ -1135,8 +1199,18 @@ attribuut de waarde 0.''';
     mim:naam "isAanwijzingRijksmonumentBekend"^^xsd:string;
     mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
+<uuid:EAID_9726BD73_680D_4fd4_A989_75A43BAF404B> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "akteDatum"^^xsd:string;
+    mim:type <uuid:EAID_3E6F5023_BF71_4da0_8747_0B8D334A8D04>
+.
 <uuid:EAID_979BE0AA_5CD4_4aee_A5D4_0D8F226DA3C8> a mim:Objecttype;
     mim:naam "Bedenktijd"^^xsd:string
+.
+<uuid:EAID_97AF25D7_63C5_482e_8D16_AAE4F8EDE460> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "datum"^^xsd:string;
+    mim:type <uuid:EAJava_int>
 .
 <uuid:EAID_98B58B72_3980_4f73_9673_654DDBE1786D> a mim:Generalisatie;
     mim:subtype <uuid:EAID_77F008F2_70B5_41ca_B072_61BF9AD71599>;
@@ -1490,6 +1564,12 @@ attribuut de waarde 0.''';
     mim:naam "isArtikel55WetBodembeschermingBekend"^^xsd:string;
     mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
 .
+<uuid:EAID_C236066B_EAF4_4a39_8DB7_C5FA0A2C6005> a mim:Gegevensgroep;
+    mim:gegevensgroeptype <uuid:EAID_7A495A70_7AB9_4b3a_A4B1_3C501BF5493F>;
+    mim:kardinaliteit "1..1";
+    mim:naam "waardeAandeelVVE"^^xsd:string;
+    mim:type <uuid:EAID_7A495A70_7AB9_4b3a_A4B1_3C501BF5493F>
+.
 <uuid:EAID_C36539D6_8DF6_440a_87E2_6F490A3DF4B5> a mim:GestructureerdDatatype;
     mim:dataElement <uuid:EAID_45F48CFF_4A2A_4318_8726_DD3ACCC94008>;
     mim:dataElement <uuid:EAID_BE25D230_D55C_47dc_A4D3_4492D42E3BF9>;
@@ -1514,6 +1594,9 @@ Recherche''';
     mim:kardinaliteit "1..1";
     mim:naam "activiteitNaam"^^xsd:string;
     mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
+<uuid:EAID_C93DD7C9_09BE_4a24_8CED_45C9CFDB3145> a mim:Objecttype;
+    mim:naam "Opstalverzekering"^^xsd:string
 .
 <uuid:EAID_CA93E700_9D86_4995_AA67_BCBF87114EB0> a mim:Objecttype;
     mim:attribuut <uuid:EAID_5EF0C930_9540_4aad_A3F2_F0CAD108CA81>;
@@ -1588,6 +1671,7 @@ Recherche''';
 .
 <uuid:EAID_D48CA4E0_38A8_464f_A0AF_3DA24BE784B6> a mim:Objecttype;
     mim:attribuut <uuid:EAID_57AAEDBD_4264_40a6_BC34_EF20102C9EEA>;
+    mim:attribuut <uuid:EAID_E324FB39_A6C8_45ea_A1ED_41707FA1ABF1>;
     mim:naam "BatenLastenCanons"^^xsd:string
 .
 <uuid:EAID_D4A3395B_19C2_437a_BB83_65FC19800358> a mim:Generalisatie;
@@ -1643,6 +1727,7 @@ Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDU
     mim:type <uuid:EAID_B51BB062_E4D9_4911_938D_151055233DCD>
 .
 <uuid:EAID_DE56DBA5_AA7E_47b0_AFA3_3AB5BA2EB1E1> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_12FA46ED_B9DC_45ca_AA6E_38AEE153A633>;
     mim:attribuut <uuid:EAID_A682234D_EA37_4e4d_9846_536C5A17D718>;
     mim:attribuut <uuid:EAID_D3262785_03B3_45a0_9FAB_82136DA8C03E>;
     mim:begrip <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederen>;
@@ -1668,6 +1753,11 @@ Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDU
     mim:subtype <uuid:EAID_7ECCC940_3E6A_4d8a_A51E_0A74641494F5>;
     mim:supertype <uuid:EAID_FA7BD226_E929_4472_9051_3EE39AB6881F>
 .
+<uuid:EAID_E08754CD_4291_4406_BB5D_72EBB8DFD5AE> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "machtigingIndicatie"^^xsd:string;
+    mim:type <uuid:EAID_70FBDB70_4B81_46ab_97BB_058195812ECB>
+.
 <uuid:EAID_E0AAEB1B_E737_4c4c_959A_3D88A8C45C1A> a mim:ReferentieElement;
     mim:definitie "De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geassocieerd is met de meegeleverde code is onbepaald.";
     mim:kardinaliteit "0..1";
@@ -1677,6 +1767,16 @@ Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDU
 <uuid:EAID_E1274F5F_B4A6_4c28_A9A0_6169C972854B> a mim:Generalisatie;
     mim:subtype <uuid:EAID_504659C8_55E9_49b9_B17D_1211E9BF5443>;
     mim:supertype <uuid:EAID_6B8260B7_AC82_4c86_98AA_B2C2A34D0377>
+.
+<uuid:EAID_E23CD7D8_B8EB_4e45_8DB0_B582DF869B0B> a mim:Generalisatie;
+    mim:subtype <uuid:EAID_FEC7C1CD_E05E_4117_AA1F_0ABB23553886>;
+    mim:supertype <uuid:EAID_37E0C481_30A7_49d6_80FD_6179F396ADD4>
+.
+<uuid:EAID_E324FB39_A6C8_45ea_A1ED_41707FA1ABF1> a mim:Attribuutsoort;
+    mim:definitie "Bedrag van lasten en verplichtingen";
+    mim:kardinaliteit "1..1";
+    mim:naam "bedrag"^^xsd:string;
+    mim:type <uuid:EAJava_Bedrag>
 .
 <uuid:EAID_E3BF3802_9C35_415f_B3DE_FBB7BD7712C2> a mim:Referentielijst;
     mim:naam "Rechtsvorm"^^xsd:string
@@ -1727,6 +1827,11 @@ gerechercheerd''';
     mim:definitie "Het NEN3610ID-2020 is een datatype om de identificatie vast te leggen, conform NEN3610-2020.";
     mim:naam "NEN3610ID"^^xsd:string
 .
+<uuid:EAID_E94649D2_8E5F_417f_837F_8820BE04D473> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "lastenVerzwarendeVoornemensVVE"^^xsd:string;
+    mim:type <uuid:EAID_18BFBA8D_E3F4_4d8c_9A8F_4429FA54B041>
+.
 <uuid:EAID_EABD8195_DAF5_475a_AB32_3AB0CE79E14E> a mim:Attribuutsoort;
     mim:begrip <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Telefoon>;
     mim:kardinaliteit "1..-1";
@@ -1736,6 +1841,11 @@ gerechercheerd''';
 <uuid:EAID_EB110115_556B_42f2_AAAF_2A10FFBD14C7> a mim:Objecttype;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Erfdienstbaarheid>;
     mim:naam "Erfdienstbaarheid"^^xsd:string
+.
+<uuid:EAID_EBB6C879_5D40_4211_AC83_28EED002A2F7> a mim:Relatiesoort;
+    mim:bron <uuid:EAID_F7E23CB2_4C3F_4975_AC49_AA4C968D26F2>;
+    mim:doel <uuid:EAID_FEC7C1CD_E05E_4117_AA1F_0ABB23553886>;
+    mim:naam "metVerenigingVanEigenaren"^^xsd:string
 .
 <uuid:EAID_ED4CFD6D_FF09_4b7d_A977_62EB72ACF2EA> a mim:Generalisatie;
     mim:subtype <uuid:EAID_335576D6_0DD9_4de6_8414_4060D2401448>;
@@ -1827,6 +1937,7 @@ gerechercheerd''';
     mim:naam "bezwaart"^^xsd:string
 .
 <uuid:EAID_F7E23CB2_4C3F_4975_AC49_AA4C968D26F2> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_45DF06D0_6CBC_41cb_9D1D_237BEDEF47DD>;
     mim:begrip <http://kad.zorgeloosvastgoed.nl/id/concept/Appartementsrecht>;
     mim:naam "Appartementsrecht"^^xsd:string
 .
@@ -1870,6 +1981,15 @@ Er zijn 1111 kadastrale gemeentenamen. Elke kadastrale gemeentenaam is uniek.'''
 <uuid:EAID_FC8CFD1F_45A2_4507_90DA_82453E61834B> a mim:PrimitiefDatatype;
     mim:alias "Vlak"^^xsd:string;
     mim:naam "Month"^^xsd:string
+.
+<uuid:EAID_FEC7C1CD_E05E_4117_AA1F_0ABB23553886> a mim:Objecttype;
+    mim:attribuut <uuid:EAID_212B92BD_9F88_47c3_B930_6E34AA4C8117>;
+    mim:naam "VereningingVanEigenaren"^^xsd:string
+.
+<uuid:EAID_FFF79DF4_DFD2_4e79_987E_2BD8BC8647A9> a mim:Attribuutsoort;
+    mim:kardinaliteit "1..1";
+    mim:naam "aandeelReserveEnOnderhoudsfonds"^^xsd:string;
+    mim:type <uuid:EAID_181D26B1_A672_43d1_9B14_A650A36D6A8C>
 .
 <uuid:EAID_src193C12_66E2_4a46_B0CA_C55174D4AEB5> a mim:RelatierolBron;
     mim:kardinaliteit "0..1";
@@ -1923,4 +2043,10 @@ Er zijn 1111 kadastrale gemeentenamen. Elke kadastrale gemeentenaam is uniek.'''
     mim:kardinaliteit "1..-1";
     mim:naam "heeft"^^xsd:string;
     mim:type <uuid:EAID_BFB3117B_CCDB_4c32_AA8D_A4BD68D65A3B>
+.
+<uuid:EAJava_Bedrag> a mim:PrimitiefDatatype;
+    mim:naam "Bedrag"^^xsd:string
+.
+<uuid:EAJava_int> a mim:PrimitiefDatatype;
+    mim:naam "int"^^xsd:string
 .

@@ -100,10 +100,24 @@ zvg:Agent.treed_op_namens a sh:PropertyShape;
 .
 zvg:Appartementsrecht a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Appartementsrecht";
+    sh:property zvg:Appartementsrecht.aandeelInGemeenschap;
+    sh:property zvg:Appartementsrecht.metVerenigingVanEigenaren;
     sh:targetClass zvg:Appartementsrecht;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/Appartementsrecht>;
     rdfs:label "Appartementsrecht";
     rdfs:subClassOf zvg:OnroerendeZaak
+.
+zvg:Appartementsrecht.aandeelInGemeenschap a sh:PropertyShape;
+    sh:datatype zvg:Decimal;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "aandeelInGemeenschap";
+    sh:path zvg:aandeelInGemeenschap
+.
+zvg:Appartementsrecht.metVerenigingVanEigenaren a sh:PropertyShape;
+    sh:class zvg:VereningingVanEigenaren;
+    sh:name "metVerenigingVanEigenaren";
+    sh:path zvg:metVerenigingVanEigenaren
 .
 zvg:BRPAanduidingNaamgebruik a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "BRPAanduidingNaamgebruik";
@@ -146,10 +160,19 @@ zvg:BankgarantieOfWaarborgsom.uiterlijkeDatumGarantie a sh:PropertyShape;
 .
 zvg:BatenLastenCanons a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "BatenLastenCanons";
+    sh:property zvg:BatenLastenCanons.bedrag;
     sh:property zvg:BatenLastenCanons.overgenomenMetIngangVan;
     sh:targetClass zvg:BatenLastenCanons;
     rdfs:label "BatenLastenCanons";
     rdfs:subClassOf zvg:Afspraak
+.
+zvg:BatenLastenCanons.bedrag a sh:PropertyShape;
+    sh:datatype zvg:Bedrag;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "bedrag";
+    sh:path zvg:bedrag;
+    rdfs:comment "Bedrag van lasten en verplichtingen"
 .
 zvg:BatenLastenCanons.overgenomenMetIngangVan a sh:PropertyShape;
     sh:datatype xsd:string;
@@ -163,6 +186,9 @@ zvg:Bedenktijd a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:targetClass zvg:Bedenktijd;
     rdfs:label "Bedenktijd";
     rdfs:subClassOf zvg:Afspraak
+.
+zvg:Bedrag a rdf:Datatype;
+    rdfs:label "Bedrag"
 .
 zvg:BeperktRecht a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "BeperktRecht";
@@ -336,6 +362,9 @@ zvg:Contactgegevens.vanPersoon a sh:PropertyShape;
     sh:name "vanPersoon";
     sh:path zvg:vanPersoon
 .
+zvg:Decimal a rdf:Datatype;
+    rdfs:label "Decimal"
+.
 zvg:DigitaleIdentiteit a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "DigitaleIdentiteit";
     sh:property zvg:DigitaleIdentiteit.adres;
@@ -487,6 +516,38 @@ zvg:FeitelijkeLevering.overdrachtOvereenkomsten a sh:PropertyShape;
     sh:minCount "1";
     sh:name "overdrachtOvereenkomsten";
     sh:path zvg:overdrachtOvereenkomsten
+.
+zvg:FinancienVerenigingVanEigenaars a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "FinancienVerenigingVanEigenaars";
+    sh:property zvg:FinancienVerenigingVanEigenaars.lastenVerzwarendeVoornemensVVE;
+    sh:property zvg:FinancienVerenigingVanEigenaars.machtigingVVEVergadering;
+    sh:property zvg:FinancienVerenigingVanEigenaars.waardeAandeelVVE;
+    sh:targetClass zvg:FinancienVerenigingVanEigenaars;
+    rdfs:label "FinancienVerenigingVanEigenaars";
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:FinancienVerenigingVanEigenaars.lastenVerzwarendeVoornemensVVE a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "lastenVerzwarendeVoornemensVVE";
+    sh:path zvg:lastenVerzwarendeVoornemensVVE
+.
+zvg:FinancienVerenigingVanEigenaars.machtigingVVEVergadering a sh:PropertyShape;
+    sh:class zvg:MachtigingVVEVergadering;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "machtigingVVEVergadering";
+    sh:nodeKind sh:BlankNode;
+    sh:path zvg:machtigingVVEVergadering
+.
+zvg:FinancienVerenigingVanEigenaars.waardeAandeelVVE a sh:PropertyShape;
+    sh:class zvg:WaardeAandeelVVE;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "waardeAandeelVVE";
+    sh:nodeKind sh:BlankNode;
+    sh:path zvg:waardeAandeelVVE
 .
 zvg:Financiering a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Financiering";
@@ -656,6 +717,7 @@ zvg:Koop.aangebodenDoor a sh:PropertyShape;
 .
 zvg:Koop.bevat a sh:PropertyShape;
     sh:class zvg:LijstVanGoederen;
+    sh:maxCount "1";
     sh:name "bevat";
     sh:path zvg:bevat
 .
@@ -703,6 +765,7 @@ zvg:Koop.vanZakelijkRecht a sh:PropertyShape;
 .
 zvg:Koop.wordtUitgevoerdIn a sh:PropertyShape;
     sh:class zvg:JuridischeLevering;
+    sh:maxCount "1";
     sh:name "wordtUitgevoerdIn";
     sh:path zvg:wordtUitgevoerdIn
 .
@@ -801,12 +864,20 @@ zvg:Legitimatie.identificatie a sh:PropertyShape;
 .
 zvg:LijstVanGoederen a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "LijstVanGoederen";
+    sh:property zvg:LijstVanGoederen.identificatie;
     sh:property zvg:LijstVanGoederen.isOnderdeelVan;
     sh:property zvg:LijstVanGoederen.lijstReferentie;
     sh:property zvg:LijstVanGoederen.waarde;
     sh:targetClass zvg:LijstVanGoederen;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederen>;
     rdfs:label "LijstVanGoederen"
+.
+zvg:LijstVanGoederen.identificatie a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "identificatie";
+    sh:path zvg:identificatie
 .
 zvg:LijstVanGoederen.isOnderdeelVan a sh:PropertyShape;
     sh:class zvg:Koop;
@@ -844,6 +915,27 @@ zvg:LocatieRegistergoed.heeft a sh:PropertyShape;
     sh:class zvg:Registergoed;
     sh:name "heeft";
     sh:path zvg:heeft
+.
+zvg:MachtigingVVEVergadering a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "MachtigingVVEVergadering";
+    sh:property zvg:MachtigingVVEVergadering.datum;
+    sh:property zvg:MachtigingVVEVergadering.machtigingIndicatie;
+    sh:targetClass zvg:MachtigingVVEVergadering;
+    rdfs:label "MachtigingVVEVergadering"
+.
+zvg:MachtigingVVEVergadering.datum a sh:PropertyShape;
+    sh:datatype zvg:int;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "datum";
+    sh:path zvg:datum
+.
+zvg:MachtigingVVEVergadering.machtigingIndicatie a sh:PropertyShape;
+    sh:datatype xsd:boolean;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "machtigingIndicatie";
+    sh:path zvg:machtigingIndicatie
 .
 zvg:Medewerker a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Medewerker";
@@ -1195,6 +1287,12 @@ zvg:OpenbareRuimte.openbareRuimteNaam a sh:PropertyShape;
     sh:path zvg:openbareRuimteNaam;
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/NaamOpenbareRuimte>
 .
+zvg:Opstalverzekering a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "Opstalverzekering";
+    sh:targetClass zvg:Opstalverzekering;
+    rdfs:label "Opstalverzekering";
+    rdfs:subClassOf zvg:Afspraak
+.
 zvg:Organisatie a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Organisatie";
     sh:property zvg:Organisatie.betreftEen;
@@ -1432,6 +1530,20 @@ zvg:RegistratieKoopovereenkomst.registrerenNa a sh:PropertyShape;
     sh:name "registrerenNa";
     sh:path zvg:registrerenNa
 .
+zvg:ReglementAkteVanSplitsing a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "ReglementAkteVanSplitsing";
+    sh:property zvg:ReglementAkteVanSplitsing.akteDatum;
+    sh:targetClass zvg:ReglementAkteVanSplitsing;
+    rdfs:label "ReglementAkteVanSplitsing";
+    rdfs:subClassOf zvg:Afspraak
+.
+zvg:ReglementAkteVanSplitsing.akteDatum a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "akteDatum";
+    sh:path zvg:akteDatum
+.
 zvg:SoftwareAgent a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "SoftwareAgent";
     sh:targetClass zvg:SoftwareAgent;
@@ -1666,6 +1778,19 @@ zvg:VerbintenisSoort a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:targetClass zvg:VerbintenisSoort;
     rdfs:label "VerbintenisSoort"
 .
+zvg:VereningingVanEigenaren a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "VereningingVanEigenaren";
+    sh:property zvg:VereningingVanEigenaren.lastenEnVerplichtingen;
+    sh:targetClass zvg:VereningingVanEigenaren;
+    rdfs:label "VereningingVanEigenaren";
+    rdfs:subClassOf zvg:NietNatuurlijkPersoon
+.
+zvg:VereningingVanEigenaren.lastenEnVerplichtingen a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "lastenEnVerplichtingen";
+    sh:path zvg:lastenEnVerplichtingen
+.
 zvg:Verkoper a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Verkoper";
     sh:property zvg:Verkoper.bevoegdheid;
@@ -1710,6 +1835,34 @@ zvg:VoorwaardenVerbintenis a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape
     sh:name "VoorwaardenVerbintenis";
     sh:targetClass zvg:VoorwaardenVerbintenis;
     rdfs:label "VoorwaardenVerbintenis"
+.
+zvg:WaardeAandeelVVE a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
+    sh:name "WaardeAandeelVVE";
+    sh:property zvg:WaardeAandeelVVE.aandeelReserveEnOnderhoudsfonds;
+    sh:property zvg:WaardeAandeelVVE.bron;
+    sh:property zvg:WaardeAandeelVVE.datum;
+    sh:targetClass zvg:WaardeAandeelVVE;
+    rdfs:label "WaardeAandeelVVE"
+.
+zvg:WaardeAandeelVVE.aandeelReserveEnOnderhoudsfonds a sh:PropertyShape;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "aandeelReserveEnOnderhoudsfonds";
+    sh:path zvg:aandeelReserveEnOnderhoudsfonds
+.
+zvg:WaardeAandeelVVE.bron a sh:PropertyShape;
+    sh:datatype xsd:string;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "bron";
+    sh:path zvg:bron
+.
+zvg:WaardeAandeelVVE.datum a sh:PropertyShape;
+    sh:datatype xsd:date;
+    sh:maxCount "1";
+    sh:minCount "1";
+    sh:name "datum";
+    sh:path zvg:datum
 .
 zvg:Waardelijst a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
     sh:name "Waardelijst";
@@ -1806,6 +1959,7 @@ zvg:ZakelijkRecht a <http://www.w3.org/2002/07/owl#Class>, sh:NodeShape;
 .
 zvg:ZakelijkRecht.heeft a sh:PropertyShape;
     sh:class zvg:Tenaamstelling;
+    sh:minCount "1";
     sh:name "heeft";
     sh:path zvg:heeft
 .
@@ -1827,6 +1981,12 @@ zvg:aan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 .
 zvg:aandeel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "aandeel"
+.
+zvg:aandeelInGemeenschap a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "aandeelInGemeenschap"
+.
+zvg:aandeelReserveEnOnderhoudsfonds a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "aandeelReserveEnOnderhoudsfonds"
 .
 zvg:aanduidingNaamgebruik a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/AanduidingNaamgrbruik>;
@@ -1865,6 +2025,9 @@ zvg:adres a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 zvg:adresgegevens a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "adresgegevens"
 .
+zvg:akteDatum a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "akteDatum"
+.
 zvg:akteReferentie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "akteReferentie"
 .
@@ -1877,6 +2040,7 @@ zvg:artikel13Verschil a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 .
 zvg:bedrag a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/VoorbehoudBedrag>;
+    rdfs:comment "Bedrag van lasten en verplichtingen";
     rdfs:label "bedrag"
 .
 zvg:begrenzingPerceel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
@@ -1915,8 +2079,14 @@ zvg:bijzondereErfpachtvoorwaarden a <http://www.w3.org/2002/07/owl#DatatypePrope
     dct:subject <http://kad.zorgeloosvastgoed.nl/id/concept/BijzondereErfpachtvoorwaarden>;
     rdfs:label "bijzondereErfpachtvoorwaarden"
 .
+zvg:bron a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "bron"
+.
 zvg:contactVia a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "contactVia"
+.
+zvg:datum a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "datum"
 .
 zvg:datumAfspraak a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     dct:subject <http://not.zorgeloosvastgoed.nl/id/concept/Leveringsdatum>;
@@ -1994,9 +2164,9 @@ zvg:gerelateerdeOpenbareRuimte a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 .
 zvg:gerelateerdeWoonplaats a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:comment '''---Definitie---
-Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDUIDING is toegekend is gelegen. Dit gegeven wordt opgenomen indien het object is gelegen in een andere woonplaats dan de openbare ruimte waaraan de nummeraanduiding is gerelateerd.''';
-    rdfs:comment '''---Definitie---
 Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.''';
+    rdfs:comment '''---Definitie---
+Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDUIDING is toegekend is gelegen. Dit gegeven wordt opgenomen indien het object is gelegen in een andere woonplaats dan de openbare ruimte waaraan de nummeraanduiding is gerelateerd.''';
     rdfs:label "gerelateerdeWoonplaats"
 .
 zvg:geslachtsnaam a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
@@ -2070,6 +2240,9 @@ zvg:inschrijvenKadaster a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 zvg:inspectie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "inspectie"
 .
+zvg:int a rdf:Datatype;
+    rdfs:label "int"
+.
 zvg:is a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "is"
 .
@@ -2142,12 +2315,24 @@ zvg:landWaarnaarVertrokken a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     dct:subject <http://taxonomie.zorgeloosvastgoed.nl/id/concept/LandVertrokken>;
     rdfs:label "landWaarnaarVertrokken"
 .
+zvg:lastenEnVerplichtingen a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "lastenEnVerplichtingen"
+.
+zvg:lastenVerzwarendeVoornemensVVE a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "lastenVerzwarendeVoornemensVVE"
+.
 zvg:lastenVoorgaandeJaren a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "lastenVoorgaandeJaren"
 .
 zvg:lijstReferentie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenReferentie>;
     rdfs:label "lijstReferentie"
+.
+zvg:machtigingIndicatie a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "machtigingIndicatie"
+.
+zvg:machtigingVVEVergadering a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "machtigingVVEVergadering"
 .
 zvg:maximaleHerstelKosten a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     rdfs:label "maximaleHerstelKosten"
@@ -2163,6 +2348,9 @@ zvg:metInformatieVan a <http://www.w3.org/2002/07/owl#ObjectProperty>;
 .
 zvg:metLocatie a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "metLocatie"
+.
+zvg:metVerenigingVanEigenaren a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "metVerenigingVanEigenaren"
 .
 zvg:naam a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "naam"
@@ -2346,6 +2534,9 @@ zvg:voorwaadenTekst a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
 zvg:waarde a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
     dct:subject <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenWaarde>;
     rdfs:label "waarde"
+.
+zvg:waardeAandeelVVE a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "waardeAandeelVVE"
 .
 zvg:wasGedaanDoor a <http://www.w3.org/2002/07/owl#ObjectProperty>;
     rdfs:label "wasGedaanDoor"
