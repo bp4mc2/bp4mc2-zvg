@@ -1,2 +1,40 @@
-title: MIM conversie naar OWL (to do)
+title: MIM conversie naar OWL (placeholder)
 version: 0.0.1
+constructs:
+  - title: Transformatie Objecttype
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      CONSTRUCT {
+        ?class a rdfs:Class.
+        ?class mim:equivalent ?objecttype.
+        ?nodeshape a sh:NodeShape.
+        ?nodeshape mim:equivalent ?objecttype.
+        ?nodeshape sh:targetClass ?class.
+      }
+      WHERE {
+        ?objecttype a mim:Objecttype.
+        ?objecttype mim:naam ?objecttypenaam.
+        BIND (IRI(CONCAT("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#", ?objecttypenaam)) as ?class)
+        BIND (IRI(CONCAT("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#", ?objecttypenaam)) as ?nodeshape)
+      }
+updates:
+  - title: fix cardinality
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      DELETE {
+        ?s sh:minCount ?str
+      }
+      INSERT {
+        ?s sh:minCount ?int
+      }
+      WHERE {
+        ?s sh:minCount ?str 
+        filter(datatype(?str) = xsd:string)
+        bind(STRDT(?str, xsd:integer) as ?int)
+      }
+    
