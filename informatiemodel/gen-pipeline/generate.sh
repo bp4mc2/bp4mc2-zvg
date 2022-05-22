@@ -7,4 +7,4 @@ echo Converteer EA model in RDF naar MIM model in RDF
 # Source can be found here: https://github.com/architolk/rdf2rdf/releases/tag/v1.0.0
 java -jar ../../../rdf2rdf/target/rdf2rdf.jar zvg-ea.ttl zvg-mim.ttl ea2mim.yaml
 echo Converteer MIM model in RDF naar RDFS/OWL/SHACL model in RDF
-java -jar ../../../rdf2rdf/target/rdf2rdf.jar zvg-mim.ttl zvg-onto.ttl mim2onto.yaml
+java -jar ../../../rdf2rdf/target/rdf2rdf.jar zvg-mim.ttl zvg-ont.ttl mim2onto.yaml

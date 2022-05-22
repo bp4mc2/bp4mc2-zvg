@@ -1,0 +1,668 @@
+@prefix ea:   <http://www.sparxsystems.eu/def/ea#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://test/def#BatenLastenCanons>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "BatenLastenCanons" ;
+        rdfs:seeAlso  <urn:uuid:D48CA4E0-38A8-464f-A0AF-3DA24BE784B6> ;
+        <http://www.w3.org/ns/shacl#name>
+                "BatenLastenCanons" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#BatenLastenCanons> .
+
+<http://test/def#BeperktRecht>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "BeperktRecht" ;
+        rdfs:seeAlso  <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> ;
+        <http://www.w3.org/ns/shacl#name>
+                "BeperktRecht" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#BeperktRecht> .
+
+<http://test/def#FeitelijkeLevering>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "FeitelijkeLevering" ;
+        rdfs:seeAlso  <urn:uuid:417D2D14-2CED-4613-8B6B-A84F2F96BC2D> ;
+        <http://www.w3.org/ns/shacl#name>
+                "FeitelijkeLevering" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#FeitelijkeLevering> .
+
+<http://test/def#Tenaamstelling>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Tenaamstelling" ;
+        rdfs:seeAlso  <urn:uuid:BFB3117B-CCDB-4c32-AA8D-A4BD68D65A3B> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Tenaamstelling" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Tenaamstelling> .
+
+<http://test/def#IdentificatiePersoon>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "IdentificatiePersoon" ;
+        rdfs:seeAlso  <urn:uuid:A8146DD7-6246-4b24-9BE8-38D10AD1F529> ;
+        <http://www.w3.org/ns/shacl#name>
+                "IdentificatiePersoon" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#IdentificatiePersoon> .
+
+<http://test/def#ReglementAkteVanSplitsing>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "ReglementAkteVanSplitsing" ;
+        rdfs:seeAlso  <urn:uuid:67EBEC04-AAD4-427a-B5B4-2202D0FA7C32> ;
+        <http://www.w3.org/ns/shacl#name>
+                "ReglementAkteVanSplitsing" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#ReglementAkteVanSplitsing> .
+
+<http://test/def#Registergoed>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Registergoed" ;
+        rdfs:seeAlso  <urn:uuid:02C68C94-6B70-442a-B9A9-7AD326EE84F8> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Registergoed" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Registergoed> .
+
+<http://test/def#Legitimatie>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Legitimatie" ;
+        rdfs:seeAlso  <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Legitimatie" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Legitimatie> .
+
+<http://test/def#Activity>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Activity" ;
+        rdfs:seeAlso  <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Activity" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Activity> .
+
+<http://test/def#RegistratieKoopovereenkomst>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "RegistratieKoopovereenkomst" ;
+        rdfs:seeAlso  <urn:uuid:08725DA4-0C47-44e5-8B6A-552A03251349> ;
+        <http://www.w3.org/ns/shacl#name>
+                "RegistratieKoopovereenkomst" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#RegistratieKoopovereenkomst> .
+
+<http://test/def#Bedenktijd>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Bedenktijd" ;
+        rdfs:seeAlso  <urn:uuid:979BE0AA-5CD4-4aee-A5D4-0D8F226DA3C8> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Bedenktijd" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Bedenktijd> .
+
+<http://test/def#Brondocument>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Brondocument" ;
+        rdfs:seeAlso  <urn:uuid:6A6A62B3-1D07-4521-8640-6880E28A006D> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Brondocument" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Brondocument> .
+
+<http://test/def#Ingebrekestelling>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Ingebrekestelling" ;
+        rdfs:seeAlso  <urn:uuid:7D01B2EE-7102-489e-BDA5-11735CEE2965> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Ingebrekestelling" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Ingebrekestelling> .
+
+<http://test/def#ObjectLocatie>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "ObjectLocatie" ;
+        rdfs:seeAlso  <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> ;
+        <http://www.w3.org/ns/shacl#name>
+                "ObjectLocatie" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#ObjectLocatie> .
+
+<http://test/def#Verkoper>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Verkoper" ;
+        rdfs:seeAlso  <urn:uuid:3DD634A7-BBA1-4708-94BB-F58CACCA1555> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Verkoper" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Verkoper> .
+
+<http://test/def#Ondertekening>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Ondertekening" ;
+        rdfs:seeAlso  <urn:uuid:9B43C4B0-1A49-42fc-94B3-8C7B34ABE9C7> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Ondertekening" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Ondertekening> .
+
+<http://test/def#StaatOnroerendeZaak>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "StaatOnroerendeZaak" ;
+        rdfs:seeAlso  <urn:uuid:ACE04D1B-E3EF-4695-8FDB-5993D10129B8> ;
+        <http://www.w3.org/ns/shacl#name>
+                "StaatOnroerendeZaak" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#StaatOnroerendeZaak> .
+
+<http://test/def#Medewerker>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Medewerker" ;
+        rdfs:seeAlso  <urn:uuid:6329F95D-6167-465d-ADC5-C61CDF16E5D8> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Medewerker" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Medewerker> .
+
+<http://test/def#AdresBuitenland>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "AdresBuitenland" ;
+        rdfs:seeAlso  <urn:uuid:C0873187-8660-448a-A353-315C87E26938> ;
+        <http://www.w3.org/ns/shacl#name>
+                "AdresBuitenland" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#AdresBuitenland> .
+
+<http://test/def#BouwtechnischeKeuring>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "BouwtechnischeKeuring" ;
+        rdfs:seeAlso  <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE> ;
+        <http://www.w3.org/ns/shacl#name>
+                "BouwtechnischeKeuring" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#BouwtechnischeKeuring> .
+
+<http://test/def#Clausule>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Clausule" ;
+        rdfs:seeAlso  <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Clausule" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Clausule> .
+
+<http://test/def#KostenVerdeling>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "KostenVerdeling" ;
+        rdfs:seeAlso  <urn:uuid:E742C766-8D4A-4d6a-92E2-99075B9221C1> ;
+        <http://www.w3.org/ns/shacl#name>
+                "KostenVerdeling" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#KostenVerdeling> .
+
+<http://test/def#Partnerschap>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Partnerschap" ;
+        rdfs:seeAlso  <urn:uuid:1673F612-35C9-4a3b-A184-00CAC2C33C5F> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Partnerschap" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Partnerschap> .
+
+<http://test/def#Opstalverzekering>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Opstalverzekering" ;
+        rdfs:seeAlso  <urn:uuid:C93DD7C9-09BE-4a24-8CED-45C9CFDB3145> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Opstalverzekering" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Opstalverzekering> .
+
+<http://test/def#Ontbinden>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Ontbinden" ;
+        rdfs:seeAlso  <urn:uuid:D2A78D35-1EBD-4286-A23E-D2C82C63ED96> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Ontbinden" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Ontbinden> .
+
+<http://test/def#Recherche>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Recherche" ;
+        rdfs:seeAlso  <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Recherche" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Recherche> .
+
+<http://test/def#AanvullendeVoorwaarden>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "AanvullendeVoorwaarden" ;
+        rdfs:seeAlso  <urn:uuid:2EABC9AF-FC6C-41ef-82FF-CEDB2121C0CA> ;
+        <http://www.w3.org/ns/shacl#name>
+                "AanvullendeVoorwaarden" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#AanvullendeVoorwaarden> .
+
+<http://test/def#DigitaleIdentiteit>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "DigitaleIdentiteit" ;
+        rdfs:seeAlso  <urn:uuid:CA93E700-9D86-4995-AA67-BCBF87114EB0> ;
+        <http://www.w3.org/ns/shacl#name>
+                "DigitaleIdentiteit" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#DigitaleIdentiteit> .
+
+<http://test/def#FinancienVerenigingVanEigenaars>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "FinancienVerenigingVanEigenaars" ;
+        rdfs:seeAlso  <urn:uuid:74B656B9-47E5-4c96-86C2-4A4BBD67ABCE> ;
+        <http://www.w3.org/ns/shacl#name>
+                "FinancienVerenigingVanEigenaars" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#FinancienVerenigingVanEigenaars> .
+
+<http://test/def#Appartementsrecht>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Appartementsrecht" ;
+        rdfs:seeAlso  <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Appartementsrecht" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Appartementsrecht> .
+
+<http://test/def#SoftwareAgent>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "SoftwareAgent" ;
+        rdfs:seeAlso  <urn:uuid:4EF17D6A-B796-4947-8333-B07C8F5ECD2A> ;
+        <http://www.w3.org/ns/shacl#name>
+                "SoftwareAgent" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#SoftwareAgent> .
+
+<http://test/def#IdentiteitPartijen>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "IdentiteitPartijen" ;
+        rdfs:seeAlso  <urn:uuid:77F008F2-70B5-41ca-B072-61BF9AD71599> ;
+        <http://www.w3.org/ns/shacl#name>
+                "IdentiteitPartijen" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#IdentiteitPartijen> .
+
+<http://test/def#VereningingVanEigenaren>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "VereningingVanEigenaren" ;
+        rdfs:seeAlso  <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
+        <http://www.w3.org/ns/shacl#name>
+                "VereningingVanEigenaren" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#VereningingVanEigenaren> .
+
+<http://test/def#VoorkomenNEN3610>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "VoorkomenNEN3610" ;
+        rdfs:seeAlso  <urn:uuid:DE34D5AB-6215-4144-9BA4-33609312FC30> ;
+        <http://www.w3.org/ns/shacl#name>
+                "VoorkomenNEN3610" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#VoorkomenNEN3610> .
+
+<http://test/def#Hoofdelijkheid>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Hoofdelijkheid" ;
+        rdfs:seeAlso  <urn:uuid:1756A110-1561-47fc-AE47-53B4BC0A0EF9> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Hoofdelijkheid" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Hoofdelijkheid> .
+
+<http://test/def#Agent>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Agent" ;
+        rdfs:seeAlso  <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Agent" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Agent> .
+
+<http://test/def#ObjectlocatieBinnenland>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "ObjectlocatieBinnenland" ;
+        rdfs:seeAlso  <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
+        <http://www.w3.org/ns/shacl#name>
+                "ObjectlocatieBinnenland" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#ObjectlocatieBinnenland> .
+
+<http://test/def#OntbindendeVoorwaarde>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "OntbindendeVoorwaarde" ;
+        rdfs:seeAlso  <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> ;
+        <http://www.w3.org/ns/shacl#name>
+                "OntbindendeVoorwaarde" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#OntbindendeVoorwaarde> .
+
+<http://test/def#JuridischeLevering>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "JuridischeLevering" ;
+        rdfs:seeAlso  <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
+        <http://www.w3.org/ns/shacl#name>
+                "JuridischeLevering" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#JuridischeLevering> .
+
+<http://test/def#Eigendom>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Eigendom" ;
+        rdfs:seeAlso  <urn:uuid:AEEF8312-D021-4aac-B90B-EEF214E9A260> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Eigendom" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Eigendom> .
+
+<http://test/def#OvermachtRisicoVerzekeringen>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "OvermachtRisicoVerzekeringen" ;
+        rdfs:seeAlso  <urn:uuid:14E80CF6-AAF3-44c1-8125-57B33CCB5619> ;
+        <http://www.w3.org/ns/shacl#name>
+                "OvermachtRisicoVerzekeringen" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#OvermachtRisicoVerzekeringen> .
+
+<http://test/def#Financiering>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Financiering" ;
+        rdfs:seeAlso  <urn:uuid:2BAB35C8-3804-4e6f-9FC7-1C3CAED3E148> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Financiering" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Financiering> .
+
+<http://test/def#Erfdienstbaarheid>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Erfdienstbaarheid" ;
+        rdfs:seeAlso  <urn:uuid:EB110115-556B-42f2-AAAF-2A10FFBD14C7> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Erfdienstbaarheid" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Erfdienstbaarheid> .
+
+<http://test/def#Perceel>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Perceel" ;
+        rdfs:seeAlso  <urn:uuid:D04FD057-BF08-4bb7-8752-128E58F8AD99> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Perceel" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Perceel> .
+
+<http://test/def#OpenbareRuimte>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "OpenbareRuimte" ;
+        rdfs:seeAlso  <urn:uuid:5E4F1500-0A67-4d58-85D5-274CC21EE948> ;
+        <http://www.w3.org/ns/shacl#name>
+                "OpenbareRuimte" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#OpenbareRuimte> .
+
+<http://test/def#LocatieRegistergoed>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "LocatieRegistergoed" ;
+        rdfs:seeAlso  <urn:uuid:07735DCE-2E3A-4f3f-A739-4AE0F2BA5938> ;
+        <http://www.w3.org/ns/shacl#name>
+                "LocatieRegistergoed" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#LocatieRegistergoed> .
+
+<http://test/def#ZakelijkRechtRecherche>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "ZakelijkRechtRecherche" ;
+        rdfs:seeAlso  <urn:uuid:8E622DA9-6369-4d29-BC5F-6E2DD9727D75> ;
+        <http://www.w3.org/ns/shacl#name>
+                "ZakelijkRechtRecherche" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#ZakelijkRechtRecherche> .
+
+<http://test/def#InGebrekestellingOfOntbinding>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "InGebrekestellingOfOntbinding" ;
+        rdfs:seeAlso  <urn:uuid:B18F8209-191D-4708-A89F-E9E5FA174E3D> ;
+        <http://www.w3.org/ns/shacl#name>
+                "InGebrekestellingOfOntbinding" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#InGebrekestellingOfOntbinding> .
+
+<http://test/def#Voorbehoud>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Voorbehoud" ;
+        rdfs:seeAlso  <urn:uuid:1F1AAA64-7A94-4b50-A1D3-19A31AB894CA> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Voorbehoud" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Voorbehoud> .
+
+<http://test/def#Rechtshandeling>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Rechtshandeling" ;
+        rdfs:seeAlso  <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Rechtshandeling" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Rechtshandeling> .
+
+<http://test/def#Onderzoeker>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Onderzoeker" ;
+        rdfs:seeAlso  <urn:uuid:968031B5-6406-4dd2-982C-6FF34B15F68B> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Onderzoeker" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Onderzoeker> .
+
+<http://test/def#ZakelijkRecht>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "ZakelijkRecht" ;
+        rdfs:seeAlso  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
+        <http://www.w3.org/ns/shacl#name>
+                "ZakelijkRecht" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#ZakelijkRecht> .
+
+<http://test/def#NietNatuurlijkPersoon>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "NietNatuurlijkPersoon" ;
+        rdfs:seeAlso  <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
+        <http://www.w3.org/ns/shacl#name>
+                "NietNatuurlijkPersoon" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#NietNatuurlijkPersoon> .
+
+<http://test/def#Woonplaats>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Woonplaats" ;
+        rdfs:seeAlso  <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735> , <urn:uuid:30830377-3D0E-43dc-A42D-9EB91905ECEB> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Woonplaats" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Woonplaats> .
+
+<http://test/def#NederlandsRecht>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "NederlandsRecht" ;
+        rdfs:seeAlso  <urn:uuid:6AE676B5-F43E-4160-B091-BBDD125D033C> ;
+        <http://www.w3.org/ns/shacl#name>
+                "NederlandsRecht" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#NederlandsRecht> .
+
+<http://test/def#LijstVanGoederen>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "LijstVanGoederen" ;
+        rdfs:seeAlso  <urn:uuid:DE56DBA5-AA7E-47b0-AFA3-3AB5BA2EB1E1> ;
+        <http://www.w3.org/ns/shacl#name>
+                "LijstVanGoederen" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#LijstVanGoederen> .
+
+<http://test/def#NatuurlijkPersoon>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "NatuurlijkPersoon" ;
+        rdfs:seeAlso  <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
+        <http://www.w3.org/ns/shacl#name>
+                "NatuurlijkPersoon" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#NatuurlijkPersoon> .
+
+<http://test/def#Afspraak>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Afspraak" ;
+        rdfs:seeAlso  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Afspraak" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Afspraak> .
+
+<http://test/def#Persoon>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Persoon" ;
+        rdfs:seeAlso  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Persoon" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Persoon> .
+
+<http://test/def#Koop>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Koop" ;
+        rdfs:seeAlso  <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Koop" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Koop> .
+
+<http://test/def#Entity>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Entity" ;
+        rdfs:seeAlso  <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Entity" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Entity> .
+
+<http://test/def#FinancieringMetNHGGarantie>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "FinancieringMetNHGGarantie" ;
+        rdfs:seeAlso  <urn:uuid:05E1F45F-2980-454d-A77A-D79C13C418CE> ;
+        <http://www.w3.org/ns/shacl#name>
+                "FinancieringMetNHGGarantie" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#FinancieringMetNHGGarantie> .
+
+<http://test/def#BankgarantieOfWaarborgsom>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "BankgarantieOfWaarborgsom" ;
+        rdfs:seeAlso  <urn:uuid:ADF67F3C-144C-4601-A793-520E0DDD11B9> ;
+        <http://www.w3.org/ns/shacl#name>
+                "BankgarantieOfWaarborgsom" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#BankgarantieOfWaarborgsom> .
+
+<http://test/def#Betaling>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Betaling" ;
+        rdfs:seeAlso  <urn:uuid:BD7F8005-EB22-481b-91E9-593D455C9D01> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Betaling" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Betaling> .
+
+<http://test/def#Eigendomsoverdracht>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Eigendomsoverdracht" ;
+        rdfs:seeAlso  <urn:uuid:7D099919-8C46-4fd2-B31F-F9D2B864F4A0> , <urn:uuid:8A5626A1-DECF-4433-BDDA-73C0BD6D7489> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Eigendomsoverdracht" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Eigendomsoverdracht> .
+
+<http://test/def#Koper>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Koper" ;
+        rdfs:seeAlso  <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Koper" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Koper> .
+
+<http://test/def#Contactgegevens>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Contactgegevens" ;
+        rdfs:seeAlso  <urn:uuid:61AFF3F4-8919-4592-8240-F2845529373D> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Contactgegevens" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Contactgegevens> .
+
+<http://test/def#KoperRecherche>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "KoperRecherche" ;
+        rdfs:seeAlso  <urn:uuid:7C24F6D0-57D9-4e02-9F79-A36D37F0D2F8> ;
+        <http://www.w3.org/ns/shacl#name>
+                "KoperRecherche" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#KoperRecherche> .
+
+<http://test/def#Organisatie>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Organisatie" ;
+        rdfs:seeAlso  <urn:uuid:ADF5951B-2060-4ca6-BBDD-051E44B3F88E> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Organisatie" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Organisatie> .
+
+<http://test/def#Nummeraanduiding>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Nummeraanduiding" ;
+        rdfs:seeAlso  <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Nummeraanduiding" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Nummeraanduiding> .
+
+<http://test/def#OnroerendeZaak>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "OnroerendeZaak" ;
+        rdfs:seeAlso  <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
+        <http://www.w3.org/ns/shacl#name>
+                "OnroerendeZaak" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#OnroerendeZaak> .
+
+<http://test/def#DocumentIdentiteit>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "DocumentIdentiteit" ;
+        rdfs:seeAlso  <urn:uuid:898A9CD9-A52B-407b-9419-591F4EF01637> ;
+        <http://www.w3.org/ns/shacl#name>
+                "DocumentIdentiteit" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#DocumentIdentiteit> .
+
+<http://test/def#Erfpacht>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Erfpacht" ;
+        rdfs:seeAlso  <urn:uuid:6979DE6B-D410-494c-BBA6-0C316ED45AF7> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Erfpacht" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Erfpacht> .
+
+<http://test/def#Partij>
+        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        rdfs:label    "Partij" ;
+        rdfs:seeAlso  <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> ;
+        <http://www.w3.org/ns/shacl#name>
+                "Partij" ;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <http://test/def#Partij> .

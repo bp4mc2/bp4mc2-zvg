@@ -8,7 +8,7 @@
   ea:guid '''A76425DB-C2F6-443f-8C73-33356AFEB13E''';
   rdfs:label '''MIM11 Primitieve datatypen''';
   ea:parent <urn:package:1>;
-  rdfs:comment '''Dit zijn de "gedeclareerde primitieve datatypen" zoals in MIM1.1 geformuleerd. In modellen kan men eigen primitieve datatypen aanmaken die een specialisatie vormen van deze typen.
+  rdfs:comment '''Dit zijn de "gedeclareerde primitieve datatypen" zoals in MIM1.1 geformuleerd. In modellen kan men eigen primitieve datatypen aanmaken die een specialisatie vormen van deze typen. 
 
 Deze 11 typen zijn alle opgenomen in de Imvertor MIM11-MAP, welke wordt geimporteerd door de zgn. "conceptual-schemas".
 
@@ -29,7 +29,7 @@ LET OP: Deze typen worden alleen correct herkend wanneer een integrale kopie (me
   ea:guid '''E8FCBF31-AE28-4e56-BE84-7AD7D570221E''';
   rdfs:label '''Koop''';
   ea:parent <urn:package:54>;
-  rdfs:comment '''--Definitie--
+  rdfs:comment '''--Definitie-- 
 Een clausule is een standaard onderdeel van een document waarin een voorwaarde wordt beschreven ten aanzien van een transactie.''';
 .
 <urn:package:57> a ea:Package;
@@ -178,7 +178,7 @@ Dit package bevat alle typen die gemeenschappelijk zijn binnen verschillende pac
   ea:stereotype '''Extern''';
   rdfs:label '''MIM11 Primitieve datatypen''';
   ea:package <urn:package:1>;
-  rdfs:comment '''Dit zijn de "gedeclareerde primitieve datatypen" zoals in MIM1.1 geformuleerd. In modellen kan men eigen primitieve datatypen aanmaken die een specialisatie vormen van deze typen.
+  rdfs:comment '''Dit zijn de "gedeclareerde primitieve datatypen" zoals in MIM1.1 geformuleerd. In modellen kan men eigen primitieve datatypen aanmaken die een specialisatie vormen van deze typen. 
 
 Deze 11 typen zijn alle opgenomen in de Imvertor MIM11-MAP, welke wordt geimporteerd door de zgn. "conceptual-schemas".
 
@@ -279,7 +279,7 @@ LET OP: Deze typen worden alleen correct herkend wanneer een integrale kopie (me
   ea:guid '''BA7C6588-D76B-4c6e-BCF4-B3ABFDA0B84A''';
   ea:type '''Note''';
   ea:package <urn:package:55>;
-  rdfs:comment '''Controle van  het zakelijkrecht omvat welke rechten er op rusten, of de tenaamstelling, het perceel, de grenzen en de ligging enz.  klopt
+  rdfs:comment '''Controle van  het zakelijkrecht omvat welke rechten er op rusten, of de tenaamstelling, het perceel, de grenzen en de ligging enz.  klopt 
 
 Misschien moet dit verder uitgwerkt worden naar type recherche, een ZakelijkRechtRecherche, een KoperRecherche, een''';
 .
@@ -561,14 +561,14 @@ gerechercheerd
   rdfs:label '''LocatieRegistergoed''';
   ea:package <urn:package:58>;
   rdfs:comment '''--Definitie--
-Een Locatie Registergoed is een aanduiding voor de locatie van het Registergoed in Nederland.
+Een Locatie Registergoed is een aanduiding voor de locatie van het Registergoed in Nederland. 
 
 --Toelichting--
-Bij onroerende zaken betreft dit de locatie waar de Onroerende zaak is gelegen.
-Bij Teboekgestelde zaken wordt locatie gebruikt voor het zogenaamde waladres.
+Bij onroerende zaken betreft dit de locatie waar de Onroerende zaak is gelegen. 
+Bij Teboekgestelde zaken wordt locatie gebruikt voor het zogenaamde waladres. 
 Leidingnetwerken kennen geen locatie kadastraal object.
 De Locatie van een kadastraal object wordt bepaald aan de hand van gegevens die:
-- de gemeente verstrekt (Basisregistratie Adressen en Gebouwen);
+- de gemeente verstrekt (Basisregistratie Adressen en Gebouwen); 
 - in het openbaar register zijn vermeld;  ''';
 .
 <urn:object:351> a ea:Object;
@@ -646,9 +646,9 @@ In de BRK is een kadastraal perceel een specialisatie van een onroerende zaak. P
   ea:package <urn:package:74>;
   rdfs:comment '''<b>AuditTrail</b> in kadaster historie model:
 
-Stukdeel
-en
-userId (actor)
+Stukdeel 
+en 
+userId (actor) 
 
 ''';
 .
@@ -695,7 +695,7 @@ userId (actor)
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-Referentielijst KadastraleGemeente is een opsomming van de mogelijke Kadastrale gemeenten.
+Referentielijst KadastraleGemeente is een opsomming van de mogelijke Kadastrale gemeenten. 
 ''';
 .
 <urn:object:367> a ea:Object;
@@ -720,9 +720,9 @@ Referentielijst SoortGrootte is een opsomming van de mogelijke typen soorten van
 Kadastrale aanduiding is de unieke aanduiding van een onroerende zaak, die door het Kadaster wordt vastgesteld.
 
 --Toelichting--
-Percelen worden kadastraal aangeduid door vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de percelen en gedeelten van percelen zijn gelegen waarvan het grondgebied tot die zaak behoort, alsmede de nummers van die percelen. Voor een onroerende zaak die zich krachtens een opstalrecht op, in of boven de grond van een ander bevindt, geldt dezelfde kadastrale aanduiding als van de onroerende zaak die met dat opstalrecht is bezwaard. Dit is van overeenkomstige toepassing op een onroerende zaak die zich op, in of boven de grond van een ander bevindt krachtens een recht als bedoeld in het voor 1 januari 1992 geldende artikel 5, derde lid, onder b, laatste zinsnede, van de Belemmeringenwet Privaatrecht.
+Percelen worden kadastraal aangeduid door vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de percelen en gedeelten van percelen zijn gelegen waarvan het grondgebied tot die zaak behoort, alsmede de nummers van die percelen. Voor een onroerende zaak die zich krachtens een opstalrecht op, in of boven de grond van een ander bevindt, geldt dezelfde kadastrale aanduiding als van de onroerende zaak die met dat opstalrecht is bezwaard. Dit is van overeenkomstige toepassing op een onroerende zaak die zich op, in of boven de grond van een ander bevindt krachtens een recht als bedoeld in het voor 1 januari 1992 geldende artikel 5, derde lid, onder b, laatste zinsnede, van de Belemmeringenwet Privaatrecht. 
 
-Appartementsrechten worden kadastraal aangeduid door de vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de in de splitsing betrokken percelen zijn gelegen, de complexaanduiding en de appartementsindex (Een oplopend volgnummer van "0001" tot "9999"). De complexaanduiding bestaat uit het voor de in de splitsing betrokken percelen vastgestelde complexnummer, gevolgd door de hoofdletter A. Onze Minister stelt regelen vast omtrent de vaststelling van het complexnummer.
+Appartementsrechten worden kadastraal aangeduid door de vermelding van achtereenvolgens de kadastrale gemeente en sectie, waarin de in de splitsing betrokken percelen zijn gelegen, de complexaanduiding en de appartementsindex (Een oplopend volgnummer van "0001" tot "9999"). De complexaanduiding bestaat uit het voor de in de splitsing betrokken percelen vastgestelde complexnummer, gevolgd door de hoofdletter A. Onze Minister stelt regelen vast omtrent de vaststelling van het complexnummer. 
 
 Er zijn 1111 kadastrale gemeentenamen. Elke kadastrale gemeentenaam is uniek.''';
 .
@@ -741,8 +741,8 @@ Oppervlakte.''';
   ea:type '''Note''';
   ea:package <urn:package:94>;
   rdfs:comment '''Vragen:
- Een provenance object voor meerdere voorkomens, matching op timestamp ofzo? Of is het toch per voorkomen.
-Deze ene instantie is toegeschreven aan Persoon Jan/organisatie x en
+ Een provenance object voor meerdere voorkomens, matching op timestamp ofzo? Of is het toch per voorkomen. 
+Deze ene instantie is toegeschreven aan Persoon Jan/organisatie x en 
 deze ene instantie is ontstaan door activiteit x ''';
 .
 <urn:object:529> a ea:Object;
@@ -801,12 +801,12 @@ Dit package bevat alle klassen die behoren bij de representatie van personen.'''
   ea:type '''Note''';
   ea:package <urn:package:94>;
   rdfs:comment '''Entity gaat over de context van koopovereenkomst. Geboren worden is geen activiteit van de persoon.
-Groepen attributen zouden afzonderlijk provenance kunnen hebben. Dan zou een gegevensgroep provenance moeten hebben. Dus de geboorteplaats en -tijd samen als geboorte.
+Groepen attributen zouden afzonderlijk provenance kunnen hebben. Dan zou een gegevensgroep provenance moeten hebben. Dus de geboorteplaats en -tijd samen als geboorte. 
 
-&gt;&gt;Analyse: MIM ondersteunt provenance op gegevensgroepen of een afzonderlijk attribuut niet. Ook in de serialisatie naar XML lijkt mij dit niet zomaar mogelijk. Mogelijk kan het wel als het zwakke objectttypen zijn.&lt;&lt;
+&gt;&gt;Analyse: MIM ondersteunt provenance op gegevensgroepen of een afzonderlijk attribuut niet. Ook in de serialisatie naar XML lijkt mij dit niet zomaar mogelijk. Mogelijk kan het wel als het zwakke objectttypen zijn.&lt;&lt; 
 
 entity is gegevensobject
-Wie is dan de user? De gebruiker van het systeem? of het systeem?
+Wie is dan de user? De gebruiker van het systeem? of het systeem? 
 
 Activity is de logische activteit en/of technische ''';
 .
@@ -837,7 +837,7 @@ Activity is de logische activteit en/of technische ''';
   ea:stereotype '''Domein''';
   rdfs:label '''Koop''';
   ea:package <urn:package:54>;
-  rdfs:comment '''--Definitie--
+  rdfs:comment '''--Definitie-- 
 Een clausule is een standaard onderdeel van een document waarin een voorwaarde wordt beschreven ten aanzien van een transactie.''';
 .
 <urn:object:315> a ea:Object;
@@ -846,14 +846,14 @@ Een clausule is een standaard onderdeel van een document waarin een voorwaarde w
   ea:package <urn:package:56>;
   rdfs:comment '''1	Beklemrecht
 3	<i>Erfpacht (recht van)</i>
-4	Gebruik en bewoning (recht van)
-5	Grondrente (recht van)
-7	Opstal (recht van)
-9	Oud-vaderlandsrecht
-11	Stadsmeierrecht
-12	Vruchtgebruik (recht van)
-13	Erfpacht en Opstal (recht van)
-14	Opstalrecht Nutsvoorzieningen
+4	Gebruik en bewoning (recht van)		
+5	Grondrente (recht van)		
+7	Opstal (recht van)		
+9	Oud-vaderlandsrecht		
+11	Stadsmeierrecht		
+12	Vruchtgebruik (recht van)		
+13	Erfpacht en Opstal (recht van)		
+14	Opstalrecht Nutsvoorzieningen		
                 <i>Erfdienstbaarheid</i>''';
 .
 <urn:object:464> a ea:Object;
@@ -892,7 +892,7 @@ Een clausule is een standaard onderdeel van een document waarin een voorwaarde w
   rdfs:label '''Partnerschap''';
   ea:package <urn:package:63>;
   rdfs:comment '''--Definitie--
-Partnerschap is een groep gegevens over de huwelijkse- of partnerschapstatus van een persoon.
+Partnerschap is een groep gegevens over de huwelijkse- of partnerschapstatus van een persoon. 
 ''';
 .
 <urn:object:386> a ea:Object;
@@ -1180,7 +1180,7 @@ Dit package bevat alle klassen die behoren bij de representatie van BRP buitenla
   rdfs:label '''AdresBuitenland''';
   ea:package <urn:package:72>;
   rdfs:comment '''--Definitie--
-Adresbuitenland is een locatie in het buitenland, aangeduid met authentieke gegevens uit de BasisRegistratiePersonen
+Adresbuitenland is een locatie in het buitenland, aangeduid met authentieke gegevens uit de BasisRegistratiePersonen 
 --Toelichting--
 Een adres wordt overgenomen van de BRP (tabel 08.13). Als het Kadaster van BRP een mutatiemelding krijgt met enkel een land, dan wordt dat geregistreerd als adresBuitenland. In het huidige bijhoudingsproces van de BRK worden de gegevens van AdresBuitenland initieel geregistreerd conform de Openbare registers. Kort daarna worden deze gegevens vervangen door de BRP-gegevens. Wanneer AdresBuitenland nog niet conform de BRP is vermeld, dan is geen identificatie toegekend''';
 .
@@ -1199,7 +1199,7 @@ Een adres wordt overgenomen van de BRP (tabel 08.13). Als het Kadaster van BRP e
   ea:package <urn:package:73>;
   rdfs:comment '''
 ---IMKAD---
---Definitie--
+--Definitie-- 
 Adresnummer is een unieke adresaanduiding, bestaande uit 16 cijfers.''';
 .
 <urn:object:419> a ea:Object;
@@ -1217,7 +1217,7 @@ Dit package bevat alle klassen die behoren bij de representatie van de informati
   rdfs:label '''_VoorkomenNEN3610''';
   ea:package <urn:package:74>;
   rdfs:comment '''--Definitie--
-Een Voorkomen is een Object in de registratie waarvan wordt bijgehouden op basis waarvan en wanneer de vastgelegde informatie is ontstaan of gewijzigd.
+Een Voorkomen is een Object in de registratie waarvan wordt bijgehouden op basis waarvan en wanneer de vastgelegde informatie is ontstaan of gewijzigd. 
 --Toelichting--
 Er wordt aangegeven op basis waarvan de informatie deze vorm heeft gekregen ("audit trail") en wanneer deze informatie ontstaan of vervallen ("historie").''';
 .
@@ -1228,7 +1228,7 @@ Er wordt aangegeven op basis waarvan de informatie deze vorm heeft gekregen ("au
   rdfs:label '''Entity''';
   ea:package <urn:package:74>;
   rdfs:comment '''--Definitie--
-Een Voorkomen is een Object in de registratie waarvan wordt bijgehouden op basis waarvan en wanneer de vastgelegde informatie is ontstaan of gewijzigd.
+Een Voorkomen is een Object in de registratie waarvan wordt bijgehouden op basis waarvan en wanneer de vastgelegde informatie is ontstaan of gewijzigd. 
 --Toelichting--
 Er wordt aangegeven op basis waarvan de informatie deze vorm heeft gekregen ("audit trail") en wanneer deze informatie ontstaan of vervallen ("historie").''';
 .
@@ -1250,7 +1250,7 @@ Alle datums in dit gegevensgroeptype moeten voldoen aan de datumdefinitie zoals 
   rdfs:label '''ZVGHistorie''';
   ea:package <urn:package:94>;
   rdfs:comment '''--Definitie--
-ZVGHistorie is een verzameling gegevens waarmee historie vastgelegd wordt. Historie betreft alleen voorkomens van objecten, dus het object op een bepaald moment.
+ZVGHistorie is een verzameling gegevens waarmee historie vastgelegd wordt. Historie betreft alleen voorkomens van objecten, dus het object op een bepaald moment. 
 
 --Toelichting--
 Alle datums in dit gegevensgroeptype moeten voldoen aan de datumdefinitie zoals vastgelegd in het  Historie Model: yyyy-mm-dd:hh:mm:ss.fff (datum + tijd met miliseconden).  ''';
@@ -1290,11 +1290,11 @@ Dit package bevat alle typen die gemeenschappelijk zijn binnen verschillende pac
 Het NEN3610ID-2020 is een datatype om de identificatie vast te leggen, conform NEN3610-2020.
 
 --Toelichting--
-Unieke identificatie door het Kadaster toegekend.
+Unieke identificatie door het Kadaster toegekend. 
 
-Het domein waarbinnen de identificatie geldig is wordt via metadata weergegeven. Hierbij is domein gedefinieerd als De functionele aanduiding van het domein waarbinnen dit object valt en waarbinnen de identificatie van dit object uniek is.
+Het domein waarbinnen de identificatie geldig is wordt via metadata weergegeven. Hierbij is domein gedefinieerd als De functionele aanduiding van het domein waarbinnen dit object valt en waarbinnen de identificatie van dit object uniek is.  
 
-De mogelijke waarde voor het domein wordt bepaald door het objecttype waar van de identificatie is. Mogelijke waarden zijn:
+De mogelijke waarde voor het domein wordt bepaald door het objecttype waar van de identificatie is. Mogelijke waarden zijn: 
 
 * NL.IMKAD.KadastraalObject
 * NL.IMKAD.Aantekening
@@ -1315,8 +1315,8 @@ De mogelijke waarde voor het domein wordt bepaald door het objecttype waar van d
 * NL.IMKAD.Erfpachtcanon
 * NL.IMKAD.Nummerreservering
 
-Voorbeeld:
-KadastraalObject
+Voorbeeld: 
+KadastraalObject 
 * identificatie="1160198770000"
   * NEN3610:domein="NL.IMKAD.KadastraalObject"
 ''';
@@ -1330,9 +1330,9 @@ KadastraalObject
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-TypeOnvolledigeDatum is een samengesteld datatype voor een mogelijk onvolledige datum waarbij jaar kan worden gevolgd door maand, en maand kan worden gevolgd door dag.
+TypeOnvolledigeDatum is een samengesteld datatype voor een mogelijk onvolledige datum waarbij jaar kan worden gevolgd door maand, en maand kan worden gevolgd door dag. 
 --Toelichting--
-Formaat is YYYY-MM-DD. Voorbeelden zijn: 1990, 1990-08,
+Formaat is YYYY-MM-DD. Voorbeelden zijn: 1990, 1990-08, 
 1990-08-15.''';
 .
 <urn:object:429> a ea:Object;
@@ -1344,9 +1344,9 @@ Formaat is YYYY-MM-DD. Voorbeelden zijn: 1990, 1990-08,
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-TypePostcode is samengesteld datatype voor het vastleggen van een postcode.
+TypePostcode is samengesteld datatype voor het vastleggen van een postcode. 
 --Toelichting--
-De offici�le Nederlandse TPG codering, bestaande uit een numerieke woonplaatscode en een alfabetische lettercode.''';
+De officiële Nederlandse TPG codering, bestaande uit een numerieke woonplaatscode en een alfabetische lettercode.''';
 .
 <urn:object:430> a ea:Object;
   ea:guid '''181D26B1-A672-43d1-9B14-A650A36D6A8C''';
@@ -1384,7 +1384,7 @@ Indicatie is een boolean  met de waarden J (ja/true) of N (nee/false).''';
   ea:package <urn:package:77>;
   rdfs:comment '''
 ---IMKAD---
-Gewone tekens die in Europa gangbaar zijn.
+Gewone tekens die in Europa gangbaar zijn. 
 ''';
 .
 <urn:object:435> a ea:Object;
@@ -1396,9 +1396,9 @@ Gewone tekens die in Europa gangbaar zijn.
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst.
+Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst. 
 --Toelichting--
-Het datatype bestaat uit een code en een waarde. Bij attributen die van type Waardelijst zijn, wordt aangegeven welke referentielijst bedoeld is met de tagged value "data locatie".
+Het datatype bestaat uit een code en een waarde. Bij attributen die van type Waardelijst zijn, wordt aangegeven welke referentielijst bedoeld is met de tagged value "data locatie". 
 De waardelijsten worden gepubliceerd op:
 [https://developer.kadaster.nl/schemas/waardelijsten].''';
 .
@@ -1438,7 +1438,7 @@ De waardelijsten worden gepubliceerd op:
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst.
+Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst. 
 --Toelichting--
 Het datatye bestaat uit een code en een waarde. Bij attributen die van type Waardelijst zijn, word aangegeven welke referentielijst bedoeld is met de tagged value "data locatie" .''';
 .
@@ -2333,10 +2333,10 @@ De status van de Koopovereenkomst geeft weer waar de koopovereenomst in het proc
   ea:object <urn:object:354>;
   rdfs:comment '''
 ---IMKAD---
--- Definitie --
+-- Definitie -- 
 Kadastrale aanduiding is de unieke aanduiding van een onroerende zaak, die door het kadaster wordt vastgesteld.
 
--- Toelichting --
+-- Toelichting -- 
 In de tijd gezien kan dezelfde onroerende zaak wel meerdere kadastrale aanduidingen hebben, te weten in het geval dat er een herindeling plaatsvindt.  ''';
   ea:lowerBound '''1''';
   ea:upperBound '''1''';
@@ -2569,7 +2569,7 @@ Er zijn 1111 kadastrale gemeentenamen. Elke kadastrale gemeentenaam is uniek.
   ea:object <urn:object:369>;
   rdfs:comment '''
 ---IMKAD---
-Het perceelnummer dat een geheel perceel of een complex uniek identificeert binnen de sectie.
+Het perceelnummer dat een geheel perceel of een complex uniek identificeert binnen de sectie. 
 
 Per kadastrale gemeente en per sectie heeft een perceel een perceelnummer oplopend door de jaren heen van "00001" tot max "99999"
 ''';
@@ -2601,9 +2601,9 @@ Per kadastrale gemeente en per sectie heeft een perceel een perceelnummer oplope
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-De soortGrootte geeft aan of de grootte van het perceel voorlopig, administratief of definitief is vastgesteld.
+De soortGrootte geeft aan of de grootte van het perceel voorlopig, administratief of definitief is vastgesteld. 
 --Toelichting--
-Een grens is voorlopig zolang de <a href="http://tax.kadaster.nl/id/begrip/Aanwijzing_kadastrale_grens"><font color="#0000ff"><u>Aanwijzing kadastrale grens</u></font></a> nog niet heeft plaatsgevonden.
+Een grens is voorlopig zolang de <a href="http://tax.kadaster.nl/id/begrip/Aanwijzing_kadastrale_grens"><font color="#0000ff"><u>Aanwijzing kadastrale grens</u></font></a> nog niet heeft plaatsgevonden. 
 
 Met voorlopige kadastrale grenzen (VKG) worden gehele kadastrale percelen gevormd, voordat de definitieve grenzen in het terrein aan te wijzen zijn. Bij de splitsing ontstaan gehele percelen met:
 <ul>
@@ -2681,7 +2681,7 @@ Identificatie is een door het ZorgeloosVastgoed toegekend landelijk uniek nummer
   ea:stereotype '''Attribuutsoort''';
   ea:object <urn:object:378>;
   rdfs:comment '''--Definitie--
-Indicatie Overleden is een indicatie of de persoon al dan niet overleden is.
+Indicatie Overleden is een indicatie of de persoon al dan niet overleden is. 
 
 --Toelichting--
 Deze indicatie is enkel van belang als de gegevens uit de BRP niet beschikbaar zijn
@@ -2889,7 +2889,7 @@ indicatieGeheim is een aanduiding die aangeeft dat gegevens van een persoon wel 
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-landWaarnaarVertrokken is het land dat de ingeschrevene opgeeft bij vertrek naar het buitenland.
+landWaarnaarVertrokken is het land dat de ingeschrevene opgeeft bij vertrek naar het buitenland. 
 
 
 --Toelichting--
@@ -3027,7 +3027,7 @@ datumOverlijden is de datum waarop de persoon overleden is.  ''';
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-Het KvKNummer is een uniek identificerend administratienummer van een rechtspersoon zijnde een niet-natuurlijk persoon zoals toegewezen door de Kamer van Koophandel
+Het KvKNummer is een uniek identificerend administratienummer van een rechtspersoon zijnde een niet-natuurlijk persoon zoals toegewezen door de Kamer van Koophandel 
 ''';
   ea:lowerBound '''0''';
   ea:upperBound '''1''';
@@ -3206,7 +3206,7 @@ URI https://bag.basisregistraties.overheid.nl/id/begrip/Huisnummertoevoeging''';
   rdfs:comment '''
 ---IMKAD---
 --Definitie--
-Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie.
+Identificatie is een door Basisregistratie Adressen en Gebouwen (BAG) toegekend landelijk uniek nummer aan een object binnen registratie. 
 ''';
   ea:lowerBound '''1''';
   ea:upperBound '''1''';
@@ -5995,7 +5995,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:5708> a ea:Attributetag;
   ea:guid '''8F70DA6F-8646-c286-A4F7-06808319F72A''';
   ea:element <urn:attribute:381>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:5709> a ea:Attributetag;
@@ -6061,7 +6061,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:5742> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-92DC-0938B17D973B''';
   ea:element <urn:attribute:372>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:5745> a ea:Attributetag;
@@ -6463,7 +6463,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:6140> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-855A-B8A55F2A2B16''';
   ea:element <urn:attribute:380>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:6141> a ea:Attributetag;
@@ -6655,7 +6655,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:6342> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-8218-C9E374D811A9''';
   ea:element <urn:attribute:298>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:6343> a ea:Attributetag;
@@ -6739,7 +6739,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:6422> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-9799-EC1BA60D690C''';
   ea:element <urn:attribute:414>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:6423> a ea:Attributetag;
@@ -7213,7 +7213,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:6865> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-B568-1D92AE7F8AB1''';
   ea:element <urn:attribute:379>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:6866> a ea:Attributetag;
@@ -8095,7 +8095,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:7607> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-B473-428C8BB1F835''';
   ea:element <urn:attribute:410>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:7608> a ea:Attributetag;
@@ -8149,7 +8149,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:7658> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-8CA1-68EDAC7CE27C''';
   ea:element <urn:attribute:385>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:7659> a ea:Attributetag;
@@ -8983,7 +8983,7 @@ De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geas
 <urn:attributetag:8356> a ea:Attributetag;
   ea:guid '''8F70DA6F-C910-dbc9-BF8F-20F6ECE294D3''';
   ea:element <urn:attribute:345>;
-  ea:property '''Indicatie materi�le historie''';
+  ea:property '''Indicatie materiële historie''';
   ea:value '''Nee''';
 .
 <urn:attributetag:8357> a ea:Attributetag;

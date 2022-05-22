@@ -1,22 +1,26 @@
-title: MIM conversie vanuit EA bestand in RDF
-version: 0.1
-constructs:
+title: MIM conversie
+version: 0.2
+queries:
   - title: get Objecttypes
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?objecttype a mim:Objecttype.
-        ?objecttype mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?objecttype a mim:Objecttype.
+          ?objecttype mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?objecttype) ?label
-        WHERE {
-          ?s a ea:Object.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Objecttype".
-          ?s rdfs:label ?label
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?objecttype) ?label
+          WHERE {
+            ?s a ea:Object.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Objecttype".
+            ?s rdfs:label ?label
+          }
         }
       }
   - title: get Gestructureerd datatype
@@ -24,17 +28,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?datatype a mim:GestructureerdDatatype.
-        ?datatype mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?datatype a mim:GestructureerdDatatype.
+          ?datatype mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?datatype) ?label
-        WHERE {
-          ?s a ea:Object.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Gestructureerd datatype".
-          ?s rdfs:label ?label
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?datatype) ?label
+          WHERE {
+            ?s a ea:Object.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Gestructureerd datatype".
+            ?s rdfs:label ?label
+          }
         }
       }
   - title: get Gegevensgroeptype
@@ -42,17 +50,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?ggtype a mim:Gegevensgroeptype.
-        ?ggtype mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?ggtype a mim:Gegevensgroeptype.
+          ?ggtype mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?ggtype) ?label
-        WHERE {
-          ?s a ea:Object.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Gegevensgroeptype".
-          ?s rdfs:label ?label
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?ggtype) ?label
+          WHERE {
+            ?s a ea:Object.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Gegevensgroeptype".
+            ?s rdfs:label ?label
+          }
         }
       }
   - title: get Keuze
@@ -60,17 +72,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?ggtype a mim:Keuze.
-        ?ggtype mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?ggtype a mim:Keuze.
+          ?ggtype mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?ggtype) ?label
-        WHERE {
-          ?s a ea:Object.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Keuze".
-          ?s rdfs:label ?label
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?ggtype) ?label
+          WHERE {
+            ?s a ea:Object.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Keuze".
+            ?s rdfs:label ?label
+          }
         }
       }
   - title: get Relatieklasse
@@ -78,17 +94,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?relatieklasse a mim:Relatieklasse.
-        ?relatieklasse mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?relatieklasse a mim:Relatieklasse.
+          ?relatieklasse mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?relatieklasse) ?label
-        WHERE {
-          ?s a ea:Object.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Relatieklasse".
-          ?s rdfs:label ?label
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?relatieklasse) ?label
+          WHERE {
+            ?s a ea:Object.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Relatieklasse".
+            ?s rdfs:label ?label
+          }
         }
       }
   - title: get Referentielijst
@@ -96,17 +116,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?referentielijst a mim:Referentielijst.
-        ?referentielijst mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?referentielijst a mim:Referentielijst.
+          ?referentielijst mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?referentielijst) ?label
-        WHERE {
-          ?s a ea:Object.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Referentielijst".
-          ?s rdfs:label ?label
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?referentielijst) ?label
+          WHERE {
+            ?s a ea:Object.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Referentielijst".
+            ?s rdfs:label ?label
+          }
         }
       }
   - title: get Attribuutsoorten
@@ -114,17 +138,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?attribuutsoort a mim:Attribuutsoort.
-        ?attribuutsoort mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?attribuutsoort a mim:Attribuutsoort.
+          ?attribuutsoort mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?attribuutsoort) ?label
-        WHERE {
-          ?s a ea:Attribute.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Attribuutsoort".
-          ?s rdfs:label ?label.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?attribuutsoort) ?label
+          WHERE {
+            ?s a ea:Attribute.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Attribuutsoort".
+            ?s rdfs:label ?label.
+          }
         }
       }
   - title: link Attribuutsoort to Objecttype
@@ -132,17 +160,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?objecttype mim:attribuut ?attribuutsoort
+      INSERT {
+        GRAPH <urn:output> {
+          ?objecttype mim:attribuut ?attribuutsoort
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?attr)) as ?attribuutsoort) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
-        WHERE {
-          ?s a ea:Attribute.
-          ?s ea:guid ?attr.
-          ?s ea:stereotype "Attribuutsoort".
-          ?s ea:object ?o.
-          ?o ea:guid ?obj.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?attr)) as ?attribuutsoort) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
+          WHERE {
+            ?s a ea:Attribute.
+            ?s ea:guid ?attr.
+            ?s ea:stereotype "Attribuutsoort".
+            ?s ea:object ?o.
+            ?o ea:guid ?obj.
+          }
         }
       }
   - title: get Gegevensgroep
@@ -150,17 +182,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?gegevensgroep a mim:Gegevensgroep.
-        ?gegevensgroep mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?gegevensgroep a mim:Gegevensgroep.
+          ?gegevensgroep mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?gegevensgroep) ?label
-        WHERE {
-          ?s a ea:Attribute.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Gegevensgroep".
-          ?s rdfs:label ?label.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?gegevensgroep) ?label
+          WHERE {
+            ?s a ea:Attribute.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Gegevensgroep".
+            ?s rdfs:label ?label.
+          }
         }
       }
   - title: link Gegevensgroep to Objecttype
@@ -168,17 +204,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?objecttype mim:gegevensgroep ?gegevensgroep
+      INSERT {
+        GRAPH <urn:output> {
+          ?objecttype mim:gegevensgroep ?gegevensgroep
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?attr)) as ?gegevensgroep) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
-        WHERE {
-          ?s a ea:Attribute.
-          ?s ea:guid ?attr.
-          ?s ea:stereotype "Gegevensgroep".
-          ?s ea:object ?o.
-          ?o ea:guid ?obj.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?attr)) as ?gegevensgroep) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
+          WHERE {
+            ?s a ea:Attribute.
+            ?s ea:guid ?attr.
+            ?s ea:stereotype "Gegevensgroep".
+            ?s ea:object ?o.
+            ?o ea:guid ?obj.
+          }
         }
       }
   - title: link Gegevensgroep to Gegevensgroeptype
@@ -186,17 +226,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?gegevensgroep mim:gegevensgroeptype ?gegevensgroeptype
+      INSERT {
+        GRAPH <urn:output> {
+          ?gegevensgroep mim:gegevensgroeptype ?gegevensgroeptype
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?attr)) as ?gegevensgroep) (iri(concat('urn:uuid:',?type)) as ?gegevensgroeptype)
-        WHERE {
-          ?s a ea:Attribute.
-          ?s ea:guid ?attr.
-          ?s ea:stereotype "Gegevensgroep".
-          ?s ea:classifier ?o.
-          ?o ea:guid ?type.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?attr)) as ?gegevensgroep) (iri(concat('urn:uuid:',?type)) as ?gegevensgroeptype)
+          WHERE {
+            ?s a ea:Attribute.
+            ?s ea:guid ?attr.
+            ?s ea:stereotype "Gegevensgroep".
+            ?s ea:classifier ?o.
+            ?o ea:guid ?type.
+          }
         }
       }
   - title: get Relatiesoort
@@ -204,17 +248,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?relatiesoort a mim:Relatiesoort.
-        ?relatiesoort mim:naam ?label.
+      INSERT {
+        GRAPH <urn:output> {
+          ?relatiesoort a mim:Relatiesoort.
+          ?relatiesoort mim:naam ?label.
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?guid)) as ?relatiesoort) ?label
-        WHERE {
-          ?s a ea:Connector.
-          ?s ea:guid ?guid.
-          ?s ea:stereotype "Relatiesoort".
-          ?s rdfs:label ?label.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?relatiesoort) ?label
+          WHERE {
+            ?s a ea:Connector.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Relatiesoort".
+            ?s rdfs:label ?label.
+          }
         }
       }
   - title: link Relatiesoort aan bron
@@ -222,17 +270,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?relatiesoort mim:bron ?objecttype
+      INSERT {
+        GRAPH <urn:output> {
+          ?relatiesoort mim:bron ?objecttype
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?rel)) as ?relatiesoort) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
-        WHERE {
-          ?s a ea:Connector.
-          ?s ea:stereotype "Relatiesoort".
-          ?s ea:guid ?rel.
-          ?s ea:start ?o.
-          ?o ea:guid ?obj.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?rel)) as ?relatiesoort) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
+          WHERE {
+            ?s a ea:Connector.
+            ?s ea:stereotype "Relatiesoort".
+            ?s ea:guid ?rel.
+            ?s ea:start ?o.
+            ?o ea:guid ?obj.
+          }
         }
       }
   - title: link Relatiesoort aan doel
@@ -240,17 +292,21 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?relatiesoort mim:doel ?objecttype
+      INSERT {
+        GRAPH <urn:output> {
+          ?relatiesoort mim:doel ?objecttype
+        }
       }
       WHERE {
-        SELECT (iri(concat('urn:uuid:',?rel)) as ?relatiesoort) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
-        WHERE {
-          ?s a ea:Connector.
-          ?s ea:stereotype "Relatiesoort".
-          ?s ea:guid ?rel.
-          ?s ea:end ?o.
-          ?o ea:guid ?obj.
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?rel)) as ?relatiesoort) (iri(concat('urn:uuid:',?obj)) as ?objecttype)
+          WHERE {
+            ?s a ea:Connector.
+            ?s ea:stereotype "Relatiesoort".
+            ?s ea:guid ?rel.
+            ?s ea:end ?o.
+            ?o ea:guid ?obj.
+          }
         }
       }
   - title: get Generalisatie
@@ -258,57 +314,76 @@ constructs:
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      CONSTRUCT {
-        ?generalisatie a mim:Generalisatie.
-        ?generalisatie mim:subtype ?subtype.
-        ?generalisatie mim:supertype ?supertype.
-      }
-      WHERE {
-        SELECT (iri(concat('urn:uuid:',?gen)) as ?generalisatie) (iri(concat('urn:uuid:',?sub)) as ?subtype) (iri(concat('urn:uuid:',?super)) as ?supertype)
-        WHERE {
-          ?s a ea:Connector.
-          ?s ea:stereotype "Generalisatie".
-          ?s ea:guid ?gen.
-          ?s ea:start ?start.
-          ?start ea:guid ?sub.
-          ?s ea:end ?end.
-          ?end ea:guid ?super.
+      INSERT {
+        GRAPH <urn:output> {
+          ?generalisatie a mim:Generalisatie.
+          ?generalisatie mim:subtype ?subtype.
+          ?generalisatie mim:supertype ?supertype.
         }
       }
-updates:
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?gen)) as ?generalisatie) (iri(concat('urn:uuid:',?sub)) as ?subtype) (iri(concat('urn:uuid:',?super)) as ?supertype)
+          WHERE {
+            ?s a ea:Connector.
+            ?s ea:stereotype "Generalisatie".
+            ?s ea:guid ?gen.
+            ?s ea:start ?start.
+            ?start ea:guid ?sub.
+            ?s ea:end ?end.
+            ?end ea:guid ?super.
+          }
+        }
+      }
   - title: Verwijder Kadaster-specifiek gebruik van opmaak in definities
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       DELETE {
-        ?s mim:definitie ?def
+        GRAPH <urn:output> {
+          ?s mim:definitie ?def
+        }
       }
       INSERT {
-        ?s mim:definitie ?definitie
+        GRAPH <urn:output> {
+          ?s mim:definitie ?definitie
+        }
       }
       WHERE {
-        ?s mim:definitie ?def
-        BIND (replace(replace(replace(replace(replace(?def,"---IMKAD---\n",""),"--Definitie--\n",""),"--Toelichting--(\n.*)*$",""),"^[\n| ]+",""),"[\n| ]+$","") as ?definitie)
+        GRAPH <urn:output> {
+          ?s mim:definitie ?def
+          BIND (replace(replace(replace(replace(replace(?def,"---IMKAD---\n",""),"--Definitie--\n",""),"--Toelichting--(\n.*)*$",""),"^[\n| ]+",""),"[\n| ]+$","") as ?definitie)
+        }
       }
   - title: Verwijder lege definities
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       DELETE {
-        ?s mim:definitie ""
+        GRAPH <urn:output> {
+          ?s mim:definitie ""
+        }
       }
       WHERE {
-        ?s mim:definitie ""
+        GRAPH <urn:output> {
+          ?s mim:definitie ""
+        }
       }
   - title: Verwijder Kadaster-specifiek gebruik van namen van abstracte klassen
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       DELETE {
-        ?s mim:naam ?anaam
+        GRAPH <urn:output> {
+          ?s mim:naam ?anaam
+        }
       }
       INSERT {
-        ?s mim:naam ?naam
+        GRAPH <urn:output> {
+          ?s mim:naam ?naam
+        }
       }
       WHERE {
-        ?s mim:naam ?anaam
-        BIND (replace(?anaam,"^_(.*)$","$1") as ?naam)
-        FILTER (regex(?anaam,"^_(.*)$"))
+        GRAPH <urn:output> {
+          ?s mim:naam ?anaam
+          BIND (replace(?anaam,"^_(.*)$","$1") as ?naam)
+          FILTER (regex(?anaam,"^_(.*)$"))
+        }
       }

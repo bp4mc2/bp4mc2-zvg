@@ -1,8 +1,8 @@
 
-name: Generation 
+name: Generation
 
 # Trigger generation of mim and ld files when changes in the eap file are pushed to remote.
-on: 
+on:
   push:
     paths:
       - 'informatiemodel/ea/**'
@@ -24,23 +24,16 @@ jobs:
         uses: robinraju/release-downloader@v1.3
         with:
           repository: "architolk/ea2rdf"
-          tag: "v1.0.0"
+          tag: "v1.1.0"
           fileName: "ea2rdf.jar"
       - name: Fetch rdf2rdf
         uses: robinraju/release-downloader@v1.3
         with:
           repository: "architolk/rdf2rdf"
-          tag: "v1.0.0"
+          tag: "v1.1.0"
           fileName: "rdf2rdf.jar"
       - name: Convert EA to RDF
         run: java -jar ea2rdf.jar -e informatiemodel/ea/zvg.EAP > zvg-ea.ttl
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v2
-        with:
-          find: "\\"
-          replace: "\\\\"
-          regex: false
-          include: zvg-ea.ttl
       - name: Convert EA in RDF to MIM in RDF
         run: java -jar rdf2rdf.jar zvg-ea.ttl informatiemodel/mim/zvg-mim.ttl informatiemodel/gen-pipeline/ea2mim.yaml
       - name: Convert MIM in RDF to RDFS/OWL/SHACL in RDF

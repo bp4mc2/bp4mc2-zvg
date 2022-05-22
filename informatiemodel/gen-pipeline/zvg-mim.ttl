@@ -1,1689 +1,2261 @@
 @prefix ea:   <http://www.sparxsystems.eu/def/ea#> .
-@prefix mim:  <http://bp4mc2.org/def/mim#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <urn:uuid:481B3ED2-9637-4b46-8CB1-6C705AA0445B>
-        a         mim:Referentielijst ;
-        mim:naam  "RechercheOndewerp" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "RechercheOndewerp" .
 
 <urn:uuid:06298F68-9317-49f0-9B4D-BA31C14E4EDA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "datumSluiting" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "datumSluiting" .
 
 <urn:uuid:DB62FB98-D1C4-47c4-88E3-6E305F627ED0>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:2EABC9AF-FC6C-41ef-82FF-CEDB2121C0CA> ;
-        mim:supertype  <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:2EABC9AF-FC6C-41ef-82FF-CEDB2121C0CA> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
 
 <urn:uuid:504659C8-55E9-49b9-B17D-1211E9BF5443>
-        a         mim:Referentielijst ;
-        mim:naam  "AdellijkeTitelOfPredikaat" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "AdellijkeTitelOfPredikaat" .
 
 <urn:uuid:7D103280-AF27-437b-B31D-D04599E2A57D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:212B92BD-9F88-47c3-B930-6E34AA4C8117> ;
-        mim:naam       "VereningingVanEigenaren" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:212B92BD-9F88-47c3-B930-6E34AA4C8117> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "VereningingVanEigenaren" .
 
 <urn:uuid:421EE75B-6584-4472-89DD-B1324D35D956>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:3DD634A7-BBA1-4708-94BB-F58CACCA1555> ;
-        mim:supertype  <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:3DD634A7-BBA1-4708-94BB-F58CACCA1555> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> .
 
 <urn:uuid:9327522C-AC65-4e4a-ACF1-A55BC782F8A1>
-        a         mim:Attribuutsoort ;
-        mim:naam  "volgnummer" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "volgnummer" .
 
 <urn:uuid:D0C242F8-518C-40a3-9020-BBA422EA7C90>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:57AAEDBD-4264-40a6-BC34-EF20102C9EEA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "overgenomenMetIngangVan" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "overgenomenMetIngangVan" .
 
 <urn:uuid:596311C2-E775-4aff-B08B-B1951EFC734D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aanpassing" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aanpassing" .
 
 <urn:uuid:2F58E149-7641-40fa-97E9-84F24A173C0F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "onderwerp" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "onderwerp" .
 
 <urn:uuid:AE489F79-919B-4daf-BC8E-A5F56765A975>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "TypeOppervlak" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "TypeOppervlak" .
 
 <urn:uuid:0917F0F6-5E2F-4bcf-A1EE-A241D6BEC9C6>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:ADF67F3C-144C-4601-A793-520E0DDD11B9> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:ADF67F3C-144C-4601-A793-520E0DDD11B9> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:E0E1792F-0F88-4902-9BE6-057EB4B4801F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bronLink" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bronLink" .
 
 <urn:uuid:D48CA4E0-38A8-464f-A0AF-3DA24BE784B6>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:E324FB39-A6C8-45ea-A1ED-41707FA1ABF1> , <urn:uuid:57AAEDBD-4264-40a6-BC34-EF20102C9EEA> ;
-        mim:naam       "BatenLastenCanons" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:E324FB39-A6C8-45ea-A1ED-41707FA1ABF1> , <urn:uuid:57AAEDBD-4264-40a6-BC34-EF20102C9EEA> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "BatenLastenCanons" .
 
 <urn:uuid:2DB49B02-1FB6-48bd-B439-E0A3BD6BEB99>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:ADF5951B-2060-4ca6-BBDD-051E44B3F88E> ;
-        mim:doel  <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
-        mim:naam  "betreftEen" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:ADF5951B-2060-4ca6-BBDD-051E44B3F88E> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "betreftEen" .
 
 <urn:uuid:7A495A70-7AB9-4b3a-A4B1-3C501BF5493F>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:3C8520E4-413A-4bca-A9BA-DE2889919490> , <urn:uuid:62FD85C4-BB2D-4cb1-971D-0349D489C7BA> , <urn:uuid:FFF79DF4-DFD2-4e79-987E-2BD8BC8647A9> ;
-        mim:naam       "WaardeAandeelVVE" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:3C8520E4-413A-4bca-A9BA-DE2889919490> , <urn:uuid:62FD85C4-BB2D-4cb1-971D-0349D489C7BA> , <urn:uuid:FFF79DF4-DFD2-4e79-987E-2BD8BC8647A9> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "WaardeAandeelVVE" .
 
 <urn:uuid:C8A9ECED-8F26-46ff-9536-4696423B6529>
-        a         mim:Attribuutsoort ;
-        mim:naam  "huisnummer" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "huisnummer" .
 
 <urn:uuid:388A7849-22D5-4454-9D33-1C038C4D960B>
-        a         mim:Attribuutsoort ;
-        mim:naam  "landWaarnaarVertrokken" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "landWaarnaarVertrokken" .
 
 <urn:uuid:8E622DA9-6369-4d29-BC5F-6E2DD9727D75>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:9A71566A-07DA-4f45-A17D-65F3852949EA> , <urn:uuid:2DCB510C-1AFB-4b90-8AE7-E6E9AD505FC8> , <urn:uuid:CD25564C-3E8C-49a9-8961-D8F8219F4BCA> ;
-        mim:naam       "ZakelijkRechtRecherche" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:9A71566A-07DA-4f45-A17D-65F3852949EA> , <urn:uuid:2DCB510C-1AFB-4b90-8AE7-E6E9AD505FC8> , <urn:uuid:CD25564C-3E8C-49a9-8961-D8F8219F4BCA> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ZakelijkRechtRecherche" .
 
 <urn:uuid:6329F95D-6167-465d-ADC5-C61CDF16E5D8>
-        a         mim:Objecttype ;
-        mim:naam  "Medewerker" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Medewerker" .
 
 <urn:uuid:962AFA91-D309-4e8f-A1BC-AE0F85BB9C3E>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
-        mim:doel  <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
-        mim:naam  "metInformatieVan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "metInformatieVan" .
 
 <urn:uuid:FB53815E-F414-4032-B476-A5871C2B58D7>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
-        mim:doel  <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA> ;
-        mim:naam  "aan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aan" .
 
 <urn:uuid:5E4F1500-0A67-4d58-85D5-274CC21EE948>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:44BDDDF4-4549-4ab8-9C05-F887C2EE03EF> ;
-        mim:naam       "OpenbareRuimte" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:44BDDDF4-4549-4ab8-9C05-F887C2EE03EF> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "OpenbareRuimte" .
 
 <urn:uuid:13E60A06-1760-4d14-81E2-561FB555565F>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
-        mim:doel  <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
-        mim:naam  "treed op namens" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "treed op namens" .
 
 <urn:uuid:CBB9CA2A-6F01-43c4-9167-6236B0B2785D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "ongevorderdLeeg" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ongevorderdLeeg" .
 
 <urn:uuid:C087ED87-6409-4617-8D1C-D5E669FD16AD>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isArtikel55WetBodembeschermingBekend" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isArtikel55WetBodembeschermingBekend" .
 
 <urn:uuid:0FE8AE0D-765C-403c-B816-8C265805891E>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:08725DA4-0C47-44e5-8B6A-552A03251349> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:08725DA4-0C47-44e5-8B6A-552A03251349> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:3F542A41-7D16-42f5-8EAB-A2396FCA9B3D>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:E08754CD-4291-4406-BB5D-72EBB8DFD5AE> , <urn:uuid:97AF25D7-63C5-482e-8D16-AAE4F8EDE460> ;
-        mim:naam       "MachtigingVVEVergadering" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:E08754CD-4291-4406-BB5D-72EBB8DFD5AE> , <urn:uuid:97AF25D7-63C5-482e-8D16-AAE4F8EDE460> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "MachtigingVVEVergadering" .
 
 <urn:uuid:F567CEC6-7732-4b93-BA07-B4D88101BA25>
-        a         mim:Attribuutsoort ;
-        mim:naam  "datumVooruitbetaling" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "datumVooruitbetaling" .
 
 <urn:uuid:DA73B047-CC15-412a-8224-97E19254DA75>
-        a         mim:Referentielijst ;
-        mim:naam  "StellenOfStorten" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "StellenOfStorten" .
 
 <urn:uuid:A682234D-EA37-4e4d-9846-536C5A17D718>
-        a         mim:Attribuutsoort ;
-        mim:naam  "waarde" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "waarde" .
 
 <urn:uuid:BAE9BDBD-E1B5-49d8-9EF7-36315D19658D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "maximaleHerstelKosten" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "maximaleHerstelKosten" .
 
 <urn:uuid:C36539D6-8DF6-440a-87E2-6F490A3DF4B5>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "Aanpassing" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Aanpassing" .
 
 <urn:uuid:9EBF8FC2-2B55-433b-9985-E69941C58B04>
-        a         mim:Attribuutsoort ;
-        mim:naam  "algemeneErfpachtvoorwaarden" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "algemeneErfpachtvoorwaarden" .
 
 <urn:uuid:483B8614-0F3F-462d-831C-FF7927D4CE45>
-        a         mim:Attribuutsoort ;
-        mim:naam  "lastenVoorgaandeJaren" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "lastenVoorgaandeJaren" .
 
 <urn:uuid:CD2C7F3A-09E2-4352-A43D-0990B469076D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "voorvoegselsgeslachtsnaam" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "voorvoegselsgeslachtsnaam" .
 
 <urn:uuid:DEC4D749-5FA4-48d5-BFDB-ECBE0B773F98>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:417D2D14-2CED-4613-8B6B-A84F2F96BC2D> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:417D2D14-2CED-4613-8B6B-A84F2F96BC2D> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:9F7F68BE-F54B-4f0f-9B70-9F031F5525B6>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aandeel" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aandeel" .
 
 <urn:uuid:79D9D9AC-4B21-4fea-A99D-CC7C0917B059>
-        a         mim:Attribuutsoort ;
-        mim:naam  "herziening" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "herziening" .
 
 <urn:uuid:E00DAAF7-2E00-45cb-AA90-5B569A4BD4AE>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
-        mim:supertype  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> .
 
 <urn:uuid:26D4E950-0448-4fb6-9753-8153ECBD1BF8>
-        a         mim:Attribuutsoort ;
-        mim:naam  "einddatumAfkoop" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "einddatumAfkoop" .
 
 <urn:uuid:4310705B-9203-4461-B2A9-612095591E16>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
-        mim:doel  <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
-        mim:naam  "bijNotaris" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bijNotaris" .
 
 <urn:uuid:4EF17D6A-B796-4947-8333-B07C8F5ECD2A>
-        a         mim:Objecttype ;
-        mim:naam  "SoftwareAgent" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "SoftwareAgent" .
 
 <urn:uuid:2A190F96-2F6E-4a18-A4CB-2B201FAC8FE5>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:12FA46ED-B9DC-45ca-AA6E-38AEE153A633>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:C6A2C553-85D2-4575-AF04-F04EDF996AE8>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bedrag" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bedrag" .
 
 <urn:uuid:3D0B0658-B5AD-462b-AB57-12CDE153AF1F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isAanwijzingProvinciaalOfGemeentelijkMonumentBekend" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isAanwijzingProvinciaalOfGemeentelijkMonumentBekend" .
 
 <urn:uuid:BEF5D4E0-4952-4355-BC8E-3CCAD98EAD23>
-        a         mim:Attribuutsoort ;
-        mim:naam  "koopsom" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "koopsom" .
 
 <urn:uuid:A5E11066-1736-42fd-8953-74089C7A05CC>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:87A1260A-EB39-46c2-88AD-12B856B34E75> , <urn:uuid:80AD4F4E-79B8-44cf-980D-4A6360C10DE1> , <urn:uuid:2F58E149-7641-40fa-97E9-84F24A173C0F> , <urn:uuid:E0E1792F-0F88-4902-9BE6-057EB4B4801F> ;
-        mim:naam       "RechercheItem" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:87A1260A-EB39-46c2-88AD-12B856B34E75> , <urn:uuid:80AD4F4E-79B8-44cf-980D-4A6360C10DE1> , <urn:uuid:2F58E149-7641-40fa-97E9-84F24A173C0F> , <urn:uuid:E0E1792F-0F88-4902-9BE6-057EB4B4801F> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "RechercheItem" .
 
 <urn:uuid:9114E2AE-DF77-41b4-9B76-26A57EA70C77>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:7D099919-8C46-4fd2-B31F-F9D2B864F4A0> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:7D099919-8C46-4fd2-B31F-F9D2B864F4A0> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:12A119F9-2F94-442e-B47F-FF26168411E3>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "TypeBreuk" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "TypeBreuk" .
 
 <urn:uuid:9A71566A-07DA-4f45-A17D-65F3852949EA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "zakelijkRecht" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "zakelijkRecht" .
 
 <urn:uuid:95F5885A-32A9-4882-BC32-DB3D0CFDB78A>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:ACE04D1B-E3EF-4695-8FDB-5993D10129B8> ;
-        mim:supertype  <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:ACE04D1B-E3EF-4695-8FDB-5993D10129B8> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
 
 <urn:uuid:AAF01974-30FE-4480-AA25-101CFB0AE7D6>
-        a         mim:Attribuutsoort ;
-        mim:naam  "kostenKoperofVerkoper" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "kostenKoperofVerkoper" .
 
 <urn:uuid:EB778A53-A1EC-4308-BF8D-3361DC848863>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:D85108D0-11DF-4218-86A3-1814C0E00399> , <urn:uuid:7B5FEEFA-61EF-480b-82EB-08A61891C71C> , <urn:uuid:941CA132-DBC2-4f36-850C-4A1B79A40471> , <urn:uuid:4D397A5A-1CD0-4c12-A319-56C0E0E83F63> , <urn:uuid:3B9F341D-C449-4bd4-BA27-F91373670595> , <urn:uuid:9327522C-AC65-4e4a-ACF1-A55BC782F8A1> ;
-        mim:naam       "KadasterHistorieNEN3610" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:7B5FEEFA-61EF-480b-82EB-08A61891C71C> , <urn:uuid:941CA132-DBC2-4f36-850C-4A1B79A40471> , <urn:uuid:4D397A5A-1CD0-4c12-A319-56C0E0E83F63> , <urn:uuid:3B9F341D-C449-4bd4-BA27-F91373670595> , <urn:uuid:9327522C-AC65-4e4a-ACF1-A55BC782F8A1> , <urn:uuid:D85108D0-11DF-4218-86A3-1814C0E00399> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "KadasterHistorieNEN3610" .
 
 <urn:uuid:F2B5280F-8C22-4b3f-80E5-282D68F21FC3>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:F1F55F0A-5698-41fe-A723-C2744A061638> , <urn:uuid:7EAA2A9F-31D4-494e-A60F-4365BFF41056> , <urn:uuid:61EA939B-3751-462f-8C51-AF6A235489E1> ;
-        mim:naam       "Geboorte" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:F1F55F0A-5698-41fe-A723-C2744A061638> , <urn:uuid:7EAA2A9F-31D4-494e-A60F-4365BFF41056> , <urn:uuid:61EA939B-3751-462f-8C51-AF6A235489E1> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Geboorte" .
 
 <urn:uuid:2092E551-33C8-476d-B554-4BE05A17877B>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
-        mim:doel  <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> ;
-        mim:naam  "vertegenwoordigt" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "vertegenwoordigt" .
 
 <urn:uuid:ACE04D1B-E3EF-4695-8FDB-5993D10129B8>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:F441A9A9-F633-4c19-88B4-F8B05CBBDC12> , <urn:uuid:38B481D5-24CE-4362-9D52-09BF5A0F4D58> , <urn:uuid:3D0B0658-B5AD-462b-AB57-12CDE153AF1F> , <urn:uuid:8B49D605-93AE-4b3a-ABAF-52AFEBFA4540> , <urn:uuid:0B99DC1D-7F2F-4f12-84B8-5FE89ABF41BE> , <urn:uuid:01D15C51-BD27-4ad8-8D09-E7A628F9535A> , <urn:uuid:483B8614-0F3F-462d-831C-FF7927D4CE45> , <urn:uuid:99A0C8CA-58F9-4a10-90BC-2BE21CD6DC53> , <urn:uuid:1542BA05-6E43-4e4f-B81B-A96198235B42> , <urn:uuid:30DA9C49-F368-45cf-921F-CFC534D4E050> , <urn:uuid:B9E117AE-700A-4701-AC4F-C1EF1C5F7659> , <urn:uuid:07BF65CD-5AA6-4d2f-A978-0168A88E8B5B> , <urn:uuid:0F817D84-EB0D-49f0-825A-B9F254A3E766> , <urn:uuid:B750BA58-68B9-457e-A3C5-25747D267F17> , <urn:uuid:C087ED87-6409-4617-8D1C-D5E669FD16AD> , <urn:uuid:962D8E4E-58E1-4a4f-9F9B-00EED3BBB11D> , <urn:uuid:6CE3B463-E955-4abb-8B45-68EFB08FF140> , <urn:uuid:F5FCFAC2-5358-4590-8AA6-C0DA177C1B32> ;
-        mim:naam       "StaatOnroerendeZaak" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:F441A9A9-F633-4c19-88B4-F8B05CBBDC12> , <urn:uuid:38B481D5-24CE-4362-9D52-09BF5A0F4D58> , <urn:uuid:3D0B0658-B5AD-462b-AB57-12CDE153AF1F> , <urn:uuid:8B49D605-93AE-4b3a-ABAF-52AFEBFA4540> , <urn:uuid:0B99DC1D-7F2F-4f12-84B8-5FE89ABF41BE> , <urn:uuid:01D15C51-BD27-4ad8-8D09-E7A628F9535A> , <urn:uuid:483B8614-0F3F-462d-831C-FF7927D4CE45> , <urn:uuid:99A0C8CA-58F9-4a10-90BC-2BE21CD6DC53> , <urn:uuid:1542BA05-6E43-4e4f-B81B-A96198235B42> , <urn:uuid:30DA9C49-F368-45cf-921F-CFC534D4E050> , <urn:uuid:B9E117AE-700A-4701-AC4F-C1EF1C5F7659> , <urn:uuid:07BF65CD-5AA6-4d2f-A978-0168A88E8B5B> , <urn:uuid:0F817D84-EB0D-49f0-825A-B9F254A3E766> , <urn:uuid:B750BA58-68B9-457e-A3C5-25747D267F17> , <urn:uuid:C087ED87-6409-4617-8D1C-D5E669FD16AD> , <urn:uuid:962D8E4E-58E1-4a4f-9F9B-00EED3BBB11D> , <urn:uuid:6CE3B463-E955-4abb-8B45-68EFB08FF140> , <urn:uuid:F5FCFAC2-5358-4590-8AA6-C0DA177C1B32> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "StaatOnroerendeZaak" .
 
 <urn:uuid:D6EBB5BB-3C37-434a-8016-DD7C27B7E0A5>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E> ;
-        mim:doel  <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735> ;
-        mim:naam  "gerelateerdeWoonplaats" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "gerelateerdeWoonplaats" .
 
 <urn:uuid:2E61D052-9879-4aa4-AF3D-305C097E4C7E>
-        a         mim:Attribuutsoort ;
-        mim:naam  "artikel13Verschil" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "artikel13Verschil" .
 
 <urn:uuid:F00DB5D0-6BEA-4f6c-8F4D-2E3F6C7BB7CD>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aandeel" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aandeel" .
 
 <urn:uuid:7D9EA3FD-F4F2-4918-A01D-F4013C5C3497>
-        a         mim:Referentielijst ;
-        mim:naam  "KadastraleGemeente" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "KadastraleGemeente" .
 
 <urn:uuid:1FE133E8-D4AE-453f-BEF1-FBF3A624F0DE>
-        a         mim:Referentielijst ;
-        mim:naam  "BRPAanduidingNaamgebruik" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "BRPAanduidingNaamgebruik" .
 
 <urn:uuid:A76F126A-32DE-4914-8FDE-1C811F1A8074>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
-        mim:doel  <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
-        mim:naam  "wasGedaanDoor" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "wasGedaanDoor" .
 
 <urn:uuid:6AE676B5-F43E-4160-B091-BBDD125D033C>
-        a         mim:Objecttype ;
-        mim:naam  "NederlandsRecht" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "NederlandsRecht" .
 
 <urn:uuid:AEEF8312-D021-4aac-B90B-EEF214E9A260>
-        a         mim:Objecttype ;
-        mim:naam  "Eigendom" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Eigendom" .
 
 <urn:uuid:062653A0-9845-456d-BC9E-52246C861991>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:7D01B2EE-7102-489e-BDA5-11735CEE2965> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:7D01B2EE-7102-489e-BDA5-11735CEE2965> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:4B72E421-C366-4477-945E-8D2C32F46AF0>
-        a         mim:Attribuutsoort ;
-        mim:naam  "referentie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "referentie" .
 
 <urn:uuid:E88A3A24-B29F-429b-8869-187EEBF06228>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bevoegdheid" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bevoegdheid" .
 
 <urn:uuid:7BDC2305-37FE-4a5a-B8FF-0BA4C018E103>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
-        mim:doel  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
-        mim:naam  "vanZakelijkRecht" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "vanZakelijkRecht" .
 
 <urn:uuid:1673F612-35C9-4a3b-A184-00CAC2C33C5F>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:1A9C4B10-5DD5-44bc-AD92-4C18596660AB> , <urn:uuid:7194CBFF-333D-4493-80BE-A875F5EC086D> , <urn:uuid:06298F68-9317-49f0-9B4D-BA31C14E4EDA> , <urn:uuid:DF91CE06-7A0C-40f4-AC2B-368F11CC4427> ;
-        mim:naam       "Partnerschap" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:1A9C4B10-5DD5-44bc-AD92-4C18596660AB> , <urn:uuid:7194CBFF-333D-4493-80BE-A875F5EC086D> , <urn:uuid:06298F68-9317-49f0-9B4D-BA31C14E4EDA> , <urn:uuid:DF91CE06-7A0C-40f4-AC2B-368F11CC4427> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Partnerschap" .
 
 <urn:uuid:561CBF27-CB85-49ad-AFA5-2C8CEB05B253>
-        a         mim:Keuze ;
-        mim:naam  "entiteit of document" .
+        a       <http://bp4mc2.org/def/mim#Keuze> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "entiteit of document" .
 
 <urn:uuid:0441D83B-74B9-401e-A627-317DC60B4D57>
-        a         mim:Referentielijst ;
-        mim:naam  "RechercheResultaat" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "RechercheResultaat" .
 
 <urn:uuid:DF91CE06-7A0C-40f4-AC2B-368F11CC4427>
-        a         mim:Attribuutsoort ;
-        mim:naam  "datumOntbinding" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "datumOntbinding" .
 
 <urn:uuid:1A9C4B10-5DD5-44bc-AD92-4C18596660AB>
-        a         mim:Attribuutsoort ;
-        mim:naam  "verbintenisVoorwaarden" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "verbintenisVoorwaarden" .
 
 <urn:uuid:162A96E4-F53B-454c-86B4-63B2F473C893>
-        a         mim:Keuze ;
-        mim:naam  "TypeOnvolledigeDatum" .
+        a       <http://bp4mc2.org/def/mim#Keuze> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "TypeOnvolledigeDatum" .
 
 <urn:uuid:C00CB558-1E09-44ae-BD8D-53579E7CDB2D>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:B18F8209-191D-4708-A89F-E9E5FA174E3D> ;
-        mim:supertype  <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:B18F8209-191D-4708-A89F-E9E5FA174E3D> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
 
 <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:C8A9ECED-8F26-46ff-9536-4696423B6529> , <urn:uuid:618ACE7E-B618-4c4b-BCB2-D574051159AF> , <urn:uuid:72AA9F48-3548-4f93-99EC-6EAF85900F29> , <urn:uuid:F4C8AF79-E98C-43cc-96E5-F39CA96D1EBA> , <urn:uuid:BE998726-9CED-4a85-B58E-E3D52D2054C6> ;
-        mim:naam       "Nummeraanduiding" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:C8A9ECED-8F26-46ff-9536-4696423B6529> , <urn:uuid:618ACE7E-B618-4c4b-BCB2-D574051159AF> , <urn:uuid:72AA9F48-3548-4f93-99EC-6EAF85900F29> , <urn:uuid:F4C8AF79-E98C-43cc-96E5-F39CA96D1EBA> , <urn:uuid:BE998726-9CED-4a85-B58E-E3D52D2054C6> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Nummeraanduiding" .
 
 <urn:uuid:4AA4A23C-7571-44c7-AB5A-505D640CAA1F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "soort" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "soort" .
 
 <urn:uuid:774C8699-7EC8-4c48-AA15-F0A07511B637>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:07735DCE-2E3A-4f3f-A739-4AE0F2BA5938> ;
-        mim:doel  <urn:uuid:02C68C94-6B70-442a-B9A9-7AD326EE84F8> ;
-        mim:naam  "heeft" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:07735DCE-2E3A-4f3f-A739-4AE0F2BA5938> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:02C68C94-6B70-442a-B9A9-7AD326EE84F8> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "heeft" .
 
 <urn:uuid:72AA9F48-3548-4f93-99EC-6EAF85900F29>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:055F7933-56A3-4620-83C2-C6AFA5A59C47>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:ACE04D1B-E3EF-4695-8FDB-5993D10129B8> ;
-        mim:doel  <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
-        mim:naam  "heeftBetrekkingOp" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:ACE04D1B-E3EF-4695-8FDB-5993D10129B8> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "heeftBetrekkingOp" .
 
 <urn:uuid:B4A0EF4B-4721-44c4-BE12-975AD89D01A4>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> ;
-        mim:supertype  <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
 
 <urn:uuid:06E44859-0694-43d9-8092-349D4ED96408>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:D04FD057-BF08-4bb7-8752-128E58F8AD99> ;
-        mim:supertype  <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:D04FD057-BF08-4bb7-8752-128E58F8AD99> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> .
 
 <urn:uuid:CA93E700-9D86-4995-AA67-BCBF87114EB0>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:9F3D0152-7181-4fc8-9D56-47A4B348A38D> , <urn:uuid:5EF0C930-9540-4aad-A3F2-F0CAD108CA81> ;
-        mim:naam       "DigitaleIdentiteit" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:9F3D0152-7181-4fc8-9D56-47A4B348A38D> , <urn:uuid:5EF0C930-9540-4aad-A3F2-F0CAD108CA81> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "DigitaleIdentiteit" .
 
 <urn:uuid:EBB6C879-5D40-4211-AC83-28EED002A2F7>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2> ;
-        mim:doel  <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
-        mim:naam  "metVerenigingVanEigenaren" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "metVerenigingVanEigenaren" .
 
 <urn:uuid:0B2DE6C3-1437-4c5b-8ECA-2BA2B655A5C2>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "JaarlijksBedrag" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "JaarlijksBedrag" .
 
 <urn:uuid:979BE0AA-5CD4-4aee-A5D4-0D8F226DA3C8>
-        a         mim:Objecttype ;
-        mim:naam  "Bedenktijd" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Bedenktijd" .
 
 <urn:uuid:BFB3117B-CCDB-4c32-AA8D-A4BD68D65A3B>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:F00DB5D0-6BEA-4f6c-8F4D-2E3F6C7BB7CD> , <urn:uuid:84C3F2B6-C809-4b5a-9D64-0528CB131509> , <urn:uuid:6C7B4809-F134-4fee-8359-A03C2DD14DD8> ;
-        mim:naam       "Tenaamstelling" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:6C7B4809-F134-4fee-8359-A03C2DD14DD8> , <urn:uuid:F00DB5D0-6BEA-4f6c-8F4D-2E3F6C7BB7CD> , <urn:uuid:84C3F2B6-C809-4b5a-9D64-0528CB131509> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Tenaamstelling" .
 
 <urn:uuid:8B971582-5366-4d2e-8596-6AB05A994621>
-        a         mim:Attribuutsoort ;
-        mim:naam  "eindRegistratie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "eindRegistratie" .
 
 <urn:uuid:6CE3B463-E955-4abb-8B45-68EFB08FF140>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isAsbestAanwezig" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isAsbestAanwezig" .
 
 <urn:uuid:7D01B2EE-7102-489e-BDA5-11735CEE2965>
-        a         mim:Objecttype ;
-        mim:naam  "Ingebrekestelling" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Ingebrekestelling" .
 
 <urn:uuid:67E35BE3-44F1-4679-8672-0B8D207511AB>
-        a         mim:Attribuutsoort ;
-        mim:naam  "adres" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "adres" .
 
 <urn:uuid:ED4CFD6D-FF09-4b7d-A977-62EB72ACF2EA>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:335576D6-0DD9-4de6-8414-4060D2401448> ;
-        mim:supertype  <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:335576D6-0DD9-4de6-8414-4060D2401448> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
 
 <urn:uuid:156387A4-8175-4151-87BB-9E699B6CE82B>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2> ;
-        mim:supertype  <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> .
 
 <urn:uuid:B9E117AE-700A-4701-AC4F-C1EF1C5F7659>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aanschrijvingOverheidNutsbedrijf" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aanschrijvingOverheidNutsbedrijf" .
 
 <urn:uuid:898A9CD9-A52B-407b-9419-591F4EF01637>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:4AA4A23C-7571-44c7-AB5A-505D640CAA1F> , <urn:uuid:4B72E421-C366-4477-945E-8D2C32F46AF0> ;
-        mim:naam       "DocumentIdentiteit" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:4AA4A23C-7571-44c7-AB5A-505D640CAA1F> , <urn:uuid:4B72E421-C366-4477-945E-8D2C32F46AF0> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "DocumentIdentiteit" .
 
 <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A>
-        a         mim:Objecttype ;
-        mim:naam  "ObjectLocatie" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ObjectLocatie" .
 
 <urn:uuid:8366FB5E-CC41-4738-A1AE-662F0DA319CE>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:10302255-FF22-40b3-8B37-712DBE699BC4> , <urn:uuid:20116193-4AF4-4539-A26C-F35F33A3295F> ;
-        mim:naam       "Provenance" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:10302255-FF22-40b3-8B37-712DBE699BC4> , <urn:uuid:20116193-4AF4-4539-A26C-F35F33A3295F> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Provenance" .
 
 <urn:uuid:30830377-3D0E-43dc-A42D-9EB91905ECEB>
-        a         mim:Objecttype ;
-        mim:naam  "Woonplaats" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Woonplaats" .
 
 <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:BAE9BDBD-E1B5-49d8-9EF7-36315D19658D> ;
-        mim:naam       "BouwtechnischeKeuring" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:BAE9BDBD-E1B5-49d8-9EF7-36315D19658D> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "BouwtechnischeKeuring" .
 
 <urn:uuid:83CE81AD-8ACB-464e-A922-4BE1A97D0F86>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:515A31B2-0514-4fe8-9C71-4084641EC47C>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:A21B26D3-51AD-4c57-9237-588540F46958> ;
-        mim:naam               "kosten" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:A21B26D3-51AD-4c57-9237-588540F46958> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "kosten" .
 
 <urn:uuid:91CF35C1-FBCD-4a9c-83CD-524DC8E0A89D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aardClausule" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aardClausule" .
 
 <urn:uuid:E23CD7D8-B8EB-4e45-8DB0-B582DF869B0B>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
-        mim:supertype  <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> .
 
 <urn:uuid:7E8592E4-295A-4d03-8027-73CFF94D1E5A>
-        a         mim:Attribuutsoort ;
-        mim:naam  "standaardBetalingsconditie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "standaardBetalingsconditie" .
 
 <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071>
-        a                  mim:Objecttype ;
-        mim:attribuut      <urn:uuid:6DDF283D-6CF9-4bc3-9A4F-7435235812FF> , <urn:uuid:BEF5D4E0-4952-4355-BC8E-3CCAD98EAD23> , <urn:uuid:7E8592E4-295A-4d03-8027-73CFF94D1E5A> ;
-        mim:gegevensgroep  <urn:uuid:515A31B2-0514-4fe8-9C71-4084641EC47C> ;
-        mim:naam           "Koop" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:6DDF283D-6CF9-4bc3-9A4F-7435235812FF> , <urn:uuid:BEF5D4E0-4952-4355-BC8E-3CCAD98EAD23> , <urn:uuid:7E8592E4-295A-4d03-8027-73CFF94D1E5A> ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:515A31B2-0514-4fe8-9C71-4084641EC47C> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Koop" .
 
 <urn:uuid:A32BA471-9990-43a7-A9FD-0F16866C2FD4>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:A5E11066-1736-42fd-8953-74089C7A05CC> ;
-        mim:naam               "uitgevoerdeControle" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:A5E11066-1736-42fd-8953-74089C7A05CC> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "uitgevoerdeControle" .
 
 <urn:uuid:02C68C94-6B70-442a-B9A9-7AD326EE84F8>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:CF81FAB3-CF42-4547-B46D-81A6081EBB6A> ;
-        mim:naam       "Registergoed" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:CF81FAB3-CF42-4547-B46D-81A6081EBB6A> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Registergoed" .
 
 <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B>
-        a         mim:Objecttype ;
-        mim:naam  "ObjectlocatieBinnenland" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ObjectlocatieBinnenland" .
 
 <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8>
-        a         mim:Objecttype ;
-        mim:naam  "BeperktRecht" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "BeperktRecht" .
 
 <urn:uuid:E3BF3802-9C35-415f-B3DE-FBB7BD7712C2>
-        a         mim:Referentielijst ;
-        mim:naam  "Rechtsvorm" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Rechtsvorm" .
 
 <urn:uuid:A38DAFDE-834A-485f-8991-8D74AC6E70FE>
-        a         mim:Attribuutsoort ;
-        mim:naam  "kvkNummer" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "kvkNummer" .
 
 <urn:uuid:1756A110-1561-47fc-AE47-53B4BC0A0EF9>
-        a         mim:Objecttype ;
-        mim:naam  "Hoofdelijkheid" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Hoofdelijkheid" .
 
 <urn:uuid:F5FCFAC2-5358-4590-8AA6-C0DA177C1B32>
-        a         mim:Attribuutsoort ;
-        mim:naam  "inspectie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "inspectie" .
 
 <urn:uuid:A8146DD7-6246-4b24-9BE8-38D10AD1F529>
-        a         mim:Objecttype ;
-        mim:naam  "IdentificatiePersoon" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "IdentificatiePersoon" .
 
 <urn:uuid:F5522265-E5DF-4647-B167-9E6CB205150E>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:1F1AAA64-7A94-4b50-A1D3-19A31AB894CA> ;
-        mim:supertype  <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:1F1AAA64-7A94-4b50-A1D3-19A31AB894CA> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
 
 <urn:uuid:ABB8E72B-D197-4ce1-93AA-93AD1A9DA186>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:C0873187-8660-448a-A353-315C87E26938> ;
-        mim:supertype  <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:C0873187-8660-448a-A353-315C87E26938> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> .
 
 <urn:uuid:D3262785-03B3-45a0-9FAB-82136DA8C03E>
-        a         mim:Attribuutsoort ;
-        mim:naam  "lijstReferentie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "lijstReferentie" .
 
 <urn:uuid:B6A2F368-7581-46b1-81E5-155CEC110498>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:800E7296-9289-44d5-A353-02B1C4948BF1>
-        a         mim:Attribuutsoort ;
-        mim:naam  "datumOverlijden" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "datumOverlijden" .
 
 <urn:uuid:61AFF3F4-8919-4592-8240-F2845529373D>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:EABD8195-DAF5-475a-AB32-3AB0CE79E14E> , <urn:uuid:70E2F20B-A658-4334-8213-3A65F0E82FBA> ;
-        mim:naam       "Contactgegevens" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:EABD8195-DAF5-475a-AB32-3AB0CE79E14E> , <urn:uuid:70E2F20B-A658-4334-8213-3A65F0E82FBA> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Contactgegevens" .
 
 <urn:uuid:E40799E4-71C6-48ec-A852-931CE5AF349C>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:F2B5280F-8C22-4b3f-80E5-282D68F21FC3> ;
-        mim:naam               "geboorte" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:F2B5280F-8C22-4b3f-80E5-282D68F21FC3> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "geboorte" .
 
 <urn:uuid:417D2D14-2CED-4613-8B6B-A84F2F96BC2D>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:0D822404-A7E7-4d7a-AF2A-F980F4AB8BC3> , <urn:uuid:17C6C32F-207C-4e20-AFF0-ABEC39B30ACC> , <urn:uuid:CBB9CA2A-6F01-43c4-9167-6236B0B2785D> , <urn:uuid:BBA189C0-CAF6-45be-AFAA-B430B4D43CDA> ;
-        mim:naam       "FeitelijkeLevering" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:0D822404-A7E7-4d7a-AF2A-F980F4AB8BC3> , <urn:uuid:17C6C32F-207C-4e20-AFF0-ABEC39B30ACC> , <urn:uuid:CBB9CA2A-6F01-43c4-9167-6236B0B2785D> , <urn:uuid:BBA189C0-CAF6-45be-AFAA-B430B4D43CDA> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "FeitelijkeLevering" .
 
 <urn:uuid:6979DE6B-D410-494c-BBA6-0C316ED45AF7>
-        a                  mim:Objecttype ;
-        mim:attribuut      <urn:uuid:BF011193-EEBB-4792-BCD0-46A62A1A69CC> , <urn:uuid:9EBF8FC2-2B55-433b-9985-E69941C58B04> ;
-        mim:gegevensgroep  <urn:uuid:B89F2F8C-FC1B-4c90-9084-3CAC428A9F9C> ;
-        mim:naam           "Erfpacht" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:BF011193-EEBB-4792-BCD0-46A62A1A69CC> , <urn:uuid:9EBF8FC2-2B55-433b-9985-E69941C58B04> ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:B89F2F8C-FC1B-4c90-9084-3CAC428A9F9C> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Erfpacht" .
 
 <urn:uuid:5B36E1AC-3F59-40d6-8772-B78EC7AF3E4E>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bedrag" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bedrag" .
 
 <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:994D4868-6E48-4660-BE58-EE35FA2BC31E> ;
-        mim:naam       "JuridischeLevering" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:994D4868-6E48-4660-BE58-EE35FA2BC31E> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "JuridischeLevering" .
 
 <urn:uuid:6BE16794-21C6-4495-83AB-82BA8FB74C56>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:A8146DD7-6246-4b24-9BE8-38D10AD1F529> ;
-        mim:doel  <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
-        mim:naam  "vanPersoon" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:A8146DD7-6246-4b24-9BE8-38D10AD1F529> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "vanPersoon" .
 
 <urn:uuid:DE56DBA5-AA7E-47b0-AFA3-3AB5BA2EB1E1>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:D3262785-03B3-45a0-9FAB-82136DA8C03E> , <urn:uuid:A682234D-EA37-4e4d-9846-536C5A17D718> , <urn:uuid:12FA46ED-B9DC-45ca-AA6E-38AEE153A633> ;
-        mim:naam       "LijstVanGoederen" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:D3262785-03B3-45a0-9FAB-82136DA8C03E> , <urn:uuid:A682234D-EA37-4e4d-9846-536C5A17D718> , <urn:uuid:12FA46ED-B9DC-45ca-AA6E-38AEE153A633> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "LijstVanGoederen" .
 
 <urn:uuid:95A369F3-8302-4aa5-A1B9-6D64FF24B295>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
-        mim:supertype  <urn:uuid:02C68C94-6B70-442a-B9A9-7AD326EE84F8> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:02C68C94-6B70-442a-B9A9-7AD326EE84F8> .
 
 <urn:uuid:382E926A-02B4-446e-A383-638C7552D916>
-        a         mim:Attribuutsoort ;
-        mim:naam  "land" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "land" .
 
 <urn:uuid:BB0674EC-2CE3-499f-ADF4-4CF6A1A85775>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E> ;
-        mim:doel  <urn:uuid:5E4F1500-0A67-4d58-85D5-274CC21EE948> ;
-        mim:naam  "gerelateerdeOpenbareRuimte" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:5E4F1500-0A67-4d58-85D5-274CC21EE948> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "gerelateerdeOpenbareRuimte" .
 
 <urn:uuid:30DA9C49-F368-45cf-921F-CFC534D4E050>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isBeschermdStadsOfDorpsGezichtBekend" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isBeschermdStadsOfDorpsGezichtBekend" .
 
 <urn:uuid:BBA189C0-CAF6-45be-AFAA-B430B4D43CDA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "overdrachtOvereenkomsten" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "overdrachtOvereenkomsten" .
 
 <urn:uuid:87CFF4D1-E061-41b8-81B5-8589BE036512>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:AEEF8312-D021-4aac-B90B-EEF214E9A260> ;
-        mim:supertype  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:AEEF8312-D021-4aac-B90B-EEF214E9A260> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> .
 
 <urn:uuid:80AD4F4E-79B8-44cf-980D-4A6360C10DE1>
-        a         mim:Attribuutsoort ;
-        mim:naam  "onderzoeksDatum" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "onderzoeksDatum" .
 
 <urn:uuid:F5FD2E21-89F2-4fef-A828-DF37242CE7F0>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:BFB3117B-CCDB-4c32-AA8D-A4BD68D65A3B> ;
-        mim:doel  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
-        mim:naam  "van" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:BFB3117B-CCDB-4c32-AA8D-A4BD68D65A3B> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "van" .
 
 <urn:uuid:76AC54AE-A95F-4f8a-BFDC-D4223BED8A97>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:30830377-3D0E-43dc-A42D-9EB91905ECEB> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:30830377-3D0E-43dc-A42D-9EB91905ECEB> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:7F819EAA-77FC-4b94-96DE-9EE55E835EC1>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:CD2C7F3A-09E2-4352-A43D-0990B469076D> , <urn:uuid:FA90C8CE-2728-40ef-8AA4-C6F3B8C10712> , <urn:uuid:A9B66E91-89DC-49d5-ACE5-19429B96FAF1> ;
-        mim:naam       "Naam" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:CD2C7F3A-09E2-4352-A43D-0990B469076D> , <urn:uuid:FA90C8CE-2728-40ef-8AA4-C6F3B8C10712> , <urn:uuid:A9B66E91-89DC-49d5-ACE5-19429B96FAF1> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Naam" .
 
 <urn:uuid:6DA32FBA-0504-46eb-8310-CFF0C0BCA290>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:67EBEC04-AAD4-427a-B5B4-2202D0FA7C32> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:67EBEC04-AAD4-427a-B5B4-2202D0FA7C32> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:A3CF5837-28D8-4172-A310-E77102E76B23>
-        a         mim:Referentielijst ;
-        mim:naam  "StatusHistorie" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "StatusHistorie" .
 
 <urn:uuid:9D9DA025-F632-40f6-9E0F-87F3A3E65010>
-        a         mim:Attribuutsoort ;
-        mim:naam  "tijdstipRegistratieOR" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "tijdstipRegistratieOR" .
 
 <urn:uuid:DE34D5AB-6215-4144-9BA4-33609312FC30>
-        a                  mim:Objecttype ;
-        mim:gegevensgroep  <urn:uuid:E0723CCB-EECC-4f1c-9342-6D04222E09EB> ;
-        mim:naam           "VoorkomenNEN3610" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:E0723CCB-EECC-4f1c-9342-6D04222E09EB> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "VoorkomenNEN3610" .
 
 <urn:uuid:91AD6CCA-814C-4fdb-B3D6-C1787ED19B87>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aanduidingNaamgebruik" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aanduidingNaamgebruik" .
 
 <urn:uuid:BA98A209-ABD4-4ded-B4DB-09772DF240D3>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5>
-        a                  mim:Objecttype ;
-        mim:attribuut      <urn:uuid:388A7849-22D5-4454-9D33-1C038C4D960B> , <urn:uuid:91AD6CCA-814C-4fdb-B3D6-C1787ED19B87> , <urn:uuid:834247E4-5324-442e-B9B2-477AA7FFC403> , <urn:uuid:88146508-B162-462a-B1D5-0F4E4663CE70> , <urn:uuid:09D70025-0330-4886-894B-46B961095AF2> ;
-        mim:gegevensgroep  <urn:uuid:C08223F6-ED6B-4fc7-AE7F-ACF61A9633C8> , <urn:uuid:E40799E4-71C6-48ec-A852-931CE5AF349C> , <urn:uuid:1CFF49E3-927F-4422-B073-F6FB71A80AA5> ;
-        mim:naam           "NatuurlijkPersoon" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:388A7849-22D5-4454-9D33-1C038C4D960B> , <urn:uuid:91AD6CCA-814C-4fdb-B3D6-C1787ED19B87> , <urn:uuid:834247E4-5324-442e-B9B2-477AA7FFC403> , <urn:uuid:88146508-B162-462a-B1D5-0F4E4663CE70> , <urn:uuid:09D70025-0330-4886-894B-46B961095AF2> ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:C08223F6-ED6B-4fc7-AE7F-ACF61A9633C8> , <urn:uuid:E40799E4-71C6-48ec-A852-931CE5AF349C> , <urn:uuid:1CFF49E3-927F-4422-B073-F6FB71A80AA5> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "NatuurlijkPersoon" .
 
 <urn:uuid:03F0B770-51B6-4879-BEB3-AB0E4DBE83CF>
-        a         mim:Keuze ;
-        mim:naam  "RechercheKeuze" .
+        a       <http://bp4mc2.org/def/mim#Keuze> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "RechercheKeuze" .
 
 <urn:uuid:586BAFEE-EFBF-47ce-B4A0-C7E95765FE17>
-        a         mim:Referentielijst ;
-        mim:naam  "GrondslagBevoegdheid" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "GrondslagBevoegdheid" .
 
 <urn:uuid:20116193-4AF4-4539-A26C-F35F33A3295F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "activity" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "activity" .
 
 <urn:uuid:834435B0-F626-42f6-9821-93F8DE534014>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:74B656B9-47E5-4c96-86C2-4A4BBD67ABCE> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:74B656B9-47E5-4c96-86C2-4A4BBD67ABCE> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF>
-        a         mim:Objecttype ;
-        mim:naam  "Afspraak" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Afspraak" .
 
 <urn:uuid:A19D3B18-3E06-4252-AEE0-9A5C3395B171>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:9B43C4B0-1A49-42fc-94B3-8C7B34ABE9C7> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:9B43C4B0-1A49-42fc-94B3-8C7B34ABE9C7> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:7194CBFF-333D-4493-80BE-A875F5EC086D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "soortVerbintenis" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "soortVerbintenis" .
 
 <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:09BD0457-3102-4c0d-BA47-3677451D36C5> , <urn:uuid:453F510D-D03E-4fdc-80F8-55B3D0324C42> ;
-        mim:naam       "OnroerendeZaak" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:09BD0457-3102-4c0d-BA47-3677451D36C5> , <urn:uuid:453F510D-D03E-4fdc-80F8-55B3D0324C42> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "OnroerendeZaak" .
 
 <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:B6A2F368-7581-46b1-81E5-155CEC110498> ;
-        mim:naam       "Partij" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:B6A2F368-7581-46b1-81E5-155CEC110498> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Partij" .
 
 <urn:uuid:7B5FEEFA-61EF-480b-82EB-08A61891C71C>
-        a         mim:Attribuutsoort ;
-        mim:naam  "statusHistorie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "statusHistorie" .
 
 <urn:uuid:618ACE7E-B618-4c4b-BCB2-D574051159AF>
-        a         mim:Attribuutsoort ;
-        mim:naam  "postcode" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "postcode" .
 
 <urn:uuid:5F1029E8-4EF2-44b2-9488-B74BAEF3D699>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> ;
-        mim:supertype  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> .
 
 <urn:uuid:1FDF285D-496E-46cd-A226-86840250389E>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:C93DD7C9-09BE-4a24-8CED-45C9CFDB3145> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:C93DD7C9-09BE-4a24-8CED-45C9CFDB3145> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:A5A0B174-BD72-4f0b-B6D5-553DEBBD4B76>
-        a         mim:Attribuutsoort ;
-        mim:naam  "uiterlijkeDatumGarantie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "uiterlijkeDatumGarantie" .
 
 <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:91CF35C1-FBCD-4a9c-83CD-524DC8E0A89D> , <urn:uuid:7D103280-AF27-437b-B31D-D04599E2A57D> ;
-        mim:naam       "Clausule" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:91CF35C1-FBCD-4a9c-83CD-524DC8E0A89D> , <urn:uuid:7D103280-AF27-437b-B31D-D04599E2A57D> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Clausule" .
 
 <urn:uuid:CD25564C-3E8C-49a9-8961-D8F8219F4BCA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "perceel" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "perceel" .
 
 <urn:uuid:ADF67F3C-144C-4601-A793-520E0DDD11B9>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:5B36E1AC-3F59-40d6-8772-B78EC7AF3E4E> , <urn:uuid:A5A0B174-BD72-4f0b-B6D5-553DEBBD4B76> , <urn:uuid:746601BA-4724-467a-8E5C-A512B03695C8> ;
-        mim:naam       "BankgarantieOfWaarborgsom" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:5B36E1AC-3F59-40d6-8772-B78EC7AF3E4E> , <urn:uuid:A5A0B174-BD72-4f0b-B6D5-553DEBBD4B76> , <urn:uuid:746601BA-4724-467a-8E5C-A512B03695C8> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "BankgarantieOfWaarborgsom" .
 
 <urn:uuid:1E193C12-66E2-4a46-B0CA-C55174D4AEB5>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
-        mim:doel  <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
-        mim:naam  "isUitvoeringVan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isUitvoeringVan" .
 
 <urn:uuid:7C24F6D0-57D9-4e02-9F79-A36D37F0D2F8>
-        a         mim:Objecttype ;
-        mim:naam  "KoperRecherche" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "KoperRecherche" .
 
 <urn:uuid:99A0C8CA-58F9-4a10-90BC-2BE21CD6DC53>
-        a         mim:Attribuutsoort ;
-        mim:naam  "wegneemrechtHuurder" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "wegneemrechtHuurder" .
 
 <urn:uuid:44503B77-9299-43aa-9431-6759E72ADFE9>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:A8146DD7-6246-4b24-9BE8-38D10AD1F529> ;
-        mim:doel  <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> ;
-        mim:naam  "opBasisVan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:A8146DD7-6246-4b24-9BE8-38D10AD1F529> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "opBasisVan" .
 
 <urn:uuid:C069BFFE-B41A-48c2-AC22-BB62BA1991D7>
-        a         mim:Attribuutsoort ;
-        mim:naam  "verrekeningOverdrachtsbelastingArt13" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "verrekeningOverdrachtsbelastingArt13" .
 
 <urn:uuid:5EF0C930-9540-4aad-A3F2-F0CAD108CA81>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identityResult" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identityResult" .
 
 <urn:uuid:45DF06D0-6CBC-41cb-9D1D-237BEDEF47DD>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aandeelInGemeenschap" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aandeelInGemeenschap" .
 
 <urn:uuid:A9B66E91-89DC-49d5-ACE5-19429B96FAF1>
-        a         mim:Attribuutsoort ;
-        mim:naam  "geslachtsnaam" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "geslachtsnaam" .
 
 <urn:uuid:335576D6-0DD9-4de6-8414-4060D2401448>
-        a         mim:Referentielijst ;
-        mim:naam  "BevoegdheidVerkoper" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "BevoegdheidVerkoper" .
 
 <urn:uuid:44BDDDF4-4549-4ab8-9C05-F887C2EE03EF>
-        a         mim:Attribuutsoort ;
-        mim:naam  "openbareRuimteNaam" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "openbareRuimteNaam" .
 
 <urn:uuid:F409188E-4DD3-4eff-AFF4-B7225BE9F496>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:CA93E700-9D86-4995-AA67-BCBF87114EB0> ;
-        mim:supertype  <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:CA93E700-9D86-4995-AA67-BCBF87114EB0> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> .
 
 <urn:uuid:8DC4C584-1CE5-4dcc-928C-848F0EC319E4>
-        a         mim:Attribuutsoort ;
-        mim:naam  "tijdstipVervallenOR" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "tijdstipVervallenOR" .
 
 <urn:uuid:BD581A2B-8A84-46e4-ADD9-ACD56EE1EEA0>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:800E7296-9289-44d5-A353-02B1C4948BF1> ;
-        mim:naam       "Overlijden" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:800E7296-9289-44d5-A353-02B1C4948BF1> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Overlijden" .
 
 <urn:uuid:6B541749-F7D6-4b72-827E-51DD8BD0112B>
-        a         mim:Attribuutsoort ;
-        mim:naam  "tijdstipRegistratie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "tijdstipRegistratie" .
 
 <urn:uuid:CDC88E90-B234-4a96-A70C-F67681D8AE12>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
-        mim:supertype  <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> .
 
 <urn:uuid:BC52C885-0B0E-41bf-84A9-3E0A228F5C83>
-        a         mim:Referentielijst ;
-        mim:naam  "ErfpachtType" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ErfpachtType" .
 
 <urn:uuid:A21B26D3-51AD-4c57-9237-588540F46958>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:E6738509-6636-4ebb-B3A7-2D079B1693B8> , <urn:uuid:0C8E69F1-B3A4-4499-87F8-18A764EC2E3C> , <urn:uuid:C069BFFE-B41A-48c2-AC22-BB62BA1991D7> ;
-        mim:naam       "KostenEnOverdrachtsbelasting" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:E6738509-6636-4ebb-B3A7-2D079B1693B8> , <urn:uuid:0C8E69F1-B3A4-4499-87F8-18A764EC2E3C> , <urn:uuid:C069BFFE-B41A-48c2-AC22-BB62BA1991D7> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "KostenEnOverdrachtsbelasting" .
 
 <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:B92CC679-D6ED-4b1d-92C5-7965B8C333C7> ;
-        mim:naam       "ZakelijkRecht" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:B92CC679-D6ED-4b1d-92C5-7965B8C333C7> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ZakelijkRecht" .
 
 <urn:uuid:9397C5A4-CFB6-4493-BFE9-F86142793236>
-        a         mim:Attribuutsoort ;
-        mim:naam  "statusHistorie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "statusHistorie" .
 
 <urn:uuid:E08754CD-4291-4406-BB5D-72EBB8DFD5AE>
-        a         mim:Attribuutsoort ;
-        mim:naam  "machtigingIndicatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "machtigingIndicatie" .
 
 <urn:uuid:70AB0027-54AE-4c41-BA17-6737375721BC>
-        a         mim:Attribuutsoort ;
-        mim:naam  "eindTijd" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "eindTijd" .
 
 <urn:uuid:6BAAF3C7-5A0D-407d-ACED-6DC789C05D4F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "registrerenNa" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "registrerenNa" .
 
 <urn:uuid:4D397A5A-1CD0-4c12-A319-56C0E0E83F63>
-        a         mim:Attribuutsoort ;
-        mim:naam  "eindGeldigheid" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "eindGeldigheid" .
 
 <urn:uuid:B89F2F8C-FC1B-4c90-9084-3CAC428A9F9C>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:2543A689-C42B-4b86-BF86-C09AF5A65740> ;
-        mim:naam               "metErfpachtCanon" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:2543A689-C42B-4b86-BF86-C09AF5A65740> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "metErfpachtCanon" .
 
 <urn:uuid:AABCD4B3-0AAC-4fae-9E65-93BBBAD5193A>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
-        mim:supertype  <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> .
 
 <urn:uuid:1B28D735-63E5-49bd-BA67-4645A6A26F48>
-        a         mim:Attribuutsoort ;
-        mim:naam  "vanToepassing" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "vanToepassing" .
 
 <urn:uuid:1A23B47A-7C59-4032-B501-0A06B6BE8362>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:D2A78D35-1EBD-4286-A23E-D2C82C63ED96> ;
-        mim:supertype  <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:D2A78D35-1EBD-4286-A23E-D2C82C63ED96> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> .
 
 <urn:uuid:FC261419-B0B5-4e78-BD5B-E60305AC8969>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
-        mim:supertype  <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> .
 
 <urn:uuid:9F3D0152-7181-4fc8-9D56-47A4B348A38D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "adres" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "adres" .
 
 <urn:uuid:F1F55F0A-5698-41fe-A723-C2744A061638>
-        a         mim:Attribuutsoort ;
-        mim:naam  "geboorteland" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "geboorteland" .
 
 <urn:uuid:17C6C32F-207C-4e20-AFF0-ABEC39B30ACC>
-        a         mim:Attribuutsoort ;
-        mim:naam  "huurLeaseHuurkoopovereenkomste" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "huurLeaseHuurkoopovereenkomste" .
 
 <urn:uuid:834247E4-5324-442e-B9B2-477AA7FFC403>
-        a         mim:Attribuutsoort ;
-        mim:naam  "indicatieGeheim" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "indicatieGeheim" .
 
 <urn:uuid:07735DCE-2E3A-4f3f-A739-4AE0F2BA5938>
-        a         mim:Objecttype ;
-        mim:naam  "LocatieRegistergoed" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "LocatieRegistergoed" .
 
 <urn:uuid:962F13C3-5FDC-424b-BBE7-E2501D5FB593>
-        a              mim:Relatieklasse ;
-        mim:attribuut  <urn:uuid:D0B14D85-5E2B-4000-B001-C582DA4ABC9E> ;
-        mim:naam       "Vertegenwoordiging" .
+        a       <http://bp4mc2.org/def/mim#Relatieklasse> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:D0B14D85-5E2B-4000-B001-C582DA4ABC9E> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Vertegenwoordiging" .
 
 <urn:uuid:09D70025-0330-4886-894B-46B961095AF2>
-        a         mim:Attribuutsoort ;
-        mim:naam  "indicatieOverleden" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "indicatieOverleden" .
 
 <urn:uuid:D907BD58-50DB-40bf-996C-16A61BFE3AAA>
-        a         mim:Referentielijst ;
-        mim:naam  "SoortGarantie" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "SoortGarantie" .
 
 <urn:uuid:F6072CD9-EA91-4d72-8594-A02304752067>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> ;
-        mim:doel  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
-        mim:naam  "bezwaart" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bezwaart" .
 
 <urn:uuid:6B3BBEE5-A278-4561-B488-D2747551B864>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
-        mim:doel  <urn:uuid:03F0B770-51B6-4879-BEB3-AB0E4DBE83CF> ;
-        mim:naam  "van" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:03F0B770-51B6-4879-BEB3-AB0E4DBE83CF> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "van" .
 
 <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:D0C242F8-518C-40a3-9020-BBA422EA7C90> ;
-        mim:naam       "Agent" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:D0C242F8-518C-40a3-9020-BBA422EA7C90> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Agent" .
 
 <urn:uuid:70E2F20B-A658-4334-8213-3A65F0E82FBA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "e-mailAdres" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "e-mailAdres" .
 
 <urn:uuid:C9372558-FBD0-46a7-B400-9A90C4E7497B>
-        a         mim:Attribuutsoort ;
-        mim:naam  "activiteitNaam" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "activiteitNaam" .
 
 <urn:uuid:01CFBE1A-9D91-412a-BA51-BFD1F4A9AE43>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:1673F612-35C9-4a3b-A184-00CAC2C33C5F> ;
-        mim:doel  <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
-        mim:naam  "verbindt" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:1673F612-35C9-4a3b-A184-00CAC2C33C5F> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "verbindt" .
 
 <urn:uuid:ED6D2318-01BE-41d9-A0A4-CA40262DF637>
-        a         mim:Attribuutsoort ;
-        mim:naam  "rechercheReferentie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "rechercheReferentie" .
 
 <urn:uuid:2DCB510C-1AFB-4b90-8AE7-E6E9AD505FC8>
-        a         mim:Attribuutsoort ;
-        mim:naam  "tenaamstelling" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "tenaamstelling" .
 
 <urn:uuid:764DFF77-74C8-4d48-874F-69165E5B5157>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:BFB3117B-CCDB-4c32-AA8D-A4BD68D65A3B> ;
-        mim:doel  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
-        mim:naam  "is" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:BFB3117B-CCDB-4c32-AA8D-A4BD68D65A3B> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "is" .
 
 <urn:uuid:3B3B6E16-6135-4b81-8327-B6FFD365D849>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:3F542A41-7D16-42f5-8EAB-A2396FCA9B3D> ;
-        mim:naam               "machtigingVVEVergadering" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:3F542A41-7D16-42f5-8EAB-A2396FCA9B3D> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "machtigingVVEVergadering" .
 
 <urn:uuid:E71C598B-B507-4dcd-B4D6-DD39AE84F20E>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:D2A78D35-1EBD-4286-A23E-D2C82C63ED96> ;
-        mim:doel  <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> ;
-        mim:naam  "opBasisVanManifestatieVan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:D2A78D35-1EBD-4286-A23E-D2C82C63ED96> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "opBasisVanManifestatieVan" .
 
 <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:A38DAFDE-834A-485f-8991-8D74AC6E70FE> , <urn:uuid:6FD921B1-EB63-4463-88CA-7F602D334C67> , <urn:uuid:6E585A2C-96CF-46f3-B9DD-67D5610898AF> , <urn:uuid:BB8DD28C-2F66-45b4-B60F-B4AED1F7CD08> , <urn:uuid:3039D005-F2EC-426c-9061-51716E973B3D> ;
-        mim:naam       "NietNatuurlijkPersoon" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:A38DAFDE-834A-485f-8991-8D74AC6E70FE> , <urn:uuid:6FD921B1-EB63-4463-88CA-7F602D334C67> , <urn:uuid:6E585A2C-96CF-46f3-B9DD-67D5610898AF> , <urn:uuid:BB8DD28C-2F66-45b4-B60F-B4AED1F7CD08> , <urn:uuid:3039D005-F2EC-426c-9061-51716E973B3D> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "NietNatuurlijkPersoon" .
 
 <urn:uuid:3BE713EE-E4EA-464d-B821-0CB552716920>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:5E4F1500-0A67-4d58-85D5-274CC21EE948> ;
-        mim:doel  <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735> ;
-        mim:naam  "gerelateerdeWoonplaats" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:5E4F1500-0A67-4d58-85D5-274CC21EE948> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "gerelateerdeWoonplaats" .
 
 <urn:uuid:746601BA-4724-467a-8E5C-A512B03695C8>
-        a         mim:Attribuutsoort ;
-        mim:naam  "garantie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "garantie" .
 
 <urn:uuid:77F008F2-70B5-41ca-B072-61BF9AD71599>
-        a         mim:Objecttype ;
-        mim:naam  "IdentiteitPartijen" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "IdentiteitPartijen" .
 
 <urn:uuid:01D15C51-BD27-4ad8-8D09-E7A628F9535A>
-        a         mim:Attribuutsoort ;
-        mim:naam  "oppervlakte" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "oppervlakte" .
 
 <urn:uuid:05E1F45F-2980-454d-A77A-D79C13C418CE>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:1B28D735-63E5-49bd-BA67-4645A6A26F48> ;
-        mim:naam       "FinancieringMetNHGGarantie" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:1B28D735-63E5-49bd-BA67-4645A6A26F48> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "FinancieringMetNHGGarantie" .
 
 <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:45DF06D0-6CBC-41cb-9D1D-237BEDEF47DD> ;
-        mim:naam       "Appartementsrecht" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:45DF06D0-6CBC-41cb-9D1D-237BEDEF47DD> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Appartementsrecht" .
 
 <urn:uuid:84C3F2B6-C809-4b5a-9D64-0528CB131509>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:453F510D-D03E-4fdc-80F8-55B3D0324C42>
-        a         mim:Attribuutsoort ;
-        mim:naam  "kadastraleAanduiding" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "kadastraleAanduiding" .
 
 <urn:uuid:EEA8E1FE-77B6-4215-8EBA-0F837B46A661>
-        a         mim:Attribuutsoort ;
-        mim:naam  "woonplaats" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "woonplaats" .
 
 <urn:uuid:D04FD057-BF08-4bb7-8752-128E58F8AD99>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:1500DA40-5A3D-4711-9211-1B07186A962F> , <urn:uuid:7BB763BC-08F1-489b-8C02-2C6D435510DA> ;
-        mim:naam       "Perceel" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:1500DA40-5A3D-4711-9211-1B07186A962F> , <urn:uuid:7BB763BC-08F1-489b-8C02-2C6D435510DA> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Perceel" .
 
 <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:422DDB5E-AF5A-4f00-ACBF-410CCB6486CB> ;
-        mim:naam       "Woonplaats" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:422DDB5E-AF5A-4f00-ACBF-410CCB6486CB> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Woonplaats" .
 
 <urn:uuid:98C5D89B-0209-406d-BE33-958C318A3442>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE> ;
-        mim:supertype  <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
 
 <urn:uuid:87A1260A-EB39-46c2-88AD-12B856B34E75>
-        a         mim:Attribuutsoort ;
-        mim:naam  "resultaat" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "resultaat" .
 
 <urn:uuid:994D4868-6E48-4660-BE58-EE35FA2BC31E>
-        a         mim:Attribuutsoort ;
-        mim:naam  "datumAfspraak" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "datumAfspraak" .
 
 <urn:uuid:ADF5951B-2060-4ca6-BBDD-051E44B3F88E>
-        a         mim:Objecttype ;
-        mim:naam  "Organisatie" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Organisatie" .
 
 <urn:uuid:6A6A62B3-1D07-4521-8640-6880E28A006D>
-        a         mim:Objecttype ;
-        mim:naam  "Brondocument" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Brondocument" .
 
 <urn:uuid:D85108D0-11DF-4218-86A3-1814C0E00399>
-        a         mim:Attribuutsoort ;
-        mim:naam  "tijdstipRegistratie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "tijdstipRegistratie" .
 
 <urn:uuid:E6B51C30-CF01-4674-A3C0-607D657D68DC>
-        a         mim:Referentielijst ;
-        mim:naam  "SoortGrootte" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "SoortGrootte" .
 
 <urn:uuid:5604C796-6A28-4802-8A9B-CBE341928C33>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:586BAFEE-EFBF-47ce-B4A0-C7E95765FE17> ;
-        mim:supertype  <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:586BAFEE-EFBF-47ce-B4A0-C7E95765FE17> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
 
 <urn:uuid:7BB763BC-08F1-489b-8C02-2C6D435510DA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "begrenzingPerceel" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "begrenzingPerceel" .
 
 <urn:uuid:66C2477F-3330-42a9-8F5F-6252D0FD47D3>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:07735DCE-2E3A-4f3f-A739-4AE0F2BA5938> ;
-        mim:doel  <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
-        mim:naam  "betreft" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:07735DCE-2E3A-4f3f-A739-4AE0F2BA5938> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "betreft" .
 
 <urn:uuid:9726BD73-680D-4fd4-A989-75A43BAF404B>
-        a         mim:Attribuutsoort ;
-        mim:naam  "akteDatum" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "akteDatum" .
 
 <urn:uuid:ED418BB8-65B0-4932-9854-89637B88D8BD>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
-        mim:doel  <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
-        mim:naam  "wasOntstaanDoor" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "wasOntstaanDoor" .
 
 <urn:uuid:6DDF283D-6CF9-4bc3-9A4F-7435235812FF>
-        a         mim:Attribuutsoort ;
-        mim:naam  "status" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "status" .
 
 <urn:uuid:A186A020-B3AB-4690-B2D0-09D2790DDD09>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:6AE676B5-F43E-4160-B091-BBDD125D033C> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:6AE676B5-F43E-4160-B091-BBDD125D033C> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:C93DD7C9-09BE-4a24-8CED-45C9CFDB3145>
-        a         mim:Objecttype ;
-        mim:naam  "Opstalverzekering" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Opstalverzekering" .
 
 <urn:uuid:7EB1E333-9AC7-4831-92C5-2AF7E08D6A8A>
-        a         mim:Attribuutsoort ;
-        mim:naam  "voorwaadenTekst" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "voorwaadenTekst" .
 
 <urn:uuid:4BFBA567-FBA2-4e84-8DED-2C68944F73D0>
-        a         mim:Referentielijst ;
-        mim:naam  "Valuta" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Valuta" .
 
 <urn:uuid:88146508-B162-462a-B1D5-0F4E4663CE70>
-        a         mim:Attribuutsoort ;
-        mim:naam  "adellijkeTitelOfPredikaat" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "adellijkeTitelOfPredikaat" .
 
 <urn:uuid:F4C8AF79-E98C-43cc-96E5-F39CA96D1EBA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "huisnummertoevoeging" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "huisnummertoevoeging" .
 
 <urn:uuid:29CD3D04-DC66-4750-A28D-C8F2E790A98D>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:61AFF3F4-8919-4592-8240-F2845529373D> ;
-        mim:doel  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
-        mim:naam  "vanPersoon" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:61AFF3F4-8919-4592-8240-F2845529373D> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "vanPersoon" .
 
 <urn:uuid:9D239420-D51E-40ca-8151-98F549B3649C>
-        a         mim:Attribuutsoort ;
-        mim:naam  "regio" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "regio" .
 
 <urn:uuid:97AF25D7-63C5-482e-8D16-AAE4F8EDE460>
-        a         mim:Attribuutsoort ;
-        mim:naam  "datum" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "datum" .
 
 <urn:uuid:8F53E2FF-5BD1-481d-8CD7-ADB7A01CAD4A>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:05E1F45F-2980-454d-A77A-D79C13C418CE> ;
-        mim:supertype  <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:05E1F45F-2980-454d-A77A-D79C13C418CE> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
 
 <urn:uuid:FA90C8CE-2728-40ef-8AA4-C6F3B8C10712>
-        a         mim:Attribuutsoort ;
-        mim:naam  "voornamen" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "voornamen" .
 
 <urn:uuid:C0873187-8660-448a-A353-315C87E26938>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:9D239420-D51E-40ca-8151-98F549B3649C> , <urn:uuid:BA98A209-ABD4-4ded-B4DB-09772DF240D3> , <urn:uuid:EEA8E1FE-77B6-4215-8EBA-0F837B46A661> , <urn:uuid:382E926A-02B4-446e-A383-638C7552D916> , <urn:uuid:67E35BE3-44F1-4679-8672-0B8D207511AB> ;
-        mim:naam       "AdresBuitenland" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:9D239420-D51E-40ca-8151-98F549B3649C> , <urn:uuid:BA98A209-ABD4-4ded-B4DB-09772DF240D3> , <urn:uuid:EEA8E1FE-77B6-4215-8EBA-0F837B46A661> , <urn:uuid:382E926A-02B4-446e-A383-638C7552D916> , <urn:uuid:67E35BE3-44F1-4679-8672-0B8D207511AB> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "AdresBuitenland" .
 
 <urn:uuid:E6F4CE8B-46AF-47d2-BA54-4F182ECF3E23>
-        a         mim:Referentielijst ;
-        mim:naam  "BRPLand" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "BRPLand" .
 
 <urn:uuid:6E585A2C-96CF-46f3-B9DD-67D5610898AF>
-        a         mim:Attribuutsoort ;
-        mim:naam  "statutaireZetel" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "statutaireZetel" .
 
 <urn:uuid:09BD0457-3102-4c0d-BA47-3677451D36C5>
-        a         mim:Attribuutsoort ;
-        mim:naam  "omschrijvingOnroerendeZaak" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "omschrijvingOnroerendeZaak" .
 
 <urn:uuid:B18F8209-191D-4708-A89F-E9E5FA174E3D>
-        a         mim:Objecttype ;
-        mim:naam  "InGebrekestellingOfOntbinding" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "InGebrekestellingOfOntbinding" .
 
 <urn:uuid:F56B4F07-F962-4c0a-BE5B-539FC03A4E10>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:14E80CF6-AAF3-44c1-8125-57B33CCB5619> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:14E80CF6-AAF3-44c1-8125-57B33CCB5619> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:422DDB5E-AF5A-4f00-ACBF-410CCB6486CB>
-        a         mim:Attribuutsoort ;
-        mim:naam  "woonplaatsNaam" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "woonplaatsNaam" .
 
 <urn:uuid:0F817D84-EB0D-49f0-825A-B9F254A3E766>
-        a         mim:Attribuutsoort ;
-        mim:naam  "heeftAanwijzingWVG" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "heeftAanwijzingWVG" .
 
 <urn:uuid:3DD634A7-BBA1-4708-94BB-F58CACCA1555>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:ED6D2318-01BE-41d9-A0A4-CA40262DF637> , <urn:uuid:E88A3A24-B29F-429b-8869-187EEBF06228> ;
-        mim:naam       "Verkoper" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:ED6D2318-01BE-41d9-A0A4-CA40262DF637> , <urn:uuid:E88A3A24-B29F-429b-8869-187EEBF06228> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Verkoper" .
 
 <urn:uuid:189AA4A8-D962-4af3-A4E4-A946482921A3>
-        a         mim:Attribuutsoort ;
-        mim:naam  "expiratieDatum" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "expiratieDatum" .
 
 <urn:uuid:EABD8195-DAF5-475a-AB32-3AB0CE79E14E>
-        a         mim:Attribuutsoort ;
-        mim:naam  "telefoonnummer" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "telefoonnummer" .
 
 <urn:uuid:BE45F1BA-4077-4298-BABD-F4A15959008C>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
-        mim:doel  <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> ;
-        mim:naam  "hoortBij" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "hoortBij" .
 
 <urn:uuid:08D62AC5-21B4-4e21-9DA0-27DBEB405BA1>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
-        mim:supertype  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> .
 
 <urn:uuid:E94649D2-8E5F-417f-837F-8820BE04D473>
-        a         mim:Attribuutsoort ;
-        mim:naam  "lastenVerzwarendeVoornemensVVE" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "lastenVerzwarendeVoornemensVVE" .
 
 <urn:uuid:8047D44B-74C1-4403-ADCC-D3DBAC83FBEC>
-        a         mim:Referentielijst ;
-        mim:naam  "AanduidingGeslacht" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "AanduidingGeslacht" .
 
 <urn:uuid:63B4685C-A882-45e1-A29B-DBA501411CCD>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
-        mim:doel  <urn:uuid:968031B5-6406-4dd2-982C-6FF34B15F68B> ;
-        mim:naam  "door" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:968031B5-6406-4dd2-982C-6FF34B15F68B> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "door" .
 
 <urn:uuid:9B43C4B0-1A49-42fc-94B3-8C7B34ABE9C7>
-        a         mim:Objecttype ;
-        mim:naam  "Ondertekening" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Ondertekening" .
 
 <urn:uuid:49157EF1-98FB-461e-BE5E-1C6F9A865435>
-        a         mim:Attribuutsoort ;
-        mim:naam  "einddatumErfpacht" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "einddatumErfpacht" .
 
 <urn:uuid:8056F1D4-BF13-4ab4-8C71-F5DF2152C56F>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
-        mim:doel  <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> ;
-        mim:naam  "woonlocatie" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "woonlocatie" .
 
 <urn:uuid:D6FEFF9E-004C-4026-9BDB-5F3941DA2972>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "Objectnummering" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Objectnummering" .
 
 <urn:uuid:342B2451-EE94-4481-BA8F-81AD99CA0F33>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:2D302D79-611C-416e-A7A9-E99462550E40> ;
-        mim:naam               "historie" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:2D302D79-611C-416e-A7A9-E99462550E40> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "historie" .
 
 <urn:uuid:BE998726-9CED-4a85-B58E-E3D52D2054C6>
-        a         mim:Attribuutsoort ;
-        mim:naam  "huisletter" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "huisletter" .
 
 <urn:uuid:D06C7BD1-0202-45ac-8D5A-42D413320B3C>
-        a         mim:Attribuutsoort ;
-        mim:naam  "registratieKostenToedeling" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "registratieKostenToedeling" .
 
 <urn:uuid:1542BA05-6E43-4e4f-B81B-A96198235B42>
-        a         mim:Attribuutsoort ;
-        mim:naam  "belastMetPubliekrechtelijkeBeperking" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "belastMetPubliekrechtelijkeBeperking" .
 
 <urn:uuid:A6E8F181-1439-4fd5-8DB8-D1E6E6E457B3>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
-        mim:doel  <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
-        mim:naam  "wasToegeschrevenAan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "wasToegeschrevenAan" .
 
 <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:D836FFB1-2C31-4639-A865-E36674382EF3> , <urn:uuid:70AB0027-54AE-4c41-BA17-6737375721BC> , <urn:uuid:C9372558-FBD0-46a7-B400-9A90C4E7497B> ;
-        mim:naam       "Activity" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:D836FFB1-2C31-4639-A865-E36674382EF3> , <urn:uuid:70AB0027-54AE-4c41-BA17-6737375721BC> , <urn:uuid:C9372558-FBD0-46a7-B400-9A90C4E7497B> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Activity" .
 
 <urn:uuid:E742C766-8D4A-4d6a-92E2-99075B9221C1>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:2E61D052-9879-4aa4-AF3D-305C097E4C7E> , <urn:uuid:AAF01974-30FE-4480-AA25-101CFB0AE7D6> ;
-        mim:naam       "KostenVerdeling" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:2E61D052-9879-4aa4-AF3D-305C097E4C7E> , <urn:uuid:AAF01974-30FE-4480-AA25-101CFB0AE7D6> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "KostenVerdeling" .
 
 <urn:uuid:8A5626A1-DECF-4433-BDDA-73C0BD6D7489>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:DA9C2FE1-469E-4c46-AD05-4D5B0FDC9FD9> ;
-        mim:naam       "Eigendomsoverdracht" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:DA9C2FE1-469E-4c46-AD05-4D5B0FDC9FD9> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Eigendomsoverdracht" .
 
 <urn:uuid:2BAB35C8-3804-4e6f-9FC7-1C3CAED3E148>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:8A204AAE-2B32-42e0-8682-56F6E8B9A154> ;
-        mim:naam       "Financiering" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:8A204AAE-2B32-42e0-8682-56F6E8B9A154> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Financiering" .
 
 <urn:uuid:67EBEC04-AAD4-427a-B5B4-2202D0FA7C32>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:9726BD73-680D-4fd4-A989-75A43BAF404B> ;
-        mim:naam       "ReglementAkteVanSplitsing" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:9726BD73-680D-4fd4-A989-75A43BAF404B> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ReglementAkteVanSplitsing" .
 
 <urn:uuid:1F1AAA64-7A94-4b50-A1D3-19A31AB894CA>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:C6A2C553-85D2-4575-AF04-F04EDF996AE8> ;
-        mim:naam       "Voorbehoud" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:C6A2C553-85D2-4575-AF04-F04EDF996AE8> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Voorbehoud" .
 
 <urn:uuid:2D492680-F32A-4e02-B513-1357C2668046>
-        a         mim:Attribuutsoort ;
-        mim:naam  "inschrijvenKadaster" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "inschrijvenKadaster" .
 
 <urn:uuid:3039D005-F2EC-426c-9061-51716E973B3D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "rechtsvorm" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "rechtsvorm" .
 
 <urn:uuid:2543A689-C42B-4b86-BF86-C09AF5A65740>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:596311C2-E775-4aff-B08B-B1951EFC734D> , <urn:uuid:DC2A37D6-181D-438c-996A-77091E275FC0> , <urn:uuid:02AA0BAC-175D-409c-9EA6-420C1A7D9FDF> , <urn:uuid:F567CEC6-7732-4b93-BA07-B4D88101BA25> , <urn:uuid:469A8191-DF64-44e8-B8AB-E0AF20156D09> , <urn:uuid:26D4E950-0448-4fb6-9753-8153ECBD1BF8> , <urn:uuid:49157EF1-98FB-461e-BE5E-1C6F9A865435> , <urn:uuid:79D9D9AC-4B21-4fea-A99D-CC7C0917B059> ;
-        mim:naam       "Canon" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:596311C2-E775-4aff-B08B-B1951EFC734D> , <urn:uuid:DC2A37D6-181D-438c-996A-77091E275FC0> , <urn:uuid:02AA0BAC-175D-409c-9EA6-420C1A7D9FDF> , <urn:uuid:F567CEC6-7732-4b93-BA07-B4D88101BA25> , <urn:uuid:469A8191-DF64-44e8-B8AB-E0AF20156D09> , <urn:uuid:26D4E950-0448-4fb6-9753-8153ECBD1BF8> , <urn:uuid:49157EF1-98FB-461e-BE5E-1C6F9A865435> , <urn:uuid:79D9D9AC-4B21-4fea-A99D-CC7C0917B059> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Canon" .
 
 <urn:uuid:B51BB062-E4D9-4911-938D-151055233DCD>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "Indexering" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Indexering" .
 
 <urn:uuid:3A52C749-9562-4c63-8BF0-0C2A0D4DB0DF>
-        a         mim:Referentielijst ;
-        mim:naam  "KoperOfVerkoper" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "KoperOfVerkoper" .
 
 <urn:uuid:8DA7CB71-702B-43ca-858F-68F976D009E1>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:D48CA4E0-38A8-464f-A0AF-3DA24BE784B6> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:D48CA4E0-38A8-464f-A0AF-3DA24BE784B6> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:10302255-FF22-40b3-8B37-712DBE699BC4>
-        a         mim:Attribuutsoort ;
-        mim:naam  "agent" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "agent" .
 
 <urn:uuid:941CA132-DBC2-4f36-850C-4A1B79A40471>
-        a         mim:Attribuutsoort ;
-        mim:naam  "eindRegistratie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "eindRegistratie" .
 
 <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:83CE81AD-8ACB-464e-A922-4BE1A97D0F86> ;
-        mim:naam       "Persoon" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:83CE81AD-8ACB-464e-A922-4BE1A97D0F86> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Persoon" .
 
 <urn:uuid:9329B5AF-1CEB-4e86-9359-337253F5393C>
-        a         mim:Attribuutsoort ;
-        mim:naam  "volgnummer" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "volgnummer" .
 
 <urn:uuid:894AA05A-DC00-40e3-8353-FE51516ADD96>
-        a         mim:Referentielijst ;
-        mim:naam  "VerbintenisSoort" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "VerbintenisSoort" .
 
 <urn:uuid:C236066B-EAF4-4a39-8DB7-C5FA0A2C6005>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:7A495A70-7AB9-4b3a-A4B1-3C501BF5493F> ;
-        mim:naam               "waardeAandeelVVE" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:7A495A70-7AB9-4b3a-A4B1-3C501BF5493F> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "waardeAandeelVVE" .
 
 <urn:uuid:7EAA2A9F-31D4-494e-A60F-4365BFF41056>
-        a         mim:Attribuutsoort ;
-        mim:naam  "geboorteplaats" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "geboorteplaats" .
 
 <urn:uuid:3986F90B-AA05-42ae-9B58-D2860A797039>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "TypeKadastraleAanduiding" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "TypeKadastraleAanduiding" .
 
 <urn:uuid:F441A9A9-F633-4c19-88B4-F8B05CBBDC12>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isOndergrondsetankBekend" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isOndergrondsetankBekend" .
 
 <urn:uuid:DE6ED06D-1272-4f42-A9D9-61A8567C9688>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE> ;
-        mim:doel  <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
-        mim:naam  "uitgevoerdDoor" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "uitgevoerdDoor" .
 
 <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:2A190F96-2F6E-4a18-A4CB-2B201FAC8FE5> ;
-        mim:naam       "Legitimatie" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:2A190F96-2F6E-4a18-A4CB-2B201FAC8FE5> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Legitimatie" .
 
 <urn:uuid:631006D4-8631-4d62-BB7A-49A17CB824E0>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:E742C766-8D4A-4d6a-92E2-99075B9221C1> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:E742C766-8D4A-4d6a-92E2-99075B9221C1> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:181D26B1-A672-43d1-9B14-A650A36D6A8C>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "Bedrag" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Bedrag" .
 
 <urn:uuid:2EABC9AF-FC6C-41ef-82FF-CEDB2121C0CA>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:7EB1E333-9AC7-4831-92C5-2AF7E08D6A8A> ;
-        mim:naam       "AanvullendeVoorwaarden" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:7EB1E333-9AC7-4831-92C5-2AF7E08D6A8A> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "AanvullendeVoorwaarden" .
 
 <urn:uuid:BF011193-EEBB-4792-BCD0-46A62A1A69CC>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bijzondereErfpachtvoorwaarden" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bijzondereErfpachtvoorwaarden" .
 
 <urn:uuid:D38008AD-F03F-48d2-AE27-6CB20DAF0004>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA> ;
-        mim:supertype  <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> .
 
 <urn:uuid:E324FB39-A6C8-45ea-A1ED-41707FA1ABF1>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bedrag" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bedrag" .
 
 <urn:uuid:42416224-70E0-4de3-927A-EB76BB69BC13>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:EB110115-556B-42f2-AAAF-2A10FFBD14C7> ;
-        mim:doel  <urn:uuid:D04FD057-BF08-4bb7-8752-128E58F8AD99> ;
-        mim:naam  "tenBehoeveVan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:EB110115-556B-42f2-AAAF-2A10FFBD14C7> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:D04FD057-BF08-4bb7-8752-128E58F8AD99> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "tenBehoeveVan" .
 
 <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:8EDD0270-B2C2-4ba1-9D54-BEC698F5A77F> ;
-        mim:naam       "Rechtshandeling" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:8EDD0270-B2C2-4ba1-9D54-BEC698F5A77F> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Rechtshandeling" .
 
 <urn:uuid:DC2A37D6-181D-438c-996A-77091E275FC0>
-        a         mim:Attribuutsoort ;
-        mim:naam  "indexering" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "indexering" .
 
 <urn:uuid:08725DA4-0C47-44e5-8B6A-552A03251349>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:D06C7BD1-0202-45ac-8D5A-42D413320B3C> , <urn:uuid:6BAAF3C7-5A0D-407d-ACED-6DC789C05D4F> , <urn:uuid:2D492680-F32A-4e02-B513-1357C2668046> ;
-        mim:naam       "RegistratieKoopovereenkomst" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:D06C7BD1-0202-45ac-8D5A-42D413320B3C> , <urn:uuid:6BAAF3C7-5A0D-407d-ACED-6DC789C05D4F> , <urn:uuid:2D492680-F32A-4e02-B513-1357C2668046> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "RegistratieKoopovereenkomst" .
 
 <urn:uuid:02AA0BAC-175D-409c-9EA6-420C1A7D9FDF>
-        a         mim:Attribuutsoort ;
-        mim:naam  "type" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "type" .
 
 <urn:uuid:E6738509-6636-4ebb-B3A7-2D079B1693B8>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aanwijzerNotaris" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aanwijzerNotaris" .
 
 <urn:uuid:90733022-3014-4b6e-8AAB-6351F8C8D9DE>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:DE56DBA5-AA7E-47b0-AFA3-3AB5BA2EB1E1> ;
-        mim:doel  <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
-        mim:naam  "isOnderdeelVan" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:DE56DBA5-AA7E-47b0-AFA3-3AB5BA2EB1E1> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isOnderdeelVan" .
 
 <urn:uuid:BD7F8005-EB22-481b-91E9-593D455C9D01>
-        a         mim:Objecttype ;
-        mim:naam  "Betaling" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Betaling" .
 
 <urn:uuid:FFF79DF4-DFD2-4e79-987E-2BD8BC8647A9>
-        a         mim:Attribuutsoort ;
-        mim:naam  "aandeelReserveEnOnderhoudsfonds" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aandeelReserveEnOnderhoudsfonds" .
 
 <urn:uuid:CF81FAB3-CF42-4547-B46D-81A6081EBB6A>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:73565BFB-2AD1-4165-9E2F-D2601E683722>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:2BAB35C8-3804-4e6f-9FC7-1C3CAED3E148> ;
-        mim:supertype  <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:2BAB35C8-3804-4e6f-9FC7-1C3CAED3E148> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> .
 
 <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:9F7F68BE-F54B-4f0f-9B70-9F031F5525B6> ;
-        mim:naam       "Koper" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:9F7F68BE-F54B-4f0f-9B70-9F031F5525B6> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Koper" .
 
 <urn:uuid:D0B14D85-5E2B-4000-B001-C582DA4ABC9E>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bevoegdheid" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bevoegdheid" .
 
 <urn:uuid:8EDD0270-B2C2-4ba1-9D54-BEC698F5A77F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:A6B10149-17A3-4ed1-A802-2574296733E2>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
-        mim:doel  <urn:uuid:561CBF27-CB85-49ad-AFA5-2C8CEB05B253> ;
-        mim:naam  "gebruikte" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:561CBF27-CB85-49ad-AFA5-2C8CEB05B253> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "gebruikte" .
 
 <urn:uuid:6785BCEF-E19F-407a-90AE-BA69E5517409>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:3A52C749-9562-4c63-8BF0-0C2A0D4DB0DF> ;
-        mim:supertype  <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:3A52C749-9562-4c63-8BF0-0C2A0D4DB0DF> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
 
 <urn:uuid:E0723CCB-EECC-4f1c-9342-6D04222E09EB>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:EB778A53-A1EC-4308-BF8D-3361DC848863> ;
-        mim:naam               "historie" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:EB778A53-A1EC-4308-BF8D-3361DC848863> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "historie" .
 
 <urn:uuid:38B481D5-24CE-4362-9D52-09BF5A0F4D58>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isPubliekrechtelijkBeperkt" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isPubliekrechtelijkBeperkt" .
 
 <urn:uuid:3BE61FE8-AFA0-4214-BE1E-A1D1DA0B147F>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:1756A110-1561-47fc-AE47-53B4BC0A0EF9> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:1756A110-1561-47fc-AE47-53B4BC0A0EF9> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:D836FFB1-2C31-4639-A865-E36674382EF3>
-        a         mim:Attribuutsoort ;
-        mim:naam  "startTijd" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "startTijd" .
 
 <urn:uuid:0C8E69F1-B3A4-4499-87F8-18A764EC2E3C>
-        a         mim:Attribuutsoort ;
-        mim:naam  "betalerKosten" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "betalerKosten" .
 
 <urn:uuid:8710575F-F18C-456c-A6B1-4666A7D866BB>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
-        mim:doel  <urn:uuid:3DD634A7-BBA1-4708-94BB-F58CACCA1555> ;
-        mim:naam  "aangebodenDoor" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:3DD634A7-BBA1-4708-94BB-F58CACCA1555> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "aangebodenDoor" .
 
 <urn:uuid:3B9F341D-C449-4bd4-BA27-F91373670595>
-        a         mim:Attribuutsoort ;
-        mim:naam  "beginGeldigheid" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "beginGeldigheid" .
 
 <urn:uuid:6FD921B1-EB63-4463-88CA-7F602D334C67>
-        a         mim:Attribuutsoort ;
-        mim:naam  "rsin" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "rsin" .
 
 <urn:uuid:1CFF49E3-927F-4422-B073-F6FB71A80AA5>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:BD581A2B-8A84-46e4-ADD9-ACD56EE1EEA0> ;
-        mim:naam               "overlijden" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:BD581A2B-8A84-46e4-ADD9-ACD56EE1EEA0> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "overlijden" .
 
 <urn:uuid:469A8191-DF64-44e8-B8AB-E0AF20156D09>
-        a         mim:Attribuutsoort ;
-        mim:naam  "jaarlijksBedrag" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "jaarlijksBedrag" .
 
 <urn:uuid:A49E96B3-CA94-4c28-A2A7-2B86C2A11499>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:7C24F6D0-57D9-4e02-9F79-A36D37F0D2F8> ;
-        mim:doel  <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA> ;
-        mim:naam  "vanKoper" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:7C24F6D0-57D9-4e02-9F79-A36D37F0D2F8> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:9E3FB716-CADE-4753-80F1-656CE65D20BA> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "vanKoper" .
 
 <urn:uuid:C08223F6-ED6B-4fc7-AE7F-ACF61A9633C8>
-        a                      mim:Gegevensgroep ;
-        mim:gegevensgroeptype  <urn:uuid:7F819EAA-77FC-4b94-96DE-9EE55E835EC1> ;
-        mim:naam               "naam" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:7F819EAA-77FC-4b94-96DE-9EE55E835EC1> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "naam" .
 
 <urn:uuid:7D099919-8C46-4fd2-B31F-F9D2B864F4A0>
-        a         mim:Objecttype ;
-        mim:naam  "Eigendomsoverdracht" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Eigendomsoverdracht" .
 
 <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B>
-        a                  mim:Objecttype ;
-        mim:attribuut      <urn:uuid:7F093344-D38D-4972-A7C2-2A4CCF4A50A9> ;
-        mim:gegevensgroep  <urn:uuid:A32BA471-9990-43a7-A9FD-0F16866C2FD4> ;
-        mim:naam           "Recherche" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:7F093344-D38D-4972-A7C2-2A4CCF4A50A9> ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:A32BA471-9990-43a7-A9FD-0F16866C2FD4> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Recherche" .
 
 <urn:uuid:7F093344-D38D-4972-A7C2-2A4CCF4A50A9>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1>
-        a              mim:Objecttype ;
-        mim:attribuut  <urn:uuid:189AA4A8-D962-4af3-A4E4-A946482921A3> ;
-        mim:naam       "OntbindendeVoorwaarde" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:189AA4A8-D962-4af3-A4E4-A946482921A3> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "OntbindendeVoorwaarde" .
 
 <urn:uuid:D2A78D35-1EBD-4286-A23E-D2C82C63ED96>
-        a         mim:Objecttype ;
-        mim:naam  "Ontbinden" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Ontbinden" .
 
 <urn:uuid:481BEB98-005F-426c-AD07-868E07365EF7>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> ;
-        mim:supertype  <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> .
 
 <urn:uuid:62FD85C4-BB2D-4cb1-971D-0349D489C7BA>
-        a         mim:Attribuutsoort ;
-        mim:naam  "bron" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "bron" .
 
 <urn:uuid:6B9B8893-E5BC-4ee4-8D5D-3BBEB7544F3A>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "Tijdstip" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Tijdstip" .
 
 <urn:uuid:D69896DD-45EA-49ef-AE16-0FDCBF4BE138>
-        a         mim:GestructureerdDatatype ;
-        mim:naam  "Herziening" .
+        a       <http://bp4mc2.org/def/mim#GestructureerdDatatype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Herziening" .
 
 <urn:uuid:98B58B72-3980-4f73-9673-654DDBE1786D>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:77F008F2-70B5-41ca-B072-61BF9AD71599> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:77F008F2-70B5-41ca-B072-61BF9AD71599> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:2D302D79-611C-416e-A7A9-E99462550E40>
-        a              mim:Gegevensgroeptype ;
-        mim:attribuut  <urn:uuid:9D9DA025-F632-40f6-9E0F-87F3A3E65010> , <urn:uuid:8DC4C584-1CE5-4dcc-928C-848F0EC319E4> , <urn:uuid:6B541749-F7D6-4b72-827E-51DD8BD0112B> , <urn:uuid:9397C5A4-CFB6-4493-BFE9-F86142793236> , <urn:uuid:8B971582-5366-4d2e-8596-6AB05A994621> , <urn:uuid:9329B5AF-1CEB-4e86-9359-337253F5393C> ;
-        mim:naam       "ZVGHistorie" .
+        a       <http://bp4mc2.org/def/mim#Gegevensgroeptype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:9D9DA025-F632-40f6-9E0F-87F3A3E65010> , <urn:uuid:8DC4C584-1CE5-4dcc-928C-848F0EC319E4> , <urn:uuid:6B541749-F7D6-4b72-827E-51DD8BD0112B> , <urn:uuid:9397C5A4-CFB6-4493-BFE9-F86142793236> , <urn:uuid:8B971582-5366-4d2e-8596-6AB05A994621> , <urn:uuid:9329B5AF-1CEB-4e86-9359-337253F5393C> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "ZVGHistorie" .
 
 <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377>
-        a         mim:Referentielijst ;
-        mim:naam  "Waardelijst" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Waardelijst" .
 
 <urn:uuid:D4A3395B-19C2-437a-BB83-65FC19800358>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:EB110115-556B-42f2-AAAF-2A10FFBD14C7> ;
-        mim:supertype  <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:EB110115-556B-42f2-AAAF-2A10FFBD14C7> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> .
 
 <urn:uuid:DA9C2FE1-469E-4c46-AD05-4D5B0FDC9FD9>
-        a         mim:Attribuutsoort ;
-        mim:naam  "verkoperBevoegdheid" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "verkoperBevoegdheid" .
 
 <urn:uuid:212B92BD-9F88-47c3-B930-6E34AA4C8117>
-        a         mim:Attribuutsoort ;
-        mim:naam  "lastenEnVerplichtingen" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "lastenEnVerplichtingen" .
 
 <urn:uuid:968031B5-6406-4dd2-982C-6FF34B15F68B>
-        a         mim:Objecttype ;
-        mim:naam  "Onderzoeker" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Onderzoeker" .
 
 <urn:uuid:BB8DD28C-2F66-45b4-B60F-B4AED1F7CD08>
-        a         mim:Attribuutsoort ;
-        mim:naam  "statutaireNaam" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "statutaireNaam" .
 
 <urn:uuid:8B49D605-93AE-4b3a-ABAF-52AFEBFA4540>
-        a         mim:Attribuutsoort ;
-        mim:naam  "verplichtingenDerden" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "verplichtingenDerden" .
 
 <urn:uuid:029C2C42-3D99-4c8e-B132-BFF5121D8971>
-        a         mim:Referentielijst ;
-        mim:naam  "VoorwaardenVerbintenis" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "VoorwaardenVerbintenis" .
 
 <urn:uuid:6C7B4809-F134-4fee-8359-A03C2DD14DD8>
-        a         mim:Attribuutsoort ;
-        mim:naam  "akteReferentie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "akteReferentie" .
 
 <urn:uuid:962D8E4E-58E1-4a4f-9F9B-00EED3BBB11D>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isAanwijzingRijksmonumentBekend" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isAanwijzingRijksmonumentBekend" .
 
 <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E>
-        a                  mim:Objecttype ;
-        mim:gegevensgroep  <urn:uuid:342B2451-EE94-4481-BA8F-81AD99CA0F33> ;
-        mim:naam           "Entity" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:342B2451-EE94-4481-BA8F-81AD99CA0F33> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Entity" .
 
 <urn:uuid:8A204AAE-2B32-42e0-8682-56F6E8B9A154>
-        a         mim:Attribuutsoort ;
-        mim:naam  "financieringsbedrag" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "financieringsbedrag" .
 
 <urn:uuid:B92CC679-D6ED-4b1d-92C5-7965B8C333C7>
-        a         mim:Attribuutsoort ;
-        mim:naam  "identificatie" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "identificatie" .
 
 <urn:uuid:0D822404-A7E7-4d7a-AF2A-F980F4AB8BC3>
-        a         mim:Attribuutsoort ;
-        mim:naam  "overdrachtAanspraken" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "overdrachtAanspraken" .
 
 <urn:uuid:74B656B9-47E5-4c96-86C2-4A4BBD67ABCE>
-        a                  mim:Objecttype ;
-        mim:attribuut      <urn:uuid:E94649D2-8E5F-417f-837F-8820BE04D473> ;
-        mim:gegevensgroep  <urn:uuid:C236066B-EAF4-4a39-8DB7-C5FA0A2C6005> , <urn:uuid:3B3B6E16-6135-4b81-8327-B6FFD365D849> ;
-        mim:naam           "FinancienVerenigingVanEigenaars" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:E94649D2-8E5F-417f-837F-8820BE04D473> ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:C236066B-EAF4-4a39-8DB7-C5FA0A2C6005> , <urn:uuid:3B3B6E16-6135-4b81-8327-B6FFD365D849> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "FinancienVerenigingVanEigenaars" .
 
 <urn:uuid:1500DA40-5A3D-4711-9211-1B07186A962F>
-        a         mim:Attribuutsoort ;
-        mim:naam  "kadastraleGrootte" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "kadastraleGrootte" .
 
 <urn:uuid:7C6F689F-4BD7-480c-AF1D-81DF9A559F97>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:979BE0AA-5CD4-4aee-A5D4-0D8F226DA3C8> ;
-        mim:supertype  <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:979BE0AA-5CD4-4aee-A5D4-0D8F226DA3C8> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> .
 
 <urn:uuid:14E80CF6-AAF3-44c1-8125-57B33CCB5619>
-        a         mim:Objecttype ;
-        mim:naam  "OvermachtRisicoVerzekeringen" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "OvermachtRisicoVerzekeringen" .
 
 <urn:uuid:36DCCB81-D96D-49b3-8B6D-320CF28B790C>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
-        mim:doel  <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
-        mim:naam  "rustOp" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "rustOp" .
 
 <urn:uuid:D4F4270A-E002-4ef1-852C-95FEE5A2BD7C>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
-        mim:doel  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
-        mim:naam  "vanPersoon" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "vanPersoon" .
 
 <urn:uuid:26E45195-DB13-4fb3-932E-B73CB915FD36>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:BC52C885-0B0E-41bf-84A9-3E0A228F5C83> ;
-        mim:supertype  <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:BC52C885-0B0E-41bf-84A9-3E0A228F5C83> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
 
 <urn:uuid:0B99DC1D-7F2F-4f12-84B8-5FE89ABF41BE>
-        a         mim:Attribuutsoort ;
-        mim:naam  "isVerontreinigingBekend" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isVerontreinigingBekend" .
 
 <urn:uuid:19B8FC9D-3B01-402d-ACB1-46A770A421EF>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:898A9CD9-A52B-407b-9419-591F4EF01637> ;
-        mim:supertype  <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> .
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:898A9CD9-A52B-407b-9419-591F4EF01637> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> .
 
 <urn:uuid:B750BA58-68B9-457e-A3C5-25747D267F17>
-        a         mim:Attribuutsoort ;
-        mim:naam  "gebruik" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "gebruik" .
 
 <urn:uuid:1B6161B0-E951-4d37-9726-C588B5CB4C22>
-        a         mim:Referentielijst ;
-        mim:naam  "Koppelingswijze" .
+        a       <http://bp4mc2.org/def/mim#Referentielijst> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Koppelingswijze" .
 
 <urn:uuid:61EA939B-3751-462f-8C51-AF6A235489E1>
-        a         mim:Attribuutsoort ;
-        mim:naam  "geboortedatum" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "geboortedatum" .
 
 <urn:uuid:6E838751-6C8C-475f-9E9F-DECABBF8194E>
-        a         mim:Relatiesoort ;
-        mim:bron  <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> ;
-        mim:doel  <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
-        mim:naam  "isVanToepassingOp" .
+        a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "isVanToepassingOp" .
 
 <urn:uuid:07BF65CD-5AA6-4d2f-A978-0168A88E8B5B>
-        a         mim:Attribuutsoort ;
-        mim:naam  "onbekenheidsverklaring" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "onbekenheidsverklaring" .
 
 <urn:uuid:3C8520E4-413A-4bca-A9BA-DE2889919490>
-        a         mim:Attribuutsoort ;
-        mim:naam  "datum" .
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "datum" .
 
 <urn:uuid:EB110115-556B-42f2-AAAF-2A10FFBD14C7>
-        a         mim:Objecttype ;
-        mim:naam  "Erfdienstbaarheid" .
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Erfdienstbaarheid" .

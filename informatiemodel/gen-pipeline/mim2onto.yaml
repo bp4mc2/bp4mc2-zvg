@@ -1,40 +1,44 @@
-title: MIM conversie naar OWL (placeholder)
-version: 0.0.1
-constructs:
-  - title: Transformatie Objecttype
+title: MIM conversie
+version: 0.1
+queries:
+  - title: create technical names
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
-      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
-      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      PREFIX sh: <http://www.w3.org/ns/shacl#>
-      CONSTRUCT {
-        ?class a rdfs:Class.
-        ?class mim:equivalent ?objecttype.
-        ?nodeshape a sh:NodeShape.
-        ?nodeshape mim:equivalent ?objecttype.
-        ?nodeshape sh:targetClass ?class.
-      }
-      WHERE {
-        ?objecttype a mim:Objecttype.
-        ?objecttype mim:naam ?objecttypenaam.
-        BIND (IRI(CONCAT("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#", ?objecttypenaam)) as ?class)
-        BIND (IRI(CONCAT("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#", ?objecttypenaam)) as ?nodeshape)
-      }
-updates:
-  - title: fix cardinality
-    query: >
-      PREFIX mim: <http://bp4mc2.org/def/mim#>
-      PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
-      PREFIX sh: <http://www.w3.org/ns/shacl#>
-      DELETE {
-        ?s sh:minCount ?str
-      }
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       INSERT {
-        ?s sh:minCount ?int
+        GRAPH <urn:input> {
+          ?item skos:notation ?codefixed
+        }
       }
       WHERE {
-        ?s sh:minCount ?str 
-        filter(datatype(?str) = xsd:string)
-        bind(STRDT(?str, xsd:integer) as ?int)
+        GRAPH <urn:input> {
+          ?item mim:naam ?naam
+          BIND (replace(?naam,"[^a-zA-Z0-9_-]","_") as ?codefixed)
+        }
       }
-    
+  - title: convert mim:Objecttype
+    query: >
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?class a owl:Class, sh:NodeShape.
+          ?class sh:targetClass ?class.
+          ?class rdfs:label ?naam.
+          ?class sh:name ?code.
+          ?class rdfs:seeAlso ?objecttype.
+        }
+      }
+      WHERE {
+        SELECT (iri(concat("http://test/def#",?code)) as ?class) ?code ?naam ?objecttype
+        WHERE {
+          GRAPH <urn:input> {
+            ?objecttype a mim:Objecttype.
+            ?objecttype mim:naam ?naam.
+            ?objecttype skos:notation ?code.
+          }
+        }
+      }
