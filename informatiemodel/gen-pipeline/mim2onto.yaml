@@ -28,12 +28,11 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
-          ?class sh:name ?code.
           ?class rdfs:seeAlso ?objecttype.
         }
       }
       WHERE {
-        SELECT (iri(concat("http://test/def#",?code)) as ?class) ?code ?naam ?objecttype
+        SELECT (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?class) ?code ?naam ?objecttype
         WHERE {
           GRAPH <urn:input> {
             ?objecttype a mim:Objecttype.
@@ -54,12 +53,11 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
-          ?class sh:name ?code.
           ?class rdfs:seeAlso ?gegevensgroeptype.
         }
       }
       WHERE {
-        SELECT (iri(concat("http://test/def#",?code)) as ?class) ?code ?naam ?gegevensgroeptype
+        SELECT (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?class) ?code ?naam ?gegevensgroeptype
         WHERE {
           GRAPH <urn:input> {
             ?gegevensgroeptype a mim:Gegevensgroeptype.
@@ -80,12 +78,11 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
-          ?class sh:name ?code.
           ?class rdfs:seeAlso ?relatieklasse.
         }
       }
       WHERE {
-        SELECT (iri(concat("http://test/def#",?code)) as ?class) ?code ?naam ?relatieklasse
+        SELECT (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?class) ?code ?naam ?relatieklasse
         WHERE {
           GRAPH <urn:input> {
             ?relatieklasse a mim:Relatieklasse.
@@ -114,9 +111,9 @@ queries:
         }
       }
       WHERE {
-        SELECT  (iri(concat("http://test/def#",?code)) as ?property)
-                (iri(concat("http://test/def#",?ownercode,".",?code)) as ?predicate)
-                (iri(concat("http://test/def#",?ownercode)) as ?ownershape)
+        SELECT  (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?property)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode,".",?code)) as ?predicate)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode)) as ?ownershape)
                 ?code ?naam ?attribuutsoort
         WHERE {
           GRAPH <urn:input> {
@@ -151,10 +148,10 @@ queries:
         }
       }
       WHERE {
-        SELECT  (iri(concat("http://test/def#",?code)) as ?property)
-                (iri(concat("http://test/def#",?ownercode,".",?code)) as ?predicate)
-                (iri(concat("http://test/def#",?ownercode)) as ?owner)
-                (iri(concat("http://test/def#",?classcode)) as ?class)
+        SELECT  (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?property)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode,".",?code)) as ?predicate)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode)) as ?owner)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?classcode)) as ?class)
                 ?code ?naam ?relatiesoort
         WHERE {
           GRAPH <urn:input> {
@@ -194,10 +191,10 @@ queries:
         }
       }
       WHERE {
-        SELECT  (iri(concat("http://test/def#",?code)) as ?property)
-                (iri(concat("http://test/def#",?ownercode,".",?code)) as ?predicate)
-                (iri(concat("http://test/def#",?ownercode)) as ?owner)
-                (iri(concat("http://test/def#",?classcode)) as ?class)
+        SELECT  (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?property)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode,".",?code)) as ?predicate)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode)) as ?owner)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?classcode)) as ?class)
                 ?code ?naam ?externekoppeling
         WHERE {
           GRAPH <urn:input> {
@@ -227,7 +224,7 @@ queries:
         }
       }
       WHERE {
-        SELECT (iri(concat("http://test/def#",?code)) as ?datatype) ?naam ?type
+        SELECT (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?datatype) ?naam ?type
         WHERE {
           GRAPH <urn:input> {
             ?type a mim:PrimitiefDatatype.
@@ -257,10 +254,10 @@ queries:
         }
       }
       WHERE {
-        SELECT  (iri(concat("http://test/def#",?code)) as ?property)
-                (iri(concat("http://test/def#",?ownercode,".",?code)) as ?predicate)
-                (iri(concat("http://test/def#",?ownercode)) as ?owner)
-                (iri(concat("http://test/def#",?classcode)) as ?class)
+        SELECT  (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?property)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode,".",?code)) as ?predicate)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode)) as ?owner)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?classcode)) as ?class)
                 ?code ?naam ?relatierolbron
         WHERE {
           GRAPH <urn:input> {
@@ -296,10 +293,10 @@ queries:
         }
       }
       WHERE {
-        SELECT (iri(concat("http://test/def#",?code)) as ?property)
-                (iri(concat("http://test/def#",?ownercode,".",?code)) as ?predicate)
-                (iri(concat("http://test/def#",?ownercode)) as ?owner)
-                (iri(concat("http://test/def#",?classcode)) as ?class)
+        SELECT (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?property)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode,".",?code)) as ?predicate)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode)) as ?owner)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?classcode)) as ?class)
                 ?code ?naam ?relatieroldoel
         WHERE {
           GRAPH <urn:input> {
@@ -342,13 +339,13 @@ queries:
         }
       }
       WHERE {
-        SELECT  (iri(concat("http://test/def#",?code)) as ?statement)
-                (iri(concat("http://test/def#",?objectcode)) as ?object)
-                (iri(concat("http://test/def#",?subjectcode)) as ?subject)
-                (iri(concat("http://test/def#",?predicatecode)) as ?predicate)
-                (iri(concat("http://test/def#",?code,".object")) as ?objectps)
-                (iri(concat("http://test/def#",?code,".subject")) as ?subjectps)
-                (iri(concat("http://test/def#",?code,".predicate")) as ?predicateps)
+        SELECT  (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?statement)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?objectcode)) as ?object)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?subjectcode)) as ?subject)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?predicatecode)) as ?predicate)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code,".object")) as ?objectps)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code,".subject")) as ?subjectps)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code,".predicate")) as ?predicateps)
                 ?code ?naam ?relatieroldoel
         WHERE {
           GRAPH <urn:input> {
@@ -386,10 +383,10 @@ queries:
         }
       }
       WHERE {
-        SELECT  (iri(concat("http://test/def#",?code)) as ?property)
-                (iri(concat("http://test/def#",?ownercode,".",?code)) as ?predicate)
-                (iri(concat("http://test/def#",?ownercode)) as ?ownershape)
-                (iri(concat("http://test/def#",?typecode)) as ?class)
+        SELECT  (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?property)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode,".",?code)) as ?predicate)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?ownercode)) as ?ownershape)
+                (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?typecode)) as ?class)
                 ?code ?naam ?gegevensgroep
         WHERE {
           GRAPH <urn:input> {
@@ -416,12 +413,11 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
-          ?class sh:name ?code.
           ?class rdfs:seeAlso ?referentielijst.
         }
       }
       WHERE {
-        SELECT (iri(concat("http://test/def#",?code)) as ?class) ?code ?naam ?referentielijst
+        SELECT (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?class) ?code ?naam ?referentielijst
         WHERE {
           GRAPH <urn:input> {
             ?referentielijst a mim:Referentielijst.
@@ -555,6 +551,7 @@ queries:
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       INSERT {
         GRAPH <urn:output> {
           ?pshape sh:minCount ?mincount.
@@ -562,7 +559,7 @@ queries:
       }
       WHERE {
         {
-          SELECT ?pshape (strbefore(?kardinaliteit,"..") as ?mincount)
+          SELECT ?pshape (strdt(strbefore(?kardinaliteit,".."), xsd:integer) as ?mincount)
           WHERE {
             GRAPH <urn:input> {
               ?element mim:kardinaliteit ?kardinaliteit
@@ -580,6 +577,7 @@ queries:
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX mim: <http://bp4mc2.org/def/mim#>
       PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       INSERT {
         GRAPH <urn:output> {
       		?pshape sh:maxCount ?maxcount.
@@ -587,7 +585,7 @@ queries:
       }
       WHERE {
         {
-          SELECT ?pshape (strafter(?kardinaliteit,"..") as ?maxcount)
+          SELECT ?pshape (strdt(strafter(?kardinaliteit,".."), xsd:integer) as ?maxcount)
           WHERE {
             GRAPH <urn:input> {
               ?element mim:kardinaliteit ?kardinaliteit
