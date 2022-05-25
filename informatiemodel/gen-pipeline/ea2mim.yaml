@@ -1,5 +1,5 @@
 title: MIM conversie
-version: 0.2
+version: 0.3
 queries:
   - title: get Objecttypes
     query: >
@@ -11,14 +11,42 @@ queries:
           ?objecttype a mim:Objecttype.
           ?objecttype mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?objecttype rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?objecttype) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?objecttype) ?s ?label
           WHERE {
             ?s a ea:Object.
             ?s ea:guid ?guid.
             ?s ea:stereotype "Objecttype".
+            ?s rdfs:label ?label
+          }
+        }
+      }
+  - title: get Primitief datatype
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?datatype a mim:PrimitiefDatatype.
+          ?datatype mim:naam ?label.
+        }
+        GRAPH <urn:input> {
+          ?datatype rdfs:seeAlso ?s
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?datatype) ?s ?label
+          WHERE {
+            ?s a ea:Object.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Primitief datatype".
             ?s rdfs:label ?label
           }
         }
@@ -33,10 +61,13 @@ queries:
           ?datatype a mim:GestructureerdDatatype.
           ?datatype mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?datatype rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?datatype) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?datatype) ?s ?label
           WHERE {
             ?s a ea:Object.
             ?s ea:guid ?guid.
@@ -55,10 +86,13 @@ queries:
           ?ggtype a mim:Gegevensgroeptype.
           ?ggtype mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?ggtype rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?ggtype) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?ggtype) ?s ?label
           WHERE {
             ?s a ea:Object.
             ?s ea:guid ?guid.
@@ -74,13 +108,16 @@ queries:
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       INSERT {
         GRAPH <urn:output> {
-          ?ggtype a mim:Keuze.
-          ?ggtype mim:naam ?label.
+          ?keuze a mim:Keuze.
+          ?keuze mim:naam ?label.
+        }
+        GRAPH <urn:input> {
+          ?keuze rdfs:seeAlso ?s
         }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?ggtype) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?keuze) ?s ?label
           WHERE {
             ?s a ea:Object.
             ?s ea:guid ?guid.
@@ -99,10 +136,13 @@ queries:
           ?relatieklasse a mim:Relatieklasse.
           ?relatieklasse mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?relatieklasse rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?relatieklasse) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?relatieklasse) ?s ?label
           WHERE {
             ?s a ea:Object.
             ?s ea:guid ?guid.
@@ -121,10 +161,13 @@ queries:
           ?referentielijst a mim:Referentielijst.
           ?referentielijst mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?referentielijst rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?referentielijst) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?referentielijst) ?s ?label
           WHERE {
             ?s a ea:Object.
             ?s ea:guid ?guid.
@@ -143,10 +186,13 @@ queries:
           ?attribuutsoort a mim:Attribuutsoort.
           ?attribuutsoort mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?attribuutsoort rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?attribuutsoort) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?attribuutsoort) ?s ?label
           WHERE {
             ?s a ea:Attribute.
             ?s ea:guid ?guid.
@@ -187,10 +233,13 @@ queries:
           ?gegevensgroep a mim:Gegevensgroep.
           ?gegevensgroep mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?gegevensgroep rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?gegevensgroep) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?gegevensgroep) ?s ?label
           WHERE {
             ?s a ea:Attribute.
             ?s ea:guid ?guid.
@@ -243,6 +292,53 @@ queries:
           }
         }
       }
+  - title: get DataElement
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?dataelement a mim:DataElement.
+          ?dataelement mim:naam ?label.
+        }
+        GRAPH <urn:input> {
+          ?dataelement rdfs:seeAlso ?s
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?dataelement) ?s ?label
+          WHERE {
+            ?s a ea:Attribute.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Data element".
+            ?s rdfs:label ?label.
+          }
+        }
+      }
+  - title: link DataElement to GestructureerdDatatype
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?datatype mim:dataElement ?dataelement
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT (iri(concat('urn:uuid:',?elem)) as ?dataelement) (iri(concat('urn:uuid:',?dt)) as ?datatype)
+          WHERE {
+            ?s a ea:Attribute.
+            ?s ea:guid ?elem.
+            ?s ea:stereotype "Data element".
+            ?s ea:object ?o.
+            ?o ea:guid ?dt.
+          }
+        }
+      }
   - title: get Relatiesoort
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
@@ -253,10 +349,13 @@ queries:
           ?relatiesoort a mim:Relatiesoort.
           ?relatiesoort mim:naam ?label.
         }
+        GRAPH <urn:input> {
+          ?relatiesoort rdfs:seeAlso ?s
+        }
       }
       WHERE {
         GRAPH <urn:input> {
-          SELECT (iri(concat('urn:uuid:',?guid)) as ?relatiesoort) ?label
+          SELECT (iri(concat('urn:uuid:',?guid)) as ?relatiesoort) ?s ?label
           WHERE {
             ?s a ea:Connector.
             ?s ea:guid ?guid.
@@ -309,6 +408,67 @@ queries:
           }
         }
       }
+  - title: get Relatierol (bron)
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?relatiesoort mim:relatierol ?relatierolbron.
+          ?relatierolbron a mim:RelatierolBron.
+          ?relatierolbron mim:naam ?label.
+          ?relatierolbron mim:type ?objecttype.
+          ?relatierolbron mim:kardinaliteit ?kardinaliteit
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT  (iri(concat('urn:uuid:',?guid)) as ?relatiesoort)
+                  (iri(concat('urn:uuid-src:',?guid)) as ?relatierolbron)
+                  (iri(concat('urn:uuid:',?obj)) as ?objecttype)
+                  (replace(?card,"\\*","-1") as ?kardinaliteit)
+                  ?label
+          WHERE {
+            ?s a ea:Connector.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Relatiesoort".
+            ?s ea:sourceRole ?label.
+            ?s ea:start ?o.
+            ?o ea:guid ?obj.
+            OPTIONAL {?s ea:sourceCard ?card}
+          }
+        }
+      }
+  - title: get Relatierol (doel)
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?relatiesoort mim:relatierol ?relatieroldoel.
+          ?relatieroldoel a mim:RelatierolDoel.
+          ?relatieroldoel mim:naam ?label.
+          ?relatieroldoel mim:type ?objecttype
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT  (iri(concat('urn:uuid:',?guid)) as ?relatiesoort)
+                  (iri(concat('urn:uuid-dst:',?guid)) as ?relatieroldoel)
+                  (iri(concat('urn:uuid:',?obj)) as ?objecttype)
+                  ?label
+          WHERE {
+            ?s a ea:Connector.
+            ?s ea:guid ?guid.
+            ?s ea:stereotype "Relatiesoort".
+            ?s ea:destRole ?label.
+            ?s ea:end ?o.
+            ?o ea:guid ?obj.
+          }
+        }
+      }
   - title: get Generalisatie
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
@@ -326,12 +486,87 @@ queries:
           SELECT (iri(concat('urn:uuid:',?gen)) as ?generalisatie) (iri(concat('urn:uuid:',?sub)) as ?subtype) (iri(concat('urn:uuid:',?super)) as ?supertype)
           WHERE {
             ?s a ea:Connector.
-            ?s ea:stereotype "Generalisatie".
+            ?s ea:type "Generalization".
             ?s ea:guid ?gen.
             ?s ea:start ?start.
             ?start ea:guid ?sub.
             ?s ea:end ?end.
             ?end ea:guid ?super.
+          }
+        }
+      }
+  - title: add mim:definitie
+    query: >
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?element mim:definitie ?definitie
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          ?element rdfs:seeAlso ?item.
+          ?item rdfs:comment ?definitie
+        }
+      }
+  - title: add mim:begrip, mim:begripsterm
+    query: >
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?item ?property ?begrip.
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT (IF(REGEX(?value,"^(http://|https://)[^ ]+$"),mim:begrip,mim:begripsterm) as ?property)
+                 (IF(REGEX(?value,"^(http://|https://)[^ ]+$"),iri(?value),?value) as ?begrip)
+                 ?item
+          WHERE {
+            ?tag ea:property "Begrip".
+            ?tag ea:value ?value.
+            ?tag ea:element ?element.
+            ?item rdfs:seeAlso ?element
+          }
+        }
+      }
+  - title: add mim:type
+    query: >
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?element mim:type ?datatype
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          ?property ea:classifier ?classifier.
+          ?element rdfs:seeAlso ?property.
+          ?datatype rdfs:seeAlso ?classifier.
+        }
+      }
+  - title: add mim:kardinaliteit (Attributes)
+    query: >
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?element mim:kardinaliteit ?kardinaliteit
+        }
+      }
+      WHERE {
+        SELECT ?element (concat(if(?lower='*','-1',?lower),"..",if(?upper='*','-1',?upper)) as ?kardinaliteit)
+        WHERE {
+          GRAPH <urn:input> {
+            ?item ea:lowerBound ?lower.
+            ?item ea:upperBound ?upper.
+            ?element rdfs:seeAlso ?item
           }
         }
       }
@@ -351,7 +586,7 @@ queries:
       WHERE {
         GRAPH <urn:output> {
           ?s mim:definitie ?def
-          BIND (replace(replace(replace(replace(replace(?def,"---IMKAD---\n",""),"--Definitie--\n",""),"--Toelichting--(\n.*)*$",""),"^[\n| ]+",""),"[\n| ]+$","") as ?definitie)
+          BIND (replace(replace(replace(replace(replace(?def,"---IMKAD---\r\n",""),"--Definitie--\r\n",""),"--Toelichting--(\r\n.*)*$",""),"^[\r\n| ]+",""),"[\r\n| ]+$","") as ?definitie)
         }
       }
   - title: Verwijder lege definities
