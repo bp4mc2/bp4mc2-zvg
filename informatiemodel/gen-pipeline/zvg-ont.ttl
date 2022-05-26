@@ -78,6 +78,8 @@
         rdfs:seeAlso  <urn:uuid:962F13C3-5FDC-424b-BBE7-E2501D5FB593> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Vertegenwoordiging> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Vertegenwoordiging" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Vertegenwoordiging.bevoegdheid> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -135,6 +137,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "ZakelijkRechtRecherche" ;
         rdfs:seeAlso  <urn:uuid:8E622DA9-6369-4d29-BC5F-6E2DD9727D75> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "ZakelijkRechtRecherche" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRechtRecherche.perceel> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRechtRecherche.tenaamstelling> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRechtRecherche.zakelijkRecht> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -179,6 +183,8 @@
         rdfs:label       "InGebrekestellingOfOntbinding" ;
         rdfs:seeAlso     <urn:uuid:B18F8209-191D-4708-A89F-E9E5FA174E3D> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OntbindendeVoorwaarde> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "InGebrekestellingOfOntbinding" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#InGebrekestellingOfOntbinding> .
 
@@ -300,6 +306,8 @@
         rdfs:label       "NatuurlijkPersoon" ;
         rdfs:seeAlso     <urn:uuid:7ECCC940-3E6A-4d8a-A51E-0A74641494F5> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Persoon> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "NatuurlijkPersoon" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.indicatieOverleden> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.indicatieGeheim> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.landWaarnaarVertrokken> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.overlijden> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.metIdentificatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.aanduidingNaamgebruik> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.isVerbondenIn> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.naam> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.adellijkeTitelOfPredikaat> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NatuurlijkPersoon.geboorte> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -341,6 +349,8 @@
         rdfs:label       "Opstalverzekering" ;
         rdfs:seeAlso     <urn:uuid:C93DD7C9-09BE-4a24-8CED-45C9CFDB3145> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Opstalverzekering" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Opstalverzekering> .
 
@@ -362,6 +372,8 @@
         rdfs:label       "ReglementAkteVanSplitsing" ;
         rdfs:seeAlso     <urn:uuid:67EBEC04-AAD4-427a-B5B4-2202D0FA7C32> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "ReglementAkteVanSplitsing" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ReglementAkteVanSplitsing.akteDatum> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -384,10 +396,12 @@
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#overlijden> .
 
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Eigendomsoverdracht>
-        a                <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        a                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/ns/shacl#NodeShape> ;
         rdfs:label       "Eigendomsoverdracht" ;
         rdfs:seeAlso     <urn:uuid:7D099919-8C46-4fd2-B31F-F9D2B864F4A0> , <urn:uuid:8A5626A1-DECF-4433-BDDA-73C0BD6D7489> ;
-        rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule> ;
+        rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Eigendomsoverdracht" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Eigendomsoverdracht.verkoperBevoegdheid> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -427,6 +441,8 @@
         rdfs:label       "SoftwareAgent" ;
         rdfs:seeAlso     <urn:uuid:4EF17D6A-B796-4947-8333-B07C8F5ECD2A> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Agent> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "SoftwareAgent" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#SoftwareAgent> .
 
@@ -529,6 +545,8 @@
         rdfs:label       "Bedenktijd" ;
         rdfs:seeAlso     <urn:uuid:979BE0AA-5CD4-4aee-A5D4-0D8F226DA3C8> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Bedenktijd" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Bedenktijd> .
 
@@ -563,6 +581,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OnroerendeZaak> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Perceel> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Perceel" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel.begrenzingPerceel> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel.heerstMet> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Perceel.kadastraleGrootte> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -611,6 +631,8 @@
         rdfs:seeAlso  <urn:uuid:24CD2AC3-7D09-4e81-B867-2E4E32C902D1> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partij> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Partij" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij.vertegenwoordigdDoor> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -627,6 +649,8 @@
         rdfs:seeAlso  <urn:uuid:DE56DBA5-AA7E-47b0-AFA3-3AB5BA2EB1E1> ;
         <http://purl.org/dc/terms/subject>
                 <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederen> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "LijstVanGoederen" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LijstVanGoederen.isOnderdeelVan> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LijstVanGoederen.lijstReferentie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LijstVanGoederen.waarde> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LijstVanGoederen.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -668,6 +692,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "VoorwaardenVerbintenis" ;
         rdfs:seeAlso  <urn:uuid:029C2C42-3D99-4c8e-B132-BFF5121D8971> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "VoorwaardenVerbintenis" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#VoorwaardenVerbintenis> .
 
@@ -675,6 +701,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "VerbintenisSoort" ;
         rdfs:seeAlso  <urn:uuid:894AA05A-DC00-40e3-8353-FE51516ADD96> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "VerbintenisSoort" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#VerbintenisSoort> .
 
@@ -712,6 +740,8 @@
         rdfs:label       "Koppelingswijze" ;
         rdfs:seeAlso     <urn:uuid:1B6161B0-E951-4d37-9726-C588B5CB4C22> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Koppelingswijze" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koppelingswijze> .
 
@@ -722,6 +752,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Rechtshandeling> ;
         <http://purl.org/dc/terms/subject>
                 <http://mak.zorgeloosvastgoed.nl/id/concept/Ontbinden> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Ontbinden" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ontbinden.opBasisVanManifestatieVan> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -743,6 +775,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "ObjectLocatie" ;
         rdfs:seeAlso  <urn:uuid:9624A353-103C-456d-AB98-ED3D2235809A> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "ObjectLocatie" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectLocatie> .
 
@@ -833,6 +867,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Persoon> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/NietNatuurlijkPersoon> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "NietNatuurlijkPersoon" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon.rechtsvorm> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon.kvkNummer> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon.statutaireNaam> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon.rsin> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon.statutaireZetel> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -900,6 +936,8 @@
         rdfs:seeAlso  <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
         <http://purl.org/dc/terms/subject>
                 <http://www.w3.org/ns/prov#Activity> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Activity" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Activity.startTijd> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Activity.activiteitNaam> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Activity.metInformatieVan> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Activity.wasGedaanDoor> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Activity.eindTijd> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Activity.gebruikte> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -971,8 +1009,10 @@
         rdfs:label       "RegistratieKoopovereenkomst" ;
         rdfs:seeAlso     <urn:uuid:08725DA4-0C47-44e5-8B6A-552A03251349> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "RegistratieKoopovereenkomst" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RegistratieKoopovereenkomst.inschrijvenKadaster> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RegistratieKoopovereenkomst.registrerenNa> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RegistratieKoopovereenkomst.registratieKostenToedeling> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RegistratieKoopovereenkomst.registrerenNa> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RegistratieKoopovereenkomst.registratieKostenToedeling> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RegistratieKoopovereenkomst.inschrijvenKadaster> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RegistratieKoopovereenkomst> .
 
@@ -1006,6 +1046,8 @@
         rdfs:seeAlso  <urn:uuid:FA7BD226-E929-4472-9051-3EE39AB6881F> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Persoon> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Persoon" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Persoon.identificatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Persoon.vertegenwoordigt> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Persoon.hoortBij> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Persoon.woonlocatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Persoon.contactVia> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1039,6 +1081,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "Contactgegevens" ;
         rdfs:seeAlso  <urn:uuid:61AFF3F4-8919-4592-8240-F2845529373D> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Contactgegevens" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Contactgegevens.vanPersoon> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Contactgegevens.e-mailAdres> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Contactgegevens.telefoonnummer> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1131,6 +1175,8 @@
         rdfs:label       "BeperktRecht" ;
         rdfs:seeAlso     <urn:uuid:7C1A1376-9E0E-4ac0-B456-D191F63F64F8> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "BeperktRecht" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht.bezwaart> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1176,6 +1222,8 @@
         rdfs:seeAlso  <urn:uuid:07735DCE-2E3A-4f3f-A739-4AE0F2BA5938> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/RegistergoedLocatie> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "LocatieRegistergoed" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LocatieRegistergoed.betreft> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#LocatieRegistergoed.heeft> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1198,6 +1246,8 @@
         rdfs:label       "KostenVerdeling" ;
         rdfs:seeAlso     <urn:uuid:E742C766-8D4A-4d6a-92E2-99075B9221C1> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "KostenVerdeling" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenVerdeling.kostenKoperofVerkoper> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenVerdeling.artikel13Verschil> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1221,6 +1271,8 @@
         rdfs:label       "KoperOfVerkoper" ;
         rdfs:seeAlso     <urn:uuid:3A52C749-9562-4c63-8BF0-0C2A0D4DB0DF> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "KoperOfVerkoper" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KoperOfVerkoper> .
 
@@ -1361,8 +1413,10 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OnroerendeZaak> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Appartementsrecht> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Appartementsrecht" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Appartementsrecht.metVerenigingVanEigenaren> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Appartementsrecht.aandeelInGemeenschap> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Appartementsrecht.aandeelInGemeenschap> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Appartementsrecht.metVerenigingVanEigenaren> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Appartementsrecht> .
 
@@ -1397,6 +1451,8 @@
         rdfs:label       "IdentiteitPartijen" ;
         rdfs:seeAlso     <urn:uuid:77F008F2-70B5-41ca-B072-61BF9AD71599> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "IdentiteitPartijen" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#IdentiteitPartijen> .
 
@@ -1410,6 +1466,8 @@
         rdfs:label       "StellenOfStorten" ;
         rdfs:seeAlso     <urn:uuid:DA73B047-CC15-412a-8224-97E19254DA75> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "StellenOfStorten" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StellenOfStorten> .
 
@@ -1460,6 +1518,8 @@
         rdfs:seeAlso  <urn:uuid:1673F612-35C9-4a3b-A184-00CAC2C33C5F> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Partnerschap> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Partnerschap" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partnerschap.soortVerbintenis> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partnerschap.datumSluiting> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partnerschap.verbintenisVoorwaarden> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partnerschap.verbindt> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partnerschap.datumOntbinding> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1525,6 +1585,8 @@
         rdfs:seeAlso  <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F> ;
         <http://purl.org/dc/terms/subject>
                 <http://mak.zorgeloosvastgoed.nl/id/concept/Voorwaarde> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Clausule" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule.isVanToepassingOp> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule.aardClausule> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1552,6 +1614,8 @@
         rdfs:label       "VereningingVanEigenaren" ;
         rdfs:seeAlso     <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NietNatuurlijkPersoon> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "VereningingVanEigenaren" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#VereningingVanEigenaren.lastenEnVerplichtingen> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1636,6 +1700,8 @@
         rdfs:label       "AanduidingGeslacht" ;
         rdfs:seeAlso     <urn:uuid:8047D44B-74C1-4403-ADCC-D3DBAC83FBEC> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "AanduidingGeslacht" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AanduidingGeslacht> .
 
@@ -1644,6 +1710,8 @@
         rdfs:label       "Betaling" ;
         rdfs:seeAlso     <urn:uuid:BD7F8005-EB22-481b-91E9-593D455C9D01> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Betaling" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Betaling> .
 
@@ -1671,6 +1739,8 @@
         rdfs:label       "Rechtsvorm" ;
         rdfs:seeAlso     <urn:uuid:E3BF3802-9C35-415f-B3DE-FBB7BD7712C2> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Rechtsvorm" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Rechtsvorm> .
 
@@ -1770,8 +1840,10 @@
         rdfs:seeAlso  <urn:uuid:7F819EAA-77FC-4b94-96DE-9EE55E835EC1> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Naam> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Naam" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Naam.geslachtsnaam> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Naam.voornamen> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Naam.voorvoegselsgeslachtsnaam> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Naam.voorvoegselsgeslachtsnaam> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Naam.geslachtsnaam> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Naam.voornamen> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Naam> .
 
@@ -1832,12 +1904,14 @@
         rdfs:seeAlso  <urn:uuid:99A0C8CA-58F9-4a10-90BC-2BE21CD6DC53> .
 
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom>
-        a                <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        a                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/ns/shacl#NodeShape> ;
         rdfs:label       "BankgarantieOfWaarborgsom" ;
         rdfs:seeAlso     <urn:uuid:ADF67F3C-144C-4601-A793-520E0DDD11B9> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "BankgarantieOfWaarborgsom" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom.garantie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom.uiterlijkeDatumGarantie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom.bedrag> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom.uiterlijkeDatumGarantie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom.garantie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom.bedrag> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BankgarantieOfWaarborgsom> .
 
@@ -1925,6 +1999,8 @@
         rdfs:seeAlso  <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B> ;
         <http://purl.org/dc/terms/subject>
                 <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/Recherche> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Recherche" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche.van> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche.uitgevoerdeControle> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche.identificatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche.vanPersoon> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche.door> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -1960,6 +2036,8 @@
         rdfs:label       "StaatOnroerendeZaak" ;
         rdfs:seeAlso     <urn:uuid:ACE04D1B-E3EF-4695-8FDB-5993D10129B8> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "StaatOnroerendeZaak" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.onbekenheidsverklaring> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.inspectie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.aanschrijvingOverheidNutsbedrijf> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.oppervlakte> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isAsbestAanwezig> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isPubliekrechtelijkBeperkt> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.belastMetPubliekrechtelijkeBeperking> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.lastenVoorgaandeJaren> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isVerontreinigingBekend> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.heeftBetrekkingOp> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isOndergrondsetankBekend> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isAanwijzingProvinciaalOfGemeentelijkMonumentBekend> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.heeftAanwijzingWVG> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.verplichtingenDerden> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.gebruik> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isAanwijzingRijksmonumentBekend> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isArtikel55WetBodembeschermingBekend> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.isBeschermdStadsOfDorpsGezichtBekend> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StaatOnroerendeZaak.wegneemrechtHuurder> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2032,12 +2110,14 @@
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#startTijd> .
 
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars>
-        a                <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        a                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/ns/shacl#NodeShape> ;
         rdfs:label       "FinancienVerenigingVanEigenaars" ;
         rdfs:seeAlso     <urn:uuid:74B656B9-47E5-4c96-86C2-4A4BBD67ABCE> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "FinancienVerenigingVanEigenaars" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars.machtigingVVEVergadering> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars.waardeAandeelVVE> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars.lastenVerzwarendeVoornemensVVE> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars.machtigingVVEVergadering> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars.lastenVerzwarendeVoornemensVVE> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars.waardeAandeelVVE> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancienVerenigingVanEigenaars> .
 
@@ -2047,6 +2127,8 @@
         rdfs:seeAlso  <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
         <http://purl.org/dc/terms/subject>
                 <http://www.w3.org/ns/prov#Agent> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Agent" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Agent.treed_op_namens> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Agent.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2140,6 +2222,8 @@
         rdfs:label       "StatusHistorie" ;
         rdfs:seeAlso     <urn:uuid:A3CF5837-28D8-4172-A310-E77102E76B23> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "StatusHistorie" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#StatusHistorie> .
 
@@ -2186,6 +2270,8 @@
         rdfs:label       "AdresBuitenland" ;
         rdfs:seeAlso     <urn:uuid:C0873187-8660-448a-A353-315C87E26938> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectLocatie> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "AdresBuitenland" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AdresBuitenland.identificatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AdresBuitenland.regio> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AdresBuitenland.land> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AdresBuitenland.woonplaats> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AdresBuitenland.adres> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2196,6 +2282,8 @@
         rdfs:comment  "Een recherche item is een ondewerp waarnaar recherche moet worden gedaan." ;
         rdfs:label    "RechercheItem" ;
         rdfs:seeAlso  <urn:uuid:A5E11066-1736-42fd-8953-74089C7A05CC> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "RechercheItem" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RechercheItem.bronLink> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RechercheItem.onderzoeksDatum> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RechercheItem.onderwerp> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RechercheItem.resultaat> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2222,6 +2310,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Erfpacht> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Erfpacht" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfpacht.metErfpachtCanon> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfpacht.bijzondereErfpachtvoorwaarden> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfpacht.algemeneErfpachtvoorwaarden> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2268,14 +2358,16 @@
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#metErfpachtCanon> .
 
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit>
-        a                <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        a                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/ns/shacl#NodeShape> ;
         rdfs:label       "DigitaleIdentiteit" ;
         rdfs:seeAlso     <urn:uuid:CA93E700-9D86-4995-AA67-BCBF87114EB0> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Legitimatie> ;
         <http://purl.org/dc/terms/subject>
                 <http://not.zorgeloosvastgoed.nl/id/concept/DigitaleIdentiteit> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "DigitaleIdentiteit" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit.identityResult> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit.adres> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit.adres> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit.identityResult> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DigitaleIdentiteit> .
 
@@ -2307,6 +2399,8 @@
         rdfs:label       "OvermachtRisicoVerzekeringen" ;
         rdfs:seeAlso     <urn:uuid:14E80CF6-AAF3-44c1-8125-57B33CCB5619> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "OvermachtRisicoVerzekeringen" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OvermachtRisicoVerzekeringen> .
 
@@ -2326,11 +2420,13 @@
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#wasToegeschrevenAan> .
 
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht>
-        a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        a             <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/ns/shacl#NodeShape> ;
         rdfs:label    "ZakelijkRecht" ;
         rdfs:seeAlso  <urn:uuid:CAA27791-43E7-4a01-9C1A-99713B5622C4> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/ZakelijkRecht> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "ZakelijkRecht" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht.heeft> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht.rustOp> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2375,6 +2471,8 @@
         rdfs:seeAlso  <urn:uuid:BFB3117B-CCDB-4c32-AA8D-A4BD68D65A3B> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Tenaamstelling> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Tenaamstelling" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Tenaamstelling.van> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Tenaamstelling.is> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Tenaamstelling.akteReferentie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Tenaamstelling.identificatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Tenaamstelling.aandeel> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2431,6 +2529,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BeperktRecht> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Erfdienstbaarheid> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Erfdienstbaarheid" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Erfdienstbaarheid.tenBehoeveVan> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2446,6 +2546,8 @@
         rdfs:comment  "Een Voorkomen is een Object in de registratie waarvan wordt bijgehouden op basis waarvan en wanneer de vastgelegde informatie is ontstaan of gewijzigd." ;
         rdfs:label    "VoorkomenNEN3610" ;
         rdfs:seeAlso  <urn:uuid:DE34D5AB-6215-4144-9BA4-33609312FC30> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "VoorkomenNEN3610" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#VoorkomenNEN3610.historie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2479,6 +2581,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "MachtigingVVEVergadering" ;
         rdfs:seeAlso  <urn:uuid:3F542A41-7D16-42f5-8EAB-A2396FCA9B3D> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "MachtigingVVEVergadering" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#MachtigingVVEVergadering.datum> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#MachtigingVVEVergadering.machtigingIndicatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2489,6 +2593,8 @@
         rdfs:label       "SoortGarantie" ;
         rdfs:seeAlso     <urn:uuid:D907BD58-50DB-40bf-996C-16A61BFE3AAA> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "SoortGarantie" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#SoortGarantie> .
 
@@ -2528,6 +2634,8 @@
         rdfs:seeAlso  <urn:uuid:BD581A2B-8A84-46e4-ADD9-ACD56EE1EEA0> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Overlijden> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Overlijden" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Overlijden.datumOverlijden> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2555,6 +2663,8 @@
         rdfs:label       "Financiering" ;
         rdfs:seeAlso     <urn:uuid:2BAB35C8-3804-4e6f-9FC7-1C3CAED3E148> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OntbindendeVoorwaarde> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Financiering" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Financiering.financieringsbedrag> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2664,6 +2774,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "WaardeAandeelVVE" ;
         rdfs:seeAlso  <urn:uuid:7A495A70-7AB9-4b3a-A4B1-3C501BF5493F> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "WaardeAandeelVVE" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#WaardeAandeelVVE.aandeelReserveEnOnderhoudsfonds> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#WaardeAandeelVVE.bron> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#WaardeAandeelVVE.datum> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2726,6 +2838,8 @@
         rdfs:label       "BRPLand" ;
         rdfs:seeAlso     <urn:uuid:E6F4CE8B-46AF-47d2-BA54-4F182ECF3E23> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "BRPLand" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BRPLand> .
 
@@ -2750,6 +2864,8 @@
         rdfs:label       "Afspraak" ;
         rdfs:seeAlso     <urn:uuid:3F5C3142-80D2-4f4f-85BF-1201E9FCFEDF> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Afspraak" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> .
 
@@ -2794,6 +2910,8 @@
         rdfs:label       "BatenLastenCanons" ;
         rdfs:seeAlso     <urn:uuid:D48CA4E0-38A8-464f-A0AF-3DA24BE784B6> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "BatenLastenCanons" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BatenLastenCanons.overgenomenMetIngangVan> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BatenLastenCanons.bedrag> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2805,6 +2923,8 @@
         rdfs:label       "ErfpachtType" ;
         rdfs:seeAlso     <urn:uuid:BC52C885-0B0E-41bf-84A9-3E0A228F5C83> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "ErfpachtType" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ErfpachtType> .
 
@@ -2840,10 +2960,12 @@
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Woonplaats>
         a                <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label       "Woonplaats" ;
-        rdfs:seeAlso     <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735> , <urn:uuid:30830377-3D0E-43dc-A42D-9EB91905ECEB> ;
+        rdfs:seeAlso     <urn:uuid:30830377-3D0E-43dc-A42D-9EB91905ECEB> , <urn:uuid:B865A197-C216-486d-BBAD-1764163F9735> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
         <http://purl.org/dc/terms/subject>
                 <http://bag.basisregistraties.overheid.nl/id/concept/Woonplaats> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Woonplaats" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Woonplaats.woonplaatsNaam> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -2855,6 +2977,8 @@
         rdfs:label       "Valuta" ;
         rdfs:seeAlso     <urn:uuid:4BFBA567-FBA2-4e84-8DED-2C68944F73D0> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Valuta" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Valuta> .
 
@@ -2864,6 +2988,8 @@
         rdfs:label       "KadastraleGemeente" ;
         rdfs:seeAlso     <urn:uuid:7D9EA3FD-F4F2-4918-A01D-F4013C5C3497> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "KadastraleGemeente" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadastraleGemeente> .
 
@@ -2928,6 +3054,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "Brondocument" ;
         rdfs:seeAlso  <urn:uuid:6A6A62B3-1D07-4521-8640-6880E28A006D> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Brondocument" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Brondocument> .
 
@@ -2998,6 +3126,8 @@
         rdfs:seeAlso  <urn:uuid:5E4F1500-0A67-4d58-85D5-274CC21EE948> ;
         <http://purl.org/dc/terms/subject>
                 <http://bag.basisregistraties.overheid.nl/id/concept/OpenbareRuimte> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "OpenbareRuimte" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OpenbareRuimte.gerelateerdeWoonplaats> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OpenbareRuimte.openbareRuimteNaam> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3043,6 +3173,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "Provenance" ;
         rdfs:seeAlso  <urn:uuid:8366FB5E-CC41-4738-A1AE-662F0DA319CE> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Provenance" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Provenance.activity> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Provenance.agent> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3077,6 +3209,8 @@
         rdfs:comment  "KadasterHistorie is een verzameling gegevens waarmee historie vastgelegd wordt. Historie betreft alleen voorkomens van objecten, dus het object op een bepaald moment. De historie is conform het Kadaster historiemodel." ;
         rdfs:label    "KadasterHistorieNEN3610" ;
         rdfs:seeAlso  <urn:uuid:EB778A53-A1EC-4308-BF8D-3361DC848863> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "KadasterHistorieNEN3610" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadasterHistorieNEN3610.tijdstipRegistratie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadasterHistorieNEN3610.eindGeldigheid> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadasterHistorieNEN3610.eindRegistratie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadasterHistorieNEN3610.statusHistorie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadasterHistorieNEN3610.volgnummer> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KadasterHistorieNEN3610.beginGeldigheid> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3152,6 +3286,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "Registergoed" ;
         rdfs:seeAlso  <urn:uuid:02C68C94-6B70-442a-B9A9-7AD326EE84F8> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Registergoed" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Registergoed.metLocatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Registergoed.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3175,6 +3311,8 @@
         rdfs:seeAlso  <urn:uuid:968031B5-6406-4dd2-982C-6FF34B15F68B> ;
         <http://purl.org/dc/terms/subject>
                 <https://taxonomie.zorgeloosvastgoed.nl/doc/concept/Onderzoeker> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Onderzoeker" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Onderzoeker> .
 
@@ -3184,8 +3322,10 @@
         rdfs:seeAlso  <urn:uuid:F2B5280F-8C22-4b3f-80E5-282D68F21FC3> ;
         <http://purl.org/dc/terms/subject>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Geboorte> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Geboorte" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Geboorte.geboortedatum> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Geboorte.geboorteplaats> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Geboorte.geboorteland> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Geboorte.geboorteplaats> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Geboorte.geboortedatum> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Geboorte.geboorteland> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Geboorte> .
 
@@ -3212,6 +3352,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule> ;
         <http://purl.org/dc/terms/subject>
                 <http://mak.zorgeloosvastgoed.nl/id/concept/Voorbehoud> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Voorbehoud" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Voorbehoud.bedrag> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3258,8 +3400,10 @@
         rdfs:seeAlso  <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
         <http://purl.org/dc/terms/subject>
                 <http://www.w3.org/ns/prov#Entity> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Entity" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Entity.historie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Entity.wasToegeschrevenAan> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Entity.wasOntstaanDoor> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Entity.wasOntstaanDoor> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Entity.historie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Entity.wasToegeschrevenAan> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Entity> .
 
@@ -3268,6 +3412,8 @@
         rdfs:label       "FeitelijkeLevering" ;
         rdfs:seeAlso     <urn:uuid:417D2D14-2CED-4613-8B6B-A84F2F96BC2D> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "FeitelijkeLevering" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FeitelijkeLevering.huurLeaseHuurkoopovereenkomste> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FeitelijkeLevering.overdrachtAanspraken> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FeitelijkeLevering.overdrachtOvereenkomsten> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FeitelijkeLevering.ongevorderdLeeg> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3278,6 +3424,8 @@
         rdfs:label       "AdellijkeTitelOfPredikaat" ;
         rdfs:seeAlso     <urn:uuid:504659C8-55E9-49b9-B17D-1211E9BF5443> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "AdellijkeTitelOfPredikaat" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AdellijkeTitelOfPredikaat> .
 
@@ -3480,6 +3628,8 @@
         rdfs:comment  "Referentielijst RechercheOndewerp is een opsomming van de mogelijke onderwerpen waarnaar recherche kan worden gedaan." ;
         rdfs:label    "RechercheOndewerp" ;
         rdfs:seeAlso  <urn:uuid:481B3ED2-9637-4b46-8CB1-6C705AA0445B> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "RechercheOndewerp" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RechercheOndewerp> .
 
@@ -3489,6 +3639,8 @@
         rdfs:label       "Medewerker" ;
         rdfs:seeAlso     <urn:uuid:6329F95D-6167-465d-ADC5-C61CDF16E5D8> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Agent> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Medewerker" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Medewerker> .
 
@@ -3499,6 +3651,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Rechtshandeling> ;
         <http://purl.org/dc/terms/subject>
                 <http://not.zorgeloosvastgoed.nl/id/concept/Levering> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "JuridischeLevering" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#JuridischeLevering.datumAfspraak> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#JuridischeLevering.isUitvoeringVan> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#JuridischeLevering.bijNotaris> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3529,6 +3683,8 @@
         rdfs:label       "ObjectlocatieBinnenland" ;
         rdfs:seeAlso     <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectLocatie> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "ObjectlocatieBinnenland" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland.adresgegevens> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3540,6 +3696,8 @@
         rdfs:label       "BevoegdheidVerkoper" ;
         rdfs:seeAlso     <urn:uuid:335576D6-0DD9-4de6-8414-4060D2401448> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "BevoegdheidVerkoper" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BevoegdheidVerkoper> .
 
@@ -3559,14 +3717,16 @@
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#resultaat> .
 
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit>
-        a                <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        a                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/ns/shacl#NodeShape> ;
         rdfs:label       "DocumentIdentiteit" ;
         rdfs:seeAlso     <urn:uuid:898A9CD9-A52B-407b-9419-591F4EF01637> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Legitimatie> ;
         <http://purl.org/dc/terms/subject>
                 <http://not.zorgeloosvastgoed.nl/id/concept/Identiteitsdocument> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "DocumentIdentiteit" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit.referentie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit.soort> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit.soort> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit.referentie> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#DocumentIdentiteit> .
 
@@ -3709,6 +3869,8 @@
         rdfs:label       "GrondslagBevoegdheid" ;
         rdfs:seeAlso     <urn:uuid:586BAFEE-EFBF-47ce-B4A0-C7E95765FE17> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "GrondslagBevoegdheid" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#GrondslagBevoegdheid> .
 
@@ -3717,6 +3879,8 @@
         rdfs:comment  "Referentielijst RechercheResultaat is een opsomming van de mogelijke resultaten van een onderzoek." ;
         rdfs:label    "RechercheResultaat" ;
         rdfs:seeAlso  <urn:uuid:0441D83B-74B9-401e-A627-317DC60B4D57> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "RechercheResultaat" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#RechercheResultaat> .
 
@@ -3733,12 +3897,14 @@
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#aandeelInGemeenschap> .
 
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verkoper>
-        a                <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
+        a                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/ns/shacl#NodeShape> ;
         rdfs:label       "Verkoper" ;
         rdfs:seeAlso     <urn:uuid:3DD634A7-BBA1-4708-94BB-F58CACCA1555> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij> ;
         <http://purl.org/dc/terms/subject>
                 <http://mak.zorgeloosvastgoed.nl/id/concept/Verkoper> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Verkoper" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verkoper.bevoegdheid> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Verkoper.rechercheReferentie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3773,6 +3939,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Rechtshandeling> ;
         <http://purl.org/dc/terms/subject>
                 <http://mak.zorgeloosvastgoed.nl/id/concept/Koop> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Koop" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.status> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.aan> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.bevat> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.wordtUitgevoerdIn> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.vanZakelijkRecht> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.standaardBetalingsconditie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.aangebodenDoor> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.koopsom> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.gebruikt> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koop.kosten> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3784,6 +3952,8 @@
         rdfs:seeAlso  <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Nummeraanduiding> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Nummeraanduiding" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding.identificatie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding.huisnummer> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding.huisnummertoevoeging> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding.gerelateerdeWoonplaats> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding.postcode> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding.gerelateerdeOpenbareRuimte> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding.huisletter> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3823,6 +3993,8 @@
         rdfs:label       "SoortGrootte" ;
         rdfs:seeAlso     <urn:uuid:E6B51C30-CF01-4674-A3C0-607D657D68DC> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "SoortGrootte" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#SoortGrootte> .
 
@@ -3836,6 +4008,8 @@
         rdfs:label       "Organisatie" ;
         rdfs:seeAlso     <urn:uuid:ADF5951B-2060-4ca6-BBDD-051E44B3F88E> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Agent> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Organisatie" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Organisatie.betreftEen> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -3876,6 +4050,8 @@
         rdfs:label       "KoperRecherche" ;
         rdfs:seeAlso     <urn:uuid:7C24F6D0-57D9-4e02-9F79-A36D37F0D2F8> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Recherche> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "KoperRecherche" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KoperRecherche.vanKoper> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4024,6 +4200,8 @@
         rdfs:comment  "ZVGHistorie is een verzameling gegevens waarmee historie vastgelegd wordt. Historie betreft alleen voorkomens van objecten, dus het object op een bepaald moment." ;
         rdfs:label    "ZVGHistorie" ;
         rdfs:seeAlso  <urn:uuid:2D302D79-611C-416e-A7A9-E99462550E40> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "ZVGHistorie" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZVGHistorie.eindRegistratie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZVGHistorie.tijdstipRegistratie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZVGHistorie.statusHistorie> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZVGHistorie.tijdstipVervallenOR> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZVGHistorie.volgnummer> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZVGHistorie.tijdstipRegistratieOR> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4088,6 +4266,8 @@
         rdfs:seeAlso  <urn:uuid:80A94808-571F-401c-B5DD-D5C2842A7869> ;
         <http://purl.org/dc/terms/subject>
                 <http://not.zorgeloosvastgoed.nl/id/concept/Legitimatie> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Legitimatie" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Legitimatie.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4113,6 +4293,8 @@
         rdfs:label       "Hoofdelijkheid" ;
         rdfs:seeAlso     <urn:uuid:1756A110-1561-47fc-AE47-53B4BC0A0EF9> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Hoofdelijkheid" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Hoofdelijkheid> .
 
@@ -4182,6 +4364,8 @@
         rdfs:label       "Ingebrekestelling" ;
         rdfs:seeAlso     <urn:uuid:7D01B2EE-7102-489e-BDA5-11735CEE2965> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Ingebrekestelling" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ingebrekestelling> .
 
@@ -4227,6 +4411,8 @@
         rdfs:label       "OntbindendeVoorwaarde" ;
         rdfs:seeAlso     <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Clausule> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "OntbindendeVoorwaarde" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OntbindendeVoorwaarde.expiratieDatum> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4249,6 +4435,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Registergoed> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/OnroerendeZaak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "OnroerendeZaak" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OnroerendeZaak.omschrijvingOnroerendeZaak> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OnroerendeZaak.kadastraleAanduiding> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OnroerendeZaak.isBelastMet> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4260,6 +4448,8 @@
         rdfs:seeAlso  <urn:uuid:249B94D8-8164-4ea3-B7BA-2F183B55DC6A> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Rechtshandeling> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Rechtshandeling" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Rechtshandeling.identificatie> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4301,6 +4491,8 @@
         rdfs:label       "NederlandsRecht" ;
         rdfs:seeAlso     <urn:uuid:6AE676B5-F43E-4160-B091-BBDD125D033C> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "NederlandsRecht" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#NederlandsRecht> .
 
@@ -4452,6 +4644,8 @@
         rdfs:label       "Ondertekening" ;
         rdfs:seeAlso     <urn:uuid:9B43C4B0-1A49-42fc-94B3-8C7B34ABE9C7> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Afspraak> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Ondertekening" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Ondertekening> .
 
@@ -4512,6 +4706,8 @@
         rdfs:seeAlso  <urn:uuid:A8146DD7-6246-4b24-9BE8-38D10AD1F529> ;
         <http://purl.org/dc/terms/subject>
                 <http://not.zorgeloosvastgoed.nl/id/concept/IdentificatiePersoon> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "IdentificatiePersoon" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#IdentificatiePersoon.vanPersoon> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#IdentificatiePersoon.opBasisVan> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4561,6 +4757,8 @@
         rdfs:label       "FinancieringMetNHGGarantie" ;
         rdfs:seeAlso     <urn:uuid:05E1F45F-2980-454d-A77A-D79C13C418CE> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OntbindendeVoorwaarde> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "FinancieringMetNHGGarantie" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#FinancieringMetNHGGarantie.vanToepassing> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4571,6 +4769,8 @@
         rdfs:comment  "Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst." ;
         rdfs:label    "Waardelijst" ;
         rdfs:seeAlso  <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Waardelijst" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> .
 
@@ -4590,6 +4790,8 @@
         a             <http://www.w3.org/ns/shacl#NodeShape> , <http://www.w3.org/2002/07/owl#Class> ;
         rdfs:label    "Canon" ;
         rdfs:seeAlso  <urn:uuid:2543A689-C42B-4b86-BF86-C09AF5A65740> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Canon" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.herziening> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.type> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.einddatumErfpacht> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.aanpassing> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.jaarlijksBedrag> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.indexering> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.einddatumAfkoop> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Canon.datumVooruitbetaling> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4614,6 +4816,8 @@
         rdfs:label       "AanvullendeVoorwaarden" ;
         rdfs:seeAlso     <urn:uuid:2EABC9AF-FC6C-41ef-82FF-CEDB2121C0CA> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OntbindendeVoorwaarde> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "AanvullendeVoorwaarden" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#AanvullendeVoorwaarden.voorwaadenTekst> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4663,8 +4867,10 @@
         rdfs:seeAlso  <urn:uuid:A21B26D3-51AD-4c57-9237-588540F46958> ;
         <http://purl.org/dc/terms/subject>
                 <http://not.zorgeloosvastgoed.nl/id/concept/KostenEnOverdrachtsbelasing> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "KostenEnOverdrachtsbelasting" ;
         <http://www.w3.org/ns/shacl#property>
-                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenEnOverdrachtsbelasting.verrekeningOverdrachtsbelastingArt13> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenEnOverdrachtsbelasting.betalerKosten> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenEnOverdrachtsbelasting.aanwijzerNotaris> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenEnOverdrachtsbelasting.betalerKosten> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenEnOverdrachtsbelasting.verrekeningOverdrachtsbelastingArt13> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenEnOverdrachtsbelasting.aanwijzerNotaris> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#KostenEnOverdrachtsbelasting> .
 
@@ -4750,6 +4956,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ZakelijkRecht> ;
         <http://purl.org/dc/terms/subject>
                 <http://kad.zorgeloosvastgoed.nl/id/concept/Eigendom> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Eigendom" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Eigendom> .
 
@@ -4758,6 +4966,8 @@
         rdfs:label       "BouwtechnischeKeuring" ;
         rdfs:seeAlso     <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#OntbindendeVoorwaarde> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "BouwtechnischeKeuring" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BouwtechnischeKeuring.uitgevoerdDoor> , <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BouwtechnischeKeuring.maximaleHerstelKosten> ;
         <http://www.w3.org/ns/shacl#targetClass>
@@ -4798,6 +5008,8 @@
         rdfs:label       "BRPAanduidingNaamgebruik" ;
         rdfs:seeAlso     <urn:uuid:1FE133E8-D4AE-453f-BEF1-FBF3A624F0DE> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Waardelijst> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "BRPAanduidingNaamgebruik" ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#BRPAanduidingNaamgebruik> .
 
@@ -4808,6 +5020,8 @@
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Partij> ;
         <http://purl.org/dc/terms/subject>
                 <http://mak.zorgeloosvastgoed.nl/id/concept/Koper> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "Koper" ;
         <http://www.w3.org/ns/shacl#property>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Koper.aandeel> ;
         <http://www.w3.org/ns/shacl#targetClass>

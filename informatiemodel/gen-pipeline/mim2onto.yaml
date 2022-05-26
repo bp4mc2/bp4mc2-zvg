@@ -28,6 +28,7 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
+          ?class skos:notation ?code.
           ?class rdfs:seeAlso ?objecttype.
         }
       }
@@ -53,6 +54,7 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
+          ?class skos:notation ?code.
           ?class rdfs:seeAlso ?gegevensgroeptype.
         }
       }
@@ -78,6 +80,7 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
+          ?class skos:notation ?code.
           ?class rdfs:seeAlso ?relatieklasse.
         }
       }
@@ -413,6 +416,7 @@ queries:
           ?class a owl:Class, sh:NodeShape.
           ?class sh:targetClass ?class.
           ?class rdfs:label ?naam.
+          ?class skos:notation ?code.
           ?class rdfs:seeAlso ?referentielijst.
         }
       }
