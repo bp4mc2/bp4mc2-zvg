@@ -34,6 +34,11 @@
         <http://www.w3.org/ns/shacl#path>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#waarde> .
 
+<http://taxonomie.zorgeloosvastgoed.nl/def/zvg#adresgegevens>
+        a             <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+        rdfs:label    "adresgegevens" ;
+        rdfs:seeAlso  <urn:uuid:44BF8380-29FD-4a53-B209-0DDE0E5AA8A3> .
+
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#naam>
         a           <http://www.w3.org/2002/07/owl#ObjectProperty> ;
         rdfs:label  "naam" .
@@ -2892,6 +2897,16 @@
         <http://www.w3.org/ns/shacl#path>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#heerstMet> .
 
+<http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland.adresgegevens>
+        a             <http://www.w3.org/ns/shacl#PropertyShape> ;
+        rdfs:seeAlso  <urn:uuid:44BF8380-29FD-4a53-B209-0DDE0E5AA8A3> ;
+        <http://www.w3.org/ns/shacl#class>
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#Nummeraanduiding> ;
+        <http://www.w3.org/ns/shacl#name>
+                "adresgegevens" ;
+        <http://www.w3.org/ns/shacl#path>
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#adresgegevens> .
+
 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#verbindt>
         a             <http://www.w3.org/2002/07/owl#ObjectProperty> ;
         rdfs:label    "verbindt" ;
@@ -3514,6 +3529,8 @@
         rdfs:label       "ObjectlocatieBinnenland" ;
         rdfs:seeAlso     <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
         rdfs:subClassOf  <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectLocatie> ;
+        <http://www.w3.org/ns/shacl#property>
+                <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland.adresgegevens> ;
         <http://www.w3.org/ns/shacl#targetClass>
                 <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#ObjectlocatieBinnenland> .
 

@@ -145,6 +145,15 @@
         <http://bp4mc2.org/def/mim#naam>
                 "bronLink" .
 
+<urn:uuid:069CEDD2-895C-436e-B89F-44C476C41321>
+        a       <http://bp4mc2.org/def/mim#ReferentieElement> ;
+        <http://bp4mc2.org/def/mim#definitie>
+                "De code van deze waarde. De code is uniek binnen de Waardelijst en taalonafhankelijk." ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
+        <http://bp4mc2.org/def/mim#naam>
+                "code" .
+
 <urn:uuid:D48CA4E0-38A8-464f-A0AF-3DA24BE784B6>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
         <http://bp4mc2.org/def/mim#attribuut>
@@ -1757,6 +1766,15 @@
         <http://bp4mc2.org/def/mim#type>
                 <urn:uuid:61AFF3F4-8919-4592-8240-F2845529373D> .
 
+<urn:uuid:44BF8380-29FD-4a53-B209-0DDE0E5AA8A3>
+        a       <http://bp4mc2.org/def/mim#ExterneKoppeling> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:F924BACE-C916-4753-ADBA-94D30426AA4B> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:48AD7DF4-3BE1-4588-8BBB-1ED39A4B851E> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "adresgegevens" .
+
 <urn:uuid:FA258613-AB62-4adb-80F9-531923335C36>
         a       <http://bp4mc2.org/def/mim#DataElement> ;
         <http://bp4mc2.org/def/mim#definitie>
@@ -1886,6 +1904,10 @@
                 <urn:uuid:D0B14D85-5E2B-4000-B001-C582DA4ABC9E> ;
         <http://bp4mc2.org/def/mim#begrip>
                 <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Vertegenwoordiging> ;
+        <http://bp4mc2.org/def/mim#bron>
+                <urn:uuid:98B3CCB7-6AC0-496c-89D0-F043818B649F> ;
+        <http://bp4mc2.org/def/mim#doel>
+                <urn:uuid:939BCFE9-808A-44ac-9E6E-D1EC925EDC23> ;
         <http://bp4mc2.org/def/mim#naam>
                 "Vertegenwoordiging" .
 
@@ -3119,6 +3141,15 @@
         <http://bp4mc2.org/def/mim#naam>
                 "rsin" .
 
+<urn:uuid:E0AAEB1B-E737-4c4c-959A-3D88A8C45C1A>
+        a       <http://bp4mc2.org/def/mim#ReferentieElement> ;
+        <http://bp4mc2.org/def/mim#definitie>
+                "De waarde zoals aangetroffen in de Waardelijst. het moment waarop de waarde geassocieerd is met de meegeleverde code is onbepaald." ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "0..1" ;
+        <http://bp4mc2.org/def/mim#naam>
+                "waarde" .
+
 <urn:uuid:1CFF49E3-927F-4422-B073-F6FB71A80AA5>
         a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
         <http://bp4mc2.org/def/mim#gegevensgroeptype>
@@ -3270,7 +3301,9 @@
         <http://bp4mc2.org/def/mim#definitie>
                 "Waardelijst is een samengesteld datatype voor het weergeven van een gegeven binnen een extern beheerde referentielijst." ;
         <http://bp4mc2.org/def/mim#naam>
-                "Waardelijst" .
+                "Waardelijst" ;
+        <http://bp4mc2.org/def/mim#referentieElement>
+                <urn:uuid:E0AAEB1B-E737-4c4c-959A-3D88A8C45C1A> , <urn:uuid:069CEDD2-895C-436e-B89F-44C476C41321> .
 
 <urn:uuid:D4A3395B-19C2-437a-BB83-65FC19800358>
         a       <http://bp4mc2.org/def/mim#Generalisatie> ;
