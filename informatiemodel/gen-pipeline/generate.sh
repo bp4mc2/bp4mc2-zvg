@@ -11,4 +11,5 @@ java -jar ../../../rdf2rdf/target/rdf2rdf.jar zvg-mim.ttl zvg-ont.ttl mim2onto.y
 echo Aanmaken graphml bestand
 # Replace path for rdf2xml.jar to the location that contains the jar library
 # Source can be found here: https://github.com/architolk/rdf2xml
-java -jar ../../../rdf2xml/target/rdf2xml.jar zvg-ont.ttl zvg-ont.graphml rdf2graphml.xsl zvg-ont-edited.graphml
+java -jar ../../../rdf2xml/target/rdf2xml.jar zvg-ont.ttl zvg-ont.graphml rdf2graphml.xsl add zvg-ont-edited.graphml
+java -jar ../../../rdf2xml/target/rdf2xml.jar zvg-ont.ttl zvg-model.graphml rdf2graphml.xsl follow zvg-model-edited.graphml
