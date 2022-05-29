@@ -236,6 +236,33 @@ queries:
           }
         }
       }
+  - title: convert mim:GestructureerdDatatype
+    query: >
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?datatype a owl:Class, sh:NodeShape.
+          ?datatype sh:targetClass ?datatype.
+          ?datatype rdfs:label ?naam.
+          ?datatype skos:notation ?code.
+          ?datatype rdfs:seeAlso ?type.
+        }
+      }
+      WHERE {
+        SELECT (iri(concat("http://taxonomie.zorgeloosvastgoed.nl/def/zvg#",?code)) as ?datatype) ?naam ?type
+        WHERE {
+          GRAPH <urn:input> {
+            ?type a mim:GestructureerdDatatype.
+            ?type mim:naam ?naam.
+            ?type skos:notation ?code.
+          }
+        }
+      }
   - title: convert mim:RelatierolBron
     query: >
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -507,6 +534,27 @@ queries:
           ?datatype rdfs:seeAlso ?type.
         }
       }
+  - title: convert mim:type (mim:GestructureerdDatatype)
+    query: >
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?pshape sh:class ?datatype
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          ?item mim:type ?type.
+          ?type a mim:GestructureerdDatatype.
+        }
+        GRAPH <urn:output> {
+          ?pshape a sh:PropertyShape.
+          ?pshape rdfs:seeAlso ?item.
+          ?datatype rdfs:seeAlso ?type.
+        }
+      }
   - title: convert mim:type (mim:Referentielijst)
     query: >
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -574,7 +622,7 @@ queries:
             }
           }
         }
-        FILTER (?mincount!="0")
+        FILTER (?mincount>0)
       }
   - title: convert mim:kardinaliteit (maximum)
     query: >
@@ -608,5 +656,5 @@ queries:
             }
           }
         }
-        FILTER (?maxcount!="-1")
+        FILTER (?maxcount>0)
       }

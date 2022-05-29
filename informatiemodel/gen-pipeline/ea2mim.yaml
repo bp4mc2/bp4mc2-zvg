@@ -1,6 +1,25 @@
 title: MIM conversie
 version: 0.3
 queries:
+  - title: Fix interface naar Primitief datatype
+    query: >
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      DELETE {
+        GRAPH <urn:input> {
+          ?dt ea:stereotype "interface"
+        }
+      }
+      INSERT {
+        GRAPH <urn:input> {
+          ?dt ea:stereotype "Primitief datatype"
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          ?dt ea:type "DataType".
+          ?dt ea:stereotype "interface"
+        }
+      }
   - title: get Objecttypes
     query: >
       PREFIX mim: <http://bp4mc2.org/def/mim#>
@@ -474,7 +493,7 @@ queries:
           SELECT  (iri(concat('urn:uuid:',?guid)) as ?relatiesoort)
                   (iri(concat('urn:uuid-src:',?guid)) as ?relatierolbron)
                   (iri(concat('urn:uuid:',?obj)) as ?objecttype)
-                  (replace(?card,"\\*","-1") as ?kardinaliteit)
+                  (replace(if(strlen(?card)=1,concat(?card,"..",?card),?card),"\\*","-1") as ?kardinaliteit)
                   ?label
           WHERE {
             ?s a ea:Connector.
@@ -505,6 +524,7 @@ queries:
           SELECT  (iri(concat('urn:uuid:',?guid)) as ?relatiesoort)
                   (iri(concat('urn:uuid-dst:',?guid)) as ?relatieroldoel)
                   (iri(concat('urn:uuid:',?obj)) as ?objecttype)
+                  (replace(if(strlen(?card)=1,concat(?card,"..",?card),?card),"\\*","-1") as ?kardinaliteit)
                   ?label
           WHERE {
             ?s a ea:Connector.
@@ -513,6 +533,7 @@ queries:
             ?s ea:destRole ?label.
             ?s ea:end ?o.
             ?o ea:guid ?obj.
+            OPTIONAL {?s ea:destCard ?card}
           }
         }
       }
@@ -726,6 +747,25 @@ queries:
           GRAPH <urn:input> {
             ?item ea:lowerBound ?lower.
             ?item ea:upperBound ?upper.
+            ?element rdfs:seeAlso ?item
+          }
+        }
+      }
+  - title: add mim:kardinaliteit (Relatiesoort)
+    query: >
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX mim: <http://bp4mc2.org/def/mim#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?element mim:kardinaliteit ?kardinaliteit
+        }
+      }
+      WHERE {
+        SELECT ?element (replace(if(strlen(?card)=1,concat(?card,"..",?card),?card),"\\*","-1") as ?kardinaliteit)
+        WHERE {
+          GRAPH <urn:input> {
+            ?item ea:destCard ?card.
             ?element rdfs:seeAlso ?item
           }
         }
