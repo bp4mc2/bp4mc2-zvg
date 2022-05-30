@@ -32,12 +32,20 @@ jobs:
           repository: "architolk/rdf2rdf"
           tag: "v1.1.0"
           fileName: "rdf2rdf.jar"
+      - name: Fetch rdf2xml
+        uses: robinraju/release-downloader@v1.3
+        with:
+          repository: "architolk/rdf2xml"
+          tag: "v1.0.0"
+          fileName: "rdf2xml.jar"
       - name: Convert EA to RDF
         run: java -jar ea2rdf.jar -e informatiemodel/ea/zvg.EAP > zvg-ea.ttl
       - name: Convert EA in RDF to MIM in RDF
         run: java -jar rdf2rdf.jar zvg-ea.ttl informatiemodel/mim/zvg-mim.ttl informatiemodel/gen-pipeline/ea2mim.yaml
       - name: Convert MIM in RDF to RDFS/OWL/SHACL in RDF
         run: java -jar rdf2rdf.jar informatiemodel/mim/zvg-mim.ttl informatiemodel/rdf/zvg-ont.ttl informatiemodel/gen-pipeline/mim2onto.yaml
+      - name: Create Model diagram from ontology
+        run: java -jar rdf2xml.jar informatiemodel/rdf/zvg-ont.ttl informatiemodel/rdf/zvg-model.graphml informatiemodel/gen-pipeline/rdf2graphml.xsl follow informatiemodel/gen-pipeline/zvg-model-edited.graphml
       - name: Commit pipeline output
         uses: EndBug/add-and-commit@v9
         with:
