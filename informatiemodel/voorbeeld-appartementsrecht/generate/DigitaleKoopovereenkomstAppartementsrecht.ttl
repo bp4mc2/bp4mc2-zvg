@@ -1,0 +1,57 @@
+@prefix zvg: <http://taxonomie.zorgeloosvastgoed.nl/def/zvg#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889> a zvg:ObjectlocatieBinnenland;
+    zvg:huisnummer "1"@nl;
+    zvg:openbareRuimteNaam "Fakkelstede"@nl;
+    zvg:postcode "3431 HZ"@nl;
+    zvg:woonplaatsNaam "Nieuwegein"@nl
+.
+<http://mak.zorgeloosvastgoed.nl/id/koopovereenkomst/123e4567-e89b-12d3-a456-426614174000> a zvg:Koop;
+    zvg:aan <https://changchozv.inrupt.net/profile/card#me>;
+    zvg:aangebodenDoor <http://www.nvm.nl/over-nvm>;
+    zvg:koopsom 1100000;
+    zvg:omvat [
+        rdf:type zvg:ArtikelBankgarantieWaarborgsom;
+        zvg:bedrag 110000
+    ];
+    zvg:omvat [
+        rdf:type zvg:StaatOnroerendeZaak;
+        zvg:gebruik "particulier woonhuis"@nl;
+        zvg:isOndergrondsetankBekend false;
+        zvg:isPubliekrechtelijkBeperkt false;
+        zvg:isVerontreinigingBekend false
+    ];
+    zvg:wordtUitgevoerdIn [
+        rdf:type zvg:JuridischeLevering;
+        zvg:bijNotaris [
+            rdf:type zvg:NietNatuurlijkPersoon;
+            zvg:statutaireNaam "Sneep"@nl;
+            zvg:statutaireZetel "Utrecht"@nl
+        ];
+        zvg:datumAfspraak "31 januari 2019"@nl
+    ]
+.
+<http://www.nvm.nl/over-nvm> a zvg:Verkoper;
+    zvg:kvkNummer "40476604"@nl;
+    zvg:postlocatie <http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/0356010000061889>;
+    zvg:statutaireNaam "Nederlandse Coöperatieve Vereniging van Makalaars en Taxateurs in onroerende goederen NVM U.A."@nl;
+    zvg:vertegenwoordigdDoor <https://fransenjohannes.inrupt.net/profile/card#me>;
+    zvg:vertegenwoordigdDoor <https://pietersenmarieke.inrupt.net/profile/card#me>
+.
+<https://fransenjohannes.inrupt.net/profile/card#me> a zvg:NatuurlijkPersoon;
+    zvg:contactGegevens [
+        rdf:type zvg:ContactGegevens;
+        zvg:telefoonnummer "030 608 5185"@nl
+    ];
+    zvg:identificatie <https://fransenjohannes.inrupt.net/profile/card#me>;
+    zvg:naam "Johannes Martinus Fransen"@nl
+.
+<https://pietersenmarieke.inrupt.net/profile/card#me> a zvg:NatuurlijkPersoon;
+    zvg:contactGegevens [
+        rdf:type zvg:ContactGegevens;
+        zvg:telefoonnummer "030 608 5185"@nl
+    ];
+    zvg:identificatie <https://pietersenmarieke.inrupt.net/profile/card#me>;
+    zvg:naam "Marieke Theodora Pietersen"@nl
+.
