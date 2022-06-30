@@ -45,12 +45,16 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 Burgerlijk Wetboek Boek 3"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=1&artikel=10> rdfs:label "artikel 10 Burgerlijk Wetboek Boek 3"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=16> rdfs:label "artikel 16 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=17> rdfs:label "artikel 17 Burgerlijk Wetboek Boek 3"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=21> rdfs:label "artikel 21 Burgerlijk Wetboek Boek 3"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=28> rdfs:label "artikel 28 Burgerlijk Wetboek Boek 3"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005291&titel=7&afdeling=1&artikel=168> rdfs:label "artikel 168 Burgerlijk Wetboek Boek 3"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=9&afdeling=1&artikel=227> rdfs:label "Artikel 227 Burgerlijk Wetboek Boek 3"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1> rdfs:label "artikel 1 Burgerlijk Wetboek Boek 5"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 Burgerlijk Wetboek Boek 5"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 Burgerlijk Wetboek Boek 5"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=106> rdfs:label "artikel 106 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=107> rdfs:label "artikel 107 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=109> rdfs:label "artikel 109 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=115> rdfs:label "artikel 115 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=116> rdfs:label "artikel 116 Burgerlijk Wetboek Boek 5"@nl. 
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&titel=9&afdeling=1&artikel=126> rdfs:label "artikel 126 Burgerlijk Wetboek Boek 5"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "Artikel 213 Burgerlijk Wetboek Boek 6"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 Burgerlijk Wetboek Boek 6"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=2b&afdeling=2&paragraaf=1&artikel=101> rdfs:label "artikel 101 Burgerlijk Wetboek Boek 7"@nl.
@@ -73,6 +77,7 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6> rdfs:label "artikel 6 Kadasterwet"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=2&titeldeel=1&afdeling=1&artikel=8> rdfs:label "artikel 8 Kadasterwet"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&titel=1&afdeling=2&artikel=28> rdfs:label "artikel 28 Kadasterwet"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=2&titel=2&afdeling=2&artikel=31> rdfs:label "artikel 31 Kadasterwet"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=3&titeldeel=2&artikel=50> rdfs:label "artikel 50 Kadasterwet"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=4&titeldeel=1&afdeling=1&artikel=53> rdfs:label "artikel 53 Kadasterwet"@nl.
 
@@ -96,6 +101,17 @@
 #begrippen uit de Kadaster taxonomie
 #---
 #Actors and Agents
+kad:Appartementseigenaar a skos:Concept, skoslex:Actor;
+  skos:definition "Een appartementseigenaar is een gerechtigde tot een appartementrecht."@nl, "An appartement owner is a person entitled to an appartment right."@en ;
+  rdfs:comment "En appartementseigenaar is degene die een appartementsrecht heeft gekocht."@nl ;
+  skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
+  skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
+  skos:exactMatch brk:Appartementseigenaar;
+  rdfs:label "Appartementseigenaar"@nl;
+  skos:prefLabel "Appartementseigenaar"@nl;
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&titel=9&afdeling=1&artikel=106> ;
+  skos:related kad:Appartementsrecht, kad:VerenigingVanEigenaren ;
+.
 kad:DeDienst a skos:Concept, skoslex:Actor;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
@@ -132,8 +148,8 @@ kad:Rechthebbende a skos:Concept;
 	skos:related kad:ZakelijkRecht;
 .
 #--
-#Acts
-kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
+#Acts en Records
+kad:AanwijzingWVG  a skos:Concept, skoslex:Record;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "aanwijzing Wet Voorkeursrecht Gemeenten"@nl;
@@ -144,7 +160,7 @@ kad:AanwijzingWVG  a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003391&artikel=2>;
 	skosthes:broaderGeneric kad:Besluit;
 .
-kad:BeschikkingWetBodembescherming a skos:Concept, skoslex:Act;
+kad:BeschikkingWetBodembescherming a skos:Concept, skoslex:Record;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Beschikking of bevel wet bodembescherming"@nl;
@@ -154,7 +170,7 @@ skos:definition "Een vaststelling van gedeputeerde staten dat sprake is van een 
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=IV&paragraaf=3&artikel=55>;
 	skosthes:broaderGeneric kad:Besluit;
 .
-kad:Beslag a skos:Concept, skoslex:Act;
+kad:Beslag a skos:Concept, skoslex:Record;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	skos:exactMatch brk:Beslag;
@@ -169,7 +185,7 @@ kad:Beslag a skos:Concept, skoslex:Act;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Tweede&titeldeel=Vierde&afdeling=Tweede&artikel=584a>;
 	skosthes:broaderGeneric kad:Recht;
 .
-kad:Besluit a skos:Concept, skoslex:Act;
+kad:Besluit a skos:Concept, skoslex:Record;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	skos:exactMatch brk:Besluit;
@@ -247,7 +263,7 @@ kad:InschrijvingOpenbareRegisters a skos:Concept, skoslex:Act;
 	skosthes:broaderPartitive not:JuridischeLevering;
         #Inschrijving bij Kadaster resulteert in de uitlevering van een datumdeel en nummer. Notaris is de ontvangende partij en koppelt op haar beurt het nummer aan de akte (dus registratie van dit datumdeel/nr door notaris) en dit wordt in het FIN domein gebruikt in terugkoppeling aan banken.
 .
-kad:Kettingbeding a skos:Concept, skoslex:Act;
+kad:Kettingbeding a skos:Concept, skoslex:Record;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	skos:exactMatch brk:Kettingbeding;
@@ -257,7 +273,7 @@ kad:Kettingbeding a skos:Concept, skoslex:Act;
 	rdfs:comment "Een kettingbeding is een afspraak die de verkoper met de koper bij de koop van een gebouw, een stuk grond, vliegtuig of schip maakt. Deze afspraak houdt in dat de koper een verplichting heeft en dat hij deze verplichting ook aan een volgdende koper moet opleggen. Als hij dit niet doet, moet hij een boete aan de verkoper betalen."@nl;
 	skosthes:broaderGeneric kad:KwalitatieveVerplichting;
 .
-kad:KwalitatieveVerplichting a skos:Concept, skoslex:Act;
+kad:KwalitatieveVerplichting a skos:Concept, skoslex:Record;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	skos:exactMatch brk:Kwalitatieve_verplichting;
@@ -318,6 +334,28 @@ kad:Rechtshandeling a skos:Concept, skoslex:Act;
 	skos:scopeNote "Een rechtshandeling vereist een op een rechtsgevolg gerichte wil die zich door een verklaring heeft geopenbaard."@nl;
 	skos:related zv:Persoon;
 .
+kad:ReglementMedeEigenaren a skos:Concept, skoslex:Record;
+  skos:exactMatch brk:Reglement_mede-eigenaren;
+  skos:definition "Een Reglement mede-eigenaren is een overeenkomst tussen medegerechtigden waarin het genot, gebruik en beheer van gemeenschappelijke goederen wordt geregeld."@nl;
+  skos:scopeNote "Van een dergelijk feit kan aantekening worden gemaakt."@nl ;
+  rdfs:comment "Een reglement mede-eigenaren is een overeenkomst tussen personen die samen eigenaar zijn van bepaalde goederen. In de overeenkomst spreken ze af dat ze die goederen samen gebruiken en beheren en hoe ze dat doen."@nl ;
+  skosthes:broaderGeneric kad:Overeenkomst ;
+  skos:prefLabel "Reglement mede-eigenaren"@nl ;
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=2&titel=2&afdeling=2&artikel=31>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&titel=7&afdeling=1&artikel=168>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=1&afdeling=2&artikel=17> ;
+  skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
+  skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
+  rdfs:label "Reglement mede-eigenaren"@nl;
+.
+kad:SplitsingInAppartementsrechten a skos:Concept, skoslex:Record;
+  skos:exactMatch Splitsing_in_appartementsrechten;
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=106>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=107>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=109>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=115>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=116>;
+  skos:definition "Een Splitsing Eigendom In Appartementsrechten is het splitsen van een eigendomsrecht op een stuk grond of op een gebouw met toebehoren en de daarbij behorende grond met toebehoren in appartementsrechten."@nl ;
+  skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
+  skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
+  rdfs:comment "Een splitsing eigendom in appartementsrechten is dat het eigendom van een stuk grond of een gebouw met wat erbij hoort gesplitst wordt in appartementsrechten."@nl ;
+  skos:prefLabel "Splitsing in appartementsrechten"@nl ;
+  rdfs:label "Splitsing in appartementsrechten"@nl ;
+.
 
 #--
 #Objects, records
@@ -331,6 +369,20 @@ kad:Adres a skos:Concept, skoslex:Object;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1>;
 	skos:exactMatch bag:Adres;
 	skos:related kad:ObjectlocatieBinnenland;
+.
+kad:Appartementsrecht a skos:Concept, skoslex:Object;
+  skos:exactMatch brk:Appartementsrecht;
+  skos:scopeNote "Een aandeel in een recht op een gebouw en daarmee onlosmakelijk verbonden het uitsluitend gebruiksrecht van een bepaald privé-gedeelte in dat gebouw. Dat kan ook een garage of een parkeerplaats zijn. De privé-gedeelten zijn dus niet altijd woongedeelten. Een splitsing in appartementsrechten komt tot stand door inschrijving van een notariële akte van splitsing bij het kadaster. Elke splitsing in appartementsrechten kent een Vereniging van Eigenaren (VVE). Een splitsing in appartementsrechten kan worden gewijzigd. Ook kan binnen een bestaande splitsing een appartementsrecht worden ondergesplitst, d.w.z. een splitsing binnen een splitsing. Tenslotte kan een splitsing in appartementsrechten weer worden opgeheven. Voor al de genoemde rechtshandelingen is een notariële akte nodig die in de Openbare Registers moet worden ingeschreven. Zie voor de wettelijke regeling van appartementsrechten Boek 5 Burgelijk Wetboek."@nl, "Possible for co -ownership , co  -lease and co-buildingrights. However, the exclusive rights to separate units concern use. Is governed by a Common hold Association."@en ;
+  rdfs:comment "Een appartementsrecht is het recht dat iemand of een organisatie heeft om eigenaar te zijn van een deel van een gebouw of een stuk grond. In de praktijk wordt dit deel meestal een appartement genoemd."@nl ;
+  skos:related kad:Appartementseigenaar, kad:Reservefonds, kad:Goed ;
+  rdfs:label "Appartementsrecht"@nl;
+  skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
+  skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
+  skos:definition "Een Appartementsrecht is een aandeel in goederen die in een splitsing zijn betrokken, dat de bevoegdheid omvat tot het uitsluitend gebruik van bepaalde gedeelten van het gebouw die blijkens hun inrichting bestemd zijn of worden om als afzonderlijk geheel te worden gebruikt."@nl;
+  skos:prefLabel "Appartementsrecht"@nl;
+  skos:altLabel "Appartement"@nl;
+  skosthes:broaderGeneric kad:ZakelijkRecht ;
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&titel=9&afdeling=1&artikel=106>;
 .
 kad:Basisregistratie a skos:Concept, skoslex:Object;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
@@ -458,6 +510,7 @@ kad:Erfpacht a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:ZakelijkRecht;
 	skos:related kad:OnroerendeZaak;
 .
+
 kad:GemeentelijkMonument a skos:Concept, skoslex:Object;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
@@ -611,6 +664,17 @@ kad:OpenbareRuimte a skos:Concept, skoslex:Object;
 	rdfs:comment "Een openbare ruimte is een verzamelnaam voor alle buitenruimten die een naam hebben gekregen van de gemeente."@nl;
 	skosthes:broaderPartitive kad:Adres;
 .
+kad:Pand a skos:Concept, skoslex:Object;
+  skos:exactMatch bag:Pand;
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=o&z=2012-10-01&g=2012-10-01> ;
+  skos:scopeNote "Een pand is een gebouw waar je in kunt en dat je af kan sluiten. Het gebouw staat altijd op de grond." ;
+  skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
+  skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
+  skos:definition "Een pand is een kleinste bij de totstandkoming functioneel en bouwkundig-constructief zelfstandige eenheid die direct en duurzaam met de aarde is verbonden en betreedbaar en afsluitbaar is"@nl ;
+  rdfs:label "Pand"@nl;
+  skos:prefLabel "Pand"@nl;
+  skos:altLabel "Gebouw"@nl;
+.
 kad:Perceel a skos:Concept, skoslex:Object;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
@@ -682,6 +746,17 @@ kad:Registergoed a skos:Concept, skoslex:Object;
 	skosthes:broaderGeneric kad:Goed;
 	skosthes:narrowerGeneric kad:OnroerendeZaak;
 #Bij het Kadaster worden ook vaar- en vliegtuigen genoemd als goederen die moeten worden ingeschreven, maar deze vallen buiten de context van Zorgeloos Vastgoed.
+.
+kad:Reservefonds a skos:Concept, skoslex:Object;
+  skos:exactMatch brk:Reservefonds;
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&titel=9&afdeling=1&artikel=126> ;
+  skos:definition "Een reservefonds is een fonds dat een vereniging van eigenaren volgens artikel 5:126 Burgerlijk Wetboek verplicht is om in stand te houden, ter bestrijding van andere dan de gewone jaarlijkse kosten."@nl, "A reserve fund is a fund that an association of owners is obliged to sustain on the basis of art. 5:126 BW for the purpose of covering costs other than the ordinary annual costs."@en ;
+  skos:related kad:VerenigingVanEigenaren, kad:Appartementsrecht ;
+  rdfs:label "Reservefonds"@nl ;
+  skos:prefLabel "Reservefonds"@nl ;
+  skos:editorialNote "Ontleend aan het Burgerlijk Wetboek" ;
+  skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
+  skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 .
 kad:Rijksmonument a skos:Concept, skoslex:Object;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
