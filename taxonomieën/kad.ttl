@@ -53,7 +53,12 @@
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=1&artikel=1> rdfs:label "artikel 1 Burgerlijk Wetboek Boek 5"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=6&artikel=70> rdfs:label "artikel 70 Burgerlijk Wetboek Boek 5"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=7&artikel=85> rdfs:label "artikel 85 Burgerlijk Wetboek Boek 5"@nl.
-<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=106> rdfs:label "artikel 106 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=107> rdfs:label "artikel 107 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=109> rdfs:label "artikel 109 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=115> rdfs:label "artikel 115 Burgerlijk Wetboek Boek 5"@nl. <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=116> rdfs:label "artikel 116 Burgerlijk Wetboek Boek 5"@nl. 
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=106> rdfs:label "artikel 106 Burgerlijk Wetboek Boek 5"@nl. 
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=107> rdfs:label "artikel 107 Burgerlijk Wetboek Boek 5"@nl. 
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=109> rdfs:label "artikel 109 Burgerlijk Wetboek Boek 5"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112> rdfs:label "artikel 112 Burgerlijk Wetboek Boek 5"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=115> rdfs:label "artikel 115 Burgerlijk Wetboek Boek 5"@nl.
+<http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=116> rdfs:label "artikel 116 Burgerlijk Wetboek Boek 5"@nl. 
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&titel=9&afdeling=1&artikel=126> rdfs:label "artikel 126 Burgerlijk Wetboek Boek 5"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=1&artikel=213> rdfs:label "Artikel 213 Burgerlijk Wetboek Boek 6"@nl.
 <http://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=4&artikel=252> rdfs:label "artikel 252 Burgerlijk Wetboek Boek 6"@nl.
@@ -134,7 +139,7 @@ kad:Bewaarder a skos:Concept, skoslex:Actor;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0004541&hoofdstuk=1&artikel=6>;
 	skosthes:broaderGeneric zv:NatuurlijkPersoon;
 .
-kad:Rechthebbende a skos:Concept;
+kad:Rechthebbende a skos:Concept, skoslex:Actor;
 	skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	skos:exactMatch brk:Rechthebbende;
@@ -147,6 +152,18 @@ kad:Rechthebbende a skos:Concept;
 	skosthes:broaderGeneric zv:Persoon;
 	skos:related kad:ZakelijkRecht;
 .
+kad:VerenigingVanEigenaren a skos:Concept, skoslex:Actor;
+  skos:exactMatch brk:Vereniging_van_eigenaren;
+  skos:related kad:Appartementseigenaar, kad:Reservefonds ;
+  skos:definition "Een vereniging van eigenaren is een vereniging met als doel het behartigen van de gemeenschappelijke belangen van de appartementseigenaren, en de statuten van de vereniging"@nl, "An association of owners is an association with the purpose of promoting the common interests of the appartment owners, and the association's statutes."@en ;
+  rdfs:comment "Een vereniging van eigenaren is een vereniging met als doel om de belangen te regelen die de eigenaren van een appartement samen hebben. De vereniging maakt ook de statuten waarin het doel en de belangrijkste regels van de vereniging staan."@nl ;
+  skos:scopeNote "Iedere appartementseigenaar is van rechtswege lid van de vereniging van eigenaren."@nl ;
+  skos:prefLabel "Vereniging van eigenaren"@nl ;
+  rdfs:label "Vereniging van eigenaren"@nl ;
+  skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
+  skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
+  dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112> .
+
 #--
 #Acts en Records
 kad:AanwijzingWVG  a skos:Concept, skoslex:Record;
