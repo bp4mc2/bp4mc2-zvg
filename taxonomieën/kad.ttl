@@ -364,7 +364,7 @@ kad:ReglementMedeEigenaren a skos:Concept, skoslex:Record;
   rdfs:label "Reglement mede-eigenaren"@nl;
 .
 kad:SplitsingInAppartementsrechten a skos:Concept, skoslex:Record;
-  skos:exactMatch Splitsing_in_appartementsrechten;
+  skos:exactMatch brk:Splitsing_in_appartementsrechten;
   dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=106>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=107>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=109>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=115>, <http://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=116>;
   skos:definition "Een Splitsing Eigendom In Appartementsrechten is het splitsen van een eigendomsrecht op een stuk grond of op een gebouw met toebehoren en de daarbij behorende grond met toebehoren in appartementsrechten."@nl ;
   skos:inScheme <http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad>; 
