@@ -1,8 +1,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dct: <http://purl.org/dc/terms/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/concept/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/concept/>.
@@ -634,8 +636,8 @@ not:AanmerkelijkeVerzwaring a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Aanmerkelijke Verzwaring"@nl;
     skos:definition "Aanzienlijke verhoging "@nl;
-    dct:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2013:BZ2217&showbutton=true&keyword=%22aanmerkelijke+verzwaring%22"^^rdf:HTML,
-    "ECLI:NL:RBAMS:2013:BZ2217 - Rechtbank Amsterdam, 20-02-2013 / 1372325 \\ HA EXPL 12-1101"@nl .
+    dct:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2013:BZ2217&showbutton=true&keyword=%22aanmerkelijke+verzwaring%22"^^rdf:HTML;
+    rdfs:comment "ECLI:NL:RBAMS:2013:BZ2217 - Rechtbank Amsterdam, 20-02-2013 / 1372325 \\ HA EXPL 12-1101"@nl .
 
 not:AanspraakTotGebruik a skos:Concept;
 	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
@@ -893,7 +895,6 @@ not:Exploitatie a skos:Concept;
     skos:prefLabel "Exploitatie"@nl;
     skos:definition "Gebruik"@nl 
 .
-
 not:Exploitatieoverzicht a skos:Concept;
   	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
@@ -902,14 +903,13 @@ not:Exploitatieoverzicht a skos:Concept;
     skos:altLabel "Winst of Verliesrekening"@nl, "Staat van Baten en Lasten"@nl;
     dct:source "Artikel 5:112 lid 1 sub b. BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
 .
-:Gemeenschap a skos:Concept;
+not:Gemeenschap a skos:Concept;
     skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Gemeenschap"@nl;
     skos:scopeNote "Aandeel in de Gemeenschap"@nl;
     skos:definition "Het in de splitsing in appartementsrechten betrokken (hoofd-)appartementsrecht."@nl 
 .
-
 not:Grondslagwaarde a skos:Concept, skoslex:Object;
 	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
