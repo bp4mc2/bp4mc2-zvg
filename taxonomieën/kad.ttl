@@ -1190,3 +1190,29 @@ kad:ZakelijkRechtIdentificatie a skos:Concept;
 	dcterms:type "PDF download";
 	dcat:servesDataset <http://kad.zorgeloosvastgoed.nl/id/dataset/Eigendomsinformatie>;
 .
+
+######## Release 1 Lijst A & B ########
+
+kad:Berging a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad;
+	skos:prefLabel "Berging"@nl;
+	skos:definition "Doorgaans een aparte ruimte die wordt gebruikt voor bijvoorbeeld het opslaan of bewaren van goederen, materialen, gereedschappen of andere items. "@nl;
+	dct:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2022:1735&keyword=ECLI%3ANL%3ARBAMS%3A2022%3A1735";
+.
+kad:Omgevingsvergunning a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad;
+	skos:prefLabel "Omgevingsvergunning"@nl;
+	skos:altLabel "Bouwvergunning"@nl;
+	skos:definition "Een omgevingsvergunning is de officiële (noodzakelijke) toestemming van een overheidsorganisatie zoals een college van B&W van een gemeente om bepaalde activiteiten te verrichten. "@nl;
+	dct:source "https://www.rechtspraak.nl/Onderwerpen/Omgevingsvergunning ";
+.
+kad:Ruilverkavelingsrente a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://kad.zorgeloosvastgoed.nl/id/ConceptualFramework/kad;
+	skos:prefLabel "Ruilverkavelingsrente"@nl;
+	skos:definition "De kosten voor de ruilverkaveling die niet door de overheid vanuit een subsidie worden gedekt worden door de overheid  voorgeschoten en vervolgens over de verkavelde percelen  omgeslagen. De eigenaren van deze percelen betalen jaarlijks deze vergoeding. Art. 90-91 WILG."@nl;
+	dct:source "https://wetten.overheid.nl/BWBR0020748/2019-01-01/0#Hoofdstuk10_Artikel90. Tevens oud begrip Landinrichtingsrente in interne catalogus Kadaster. ";
+	dct:source "https://www.amsterdam.nl/stelselpedia/woordenboek/#:~:text=De%20herinrichtingsrente%20is%20het%20bedrag,is%20vanwege%20een%20uitgevoerd%20landinrichtingsproject.&text=DigiD%20voor%20bedrijven.,en%20beroepsbeoefenaren%20dat%20met%20eHerkenning.";
+.
