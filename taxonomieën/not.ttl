@@ -1548,3 +1548,131 @@ not:OnroerendeZaakOmschrijving a skos:Concept;
 	skos:definition "De omschrijving van een onroerende zaak."@nl;
 	skos:related kad:OnroerendeZaak;
 .
+##########	Release lijst A + B ####################
+not:AntiSpeculatiebeding a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Anti-Speculatiebeding"@nl;
+	skos:definition "Een anti-speculatiebeding is een beding dat is bedoeld om speculatieve handel met onroerend goed (prijsopdrijving) tegen te gaan. Het anti-speculatiebeding verplicht de koper om zijn woning zelf te bewonen gedurende een bepaalde contractueel vastgelegde periode, tenzij er sprake is van een ontheffingsgrond (bijvoorbeeld overlijden)."@nl;
+	skos:scopeNote "Een anti-speculatiebeding is een contractuele voorwaarde dat de koper verplicht om zijn woning een aantal jaren zelf te bewonen voordat hij zijn woning mag doorverkopen. "@nl;
+.
+not:Belast a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Belast"@nl;
+	skos:definition "Als een appartementsrecht belast is met een recht van hypotheek dan rust er een hypotheekrecht op het appartementsrecht. Het appartementsrecht is dan dus bezwaard met een recht van hypotheek.  Of er sprake is van een hypotheekrecht kan worden nagegaan in de Basisregistratie Kadaster (BRK)."@nl;
+.
+not:BeschikkenOverHetAppartementsrecht a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Beschikken Over Het Appartementsrecht"@nl;
+	skos:definition "Beschikken over een appartementsrecht houdt in dat de goederenrechtelijke bevoegdheid bestaat om handelingen met betrekking tot dit appartementsrecht te verrichten (overdragen van dit appartementsrecht, maar ook bezwaren met een beperkt recht of het afstand doen van een beperkt recht). Als uitgangspunt geldt dat de rechthebbende - degene die gerechtigd is tot het appartementsrecht - beschikkingsbevoegd is. "@nl;
+	skos:scopeNote "Beschikken over een appartementsrecht ziet op het vervreemden of bezwaren van dit appartementsrecht. Beschikkingsbevoegdheid is een goederenrechtelijk begrip en staat voor de relatie tussen een rechthebbende en één of meer bepaalde goederen."@nl;
+.
+not:Echtscheiding a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Echtscheiding"@nl;
+	skos:definition "Een echtscheiding wordt door de rechter uitgesproken op verzoek van één van de echtgenoten of op gemeenschappelijk verzoek en beëindigt het huwelijk of het geregistreerd partnerschap.  "@nl;
+	dct:source "Artikel 1:150 e.v. Burgerlijk Wetboek";
+	skos:scopeNote "Een echtscheiding verbreekt alle juridische banden tussen u en uw partner en wordt uitgesproken door de rechter."@nl;
+.
+not:Gebruiksovereenkomst a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Gebruiksovereenkomst"@nl;
+	skos:definition "Een gebruiksovereenkomst ziet op het in gebruik geven van een ruimte om niet (dus zonder tegenprestatie). Dit betekent echter niet dat er in zijn geheel geen kosten kunnen worden doorberekend. De volgende kosten kunnen ook bij een gebruiksovereenkomst in rekening worden gebracht: een vergoeding met een symbolisch karakter of een vergoeding die ziet op slechts de gebruikskosten of een vergoeding die ziet op de kosten van bemiddeling of beheer."@nl;
+	dct:source "Artikel 7a:1777 Burgerlijk Wetboek";
+	skos:scopeNote "Er is sprake van een gebruiksovereenkomst als een onroerende zaak aan een gebruiker ter beschikking wordt gesteld gedurende een bepaalde periode en waarbij doorgaans het component betaling van een gebruiksvergoeding voor gebruik van een bepaalde zaak ontbreekt. Hierdoor is er geen sprake van een huurovereenkomst."@nl;
+.
+not:Meerjarenonderhoudsplan a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Meerjarenonderhoudsplan"@nl;
+	skos:definition "Een meerjarenonderhoudsplan (MJOP) is een document waarin staat welk onderhoud de komende jaren aan uw appartementencomplex moet plaatsvinden. In de bijbehorende meerjarenonderhoudsbegroting staan de kosten die daarmee gemoeid zijn. Voor een Vereniging van Eigenaars (VvE) is een MJOP hét document bij uitstek om onderhoud en kosten in kaart te brengen en te plannen."@nl;
+	dct:source "Artikel 5:126 lid 2 sub a. Burgerlijk Wetboek";
+	skos:scopeNote "Een MJOP is een document waarin staat wanneer welk onderhoud plaats moet vinden en wat de kosten hiervan zullen zijn. Het MJOP heeft betrekking op de gemeenschappelijke zaken van de VvE, zoals bijvoorbeeld het dak."@nl;
+.
+not:MinderjarigeKinderen a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Minderjarige Kinderen"@nl;
+	skos:definition " Minderjarigen zijn zij die de leeftijd van achttien jaren niet hebben bereikt en evenmin met toepassing van artikel 1:253ha van het Burgerlijk Wetboek meerderjarig zijn verklaard."@nl;
+	dct:source "Artikel 1:233 Burgerlijk Wetboek";
+.
+not:Nalatenschap a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Nalatenschap"@nl;
+	skos:definition "De nalatenschap is het totaal aan bezittingen en schulden dat iemand na zijn overlijden nalaat. Ook wel erfenis genoemd."@nl;
+.
+not:Notulen a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Notulen"@nl;
+	skos:definition "Schriftelijk verslag van wat besproken is in de vergadering van de Vereniging van Eigenaars ("VvE")."@nl;
+	skos:scopeNote "Schriftelijk vergaderverslag van de vergadering van de VvE."@nl;
+.
+not:Omgevingsvergunning a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Omgevingsvergunning"@nl;
+	skos:definition "Een omgevingsvergunning is de officiële (noodzakelijke) toestemming van een overheidsorganisatie zoals een college van b & w van een gemeente om bepaalde activiteiten te verrichten. Bijvoorbeeld het bouwen van een serre of een dakkapel, het verbouwen van een huis, het plaatsen van zonnepanelen of het slopen van bouwwerken. De omgevingsvergunning kan ook vereist zijn voor het kappen van een boom, het maken van een uitweg of een bedrijfsmatige activiteit die hinder voor het milieu kan veroorzaken."@nl;
+	dct:source "Artikel 2.1 e.v. Wet algemene bepalingen omgevingsrecht";
+	dct:source "https://www.rechtspraak.nl/Onderwerpen/Omgevingsvergunning";
+.
+not:Omzetbelastingheffing a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Omzetbelastingheffing"@nl;
+	skos:definition "Omzetbelasting, ook wel btw (Belasting Toegevoegde Waarde) genoemd, is de belasting over de omzet die wordt geheven bij de levering van een product of dienst. De leverancier draagt deze belasting later weer af aan de Belastingdienst."@nl;
+	dct:source "Artikel 1 Wet op de Omzetbelasting 1968";
+.
+not:Onteigening a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Onteigening"@nl;
+	skos:definition "Onteigening is de gedwongen overdracht van het eigendomsrecht van particulieren aan de overheid, waarbij de getroffene een schadevergoeding toegekend krijgt."@nl;
+	dct:source "Artikel 1 e.v. Onteigeningswet";
+	skos:scopeNote "Bij een onteigening wordt de overheid eigenaar van uw grond inclusief eventuele woning of gebouw. Bijvoorbeeld omdat de overheid een weg, brug, spoorweg of waterweg wil aanleggen. U krijgt een schadevergoeding aangeboden."@nl;
+.
+not:Samenlevingscontract a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Samenlevingscontract"@nl;
+	skos:definition "Een samenlevingscontract is een overeenkomst die de vermogensrechtelijke verhoudingen regelt tussen twee of meer personen die een gemeenschappelijke huishouding voeren (samenwonen). Een samenlevingscontract kan door de notaris worden opgesteld, maar dit is niet verplicht. Voor het partnerpensioen eisen de pensioenfondsen wel een notarieel samenlevingscontract."@nl;
+.
+not:SurseanceVanBetaling a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Surseance Van Betaling"@nl;
+	skos:definition "Surseance van betaling is uitstel van betaling, en wordt vaak kortweg surseance genoemd. Surseance kan worden verleend door de rechter, als een schuldenaar voorziet dat hij zijn (opeisbare) schulden niet zal kunnen voldoen. Surseance kan alleen worden verleend aan rechtspersonen en natuurlijke personen die een zelfstandig beroep of bedrijf uitoefenen. Het doel van surseance is om een faillissement af te wenden."@nl;
+	dct:source "Artikel 214 Faillissementswet";
+.
+not:UittrekselHandelsregister a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Uittreksel Handelsregister"@nl;
+	skos:definition "Een uittreksel handelsregister is een opgave van de informatie die is opgenomen in het Handelsregister. Je krijgt informatie over de rechtspersoon, onderneming en vestiging(en). Je ziet naam, adres, oprichtingsdatum en in de meeste gevallen functionarissen van een bedrijf of organisatie."@nl;
+.
+not:LidVanDeVve a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Lid Van De Vve"@nl;
+	skos:definition "Iemand die deel uitmaakt van de Vereniging van Eigenaars ("VvE"). Als u een appartementsrecht koopt, bent u automatisch (van rechtswege) en verplicht lid van de VvE. "@nl;
+	skos:scopeNote "Leden van de VvE zijn gerechtigd tot de appartementsrechten."@nl;
+.
+not:VerklaringVanErfrecht a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Verklaring Van Erfrecht"@nl;
+	skos:definition "Een verklaring van erfrecht is een notariële akte waarin een notaris na eigen onderzoek erfrechtelijke feiten vermeldt naar aanleiding van het overlijden van iemand. De akte is niet algemeen verplicht maar kan nodig zijn als officieel bewijs voor hetgeen er in staat, bijvoorbeeld bij banken of bij verkoop van onroerend goed uit de nalatenschap. "@nl;
+	dct:source "Artikel 4:188 Burgerlijk Wetboek";
+	skos:scopeNote "Een verklaring van erfrecht is een notariële akte waarin staat wie de erfgenamen zijn. "@nl;
+.
+not:Zelfbewoningsplicht a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:prefLabel "Zelfbewoningsplicht"@nl;
+	skos:definition "Een zelfbewoningsplicht verplicht een koper de woning zelf te gaan bewonen. Deze verplichting kan tijdelijk worden opgelegd, bijvoorbeeld voor een aantal jaar of juist voor onbepaalde tijd. "@nl;
+.
