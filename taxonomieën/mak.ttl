@@ -1803,3 +1803,304 @@ mak:VrijwaringStaatOnroerendeZaak a skos:Concept, skoslex:Act;
 	skoslex:object mak:StaatOnroerendeZaak;
 	skoslex:record mak:ArtikelStaatOnroerendeZaakGebruik;
 .
+
+############### 	RELEASE 1 LIJST A & B 	############
+mak:AangrenzendePercelen a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Aangrenzende Percelen"@nl;
+	skos:definition "Een perceel is een stuk grond waarvan de grenzen bij het Kadaster zijn vastgelegd en dat bij het Kadaster een eigen nummer heeft. Een aangrenzend perceel is een perceel dat direct naast een ander perceel ligt. Ze delen dezelfde grens. "@nl;
+	skos:scopeNote "Twee naast elkaar gelegen percelen waar niets anders tussen ligt. "@nl;
+.
+mak:Aanslagbiljet a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Aanslagbiljet"@nl;
+	skos:definition "Een aanslagbiljet is een document van de overheid aan een belastingplichtige waarin staat vermeld welke bedag de belastingplichtige aan belastingen verschuldigd is of het bedrag dat wordt terugbetaald. "@nl;
+	dct:source "Artikel 2:3 lid 3 onder e Algemene wet inzake rijksbelasting ";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0002320&hoofdstuk=I&artikel=2&z=2023-01-01&g=2023-01-01";
+	skos:scopeNote "Een aanslagbiljet is een document van de overheid aan een belastingplichtige waarin staat vermeld welke bedag de belastingplichtige aan belastingen verschuldigd is. Het aanslagbiljet bevat gedetailleerde informatie over het belastingjaar, het type belasting, het belastingtarief en het verschuldigde bedrag of het bedrag dat wordt terugbetaald. "@nl;
+.
+mak:Actielijst a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Actielijst"@nl;
+	skos:definition "Een overzicht van de te ondernemen acties naar aanleiding van de vergadering. Deze kan als bijlage bij de notulen worden toegevoegd. "@nl;
+	skos:scopeNote "Een actielijst, ook wel bekend als takenlijst, is een hulpmiddel dat wordt gebruikt om taken, acties of activiteiten te organiseren en bij te houden. "@nl;
+.
+mak:Administrateur a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Administrateur"@nl;
+	skos:definition "Het bestuur beheert de middelen van de vereniging van eigenaren en draagt zorg voor de tenuitvoerlegging van de besluiten van de vergadering van eigenaars. Vroeger was de wettelijke term voor bestuurder 'administrateur'. "@nl;
+	dct:source "Artikel 5:131 BW";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=2&artikel=131&z=2014-01-01&g=2014-01-01";
+	skos:scopeNote "Het bestuur beheert de middelen van de vereniging van eigenaren en draagt zorg voor de tenuitvoerlegging van de besluiten van de vergadering van eigenaars. Vroeger was de wettelijke term voor bestuurder 'administrateur'. "@nl;
+.
+mak:AfgegevenBeschikking a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Afgegeven Beschikking"@nl;
+	skos:definition "Onder beschikking wordt verstaan: een besluit dat niet van algemene strekking is, met inbegrip van de afwijzing van een aanvraag daarvan"@nl;
+	dct:source "Artikel 1:3 Algemene wet bestuursrecht";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005537&hoofdstuk=1&titeldeel=1.1&artikel=1:3&z=2023-01-01&g=2023-01-01";
+	skos:scopeNote "Een beschikking is een juridisch document of een formele beslissing die wordt genomen door een bevoegde autoriteit, zoals een rechter of een overheidsinstantie. Het heeft betrekking op specifieke juridische kwesties en heeft de kracht van een gerechtelijk bevel of een bindende beslissing. "@nl;
+.
+mak:Appartementenclausule a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Appartementenclausule"@nl;
+	skos:definition "Bij een appartement wordt er een collectieve opstalverzekering afgesloten waarin een appartementenclausule is opgenomen.  De appartementenclausule zorgt ervoor dat als één van de bewoners in het appartementencomplex met opzet schade veroorzaakt, eventuele schade aan andere appartementen vergoed wordt."@nl;
+	skos:scopeNote "Bij een appartement wordt er een collectieve opstalverzekering afgesloten waarin een appartementenclausule is opgenomen.  De appartementenclausule zorgt ervoor dat als één van de bewoners in het appartementencomplex met opzet schade veroorzaakt, eventuele schade aan andere appartementen vergoed wordt."@nl;
+.
+mak:BeeldbepalendObject a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Beeldbepalend Object"@nl;
+	skos:definition "Een beeldbepalend object is een gebouw dat op culturele of historische gronden bescherming geniet van de gemeente. Bij een gebouw is doorgaans alleen de voorgevel beschermd. Beeldbepalende gebouwen hebben niet dezelfde status als gemeentelijke of rijksmonumenten."@nl;
+	skos:scopeNote "Een beeldbepalend object is een gebouw dat op culturele of historische gronden bescherming geniet van de gemeente. Bij een gebouw is doorgaans alleen de voorgevel beschermd. Beeldbepalende gebouwen hebben niet dezelfde status als gemeentelijke of rijksmonumenten."@nl;
+.
+mak:Begroting a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Begroting"@nl;
+	skos:definition "Een begroting is een financieel plan dat een schatting geeft van de inkomsten en uitgaven van de desbetreffende VvE. Het is een essentieel instrument voor het plannen, beheren en controleren van de financiën."@nl;
+	skos:scopeNote "Een begroting is een financieel plan dat een schatting geeft van de inkomsten en uitgaven van de desbetreffende VvE. Het is een essentieel instrument voor het plannen, beheren en controleren van de financiën."@nl;
+.
+mak:BekendeFeitenTeVermelden a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Bekende Feiten Te Vermelden"@nl;
+	skos:definition "Als de verkoper op de hoogte is van een gebrek ten aanzien van het verkochte, terwijl hij weet of kan weten dat die eigenschap voor de koper van belang is, dan dient verkoper de koper van die eigenschap op de hoogte te stellen. Dit moet zowel gevraagd als ongevraagd."@nl;
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=2&artikel=228&z=2022-07-01&g=2022-07-01";
+	skos:scopeNote "De verkoper wordt geacht de koper dus zowel gevraagd als ongevraagd op de hoogte te stellen van gebreken die van invloed kunnen zijn op de aankoopbeslissing of de geboden prijs."@nl;
+.
+mak:Berging a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Berging"@nl;
+	skos:definition "Doorgaans een aparte ruimte die wordt gebruikt voor bijvoorbeeld het opslaan of bewaren van goederen, materialen, gereedschappen of andere items. "@nl;
+	dct:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2022:1735&keyword=ECLI%3ANL%3ARBAMS%3A2022%3A1735";
+	skos:scopeNote "Een berging is doorgaans een aparte ruimte die wordt gebruikt voor bijvoorbeeld het opslaan of bewaren van goederen, materialen, gereedschappen of andere items. Het is vaak een afzonderlijke ruimte buiten het hoofdgebouw, zoals een woning of een appartementencomplex, maar kan ook deel uitmaken van het hoofdgebouw zelf."@nl;
+.
+mak:Bewoning a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Bewoning"@nl;
+	skos:definition "De manier waarop een appartement gebruikt kan worden, ook wel 'bestemming' genoemd. "@nl;
+	skos:scopeNote "De manier waarop een appartement gebruikt kan worden, ook wel ''bestemming'' genoemd. Je vindt de bestemming terug in de akt van splitsing. Een voorbeeld van de bestemming is bijvoorbeeld ''bewoning'' of ''winkel''. "@nl;
+.
+mak:Bijbouwing a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Bijbouwing"@nl;
+	skos:definition "Een bijbouwing is een bouwkundge vergroting van het bestaande appartement. "@nl;
+	skos:scopeNote "Een bijbouwing is een bouwkundge vergroting van het bestaande appartement. Een voorbeeld is een uitbouw aan de achterzijde of een extra verdieping. "@nl;
+.
+mak:Blokverwarming a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Blokverwarming"@nl;
+	skos:definition "Bij blokverwarming worden meerdere appartementen verwarmd door dezelfde warmte-installatie. "@nl;
+	skos:scopeNote "Bij blokverwarming worden meerdere appartementen verwarmd door dezelfde warmte-installatie. "@nl;
+.
+mak:Bouwtekeningen a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Bouwtekeningen"@nl;
+	skos:definition "De technische tekeningen van een gebouw, bijvoorbeeld een woning. "@nl;
+	skos:scopeNote "De technische tekeningen van een gebouw, bijvoorbeeld een woning. "@nl;
+.
+mak:Buitenkozijnen a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Buitenkozijnen"@nl;
+	skos:definition "Kozijnen van o.a. ramen en deuren die zich aan de buitengevels van de woningen bevinden"@nl;
+	skos:scopeNote "Kozijnen van o.a. ramen en deuren die zich aan de buitengevels van de woningen bevinden"@nl;
+.
+mak:Buren a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Buren"@nl;
+	skos:definition "Een verzamelnaam voor personen die in de directe buurt van de woning wonen. "@nl;
+	skos:scopeNote "Een verzamelnaam voor personen die in de directe buurt van de woning wonen. "@nl;
+.
+mak:Convenant a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Convenant"@nl;
+	skos:definition "Een echtscheidingsconvenant is een schriftelijke overeenkomst die wordt opgesteld tussen echtgenoten als er sprake is van een echtscheiding. Het convenant legt de afspraken vast met betrekking tot de verdeling van eigendommen, schulden, financiën en andere belangrijke aspecten van de scheiding."@nl;
+	skos:scopeNote "Een echtscheidingsconvenant is een schriftelijke overeenkomst die wordt opgesteld tussen echtgenoten als er sprake is van een echtscheiding. Het convenant legt de afspraken vast met betrekking tot de verdeling van eigendommen, schulden, financiën en andere belangrijke aspecten van de scheiding."@nl;
+.
+mak:ErkendSchildersbedrijf a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Erkend Schildersbedrijf"@nl;
+	skos:definition "Een schildersbedrijf dat is aangesloten bij een keurmerk om de kwaliteit te waarborgen. "@nl;
+	skos:scopeNote "Een schildersbedrijf welke is aangesloten bij een keurmerk om de kwaliteit te waarborgen. "@nl;
+.
+mak:Exploitatiekosten a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Exploitatiekosten"@nl;
+	skos:definition "Alle kosten die gemaakt moeten worden om het gebouw in goede staat te houden zoals onderhoud, beheer, verzekering e.d. "@nl;
+	skos:scopeNote "Alle kosten die gemaakt moeten worden om het gebouw in goede staat te houden zoals onderhoud, beheer, verzekering e.d. "@nl;
+.
+mak:Garage a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Garage"@nl;
+	skos:definition "Een garage is een gebouw of een deel van een gebouw dat specifiek is ontworpen voor het parkeren, opslaan, onderhouden van voertuigen, zoals auto's, motorfietsen, fietsen en andere vervoermiddelen. Het dient als een veilige en beschermde ruimte voor het stallen van voertuigen en biedt ook opslagruimte voor gereedschap, reserveonderdelen en andere auto-gerelateerde benodigdheden"@nl;
+	skos:scopeNote "Een garage is een gebouw of een deel van een gebouw dat specifiek is ontworpen voor het parkeren, opslaan, onderhouden van voertuigen, zoals auto's, motorfietsen, fietsen en andere vervoermiddelen. Het dient als een veilige en beschermde ruimte voor het stallen van voertuigen en biedt ook opslagruimte voor gereedschap, reserveonderdelen en andere auto-gerelateerde benodigdheden"@nl;
+.
+mak:Glasvezelaansluiting a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Glasvezelaansluiting"@nl;
+	skos:definition "Een directe aansluiting vanuit de woning op het glasvezel netwerk van de netwerk beheerder. Dit gaat via een Fiber Termination Unit."@nl;
+	skos:scopeNote "Een directe aansluiting vanuit de woning op het glasvezel netwerk van de netwerk beheerder. Dit gaat via een Fiber Termination Unit."@nl;
+.
+mak:GrootOnderhoud a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Groot Onderhoud"@nl;
+	skos:definition "Groot onderhoud is onderhoud van enige grote omvang. Dit moet worden onderscheiden van (periodiek) storingsonderhoud dat in de regel een geringere omvang kent."@nl;
+	skos:scopeNote "Groot onderhoud is onderhoud van enige grote omvang. Dit moet worden onderscheiden van (periodiek) storingsonderhoud dat in de regel een geringere omvang kent."@nl;
+.
+mak:Huren a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Huren"@nl;
+	skos:definition "Huur is de overeenkomst waarbij de ene partij, de verhuurder, zich verbindt aan de andere partij, de huurder, een zaak of een gedeelte daarvan in gebruik te verstrekken en de huurder zich verbindt tot een tegenprestatie. "@nl;
+	dct:source "Artikel 7:201 Burgerlijk Wetboek ";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=4&afdeling=1&artikel=201&z=2023-07-01&g=2023-07-01";
+	skos:scopeNote "Huren is de situatie waarbij een persoon of organisatie (de huurder) een bepaalde vergoeding betaalt aan een andere persoon of organisatie (de verhuurder) voor het gebruik van een zaak of gedeelte. Meestal heeft dit betrekking op het huren van onroerend goed, zoals een woning, appartement, kantoorruimte. De bindende afspraken worden vastgelegd in een huurovereenkomst. "@nl;
+.
+mak:Huurcommissie a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Huurcommissie"@nl;
+	skos:definition "De Huurcommissie is een instantie in Nederland die zich bezighoudt met het oplossen van geschillen tussen huurders en verhuurders zoals geschillen over huurprijzen, servicekosten en andere huurkwesties. De Huurcommissie heeft als doel om een eerlijke en redelijke verhouding tussen huurder en verhuurder te waarborgen en conflicten op het gebied van huur te beslechten. "@nl;
+	dct:source " Wijzigingswet Uitvoeringswet huurprijzen woonruimte (instelling landelijke huurcommissie)";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0027142&z=2010-04-01&g=2010-04-01";
+	skos:scopeNote "De Huurcommissie is een instantie in Nederland die zich bezighoudt met het oplossen van geschillen tussen huurders en verhuurders zoals geschillen over huurprijzen, servicekosten en andere huurkwesties. De Huurcommissie heeft als doel om een eerlijke en redelijke verhouding tussen huurder en verhuurder te waarborgen en conflicten op het gebied van huur te beslechten. "@nl;
+.
+mak:Huurcontract a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Huurcontract"@nl;
+	skos:definition "Een huurcontract is een overeenkomst waarbij de ene partij, de verhuurder, zich verbindt aan de andere partij, de huurder, een zaak of een gedeelte daarvan in gebruik te verstrekken en de huurder zich verbindt tot een tegenprestatie. "@nl;
+	dct:source "Artikel 7:201 Burgerlijk Wetboek ";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=4&afdeling=1&artikel=201&z=2023-02-18&g=2023-02-18";
+	skos:scopeNote "Een huurovereenkomst is een juridisch bindend contract tussen een verhuurder en een huurder waarin de voor het huren van een bepaalde zaak (bijvoorbeeld een woning of een ander soort onroerend goed) worden vastgelegd. Het is een belangrijk document dat de rechten en plichten van zowel de verhuurder als de huurder regelt. "@nl;
+.
+mak:Installatiedatum a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Installatiedatum"@nl;
+	skos:definition "De datum waarop de installatie werkend is opgeleverd."@nl;
+	skos:scopeNote "De datum waarop de installatie werkend is opgeleverd."@nl;
+.
+mak:Isolatiemateriaal a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Isolatiemateriaal"@nl;
+	skos:definition "Isolatiemateriaal is materiaal dat wordt gebruikt om het warmteverlies in woningen zoveel mogelijk te beperken. "@nl;
+	skos:scopeNote "Isolatiemateriaal is materiaal dat wordt gebruikt om het warmteverlies in woningen zoveel mogelijk te beperken. "@nl;
+.
+mak:IsolerendeBeglazing a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Isolerende Beglazing"@nl;
+	skos:definition "Isolerende beglazing, ook wel bekend als dubbel glas of HR-glas (hoogrendementsglas), is een type beglazing dat wordt gebruikt in ramen en deuren om warmteverlies te verminderen. Het bestaat uit twee of meer glaspanelen met een tussenruimte, meestal gevuld met droge lucht of een speciaal gas, zoals argon of krypton. De randen van het glas zijn afgesloten met afdichtingsmateriaal om een luchtdichte eenheid te creëren. "@nl;
+	skos:scopeNote "Isolerende beglazing, ook wel bekend als dubbel glas of HR-glas (hoogrendementsglas), is een type beglazing dat wordt gebruikt in ramen en deuren om warmteverlies te verminderen. Het bestaat uit twee of meer glaspanelen met een tussenruimte, meestal gevuld met droge lucht of een speciaal gas, zoals argon of krypton. De randen van het glas zijn afgesloten met afdichtingsmateriaal om een luchtdichte eenheid te creëren."@nl;
+.
+mak:Jaarverslag a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Jaarverslag"@nl;
+	skos:definition "Een jaarverslag is een verslag dat jaarlijks wordt uitgebracht door de VvE waarin een overzicht van de financiën van de VvE wordt gegeven van het afgelopen jaar. Doorgaans worden ter controle voorgelegd de exploitatierekening respectievelijk de jaarrekening en het jaarverslag. Het jaarverslag moet binnen zes maanden na afloop van het boekjaar worden uitgebracht.  Soms schrijven splitsingsakten een kortere periode voor, meestal van vier of vijf maanden. In die gevallen geldt de kortere periode"@nl;
+	dct:source "Artikel 2:10 BW";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=10&z=2017-01-01&g=2017-01-01";
+	skos:scopeNote "Een jaarverslag is een verslag dat jaarlijks wordt uitgebracht door de VvE waarin een overzicht van de financiën van de VvE wordt gegeven van het afgelopen jaar. Doorgaans worden ter controle voorgelegd de exploitatierekening respectievelijk de jaarrekening en het jaarverslag. Het jaarverslag moet binnen zes maanden na afloop van het boekjaar worden uitgebracht.  Soms schrijven splitsingsakten een kortere periode voor, meestal van vier of vijf maanden. In die gevallen geldt de kortere periode"@nl;
+.
+mak:KiwaCertificaat a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Kiwa Certificaat"@nl;
+	skos:definition "Een Kiwa (Keurings Instituut voor Waterleiding Artikelen) certificaat is het officiele bewijs dat een tanksanering veilig voor mens en omgeving is uitgevoerd."@nl;
+	dct:source "Tanksanering HBO/diesel BRL-K902/04";
+	dct:source "https://www.kiwa.com/nl/nl/service/tanksanering-hbo-diesel-brl-k902-04/";
+	skos:scopeNote "Een Kiwa (Keurings Instituut voor Waterleiding Artikelen) certificaat is het officiele bewijs dat een tanksanering veilig voor mens en omgeving is uitgevoerd."@nl;
+.
+mak:Laadpaal a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Laadpaal"@nl;
+	skos:definition "Een vaste elektrische installatie die het mogelijk maakt om een auto elektrisch op te laden. "@nl;
+	skos:scopeNote "Een vaste elektrische installatie die het mogelijk maakt om een auto elektrisch op te laden. "@nl;
+.
+mak:MondelingeAfspraak a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Mondelinge Afspraak"@nl;
+	skos:definition "Een overeenkomst die met of tussen partijen is gemaakt, maar die niet als zodanig op papier is vastgelegd."@nl;
+	dct:source "Artikel 6:217 BW";
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=2&artikel=217&z=2023-05-01&g=2023-05-01";
+	skos:scopeNote "Een overeenkomst die met of tussen partijen is gemaakt, maar die niet als zodanig op papier is vastgelegd."@nl;
+.
+mak:Na-Isoleren a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Na-Isoleren"@nl;
+	skos:definition "Na-isoleren is het toevoegen of verbeteren van isolatiemateriaal in een bestaand gebouw. Het wordt meestal gedaan om de energie-efficiëntie te verbeteren, het comfort te verhogen en de energiekosten te verlagen. Bij naisolatie kunnen verschillende delen van een gebouw worden geïsoleerd, waaronder de buitenmuren, het dak, de vloeren en de zolderruimte. "@nl;
+	skos:scopeNote "isoleren is het toevoegen of verbeteren van isolatiemateriaal in een bestaand gebouw. Het wordt meestal gedaan om de energie-efficiëntie te verbeteren, het comfort te verhogen en de energiekosten te verlagen. Bij naisolatie kunnen verschillende delen van een gebouw worden geïsoleerd, waaronder de buitenmuren, het dak, de vloeren en de zolderruimte. "@nl;
+.
+mak:NietNaarBehorenUitgevoerd a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Niet Naar Behoren Uitgevoerd"@nl;
+	skos:definition "Als iets moet worden hersteld dan moet dat plaatsvinden op een goede, deugdelijke manier. Anders gezegd 'naar behoren' uitgevoerd. Een overheid kan een eigenaar verplichten om bepaalde onderdelen van de woning te herstellen. Dit moet 'naar behoren' zijn hersteld, op een goede, deugdelijke manier. Als het 'niet naar behoren' is uitgevoerd dan betekent dit dat er nog geen herstel heeft plaatsgevonden of dat het herstel nog niet 'naar behoren' is uitgevoerd. "@nl;
+	skos:scopeNote "Als iets moet worden hersteld dan moet dat plaatsvinden op een goede, deugdelijke manier. Anders gezegd 'naar behoren' uitgevoerd. Een overheid kan een eigenaar verplichten om bepaalde onderdelen van de woning te herstellen. Dit moet 'naar behoren' zijn hersteld, op een goede, deugdelijke manier. Als het 'niet naar behoren' is uitgevoerd dan betekent dit dat er nog geen herstel heeft plaatsgevonden of dat het herstel nog niet 'naar behoren' is uitgevoerd."@nl;
+.
+mak:Onderhoudscontracten a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Onderhoudscontracten"@nl;
+	skos:definition "Een onderhoudscontract is een duurovereenkomst waarbij een partij zich tegenover een andere partij verplicht om gedurende het onderhoudscontract onderhoudswerkzaamheden uit te voeren aan een of meerdere zaken."@nl;
+	skos:scopeNote "Een onderhoudscontract is een duurovereenkomst waarbij een partij zich tegenover een andere partij verplicht om gedurende het onderhoudscontract onderhoudswerkzaamheden uit te voeren aan een of meerdere zaken."@nl;
+.
+mak:OverigDak a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Overig Dak"@nl;
+	skos:definition "Een dak dat geen plat dak is"@nl;
+	skos:scopeNote "Een dak dat geen plat dak is"@nl;
+.
+mak:Overlast a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Overlast"@nl;
+	skos:definition "Overlast verwijst naar hinder, ongemak of verstoring die wordt veroorzaakt door bepaalde gedragingen, activiteiten of omstandigheden. "@nl;
+	skos:scopeNote "Overlast verwijst naar hinder, ongemak of verstoring die wordt veroorzaakt door bepaalde gedragingen, activiteiten of omstandigheden. Zo kan er sprake zijn van wateroverlast in bijvoorbeeld (de kelder van) de woning, stankoverlast als gevolg van een lekkende riolering, overlast als gevolg van ongedierte en overlast van de buren. "@nl;
+.
+mak:Parkeervergunning a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Parkeervergunning"@nl;
+	skos:definition "Een parkeervergunning is een officiële toestemming die wordt verleend door een gemeente of lokale autoriteit om op een specifieke locatie of in een bepaald gebied te parkeren. Het is meestal een vergunning die aan individuen wordt verstrekt, zodat ze hun voertuig legaal kunnen parkeren op openbare plaatsen waar anders beperkingen of betaald parkeren van toepassing zouden zijn."@nl;
+	skos:scopeNote "Een parkeervergunning is een officiële toestemming die wordt verleend door een gemeente of lokale autoriteit om op een specifieke locatie of in een bepaald gebied te parkeren. Het is meestal een vergunning die aan individuen wordt verstrekt, zodat ze hun voertuig legaal kunnen parkeren op openbare plaatsen waar anders beperkingen of betaald parkeren van toepassing zouden zijn."@nl;
+.
+mak:ProcedureTotAanwijzing a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Procedure Tot Aanwijzing"@nl;
+	skos:definition "Een procedure die wordt doorlopen om een gemeentelijk-, provinciaal-of rijksmonument en een stads- of dorpsgezicht aan te wijzen. "@nl;
+	skos:scopeNote "Een procedure die wordt doorlopen om een gemeentelijk-, provinciaal-of rijksmonument en een stads- of dorpsgezicht aan te wijzen. "@nl;
+.
+mak:Saneringsbevel a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Saneringsbevel"@nl;
+	skos:definition "Een beschikking waarin de eigenaar wordt verplicht om het beperken en zoveel mogelijk ongedaan maken van verontreiniging en de directe gevolgen daarvan of van dreigende verontreiniging van de bodem. "@nl;
+	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=I&artikel=1&z=2022-05-01&g=2022-05-01";
+	skos:scopeNote "Een saneringsbevel is een beschikking van bijvoorbeeld de provincie of de gemeente om een bepaalde vorm van verontreiniging te saneren dan wel de grond te onderzoeken. Het doel van een saneringsbeschikking is om milieuverontreiniging of andere gevaarlijke situaties aan te pakken en te herstellen."@nl;
+.
+mak:SchoorsteenkanalenGeveegd a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Schoorsteenkanalen Geveegd"@nl;
+	skos:definition "Een door een gespecialiseerde schoorsteenveger afgegeven veegbewijs waaruit blijkt dat het schoorsteenkaneel is geveegd. "@nl;
+	skos:scopeNote "Een door een gespecialiseerde schoorsteenveger afgegeven bewijs waaruit blijkt dat het schoorsteenkaneel is geveegd. "@nl;
+.
+mak:VerbeteringenOfHerstellingen a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Verbeteringen Of Herstellingen"@nl;
+	skos:definition "Bouwkundige verbeteringen of herstellingen aan een bestaand gebouw "@nl;
+	skos:scopeNote "Bouwkundige verbeteringen of herstellingen aan een bestaand gebouw "@nl;
+.
+mak:Verbouwing a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Verbouwing"@nl;
+	skos:definition "Een verbouwing is een bouwkundige wijziging van een gebouw. "@nl;
+	skos:scopeNote "Een verbouwing is het gedeeltelijk bouwkundig vernieuwen, veranderen of vergroten van een bestaand gebouw. "@nl;
+.
+mak:Verbouwtekening a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Verbouwtekening"@nl;
+	skos:definition "Een technische tekening ter ondersteuning van de verbouwing."@nl;
+	skos:scopeNote "Een technische tekening waarin de verbouwing is getekend. Conform deze tekening wordt er verbouwd. "@nl;
+.
+mak:Verhuurd a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Verhuurd"@nl;
+	skos:definition "Als een zaak is verhuurd dan betekent dat dat er een overeenkomst is gesloten waarbij de ene partij, de verhuurder, zich verbindt om de ander, de huurder, het genot van die zaak te doen hebben gedurende een bepaalde of onbepaalde tijd en tegen een bepaalde prijs. "@nl;
+	dct:source "Artikel 7:201 Burgerlijk Wetboek ";
+	dct:source "wetten.nl - Regeling - Burgerlijk Wetboek Boek 7 - BWBR0005290 (overheid.nl)";
+	skos:scopeNote "Als iets is verhuurd dan betekent dat er een huurovereenkomst is gesloten waarbij de verhuurder iets (bijvoorbeeld een woning) heeft verhuurd aan de huurder.  "@nl;
+.
+mak:Voorschotbedragen a skos:Concept;
+	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
+	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Voorschotbedragen"@nl;
+	skos:definition "Het voorschotbedrag is doorgaans het maandelijkse bedrag wat wordt betaald voor gas, water en elektriciteit. "@nl;
+	skos:scopeNote "Het voorschotbedrag is doorgaans het maandelijkse bedrag wat wordt betaald voor gas, water en elektriciteit. "@nl;
+.
