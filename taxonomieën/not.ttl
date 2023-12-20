@@ -808,7 +808,7 @@ not:BijzondereLasten a skos:Concept;#Dit begrip kent het Kadaster niet en lijkt 
 not:Comparitie a skos:Concept, skoslex:Record;
 	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
-	rdfs:label "Verschijnen voor notaris"@nl;#Hens Meengs van KNB geeft aan dat comparitie een 'verboden' woord is.
+	rdfs:label "Verschijnen voor notaris"@nl;# van KNB geeft aan dat comparitie een 'verboden' woord is.
 	skos:prefLabel "Verschijnen voor notaris"@nl;
 	skos:altLabel "Comparitie"@nl;
 	skos:definition "Het eerste onderdeel van de notariële akte, waarin de notaris verklaart wie partij is bij de akte en wie er bij het ondertekenen van de akte aanwezig is."@nl;
@@ -1202,7 +1202,7 @@ not:PlaatsVanVestiging a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=10>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=13>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
-	#Hens Meengs en  zijn beiden met andere artikelen gekomen. Overleg met KNB nodig.
+	# en  zijn beiden met andere artikelen gekomen. Overleg met KNB nodig.
 	skos:scopeNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt."@nl;
 	skos:related not:Notaris;
 	#skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd."@nl;
@@ -1410,7 +1410,7 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	skos:prefLabel "Volmacht"@nl;
 	skos:definition "De bevoegdheid die een persoon (de volmachtgever) verleent aan een andere persoon (de gevolmachtigde) om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;#Definitie 
 	skos:scopeNote "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden."@nl;
-	#skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden."@nl;#Definitie Hens Meengs
+	#skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden."@nl;#Definitie 
 	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem rechtshandelingen te verrichten zoals het ondertekenen van een notariële akte."@nl;
 	skos:scopeNote "De volmachtnemer is doorgaans een persoon die de volmachtgever vertrouwt, zoals de partner en/of kinderen, een goede vriend, maar de volmacht kan ook worden gegeven aan de notaris."@nl;
 	#dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0005291&boek=3&titeldeel=3&artikel=60>;#2 verschillende definities en linkjes. Overleg met KNB juristen welke moeten worden gebruikt
