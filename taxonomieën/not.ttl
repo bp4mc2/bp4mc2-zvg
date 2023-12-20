@@ -102,8 +102,8 @@ not:Notaris a skos:Concept, skoslex:Agent;
 	skos:altLabel "Ambtenaar"@nl;
 	skos:altLabel "Bevoegd protocolhouder"@nl;
 	skos:altLabel "Protocolhouder"@nl;
-	skos:definition "Bekleder van het ambt als bedoeld in artikel 2 van de Wet op het notarisambt."@nl; #Input Jacco Sjerps
-	#skos:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit."@nl;#Input Hengs Meengs
+	skos:definition "Bekleder van het ambt als bedoeld in artikel 2 van de Wet op het notarisambt."@nl; 
+	#skos:definition "Het ambt van notaris houdt de bevoegdheid in om authentieke akten te verlijden in de gevallen waarin de wet dit aan hem opdraagt of een partij zulks van hem verlangt en andere in de wet aan hem opgedragen werkzaamheden te verrichten. Tot het voeren van de titel notaris is uitsluitend bevoegd hij die als zodanig is benoemd en beëdigd en die niet geschorst of gedefungeerd is. De notaris oefent het ambt, waaronder het beheer van het protocol dat onder hem berust, voor eigen rekening en risico uit."@nl;
 	#2 verschillende definities uit 1 KNB Juridische afdeling. Tsja.
 	rdfs:comment "Ambtenaar volgens de Wet op het notarisambt, die (wettelijke) werkzaamheden verricht voor een klant op basis van een tussen hen gesloten opdracht of overeenkomst. Een notaris helpt (niet-)natuurlijke personen om tot rechtsgeldige en bindende afspraken te komen. Een notaris geeft juridisch advies en let op de belangen van alle betrokkenen. Een notaris is deskundig, onafhankelijk en onpartijdig. Afspraken legt de notaris vast in een notariële akte. Zo is voor iedereen altijd duidelijk wat de afspraken zijn. Als er later twijfel ontstaat, dan geeft de notariële akte helderheid."@nl;
 	skos:editorialNote "Het notariaat kent begrippen als waarneming, kandidaat-notaris en toegevoegd notaris, naast het begrip van notaris. Deze begrippen zijn hierin niet opgenomen."@nl;#...omdat het niet relevant is voor de buitenwereld.
@@ -749,8 +749,8 @@ not:AuthentiekeAkte a skos:Concept, skoslex:Record;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Authentieke akte"@nl;
 	skos:prefLabel "Authentieke akte"@nl;
-	#skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt."@nl;#Input Hengs Meengs
-	skos:definition "Akte die in de vereiste vorm en bevoegdelijk is opgemaakt door een ambtenaar aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hem gedane waarnemingen of verrichtingen."@nl;#Input Jacco Sjerps
+	#skos:definition "Authentieke akten zijn akten in de vereiste vorm en bevoegdelijk opgemaakt door ambtenaren, aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hen gedane waarnemingen of verrichtingen. Als authentieke akten worden tevens beschouwd de akten, waarvan het opmaken aan ambtenaren is voorbehouden, doch waarvan de wet het opmaken in bepaalde gevallen aan anderen dan ambtenaren opdraagt."@nl;
+	skos:definition "Akte die in de vereiste vorm en bevoegdelijk is opgemaakt door een ambtenaar aan wie bij of krachtens de wet is opgedragen op die wijze te doen blijken van door hem gedane waarnemingen of verrichtingen."@nl;
 	#2 definities van verschillende personen voor 1 begrip. Met KNB afstemmen welke het zou moeten worden
 	rdfs:comment "Authentieke akten zijn officiële schriftelijke documenten opgesteld door een ambtenaar (zoals de notaris). Authentieke akten dienen als middel om anderen (zonder tussenkomst van een rechter) tot handelen te dwingen. Zij dienen, met andere woorden, als dwingend bewijs."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0001827&boek=Eerste&titeldeel=Tweede&afdeling=Negende&paragraaf=2&artikel=156&lid=2>;
@@ -1087,7 +1087,7 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte"@nl;
 	#skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd."@nl;#Definitie Hengs Meengs
-	skos:definition "Door een notaris verleden authentieke akte."@nl;#Definitie Jacco Sjerps
+	skos:definition "Door een notaris verleden authentieke akte."@nl;#Definitie 
 	#2 verschillende definities van KNB Juridische Zaken. Moet worden afgestemd welke het gaat worden.
 	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris."@nl;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=2&lid=1>;
@@ -1202,7 +1202,7 @@ not:PlaatsVanVestiging a skos:Concept;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=10>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=II&artikel=13>;
 	dcterms:source <http://wetten.overheid.nl/jci1.3:c:BWBR0010388&titeldeel=V&artikel=40>;
-	#Hens Meengs en Jacco Sjerps zijn beiden met andere artikelen gekomen. Overleg met KNB nodig.
+	#Hens Meengs en  zijn beiden met andere artikelen gekomen. Overleg met KNB nodig.
 	skos:scopeNote "Het kan ook het adres zijn waar een niet natuurlijk persoon zijn bedrijfsvoering houdt."@nl;
 	skos:related not:Notaris;
 	#skos:editorialNote "In dit concept verwezen naar notaris en kan het concept notaris zonder plaats van vestiging, dus is de relatie op het juiste object vastgelegd."@nl;
@@ -1408,7 +1408,7 @@ not:Volmacht a skos:Concept, skoslex:Object;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Volmacht"@nl;
 	skos:prefLabel "Volmacht"@nl;
-	skos:definition "De bevoegdheid die een persoon (de volmachtgever) verleent aan een andere persoon (de gevolmachtigde) om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;#Definitie Jacco Sjerps
+	skos:definition "De bevoegdheid die een persoon (de volmachtgever) verleent aan een andere persoon (de gevolmachtigde) om in zijn naam (bepaalde) rechtshandelingen te verrichten."@nl;#Definitie 
 	skos:scopeNote "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden."@nl;
 	#skos:definition "De bevoegdheid die een volmachtgever verleent aan een ander, de gevolmachtigde, om in zijn naam rechtshandelingen te verrichten, Het verlenen van een volmacht is in dit kader een eenzijdige rechtshandeling. Het verlenen van een volmacht kan uitdrukkelijk of stilzwijgend geschieden."@nl;#Definitie Hens Meengs
 	rdfs:comment "Met een volmacht geeft iemand (de volmachtgever) toestemming aan een ander (de volmachtnemer) om namens hem rechtshandelingen te verrichten zoals het ondertekenen van een notariële akte."@nl;
