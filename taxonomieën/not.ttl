@@ -1086,7 +1086,7 @@ not:NotarieleAkte a skos:Concept, skoslex:Record;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
 	rdfs:label "Notariële akte"@nl;
 	skos:prefLabel "Notariële akte"@nl;
-	#skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd."@nl;#Definitie Hengs Meengs
+	#skos:definition "Authentieke akten die is verleden door een notaris. Een notariële akte is een geschrift waarin overeenkomsten en verklaringen juridisch worden vastgelegd."@nl;#Definitie 
 	skos:definition "Door een notaris verleden authentieke akte."@nl;#Definitie 
 	#2 verschillende definities van KNB Juridische Zaken. Moet worden afgestemd welke het gaat worden.
 	rdfs:comment "Officieel schriftelijk document dat is gemaakt door een notaris."@nl;
