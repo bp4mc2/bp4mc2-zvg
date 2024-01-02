@@ -333,62 +333,62 @@ fin:Waarborgsom a skos:Concept, skoslex:Object;
 
 fin:Belastingjaar a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Belastingjaar"@nl;
 	skos:definition "Het belastingjaar wordt gebruikt om te verwijzen naar een periode waarin de belastingen worden berekend en betaald. Het belastingjaar is meestal een kalenderjaar. Dat wil zeggen van 1 januari tot en met 31 december. Het wordt ook wel het fiscale jaar of het boekjaar genoemd. Gedurende deze periode verdienen individuen en bedrijven inkomen en zijn ze verplicht om belastingen te betalen over dat inkomen. "@nl;
 .
 fin:Executieveiling a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Executieveiling"@nl;
 	skos:definition "Een executieveiling, ook wel bekend als een gedwongen verkoop of veiling bij executie. Dit wordt toegepast wanneer de eigenaar/schuldenaar niet aan zijn afbetalingsverplichtingen voldoet. "@nl;
 .
 fin:Looptijd a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Looptijd"@nl;
 	skos:definition "De periode waarin een overeenkomst van kracht is."@nl;
-	dct:source "https://wetten.overheid.nl/BWBR0020748/2019-01-01/0#Hoofdstuk10_Artikel90. Tevens oud begrip Landinrichtingsrente in interne catalogus Kadaster. ";
+	dcterms:source "https://wetten.overheid.nl/BWBR0020748/2019-01-01/0#Hoofdstuk10_Artikel90. Tevens oud begrip Landinrichtingsrente in interne catalogus Kadaster. ";
 .
 fin:Premie a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Premie"@nl;
 	skos:definition "Het bedrag wat betaald wordt aan het pensioenfonds of verzekeraar, bestemd voor de financiering van het afgesloten product."@nl;
 .
 fin:Restschuld a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Restschuld"@nl;
 	skos:definition "Schuld die overblijft als de hypotheek of lening die gebruikt is voor de woning hoger is dan de prijs waarvoor de woning is verkocht"@nl;
 .
 fin:Saldo a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Saldo "@nl;
 	skos:definition "Stand van de lening"@nl;
 .
 fin:Schuldrest a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Schuldrest"@nl;
 	skos:definition "Het nog niet afgeloste deel van de hoofsom van de lening."@nl;
 .
 fin:Subsidie a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Subsidie"@nl;
 	skos:definition "Aanspraak op financiële middelen, door een bestuursorgaan verstrekt met het oog op bepaalde activiteiten van de aanvrager, anders dan als betaling voor aan het bestuursorgaan geleverde goederen of diensten. "@nl;
 .
 fin:TweedeRechtVanHypotheek a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Tweede Recht Van Hypotheek"@nl;
-	skos:definition "Een tweede hypotheek verwijst naar een lening die wordt afgesloten met hetzelfde onroerend goed als onderpand waarvoor al een bestaande hypotheek is afgesloten. Het wordt "tweede" genoemd omdat het in rangorde na de eerste hypotheek komt. Met andere woorden, als er een gedwongen verkoop van het onroerend goed plaatsvindt, zal de opbrengst eerst worden gebruikt om de eerste hypotheek af te lossen voordat de resterende bedragen worden gebruikt om de tweede hypotheek af te betalen."@nl;
+	skos:definition "Een tweede hypotheek verwijst naar een lening die wordt afgesloten met hetzelfde onroerend goed als onderpand waarvoor al een bestaande hypotheek is afgesloten. Het wordt 'tweede' genoemd omdat het in rangorde na de eerste hypotheek komt. Met andere woorden, als er een gedwongen verkoop van het onroerend goed plaatsvindt, zal de opbrengst eerst worden gebruikt om de eerste hypotheek af te lossen voordat de resterende bedragen worden gebruikt om de tweede hypotheek af te betalen."@nl;
 .
 fin:Verbouwing a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin;
+	skos:inScheme <http://fin.zorgeloosvastgoed.nl/id/ConceptualFramework/fin>;
 	skos:prefLabel "Verbouwing"@nl;
 	skos:definition "Een verbouwing is een bouwkundige wijziging van een gebouw. "@nl;
 .

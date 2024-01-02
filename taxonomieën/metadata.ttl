@@ -1,0 +1,148 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/concept/>.
+@prefix mak: <http://mak.zorgeloosvastgoed.nl/id/concept/>.
+@prefix fin: <http://fin.zorgeloosvastgoed.nl/id/concept/>.
+@prefix not: <http://not.zorgeloosvastgoed.nl/id/concept/>.
+@prefix kad: <http://kad.zorgeloosvastgoed.nl/id/concept/>.
+@prefix bel: <http://bel.zorgeloosvastgoed.nl/id/concept/>.
+@prefix brk: <http://tax.kadaster.nl/id/begrip/>.
+@prefix bag: <http://bag.basisregistraties.overheid.nl/id/begrip/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix loc: <http://www.w3.org/ns/locn#>.
+
+<http://bp4mc2.org/def/skos-lex#> a owl:Ontology;
+#              rdfs:label "SKOS legal extension (skos-lex)"@en;
+#              rdfs:label "SKOS juridische uitbreiding (skos-lex)"@nl;
+               skos:note "the SKOS legal extension defines the classes en properties necessary to declare legal constructs as skos concepts."@en;
+               skos:note "de SKOS juridische uitbreiding definieert de klassen en eigenschappen die nodig zijn om juridische constructies te declareren als skos concepten."@nl;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:Act a owl:Class;
+               rdfs:label "Act"@en;
+               rdfs:label "Handeling"@nl;
+               skos:note "The class of Acts. An act is a legal construct representing a set of activities, performed by an Actor and with respect to some Object."@en;
+               skos:note "De klasse van handelingen. Een handeling is een juridische constructie die een verzamelingen activiteiten voorstelt, uitgevoerd door een Actor en op een Object."@nl;
+               rdfs:subClassOf skos:Concept;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:Actor a owl:Class;
+               rdfs:label "Actor"@en;
+               rdfs:label "Actor"@nl;
+               skos:note "The class of Actors. An actor is some person (individual, group or organisation) that performs some Act"@en;
+               skos:note "De klasse van actoren. Een actor is een persoon (individu, groep of organisatie) die een handeling uitvoert"@nl;
+               rdfs:subClassOf skos:Concept;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:Agent a owl:Class;
+               rdfs:label "Agent"@en;
+               rdfs:label "Agent"@nl;
+               skos:note "The class of Agent. An agent is some person (individual, group or organisation) involved in some act, without actually performing the act."@en;
+               skos:note "De klasse van agenten. Een agent is een persoon (individu, groep of organisatie) die bij een handeling betrokken is, zonder de handeling feitelijk uit te voeren."@nl;
+               rdfs:subClassOf skoslex:Actor;
+.
+
+skoslex:Object a owl:Class;
+               rdfs:label "Object"@en;
+               rdfs:label "Object"@nl;
+               skos:note "The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act"@en;
+               skos:note "De klasse van objecten. Een object is een ding (niet een actor) dat ontstaat, wijzigt of gebruikt wordt gedurende een handeling"@nl;
+               rdfs:subClassOf skos:Concept;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:Record a owl:Class;
+               rdfs:label "Record"@en;
+               rdfs:label "Opname"@nl;
+               skos:note "The class of records. A record is a some thing (not an actor) that is created to capture the execution of an act"@en;
+               skos:note "The klasse van opnamen. Een opname is een ding (niet een actor) dat gemaakt wordt om de uitvoering van een handeling vast te leggen"@nl;
+               rdfs:subClassOf skoslex:Object;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:Norm a owl:Class;
+               rdfs:label "Norm"@en;
+               rdfs:label "Norm"@nl;
+               skos:note "The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act."@en;
+               skos:note "The klasse van normen. Een norm heeft effect op een handeling. De norm stelt wat 'zou moeten' of juist 'niet zo moeten' met betrekking tot de handeling. Een norm representeert de regels die gelden voor de handeling."@nl;
+               rdfs:seeAlso <https://en.wikipedia.org/wiki/Norm_(philosophy)>;
+               rdfs:seeAlso <https://en.wikipedia.org/wiki/Theory_of_Legal_Norms>;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:refersTo a owl:ObjectProperty;
+               rdfs:label "refers to"@en;
+               rdfs:label "verwijst naar"@nl;
+               skos:note "RefersTo relates a norm with the Act that is refered by the norm. Such an act has some relation with the norm, without further specification. It might be effected by the norm, but could also be a precondition or simply mentioned in the rules."@en;
+               skos:note "Verwijst naar relateert een norm aan de handeling waarnaar de norm refereert. Zo'n handeling heeft een relatie met de norm, zonder verdere specificatie. Het kan zijn dat de norm bepaalde zaken voorschrift, maar het kan ook zijn dat de handeling een preconditie is, of gewoon benoemd is in de regels."@nl;
+               rdfs:domain skoslex:Norm;
+               rdfs:range skoslex:Act;
+               rdfs:subPropertyOf skos:semanticRelation;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:affects a owl:ObjectProperty;
+               rdfs:label "affects"@en;
+               rdfs:label "normeert"@nl;
+               skos:note "Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm"@en;
+               skos:note "Normeert relateert een norm aan de handeling die de norm normeert. Zo'n handeling wordt beperkt door de regels van de norm"@nl;
+               rdfs:subPropertyOf skoslex:refersTo;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:actor a owl:ObjectProperty;
+               rdfs:label "actor"@en;
+               rdfs:label "actor"@nl;
+               skos:note "Actor relates an Act with the Actor that performs the act."@en;
+               skos:note "Actor relateert een handeling aan de actor die de handeling uitvoert"@nl;
+               rdfs:subPropertyOf skos:semanticRelation;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:agent a owl:ObjectProperty;
+               rdfs:label "agent"@en;
+               rdfs:label "agent"@nl;
+               skos:note "Agent relates an Act with the Agent involved in the act."@en;
+               skos:note "Agent relateert een handeling aan de agent die bij de handeling betrokken is"@nl;
+               rdfs:subPropertyOf skoslex:actor;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:object a owl:ObjectProperty;
+               rdfs:label "object"@en;
+               rdfs:label "object"@nl;
+               skos:note "Object relates an Act with the object that is created, changed or used during the act"@en;
+               skos:note "Object relateert een handeling met een object dat ontstaat, wijzigt of wordt gebruikt gedurende een act"@nl;
+               rdfs:subPropertyOf skos:semanticRelation;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:record a owl:ObjectProperty;
+               rdfs:label "record"@en;
+               rdfs:label "opname"@nl;
+               skos:note "Record relates an Act with the record that is created to capture the execution of the act"@en;
+               skos:note" Opname relateert een handeling met een opname die wordt gemaakt om de handeling vast te leggen"@nl;
+               rdfs:subPropertyOf skos:semanticRelation;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:isAbout a owl:ObjectProperty;
+               rdfs:label "isAbout"@en;
+               rdfs:label "gaatOver"@nl;
+               skos:note "Is about relates a Record with a concept that this record is about"@en;
+               skos:note "Gaat over relateert een opname met een concept waar deze opname over gaat"@nl;
+               rdfs:subPropertyOf skos:semanticRelation;
+               rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.

@@ -4,7 +4,6 @@
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 @prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
-@prefix dct: <http://purl.org/dc/terms/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix zv: <http://taxonomie.zorgeloosvastgoed.nl/id/concept/>.
 @prefix mak: <http://mak.zorgeloosvastgoed.nl/id/concept/>.
@@ -636,7 +635,7 @@ not:AanmerkelijkeVerzwaring a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Aanmerkelijke Verzwaring"@nl;
     skos:definition "Aanzienlijke verhoging "@nl;
-    dct:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2013:BZ2217&showbutton=true&keyword=%22aanmerkelijke+verzwaring%22"^^rdf:HTML;
+    dcterms:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2013:BZ2217&showbutton=true&keyword=%22aanmerkelijke+verzwaring%22"^^rdf:HTML;
     rdfs:comment "ECLI:NL:RBAMS:2013:BZ2217 - Rechtbank Amsterdam, 20-02-2013 / 1372325 \\ HA EXPL 12-1101"@nl .
 
 not:AanspraakTotGebruik a skos:Concept;
@@ -721,7 +720,7 @@ not:AkteVanSplitsing a skos:Concept;
     skos:prefLabel "Akte van Splitsing"@nl;
     skosthes:broaderGeneric not:NotarieleAkte;
     skos:definition "Een notariële akte waarin het gebouw en de daarbij behorende grond of de grond met de daarop te realiseren opstallen is gesplitst in appartementsrechten."@nl;
-    dct:source "Artikel 5:111 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling1_Artikel111"^^rdf:HTML 
+    dcterms:source "Artikel 5:111 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling1_Artikel111"^^rdf:HTML 
 .
 
 not:AkteVanVolmacht a skos:Concept, skoslex:Record;
@@ -766,7 +765,7 @@ not:BepalingenVanHetReglement a skos:Concept;
 c. een regeling omtrent het gebruik, het beheer en het onderhoud van de gedeelten die niet bestemd zijn om als afzonderlijk geheel te worden gebruikt;
 d. door wiens zorg en tegen welke gevaren het gebouw ten behoeve van de gezamenlijke appartementseigenaars moet worden verzekerd;
 e. de oprichting van een vereniging van eigenaars, die ten doel heeft het behartigen van gemeenschappelijke belangen van de appartementseigenaars, en de statuten van de vereniging."""@nl;
-  dct:source "Artikel 5:112 lid 1 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling1_Artikel112"^^rdf:HTML 
+  dcterms:source "Artikel 5:112 lid 1 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling1_Artikel112"^^rdf:HTML 
 .
 not:Besluiten a skos:Concept;
     skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
@@ -826,7 +825,7 @@ not:ConcreteVoornemens a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Concrete Voornemens"@nl;
     skos:definition "Intenties die zodanig concreet zijn dat er serieus rekening mee dient te worden gehouden dat de Vereniging van Eigenaars tot bepaalde besluitvorming over zal gaan."@nl;
-    dct:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2013:BZ2217&showbutton=true&keyword=%22aanmerkelijke+verzwaring%22"^^rdf:HTML,
+    dcterms:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2013:BZ2217&showbutton=true&keyword=%22aanmerkelijke+verzwaring%22"^^rdf:HTML,
     "ECLI:NL:RBAMS:2013:BZ2217 - Rechtbank Amsterdam, 20-02-2013 / 1372325 \\ HA EXPL 12-1101"@nl 
 .
 not:DatumPasserenAkteLevering a skos:Concept, skoslex:Object;#Wellicht moet dit een generiekere naam worden. Bespreken met KNB juristen.
@@ -848,21 +847,21 @@ not:DeWaardeVanGenoemdAandeel a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "De Waarde Van Genoemd Aandeel "@nl;
     skos:definition "De waarde van het aandeel van verkoper in de aanwezige reserve- en onderhoudsfondsen."@nl;
-    dct:source "https://www.waarderingskamer.nl/woz-voor-woningen/onderhoudsreserve-woz-waarde/#:~:text=Het%20aandeel%20in%20de%20reserve,moet%20hiermee%20rekening%20worden%20gehouden."^^rdf:HTML 
+    dcterms:source "https://www.waarderingskamer.nl/woz-voor-woningen/onderhoudsreserve-woz-waarde/#:~:text=Het%20aandeel%20in%20de%20reserve,moet%20hiermee%20rekening%20worden%20gehouden."^^rdf:HTML 
 .
 not:DeelTeNemen a skos:Concept;
     skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Deel Te Nemen"@nl;
     skos:definition "Participeren en in die zin verplicht bijdragen aan de lopende opstalverzekering."@nl;
-    dct:source "https://www.eigenhuis.nl/besparen/opstalverzekering#/"^^rdf:HTML 
+    dcterms:source "https://www.eigenhuis.nl/besparen/opstalverzekering#/"^^rdf:HTML 
 .
 not:DoorOfNamensDe a skos:Concept;
     skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Door of Namens de"@nl;
     skos:definition "door of uit naam van, als vertegenwoordiger van"@nl;
-    dct:source "https://www.vandale.nl/gratis-woordenboek/nederlands/betekenis/namens#.Ynom1ehBwuU"^^rdf:HTML 
+    dcterms:source "https://www.vandale.nl/gratis-woordenboek/nederlands/betekenis/namens#.Ynom1ehBwuU"^^rdf:HTML 
 .
 
 not:EeuwigdurendeErfpacht a skos:Concept;#Erfpacht wordt geregistreerd door Kadaster. Dat begrip is daar bekend. Met dit begrip doet het Kadaster niets, aangezien dit wel wordt opgenomen in de akte, is ervoor gekozen dit begrip in het NOT domein op te nemen.
@@ -897,7 +896,7 @@ not:Exploitatieoverzicht a skos:Concept;
     skos:prefLabel "Exploitatieoverzicht"@nl;
     skos:definition "De 'winst of verliesrekening' of 'staat van baten en lasten', waarop is vermeld wat er het afgelopen jaar is binnengekomen en wat er is uitgegeven."@nl;
     skos:altLabel "Winst of Verliesrekening"@nl, "Staat van Baten en Lasten"@nl;
-    dct:source "Artikel 5:112 lid 1 sub b. BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
+    dcterms:source "Artikel 5:112 lid 1 sub b. BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
 .
 not:Gemeenschap a skos:Concept;
     skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
@@ -1140,7 +1139,7 @@ not:Opstalverzekering a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Opstalverzekering"@nl;
     skos:definition "Verzekering van de Vereniging van Eigenaars die schade dekt aan gemeenschappelijke delen van het in de splitsing in appartementsrechten betrokken gebouw met aan- en toebehoren."@nl;
-    dct:source "Artikel 5:112 lid 1 sub d. BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML, "Modelreglement bij splitsing in appartementsrechten 2017 (artikel 19 lid 1)"@nl 
+    dcterms:source "Artikel 5:112 lid 1 sub d. BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML, "Modelreglement bij splitsing in appartementsrechten 2017 (artikel 19 lid 1)"@nl 
 .
 
 not:Optierecht a skos:Concept, skoslex:Object;
@@ -1228,7 +1227,7 @@ not:ReserveEnOnderhoudsfondsen a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Reserve- en Onderhoudsfondsen"@nl;
     skos:definition "Fonds met bijdragen van appartementseigenaren ter bestrijding van andere dan de gewone jaarlijkse kosten."@nl;
-    dct:source "Artikel 5:126 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling2_Artikel126"^^rdf:HTML 
+    dcterms:source "Artikel 5:126 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling2_Artikel126"^^rdf:HTML 
 .
 not:ReglementVanSplitsing a skos:Concept;
 	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>; 
@@ -1240,7 +1239,7 @@ b. een regeling omtrent een jaarlijks op te stellen exploitatierekening, lopende
 c. een regeling omtrent het gebruik, het beheer en het onderhoud van de gedeelten die niet bestemd zijn om als afzonderlijk geheel te worden gebruikt;
 d. door wiens zorg en tegen welke gevaren het gebouw ten behoeve van de gezamenlijke appartementseigenaars moet worden verzekerd;
 e. de oprichting van een vereniging van eigenaars, die ten doel heeft het behartigen van gemeenschappelijke belangen van de appartementseigenaars, en de statuten van de vereniging.\""""@nl;
-  dct:source "Artikel 5:112 lid 1 BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
+  dcterms:source "Artikel 5:112 lid 1 BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
 .
 
 not:Schriftelijk a skos:Concept;
@@ -1249,7 +1248,7 @@ not:Schriftelijk a skos:Concept;
     skos:prefLabel "Schriftelijk"@nl;
     skos:scopeNote "Bij het ontbinden van de koopovereenkomst"@nl;
     skos:definition "Het ontbinden van de koopovereenkomst dient schriftelijk te geschieden. Dit houdt in dat een telefoontje niet voldoende is. Een gangbaar communicatiemiddel is een mededeling per aangetekende post. Het voordeel hiervan is dat aangetoond kan worden dat de mededeling daadwerkelijk heeft plaatsgevonden. Als echter tussen verkoper en koper (al dan niet met tussenkomst van een makelaar) via email is gecommuniceerd, kan dat tussen betrokken partijen ook een ‘gangbaar communicatiemiddel’ zijn."@nl;
-    dct:source "https://www.eigenhuis.nl/huis-kopen/bestaande-bouw/koopovereenkomst-tekenen/de-koop-ontbinden#/"^^rdf:HTML 
+    dcterms:source "https://www.eigenhuis.nl/huis-kopen/bestaande-bouw/koopovereenkomst-tekenen/de-koop-ontbinden#/"^^rdf:HTML 
 .
 
 not:Statuten a skos:Concept;
@@ -1257,7 +1256,7 @@ not:Statuten a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Statuten"@nl;
     skos:scopeNote "Vereniging van Eigenaars"@nl;
-    dct:source "Artikel 5:112 lid 2 BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
+    dcterms:source "Artikel 5:112 lid 2 BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
 .
 
 not:Stemrecht a skos:Concept;
@@ -1266,7 +1265,7 @@ not:Stemrecht a skos:Concept;
     skos:prefLabel "Stemrecht"@nl;
     skos:scopeNote "Vergadering Vereniging van Eigenaars"@nl;
     skos:definition "Het aan een appartementsrecht verbonden recht om te stemmen."@nl;
-    dct:source "Artikel 5:112 lid 2 sub d. BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML,
+    dcterms:source "Artikel 5:112 lid 2 sub d. BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=112&z=2018-09-19&g=2018-09-19"^^rdf:HTML,
     "Modelreglement bij splitsing in appartementsrechten 2017 (artikel 51)"@nl 
 .
 
@@ -1281,7 +1280,7 @@ not:TerHandGesteld a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Ter Hand Gesteld"@nl;
     skos:definition "Het ter hand stellen van de koopovereenkomst aan de koper houdt in dat koper de koopovereenkomst (in kopie) heeft ontvangen. "@nl;
-    dct:source "Artikel 7:2 lid 2 BW"@nl, "https://wetten.overheid.nl/BWBR0005290/2017-03-10#Boek7_Titeldeel1_Afdeling1_Artikel2"^^rdf:HTML 
+    dcterms:source "Artikel 7:2 lid 2 BW"@nl, "https://wetten.overheid.nl/BWBR0005290/2017-03-10#Boek7_Titeldeel1_Afdeling1_Artikel2"^^rdf:HTML 
 .
 
 
@@ -1346,7 +1345,7 @@ not:UitsluitendGebruik a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Uitsluitend Gebruik"@nl;
     skos:definition "Exclusief gebruik"@nl;
-    dct:source "Artikel 5:106 lid 4 BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=106&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
+    dcterms:source "Artikel 5:106 lid 4 BW"@nl, "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=1&artikel=106&z=2018-09-19&g=2018-09-19"^^rdf:HTML 
 .
 
 not:UitvoeringVanHetBesluit a skos:Concept;
@@ -1379,7 +1378,7 @@ not:VergaderingVanEigenaars a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>; 
     skos:prefLabel "Vergadering van Eigenaars"@nl;
     skos:definition "Het hoogste orgaan van de Vereniging van Eigenaars. Aan de vergadering van eigenaars komen op grond van artikel 5:125 lid 1 BW alle bevoegdheden toe, die niet door de wet of statuten aan andere organen zijn opgedragen."@nl;
-    dct:source "Artikel 5:125 lid 1 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling2_Artikel125"^^rdf:HTML 
+    dcterms:source "Artikel 5:125 lid 1 BW"@nl, "https://wetten.overheid.nl/BWBR0005288/2018-09-19#Boek5_Titeldeel9_Afdeling2_Artikel125"^^rdf:HTML 
 .
 
 not:Verordening a skos:Concept, skoslex:Object;#Deze hoort wellicht thuis in het domein van het Kadaster
@@ -1551,128 +1550,128 @@ not:OnroerendeZaakOmschrijving a skos:Concept;
 ##########	Release lijst A + B ####################
 not:AntiSpeculatiebeding a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Anti-Speculatiebeding"@nl;
 	skos:definition "Een anti-speculatiebeding is een beding dat is bedoeld om speculatieve handel met onroerend goed (prijsopdrijving) tegen te gaan. Het anti-speculatiebeding verplicht de koper om zijn woning zelf te bewonen gedurende een bepaalde contractueel vastgelegde periode, tenzij er sprake is van een ontheffingsgrond (bijvoorbeeld overlijden)."@nl;
 	skos:scopeNote "Een anti-speculatiebeding is een contractuele voorwaarde dat de koper verplicht om zijn woning een aantal jaren zelf te bewonen voordat hij zijn woning mag doorverkopen. "@nl;
 .
 not:Belast a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Belast"@nl;
 	skos:definition "Als een appartementsrecht belast is met een recht van hypotheek dan rust er een hypotheekrecht op het appartementsrecht. Het appartementsrecht is dan dus bezwaard met een recht van hypotheek.  Of er sprake is van een hypotheekrecht kan worden nagegaan in de Basisregistratie Kadaster (BRK)."@nl;
 .
 not:BeschikkenOverHetAppartementsrecht a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Beschikken Over Het Appartementsrecht"@nl;
 	skos:definition "Beschikken over een appartementsrecht houdt in dat de goederenrechtelijke bevoegdheid bestaat om handelingen met betrekking tot dit appartementsrecht te verrichten (overdragen van dit appartementsrecht, maar ook bezwaren met een beperkt recht of het afstand doen van een beperkt recht). Als uitgangspunt geldt dat de rechthebbende - degene die gerechtigd is tot het appartementsrecht - beschikkingsbevoegd is. "@nl;
 	skos:scopeNote "Beschikken over een appartementsrecht ziet op het vervreemden of bezwaren van dit appartementsrecht. Beschikkingsbevoegdheid is een goederenrechtelijk begrip en staat voor de relatie tussen een rechthebbende en één of meer bepaalde goederen."@nl;
 .
 not:Echtscheiding a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Echtscheiding"@nl;
 	skos:definition "Een echtscheiding wordt door de rechter uitgesproken op verzoek van één van de echtgenoten of op gemeenschappelijk verzoek en beëindigt het huwelijk of het geregistreerd partnerschap.  "@nl;
-	dct:source "Artikel 1:150 e.v. Burgerlijk Wetboek";
+	dcterms:source "Artikel 1:150 e.v. Burgerlijk Wetboek";
 	skos:scopeNote "Een echtscheiding verbreekt alle juridische banden tussen u en uw partner en wordt uitgesproken door de rechter."@nl;
 .
 not:Gebruiksovereenkomst a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Gebruiksovereenkomst"@nl;
 	skos:definition "Een gebruiksovereenkomst ziet op het in gebruik geven van een ruimte om niet (dus zonder tegenprestatie). Dit betekent echter niet dat er in zijn geheel geen kosten kunnen worden doorberekend. De volgende kosten kunnen ook bij een gebruiksovereenkomst in rekening worden gebracht: een vergoeding met een symbolisch karakter of een vergoeding die ziet op slechts de gebruikskosten of een vergoeding die ziet op de kosten van bemiddeling of beheer."@nl;
-	dct:source "Artikel 7a:1777 Burgerlijk Wetboek";
+	dcterms:source "Artikel 7a:1777 Burgerlijk Wetboek";
 	skos:scopeNote "Er is sprake van een gebruiksovereenkomst als een onroerende zaak aan een gebruiker ter beschikking wordt gesteld gedurende een bepaalde periode en waarbij doorgaans het component betaling van een gebruiksvergoeding voor gebruik van een bepaalde zaak ontbreekt. Hierdoor is er geen sprake van een huurovereenkomst."@nl;
 .
 not:Meerjarenonderhoudsplan a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Meerjarenonderhoudsplan"@nl;
 	skos:definition "Een meerjarenonderhoudsplan (MJOP) is een document waarin staat welk onderhoud de komende jaren aan uw appartementencomplex moet plaatsvinden. In de bijbehorende meerjarenonderhoudsbegroting staan de kosten die daarmee gemoeid zijn. Voor een Vereniging van Eigenaars (VvE) is een MJOP hét document bij uitstek om onderhoud en kosten in kaart te brengen en te plannen."@nl;
-	dct:source "Artikel 5:126 lid 2 sub a. Burgerlijk Wetboek";
+	dcterms:source "Artikel 5:126 lid 2 sub a. Burgerlijk Wetboek";
 	skos:scopeNote "Een MJOP is een document waarin staat wanneer welk onderhoud plaats moet vinden en wat de kosten hiervan zullen zijn. Het MJOP heeft betrekking op de gemeenschappelijke zaken van de VvE, zoals bijvoorbeeld het dak."@nl;
 .
 not:MinderjarigeKinderen a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Minderjarige Kinderen"@nl;
 	skos:definition " Minderjarigen zijn zij die de leeftijd van achttien jaren niet hebben bereikt en evenmin met toepassing van artikel 1:253ha van het Burgerlijk Wetboek meerderjarig zijn verklaard."@nl;
-	dct:source "Artikel 1:233 Burgerlijk Wetboek";
+	dcterms:source "Artikel 1:233 Burgerlijk Wetboek";
 .
 not:Nalatenschap a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Nalatenschap"@nl;
 	skos:definition "De nalatenschap is het totaal aan bezittingen en schulden dat iemand na zijn overlijden nalaat. Ook wel erfenis genoemd."@nl;
 .
 not:Notulen a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Notulen"@nl;
-	skos:definition "Schriftelijk verslag van wat besproken is in de vergadering van de Vereniging van Eigenaars ("VvE")."@nl;
+	skos:definition "Schriftelijk verslag van wat besproken is in de vergadering van de Vereniging van Eigenaars (VvE)."@nl;
 	skos:scopeNote "Schriftelijk vergaderverslag van de vergadering van de VvE."@nl;
 .
 not:Omgevingsvergunning a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Omgevingsvergunning"@nl;
 	skos:definition "Een omgevingsvergunning is de officiële (noodzakelijke) toestemming van een overheidsorganisatie zoals een college van b & w van een gemeente om bepaalde activiteiten te verrichten. Bijvoorbeeld het bouwen van een serre of een dakkapel, het verbouwen van een huis, het plaatsen van zonnepanelen of het slopen van bouwwerken. De omgevingsvergunning kan ook vereist zijn voor het kappen van een boom, het maken van een uitweg of een bedrijfsmatige activiteit die hinder voor het milieu kan veroorzaken."@nl;
-	dct:source "Artikel 2.1 e.v. Wet algemene bepalingen omgevingsrecht";
-	dct:source "https://www.rechtspraak.nl/Onderwerpen/Omgevingsvergunning";
+	dcterms:source "Artikel 2.1 e.v. Wet algemene bepalingen omgevingsrecht";
+	dcterms:source "https://www.rechtspraak.nl/Onderwerpen/Omgevingsvergunning";
 .
 not:Omzetbelastingheffing a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Omzetbelastingheffing"@nl;
 	skos:definition "Omzetbelasting, ook wel btw (Belasting Toegevoegde Waarde) genoemd, is de belasting over de omzet die wordt geheven bij de levering van een product of dienst. De leverancier draagt deze belasting later weer af aan de Belastingdienst."@nl;
-	dct:source "Artikel 1 Wet op de Omzetbelasting 1968";
+	dcterms:source "Artikel 1 Wet op de Omzetbelasting 1968";
 .
 not:Onteigening a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Onteigening"@nl;
 	skos:definition "Onteigening is de gedwongen overdracht van het eigendomsrecht van particulieren aan de overheid, waarbij de getroffene een schadevergoeding toegekend krijgt."@nl;
-	dct:source "Artikel 1 e.v. Onteigeningswet";
+	dcterms:source "Artikel 1 e.v. Onteigeningswet";
 	skos:scopeNote "Bij een onteigening wordt de overheid eigenaar van uw grond inclusief eventuele woning of gebouw. Bijvoorbeeld omdat de overheid een weg, brug, spoorweg of waterweg wil aanleggen. U krijgt een schadevergoeding aangeboden."@nl;
 .
 not:Samenlevingscontract a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Samenlevingscontract"@nl;
 	skos:definition "Een samenlevingscontract is een overeenkomst die de vermogensrechtelijke verhoudingen regelt tussen twee of meer personen die een gemeenschappelijke huishouding voeren (samenwonen). Een samenlevingscontract kan door de notaris worden opgesteld, maar dit is niet verplicht. Voor het partnerpensioen eisen de pensioenfondsen wel een notarieel samenlevingscontract."@nl;
 .
 not:SurseanceVanBetaling a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Surseance Van Betaling"@nl;
 	skos:definition "Surseance van betaling is uitstel van betaling, en wordt vaak kortweg surseance genoemd. Surseance kan worden verleend door de rechter, als een schuldenaar voorziet dat hij zijn (opeisbare) schulden niet zal kunnen voldoen. Surseance kan alleen worden verleend aan rechtspersonen en natuurlijke personen die een zelfstandig beroep of bedrijf uitoefenen. Het doel van surseance is om een faillissement af te wenden."@nl;
-	dct:source "Artikel 214 Faillissementswet";
+	dcterms:source "Artikel 214 Faillissementswet";
 .
 not:UittrekselHandelsregister a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Uittreksel Handelsregister"@nl;
 	skos:definition "Een uittreksel handelsregister is een opgave van de informatie die is opgenomen in het Handelsregister. Je krijgt informatie over de rechtspersoon, onderneming en vestiging(en). Je ziet naam, adres, oprichtingsdatum en in de meeste gevallen functionarissen van een bedrijf of organisatie."@nl;
 .
 not:LidVanDeVve a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Lid Van De Vve"@nl;
-	skos:definition "Iemand die deel uitmaakt van de Vereniging van Eigenaars ("VvE"). Als u een appartementsrecht koopt, bent u automatisch (van rechtswege) en verplicht lid van de VvE. "@nl;
+	skos:definition "Iemand die deel uitmaakt van de Vereniging van Eigenaars (VvE). Als u een appartementsrecht koopt, bent u automatisch (van rechtswege) en verplicht lid van de VvE. "@nl;
 	skos:scopeNote "Leden van de VvE zijn gerechtigd tot de appartementsrechten."@nl;
 .
 not:VerklaringVanErfrecht a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Verklaring Van Erfrecht"@nl;
 	skos:definition "Een verklaring van erfrecht is een notariële akte waarin een notaris na eigen onderzoek erfrechtelijke feiten vermeldt naar aanleiding van het overlijden van iemand. De akte is niet algemeen verplicht maar kan nodig zijn als officieel bewijs voor hetgeen er in staat, bijvoorbeeld bij banken of bij verkoop van onroerend goed uit de nalatenschap. "@nl;
-	dct:source "Artikel 4:188 Burgerlijk Wetboek";
+	dcterms:source "Artikel 4:188 Burgerlijk Wetboek";
 	skos:scopeNote "Een verklaring van erfrecht is een notariële akte waarin staat wie de erfgenamen zijn. "@nl;
 .
 not:Zelfbewoningsplicht a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
-	skos:inScheme http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not;
+	skos:inScheme <http://not.zorgeloosvastgoed.nl/id/ConceptualFramework/not>;
 	skos:prefLabel "Zelfbewoningsplicht"@nl;
 	skos:definition "Een zelfbewoningsplicht verplicht een koper de woning zelf te gaan bewonen. Deze verplichting kan tijdelijk worden opgelegd, bijvoorbeeld voor een aantal jaar of juist voor onbepaalde tijd. "@nl;
 .

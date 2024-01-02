@@ -15,6 +15,7 @@
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix loc: <http://www.w3.org/ns/locn#>.
 
+
 <http://zorgeloosvastgoed.nl/data/mak> a owl:Ontology;
 	rdfs:label "Domein Makelaar"@nl;
 .
@@ -1815,8 +1816,8 @@ mak:Aanslagbiljet a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Aanslagbiljet"@nl;
 	skos:definition "Een aanslagbiljet is een document van de overheid aan een belastingplichtige waarin staat vermeld welke bedag de belastingplichtige aan belastingen verschuldigd is of het bedrag dat wordt terugbetaald. "@nl;
-	dct:source "Artikel 2:3 lid 3 onder e Algemene wet inzake rijksbelasting ";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0002320&hoofdstuk=I&artikel=2&z=2023-01-01&g=2023-01-01";
+	dcterms:source "Artikel 2:3 lid 3 onder e Algemene wet inzake rijksbelasting ";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0002320&hoofdstuk=I&artikel=2&z=2023-01-01&g=2023-01-01";
 	skos:scopeNote "Een aanslagbiljet is een document van de overheid aan een belastingplichtige waarin staat vermeld welke bedag de belastingplichtige aan belastingen verschuldigd is. Het aanslagbiljet bevat gedetailleerde informatie over het belastingjaar, het type belasting, het belastingtarief en het verschuldigde bedrag of het bedrag dat wordt terugbetaald. "@nl;
 .
 mak:Actielijst a skos:Concept;
@@ -1829,16 +1830,16 @@ mak:Administrateur a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Administrateur"@nl;
 	skos:definition "Het bestuur beheert de middelen van de vereniging van eigenaren en draagt zorg voor de tenuitvoerlegging van de besluiten van de vergadering van eigenaars. Vroeger was de wettelijke term voor bestuurder 'administrateur'. "@nl;
-	dct:source "Artikel 5:131 BW";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=2&artikel=131&z=2014-01-01&g=2014-01-01";
+	dcterms:source "Artikel 5:131 BW";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005288&boek=5&titeldeel=9&afdeling=2&artikel=131&z=2014-01-01&g=2014-01-01";
 	skos:scopeNote "Het bestuur beheert de middelen van de vereniging van eigenaren en draagt zorg voor de tenuitvoerlegging van de besluiten van de vergadering van eigenaars. Vroeger was de wettelijke term voor bestuurder 'administrateur'. "@nl;
 .
 mak:AfgegevenBeschikking a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Afgegeven Beschikking"@nl;
 	skos:definition "Onder beschikking wordt verstaan: een besluit dat niet van algemene strekking is, met inbegrip van de afwijzing van een aanvraag daarvan"@nl;
-	dct:source "Artikel 1:3 Algemene wet bestuursrecht";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005537&hoofdstuk=1&titeldeel=1.1&artikel=1:3&z=2023-01-01&g=2023-01-01";
+	dcterms:source "Artikel 1:3 Algemene wet bestuursrecht";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005537&hoofdstuk=1&titeldeel=1.1&artikel=1:3&z=2023-01-01&g=2023-01-01";
 	skos:scopeNote "Een beschikking is een juridisch document of een formele beslissing die wordt genomen door een bevoegde autoriteit, zoals een rechter of een overheidsinstantie. Het heeft betrekking op specifieke juridische kwesties en heeft de kracht van een gerechtelijk bevel of een bindende beslissing. "@nl;
 .
 mak:Appartementenclausule a skos:Concept;
@@ -1863,14 +1864,14 @@ mak:BekendeFeitenTeVermelden a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Bekende Feiten Te Vermelden"@nl;
 	skos:definition "Als de verkoper op de hoogte is van een gebrek ten aanzien van het verkochte, terwijl hij weet of kan weten dat die eigenschap voor de koper van belang is, dan dient verkoper de koper van die eigenschap op de hoogte te stellen. Dit moet zowel gevraagd als ongevraagd."@nl;
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=2&artikel=228&z=2022-07-01&g=2022-07-01";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=2&artikel=228&z=2022-07-01&g=2022-07-01";
 	skos:scopeNote "De verkoper wordt geacht de koper dus zowel gevraagd als ongevraagd op de hoogte te stellen van gebreken die van invloed kunnen zijn op de aankoopbeslissing of de geboden prijs."@nl;
 .
 mak:Berging a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Berging"@nl;
 	skos:definition "Doorgaans een aparte ruimte die wordt gebruikt voor bijvoorbeeld het opslaan of bewaren van goederen, materialen, gereedschappen of andere items. "@nl;
-	dct:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2022:1735&keyword=ECLI%3ANL%3ARBAMS%3A2022%3A1735";
+	dcterms:source "https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBAMS:2022:1735&keyword=ECLI%3ANL%3ARBAMS%3A2022%3A1735";
 	skos:scopeNote "Een berging is doorgaans een aparte ruimte die wordt gebruikt voor bijvoorbeeld het opslaan of bewaren van goederen, materialen, gereedschappen of andere items. Het is vaak een afzonderlijke ruimte buiten het hoofdgebouw, zoals een woning of een appartementencomplex, maar kan ook deel uitmaken van het hoofdgebouw zelf."@nl;
 .
 mak:Bewoning a skos:Concept;
@@ -1949,24 +1950,24 @@ mak:Huren a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Huren"@nl;
 	skos:definition "Huur is de overeenkomst waarbij de ene partij, de verhuurder, zich verbindt aan de andere partij, de huurder, een zaak of een gedeelte daarvan in gebruik te verstrekken en de huurder zich verbindt tot een tegenprestatie. "@nl;
-	dct:source "Artikel 7:201 Burgerlijk Wetboek ";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=4&afdeling=1&artikel=201&z=2023-07-01&g=2023-07-01";
+	dcterms:source "Artikel 7:201 Burgerlijk Wetboek ";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=4&afdeling=1&artikel=201&z=2023-07-01&g=2023-07-01";
 	skos:scopeNote "Huren is de situatie waarbij een persoon of organisatie (de huurder) een bepaalde vergoeding betaalt aan een andere persoon of organisatie (de verhuurder) voor het gebruik van een zaak of gedeelte. Meestal heeft dit betrekking op het huren van onroerend goed, zoals een woning, appartement, kantoorruimte. De bindende afspraken worden vastgelegd in een huurovereenkomst. "@nl;
 .
 mak:Huurcommissie a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Huurcommissie"@nl;
 	skos:definition "De Huurcommissie is een instantie in Nederland die zich bezighoudt met het oplossen van geschillen tussen huurders en verhuurders zoals geschillen over huurprijzen, servicekosten en andere huurkwesties. De Huurcommissie heeft als doel om een eerlijke en redelijke verhouding tussen huurder en verhuurder te waarborgen en conflicten op het gebied van huur te beslechten. "@nl;
-	dct:source " Wijzigingswet Uitvoeringswet huurprijzen woonruimte (instelling landelijke huurcommissie)";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0027142&z=2010-04-01&g=2010-04-01";
+	dcterms:source " Wijzigingswet Uitvoeringswet huurprijzen woonruimte (instelling landelijke huurcommissie)";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0027142&z=2010-04-01&g=2010-04-01";
 	skos:scopeNote "De Huurcommissie is een instantie in Nederland die zich bezighoudt met het oplossen van geschillen tussen huurders en verhuurders zoals geschillen over huurprijzen, servicekosten en andere huurkwesties. De Huurcommissie heeft als doel om een eerlijke en redelijke verhouding tussen huurder en verhuurder te waarborgen en conflicten op het gebied van huur te beslechten. "@nl;
 .
 mak:Huurcontract a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Huurcontract"@nl;
 	skos:definition "Een huurcontract is een overeenkomst waarbij de ene partij, de verhuurder, zich verbindt aan de andere partij, de huurder, een zaak of een gedeelte daarvan in gebruik te verstrekken en de huurder zich verbindt tot een tegenprestatie. "@nl;
-	dct:source "Artikel 7:201 Burgerlijk Wetboek ";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=4&afdeling=1&artikel=201&z=2023-02-18&g=2023-02-18";
+	dcterms:source "Artikel 7:201 Burgerlijk Wetboek ";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005290&boek=7&titeldeel=4&afdeling=1&artikel=201&z=2023-02-18&g=2023-02-18";
 	skos:scopeNote "Een huurovereenkomst is een juridisch bindend contract tussen een verhuurder en een huurder waarin de voor het huren van een bepaalde zaak (bijvoorbeeld een woning of een ander soort onroerend goed) worden vastgelegd. Het is een belangrijk document dat de rechten en plichten van zowel de verhuurder als de huurder regelt. "@nl;
 .
 mak:Installatiedatum a skos:Concept;
@@ -1991,16 +1992,16 @@ mak:Jaarverslag a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Jaarverslag"@nl;
 	skos:definition "Een jaarverslag is een verslag dat jaarlijks wordt uitgebracht door de VvE waarin een overzicht van de financiën van de VvE wordt gegeven van het afgelopen jaar. Doorgaans worden ter controle voorgelegd de exploitatierekening respectievelijk de jaarrekening en het jaarverslag. Het jaarverslag moet binnen zes maanden na afloop van het boekjaar worden uitgebracht.  Soms schrijven splitsingsakten een kortere periode voor, meestal van vier of vijf maanden. In die gevallen geldt de kortere periode"@nl;
-	dct:source "Artikel 2:10 BW";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=10&z=2017-01-01&g=2017-01-01";
+	dcterms:source "Artikel 2:10 BW";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=1&artikel=10&z=2017-01-01&g=2017-01-01";
 	skos:scopeNote "Een jaarverslag is een verslag dat jaarlijks wordt uitgebracht door de VvE waarin een overzicht van de financiën van de VvE wordt gegeven van het afgelopen jaar. Doorgaans worden ter controle voorgelegd de exploitatierekening respectievelijk de jaarrekening en het jaarverslag. Het jaarverslag moet binnen zes maanden na afloop van het boekjaar worden uitgebracht.  Soms schrijven splitsingsakten een kortere periode voor, meestal van vier of vijf maanden. In die gevallen geldt de kortere periode"@nl;
 .
 mak:KiwaCertificaat a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Kiwa Certificaat"@nl;
 	skos:definition "Een Kiwa (Keurings Instituut voor Waterleiding Artikelen) certificaat is het officiele bewijs dat een tanksanering veilig voor mens en omgeving is uitgevoerd."@nl;
-	dct:source "Tanksanering HBO/diesel BRL-K902/04";
-	dct:source "https://www.kiwa.com/nl/nl/service/tanksanering-hbo-diesel-brl-k902-04/";
+	dcterms:source "Tanksanering HBO/diesel BRL-K902/04";
+	dcterms:source "https://www.kiwa.com/nl/nl/service/tanksanering-hbo-diesel-brl-k902-04/";
 	skos:scopeNote "Een Kiwa (Keurings Instituut voor Waterleiding Artikelen) certificaat is het officiele bewijs dat een tanksanering veilig voor mens en omgeving is uitgevoerd."@nl;
 .
 mak:Laadpaal a skos:Concept;
@@ -2013,8 +2014,8 @@ mak:MondelingeAfspraak a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Mondelinge Afspraak"@nl;
 	skos:definition "Een overeenkomst die met of tussen partijen is gemaakt, maar die niet als zodanig op papier is vastgelegd."@nl;
-	dct:source "Artikel 6:217 BW";
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=2&artikel=217&z=2023-05-01&g=2023-05-01";
+	dcterms:source "Artikel 6:217 BW";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0005289&boek=6&titeldeel=5&afdeling=2&artikel=217&z=2023-05-01&g=2023-05-01";
 	skos:scopeNote "Een overeenkomst die met of tussen partijen is gemaakt, maar die niet als zodanig op papier is vastgelegd."@nl;
 .
 mak:Na-Isoleren a skos:Concept;
@@ -2063,7 +2064,7 @@ mak:Saneringsbevel a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Saneringsbevel"@nl;
 	skos:definition "Een beschikking waarin de eigenaar wordt verplicht om het beperken en zoveel mogelijk ongedaan maken van verontreiniging en de directe gevolgen daarvan of van dreigende verontreiniging van de bodem. "@nl;
-	dct:source "https://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=I&artikel=1&z=2022-05-01&g=2022-05-01";
+	dcterms:source "https://wetten.overheid.nl/jci1.3:c:BWBR0003994&hoofdstuk=I&artikel=1&z=2022-05-01&g=2022-05-01";
 	skos:scopeNote "Een saneringsbevel is een beschikking van bijvoorbeeld de provincie of de gemeente om een bepaalde vorm van verontreiniging te saneren dan wel de grond te onderzoeken. Het doel van een saneringsbeschikking is om milieuverontreiniging of andere gevaarlijke situaties aan te pakken en te herstellen."@nl;
 .
 mak:SchoorsteenkanalenGeveegd a skos:Concept;
@@ -2094,8 +2095,8 @@ mak:Verhuurd a skos:Concept;
 	skos:inScheme <http://taxonomie.zorgeloosvastgoed.nl/id/ConceptualSystem/ZorgeloosVastgoed>;
 	skos:inScheme <http://mak.zorgeloosvastgoed.nl/id/ConceptualFramework/mak>;	skos:prefLabel "Verhuurd"@nl;
 	skos:definition "Als een zaak is verhuurd dan betekent dat dat er een overeenkomst is gesloten waarbij de ene partij, de verhuurder, zich verbindt om de ander, de huurder, het genot van die zaak te doen hebben gedurende een bepaalde of onbepaalde tijd en tegen een bepaalde prijs. "@nl;
-	dct:source "Artikel 7:201 Burgerlijk Wetboek ";
-	dct:source "wetten.nl - Regeling - Burgerlijk Wetboek Boek 7 - BWBR0005290 (overheid.nl)";
+	dcterms:source "Artikel 7:201 Burgerlijk Wetboek ";
+	dcterms:source "wetten.nl - Regeling - Burgerlijk Wetboek Boek 7 - BWBR0005290 (overheid.nl)";
 	skos:scopeNote "Als iets is verhuurd dan betekent dat er een huurovereenkomst is gesloten waarbij de verhuurder iets (bijvoorbeeld een woning) heeft verhuurd aan de huurder.  "@nl;
 .
 mak:Voorschotbedragen a skos:Concept;
