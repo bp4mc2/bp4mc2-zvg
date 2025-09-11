@@ -1,0 +1,9 @@
+curl -L -k https://github.com/architolk/ea2rdf/releases/download/v1.2.5/ea2rdf.jar -o ../lib/ea2rdf.jar
+curl -L -k https://github.com/architolk/rdf2rdf/releases/download/v1.5.0/rdf2rdf.jar -o ../lib/rdf2rdf.jar
+curl -L -k https://github.com/architolk/rdf2xml/releases/download/v1.1.0/rdf2xml.jar -o ../lib/rdf2xml.jar
+curl -L -k https://raw.githubusercontent.com/architolk/mimtools/main/mim2graphml.xsl -o ../lib/mim2graphml.xsl
+curl -L -k https://raw.githubusercontent.com/architolk/mimtools/main/mim2md.xsl -o ../lib/mim2md.xsl
+curl -L -k https://raw.githubusercontent.com/architolk/mimtools/main/ea2mim.yaml -o ../lib/ea2mim.yaml
+curl -L -k https://raw.githubusercontent.com/architolk/mimtools/main/mim2onto.yaml -o ../lib/mim2onto.yaml
+curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/main/rdf2md.xsl -o ../lib/rdf2md.xsl
+curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/main/rdf2graphml.xsl -o ../lib/rdf2graphml.xsl

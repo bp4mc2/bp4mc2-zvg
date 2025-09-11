@@ -3,3 +3,6 @@ hooktest
 **/*.archimate.bak
 **/*.ldb
 lib/*.jar
+lib/*.xsl
+lib/*.yaml
+demo-gen/pipeline/*.ttl
