@@ -1,0 +1,11 @@
+<h2>Inleiding</h2>
+
+Het informatiemodel voor de koopovereenkomst beschrijft alle objecttypen, attribuutsoorten, gegevensgroepen en hun onderlinge relaties. Het informatiemodel is opgesteld conform het [MIM (Metamodel voor Informatie Modellen)](https://docs.geostandaarden.nl/mim/mim/).
+
+Dit informatiemodel is een belangrijke pijler voor een werkend Zorgeloos vastgoed stelsel. De bedoeling is dat alle informatie binnen dit stelsel conform dit informatiemodel wordt uitgewisseld. Op basis van het ‘need-to-know’ principe is niet voor ieder doel altijd alle informatie nodig. Maar door in de hele Zorgeloos vastgoed keten de informatie conform dit informatiemodel te delen wordt geborgd dat de structuur en betekenis overal dezelfde is.
+
+Het informatiemodel is een uitwerking van de [Zorgeloos vastgoed taxonomie](https://taxonomie.zorgeloosvastgoed.nl/). De Zorgeloos vastgoed taxonomie beschrijft alle concepten en hun onderlinge samenhang. Alle objecttypen, attribuutsoorten, gegevensgroepen en hun onderlinge relaties zijn naar deze modelelementen uitgewerkte concepten. Voor de betekenis van deze elementen in de vorm van de definitie, uitleg en (juridische) bron wordt steeds verwezen naar de taxonomie.
+
+Dit informatiemodel hergebruikt bestaande informatiemodellen. Zo wordt de structuur van onroerende zaken en daarop rustende rechten 1 op 1 over genomen uit het [IMKAD (InformatieModel KADaster)](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/informatiemodel-kadaster) en de structuur van adressen uit het [IMBAG (InformatieModel Basisregistratie Adressen en Gebouwen)](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag). 
+
+Dit informatiemodel is de eerste stap in een Zorgeloos vastgoed informatiemodel. Dat betekent dat de structuur voor de elementen die er nu in zitten blijft bestaan wanneer het model wordt uitgebreid. Zo zal het scenario van een levering of vestiging van een hypotheek een uitbreiding van het model vragen. Zo kan ook de informatie die nodig is voor het verstrekken van een hypotheek of voor een taxatie worden toegevoegd. Per scenario (koop, levering, vestiging hypotheek, etc) kan dan een view op dit algemene referentiemodel worden gebruikt.
