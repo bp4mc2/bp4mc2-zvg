@@ -217,6 +217,13 @@
         <http://bp4mc2.org/def/mim#type>
                 <urn:uuid:E6F4CE8B-46AF-47d2-BA54-4F182ECF3E23> .
 
+<urn:uuid:42DE73DF-36CD-4380-BC68-8098BF109B49>
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#attribuut>
+                <urn:uuid:96974FB6-E4AE-4407-A94D-193E2F25D78A> , <urn:uuid:04E2FC2F-FADE-47aa-8D4E-5A3AF656B91B> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "TestParagraaf" .
+
 <urn:uuid:8E622DA9-6369-4d29-BC5F-6E2DD9727D75>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
         <http://bp4mc2.org/def/mim#attribuut>
@@ -275,6 +282,8 @@
                 <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "0..-1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "treed op namens" .
 
@@ -329,7 +338,7 @@
 <urn:uuid:A682234D-EA37-4e4d-9846-536C5A17D718>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenWaarde> ;
+                <http://mak.zorgeloosvastgoed.nl/id/concept/WaardeRoerendeZaken> , <http://mak.zorgeloosvastgoed.nl/id/concept/LijstVanGoederenWaarde> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -368,7 +377,7 @@
 <urn:uuid:9EBF8FC2-2B55-433b-9985-E69941C58B04>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://kad.zorgeloosvastgoed.nl/id/concept/AlgemeneErfpachtvoorwaarden> ;
+                <http://kad.zorgeloosvastgoed.nl/id/concept/AlgemeneErfpachtvoorwaarden> , <http://not.zorgeloosvastgoed.nl/id/concept/Erfpachtvoorwaarden> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "Erfpacht is een 'door voorwaarden beperkt' recht. Deze voorwaarden staan in de akte die de notaris opmaakt als u een perceel koopt dat belast is met een recht van erfpacht. Volgens deze voorwaarden heeft u de rechten en de plichten als ware u eigenaar van de grond. U betaalt daarvoor een jaarlijkse vergoeding: de canon. Erfpachtvoorwaarden bestaan uit algemene en bijzondere voorwaarden." ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -483,6 +492,8 @@
                 <urn:uuid:487DB418-86F9-41f6-9D98-572B1EB3703C> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "bijNotaris" .
 
@@ -588,6 +599,8 @@
 
 <urn:uuid:AAF01974-30FE-4480-AA25-101CFB0AE7D6>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://mak.zorgeloosvastgoed.nl/id/concept/BetalerOverdrachtskosten> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -717,7 +730,7 @@
         <http://bp4mc2.org/def/mim#attribuut>
                 <urn:uuid:33084212-7B99-40d5-842E-43896B0F146D> , <urn:uuid:E09BEC76-4F3C-44df-9A7F-5E487C65A998> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://brk.basisregistraties.overheid.nl/id/begrip/Zakelijk_recht> ;
+                <http://kad.zorgeloosvastgoed.nl/id/concept/ZakelijkRecht> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "---CDMKAD---\r\n<font color=\"#0f0f0f\">--Definitie--</font>\r\n<font color=\"#0f0f0f\">Een Zakelijk recht is een absoluut recht op een </font>kadastraal object<font color=\"#0f0f0f\"> dat tegenover iedereen te handhaven is. </font>" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -748,6 +761,8 @@
                 <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "0..-1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "wasGedaanDoor" .
 
@@ -807,6 +822,8 @@
                 <urn:uuid:8E18D907-1F75-40b5-A79C-46D4F53AB071> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:AB4CDF77-553C-4e19-9865-5402DE199BBD> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..-1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "vanZakelijkRecht" .
 
@@ -832,11 +849,6 @@
         <http://bp4mc2.org/def/mim#type>
                 <urn:uuid:F38912FB-7856-4a9d-AF96-CB2238371C04> .
 
-<urn:uuid:561CBF27-CB85-49ad-AFA5-2C8CEB05B253>
-        a       <http://bp4mc2.org/def/mim#Keuze> ;
-        <http://bp4mc2.org/def/mim#naam>
-                "entiteit of document" .
-
 <urn:uuid:0441D83B-74B9-401e-A627-317DC60B4D57>
         a       <http://bp4mc2.org/def/mim#Referentielijst> ;
         <http://bp4mc2.org/def/mim#definitie>
@@ -860,7 +872,7 @@
 <urn:uuid:1A9C4B10-5DD5-44bc-AD92-4C18596660AB>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Huwelijksgoederenrecht> ;
+                <http://not.zorgeloosvastgoed.nl/id/concept/Regime> , <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Huwelijksgoederenrecht> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "Huwelijkevoorwaarden of of gemeenschap van goederen." ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -939,6 +951,13 @@
         <http://bp4mc2.org/def/mim#type>
                 <urn:uuid:D6FEFF9E-004C-4026-9BDB-5F3941DA2972> .
 
+<urn:uuid:AE5F65DE-2113-4b28-B375-491D056E8D0F>
+        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
+        <http://bp4mc2.org/def/mim#subtype>
+                <urn:uuid:42DE73DF-36CD-4380-BC68-8098BF109B49> ;
+        <http://bp4mc2.org/def/mim#supertype>
+                <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2> .
+
 <urn:uuid:054546F1-E49B-4c40-B579-5141C46599CF>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#definitie>
@@ -995,6 +1014,8 @@
                 <urn:uuid:F7E23CB2-4C3F-4975-AC49-AA4C968D26F2> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "metVerenigingVanEigenaren" .
 
@@ -1079,6 +1100,17 @@
                 "0..1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "adres" .
+
+<urn:uuid:FE3D58F0-BC33-467f-A679-52AE956A7E74>
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://www.w3.org/ns/prov#Entity> ;
+        <http://bp4mc2.org/def/mim#definitie>
+                "Een Voorkomen is een Object in de registratie waarvan wordt bijgehouden op basis waarvan en wanneer de vastgelegde informatie is ontstaan of gewijzigd." ;
+        <http://bp4mc2.org/def/mim#gegevensgroep>
+                <urn:uuid:9CC11481-38DE-4716-AE67-E336A95B8A49> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Entity" .
 
 <urn:uuid:1740D455-6F1F-4a58-8ABD-FB3518347C26>
         a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
@@ -1209,13 +1241,6 @@
         <http://bp4mc2.org/def/mim#type>
                 <urn:uuid:6B8260B7-AC82-4c86-98AA-B2C2A34D0377> .
 
-<urn:uuid:E23CD7D8-B8EB-4e45-8DB0-B582DF869B0B>
-        a       <http://bp4mc2.org/def/mim#Generalisatie> ;
-        <http://bp4mc2.org/def/mim#subtype>
-                <urn:uuid:FEC7C1CD-E05E-4117-AA1F-0ABB23553886> ;
-        <http://bp4mc2.org/def/mim#supertype>
-                <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> .
-
 <urn:uuid:7E8592E4-295A-4d03-8027-73CFF94D1E5A>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
@@ -1304,7 +1329,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "betreftMeerOnroerendeZaken" .
+                "betreftMeerOnroerendeZaken" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:70FBDB70-4B81-46ab-97BB-058195812ECB> .
 
 <urn:uuid:F5FCFAC2-5358-4590-8AA6-C0DA177C1B32>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
@@ -1383,7 +1410,7 @@
 <urn:uuid:61AFF3F4-8919-4592-8240-F2845529373D>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
         <http://bp4mc2.org/def/mim#attribuut>
-                <urn:uuid:EABD8195-DAF5-475a-AB32-3AB0CE79E14E> , <urn:uuid:70E2F20B-A658-4334-8213-3A65F0E82FBA> ;
+                <urn:uuid:8155889F-832C-4b05-AEE4-2D501F900864> , <urn:uuid:EABD8195-DAF5-475a-AB32-3AB0CE79E14E> , <urn:uuid:70E2F20B-A658-4334-8213-3A65F0E82FBA> ;
         <http://bp4mc2.org/def/mim#naam>
                 "Contactgegevens" .
 
@@ -1392,12 +1419,16 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "0..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "einddatumAfkoop" .
+                "einddatumAfkoop" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:3E6F5023-BF71-4da0-8747-0B8D334A8D04> .
 
 <urn:uuid:417D2D14-2CED-4613-8B6B-A84F2F96BC2D>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
         <http://bp4mc2.org/def/mim#attribuut>
                 <urn:uuid:BBA189C0-CAF6-45be-AFAA-B430B4D43CDA> , <urn:uuid:CBB9CA2A-6F01-43c4-9167-6236B0B2785D> , <urn:uuid:0D822404-A7E7-4d7a-AF2A-F980F4AB8BC3> , <urn:uuid:17C6C32F-207C-4e20-AFF0-ABEC39B30ACC> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://mak.zorgeloosvastgoed.nl/id/concept/OvereenkomstFeitelijkeLevering> ;
         <http://bp4mc2.org/def/mim#naam>
                 "FeitelijkeLevering" .
 
@@ -1703,7 +1734,7 @@
 <urn:uuid:7194CBFF-333D-4493-80BE-A875F5EC086D>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/SoortVerbintenis> ;
+                <http://not.zorgeloosvastgoed.nl/id/concept/BurgerlijkeStaat> , <http://taxonomie.zorgeloosvastgoed.nl/id/concept/SoortVerbintenis> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "Huwelijk of Geregistreerd Partnerschap" ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -1745,7 +1776,7 @@
 <urn:uuid:618ACE7E-B618-4c4b-BCB2-D574051159AF>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Postcode> ;
+                <http://kad.zorgeloosvastgoed.nl/id/concept/Postcode> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "URI https://bag.basisregistraties.overheid.nl/id/begrip/Postcode" ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -1790,7 +1821,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "noemer" .
+                "noemer" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:F38912FB-7856-4a9d-AF96-CB2238371C04> .
 
 <urn:uuid:16D39029-C62B-4efb-861F-E04E8794843F>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
@@ -1904,7 +1937,7 @@
 <urn:uuid:A9B66E91-89DC-49d5-ACE5-19429B96FAF1>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Naam> ;
+                <http://not.zorgeloosvastgoed.nl/id/concept/AchternaamConformIdentiteitsbewijs> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "De geslachtsnaam is de (geslachts)naam waarvan de eventueel aanwezige voorvoegsels en <a href=\"https://www.amsterdam.nl/stelselpedia/brp-index/catalogus-brp/objectklasse-4/tabel-38-adellijke/\"><font color=\"#0000ff\"><u>adellijke titel</u></font></a> zijn afgesplitst." ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -1924,7 +1957,7 @@
 <urn:uuid:44BDDDF4-4549-4ab8-9C05-F887C2EE03EF>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://kad.zorgeloosvastgoed.nl/id/concept/NaamOpenbareRuimte> ;
+                <http://kad.zorgeloosvastgoed.nl/id/concept/NaamVanEenOpenbareRuimte> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -2022,7 +2055,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "0..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "toelichtingBewaarder" .
+                "toelichtingBewaarder" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:18BFBA8D-E3F4-4d8c-9A8F-4429FA54B041> .
 
 <urn:uuid:9397C5A4-CFB6-4493-BFE9-F86142793236>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
@@ -2071,6 +2106,8 @@
 
 <urn:uuid:6BAAF3C7-5A0D-407d-ACED-6DC789C05D4F>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://not.zorgeloosvastgoed.nl/id/concept/DatumRegistratieKoopovereenkomst> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -2107,6 +2144,8 @@
 
 <urn:uuid:FA258613-AB62-4adb-80F9-531923335C36>
         a       <http://bp4mc2.org/def/mim#DataElement> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleGemeente> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "De kadastrale gemeente, deel van de kadastrale aanduiding van de onroerende zaak. De waarden komen uit een Waardelijst.\r\n\r\nEr zijn 1111 kadastrale gemeentenamen. Elke kadastrale gemeentenaam is uniek." ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -2218,6 +2257,19 @@
         <http://bp4mc2.org/def/mim#type>
                 <urn:uuid:70FBDB70-4B81-46ab-97BB-058195812ECB> .
 
+<urn:uuid:9CC11481-38DE-4716-AE67-E336A95B8A49>
+        a       <http://bp4mc2.org/def/mim#Gegevensgroep> ;
+        <http://bp4mc2.org/def/mim#definitie>
+                "Gegevens omtrent de historie van een voorkomen van dit type." ;
+        <http://bp4mc2.org/def/mim#gegevensgroeptype>
+                <urn:uuid:2D302D79-611C-416e-A7A9-E99462550E40> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
+        <http://bp4mc2.org/def/mim#naam>
+                "historie" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:2D302D79-611C-416e-A7A9-E99462550E40> .
+
 <urn:uuid:834247E4-5324-442e-B9B2-477AA7FFC403>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#definitie>
@@ -2304,7 +2356,7 @@
 <urn:uuid:70E2F20B-A658-4334-8213-3A65F0E82FBA>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Mailadres> ;
+                <http://not.zorgeloosvastgoed.nl/id/concept/Mailadres> , <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Mailadres> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "0..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -2366,6 +2418,15 @@
                 "1..-1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "tenNameVan" .
+
+<urn:uuid:04E2FC2F-FADE-47aa-8D4E-5A3AF656B91B>
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
+        <http://bp4mc2.org/def/mim#naam>
+                "Lengte" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:F38912FB-7856-4a9d-AF96-CB2238371C04> .
 
 <urn:uuid:2DCB510C-1AFB-4b90-8AE7-E6E9AD505FC8>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
@@ -2463,11 +2524,6 @@
         <http://bp4mc2.org/def/mim#naam>
                 "gerelateerdeWoonplaats" .
 
-<urn:uuid:77F008F2-70B5-41ca-B072-61BF9AD71599>
-        a       <http://bp4mc2.org/def/mim#Objecttype> ;
-        <http://bp4mc2.org/def/mim#naam>
-                "IdentiteitPartijen" .
-
 <urn:uuid:746601BA-4724-467a-8E5C-A512B03695C8>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -2476,6 +2532,11 @@
                 "garantie" ;
         <http://bp4mc2.org/def/mim#type>
                 <urn:uuid:D907BD58-50DB-40bf-996C-16A61BFE3AAA> .
+
+<urn:uuid:77F008F2-70B5-41ca-B072-61BF9AD71599>
+        a       <http://bp4mc2.org/def/mim#Objecttype> ;
+        <http://bp4mc2.org/def/mim#naam>
+                "IdentiteitPartijen" .
 
 <urn:uuid:8FC49D67-1E0A-4140-9675-05CEECC72B9B>
         a       <http://bp4mc2.org/def/mim#Referentielijst> ;
@@ -2558,7 +2619,7 @@
         <http://bp4mc2.org/def/mim#attribuut>
                 <urn:uuid:422DDB5E-AF5A-4f00-ACBF-410CCB6486CB> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://bag.basisregistraties.overheid.nl/id/concept/Woonplaats> ;
+                <http://kad.zorgeloosvastgoed.nl/id/concept/Woonplaats> ;
         <http://bp4mc2.org/def/mim#naam>
                 "Woonplaats" .
 
@@ -2691,7 +2752,7 @@
 <urn:uuid:ED418BB8-65B0-4932-9854-89637B88D8BD>
         a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
         <http://bp4mc2.org/def/mim#bron>
-                <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
+                <urn:uuid:FE3D58F0-BC33-467f-A679-52AE956A7E74> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -2733,6 +2794,8 @@
 
 <urn:uuid:7EB1E333-9AC7-4831-92C5-2AF7E08D6A8A>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://mak.zorgeloosvastgoed.nl/id/concept/NadereAfspraken> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -2754,7 +2817,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "bedrag" .
+                "bedrag" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:181D26B1-A672-43d1-9B14-A650A36D6A8C> .
 
 <urn:uuid:20D85FE1-04AC-4688-BD49-6554C656DDD8>
         a       <http://bp4mc2.org/def/mim#Generalisatie> ;
@@ -2783,6 +2848,8 @@
 
 <urn:uuid:F4C8AF79-E98C-43cc-96E5-F39CA96D1EBA>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://kad.zorgeloosvastgoed.nl/id/concept/Huisnummertoevoeging> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "URI https://bag.basisregistraties.overheid.nl/id/begrip/Huisnummertoevoeging" ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -2830,7 +2897,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "datum" .
+                "datum" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:3E6F5023-BF71-4da0-8747-0B8D334A8D04> .
 
 <urn:uuid:8F53E2FF-5BD1-481d-8CD7-ADB7A01CAD4A>
         a       <http://bp4mc2.org/def/mim#Generalisatie> ;
@@ -2853,6 +2922,8 @@
 
 <urn:uuid:FA90C8CE-2728-40ef-8AA4-C6F3B8C10712>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://not.zorgeloosvastgoed.nl/id/concept/Voornamen> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "De voornamen zijn de verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat. Indien aanwezig, wordt het predikaat afgesplitst." ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -2962,12 +3033,25 @@
         <http://bp4mc2.org/def/mim#naam>
                 "Verkoper" .
 
+<urn:uuid:8155889F-832C-4b05-AEE4-2D501F900864>
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://not.zorgeloosvastgoed.nl/id/concept/TelefoonMobiel> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
+        <http://bp4mc2.org/def/mim#naam>
+                "mobielTelefoonnummer" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:18BFBA8D-E3F4-4d8c-9A8F-4429FA54B041> .
+
 <urn:uuid:4F85A8BF-F725-41b6-A5C7-5F91B0B31EB2>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "0..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "omschrijving" .
+                "omschrijving" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:18BFBA8D-E3F4-4d8c-9A8F-4429FA54B041> .
 
 <urn:uuid:08D62AC5-21B4-4e21-9DA0-27DBEB405BA1>
         a       <http://bp4mc2.org/def/mim#Generalisatie> ;
@@ -3000,6 +3084,8 @@
 
 <urn:uuid:189AA4A8-D962-4af3-A4E4-A946482921A3>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://fin.zorgeloosvastgoed.nl/id/concept/DatumOntbindingVoorbehoudFinanciering> , <http://fin.zorgeloosvastgoed.nl/id/concept/DatumOntbindingVoorbehoudNhg> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -3015,7 +3101,7 @@
 <urn:uuid:EABD8195-DAF5-475a-AB32-3AB0CE79E14E>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Telefoon> ;
+                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Telefoon> , <http://not.zorgeloosvastgoed.nl/id/concept/Telefoon> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..-1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -3146,9 +3232,11 @@
 <urn:uuid:A6E8F181-1439-4fd5-8DB8-D1E6E6E457B3>
         a       <http://bp4mc2.org/def/mim#Relatiesoort> ;
         <http://bp4mc2.org/def/mim#bron>
-                <urn:uuid:D314E866-18BD-4346-AC2D-250C9C217F2E> ;
+                <urn:uuid:FE3D58F0-BC33-467f-A679-52AE956A7E74> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:672C5BB6-1ABE-4230-83B3-14866F0AC669> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..-1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "wasToegeschrevenAan" .
 
@@ -3219,7 +3307,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "teller" .
+                "teller" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:F38912FB-7856-4a9d-AF96-CB2238371C04> .
 
 <urn:uuid:2D492680-F32A-4e02-B513-1357C2668046>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
@@ -3366,6 +3456,8 @@
 
 <urn:uuid:7EAA2A9F-31D4-494e-A60F-4365BFF41056>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://kad.zorgeloosvastgoed.nl/id/concept/Geboorteplaats> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "De geboorteplaats is de plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren" ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -3408,6 +3500,8 @@
                 <urn:uuid:470EE595-892E-477e-A5E2-A1EE3B1A02AE> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:37E0C481-30A7-49d6-80FD-6179F396ADD4> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..-1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "uitgevoerdDoor" .
 
@@ -3422,6 +3516,8 @@
 
 <urn:uuid:5EBB1F3F-9955-4733-9902-2524675EBAE9>
         a       <http://bp4mc2.org/def/mim#DataElement> ;
+        <http://bp4mc2.org/def/mim#begrip>
+                <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleAanduiding> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "<font color=\"#0f0f0f\">Sectie is een onderverdeling van de kadastrale gemeente, bedoeld om het werk van de meetdienst en de kadastrale kaarten overzichtelijk te houden. </font>\r\n<font color=\"#0f0f0f\">\r\n</font><font color=\"#0f0f0f\">Per kadastrale gemeente zijn er max. 26x26 secties . Elke sectie heeft een of twee letters (bijv. \"A\", 'B', ....'AA', 'AB', ....'ZZ' . Alleen de sectieletter \"J\" werd niet gebruikt om verwarring (handgeschreven) te voorkomen met \"I\"</font>" ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
@@ -3501,7 +3597,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "bedrag" .
+                "bedrag" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:181D26B1-A672-43d1-9B14-A650A36D6A8C> .
 
 <urn:uuid:A982B51D-64E8-469f-B1B9-7C5481BA9AAD>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
@@ -3653,7 +3751,9 @@
         <http://bp4mc2.org/def/mim#bron>
                 <urn:uuid:8797E569-3544-4bd5-B594-2E18F821ED5A> ;
         <http://bp4mc2.org/def/mim#doel>
-                <urn:uuid:561CBF27-CB85-49ad-AFA5-2C8CEB05B253> ;
+                <urn:uuid:6048F9D4-0F47-4fc8-B6F3-2D8AEE3FB5CE> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..-1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "gebruikte" .
 
@@ -3834,6 +3934,15 @@
         <http://bp4mc2.org/def/mim#naam>
                 "Tijd" .
 
+<urn:uuid:96974FB6-E4AE-4407-A94D-193E2F25D78A>
+        a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
+        <http://bp4mc2.org/def/mim#naam>
+                "TestNaam" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:18BFBA8D-E3F4-4d8c-9A8F-4429FA54B041> .
+
 <urn:uuid:52808546-EFB7-4fd0-96AD-768772F37F7B>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
         <http://bp4mc2.org/def/mim#attribuut>
@@ -3861,7 +3970,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "0..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "verklaringInzakeDerdenBescherming" .
+                "verklaringInzakeDerdenBescherming" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:18BFBA8D-E3F4-4d8c-9A8F-4429FA54B041> .
 
 <urn:uuid:F022CA42-4F72-4508-9C55-9C89F328A1A1>
         a       <http://bp4mc2.org/def/mim#Objecttype> ;
@@ -4073,7 +4184,9 @@
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
-                "indicatieOudeOnroerendeZaakBetrokken" .
+                "indicatieOudeOnroerendeZaakBetrokken" ;
+        <http://bp4mc2.org/def/mim#type>
+                <urn:uuid:70FBDB70-4B81-46ab-97BB-058195812ECB> .
 
 <urn:uuid:962D8E4E-58E1-4a4f-9F9B-00EED3BBB11D>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
@@ -4157,7 +4270,7 @@
 <urn:uuid:1500DA40-5A3D-4711-9211-1B07186A962F>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleGroote> ;
+                <http://kad.zorgeloosvastgoed.nl/id/concept/KadastraleGrootte> ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
                 "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
@@ -4178,6 +4291,8 @@
                 <urn:uuid:AB4CDF77-553C-4e19-9865-5402DE199BBD> ;
         <http://bp4mc2.org/def/mim#doel>
                 <urn:uuid:9FB8E66F-178A-4a4c-B311-A50CDC7EA840> ;
+        <http://bp4mc2.org/def/mim#kardinaliteit>
+                "1..1" ;
         <http://bp4mc2.org/def/mim#naam>
                 "rustOp" ;
         <http://bp4mc2.org/def/mim#relatierol>
@@ -4259,7 +4374,7 @@
 <urn:uuid:61EA939B-3751-462f-8C51-AF6A235489E1>
         a       <http://bp4mc2.org/def/mim#Attribuutsoort> ;
         <http://bp4mc2.org/def/mim#begrip>
-                <http://taxonomie.zorgeloosvastgoed.nl/id/concept/Geboortedatum> ;
+                <http://kad.zorgeloosvastgoed.nl/id/concept/Geboortedatum> ;
         <http://bp4mc2.org/def/mim#definitie>
                 "De geboortedatum is de datum waarop de persoon is geboren." ;
         <http://bp4mc2.org/def/mim#kardinaliteit>
